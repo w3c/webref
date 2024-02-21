@@ -48,7 +48,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonld"
       },
       "JsonLdProcessor": {
         "fragment": "[Exposed=JsonLd]\ninterface JsonLdProcessor {\n  constructor();\n  static Promise<JsonLdRecord> compact(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> expand(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n  static Promise<JsonLdRecord> flatten(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> fromRdf(\n    RdfDataset input,\n    optional JsonLdOptions options = {});\n  static Promise<RdfDataset> toRdf(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n};",
@@ -59,7 +60,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-constructor"
           },
           {
             "type": "operation",
@@ -136,7 +138,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-compact"
           },
           {
             "type": "operation",
@@ -204,7 +207,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-expand"
           },
           {
             "type": "operation",
@@ -281,7 +285,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-flatten"
           },
           {
             "type": "operation",
@@ -349,7 +354,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-fromrdf"
           },
           {
             "type": "operation",
@@ -408,7 +414,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor-tordf"
           }
         ],
         "extAttrs": [
@@ -422,7 +429,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonldprocessor"
       },
       "JsonLdRecord": {
         "fragment": "typedef record<USVString, any> JsonLdRecord;",
@@ -453,7 +461,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonldrecord"
       },
       "JsonLdInput": {
         "fragment": "typedef (JsonLdRecord or sequence<JsonLdRecord> or USVString or RemoteDocument) JsonLdInput;",
@@ -509,7 +518,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonldinput"
       },
       "JsonLdContext": {
         "fragment": "typedef (JsonLdRecord or sequence<(JsonLdRecord or USVString)> or USVString) JsonLdContext;",
@@ -574,7 +584,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonldcontext"
       },
       "RdfDataset": {
         "fragment": "[Exposed=JsonLd]\ninterface RdfDataset {\n  constructor();\n  readonly attribute RdfGraph defaultGraph;\n  undefined add(USVString graphName, RdfGraph graph);\n  iterable<USVString?, RdfGraph>;\n};",
@@ -585,7 +596,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfdataset-constructor"
           },
           {
             "type": "attribute",
@@ -600,7 +612,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfdataset-defaultgraph"
           },
           {
             "type": "operation",
@@ -648,7 +661,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfdataset-add"
           },
           {
             "type": "iterable",
@@ -687,7 +701,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-rdfdataset"
       },
       "RdfGraph": {
         "fragment": "[Exposed=JsonLd]\ninterface RdfGraph {\n  constructor();\n  undefined add(RdfTriple triple);\n  iterable<RdfTriple>;\n};",
@@ -698,7 +713,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfgraph-constructor"
           },
           {
             "type": "operation",
@@ -730,7 +746,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfgraph-add"
           },
           {
             "type": "iterable",
@@ -761,7 +778,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-rdfgraph"
       },
       "RdfTriple": {
         "fragment": "[Exposed=JsonLd]\ninterface RdfTriple {\n  constructor();\n  readonly attribute USVString subject;\n  readonly attribute USVString predicate;\n  readonly attribute (USVString or RdfLiteral) _object;\n};",
@@ -772,7 +790,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple-constructor"
           },
           {
             "type": "attribute",
@@ -787,7 +806,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple-subject"
           },
           {
             "type": "attribute",
@@ -802,7 +822,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple-predicate"
           },
           {
             "type": "attribute",
@@ -834,7 +855,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple-object"
           }
         ],
         "extAttrs": [
@@ -848,7 +870,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple"
       },
       "RdfLiteral": {
         "fragment": "[Exposed=JsonLd]\ninterface RdfLiteral {\n  constructor();\n  readonly attribute USVString value;\n  readonly attribute USVString datatype;\n  readonly attribute USVString? language;\n};",
@@ -859,7 +882,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral-constructor"
           },
           {
             "type": "attribute",
@@ -874,7 +898,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral-value"
           },
           {
             "type": "attribute",
@@ -889,7 +914,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral-datatype"
           },
           {
             "type": "attribute",
@@ -904,7 +930,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral-language"
           }
         ],
         "extAttrs": [
@@ -918,7 +945,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral"
       },
       "JsonLdOptions": {
         "fragment": "dictionary JsonLdOptions {\n  USVString?             base = null;\n  boolean                compactArrays = true;\n  boolean                compactToRelative = true;\n  LoadDocumentCallback?  documentLoader = null;\n  (JsonLdRecord? or USVString) expandContext = null;\n  boolean                extractAllScripts = false;\n  boolean                frameExpansion = false;\n  boolean                ordered = false;\n  USVString              processingMode = \"json-ld-1.1\";\n  boolean                produceGeneralizedRdf = true;\n  USVString?             rdfDirection = null;\n  boolean                useNativeTypes = false;\n  boolean                useRdfType = false;\n};",
@@ -941,7 +969,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-base"
           },
           {
             "type": "field",
@@ -959,7 +988,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-compactarrays"
           },
           {
             "type": "field",
@@ -977,7 +1007,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-compacttorelative"
           },
           {
             "type": "field",
@@ -994,7 +1025,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-documentloader"
           },
           {
             "type": "field",
@@ -1028,7 +1060,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-expandcontext"
           },
           {
             "type": "field",
@@ -1046,7 +1079,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-extractallscripts"
           },
           {
             "type": "field",
@@ -1064,7 +1098,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-frameexpansion"
           },
           {
             "type": "field",
@@ -1082,7 +1117,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-ordered"
           },
           {
             "type": "field",
@@ -1100,7 +1136,8 @@
               "type": "string",
               "value": "json-ld-1.1"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-processingmode"
           },
           {
             "type": "field",
@@ -1118,7 +1155,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-producegeneralizedrdf"
           },
           {
             "type": "field",
@@ -1135,7 +1173,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-rdfdirection"
           },
           {
             "type": "field",
@@ -1153,7 +1192,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-usenativetypes"
           },
           {
             "type": "field",
@@ -1171,11 +1211,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-userdftype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions"
       },
       "LoadDocumentCallback": {
         "fragment": "callback LoadDocumentCallback = Promise<RemoteDocument> (\n  USVString url,\n  optional LoadDocumentOptions? options\n);",
@@ -1232,7 +1274,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/json-ld-api/#dom-loaddocumentcallback"
       },
       "LoadDocumentOptions": {
         "fragment": "dictionary LoadDocumentOptions {\n  boolean  extractAllScripts = false;\n  USVString profile = null;\n  (USVString or sequence<USVString>) requestProfile = null;\n};",
@@ -1256,7 +1299,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-loaddocumentoptions-extractallscripts"
           },
           {
             "type": "field",
@@ -1273,7 +1317,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-loaddocumentoptions-profile"
           },
           {
             "type": "field",
@@ -1316,11 +1361,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-loaddocumentoptions-requestprofile"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-loaddocumentoptions"
       },
       "RemoteDocument": {
         "fragment": "[Exposed=JsonLd]\ninterface RemoteDocument {\n  constructor();\n  readonly attribute USVString contentType;\n  readonly attribute USVString contextUrl;\n  attribute any document;\n  readonly attribute USVString documentUrl;\n  readonly attribute USVString profile;\n};",
@@ -1331,7 +1378,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-constructor"
           },
           {
             "type": "attribute",
@@ -1346,7 +1394,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-contenttype"
           },
           {
             "type": "attribute",
@@ -1361,7 +1410,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-contexturl"
           },
           {
             "type": "attribute",
@@ -1376,7 +1426,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-document"
           },
           {
             "type": "attribute",
@@ -1391,7 +1442,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-documenturl"
           },
           {
             "type": "attribute",
@@ -1406,7 +1458,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument-profile"
           }
         ],
         "extAttrs": [
@@ -1420,7 +1473,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument"
       },
       "JsonLdError": {
         "fragment": "dictionary JsonLdError {\n  JsonLdErrorCode code;\n  USVString?      message = null;\n};",
@@ -1441,7 +1495,8 @@
               "idlType": "JsonLdErrorCode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderror-code"
           },
           {
             "type": "field",
@@ -1458,11 +1513,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderror-message"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderror"
       },
       "JsonLdErrorCode": {
         "fragment": "enum JsonLdErrorCode {\n    \"colliding keywords\",\n    \"conflicting indexes\",\n    \"context overflow\",\n    \"cyclic IRI mapping\",\n    \"invalid @id value\",\n    \"invalid @import value\",\n    \"invalid @included value\",\n    \"invalid @index value\",\n    \"invalid @nest value\",\n    \"invalid @prefix value\",\n    \"invalid @propagate value\",\n    \"invalid @protected value\",\n    \"invalid @reverse value\",\n    \"invalid @version value\",\n    \"invalid base direction\",\n    \"invalid base IRI\",\n    \"invalid container mapping\",\n    \"invalid context entry\",\n    \"invalid context nullification\",\n    \"invalid default language\",\n    \"invalid IRI mapping\",\n    \"invalid JSON literal\",\n    \"invalid keyword alias\",\n    \"invalid language map value\",\n    \"invalid language mapping\",\n    \"invalid language-tagged string\",\n    \"invalid language-tagged value\",\n    \"invalid local context\",\n    \"invalid remote context\",\n    \"invalid reverse property map\",\n    \"invalid reverse property value\",\n    \"invalid reverse property\",\n    \"invalid scoped context\",\n    \"invalid script element\",\n    \"invalid set or list object\",\n    \"invalid term definition\",\n    \"invalid type mapping\",\n    \"invalid type value\",\n    \"invalid typed value\",\n    \"invalid value object value\",\n    \"invalid value object\",\n    \"invalid vocab mapping\",\n    \"IRI confused with prefix\",\n    \"keyword redefinition\",\n    \"loading document failed\",\n    \"loading remote context failed\",\n    \"multiple context link headers\",\n    \"processing mode conflict\",\n    \"protected term redefinition\"\n};",
@@ -1471,202 +1528,252 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "colliding keywords"
+            "value": "colliding keywords",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-colliding-keywords"
           },
           {
             "type": "enum-value",
-            "value": "conflicting indexes"
+            "value": "conflicting indexes",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-conflicting-indexes"
           },
           {
             "type": "enum-value",
-            "value": "context overflow"
+            "value": "context overflow",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-context-overflow"
           },
           {
             "type": "enum-value",
-            "value": "cyclic IRI mapping"
+            "value": "cyclic IRI mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-cyclic-iri-mapping"
           },
           {
             "type": "enum-value",
-            "value": "invalid @id value"
+            "value": "invalid @id value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40id-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @import value"
+            "value": "invalid @import value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40import-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @included value"
+            "value": "invalid @included value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40included-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @index value"
+            "value": "invalid @index value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40index-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @nest value"
+            "value": "invalid @nest value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40nest-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @prefix value"
+            "value": "invalid @prefix value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40prefix-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @propagate value"
+            "value": "invalid @propagate value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40propagate-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @protected value"
+            "value": "invalid @protected value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40protected-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @reverse value"
+            "value": "invalid @reverse value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40reverse-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid @version value"
+            "value": "invalid @version value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-%40version-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid base direction"
+            "value": "invalid base direction",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-base-direction"
           },
           {
             "type": "enum-value",
-            "value": "invalid base IRI"
+            "value": "invalid base IRI",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-base-iri"
           },
           {
             "type": "enum-value",
-            "value": "invalid container mapping"
+            "value": "invalid container mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-container-mapping"
           },
           {
             "type": "enum-value",
-            "value": "invalid context entry"
+            "value": "invalid context entry",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-context-entry"
           },
           {
             "type": "enum-value",
-            "value": "invalid context nullification"
+            "value": "invalid context nullification",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-context-nullification"
           },
           {
             "type": "enum-value",
-            "value": "invalid default language"
+            "value": "invalid default language",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-default-language"
           },
           {
             "type": "enum-value",
-            "value": "invalid IRI mapping"
+            "value": "invalid IRI mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-iri-mapping"
           },
           {
             "type": "enum-value",
-            "value": "invalid JSON literal"
+            "value": "invalid JSON literal",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-json-literal"
           },
           {
             "type": "enum-value",
-            "value": "invalid keyword alias"
+            "value": "invalid keyword alias",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-keyword-alias"
           },
           {
             "type": "enum-value",
-            "value": "invalid language map value"
+            "value": "invalid language map value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-language-map-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid language mapping"
+            "value": "invalid language mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-language-mapping"
           },
           {
             "type": "enum-value",
-            "value": "invalid language-tagged string"
+            "value": "invalid language-tagged string",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-language-tagged-string"
           },
           {
             "type": "enum-value",
-            "value": "invalid language-tagged value"
+            "value": "invalid language-tagged value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-language-tagged-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid local context"
+            "value": "invalid local context",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-local-context"
           },
           {
             "type": "enum-value",
-            "value": "invalid remote context"
+            "value": "invalid remote context",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-remote-context"
           },
           {
             "type": "enum-value",
-            "value": "invalid reverse property map"
+            "value": "invalid reverse property map",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-reverse-property-map"
           },
           {
             "type": "enum-value",
-            "value": "invalid reverse property value"
+            "value": "invalid reverse property value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-reverse-property-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid reverse property"
+            "value": "invalid reverse property",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-reverse-property"
           },
           {
             "type": "enum-value",
-            "value": "invalid scoped context"
+            "value": "invalid scoped context",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-scoped-context"
           },
           {
             "type": "enum-value",
-            "value": "invalid script element"
+            "value": "invalid script element",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-script-element"
           },
           {
             "type": "enum-value",
-            "value": "invalid set or list object"
+            "value": "invalid set or list object",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-set-or-list-object"
           },
           {
             "type": "enum-value",
-            "value": "invalid term definition"
+            "value": "invalid term definition",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-term-definition"
           },
           {
             "type": "enum-value",
-            "value": "invalid type mapping"
+            "value": "invalid type mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-type-mapping"
           },
           {
             "type": "enum-value",
-            "value": "invalid type value"
+            "value": "invalid type value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-type-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid typed value"
+            "value": "invalid typed value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-typed-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid value object value"
+            "value": "invalid value object value",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-value-object-value"
           },
           {
             "type": "enum-value",
-            "value": "invalid value object"
+            "value": "invalid value object",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-value-object"
           },
           {
             "type": "enum-value",
-            "value": "invalid vocab mapping"
+            "value": "invalid vocab mapping",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-invalid-vocab-mapping"
           },
           {
             "type": "enum-value",
-            "value": "IRI confused with prefix"
+            "value": "IRI confused with prefix",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-iri-confused-with-prefix"
           },
           {
             "type": "enum-value",
-            "value": "keyword redefinition"
+            "value": "keyword redefinition",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-keyword-redefinition"
           },
           {
             "type": "enum-value",
-            "value": "loading document failed"
+            "value": "loading document failed",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-loading-document-failed"
           },
           {
             "type": "enum-value",
-            "value": "loading remote context failed"
+            "value": "loading remote context failed",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-loading-remote-context-failed"
           },
           {
             "type": "enum-value",
-            "value": "multiple context link headers"
+            "value": "multiple context link headers",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-multiple-context-link-headers"
           },
           {
             "type": "enum-value",
-            "value": "processing mode conflict"
+            "value": "processing mode conflict",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-processing-mode-conflict"
           },
           {
             "type": "enum-value",
-            "value": "protected term redefinition"
+            "value": "protected term redefinition",
+            "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode-protected-term-redefinition"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/json-ld-api/#dom-jsonlderrorcode"
       }
     },
     "idlExtendedNames": {},

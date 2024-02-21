@@ -27,26 +27,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentcategory"
           },
           {
             "type": "enum-value",
-            "value": "homepage"
+            "value": "homepage",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentcategory-homepage"
           },
           {
             "type": "enum-value",
-            "value": "article"
+            "value": "article",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentcategory-article"
           },
           {
             "type": "enum-value",
-            "value": "video"
+            "value": "video",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentcategory-video"
           },
           {
             "type": "enum-value",
-            "value": "audio"
+            "value": "audio",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentcategory-audio"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/content-index/spec/#enumdef-contentcategory"
       },
       "ContentDescription": {
         "fragment": "dictionary ContentDescription {\n  required DOMString id;\n  required DOMString title;\n  required DOMString description;\n  ContentCategory category = \"\";\n  sequence<ImageResource> icons = [];\n  required USVString url;\n};",
@@ -67,7 +73,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-id"
           },
           {
             "type": "field",
@@ -82,7 +89,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-title"
           },
           {
             "type": "field",
@@ -97,7 +105,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-description"
           },
           {
             "type": "field",
@@ -115,7 +124,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-category"
           },
           {
             "type": "field",
@@ -142,7 +152,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-icons"
           },
           {
             "type": "field",
@@ -157,11 +168,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentdescription-url"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/content-index/spec/#dictdef-contentdescription"
       },
       "ContentIndex": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<undefined> add(ContentDescription description);\n  Promise<undefined> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
@@ -208,7 +221,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-add"
           },
           {
             "type": "operation",
@@ -249,7 +263,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-delete"
           },
           {
             "type": "operation",
@@ -282,7 +297,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-getall"
           }
         ],
         "extAttrs": [
@@ -303,7 +319,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/content-index/spec/#contentindex"
       },
       "ContentIndexEventInit": {
         "fragment": "dictionary ContentIndexEventInit : ExtendableEventInit {\n  required DOMString id;\n};",
@@ -324,11 +341,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindexeventinit-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/content-index/spec/#dictdef-contentindexeventinit"
       },
       "ContentIndexEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  constructor(DOMString type, ContentIndexEventInit init);\n  readonly attribute DOMString id;\n};",
@@ -372,7 +391,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindexevent-contentindexevent"
           },
           {
             "type": "attribute",
@@ -387,7 +407,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/content-index/spec/#dom-contentindexevent-id"
           }
         ],
         "extAttrs": [
@@ -401,7 +422,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/content-index/spec/#contentindexevent"
       }
     },
     "idlExtendedNames": {
@@ -425,7 +447,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/content-index/spec/#dom-serviceworkerglobalscope-oncontentdelete"
             }
           ],
           "extAttrs": [],
@@ -459,7 +482,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/content-index/spec/#dom-serviceworkerregistration-index"
             }
           ],
           "extAttrs": [],

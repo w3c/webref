@@ -43,7 +43,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-accelerometer"
           },
           {
             "type": "attribute",
@@ -58,7 +59,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-x"
           },
           {
             "type": "attribute",
@@ -73,7 +75,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-y"
           },
           {
             "type": "attribute",
@@ -88,7 +91,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-z"
           }
         ],
         "extAttrs": [
@@ -108,7 +112,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/accelerometer/#accelerometer"
       },
       "AccelerometerLocalCoordinateSystem": {
         "fragment": "enum AccelerometerLocalCoordinateSystem { \"device\", \"screen\" };",
@@ -117,14 +122,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "device"
+            "value": "device",
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometerlocalcoordinatesystem-device"
           },
           {
             "type": "enum-value",
-            "value": "screen"
+            "value": "screen",
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometerlocalcoordinatesystem-screen"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/accelerometer/#enumdef-accelerometerlocalcoordinatesystem"
       },
       "AccelerometerSensorOptions": {
         "fragment": "dictionary AccelerometerSensorOptions : SensorOptions {\n  AccelerometerLocalCoordinateSystem referenceFrame = \"device\";\n};",
@@ -148,11 +156,13 @@
               "type": "string",
               "value": "device"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/accelerometer/#dom-accelerometersensoroptions-referenceframe"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/accelerometer/#dictdef-accelerometersensoroptions"
       },
       "LinearAccelerationSensor": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface LinearAccelerationSensor : Accelerometer {\n  constructor(optional AccelerometerSensorOptions options = {});\n};",
@@ -182,7 +192,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/accelerometer/#dom-linearaccelerationsensor-linearaccelerationsensor"
           }
         ],
         "extAttrs": [
@@ -202,7 +213,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor"
       },
       "GravitySensor": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface GravitySensor : Accelerometer {\n  constructor(optional AccelerometerSensorOptions options = {});\n};",
@@ -232,7 +244,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/accelerometer/#dom-gravitysensor-gravitysensor"
           }
         ],
         "extAttrs": [
@@ -252,7 +265,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/accelerometer/#gravitysensor"
       }
     },
     "idlExtendedNames": {},

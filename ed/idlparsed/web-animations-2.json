@@ -92,7 +92,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect"
           },
           {
             "type": "attribute",
@@ -107,7 +108,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-children"
           },
           {
             "type": "attribute",
@@ -122,7 +124,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-firstchild"
           },
           {
             "type": "attribute",
@@ -137,7 +140,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-lastchild"
           },
           {
             "type": "operation",
@@ -152,7 +156,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-clone"
           },
           {
             "type": "operation",
@@ -184,7 +189,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-prepend"
           },
           {
             "type": "operation",
@@ -216,7 +222,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-append"
           }
         ],
         "extAttrs": [
@@ -230,7 +237,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#groupeffect"
       },
       "AnimationNodeList": {
         "fragment": "[Exposed=Window]\ninterface AnimationNodeList {\n    readonly attribute unsigned long length;\n    getter AnimationEffect? item (unsigned long index);\n};",
@@ -251,7 +259,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationnodelist-length"
           },
           {
             "type": "operation",
@@ -297,7 +306,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#animationnodelist"
       },
       "SequenceEffect": {
         "fragment": "[Exposed=Window]\ninterface SequenceEffect : GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  SequenceEffect clone ();\n};",
@@ -369,7 +379,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-sequenceeffect-sequenceeffect"
           },
           {
             "type": "operation",
@@ -384,7 +395,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-sequenceeffect-clone"
           }
         ],
         "extAttrs": [
@@ -398,7 +410,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#sequenceeffect"
       },
       "IterationCompositeOperation": {
         "fragment": "enum IterationCompositeOperation { \"replace\", \"accumulate\" };",
@@ -407,14 +420,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "replace"
+            "value": "replace",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-iterationcompositeoperation-replace"
           },
           {
             "type": "enum-value",
-            "value": "accumulate"
+            "value": "accumulate",
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-iterationcompositeoperation-accumulate"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-2/#enumdef-iterationcompositeoperation"
       },
       "EffectCallback": {
         "fragment": "callback EffectCallback = undefined (double? progress,\n                                (Element or CSSPseudoElement) currentTarget,\n                                Animation animation);",
@@ -495,7 +511,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-2/#callbackdef-effectcallback"
       },
       "TimelineRangeOffset": {
         "fragment": "dictionary TimelineRangeOffset {\n  CSSOMString? rangeName;\n  CSSNumericValue offset;\n};",
@@ -516,7 +533,8 @@
               "idlType": "CSSOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-timelinerangeoffset-rangename"
           },
           {
             "type": "field",
@@ -531,11 +549,13 @@
               "idlType": "CSSNumericValue"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-timelinerangeoffset-offset"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-timelinerangeoffset"
       },
       "AnimationPlaybackEvent": {
         "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit\n    eventInitDict = {});\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? timelineTime;\n};",
@@ -581,7 +601,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-animationplaybackevent"
           },
           {
             "type": "attribute",
@@ -596,7 +617,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-currenttime"
           },
           {
             "type": "attribute",
@@ -611,7 +633,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-timelinetime"
           }
         ],
         "extAttrs": [
@@ -625,7 +648,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#animationplaybackevent"
       },
       "AnimationPlaybackEventInit": {
         "fragment": "dictionary AnimationPlaybackEventInit : EventInit {\n    CSSNumberish? currentTime = null;\n    CSSNumberish? timelineTime = null;\n};",
@@ -648,7 +672,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-currenttime"
           },
           {
             "type": "field",
@@ -665,11 +690,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-timelinetime"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit"
       }
     },
     "idlExtendedNames": {
@@ -693,7 +720,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtimeline-currenttime"
             },
             {
               "type": "attribute",
@@ -708,7 +736,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtimeline-duration"
             },
             {
               "type": "operation",
@@ -742,7 +771,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtimeline-play"
             }
           ],
           "extAttrs": [
@@ -779,7 +809,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-starttime"
             },
             {
               "type": "attribute",
@@ -794,7 +825,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-currenttime"
             }
           ],
           "extAttrs": [
@@ -831,7 +863,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-parent"
             },
             {
               "type": "attribute",
@@ -846,7 +879,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-previoussibling"
             },
             {
               "type": "attribute",
@@ -861,7 +895,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-nextsibling"
             },
             {
               "type": "operation",
@@ -893,7 +928,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-before"
             },
             {
               "type": "operation",
@@ -925,7 +961,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-after"
             },
             {
               "type": "operation",
@@ -957,7 +994,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-replace"
             },
             {
               "type": "operation",
@@ -972,7 +1010,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-remove"
             }
           ],
           "extAttrs": [
@@ -1009,7 +1048,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-delay"
             },
             {
               "type": "field",
@@ -1024,7 +1064,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-enddelay"
             },
             {
               "type": "field",
@@ -1042,7 +1083,8 @@
                 "type": "number",
                 "value": "1.0"
               },
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-playbackrate"
             },
             {
               "type": "field",
@@ -1085,7 +1127,8 @@
                 "type": "string",
                 "value": "auto"
               },
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration"
             }
           ],
           "extAttrs": [],
@@ -1112,7 +1155,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-optionaleffecttiming-playbackrate"
             }
           ],
           "extAttrs": [],
@@ -1139,7 +1183,8 @@
                 "idlType": "CSSNumberish"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-starttime"
             },
             {
               "type": "field",
@@ -1154,7 +1199,8 @@
                 "idlType": "CSSNumberish"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-endtime"
             },
             {
               "type": "field",
@@ -1169,7 +1215,8 @@
                 "idlType": "CSSNumberish"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-activeduration"
             },
             {
               "type": "field",
@@ -1184,7 +1231,8 @@
                 "idlType": "CSSNumberish"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-localtime"
             }
           ],
           "extAttrs": [],
@@ -1211,7 +1259,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite"
             }
           ],
           "extAttrs": [],
@@ -1241,7 +1290,8 @@
                 "type": "string",
                 "value": "replace"
               },
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffectoptions-iterationcomposite"
             }
           ],
           "extAttrs": [],
@@ -1304,7 +1354,8 @@
                 "type": "string",
                 "value": "normal"
               },
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart"
             },
             {
               "type": "field",
@@ -1355,7 +1406,8 @@
                 "type": "string",
                 "value": "normal"
               },
-              "required": false
+              "required": false,
+              "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangeend"
             }
           ],
           "extAttrs": [],

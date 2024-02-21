@@ -16,18 +16,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "public"
+            "value": "public",
+            "href": "https://wicg.github.io/private-network-access/#dom-ipaddressspace-public"
           },
           {
             "type": "enum-value",
-            "value": "private"
+            "value": "private",
+            "href": "https://wicg.github.io/private-network-access/#dom-ipaddressspace-private"
           },
           {
             "type": "enum-value",
-            "value": "local"
+            "value": "local",
+            "href": "https://wicg.github.io/private-network-access/#dom-ipaddressspace-local"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/private-network-access/#enumdef-ipaddressspace"
       },
       "PrivateNetworkAccessPermissionDescriptor": {
         "fragment": "dictionary PrivateNetworkAccessPermissionDescriptor\n    : PermissionDescriptor {\n  DOMString id;\n};",
@@ -48,11 +52,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/private-network-access/#dom-privatenetworkaccesspermissiondescriptor-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/private-network-access/#dictdef-privatenetworkaccesspermissiondescriptor"
       }
     },
     "idlExtendedNames": {
@@ -76,7 +82,8 @@
                 "idlType": "IPAddressSpace"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://wicg.github.io/private-network-access/#dom-requestinit-targetaddressspace"
             }
           ],
           "extAttrs": [],
@@ -103,7 +110,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/private-network-access/#dom-request-targetaddressspace"
             }
           ],
           "extAttrs": [],

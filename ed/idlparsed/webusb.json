@@ -87,7 +87,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-vendorid"
           },
           {
             "type": "field",
@@ -102,7 +103,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-productid"
           },
           {
             "type": "field",
@@ -117,7 +119,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-classcode"
           },
           {
             "type": "field",
@@ -132,7 +135,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-subclasscode"
           },
           {
             "type": "field",
@@ -147,7 +151,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-protocolcode"
           },
           {
             "type": "field",
@@ -162,11 +167,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-serialnumber"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbdevicefilter"
       },
       "USBDeviceRequestOptions": {
         "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters = [];\n};",
@@ -196,7 +203,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicerequestoptions-filters"
           },
           {
             "type": "field",
@@ -223,11 +231,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevicerequestoptions-exclusionfilters"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbdevicerequestoptions"
       },
       "USB": {
         "fragment": "[Exposed=(Worker,Window), SecureContext]\ninterface USB : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<USBDevice>> getDevices();\n  [Exposed=Window] Promise<USBDevice> requestDevice(USBDeviceRequestOptions options);\n};",
@@ -248,7 +258,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webusb/#dom-usb-onconnect"
           },
           {
             "type": "attribute",
@@ -263,7 +274,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webusb/#dom-usb-ondisconnect"
           },
           {
             "type": "operation",
@@ -296,7 +308,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usb-getdevices"
           },
           {
             "type": "operation",
@@ -347,7 +360,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usb-requestdevice"
           }
         ],
         "extAttrs": [
@@ -374,7 +388,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usb"
       },
       "USBConnectionEventInit": {
         "fragment": "dictionary USBConnectionEventInit : EventInit {\n    required USBDevice device;\n};",
@@ -395,11 +410,13 @@
               "idlType": "USBDevice"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbconnectioneventinit-device"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbconnectioneventinit"
       },
       "USBConnectionEvent": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBConnectionEvent : Event {\n  constructor(DOMString type, USBConnectionEventInit eventInitDict);\n  [SameObject] readonly attribute USBDevice device;\n};",
@@ -443,7 +460,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbconnectionevent-usbconnectionevent"
           },
           {
             "type": "attribute",
@@ -465,7 +483,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbconnectionevent-device"
           }
         ],
         "extAttrs": [
@@ -495,7 +514,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbconnectionevent"
       },
       "USBTransferStatus": {
         "fragment": "enum USBTransferStatus {\n  \"ok\",\n  \"stall\",\n  \"babble\"\n};",
@@ -504,18 +524,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "ok"
+            "value": "ok",
+            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-ok"
           },
           {
             "type": "enum-value",
-            "value": "stall"
+            "value": "stall",
+            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-stall"
           },
           {
             "type": "enum-value",
-            "value": "babble"
+            "value": "babble",
+            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-babble"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webusb/#enumdef-usbtransferstatus"
       },
       "USBInTransferResult": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
@@ -559,7 +583,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult"
           },
           {
             "type": "attribute",
@@ -574,7 +599,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-data"
           },
           {
             "type": "attribute",
@@ -589,7 +615,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-status"
           }
         ],
         "extAttrs": [
@@ -619,7 +646,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbintransferresult"
       },
       "USBOutTransferResult": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
@@ -666,7 +694,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult"
           },
           {
             "type": "attribute",
@@ -681,7 +710,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-byteswritten"
           },
           {
             "type": "attribute",
@@ -696,7 +726,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-status"
           }
         ],
         "extAttrs": [
@@ -726,7 +757,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbouttransferresult"
       },
       "USBIsochronousInTransferPacket": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
@@ -770,7 +802,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket"
           },
           {
             "type": "attribute",
@@ -785,7 +818,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-data"
           },
           {
             "type": "attribute",
@@ -800,7 +834,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-status"
           }
         ],
         "extAttrs": [
@@ -830,7 +865,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbisochronousintransferpacket"
       },
       "USBIsochronousInTransferResult": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
@@ -883,7 +919,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-usbisochronousintransferresult"
           },
           {
             "type": "attribute",
@@ -898,7 +935,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-data"
           },
           {
             "type": "attribute",
@@ -922,7 +960,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-packets"
           }
         ],
         "extAttrs": [
@@ -952,7 +991,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbisochronousintransferresult"
       },
       "USBIsochronousOutTransferPacket": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
@@ -999,7 +1039,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket"
           },
           {
             "type": "attribute",
@@ -1014,7 +1055,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-byteswritten"
           },
           {
             "type": "attribute",
@@ -1029,7 +1071,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-status"
           }
         ],
         "extAttrs": [
@@ -1059,7 +1102,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbisochronousouttransferpacket"
       },
       "USBIsochronousOutTransferResult": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
@@ -1096,7 +1140,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferresult-usbisochronousouttransferresult"
           },
           {
             "type": "attribute",
@@ -1120,7 +1165,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferresult-packets"
           }
         ],
         "extAttrs": [
@@ -1150,7 +1196,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbisochronousouttransferresult"
       },
       "USBDevice": {
         "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
@@ -1171,7 +1218,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionmajor"
           },
           {
             "type": "attribute",
@@ -1186,7 +1234,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionminor"
           },
           {
             "type": "attribute",
@@ -1201,7 +1250,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionsubminor"
           },
           {
             "type": "attribute",
@@ -1216,7 +1266,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceclass"
           },
           {
             "type": "attribute",
@@ -1231,7 +1282,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-devicesubclass"
           },
           {
             "type": "attribute",
@@ -1246,7 +1298,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceprotocol"
           },
           {
             "type": "attribute",
@@ -1261,7 +1314,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-vendorid"
           },
           {
             "type": "attribute",
@@ -1276,7 +1330,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-productid"
           },
           {
             "type": "attribute",
@@ -1291,7 +1346,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionmajor"
           },
           {
             "type": "attribute",
@@ -1306,7 +1362,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionminor"
           },
           {
             "type": "attribute",
@@ -1321,7 +1378,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionsubminor"
           },
           {
             "type": "attribute",
@@ -1336,7 +1394,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-manufacturername"
           },
           {
             "type": "attribute",
@@ -1351,7 +1410,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-productname"
           },
           {
             "type": "attribute",
@@ -1366,7 +1426,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-serialnumber"
           },
           {
             "type": "attribute",
@@ -1381,7 +1442,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-configuration"
           },
           {
             "type": "attribute",
@@ -1405,7 +1467,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-configurations"
           },
           {
             "type": "attribute",
@@ -1420,7 +1483,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-opened"
           },
           {
             "type": "operation",
@@ -1444,7 +1508,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-open"
           },
           {
             "type": "operation",
@@ -1468,7 +1533,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-close"
           },
           {
             "type": "operation",
@@ -1492,7 +1558,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-forget"
           },
           {
             "type": "operation",
@@ -1533,7 +1600,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-selectconfiguration"
           },
           {
             "type": "operation",
@@ -1574,7 +1642,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-claiminterface"
           },
           {
             "type": "operation",
@@ -1615,7 +1684,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-releaseinterface"
           },
           {
             "type": "operation",
@@ -1672,7 +1742,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-selectalternateinterface"
           },
           {
             "type": "operation",
@@ -1729,7 +1800,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-controltransferin"
           },
           {
             "type": "operation",
@@ -1786,7 +1858,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-controltransferout"
           },
           {
             "type": "operation",
@@ -1843,7 +1916,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-clearhalt"
           },
           {
             "type": "operation",
@@ -1900,7 +1974,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-transferin"
           },
           {
             "type": "operation",
@@ -1957,7 +2032,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-transferout"
           },
           {
             "type": "operation",
@@ -2023,7 +2099,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-isochronoustransferin"
           },
           {
             "type": "operation",
@@ -2105,7 +2182,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-isochronoustransferout"
           },
           {
             "type": "operation",
@@ -2129,7 +2207,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webusb/#dom-usbdevice-reset"
           }
         ],
         "extAttrs": [
@@ -2159,7 +2238,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbdevice"
       },
       "USBRequestType": {
         "fragment": "enum USBRequestType {\n  \"standard\",\n  \"class\",\n  \"vendor\"\n};",
@@ -2168,18 +2248,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "standard"
+            "value": "standard",
+            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-standard"
           },
           {
             "type": "enum-value",
-            "value": "class"
+            "value": "class",
+            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-class"
           },
           {
             "type": "enum-value",
-            "value": "vendor"
+            "value": "vendor",
+            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-vendor"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webusb/#enumdef-usbrequesttype"
       },
       "USBRecipient": {
         "fragment": "enum USBRecipient {\n  \"device\",\n  \"interface\",\n  \"endpoint\",\n  \"other\"\n};",
@@ -2188,22 +2272,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "device"
+            "value": "device",
+            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-device"
           },
           {
             "type": "enum-value",
-            "value": "interface"
+            "value": "interface",
+            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-interface"
           },
           {
             "type": "enum-value",
-            "value": "endpoint"
+            "value": "endpoint",
+            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-endpoint"
           },
           {
             "type": "enum-value",
-            "value": "other"
+            "value": "other",
+            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-other"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webusb/#enumdef-usbrecipient"
       },
       "USBControlTransferParameters": {
         "fragment": "dictionary USBControlTransferParameters {\n  required USBRequestType requestType;\n  required USBRecipient recipient;\n  required octet request;\n  required unsigned short value;\n  required unsigned short index;\n};",
@@ -2224,7 +2313,8 @@
               "idlType": "USBRequestType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-requesttype"
           },
           {
             "type": "field",
@@ -2239,7 +2329,8 @@
               "idlType": "USBRecipient"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-recipient"
           },
           {
             "type": "field",
@@ -2254,7 +2345,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-request"
           },
           {
             "type": "field",
@@ -2269,7 +2361,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-value"
           },
           {
             "type": "field",
@@ -2284,11 +2377,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-index"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbcontroltransferparameters"
       },
       "USBConfiguration": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBConfiguration {\n  constructor(USBDevice device, octet configurationValue);\n  readonly attribute octet configurationValue;\n  readonly attribute DOMString? configurationName;\n  readonly attribute FrozenArray<USBInterface> interfaces;\n};",
@@ -2332,7 +2427,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-usbconfiguration"
           },
           {
             "type": "attribute",
@@ -2347,7 +2443,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue"
           },
           {
             "type": "attribute",
@@ -2362,7 +2459,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationname"
           },
           {
             "type": "attribute",
@@ -2386,7 +2484,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces"
           }
         ],
         "extAttrs": [
@@ -2416,7 +2515,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbconfiguration"
       },
       "USBInterface": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInterface {\n  constructor(USBConfiguration configuration, octet interfaceNumber);\n  readonly attribute octet interfaceNumber;\n  readonly attribute USBAlternateInterface alternate;\n  readonly attribute FrozenArray<USBAlternateInterface> alternates;\n  readonly attribute boolean claimed;\n};",
@@ -2460,7 +2560,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbinterface-usbinterface"
           },
           {
             "type": "attribute",
@@ -2475,7 +2576,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbinterface-interfacenumber"
           },
           {
             "type": "attribute",
@@ -2490,7 +2592,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbinterface-alternate"
           },
           {
             "type": "attribute",
@@ -2514,7 +2617,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbinterface-alternates"
           },
           {
             "type": "attribute",
@@ -2529,7 +2633,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbinterface-claimed"
           }
         ],
         "extAttrs": [
@@ -2559,7 +2664,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbinterface"
       },
       "USBAlternateInterface": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBAlternateInterface {\n  constructor(USBInterface deviceInterface, octet alternateSetting);\n  readonly attribute octet alternateSetting;\n  readonly attribute octet interfaceClass;\n  readonly attribute octet interfaceSubclass;\n  readonly attribute octet interfaceProtocol;\n  readonly attribute DOMString? interfaceName;\n  readonly attribute FrozenArray<USBEndpoint> endpoints;\n};",
@@ -2603,7 +2709,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-usbalternateinterface"
           },
           {
             "type": "attribute",
@@ -2618,7 +2725,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-alternatesetting"
           },
           {
             "type": "attribute",
@@ -2633,7 +2741,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceclass"
           },
           {
             "type": "attribute",
@@ -2648,7 +2757,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacesubclass"
           },
           {
             "type": "attribute",
@@ -2663,7 +2773,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceprotocol"
           },
           {
             "type": "attribute",
@@ -2678,7 +2789,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacename"
           },
           {
             "type": "attribute",
@@ -2702,7 +2814,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-endpoints"
           }
         ],
         "extAttrs": [
@@ -2732,7 +2845,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbalternateinterface"
       },
       "USBDirection": {
         "fragment": "enum USBDirection {\n  \"in\",\n  \"out\"\n};",
@@ -2741,14 +2855,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "in"
+            "value": "in",
+            "href": "https://wicg.github.io/webusb/#dom-usbdirection-in"
           },
           {
             "type": "enum-value",
-            "value": "out"
+            "value": "out",
+            "href": "https://wicg.github.io/webusb/#dom-usbdirection-out"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webusb/#enumdef-usbdirection"
       },
       "USBEndpointType": {
         "fragment": "enum USBEndpointType {\n  \"bulk\",\n  \"interrupt\",\n  \"isochronous\"\n};",
@@ -2757,18 +2874,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "bulk"
+            "value": "bulk",
+            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-bulk"
           },
           {
             "type": "enum-value",
-            "value": "interrupt"
+            "value": "interrupt",
+            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-interrupt"
           },
           {
             "type": "enum-value",
-            "value": "isochronous"
+            "value": "isochronous",
+            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-isochronous"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webusb/#enumdef-usbendpointtype"
       },
       "USBEndpoint": {
         "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBEndpoint {\n  constructor(USBAlternateInterface alternate, octet endpointNumber, USBDirection direction);\n  readonly attribute octet endpointNumber;\n  readonly attribute USBDirection direction;\n  readonly attribute USBEndpointType type;\n  readonly attribute unsigned long packetSize;\n};",
@@ -2828,7 +2949,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-usbendpoint"
           },
           {
             "type": "attribute",
@@ -2843,7 +2965,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-endpointnumber"
           },
           {
             "type": "attribute",
@@ -2858,7 +2981,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-direction"
           },
           {
             "type": "attribute",
@@ -2873,7 +2997,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-type"
           },
           {
             "type": "attribute",
@@ -2888,7 +3013,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-packetsize"
           }
         ],
         "extAttrs": [
@@ -2918,7 +3044,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbendpoint"
       },
       "USBBlocklistEntry": {
         "fragment": "// USBBlocklistEntry is never exposed.\ndictionary USBBlocklistEntry {\n  required unsigned short idVendor;\n  required unsigned short idProduct;\n  required unsigned short bcdDevice;\n};",
@@ -2939,7 +3066,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-idvendor"
           },
           {
             "type": "field",
@@ -2954,7 +3082,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-idproduct"
           },
           {
             "type": "field",
@@ -2969,11 +3098,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-bcddevice"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbblocklistentry"
       },
       "USBPermissionDescriptor": {
         "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
@@ -3003,7 +3134,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbpermissiondescriptor-filters"
           },
           {
             "type": "field",
@@ -3027,11 +3159,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbpermissiondescriptor-exclusionfilters"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbpermissiondescriptor"
       },
       "AllowedUSBDevice": {
         "fragment": "dictionary AllowedUSBDevice {\n  required octet vendorId;\n  required octet productId;\n  DOMString serialNumber;\n};",
@@ -3052,7 +3186,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-vendorid"
           },
           {
             "type": "field",
@@ -3067,7 +3202,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-productid"
           },
           {
             "type": "field",
@@ -3082,11 +3218,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-serialnumber"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-allowedusbdevice"
       },
       "USBPermissionStorage": {
         "fragment": "dictionary USBPermissionStorage {\n  sequence<AllowedUSBDevice> allowedDevices = [];\n};",
@@ -3119,11 +3257,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbpermissionstorage-alloweddevices"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#dictdef-usbpermissionstorage"
       },
       "USBPermissionResult": {
         "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
@@ -3153,7 +3293,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webusb/#dom-usbpermissionresult-devices"
           }
         ],
         "extAttrs": [
@@ -3177,7 +3318,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webusb/#usbpermissionresult"
       }
     },
     "idlExtendedNames": {
@@ -3208,7 +3350,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/webusb/#dom-navigator-usb"
             }
           ],
           "extAttrs": [
@@ -3258,7 +3401,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/webusb/#dom-workernavigator-usb"
             }
           ],
           "extAttrs": [

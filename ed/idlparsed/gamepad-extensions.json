@@ -22,18 +22,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhand-the-empty-string"
           },
           {
             "type": "enum-value",
-            "value": "left"
+            "value": "left",
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhand-left"
           },
           {
             "type": "enum-value",
-            "value": "right"
+            "value": "right",
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhand-right"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhand"
       },
       "GamepadPose": {
         "fragment": "[Exposed=Window]\ninterface GamepadPose {\n  readonly attribute boolean hasOrientation;\n  readonly attribute boolean hasPosition;\n\n  readonly attribute Float32Array? position;\n  readonly attribute Float32Array? linearVelocity;\n  readonly attribute Float32Array? linearAcceleration;\n  readonly attribute Float32Array? orientation;\n  readonly attribute Float32Array? angularVelocity;\n  readonly attribute Float32Array? angularAcceleration;\n};",
@@ -54,7 +58,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-hasorientation"
           },
           {
             "type": "attribute",
@@ -69,7 +74,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-hasposition"
           },
           {
             "type": "attribute",
@@ -84,7 +90,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-position"
           },
           {
             "type": "attribute",
@@ -99,7 +106,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-linearvelocity"
           },
           {
             "type": "attribute",
@@ -114,7 +122,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-linearacceleration"
           },
           {
             "type": "attribute",
@@ -129,7 +138,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-orientation"
           },
           {
             "type": "attribute",
@@ -144,7 +154,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-angularvelocity"
           },
           {
             "type": "attribute",
@@ -159,7 +170,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-angularacceleration"
           }
         ],
         "extAttrs": [
@@ -173,7 +185,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose"
       },
       "GamepadTouch": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadTouch {\n  readonly attribute unsigned long touchId;\n  readonly attribute octet surfaceId;\n  readonly attribute Float32Array position;\n  readonly attribute Uint32Array? surfaceDimensions;\n};",
@@ -194,7 +207,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-touchid"
           },
           {
             "type": "attribute",
@@ -209,7 +223,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfaceid"
           },
           {
             "type": "attribute",
@@ -224,7 +239,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-position"
           },
           {
             "type": "attribute",
@@ -239,7 +255,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfacedimensions"
           }
         ],
         "extAttrs": [
@@ -259,7 +276,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch"
       }
     },
     "idlExtendedNames": {
@@ -283,7 +301,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hand"
             },
             {
               "type": "attribute",
@@ -307,7 +326,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hapticactuators"
             },
             {
               "type": "attribute",
@@ -322,7 +342,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-pose"
             },
             {
               "type": "attribute",
@@ -346,7 +367,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents"
             }
           ],
           "extAttrs": [],
@@ -415,7 +437,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator-pulse"
             }
           ],
           "extAttrs": [

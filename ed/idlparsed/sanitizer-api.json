@@ -41,7 +41,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizer"
           },
           {
             "type": "operation",
@@ -90,7 +91,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitize"
           },
           {
             "type": "operation",
@@ -138,7 +140,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor"
           },
           {
             "type": "operation",
@@ -153,7 +156,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getconfiguration"
           },
           {
             "type": "operation",
@@ -168,7 +172,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getdefaultconfiguration"
           }
         ],
         "extAttrs": [
@@ -192,7 +197,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
       },
       "SetHTMLOptions": {
         "fragment": "dictionary SetHTMLOptions {\n  Sanitizer sanitizer;\n};",
@@ -213,11 +219,13 @@
               "idlType": "Sanitizer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmloptions-sanitizer"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions"
       },
       "SanitizerConfig": {
         "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowUnknownMarkup;\n  boolean allowComments;\n};",
@@ -247,7 +255,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowelements"
           },
           {
             "type": "field",
@@ -271,7 +280,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-blockelements"
           },
           {
             "type": "field",
@@ -295,7 +305,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dropelements"
           },
           {
             "type": "field",
@@ -310,7 +321,8 @@
               "idlType": "AttributeMatchList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowattributes"
           },
           {
             "type": "field",
@@ -325,7 +337,8 @@
               "idlType": "AttributeMatchList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dropattributes"
           },
           {
             "type": "field",
@@ -340,7 +353,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcustomelements"
           },
           {
             "type": "field",
@@ -355,7 +369,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowunknownmarkup"
           },
           {
             "type": "field",
@@ -370,11 +385,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcomments"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig"
       },
       "AttributeMatchList": {
         "fragment": "typedef record<DOMString, sequence<DOMString>> AttributeMatchList;",
@@ -414,7 +431,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/sanitizer-api/#typedefdef-attributematchlist"
       }
     },
     "idlExtendedNames": {
@@ -473,7 +491,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml"
             }
           ],
           "extAttrs": [

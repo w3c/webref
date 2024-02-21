@@ -50,7 +50,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedhtml-tojson"
           }
         ],
         "extAttrs": [
@@ -71,7 +72,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedhtml"
       },
       "TrustedScript": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScript {\n  stringifier;\n  DOMString toJSON();\n};",
@@ -99,7 +101,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedscript-tojson"
           }
         ],
         "extAttrs": [
@@ -120,7 +123,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedscript"
       },
       "TrustedScriptURL": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n};",
@@ -148,7 +152,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedscripturl-tojson"
           }
         ],
         "extAttrs": [
@@ -169,7 +174,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedscripturl"
       },
       "TrustedTypePolicyFactory": {
         "fragment": "[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
@@ -225,7 +231,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-createpolicy"
           },
           {
             "type": "operation",
@@ -257,7 +264,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-ishtml"
           },
           {
             "type": "operation",
@@ -289,7 +297,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-isscript"
           },
           {
             "type": "operation",
@@ -321,7 +330,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-isscripturl"
           },
           {
             "type": "attribute",
@@ -336,7 +346,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-emptyhtml"
           },
           {
             "type": "attribute",
@@ -351,7 +362,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-emptyscript"
           },
           {
             "type": "operation",
@@ -437,7 +449,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-getattributetype"
           },
           {
             "type": "operation",
@@ -504,7 +517,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-getpropertytype"
           },
           {
             "type": "attribute",
@@ -519,7 +533,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyfactory-defaultpolicy"
           }
         ],
         "extAttrs": [
@@ -540,7 +555,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicyfactory"
       },
       "TrustedTypePolicy": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
@@ -561,7 +577,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-name"
           },
           {
             "type": "operation",
@@ -609,7 +626,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createhtml"
           },
           {
             "type": "operation",
@@ -657,7 +675,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createscript"
           },
           {
             "type": "operation",
@@ -705,7 +724,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createscripturl"
           }
         ],
         "extAttrs": [
@@ -726,7 +746,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy"
       },
       "TrustedTypePolicyOptions": {
         "fragment": "dictionary TrustedTypePolicyOptions {\n   CreateHTMLCallback createHTML;\n   CreateScriptCallback createScript;\n   CreateScriptURLCallback createScriptURL;\n};",
@@ -747,7 +768,8 @@
               "idlType": "CreateHTMLCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createhtml"
           },
           {
             "type": "field",
@@ -762,7 +784,8 @@
               "idlType": "CreateScriptCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscript"
           },
           {
             "type": "field",
@@ -777,11 +800,13 @@
               "idlType": "CreateScriptURLCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscripturl"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#dictdef-trustedtypepolicyoptions"
       },
       "CreateHTMLCallback": {
         "fragment": "callback CreateHTMLCallback = DOMString? (DOMString input, any... arguments);",
@@ -829,7 +854,8 @@
             "variadic": true
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#callbackdef-createhtmlcallback"
       },
       "CreateScriptCallback": {
         "fragment": "callback CreateScriptCallback = DOMString? (DOMString input, any... arguments);",
@@ -877,7 +903,8 @@
             "variadic": true
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#callbackdef-createscriptcallback"
       },
       "CreateScriptURLCallback": {
         "fragment": "callback CreateScriptURLCallback = USVString? (DOMString input, any... arguments);",
@@ -925,7 +952,8 @@
             "variadic": true
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#callbackdef-createscripturlcallback"
       },
       "HTMLString": {
         "fragment": "typedef [StringContext=TrustedHTML] DOMString HTMLString;",
@@ -949,7 +977,8 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#typedefdef-htmlstring"
       },
       "ScriptString": {
         "fragment": "typedef [StringContext=TrustedScript] DOMString ScriptString;",
@@ -973,7 +1002,8 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#typedefdef-scriptstring"
       },
       "ScriptURLString": {
         "fragment": "typedef [StringContext=TrustedScriptURL] USVString ScriptURLString;",
@@ -997,7 +1027,8 @@
           "union": false,
           "idlType": "USVString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#typedefdef-scripturlstring"
       },
       "TrustedType": {
         "fragment": "typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;",
@@ -1036,7 +1067,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/trusted-types/dist/spec/#typedefdef-trustedtype"
       }
     },
     "idlExtendedNames": {
@@ -1060,7 +1092,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/trusted-types/dist/spec/#dom-windoworworkerglobalscope-trustedtypes"
             }
           ],
           "extAttrs": [],

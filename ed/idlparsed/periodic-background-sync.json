@@ -85,7 +85,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register"
           },
           {
             "type": "operation",
@@ -118,7 +119,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-gettags"
           },
           {
             "type": "operation",
@@ -159,7 +161,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-unregister"
           }
         ],
         "extAttrs": [
@@ -180,7 +183,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager"
       },
       "BackgroundSyncOptions": {
         "fragment": "dictionary BackgroundSyncOptions {\n    [EnforceRange] unsigned long long minInterval = 0;\n};",
@@ -211,11 +215,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-backgroundsyncoptions-mininterval"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/periodic-background-sync/#dictdef-backgroundsyncoptions"
       },
       "PeriodicSyncEventInit": {
         "fragment": "dictionary PeriodicSyncEventInit : ExtendableEventInit {\n    required DOMString tag;\n};",
@@ -236,11 +242,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsynceventinit-tag"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/periodic-background-sync/#dictdef-periodicsynceventinit"
       },
       "PeriodicSyncEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface PeriodicSyncEvent : ExtendableEvent {\n    constructor(DOMString type, PeriodicSyncEventInit init);\n    readonly attribute DOMString tag;\n};",
@@ -284,7 +292,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-periodicsyncevent"
           },
           {
             "type": "attribute",
@@ -299,7 +308,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-tag"
           }
         ],
         "extAttrs": [
@@ -313,7 +323,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncevent"
       }
     },
     "idlExtendedNames": {
@@ -337,7 +348,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerglobalscope-onperiodicsync"
             }
           ],
           "extAttrs": [],
@@ -364,7 +376,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerregistration-periodicsync"
             }
           ],
           "extAttrs": [

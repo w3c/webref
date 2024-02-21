@@ -37,7 +37,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline"
       },
       "DocumentTimelineOptions": {
         "fragment": "dictionary DocumentTimelineOptions {\n  DOMHighResTimeStamp originTime = 0;\n};",
@@ -61,11 +62,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-documenttimelineoptions-origintime"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-documenttimelineoptions"
       },
       "DocumentTimeline": {
         "fragment": "[Exposed=Window]\ninterface DocumentTimeline : AnimationTimeline {\n  constructor(optional DocumentTimelineOptions options = {});\n};",
@@ -95,7 +98,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-documenttimeline-documenttimeline"
           }
         ],
         "extAttrs": [
@@ -109,7 +113,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#documenttimeline"
       },
       "Animation": {
         "fragment": "[Exposed=Window]\ninterface Animation : EventTarget {\n  constructor(optional AnimationEffect? effect = null,\n              optional AnimationTimeline? timeline);\n           attribute DOMString                id;\n           attribute AnimationEffect?         effect;\n           attribute AnimationTimeline?       timeline;\n           attribute double                   playbackRate;\n  readonly attribute AnimationPlayState       playState;\n  readonly attribute AnimationReplaceState    replaceState;\n  readonly attribute boolean                  pending;\n  readonly attribute Promise<Animation>       ready;\n  readonly attribute Promise<Animation>       finished;\n           attribute EventHandler             onfinish;\n           attribute EventHandler             oncancel;\n           attribute EventHandler             onremove;\n  undefined cancel();\n  undefined finish();\n  undefined play();\n  undefined pause();\n  undefined updatePlaybackRate(double playbackRate);\n  undefined reverse();\n  undefined persist();\n  [CEReactions]\n  undefined commitStyles();\n};",
@@ -155,7 +160,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation"
           },
           {
             "type": "attribute",
@@ -170,7 +176,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-id"
           },
           {
             "type": "attribute",
@@ -185,7 +192,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-effect"
           },
           {
             "type": "attribute",
@@ -200,7 +208,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-timeline"
           },
           {
             "type": "attribute",
@@ -215,7 +224,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playbackrate"
           },
           {
             "type": "attribute",
@@ -230,7 +240,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playstate"
           },
           {
             "type": "attribute",
@@ -245,7 +256,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-replacestate"
           },
           {
             "type": "attribute",
@@ -260,7 +272,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pending"
           },
           {
             "type": "attribute",
@@ -284,7 +297,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-ready"
           },
           {
             "type": "attribute",
@@ -308,7 +322,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finished"
           },
           {
             "type": "attribute",
@@ -323,7 +338,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onfinish"
           },
           {
             "type": "attribute",
@@ -338,7 +354,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-oncancel"
           },
           {
             "type": "attribute",
@@ -353,7 +370,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onremove"
           },
           {
             "type": "operation",
@@ -368,7 +386,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-cancel"
           },
           {
             "type": "operation",
@@ -383,7 +402,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finish"
           },
           {
             "type": "operation",
@@ -398,7 +418,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-play"
           },
           {
             "type": "operation",
@@ -413,7 +434,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pause"
           },
           {
             "type": "operation",
@@ -445,7 +467,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-updateplaybackrate"
           },
           {
             "type": "operation",
@@ -460,7 +483,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-reverse"
           },
           {
             "type": "operation",
@@ -475,7 +499,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-persist"
           },
           {
             "type": "operation",
@@ -497,7 +522,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-commitstyles"
           }
         ],
         "extAttrs": [
@@ -511,7 +537,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#animation"
       },
       "AnimationPlayState": {
         "fragment": "enum AnimationPlayState { \"idle\", \"running\", \"paused\", \"finished\" };",
@@ -520,22 +547,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "idle"
+            "value": "idle",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-idle"
           },
           {
             "type": "enum-value",
-            "value": "running"
+            "value": "running",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-running"
           },
           {
             "type": "enum-value",
-            "value": "paused"
+            "value": "paused",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-paused"
           },
           {
             "type": "enum-value",
-            "value": "finished"
+            "value": "finished",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-finished"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-animationplaystate"
       },
       "AnimationReplaceState": {
         "fragment": "enum AnimationReplaceState { \"active\", \"removed\", \"persisted\" };",
@@ -544,18 +576,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "active"
+            "value": "active",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-active"
           },
           {
             "type": "enum-value",
-            "value": "removed"
+            "value": "removed",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-removed"
           },
           {
             "type": "enum-value",
-            "value": "persisted"
+            "value": "persisted",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-persisted"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-animationreplacestate"
       },
       "AnimationEffect": {
         "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
@@ -576,7 +612,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-gettiming"
           },
           {
             "type": "operation",
@@ -591,7 +628,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming"
           },
           {
             "type": "operation",
@@ -625,7 +663,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming"
           }
         ],
         "extAttrs": [
@@ -639,7 +678,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#animationeffect"
       },
       "EffectTiming": {
         "fragment": "dictionary EffectTiming {\n  FillMode                           fill = \"auto\";\n  double                             iterationStart = 0.0;\n  unrestricted double                iterations = 1.0;\n  PlaybackDirection                  direction = \"normal\";\n  DOMString                          easing = \"linear\";\n};",
@@ -663,7 +703,8 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill"
           },
           {
             "type": "field",
@@ -681,7 +722,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterationstart"
           },
           {
             "type": "field",
@@ -699,7 +741,8 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations"
           },
           {
             "type": "field",
@@ -717,7 +760,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-direction"
           },
           {
             "type": "field",
@@ -735,11 +779,13 @@
               "type": "string",
               "value": "linear"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-easing"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming"
       },
       "OptionalEffectTiming": {
         "fragment": "dictionary OptionalEffectTiming {\n  double                             delay;\n  double                             endDelay;\n  FillMode                           fill;\n  double                             iterationStart;\n  unrestricted double                iterations;\n  (unrestricted double or DOMString) duration;\n  PlaybackDirection                  direction;\n  DOMString                          easing;\n};",
@@ -760,7 +806,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-delay"
           },
           {
             "type": "field",
@@ -775,7 +822,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-enddelay"
           },
           {
             "type": "field",
@@ -790,7 +838,8 @@
               "idlType": "FillMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill"
           },
           {
             "type": "field",
@@ -805,7 +854,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationstart"
           },
           {
             "type": "field",
@@ -820,7 +870,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations"
           },
           {
             "type": "field",
@@ -852,7 +903,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-duration"
           },
           {
             "type": "field",
@@ -867,7 +919,8 @@
               "idlType": "PlaybackDirection"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-direction"
           },
           {
             "type": "field",
@@ -882,11 +935,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-easing"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-optionaleffecttiming"
       },
       "FillMode": {
         "fragment": "enum FillMode { \"none\", \"forwards\", \"backwards\", \"both\", \"auto\" };",
@@ -895,26 +950,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-none"
           },
           {
             "type": "enum-value",
-            "value": "forwards"
+            "value": "forwards",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-forwards"
           },
           {
             "type": "enum-value",
-            "value": "backwards"
+            "value": "backwards",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-backwards"
           },
           {
             "type": "enum-value",
-            "value": "both"
+            "value": "both",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-both"
           },
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-auto"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-fillmode"
       },
       "PlaybackDirection": {
         "fragment": "enum PlaybackDirection { \"normal\", \"reverse\", \"alternate\", \"alternate-reverse\" };",
@@ -923,22 +984,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "normal"
+            "value": "normal",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-normal"
           },
           {
             "type": "enum-value",
-            "value": "reverse"
+            "value": "reverse",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-reverse"
           },
           {
             "type": "enum-value",
-            "value": "alternate"
+            "value": "alternate",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate"
           },
           {
             "type": "enum-value",
-            "value": "alternate-reverse"
+            "value": "alternate-reverse",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate-reverse"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-playbackdirection"
       },
       "ComputedEffectTiming": {
         "fragment": "dictionary ComputedEffectTiming : EffectTiming {\n  double?              progress;\n  unrestricted double? currentIteration;\n};",
@@ -959,7 +1025,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-progress"
           },
           {
             "type": "field",
@@ -974,11 +1041,13 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-currentiteration"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-computedeffecttiming"
       },
       "KeyframeEffect": {
         "fragment": "[Exposed=Window]\ninterface KeyframeEffect : AnimationEffect {\n  constructor(Element?       target,\n              object?        keyframes,\n              optional (unrestricted double or KeyframeEffectOptions) options = {});\n  constructor(KeyframeEffect source);\n  attribute Element?           target;\n  attribute CSSOMString?       pseudoElement;\n  attribute CompositeOperation composite;\n  sequence<object> getKeyframes();\n  undefined        setKeyframes(object? keyframes);\n};",
@@ -1057,7 +1126,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect"
           },
           {
             "type": "constructor",
@@ -1079,7 +1149,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source"
           },
           {
             "type": "attribute",
@@ -1094,7 +1165,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-target"
           },
           {
             "type": "attribute",
@@ -1109,7 +1181,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudoelement"
           },
           {
             "type": "attribute",
@@ -1124,7 +1197,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite"
           },
           {
             "type": "operation",
@@ -1148,7 +1222,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes"
           },
           {
             "type": "operation",
@@ -1180,7 +1255,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes"
           }
         ],
         "extAttrs": [
@@ -1194,7 +1270,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#keyframeeffect"
       },
       "BaseComputedKeyframe": {
         "fragment": "dictionary BaseComputedKeyframe {\n     double?                  offset = null;\n     double                   computedOffset;\n     DOMString                easing = \"linear\";\n     CompositeOperationOrAuto composite = \"auto\";\n};",
@@ -1217,7 +1294,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-offset"
           },
           {
             "type": "field",
@@ -1232,7 +1310,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-computedoffset"
           },
           {
             "type": "field",
@@ -1250,7 +1329,8 @@
               "type": "string",
               "value": "linear"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-easing"
           },
           {
             "type": "field",
@@ -1268,11 +1348,13 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-composite"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basecomputedkeyframe"
       },
       "BasePropertyIndexedKeyframe": {
         "fragment": "dictionary BasePropertyIndexedKeyframe {\n  (double? or sequence<double?>)                         offset = [];\n  (DOMString or sequence<DOMString>)                     easing = [];\n  (CompositeOperationOrAuto or sequence<CompositeOperationOrAuto>) composite = [];\n};",
@@ -1322,7 +1404,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-offset"
           },
           {
             "type": "field",
@@ -1366,7 +1449,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-easing"
           },
           {
             "type": "field",
@@ -1410,11 +1494,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-composite"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basepropertyindexedkeyframe"
       },
       "BaseKeyframe": {
         "fragment": "dictionary BaseKeyframe {\n  double?                  offset = null;\n  DOMString                easing = \"linear\";\n  CompositeOperationOrAuto composite = \"auto\";\n};",
@@ -1437,7 +1523,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-offset"
           },
           {
             "type": "field",
@@ -1455,7 +1542,8 @@
               "type": "string",
               "value": "linear"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-easing"
           },
           {
             "type": "field",
@@ -1473,11 +1561,13 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-composite"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basekeyframe"
       },
       "KeyframeEffectOptions": {
         "fragment": "dictionary KeyframeEffectOptions : EffectTiming {\n    CompositeOperation composite = \"replace\";\n    CSSOMString?       pseudoElement = null;\n};",
@@ -1501,7 +1591,8 @@
               "type": "string",
               "value": "replace"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffectoptions-composite"
           },
           {
             "type": "field",
@@ -1518,11 +1609,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffectoptions-pseudoelement"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions"
       },
       "CompositeOperation": {
         "fragment": "enum CompositeOperation { \"replace\", \"add\", \"accumulate\" };",
@@ -1531,18 +1624,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "replace"
+            "value": "replace",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-replace"
           },
           {
             "type": "enum-value",
-            "value": "add"
+            "value": "add",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-add"
           },
           {
             "type": "enum-value",
-            "value": "accumulate"
+            "value": "accumulate",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-accumulate"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-compositeoperation"
       },
       "CompositeOperationOrAuto": {
         "fragment": "enum CompositeOperationOrAuto { \"replace\", \"add\", \"accumulate\", \"auto\" };",
@@ -1551,22 +1648,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "replace"
+            "value": "replace",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-replace"
           },
           {
             "type": "enum-value",
-            "value": "add"
+            "value": "add",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-add"
           },
           {
             "type": "enum-value",
-            "value": "accumulate"
+            "value": "accumulate",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-accumulate"
           },
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperationorauto-auto"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/web-animations-1/#enumdef-compositeoperationorauto"
       },
       "Animatable": {
         "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
@@ -1639,7 +1741,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate"
           },
           {
             "type": "operation",
@@ -1682,11 +1785,13 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#animatable"
       },
       "KeyframeAnimationOptions": {
         "fragment": "dictionary KeyframeAnimationOptions : KeyframeEffectOptions {\n    DOMString id = \"\";\n    AnimationTimeline? timeline;\n};",
@@ -1710,7 +1815,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeanimationoptions-id"
           },
           {
             "type": "field",
@@ -1725,11 +1831,13 @@
               "idlType": "AnimationTimeline"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeanimationoptions-timeline"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions"
       },
       "GetAnimationsOptions": {
         "fragment": "dictionary GetAnimationsOptions {\n    boolean subtree = false;\n};",
@@ -1753,11 +1861,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-subtree"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-getanimationsoptions"
       }
     },
     "idlExtendedNames": {
@@ -1781,7 +1891,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/web-animations-1/#dom-document-timeline"
             }
           ],
           "extAttrs": [],
@@ -1817,7 +1928,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/web-animations-1/#dom-documentorshadowroot-getanimations"
             }
           ],
           "extAttrs": [],

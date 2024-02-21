@@ -44,7 +44,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet"
       },
       "SharedStorageWorkletGlobalScope": {
         "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     SharedStorageOperationConstructor operationCtor);\n\n  readonly attribute WorkletSharedStorage sharedStorage;\n};",
@@ -98,7 +99,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-register"
           },
           {
             "type": "attribute",
@@ -113,7 +115,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage"
           }
         ],
         "extAttrs": [
@@ -136,7 +139,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope"
       },
       "SharedStorageOperationConstructor": {
         "fragment": "callback SharedStorageOperationConstructor =\n  SharedStorageOperation(optional SharedStorageRunOperationMethodOptions options);",
@@ -168,7 +172,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/shared-storage/#callbackdef-sharedstorageoperationconstructor"
       },
       "SharedStorageOperation": {
         "fragment": "[Exposed=SharedStorageWorklet]\ninterface SharedStorageOperation {\n};",
@@ -187,7 +192,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageoperation"
       },
       "SharedStorageRunOperationMethodOptions": {
         "fragment": "dictionary SharedStorageRunOperationMethodOptions {\n  object data;\n  boolean resolveToConfig = false;\n  boolean keepAlive = false;\n};",
@@ -208,7 +214,8 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-data"
           },
           {
             "type": "field",
@@ -226,7 +233,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-resolvetoconfig"
           },
           {
             "type": "field",
@@ -244,11 +252,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-keepalive"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragerunoperationmethodoptions"
       },
       "SharedStorageRunOperation": {
         "fragment": "[Exposed=SharedStorageWorklet]\ninterface SharedStorageRunOperation : SharedStorageOperation {\n  Promise<undefined> run(object data);\n};",
@@ -295,7 +305,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperation-run"
           }
         ],
         "extAttrs": [
@@ -309,7 +320,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstoragerunoperation"
       },
       "SharedStorageSelectURLOperation": {
         "fragment": "[Exposed=SharedStorageWorklet]\ninterface SharedStorageSelectURLOperation : SharedStorageOperation {\n  Promise<long> run(object data,\n                    FrozenArray<SharedStorageUrlWithMetadata> urls);\n};",
@@ -381,7 +393,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageselecturloperation-run"
           }
         ],
         "extAttrs": [
@@ -395,7 +408,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorageselecturloperation"
       },
       "SharedStorage": {
         "fragment": "[Exposed=(Window,SharedStorageWorklet)]\ninterface SharedStorage {\n  Promise<any> set(DOMString key,\n                   DOMString value,\n                   optional SharedStorageSetMethodOptions options = {});\n  Promise<any> append(DOMString key,\n                      DOMString value);\n  Promise<any> delete(DOMString key);\n  Promise<any> clear();\n};",
@@ -476,7 +490,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-set"
           },
           {
             "type": "operation",
@@ -533,7 +548,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-append"
           },
           {
             "type": "operation",
@@ -574,7 +590,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-delete"
           },
           {
             "type": "operation",
@@ -598,7 +615,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-clear"
           }
         ],
         "extAttrs": [
@@ -619,7 +637,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#sharedstorage"
       },
       "SharedStorageSetMethodOptions": {
         "fragment": "dictionary SharedStorageSetMethodOptions {\n  boolean ignoreIfPresent = false;\n};",
@@ -643,11 +662,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethodoptions-ignoreifpresent"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
       "SharedStorageResponse": {
         "fragment": "typedef (USVString or FencedFrameConfig) SharedStorageResponse;",
@@ -678,7 +699,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/shared-storage/#typedefdef-sharedstorageresponse"
       },
       "WindowSharedStorage": {
         "fragment": "[Exposed=(Window)]\ninterface WindowSharedStorage : SharedStorage {\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               FrozenArray<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n\n  readonly attribute SharedStorageWorklet worklet;\n};",
@@ -743,7 +765,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-run"
           },
           {
             "type": "operation",
@@ -827,7 +850,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl"
           },
           {
             "type": "attribute",
@@ -842,7 +866,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-worklet"
           }
         ],
         "extAttrs": [
@@ -860,7 +885,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#windowsharedstorage"
       },
       "SharedStorageUrlWithMetadata": {
         "fragment": "dictionary SharedStorageUrlWithMetadata {\n  required USVString url;\n  object reportingMetadata;\n};",
@@ -881,7 +907,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageurlwithmetadata-url"
           },
           {
             "type": "field",
@@ -896,11 +923,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageurlwithmetadata-reportingmetadata"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageurlwithmetadata"
       },
       "WorkletSharedStorage": {
         "fragment": "[Exposed=(SharedStorageWorklet)]\ninterface WorkletSharedStorage : SharedStorage {\n  Promise<DOMString> get(DOMString key);\n  Promise<unsigned long> length();\n  Promise<double> remainingBudget();\n\n  async iterable<DOMString, DOMString>;\n};",
@@ -947,7 +976,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-get"
           },
           {
             "type": "operation",
@@ -971,7 +1001,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-length"
           },
           {
             "type": "operation",
@@ -995,7 +1026,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-remainingbudget"
           },
           {
             "type": "iterable",
@@ -1038,7 +1070,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#workletsharedstorage"
       },
       "HTMLSharedStorageWritableElementUtils": {
         "fragment": "interface mixin HTMLSharedStorageWritableElementUtils {\n  [CEReactions, SecureContext] attribute boolean sharedStorageWritable;\n};",
@@ -1072,11 +1105,13 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-htmlsharedstoragewritableelementutils-sharedstoragewritable"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#htmlsharedstoragewritableelementutils"
       }
     },
     "idlExtendedNames": {
@@ -1107,7 +1142,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/shared-storage/#dom-window-sharedstorage"
             }
           ],
           "extAttrs": [],
@@ -1152,7 +1188,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://wicg.github.io/shared-storage/#dom-requestinit-sharedstoragewritable"
             }
           ],
           "extAttrs": [],

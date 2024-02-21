@@ -47,7 +47,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/entries-api/#callbackdef-errorcallback"
       },
       "FileSystemEntry": {
         "fragment": "[Exposed=Window]\ninterface FileSystemEntry {\n    readonly attribute boolean isFile;\n    readonly attribute boolean isDirectory;\n    readonly attribute USVString name;\n    readonly attribute USVString fullPath;\n    readonly attribute FileSystem filesystem;\n\n    undefined getParent(optional FileSystemEntryCallback successCallback,\n                   optional ErrorCallback errorCallback);\n};",
@@ -68,7 +69,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-isfile"
           },
           {
             "type": "attribute",
@@ -83,7 +85,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-isdirectory"
           },
           {
             "type": "attribute",
@@ -98,7 +101,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-name"
           },
           {
             "type": "attribute",
@@ -113,7 +117,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-fullpath"
           },
           {
             "type": "attribute",
@@ -128,7 +133,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-filesystem"
           },
           {
             "type": "operation",
@@ -176,7 +182,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystementry-getparent"
           }
         ],
         "extAttrs": [
@@ -190,7 +197,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#filesystementry"
       },
       "FileSystemDirectoryEntry": {
         "fragment": "[Exposed=Window]\ninterface FileSystemDirectoryEntry : FileSystemEntry {\n    FileSystemDirectoryReader createReader();\n    undefined getFile(optional USVString? path,\n                 optional FileSystemFlags options = {},\n                 optional FileSystemEntryCallback successCallback,\n                 optional ErrorCallback errorCallback);\n    undefined getDirectory(optional USVString? path,\n                      optional FileSystemFlags options = {},\n                      optional FileSystemEntryCallback successCallback,\n                      optional ErrorCallback errorCallback);\n};",
@@ -211,7 +219,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemdirectoryentry-createreader"
           },
           {
             "type": "operation",
@@ -293,7 +302,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemdirectoryentry-getfile"
           },
           {
             "type": "operation",
@@ -375,7 +385,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemdirectoryentry-getdirectory"
           }
         ],
         "extAttrs": [
@@ -389,7 +400,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#filesystemdirectoryentry"
       },
       "FileSystemFlags": {
         "fragment": "dictionary FileSystemFlags {\n    boolean create = false;\n    boolean exclusive = false;\n};",
@@ -413,7 +425,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemflags-create"
           },
           {
             "type": "field",
@@ -431,11 +444,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemflags-exclusive"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#dictdef-filesystemflags"
       },
       "FileSystemEntryCallback": {
         "fragment": "callback FileSystemEntryCallback = undefined (FileSystemEntry entry);",
@@ -467,7 +482,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/entries-api/#callbackdef-filesystementrycallback"
       },
       "FileSystemDirectoryReader": {
         "fragment": "[Exposed=Window]\ninterface FileSystemDirectoryReader {\n    undefined readEntries(FileSystemEntriesCallback successCallback,\n                     optional ErrorCallback errorCallback);\n};",
@@ -521,7 +537,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemdirectoryreader-readentries"
           }
         ],
         "extAttrs": [
@@ -535,7 +552,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#filesystemdirectoryreader"
       },
       "FileSystemEntriesCallback": {
         "fragment": "callback FileSystemEntriesCallback = undefined (sequence<FileSystemEntry> entries);",
@@ -576,7 +594,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/entries-api/#callbackdef-filesystementriescallback"
       },
       "FileSystemFileEntry": {
         "fragment": "[Exposed=Window]\ninterface FileSystemFileEntry : FileSystemEntry {\n    undefined file(FileCallback successCallback,\n              optional ErrorCallback errorCallback);\n};",
@@ -630,7 +649,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/entries-api/#dom-filesystemfileentry-file"
           }
         ],
         "extAttrs": [
@@ -644,7 +664,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#filesystemfileentry"
       },
       "FileCallback": {
         "fragment": "callback FileCallback = undefined (File file);",
@@ -676,7 +697,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/entries-api/#callbackdef-filecallback"
       },
       "FileSystem": {
         "fragment": "[Exposed=Window]\ninterface FileSystem {\n    readonly attribute USVString name;\n    readonly attribute FileSystemDirectoryEntry root;\n};",
@@ -697,7 +719,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystem-name"
           },
           {
             "type": "attribute",
@@ -712,7 +735,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/entries-api/#dom-filesystem-root"
           }
         ],
         "extAttrs": [
@@ -726,7 +750,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/entries-api/#filesystem"
       }
     },
     "idlExtendedNames": {
@@ -750,7 +775,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/entries-api/#dom-file-webkitrelativepath"
             }
           ],
           "extAttrs": [],
@@ -777,7 +803,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/entries-api/#dom-htmlinputelement-webkitdirectory"
             },
             {
               "type": "attribute",
@@ -801,7 +828,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/entries-api/#dom-htmlinputelement-webkitentries"
             }
           ],
           "extAttrs": [],
@@ -828,7 +856,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/entries-api/#dom-datatransferitem-webkitgetasentry"
             }
           ],
           "extAttrs": [],

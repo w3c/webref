@@ -31,11 +31,13 @@
               "type": "string",
               "value": "hevc"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-hevcencoderconfig-format"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dictdef-hevcencoderconfig"
       },
       "HevcBitstreamFormat": {
         "fragment": "enum HevcBitstreamFormat {\n  \"annexb\",\n  \"hevc\",\n};",
@@ -44,14 +46,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "annexb"
+            "value": "annexb",
+            "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-hevcbitstreamformat-annexb"
           },
           {
             "type": "enum-value",
-            "value": "hevc"
+            "value": "hevc",
+            "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-hevcbitstreamformat-hevc"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#enumdef-hevcbitstreamformat"
       },
       "VideoEncoderEncodeOptionsForHevc": {
         "fragment": "dictionary VideoEncoderEncodeOptionsForHevc {\n  unsigned short? quantizer;\n};",
@@ -72,11 +77,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-videoencoderencodeoptionsforhevc-quantizer"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dictdef-videoencoderencodeoptionsforhevc"
       }
     },
     "idlExtendedNames": {
@@ -100,7 +107,8 @@
                 "idlType": "HevcEncoderConfig"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-videoencoderconfig-hevc"
             }
           ],
           "extAttrs": [],
@@ -127,7 +135,8 @@
                 "idlType": "VideoEncoderEncodeOptionsForHevc"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html#dom-videoencoderencodeoptions-hevc"
             }
           ],
           "extAttrs": [],

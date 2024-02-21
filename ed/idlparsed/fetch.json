@@ -84,7 +84,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#typedefdef-headersinit"
       },
       "Headers": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface Headers {\n  constructor(optional HeadersInit init);\n\n  undefined append(ByteString name, ByteString value);\n  undefined delete(ByteString name);\n  ByteString? get(ByteString name);\n  sequence<ByteString> getSetCookie();\n  boolean has(ByteString name);\n  undefined set(ByteString name, ByteString value);\n  iterable<ByteString, ByteString>;\n};",
@@ -112,7 +113,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://fetch.spec.whatwg.org/#dom-headers"
           },
           {
             "type": "operation",
@@ -160,7 +162,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-append"
           },
           {
             "type": "operation",
@@ -192,7 +195,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-delete"
           },
           {
             "type": "operation",
@@ -224,7 +228,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-get"
           },
           {
             "type": "operation",
@@ -248,7 +253,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-getsetcookie"
           },
           {
             "type": "operation",
@@ -280,7 +286,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-has"
           },
           {
             "type": "operation",
@@ -328,7 +335,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-headers-set"
           },
           {
             "type": "iterable",
@@ -374,7 +382,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#headers"
       },
       "XMLHttpRequestBodyInit": {
         "fragment": "typedef (Blob or BufferSource or FormData or URLSearchParams or USVString) XMLHttpRequestBodyInit;",
@@ -429,7 +438,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#typedefdef-xmlhttprequestbodyinit"
       },
       "BodyInit": {
         "fragment": "typedef (ReadableStream or XMLHttpRequestBodyInit) BodyInit;",
@@ -460,7 +470,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#bodyinit"
       },
       "Body": {
         "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
@@ -481,7 +492,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-body-body"
           },
           {
             "type": "attribute",
@@ -496,7 +508,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-body-bodyused"
           },
           {
             "type": "operation",
@@ -527,7 +540,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-arraybuffer"
           },
           {
             "type": "operation",
@@ -558,7 +572,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-blob"
           },
           {
             "type": "operation",
@@ -589,7 +604,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-formdata"
           },
           {
             "type": "operation",
@@ -620,7 +636,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-json"
           },
           {
             "type": "operation",
@@ -651,11 +668,13 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-text"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#body"
       },
       "RequestInfo": {
         "fragment": "typedef (Request or USVString) RequestInfo;",
@@ -686,7 +705,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestinfo"
       },
       "Request": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface Request {\n  constructor(RequestInfo input, optional RequestInit init = {});\n\n  readonly attribute ByteString method;\n  readonly attribute USVString url;\n  [SameObject] readonly attribute Headers headers;\n\n  readonly attribute RequestDestination destination;\n  readonly attribute USVString referrer;\n  readonly attribute ReferrerPolicy referrerPolicy;\n  readonly attribute RequestMode mode;\n  readonly attribute RequestCredentials credentials;\n  readonly attribute RequestCache cache;\n  readonly attribute RequestRedirect redirect;\n  readonly attribute DOMString integrity;\n  readonly attribute boolean keepalive;\n  readonly attribute boolean isReloadNavigation;\n  readonly attribute boolean isHistoryNavigation;\n  readonly attribute AbortSignal signal;\n  readonly attribute RequestDuplex duplex;\n\n  [NewObject] Request clone();\n};",
@@ -732,7 +752,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://fetch.spec.whatwg.org/#dom-request"
           },
           {
             "type": "attribute",
@@ -747,7 +768,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-method"
           },
           {
             "type": "attribute",
@@ -762,7 +784,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-url"
           },
           {
             "type": "attribute",
@@ -784,7 +807,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-headers"
           },
           {
             "type": "attribute",
@@ -799,7 +823,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-destination"
           },
           {
             "type": "attribute",
@@ -814,7 +839,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-referrer"
           },
           {
             "type": "attribute",
@@ -829,7 +855,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-referrerpolicy"
           },
           {
             "type": "attribute",
@@ -844,7 +871,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-mode"
           },
           {
             "type": "attribute",
@@ -859,7 +887,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-credentials"
           },
           {
             "type": "attribute",
@@ -874,7 +903,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-cache"
           },
           {
             "type": "attribute",
@@ -889,7 +919,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-redirect"
           },
           {
             "type": "attribute",
@@ -904,7 +935,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-integrity"
           },
           {
             "type": "attribute",
@@ -919,7 +951,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-keepalive"
           },
           {
             "type": "attribute",
@@ -934,7 +967,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-isreloadnavigation"
           },
           {
             "type": "attribute",
@@ -949,7 +983,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-ishistorynavigation"
           },
           {
             "type": "attribute",
@@ -964,7 +999,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-signal"
           },
           {
             "type": "attribute",
@@ -979,7 +1015,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-request-duplex"
           },
           {
             "type": "operation",
@@ -1001,7 +1038,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-request-clone"
           }
         ],
         "extAttrs": [
@@ -1022,7 +1060,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#request"
       },
       "RequestInit": {
         "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  RequestPriority priority;\n  any window; // can only be set to null\n};",
@@ -1043,7 +1082,8 @@
               "idlType": "ByteString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-method"
           },
           {
             "type": "field",
@@ -1058,7 +1098,8 @@
               "idlType": "HeadersInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-headers"
           },
           {
             "type": "field",
@@ -1073,7 +1114,8 @@
               "idlType": "BodyInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-body"
           },
           {
             "type": "field",
@@ -1088,7 +1130,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-referrer"
           },
           {
             "type": "field",
@@ -1103,7 +1146,8 @@
               "idlType": "ReferrerPolicy"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-referrerpolicy"
           },
           {
             "type": "field",
@@ -1118,7 +1162,8 @@
               "idlType": "RequestMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-mode"
           },
           {
             "type": "field",
@@ -1133,7 +1178,8 @@
               "idlType": "RequestCredentials"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-credentials"
           },
           {
             "type": "field",
@@ -1148,7 +1194,8 @@
               "idlType": "RequestCache"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-cache"
           },
           {
             "type": "field",
@@ -1163,7 +1210,8 @@
               "idlType": "RequestRedirect"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-redirect"
           },
           {
             "type": "field",
@@ -1178,7 +1226,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-integrity"
           },
           {
             "type": "field",
@@ -1193,7 +1242,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-keepalive"
           },
           {
             "type": "field",
@@ -1208,7 +1258,8 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-signal"
           },
           {
             "type": "field",
@@ -1223,7 +1274,8 @@
               "idlType": "RequestDuplex"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-duplex"
           },
           {
             "type": "field",
@@ -1238,7 +1290,8 @@
               "idlType": "RequestPriority"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-priority"
           },
           {
             "type": "field",
@@ -1253,11 +1306,13 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-requestinit-window"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#requestinit"
       },
       "RequestDestination": {
         "fragment": "enum RequestDestination { \"\", \"audio\", \"audioworklet\", \"document\", \"embed\", \"font\", \"frame\", \"iframe\", \"image\", \"json\", \"manifest\", \"object\", \"paintworklet\", \"report\", \"script\", \"sharedworker\", \"style\",  \"track\", \"video\", \"worker\", \"xslt\" };",
@@ -1266,90 +1321,112 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination"
           },
           {
             "type": "enum-value",
-            "value": "audio"
+            "value": "audio",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-audio"
           },
           {
             "type": "enum-value",
-            "value": "audioworklet"
+            "value": "audioworklet",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-audioworklet"
           },
           {
             "type": "enum-value",
-            "value": "document"
+            "value": "document",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-document"
           },
           {
             "type": "enum-value",
-            "value": "embed"
+            "value": "embed",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-embed"
           },
           {
             "type": "enum-value",
-            "value": "font"
+            "value": "font",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-font"
           },
           {
             "type": "enum-value",
-            "value": "frame"
+            "value": "frame",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-frame"
           },
           {
             "type": "enum-value",
-            "value": "iframe"
+            "value": "iframe",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-iframe"
           },
           {
             "type": "enum-value",
-            "value": "image"
+            "value": "image",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-image"
           },
           {
             "type": "enum-value",
-            "value": "json"
+            "value": "json",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-json"
           },
           {
             "type": "enum-value",
-            "value": "manifest"
+            "value": "manifest",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-manifest"
           },
           {
             "type": "enum-value",
-            "value": "object"
+            "value": "object",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-object"
           },
           {
             "type": "enum-value",
-            "value": "paintworklet"
+            "value": "paintworklet",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-paintworklet"
           },
           {
             "type": "enum-value",
-            "value": "report"
+            "value": "report",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-report"
           },
           {
             "type": "enum-value",
-            "value": "script"
+            "value": "script",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-script"
           },
           {
             "type": "enum-value",
-            "value": "sharedworker"
+            "value": "sharedworker",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-sharedworker"
           },
           {
             "type": "enum-value",
-            "value": "style"
+            "value": "style",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-style"
           },
           {
             "type": "enum-value",
-            "value": "track"
+            "value": "track",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-track"
           },
           {
             "type": "enum-value",
-            "value": "video"
+            "value": "video",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-video"
           },
           {
             "type": "enum-value",
-            "value": "worker"
+            "value": "worker",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-worker"
           },
           {
             "type": "enum-value",
-            "value": "xslt"
+            "value": "xslt",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-xslt"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestdestination"
       },
       "RequestMode": {
         "fragment": "enum RequestMode { \"navigate\", \"same-origin\", \"no-cors\", \"cors\" };",
@@ -1358,22 +1435,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "navigate"
+            "value": "navigate",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestmode-navigate"
           },
           {
             "type": "enum-value",
-            "value": "same-origin"
+            "value": "same-origin",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestmode-same-origin"
           },
           {
             "type": "enum-value",
-            "value": "no-cors"
+            "value": "no-cors",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestmode-no-cors"
           },
           {
             "type": "enum-value",
-            "value": "cors"
+            "value": "cors",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestmode-cors"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestmode"
       },
       "RequestCredentials": {
         "fragment": "enum RequestCredentials { \"omit\", \"same-origin\", \"include\" };",
@@ -1382,18 +1464,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "omit"
+            "value": "omit",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcredentials-omit"
           },
           {
             "type": "enum-value",
-            "value": "same-origin"
+            "value": "same-origin",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcredentials-same-origin"
           },
           {
             "type": "enum-value",
-            "value": "include"
+            "value": "include",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcredentials-include"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestcredentials"
       },
       "RequestCache": {
         "fragment": "enum RequestCache { \"default\", \"no-store\", \"reload\", \"no-cache\", \"force-cache\", \"only-if-cached\" };",
@@ -1402,30 +1488,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "default",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-default"
           },
           {
             "type": "enum-value",
-            "value": "no-store"
+            "value": "no-store",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-no-store"
           },
           {
             "type": "enum-value",
-            "value": "reload"
+            "value": "reload",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-reload"
           },
           {
             "type": "enum-value",
-            "value": "no-cache"
+            "value": "no-cache",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-no-cache"
           },
           {
             "type": "enum-value",
-            "value": "force-cache"
+            "value": "force-cache",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-force-cache"
           },
           {
             "type": "enum-value",
-            "value": "only-if-cached"
+            "value": "only-if-cached",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestcache-only-if-cached"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestcache"
       },
       "RequestRedirect": {
         "fragment": "enum RequestRedirect { \"follow\", \"error\", \"manual\" };",
@@ -1434,18 +1527,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "follow"
+            "value": "follow",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestredirect-follow"
           },
           {
             "type": "enum-value",
-            "value": "error"
+            "value": "error",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestredirect-error"
           },
           {
             "type": "enum-value",
-            "value": "manual"
+            "value": "manual",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestredirect-manual"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#requestredirect"
       },
       "RequestDuplex": {
         "fragment": "enum RequestDuplex { \"half\" };",
@@ -1454,10 +1551,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "half"
+            "value": "half",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestduplex-half"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#enumdef-requestduplex"
       },
       "RequestPriority": {
         "fragment": "enum RequestPriority { \"high\", \"low\", \"auto\" };",
@@ -1466,18 +1565,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "high"
+            "value": "high",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-high"
           },
           {
             "type": "enum-value",
-            "value": "low"
+            "value": "low",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-low"
           },
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-auto"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#enumdef-requestpriority"
       },
       "Response": {
         "fragment": "[Exposed=(Window,Worker)]interface Response {\n  constructor(optional BodyInit? body = null, optional ResponseInit init = {});\n\n  [NewObject] static Response error();\n  [NewObject] static Response redirect(USVString url, optional unsigned short status = 302);\n  [NewObject] static Response json(any data, optional ResponseInit init = {});\n\n  readonly attribute ResponseType type;\n\n  readonly attribute USVString url;\n  readonly attribute boolean redirected;\n  readonly attribute unsigned short status;\n  readonly attribute boolean ok;\n  readonly attribute ByteString statusText;\n  [SameObject] readonly attribute Headers headers;\n\n  [NewObject] Response clone();\n};",
@@ -1525,7 +1628,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://fetch.spec.whatwg.org/#dom-response"
           },
           {
             "type": "operation",
@@ -1547,7 +1651,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://fetch.spec.whatwg.org/#dom-response-error"
           },
           {
             "type": "operation",
@@ -1605,7 +1710,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://fetch.spec.whatwg.org/#dom-response-redirect"
           },
           {
             "type": "operation",
@@ -1662,7 +1768,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://fetch.spec.whatwg.org/#dom-response-json"
           },
           {
             "type": "attribute",
@@ -1677,7 +1784,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-type"
           },
           {
             "type": "attribute",
@@ -1692,7 +1800,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-url"
           },
           {
             "type": "attribute",
@@ -1707,7 +1816,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-redirected"
           },
           {
             "type": "attribute",
@@ -1722,7 +1832,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-status"
           },
           {
             "type": "attribute",
@@ -1737,7 +1848,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-ok"
           },
           {
             "type": "attribute",
@@ -1752,7 +1864,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-statustext"
           },
           {
             "type": "attribute",
@@ -1774,7 +1887,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fetch.spec.whatwg.org/#dom-response-headers"
           },
           {
             "type": "operation",
@@ -1796,7 +1910,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-response-clone"
           }
         ],
         "extAttrs": [
@@ -1817,7 +1932,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#response"
       },
       "ResponseInit": {
         "fragment": "dictionary ResponseInit {\n  unsigned short status = 200;\n  ByteString statusText = \"\";\n  HeadersInit headers;\n};",
@@ -1841,7 +1957,8 @@
               "type": "number",
               "value": "200"
             },
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-responseinit-status"
           },
           {
             "type": "field",
@@ -1859,7 +1976,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-responseinit-statustext"
           },
           {
             "type": "field",
@@ -1874,11 +1992,13 @@
               "idlType": "HeadersInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fetch.spec.whatwg.org/#dom-responseinit-headers"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fetch.spec.whatwg.org/#responseinit"
       },
       "ResponseType": {
         "fragment": "enum ResponseType { \"basic\", \"cors\", \"default\", \"error\", \"opaque\", \"opaqueredirect\" };",
@@ -1887,30 +2007,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "basic"
+            "value": "basic",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-basic"
           },
           {
             "type": "enum-value",
-            "value": "cors"
+            "value": "cors",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-cors"
           },
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "default",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-default"
           },
           {
             "type": "enum-value",
-            "value": "error"
+            "value": "error",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-error"
           },
           {
             "type": "enum-value",
-            "value": "opaque"
+            "value": "opaque",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-opaque"
           },
           {
             "type": "enum-value",
-            "value": "opaqueredirect"
+            "value": "opaqueredirect",
+            "href": "https://fetch.spec.whatwg.org/#dom-responsetype-opaqueredirect"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fetch.spec.whatwg.org/#responsetype"
       }
     },
     "idlExtendedNames": {
@@ -2003,7 +2130,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://fetch.spec.whatwg.org/#dom-global-fetch"
             }
           ],
           "extAttrs": [],

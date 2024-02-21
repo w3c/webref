@@ -37,7 +37,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/web-locks/#dom-navigatorlocks-locks"
           }
         ],
         "extAttrs": [
@@ -48,7 +49,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
       },
       "LockManager": {
         "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
@@ -111,7 +113,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request"
           },
           {
             "type": "operation",
@@ -184,7 +187,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback"
           },
           {
             "type": "operation",
@@ -208,7 +212,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/web-locks/#dom-lockmanager-query"
           }
         ],
         "extAttrs": [
@@ -235,7 +240,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#lockmanager"
       },
       "LockGrantedCallback": {
         "fragment": "callback LockGrantedCallback = Promise<any> (Lock? lock);",
@@ -276,7 +282,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/web-locks/#callbackdef-lockgrantedcallback"
       },
       "LockMode": {
         "fragment": "enum LockMode { \"shared\", \"exclusive\" };",
@@ -285,14 +292,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "shared"
+            "value": "shared",
+            "href": "https://w3c.github.io/web-locks/#dom-lockmode-shared"
           },
           {
             "type": "enum-value",
-            "value": "exclusive"
+            "value": "exclusive",
+            "href": "https://w3c.github.io/web-locks/#dom-lockmode-exclusive"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/web-locks/#enumdef-lockmode"
       },
       "LockOptions": {
         "fragment": "dictionary LockOptions {\n  LockMode mode = \"exclusive\";\n  boolean ifAvailable = false;\n  boolean steal = false;\n  AbortSignal signal;\n};",
@@ -316,7 +326,8 @@
               "type": "string",
               "value": "exclusive"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockoptions-mode"
           },
           {
             "type": "field",
@@ -334,7 +345,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockoptions-ifavailable"
           },
           {
             "type": "field",
@@ -352,7 +364,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockoptions-steal"
           },
           {
             "type": "field",
@@ -367,11 +380,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#dictdef-lockoptions"
       },
       "LockManagerSnapshot": {
         "fragment": "dictionary LockManagerSnapshot {\n  sequence<LockInfo> held;\n  sequence<LockInfo> pending;\n};",
@@ -401,7 +416,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-held"
           },
           {
             "type": "field",
@@ -425,11 +441,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-pending"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#dictdef-lockmanagersnapshot"
       },
       "LockInfo": {
         "fragment": "dictionary LockInfo {\n  DOMString name;\n  LockMode mode;\n  DOMString clientId;\n};",
@@ -450,7 +468,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockinfo-name"
           },
           {
             "type": "field",
@@ -465,7 +484,8 @@
               "idlType": "LockMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockinfo-mode"
           },
           {
             "type": "field",
@@ -480,11 +500,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/web-locks/#dom-lockinfo-clientid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#dictdef-lockinfo"
       },
       "Lock": {
         "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
@@ -505,7 +527,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/web-locks/#dom-lock-name"
           },
           {
             "type": "attribute",
@@ -520,7 +543,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/web-locks/#dom-lock-mode"
           }
         ],
         "extAttrs": [
@@ -547,7 +571,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/web-locks/#lock"
       }
     },
     "idlExtendedNames": {

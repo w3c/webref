@@ -22,14 +22,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "cpu-optimized"
+            "value": "cpu-optimized",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthusage-cpu-optimized"
           },
           {
             "type": "enum-value",
-            "value": "gpu-optimized"
+            "value": "gpu-optimized",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthusage-gpu-optimized"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthusage"
       },
       "XRDepthDataFormat": {
         "fragment": "enum XRDepthDataFormat {\n  \"luminance-alpha\",\n  \"float32\"\n};",
@@ -38,14 +41,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "luminance-alpha"
+            "value": "luminance-alpha",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthdataformat-luminance-alpha"
           },
           {
             "type": "enum-value",
-            "value": "float32"
+            "value": "float32",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthdataformat-float32"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthdataformat"
       },
       "XRDepthStateInit": {
         "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n};",
@@ -75,7 +81,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-usagepreference"
           },
           {
             "type": "field",
@@ -99,11 +106,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-dataformatpreference"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit"
       },
       "XRDepthInformation": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
@@ -124,7 +133,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width"
           },
           {
             "type": "attribute",
@@ -139,7 +149,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height"
           },
           {
             "type": "attribute",
@@ -161,7 +172,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview"
           },
           {
             "type": "attribute",
@@ -176,7 +188,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers"
           }
         ],
         "extAttrs": [
@@ -196,7 +209,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
       },
       "XRCPUDepthInformation": {
         "fragment": "[Exposed=Window]\ninterface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
@@ -224,7 +238,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-data"
           },
           {
             "type": "operation",
@@ -272,7 +287,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-getdepthinmeters"
           }
         ],
         "extAttrs": [
@@ -286,7 +302,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation"
       },
       "XRWebGLDepthInformation": {
         "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
@@ -314,7 +331,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texture"
           }
         ],
         "extAttrs": [
@@ -328,7 +346,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/depth-sensing/#xrwebgldepthinformation"
       }
     },
     "idlExtendedNames": {
@@ -352,7 +371,8 @@
                 "idlType": "XRDepthStateInit"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsessioninit-depthsensing"
             }
           ],
           "extAttrs": [],
@@ -379,7 +399,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage"
             },
             {
               "type": "attribute",
@@ -394,7 +415,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat"
             }
           ],
           "extAttrs": [],
@@ -438,7 +460,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrframe-getdepthinformation"
             }
           ],
           "extAttrs": [],
@@ -482,7 +505,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebglbinding-getdepthinformation"
             }
           ],
           "extAttrs": [],

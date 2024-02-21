@@ -28,7 +28,8 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-hmacgetsecretinput-salt1"
           },
           {
             "type": "field",
@@ -43,11 +44,13 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-hmacgetsecretinput-salt2"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dictdef-hmacgetsecretinput"
       },
       "HMACGetSecretOutput": {
         "fragment": "dictionary HMACGetSecretOutput {\n  required ArrayBuffer output1;\n  ArrayBuffer output2;\n};",
@@ -68,7 +71,8 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-hmacgetsecretoutput-output1"
           },
           {
             "type": "field",
@@ -83,11 +87,13 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-hmacgetsecretoutput-output2"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dictdef-hmacgetsecretoutput"
       }
     },
     "idlExtendedNames": {
@@ -111,7 +117,8 @@
                 "idlType": "USVString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-credentialprotectionpolicy"
             },
             {
               "type": "field",
@@ -129,7 +136,8 @@
                 "type": "boolean",
                 "value": false
               },
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-enforcecredentialprotectionpolicy"
             }
           ],
           "extAttrs": [],
@@ -154,7 +162,8 @@
                 "idlType": "ArrayBuffer"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-credblob"
             }
           ],
           "extAttrs": [],
@@ -179,7 +188,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-getcredblob"
             }
           ],
           "extAttrs": [],
@@ -204,7 +214,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-minpinlength"
             }
           ],
           "extAttrs": [],
@@ -229,7 +240,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-hmaccreatesecret"
             }
           ],
           "extAttrs": [],
@@ -254,7 +266,8 @@
                 "idlType": "HMACGetSecretInput"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientinputs-hmacgetsecret"
             }
           ],
           "extAttrs": [],
@@ -281,7 +294,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientoutputs-hmaccreatesecret"
             }
           ],
           "extAttrs": [],
@@ -306,7 +320,8 @@
                 "idlType": "HMACGetSecretOutput"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#dom-authenticationextensionsclientoutputs-hmacgetsecret"
             }
           ],
           "extAttrs": [],

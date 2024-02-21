@@ -44,7 +44,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/storage-buckets/#dom-navigatorstoragebuckets-storagebuckets"
           }
         ],
         "extAttrs": [
@@ -55,7 +56,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/storage-buckets/#navigatorstoragebuckets"
       },
       "StorageBucketManager": {
         "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucketManager {\n    Promise<StorageBucket> open(DOMString name, optional StorageBucketOptions options = {});\n    Promise<sequence<DOMString>> keys();\n    Promise<undefined> delete(DOMString name);\n};",
@@ -120,7 +122,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-open"
           },
           {
             "type": "operation",
@@ -153,7 +156,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-keys"
           },
           {
             "type": "operation",
@@ -194,7 +198,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-delete"
           }
         ],
         "extAttrs": [
@@ -221,7 +226,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/storage-buckets/#storagebucketmanager"
       },
       "StorageBucketOptions": {
         "fragment": "dictionary StorageBucketOptions {\n  boolean persisted = false;\n  unsigned long long quota;\n  DOMHighResTimeStamp expires;\n};",
@@ -245,7 +251,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-persisted"
           },
           {
             "type": "field",
@@ -260,7 +267,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-quota"
           },
           {
             "type": "field",
@@ -275,11 +283,13 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-expires"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/storage-buckets/#dictdef-storagebucketoptions"
       },
       "StorageBucket": {
         "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucket {\n  readonly attribute DOMString name;\n\n  [Exposed=Window] Promise<boolean> persist();\n  Promise<boolean> persisted();\n\n  Promise<StorageEstimate> estimate();\n\n  Promise<undefined> setExpires(DOMHighResTimeStamp expires);\n  Promise<DOMHighResTimeStamp?> expires();\n\n  [SameObject] readonly attribute IDBFactory indexedDB;\n\n  [SameObject] readonly attribute CacheStorage caches;\n\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
@@ -300,7 +310,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-name"
           },
           {
             "type": "operation",
@@ -334,7 +345,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-persist"
           },
           {
             "type": "operation",
@@ -358,7 +370,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-persisted"
           },
           {
             "type": "operation",
@@ -382,7 +395,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-estimate"
           },
           {
             "type": "operation",
@@ -423,7 +437,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-setexpires"
           },
           {
             "type": "operation",
@@ -447,7 +462,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-expires"
           },
           {
             "type": "attribute",
@@ -469,7 +485,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-indexeddb"
           },
           {
             "type": "attribute",
@@ -491,7 +508,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-caches"
           },
           {
             "type": "operation",
@@ -515,7 +533,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-getdirectory"
           }
         ],
         "extAttrs": [
@@ -542,7 +561,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/storage-buckets/#storagebucket"
       }
     },
     "idlExtendedNames": {

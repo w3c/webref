@@ -23,14 +23,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "read"
+            "value": "read",
+            "href": "https://wicg.github.io/file-system-access/#dom-filesystempermissionmode-read"
           },
           {
             "type": "enum-value",
-            "value": "readwrite"
+            "value": "readwrite",
+            "href": "https://wicg.github.io/file-system-access/#dom-filesystempermissionmode-readwrite"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/file-system-access/#enumdef-filesystempermissionmode"
       },
       "FileSystemPermissionDescriptor": {
         "fragment": "dictionary FileSystemPermissionDescriptor : PermissionDescriptor {\n  required FileSystemHandle handle;\n  FileSystemPermissionMode mode = \"read\";\n};",
@@ -51,7 +54,8 @@
               "idlType": "FileSystemHandle"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/file-system-access/#dom-filesystempermissiondescriptor-handle"
           },
           {
             "type": "field",
@@ -69,11 +73,13 @@
               "type": "string",
               "value": "read"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filesystempermissiondescriptor-mode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-filesystempermissiondescriptor"
       },
       "FileSystemHandlePermissionDescriptor": {
         "fragment": "dictionary FileSystemHandlePermissionDescriptor {\n  FileSystemPermissionMode mode = \"read\";\n};",
@@ -97,11 +103,13 @@
               "type": "string",
               "value": "read"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandlepermissiondescriptor-mode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-filesystemhandlepermissiondescriptor"
       },
       "WellKnownDirectory": {
         "fragment": "enum WellKnownDirectory {\n  \"desktop\",\n  \"documents\",\n  \"downloads\",\n  \"music\",\n  \"pictures\",\n  \"videos\",\n};",
@@ -110,30 +118,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "desktop"
+            "value": "desktop",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-desktop"
           },
           {
             "type": "enum-value",
-            "value": "documents"
+            "value": "documents",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-documents"
           },
           {
             "type": "enum-value",
-            "value": "downloads"
+            "value": "downloads",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-downloads"
           },
           {
             "type": "enum-value",
-            "value": "music"
+            "value": "music",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-music"
           },
           {
             "type": "enum-value",
-            "value": "pictures"
+            "value": "pictures",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-pictures"
           },
           {
             "type": "enum-value",
-            "value": "videos"
+            "value": "videos",
+            "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-videos"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/file-system-access/#enumdef-wellknowndirectory"
       },
       "StartInDirectory": {
         "fragment": "typedef (WellKnownDirectory or FileSystemHandle) StartInDirectory;",
@@ -164,7 +179,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/file-system-access/#typedefdef-startindirectory"
       },
       "FilePickerAcceptType": {
         "fragment": "dictionary FilePickerAcceptType {\n    USVString description = \"\";\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
@@ -188,7 +204,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-description"
           },
           {
             "type": "field",
@@ -246,11 +263,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-accept"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-filepickeraccepttype"
       },
       "FilePickerOptions": {
         "fragment": "dictionary FilePickerOptions {\n    sequence<FilePickerAcceptType> types;\n    boolean excludeAcceptAllOption = false;\n    DOMString id;\n    StartInDirectory startIn;\n};",
@@ -280,7 +299,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-types"
           },
           {
             "type": "field",
@@ -298,7 +318,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-excludeacceptalloption"
           },
           {
             "type": "field",
@@ -313,7 +334,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-id"
           },
           {
             "type": "field",
@@ -328,11 +350,13 @@
               "idlType": "StartInDirectory"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-startin"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-filepickeroptions"
       },
       "OpenFilePickerOptions": {
         "fragment": "dictionary OpenFilePickerOptions : FilePickerOptions {\n    boolean multiple = false;\n};",
@@ -356,11 +380,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-openfilepickeroptions-multiple"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-openfilepickeroptions"
       },
       "SaveFilePickerOptions": {
         "fragment": "dictionary SaveFilePickerOptions : FilePickerOptions {\n    USVString? suggestedName;\n};",
@@ -381,11 +407,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-savefilepickeroptions-suggestedname"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-savefilepickeroptions"
       },
       "DirectoryPickerOptions": {
         "fragment": "dictionary DirectoryPickerOptions {\n    DOMString id;\n    StartInDirectory startIn;\n    FileSystemPermissionMode mode = \"read\";\n};",
@@ -406,7 +434,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-directorypickeroptions-id"
           },
           {
             "type": "field",
@@ -421,7 +450,8 @@
               "idlType": "StartInDirectory"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-directorypickeroptions-startin"
           },
           {
             "type": "field",
@@ -439,11 +469,13 @@
               "type": "string",
               "value": "read"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/file-system-access/#dom-directorypickeroptions-mode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/file-system-access/#dictdef-directorypickeroptions"
       }
     },
     "idlExtendedNames": {
@@ -495,7 +527,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-querypermission"
             },
             {
               "type": "operation",
@@ -538,7 +571,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-requestpermission"
             }
           ],
           "extAttrs": [
@@ -631,7 +665,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-window-showopenfilepicker"
             },
             {
               "type": "operation",
@@ -674,7 +709,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-window-showsavefilepicker"
             },
             {
               "type": "operation",
@@ -717,7 +753,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-window-showdirectorypicker"
             }
           ],
           "extAttrs": [
@@ -760,7 +797,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/file-system-access/#dom-datatransferitem-getasfilesystemhandle"
             }
           ],
           "extAttrs": [],

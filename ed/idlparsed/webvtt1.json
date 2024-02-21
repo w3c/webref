@@ -21,10 +21,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://w3c.github.io/webvtt/#dom-autokeyword-auto"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-autokeyword"
       },
       "LineAndPositionSetting": {
         "fragment": "typedef (double or AutoKeyword) LineAndPositionSetting;",
@@ -55,7 +57,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#typedefdef-lineandpositionsetting"
       },
       "DirectionSetting": {
         "fragment": "enum DirectionSetting { \"\" /* horizontal */, \"rl\", \"lr\" };",
@@ -64,18 +67,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://w3c.github.io/webvtt/#dom-directionsetting"
           },
           {
             "type": "enum-value",
-            "value": "rl"
+            "value": "rl",
+            "href": "https://w3c.github.io/webvtt/#dom-directionsetting-rl"
           },
           {
             "type": "enum-value",
-            "value": "lr"
+            "value": "lr",
+            "href": "https://w3c.github.io/webvtt/#dom-directionsetting-lr"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-directionsetting"
       },
       "LineAlignSetting": {
         "fragment": "enum LineAlignSetting { \"start\", \"center\", \"end\" };",
@@ -84,18 +91,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "start"
+            "value": "start",
+            "href": "https://w3c.github.io/webvtt/#dom-linealignsetting-start"
           },
           {
             "type": "enum-value",
-            "value": "center"
+            "value": "center",
+            "href": "https://w3c.github.io/webvtt/#dom-linealignsetting-center"
           },
           {
             "type": "enum-value",
-            "value": "end"
+            "value": "end",
+            "href": "https://w3c.github.io/webvtt/#dom-linealignsetting-end"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-linealignsetting"
       },
       "PositionAlignSetting": {
         "fragment": "enum PositionAlignSetting { \"line-left\", \"center\", \"line-right\", \"auto\" };",
@@ -104,22 +115,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "line-left"
+            "value": "line-left",
+            "href": "https://w3c.github.io/webvtt/#dom-positionalignsetting-line-left"
           },
           {
             "type": "enum-value",
-            "value": "center"
+            "value": "center",
+            "href": "https://w3c.github.io/webvtt/#dom-positionalignsetting-center"
           },
           {
             "type": "enum-value",
-            "value": "line-right"
+            "value": "line-right",
+            "href": "https://w3c.github.io/webvtt/#dom-positionalignsetting-line-right"
           },
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://w3c.github.io/webvtt/#dom-positionalignsetting-auto"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-positionalignsetting"
       },
       "AlignSetting": {
         "fragment": "enum AlignSetting { \"start\", \"center\", \"end\", \"left\", \"right\" };",
@@ -128,26 +144,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "start"
+            "value": "start",
+            "href": "https://w3c.github.io/webvtt/#dom-alignsetting-start"
           },
           {
             "type": "enum-value",
-            "value": "center"
+            "value": "center",
+            "href": "https://w3c.github.io/webvtt/#dom-alignsetting-center"
           },
           {
             "type": "enum-value",
-            "value": "end"
+            "value": "end",
+            "href": "https://w3c.github.io/webvtt/#dom-alignsetting-end"
           },
           {
             "type": "enum-value",
-            "value": "left"
+            "value": "left",
+            "href": "https://w3c.github.io/webvtt/#dom-alignsetting-left"
           },
           {
             "type": "enum-value",
-            "value": "right"
+            "value": "right",
+            "href": "https://w3c.github.io/webvtt/#dom-alignsetting-right"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-alignsetting"
       },
       "VTTCue": {
         "fragment": "[Exposed=Window]\ninterface VTTCue : TextTrackCue {\n  constructor(double startTime, unrestricted double endTime, DOMString text);\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
@@ -207,7 +229,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-vttcue"
           },
           {
             "type": "attribute",
@@ -222,7 +245,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-region"
           },
           {
             "type": "attribute",
@@ -237,7 +261,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-vertical"
           },
           {
             "type": "attribute",
@@ -252,7 +277,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-snaptolines"
           },
           {
             "type": "attribute",
@@ -267,7 +293,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-line"
           },
           {
             "type": "attribute",
@@ -282,7 +309,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-linealign"
           },
           {
             "type": "attribute",
@@ -297,7 +325,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-position"
           },
           {
             "type": "attribute",
@@ -312,7 +341,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-positionalign"
           },
           {
             "type": "attribute",
@@ -327,7 +357,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-size"
           },
           {
             "type": "attribute",
@@ -342,7 +373,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-align"
           },
           {
             "type": "attribute",
@@ -357,7 +389,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-text"
           },
           {
             "type": "operation",
@@ -372,7 +405,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webvtt/#dom-vttcue-getcueashtml"
           }
         ],
         "extAttrs": [
@@ -386,7 +420,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webvtt/#vttcue"
       },
       "ScrollSetting": {
         "fragment": "enum ScrollSetting { \"\" /* none */, \"up\" };",
@@ -395,14 +430,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://w3c.github.io/webvtt/#dom-scrollsetting"
           },
           {
             "type": "enum-value",
-            "value": "up"
+            "value": "up",
+            "href": "https://w3c.github.io/webvtt/#dom-scrollsetting-up"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webvtt/#enumdef-scrollsetting"
       },
       "VTTRegion": {
         "fragment": "[Exposed=Window]\ninterface VTTRegion {\n  constructor();\n  attribute DOMString id;\n  attribute double width;\n  attribute unsigned long lines;\n  attribute double regionAnchorX;\n  attribute double regionAnchorY;\n  attribute double viewportAnchorX;\n  attribute double viewportAnchorY;\n  attribute ScrollSetting scroll;\n};",
@@ -413,7 +451,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-vttregion"
           },
           {
             "type": "attribute",
@@ -428,7 +467,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-id"
           },
           {
             "type": "attribute",
@@ -443,7 +483,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-width"
           },
           {
             "type": "attribute",
@@ -458,7 +499,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-lines"
           },
           {
             "type": "attribute",
@@ -473,7 +515,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-regionanchorx"
           },
           {
             "type": "attribute",
@@ -488,7 +531,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-regionanchory"
           },
           {
             "type": "attribute",
@@ -503,7 +547,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-viewportanchorx"
           },
           {
             "type": "attribute",
@@ -518,7 +563,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-viewportanchory"
           },
           {
             "type": "attribute",
@@ -533,7 +579,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webvtt/#dom-vttregion-scroll"
           }
         ],
         "extAttrs": [
@@ -547,7 +594,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webvtt/#vttregion"
       }
     },
     "idlExtendedNames": {},

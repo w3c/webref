@@ -16,62 +16,77 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "codec"
+            "value": "codec",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-codec"
           },
           {
             "type": "enum-value",
-            "value": "inbound-rtp"
+            "value": "inbound-rtp",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-inbound-rtp"
           },
           {
             "type": "enum-value",
-            "value": "outbound-rtp"
+            "value": "outbound-rtp",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-outbound-rtp"
           },
           {
             "type": "enum-value",
-            "value": "remote-inbound-rtp"
+            "value": "remote-inbound-rtp",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-inbound-rtp"
           },
           {
             "type": "enum-value",
-            "value": "remote-outbound-rtp"
+            "value": "remote-outbound-rtp",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-outbound-rtp"
           },
           {
             "type": "enum-value",
-            "value": "media-source"
+            "value": "media-source",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-source"
           },
           {
             "type": "enum-value",
-            "value": "media-playout"
+            "value": "media-playout",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-playout"
           },
           {
             "type": "enum-value",
-            "value": "peer-connection"
+            "value": "peer-connection",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-peer-connection"
           },
           {
             "type": "enum-value",
-            "value": "data-channel"
+            "value": "data-channel",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-data-channel"
           },
           {
             "type": "enum-value",
-            "value": "transport"
+            "value": "transport",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-transport"
           },
           {
             "type": "enum-value",
-            "value": "candidate-pair"
+            "value": "candidate-pair",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-candidate-pair"
           },
           {
             "type": "enum-value",
-            "value": "local-candidate"
+            "value": "local-candidate",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-local-candidate"
           },
           {
             "type": "enum-value",
-            "value": "remote-candidate"
+            "value": "remote-candidate",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-candidate"
           },
           {
             "type": "enum-value",
-            "value": "certificate"
+            "value": "certificate",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-certificate"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype"
       },
       "RTCRtpStreamStats": {
         "fragment": "dictionary RTCRtpStreamStats : RTCStats {\n             required unsigned long       ssrc;\n             required DOMString           kind;\n             DOMString           transportId;\n             DOMString           codecId;\n};",
@@ -92,7 +107,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-ssrc"
           },
           {
             "type": "field",
@@ -107,7 +123,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-kind"
           },
           {
             "type": "field",
@@ -122,7 +139,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-transportid"
           },
           {
             "type": "field",
@@ -137,11 +155,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-codecid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats"
       },
       "RTCCodecStats": {
         "fragment": "dictionary RTCCodecStats : RTCStats {\n             required unsigned long payloadType;\n             required DOMString     transportId;\n             required DOMString     mimeType;\n             unsigned long clockRate;\n             unsigned long channels;\n             DOMString     sdpFmtpLine;\n};",
@@ -162,7 +182,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-payloadtype"
           },
           {
             "type": "field",
@@ -177,7 +198,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-transportid"
           },
           {
             "type": "field",
@@ -192,7 +214,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-mimetype"
           },
           {
             "type": "field",
@@ -207,7 +230,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-clockrate"
           },
           {
             "type": "field",
@@ -222,7 +246,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-channels"
           },
           {
             "type": "field",
@@ -237,11 +262,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-sdpfmtpline"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats"
       },
       "RTCReceivedRtpStreamStats": {
         "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n};",
@@ -262,7 +289,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceived"
           },
           {
             "type": "field",
@@ -277,7 +305,8 @@
               "idlType": "long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetslost"
           },
           {
             "type": "field",
@@ -292,11 +321,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats"
       },
       "RTCInboundRtpStreamStats": {
         "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        framesRendered;\n unsigned long        framesDropped;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n unsigned long        pauseCount;\n double               totalPausesDuration;\n unsigned long        freezeCount;\n double               totalFreezesDuration;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n double               jitterBufferTargetDelay;\n unsigned long long   jitterBufferEmittedCount;\n double               jitterBufferMinimumDelay;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n DOMString            playoutId;\n boolean              powerEfficientDecoder;\n unsigned long        framesAssembledFromMultiplePackets;\n double               totalAssemblyTime;\n unsigned long long   retransmittedPacketsReceived;\n unsigned long long   retransmittedBytesReceived;\n unsigned long        rtxSsrc;\n unsigned long        fecSsrc;\n};",
@@ -317,7 +348,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-trackidentifier"
           },
           {
             "type": "field",
@@ -332,7 +364,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-mid"
           },
           {
             "type": "field",
@@ -347,7 +380,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-remoteid"
           },
           {
             "type": "field",
@@ -362,7 +396,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesdecoded"
           },
           {
             "type": "field",
@@ -377,7 +412,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-keyframesdecoded"
           },
           {
             "type": "field",
@@ -392,7 +428,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesrendered"
           },
           {
             "type": "field",
@@ -407,7 +444,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesdropped"
           },
           {
             "type": "field",
@@ -422,7 +460,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framewidth"
           },
           {
             "type": "field",
@@ -437,7 +476,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-frameheight"
           },
           {
             "type": "field",
@@ -452,7 +492,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framespersecond"
           },
           {
             "type": "field",
@@ -467,7 +508,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-qpsum"
           },
           {
             "type": "field",
@@ -482,7 +524,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totaldecodetime"
           },
           {
             "type": "field",
@@ -497,7 +540,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalinterframedelay"
           },
           {
             "type": "field",
@@ -512,7 +556,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay"
           },
           {
             "type": "field",
@@ -527,7 +572,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-pausecount"
           },
           {
             "type": "field",
@@ -542,7 +588,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalpausesduration"
           },
           {
             "type": "field",
@@ -557,7 +604,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-freezecount"
           },
           {
             "type": "field",
@@ -572,7 +620,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalfreezesduration"
           },
           {
             "type": "field",
@@ -587,7 +636,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-lastpacketreceivedtimestamp"
           },
           {
             "type": "field",
@@ -602,7 +652,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-headerbytesreceived"
           },
           {
             "type": "field",
@@ -617,7 +668,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-packetsdiscarded"
           },
           {
             "type": "field",
@@ -632,7 +684,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecbytesreceived"
           },
           {
             "type": "field",
@@ -647,7 +700,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsreceived"
           },
           {
             "type": "field",
@@ -662,7 +716,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsdiscarded"
           },
           {
             "type": "field",
@@ -677,7 +732,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-bytesreceived"
           },
           {
             "type": "field",
@@ -692,7 +748,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-nackcount"
           },
           {
             "type": "field",
@@ -707,7 +764,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fircount"
           },
           {
             "type": "field",
@@ -722,7 +780,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-plicount"
           },
           {
             "type": "field",
@@ -737,7 +796,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalprocessingdelay"
           },
           {
             "type": "field",
@@ -752,7 +812,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp"
           },
           {
             "type": "field",
@@ -767,7 +828,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferdelay"
           },
           {
             "type": "field",
@@ -782,7 +844,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbuffertargetdelay"
           },
           {
             "type": "field",
@@ -797,7 +860,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferemittedcount"
           },
           {
             "type": "field",
@@ -812,7 +876,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferminimumdelay"
           },
           {
             "type": "field",
@@ -827,7 +892,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesreceived"
           },
           {
             "type": "field",
@@ -842,7 +908,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealedsamples"
           },
           {
             "type": "field",
@@ -857,7 +924,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-silentconcealedsamples"
           },
           {
             "type": "field",
@@ -872,7 +940,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealmentevents"
           },
           {
             "type": "field",
@@ -887,7 +956,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-insertedsamplesfordeceleration"
           },
           {
             "type": "field",
@@ -902,7 +972,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-removedsamplesforacceleration"
           },
           {
             "type": "field",
@@ -917,7 +988,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-audiolevel"
           },
           {
             "type": "field",
@@ -932,7 +1004,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalaudioenergy"
           },
           {
             "type": "field",
@@ -947,7 +1020,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesduration"
           },
           {
             "type": "field",
@@ -962,7 +1036,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesreceived"
           },
           {
             "type": "field",
@@ -977,7 +1052,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-decoderimplementation"
           },
           {
             "type": "field",
@@ -992,7 +1068,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-playoutid"
           },
           {
             "type": "field",
@@ -1007,7 +1084,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-powerefficientdecoder"
           },
           {
             "type": "field",
@@ -1022,7 +1100,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesassembledfrommultiplepackets"
           },
           {
             "type": "field",
@@ -1037,7 +1116,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalassemblytime"
           },
           {
             "type": "field",
@@ -1052,7 +1132,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-retransmittedpacketsreceived"
           },
           {
             "type": "field",
@@ -1067,7 +1148,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-retransmittedbytesreceived"
           },
           {
             "type": "field",
@@ -1082,7 +1164,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-rtxssrc"
           },
           {
             "type": "field",
@@ -1097,11 +1180,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecssrc"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats"
       },
       "RTCRemoteInboundRtpStreamStats": {
         "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n};",
@@ -1122,7 +1207,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-localid"
           },
           {
             "type": "field",
@@ -1137,7 +1223,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptime"
           },
           {
             "type": "field",
@@ -1152,7 +1239,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-totalroundtriptime"
           },
           {
             "type": "field",
@@ -1167,7 +1255,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-fractionlost"
           },
           {
             "type": "field",
@@ -1182,11 +1271,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats"
       },
       "RTCSentRtpStreamStats": {
         "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long packetsSent;\n             unsigned long long bytesSent;\n};",
@@ -1207,7 +1298,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-packetssent"
           },
           {
             "type": "field",
@@ -1222,11 +1314,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-bytessent"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats"
       },
       "RTCOutboundRtpStreamStats": {
         "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString            mid;\n             DOMString            mediaSourceId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             unsigned long        rtxSsrc;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n             boolean              powerEfficientEncoder;\n             boolean              active;\n             DOMString            scalabilityMode;\n};",
@@ -1247,7 +1341,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mid"
           },
           {
             "type": "field",
@@ -1262,7 +1357,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mediasourceid"
           },
           {
             "type": "field",
@@ -1277,7 +1373,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-remoteid"
           },
           {
             "type": "field",
@@ -1292,7 +1389,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-rid"
           },
           {
             "type": "field",
@@ -1307,7 +1405,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-headerbytessent"
           },
           {
             "type": "field",
@@ -1322,7 +1421,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedpacketssent"
           },
           {
             "type": "field",
@@ -1337,7 +1437,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedbytessent"
           },
           {
             "type": "field",
@@ -1352,7 +1453,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-rtxssrc"
           },
           {
             "type": "field",
@@ -1367,7 +1469,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-targetbitrate"
           },
           {
             "type": "field",
@@ -1382,7 +1485,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodedbytestarget"
           },
           {
             "type": "field",
@@ -1397,7 +1501,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framewidth"
           },
           {
             "type": "field",
@@ -1412,7 +1517,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-frameheight"
           },
           {
             "type": "field",
@@ -1427,7 +1533,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framespersecond"
           },
           {
             "type": "field",
@@ -1442,7 +1549,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framessent"
           },
           {
             "type": "field",
@@ -1457,7 +1565,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-hugeframessent"
           },
           {
             "type": "field",
@@ -1472,7 +1581,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framesencoded"
           },
           {
             "type": "field",
@@ -1487,7 +1597,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-keyframesencoded"
           },
           {
             "type": "field",
@@ -1502,7 +1613,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qpsum"
           },
           {
             "type": "field",
@@ -1517,7 +1629,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodetime"
           },
           {
             "type": "field",
@@ -1532,7 +1645,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalpacketsenddelay"
           },
           {
             "type": "field",
@@ -1547,7 +1661,8 @@
               "idlType": "RTCQualityLimitationReason"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationreason"
           },
           {
             "type": "field",
@@ -1579,7 +1694,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationdurations"
           },
           {
             "type": "field",
@@ -1594,7 +1710,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationresolutionchanges"
           },
           {
             "type": "field",
@@ -1609,7 +1726,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-nackcount"
           },
           {
             "type": "field",
@@ -1624,7 +1742,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-fircount"
           },
           {
             "type": "field",
@@ -1639,7 +1758,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-plicount"
           },
           {
             "type": "field",
@@ -1654,7 +1774,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-encoderimplementation"
           },
           {
             "type": "field",
@@ -1669,7 +1790,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-powerefficientencoder"
           },
           {
             "type": "field",
@@ -1684,7 +1806,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-active"
           },
           {
             "type": "field",
@@ -1699,11 +1822,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-scalabilitymode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats"
       },
       "RTCQualityLimitationReason": {
         "fragment": "enum RTCQualityLimitationReason {\n  \"none\",\n  \"cpu\",\n  \"bandwidth\",\n  \"other\",\n};",
@@ -1712,22 +1837,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcqualitylimitationreason-none"
           },
           {
             "type": "enum-value",
-            "value": "cpu"
+            "value": "cpu",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcqualitylimitationreason-cpu"
           },
           {
             "type": "enum-value",
-            "value": "bandwidth"
+            "value": "bandwidth",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcqualitylimitationreason-bandwidth"
           },
           {
             "type": "enum-value",
-            "value": "other"
+            "value": "other",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcqualitylimitationreason-other"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcqualitylimitationreason"
       },
       "RTCRemoteOutboundRtpStreamStats": {
         "fragment": "dictionary RTCRemoteOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString           localId;\n             DOMHighResTimeStamp remoteTimestamp;\n             unsigned long long  reportsSent;\n             double              roundTripTime;\n             double              totalRoundTripTime;\n             unsigned long long  roundTripTimeMeasurements;\n};",
@@ -1748,7 +1878,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-localid"
           },
           {
             "type": "field",
@@ -1763,7 +1894,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-remotetimestamp"
           },
           {
             "type": "field",
@@ -1778,7 +1910,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-reportssent"
           },
           {
             "type": "field",
@@ -1793,7 +1926,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-roundtriptime"
           },
           {
             "type": "field",
@@ -1808,7 +1942,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-totalroundtriptime"
           },
           {
             "type": "field",
@@ -1823,11 +1958,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-roundtriptimemeasurements"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats"
       },
       "RTCMediaSourceStats": {
         "fragment": "dictionary RTCMediaSourceStats : RTCStats {\n             required DOMString       trackIdentifier;\n             required DOMString       kind;\n};",
@@ -1848,7 +1985,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-trackidentifier"
           },
           {
             "type": "field",
@@ -1863,11 +2001,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-kind"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats"
       },
       "RTCAudioSourceStats": {
         "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n};",
@@ -1888,7 +2028,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-audiolevel"
           },
           {
             "type": "field",
@@ -1903,7 +2044,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalaudioenergy"
           },
           {
             "type": "field",
@@ -1918,7 +2060,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalsamplesduration"
           },
           {
             "type": "field",
@@ -1933,7 +2076,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-echoreturnloss"
           },
           {
             "type": "field",
@@ -1948,11 +2092,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-echoreturnlossenhancement"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats"
       },
       "RTCVideoSourceStats": {
         "fragment": "dictionary RTCVideoSourceStats : RTCMediaSourceStats {\n             unsigned long   width;\n             unsigned long   height;\n             unsigned long   frames;\n             double          framesPerSecond;\n};",
@@ -1973,7 +2119,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-width"
           },
           {
             "type": "field",
@@ -1988,7 +2135,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-height"
           },
           {
             "type": "field",
@@ -2003,7 +2151,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-frames"
           },
           {
             "type": "field",
@@ -2018,11 +2167,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-framespersecond"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats"
       },
       "RTCAudioPlayoutStats": {
         "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             required DOMString kind;\n             double             synthesizedSamplesDuration;\n             unsigned long      synthesizedSamplesEvents;\n             double             totalSamplesDuration;\n             double             totalPlayoutDelay;\n             unsigned long long totalSamplesCount;\n};",
@@ -2043,7 +2194,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-kind"
           },
           {
             "type": "field",
@@ -2058,7 +2210,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesduration"
           },
           {
             "type": "field",
@@ -2073,7 +2226,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesevents"
           },
           {
             "type": "field",
@@ -2088,7 +2242,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplesduration"
           },
           {
             "type": "field",
@@ -2103,7 +2258,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalplayoutdelay"
           },
           {
             "type": "field",
@@ -2118,11 +2274,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplescount"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats"
       },
       "RTCPeerConnectionStats": {
         "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n};",
@@ -2143,7 +2301,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsopened"
           },
           {
             "type": "field",
@@ -2158,11 +2317,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsclosed"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats"
       },
       "RTCDataChannelStats": {
         "fragment": "dictionary RTCDataChannelStats : RTCStats {\n             DOMString           label;\n             DOMString           protocol;\n             unsigned short      dataChannelIdentifier;\n             required RTCDataChannelState state;\n             unsigned long       messagesSent;\n             unsigned long long  bytesSent;\n             unsigned long       messagesReceived;\n             unsigned long long  bytesReceived;\n};",
@@ -2183,7 +2344,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-label"
           },
           {
             "type": "field",
@@ -2198,7 +2360,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-protocol"
           },
           {
             "type": "field",
@@ -2213,7 +2376,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-datachannelidentifier"
           },
           {
             "type": "field",
@@ -2228,7 +2392,8 @@
               "idlType": "RTCDataChannelState"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-state"
           },
           {
             "type": "field",
@@ -2243,7 +2408,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagessent"
           },
           {
             "type": "field",
@@ -2258,7 +2424,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytessent"
           },
           {
             "type": "field",
@@ -2273,7 +2440,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagesreceived"
           },
           {
             "type": "field",
@@ -2288,11 +2456,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytesreceived"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats"
       },
       "RTCTransportStats": {
         "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n};",
@@ -2313,7 +2483,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetssent"
           },
           {
             "type": "field",
@@ -2328,7 +2499,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetsreceived"
           },
           {
             "type": "field",
@@ -2343,7 +2515,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytessent"
           },
           {
             "type": "field",
@@ -2358,7 +2531,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytesreceived"
           },
           {
             "type": "field",
@@ -2373,7 +2547,8 @@
               "idlType": "RTCIceRole"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icerole"
           },
           {
             "type": "field",
@@ -2388,7 +2563,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icelocalusernamefragment"
           },
           {
             "type": "field",
@@ -2403,7 +2579,8 @@
               "idlType": "RTCDtlsTransportState"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsstate"
           },
           {
             "type": "field",
@@ -2418,7 +2595,8 @@
               "idlType": "RTCIceTransportState"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icestate"
           },
           {
             "type": "field",
@@ -2433,7 +2611,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairid"
           },
           {
             "type": "field",
@@ -2448,7 +2627,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-localcertificateid"
           },
           {
             "type": "field",
@@ -2463,7 +2643,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-remotecertificateid"
           },
           {
             "type": "field",
@@ -2478,7 +2659,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-tlsversion"
           },
           {
             "type": "field",
@@ -2493,7 +2675,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlscipher"
           },
           {
             "type": "field",
@@ -2508,7 +2691,8 @@
               "idlType": "RTCDtlsRole"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsrole"
           },
           {
             "type": "field",
@@ -2523,7 +2707,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-srtpcipher"
           },
           {
             "type": "field",
@@ -2538,11 +2723,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairchanges"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats"
       },
       "RTCDtlsRole": {
         "fragment": "enum RTCDtlsRole {\n      \"client\",\n      \"server\",\n      \"unknown\",\n};",
@@ -2551,18 +2738,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "client"
+            "value": "client",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdtlsrole-client"
           },
           {
             "type": "enum-value",
-            "value": "server"
+            "value": "server",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdtlsrole-server"
           },
           {
             "type": "enum-value",
-            "value": "unknown"
+            "value": "unknown",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdtlsrole-unknown"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdtlsrole"
       },
       "RTCIceCandidateStats": {
         "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             RTCIceServerTransportProtocol relayProtocol;\n             DOMString                foundation;\n             DOMString                relatedAddress;\n             long                     relatedPort;\n             DOMString                usernameFragment;\n             RTCIceTcpCandidateType   tcpType;\n};",
@@ -2583,7 +2774,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-transportid"
           },
           {
             "type": "field",
@@ -2598,7 +2790,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-address"
           },
           {
             "type": "field",
@@ -2613,7 +2806,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-port"
           },
           {
             "type": "field",
@@ -2628,7 +2822,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-protocol"
           },
           {
             "type": "field",
@@ -2643,7 +2838,8 @@
               "idlType": "RTCIceCandidateType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-candidatetype"
           },
           {
             "type": "field",
@@ -2658,7 +2854,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-priority"
           },
           {
             "type": "field",
@@ -2673,7 +2870,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-url"
           },
           {
             "type": "field",
@@ -2688,7 +2886,8 @@
               "idlType": "RTCIceServerTransportProtocol"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-relayprotocol"
           },
           {
             "type": "field",
@@ -2703,7 +2902,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-foundation"
           },
           {
             "type": "field",
@@ -2718,7 +2918,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-relatedaddress"
           },
           {
             "type": "field",
@@ -2733,7 +2934,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-relatedport"
           },
           {
             "type": "field",
@@ -2748,7 +2950,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-usernamefragment"
           },
           {
             "type": "field",
@@ -2763,11 +2966,13 @@
               "idlType": "RTCIceTcpCandidateType"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-tcptype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats"
       },
       "RTCIceCandidatePairStats": {
         "fragment": "dictionary RTCIceCandidatePairStats : RTCStats {\n             required DOMString            transportId;\n             required DOMString            localCandidateId;\n             required DOMString            remoteCandidateId;\n             required RTCStatsIceCandidatePairState state;\n             boolean                       nominated;\n             unsigned long long            packetsSent;\n             unsigned long long            packetsReceived;\n             unsigned long long            bytesSent;\n             unsigned long long            bytesReceived;\n             DOMHighResTimeStamp           lastPacketSentTimestamp;\n             DOMHighResTimeStamp           lastPacketReceivedTimestamp;\n             double                        totalRoundTripTime;\n             double                        currentRoundTripTime;\n             double                        availableOutgoingBitrate;\n             double                        availableIncomingBitrate;\n             unsigned long long            requestsReceived;\n             unsigned long long            requestsSent;\n             unsigned long long            responsesReceived;\n             unsigned long long            responsesSent;\n             unsigned long long            consentRequestsSent;\n             unsigned long                 packetsDiscardedOnSend;\n             unsigned long long            bytesDiscardedOnSend;\n};",
@@ -2788,7 +2993,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-transportid"
           },
           {
             "type": "field",
@@ -2803,7 +3009,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-localcandidateid"
           },
           {
             "type": "field",
@@ -2818,7 +3025,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-remotecandidateid"
           },
           {
             "type": "field",
@@ -2833,7 +3041,8 @@
               "idlType": "RTCStatsIceCandidatePairState"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-state"
           },
           {
             "type": "field",
@@ -2848,7 +3057,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-nominated"
           },
           {
             "type": "field",
@@ -2863,7 +3073,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetssent"
           },
           {
             "type": "field",
@@ -2878,7 +3089,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsreceived"
           },
           {
             "type": "field",
@@ -2893,7 +3105,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytessent"
           },
           {
             "type": "field",
@@ -2908,7 +3121,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesreceived"
           },
           {
             "type": "field",
@@ -2923,7 +3137,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketsenttimestamp"
           },
           {
             "type": "field",
@@ -2938,7 +3153,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketreceivedtimestamp"
           },
           {
             "type": "field",
@@ -2953,7 +3169,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-totalroundtriptime"
           },
           {
             "type": "field",
@@ -2968,7 +3185,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-currentroundtriptime"
           },
           {
             "type": "field",
@@ -2983,7 +3201,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-availableoutgoingbitrate"
           },
           {
             "type": "field",
@@ -2998,7 +3217,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-availableincomingbitrate"
           },
           {
             "type": "field",
@@ -3013,7 +3233,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestsreceived"
           },
           {
             "type": "field",
@@ -3028,7 +3249,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestssent"
           },
           {
             "type": "field",
@@ -3043,7 +3265,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsesreceived"
           },
           {
             "type": "field",
@@ -3058,7 +3281,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsessent"
           },
           {
             "type": "field",
@@ -3073,7 +3297,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-consentrequestssent"
           },
           {
             "type": "field",
@@ -3088,7 +3313,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsdiscardedonsend"
           },
           {
             "type": "field",
@@ -3103,11 +3329,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesdiscardedonsend"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats"
       },
       "RTCStatsIceCandidatePairState": {
         "fragment": "enum RTCStatsIceCandidatePairState {\n    \"frozen\",\n    \"waiting\",\n    \"in-progress\",\n    \"failed\",\n    \"succeeded\"\n};",
@@ -3116,26 +3344,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "frozen"
+            "value": "frozen",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate-frozen"
           },
           {
             "type": "enum-value",
-            "value": "waiting"
+            "value": "waiting",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate-waiting"
           },
           {
             "type": "enum-value",
-            "value": "in-progress"
+            "value": "in-progress",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate-in-progress"
           },
           {
             "type": "enum-value",
-            "value": "failed"
+            "value": "failed",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate-failed"
           },
           {
             "type": "enum-value",
-            "value": "succeeded"
+            "value": "succeeded",
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate-succeeded"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatsicecandidatepairstate"
       },
       "RTCCertificateStats": {
         "fragment": "dictionary RTCCertificateStats : RTCStats {\n             required DOMString fingerprint;\n             required DOMString fingerprintAlgorithm;\n             required DOMString base64Certificate;\n             DOMString issuerCertificateId;\n};",
@@ -3156,7 +3390,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprint"
           },
           {
             "type": "field",
@@ -3171,7 +3406,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprintalgorithm"
           },
           {
             "type": "field",
@@ -3186,7 +3422,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-base64certificate"
           },
           {
             "type": "field",
@@ -3201,11 +3438,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-issuercertificateid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats"
       }
     },
     "idlExtendedNames": {},

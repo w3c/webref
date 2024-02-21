@@ -49,7 +49,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-filters"
           },
           {
             "type": "field",
@@ -67,7 +68,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-keeprepeateddevices"
           },
           {
             "type": "field",
@@ -85,11 +87,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-acceptalladvertisements"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dictdef-bluetoothlescanoptions"
       },
       "BluetoothDataFilter": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDataFilter {\n  constructor(optional BluetoothDataFilterInit init = {});\n  readonly attribute ArrayBuffer dataPrefix;\n  readonly attribute ArrayBuffer mask;\n};",
@@ -119,7 +123,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-bluetoothdatafilter"
           },
           {
             "type": "attribute",
@@ -134,7 +139,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-dataprefix"
           },
           {
             "type": "attribute",
@@ -149,7 +155,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-mask"
           }
         ],
         "extAttrs": [
@@ -169,7 +176,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothdatafilter"
       },
       "BluetoothManufacturerDataFilter": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothManufacturerDataFilter {\n  constructor(optional object init);\n  readonly maplike<unsigned short, BluetoothDataFilter>;\n};",
@@ -197,7 +205,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter"
           },
           {
             "type": "maplike",
@@ -242,7 +251,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothmanufacturerdatafilter"
       },
       "BluetoothServiceDataFilter": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothServiceDataFilter {\n  constructor(optional object init);\n  readonly maplike<UUID, BluetoothDataFilter>;\n};",
@@ -270,7 +280,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothservicedatafilter-bluetoothservicedatafilter"
           },
           {
             "type": "maplike",
@@ -315,7 +326,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothservicedatafilter"
       },
       "BluetoothLEScanFilter": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothLEScanFilter {\n  constructor(optional BluetoothLEScanFilterInit init = {});\n  readonly attribute DOMString? name;\n  readonly attribute DOMString? namePrefix;\n  readonly attribute FrozenArray<UUID> services;\n  readonly attribute BluetoothManufacturerDataFilter manufacturerData;\n  readonly attribute BluetoothServiceDataFilter serviceData;\n};",
@@ -345,7 +357,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-bluetoothlescanfilter"
           },
           {
             "type": "attribute",
@@ -360,7 +373,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-name"
           },
           {
             "type": "attribute",
@@ -375,7 +389,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-nameprefix"
           },
           {
             "type": "attribute",
@@ -399,7 +414,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-services"
           },
           {
             "type": "attribute",
@@ -414,7 +430,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-manufacturerdata"
           },
           {
             "type": "attribute",
@@ -429,7 +446,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-servicedata"
           }
         ],
         "extAttrs": [
@@ -449,7 +467,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter"
       },
       "BluetoothLEScan": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothLEScan {\n  readonly attribute FrozenArray<BluetoothLEScanFilter> filters;\n  readonly attribute boolean keepRepeatedDevices;\n  readonly attribute boolean acceptAllAdvertisements;\n\n  readonly attribute boolean active;\n\n  undefined stop();\n};",
@@ -479,7 +498,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-filters"
           },
           {
             "type": "attribute",
@@ -494,7 +514,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-keeprepeateddevices"
           },
           {
             "type": "attribute",
@@ -509,7 +530,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-acceptalladvertisements"
           },
           {
             "type": "attribute",
@@ -524,7 +546,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-active"
           },
           {
             "type": "operation",
@@ -539,7 +562,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-stop"
           }
         ],
         "extAttrs": [
@@ -559,7 +583,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan"
       },
       "BluetoothLEScanPermissionDescriptor": {
         "fragment": "dictionary BluetoothLEScanPermissionDescriptor : PermissionDescriptor {\n  // These match BluetoothLEScanOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  boolean keepRepeatedDevices = false;\n  boolean acceptAllAdvertisements = false;\n};",
@@ -589,7 +614,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-filters"
           },
           {
             "type": "field",
@@ -607,7 +633,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-keeprepeateddevices"
           },
           {
             "type": "field",
@@ -625,11 +652,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-acceptalladvertisements"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dictdef-bluetoothlescanpermissiondescriptor"
       },
       "BluetoothLEScanPermissionResult": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothLEScanPermissionResult : PermissionStatus {\n  attribute FrozenArray<BluetoothLEScan> scans;\n};",
@@ -659,7 +688,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissionresult-scans"
           }
         ],
         "extAttrs": [
@@ -679,7 +709,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanpermissionresult"
       }
     },
     "idlExtendedNames": {
@@ -738,7 +769,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-requestlescan"
             }
           ],
           "extAttrs": [],

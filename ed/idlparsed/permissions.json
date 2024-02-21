@@ -65,7 +65,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/permissions/#dom-permissions-query"
           }
         ],
         "extAttrs": [
@@ -86,7 +87,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/permissions/#dom-permissions"
       },
       "PermissionDescriptor": {
         "fragment": "dictionary PermissionDescriptor {\n  required DOMString name;\n};",
@@ -107,11 +109,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor-name"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
       },
       "PermissionStatus": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute DOMString name;\n  attribute EventHandler onchange;\n};",
@@ -132,7 +136,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/permissions/#dom-permissionstatus-state"
           },
           {
             "type": "attribute",
@@ -147,7 +152,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/permissions/#dom-permissionstatus-name"
           },
           {
             "type": "attribute",
@@ -162,7 +168,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/permissions/#dom-permissionstatus-onchange"
           }
         ],
         "extAttrs": [
@@ -183,7 +190,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/permissions/#dom-permissionstatus"
       },
       "PermissionState": {
         "fragment": "enum PermissionState {\n  \"granted\",\n  \"denied\",\n  \"prompt\",\n};",
@@ -192,18 +200,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "granted"
+            "value": "granted",
+            "href": "https://w3c.github.io/permissions/#dom-permissionstate-granted"
           },
           {
             "type": "enum-value",
-            "value": "denied"
+            "value": "denied",
+            "href": "https://w3c.github.io/permissions/#dom-permissionstate-denied"
           },
           {
             "type": "enum-value",
-            "value": "prompt"
+            "value": "prompt",
+            "href": "https://w3c.github.io/permissions/#dom-permissionstate-prompt"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/permissions/#dom-permissionstate"
       },
       "PermissionSetParameters": {
         "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n};",
@@ -224,7 +236,8 @@
               "idlType": "PermissionDescriptor"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/permissions/#dom-permissionsetparameters-descriptor"
           },
           {
             "type": "field",
@@ -239,11 +252,13 @@
               "idlType": "PermissionState"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/permissions/#dom-permissionsetparameters-state"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/permissions/#dom-permissionsetparameters"
       }
     },
     "idlExtendedNames": {
@@ -274,7 +289,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/permissions/#dom-navigator-permissions"
             }
           ],
           "extAttrs": [
@@ -322,7 +338,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/permissions/#dom-workernavigator-permissions"
             }
           ],
           "extAttrs": [

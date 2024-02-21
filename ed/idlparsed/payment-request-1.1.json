@@ -70,7 +70,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-constructor"
           },
           {
             "type": "operation",
@@ -127,7 +128,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-show"
           },
           {
             "type": "operation",
@@ -158,7 +160,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-abort"
           },
           {
             "type": "operation",
@@ -189,7 +192,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-canmakepayment"
           },
           {
             "type": "attribute",
@@ -204,7 +208,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-id"
           },
           {
             "type": "attribute",
@@ -219,7 +224,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onpaymentmethodchange"
           }
         ],
         "extAttrs": [
@@ -239,7 +245,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest"
       },
       "PaymentMethodData": {
         "fragment": "dictionary PaymentMethodData {\n  required DOMString supportedMethods;\n  object data;\n};",
@@ -260,7 +267,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata-supportedmethods"
           },
           {
             "type": "field",
@@ -275,11 +283,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata"
       },
       "PaymentCurrencyAmount": {
         "fragment": "dictionary PaymentCurrencyAmount {\n  required DOMString currency;\n  required DOMString value;\n};",
@@ -300,7 +310,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-currency"
           },
           {
             "type": "field",
@@ -315,11 +326,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-value"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount"
       },
       "PaymentDetailsBase": {
         "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
@@ -349,7 +362,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-displayitems"
           },
           {
             "type": "field",
@@ -373,11 +387,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-modifiers"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase"
       },
       "PaymentDetailsInit": {
         "fragment": "dictionary PaymentDetailsInit : PaymentDetailsBase {\n  DOMString id;\n  required PaymentItem total;\n};",
@@ -398,7 +414,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit-id"
           },
           {
             "type": "field",
@@ -413,11 +430,13 @@
               "idlType": "PaymentItem"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit-total"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit"
       },
       "PaymentDetailsUpdate": {
         "fragment": "dictionary PaymentDetailsUpdate : PaymentDetailsBase {\n  PaymentItem total;\n  object paymentMethodErrors;\n};",
@@ -438,7 +457,8 @@
               "idlType": "PaymentItem"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-total"
           },
           {
             "type": "field",
@@ -453,11 +473,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-paymentmethoderrors"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate"
       },
       "PaymentDetailsModifier": {
         "fragment": "dictionary PaymentDetailsModifier {\n  required DOMString supportedMethods;\n  PaymentItem total;\n  sequence<PaymentItem> additionalDisplayItems;\n  object data;\n};",
@@ -478,7 +500,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-supportedmethods"
           },
           {
             "type": "field",
@@ -493,7 +516,8 @@
               "idlType": "PaymentItem"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-total"
           },
           {
             "type": "field",
@@ -517,7 +541,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-additionaldisplayitems"
           },
           {
             "type": "field",
@@ -532,11 +557,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier"
       },
       "PaymentItem": {
         "fragment": "dictionary PaymentItem {\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean pending = false;\n};",
@@ -557,7 +584,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentitem-label"
           },
           {
             "type": "field",
@@ -572,7 +600,8 @@
               "idlType": "PaymentCurrencyAmount"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentitem-amount"
           },
           {
             "type": "field",
@@ -590,11 +619,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentitem-pending"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentitem"
       },
       "PaymentCompleteDetails": {
         "fragment": "dictionary PaymentCompleteDetails {\n  object? data = null;\n};",
@@ -617,11 +648,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcompletedetails-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentcompletedetails"
       },
       "PaymentComplete": {
         "fragment": "enum PaymentComplete {\n  \"fail\",\n  \"success\",\n  \"unknown\"\n};",
@@ -630,18 +663,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "fail"
+            "value": "fail",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-fail"
           },
           {
             "type": "enum-value",
-            "value": "success"
+            "value": "success",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-success"
           },
           {
             "type": "enum-value",
-            "value": "unknown"
+            "value": "unknown",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-unknown"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete"
       },
       "PaymentResponse": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
@@ -684,7 +721,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-requestid"
           },
           {
             "type": "attribute",
@@ -699,7 +737,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-methodname"
           },
           {
             "type": "attribute",
@@ -714,7 +753,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-details"
           },
           {
             "type": "operation",
@@ -783,7 +823,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-complete"
           },
           {
             "type": "operation",
@@ -833,7 +874,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-retry"
           }
         ],
         "extAttrs": [
@@ -853,7 +895,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentresponse"
       },
       "PaymentValidationErrors": {
         "fragment": "dictionary PaymentValidationErrors {\n  DOMString error;\n  object paymentMethod;\n};",
@@ -874,7 +917,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-error"
           },
           {
             "type": "field",
@@ -889,11 +933,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-paymentmethod"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors"
       },
       "PaymentMethodChangeEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {\n  constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict = {});\n  readonly attribute DOMString methodName;\n  readonly attribute object? methodDetails;\n};",
@@ -939,7 +985,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-constructor"
           },
           {
             "type": "attribute",
@@ -954,7 +1001,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-methodname"
           },
           {
             "type": "attribute",
@@ -969,7 +1017,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-methoddetails"
           }
         ],
         "extAttrs": [
@@ -989,7 +1038,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent"
       },
       "PaymentMethodChangeEventInit": {
         "fragment": "dictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {\n  DOMString methodName = \"\";\n  object? methodDetails = null;\n};",
@@ -1013,7 +1063,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit-methodname"
           },
           {
             "type": "field",
@@ -1030,11 +1081,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit-methoddetails"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit"
       },
       "PaymentRequestUpdateEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequestUpdateEvent : Event {\n  constructor(DOMString type, optional PaymentRequestUpdateEventInit eventInitDict = {});\n  undefined updateWith(Promise<PaymentDetailsUpdate> detailsPromise);\n};",
@@ -1080,7 +1133,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent-constructor"
           },
           {
             "type": "operation",
@@ -1121,7 +1175,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent-updatewith"
           }
         ],
         "extAttrs": [
@@ -1141,7 +1196,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent"
       },
       "PaymentRequestUpdateEventInit": {
         "fragment": "dictionary PaymentRequestUpdateEventInit : EventInit {};",
@@ -1150,7 +1206,8 @@
         "inheritance": "EventInit",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateeventinit"
       }
     },
     "idlExtendedNames": {},

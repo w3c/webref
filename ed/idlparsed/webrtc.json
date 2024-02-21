@@ -66,7 +66,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-iceservers"
           },
           {
             "type": "field",
@@ -84,7 +85,8 @@
               "type": "string",
               "value": "all"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-icetransportpolicy"
           },
           {
             "type": "field",
@@ -102,7 +104,8 @@
               "type": "string",
               "value": "balanced"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-bundlepolicy"
           },
           {
             "type": "field",
@@ -120,7 +123,8 @@
               "type": "string",
               "value": "require"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-rtcpmuxpolicy"
           },
           {
             "type": "field",
@@ -147,7 +151,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-certificates"
           },
           {
             "type": "field",
@@ -172,11 +177,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-icecandidatepoolsize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration"
       },
       "RTCIceServer": {
         "fragment": "dictionary RTCIceServer {\n  required (DOMString or sequence<DOMString>) urls;\n  DOMString username;\n  DOMString credential;\n};",
@@ -223,7 +230,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-urls"
           },
           {
             "type": "field",
@@ -238,7 +246,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-username"
           },
           {
             "type": "field",
@@ -253,11 +262,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-credential"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceserver"
       },
       "RTCIceTransportPolicy": {
         "fragment": "enum RTCIceTransportPolicy {\n  \"relay\",\n  \"all\"\n};",
@@ -266,14 +277,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "relay"
+            "value": "relay",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportpolicy-relay"
           },
           {
             "type": "enum-value",
-            "value": "all"
+            "value": "all",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportpolicy-all"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportpolicy"
       },
       "RTCBundlePolicy": {
         "fragment": "enum RTCBundlePolicy {\n  \"balanced\",\n  \"max-compat\",\n  \"max-bundle\"\n};",
@@ -282,18 +296,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "balanced"
+            "value": "balanced",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcbundlepolicy-balanced"
           },
           {
             "type": "enum-value",
-            "value": "max-compat"
+            "value": "max-compat",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcbundlepolicy-max-compat"
           },
           {
             "type": "enum-value",
-            "value": "max-bundle"
+            "value": "max-bundle",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcbundlepolicy-max-bundle"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcbundlepolicy"
       },
       "RTCRtcpMuxPolicy": {
         "fragment": "enum RTCRtcpMuxPolicy {\n  \"require\"\n};",
@@ -302,10 +320,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "require"
+            "value": "require",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtcpmuxpolicy-require"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtcpmuxpolicy"
       },
       "RTCOfferAnswerOptions": {
         "fragment": "dictionary RTCOfferAnswerOptions {};",
@@ -314,7 +334,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferansweroptions"
       },
       "RTCOfferOptions": {
         "fragment": "dictionary RTCOfferOptions : RTCOfferAnswerOptions {\n  boolean iceRestart = false;\n};",
@@ -338,11 +359,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-icerestart"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions"
       },
       "RTCAnswerOptions": {
         "fragment": "dictionary RTCAnswerOptions : RTCOfferAnswerOptions {};",
@@ -351,7 +374,8 @@
         "inheritance": "RTCOfferAnswerOptions",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcansweroptions"
       },
       "RTCSignalingState": {
         "fragment": "enum RTCSignalingState {\n  \"stable\",\n  \"have-local-offer\",\n  \"have-remote-offer\",\n  \"have-local-pranswer\",\n  \"have-remote-pranswer\",\n  \"closed\"\n};",
@@ -360,30 +384,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "stable"
+            "value": "stable",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-stable"
           },
           {
             "type": "enum-value",
-            "value": "have-local-offer"
+            "value": "have-local-offer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-have-local-offer"
           },
           {
             "type": "enum-value",
-            "value": "have-remote-offer"
+            "value": "have-remote-offer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-have-remote-offer"
           },
           {
             "type": "enum-value",
-            "value": "have-local-pranswer"
+            "value": "have-local-pranswer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-have-local-pranswer"
           },
           {
             "type": "enum-value",
-            "value": "have-remote-pranswer"
+            "value": "have-remote-pranswer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-have-remote-pranswer"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate-closed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsignalingstate"
       },
       "RTCIceGatheringState": {
         "fragment": "enum RTCIceGatheringState {\n  \"new\",\n  \"gathering\",\n  \"complete\"\n};",
@@ -392,18 +423,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegatheringstate-new"
           },
           {
             "type": "enum-value",
-            "value": "gathering"
+            "value": "gathering",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegatheringstate-gathering"
           },
           {
             "type": "enum-value",
-            "value": "complete"
+            "value": "complete",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegatheringstate-complete"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegatheringstate"
       },
       "RTCPeerConnectionState": {
         "fragment": "enum RTCPeerConnectionState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"connecting\",\n  \"connected\"\n};",
@@ -412,30 +447,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-closed"
           },
           {
             "type": "enum-value",
-            "value": "failed"
+            "value": "failed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-failed"
           },
           {
             "type": "enum-value",
-            "value": "disconnected"
+            "value": "disconnected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-disconnected"
           },
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-new"
           },
           {
             "type": "enum-value",
-            "value": "connecting"
+            "value": "connecting",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-connecting"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate-connected"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionstate"
       },
       "RTCIceConnectionState": {
         "fragment": "enum RTCIceConnectionState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"checking\",\n  \"completed\",\n  \"connected\"\n};",
@@ -444,34 +486,42 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-closed"
           },
           {
             "type": "enum-value",
-            "value": "failed"
+            "value": "failed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-failed"
           },
           {
             "type": "enum-value",
-            "value": "disconnected"
+            "value": "disconnected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-disconnected"
           },
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-new"
           },
           {
             "type": "enum-value",
-            "value": "checking"
+            "value": "checking",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-checking"
           },
           {
             "type": "enum-value",
-            "value": "completed"
+            "value": "completed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-completed"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate-connected"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate"
       },
       "RTCPeerConnection": {
         "fragment": "[Exposed=Window]\ninterface RTCPeerConnection : EventTarget  {\n  constructor(optional RTCConfiguration configuration = {});\n  Promise<RTCSessionDescriptionInit> createOffer(optional RTCOfferOptions options = {});\n  Promise<RTCSessionDescriptionInit> createAnswer(optional RTCAnswerOptions options = {});\n  Promise<undefined> setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});\n  readonly attribute RTCSessionDescription? localDescription;\n  readonly attribute RTCSessionDescription? currentLocalDescription;\n  readonly attribute RTCSessionDescription? pendingLocalDescription;\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description);\n  readonly attribute RTCSessionDescription? remoteDescription;\n  readonly attribute RTCSessionDescription? currentRemoteDescription;\n  readonly attribute RTCSessionDescription? pendingRemoteDescription;\n  Promise<undefined> addIceCandidate(optional RTCIceCandidateInit candidate = {});\n  readonly attribute RTCSignalingState signalingState;\n  readonly attribute RTCIceGatheringState iceGatheringState;\n  readonly attribute RTCIceConnectionState iceConnectionState;\n  readonly attribute RTCPeerConnectionState connectionState;\n  readonly attribute boolean? canTrickleIceCandidates;\n  undefined restartIce();\n  RTCConfiguration getConfiguration();\n  undefined setConfiguration(optional RTCConfiguration configuration = {});\n  undefined close();\n  attribute EventHandler onnegotiationneeded;\n  attribute EventHandler onicecandidate;\n  attribute EventHandler onicecandidateerror;\n  attribute EventHandler onsignalingstatechange;\n  attribute EventHandler oniceconnectionstatechange;\n  attribute EventHandler onicegatheringstatechange;\n  attribute EventHandler onconnectionstatechange;\n\n  // Legacy Interface Extensions\n  // Supporting the methods in this section is optional.\n  // If these methods are supported\n  // they must be implemented as defined\n  // in section \"Legacy Interface Extensions\"\n  Promise<undefined> createOffer(RTCSessionDescriptionCallback successCallback,\n                            RTCPeerConnectionErrorCallback failureCallback,\n                            optional RTCOfferOptions options = {});\n  Promise<undefined> setLocalDescription(RTCLocalSessionDescriptionInit description,\n                                    VoidFunction successCallback,\n                                    RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> createAnswer(RTCSessionDescriptionCallback successCallback,\n                             RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description,\n                                     VoidFunction successCallback,\n                                     RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> addIceCandidate(RTCIceCandidateInit candidate,\n                                VoidFunction successCallback,\n                                RTCPeerConnectionErrorCallback failureCallback);\n};",
@@ -501,7 +551,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection"
           },
           {
             "type": "operation",
@@ -544,7 +595,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer"
           },
           {
             "type": "operation",
@@ -587,7 +639,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer"
           },
           {
             "type": "operation",
@@ -630,7 +683,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setlocaldescription"
           },
           {
             "type": "attribute",
@@ -645,7 +699,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-localdescription"
           },
           {
             "type": "attribute",
@@ -660,7 +715,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentlocaldesc"
           },
           {
             "type": "attribute",
@@ -675,7 +731,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendinglocaldesc"
           },
           {
             "type": "operation",
@@ -716,7 +773,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setremotedescription"
           },
           {
             "type": "attribute",
@@ -731,7 +789,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-remotedescription"
           },
           {
             "type": "attribute",
@@ -746,7 +805,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentremotedesc"
           },
           {
             "type": "attribute",
@@ -761,7 +821,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendingremotedesc"
           },
           {
             "type": "operation",
@@ -804,7 +865,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-addicecandidate"
           },
           {
             "type": "attribute",
@@ -819,7 +881,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-signaling-state"
           },
           {
             "type": "attribute",
@@ -834,7 +897,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-gathering-state"
           },
           {
             "type": "attribute",
@@ -849,7 +913,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-connection-state"
           },
           {
             "type": "attribute",
@@ -864,7 +929,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-connection-state"
           },
           {
             "type": "attribute",
@@ -879,7 +945,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-cantrickleicecandidates"
           },
           {
             "type": "operation",
@@ -894,7 +961,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-restartice"
           },
           {
             "type": "operation",
@@ -909,7 +977,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-getconfiguration"
           },
           {
             "type": "operation",
@@ -943,7 +1012,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setconfiguration"
           },
           {
             "type": "operation",
@@ -958,7 +1028,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-close"
           },
           {
             "type": "attribute",
@@ -973,7 +1044,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onnegotiationneeded"
           },
           {
             "type": "attribute",
@@ -988,7 +1060,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidate"
           },
           {
             "type": "attribute",
@@ -1003,7 +1076,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidateerror"
           },
           {
             "type": "attribute",
@@ -1018,7 +1092,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onsignalingstatechange"
           },
           {
             "type": "attribute",
@@ -1033,7 +1108,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-oniceconnectionstatechange"
           },
           {
             "type": "attribute",
@@ -1048,7 +1124,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicegatheringstatechange"
           },
           {
             "type": "attribute",
@@ -1063,7 +1140,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onconnectionstatechange"
           },
           {
             "type": "operation",
@@ -1138,7 +1216,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer!overload-1"
           },
           {
             "type": "operation",
@@ -1211,7 +1290,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setlocaldescription!overload-1"
           },
           {
             "type": "operation",
@@ -1268,7 +1348,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer!overload-1"
           },
           {
             "type": "operation",
@@ -1341,7 +1422,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setremotedescription!overload-1"
           },
           {
             "type": "operation",
@@ -1414,7 +1496,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addicecandidate!overload-1"
           }
         ],
         "extAttrs": [
@@ -1428,7 +1511,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection"
       },
       "RTCPeerConnectionErrorCallback": {
         "fragment": "callback RTCPeerConnectionErrorCallback = undefined (DOMException error);",
@@ -1460,7 +1544,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectionerrorcallback"
       },
       "RTCSessionDescriptionCallback": {
         "fragment": "callback RTCSessionDescriptionCallback = undefined (RTCSessionDescriptionInit description);",
@@ -1492,7 +1577,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescriptioncallback"
       },
       "RTCSdpType": {
         "fragment": "enum RTCSdpType {\n  \"offer\",\n  \"pranswer\",\n  \"answer\",\n  \"rollback\"\n};",
@@ -1501,22 +1587,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "offer"
+            "value": "offer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype-offer"
           },
           {
             "type": "enum-value",
-            "value": "pranswer"
+            "value": "pranswer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype-pranswer"
           },
           {
             "type": "enum-value",
-            "value": "answer"
+            "value": "answer",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype-answer"
           },
           {
             "type": "enum-value",
-            "value": "rollback"
+            "value": "rollback",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype-rollback"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype"
       },
       "RTCSessionDescription": {
         "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
@@ -1544,7 +1635,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-sessiondescription"
           },
           {
             "type": "attribute",
@@ -1559,7 +1651,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-type"
           },
           {
             "type": "attribute",
@@ -1574,7 +1667,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-sdp"
           },
           {
             "type": "operation",
@@ -1596,7 +1690,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-tojson"
           }
         ],
         "extAttrs": [
@@ -1610,7 +1705,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription"
       },
       "RTCSessionDescriptionInit": {
         "fragment": "dictionary RTCSessionDescriptionInit {\n  required RTCSdpType type;\n  DOMString sdp = \"\";\n};",
@@ -1631,7 +1727,8 @@
               "idlType": "RTCSdpType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescriptioninit-type"
           },
           {
             "type": "field",
@@ -1649,11 +1746,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescriptioninit-sdp"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescriptioninit"
       },
       "RTCLocalSessionDescriptionInit": {
         "fragment": "dictionary RTCLocalSessionDescriptionInit {\n  RTCSdpType type;\n  DOMString sdp = \"\";\n};",
@@ -1674,7 +1773,8 @@
               "idlType": "RTCSdpType"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit-type"
           },
           {
             "type": "field",
@@ -1692,11 +1792,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit-sdp"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit"
       },
       "RTCIceCandidate": {
         "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  readonly attribute RTCIceServerTransportProtocol? relayProtocol;\n  readonly attribute DOMString? url;\n  RTCIceCandidateInit toJSON();\n};",
@@ -1726,7 +1828,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-constructor"
           },
           {
             "type": "attribute",
@@ -1741,7 +1844,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-candidate"
           },
           {
             "type": "attribute",
@@ -1756,7 +1860,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmid"
           },
           {
             "type": "attribute",
@@ -1771,7 +1876,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmlineindex"
           },
           {
             "type": "attribute",
@@ -1786,7 +1892,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-foundation"
           },
           {
             "type": "attribute",
@@ -1801,7 +1908,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-component"
           },
           {
             "type": "attribute",
@@ -1816,7 +1924,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-priority"
           },
           {
             "type": "attribute",
@@ -1831,7 +1940,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-address"
           },
           {
             "type": "attribute",
@@ -1846,7 +1956,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-protocol"
           },
           {
             "type": "attribute",
@@ -1861,7 +1972,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-port"
           },
           {
             "type": "attribute",
@@ -1876,7 +1988,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-type"
           },
           {
             "type": "attribute",
@@ -1891,7 +2004,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tcptype"
           },
           {
             "type": "attribute",
@@ -1906,7 +2020,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedaddress"
           },
           {
             "type": "attribute",
@@ -1921,7 +2036,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedport"
           },
           {
             "type": "attribute",
@@ -1936,7 +2052,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-usernamefragment"
           },
           {
             "type": "attribute",
@@ -1951,7 +2068,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relayprotocol"
           },
           {
             "type": "attribute",
@@ -1966,7 +2084,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-url"
           },
           {
             "type": "operation",
@@ -1981,7 +2100,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tojson"
           }
         ],
         "extAttrs": [
@@ -1995,7 +2115,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate"
       },
       "RTCIceCandidateInit": {
         "fragment": "dictionary RTCIceCandidateInit {\n  DOMString candidate = \"\";\n  DOMString? sdpMid = null;\n  unsigned short? sdpMLineIndex = null;\n  DOMString? usernameFragment = null;\n};",
@@ -2019,7 +2140,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit-candidate"
           },
           {
             "type": "field",
@@ -2036,7 +2158,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit-sdpmid"
           },
           {
             "type": "field",
@@ -2053,7 +2176,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit-sdpmlineindex"
           },
           {
             "type": "field",
@@ -2070,11 +2194,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit-usernamefragment"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidateinit"
       },
       "RTCIceProtocol": {
         "fragment": "enum RTCIceProtocol {\n  \"udp\",\n  \"tcp\"\n};",
@@ -2083,14 +2209,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "udp"
+            "value": "udp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceprotocol-udp"
           },
           {
             "type": "enum-value",
-            "value": "tcp"
+            "value": "tcp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceprotocol-tcp"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceprotocol"
       },
       "RTCIceTcpCandidateType": {
         "fragment": "enum RTCIceTcpCandidateType {\n  \"active\",\n  \"passive\",\n  \"so\"\n};",
@@ -2099,18 +2228,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "active"
+            "value": "active",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetcpcandidatetype-active"
           },
           {
             "type": "enum-value",
-            "value": "passive"
+            "value": "passive",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetcpcandidatetype-passive"
           },
           {
             "type": "enum-value",
-            "value": "so"
+            "value": "so",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetcpcandidatetype-so"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetcpcandidatetype"
       },
       "RTCIceCandidateType": {
         "fragment": "enum RTCIceCandidateType {\n  \"host\",\n  \"srflx\",\n  \"prflx\",\n  \"relay\"\n};",
@@ -2119,22 +2252,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "host"
+            "value": "host",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatetype-host"
           },
           {
             "type": "enum-value",
-            "value": "srflx"
+            "value": "srflx",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatetype-srflx"
           },
           {
             "type": "enum-value",
-            "value": "prflx"
+            "value": "prflx",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatetype-prflx"
           },
           {
             "type": "enum-value",
-            "value": "relay"
+            "value": "relay",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatetype-relay"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatetype"
       },
       "RTCIceServerTransportProtocol": {
         "fragment": "enum RTCIceServerTransportProtocol {\n  \"udp\",\n  \"tcp\",\n  \"tls\",\n};",
@@ -2143,18 +2281,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "udp"
+            "value": "udp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceservertransportprotocol-udp"
           },
           {
             "type": "enum-value",
-            "value": "tcp"
+            "value": "tcp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceservertransportprotocol-tcp"
           },
           {
             "type": "enum-value",
-            "value": "tls"
+            "value": "tls",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceservertransportprotocol-tls"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceservertransportprotocol"
       },
       "RTCPeerConnectionIceEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceEvent : Event {\n  constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict = {});\n  readonly attribute RTCIceCandidate? candidate;\n  readonly attribute DOMString? url;\n};",
@@ -2200,7 +2342,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-constructor"
           },
           {
             "type": "attribute",
@@ -2215,7 +2358,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-candidate"
           },
           {
             "type": "attribute",
@@ -2230,7 +2374,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-url"
           }
         ],
         "extAttrs": [
@@ -2244,7 +2389,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent"
       },
       "RTCPeerConnectionIceEventInit": {
         "fragment": "dictionary RTCPeerConnectionIceEventInit : EventInit {\n  RTCIceCandidate? candidate;\n  DOMString? url;\n};",
@@ -2265,7 +2411,8 @@
               "idlType": "RTCIceCandidate"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceeventinit-candidate"
           },
           {
             "type": "field",
@@ -2280,11 +2427,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceeventinit-url"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceeventinit"
       },
       "RTCPeerConnectionIceErrorEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute DOMString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
@@ -2328,7 +2477,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-constructor"
           },
           {
             "type": "attribute",
@@ -2343,7 +2493,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-address"
           },
           {
             "type": "attribute",
@@ -2358,7 +2509,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-port"
           },
           {
             "type": "attribute",
@@ -2373,7 +2525,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-url"
           },
           {
             "type": "attribute",
@@ -2388,7 +2541,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-errorcode"
           },
           {
             "type": "attribute",
@@ -2403,7 +2557,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-errortext"
           }
         ],
         "extAttrs": [
@@ -2417,7 +2572,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent"
       },
       "RTCPeerConnectionIceErrorEventInit": {
         "fragment": "dictionary RTCPeerConnectionIceErrorEventInit : EventInit {\n  DOMString? address;\n  unsigned short? port;\n  DOMString url;\n  required unsigned short errorCode;\n  USVString errorText;\n};",
@@ -2438,7 +2594,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit-address"
           },
           {
             "type": "field",
@@ -2453,7 +2610,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit-port"
           },
           {
             "type": "field",
@@ -2468,7 +2626,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit-url"
           },
           {
             "type": "field",
@@ -2483,7 +2642,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit-errorcode"
           },
           {
             "type": "field",
@@ -2498,11 +2658,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit-errortext"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit"
       },
       "RTCCertificateExpiration": {
         "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] unsigned long long expires;\n};",
@@ -2530,11 +2692,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificateexpiration-expires"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificateexpiration"
       },
       "RTCCertificate": {
         "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute EpochTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
@@ -2555,7 +2719,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-expires"
           },
           {
             "type": "operation",
@@ -2579,7 +2744,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-getfingerprints"
           }
         ],
         "extAttrs": [
@@ -2599,7 +2765,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate"
       },
       "RTCRtpTransceiverInit": {
         "fragment": "dictionary RTCRtpTransceiverInit {\n  RTCRtpTransceiverDirection direction = \"sendrecv\";\n  sequence<MediaStream> streams = [];\n  sequence<RTCRtpEncodingParameters> sendEncodings = [];\n};",
@@ -2623,7 +2790,8 @@
               "type": "string",
               "value": "sendrecv"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverinit-direction"
           },
           {
             "type": "field",
@@ -2650,7 +2818,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverinit-streams"
           },
           {
             "type": "field",
@@ -2677,11 +2846,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverinit-sendencodings"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverinit"
       },
       "RTCRtpTransceiverDirection": {
         "fragment": "enum RTCRtpTransceiverDirection {\n  \"sendrecv\",\n  \"sendonly\",\n  \"recvonly\",\n  \"inactive\",\n  \"stopped\"\n};",
@@ -2690,26 +2861,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "sendrecv"
+            "value": "sendrecv",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-sendrecv"
           },
           {
             "type": "enum-value",
-            "value": "sendonly"
+            "value": "sendonly",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-sendonly"
           },
           {
             "type": "enum-value",
-            "value": "recvonly"
+            "value": "recvonly",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-recvonly"
           },
           {
             "type": "enum-value",
-            "value": "inactive"
+            "value": "inactive",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-inactive"
           },
           {
             "type": "enum-value",
-            "value": "stopped"
+            "value": "stopped",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-stopped"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection"
       },
       "RTCRtpSender": {
         "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters,\n      optional RTCSetParameterOptions setParameterOptions = {});\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
@@ -2730,7 +2907,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-track"
           },
           {
             "type": "attribute",
@@ -2745,7 +2923,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-transport"
           },
           {
             "type": "operation",
@@ -2777,7 +2956,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getcapabilities"
           },
           {
             "type": "operation",
@@ -2836,7 +3016,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setparameters"
           },
           {
             "type": "operation",
@@ -2851,7 +3032,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getparameters"
           },
           {
             "type": "operation",
@@ -2892,7 +3074,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-replacetrack"
           },
           {
             "type": "operation",
@@ -2924,7 +3107,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams"
           },
           {
             "type": "operation",
@@ -2948,7 +3132,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#widl-RTCRtpSender-getStats-Promise-RTCStatsReport"
           }
         ],
         "extAttrs": [
@@ -2962,7 +3147,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender"
       },
       "RTCRtpParameters": {
         "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
@@ -2992,7 +3178,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-headerextensions"
           },
           {
             "type": "field",
@@ -3007,7 +3194,8 @@
               "idlType": "RTCRtcpParameters"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-rtcp"
           },
           {
             "type": "field",
@@ -3031,11 +3219,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-codecs"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters"
       },
       "RTCRtpSendParameters": {
         "fragment": "dictionary RTCRtpSendParameters : RTCRtpParameters {\n  required DOMString transactionId;\n  required sequence<RTCRtpEncodingParameters> encodings;\n};",
@@ -3056,7 +3246,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-transactionid"
           },
           {
             "type": "field",
@@ -3080,11 +3271,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-encodings"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters"
       },
       "RTCRtpReceiveParameters": {
         "fragment": "dictionary RTCRtpReceiveParameters : RTCRtpParameters {\n};",
@@ -3093,7 +3286,8 @@
         "inheritance": "RTCRtpParameters",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiveparameters"
       },
       "RTCRtpCodingParameters": {
         "fragment": "dictionary RTCRtpCodingParameters {\n  DOMString rid;\n};",
@@ -3114,11 +3308,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters-rid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters"
       },
       "RTCRtpEncodingParameters": {
         "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
@@ -3142,7 +3338,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-active"
           },
           {
             "type": "field",
@@ -3157,7 +3354,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-maxbitrate"
           },
           {
             "type": "field",
@@ -3172,7 +3370,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-maxframerate"
           },
           {
             "type": "field",
@@ -3187,11 +3386,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-scaleresolutiondownby"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters"
       },
       "RTCRtcpParameters": {
         "fragment": "dictionary RTCRtcpParameters {\n  DOMString cname;\n  boolean reducedSize;\n};",
@@ -3212,7 +3413,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtcpparameters-cname"
           },
           {
             "type": "field",
@@ -3227,11 +3429,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtcpparameters-reducedsize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtcpparameters"
       },
       "RTCRtpHeaderExtensionParameters": {
         "fragment": "dictionary RTCRtpHeaderExtensionParameters {\n  required DOMString uri;\n  required unsigned short id;\n  boolean encrypted = false;\n};",
@@ -3252,7 +3456,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensionparameters-uri"
           },
           {
             "type": "field",
@@ -3267,7 +3472,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensionparameters-id"
           },
           {
             "type": "field",
@@ -3285,11 +3491,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensionparameters-encrypted"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensionparameters"
       },
       "RTCRtpCodec": {
         "fragment": "dictionary RTCRtpCodec {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
@@ -3310,7 +3518,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodec-mimetype"
           },
           {
             "type": "field",
@@ -3325,7 +3534,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodec-clockrate"
           },
           {
             "type": "field",
@@ -3340,7 +3550,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodec-channels"
           },
           {
             "type": "field",
@@ -3355,11 +3566,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodec-sdpfmtpline"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodec"
       },
       "RTCRtpCodecParameters": {
         "fragment": "dictionary RTCRtpCodecParameters : RTCRtpCodec {\n  required octet payloadType;\n};",
@@ -3380,11 +3593,13 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodecparameters-payloadtype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodecparameters"
       },
       "RTCRtpCapabilities": {
         "fragment": "dictionary RTCRtpCapabilities {\n  required sequence<RTCRtpCodecCapability> codecs;\n  required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;\n};",
@@ -3414,7 +3629,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities-codecs"
           },
           {
             "type": "field",
@@ -3438,11 +3654,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities-headerextensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities"
       },
       "RTCRtpCodecCapability": {
         "fragment": "dictionary RTCRtpCodecCapability : RTCRtpCodec {\n};",
@@ -3451,7 +3669,8 @@
         "inheritance": "RTCRtpCodec",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability"
       },
       "RTCRtpHeaderExtensionCapability": {
         "fragment": "dictionary RTCRtpHeaderExtensionCapability {\n  required DOMString uri;\n};",
@@ -3472,11 +3691,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensioncapability-uri"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpheaderextensioncapability"
       },
       "RTCSetParameterOptions": {
         "fragment": "dictionary RTCSetParameterOptions {\n};",
@@ -3485,7 +3706,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsetparameteroptions"
       },
       "RTCRtpReceiver": {
         "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
@@ -3506,7 +3728,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtpreceiver-track"
           },
           {
             "type": "attribute",
@@ -3521,7 +3744,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-transport"
           },
           {
             "type": "operation",
@@ -3553,7 +3777,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcapabilities"
           },
           {
             "type": "operation",
@@ -3568,7 +3793,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getparameters"
           },
           {
             "type": "operation",
@@ -3592,7 +3818,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcontributingsources"
           },
           {
             "type": "operation",
@@ -3616,7 +3843,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getsynchronizationsources"
           },
           {
             "type": "operation",
@@ -3640,7 +3868,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport"
           }
         ],
         "extAttrs": [
@@ -3654,7 +3883,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver"
       },
       "RTCRtpContributingSource": {
         "fragment": "dictionary RTCRtpContributingSource {\n  required DOMHighResTimeStamp timestamp;\n  required unsigned long source;\n  double audioLevel;\n  required unsigned long rtpTimestamp;\n};",
@@ -3675,7 +3905,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-timestamp"
           },
           {
             "type": "field",
@@ -3690,7 +3921,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-source"
           },
           {
             "type": "field",
@@ -3705,7 +3937,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-audiolevel"
           },
           {
             "type": "field",
@@ -3720,11 +3953,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-rtptimestamp"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource"
       },
       "RTCRtpSynchronizationSource": {
         "fragment": "dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {};",
@@ -3733,7 +3968,8 @@
         "inheritance": "RTCRtpContributingSource",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsynchronizationsource"
       },
       "RTCRtpTransceiver": {
         "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);\n};",
@@ -3754,7 +3990,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtptransceiver-mid"
           },
           {
             "type": "attribute",
@@ -3776,7 +4013,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-sender"
           },
           {
             "type": "attribute",
@@ -3798,7 +4036,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-receiver"
           },
           {
             "type": "attribute",
@@ -3813,7 +4052,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-direction"
           },
           {
             "type": "attribute",
@@ -3828,7 +4068,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-currentdirection"
           },
           {
             "type": "operation",
@@ -3843,7 +4084,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-stop"
           },
           {
             "type": "operation",
@@ -3884,7 +4126,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-setcodecpreferences"
           }
         ],
         "extAttrs": [
@@ -3898,7 +4141,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver"
       },
       "RTCDtlsTransport": {
         "fragment": "[Exposed=Window]\ninterface RTCDtlsTransport : EventTarget {\n  [SameObject] readonly attribute RTCIceTransport iceTransport;\n  readonly attribute RTCDtlsTransportState state;\n  sequence<ArrayBuffer> getRemoteCertificates();\n  attribute EventHandler onstatechange;\n  attribute EventHandler onerror;\n};",
@@ -3926,7 +4170,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-icetransport"
           },
           {
             "type": "attribute",
@@ -3941,7 +4186,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-state"
           },
           {
             "type": "operation",
@@ -3965,7 +4211,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-getremotecertificates"
           },
           {
             "type": "attribute",
@@ -3980,7 +4227,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-onstatechange"
           },
           {
             "type": "attribute",
@@ -3995,7 +4243,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-onerror"
           }
         ],
         "extAttrs": [
@@ -4009,7 +4258,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport"
       },
       "RTCDtlsTransportState": {
         "fragment": "enum RTCDtlsTransportState {\n  \"new\",\n  \"connecting\",\n  \"connected\",\n  \"closed\",\n  \"failed\"\n};",
@@ -4018,26 +4268,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate-new"
           },
           {
             "type": "enum-value",
-            "value": "connecting"
+            "value": "connecting",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate-connecting"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate-connected"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate-closed"
           },
           {
             "type": "enum-value",
-            "value": "failed"
+            "value": "failed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate-failed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransportstate"
       },
       "RTCDtlsFingerprint": {
         "fragment": "dictionary RTCDtlsFingerprint {\n  DOMString algorithm;\n  DOMString value;\n};",
@@ -4058,7 +4314,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlsfingerprint-algorithm"
           },
           {
             "type": "field",
@@ -4073,11 +4330,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlsfingerprint-value"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlsfingerprint"
       },
       "RTCIceTransport": {
         "fragment": "[Exposed=Window]\ninterface RTCIceTransport : EventTarget {\n  readonly attribute RTCIceRole role;\n  readonly attribute RTCIceComponent component;\n  readonly attribute RTCIceTransportState state;\n  readonly attribute RTCIceGathererState gatheringState;\n  sequence<RTCIceCandidate> getLocalCandidates();\n  sequence<RTCIceCandidate> getRemoteCandidates();\n  RTCIceCandidatePair? getSelectedCandidatePair();\n  RTCIceParameters? getLocalParameters();\n  RTCIceParameters? getRemoteParameters();\n  attribute EventHandler onstatechange;\n  attribute EventHandler ongatheringstatechange;\n  attribute EventHandler onselectedcandidatepairchange;\n};",
@@ -4098,7 +4357,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-role"
           },
           {
             "type": "attribute",
@@ -4113,7 +4373,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-component"
           },
           {
             "type": "attribute",
@@ -4128,7 +4389,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-state"
           },
           {
             "type": "attribute",
@@ -4143,7 +4405,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-gatheringstate"
           },
           {
             "type": "operation",
@@ -4167,7 +4430,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalcandidates"
           },
           {
             "type": "operation",
@@ -4191,7 +4455,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremotecandidates"
           },
           {
             "type": "operation",
@@ -4206,7 +4471,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getselectedcandidatepair"
           },
           {
             "type": "operation",
@@ -4221,7 +4487,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalparameters"
           },
           {
             "type": "operation",
@@ -4236,7 +4503,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremoteparameters"
           },
           {
             "type": "attribute",
@@ -4251,7 +4519,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onstatechange"
           },
           {
             "type": "attribute",
@@ -4266,7 +4535,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-ongatheringstatechange"
           },
           {
             "type": "attribute",
@@ -4281,7 +4551,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onselectedcandidatepairchange"
           }
         ],
         "extAttrs": [
@@ -4295,7 +4566,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport"
       },
       "RTCIceParameters": {
         "fragment": "dictionary RTCIceParameters {\n  DOMString usernameFragment;\n  DOMString password;\n};",
@@ -4316,7 +4588,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters-usernamefragment"
           },
           {
             "type": "field",
@@ -4331,11 +4604,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters-password"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters"
       },
       "RTCIceCandidatePair": {
         "fragment": "dictionary RTCIceCandidatePair {\n  RTCIceCandidate local;\n  RTCIceCandidate remote;\n};",
@@ -4356,7 +4631,8 @@
               "idlType": "RTCIceCandidate"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-local"
           },
           {
             "type": "field",
@@ -4371,11 +4647,13 @@
               "idlType": "RTCIceCandidate"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-remote"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair"
       },
       "RTCIceGathererState": {
         "fragment": "enum RTCIceGathererState {\n  \"new\",\n  \"gathering\",\n  \"complete\"\n};",
@@ -4384,18 +4662,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegathererstate-new"
           },
           {
             "type": "enum-value",
-            "value": "gathering"
+            "value": "gathering",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegathererstate-gathering"
           },
           {
             "type": "enum-value",
-            "value": "complete"
+            "value": "complete",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegathererstate-complete"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicegathererstate"
       },
       "RTCIceTransportState": {
         "fragment": "enum RTCIceTransportState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"checking\",\n  \"completed\",\n  \"connected\"\n};",
@@ -4404,34 +4686,42 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-closed"
           },
           {
             "type": "enum-value",
-            "value": "failed"
+            "value": "failed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-failed"
           },
           {
             "type": "enum-value",
-            "value": "disconnected"
+            "value": "disconnected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-disconnected"
           },
           {
             "type": "enum-value",
-            "value": "new"
+            "value": "new",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-new"
           },
           {
             "type": "enum-value",
-            "value": "checking"
+            "value": "checking",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-checking"
           },
           {
             "type": "enum-value",
-            "value": "completed"
+            "value": "completed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-completed"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate-connected"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransportstate"
       },
       "RTCIceRole": {
         "fragment": "enum RTCIceRole {\n  \"unknown\",\n  \"controlling\",\n  \"controlled\"\n};",
@@ -4440,18 +4730,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "unknown"
+            "value": "unknown",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicerole-unknown"
           },
           {
             "type": "enum-value",
-            "value": "controlling"
+            "value": "controlling",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicerole-controlling"
           },
           {
             "type": "enum-value",
-            "value": "controlled"
+            "value": "controlled",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicerole-controlled"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicerole"
       },
       "RTCIceComponent": {
         "fragment": "enum RTCIceComponent {\n  \"rtp\",\n  \"rtcp\"\n};",
@@ -4460,14 +4754,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "rtp"
+            "value": "rtp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecomponent-rtp"
           },
           {
             "type": "enum-value",
-            "value": "rtcp"
+            "value": "rtcp",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecomponent-rtcp"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecomponent"
       },
       "RTCTrackEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCTrackEvent : Event {\n  constructor(DOMString type, RTCTrackEventInit eventInitDict);\n  readonly attribute RTCRtpReceiver receiver;\n  readonly attribute MediaStreamTrack track;\n  [SameObject] readonly attribute FrozenArray<MediaStream> streams;\n  readonly attribute RTCRtpTransceiver transceiver;\n};",
@@ -4511,7 +4808,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-constructor"
           },
           {
             "type": "attribute",
@@ -4526,7 +4824,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-trackevent-receiver"
           },
           {
             "type": "attribute",
@@ -4541,7 +4840,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-track"
           },
           {
             "type": "attribute",
@@ -4572,7 +4872,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-streams"
           },
           {
             "type": "attribute",
@@ -4587,7 +4888,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-trackevent-transceiver"
           }
         ],
         "extAttrs": [
@@ -4601,7 +4903,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent"
       },
       "RTCTrackEventInit": {
         "fragment": "dictionary RTCTrackEventInit : EventInit {\n  required RTCRtpReceiver receiver;\n  required MediaStreamTrack track;\n  sequence<MediaStream> streams = [];\n  required RTCRtpTransceiver transceiver;\n};",
@@ -4622,7 +4925,8 @@
               "idlType": "RTCRtpReceiver"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-receiver"
           },
           {
             "type": "field",
@@ -4637,7 +4941,8 @@
               "idlType": "MediaStreamTrack"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-track"
           },
           {
             "type": "field",
@@ -4664,7 +4969,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-streams"
           },
           {
             "type": "field",
@@ -4679,11 +4985,13 @@
               "idlType": "RTCRtpTransceiver"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-transceiver"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit"
       },
       "RTCSctpTransport": {
         "fragment": "[Exposed=Window]\ninterface RTCSctpTransport : EventTarget {\n  readonly attribute RTCDtlsTransport transport;\n  readonly attribute RTCSctpTransportState state;\n  readonly attribute unrestricted double maxMessageSize;\n  readonly attribute unsigned short? maxChannels;\n  attribute EventHandler onstatechange;\n};",
@@ -4704,7 +5012,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-transport"
           },
           {
             "type": "attribute",
@@ -4719,7 +5028,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-state"
           },
           {
             "type": "attribute",
@@ -4734,7 +5044,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-maxmessagesize"
           },
           {
             "type": "attribute",
@@ -4749,7 +5060,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-maxchannels"
           },
           {
             "type": "attribute",
@@ -4764,7 +5076,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-onstatechange"
           }
         ],
         "extAttrs": [
@@ -4778,7 +5091,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport"
       },
       "RTCSctpTransportState": {
         "fragment": "enum RTCSctpTransportState {\n  \"connecting\",\n  \"connected\",\n  \"closed\"\n};",
@@ -4787,18 +5101,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "connecting"
+            "value": "connecting",
+            "href": "https://w3c.github.io/webrtc-pc/#idl-def-RTCSctpTransportState.connecting"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/webrtc-pc/#idl-def-RTCSctpTransportState.connected"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#idl-def-RTCSctpTransportState.closed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransportstate"
       },
       "RTCDataChannel": {
         "fragment": "[Exposed=Window]\ninterface RTCDataChannel : EventTarget {\n  readonly attribute USVString label;\n  readonly attribute boolean ordered;\n  readonly attribute unsigned short? maxPacketLifeTime;\n  readonly attribute unsigned short? maxRetransmits;\n  readonly attribute USVString protocol;\n  readonly attribute boolean negotiated;\n  readonly attribute unsigned short? id;\n  readonly attribute RTCDataChannelState readyState;\n  readonly attribute unsigned long bufferedAmount;\n  [EnforceRange] attribute unsigned long bufferedAmountLowThreshold;\n  attribute EventHandler onopen;\n  attribute EventHandler onbufferedamountlow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclosing;\n  attribute EventHandler onclose;\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
@@ -4819,7 +5137,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-label"
           },
           {
             "type": "attribute",
@@ -4834,7 +5153,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-ordered"
           },
           {
             "type": "attribute",
@@ -4849,7 +5169,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxpacketlifetime"
           },
           {
             "type": "attribute",
@@ -4864,7 +5185,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxretransmits"
           },
           {
             "type": "attribute",
@@ -4879,7 +5201,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-protocol"
           },
           {
             "type": "attribute",
@@ -4894,7 +5217,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-negotiated"
           },
           {
             "type": "attribute",
@@ -4909,7 +5233,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-id"
           },
           {
             "type": "attribute",
@@ -4924,7 +5249,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-readystate"
           },
           {
             "type": "attribute",
@@ -4939,7 +5265,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-bufferedamount"
           },
           {
             "type": "attribute",
@@ -4961,7 +5288,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-bufferedamountlowthreshold"
           },
           {
             "type": "attribute",
@@ -4976,7 +5304,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onopen"
           },
           {
             "type": "attribute",
@@ -4991,7 +5320,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onbufferedamountlow"
           },
           {
             "type": "attribute",
@@ -5006,7 +5336,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onerror"
           },
           {
             "type": "attribute",
@@ -5021,7 +5352,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclosing"
           },
           {
             "type": "attribute",
@@ -5036,7 +5368,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclose"
           },
           {
             "type": "operation",
@@ -5051,7 +5384,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-close"
           },
           {
             "type": "attribute",
@@ -5066,7 +5400,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onmessage"
           },
           {
             "type": "attribute",
@@ -5081,7 +5416,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-binarytype"
           },
           {
             "type": "operation",
@@ -5113,7 +5449,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send"
           },
           {
             "type": "operation",
@@ -5145,7 +5482,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send!overload-1"
           },
           {
             "type": "operation",
@@ -5177,7 +5515,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send!overload-2"
           },
           {
             "type": "operation",
@@ -5209,7 +5548,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send!overload-3"
           }
         ],
         "extAttrs": [
@@ -5223,7 +5563,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel"
       },
       "RTCDataChannelInit": {
         "fragment": "dictionary RTCDataChannelInit {\n  boolean ordered = true;\n  [EnforceRange] unsigned short maxPacketLifeTime;\n  [EnforceRange] unsigned short maxRetransmits;\n  USVString protocol = \"\";\n  boolean negotiated = false;\n  [EnforceRange] unsigned short id;\n};",
@@ -5247,7 +5588,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-ordered"
           },
           {
             "type": "field",
@@ -5269,7 +5611,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-maxpacketlifetime"
           },
           {
             "type": "field",
@@ -5291,7 +5634,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-maxretransmits"
           },
           {
             "type": "field",
@@ -5309,7 +5653,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-protocol"
           },
           {
             "type": "field",
@@ -5327,7 +5672,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-negotiated"
           },
           {
             "type": "field",
@@ -5349,11 +5695,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit"
       },
       "RTCDataChannelState": {
         "fragment": "enum RTCDataChannelState {\n  \"connecting\",\n  \"open\",\n  \"closing\",\n  \"closed\"\n};",
@@ -5362,22 +5710,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "connecting"
+            "value": "connecting",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelstate-connecting"
           },
           {
             "type": "enum-value",
-            "value": "open"
+            "value": "open",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelstate-open"
           },
           {
             "type": "enum-value",
-            "value": "closing"
+            "value": "closing",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelstate-closing"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelstate-closed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelstate"
       },
       "RTCDataChannelEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCDataChannelEvent : Event {\n  constructor(DOMString type, RTCDataChannelEventInit eventInitDict);\n  readonly attribute RTCDataChannel channel;\n};",
@@ -5421,7 +5774,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelevent-constructor"
           },
           {
             "type": "attribute",
@@ -5436,7 +5790,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-datachannelevent-channel"
           }
         ],
         "extAttrs": [
@@ -5450,7 +5805,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelevent"
       },
       "RTCDataChannelEventInit": {
         "fragment": "dictionary RTCDataChannelEventInit : EventInit {\n  required RTCDataChannel channel;\n};",
@@ -5471,11 +5827,13 @@
               "idlType": "RTCDataChannel"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachanneleventinit-channel"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachanneleventinit"
       },
       "RTCDTMFSender": {
         "fragment": "[Exposed=Window]\ninterface RTCDTMFSender : EventTarget {\n  undefined insertDTMF(DOMString tones, optional unsigned long duration = 100, optional unsigned long interToneGap = 70);\n  attribute EventHandler ontonechange;\n  readonly attribute boolean canInsertDTMF;\n  readonly attribute DOMString toneBuffer;\n};",
@@ -5551,7 +5909,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-insertDTMF"
           },
           {
             "type": "attribute",
@@ -5566,7 +5925,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-ontonechange"
           },
           {
             "type": "attribute",
@@ -5581,7 +5941,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-caninsertdtmf"
           },
           {
             "type": "attribute",
@@ -5596,7 +5957,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-tonebuffer"
           }
         ],
         "extAttrs": [
@@ -5610,7 +5972,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender"
       },
       "RTCDTMFToneChangeEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCDTMFToneChangeEvent : Event {\n  constructor(DOMString type, optional RTCDTMFToneChangeEventInit eventInitDict = {});\n  readonly attribute DOMString tone;\n};",
@@ -5656,7 +6019,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent-constructor"
           },
           {
             "type": "attribute",
@@ -5671,7 +6035,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent-tone"
           }
         ],
         "extAttrs": [
@@ -5685,7 +6050,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent"
       },
       "RTCDTMFToneChangeEventInit": {
         "fragment": "dictionary RTCDTMFToneChangeEventInit : EventInit {\n  DOMString tone = \"\";\n};",
@@ -5709,11 +6075,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeeventinit-tone"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeeventinit"
       },
       "RTCStatsReport": {
         "fragment": "[Exposed=Window]\ninterface RTCStatsReport {\n  readonly maplike<DOMString, object>;\n};",
@@ -5758,7 +6126,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstatsreport"
       },
       "RTCStats": {
         "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
@@ -5779,7 +6148,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-timestamp"
           },
           {
             "type": "field",
@@ -5794,7 +6164,8 @@
               "idlType": "RTCStatsType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-type"
           },
           {
             "type": "field",
@@ -5809,11 +6180,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats"
       },
       "RTCError": {
         "fragment": "[Exposed=Window]\ninterface RTCError : DOMException {\n  constructor(RTCErrorInit init, optional DOMString message = \"\");\n  readonly attribute RTCErrorDetailType errorDetail;\n  readonly attribute long? sdpLineNumber;\n  readonly attribute long? sctpCauseCode;\n  readonly attribute unsigned long? receivedAlert;\n  readonly attribute unsigned long? sentAlert;\n};",
@@ -5860,7 +6233,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-constructor"
           },
           {
             "type": "attribute",
@@ -5875,7 +6249,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-errordetail"
           },
           {
             "type": "attribute",
@@ -5890,7 +6265,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sdplinenumber"
           },
           {
             "type": "attribute",
@@ -5905,7 +6281,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sctpcausecode"
           },
           {
             "type": "attribute",
@@ -5920,7 +6297,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-receivedalert"
           },
           {
             "type": "attribute",
@@ -5935,7 +6313,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sentalert"
           }
         ],
         "extAttrs": [
@@ -5949,7 +6328,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerror"
       },
       "RTCErrorInit": {
         "fragment": "dictionary RTCErrorInit {\n  required RTCErrorDetailType errorDetail;\n  long sdpLineNumber;\n  long sctpCauseCode;\n  unsigned long receivedAlert;\n  unsigned long sentAlert;\n};",
@@ -5970,7 +6350,8 @@
               "idlType": "RTCErrorDetailType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit-errordetail"
           },
           {
             "type": "field",
@@ -5985,7 +6366,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit-sdplinenumber"
           },
           {
             "type": "field",
@@ -6000,7 +6382,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit-sctpcausecode"
           },
           {
             "type": "field",
@@ -6015,7 +6398,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit-receivedalert"
           },
           {
             "type": "field",
@@ -6030,11 +6414,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit-sentalert"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit"
       },
       "RTCErrorDetailType": {
         "fragment": "enum RTCErrorDetailType {\n  \"data-channel-failure\",\n  \"dtls-failure\",\n  \"fingerprint-failure\",\n  \"sctp-failure\",\n  \"sdp-syntax-error\",\n  \"hardware-encoder-not-available\",\n  \"hardware-encoder-error\"\n};",
@@ -6043,34 +6429,42 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "data-channel-failure"
+            "value": "data-channel-failure",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-data-channel-failure"
           },
           {
             "type": "enum-value",
-            "value": "dtls-failure"
+            "value": "dtls-failure",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-dtls-failure"
           },
           {
             "type": "enum-value",
-            "value": "fingerprint-failure"
+            "value": "fingerprint-failure",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-fingerprint-failure"
           },
           {
             "type": "enum-value",
-            "value": "sctp-failure"
+            "value": "sctp-failure",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-sctp-failure"
           },
           {
             "type": "enum-value",
-            "value": "sdp-syntax-error"
+            "value": "sdp-syntax-error",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-sdp-syntax-error"
           },
           {
             "type": "enum-value",
-            "value": "hardware-encoder-not-available"
+            "value": "hardware-encoder-not-available",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-hardware-encoder-not-available"
           },
           {
             "type": "enum-value",
-            "value": "hardware-encoder-error"
+            "value": "hardware-encoder-error",
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype-hardware-encoder-error"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype"
       },
       "RTCErrorEvent": {
         "fragment": "[Exposed=Window]\ninterface RTCErrorEvent : Event {\n  constructor(DOMString type, RTCErrorEventInit eventInitDict);\n  [SameObject] readonly attribute RTCError error;\n};",
@@ -6114,7 +6508,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent-constructor"
           },
           {
             "type": "attribute",
@@ -6136,7 +6531,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent-error"
           }
         ],
         "extAttrs": [
@@ -6150,7 +6546,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent"
       },
       "RTCErrorEventInit": {
         "fragment": "dictionary RTCErrorEventInit : EventInit {\n  required RTCError error;\n};",
@@ -6171,11 +6568,13 @@
               "idlType": "RTCError"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerroreventinit-error"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerroreventinit"
       }
     },
     "idlExtendedNames": {
@@ -6199,7 +6598,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-offertoreceiveaudio"
             },
             {
               "type": "field",
@@ -6214,7 +6614,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-offertoreceivevideo"
             }
           ],
           "extAttrs": [],
@@ -6267,7 +6668,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-generatecertificate"
             }
           ],
           "extAttrs": [],
@@ -6301,7 +6703,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getsenders"
             },
             {
               "type": "operation",
@@ -6325,7 +6728,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getreceivers"
             },
             {
               "type": "operation",
@@ -6349,7 +6753,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-gettranseceivers"
             },
             {
               "type": "operation",
@@ -6397,7 +6802,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack"
             },
             {
               "type": "operation",
@@ -6429,7 +6835,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-removetrack"
             },
             {
               "type": "operation",
@@ -6496,7 +6903,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtransceiver"
             },
             {
               "type": "attribute",
@@ -6511,7 +6919,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ontrack"
             }
           ],
           "extAttrs": [],
@@ -6536,7 +6945,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-sctp"
             },
             {
               "type": "operation",
@@ -6586,7 +6996,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-createdatachannel"
             },
             {
               "type": "attribute",
@@ -6601,7 +7012,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ondatachannel"
             }
           ],
           "extAttrs": [],
@@ -6654,7 +7066,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
             }
           ],
           "extAttrs": [],
@@ -6681,7 +7094,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-dtmf"
             }
           ],
           "extAttrs": [],

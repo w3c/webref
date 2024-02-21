@@ -32,7 +32,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-sampleinterval"
           },
           {
             "type": "attribute",
@@ -47,7 +48,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stopped"
           },
           {
             "type": "constructor",
@@ -69,7 +71,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-constructor"
           },
           {
             "type": "operation",
@@ -93,7 +96,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stop"
           }
         ],
         "extAttrs": [
@@ -107,7 +111,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler"
       },
       "ProfilerResource": {
         "fragment": "typedef DOMString ProfilerResource;",
@@ -121,7 +126,8 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerresource"
       },
       "ProfilerTrace": {
         "fragment": "dictionary ProfilerTrace {\n  required sequence<ProfilerResource> resources;\n  required sequence<ProfilerFrame> frames;\n  required sequence<ProfilerStack> stacks;\n  required sequence<ProfilerSample> samples;\n};",
@@ -151,7 +157,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-resources"
           },
           {
             "type": "field",
@@ -175,7 +182,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-frames"
           },
           {
             "type": "field",
@@ -199,7 +207,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-stacks"
           },
           {
             "type": "field",
@@ -223,11 +232,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-samples"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace"
       },
       "ProfilerSample": {
         "fragment": "dictionary ProfilerSample {\n  required DOMHighResTimeStamp timestamp;\n  unsigned long long stackId;\n};",
@@ -248,7 +259,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample-timestamp"
           },
           {
             "type": "field",
@@ -263,11 +275,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample-stackid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample"
       },
       "ProfilerStack": {
         "fragment": "dictionary ProfilerStack {\n  unsigned long long parentId;\n  required unsigned long long frameId;\n};",
@@ -288,7 +302,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-parentid"
           },
           {
             "type": "field",
@@ -303,11 +318,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-frameid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack"
       },
       "ProfilerFrame": {
         "fragment": "dictionary ProfilerFrame {\n  required DOMString name;\n  unsigned long long resourceId;\n  unsigned long long line;\n  unsigned long long column;\n};",
@@ -328,7 +345,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-name"
           },
           {
             "type": "field",
@@ -343,7 +361,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-resourceid"
           },
           {
             "type": "field",
@@ -358,7 +377,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-line"
           },
           {
             "type": "field",
@@ -373,11 +393,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-column"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe"
       },
       "ProfilerInitOptions": {
         "fragment": "dictionary ProfilerInitOptions {\n  required DOMHighResTimeStamp sampleInterval;\n  required unsigned long maxBufferSize;\n};",
@@ -398,7 +420,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval"
           },
           {
             "type": "field",
@@ -413,11 +436,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-maxbuffersize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions"
       }
     },
     "idlExtendedNames": {},

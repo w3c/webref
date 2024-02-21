@@ -16,14 +16,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://wicg.github.io/trust-token-api/#dom-refreshpolicy-none"
           },
           {
             "type": "enum-value",
-            "value": "refresh"
+            "value": "refresh",
+            "href": "https://wicg.github.io/trust-token-api/#dom-refreshpolicy-refresh"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/trust-token-api/#enumdef-refreshpolicy"
       },
       "TokenVersion": {
         "fragment": "enum TokenVersion { \"1\" };",
@@ -32,10 +35,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "1"
+            "value": "1",
+            "href": "https://wicg.github.io/trust-token-api/#dom-tokenversion-1"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/trust-token-api/#enumdef-tokenversion"
       },
       "OperationType": {
         "fragment": "enum OperationType { \"token-request\", \"send-redemption-record\", \"token-redemption\" };",
@@ -44,18 +49,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "token-request"
+            "value": "token-request",
+            "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-token-request"
           },
           {
             "type": "enum-value",
-            "value": "send-redemption-record"
+            "value": "send-redemption-record",
+            "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-send-redemption-record"
           },
           {
             "type": "enum-value",
-            "value": "token-redemption"
+            "value": "token-redemption",
+            "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-token-redemption"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/trust-token-api/#enumdef-operationtype"
       },
       "PrivateToken": {
         "fragment": "dictionary PrivateToken {\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
@@ -76,7 +85,8 @@
               "idlType": "TokenVersion"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/trust-token-api/#dom-privatetoken-version"
           },
           {
             "type": "field",
@@ -91,7 +101,8 @@
               "idlType": "OperationType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/trust-token-api/#dom-privatetoken-operation"
           },
           {
             "type": "field",
@@ -109,7 +120,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/trust-token-api/#dom-privatetoken-refreshpolicy"
           },
           {
             "type": "field",
@@ -133,11 +145,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/trust-token-api/#dom-privatetoken-issuers"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/trust-token-api/#dictdef-privatetoken"
       }
     },
     "idlExtendedNames": {
@@ -161,7 +175,8 @@
                 "idlType": "PrivateToken"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://wicg.github.io/trust-token-api/#dom-requestinit-privatetoken"
             }
           ],
           "extAttrs": [],
@@ -195,7 +210,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/trust-token-api/#dom-htmliframeelement-privatetoken"
             }
           ],
           "extAttrs": [],
@@ -239,7 +255,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/trust-token-api/#dom-xmlhttprequest-setprivatetoken"
             }
           ],
           "extAttrs": [],
@@ -292,7 +309,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetoken"
             },
             {
               "type": "operation",
@@ -333,7 +351,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord"
             }
           ],
           "extAttrs": [],

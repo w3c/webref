@@ -1,0 +1,278 @@
+{
+  "spec": {
+    "title": "Digital Credentials",
+    "url": "https://wicg.github.io/digital-identities/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-digital-credential",
+      "href": "https://wicg.github.io/digital-identities/#dfn-digital-credential",
+      "linkingText": [
+        "Digital credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "model",
+        "href": "https://wicg.github.io/digital-identities/#model",
+        "title": "Model",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\n          Is a <a href=\"https://www.w3.org/TR/vc-data-model/#dfn-vc\">verifiable credential</a> about a person.\n        </p>"
+    },
+    {
+      "id": "dfn-identity-credential-provider",
+      "href": "https://wicg.github.io/digital-identities/#dfn-identity-credential-provider",
+      "linkingText": [
+        "Identity credential provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "model",
+        "href": "https://wicg.github.io/digital-identities/#model",
+        "title": "Model",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "An application or service that provides a user interface for selecting\n        and/or querying a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a>, such as a digital wallet that\n        manages various identity documents and credentials."
+    },
+    {
+      "id": "dfn-request-protocol",
+      "href": "https://wicg.github.io/digital-identities/#dfn-request-protocol",
+      "linkingText": [
+        "Request protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "model",
+        "href": "https://wicg.github.io/digital-identities/#model",
+        "title": "Model",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A standardized format for requesting a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a>, designed\n        to ensure the secure, private, and interoperable exchange of identity\n        information. See section <a href=\"https://wicg.github.io/digital-identities/#protocol-registry\"><bdi>9. </bdi>\n      Registry of protocols for requesting digital credential</a>."
+    },
+    {
+      "id": "dom-navigator-identity",
+      "href": "https://wicg.github.io/digital-identities/#dom-navigator-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [
+        "Navigator.identity"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-identity-attribute",
+        "href": "https://wicg.github.io/digital-identities/#the-identity-attribute",
+        "title": "The identity attribute",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-credentialrequestoptions-digital",
+      "href": "https://wicg.github.io/digital-identities/#dom-credentialrequestoptions-digital",
+      "linkingText": [
+        "digital"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-digital-member",
+        "href": "https://wicg.github.io/digital-identities/#the-digital-member",
+        "title": "The digital member",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-digitalcredentialrequestoptions",
+      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions",
+      "linkingText": [
+        "DigitalCredentialRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-digitalcredentialrequestoptions-dictionary",
+        "href": "https://wicg.github.io/digital-identities/#the-digitalcredentialrequestoptions-dictionary",
+        "title": "The DigitalCredentialRequestOptions dictionary",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-digitalcredentialrequestoptions-providers",
+      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions-providers",
+      "linkingText": [
+        "providers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DigitalCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-providers-member",
+        "href": "https://wicg.github.io/digital-identities/#the-providers-member",
+        "title": "The providers member",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityrequestprovider",
+      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider",
+      "linkingText": [
+        "IdentityRequestProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-identityrequestprovider-dictionary",
+        "href": "https://wicg.github.io/digital-identities/#the-identityrequestprovider-dictionary",
+        "title": "The IdentityRequestProvider dictionary",
+        "number": "7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityrequestprovider-protocol",
+      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityRequestProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-protocol-member",
+        "href": "https://wicg.github.io/digital-identities/#the-protocol-member",
+        "title": "The protocol member",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityrequestprovider-request",
+      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityRequestProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-request-member",
+        "href": "https://wicg.github.io/digital-identities/#the-request-member",
+        "title": "The request member",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-digitalcredential",
+      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential",
+      "linkingText": [
+        "DigitalCredential"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-digitalcredential-interface",
+        "href": "https://wicg.github.io/digital-identities/#the-digitalcredential-interface",
+        "title": "The DigitalCredential interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-digitalcredential-protocol",
+      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [
+        "DigitalCredential.protocol"
+      ],
+      "type": "attribute",
+      "for": [
+        "DigitalCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-protocol-member-0",
+        "href": "https://wicg.github.io/digital-identities/#the-protocol-member-0",
+        "title": "The protocol member",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-digitalcredential-data",
+      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [
+        "DigitalCredential.data"
+      ],
+      "type": "attribute",
+      "for": [
+        "DigitalCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-data-member",
+        "href": "https://wicg.github.io/digital-identities/#the-data-member",
+        "title": "The data member",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

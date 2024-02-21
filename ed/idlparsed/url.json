@@ -56,7 +56,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://url.spec.whatwg.org/#dom-url-url"
           },
           {
             "type": "operation",
@@ -104,7 +105,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://url.spec.whatwg.org/#dom-url-canparse"
           },
           {
             "type": "attribute",
@@ -134,7 +136,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://url.spec.whatwg.org/#dom-url-origin"
           },
           {
             "type": "attribute",
@@ -149,7 +152,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-protocol"
           },
           {
             "type": "attribute",
@@ -164,7 +168,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-username"
           },
           {
             "type": "attribute",
@@ -179,7 +184,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-password"
           },
           {
             "type": "attribute",
@@ -194,7 +200,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-host"
           },
           {
             "type": "attribute",
@@ -209,7 +216,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-hostname"
           },
           {
             "type": "attribute",
@@ -224,7 +232,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-port"
           },
           {
             "type": "attribute",
@@ -239,7 +248,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-pathname"
           },
           {
             "type": "attribute",
@@ -254,7 +264,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-search"
           },
           {
             "type": "attribute",
@@ -276,7 +287,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://url.spec.whatwg.org/#dom-url-searchparams"
           },
           {
             "type": "attribute",
@@ -291,7 +303,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://url.spec.whatwg.org/#dom-url-hash"
           },
           {
             "type": "operation",
@@ -306,7 +319,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-url-tojson"
           }
         ],
         "extAttrs": [
@@ -329,7 +343,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://url.spec.whatwg.org/#url"
       },
       "URLSearchParams": {
         "fragment": "[Exposed=*]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  readonly attribute unsigned long size;\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name, optional USVString value);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name, optional USVString value);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
@@ -420,7 +435,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-urlsearchparams"
           },
           {
             "type": "attribute",
@@ -435,7 +451,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-size"
           },
           {
             "type": "operation",
@@ -483,7 +500,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-append"
           },
           {
             "type": "operation",
@@ -531,7 +549,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-delete"
           },
           {
             "type": "operation",
@@ -563,7 +582,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-get"
           },
           {
             "type": "operation",
@@ -604,7 +624,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-getall"
           },
           {
             "type": "operation",
@@ -652,7 +673,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-has"
           },
           {
             "type": "operation",
@@ -700,7 +722,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-set"
           },
           {
             "type": "operation",
@@ -715,7 +738,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-sort"
           },
           {
             "type": "iterable",
@@ -761,7 +785,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://url.spec.whatwg.org/#urlsearchparams"
       }
     },
     "idlExtendedNames": {},

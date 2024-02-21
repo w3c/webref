@@ -45,7 +45,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput"
       },
       "URLPattern": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(URLPatternInput input, USVString baseURL, optional URLPatternOptions options = {});\n  constructor(optional URLPatternInput input = {}, optional URLPatternOptions options = {});\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n\n  readonly attribute boolean hasRegExpGroups;\n};",
@@ -107,7 +108,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-urlpattern"
           },
           {
             "type": "constructor",
@@ -149,7 +151,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-urlpattern-input-options"
           },
           {
             "type": "operation",
@@ -199,7 +202,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-test"
           },
           {
             "type": "operation",
@@ -249,7 +253,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-exec"
           },
           {
             "type": "attribute",
@@ -264,7 +269,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-protocol"
           },
           {
             "type": "attribute",
@@ -279,7 +285,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-username"
           },
           {
             "type": "attribute",
@@ -294,7 +301,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-password"
           },
           {
             "type": "attribute",
@@ -309,7 +317,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-hostname"
           },
           {
             "type": "attribute",
@@ -324,7 +333,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-port"
           },
           {
             "type": "attribute",
@@ -339,7 +349,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-pathname"
           },
           {
             "type": "attribute",
@@ -354,7 +365,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-search"
           },
           {
             "type": "attribute",
@@ -369,7 +381,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-hash"
           },
           {
             "type": "attribute",
@@ -384,7 +397,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpattern-hasregexpgroups"
           }
         ],
         "extAttrs": [
@@ -405,7 +419,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://urlpattern.spec.whatwg.org/#urlpattern"
       },
       "URLPatternInit": {
         "fragment": "dictionary URLPatternInit {\n  USVString protocol;\n  USVString username;\n  USVString password;\n  USVString hostname;\n  USVString port;\n  USVString pathname;\n  USVString search;\n  USVString hash;\n  USVString baseURL;\n};",
@@ -426,7 +441,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol"
           },
           {
             "type": "field",
@@ -441,7 +457,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-username"
           },
           {
             "type": "field",
@@ -456,7 +473,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-password"
           },
           {
             "type": "field",
@@ -471,7 +489,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname"
           },
           {
             "type": "field",
@@ -486,7 +505,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port"
           },
           {
             "type": "field",
@@ -501,7 +521,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname"
           },
           {
             "type": "field",
@@ -516,7 +537,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-search"
           },
           {
             "type": "field",
@@ -531,7 +553,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hash"
           },
           {
             "type": "field",
@@ -546,11 +569,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-baseurl"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit"
       },
       "URLPatternOptions": {
         "fragment": "dictionary URLPatternOptions {\n  boolean ignoreCase = false;\n};",
@@ -574,11 +599,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternoptions-ignorecase"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://urlpattern.spec.whatwg.org/#dictdef-urlpatternoptions"
       },
       "URLPatternResult": {
         "fragment": "dictionary URLPatternResult {\n  sequence<URLPatternInput> inputs;\n\n  URLPatternComponentResult protocol;\n  URLPatternComponentResult username;\n  URLPatternComponentResult password;\n  URLPatternComponentResult hostname;\n  URLPatternComponentResult port;\n  URLPatternComponentResult pathname;\n  URLPatternComponentResult search;\n  URLPatternComponentResult hash;\n};",
@@ -608,7 +635,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-inputs"
           },
           {
             "type": "field",
@@ -623,7 +651,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-protocol"
           },
           {
             "type": "field",
@@ -638,7 +667,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-username"
           },
           {
             "type": "field",
@@ -653,7 +683,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-password"
           },
           {
             "type": "field",
@@ -668,7 +699,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-hostname"
           },
           {
             "type": "field",
@@ -683,7 +715,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-port"
           },
           {
             "type": "field",
@@ -698,7 +731,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-pathname"
           },
           {
             "type": "field",
@@ -713,7 +747,8 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-search"
           },
           {
             "type": "field",
@@ -728,11 +763,13 @@
               "idlType": "URLPatternComponentResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-hash"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://urlpattern.spec.whatwg.org/#dictdef-urlpatternresult"
       },
       "URLPatternComponentResult": {
         "fragment": "dictionary URLPatternComponentResult {\n  USVString input;\n  record<USVString, (USVString or undefined)> groups;\n};",
@@ -753,7 +790,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-input"
           },
           {
             "type": "field",
@@ -802,11 +840,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://urlpattern.spec.whatwg.org/#dictdef-urlpatterncomponentresult"
       },
       "URLPatternCompatible": {
         "fragment": "typedef (USVString or URLPatternInit or URLPattern) URLPatternCompatible;",
@@ -845,7 +885,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible"
       }
     },
     "idlExtendedNames": {},

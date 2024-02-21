@@ -93,7 +93,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/FileAPI/#dom-blob-blob"
           },
           {
             "type": "attribute",
@@ -108,7 +109,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dfn-size"
           },
           {
             "type": "attribute",
@@ -123,7 +125,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dfn-type"
           },
           {
             "type": "operation",
@@ -201,7 +204,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-slice"
           },
           {
             "type": "operation",
@@ -223,7 +227,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dom-blob-stream"
           },
           {
             "type": "operation",
@@ -254,7 +259,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dom-blob-text"
           },
           {
             "type": "operation",
@@ -285,7 +291,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dom-blob-arraybuffer"
           }
         ],
         "extAttrs": [
@@ -312,7 +319,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-Blob"
       },
       "EndingType": {
         "fragment": "enum EndingType { \"transparent\", \"native\" };",
@@ -321,14 +329,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "transparent"
+            "value": "transparent",
+            "href": "https://w3c.github.io/FileAPI/#dom-endingtype-transparent"
           },
           {
             "type": "enum-value",
-            "value": "native"
+            "value": "native",
+            "href": "https://w3c.github.io/FileAPI/#dom-endingtype-native"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/FileAPI/#enumdef-endingtype"
       },
       "BlobPropertyBag": {
         "fragment": "dictionary BlobPropertyBag {\n  DOMString type = \"\";\n  EndingType endings = \"transparent\";\n};",
@@ -352,7 +363,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-BPtype"
           },
           {
             "type": "field",
@@ -370,11 +382,13 @@
               "type": "string",
               "value": "transparent"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/FileAPI/#dom-blobpropertybag-endings"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag"
       },
       "BlobPart": {
         "fragment": "typedef (BufferSource or Blob or USVString) BlobPart;",
@@ -413,7 +427,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/FileAPI/#typedefdef-blobpart"
       },
       "File": {
         "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface File : Blob {\n  constructor(sequence<BlobPart> fileBits,\n              USVString fileName,\n              optional FilePropertyBag options = {});\n  readonly attribute DOMString name;\n  readonly attribute long long lastModified;\n};",
@@ -484,7 +499,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/FileAPI/#dom-file-file"
           },
           {
             "type": "attribute",
@@ -499,7 +515,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dfn-name"
           },
           {
             "type": "attribute",
@@ -514,7 +531,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dfn-lastModified"
           }
         ],
         "extAttrs": [
@@ -541,7 +559,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-file"
       },
       "FilePropertyBag": {
         "fragment": "dictionary FilePropertyBag : BlobPropertyBag {\n  long long lastModified;\n};",
@@ -562,11 +581,13 @@
               "idlType": "long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-FPdate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-FilePropertyBag"
       },
       "FileList": {
         "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface FileList {\n  getter File? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
@@ -619,7 +640,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dfn-length"
           }
         ],
         "extAttrs": [
@@ -646,7 +668,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-filelist"
       },
       "FileReader": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FileReader: EventTarget {\n  constructor();\n  // async read methods\n  undefined readAsArrayBuffer(Blob blob);\n  undefined readAsBinaryString(Blob blob);\n  undefined readAsText(Blob blob, optional DOMString encoding);\n  undefined readAsDataURL(Blob blob);\n\n  undefined abort();\n\n  // states\n  const unsigned short EMPTY = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short DONE = 2;\n\n  readonly attribute unsigned short readyState;\n\n  // File or Blob data\n  readonly attribute (DOMString or ArrayBuffer)? result;\n\n  readonly attribute DOMException? error;\n\n  // event handler content attributes\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onload;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onloadend;\n};",
@@ -657,7 +680,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/FileAPI/#filereaderConstrctr"
           },
           {
             "type": "operation",
@@ -689,7 +713,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsArrayBuffer"
           },
           {
             "type": "operation",
@@ -721,7 +746,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsBinaryString"
           },
           {
             "type": "operation",
@@ -769,7 +795,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsText"
           },
           {
             "type": "operation",
@@ -801,7 +828,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsDataURL"
           },
           {
             "type": "operation",
@@ -816,7 +844,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-abort"
           },
           {
             "type": "const",
@@ -833,7 +862,8 @@
             "value": {
               "type": "number",
               "value": "0"
-            }
+            },
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-empty"
           },
           {
             "type": "const",
@@ -850,7 +880,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-loading"
           },
           {
             "type": "const",
@@ -867,7 +898,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-done"
           },
           {
             "type": "attribute",
@@ -882,7 +914,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-readystate"
           },
           {
             "type": "attribute",
@@ -914,7 +947,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-result"
           },
           {
             "type": "attribute",
@@ -929,7 +963,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/FileAPI/#dom-filereader-error"
           },
           {
             "type": "attribute",
@@ -944,7 +979,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onloadstart"
           },
           {
             "type": "attribute",
@@ -959,7 +995,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onprogress"
           },
           {
             "type": "attribute",
@@ -974,7 +1011,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onload"
           },
           {
             "type": "attribute",
@@ -989,7 +1027,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onabort"
           },
           {
             "type": "attribute",
@@ -1004,7 +1043,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onerror"
           },
           {
             "type": "attribute",
@@ -1019,7 +1059,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/FileAPI/#dfn-onloadend"
           }
         ],
         "extAttrs": [
@@ -1040,7 +1081,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-filereader"
       },
       "FileReaderSync": {
         "fragment": "[Exposed=(DedicatedWorker,SharedWorker)]\ninterface FileReaderSync {\n  constructor();\n  // Synchronously return strings\n\n  ArrayBuffer readAsArrayBuffer(Blob blob);\n  DOMString readAsBinaryString(Blob blob);\n  DOMString readAsText(Blob blob, optional DOMString encoding);\n  DOMString readAsDataURL(Blob blob);\n};",
@@ -1051,7 +1093,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/FileAPI/#dom-filereadersync-filereadersync"
           },
           {
             "type": "operation",
@@ -1083,7 +1126,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsArrayBufferSync"
           },
           {
             "type": "operation",
@@ -1115,7 +1159,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsBinaryStringSync"
           },
           {
             "type": "operation",
@@ -1163,7 +1208,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsTextSync"
           },
           {
             "type": "operation",
@@ -1195,7 +1241,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/FileAPI/#dfn-readAsDataURLSync"
           }
         ],
         "extAttrs": [
@@ -1216,7 +1263,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/FileAPI/#dfn-FileReaderSync"
       }
     },
     "idlExtendedNames": {
@@ -1274,7 +1322,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/FileAPI/#dfn-createObjectURL"
             },
             {
               "type": "operation",
@@ -1306,7 +1355,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/FileAPI/#dfn-revokeObjectURL"
             }
           ],
           "extAttrs": [

@@ -78,7 +78,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGLQuery"
       },
       "WebGLSampler": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLSampler : WebGLObject {\n};",
@@ -104,7 +105,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGLSampler"
       },
       "WebGLSync": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLSync : WebGLObject {\n};",
@@ -130,7 +132,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGLSync"
       },
       "WebGLTransformFeedback": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLTransformFeedback : WebGLObject {\n};",
@@ -156,7 +159,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGLTransformFeedback"
       },
       "WebGLVertexArrayObject": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLVertexArrayObject : WebGLObject {\n};",
@@ -182,7 +186,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGLVertexArrayObject"
       },
       "Uint32List": {
         "fragment": "typedef ([AllowShared] Uint32Array or sequence<GLuint>) Uint32List;",
@@ -12283,7 +12288,8 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGL2RenderingContextBase"
       },
       "WebGL2RenderingContextOverloads": {
         "fragment": "interface mixin WebGL2RenderingContextOverloads\n{\n  // WebGL1:\n  undefined bufferData(GLenum target, GLsizeiptr size, GLenum usage);\n  undefined bufferData(GLenum target, AllowSharedBufferSource? srcData, GLenum usage);\n  undefined bufferSubData(GLenum target, GLintptr dstByteOffset, AllowSharedBufferSource srcData);\n  // WebGL2:\n  undefined bufferData(GLenum target, [AllowShared] ArrayBufferView srcData, GLenum usage, unsigned long long srcOffset,\n                       optional GLuint length = 0);\n  undefined bufferSubData(GLenum target, GLintptr dstByteOffset, [AllowShared] ArrayBufferView srcData,\n                          unsigned long long srcOffset, optional GLuint length = 0);\n\n  // WebGL1 legacy entrypoints:\n  undefined texImage2D(GLenum target, GLint level, GLint internalformat,\n                       GLsizei width, GLsizei height, GLint border, GLenum format,\n                       GLenum type, [AllowShared] ArrayBufferView? pixels);\n  undefined texImage2D(GLenum target, GLint level, GLint internalformat,\n                       GLenum format, GLenum type, TexImageSource source); // May throw DOMException\n\n  undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                          GLsizei width, GLsizei height,\n                          GLenum format, GLenum type, [AllowShared] ArrayBufferView? pixels);\n  undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                          GLenum format, GLenum type, TexImageSource source); // May throw DOMException\n\n  // WebGL2 entrypoints:\n  undefined texImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height,\n                       GLint border, GLenum format, GLenum type, GLintptr pboOffset);\n  undefined texImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height,\n                       GLint border, GLenum format, GLenum type,\n                       TexImageSource source); // May throw DOMException\n  undefined texImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height,\n                       GLint border, GLenum format, GLenum type, [AllowShared] ArrayBufferView srcData,\n                       unsigned long long srcOffset);\n\n  undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,\n                          GLsizei height, GLenum format, GLenum type, GLintptr pboOffset);\n  undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,\n                          GLsizei height, GLenum format, GLenum type,\n                          TexImageSource source); // May throw DOMException\n  undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,\n                          GLsizei height, GLenum format, GLenum type, [AllowShared] ArrayBufferView srcData,\n                          unsigned long long srcOffset);\n\n  undefined compressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width,\n                                 GLsizei height, GLint border, GLsizei imageSize, GLintptr offset);\n  undefined compressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width,\n                                 GLsizei height, GLint border, [AllowShared] ArrayBufferView srcData,\n                                 optional unsigned long long srcOffset = 0, optional GLuint srcLengthOverride = 0);\n\n  undefined compressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                                    GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, GLintptr offset);\n  undefined compressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                                    GLsizei width, GLsizei height, GLenum format,\n                                    [AllowShared] ArrayBufferView srcData,\n                                    optional unsigned long long srcOffset = 0,\n                                    optional GLuint srcLengthOverride = 0);\n\n  undefined uniform1fv(WebGLUniformLocation? location, Float32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform2fv(WebGLUniformLocation? location, Float32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform3fv(WebGLUniformLocation? location, Float32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform4fv(WebGLUniformLocation? location, Float32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n\n  undefined uniform1iv(WebGLUniformLocation? location, Int32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform2iv(WebGLUniformLocation? location, Int32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform3iv(WebGLUniformLocation? location, Int32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n  undefined uniform4iv(WebGLUniformLocation? location, Int32List data, optional unsigned long long srcOffset = 0,\n                       optional GLuint srcLength = 0);\n\n  undefined uniformMatrix2fv(WebGLUniformLocation? location, GLboolean transpose, Float32List data,\n                             optional unsigned long long srcOffset = 0, optional GLuint srcLength = 0);\n  undefined uniformMatrix3fv(WebGLUniformLocation? location, GLboolean transpose, Float32List data,\n                             optional unsigned long long srcOffset = 0, optional GLuint srcLength = 0);\n  undefined uniformMatrix4fv(WebGLUniformLocation? location, GLboolean transpose, Float32List data,\n                             optional unsigned long long srcOffset = 0, optional GLuint srcLength = 0);\n\n  /* Reading back pixels */\n  // WebGL1:\n  undefined readPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type,\n                       [AllowShared] ArrayBufferView? dstData);\n  // WebGL2:\n  undefined readPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type,\n                       GLintptr offset);\n  undefined readPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type,\n                       [AllowShared] ArrayBufferView dstData, unsigned long long dstOffset);\n};",
@@ -16351,7 +16357,8 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGL2RenderingContextOverloads"
       },
       "WebGL2RenderingContext": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGL2RenderingContext\n{\n};",
@@ -16377,7 +16384,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/2.0/#WebGL2RenderingContext"
       }
     },
     "idlExtendedNames": {

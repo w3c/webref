@@ -39,7 +39,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/serial/#dom-serial-onconnect"
           },
           {
             "type": "attribute",
@@ -54,7 +55,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/serial/#dom-serial-ondisconnect"
           },
           {
             "type": "operation",
@@ -87,7 +89,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serial-getports"
           },
           {
             "type": "operation",
@@ -140,7 +143,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serial-requestport"
           }
         ],
         "extAttrs": [
@@ -167,7 +171,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serial"
       },
       "SerialPortRequestOptions": {
         "fragment": "dictionary SerialPortRequestOptions {\n  sequence<SerialPortFilter> filters;\n  sequence<BluetoothServiceUUID> allowedBluetoothServiceClassIds;\n};",
@@ -197,7 +202,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions-filters"
           },
           {
             "type": "field",
@@ -221,11 +227,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions-allowedbluetoothserviceclassids"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions"
       },
       "SerialPortFilter": {
         "fragment": "dictionary SerialPortFilter {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n  BluetoothServiceUUID bluetoothServiceClassId;\n};",
@@ -246,7 +254,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportfilter-usbvendorid"
           },
           {
             "type": "field",
@@ -261,7 +270,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportfilter-usbproductid"
           },
           {
             "type": "field",
@@ -276,11 +286,13 @@
               "idlType": "BluetoothServiceUUID"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportfilter-bluetoothserviceclassid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialportfilter"
       },
       "SerialPort": {
         "fragment": "[Exposed=(DedicatedWorker,Window), SecureContext]\ninterface SerialPort : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  readonly attribute boolean connected;\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  SerialPortInfo getInfo();\n\n  Promise<undefined> open(SerialOptions options);\n  Promise<undefined> setSignals(optional SerialOutputSignals signals = {});\n  Promise<SerialInputSignals> getSignals();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n};",
@@ -301,7 +313,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/serial/#dom-serialport-onconnect"
           },
           {
             "type": "attribute",
@@ -316,7 +329,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/serial/#dom-serialport-ondisconnect"
           },
           {
             "type": "attribute",
@@ -331,7 +345,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/serial/#dom-serialport-connected"
           },
           {
             "type": "attribute",
@@ -346,7 +361,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/serial/#dom-serialport-readable"
           },
           {
             "type": "attribute",
@@ -361,7 +377,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/serial/#dom-serialport-writable"
           },
           {
             "type": "operation",
@@ -376,7 +393,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-getinfo"
           },
           {
             "type": "operation",
@@ -417,7 +435,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-open"
           },
           {
             "type": "operation",
@@ -460,7 +479,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-setsignals"
           },
           {
             "type": "operation",
@@ -484,7 +504,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-getsignals"
           },
           {
             "type": "operation",
@@ -508,7 +529,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-close"
           },
           {
             "type": "operation",
@@ -532,7 +554,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/serial/#dom-serialport-forget"
           }
         ],
         "extAttrs": [
@@ -559,7 +582,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialport"
       },
       "SerialPortInfo": {
         "fragment": "dictionary SerialPortInfo {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n  BluetoothServiceUUID bluetoothServiceClassId;\n};",
@@ -580,7 +604,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportinfo-usbvendorid"
           },
           {
             "type": "field",
@@ -595,7 +620,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportinfo-usbproductid"
           },
           {
             "type": "field",
@@ -610,11 +636,13 @@
               "idlType": "BluetoothServiceUUID"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialportinfo-bluetoothserviceclassid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialportinfo"
       },
       "SerialOptions": {
         "fragment": "dictionary SerialOptions {\n  [EnforceRange] required unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
@@ -642,7 +670,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-baudrate"
           },
           {
             "type": "field",
@@ -667,7 +696,8 @@
               "type": "number",
               "value": "8"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-databits"
           },
           {
             "type": "field",
@@ -692,7 +722,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-stopbits"
           },
           {
             "type": "field",
@@ -710,7 +741,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-parity"
           },
           {
             "type": "field",
@@ -735,7 +767,8 @@
               "type": "number",
               "value": "255"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize"
           },
           {
             "type": "field",
@@ -753,11 +786,13 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoptions-flowcontrol"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialoptions"
       },
       "ParityType": {
         "fragment": "enum ParityType {\n  \"none\",\n  \"even\",\n  \"odd\"\n};",
@@ -766,18 +801,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://wicg.github.io/serial/#dom-paritytype-none"
           },
           {
             "type": "enum-value",
-            "value": "even"
+            "value": "even",
+            "href": "https://wicg.github.io/serial/#dom-paritytype-even"
           },
           {
             "type": "enum-value",
-            "value": "odd"
+            "value": "odd",
+            "href": "https://wicg.github.io/serial/#dom-paritytype-odd"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/serial/#dom-paritytype"
       },
       "FlowControlType": {
         "fragment": "enum FlowControlType {\n  \"none\",\n  \"hardware\"\n};",
@@ -786,14 +825,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://wicg.github.io/serial/#dom-flowcontroltype-none"
           },
           {
             "type": "enum-value",
-            "value": "hardware"
+            "value": "hardware",
+            "href": "https://wicg.github.io/serial/#dom-flowcontroltype-hardware"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/serial/#dom-flowcontroltype"
       },
       "SerialOutputSignals": {
         "fragment": "dictionary SerialOutputSignals {\n  boolean dataTerminalReady;\n  boolean requestToSend;\n  boolean break;\n};",
@@ -814,7 +856,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-dataterminalready"
           },
           {
             "type": "field",
@@ -829,7 +872,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-requesttosend"
           },
           {
             "type": "field",
@@ -844,11 +888,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-break"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialoutputsignals"
       },
       "SerialInputSignals": {
         "fragment": "dictionary SerialInputSignals {\n  required boolean dataCarrierDetect;\n  required boolean clearToSend;\n  required boolean ringIndicator;\n  required boolean dataSetReady;\n};",
@@ -869,7 +915,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/serial/#dom-serialinputsignals-datacarrierdetect"
           },
           {
             "type": "field",
@@ -884,7 +931,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/serial/#dom-serialinputsignals-cleartosend"
           },
           {
             "type": "field",
@@ -899,7 +947,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/serial/#dom-serialinputsignals-ringindicator"
           },
           {
             "type": "field",
@@ -914,11 +963,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/serial/#dom-serialinputsignals-datasetready"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/serial/#dom-serialinputsignals"
       }
     },
     "idlExtendedNames": {
@@ -949,7 +1000,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/serial/#dom-navigator-serial"
             }
           ],
           "extAttrs": [
@@ -999,7 +1051,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/serial/#dom-workernavigator-serial"
             }
           ],
           "extAttrs": [

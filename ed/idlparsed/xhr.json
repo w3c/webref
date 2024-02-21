@@ -57,7 +57,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadstart"
           },
           {
             "type": "attribute",
@@ -72,7 +73,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onprogress"
           },
           {
             "type": "attribute",
@@ -87,7 +89,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onabort"
           },
           {
             "type": "attribute",
@@ -102,7 +105,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onerror"
           },
           {
             "type": "attribute",
@@ -117,7 +121,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onload"
           },
           {
             "type": "attribute",
@@ -132,7 +137,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-ontimeout"
           },
           {
             "type": "attribute",
@@ -147,7 +153,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadend"
           }
         ],
         "extAttrs": [
@@ -171,7 +178,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget"
       },
       "XMLHttpRequestUpload": {
         "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestUpload : XMLHttpRequestEventTarget {\n};",
@@ -200,7 +208,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequestupload"
       },
       "XMLHttpRequestResponseType": {
         "fragment": "enum XMLHttpRequestResponseType {\n  \"\",\n  \"arraybuffer\",\n  \"blob\",\n  \"document\",\n  \"json\",\n  \"text\"\n};",
@@ -209,30 +218,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype"
           },
           {
             "type": "enum-value",
-            "value": "arraybuffer"
+            "value": "arraybuffer",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-arraybuffer"
           },
           {
             "type": "enum-value",
-            "value": "blob"
+            "value": "blob",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-blob"
           },
           {
             "type": "enum-value",
-            "value": "document"
+            "value": "document",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-document"
           },
           {
             "type": "enum-value",
-            "value": "json"
+            "value": "json",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-json"
           },
           {
             "type": "enum-value",
-            "value": "text"
+            "value": "text",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-text"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequestresponsetype"
       },
       "XMLHttpRequest": {
         "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequest : XMLHttpRequestEventTarget {\n  constructor();\n\n  // event handler\n  attribute EventHandler onreadystatechange;\n\n  // states\n  const unsigned short UNSENT = 0;\n  const unsigned short OPENED = 1;\n  const unsigned short HEADERS_RECEIVED = 2;\n  const unsigned short LOADING = 3;\n  const unsigned short DONE = 4;\n  readonly attribute unsigned short readyState;\n\n  // request\n  undefined open(ByteString method, USVString url);\n  undefined open(ByteString method, USVString url, boolean async, optional USVString? username = null, optional USVString? password = null);\n  undefined setRequestHeader(ByteString name, ByteString value);\n           attribute unsigned long timeout;\n           attribute boolean withCredentials;\n  [SameObject] readonly attribute XMLHttpRequestUpload upload;\n  undefined send(optional (Document or XMLHttpRequestBodyInit)? body = null);\n  undefined abort();\n\n  // response\n  readonly attribute USVString responseURL;\n  readonly attribute unsigned short status;\n  readonly attribute ByteString statusText;\n  ByteString? getResponseHeader(ByteString name);\n  ByteString getAllResponseHeaders();\n  undefined overrideMimeType(DOMString mime);\n           attribute XMLHttpRequestResponseType responseType;\n  readonly attribute any response;\n  readonly attribute USVString responseText;\n  [Exposed=Window] readonly attribute Document? responseXML;\n};",
@@ -243,7 +259,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest"
           },
           {
             "type": "attribute",
@@ -258,7 +275,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#handler-xhr-onreadystatechange"
           },
           {
             "type": "const",
@@ -275,7 +293,8 @@
             "value": {
               "type": "number",
               "value": "0"
-            }
+            },
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-unsent"
           },
           {
             "type": "const",
@@ -292,7 +311,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-opened"
           },
           {
             "type": "const",
@@ -309,7 +329,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-headers_received"
           },
           {
             "type": "const",
@@ -326,7 +347,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-loading"
           },
           {
             "type": "const",
@@ -343,7 +365,8 @@
             "value": {
               "type": "number",
               "value": "4"
-            }
+            },
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-done"
           },
           {
             "type": "attribute",
@@ -358,7 +381,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate"
           },
           {
             "type": "operation",
@@ -406,7 +430,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open"
           },
           {
             "type": "operation",
@@ -506,7 +531,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password"
           },
           {
             "type": "operation",
@@ -554,7 +580,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader"
           },
           {
             "type": "attribute",
@@ -569,7 +596,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-timeout"
           },
           {
             "type": "attribute",
@@ -584,7 +612,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-withcredentials"
           },
           {
             "type": "attribute",
@@ -606,7 +635,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-upload"
           },
           {
             "type": "operation",
@@ -657,7 +687,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-send"
           },
           {
             "type": "operation",
@@ -672,7 +703,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-abort"
           },
           {
             "type": "attribute",
@@ -687,7 +719,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responseurl"
           },
           {
             "type": "attribute",
@@ -702,7 +735,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-status"
           },
           {
             "type": "attribute",
@@ -717,7 +751,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-statustext"
           },
           {
             "type": "operation",
@@ -749,7 +784,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getresponseheader"
           },
           {
             "type": "operation",
@@ -764,7 +800,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getallresponseheaders"
           },
           {
             "type": "operation",
@@ -796,7 +833,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-overridemimetype"
           },
           {
             "type": "attribute",
@@ -811,7 +849,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetype"
           },
           {
             "type": "attribute",
@@ -826,7 +865,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-response"
           },
           {
             "type": "attribute",
@@ -841,7 +881,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetext"
           },
           {
             "type": "attribute",
@@ -866,7 +907,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsexml"
           }
         ],
         "extAttrs": [
@@ -890,7 +932,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequest"
       },
       "FormDataEntryValue": {
         "fragment": "typedef (File or USVString) FormDataEntryValue;",
@@ -921,7 +964,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://xhr.spec.whatwg.org/#formdataentryvalue"
       },
       "FormData": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FormData {\n  constructor(optional HTMLFormElement form, optional HTMLElement? submitter = null);\n\n  undefined append(USVString name, USVString value);\n  undefined append(USVString name, Blob blobValue, optional USVString filename);\n  undefined delete(USVString name);\n  FormDataEntryValue? get(USVString name);\n  sequence<FormDataEntryValue> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n  undefined set(USVString name, Blob blobValue, optional USVString filename);\n  iterable<USVString, FormDataEntryValue>;\n};",
@@ -967,7 +1011,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata"
           },
           {
             "type": "operation",
@@ -1015,7 +1060,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-append"
           },
           {
             "type": "operation",
@@ -1079,7 +1125,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-blob"
           },
           {
             "type": "operation",
@@ -1111,7 +1158,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-delete"
           },
           {
             "type": "operation",
@@ -1143,7 +1191,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-get"
           },
           {
             "type": "operation",
@@ -1184,7 +1233,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-getall"
           },
           {
             "type": "operation",
@@ -1216,7 +1266,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-has"
           },
           {
             "type": "operation",
@@ -1264,7 +1315,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-set"
           },
           {
             "type": "operation",
@@ -1328,7 +1380,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-blob"
           },
           {
             "type": "iterable",
@@ -1374,7 +1427,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#formdata"
       },
       "ProgressEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute unsigned long long loaded;\n  readonly attribute unsigned long long total;\n};",
@@ -1420,7 +1474,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://xhr.spec.whatwg.org/#dom-progressevent-progressevent"
           },
           {
             "type": "attribute",
@@ -1435,7 +1490,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable"
           },
           {
             "type": "attribute",
@@ -1450,7 +1506,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-progressevent-loaded"
           },
           {
             "type": "attribute",
@@ -1465,7 +1522,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://xhr.spec.whatwg.org/#dom-progressevent-total"
           }
         ],
         "extAttrs": [
@@ -1486,7 +1544,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#progressevent"
       },
       "ProgressEventInit": {
         "fragment": "dictionary ProgressEventInit : EventInit {\n  boolean lengthComputable = false;\n  unsigned long long loaded = 0;\n  unsigned long long total = 0;\n};",
@@ -1510,7 +1569,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-lengthcomputable"
           },
           {
             "type": "field",
@@ -1528,7 +1588,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-loaded"
           },
           {
             "type": "field",
@@ -1546,11 +1607,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-total"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://xhr.spec.whatwg.org/#progresseventinit"
       }
     },
     "idlExtendedNames": {},

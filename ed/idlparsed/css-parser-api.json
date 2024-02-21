@@ -51,7 +51,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/css-parser-api/#typedefdef-cssstringsource"
       },
       "CSSToken": {
         "fragment": "typedef (DOMString or CSSStyleValue or CSSParserValue) CSSToken;",
@@ -90,7 +91,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/css-parser-api/#typedefdef-csstoken"
       },
       "CSSParserOptions": {
         "fragment": "dictionary CSSParserOptions {\n  object atRules;\n  /* dict of at-rule name => at-rule type\n     (contains decls or contains qualified rules) */\n};",
@@ -111,11 +113,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparseroptions-atrules"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#dictdef-cssparseroptions"
       },
       "CSSParserRule": {
         "fragment": "[Exposed=Window]\ninterface CSSParserRule {\n  /* Just a superclass. */\n};",
@@ -134,7 +138,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparserrule"
       },
       "CSSParserAtRule": {
         "fragment": "[Exposed=Window]\ninterface CSSParserAtRule : CSSParserRule {\n  constructor(DOMString name, sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body);\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> prelude;\n  readonly attribute FrozenArray<CSSParserRule>? body;\n  /* nullable to handle at-statements */\n  stringifier;\n};",
@@ -212,7 +217,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparseratrule-cssparseratrule"
           },
           {
             "type": "attribute",
@@ -227,7 +233,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparseratrule-name"
           },
           {
             "type": "attribute",
@@ -251,7 +258,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparseratrule-prelude"
           },
           {
             "type": "attribute",
@@ -275,7 +283,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparseratrule-body"
           },
           {
             "type": "operation",
@@ -296,7 +305,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparseratrule"
       },
       "CSSParserQualifiedRule": {
         "fragment": "[Exposed=Window]\ninterface CSSParserQualifiedRule : CSSParserRule {\n  constructor(sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body);\n  readonly attribute FrozenArray<CSSParserValue> prelude;\n  readonly attribute FrozenArray<CSSParserRule> body;\n  stringifier;\n};",
@@ -358,7 +368,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserqualifiedrule-cssparserqualifiedrule"
           },
           {
             "type": "attribute",
@@ -382,7 +393,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserqualifiedrule-prelude"
           },
           {
             "type": "attribute",
@@ -406,7 +418,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserqualifiedrule-body"
           },
           {
             "type": "operation",
@@ -427,7 +440,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparserqualifiedrule"
       },
       "CSSParserDeclaration": {
         "fragment": "[Exposed=Window]\ninterface CSSParserDeclaration : CSSParserRule {\n  constructor(DOMString name, optional sequence<CSSParserRule> body);\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
@@ -480,7 +494,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserdeclaration-cssparserdeclaration"
           },
           {
             "type": "attribute",
@@ -495,7 +510,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserdeclaration-name"
           },
           {
             "type": "attribute",
@@ -519,7 +535,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserdeclaration-body"
           },
           {
             "type": "operation",
@@ -540,7 +557,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparserdeclaration"
       },
       "CSSParserValue": {
         "fragment": "[Exposed=Window]\ninterface CSSParserValue {\n  /* Just a superclass. */\n};",
@@ -559,7 +577,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparservalue"
       },
       "CSSParserBlock": {
         "fragment": "[Exposed=Window]\ninterface CSSParserBlock : CSSParserValue {\n  constructor(DOMString name, sequence<CSSParserValue> body);\n  readonly attribute DOMString name; /* \"[]\", \"{}\", or \"()\" */\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
@@ -612,7 +631,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserblock-cssparserblock"
           },
           {
             "type": "attribute",
@@ -627,7 +647,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserblock-name"
           },
           {
             "type": "attribute",
@@ -651,7 +672,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserblock-body"
           },
           {
             "type": "operation",
@@ -672,7 +694,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparserblock"
       },
       "CSSParserFunction": {
         "fragment": "[Exposed=Window]\ninterface CSSParserFunction : CSSParserValue {\n  constructor(DOMString name, sequence<sequence<CSSParserValue>> args);\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<FrozenArray<CSSParserValue>> args;\n  stringifier;\n};",
@@ -734,7 +757,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-cssparserfunction"
           },
           {
             "type": "attribute",
@@ -749,7 +773,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-name"
           },
           {
             "type": "attribute",
@@ -782,7 +807,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-args"
           },
           {
             "type": "operation",
@@ -803,7 +829,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/css-parser-api/#cssparserfunction"
       }
     },
     "idlExtendedNames": {
@@ -880,7 +907,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsestylesheet"
             },
             {
               "type": "operation",
@@ -948,7 +976,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parserulelist"
             },
             {
               "type": "operation",
@@ -1007,7 +1036,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parserule"
             },
             {
               "type": "operation",
@@ -1075,7 +1105,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsedeclarationlist"
             },
             {
               "type": "operation",
@@ -1125,7 +1156,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsedeclaration"
             },
             {
               "type": "operation",
@@ -1157,7 +1189,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsevalue"
             },
             {
               "type": "operation",
@@ -1198,7 +1231,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsevaluelist"
             },
             {
               "type": "operation",
@@ -1248,7 +1282,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/css-parser-api/#dom-css-parsecommavaluelist"
             }
           ],
           "extAttrs": [],

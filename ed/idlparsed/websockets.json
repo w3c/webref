@@ -25,14 +25,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "blob"
+            "value": "blob",
+            "href": "https://websockets.spec.whatwg.org/#dom-binarytype-blob"
           },
           {
             "type": "enum-value",
-            "value": "arraybuffer"
+            "value": "arraybuffer",
+            "href": "https://websockets.spec.whatwg.org/#dom-binarytype-arraybuffer"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://websockets.spec.whatwg.org/#enumdef-binarytype"
       },
       "WebSocket": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebSocket : EventTarget {\n  constructor(USVString url, optional (DOMString or sequence<DOMString>) protocols = []);\n  readonly attribute USVString url;\n\n  // ready state\n  const unsigned short CONNECTING = 0;\n  const unsigned short OPEN = 1;\n  const unsigned short CLOSING = 2;\n  const unsigned short CLOSED = 3;\n  readonly attribute unsigned short readyState;\n  readonly attribute unsigned long long bufferedAmount;\n\n  // networking\n  attribute EventHandler onopen;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n  readonly attribute DOMString extensions;\n  readonly attribute DOMString protocol;\n  undefined close(optional [Clamp] unsigned short code, optional USVString reason);\n\n  // messaging\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send((BufferSource or Blob or USVString) data);\n};",
@@ -105,7 +108,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-websocket"
           },
           {
             "type": "attribute",
@@ -120,7 +124,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-url"
           },
           {
             "type": "const",
@@ -137,7 +142,8 @@
             "value": {
               "type": "number",
               "value": "0"
-            }
+            },
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-connecting"
           },
           {
             "type": "const",
@@ -154,7 +160,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-open"
           },
           {
             "type": "const",
@@ -171,7 +178,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-closing"
           },
           {
             "type": "const",
@@ -188,7 +196,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-closed"
           },
           {
             "type": "attribute",
@@ -203,7 +212,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-readystate"
           },
           {
             "type": "attribute",
@@ -218,7 +228,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-bufferedamount"
           },
           {
             "type": "attribute",
@@ -233,7 +244,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-onopen"
           },
           {
             "type": "attribute",
@@ -248,7 +260,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-onerror"
           },
           {
             "type": "attribute",
@@ -263,7 +276,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-onclose"
           },
           {
             "type": "attribute",
@@ -278,7 +292,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-extensions"
           },
           {
             "type": "attribute",
@@ -293,7 +308,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-protocol"
           },
           {
             "type": "operation",
@@ -348,7 +364,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-close"
           },
           {
             "type": "attribute",
@@ -363,7 +380,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-onmessage"
           },
           {
             "type": "attribute",
@@ -378,7 +396,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-binarytype"
           },
           {
             "type": "operation",
@@ -435,7 +454,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://websockets.spec.whatwg.org/#dom-websocket-send"
           }
         ],
         "extAttrs": [
@@ -456,7 +476,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://websockets.spec.whatwg.org/#websocket"
       },
       "CloseEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface CloseEvent : Event {\n  constructor(DOMString type, optional CloseEventInit eventInitDict = {});\n\n  readonly attribute boolean wasClean;\n  readonly attribute unsigned short code;\n  readonly attribute USVString reason;\n};",
@@ -502,7 +523,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://websockets.spec.whatwg.org/#dom-closeevent-closeevent"
           },
           {
             "type": "attribute",
@@ -517,7 +539,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeevent-wasclean"
           },
           {
             "type": "attribute",
@@ -532,7 +555,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeevent-code"
           },
           {
             "type": "attribute",
@@ -547,7 +571,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeevent-reason"
           }
         ],
         "extAttrs": [
@@ -568,7 +593,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://websockets.spec.whatwg.org/#closeevent"
       },
       "CloseEventInit": {
         "fragment": "dictionary CloseEventInit : EventInit {\n  boolean wasClean = false;\n  unsigned short code = 0;\n  USVString reason = \"\";\n};",
@@ -592,7 +618,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-wasclean"
           },
           {
             "type": "field",
@@ -610,7 +637,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-code"
           },
           {
             "type": "field",
@@ -628,11 +656,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-reason"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://websockets.spec.whatwg.org/#dictdef-closeeventinit"
       }
     },
     "idlExtendedNames": {},

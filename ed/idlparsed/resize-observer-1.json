@@ -25,18 +25,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "border-box"
+            "value": "border-box",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-border-box"
           },
           {
             "type": "enum-value",
-            "value": "content-box"
+            "value": "content-box",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-content-box"
           },
           {
             "type": "enum-value",
-            "value": "device-pixel-content-box"
+            "value": "device-pixel-content-box",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-device-pixel-content-box"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/resize-observer-1/#enumdef-resizeobserverboxoptions"
       },
       "ResizeObserverOptions": {
         "fragment": "dictionary ResizeObserverOptions {\n    ResizeObserverBoxOptions box = \"content-box\";\n};",
@@ -60,11 +64,13 @@
               "type": "string",
               "value": "content-box"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserveroptions-box"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/resize-observer-1/#dictdef-resizeobserveroptions"
       },
       "ResizeObserver": {
         "fragment": "[Exposed=(Window)]\ninterface ResizeObserver {\n    constructor(ResizeObserverCallback callback);\n    undefined observe(Element target, optional ResizeObserverOptions options = {});\n    undefined unobserve(Element target);\n    undefined disconnect();\n};",
@@ -92,7 +98,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-resizeobserver"
           },
           {
             "type": "operation",
@@ -142,7 +149,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observe"
           },
           {
             "type": "operation",
@@ -174,7 +182,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-unobserve"
           },
           {
             "type": "operation",
@@ -189,7 +198,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-disconnect"
           }
         ],
         "extAttrs": [
@@ -207,7 +217,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/resize-observer-1/#resizeobserver"
       },
       "ResizeObserverCallback": {
         "fragment": "callback ResizeObserverCallback = undefined (sequence<ResizeObserverEntry> entries, ResizeObserver observer);",
@@ -264,7 +275,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/resize-observer-1/#callbackdef-resizeobservercallback"
       },
       "ResizeObserverEntry": {
         "fragment": "[Exposed=Window]\ninterface ResizeObserverEntry {\n    readonly attribute Element target;\n    readonly attribute DOMRectReadOnly contentRect;\n    readonly attribute FrozenArray<ResizeObserverSize> borderBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> contentBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> devicePixelContentBoxSize;\n};",
@@ -285,7 +297,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-target"
           },
           {
             "type": "attribute",
@@ -300,7 +313,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-contentrect"
           },
           {
             "type": "attribute",
@@ -324,7 +338,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-borderboxsize"
           },
           {
             "type": "attribute",
@@ -348,7 +363,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-contentboxsize"
           },
           {
             "type": "attribute",
@@ -372,7 +388,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-devicepixelcontentboxsize"
           }
         ],
         "extAttrs": [
@@ -386,7 +403,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/resize-observer-1/#resizeobserverentry"
       },
       "ResizeObserverSize": {
         "fragment": "[Exposed=Window]\ninterface ResizeObserverSize {\n    readonly attribute unrestricted double inlineSize;\n    readonly attribute unrestricted double blockSize;\n};",
@@ -407,7 +425,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize"
           },
           {
             "type": "attribute",
@@ -422,7 +441,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize"
           }
         ],
         "extAttrs": [
@@ -436,7 +456,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/resize-observer-1/#resizeobserversize"
       }
     },
     "idlExtendedNames": {},

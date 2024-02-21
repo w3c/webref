@@ -42,7 +42,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage"
           }
         ],
         "extAttrs": [
@@ -53,7 +54,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://storage.spec.whatwg.org/#navigatorstorage"
       },
       "StorageManager": {
         "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface StorageManager {\n  Promise<boolean> persisted();\n  [Exposed=Window] Promise<boolean> persist();\n\n  Promise<StorageEstimate> estimate();\n};",
@@ -83,7 +85,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persisted"
           },
           {
             "type": "operation",
@@ -117,7 +120,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persist"
           },
           {
             "type": "operation",
@@ -141,7 +145,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://storage.spec.whatwg.org/#dom-storagemanager-estimate"
           }
         ],
         "extAttrs": [
@@ -168,7 +173,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://storage.spec.whatwg.org/#storagemanager"
       },
       "StorageEstimate": {
         "fragment": "dictionary StorageEstimate {\n  unsigned long long usage;\n  unsigned long long quota;\n};",
@@ -189,7 +195,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://storage.spec.whatwg.org/#dom-storageestimate-usage"
           },
           {
             "type": "field",
@@ -204,11 +211,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://storage.spec.whatwg.org/#dom-storageestimate-quota"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://storage.spec.whatwg.org/#dictdef-storageestimate"
       }
     },
     "idlExtendedNames": {

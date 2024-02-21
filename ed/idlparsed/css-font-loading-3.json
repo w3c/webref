@@ -64,7 +64,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/css-font-loading-3/#typedefdef-binarydata"
       },
       "FontFaceDescriptors": {
         "fragment": "dictionary FontFaceDescriptors {\n  CSSOMString style = \"normal\";\n  CSSOMString weight = \"normal\";\n  CSSOMString stretch = \"normal\";\n  CSSOMString unicodeRange = \"U+0-10FFFF\";\n  CSSOMString featureSettings = \"normal\";\n  CSSOMString variationSettings = \"normal\";\n  CSSOMString display = \"auto\";\n  CSSOMString ascentOverride = \"normal\";\n  CSSOMString descentOverride = \"normal\";\n  CSSOMString lineGapOverride = \"normal\";\n};",
@@ -88,7 +89,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-style"
           },
           {
             "type": "field",
@@ -106,7 +108,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-weight"
           },
           {
             "type": "field",
@@ -124,7 +127,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-stretch"
           },
           {
             "type": "field",
@@ -142,7 +146,8 @@
               "type": "string",
               "value": "U+0-10FFFF"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-unicoderange"
           },
           {
             "type": "field",
@@ -160,7 +165,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-featuresettings"
           },
           {
             "type": "field",
@@ -178,7 +184,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-variationsettings"
           },
           {
             "type": "field",
@@ -196,7 +203,8 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-display"
           },
           {
             "type": "field",
@@ -214,7 +222,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-ascentoverride"
           },
           {
             "type": "field",
@@ -232,7 +241,8 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-descentoverride"
           },
           {
             "type": "field",
@@ -250,11 +260,13 @@
               "type": "string",
               "value": "normal"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacedescriptors-linegapoverride"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#dictdef-fontfacedescriptors"
       },
       "FontFaceLoadStatus": {
         "fragment": "enum FontFaceLoadStatus { \"unloaded\", \"loading\", \"loaded\", \"error\" };",
@@ -263,22 +275,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "unloaded"
+            "value": "unloaded",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceloadstatus-unloaded"
           },
           {
             "type": "enum-value",
-            "value": "loading"
+            "value": "loading",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceloadstatus-loading"
           },
           {
             "type": "enum-value",
-            "value": "loaded"
+            "value": "loaded",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceloadstatus-loaded"
           },
           {
             "type": "enum-value",
-            "value": "error"
+            "value": "error",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceloadstatus-error"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/css-font-loading-3/#enumdef-fontfaceloadstatus"
       },
       "FontFace": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
@@ -357,7 +374,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-fontface"
           },
           {
             "type": "attribute",
@@ -372,7 +390,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-family"
           },
           {
             "type": "attribute",
@@ -387,7 +406,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-style"
           },
           {
             "type": "attribute",
@@ -402,7 +422,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-weight"
           },
           {
             "type": "attribute",
@@ -417,7 +438,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-stretch"
           },
           {
             "type": "attribute",
@@ -432,7 +454,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-unicoderange"
           },
           {
             "type": "attribute",
@@ -447,7 +470,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-featuresettings"
           },
           {
             "type": "attribute",
@@ -462,7 +486,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-variationsettings"
           },
           {
             "type": "attribute",
@@ -477,7 +502,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-display"
           },
           {
             "type": "attribute",
@@ -492,7 +518,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-ascentoverride"
           },
           {
             "type": "attribute",
@@ -507,7 +534,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-descentoverride"
           },
           {
             "type": "attribute",
@@ -522,7 +550,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-linegapoverride"
           },
           {
             "type": "attribute",
@@ -537,7 +566,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-status"
           },
           {
             "type": "operation",
@@ -561,7 +591,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-load"
           },
           {
             "type": "attribute",
@@ -585,7 +616,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-loaded"
           }
         ],
         "extAttrs": [
@@ -606,7 +638,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontface"
       },
       "FontFaceFeatures": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceFeatures {\n  /* The CSSWG is still discussing what goes in here */\n};",
@@ -632,7 +665,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacefeatures"
       },
       "FontFaceVariationAxis": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceVariationAxis {\n  readonly attribute DOMString name;\n  readonly attribute DOMString axisTag;\n  readonly attribute double minimumValue;\n  readonly attribute double maximumValue;\n  readonly attribute double defaultValue;\n};",
@@ -653,7 +687,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacevariationaxis-name"
           },
           {
             "type": "attribute",
@@ -668,7 +703,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacevariationaxis-axistag"
           },
           {
             "type": "attribute",
@@ -683,7 +719,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacevariationaxis-minimumvalue"
           },
           {
             "type": "attribute",
@@ -698,7 +735,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacevariationaxis-maximumvalue"
           },
           {
             "type": "attribute",
@@ -713,7 +751,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacevariationaxis-defaultvalue"
           }
         ],
         "extAttrs": [
@@ -734,7 +773,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacevariationaxis"
       },
       "FontFaceVariations": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceVariations {\n  readonly setlike<FontFaceVariationAxis>;\n};",
@@ -778,7 +818,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacevariations"
       },
       "FontFacePalette": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute boolean usableWithLightBackground;\n  readonly attribute boolean usableWithDarkBackground;\n};",
@@ -816,7 +857,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacepalette-length"
           },
           {
             "type": "operation",
@@ -863,7 +905,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacepalette-usablewithlightbackground"
           },
           {
             "type": "attribute",
@@ -878,7 +921,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacepalette-usablewithdarkbackground"
           }
         ],
         "extAttrs": [
@@ -899,7 +943,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacepalette"
       },
       "FontFacePalettes": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalettes {\n  iterable<FontFacePalette>;\n  readonly attribute unsigned long length;\n  getter FontFacePalette (unsigned long index);\n};",
@@ -937,7 +982,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacepalettes-length"
           },
           {
             "type": "operation",
@@ -990,7 +1036,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacepalettes"
       },
       "FontFaceSetLoadEventInit": {
         "fragment": "dictionary FontFaceSetLoadEventInit : EventInit {\n  sequence<FontFace> fontfaces = [];\n};",
@@ -1023,11 +1070,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesetloadeventinit-fontfaces"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#dictdef-fontfacesetloadeventinit"
       },
       "FontFaceSetLoadEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceSetLoadEvent : Event {\n  constructor(CSSOMString type, optional FontFaceSetLoadEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<FontFace> fontfaces;\n};",
@@ -1073,7 +1122,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesetloadevent-fontfacesetloadevent"
           },
           {
             "type": "attribute",
@@ -1104,7 +1154,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesetloadevent-fontfaces"
           }
         ],
         "extAttrs": [
@@ -1125,7 +1176,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacesetloadevent"
       },
       "FontFaceSetLoadStatus": {
         "fragment": "enum FontFaceSetLoadStatus { \"loading\", \"loaded\" };",
@@ -1134,14 +1186,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "loading"
+            "value": "loading",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesetloadstatus-loading"
           },
           {
             "type": "enum-value",
-            "value": "loaded"
+            "value": "loaded",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesetloadstatus-loaded"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/css-font-loading-3/#enumdef-fontfacesetloadstatus"
       },
       "FontFaceSet": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceSet : EventTarget {\n  constructor(sequence<FontFace> initialFaces);\n\n  setlike<FontFace>;\n  FontFaceSet add(FontFace font);\n  boolean delete(FontFace font);\n  undefined clear();\n\n  // events for when loading state changes\n  attribute EventHandler onloading;\n  attribute EventHandler onloadingdone;\n  attribute EventHandler onloadingerror;\n\n  // check and start loads if appropriate\n  // and fulfill promise when all loads complete\n  Promise<sequence<FontFace>> load(CSSOMString font, optional CSSOMString text = \" \");\n\n  // return whether all fonts in the fontlist are loaded\n  // (does not initiate load if not available)\n  boolean check(CSSOMString font, optional CSSOMString text = \" \");\n\n  // async notification that font loading and layout operations are done\n  readonly attribute Promise<FontFaceSet> ready;\n\n  // loading state, \"loading\" while one or more fonts loading, \"loaded\" otherwise\n  readonly attribute FontFaceSetLoadStatus status;\n};",
@@ -1178,7 +1233,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-fontfaceset"
           },
           {
             "type": "setlike",
@@ -1227,7 +1283,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-add"
           },
           {
             "type": "operation",
@@ -1259,7 +1316,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-delete"
           },
           {
             "type": "operation",
@@ -1274,7 +1332,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-clear"
           },
           {
             "type": "attribute",
@@ -1289,7 +1348,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-onloading"
           },
           {
             "type": "attribute",
@@ -1304,7 +1364,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-onloadingdone"
           },
           {
             "type": "attribute",
@@ -1319,7 +1380,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-onloadingerror"
           },
           {
             "type": "operation",
@@ -1388,7 +1450,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-load"
           },
           {
             "type": "operation",
@@ -1439,7 +1502,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-check"
           },
           {
             "type": "attribute",
@@ -1463,7 +1527,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-ready"
           },
           {
             "type": "attribute",
@@ -1478,7 +1543,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfaceset-status"
           }
         ],
         "extAttrs": [
@@ -1499,7 +1565,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfaceset"
       },
       "FontFaceSource": {
         "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
@@ -1520,11 +1587,13 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontfacesource-fonts"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacesource"
       }
     },
     "idlExtendedNames": {
@@ -1548,7 +1617,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-features"
             },
             {
               "type": "attribute",
@@ -1563,7 +1633,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-variations"
             },
             {
               "type": "attribute",
@@ -1578,7 +1649,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-font-loading-3/#dom-fontface-palettes"
             }
           ],
           "extAttrs": [],

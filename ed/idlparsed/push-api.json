@@ -51,11 +51,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor-uservisibleonly"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor"
       },
       "PushManager": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
@@ -92,7 +94,8 @@
               }
             ],
             "special": "static",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushmanager-supportedcontentencodings"
           },
           {
             "type": "operation",
@@ -135,7 +138,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmanager-subscribe"
           },
           {
             "type": "operation",
@@ -159,7 +163,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmanager-getsubscription"
           },
           {
             "type": "operation",
@@ -202,7 +207,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmanager-permissionstate"
           }
         ],
         "extAttrs": [
@@ -229,7 +235,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager"
       },
       "PushSubscriptionOptions": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscriptionOptions {\n  readonly attribute boolean userVisibleOnly;\n  [SameObject] readonly attribute ArrayBuffer? applicationServerKey;\n};",
@@ -250,7 +257,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-uservisibleonly"
           },
           {
             "type": "attribute",
@@ -272,7 +280,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-applicationserverkey"
           }
         ],
         "extAttrs": [
@@ -299,7 +308,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions"
       },
       "PushSubscriptionOptionsInit": {
         "fragment": "dictionary PushSubscriptionOptionsInit {\n  boolean userVisibleOnly = false;\n  (BufferSource or DOMString)? applicationServerKey = null;\n};",
@@ -323,7 +333,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit-uservisibleonly"
           },
           {
             "type": "field",
@@ -357,11 +368,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit"
       },
       "PushSubscription": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscription {\n  readonly attribute USVString endpoint;\n  readonly attribute EpochTimeStamp? expirationTime;\n  [SameObject] readonly attribute PushSubscriptionOptions options;\n  ArrayBuffer? getKey(PushEncryptionKeyName name);\n  Promise<boolean> unsubscribe();\n\n  PushSubscriptionJSON toJSON();\n};",
@@ -382,7 +395,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-endpoint"
           },
           {
             "type": "attribute",
@@ -397,7 +411,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-expirationtime"
           },
           {
             "type": "attribute",
@@ -419,7 +434,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-options"
           },
           {
             "type": "operation",
@@ -451,7 +467,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-getkey"
           },
           {
             "type": "operation",
@@ -475,7 +492,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-unsubscribe"
           },
           {
             "type": "operation",
@@ -490,7 +508,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscription-tojson"
           }
         ],
         "extAttrs": [
@@ -517,7 +536,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscription"
       },
       "PushSubscriptionJSON": {
         "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  EpochTimeStamp? expirationTime = null;\n  record<DOMString, USVString> keys;\n};",
@@ -538,7 +558,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-endpoint"
           },
           {
             "type": "field",
@@ -555,7 +576,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-expirationtime"
           },
           {
             "type": "field",
@@ -587,11 +609,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-keys"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson"
       },
       "PushEncryptionKeyName": {
         "fragment": "enum PushEncryptionKeyName {\n  \"p256dh\",\n  \"auth\"\n};",
@@ -600,14 +624,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "p256dh"
+            "value": "p256dh",
+            "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname-p256dh"
           },
           {
             "type": "enum-value",
-            "value": "auth"
+            "value": "auth",
+            "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname-auth"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname"
       },
       "PushMessageData": {
         "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushMessageData {\n  ArrayBuffer arrayBuffer();\n  Blob blob();\n  any json();\n  USVString text();\n};",
@@ -628,7 +655,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-arraybuffer"
           },
           {
             "type": "operation",
@@ -643,7 +671,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-blob"
           },
           {
             "type": "operation",
@@ -658,7 +687,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-json"
           },
           {
             "type": "operation",
@@ -673,7 +703,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-text"
           }
         ],
         "extAttrs": [
@@ -693,7 +724,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushmessagedata"
       },
       "PushEvent": {
         "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n};",
@@ -739,7 +771,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/push-api/#dom-pushevent-constructor"
           },
           {
             "type": "attribute",
@@ -754,7 +787,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushevent-data"
           }
         ],
         "extAttrs": [
@@ -774,7 +808,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushevent"
       },
       "PushMessageDataInit": {
         "fragment": "typedef (BufferSource or USVString) PushMessageDataInit;",
@@ -805,7 +840,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/push-api/#dom-pushmessagedatainit"
       },
       "PushEventInit": {
         "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit data;\n};",
@@ -826,11 +862,13 @@
               "idlType": "PushMessageDataInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pusheventinit-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pusheventinit"
       },
       "PushSubscriptionChangeEvent": {
         "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushSubscriptionChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushSubscriptionChangeEventInit eventInitDict = {});\n  readonly attribute PushSubscription? newSubscription;\n  readonly attribute PushSubscription? oldSubscription;\n};",
@@ -876,7 +914,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-constructor"
           },
           {
             "type": "attribute",
@@ -891,7 +930,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-newsubscription"
           },
           {
             "type": "attribute",
@@ -906,7 +946,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-oldsubscription"
           }
         ],
         "extAttrs": [
@@ -926,7 +967,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent"
       },
       "PushSubscriptionChangeEventInit": {
         "fragment": "dictionary PushSubscriptionChangeEventInit : ExtendableEventInit {\n  PushSubscription newSubscription = null;\n  PushSubscription oldSubscription = null;\n};",
@@ -949,7 +991,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit-newsubscription"
           },
           {
             "type": "field",
@@ -966,11 +1009,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit-oldsubscription"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit"
       }
     },
     "idlExtendedNames": {
@@ -994,7 +1039,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager"
             }
           ],
           "extAttrs": [
@@ -1028,7 +1074,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpush"
             },
             {
               "type": "attribute",
@@ -1043,7 +1090,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpushsubscriptionchange"
             }
           ],
           "extAttrs": [

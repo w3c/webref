@@ -46,7 +46,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentation"
       },
       "PresentationRequest": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationRequest : EventTarget {\n  constructor(USVString url);\n  constructor(sequence<USVString> urls);\n  Promise<PresentationConnection> start();\n  Promise<PresentationConnection> reconnect(USVString presentationId);\n  Promise<PresentationAvailability> getAvailability();\n\n  attribute EventHandler onconnectionavailable;\n};",
@@ -74,7 +75,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor"
           },
           {
             "type": "constructor",
@@ -105,7 +107,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor"
           },
           {
             "type": "operation",
@@ -129,7 +132,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-start"
           },
           {
             "type": "operation",
@@ -170,7 +174,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-reconnect"
           },
           {
             "type": "operation",
@@ -194,7 +199,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-getavailability"
           },
           {
             "type": "attribute",
@@ -209,7 +215,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-onconnectionavailable"
           }
         ],
         "extAttrs": [
@@ -229,7 +236,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest"
       },
       "PresentationAvailability": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationAvailability : EventTarget {\n  readonly attribute boolean value;\n\n  attribute EventHandler onchange;\n};",
@@ -250,7 +258,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability-value"
           },
           {
             "type": "attribute",
@@ -265,7 +274,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability-onchange"
           }
         ],
         "extAttrs": [
@@ -285,7 +295,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability"
       },
       "PresentationConnectionAvailableEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionAvailableEvent : Event {\n  constructor(DOMString type, PresentationConnectionAvailableEventInit eventInitDict);\n  [SameObject] readonly attribute PresentationConnection connection;\n};",
@@ -329,7 +340,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-constructor"
           },
           {
             "type": "attribute",
@@ -351,7 +363,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection"
           }
         ],
         "extAttrs": [
@@ -371,7 +384,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent"
       },
       "PresentationConnectionAvailableEventInit": {
         "fragment": "dictionary PresentationConnectionAvailableEventInit : EventInit {\n  required PresentationConnection connection;\n};",
@@ -392,11 +406,13 @@
               "idlType": "PresentationConnection"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableeventinit-connection"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableeventinit"
       },
       "PresentationConnectionState": {
         "fragment": "enum PresentationConnectionState { \"connecting\", \"connected\", \"closed\", \"terminated\" };",
@@ -405,22 +421,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "connecting"
+            "value": "connecting",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting"
           },
           {
             "type": "enum-value",
-            "value": "connected"
+            "value": "connected",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed"
           },
           {
             "type": "enum-value",
-            "value": "terminated"
+            "value": "terminated",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate"
       },
       "PresentationConnection": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnection : EventTarget {\n  readonly attribute USVString id;\n  readonly attribute USVString url;\n  readonly attribute PresentationConnectionState state;\n  undefined close();\n  undefined terminate();\n  attribute EventHandler onconnect;\n  attribute EventHandler onclose;\n  attribute EventHandler onterminate;\n\n  // Communication\n  attribute BinaryType binaryType;\n  attribute EventHandler onmessage;\n  undefined send (DOMString message);\n  undefined send (Blob data);\n  undefined send (ArrayBuffer data);\n  undefined send (ArrayBufferView data);\n};",
@@ -441,7 +462,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-id"
           },
           {
             "type": "attribute",
@@ -456,7 +478,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-url"
           },
           {
             "type": "attribute",
@@ -471,7 +494,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-state"
           },
           {
             "type": "operation",
@@ -486,7 +510,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-close"
           },
           {
             "type": "operation",
@@ -501,7 +526,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-terminate"
           },
           {
             "type": "attribute",
@@ -516,7 +542,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onconnect"
           },
           {
             "type": "attribute",
@@ -531,7 +558,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onclose"
           },
           {
             "type": "attribute",
@@ -546,7 +574,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onterminate"
           },
           {
             "type": "attribute",
@@ -561,7 +590,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype"
           },
           {
             "type": "attribute",
@@ -576,7 +606,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onmessage"
           },
           {
             "type": "operation",
@@ -608,7 +639,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send"
           },
           {
             "type": "operation",
@@ -640,7 +672,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send"
           },
           {
             "type": "operation",
@@ -672,7 +705,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send"
           },
           {
             "type": "operation",
@@ -704,7 +738,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send"
           }
         ],
         "extAttrs": [
@@ -724,7 +759,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection"
       },
       "PresentationConnectionCloseReason": {
         "fragment": "enum PresentationConnectionCloseReason { \"error\", \"closed\", \"wentaway\" };",
@@ -733,18 +769,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "error"
+            "value": "error",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-error"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-closed"
           },
           {
             "type": "enum-value",
-            "value": "wentaway"
+            "value": "wentaway",
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-wentaway"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason"
       },
       "PresentationConnectionCloseEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionCloseEvent : Event {\n  constructor(DOMString type, PresentationConnectionCloseEventInit eventInitDict);\n  readonly attribute PresentationConnectionCloseReason reason;\n  readonly attribute DOMString message;\n};",
@@ -788,7 +828,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-constructor"
           },
           {
             "type": "attribute",
@@ -803,7 +844,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-reason"
           },
           {
             "type": "attribute",
@@ -818,7 +860,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-message"
           }
         ],
         "extAttrs": [
@@ -838,7 +881,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent"
       },
       "PresentationConnectionCloseEventInit": {
         "fragment": "dictionary PresentationConnectionCloseEventInit : EventInit {\n  required PresentationConnectionCloseReason reason;\n  DOMString message = \"\";\n};",
@@ -859,7 +903,8 @@
               "idlType": "PresentationConnectionCloseReason"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit-reason"
           },
           {
             "type": "field",
@@ -877,11 +922,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit-message"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit"
       },
       "PresentationReceiver": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationReceiver {\n  readonly attribute Promise<PresentationConnectionList> connectionList;\n};",
@@ -911,7 +958,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist"
           }
         ],
         "extAttrs": [
@@ -931,7 +979,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver"
       },
       "PresentationConnectionList": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionList : EventTarget {\n  readonly attribute FrozenArray<PresentationConnection> connections;\n  attribute EventHandler onconnectionavailable;\n};",
@@ -961,7 +1010,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-connections"
           },
           {
             "type": "attribute",
@@ -976,7 +1026,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-onconnectionavailable"
           }
         ],
         "extAttrs": [
@@ -996,7 +1047,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist"
       }
     },
     "idlExtendedNames": {
@@ -1033,7 +1085,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/presentation-api/#dom-navigator-presentation"
             }
           ],
           "extAttrs": [],
@@ -1060,7 +1113,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/presentation-api/#dom-presentation-defaultrequest"
             }
           ],
           "extAttrs": [],
@@ -1085,7 +1139,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/presentation-api/#dom-presentation-receiver"
             }
           ],
           "extAttrs": [],

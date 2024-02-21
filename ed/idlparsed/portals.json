@@ -34,7 +34,8 @@
                 "rhs": null,
                 "arguments": []
               }
-            ]
+            ],
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-htmlportalelement"
           },
           {
             "type": "attribute",
@@ -56,7 +57,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-src"
           },
           {
             "type": "attribute",
@@ -78,7 +80,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-referrerpolicy"
           },
           {
             "type": "operation",
@@ -128,7 +131,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-activate"
           },
           {
             "type": "operation",
@@ -178,7 +182,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-postmessage"
           },
           {
             "type": "attribute",
@@ -193,7 +198,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-onmessage"
           },
           {
             "type": "attribute",
@@ -208,7 +214,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-htmlportalelement-onmessageerror"
           }
         ],
         "extAttrs": [
@@ -222,7 +229,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/portals/#htmlportalelement"
       },
       "PortalActivateOptions": {
         "fragment": "dictionary PortalActivateOptions : StructuredSerializeOptions {\n    any data;\n};",
@@ -243,11 +251,13 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/portals/#dom-portalactivateoptions-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/portals/#dictdef-portalactivateoptions"
       },
       "PortalHost": {
         "fragment": "[Exposed=Window]\ninterface PortalHost : EventTarget {\n    undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
@@ -303,7 +313,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/portals/#dom-portalhost-postmessage"
           },
           {
             "type": "attribute",
@@ -318,7 +329,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-portalhost-onmessage"
           },
           {
             "type": "attribute",
@@ -333,7 +345,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/portals/#dom-portalhost-onmessageerror"
           }
         ],
         "extAttrs": [
@@ -347,7 +360,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/portals/#portalhost"
       },
       "PortalActivateEvent": {
         "fragment": "[Exposed=Window]\ninterface PortalActivateEvent : Event {\n    constructor(DOMString type, optional PortalActivateEventInit eventInitDict = {});\n\n    readonly attribute any data;\n    HTMLPortalElement adoptPredecessor();\n};",
@@ -393,7 +407,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/portals/#dom-portalactivateevent-portalactivateevent"
           },
           {
             "type": "attribute",
@@ -408,7 +423,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/portals/#dom-portalactivateevent-data"
           },
           {
             "type": "operation",
@@ -423,7 +439,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/portals/#dom-portalactivateevent-adoptpredecessor"
           }
         ],
         "extAttrs": [
@@ -437,7 +454,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/portals/#portalactivateevent"
       },
       "PortalActivateEventInit": {
         "fragment": "dictionary PortalActivateEventInit : EventInit {\n    any data = null;\n};",
@@ -460,11 +478,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/portals/#dom-portalactivateeventinit-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/portals/#dictdef-portalactivateeventinit"
       }
     },
     "idlExtendedNames": {
@@ -488,7 +508,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/portals/#dom-window-portalhost"
             }
           ],
           "extAttrs": [],
@@ -515,7 +536,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/portals/#dom-windoweventhandlers-onportalactivate"
             }
           ],
           "extAttrs": [],

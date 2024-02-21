@@ -24,18 +24,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "highlight"
+            "value": "highlight",
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlighttype-highlight"
           },
           {
             "type": "enum-value",
-            "value": "spelling-error"
+            "value": "spelling-error",
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlighttype-spelling-error"
           },
           {
             "type": "enum-value",
-            "value": "grammar-error"
+            "value": "grammar-error",
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlighttype-grammar-error"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#enumdef-highlighttype"
       },
       "Highlight": {
         "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  attribute HighlightType type;\n};",
@@ -63,7 +67,8 @@
                 "variadic": true
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-highlight"
           },
           {
             "type": "setlike",
@@ -95,7 +100,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-priority"
           },
           {
             "type": "attribute",
@@ -110,7 +116,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-type"
           }
         ],
         "extAttrs": [
@@ -124,7 +131,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#highlight"
       },
       "HighlightRegistry": {
         "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};",
@@ -169,7 +177,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#highlightregistry"
       }
     },
     "idlExtendedNames": {
@@ -193,7 +202,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-css-highlights"
             }
           ],
           "extAttrs": [],

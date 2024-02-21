@@ -60,7 +60,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-result"
           },
           {
             "type": "attribute",
@@ -75,7 +76,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-error"
           },
           {
             "type": "attribute",
@@ -115,7 +117,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-source"
           },
           {
             "type": "attribute",
@@ -130,7 +133,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-transaction"
           },
           {
             "type": "attribute",
@@ -145,7 +149,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-readystate"
           },
           {
             "type": "attribute",
@@ -160,7 +165,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-onsuccess"
           },
           {
             "type": "attribute",
@@ -175,7 +181,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequest-onerror"
           }
         ],
         "extAttrs": [
@@ -196,7 +203,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbrequest"
       },
       "IDBRequestReadyState": {
         "fragment": "enum IDBRequestReadyState {\n  \"pending\",\n  \"done\"\n};",
@@ -205,14 +213,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "pending"
+            "value": "pending",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequestreadystate-pending"
           },
           {
             "type": "enum-value",
-            "value": "done"
+            "value": "done",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbrequestreadystate-done"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/IndexedDB/#enumdef-idbrequestreadystate"
       },
       "IDBOpenDBRequest": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBOpenDBRequest : IDBRequest {\n  // Event handlers:\n  attribute EventHandler onblocked;\n  attribute EventHandler onupgradeneeded;\n};",
@@ -233,7 +244,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbopendbrequest-onblocked"
           },
           {
             "type": "attribute",
@@ -248,7 +260,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbopendbrequest-onupgradeneeded"
           }
         ],
         "extAttrs": [
@@ -269,7 +282,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbopendbrequest"
       },
       "IDBVersionChangeEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBVersionChangeEvent : Event {\n  constructor(DOMString type, optional IDBVersionChangeEventInit eventInitDict = {});\n  readonly attribute unsigned long long oldVersion;\n  readonly attribute unsigned long long? newVersion;\n};",
@@ -315,7 +329,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-idbversionchangeevent"
           },
           {
             "type": "attribute",
@@ -330,7 +345,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-oldversion"
           },
           {
             "type": "attribute",
@@ -345,7 +361,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-newversion"
           }
         ],
         "extAttrs": [
@@ -366,7 +383,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbversionchangeevent"
       },
       "IDBVersionChangeEventInit": {
         "fragment": "dictionary IDBVersionChangeEventInit : EventInit {\n  unsigned long long oldVersion = 0;\n  unsigned long long? newVersion = null;\n};",
@@ -390,7 +408,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbversionchangeeventinit-oldversion"
           },
           {
             "type": "field",
@@ -407,11 +426,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbversionchangeeventinit-newversion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbversionchangeeventinit"
       },
       "IDBFactory": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBFactory {\n  [NewObject] IDBOpenDBRequest open(DOMString name,\n                                    optional [EnforceRange] unsigned long long version);\n  [NewObject] IDBOpenDBRequest deleteDatabase(DOMString name);\n\n  Promise<sequence<IDBDatabaseInfo>> databases();\n\n  short cmp(any first, any second);\n};",
@@ -479,7 +500,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-open"
           },
           {
             "type": "operation",
@@ -518,7 +540,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase"
           },
           {
             "type": "operation",
@@ -551,7 +574,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-databases"
           },
           {
             "type": "operation",
@@ -599,7 +623,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-cmp"
           }
         ],
         "extAttrs": [
@@ -620,7 +645,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbfactory"
       },
       "IDBDatabaseInfo": {
         "fragment": "dictionary IDBDatabaseInfo {\n  DOMString name;\n  unsigned long long version;\n};",
@@ -641,7 +667,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabaseinfo-name"
           },
           {
             "type": "field",
@@ -656,11 +683,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabaseinfo-version"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbdatabaseinfo"
       },
       "IDBDatabase": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBDatabase : EventTarget {\n  readonly attribute DOMString name;\n  readonly attribute unsigned long long version;\n  readonly attribute DOMStringList objectStoreNames;\n\n  [NewObject] IDBTransaction transaction((DOMString or sequence<DOMString>) storeNames,\n                                         optional IDBTransactionMode mode = \"readonly\",\n                                         optional IDBTransactionOptions options = {});\n  undefined close();\n\n  [NewObject] IDBObjectStore createObjectStore(\n    DOMString name,\n    optional IDBObjectStoreParameters options = {});\n  undefined deleteObjectStore(DOMString name);\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler onclose;\n  attribute EventHandler onerror;\n  attribute EventHandler onversionchange;\n};",
@@ -681,7 +710,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-name"
           },
           {
             "type": "attribute",
@@ -696,7 +726,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-version"
           },
           {
             "type": "attribute",
@@ -711,7 +742,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-objectstorenames"
           },
           {
             "type": "operation",
@@ -813,7 +845,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-transaction"
           },
           {
             "type": "operation",
@@ -828,7 +861,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-close"
           },
           {
             "type": "operation",
@@ -885,7 +919,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-createobjectstore"
           },
           {
             "type": "operation",
@@ -917,7 +952,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-deleteobjectstore"
           },
           {
             "type": "attribute",
@@ -932,7 +968,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onabort"
           },
           {
             "type": "attribute",
@@ -947,7 +984,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onclose"
           },
           {
             "type": "attribute",
@@ -962,7 +1000,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onerror"
           },
           {
             "type": "attribute",
@@ -977,7 +1016,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onversionchange"
           }
         ],
         "extAttrs": [
@@ -998,7 +1038,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbdatabase"
       },
       "IDBTransactionDurability": {
         "fragment": "enum IDBTransactionDurability { \"default\", \"strict\", \"relaxed\" };",
@@ -1007,18 +1048,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "default",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-default"
           },
           {
             "type": "enum-value",
-            "value": "strict"
+            "value": "strict",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-strict"
           },
           {
             "type": "enum-value",
-            "value": "relaxed"
+            "value": "relaxed",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-relaxed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/IndexedDB/#enumdef-idbtransactiondurability"
       },
       "IDBTransactionOptions": {
         "fragment": "dictionary IDBTransactionOptions {\n  IDBTransactionDurability durability = \"default\";\n};",
@@ -1042,11 +1087,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactionoptions-durability"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbtransactionoptions"
       },
       "IDBObjectStoreParameters": {
         "fragment": "dictionary IDBObjectStoreParameters {\n  (DOMString or sequence<DOMString>)? keyPath = null;\n  boolean autoIncrement = false;\n};",
@@ -1095,7 +1142,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstoreparameters-keypath"
           },
           {
             "type": "field",
@@ -1113,11 +1161,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstoreparameters-autoincrement"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbobjectstoreparameters"
       },
       "IDBObjectStore": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBObjectStore {\n  attribute DOMString name;\n  readonly attribute any keyPath;\n  readonly attribute DOMStringList indexNames;\n  [SameObject] readonly attribute IDBTransaction transaction;\n  readonly attribute boolean autoIncrement;\n\n  [NewObject] IDBRequest put(any value, optional any key);\n  [NewObject] IDBRequest add(any value, optional any key);\n  [NewObject] IDBRequest delete(any query);\n  [NewObject] IDBRequest clear();\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n\n  IDBIndex index(DOMString name);\n\n  [NewObject] IDBIndex createIndex(DOMString name,\n                                   (DOMString or sequence<DOMString>) keyPath,\n                                   optional IDBIndexParameters options = {});\n  undefined deleteIndex(DOMString name);\n};",
@@ -1138,7 +1188,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-name"
           },
           {
             "type": "attribute",
@@ -1153,7 +1204,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-keypath"
           },
           {
             "type": "attribute",
@@ -1168,7 +1220,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-indexnames"
           },
           {
             "type": "attribute",
@@ -1190,7 +1243,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-transaction"
           },
           {
             "type": "attribute",
@@ -1205,7 +1259,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-autoincrement"
           },
           {
             "type": "operation",
@@ -1260,7 +1315,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-put"
           },
           {
             "type": "operation",
@@ -1315,7 +1371,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-add"
           },
           {
             "type": "operation",
@@ -1354,7 +1411,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-delete"
           },
           {
             "type": "operation",
@@ -1376,7 +1434,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-clear"
           },
           {
             "type": "operation",
@@ -1415,7 +1474,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-get"
           },
           {
             "type": "operation",
@@ -1454,7 +1514,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getkey"
           },
           {
             "type": "operation",
@@ -1516,7 +1577,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getall"
           },
           {
             "type": "operation",
@@ -1578,7 +1640,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallkeys"
           },
           {
             "type": "operation",
@@ -1617,7 +1680,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-count"
           },
           {
             "type": "operation",
@@ -1675,7 +1739,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-opencursor"
           },
           {
             "type": "operation",
@@ -1733,7 +1798,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-openkeycursor"
           },
           {
             "type": "operation",
@@ -1765,7 +1831,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-index"
           },
           {
             "type": "operation",
@@ -1864,7 +1931,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-createindex"
           },
           {
             "type": "operation",
@@ -1896,7 +1964,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-deleteindex"
           }
         ],
         "extAttrs": [
@@ -1917,7 +1986,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbobjectstore"
       },
       "IDBIndexParameters": {
         "fragment": "dictionary IDBIndexParameters {\n  boolean unique = false;\n  boolean multiEntry = false;\n};",
@@ -1941,7 +2011,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindexparameters-unique"
           },
           {
             "type": "field",
@@ -1959,11 +2030,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindexparameters-multientry"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#dictdef-idbindexparameters"
       },
       "IDBIndex": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBIndex {\n  attribute DOMString name;\n  [SameObject] readonly attribute IDBObjectStore objectStore;\n  readonly attribute any keyPath;\n  readonly attribute boolean multiEntry;\n  readonly attribute boolean unique;\n\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n};",
@@ -1984,7 +2057,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-name"
           },
           {
             "type": "attribute",
@@ -2006,7 +2080,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-objectstore"
           },
           {
             "type": "attribute",
@@ -2021,7 +2096,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-keypath"
           },
           {
             "type": "attribute",
@@ -2036,7 +2112,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-multientry"
           },
           {
             "type": "attribute",
@@ -2051,7 +2128,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-unique"
           },
           {
             "type": "operation",
@@ -2090,7 +2168,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-get"
           },
           {
             "type": "operation",
@@ -2129,7 +2208,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getkey"
           },
           {
             "type": "operation",
@@ -2191,7 +2271,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall"
           },
           {
             "type": "operation",
@@ -2253,7 +2334,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys"
           },
           {
             "type": "operation",
@@ -2292,7 +2374,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-count"
           },
           {
             "type": "operation",
@@ -2350,7 +2433,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor"
           },
           {
             "type": "operation",
@@ -2408,7 +2492,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor"
           }
         ],
         "extAttrs": [
@@ -2429,7 +2514,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbindex"
       },
       "IDBKeyRange": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBKeyRange {\n  readonly attribute any lower;\n  readonly attribute any upper;\n  readonly attribute boolean lowerOpen;\n  readonly attribute boolean upperOpen;\n\n  // Static construction methods:\n  [NewObject] static IDBKeyRange only(any value);\n  [NewObject] static IDBKeyRange lowerBound(any lower, optional boolean open = false);\n  [NewObject] static IDBKeyRange upperBound(any upper, optional boolean open = false);\n  [NewObject] static IDBKeyRange bound(any lower,\n                                       any upper,\n                                       optional boolean lowerOpen = false,\n                                       optional boolean upperOpen = false);\n\n  boolean includes(any key);\n};",
@@ -2450,7 +2536,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-lower"
           },
           {
             "type": "attribute",
@@ -2465,7 +2552,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upper"
           },
           {
             "type": "attribute",
@@ -2480,7 +2568,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-loweropen"
           },
           {
             "type": "attribute",
@@ -2495,7 +2584,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperopen"
           },
           {
             "type": "operation",
@@ -2534,7 +2624,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-only"
           },
           {
             "type": "operation",
@@ -2592,7 +2683,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-lowerbound"
           },
           {
             "type": "operation",
@@ -2650,7 +2742,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound"
           },
           {
             "type": "operation",
@@ -2743,7 +2836,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound"
           },
           {
             "type": "operation",
@@ -2775,7 +2869,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-includes"
           }
         ],
         "extAttrs": [
@@ -2796,7 +2891,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbkeyrange"
       },
       "IDBCursor": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursor {\n  readonly attribute (IDBObjectStore or IDBIndex) source;\n  readonly attribute IDBCursorDirection direction;\n  readonly attribute any key;\n  readonly attribute any primaryKey;\n  [SameObject] readonly attribute IDBRequest request;\n\n  undefined advance([EnforceRange] unsigned long count);\n  undefined continue(optional any key);\n  undefined continuePrimaryKey(any key, any primaryKey);\n\n  [NewObject] IDBRequest update(any value);\n  [NewObject] IDBRequest delete();\n};",
@@ -2834,7 +2930,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-source"
           },
           {
             "type": "attribute",
@@ -2849,7 +2946,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-direction"
           },
           {
             "type": "attribute",
@@ -2864,7 +2962,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-key"
           },
           {
             "type": "attribute",
@@ -2879,7 +2978,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-primarykey"
           },
           {
             "type": "attribute",
@@ -2901,7 +3001,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-request"
           },
           {
             "type": "operation",
@@ -2940,7 +3041,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-advance"
           },
           {
             "type": "operation",
@@ -2972,7 +3074,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-continue"
           },
           {
             "type": "operation",
@@ -3020,7 +3123,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-continueprimarykey"
           },
           {
             "type": "operation",
@@ -3059,7 +3163,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-update"
           },
           {
             "type": "operation",
@@ -3081,7 +3186,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursor-delete"
           }
         ],
         "extAttrs": [
@@ -3102,7 +3208,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbcursor"
       },
       "IDBCursorDirection": {
         "fragment": "enum IDBCursorDirection {\n  \"next\",\n  \"nextunique\",\n  \"prev\",\n  \"prevunique\"\n};",
@@ -3111,22 +3218,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "next"
+            "value": "next",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursordirection-next"
           },
           {
             "type": "enum-value",
-            "value": "nextunique"
+            "value": "nextunique",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursordirection-nextunique"
           },
           {
             "type": "enum-value",
-            "value": "prev"
+            "value": "prev",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursordirection-prev"
           },
           {
             "type": "enum-value",
-            "value": "prevunique"
+            "value": "prevunique",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursordirection-prevunique"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/IndexedDB/#enumdef-idbcursordirection"
       },
       "IDBCursorWithValue": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursorWithValue : IDBCursor {\n  readonly attribute any value;\n};",
@@ -3147,7 +3259,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbcursorwithvalue-value"
           }
         ],
         "extAttrs": [
@@ -3168,7 +3281,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbcursorwithvalue"
       },
       "IDBTransaction": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface IDBTransaction : EventTarget {\n  readonly attribute DOMStringList objectStoreNames;\n  readonly attribute IDBTransactionMode mode;\n  readonly attribute IDBTransactionDurability durability;\n  [SameObject] readonly attribute IDBDatabase db;\n  readonly attribute DOMException? error;\n\n  IDBObjectStore objectStore(DOMString name);\n  undefined commit();\n  undefined abort();\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler oncomplete;\n  attribute EventHandler onerror;\n};",
@@ -3189,7 +3303,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-objectstorenames"
           },
           {
             "type": "attribute",
@@ -3204,7 +3319,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-mode"
           },
           {
             "type": "attribute",
@@ -3219,7 +3335,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-durability"
           },
           {
             "type": "attribute",
@@ -3241,7 +3358,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-db"
           },
           {
             "type": "attribute",
@@ -3256,7 +3374,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-error"
           },
           {
             "type": "operation",
@@ -3288,7 +3407,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-objectstore"
           },
           {
             "type": "operation",
@@ -3303,7 +3423,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-commit"
           },
           {
             "type": "operation",
@@ -3318,7 +3439,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-abort"
           },
           {
             "type": "attribute",
@@ -3333,7 +3455,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-onabort"
           },
           {
             "type": "attribute",
@@ -3348,7 +3471,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-oncomplete"
           },
           {
             "type": "attribute",
@@ -3363,7 +3487,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransaction-onerror"
           }
         ],
         "extAttrs": [
@@ -3384,7 +3509,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IndexedDB/#idbtransaction"
       },
       "IDBTransactionMode": {
         "fragment": "enum IDBTransactionMode {\n  \"readonly\",\n  \"readwrite\",\n  \"versionchange\"\n};",
@@ -3393,18 +3519,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "readonly"
+            "value": "readonly",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-readonly"
           },
           {
             "type": "enum-value",
-            "value": "readwrite"
+            "value": "readwrite",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-readwrite"
           },
           {
             "type": "enum-value",
-            "value": "versionchange"
+            "value": "versionchange",
+            "href": "https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-versionchange"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/IndexedDB/#enumdef-idbtransactionmode"
       }
     },
     "idlExtendedNames": {
@@ -3435,7 +3565,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb"
             }
           ],
           "extAttrs": [],

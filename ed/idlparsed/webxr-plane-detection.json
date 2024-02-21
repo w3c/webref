@@ -21,14 +21,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "horizontal"
+            "value": "horizontal",
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplaneorientation-horizontal"
           },
           {
             "type": "enum-value",
-            "value": "vertical"
+            "value": "vertical",
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplaneorientation-vertical"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#enumdef-xrplaneorientation"
       },
       "XRPlane": {
         "fragment": "[Exposed=Window]\ninterface XRPlane {\n    [SameObject] readonly attribute XRSpace planeSpace;\n\n    readonly attribute FrozenArray<DOMPointReadOnly> polygon;\n    readonly attribute XRPlaneOrientation? orientation;\n    readonly attribute DOMHighResTimeStamp lastChangedTime;\n    readonly attribute DOMString? semanticLabel;\n};",
@@ -56,7 +59,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-planespace"
           },
           {
             "type": "attribute",
@@ -80,7 +84,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-polygon"
           },
           {
             "type": "attribute",
@@ -95,7 +100,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-orientation"
           },
           {
             "type": "attribute",
@@ -110,7 +116,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-lastchangedtime"
           },
           {
             "type": "attribute",
@@ -125,7 +132,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-semanticlabel"
           }
         ],
         "extAttrs": [
@@ -139,7 +147,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrplane"
       },
       "XRPlaneSet": {
         "fragment": "[Exposed=Window]\ninterface XRPlaneSet {\n  readonly setlike<XRPlane>;\n};",
@@ -176,7 +185,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrplaneset"
       }
     },
     "idlExtendedNames": {
@@ -200,7 +210,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrframe-detectedplanes"
             }
           ],
           "extAttrs": [],
@@ -236,7 +247,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrsession-initiateroomcapture"
             }
           ],
           "extAttrs": [],

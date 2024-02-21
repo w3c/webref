@@ -34,7 +34,8 @@
                 "rhs": null,
                 "arguments": []
               }
-            ]
+            ],
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-htmlfencedframeelement"
           },
           {
             "type": "attribute",
@@ -56,7 +57,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-config"
           },
           {
             "type": "attribute",
@@ -78,7 +80,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-width"
           },
           {
             "type": "attribute",
@@ -100,7 +103,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-height"
           },
           {
             "type": "attribute",
@@ -122,7 +126,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-allow"
           }
         ],
         "extAttrs": [
@@ -136,7 +141,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/fenced-frame/#htmlfencedframeelement"
       },
       "OpaqueProperty": {
         "fragment": "enum OpaqueProperty {\"opaque\"};",
@@ -145,10 +151,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "opaque"
+            "value": "opaque",
+            "href": "https://wicg.github.io/fenced-frame/#dom-opaqueproperty-opaque"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#enumdef-opaqueproperty"
       },
       "FencedFrameConfigSize": {
         "fragment": "typedef (unsigned long or OpaqueProperty) FencedFrameConfigSize;",
@@ -179,7 +187,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#typedefdef-fencedframeconfigsize"
       },
       "FencedFrameConfigURL": {
         "fragment": "typedef USVString FencedFrameConfigURL;",
@@ -193,7 +202,8 @@
           "union": false,
           "idlType": "USVString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#typedefdef-fencedframeconfigurl"
       },
       "FencedFrameConfig": {
         "fragment": "[Exposed=Window, Serializable]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
@@ -214,7 +224,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-containerwidth"
           },
           {
             "type": "attribute",
@@ -229,7 +240,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-containerheight"
           },
           {
             "type": "attribute",
@@ -244,7 +256,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-contentwidth"
           },
           {
             "type": "attribute",
@@ -259,7 +272,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-contentheight"
           },
           {
             "type": "operation",
@@ -291,7 +305,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-setsharedstoragecontext"
           }
         ],
         "extAttrs": [
@@ -311,7 +326,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/fenced-frame/#fencedframeconfig"
       },
       "UrnOrConfig": {
         "fragment": "typedef (USVString or FencedFrameConfig) UrnOrConfig;",
@@ -342,7 +358,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#typedefdef-urnorconfig"
       },
       "FenceReportingDestination": {
         "fragment": "enum FenceReportingDestination {\n  \"buyer\",\n  \"seller\",\n  \"component-seller\",\n  \"direct-seller\",\n  \"shared-storage-select-url\",\n};",
@@ -351,26 +368,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "buyer"
+            "value": "buyer",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencereportingdestination-buyer"
           },
           {
             "type": "enum-value",
-            "value": "seller"
+            "value": "seller",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencereportingdestination-seller"
           },
           {
             "type": "enum-value",
-            "value": "component-seller"
+            "value": "component-seller",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencereportingdestination-component-seller"
           },
           {
             "type": "enum-value",
-            "value": "direct-seller"
+            "value": "direct-seller",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencereportingdestination-direct-seller"
           },
           {
             "type": "enum-value",
-            "value": "shared-storage-select-url"
+            "value": "shared-storage-select-url",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencereportingdestination-shared-storage-select-url"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#enumdef-fencereportingdestination"
       },
       "FenceEvent": {
         "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n\n  // When setting event data to be used later in an automatic beacon, the\n  // following properties are used:\n  boolean once = false;\n  boolean crossOriginExposed = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
@@ -391,7 +414,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-eventtype"
           },
           {
             "type": "field",
@@ -406,7 +430,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-eventdata"
           },
           {
             "type": "field",
@@ -430,7 +455,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-destination"
           },
           {
             "type": "field",
@@ -448,7 +474,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-once"
           },
           {
             "type": "field",
@@ -466,7 +493,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-crossoriginexposed"
           },
           {
             "type": "field",
@@ -481,11 +509,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-destinationurl"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/fenced-frame/#dictdef-fenceevent"
       },
       "ReportEventType": {
         "fragment": "typedef (FenceEvent or DOMString) ReportEventType;",
@@ -516,7 +546,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/fenced-frame/#typedefdef-reporteventtype"
       },
       "Fence": {
         "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n};",
@@ -556,7 +587,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fence-reportevent"
           },
           {
             "type": "operation",
@@ -590,7 +622,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fence-setreporteventdataforautomaticbeacons"
           },
           {
             "type": "operation",
@@ -614,7 +647,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fence-getnestedconfigs"
           }
         ],
         "extAttrs": [
@@ -628,7 +662,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/fenced-frame/#fence"
       }
     },
     "idlExtendedNames": {
@@ -711,7 +746,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/fenced-frame/#dom-navigator-deprecatedreplaceinurn"
             }
           ],
           "extAttrs": [],
@@ -738,7 +774,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/fenced-frame/#dom-window-fence"
             }
           ],
           "extAttrs": [],

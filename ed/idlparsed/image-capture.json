@@ -39,7 +39,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-imagecapture"
           },
           {
             "type": "operation",
@@ -82,7 +83,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-takephoto"
           },
           {
             "type": "operation",
@@ -106,7 +108,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotocapabilities"
           },
           {
             "type": "operation",
@@ -130,7 +133,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotosettings"
           },
           {
             "type": "operation",
@@ -154,7 +158,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-grabframe"
           },
           {
             "type": "attribute",
@@ -169,7 +174,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-track"
           }
         ],
         "extAttrs": [
@@ -183,7 +189,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture"
       },
       "PhotoCapabilities": {
         "fragment": "dictionary PhotoCapabilities {\n  RedEyeReduction         redEyeReduction;\n  MediaSettingsRange      imageHeight;\n  MediaSettingsRange      imageWidth;\n  sequence<FillLightMode> fillLightMode;\n};",
@@ -204,7 +211,8 @@
               "idlType": "RedEyeReduction"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-redeyereduction"
           },
           {
             "type": "field",
@@ -219,7 +227,8 @@
               "idlType": "MediaSettingsRange"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-imageheight"
           },
           {
             "type": "field",
@@ -234,7 +243,8 @@
               "idlType": "MediaSettingsRange"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-imagewidth"
           },
           {
             "type": "field",
@@ -258,11 +268,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-filllightmode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-photocapabilities"
       },
       "PhotoSettings": {
         "fragment": "dictionary PhotoSettings {\n  FillLightMode   fillLightMode;\n  double          imageHeight;\n  double          imageWidth;\n  boolean         redEyeReduction;\n};",
@@ -283,7 +295,8 @@
               "idlType": "FillLightMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-filllightmode"
           },
           {
             "type": "field",
@@ -298,7 +311,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-imageheight"
           },
           {
             "type": "field",
@@ -313,7 +327,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-imagewidth"
           },
           {
             "type": "field",
@@ -328,11 +343,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-redeyereduction"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-photosettings"
       },
       "MediaSettingsRange": {
         "fragment": "dictionary MediaSettingsRange {\n    double max;\n    double min;\n    double step;\n};",
@@ -353,7 +370,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-max"
           },
           {
             "type": "field",
@@ -368,7 +386,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-min"
           },
           {
             "type": "field",
@@ -383,11 +402,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-step"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-mediasettingsrange"
       },
       "RedEyeReduction": {
         "fragment": "enum RedEyeReduction {\n  \"never\",\n  \"always\",\n  \"controllable\"\n};",
@@ -396,18 +417,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "never"
+            "value": "never",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-never"
           },
           {
             "type": "enum-value",
-            "value": "always"
+            "value": "always",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-always"
           },
           {
             "type": "enum-value",
-            "value": "controllable"
+            "value": "controllable",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-controllable"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-image/#enumdef-redeyereduction"
       },
       "FillLightMode": {
         "fragment": "enum FillLightMode {\n  \"auto\",\n  \"off\",\n  \"flash\"\n};",
@@ -416,18 +441,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-auto"
           },
           {
             "type": "enum-value",
-            "value": "off"
+            "value": "off",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-off"
           },
           {
             "type": "enum-value",
-            "value": "flash"
+            "value": "flash",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-flash"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-image/#enumdef-filllightmode"
       },
       "ConstrainPoint2DParameters": {
         "fragment": "dictionary ConstrainPoint2DParameters {\n  sequence<Point2D> exact;\n  sequence<Point2D> ideal;\n};",
@@ -457,7 +486,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-exact"
           },
           {
             "type": "field",
@@ -481,11 +511,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-ideal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-constrainpoint2dparameters"
       },
       "ConstrainPoint2D": {
         "fragment": "typedef (sequence<Point2D> or ConstrainPoint2DParameters) ConstrainPoint2D;",
@@ -525,7 +557,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-image/#typedefdef-constrainpoint2d"
       },
       "MeteringMode": {
         "fragment": "enum MeteringMode {\n  \"none\",\n  \"manual\",\n  \"single-shot\",\n  \"continuous\"\n};",
@@ -534,22 +567,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-none"
           },
           {
             "type": "enum-value",
-            "value": "manual"
+            "value": "manual",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-manual"
           },
           {
             "type": "enum-value",
-            "value": "single-shot"
+            "value": "single-shot",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-single-shot"
           },
           {
             "type": "enum-value",
-            "value": "continuous"
+            "value": "continuous",
+            "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-continuous"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-image/#enumdef-meteringmode"
       },
       "Point2D": {
         "fragment": "dictionary Point2D {\n  double x = 0.0;\n  double y = 0.0;\n};",
@@ -573,7 +611,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-point2d-x"
           },
           {
             "type": "field",
@@ -591,11 +630,13 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-image/#dom-point2d-y"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-point2d"
       }
     },
     "idlExtendedNames": {
@@ -622,7 +663,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-whitebalancemode"
             },
             {
               "type": "field",
@@ -640,7 +682,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposuremode"
             },
             {
               "type": "field",
@@ -658,7 +701,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-focusmode"
             },
             {
               "type": "field",
@@ -676,7 +720,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-pointsofinterest"
             },
             {
               "type": "field",
@@ -694,7 +739,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposurecompensation"
             },
             {
               "type": "field",
@@ -712,7 +758,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposuretime"
             },
             {
               "type": "field",
@@ -730,7 +777,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-colortemperature"
             },
             {
               "type": "field",
@@ -748,7 +796,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-iso"
             },
             {
               "type": "field",
@@ -766,7 +815,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-brightness"
             },
             {
               "type": "field",
@@ -784,7 +834,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-contrast"
             },
             {
               "type": "field",
@@ -802,7 +853,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-pan"
             },
             {
               "type": "field",
@@ -820,7 +872,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-saturation"
             },
             {
               "type": "field",
@@ -838,7 +891,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-sharpness"
             },
             {
               "type": "field",
@@ -856,7 +910,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-focusdistance"
             },
             {
               "type": "field",
@@ -874,7 +929,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-tilt"
             },
             {
               "type": "field",
@@ -892,7 +948,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-zoom"
             },
             {
               "type": "field",
@@ -910,7 +967,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-torch"
             }
           ],
           "extAttrs": [],
@@ -946,7 +1004,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-whitebalancemode"
             },
             {
               "type": "field",
@@ -970,7 +1029,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposuremode"
             },
             {
               "type": "field",
@@ -994,7 +1054,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-focusmode"
             },
             {
               "type": "field",
@@ -1009,7 +1070,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposurecompensation"
             },
             {
               "type": "field",
@@ -1024,7 +1086,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposuretime"
             },
             {
               "type": "field",
@@ -1039,7 +1102,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-colortemperature"
             },
             {
               "type": "field",
@@ -1054,7 +1118,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-iso"
             },
             {
               "type": "field",
@@ -1069,7 +1134,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-brightness"
             },
             {
               "type": "field",
@@ -1084,7 +1150,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-contrast"
             },
             {
               "type": "field",
@@ -1099,7 +1166,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-saturation"
             },
             {
               "type": "field",
@@ -1114,7 +1182,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-sharpness"
             },
             {
               "type": "field",
@@ -1129,7 +1198,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-focusdistance"
             },
             {
               "type": "field",
@@ -1144,7 +1214,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-pan"
             },
             {
               "type": "field",
@@ -1159,7 +1230,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-tilt"
             },
             {
               "type": "field",
@@ -1174,7 +1246,8 @@
                 "idlType": "MediaSettingsRange"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-zoom"
             },
             {
               "type": "field",
@@ -1198,7 +1271,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-torch"
             }
           ],
           "extAttrs": [],
@@ -1225,7 +1299,8 @@
                 "idlType": "ConstrainDOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-whitebalancemode"
             },
             {
               "type": "field",
@@ -1240,7 +1315,8 @@
                 "idlType": "ConstrainDOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuremode"
             },
             {
               "type": "field",
@@ -1255,7 +1331,8 @@
                 "idlType": "ConstrainDOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusmode"
             },
             {
               "type": "field",
@@ -1270,7 +1347,8 @@
                 "idlType": "ConstrainPoint2D"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pointsofinterest"
             },
             {
               "type": "field",
@@ -1285,7 +1363,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposurecompensation"
             },
             {
               "type": "field",
@@ -1300,7 +1379,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuretime"
             },
             {
               "type": "field",
@@ -1315,7 +1395,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-colortemperature"
             },
             {
               "type": "field",
@@ -1330,7 +1411,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-iso"
             },
             {
               "type": "field",
@@ -1345,7 +1427,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-brightness"
             },
             {
               "type": "field",
@@ -1360,7 +1443,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-contrast"
             },
             {
               "type": "field",
@@ -1375,7 +1459,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-saturation"
             },
             {
               "type": "field",
@@ -1390,7 +1475,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-sharpness"
             },
             {
               "type": "field",
@@ -1405,7 +1491,8 @@
                 "idlType": "ConstrainDouble"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusdistance"
             },
             {
               "type": "field",
@@ -1437,7 +1524,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pan"
             },
             {
               "type": "field",
@@ -1469,7 +1557,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-tilt"
             },
             {
               "type": "field",
@@ -1501,7 +1590,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-zoom"
             },
             {
               "type": "field",
@@ -1516,7 +1606,8 @@
                 "idlType": "ConstrainBoolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-torch"
             }
           ],
           "extAttrs": [],
@@ -1543,7 +1634,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-whitebalancemode"
             },
             {
               "type": "field",
@@ -1558,7 +1650,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposuremode"
             },
             {
               "type": "field",
@@ -1573,7 +1666,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-focusmode"
             },
             {
               "type": "field",
@@ -1597,7 +1691,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-pointsofinterest"
             },
             {
               "type": "field",
@@ -1612,7 +1707,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposurecompensation"
             },
             {
               "type": "field",
@@ -1627,7 +1723,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposuretime"
             },
             {
               "type": "field",
@@ -1642,7 +1739,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-colortemperature"
             },
             {
               "type": "field",
@@ -1657,7 +1755,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-iso"
             },
             {
               "type": "field",
@@ -1672,7 +1771,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-brightness"
             },
             {
               "type": "field",
@@ -1687,7 +1787,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-contrast"
             },
             {
               "type": "field",
@@ -1702,7 +1803,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-saturation"
             },
             {
               "type": "field",
@@ -1717,7 +1819,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-sharpness"
             },
             {
               "type": "field",
@@ -1732,7 +1835,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-focusdistance"
             },
             {
               "type": "field",
@@ -1747,7 +1851,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-pan"
             },
             {
               "type": "field",
@@ -1762,7 +1867,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-tilt"
             },
             {
               "type": "field",
@@ -1777,7 +1883,8 @@
                 "idlType": "double"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-zoom"
             },
             {
               "type": "field",
@@ -1792,7 +1899,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-torch"
             }
           ],
           "extAttrs": [],

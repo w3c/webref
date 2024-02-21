@@ -20,18 +20,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "focus-capturing-application"
+            "value": "focus-capturing-application",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CaptureStartFocusBehavior.focus-capturing-application"
           },
           {
             "type": "enum-value",
-            "value": "focus-captured-surface"
+            "value": "focus-captured-surface",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CaptureStartFocusBehavior.focus-captured-surface"
           },
           {
             "type": "enum-value",
-            "value": "no-focus-change"
+            "value": "no-focus-change",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CaptureStartFocusBehavior.no-focus-change"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturestartfocusbehavior"
       },
       "CaptureController": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController : EventTarget {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
@@ -42,7 +46,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller-constructor"
           },
           {
             "type": "operation",
@@ -74,7 +79,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller-setfocusbehavior"
           }
         ],
         "extAttrs": [
@@ -94,7 +100,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller"
       },
       "SelfCapturePreferenceEnum": {
         "fragment": "enum SelfCapturePreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
@@ -103,14 +110,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "include"
+            "value": "include",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SelfCapturePreferenceEnum.include"
           },
           {
             "type": "enum-value",
-            "value": "exclude"
+            "value": "exclude",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SelfCapturePreferenceEnum.exclude"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-selfcapturepreferenceenum"
       },
       "SystemAudioPreferenceEnum": {
         "fragment": "enum SystemAudioPreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
@@ -119,14 +129,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "include"
+            "value": "include",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SystemAudioPreferenceEnum.include"
           },
           {
             "type": "enum-value",
-            "value": "exclude"
+            "value": "exclude",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SystemAudioPreferenceEnum.exclude"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-systemaudiopreferenceenum"
       },
       "SurfaceSwitchingPreferenceEnum": {
         "fragment": "enum SurfaceSwitchingPreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
@@ -135,14 +148,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "include"
+            "value": "include",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SurfaceSwitchingPreferenceEnum.include"
           },
           {
             "type": "enum-value",
-            "value": "exclude"
+            "value": "exclude",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-SurfaceSwitchingPreferenceEnum.exclude"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-surfaceswitchingpreferenceenum"
       },
       "MonitorTypeSurfacesEnum": {
         "fragment": "enum MonitorTypeSurfacesEnum {\n  \"include\",\n  \"exclude\"\n};",
@@ -151,14 +167,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "include"
+            "value": "include",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-MonitorTypeSurfacesEnum.include"
           },
           {
             "type": "enum-value",
-            "value": "exclude"
+            "value": "exclude",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-MonitorTypeSurfacesEnum.exclude"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-monitortypesurfacesenum"
       },
       "DisplayMediaStreamOptions": {
         "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n};",
@@ -199,7 +218,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-video"
           },
           {
             "type": "field",
@@ -234,7 +254,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-audio"
           },
           {
             "type": "field",
@@ -249,7 +270,8 @@
               "idlType": "CaptureController"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-controller"
           },
           {
             "type": "field",
@@ -264,7 +286,8 @@
               "idlType": "SelfCapturePreferenceEnum"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-selfbrowsersurface"
           },
           {
             "type": "field",
@@ -279,7 +302,8 @@
               "idlType": "SystemAudioPreferenceEnum"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-systemaudio"
           },
           {
             "type": "field",
@@ -294,7 +318,8 @@
               "idlType": "SurfaceSwitchingPreferenceEnum"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-surfaceswitching"
           },
           {
             "type": "field",
@@ -309,11 +334,13 @@
               "idlType": "MonitorTypeSurfacesEnum"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-monitortypesurfaces"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions"
       },
       "DisplayCaptureSurfaceType": {
         "fragment": "enum DisplayCaptureSurfaceType {\n  \"monitor\",\n  \"window\",\n  \"browser\"\n};",
@@ -322,18 +349,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "monitor"
+            "value": "monitor",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-DisplayCaptureSurfaceType.monitor"
           },
           {
             "type": "enum-value",
-            "value": "window"
+            "value": "window",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-DisplayCaptureSurfaceType.window"
           },
           {
             "type": "enum-value",
-            "value": "browser"
+            "value": "browser",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-DisplayCaptureSurfaceType.browser"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype"
       },
       "CursorCaptureConstraint": {
         "fragment": "enum CursorCaptureConstraint {\n  \"never\",\n  \"always\",\n  \"motion\"\n};",
@@ -342,18 +373,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "never"
+            "value": "never",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CursorCaptureConstraint.never"
           },
           {
             "type": "enum-value",
-            "value": "always"
+            "value": "always",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CursorCaptureConstraint.always"
           },
           {
             "type": "enum-value",
-            "value": "motion"
+            "value": "motion",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-CursorCaptureConstraint.motion"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-cursorcaptureconstraint"
       }
     },
     "idlExtendedNames": {
@@ -405,7 +440,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices-getdisplaymedia"
             }
           ],
           "extAttrs": [],
@@ -435,7 +471,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-displaysurface"
             },
             {
               "type": "field",
@@ -453,7 +490,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-logicalsurface"
             },
             {
               "type": "field",
@@ -471,7 +509,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-cursor"
             },
             {
               "type": "field",
@@ -489,7 +528,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-restrictownaudio"
             },
             {
               "type": "field",
@@ -507,7 +547,8 @@
                 "type": "boolean",
                 "value": true
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-suppresslocalaudioplayback"
             }
           ],
           "extAttrs": [],
@@ -534,7 +575,8 @@
                 "idlType": "ConstrainDOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-displaysurface"
             },
             {
               "type": "field",
@@ -549,7 +591,8 @@
                 "idlType": "ConstrainBoolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-logicalsurface"
             },
             {
               "type": "field",
@@ -564,7 +607,8 @@
                 "idlType": "ConstrainDOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-cursor"
             },
             {
               "type": "field",
@@ -579,7 +623,8 @@
                 "idlType": "ConstrainBoolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-restrictownaudio"
             },
             {
               "type": "field",
@@ -594,7 +639,8 @@
                 "idlType": "ConstrainBoolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-suppresslocalaudioplayback"
             }
           ],
           "extAttrs": [],
@@ -621,7 +667,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-displaysurface"
             },
             {
               "type": "field",
@@ -636,7 +683,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-logicalsurface"
             },
             {
               "type": "field",
@@ -651,7 +699,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-cursor"
             },
             {
               "type": "field",
@@ -666,7 +715,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-restrictownaudio"
             },
             {
               "type": "field",
@@ -681,7 +731,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-suppresslocalaudioplayback"
             }
           ],
           "extAttrs": [],
@@ -708,7 +759,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackcapabilities-displaysurface"
             },
             {
               "type": "field",
@@ -723,7 +775,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackcapabilities-logicalsurface"
             },
             {
               "type": "field",
@@ -747,7 +800,8 @@
                 ]
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackcapabilities-cursor"
             }
           ],
           "extAttrs": [],

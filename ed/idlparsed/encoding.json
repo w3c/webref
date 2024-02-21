@@ -35,7 +35,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-encoding"
           },
           {
             "type": "attribute",
@@ -50,7 +51,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-fatal"
           },
           {
             "type": "attribute",
@@ -65,11 +67,13 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-ignorebom"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textdecodercommon"
       },
       "TextDecoderOptions": {
         "fragment": "dictionary TextDecoderOptions {\n  boolean fatal = false;\n  boolean ignoreBOM = false;\n};",
@@ -93,7 +97,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoderoptions-fatal"
           },
           {
             "type": "field",
@@ -111,11 +116,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoderoptions-ignorebom"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textdecoderoptions"
       },
       "TextDecodeOptions": {
         "fragment": "dictionary TextDecodeOptions {\n  boolean stream = false;\n};",
@@ -139,11 +146,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecodeoptions-stream"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textdecodeoptions"
       },
       "TextDecoder": {
         "fragment": "[Exposed=*]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional AllowSharedBufferSource input, optional TextDecodeOptions options = {});\n};",
@@ -192,7 +201,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoder"
           },
           {
             "type": "operation",
@@ -242,7 +252,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-decode"
           }
         ],
         "extAttrs": [
@@ -256,7 +267,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textdecoder"
       },
       "TextEncoderCommon": {
         "fragment": "interface mixin TextEncoderCommon {\n  readonly attribute DOMString encoding;\n};",
@@ -277,11 +289,13 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encoding"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon"
       },
       "TextEncoderEncodeIntoResult": {
         "fragment": "dictionary TextEncoderEncodeIntoResult {\n  unsigned long long read;\n  unsigned long long written;\n};",
@@ -302,7 +316,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoderencodeintoresult-read"
           },
           {
             "type": "field",
@@ -317,11 +332,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoderencodeintoresult-written"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#dictdef-textencoderencodeintoresult"
       },
       "TextEncoder": {
         "fragment": "[Exposed=*]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
@@ -332,7 +349,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoder"
           },
           {
             "type": "operation",
@@ -374,7 +392,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encode"
           },
           {
             "type": "operation",
@@ -429,7 +448,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto"
           }
         ],
         "extAttrs": [
@@ -443,7 +463,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textencoder"
       },
       "TextDecoderStream": {
         "fragment": "[Exposed=*]\ninterface TextDecoderStream {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n};",
@@ -492,7 +513,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://encoding.spec.whatwg.org/#dom-textdecoderstream"
           }
         ],
         "extAttrs": [
@@ -506,7 +528,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textdecoderstream"
       },
       "TextEncoderStream": {
         "fragment": "[Exposed=*]\ninterface TextEncoderStream {\n  constructor();\n};",
@@ -517,7 +540,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://encoding.spec.whatwg.org/#dom-textencoderstream"
           }
         ],
         "extAttrs": [
@@ -531,7 +555,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://encoding.spec.whatwg.org/#textencoderstream"
       }
     },
     "idlExtendedNames": {

@@ -130,7 +130,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch"
           },
           {
             "type": "operation",
@@ -171,7 +172,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-get"
           },
           {
             "type": "operation",
@@ -204,7 +206,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-getids"
           }
         ],
         "extAttrs": [
@@ -225,7 +228,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchmanager"
       },
       "BackgroundFetchUIOptions": {
         "fragment": "dictionary BackgroundFetchUIOptions {\n  sequence<ImageResource> icons;\n  DOMString title;\n};",
@@ -255,7 +259,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchuioptions-icons"
           },
           {
             "type": "field",
@@ -270,11 +275,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchuioptions-title"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetchuioptions"
       },
       "BackgroundFetchOptions": {
         "fragment": "dictionary BackgroundFetchOptions : BackgroundFetchUIOptions {\n  unsigned long long downloadTotal = 0;\n};",
@@ -298,11 +305,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchoptions-downloadtotal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetchoptions"
       },
       "BackgroundFetchRegistration": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRegistration : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute unsigned long long uploadTotal;\n  readonly attribute unsigned long long uploaded;\n  readonly attribute unsigned long long downloadTotal;\n  readonly attribute unsigned long long downloaded;\n  readonly attribute BackgroundFetchResult result;\n  readonly attribute BackgroundFetchFailureReason failureReason;\n  readonly attribute boolean recordsAvailable;\n\n  attribute EventHandler onprogress;\n\n  Promise<boolean> abort();\n  Promise<BackgroundFetchRecord> match(RequestInfo request, optional CacheQueryOptions options = {});\n  Promise<sequence<BackgroundFetchRecord>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
@@ -323,7 +332,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-id"
           },
           {
             "type": "attribute",
@@ -338,7 +348,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploadtotal"
           },
           {
             "type": "attribute",
@@ -353,7 +364,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploaded"
           },
           {
             "type": "attribute",
@@ -368,7 +380,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloadtotal"
           },
           {
             "type": "attribute",
@@ -383,7 +396,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloaded"
           },
           {
             "type": "attribute",
@@ -398,7 +412,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-result"
           },
           {
             "type": "attribute",
@@ -413,7 +428,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-failurereason"
           },
           {
             "type": "attribute",
@@ -428,7 +444,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-recordsavailable"
           },
           {
             "type": "attribute",
@@ -443,7 +460,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-onprogress"
           },
           {
             "type": "operation",
@@ -467,7 +485,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-abort"
           },
           {
             "type": "operation",
@@ -526,7 +545,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-match"
           },
           {
             "type": "operation",
@@ -594,7 +614,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-matchall"
           }
         ],
         "extAttrs": [
@@ -615,7 +636,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration"
       },
       "BackgroundFetchResult": {
         "fragment": "enum BackgroundFetchResult { \"\", \"success\", \"failure\" };",
@@ -624,18 +646,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult"
           },
           {
             "type": "enum-value",
-            "value": "success"
+            "value": "success",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult-success"
           },
           {
             "type": "enum-value",
-            "value": "failure"
+            "value": "failure",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult-failure"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/background-fetch/#enumdef-backgroundfetchresult"
       },
       "BackgroundFetchFailureReason": {
         "fragment": "enum BackgroundFetchFailureReason {\n  // The background fetch has not completed yet, or was successful.\n  \"\",\n  // The operation was aborted by the user, or abort() was called.\n  \"aborted\",\n  // A response had a not-ok-status.\n  \"bad-status\",\n  // A fetch failed for other reasons, e.g. CORS, MIX, an invalid partial response,\n  // or a general network failure for a fetch that cannot be retried.\n  \"fetch-error\",\n  // Storage quota was reached during the operation.\n  \"quota-exceeded\",\n  // The provided downloadTotal was exceeded.\n  \"download-total-exceeded\"\n};",
@@ -644,30 +670,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason"
           },
           {
             "type": "enum-value",
-            "value": "aborted"
+            "value": "aborted",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-aborted"
           },
           {
             "type": "enum-value",
-            "value": "bad-status"
+            "value": "bad-status",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-bad-status"
           },
           {
             "type": "enum-value",
-            "value": "fetch-error"
+            "value": "fetch-error",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-fetch-error"
           },
           {
             "type": "enum-value",
-            "value": "quota-exceeded"
+            "value": "quota-exceeded",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-quota-exceeded"
           },
           {
             "type": "enum-value",
-            "value": "download-total-exceeded"
+            "value": "download-total-exceeded",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-download-total-exceeded"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/background-fetch/#enumdef-backgroundfetchfailurereason"
       },
       "BackgroundFetchRecord": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRecord {\n  readonly attribute Request request;\n  readonly attribute Promise<Response> responseReady;\n};",
@@ -688,7 +721,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-request"
           },
           {
             "type": "attribute",
@@ -712,7 +746,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-responseready"
           }
         ],
         "extAttrs": [
@@ -733,7 +768,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord"
       },
       "BackgroundFetchEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchEvent : ExtendableEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  readonly attribute BackgroundFetchRegistration registration;\n};",
@@ -777,7 +813,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-backgroundfetchevent"
           },
           {
             "type": "attribute",
@@ -792,7 +829,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-registration"
           }
         ],
         "extAttrs": [
@@ -806,7 +844,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchevent"
       },
       "BackgroundFetchEventInit": {
         "fragment": "dictionary BackgroundFetchEventInit : ExtendableEventInit {\n  required BackgroundFetchRegistration registration;\n};",
@@ -827,11 +866,13 @@
               "idlType": "BackgroundFetchRegistration"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetcheventinit-registration"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetcheventinit"
       },
       "BackgroundFetchUpdateUIEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  Promise<undefined> updateUI(optional BackgroundFetchUIOptions options = {});\n};",
@@ -875,7 +916,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-backgroundfetchupdateuievent"
           },
           {
             "type": "operation",
@@ -918,7 +960,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-updateui"
           }
         ],
         "extAttrs": [
@@ -932,7 +975,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchupdateuievent"
       }
     },
     "idlExtendedNames": {
@@ -956,7 +1000,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchsuccess"
             },
             {
               "type": "attribute",
@@ -971,7 +1016,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchfail"
             },
             {
               "type": "attribute",
@@ -986,7 +1032,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchabort"
             },
             {
               "type": "attribute",
@@ -1001,7 +1048,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchclick"
             }
           ],
           "extAttrs": [],
@@ -1028,7 +1076,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch"
             }
           ],
           "extAttrs": [],

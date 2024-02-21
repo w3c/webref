@@ -23,14 +23,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "active"
+            "value": "active",
+            "href": "https://wicg.github.io/idle-detection/#dom-useridlestate-active"
           },
           {
             "type": "enum-value",
-            "value": "idle"
+            "value": "idle",
+            "href": "https://wicg.github.io/idle-detection/#dom-useridlestate-idle"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/idle-detection/#enumdef-useridlestate"
       },
       "ScreenIdleState": {
         "fragment": "enum ScreenIdleState {\n    \"locked\",\n    \"unlocked\"\n};",
@@ -39,14 +42,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "locked"
+            "value": "locked",
+            "href": "https://wicg.github.io/idle-detection/#dom-screenidlestate-locked"
           },
           {
             "type": "enum-value",
-            "value": "unlocked"
+            "value": "unlocked",
+            "href": "https://wicg.github.io/idle-detection/#dom-screenidlestate-unlocked"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/idle-detection/#enumdef-screenidlestate"
       },
       "IdleOptions": {
         "fragment": "dictionary IdleOptions {\n  [EnforceRange] unsigned long long threshold;\n  AbortSignal signal;\n};",
@@ -74,7 +80,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/idle-detection/#dom-idleoptions-threshold"
           },
           {
             "type": "field",
@@ -89,11 +96,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/idle-detection/#dom-idleoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/idle-detection/#dictdef-idleoptions"
       },
       "IdleDetector": {
         "fragment": "[\n  SecureContext,\n  Exposed=(Window,DedicatedWorker)\n] interface IdleDetector : EventTarget {\n  constructor();\n  readonly attribute UserIdleState? userState;\n  readonly attribute ScreenIdleState? screenState;\n  attribute EventHandler onchange;\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n  Promise<undefined> start(optional IdleOptions options = {});\n};",
@@ -104,7 +113,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-idledetector"
           },
           {
             "type": "attribute",
@@ -119,7 +129,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-userstate"
           },
           {
             "type": "attribute",
@@ -134,7 +145,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-screenstate"
           },
           {
             "type": "attribute",
@@ -149,7 +161,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-onchange"
           },
           {
             "type": "operation",
@@ -183,7 +196,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-requestpermission"
           },
           {
             "type": "operation",
@@ -226,7 +240,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/idle-detection/#dom-idledetector-start"
           }
         ],
         "extAttrs": [
@@ -253,7 +268,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/idle-detection/#idledetector"
       }
     },
     "idlExtendedNames": {},

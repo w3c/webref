@@ -44,7 +44,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-geolocationsensor"
           },
           {
             "type": "operation",
@@ -87,7 +88,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-read"
           },
           {
             "type": "attribute",
@@ -102,7 +104,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-latitude"
           },
           {
             "type": "attribute",
@@ -117,7 +120,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-longitude"
           },
           {
             "type": "attribute",
@@ -132,7 +136,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-altitude"
           },
           {
             "type": "attribute",
@@ -147,7 +152,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-accuracy"
           },
           {
             "type": "attribute",
@@ -162,7 +168,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-altitudeaccuracy"
           },
           {
             "type": "attribute",
@@ -177,7 +184,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-heading"
           },
           {
             "type": "attribute",
@@ -192,7 +200,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-speed"
           }
         ],
         "extAttrs": [
@@ -219,7 +228,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-sensor/#geolocationsensor"
       },
       "GeolocationSensorOptions": {
         "fragment": "dictionary GeolocationSensorOptions : SensorOptions {\n  // placeholder for GeolocationSensor-specific options\n};",
@@ -228,7 +238,8 @@
         "inheritance": "SensorOptions",
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensoroptions"
       },
       "ReadOptions": {
         "fragment": "dictionary ReadOptions : GeolocationSensorOptions {\n  AbortSignal? signal;\n};",
@@ -249,11 +260,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-readoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-sensor/#dictdef-readoptions"
       },
       "GeolocationSensorReading": {
         "fragment": "dictionary GeolocationSensorReading {\n  DOMHighResTimeStamp? timestamp;\n  double? latitude;\n  double? longitude;\n  double? altitude;\n  double? accuracy;\n  double? altitudeAccuracy;\n  double? heading;\n  double? speed;\n};",
@@ -274,7 +287,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-timestamp"
           },
           {
             "type": "field",
@@ -289,7 +303,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-latitude"
           },
           {
             "type": "field",
@@ -304,7 +319,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-longitude"
           },
           {
             "type": "field",
@@ -319,7 +335,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-altitude"
           },
           {
             "type": "field",
@@ -334,7 +351,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-accuracy"
           },
           {
             "type": "field",
@@ -349,7 +367,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-altitudeaccuracy"
           },
           {
             "type": "field",
@@ -364,7 +383,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-heading"
           },
           {
             "type": "field",
@@ -379,11 +399,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-speed"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensorreading"
       }
     },
     "idlExtendedNames": {},

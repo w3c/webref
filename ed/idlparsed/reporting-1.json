@@ -51,7 +51,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/reporting/#dom-reportbody-tojson"
           }
         ],
         "extAttrs": [
@@ -72,7 +73,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/reporting/#reportbody"
       },
       "Report": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
@@ -100,7 +102,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/reporting/#dom-report-tojson"
           },
           {
             "type": "attribute",
@@ -115,7 +118,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/reporting/#dom-report-type"
           },
           {
             "type": "attribute",
@@ -130,7 +134,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/reporting/#dom-report-url"
           },
           {
             "type": "attribute",
@@ -145,7 +150,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/reporting/#dom-report-body"
           }
         ],
         "extAttrs": [
@@ -166,7 +172,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/reporting/#dom-report"
       },
       "ReportingObserver": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface ReportingObserver {\n  constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options = {});\n  undefined observe();\n  undefined disconnect();\n  ReportList takeRecords();\n};",
@@ -212,7 +219,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserver-reportingobserver"
           },
           {
             "type": "operation",
@@ -227,7 +235,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserver-observe"
           },
           {
             "type": "operation",
@@ -242,7 +251,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserver-disconnect"
           },
           {
             "type": "operation",
@@ -257,7 +267,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserver-takerecords"
           }
         ],
         "extAttrs": [
@@ -278,7 +289,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/reporting/#reportingobserver"
       },
       "ReportingObserverCallback": {
         "fragment": "callback ReportingObserverCallback = undefined (sequence<Report> reports, ReportingObserver observer);",
@@ -335,7 +347,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/reporting/#callbackdef-reportingobservercallback"
       },
       "ReportingObserverOptions": {
         "fragment": "dictionary ReportingObserverOptions {\n  sequence<DOMString> types;\n  boolean buffered = false;\n};",
@@ -365,7 +378,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserveroptions-types"
           },
           {
             "type": "field",
@@ -383,11 +397,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/reporting/#dom-reportingobserveroptions-buffered"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/reporting/#dictdef-reportingobserveroptions"
       },
       "ReportList": {
         "fragment": "typedef sequence<Report> ReportList;",
@@ -410,7 +426,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/reporting/#typedefdef-reportlist"
       },
       "GenerateTestReportParameters": {
         "fragment": "dictionary GenerateTestReportParameters {\n  required DOMString message;\n  DOMString group = \"default\";\n};",
@@ -431,7 +448,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/reporting/#dom-generatetestreportparameters-message"
           },
           {
             "type": "field",
@@ -449,11 +467,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/reporting/#dom-generatetestreportparameters-group"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/reporting/#dictdef-generatetestreportparameters"
       }
     },
     "idlExtendedNames": {},

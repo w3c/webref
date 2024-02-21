@@ -32,11 +32,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestoptions-timeout"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestoptions"
       },
       "IdleDeadline": {
         "fragment": "[Exposed=Window] interface IdleDeadline {\n  DOMHighResTimeStamp timeRemaining();\n  readonly attribute boolean didTimeout;\n};",
@@ -57,7 +59,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline-timeremaining"
           },
           {
             "type": "attribute",
@@ -72,7 +75,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline-didtimeout"
           }
         ],
         "extAttrs": [
@@ -86,7 +90,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline"
       },
       "IdleRequestCallback": {
         "fragment": "callback IdleRequestCallback = undefined (IdleDeadline deadline);",
@@ -118,7 +123,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestcallback"
       }
     },
     "idlExtendedNames": {
@@ -177,7 +183,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/requestidlecallback/#dom-window-requestidlecallback"
             },
             {
               "type": "operation",
@@ -209,7 +216,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/requestidlecallback/#dom-window-cancelidlecallback"
             }
           ],
           "extAttrs": [],

@@ -76,7 +76,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout"
           }
         ],
         "extAttrs": [
@@ -106,7 +107,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope"
       },
       "LayoutOptions": {
         "fragment": "dictionary LayoutOptions {\n  ChildDisplayType childDisplay = \"block\";\n  LayoutSizingMode sizing = \"block-like\";\n};",
@@ -130,7 +132,8 @@
               "type": "string",
               "value": "block"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutoptions-childdisplay"
           },
           {
             "type": "field",
@@ -148,11 +151,13 @@
               "type": "string",
               "value": "block-like"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutoptions-sizing"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutoptions"
       },
       "ChildDisplayType": {
         "fragment": "enum ChildDisplayType {\n    \"block\", // default - \"blockifies\" the child boxes.\n    \"normal\",\n};",
@@ -161,14 +166,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "block"
+            "value": "block",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childdisplaytype-block"
           },
           {
             "type": "enum-value",
-            "value": "normal"
+            "value": "normal",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childdisplaytype-normal"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-childdisplaytype"
       },
       "LayoutSizingMode": {
         "fragment": "enum LayoutSizingMode {\n    \"block-like\", // default - Sizing behaves like block containers.\n    \"manual\", // Sizing is specified by the web developer.\n};",
@@ -177,14 +185,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "block-like"
+            "value": "block-like",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutsizingmode-block-like"
           },
           {
             "type": "enum-value",
-            "value": "manual"
+            "value": "manual",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutsizingmode-manual"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-layoutsizingmode"
       },
       "LayoutChild": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutChild {\n    readonly attribute StylePropertyMapReadOnly styleMap;\n\n    Promise<IntrinsicSizes> intrinsicSizes();\n    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);\n};",
@@ -205,7 +216,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap"
           },
           {
             "type": "operation",
@@ -229,7 +241,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-intrinsicsizes"
           },
           {
             "type": "operation",
@@ -286,7 +299,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment"
           }
         ],
         "extAttrs": [
@@ -300,7 +314,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutchild"
       },
       "LayoutFragment": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutFragment {\n    readonly attribute double inlineSize;\n    readonly attribute double blockSize;\n\n    attribute double inlineOffset;\n    attribute double blockOffset;\n\n    readonly attribute any data;\n\n    readonly attribute ChildBreakToken? breakToken;\n};",
@@ -321,7 +336,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlinesize"
           },
           {
             "type": "attribute",
@@ -336,7 +352,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blocksize"
           },
           {
             "type": "attribute",
@@ -351,7 +368,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlineoffset"
           },
           {
             "type": "attribute",
@@ -366,7 +384,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blockoffset"
           },
           {
             "type": "attribute",
@@ -381,7 +400,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-data"
           },
           {
             "type": "attribute",
@@ -396,7 +416,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-breaktoken"
           }
         ],
         "extAttrs": [
@@ -410,7 +431,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutfragment"
       },
       "IntrinsicSizes": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface IntrinsicSizes {\n  readonly attribute double minContentSize;\n  readonly attribute double maxContentSize;\n};",
@@ -431,7 +453,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-mincontentsize"
           },
           {
             "type": "attribute",
@@ -446,7 +469,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-maxcontentsize"
           }
         ],
         "extAttrs": [
@@ -460,7 +484,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsicsizes"
       },
       "LayoutConstraints": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutConstraints {\n    readonly attribute double availableInlineSize;\n    readonly attribute double availableBlockSize;\n\n    readonly attribute double? fixedInlineSize;\n    readonly attribute double? fixedBlockSize;\n\n    readonly attribute double percentageInlineSize;\n    readonly attribute double percentageBlockSize;\n\n    readonly attribute double? blockFragmentationOffset;\n    readonly attribute BlockFragmentationType blockFragmentationType;\n\n    readonly attribute any data;\n};",
@@ -481,7 +506,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableinlinesize"
           },
           {
             "type": "attribute",
@@ -496,7 +522,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableblocksize"
           },
           {
             "type": "attribute",
@@ -511,7 +538,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedinlinesize"
           },
           {
             "type": "attribute",
@@ -526,7 +554,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedblocksize"
           },
           {
             "type": "attribute",
@@ -541,7 +570,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageinlinesize"
           },
           {
             "type": "attribute",
@@ -556,7 +586,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageblocksize"
           },
           {
             "type": "attribute",
@@ -571,7 +602,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationoffset"
           },
           {
             "type": "attribute",
@@ -586,7 +618,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationtype"
           },
           {
             "type": "attribute",
@@ -601,7 +634,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-data"
           }
         ],
         "extAttrs": [
@@ -615,7 +649,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints"
       },
       "BlockFragmentationType": {
         "fragment": "enum BlockFragmentationType { \"none\", \"page\", \"column\", \"region\" };",
@@ -624,22 +659,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-none"
           },
           {
             "type": "enum-value",
-            "value": "page"
+            "value": "page",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-page"
           },
           {
             "type": "enum-value",
-            "value": "column"
+            "value": "column",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-column"
           },
           {
             "type": "enum-value",
-            "value": "region"
+            "value": "region",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-region"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-blockfragmentationtype"
       },
       "LayoutConstraintsOptions": {
         "fragment": "dictionary LayoutConstraintsOptions {\n    double availableInlineSize;\n    double availableBlockSize;\n\n    double fixedInlineSize;\n    double fixedBlockSize;\n\n    double percentageInlineSize;\n    double percentageBlockSize;\n\n    double blockFragmentationOffset;\n    BlockFragmentationType blockFragmentationType = \"none\";\n\n    any data;\n};",
@@ -660,7 +700,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize"
           },
           {
             "type": "field",
@@ -675,7 +716,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize"
           },
           {
             "type": "field",
@@ -690,7 +732,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedinlinesize"
           },
           {
             "type": "field",
@@ -705,7 +748,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedblocksize"
           },
           {
             "type": "field",
@@ -720,7 +764,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageinlinesize"
           },
           {
             "type": "field",
@@ -735,7 +780,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageblocksize"
           },
           {
             "type": "field",
@@ -750,7 +796,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-blockfragmentationoffset"
           },
           {
             "type": "field",
@@ -768,7 +815,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-blockfragmentationtype"
           },
           {
             "type": "field",
@@ -783,11 +831,13 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutconstraintsoptions"
       },
       "ChildBreakToken": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface ChildBreakToken {\n    readonly attribute BreakType breakType;\n    readonly attribute LayoutChild child;\n};",
@@ -808,7 +858,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-breaktype"
           },
           {
             "type": "attribute",
@@ -823,7 +874,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-child"
           }
         ],
         "extAttrs": [
@@ -837,7 +889,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#childbreaktoken"
       },
       "BreakToken": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface BreakToken {\n    readonly attribute FrozenArray<ChildBreakToken> childBreakTokens;\n    readonly attribute any data;\n};",
@@ -867,7 +920,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-childbreaktokens"
           },
           {
             "type": "attribute",
@@ -882,7 +936,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-data"
           }
         ],
         "extAttrs": [
@@ -896,7 +951,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaktoken"
       },
       "BreakTokenOptions": {
         "fragment": "dictionary BreakTokenOptions {\n    sequence<ChildBreakToken> childBreakTokens;\n    any data = null;\n};",
@@ -926,7 +982,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktokenoptions-childbreaktokens"
           },
           {
             "type": "field",
@@ -943,11 +1000,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktokenoptions-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-breaktokenoptions"
       },
       "BreakType": {
         "fragment": "enum BreakType { \"none\", \"line\", \"column\", \"page\", \"region\" };",
@@ -956,26 +1015,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-none"
           },
           {
             "type": "enum-value",
-            "value": "line"
+            "value": "line",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-line"
           },
           {
             "type": "enum-value",
-            "value": "column"
+            "value": "column",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-column"
           },
           {
             "type": "enum-value",
-            "value": "page"
+            "value": "page",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-page"
           },
           {
             "type": "enum-value",
-            "value": "region"
+            "value": "region",
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-region"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-breaktype"
       },
       "LayoutEdges": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutEdges {\n  readonly attribute double inlineStart;\n  readonly attribute double inlineEnd;\n\n  readonly attribute double blockStart;\n  readonly attribute double blockEnd;\n\n  // Convenience attributes for the sum in one direction.\n  readonly attribute double inline;\n  readonly attribute double block;\n};",
@@ -996,7 +1061,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inlinestart"
           },
           {
             "type": "attribute",
@@ -1011,7 +1077,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inlineend"
           },
           {
             "type": "attribute",
@@ -1026,7 +1093,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-blockstart"
           },
           {
             "type": "attribute",
@@ -1041,7 +1109,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-blockend"
           },
           {
             "type": "attribute",
@@ -1056,7 +1125,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inline"
           },
           {
             "type": "attribute",
@@ -1071,7 +1141,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-block"
           }
         ],
         "extAttrs": [
@@ -1085,7 +1156,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutedges"
       },
       "FragmentResultOptions": {
         "fragment": "// This is the final return value from the author defined layout() method.\ndictionary FragmentResultOptions {\n    double inlineSize = 0;\n    double blockSize = 0;\n    double autoBlockSize = 0;\n    sequence<LayoutFragment> childFragments = [];\n    any data = null;\n    BreakTokenOptions breakToken = null;\n};",
@@ -1109,7 +1181,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-inlinesize"
           },
           {
             "type": "field",
@@ -1127,7 +1200,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-blocksize"
           },
           {
             "type": "field",
@@ -1145,7 +1219,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-autoblocksize"
           },
           {
             "type": "field",
@@ -1172,7 +1247,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-childfragments"
           },
           {
             "type": "field",
@@ -1189,7 +1265,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-data"
           },
           {
             "type": "field",
@@ -1206,11 +1283,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-breaktoken"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-fragmentresultoptions"
       },
       "FragmentResult": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface FragmentResult {\n    constructor(optional FragmentResultOptions options = {});\n    readonly attribute double inlineSize;\n    readonly attribute double blockSize;\n};",
@@ -1240,7 +1319,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-fragmentresult"
           },
           {
             "type": "attribute",
@@ -1255,7 +1335,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inlinesize"
           },
           {
             "type": "attribute",
@@ -1270,7 +1351,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-blocksize"
           }
         ],
         "extAttrs": [
@@ -1284,7 +1366,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult"
       },
       "IntrinsicSizesResultOptions": {
         "fragment": "dictionary IntrinsicSizesResultOptions {\n    double maxContentSize;\n    double minContentSize;\n};",
@@ -1305,7 +1388,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-maxcontentsize"
           },
           {
             "type": "field",
@@ -1320,11 +1404,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-mincontentsize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-intrinsicsizesresultoptions"
       }
     },
     "idlExtendedNames": {
@@ -1355,7 +1441,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-css-layoutworklet"
             }
           ],
           "extAttrs": [],

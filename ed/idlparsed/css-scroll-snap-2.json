@@ -62,7 +62,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snapevent"
           },
           {
             "type": "attribute",
@@ -77,7 +78,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-target"
           },
           {
             "type": "attribute",
@@ -92,7 +94,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snappedtargets"
           },
           {
             "type": "attribute",
@@ -107,7 +110,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargets"
           },
           {
             "type": "attribute",
@@ -122,7 +126,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-invokedprogrammatically"
           },
           {
             "type": "attribute",
@@ -137,7 +142,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-smoothlyscrolled"
           }
         ],
         "extAttrs": [
@@ -151,7 +157,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapevent"
       },
       "SnapTargetList": {
         "fragment": "[Exposed=Window]\ninterface SnapTargetList {\n    readonly attribute SnapTargetArray x;\n    readonly attribute SnapTargetArray y;\n};",
@@ -172,7 +179,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetlist-x"
           },
           {
             "type": "attribute",
@@ -187,7 +195,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetlist-y"
           }
         ],
         "extAttrs": [
@@ -201,7 +210,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snaptargetlist"
       },
       "SnapTargetArray": {
         "fragment": "[Exposed=Window]\ninterface SnapTargetArray {\n    readonly attribute unsigned long length;\n    getter EventTarget? item (unsigned long index);\n};",
@@ -222,7 +232,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetarray-length"
           },
           {
             "type": "operation",
@@ -268,7 +279,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snaptargetarray"
       },
       "SnapEventInit": {
         "fragment": "dictionary SnapEventInit : EventModifierInit {\n    sequence<EventTarget> snappedTargetsX = [];\n    sequence<EventTarget> snappedTargetsY = [];\n    sequence<EventTarget> snapTargetsListX = [];\n    sequence<EventTarget> snapTargetsListY = [];\n};",
@@ -301,7 +313,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snappedtargetsx"
           },
           {
             "type": "field",
@@ -328,7 +341,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snappedtargetsy"
           },
           {
             "type": "field",
@@ -355,7 +369,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetslistx"
           },
           {
             "type": "field",
@@ -382,11 +397,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetslisty"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#dictdef-snapeventinit"
       }
     },
     "idlExtendedNames": {},

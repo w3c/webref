@@ -72,7 +72,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow"
           },
           {
             "type": "attribute",
@@ -87,7 +88,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-window"
           },
           {
             "type": "attribute",
@@ -102,7 +104,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-onenter"
           }
         ],
         "extAttrs": [
@@ -122,7 +125,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture"
       },
       "DocumentPictureInPictureOptions": {
         "fragment": "dictionary DocumentPictureInPictureOptions {\n  [EnforceRange] unsigned long long width = 0;\n  [EnforceRange] unsigned long long height = 0;\n};",
@@ -153,7 +157,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-width"
           },
           {
             "type": "field",
@@ -178,11 +183,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-height"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/document-picture-in-picture/#dictdef-documentpictureinpictureoptions"
       },
       "DocumentPictureInPictureEvent": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface DocumentPictureInPictureEvent : Event {\n  constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);\n  [SameObject] readonly attribute Window window;\n};",
@@ -226,7 +233,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-documentpictureinpictureevent"
           },
           {
             "type": "attribute",
@@ -248,7 +256,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-window"
           }
         ],
         "extAttrs": [
@@ -268,7 +277,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpictureevent"
       },
       "DocumentPictureInPictureEventInit": {
         "fragment": "dictionary DocumentPictureInPictureEventInit : EventInit {\n  required Window window;\n};",
@@ -289,11 +299,13 @@
               "idlType": "Window"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureeventinit-window"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/document-picture-in-picture/#dictdef-documentpictureinpictureeventinit"
       }
     },
     "idlExtendedNames": {
@@ -330,7 +342,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/document-picture-in-picture/#dom-window-documentpictureinpicture"
             }
           ],
           "extAttrs": [

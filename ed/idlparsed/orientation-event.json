@@ -63,7 +63,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-deviceorientationevent"
           },
           {
             "type": "attribute",
@@ -78,7 +79,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-alpha"
           },
           {
             "type": "attribute",
@@ -93,7 +95,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-beta"
           },
           {
             "type": "attribute",
@@ -108,7 +111,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-gamma"
           },
           {
             "type": "attribute",
@@ -123,7 +127,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-absolute"
           },
           {
             "type": "operation",
@@ -167,7 +172,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-requestpermission"
           }
         ],
         "extAttrs": [
@@ -187,7 +193,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#deviceorientationevent"
       },
       "DeviceOrientationEventInit": {
         "fragment": "dictionary DeviceOrientationEventInit : EventInit {\n    double? alpha = null;\n    double? beta = null;\n    double? gamma = null;\n    boolean absolute = false;\n};",
@@ -210,7 +217,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationeventinit-alpha"
           },
           {
             "type": "field",
@@ -227,7 +235,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationeventinit-beta"
           },
           {
             "type": "field",
@@ -244,7 +253,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationeventinit-gamma"
           },
           {
             "type": "field",
@@ -262,11 +272,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationeventinit-absolute"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#dictdef-deviceorientationeventinit"
       },
       "DeviceMotionEventAcceleration": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventAcceleration {\n    readonly attribute double? x;\n    readonly attribute double? y;\n    readonly attribute double? z;\n};",
@@ -287,7 +299,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventacceleration-x"
           },
           {
             "type": "attribute",
@@ -302,7 +315,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventacceleration-y"
           },
           {
             "type": "attribute",
@@ -317,7 +331,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventacceleration-z"
           }
         ],
         "extAttrs": [
@@ -337,7 +352,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#devicemotioneventacceleration"
       },
       "DeviceMotionEventRotationRate": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventRotationRate {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n};",
@@ -358,7 +374,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-alpha"
           },
           {
             "type": "attribute",
@@ -373,7 +390,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-beta"
           },
           {
             "type": "attribute",
@@ -388,7 +406,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrate-gamma"
           }
         ],
         "extAttrs": [
@@ -408,7 +427,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate"
       },
       "DeviceMotionEvent": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
@@ -454,7 +474,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-devicemotionevent"
           },
           {
             "type": "attribute",
@@ -469,7 +490,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-acceleration"
           },
           {
             "type": "attribute",
@@ -484,7 +506,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-accelerationincludinggravity"
           },
           {
             "type": "attribute",
@@ -499,7 +522,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-rotationrate"
           },
           {
             "type": "attribute",
@@ -514,7 +538,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-interval"
           },
           {
             "type": "operation",
@@ -538,7 +563,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-requestpermission"
           }
         ],
         "extAttrs": [
@@ -558,7 +584,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#devicemotionevent"
       },
       "DeviceMotionEventAccelerationInit": {
         "fragment": "dictionary DeviceMotionEventAccelerationInit {\n    double? x = null;\n    double? y = null;\n    double? z = null;\n};",
@@ -581,7 +608,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventaccelerationinit-x"
           },
           {
             "type": "field",
@@ -598,7 +626,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventaccelerationinit-y"
           },
           {
             "type": "field",
@@ -615,11 +644,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventaccelerationinit-z"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#dictdef-devicemotioneventaccelerationinit"
       },
       "DeviceMotionEventRotationRateInit": {
         "fragment": "dictionary DeviceMotionEventRotationRateInit {\n    double? alpha = null;\n    double? beta = null;\n    double? gamma = null;\n};",
@@ -642,7 +673,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrateinit-alpha"
           },
           {
             "type": "field",
@@ -659,7 +691,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrateinit-beta"
           },
           {
             "type": "field",
@@ -676,11 +709,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventrotationrateinit-gamma"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#dictdef-devicemotioneventrotationrateinit"
       },
       "DeviceMotionEventInit": {
         "fragment": "dictionary DeviceMotionEventInit : EventInit {\n    DeviceMotionEventAccelerationInit acceleration;\n    DeviceMotionEventAccelerationInit accelerationIncludingGravity;\n    DeviceMotionEventRotationRateInit rotationRate;\n    double interval = 0;\n};",
@@ -701,7 +736,8 @@
               "idlType": "DeviceMotionEventAccelerationInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-acceleration"
           },
           {
             "type": "field",
@@ -716,7 +752,8 @@
               "idlType": "DeviceMotionEventAccelerationInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-accelerationincludinggravity"
           },
           {
             "type": "field",
@@ -731,7 +768,8 @@
               "idlType": "DeviceMotionEventRotationRateInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-rotationrate"
           },
           {
             "type": "field",
@@ -749,11 +787,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-interval"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/deviceorientation/#dictdef-devicemotioneventinit"
       }
     },
     "idlExtendedNames": {
@@ -784,7 +824,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/deviceorientation/#dom-window-ondeviceorientation"
             }
           ],
           "extAttrs": [],
@@ -816,7 +857,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/deviceorientation/#dom-window-ondeviceorientationabsolute"
             }
           ],
           "extAttrs": [],
@@ -848,7 +890,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/deviceorientation/#dom-window-ondevicemotion"
             }
           ],
           "extAttrs": [],

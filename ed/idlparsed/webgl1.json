@@ -429,7 +429,8 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLContextAttributes"
       },
       "WebGLObject": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLObject {\n};",
@@ -455,7 +456,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLObject"
       },
       "WebGLBuffer": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLBuffer : WebGLObject {\n};",
@@ -481,7 +483,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLBuffer"
       },
       "WebGLFramebuffer": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLFramebuffer : WebGLObject {\n};",
@@ -507,7 +510,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLFramebuffer"
       },
       "WebGLProgram": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLProgram : WebGLObject {\n};",
@@ -533,7 +537,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLProgram"
       },
       "WebGLRenderbuffer": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLRenderbuffer : WebGLObject {\n};",
@@ -559,7 +564,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLRenderbuffer"
       },
       "WebGLShader": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLShader : WebGLObject {\n};",
@@ -585,7 +591,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLShader"
       },
       "WebGLTexture": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLTexture : WebGLObject {\n};",
@@ -611,7 +618,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLTexture"
       },
       "WebGLUniformLocation": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLUniformLocation {\n};",
@@ -637,7 +645,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLUniformLocation"
       },
       "WebGLActiveInfo": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLActiveInfo {\n    readonly attribute GLint size;\n    readonly attribute GLenum type;\n    readonly attribute DOMString name;\n};",
@@ -709,7 +718,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLActiveInfo"
       },
       "WebGLShaderPrecisionFormat": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLShaderPrecisionFormat {\n    readonly attribute GLint rangeMin;\n    readonly attribute GLint rangeMax;\n    readonly attribute GLint precision;\n};",
@@ -781,7 +791,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLShaderPrecisionFormat"
       },
       "TexImageSource": {
         "fragment": "typedef (ImageBitmap or\n         ImageData or\n         HTMLImageElement or\n         HTMLCanvasElement or\n         HTMLVideoElement or\n         OffscreenCanvas or\n         VideoFrame) TexImageSource;",
@@ -11986,7 +11997,8 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLRenderingContextBase"
       },
       "WebGLRenderingContextOverloads": {
         "fragment": "interface mixin WebGLRenderingContextOverloads\n{\n    undefined bufferData(GLenum target, GLsizeiptr size, GLenum usage);\n    undefined bufferData(GLenum target, AllowSharedBufferSource? data, GLenum usage);\n    undefined bufferSubData(GLenum target, GLintptr offset, AllowSharedBufferSource data);\n\n    undefined compressedTexImage2D(GLenum target, GLint level, GLenum internalformat,\n                                   GLsizei width, GLsizei height, GLint border,\n                                   [AllowShared] ArrayBufferView data);\n    undefined compressedTexSubImage2D(GLenum target, GLint level,\n                                      GLint xoffset, GLint yoffset,\n                                      GLsizei width, GLsizei height, GLenum format,\n                                      [AllowShared] ArrayBufferView data);\n\n    undefined readPixels(GLint x, GLint y, GLsizei width, GLsizei height,\n                         GLenum format, GLenum type, [AllowShared] ArrayBufferView? pixels);\n\n    undefined texImage2D(GLenum target, GLint level, GLint internalformat,\n                         GLsizei width, GLsizei height, GLint border, GLenum format,\n                         GLenum type, [AllowShared] ArrayBufferView? pixels);\n    undefined texImage2D(GLenum target, GLint level, GLint internalformat,\n                         GLenum format, GLenum type, TexImageSource source); // May throw DOMException\n\n    undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                            GLsizei width, GLsizei height,\n                            GLenum format, GLenum type, [AllowShared] ArrayBufferView? pixels);\n    undefined texSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,\n                            GLenum format, GLenum type, TexImageSource source); // May throw DOMException\n\n    undefined uniform1fv(WebGLUniformLocation? location, Float32List v);\n    undefined uniform2fv(WebGLUniformLocation? location, Float32List v);\n    undefined uniform3fv(WebGLUniformLocation? location, Float32List v);\n    undefined uniform4fv(WebGLUniformLocation? location, Float32List v);\n\n    undefined uniform1iv(WebGLUniformLocation? location, Int32List v);\n    undefined uniform2iv(WebGLUniformLocation? location, Int32List v);\n    undefined uniform3iv(WebGLUniformLocation? location, Int32List v);\n    undefined uniform4iv(WebGLUniformLocation? location, Int32List v);\n\n    undefined uniformMatrix2fv(WebGLUniformLocation? location, GLboolean transpose, Float32List value);\n    undefined uniformMatrix3fv(WebGLUniformLocation? location, GLboolean transpose, Float32List value);\n    undefined uniformMatrix4fv(WebGLUniformLocation? location, GLboolean transpose, Float32List value);\n};",
@@ -13785,7 +13797,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLRenderingContext"
       },
       "WebGLContextEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLContextEvent : Event {\n    constructor(DOMString type, optional WebGLContextEventInit eventInit = {});\n    readonly attribute DOMString statusMessage;\n};",
@@ -13867,7 +13880,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLContextEvent"
       },
       "WebGLContextEventInit": {
         "fragment": "// EventInit is defined in the DOM4 specification.\ndictionary WebGLContextEventInit : EventInit {\n    DOMString statusMessage = \"\";\n};",

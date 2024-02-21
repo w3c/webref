@@ -32,11 +32,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/eyedropper-api/#dom-colorselectionresult-srgbhex"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/eyedropper-api/#dom-colorselectionresult"
       },
       "ColorSelectionOptions": {
         "fragment": "dictionary ColorSelectionOptions {\n  AbortSignal signal;\n};",
@@ -57,11 +59,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/eyedropper-api/#dom-colorselectionoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/eyedropper-api/#dom-colorselectionoptions"
       },
       "EyeDropper": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface EyeDropper {\n    constructor();\n    Promise<ColorSelectionResult> open(optional ColorSelectionOptions options = {});\n};",
@@ -72,7 +76,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper-constructor"
           },
           {
             "type": "operation",
@@ -115,7 +120,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper-open"
           }
         ],
         "extAttrs": [
@@ -135,7 +141,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper"
       }
     },
     "idlExtendedNames": {},

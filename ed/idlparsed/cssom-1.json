@@ -69,7 +69,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-medialist-length"
           },
           {
             "type": "operation",
@@ -133,7 +134,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-medialist-appendmedium"
           },
           {
             "type": "operation",
@@ -165,7 +167,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-medialist-deletemedium"
           }
         ],
         "extAttrs": [
@@ -179,7 +182,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#medialist"
       },
       "StyleSheet": {
         "fragment": "[Exposed=Window]\ninterface StyleSheet {\n  readonly attribute CSSOMString type;\n  readonly attribute USVString? href;\n  readonly attribute (Element or ProcessingInstruction)? ownerNode;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n  readonly attribute DOMString? title;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  attribute boolean disabled;\n};",
@@ -200,7 +204,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-type"
           },
           {
             "type": "attribute",
@@ -215,7 +220,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-href"
           },
           {
             "type": "attribute",
@@ -247,7 +253,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-ownernode"
           },
           {
             "type": "attribute",
@@ -262,7 +269,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-parentstylesheet"
           },
           {
             "type": "attribute",
@@ -277,7 +285,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-title"
           },
           {
             "type": "attribute",
@@ -308,7 +317,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-media"
           },
           {
             "type": "attribute",
@@ -323,7 +333,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheet-disabled"
           }
         ],
         "extAttrs": [
@@ -337,7 +348,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#stylesheet"
       },
       "CSSStyleSheet": {
         "fragment": "[Exposed=Window]\ninterface CSSStyleSheet : StyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n\n  readonly attribute CSSRule? ownerRule;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n\n  Promise<CSSStyleSheet> replace(USVString text);\n  undefined replaceSync(USVString text);\n};",
@@ -367,7 +379,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-cssstylesheet"
           },
           {
             "type": "attribute",
@@ -382,7 +395,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-ownerrule"
           },
           {
             "type": "attribute",
@@ -404,7 +418,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-cssrules"
           },
           {
             "type": "operation",
@@ -455,7 +470,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-insertrule"
           },
           {
             "type": "operation",
@@ -487,7 +503,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-deleterule"
           },
           {
             "type": "operation",
@@ -528,7 +545,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-replace"
           },
           {
             "type": "operation",
@@ -560,7 +578,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-replacesync"
           }
         ],
         "extAttrs": [
@@ -574,7 +593,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssstylesheet"
       },
       "CSSStyleSheetInit": {
         "fragment": "dictionary CSSStyleSheetInit {\n  DOMString baseURL = null;\n  (MediaList or DOMString) media = \"\";\n  boolean disabled = false;\n};",
@@ -597,7 +617,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheetinit-baseurl"
           },
           {
             "type": "field",
@@ -632,7 +653,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheetinit-media"
           },
           {
             "type": "field",
@@ -650,11 +672,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheetinit-disabled"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#dictdef-cssstylesheetinit"
       },
       "StyleSheetList": {
         "fragment": "[Exposed=Window]\ninterface StyleSheetList {\n  getter CSSStyleSheet? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
@@ -707,7 +731,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-stylesheetlist-length"
           }
         ],
         "extAttrs": [
@@ -721,7 +746,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#stylesheetlist"
       },
       "LinkStyle": {
         "fragment": "interface mixin LinkStyle {\n  readonly attribute CSSStyleSheet? sheet;\n};",
@@ -742,11 +768,13 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-linkstyle-sheet"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#linkstyle"
       },
       "CSSRuleList": {
         "fragment": "[Exposed=Window]\ninterface CSSRuleList {\n  getter CSSRule? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
@@ -799,7 +827,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrulelist-length"
           }
         ],
         "extAttrs": [
@@ -813,7 +842,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssrulelist"
       },
       "CSSRule": {
         "fragment": "[Exposed=Window]\ninterface CSSRule {\n  attribute CSSOMString cssText;\n  readonly attribute CSSRule? parentRule;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n\n  // the following attribute and constants are historical\n  readonly attribute unsigned short type;\n  const unsigned short STYLE_RULE = 1;\n  const unsigned short CHARSET_RULE = 2;\n  const unsigned short IMPORT_RULE = 3;\n  const unsigned short MEDIA_RULE = 4;\n  const unsigned short FONT_FACE_RULE = 5;\n  const unsigned short PAGE_RULE = 6;\n  const unsigned short MARGIN_RULE = 9;\n  const unsigned short NAMESPACE_RULE = 10;\n};",
@@ -834,7 +864,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-csstext"
           },
           {
             "type": "attribute",
@@ -849,7 +880,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-parentrule"
           },
           {
             "type": "attribute",
@@ -864,7 +896,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-parentstylesheet"
           },
           {
             "type": "attribute",
@@ -879,7 +912,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-type"
           },
           {
             "type": "const",
@@ -896,7 +930,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-style_rule"
           },
           {
             "type": "const",
@@ -913,7 +948,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-charset_rule"
           },
           {
             "type": "const",
@@ -930,7 +966,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-import_rule"
           },
           {
             "type": "const",
@@ -947,7 +984,8 @@
             "value": {
               "type": "number",
               "value": "4"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-media_rule"
           },
           {
             "type": "const",
@@ -964,7 +1002,8 @@
             "value": {
               "type": "number",
               "value": "5"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-font_face_rule"
           },
           {
             "type": "const",
@@ -981,7 +1020,8 @@
             "value": {
               "type": "number",
               "value": "6"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-page_rule"
           },
           {
             "type": "const",
@@ -998,7 +1038,8 @@
             "value": {
               "type": "number",
               "value": "9"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-margin_rule"
           },
           {
             "type": "const",
@@ -1015,7 +1056,8 @@
             "value": {
               "type": "number",
               "value": "10"
-            }
+            },
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-namespace_rule"
           }
         ],
         "extAttrs": [
@@ -1029,7 +1071,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssrule"
       },
       "CSSStyleRule": {
         "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -1050,7 +1093,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext"
           },
           {
             "type": "attribute",
@@ -1081,7 +1125,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylerule-style"
           }
         ],
         "extAttrs": [
@@ -1095,7 +1140,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssstylerule"
       },
       "CSSImportRule": {
         "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet? styleSheet;\n  readonly attribute CSSOMString? layerName;\n  readonly attribute CSSOMString? supportsText;\n};",
@@ -1116,7 +1162,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-href"
           },
           {
             "type": "attribute",
@@ -1147,7 +1194,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-media"
           },
           {
             "type": "attribute",
@@ -1169,7 +1217,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-stylesheet"
           },
           {
             "type": "attribute",
@@ -1184,7 +1233,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-layername"
           },
           {
             "type": "attribute",
@@ -1199,7 +1249,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-supportstext"
           }
         ],
         "extAttrs": [
@@ -1213,7 +1264,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssimportrule"
       },
       "CSSGroupingRule": {
         "fragment": "[Exposed=Window]\ninterface CSSGroupingRule : CSSRule {\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
@@ -1241,7 +1293,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-cssrules"
           },
           {
             "type": "operation",
@@ -1292,7 +1345,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-insertrule"
           },
           {
             "type": "operation",
@@ -1324,7 +1378,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-deleterule"
           }
         ],
         "extAttrs": [
@@ -1338,7 +1393,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssgroupingrule"
       },
       "CSSPageRule": {
         "fragment": "[Exposed=Window]\ninterface CSSPageRule : CSSGroupingRule {\n           attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -1359,7 +1415,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagerule-selectortext"
           },
           {
             "type": "attribute",
@@ -1390,7 +1447,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagerule-style"
           }
         ],
         "extAttrs": [
@@ -1404,7 +1462,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#csspagerule"
       },
       "CSSMarginRule": {
         "fragment": "[Exposed=Window]\ninterface CSSMarginRule : CSSRule {\n  readonly attribute CSSOMString name;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -1425,7 +1484,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssmarginrule-name"
           },
           {
             "type": "attribute",
@@ -1456,7 +1516,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssmarginrule-style"
           }
         ],
         "extAttrs": [
@@ -1470,7 +1531,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssmarginrule"
       },
       "CSSNamespaceRule": {
         "fragment": "[Exposed=Window]\ninterface CSSNamespaceRule : CSSRule {\n  readonly attribute CSSOMString namespaceURI;\n  readonly attribute CSSOMString prefix;\n};",
@@ -1491,7 +1553,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-namespaceuri"
           },
           {
             "type": "attribute",
@@ -1506,7 +1569,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssnamespacerule-prefix"
           }
         ],
         "extAttrs": [
@@ -1520,7 +1584,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssnamespacerule"
       },
       "CSSStyleDeclaration": {
         "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
@@ -1548,7 +1613,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext"
           },
           {
             "type": "attribute",
@@ -1563,7 +1629,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-length"
           },
           {
             "type": "operation",
@@ -1627,7 +1694,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-getpropertyvalue"
           },
           {
             "type": "operation",
@@ -1659,7 +1727,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-getpropertypriority"
           },
           {
             "type": "operation",
@@ -1747,7 +1816,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-setproperty"
           },
           {
             "type": "operation",
@@ -1786,7 +1856,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-removeproperty"
           },
           {
             "type": "attribute",
@@ -1801,7 +1872,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-parentrule"
           },
           {
             "type": "attribute",
@@ -1830,7 +1902,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-cssfloat"
           }
         ],
         "extAttrs": [
@@ -1844,7 +1917,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration"
       },
       "ElementCSSInlineStyle": {
         "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -1881,11 +1955,13 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-elementcssinlinestyle-style"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#elementcssinlinestyle"
       },
       "CSS": {
         "fragment": "[Exposed=Window]\nnamespace CSS {\n  CSSOMString escape(CSSOMString ident);\n};",
@@ -1923,7 +1999,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-1/#dom-css-escape"
           }
         ],
         "extAttrs": [
@@ -1937,7 +2014,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#namespacedef-css"
       }
     },
     "idlExtendedNames": {
@@ -1968,7 +2046,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-rules"
             },
             {
               "type": "operation",
@@ -2038,7 +2117,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-addrule"
             },
             {
               "type": "operation",
@@ -2073,7 +2153,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-removerule"
             }
           ],
           "extAttrs": [],
@@ -2107,7 +2188,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-stylesheets"
             },
             {
               "type": "attribute",
@@ -2131,7 +2213,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-adoptedstylesheets"
             }
           ],
           "extAttrs": [],
@@ -2234,7 +2317,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle"
             }
           ],
           "extAttrs": [],

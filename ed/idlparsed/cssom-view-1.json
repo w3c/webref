@@ -27,18 +27,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollbehavior-auto"
           },
           {
             "type": "enum-value",
-            "value": "instant"
+            "value": "instant",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollbehavior-instant"
           },
           {
             "type": "enum-value",
-            "value": "smooth"
+            "value": "smooth",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollbehavior-smooth"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/cssom-view-1/#enumdef-scrollbehavior"
       },
       "ScrollOptions": {
         "fragment": "dictionary ScrollOptions {\n    ScrollBehavior behavior = \"auto\";\n};",
@@ -62,11 +66,13 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolloptions-behavior"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-scrolloptions"
       },
       "ScrollToOptions": {
         "fragment": "dictionary ScrollToOptions : ScrollOptions {\n    unrestricted double left;\n    unrestricted double top;\n};",
@@ -87,7 +93,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolltooptions-left"
           },
           {
             "type": "field",
@@ -102,11 +109,13 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolltooptions-top"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-scrolltooptions"
       },
       "MediaQueryList": {
         "fragment": "[Exposed=Window]\ninterface MediaQueryList : EventTarget {\n  readonly attribute CSSOMString media;\n  readonly attribute boolean matches;\n  undefined addListener(EventListener? callback);\n  undefined removeListener(EventListener? callback);\n           attribute EventHandler onchange;\n};",
@@ -127,7 +136,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylist-media"
           },
           {
             "type": "attribute",
@@ -142,7 +152,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylist-matches"
           },
           {
             "type": "operation",
@@ -174,7 +185,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylist-addlistener"
           },
           {
             "type": "operation",
@@ -206,7 +218,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylist-removelistener"
           },
           {
             "type": "attribute",
@@ -221,7 +234,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylist-onchange"
           }
         ],
         "extAttrs": [
@@ -235,7 +249,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylist"
       },
       "MediaQueryListEvent": {
         "fragment": "[Exposed=Window]\ninterface MediaQueryListEvent : Event {\n  constructor(CSSOMString type, optional MediaQueryListEventInit eventInitDict = {});\n  readonly attribute CSSOMString media;\n  readonly attribute boolean matches;\n};",
@@ -281,7 +296,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylistevent-mediaquerylistevent"
           },
           {
             "type": "attribute",
@@ -296,7 +312,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylistevent-media"
           },
           {
             "type": "attribute",
@@ -311,7 +328,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylistevent-matches"
           }
         ],
         "extAttrs": [
@@ -325,7 +343,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylistevent"
       },
       "MediaQueryListEventInit": {
         "fragment": "dictionary MediaQueryListEventInit : EventInit {\n  CSSOMString media = \"\";\n  boolean matches = false;\n};",
@@ -349,7 +368,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylisteventinit-media"
           },
           {
             "type": "field",
@@ -367,11 +387,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-mediaquerylisteventinit-matches"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-mediaquerylisteventinit"
       },
       "Screen": {
         "fragment": "[Exposed=Window]\ninterface Screen {\n  readonly attribute long availWidth;\n  readonly attribute long availHeight;\n  readonly attribute long width;\n  readonly attribute long height;\n  readonly attribute unsigned long colorDepth;\n  readonly attribute unsigned long pixelDepth;\n};",
@@ -392,7 +414,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-availwidth"
           },
           {
             "type": "attribute",
@@ -407,7 +430,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-availheight"
           },
           {
             "type": "attribute",
@@ -422,7 +446,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-width"
           },
           {
             "type": "attribute",
@@ -437,7 +462,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-height"
           },
           {
             "type": "attribute",
@@ -452,7 +478,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-colordepth"
           },
           {
             "type": "attribute",
@@ -467,7 +494,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-screen-pixeldepth"
           }
         ],
         "extAttrs": [
@@ -481,7 +509,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#screen"
       },
       "CaretPosition": {
         "fragment": "[Exposed=Window]\ninterface CaretPosition {\n  readonly attribute Node offsetNode;\n  readonly attribute unsigned long offset;\n  [NewObject] DOMRect? getClientRect();\n};",
@@ -502,7 +531,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-caretposition-offsetnode"
           },
           {
             "type": "attribute",
@@ -517,7 +547,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-caretposition-offset"
           },
           {
             "type": "operation",
@@ -539,7 +570,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-caretposition-getclientrect"
           }
         ],
         "extAttrs": [
@@ -553,7 +585,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#caretposition"
       },
       "ScrollLogicalPosition": {
         "fragment": "enum ScrollLogicalPosition { \"start\", \"center\", \"end\", \"nearest\" };",
@@ -562,22 +595,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "start"
+            "value": "start",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolllogicalposition-start"
           },
           {
             "type": "enum-value",
-            "value": "center"
+            "value": "center",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolllogicalposition-center"
           },
           {
             "type": "enum-value",
-            "value": "end"
+            "value": "end",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolllogicalposition-end"
           },
           {
             "type": "enum-value",
-            "value": "nearest"
+            "value": "nearest",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrolllogicalposition-nearest"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/cssom-view-1/#enumdef-scrolllogicalposition"
       },
       "ScrollIntoViewOptions": {
         "fragment": "dictionary ScrollIntoViewOptions : ScrollOptions {\n  ScrollLogicalPosition block = \"start\";\n  ScrollLogicalPosition inline = \"nearest\";\n};",
@@ -601,7 +639,8 @@
               "type": "string",
               "value": "start"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-block"
           },
           {
             "type": "field",
@@ -619,11 +658,13 @@
               "type": "string",
               "value": "nearest"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-inline"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions"
       },
       "CheckVisibilityOptions": {
         "fragment": "dictionary CheckVisibilityOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n    boolean contentVisibilityAuto = false;\n    boolean opacityProperty = false;\n    boolean visibilityProperty = false;\n};",
@@ -647,7 +688,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-checkvisibilityoptions-checkopacity"
           },
           {
             "type": "field",
@@ -665,7 +707,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-checkvisibilityoptions-checkvisibilitycss"
           },
           {
             "type": "field",
@@ -683,7 +726,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-checkvisibilityoptions-contentvisibilityauto"
           },
           {
             "type": "field",
@@ -701,7 +745,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-checkvisibilityoptions-opacityproperty"
           },
           {
             "type": "field",
@@ -719,11 +764,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-checkvisibilityoptions-visibilityproperty"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-checkvisibilityoptions"
       },
       "CSSBoxType": {
         "fragment": "enum CSSBoxType { \"margin\", \"border\", \"padding\", \"content\" };",
@@ -732,22 +779,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "margin"
+            "value": "margin",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-margin"
           },
           {
             "type": "enum-value",
-            "value": "border"
+            "value": "border",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-border"
           },
           {
             "type": "enum-value",
-            "value": "padding"
+            "value": "padding",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-padding"
           },
           {
             "type": "enum-value",
-            "value": "content"
+            "value": "content",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-content"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/cssom-view-1/#enumdef-cssboxtype"
       },
       "BoxQuadOptions": {
         "fragment": "dictionary BoxQuadOptions {\n  CSSBoxType box = \"border\";\n  GeometryNode relativeTo; // XXX default document (i.e. viewport)\n};",
@@ -771,7 +823,8 @@
               "type": "string",
               "value": "border"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-box"
           },
           {
             "type": "field",
@@ -786,11 +839,13 @@
               "idlType": "GeometryNode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-relativeto"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-boxquadoptions"
       },
       "ConvertCoordinateOptions": {
         "fragment": "dictionary ConvertCoordinateOptions {\n  CSSBoxType fromBox = \"border\";\n  CSSBoxType toBox = \"border\";\n};",
@@ -814,7 +869,8 @@
               "type": "string",
               "value": "border"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-convertcoordinateoptions-frombox"
           },
           {
             "type": "field",
@@ -832,11 +888,13 @@
               "type": "string",
               "value": "border"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-convertcoordinateoptions-tobox"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-convertcoordinateoptions"
       },
       "GeometryUtils": {
         "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
@@ -885,7 +943,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-getboxquads"
           },
           {
             "type": "operation",
@@ -951,7 +1010,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertquadfromnode"
           },
           {
             "type": "operation",
@@ -1017,7 +1077,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertrectfromnode"
           },
           {
             "type": "operation",
@@ -1083,11 +1144,13 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertpointfromnode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#geometryutils"
       },
       "GeometryNode": {
         "fragment": "typedef (Text or Element or CSSPseudoElement or Document) GeometryNode;",
@@ -1134,7 +1197,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/cssom-view-1/#typedefdef-geometrynode"
       },
       "VisualViewport": {
         "fragment": "[Exposed=Window]\ninterface VisualViewport : EventTarget {\n  readonly attribute double offsetLeft;\n  readonly attribute double offsetTop;\n\n  readonly attribute double pageLeft;\n  readonly attribute double pageTop;\n\n  readonly attribute double width;\n  readonly attribute double height;\n\n  readonly attribute double scale;\n\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onscrollend;\n};",
@@ -1155,7 +1219,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-offsetleft"
           },
           {
             "type": "attribute",
@@ -1170,7 +1235,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-offsettop"
           },
           {
             "type": "attribute",
@@ -1185,7 +1251,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-pageleft"
           },
           {
             "type": "attribute",
@@ -1200,7 +1267,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-pagetop"
           },
           {
             "type": "attribute",
@@ -1215,7 +1283,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-width"
           },
           {
             "type": "attribute",
@@ -1230,7 +1299,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-height"
           },
           {
             "type": "attribute",
@@ -1245,7 +1315,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-scale"
           },
           {
             "type": "attribute",
@@ -1260,7 +1331,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-onresize"
           },
           {
             "type": "attribute",
@@ -1275,7 +1347,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-onscroll"
           },
           {
             "type": "attribute",
@@ -1290,7 +1363,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-onscrollend"
           }
         ],
         "extAttrs": [
@@ -1304,7 +1378,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#visualviewport"
       }
     },
     "idlExtendedNames": {
@@ -1352,7 +1427,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-matchmedia"
             },
             {
               "type": "attribute",
@@ -1380,7 +1456,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screen"
             },
             {
               "type": "attribute",
@@ -1408,7 +1485,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-visualviewport"
             },
             {
               "type": "operation",
@@ -1456,7 +1534,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-moveto"
             },
             {
               "type": "operation",
@@ -1504,7 +1583,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-moveby"
             },
             {
               "type": "operation",
@@ -1552,7 +1632,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-resizeto"
             },
             {
               "type": "operation",
@@ -1600,7 +1681,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-resizeby"
             },
             {
               "type": "attribute",
@@ -1622,7 +1704,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth"
             },
             {
               "type": "attribute",
@@ -1644,7 +1727,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight"
             },
             {
               "type": "attribute",
@@ -1666,7 +1750,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollx"
             },
             {
               "type": "attribute",
@@ -1688,7 +1773,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-pagexoffset"
             },
             {
               "type": "attribute",
@@ -1710,7 +1796,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrolly"
             },
             {
               "type": "attribute",
@@ -1732,7 +1819,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-pageyoffset"
             },
             {
               "type": "operation",
@@ -1766,7 +1854,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scroll"
             },
             {
               "type": "operation",
@@ -1814,7 +1903,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scroll"
             },
             {
               "type": "operation",
@@ -1848,7 +1938,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollto"
             },
             {
               "type": "operation",
@@ -1896,7 +1987,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollto"
             },
             {
               "type": "operation",
@@ -1930,7 +2022,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollby"
             },
             {
               "type": "operation",
@@ -1978,7 +2071,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollby"
             },
             {
               "type": "attribute",
@@ -2000,7 +2094,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screenx"
             },
             {
               "type": "attribute",
@@ -2022,7 +2117,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screenleft"
             },
             {
               "type": "attribute",
@@ -2044,7 +2140,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screeny"
             },
             {
               "type": "attribute",
@@ -2066,7 +2163,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screentop"
             },
             {
               "type": "attribute",
@@ -2088,7 +2186,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-outerwidth"
             },
             {
               "type": "attribute",
@@ -2110,7 +2209,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-outerheight"
             },
             {
               "type": "attribute",
@@ -2132,7 +2232,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio"
             }
           ],
           "extAttrs": [],
@@ -2192,7 +2293,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-elementfrompoint"
             },
             {
               "type": "operation",
@@ -2249,7 +2351,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-elementsfrompoint"
             },
             {
               "type": "operation",
@@ -2297,7 +2400,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
             },
             {
               "type": "attribute",
@@ -2312,7 +2416,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-scrollingelement"
             }
           ],
           "extAttrs": [],
@@ -2346,7 +2451,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-getclientrects"
             },
             {
               "type": "operation",
@@ -2368,7 +2474,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect"
             },
             {
               "type": "operation",
@@ -2402,7 +2509,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-checkvisibility"
             },
             {
               "type": "operation",
@@ -2453,7 +2561,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview"
             },
             {
               "type": "operation",
@@ -2487,7 +2596,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scroll"
             },
             {
               "type": "operation",
@@ -2535,7 +2645,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scroll"
             },
             {
               "type": "operation",
@@ -2569,7 +2680,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollto"
             },
             {
               "type": "operation",
@@ -2617,7 +2729,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollto"
             },
             {
               "type": "operation",
@@ -2651,7 +2764,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollby"
             },
             {
               "type": "operation",
@@ -2699,7 +2813,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollby"
             },
             {
               "type": "attribute",
@@ -2714,7 +2829,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrolltop"
             },
             {
               "type": "attribute",
@@ -2729,7 +2845,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollleft"
             },
             {
               "type": "attribute",
@@ -2744,7 +2861,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollwidth"
             },
             {
               "type": "attribute",
@@ -2759,7 +2877,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollheight"
             },
             {
               "type": "attribute",
@@ -2774,7 +2893,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-clienttop"
             },
             {
               "type": "attribute",
@@ -2789,7 +2909,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-clientleft"
             },
             {
               "type": "attribute",
@@ -2804,7 +2925,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth"
             },
             {
               "type": "attribute",
@@ -2819,7 +2941,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-clientheight"
             }
           ],
           "extAttrs": [],
@@ -2853,7 +2976,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsetparent"
             },
             {
               "type": "attribute",
@@ -2868,7 +2992,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsettop"
             },
             {
               "type": "attribute",
@@ -2883,7 +3008,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsetleft"
             },
             {
               "type": "attribute",
@@ -2898,7 +3024,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsetwidth"
             },
             {
               "type": "attribute",
@@ -2913,7 +3040,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsetheight"
             }
           ],
           "extAttrs": [],
@@ -2940,7 +3068,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlimageelement-x"
             },
             {
               "type": "attribute",
@@ -2955,7 +3084,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlimageelement-y"
             }
           ],
           "extAttrs": [],
@@ -2982,7 +3112,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-range-getclientrects"
             },
             {
               "type": "operation",
@@ -3004,7 +3135,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-range-getboundingclientrect"
             }
           ],
           "extAttrs": [],
@@ -3031,7 +3163,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-pagex"
             },
             {
               "type": "attribute",
@@ -3046,7 +3179,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-pagey"
             },
             {
               "type": "attribute",
@@ -3061,7 +3195,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-x"
             },
             {
               "type": "attribute",
@@ -3076,7 +3211,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-y"
             },
             {
               "type": "attribute",
@@ -3091,7 +3227,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-offsetx"
             },
             {
               "type": "attribute",
@@ -3106,7 +3243,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-offsety"
             }
           ],
           "extAttrs": [],

@@ -34,18 +34,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "user-blocking"
+            "value": "user-blocking",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskpriority-user-blocking"
           },
           {
             "type": "enum-value",
-            "value": "user-visible"
+            "value": "user-visible",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskpriority-user-visible"
           },
           {
             "type": "enum-value",
-            "value": "background"
+            "value": "background",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskpriority-background"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/scheduling-apis/#enumdef-taskpriority"
       },
       "SchedulerPostTaskOptions": {
         "fragment": "dictionary SchedulerPostTaskOptions {\n  AbortSignal signal;\n  TaskPriority priority;\n  [EnforceRange] unsigned long long delay = 0;\n};",
@@ -66,7 +70,8 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-schedulerposttaskoptions-signal"
           },
           {
             "type": "field",
@@ -81,7 +86,8 @@
               "idlType": "TaskPriority"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-schedulerposttaskoptions-priority"
           },
           {
             "type": "field",
@@ -106,11 +112,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-schedulerposttaskoptions-delay"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#dictdef-schedulerposttaskoptions"
       },
       "SchedulerPostTaskCallback": {
         "fragment": "callback SchedulerPostTaskCallback = any ();",
@@ -125,7 +133,8 @@
           "idlType": "any"
         },
         "arguments": [],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/scheduling-apis/#callbackdef-schedulerposttaskcallback"
       },
       "Scheduler": {
         "fragment": "[Exposed=(Window, Worker)]\ninterface Scheduler {\n  Promise<any> postTask(SchedulerPostTaskCallback callback,\n                        optional SchedulerPostTaskOptions options = {});\n};",
@@ -190,7 +199,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-posttask"
           }
         ],
         "extAttrs": [
@@ -211,7 +221,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#scheduler"
       },
       "TaskPriorityChangeEvent": {
         "fragment": "[Exposed=(Window, Worker)]\ninterface TaskPriorityChangeEvent : Event {\n  constructor(DOMString type, TaskPriorityChangeEventInit priorityChangeEventInitDict);\n\n  readonly attribute TaskPriority previousPriority;\n};",
@@ -255,7 +266,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-taskprioritychangeevent"
           },
           {
             "type": "attribute",
@@ -270,7 +282,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-previouspriority"
           }
         ],
         "extAttrs": [
@@ -291,7 +304,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#taskprioritychangeevent"
       },
       "TaskPriorityChangeEventInit": {
         "fragment": "dictionary TaskPriorityChangeEventInit : EventInit {\n  required TaskPriority previousPriority;\n};",
@@ -312,11 +326,13 @@
               "idlType": "TaskPriority"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeeventinit-previouspriority"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#dictdef-taskprioritychangeeventinit"
       },
       "TaskControllerInit": {
         "fragment": "dictionary TaskControllerInit {\n  TaskPriority priority = \"user-visible\";\n};",
@@ -340,11 +356,13 @@
               "type": "string",
               "value": "user-visible"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontrollerinit-priority"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#dictdef-taskcontrollerinit"
       },
       "TaskController": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskControllerInit init = {});\n\n  undefined setPriority(TaskPriority priority);\n};",
@@ -374,7 +392,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller"
           },
           {
             "type": "operation",
@@ -406,7 +425,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-setpriority"
           }
         ],
         "extAttrs": [
@@ -427,7 +447,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#taskcontroller"
       },
       "TaskSignalAnyInit": {
         "fragment": "dictionary TaskSignalAnyInit {\n  (TaskPriority or TaskSignal) priority = \"user-visible\";\n};",
@@ -468,11 +489,13 @@
               "type": "string",
               "value": "user-visible"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignalanyinit-priority"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#dictdef-tasksignalanyinit"
       },
       "TaskSignal": {
         "fragment": "[Exposed=(Window, Worker)]\ninterface TaskSignal : AbortSignal {\n  [NewObject] static TaskSignal _any(sequence<AbortSignal> signals, optional TaskSignalAnyInit init = {});\n\n  readonly attribute TaskPriority priority;\n\n  attribute EventHandler onprioritychange;\n};",
@@ -544,7 +567,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any"
           },
           {
             "type": "attribute",
@@ -559,7 +583,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-priority"
           },
           {
             "type": "attribute",
@@ -574,7 +599,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-onprioritychange"
           }
         ],
         "extAttrs": [
@@ -595,7 +621,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#tasksignal"
       }
     },
     "idlExtendedNames": {
@@ -626,7 +653,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/scheduling-apis/#dom-windoworworkerglobalscope-scheduler"
             }
           ],
           "extAttrs": [],

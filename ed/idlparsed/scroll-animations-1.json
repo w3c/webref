@@ -21,22 +21,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "block"
+            "value": "block",
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrollaxis-block"
           },
           {
             "type": "enum-value",
-            "value": "inline"
+            "value": "inline",
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrollaxis-inline"
           },
           {
             "type": "enum-value",
-            "value": "x"
+            "value": "x",
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrollaxis-x"
           },
           {
             "type": "enum-value",
-            "value": "y"
+            "value": "y",
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrollaxis-y"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/scroll-animations-1/#enumdef-scrollaxis"
       },
       "ScrollTimelineOptions": {
         "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollAxis axis = \"block\";\n};",
@@ -57,7 +62,8 @@
               "idlType": "Element"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-source"
           },
           {
             "type": "field",
@@ -75,11 +81,13 @@
               "type": "string",
               "value": "block"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-axis"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dictdef-scrolltimelineoptions"
       },
       "ScrollTimeline": {
         "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollAxis axis;\n};",
@@ -109,7 +117,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolltimeline"
           },
           {
             "type": "attribute",
@@ -124,7 +133,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-source"
           },
           {
             "type": "attribute",
@@ -139,7 +149,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-axis"
           }
         ],
         "extAttrs": [
@@ -153,7 +164,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline"
       },
       "ViewTimelineOptions": {
         "fragment": "dictionary ViewTimelineOptions {\n  Element subject;\n  ScrollAxis axis = \"block\";\n  (DOMString or sequence<(CSSNumericValue or CSSKeywordValue)>) inset = \"auto\";\n};",
@@ -174,7 +186,8 @@
               "idlType": "Element"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimelineoptions-subject"
           },
           {
             "type": "field",
@@ -192,7 +205,8 @@
               "type": "string",
               "value": "block"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimelineoptions-axis"
           },
           {
             "type": "field",
@@ -253,11 +267,13 @@
               "type": "string",
               "value": "auto"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimelineoptions-inset"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dictdef-viewtimelineoptions"
       },
       "ViewTimeline": {
         "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(optional ViewTimelineOptions options = {});\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
@@ -287,7 +303,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimeline-viewtimeline"
           },
           {
             "type": "attribute",
@@ -302,7 +319,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimeline-subject"
           },
           {
             "type": "attribute",
@@ -317,7 +335,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimeline-startoffset"
           },
           {
             "type": "attribute",
@@ -332,7 +351,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimeline-endoffset"
           }
         ],
         "extAttrs": [
@@ -346,7 +366,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/scroll-animations-1/#viewtimeline"
       }
     },
     "idlExtendedNames": {},

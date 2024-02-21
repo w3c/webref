@@ -66,18 +66,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "suspended"
+            "value": "suspended",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended"
           },
           {
             "type": "enum-value",
-            "value": "running"
+            "value": "running",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running"
           },
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiocontextstate"
       },
       "AudioContextRenderSizeCategory": {
         "fragment": "enum AudioContextRenderSizeCategory {\n    \"default\",\n    \"hardware\"\n};",
@@ -86,14 +90,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "default",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextrendersizecategory-default"
           },
           {
             "type": "enum-value",
-            "value": "hardware"
+            "value": "hardware",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextrendersizecategory-hardware"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiocontextrendersizecategory"
       },
       "DecodeErrorCallback": {
         "fragment": "callback DecodeErrorCallback = undefined (DOMException error);",
@@ -125,7 +132,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#callback-decodeerrorcallback-parameters"
       },
       "DecodeSuccessCallback": {
         "fragment": "callback DecodeSuccessCallback = undefined (AudioBuffer decodedData);",
@@ -157,7 +165,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#callback-decodesuccesscallback-parameters"
       },
       "BaseAudioContext": {
         "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n    readonly attribute AudioDestinationNode destination;\n    readonly attribute float sampleRate;\n    readonly attribute double currentTime;\n    readonly attribute AudioListener listener;\n    readonly attribute AudioContextState state;\n    readonly attribute unsigned long renderQuantumSize;\n    [SameObject, SecureContext]\n    readonly attribute AudioWorklet audioWorklet;\n    attribute EventHandler onstatechange;\n\n    AnalyserNode createAnalyser ();\n    BiquadFilterNode createBiquadFilter ();\n    AudioBuffer createBuffer (unsigned long numberOfChannels,\n                              unsigned long length,\n                              float sampleRate);\n    AudioBufferSourceNode createBufferSource ();\n    ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n    ChannelSplitterNode createChannelSplitter (\n        optional unsigned long numberOfOutputs = 6);\n    ConstantSourceNode createConstantSource ();\n    ConvolverNode createConvolver ();\n    DelayNode createDelay (optional double maxDelayTime = 1.0);\n    DynamicsCompressorNode createDynamicsCompressor ();\n    GainNode createGain ();\n    IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                   sequence<double> feedback);\n    OscillatorNode createOscillator ();\n    PannerNode createPanner ();\n    PeriodicWave createPeriodicWave (sequence<float> real,\n                                     sequence<float> imag,\n                                     optional PeriodicWaveConstraints constraints = {});\n    ScriptProcessorNode createScriptProcessor(\n        optional unsigned long bufferSize = 0,\n        optional unsigned long numberOfInputChannels = 2,\n        optional unsigned long numberOfOutputChannels = 2);\n    StereoPannerNode createStereoPanner ();\n    WaveShaperNode createWaveShaper ();\n\n    Promise<AudioBuffer> decodeAudioData (\n        ArrayBuffer audioData,\n        optional DecodeSuccessCallback? successCallback,\n        optional DecodeErrorCallback? errorCallback);\n};",
@@ -178,7 +187,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-destination"
           },
           {
             "type": "attribute",
@@ -193,7 +203,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate"
           },
           {
             "type": "attribute",
@@ -208,7 +219,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-currenttime"
           },
           {
             "type": "attribute",
@@ -223,7 +235,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-listener"
           },
           {
             "type": "attribute",
@@ -238,7 +251,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state"
           },
           {
             "type": "attribute",
@@ -253,7 +267,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-renderquantumsize"
           },
           {
             "type": "attribute",
@@ -281,7 +296,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-audioworklet"
           },
           {
             "type": "attribute",
@@ -296,7 +312,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-onstatechange"
           },
           {
             "type": "operation",
@@ -311,7 +328,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createanalyser"
           },
           {
             "type": "operation",
@@ -326,7 +344,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbiquadfilter"
           },
           {
             "type": "operation",
@@ -390,7 +409,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffer"
           },
           {
             "type": "operation",
@@ -405,7 +425,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffersource"
           },
           {
             "type": "operation",
@@ -440,7 +461,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelmerger"
           },
           {
             "type": "operation",
@@ -475,7 +497,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelsplitter"
           },
           {
             "type": "operation",
@@ -490,7 +513,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconstantsource"
           },
           {
             "type": "operation",
@@ -505,7 +529,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconvolver"
           },
           {
             "type": "operation",
@@ -540,7 +565,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdelay"
           },
           {
             "type": "operation",
@@ -555,7 +581,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdynamicscompressor"
           },
           {
             "type": "operation",
@@ -570,7 +597,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-creategain"
           },
           {
             "type": "operation",
@@ -636,7 +664,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createiirfilter"
           },
           {
             "type": "operation",
@@ -651,7 +680,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createoscillator"
           },
           {
             "type": "operation",
@@ -666,7 +696,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createpanner"
           },
           {
             "type": "operation",
@@ -750,7 +781,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createperiodicwave"
           },
           {
             "type": "operation",
@@ -823,7 +855,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createscriptprocessor"
           },
           {
             "type": "operation",
@@ -838,7 +871,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createstereopanner"
           },
           {
             "type": "operation",
@@ -853,7 +887,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createwaveshaper"
           },
           {
             "type": "operation",
@@ -926,7 +961,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata"
           }
         ],
         "extAttrs": [
@@ -940,7 +976,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext"
       },
       "AudioContextLatencyCategory": {
         "fragment": "enum AudioContextLatencyCategory {\n        \"balanced\",\n        \"interactive\",\n        \"playback\"\n};",
@@ -949,18 +986,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "balanced"
+            "value": "balanced",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextlatencycategory-balanced"
           },
           {
             "type": "enum-value",
-            "value": "interactive"
+            "value": "interactive",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextlatencycategory-interactive"
           },
           {
             "type": "enum-value",
-            "value": "playback"
+            "value": "playback",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextlatencycategory-playback"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiocontextlatencycategory"
       },
       "AudioSinkType": {
         "fragment": "enum AudioSinkType {\n    \"none\"\n};",
@@ -969,10 +1010,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiosinktype-none"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiosinktype"
       },
       "AudioContext": {
         "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n    attribute EventHandler onsinkchange;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
@@ -1002,7 +1045,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-audiocontext"
           },
           {
             "type": "attribute",
@@ -1017,7 +1061,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-baselatency"
           },
           {
             "type": "attribute",
@@ -1032,7 +1077,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-outputlatency"
           },
           {
             "type": "attribute",
@@ -1071,7 +1117,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-sinkid"
           },
           {
             "type": "attribute",
@@ -1093,7 +1140,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-rendercapacity"
           },
           {
             "type": "attribute",
@@ -1108,7 +1156,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-onsinkchange"
           },
           {
             "type": "operation",
@@ -1123,7 +1172,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-getoutputtimestamp"
           },
           {
             "type": "operation",
@@ -1147,7 +1197,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-resume"
           },
           {
             "type": "operation",
@@ -1171,7 +1222,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspend"
           },
           {
             "type": "operation",
@@ -1195,7 +1247,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-close"
           },
           {
             "type": "operation",
@@ -1260,7 +1313,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-setsinkid"
           },
           {
             "type": "operation",
@@ -1292,7 +1346,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediaelementsource"
           },
           {
             "type": "operation",
@@ -1324,7 +1379,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamsource"
           },
           {
             "type": "operation",
@@ -1356,7 +1412,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamtracksource"
           },
           {
             "type": "operation",
@@ -1371,7 +1428,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamdestination"
           }
         ],
         "extAttrs": [
@@ -1385,7 +1443,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext"
       },
       "AudioContextOptions": {
         "fragment": "dictionary AudioContextOptions {\n    (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n    float sampleRate;\n    (DOMString or AudioSinkOptions) sinkId;\n    (AudioContextRenderSizeCategory or unsigned long) renderSizeHint = \"default\";\n};",
@@ -1426,7 +1485,8 @@
               "type": "string",
               "value": "interactive"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-latencyhint"
           },
           {
             "type": "field",
@@ -1441,7 +1501,8 @@
               "idlType": "float"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-samplerate"
           },
           {
             "type": "field",
@@ -1473,7 +1534,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-sinkid"
           },
           {
             "type": "field",
@@ -1508,11 +1570,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-rendersizehint"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContextOptions"
       },
       "AudioSinkOptions": {
         "fragment": "dictionary AudioSinkOptions {\n    required AudioSinkType type;\n};",
@@ -1533,11 +1597,13 @@
               "idlType": "AudioSinkType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiosinkoptions-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioSinkOptions"
       },
       "AudioSinkInfo": {
         "fragment": "[Exposed=Window]\ninterface AudioSinkInfo {\n    readonly attribute AudioSinkType type;\n};",
@@ -1558,7 +1624,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiosinkinfo-type"
           }
         ],
         "extAttrs": [
@@ -1572,7 +1639,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioSinkInfo"
       },
       "AudioTimestamp": {
         "fragment": "dictionary AudioTimestamp {\n    double contextTime;\n    DOMHighResTimeStamp performanceTime;\n};",
@@ -1593,7 +1661,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiotimestamp-contexttime"
           },
           {
             "type": "field",
@@ -1608,11 +1677,13 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiotimestamp-performancetime"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioTimestamp"
       },
       "AudioRenderCapacity": {
         "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n    undefined start(optional AudioRenderCapacityOptions options = {});\n        undefined stop();\n        attribute EventHandler onupdate;\n};",
@@ -1652,7 +1723,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-start"
           },
           {
             "type": "operation",
@@ -1667,7 +1739,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-stop"
           },
           {
             "type": "attribute",
@@ -1682,7 +1755,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacity-onupdate"
           }
         ],
         "extAttrs": [
@@ -1696,7 +1770,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacity"
       },
       "AudioRenderCapacityOptions": {
         "fragment": "dictionary AudioRenderCapacityOptions {\n        double updateInterval = 1;\n};",
@@ -1720,11 +1795,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityoptions-updateinterval"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityoptions"
       },
       "AudioRenderCapacityEvent": {
         "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n    constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n        readonly attribute double timestamp;\n        readonly attribute double averageLoad;\n        readonly attribute double peakLoad;\n        readonly attribute double underrunRatio;\n};",
@@ -1770,7 +1847,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-audiorendercapacityevent"
           },
           {
             "type": "attribute",
@@ -1785,7 +1863,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-timestamp"
           },
           {
             "type": "attribute",
@@ -1800,7 +1879,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-averageload"
           },
           {
             "type": "attribute",
@@ -1815,7 +1895,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-peakload"
           },
           {
             "type": "attribute",
@@ -1830,7 +1911,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityevent-underrunratio"
           }
         ],
         "extAttrs": [
@@ -1844,7 +1926,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacityevent"
       },
       "AudioRenderCapacityEventInit": {
         "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n    double timestamp = 0;\n    double averageLoad = 0;\n    double peakLoad = 0;\n    double underrunRatio = 0;\n};",
@@ -1868,7 +1951,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-timestamp"
           },
           {
             "type": "field",
@@ -1886,7 +1970,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-averageload"
           },
           {
             "type": "field",
@@ -1904,7 +1989,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-peakload"
           },
           {
             "type": "field",
@@ -1922,11 +2008,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-underrunratio"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityeventinit"
       },
       "OfflineAudioContext": {
         "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n    constructor(OfflineAudioContextOptions contextOptions);\n    constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n    Promise<AudioBuffer> startRendering();\n    Promise<undefined> resume();\n    Promise<undefined> suspend(double suspendTime);\n    readonly attribute unsigned long length;\n    attribute EventHandler oncomplete;\n};",
@@ -1954,7 +2042,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-offlineaudiocontext"
           },
           {
             "type": "constructor",
@@ -2008,7 +2097,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate"
           },
           {
             "type": "operation",
@@ -2032,7 +2122,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering"
           },
           {
             "type": "operation",
@@ -2056,7 +2147,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-resume"
           },
           {
             "type": "operation",
@@ -2097,7 +2189,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-suspend"
           },
           {
             "type": "attribute",
@@ -2112,7 +2205,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-length"
           },
           {
             "type": "attribute",
@@ -2127,7 +2221,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-oncomplete"
           }
         ],
         "extAttrs": [
@@ -2141,7 +2236,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext"
       },
       "OfflineAudioContextOptions": {
         "fragment": "dictionary OfflineAudioContextOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n    (AudioContextRenderSizeCategory or unsigned long) renderSizeHint = \"default\";\n};",
@@ -2165,7 +2261,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-numberofchannels"
           },
           {
             "type": "field",
@@ -2180,7 +2277,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-length"
           },
           {
             "type": "field",
@@ -2195,7 +2293,8 @@
               "idlType": "float"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-samplerate"
           },
           {
             "type": "field",
@@ -2230,11 +2329,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-rendersizehint"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContextOptions"
       },
       "OfflineAudioCompletionEvent": {
         "fragment": "[Exposed=Window]\ninterface OfflineAudioCompletionEvent : Event {\n    constructor (DOMString type, OfflineAudioCompletionEventInit eventInitDict);\n    readonly attribute AudioBuffer renderedBuffer;\n};",
@@ -2278,7 +2379,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent"
           },
           {
             "type": "attribute",
@@ -2293,7 +2395,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocompletionevent-renderedbuffer"
           }
         ],
         "extAttrs": [
@@ -2307,7 +2410,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioCompletionEvent"
       },
       "OfflineAudioCompletionEventInit": {
         "fragment": "dictionary OfflineAudioCompletionEventInit : EventInit {\n    required AudioBuffer renderedBuffer;\n};",
@@ -2328,11 +2432,13 @@
               "idlType": "AudioBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocompletioneventinit-renderedbuffer"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioCompletionEventInit"
       },
       "AudioBuffer": {
         "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n    constructor (AudioBufferOptions options);\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long length;\n    readonly attribute double duration;\n    readonly attribute unsigned long numberOfChannels;\n    Float32Array getChannelData (unsigned long channel);\n    undefined copyFromChannel (Float32Array destination,\n                               unsigned long channelNumber,\n                               optional unsigned long bufferOffset = 0);\n    undefined copyToChannel (Float32Array source,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n};",
@@ -2360,7 +2466,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-audiobuffer"
           },
           {
             "type": "attribute",
@@ -2375,7 +2482,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-samplerate"
           },
           {
             "type": "attribute",
@@ -2390,7 +2498,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-length"
           },
           {
             "type": "attribute",
@@ -2405,7 +2514,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-duration"
           },
           {
             "type": "attribute",
@@ -2420,7 +2530,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-numberofchannels"
           },
           {
             "type": "operation",
@@ -2452,7 +2563,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-getchanneldata"
           },
           {
             "type": "operation",
@@ -2519,7 +2631,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copyfromchannel"
           },
           {
             "type": "operation",
@@ -2586,7 +2699,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copytochannel"
           }
         ],
         "extAttrs": [
@@ -2600,7 +2714,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer"
       },
       "AudioBufferOptions": {
         "fragment": "dictionary AudioBufferOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n};",
@@ -2624,7 +2739,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobufferoptions-numberofchannels"
           },
           {
             "type": "field",
@@ -2639,7 +2755,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobufferoptions-length"
           },
           {
             "type": "field",
@@ -2654,11 +2771,13 @@
               "idlType": "float"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobufferoptions-samplerate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioBufferOptions"
       },
       "AudioNode": {
         "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n    AudioNode connect (AudioNode destinationNode,\n                       optional unsigned long output = 0,\n                       optional unsigned long input = 0);\n    undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n    undefined disconnect ();\n    undefined disconnect (unsigned long output);\n    undefined disconnect (AudioNode destinationNode);\n    undefined disconnect (AudioNode destinationNode, unsigned long output);\n    undefined disconnect (AudioNode destinationNode,\n                          unsigned long output,\n                          unsigned long input);\n    undefined disconnect (AudioParam destinationParam);\n    undefined disconnect (AudioParam destinationParam, unsigned long output);\n    readonly attribute BaseAudioContext context;\n    readonly attribute unsigned long numberOfInputs;\n    readonly attribute unsigned long numberOfOutputs;\n    attribute unsigned long channelCount;\n    attribute ChannelCountMode channelCountMode;\n    attribute ChannelInterpretation channelInterpretation;\n};",
@@ -2734,7 +2853,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-connect"
           },
           {
             "type": "operation",
@@ -2785,7 +2905,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-connect-destinationparam-output"
           },
           {
             "type": "operation",
@@ -2800,7 +2921,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect"
           },
           {
             "type": "operation",
@@ -2832,7 +2954,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-output"
           },
           {
             "type": "operation",
@@ -2864,7 +2987,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode"
           },
           {
             "type": "operation",
@@ -2912,7 +3036,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode-output"
           },
           {
             "type": "operation",
@@ -2976,7 +3101,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode-output-input"
           },
           {
             "type": "operation",
@@ -3008,7 +3134,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationparam"
           },
           {
             "type": "operation",
@@ -3056,7 +3183,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationparam-output"
           },
           {
             "type": "attribute",
@@ -3071,7 +3199,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-context"
           },
           {
             "type": "attribute",
@@ -3086,7 +3215,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofinputs"
           },
           {
             "type": "attribute",
@@ -3101,7 +3231,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofoutputs"
           },
           {
             "type": "attribute",
@@ -3116,7 +3247,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcount"
           },
           {
             "type": "attribute",
@@ -3131,7 +3263,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcountmode"
           },
           {
             "type": "attribute",
@@ -3146,7 +3279,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelinterpretation"
           }
         ],
         "extAttrs": [
@@ -3160,7 +3294,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioNode"
       },
       "ChannelCountMode": {
         "fragment": "enum ChannelCountMode {\n    \"max\",\n    \"clamped-max\",\n    \"explicit\"\n};",
@@ -3169,18 +3304,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "max"
+            "value": "max",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelcountmode-max"
           },
           {
             "type": "enum-value",
-            "value": "clamped-max"
+            "value": "clamped-max",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelcountmode-clamped-max"
           },
           {
             "type": "enum-value",
-            "value": "explicit"
+            "value": "explicit",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelcountmode-explicit"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-channelcountmode"
       },
       "ChannelInterpretation": {
         "fragment": "enum ChannelInterpretation {\n    \"speakers\",\n    \"discrete\"\n};",
@@ -3189,14 +3328,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "speakers"
+            "value": "speakers",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelinterpretation-speakers"
           },
           {
             "type": "enum-value",
-            "value": "discrete"
+            "value": "discrete",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelinterpretation-discrete"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-channelinterpretation"
       },
       "AudioNodeOptions": {
         "fragment": "dictionary AudioNodeOptions {\n    unsigned long channelCount;\n    ChannelCountMode channelCountMode;\n    ChannelInterpretation channelInterpretation;\n};",
@@ -3217,7 +3359,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcount"
           },
           {
             "type": "field",
@@ -3232,7 +3375,8 @@
               "idlType": "ChannelCountMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcountmode"
           },
           {
             "type": "field",
@@ -3247,11 +3391,13 @@
               "idlType": "ChannelInterpretation"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelinterpretation"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions"
       },
       "AutomationRate": {
         "fragment": "enum AutomationRate {\n    \"a-rate\",\n    \"k-rate\"\n};",
@@ -3260,14 +3406,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "a-rate"
+            "value": "a-rate",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-automationrate-a-rate"
           },
           {
             "type": "enum-value",
-            "value": "k-rate"
+            "value": "k-rate",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-automationrate-k-rate"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-automationrate"
       },
       "AudioParam": {
         "fragment": "[Exposed=Window]\ninterface AudioParam {\n    attribute float value;\n    attribute AutomationRate automationRate;\n    readonly attribute float defaultValue;\n    readonly attribute float minValue;\n    readonly attribute float maxValue;\n    AudioParam setValueAtTime (float value, double startTime);\n    AudioParam linearRampToValueAtTime (float value, double endTime);\n    AudioParam exponentialRampToValueAtTime (float value, double endTime);\n    AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n    AudioParam setValueCurveAtTime (sequence<float> values,\n                                    double startTime,\n                                    double duration);\n    AudioParam cancelScheduledValues (double cancelTime);\n    AudioParam cancelAndHoldAtTime (double cancelTime);\n};",
@@ -3288,7 +3437,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-value"
           },
           {
             "type": "attribute",
@@ -3303,7 +3453,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-automationrate"
           },
           {
             "type": "attribute",
@@ -3318,7 +3469,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-defaultvalue"
           },
           {
             "type": "attribute",
@@ -3333,7 +3485,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-minvalue"
           },
           {
             "type": "attribute",
@@ -3348,7 +3501,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-maxvalue"
           },
           {
             "type": "operation",
@@ -3396,7 +3550,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvalueattime"
           },
           {
             "type": "operation",
@@ -3444,7 +3599,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-linearramptovalueattime"
           },
           {
             "type": "operation",
@@ -3492,7 +3648,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-exponentialramptovalueattime"
           },
           {
             "type": "operation",
@@ -3556,7 +3713,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-settargetattime"
           },
           {
             "type": "operation",
@@ -3629,7 +3787,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvaluecurveattime"
           },
           {
             "type": "operation",
@@ -3661,7 +3820,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelscheduledvalues"
           },
           {
             "type": "operation",
@@ -3693,7 +3853,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelandholdattime"
           }
         ],
         "extAttrs": [
@@ -3707,7 +3868,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioParam"
       },
       "AudioScheduledSourceNode": {
         "fragment": "[Exposed=Window]\ninterface AudioScheduledSourceNode : AudioNode {\n    attribute EventHandler onended;\n    undefined start(optional double when = 0);\n    undefined stop(optional double when = 0);\n};",
@@ -3728,7 +3890,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-onended"
           },
           {
             "type": "operation",
@@ -3763,7 +3926,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-start"
           },
           {
             "type": "operation",
@@ -3798,7 +3962,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-stop"
           }
         ],
         "extAttrs": [
@@ -3812,7 +3977,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode"
       },
       "AnalyserNode": {
         "fragment": "[Exposed=Window]\ninterface AnalyserNode : AudioNode {\n    constructor (BaseAudioContext context, optional AnalyserOptions options = {});\n    undefined getFloatFrequencyData (Float32Array array);\n    undefined getByteFrequencyData (Uint8Array array);\n    undefined getFloatTimeDomainData (Float32Array array);\n    undefined getByteTimeDomainData (Uint8Array array);\n    attribute unsigned long fftSize;\n    readonly attribute unsigned long frequencyBinCount;\n    attribute double minDecibels;\n    attribute double maxDecibels;\n    attribute double smoothingTimeConstant;\n};",
@@ -3858,7 +4024,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-analysernode"
           },
           {
             "type": "operation",
@@ -3890,7 +4057,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-getfloatfrequencydata"
           },
           {
             "type": "operation",
@@ -3922,7 +4090,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-getbytefrequencydata"
           },
           {
             "type": "operation",
@@ -3954,7 +4123,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-getfloattimedomaindata"
           },
           {
             "type": "operation",
@@ -3986,7 +4156,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-getbytetimedomaindata"
           },
           {
             "type": "attribute",
@@ -4001,7 +4172,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-fftsize"
           },
           {
             "type": "attribute",
@@ -4016,7 +4188,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-frequencybincount"
           },
           {
             "type": "attribute",
@@ -4031,7 +4204,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-mindecibels"
           },
           {
             "type": "attribute",
@@ -4046,7 +4220,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-maxdecibels"
           },
           {
             "type": "attribute",
@@ -4061,7 +4236,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analysernode-smoothingtimeconstant"
           }
         ],
         "extAttrs": [
@@ -4075,7 +4251,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AnalyserNode"
       },
       "AnalyserOptions": {
         "fragment": "dictionary AnalyserOptions : AudioNodeOptions {\n    unsigned long fftSize = 2048;\n    double maxDecibels = -30;\n    double minDecibels = -100;\n    double smoothingTimeConstant = 0.8;\n};",
@@ -4099,7 +4276,8 @@
               "type": "number",
               "value": "2048"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analyseroptions-fftsize"
           },
           {
             "type": "field",
@@ -4117,7 +4295,8 @@
               "type": "number",
               "value": "-30"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analyseroptions-maxdecibels"
           },
           {
             "type": "field",
@@ -4135,7 +4314,8 @@
               "type": "number",
               "value": "-100"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analyseroptions-mindecibels"
           },
           {
             "type": "field",
@@ -4153,11 +4333,13 @@
               "type": "number",
               "value": "0.8"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-analyseroptions-smoothingtimeconstant"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AnalyserOptions"
       },
       "AudioBufferSourceNode": {
         "fragment": "[Exposed=Window]\ninterface AudioBufferSourceNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context,\n                 optional AudioBufferSourceOptions options = {});\n    attribute AudioBuffer? buffer;\n    readonly attribute AudioParam playbackRate;\n    readonly attribute AudioParam detune;\n    attribute boolean loop;\n    attribute double loopStart;\n    attribute double loopEnd;\n    undefined start (optional double when = 0,\n                     optional double offset,\n                     optional double duration);\n};",
@@ -4203,7 +4385,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-audiobuffersourcenode"
           },
           {
             "type": "attribute",
@@ -4218,7 +4401,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-buffer"
           },
           {
             "type": "attribute",
@@ -4233,7 +4417,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-playbackrate"
           },
           {
             "type": "attribute",
@@ -4248,7 +4433,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-detune"
           },
           {
             "type": "attribute",
@@ -4263,7 +4449,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loop"
           },
           {
             "type": "attribute",
@@ -4278,7 +4465,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loopstart"
           },
           {
             "type": "attribute",
@@ -4293,7 +4481,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loopend"
           },
           {
             "type": "operation",
@@ -4360,7 +4549,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-start"
           }
         ],
         "extAttrs": [
@@ -4374,7 +4564,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioBufferSourceNode"
       },
       "AudioBufferSourceOptions": {
         "fragment": "dictionary AudioBufferSourceOptions {\n    AudioBuffer? buffer;\n    float detune = 0;\n    boolean loop = false;\n    double loopEnd = 0;\n    double loopStart = 0;\n    float playbackRate = 1;\n};",
@@ -4395,7 +4586,8 @@
               "idlType": "AudioBuffer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-buffer"
           },
           {
             "type": "field",
@@ -4413,7 +4605,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-detune"
           },
           {
             "type": "field",
@@ -4431,7 +4624,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-loop"
           },
           {
             "type": "field",
@@ -4449,7 +4643,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-loopend"
           },
           {
             "type": "field",
@@ -4467,7 +4662,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-loopstart"
           },
           {
             "type": "field",
@@ -4485,11 +4681,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourceoptions-playbackrate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioBufferSourceOptions"
       },
       "AudioDestinationNode": {
         "fragment": "[Exposed=Window]\ninterface AudioDestinationNode : AudioNode {\n    readonly attribute unsigned long maxChannelCount;\n};",
@@ -4510,7 +4708,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiodestinationnode-maxchannelcount"
           }
         ],
         "extAttrs": [
@@ -4524,7 +4723,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioDestinationNode"
       },
       "AudioListener": {
         "fragment": "[Exposed=Window]\ninterface AudioListener {\n    readonly attribute AudioParam positionX;\n    readonly attribute AudioParam positionY;\n    readonly attribute AudioParam positionZ;\n    readonly attribute AudioParam forwardX;\n    readonly attribute AudioParam forwardY;\n    readonly attribute AudioParam forwardZ;\n    readonly attribute AudioParam upX;\n    readonly attribute AudioParam upY;\n    readonly attribute AudioParam upZ;\n    undefined setPosition (float x, float y, float z);\n    undefined setOrientation (float x, float y, float z, float xUp, float yUp, float zUp);\n};",
@@ -4545,7 +4745,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionx"
           },
           {
             "type": "attribute",
@@ -4560,7 +4761,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positiony"
           },
           {
             "type": "attribute",
@@ -4575,7 +4777,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionz"
           },
           {
             "type": "attribute",
@@ -4590,7 +4793,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardx"
           },
           {
             "type": "attribute",
@@ -4605,7 +4809,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardy"
           },
           {
             "type": "attribute",
@@ -4620,7 +4825,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardz"
           },
           {
             "type": "attribute",
@@ -4635,7 +4841,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upx"
           },
           {
             "type": "attribute",
@@ -4650,7 +4857,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upy"
           },
           {
             "type": "attribute",
@@ -4665,7 +4873,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upz"
           },
           {
             "type": "operation",
@@ -4729,7 +4938,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition"
           },
           {
             "type": "operation",
@@ -4841,7 +5051,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setorientation"
           }
         ],
         "extAttrs": [
@@ -4855,7 +5066,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioListener"
       },
       "AudioProcessingEvent": {
         "fragment": "[Exposed=Window]\ninterface AudioProcessingEvent : Event {\n    constructor (DOMString type, AudioProcessingEventInit eventInitDict);\n    readonly attribute double playbackTime;\n    readonly attribute AudioBuffer inputBuffer;\n    readonly attribute AudioBuffer outputBuffer;\n};",
@@ -4899,7 +5111,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingevent-audioprocessingevent"
           },
           {
             "type": "attribute",
@@ -4914,7 +5127,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingevent-playbacktime"
           },
           {
             "type": "attribute",
@@ -4929,7 +5143,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingevent-inputbuffer"
           },
           {
             "type": "attribute",
@@ -4944,7 +5159,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingevent-outputbuffer"
           }
         ],
         "extAttrs": [
@@ -4958,7 +5174,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioProcessingEvent"
       },
       "AudioProcessingEventInit": {
         "fragment": "dictionary AudioProcessingEventInit : EventInit {\n    required double playbackTime;\n    required AudioBuffer inputBuffer;\n    required AudioBuffer outputBuffer;\n};",
@@ -4979,7 +5196,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-playbacktime"
           },
           {
             "type": "field",
@@ -4994,7 +5212,8 @@
               "idlType": "AudioBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-inputbuffer"
           },
           {
             "type": "field",
@@ -5009,11 +5228,13 @@
               "idlType": "AudioBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-outputbuffer"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioProcessingEventInit"
       },
       "BiquadFilterType": {
         "fragment": "enum BiquadFilterType {\n    \"lowpass\",\n    \"highpass\",\n    \"bandpass\",\n    \"lowshelf\",\n    \"highshelf\",\n    \"peaking\",\n    \"notch\",\n    \"allpass\"\n};",
@@ -5022,38 +5243,47 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "lowpass"
+            "value": "lowpass",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-lowpass"
           },
           {
             "type": "enum-value",
-            "value": "highpass"
+            "value": "highpass",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-highpass"
           },
           {
             "type": "enum-value",
-            "value": "bandpass"
+            "value": "bandpass",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-bandpass"
           },
           {
             "type": "enum-value",
-            "value": "lowshelf"
+            "value": "lowshelf",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-lowshelf"
           },
           {
             "type": "enum-value",
-            "value": "highshelf"
+            "value": "highshelf",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-highshelf"
           },
           {
             "type": "enum-value",
-            "value": "peaking"
+            "value": "peaking",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-peaking"
           },
           {
             "type": "enum-value",
-            "value": "notch"
+            "value": "notch",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-notch"
           },
           {
             "type": "enum-value",
-            "value": "allpass"
+            "value": "allpass",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfiltertype-allpass"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-biquadfiltertype"
       },
       "BiquadFilterNode": {
         "fragment": "[Exposed=Window]\ninterface BiquadFilterNode : AudioNode {\n    constructor (BaseAudioContext context, optional BiquadFilterOptions options = {});\n    attribute BiquadFilterType type;\n    readonly attribute AudioParam frequency;\n    readonly attribute AudioParam detune;\n    readonly attribute AudioParam Q;\n    readonly attribute AudioParam gain;\n    undefined getFrequencyResponse (Float32Array frequencyHz,\n                                    Float32Array magResponse,\n                                    Float32Array phaseResponse);\n};",
@@ -5099,7 +5329,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-biquadfilternode"
           },
           {
             "type": "attribute",
@@ -5114,7 +5345,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-type"
           },
           {
             "type": "attribute",
@@ -5129,7 +5361,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-frequency"
           },
           {
             "type": "attribute",
@@ -5144,7 +5377,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-detune"
           },
           {
             "type": "attribute",
@@ -5159,7 +5393,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-q"
           },
           {
             "type": "attribute",
@@ -5174,7 +5409,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-gain"
           },
           {
             "type": "operation",
@@ -5238,7 +5474,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-getfrequencyresponse"
           }
         ],
         "extAttrs": [
@@ -5252,7 +5489,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#BiquadFilterNode"
       },
       "BiquadFilterOptions": {
         "fragment": "dictionary BiquadFilterOptions : AudioNodeOptions {\n    BiquadFilterType type = \"lowpass\";\n    float Q = 1;\n    float detune = 0;\n    float frequency = 350;\n    float gain = 0;\n};",
@@ -5276,7 +5514,8 @@
               "type": "string",
               "value": "lowpass"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-type"
           },
           {
             "type": "field",
@@ -5294,7 +5533,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-q"
           },
           {
             "type": "field",
@@ -5312,7 +5552,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-detune"
           },
           {
             "type": "field",
@@ -5330,7 +5571,8 @@
               "type": "number",
               "value": "350"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-frequency"
           },
           {
             "type": "field",
@@ -5348,11 +5590,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-biquadfilteroptions-gain"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#BiquadFilterOptions"
       },
       "ChannelMergerNode": {
         "fragment": "[Exposed=Window]\ninterface ChannelMergerNode : AudioNode {\n    constructor (BaseAudioContext context, optional ChannelMergerOptions options = {});\n};",
@@ -5398,7 +5642,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelmergernode-channelmergernode"
           }
         ],
         "extAttrs": [
@@ -5412,7 +5657,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ChannelMergerNode"
       },
       "ChannelMergerOptions": {
         "fragment": "dictionary ChannelMergerOptions : AudioNodeOptions {\n    unsigned long numberOfInputs = 6;\n};",
@@ -5436,11 +5682,13 @@
               "type": "number",
               "value": "6"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelmergeroptions-numberofinputs"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ChannelMergerOptions"
       },
       "ChannelSplitterNode": {
         "fragment": "[Exposed=Window]\ninterface ChannelSplitterNode : AudioNode {\n    constructor (BaseAudioContext context, optional ChannelSplitterOptions options = {});\n};",
@@ -5486,7 +5734,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelsplitternode-channelsplitternode"
           }
         ],
         "extAttrs": [
@@ -5500,7 +5749,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ChannelSplitterNode"
       },
       "ChannelSplitterOptions": {
         "fragment": "dictionary ChannelSplitterOptions : AudioNodeOptions {\n    unsigned long numberOfOutputs = 6;\n};",
@@ -5524,11 +5774,13 @@
               "type": "number",
               "value": "6"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-channelsplitteroptions-numberofoutputs"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ChannelSplitterOptions"
       },
       "ConstantSourceNode": {
         "fragment": "[Exposed=Window]\ninterface ConstantSourceNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context, optional ConstantSourceOptions options = {});\n    readonly attribute AudioParam offset;\n};",
@@ -5574,7 +5826,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-constantsourcenode-constantsourcenode"
           },
           {
             "type": "attribute",
@@ -5589,7 +5842,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-constantsourcenode-offset"
           }
         ],
         "extAttrs": [
@@ -5603,7 +5857,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ConstantSourceNode"
       },
       "ConstantSourceOptions": {
         "fragment": "dictionary ConstantSourceOptions {\n    float offset = 1;\n};",
@@ -5627,11 +5882,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-constantsourceoptions-offset"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ConstantSourceOptions"
       },
       "ConvolverNode": {
         "fragment": "[Exposed=Window]\ninterface ConvolverNode : AudioNode {\n    constructor (BaseAudioContext context, optional ConvolverOptions options = {});\n    attribute AudioBuffer? buffer;\n    attribute boolean normalize;\n};",
@@ -5677,7 +5934,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-convolvernode"
           },
           {
             "type": "attribute",
@@ -5692,7 +5950,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-buffer"
           },
           {
             "type": "attribute",
@@ -5707,7 +5966,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-normalize"
           }
         ],
         "extAttrs": [
@@ -5721,7 +5981,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ConvolverNode"
       },
       "ConvolverOptions": {
         "fragment": "dictionary ConvolverOptions : AudioNodeOptions {\n    AudioBuffer? buffer;\n    boolean disableNormalization = false;\n};",
@@ -5742,7 +6003,8 @@
               "idlType": "AudioBuffer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-convolveroptions-buffer"
           },
           {
             "type": "field",
@@ -5760,11 +6022,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-convolveroptions-disablenormalization"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ConvolverOptions"
       },
       "DelayNode": {
         "fragment": "[Exposed=Window]\ninterface DelayNode : AudioNode {\n    constructor (BaseAudioContext context, optional DelayOptions options = {});\n    readonly attribute AudioParam delayTime;\n};",
@@ -5810,7 +6074,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-delaynode-delaynode"
           },
           {
             "type": "attribute",
@@ -5825,7 +6090,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-delaynode-delaytime"
           }
         ],
         "extAttrs": [
@@ -5839,7 +6105,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#DelayNode"
       },
       "DelayOptions": {
         "fragment": "dictionary DelayOptions : AudioNodeOptions {\n    double maxDelayTime = 1;\n    double delayTime = 0;\n};",
@@ -5863,7 +6130,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-delayoptions-maxdelaytime"
           },
           {
             "type": "field",
@@ -5881,11 +6149,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-delayoptions-delaytime"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#DelayOptions"
       },
       "DynamicsCompressorNode": {
         "fragment": "[Exposed=Window]\ninterface DynamicsCompressorNode : AudioNode {\n    constructor (BaseAudioContext context,\n                 optional DynamicsCompressorOptions options = {});\n    readonly attribute AudioParam threshold;\n    readonly attribute AudioParam knee;\n    readonly attribute AudioParam ratio;\n    readonly attribute float reduction;\n    readonly attribute AudioParam attack;\n    readonly attribute AudioParam release;\n};",
@@ -5931,7 +6201,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-dynamicscompressornode"
           },
           {
             "type": "attribute",
@@ -5946,7 +6217,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-threshold"
           },
           {
             "type": "attribute",
@@ -5961,7 +6233,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-knee"
           },
           {
             "type": "attribute",
@@ -5976,7 +6249,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-ratio"
           },
           {
             "type": "attribute",
@@ -5991,7 +6265,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-reduction"
           },
           {
             "type": "attribute",
@@ -6006,7 +6281,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-attack"
           },
           {
             "type": "attribute",
@@ -6021,7 +6297,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-release"
           }
         ],
         "extAttrs": [
@@ -6035,7 +6312,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#DynamicsCompressorNode"
       },
       "DynamicsCompressorOptions": {
         "fragment": "dictionary DynamicsCompressorOptions : AudioNodeOptions {\n    float attack = 0.003;\n    float knee = 30;\n    float ratio = 12;\n    float release = 0.25;\n    float threshold = -24;\n};",
@@ -6059,7 +6337,8 @@
               "type": "number",
               "value": "0.003"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressoroptions-attack"
           },
           {
             "type": "field",
@@ -6077,7 +6356,8 @@
               "type": "number",
               "value": "30"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressoroptions-knee"
           },
           {
             "type": "field",
@@ -6095,7 +6375,8 @@
               "type": "number",
               "value": "12"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressoroptions-ratio"
           },
           {
             "type": "field",
@@ -6113,7 +6394,8 @@
               "type": "number",
               "value": "0.25"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressoroptions-release"
           },
           {
             "type": "field",
@@ -6131,11 +6413,13 @@
               "type": "number",
               "value": "-24"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressoroptions-threshold"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#DynamicsCompressorOptions"
       },
       "GainNode": {
         "fragment": "[Exposed=Window]\ninterface GainNode : AudioNode {\n    constructor (BaseAudioContext context, optional GainOptions options = {});\n    readonly attribute AudioParam gain;\n};",
@@ -6181,7 +6465,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-gainnode-gainnode"
           },
           {
             "type": "attribute",
@@ -6196,7 +6481,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-gainnode-gain"
           }
         ],
         "extAttrs": [
@@ -6210,7 +6496,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#GainNode"
       },
       "GainOptions": {
         "fragment": "dictionary GainOptions : AudioNodeOptions {\n    float gain = 1.0;\n};",
@@ -6234,11 +6521,13 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-gainoptions-gain"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#GainOptions"
       },
       "IIRFilterNode": {
         "fragment": "[Exposed=Window]\ninterface IIRFilterNode : AudioNode {\n    constructor (BaseAudioContext context, IIRFilterOptions options);\n    undefined getFrequencyResponse (Float32Array frequencyHz,\n                                    Float32Array magResponse,\n                                    Float32Array phaseResponse);\n};",
@@ -6282,7 +6571,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-iirfilternode-iirfilternode"
           },
           {
             "type": "operation",
@@ -6346,7 +6636,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-iirfilternode-getfrequencyresponse"
           }
         ],
         "extAttrs": [
@@ -6360,7 +6651,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#IIRFilterNode"
       },
       "IIRFilterOptions": {
         "fragment": "dictionary IIRFilterOptions : AudioNodeOptions {\n    required sequence<double> feedforward;\n    required sequence<double> feedback;\n};",
@@ -6390,7 +6682,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-iirfilteroptions-feedforward"
           },
           {
             "type": "field",
@@ -6414,11 +6707,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-iirfilteroptions-feedback"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#IIRFilterOptions"
       },
       "MediaElementAudioSourceNode": {
         "fragment": "[Exposed=Window]\ninterface MediaElementAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaElementAudioSourceOptions options);\n    [SameObject] readonly attribute HTMLMediaElement mediaElement;\n};",
@@ -6462,7 +6757,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode"
           },
           {
             "type": "attribute",
@@ -6484,7 +6780,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediaelementaudiosourcenode-mediaelement"
           }
         ],
         "extAttrs": [
@@ -6498,7 +6795,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaElementAudioSourceNode"
       },
       "MediaElementAudioSourceOptions": {
         "fragment": "dictionary MediaElementAudioSourceOptions {\n    required HTMLMediaElement mediaElement;\n};",
@@ -6519,11 +6817,13 @@
               "idlType": "HTMLMediaElement"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediaelementaudiosourceoptions-mediaelement"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaElementAudioSourceOptions"
       },
       "MediaStreamAudioDestinationNode": {
         "fragment": "[Exposed=Window]\ninterface MediaStreamAudioDestinationNode : AudioNode {\n    constructor (AudioContext context, optional AudioNodeOptions options = {});\n    readonly attribute MediaStream stream;\n};",
@@ -6569,7 +6869,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode"
           },
           {
             "type": "attribute",
@@ -6584,7 +6885,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiodestinationnode-stream"
           }
         ],
         "extAttrs": [
@@ -6598,7 +6900,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioDestinationNode"
       },
       "MediaStreamAudioSourceNode": {
         "fragment": "[Exposed=Window]\ninterface MediaStreamAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaStreamAudioSourceOptions options);\n    [SameObject] readonly attribute MediaStream mediaStream;\n};",
@@ -6642,7 +6945,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode"
           },
           {
             "type": "attribute",
@@ -6664,7 +6968,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastream"
           }
         ],
         "extAttrs": [
@@ -6678,7 +6983,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioSourceNode"
       },
       "MediaStreamAudioSourceOptions": {
         "fragment": "dictionary MediaStreamAudioSourceOptions {\n    required MediaStream mediaStream;\n};",
@@ -6699,11 +7005,13 @@
               "idlType": "MediaStream"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourceoptions-mediastream"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioSourceOptions"
       },
       "MediaStreamTrackAudioSourceNode": {
         "fragment": "[Exposed=Window]\ninterface MediaStreamTrackAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaStreamTrackAudioSourceOptions options);\n};",
@@ -6747,7 +7055,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode"
           }
         ],
         "extAttrs": [
@@ -6761,7 +7070,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaStreamTrackAudioSourceNode"
       },
       "MediaStreamTrackAudioSourceOptions": {
         "fragment": "dictionary MediaStreamTrackAudioSourceOptions {\n    required MediaStreamTrack mediaStreamTrack;\n};",
@@ -6782,11 +7092,13 @@
               "idlType": "MediaStreamTrack"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-mediastreamtrackaudiosourceoptions-mediastreamtrack"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#MediaStreamTrackAudioSourceOptions"
       },
       "OscillatorType": {
         "fragment": "enum OscillatorType {\n    \"sine\",\n    \"square\",\n    \"sawtooth\",\n    \"triangle\",\n    \"custom\"\n};",
@@ -6795,26 +7107,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "sine"
+            "value": "sine",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatortype-sine"
           },
           {
             "type": "enum-value",
-            "value": "square"
+            "value": "square",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatortype-square"
           },
           {
             "type": "enum-value",
-            "value": "sawtooth"
+            "value": "sawtooth",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatortype-sawtooth"
           },
           {
             "type": "enum-value",
-            "value": "triangle"
+            "value": "triangle",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatortype-triangle"
           },
           {
             "type": "enum-value",
-            "value": "custom"
+            "value": "custom",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatortype-custom"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-oscillatortype"
       },
       "OscillatorNode": {
         "fragment": "[Exposed=Window]\ninterface OscillatorNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context, optional OscillatorOptions options = {});\n    attribute OscillatorType type;\n    readonly attribute AudioParam frequency;\n    readonly attribute AudioParam detune;\n    undefined setPeriodicWave (PeriodicWave periodicWave);\n};",
@@ -6860,7 +7178,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-oscillatornode"
           },
           {
             "type": "attribute",
@@ -6875,7 +7194,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-type"
           },
           {
             "type": "attribute",
@@ -6890,7 +7210,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-frequency"
           },
           {
             "type": "attribute",
@@ -6905,7 +7226,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-detune"
           },
           {
             "type": "operation",
@@ -6937,7 +7259,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-setperiodicwave"
           }
         ],
         "extAttrs": [
@@ -6951,7 +7274,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OscillatorNode"
       },
       "OscillatorOptions": {
         "fragment": "dictionary OscillatorOptions : AudioNodeOptions {\n    OscillatorType type = \"sine\";\n    float frequency = 440;\n    float detune = 0;\n    PeriodicWave periodicWave;\n};",
@@ -6975,7 +7299,8 @@
               "type": "string",
               "value": "sine"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-type"
           },
           {
             "type": "field",
@@ -6993,7 +7318,8 @@
               "type": "number",
               "value": "440"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-frequency"
           },
           {
             "type": "field",
@@ -7011,7 +7337,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-detune"
           },
           {
             "type": "field",
@@ -7026,11 +7353,13 @@
               "idlType": "PeriodicWave"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-periodicwave"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#OscillatorOptions"
       },
       "PanningModelType": {
         "fragment": "enum PanningModelType {\n        \"equalpower\",\n        \"HRTF\"\n};",
@@ -7039,14 +7368,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "equalpower"
+            "value": "equalpower",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panningmodeltype-equalpower"
           },
           {
             "type": "enum-value",
-            "value": "HRTF"
+            "value": "HRTF",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panningmodeltype-hrtf"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-panningmodeltype"
       },
       "DistanceModelType": {
         "fragment": "enum DistanceModelType {\n    \"linear\",\n    \"inverse\",\n    \"exponential\"\n};",
@@ -7055,18 +7387,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "linear"
+            "value": "linear",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-distancemodeltype-linear"
           },
           {
             "type": "enum-value",
-            "value": "inverse"
+            "value": "inverse",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-distancemodeltype-inverse"
           },
           {
             "type": "enum-value",
-            "value": "exponential"
+            "value": "exponential",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-distancemodeltype-exponential"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-distancemodeltype"
       },
       "PannerNode": {
         "fragment": "[Exposed=Window]\ninterface PannerNode : AudioNode {\n    constructor (BaseAudioContext context, optional PannerOptions options = {});\n    attribute PanningModelType panningModel;\n    readonly attribute AudioParam positionX;\n    readonly attribute AudioParam positionY;\n    readonly attribute AudioParam positionZ;\n    readonly attribute AudioParam orientationX;\n    readonly attribute AudioParam orientationY;\n    readonly attribute AudioParam orientationZ;\n    attribute DistanceModelType distanceModel;\n    attribute double refDistance;\n    attribute double maxDistance;\n    attribute double rolloffFactor;\n    attribute double coneInnerAngle;\n    attribute double coneOuterAngle;\n    attribute double coneOuterGain;\n    undefined setPosition (float x, float y, float z);\n    undefined setOrientation (float x, float y, float z);\n};",
@@ -7112,7 +7448,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-pannernode"
           },
           {
             "type": "attribute",
@@ -7127,7 +7464,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-panningmodel"
           },
           {
             "type": "attribute",
@@ -7142,7 +7480,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-positionx"
           },
           {
             "type": "attribute",
@@ -7157,7 +7496,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-positiony"
           },
           {
             "type": "attribute",
@@ -7172,7 +7512,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-positionz"
           },
           {
             "type": "attribute",
@@ -7187,7 +7528,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationx"
           },
           {
             "type": "attribute",
@@ -7202,7 +7544,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationy"
           },
           {
             "type": "attribute",
@@ -7217,7 +7560,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationz"
           },
           {
             "type": "attribute",
@@ -7232,7 +7576,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-distancemodel"
           },
           {
             "type": "attribute",
@@ -7247,7 +7592,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-refdistance"
           },
           {
             "type": "attribute",
@@ -7262,7 +7608,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-maxdistance"
           },
           {
             "type": "attribute",
@@ -7277,7 +7624,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-rollofffactor"
           },
           {
             "type": "attribute",
@@ -7292,7 +7640,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneinnerangle"
           },
           {
             "type": "attribute",
@@ -7307,7 +7656,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneouterangle"
           },
           {
             "type": "attribute",
@@ -7322,7 +7672,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneoutergain"
           },
           {
             "type": "operation",
@@ -7386,7 +7737,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-setposition"
           },
           {
             "type": "operation",
@@ -7450,7 +7802,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-pannernode-setorientation"
           }
         ],
         "extAttrs": [
@@ -7464,7 +7817,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#PannerNode"
       },
       "PannerOptions": {
         "fragment": "dictionary PannerOptions : AudioNodeOptions {\n    PanningModelType panningModel = \"equalpower\";\n    DistanceModelType distanceModel = \"inverse\";\n    float positionX = 0;\n    float positionY = 0;\n    float positionZ = 0;\n    float orientationX = 1;\n    float orientationY = 0;\n    float orientationZ = 0;\n    double refDistance = 1;\n    double maxDistance = 10000;\n    double rolloffFactor = 1;\n    double coneInnerAngle = 360;\n    double coneOuterAngle = 360;\n    double coneOuterGain = 0;\n};",
@@ -7488,7 +7842,8 @@
               "type": "string",
               "value": "equalpower"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-panningmodel"
           },
           {
             "type": "field",
@@ -7506,7 +7861,8 @@
               "type": "string",
               "value": "inverse"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-distancemodel"
           },
           {
             "type": "field",
@@ -7524,7 +7880,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positionx"
           },
           {
             "type": "field",
@@ -7542,7 +7899,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positiony"
           },
           {
             "type": "field",
@@ -7560,7 +7918,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positionz"
           },
           {
             "type": "field",
@@ -7578,7 +7937,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationx"
           },
           {
             "type": "field",
@@ -7596,7 +7956,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationy"
           },
           {
             "type": "field",
@@ -7614,7 +7975,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationz"
           },
           {
             "type": "field",
@@ -7632,7 +7994,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-refdistance"
           },
           {
             "type": "field",
@@ -7650,7 +8013,8 @@
               "type": "number",
               "value": "10000"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-maxdistance"
           },
           {
             "type": "field",
@@ -7668,7 +8032,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-rollofffactor"
           },
           {
             "type": "field",
@@ -7686,7 +8051,8 @@
               "type": "number",
               "value": "360"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneinnerangle"
           },
           {
             "type": "field",
@@ -7704,7 +8070,8 @@
               "type": "number",
               "value": "360"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneouterangle"
           },
           {
             "type": "field",
@@ -7722,11 +8089,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneoutergain"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#PannerOptions"
       },
       "PeriodicWave": {
         "fragment": "[Exposed=Window]\ninterface PeriodicWave {\n    constructor (BaseAudioContext context, optional PeriodicWaveOptions options = {});\n};",
@@ -7772,7 +8141,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwave-periodicwave"
           }
         ],
         "extAttrs": [
@@ -7786,7 +8156,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#PeriodicWave"
       },
       "PeriodicWaveConstraints": {
         "fragment": "dictionary PeriodicWaveConstraints {\n    boolean disableNormalization = false;\n};",
@@ -7810,11 +8181,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveconstraints-disablenormalization"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#PeriodicWaveConstraints"
       },
       "PeriodicWaveOptions": {
         "fragment": "dictionary PeriodicWaveOptions : PeriodicWaveConstraints {\n    sequence<float> real;\n    sequence<float> imag;\n};",
@@ -7844,7 +8217,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-real"
           },
           {
             "type": "field",
@@ -7868,11 +8242,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-imag"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#PeriodicWaveOptions"
       },
       "ScriptProcessorNode": {
         "fragment": "[Exposed=Window]\ninterface ScriptProcessorNode : AudioNode {\n    attribute EventHandler onaudioprocess;\n    readonly attribute long bufferSize;\n};",
@@ -7893,7 +8269,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-scriptprocessornode-onaudioprocess"
           },
           {
             "type": "attribute",
@@ -7908,7 +8285,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-scriptprocessornode-buffersize"
           }
         ],
         "extAttrs": [
@@ -7922,7 +8300,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#ScriptProcessorNode"
       },
       "StereoPannerNode": {
         "fragment": "[Exposed=Window]\ninterface StereoPannerNode : AudioNode {\n    constructor (BaseAudioContext context, optional StereoPannerOptions options = {});\n    readonly attribute AudioParam pan;\n};",
@@ -7968,7 +8347,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-stereopannernode-stereopannernode"
           },
           {
             "type": "attribute",
@@ -7983,7 +8363,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-stereopannernode-pan"
           }
         ],
         "extAttrs": [
@@ -7997,7 +8378,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#stereopannernode"
       },
       "StereoPannerOptions": {
         "fragment": "dictionary StereoPannerOptions : AudioNodeOptions {\n    float pan = 0;\n};",
@@ -8021,11 +8403,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-stereopanneroptions-pan"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#StereoPannerOptions"
       },
       "OverSampleType": {
         "fragment": "enum OverSampleType {\n    \"none\",\n    \"2x\",\n    \"4x\"\n};",
@@ -8034,18 +8418,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oversampletype-none"
           },
           {
             "type": "enum-value",
-            "value": "2x"
+            "value": "2x",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oversampletype-2x"
           },
           {
             "type": "enum-value",
-            "value": "4x"
+            "value": "4x",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-oversampletype-4x"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#enumdef-oversampletype"
       },
       "WaveShaperNode": {
         "fragment": "[Exposed=Window]\ninterface WaveShaperNode : AudioNode {\n    constructor (BaseAudioContext context, optional WaveShaperOptions options = {});\n    attribute Float32Array? curve;\n    attribute OverSampleType oversample;\n};",
@@ -8091,7 +8479,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-waveshapernode"
           },
           {
             "type": "attribute",
@@ -8106,7 +8495,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-curve"
           },
           {
             "type": "attribute",
@@ -8121,7 +8511,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-oversample"
           }
         ],
         "extAttrs": [
@@ -8135,7 +8526,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#WaveShaperNode"
       },
       "WaveShaperOptions": {
         "fragment": "dictionary WaveShaperOptions : AudioNodeOptions {\n    sequence<float> curve;\n    OverSampleType oversample = \"none\";\n};",
@@ -8165,7 +8557,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-waveshaperoptions-curve"
           },
           {
             "type": "field",
@@ -8183,11 +8576,13 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-waveshaperoptions-oversample"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#WaveShaperOptions"
       },
       "AudioWorklet": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorklet : Worklet {\n  readonly attribute MessagePort port;\n};",
@@ -8208,7 +8603,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworklet-port"
           }
         ],
         "extAttrs": [
@@ -8228,7 +8624,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorklet"
       },
       "AudioWorkletProcessorConstructor": {
         "fragment": "callback AudioWorkletProcessorConstructor = AudioWorkletProcessor (object options);",
@@ -8260,7 +8657,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#callbackdef-audioworkletprocessorconstructor"
       },
       "AudioWorkletGlobalScope": {
         "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long renderQuantumSize;\n    readonly attribute MessagePort port;\n};",
@@ -8314,7 +8712,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-registerprocessor"
           },
           {
             "type": "attribute",
@@ -8329,7 +8728,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currentframe"
           },
           {
             "type": "attribute",
@@ -8344,7 +8744,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currenttime"
           },
           {
             "type": "attribute",
@@ -8359,7 +8760,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-samplerate"
           },
           {
             "type": "attribute",
@@ -8374,7 +8776,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-renderquantumsize"
           },
           {
             "type": "attribute",
@@ -8389,7 +8792,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-port"
           }
         ],
         "extAttrs": [
@@ -8419,7 +8823,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope"
       },
       "AudioParamMap": {
         "fragment": "[Exposed=Window]\ninterface AudioParamMap {\n    readonly maplike<DOMString, AudioParam>;\n};",
@@ -8464,7 +8869,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#audioparammap"
       },
       "AudioWorkletNode": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorkletNode : AudioNode {\n    constructor (BaseAudioContext context, DOMString name,\n               optional AudioWorkletNodeOptions options = {});\n    readonly attribute AudioParamMap parameters;\n    readonly attribute MessagePort port;\n    attribute EventHandler onprocessorerror;\n};",
@@ -8526,7 +8932,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-audioworkletnode"
           },
           {
             "type": "attribute",
@@ -8541,7 +8948,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-parameters"
           },
           {
             "type": "attribute",
@@ -8556,7 +8964,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-port"
           },
           {
             "type": "attribute",
@@ -8571,7 +8980,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-onprocessorerror"
           }
         ],
         "extAttrs": [
@@ -8591,7 +9001,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletNode"
       },
       "AudioWorkletNodeOptions": {
         "fragment": "dictionary AudioWorkletNodeOptions : AudioNodeOptions {\n    unsigned long numberOfInputs = 1;\n    unsigned long numberOfOutputs = 1;\n    sequence<unsigned long> outputChannelCount;\n    record<DOMString, double> parameterData;\n    object processorOptions;\n};",
@@ -8615,7 +9026,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofinputs"
           },
           {
             "type": "field",
@@ -8633,7 +9045,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofoutputs"
           },
           {
             "type": "field",
@@ -8657,7 +9070,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount"
           },
           {
             "type": "field",
@@ -8689,7 +9103,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-parameterdata"
           },
           {
             "type": "field",
@@ -8704,11 +9119,13 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-processoroptions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletNodeOptions"
       },
       "AudioWorkletProcessor": {
         "fragment": "[Exposed=AudioWorklet]\ninterface AudioWorkletProcessor {\n    constructor ();\n    readonly attribute MessagePort port;\n};",
@@ -8719,7 +9136,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletprocessor-audioworkletprocessor"
           },
           {
             "type": "attribute",
@@ -8734,7 +9152,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletprocessor-port"
           }
         ],
         "extAttrs": [
@@ -8748,7 +9167,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletProcessor"
       },
       "AudioWorkletProcessCallback": {
         "fragment": "callback AudioWorkletProcessCallback =\n  boolean (FrozenArray<FrozenArray<Float32Array>> inputs,\n           FrozenArray<FrozenArray<Float32Array>> outputs,\n           object parameters);",
@@ -8848,7 +9268,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-audio-api/#audioworkletprocess-callback-parameters"
       },
       "AudioParamDescriptor": {
         "fragment": "dictionary AudioParamDescriptor {\n    required DOMString name;\n    float defaultValue = 0;\n    float minValue = -3.4028235e38;\n    float maxValue = 3.4028235e38;\n    AutomationRate automationRate = \"a-rate\";\n};",
@@ -8869,7 +9290,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-name"
           },
           {
             "type": "field",
@@ -8887,7 +9309,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-defaultvalue"
           },
           {
             "type": "field",
@@ -8905,7 +9328,8 @@
               "type": "number",
               "value": "-3.4028235e38"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-minvalue"
           },
           {
             "type": "field",
@@ -8923,7 +9347,8 @@
               "type": "number",
               "value": "3.4028235e38"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-maxvalue"
           },
           {
             "type": "field",
@@ -8941,11 +9366,13 @@
               "type": "string",
               "value": "a-rate"
             },
-            "required": false
+            "required": false,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-automationrate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioParamDescriptor"
       }
     },
     "idlExtendedNames": {},

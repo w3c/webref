@@ -42,7 +42,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-rawid"
           },
           {
             "type": "attribute",
@@ -64,7 +65,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-response"
           },
           {
             "type": "attribute",
@@ -79,7 +81,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-authenticatorattachment"
           },
           {
             "type": "operation",
@@ -94,7 +97,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-getclientextensionresults"
           },
           {
             "type": "operation",
@@ -118,7 +122,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable"
           },
           {
             "type": "operation",
@@ -133,7 +138,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-tojson"
           }
         ],
         "extAttrs": [
@@ -153,7 +159,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#publickeycredential"
       },
       "Base64URLString": {
         "fragment": "typedef DOMString Base64URLString;",
@@ -167,7 +174,8 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-base64urlstring"
       },
       "PublicKeyCredentialJSON": {
         "fragment": "// The structure of this object will be either\n// RegistrationResponseJSON or AuthenticationResponseJSON\ntypedef object PublicKeyCredentialJSON;",
@@ -181,7 +189,8 @@
           "union": false,
           "idlType": "object"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-publickeycredentialjson"
       },
       "RegistrationResponseJSON": {
         "fragment": "dictionary RegistrationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAttestationResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
@@ -202,7 +211,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-id"
           },
           {
             "type": "field",
@@ -217,7 +227,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-rawid"
           },
           {
             "type": "field",
@@ -232,7 +243,8 @@
               "idlType": "AuthenticatorAttestationResponseJSON"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-response"
           },
           {
             "type": "field",
@@ -247,7 +259,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-authenticatorattachment"
           },
           {
             "type": "field",
@@ -262,7 +275,8 @@
               "idlType": "AuthenticationExtensionsClientOutputsJSON"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-clientextensionresults"
           },
           {
             "type": "field",
@@ -277,11 +291,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-registrationresponsejson"
       },
       "AuthenticatorAttestationResponseJSON": {
         "fragment": "dictionary AuthenticatorAttestationResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString authenticatorData;\n    required sequence<DOMString> transports;\n    // The publicKey field will be missing if pubKeyCredParams was used to\n    // negotiate a public-key algorithm that the user agent doesn't\n    // understand. (See section “Easily accessing credential data” for a\n    // list of which algorithms user agents must support.) If using such an\n    // algorithm then the public key must be parsed directly from\n    // attestationObject or authenticatorData.\n    Base64URLString publicKey;\n    required long long publicKeyAlgorithm;\n    // This value contains copies of some of the fields above. See\n    // section “Easily accessing credential data”.\n    required Base64URLString attestationObject;\n};",
@@ -302,7 +318,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-clientdatajson"
           },
           {
             "type": "field",
@@ -317,7 +334,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-authenticatordata"
           },
           {
             "type": "field",
@@ -341,7 +359,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-transports"
           },
           {
             "type": "field",
@@ -356,7 +375,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-publickey"
           },
           {
             "type": "field",
@@ -371,7 +391,8 @@
               "idlType": "long long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-publickeyalgorithm"
           },
           {
             "type": "field",
@@ -386,11 +407,13 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-attestationobject"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorattestationresponsejson"
       },
       "AuthenticationResponseJSON": {
         "fragment": "dictionary AuthenticationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAssertionResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
@@ -411,7 +434,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-id"
           },
           {
             "type": "field",
@@ -426,7 +450,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-rawid"
           },
           {
             "type": "field",
@@ -441,7 +466,8 @@
               "idlType": "AuthenticatorAssertionResponseJSON"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-response"
           },
           {
             "type": "field",
@@ -456,7 +482,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-authenticatorattachment"
           },
           {
             "type": "field",
@@ -471,7 +498,8 @@
               "idlType": "AuthenticationExtensionsClientOutputsJSON"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-clientextensionresults"
           },
           {
             "type": "field",
@@ -486,11 +514,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationresponsejson"
       },
       "AuthenticatorAssertionResponseJSON": {
         "fragment": "dictionary AuthenticatorAssertionResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString authenticatorData;\n    required Base64URLString signature;\n    Base64URLString userHandle;\n};",
@@ -511,7 +541,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-clientdatajson"
           },
           {
             "type": "field",
@@ -526,7 +557,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-authenticatordata"
           },
           {
             "type": "field",
@@ -541,7 +573,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-signature"
           },
           {
             "type": "field",
@@ -556,11 +589,13 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-userhandle"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorassertionresponsejson"
       },
       "AuthenticationExtensionsClientOutputsJSON": {
         "fragment": "dictionary AuthenticationExtensionsClientOutputsJSON {\n};",
@@ -569,7 +604,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputsjson"
       },
       "PublicKeyCredentialClientCapabilities": {
         "fragment": "typedef record<DOMString, boolean> PublicKeyCredentialClientCapabilities;",
@@ -600,7 +636,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-publickeycredentialclientcapabilities"
       },
       "PublicKeyCredentialCreationOptionsJSON": {
         "fragment": "dictionary PublicKeyCredentialCreationOptionsJSON {\n    required PublicKeyCredentialRpEntity                    rp;\n    required PublicKeyCredentialUserEntityJSON              user;\n    required Base64URLString                                challenge;\n    required sequence<PublicKeyCredentialParameters>        pubKeyCredParams;\n    unsigned long                                           timeout;\n    sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];\n    AuthenticatorSelectionCriteria                          authenticatorSelection;\n    sequence<DOMString>                                     hints = [];\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
@@ -621,7 +658,8 @@
               "idlType": "PublicKeyCredentialRpEntity"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-rp"
           },
           {
             "type": "field",
@@ -636,7 +674,8 @@
               "idlType": "PublicKeyCredentialUserEntityJSON"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-user"
           },
           {
             "type": "field",
@@ -651,7 +690,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-challenge"
           },
           {
             "type": "field",
@@ -675,7 +715,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-pubkeycredparams"
           },
           {
             "type": "field",
@@ -690,7 +731,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-timeout"
           },
           {
             "type": "field",
@@ -717,7 +759,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-excludecredentials"
           },
           {
             "type": "field",
@@ -732,7 +775,8 @@
               "idlType": "AuthenticatorSelectionCriteria"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-authenticatorselection"
           },
           {
             "type": "field",
@@ -759,7 +803,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-hints"
           },
           {
             "type": "field",
@@ -777,7 +822,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-attestation"
           },
           {
             "type": "field",
@@ -804,7 +850,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-attestationformats"
           },
           {
             "type": "field",
@@ -819,11 +866,13 @@
               "idlType": "AuthenticationExtensionsClientInputsJSON"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-extensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptionsjson"
       },
       "PublicKeyCredentialUserEntityJSON": {
         "fragment": "dictionary PublicKeyCredentialUserEntityJSON {\n    required Base64URLString        id;\n    required DOMString              name;\n    required DOMString              displayName;\n};",
@@ -844,7 +893,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-id"
           },
           {
             "type": "field",
@@ -859,7 +909,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-name"
           },
           {
             "type": "field",
@@ -874,11 +925,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-displayname"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentityjson"
       },
       "PublicKeyCredentialDescriptorJSON": {
         "fragment": "dictionary PublicKeyCredentialDescriptorJSON {\n    required Base64URLString        id;\n    required DOMString              type;\n    sequence<DOMString>             transports;\n};",
@@ -899,7 +952,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-id"
           },
           {
             "type": "field",
@@ -914,7 +968,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-type"
           },
           {
             "type": "field",
@@ -938,11 +993,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-transports"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptorjson"
       },
       "AuthenticationExtensionsClientInputsJSON": {
         "fragment": "dictionary AuthenticationExtensionsClientInputsJSON {\n};",
@@ -951,7 +1008,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputsjson"
       },
       "PublicKeyCredentialRequestOptionsJSON": {
         "fragment": "dictionary PublicKeyCredentialRequestOptionsJSON {\n    required Base64URLString                                challenge;\n    unsigned long                                           timeout;\n    DOMString                                               rpId;\n    sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];\n    DOMString                                               userVerification = \"preferred\";\n    sequence<DOMString>                                     hints = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
@@ -972,7 +1030,8 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-challenge"
           },
           {
             "type": "field",
@@ -987,7 +1046,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-timeout"
           },
           {
             "type": "field",
@@ -1002,7 +1062,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-rpid"
           },
           {
             "type": "field",
@@ -1029,7 +1090,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-allowcredentials"
           },
           {
             "type": "field",
@@ -1047,7 +1109,8 @@
               "type": "string",
               "value": "preferred"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-userverification"
           },
           {
             "type": "field",
@@ -1074,7 +1137,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-hints"
           },
           {
             "type": "field",
@@ -1089,11 +1153,13 @@
               "idlType": "AuthenticationExtensionsClientInputsJSON"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-extensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptionsjson"
       },
       "AuthenticatorResponse": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      clientDataJSON;\n};",
@@ -1121,7 +1187,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorresponse-clientdatajson"
           }
         ],
         "extAttrs": [
@@ -1141,7 +1208,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#authenticatorresponse"
       },
       "AuthenticatorAttestationResponse": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAttestationResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      attestationObject;\n    sequence<DOMString>                              getTransports();\n    ArrayBuffer                                      getAuthenticatorData();\n    ArrayBuffer?                                     getPublicKey();\n    COSEAlgorithmIdentifier                          getPublicKeyAlgorithm();\n};",
@@ -1169,7 +1237,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-attestationobject"
           },
           {
             "type": "operation",
@@ -1193,7 +1262,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-gettransports"
           },
           {
             "type": "operation",
@@ -1208,7 +1278,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getauthenticatordata"
           },
           {
             "type": "operation",
@@ -1223,7 +1294,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickey"
           },
           {
             "type": "operation",
@@ -1238,7 +1310,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickeyalgorithm"
           }
         ],
         "extAttrs": [
@@ -1258,7 +1331,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#authenticatorattestationresponse"
       },
       "AuthenticatorAssertionResponse": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAssertionResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      authenticatorData;\n    [SameObject] readonly attribute ArrayBuffer      signature;\n    [SameObject] readonly attribute ArrayBuffer?     userHandle;\n};",
@@ -1286,7 +1360,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-authenticatordata"
           },
           {
             "type": "attribute",
@@ -1308,7 +1383,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-signature"
           },
           {
             "type": "attribute",
@@ -1330,7 +1406,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-userhandle"
           }
         ],
         "extAttrs": [
@@ -1350,7 +1427,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#authenticatorassertionresponse"
       },
       "PublicKeyCredentialParameters": {
         "fragment": "dictionary PublicKeyCredentialParameters {\n    required DOMString                    type;\n    required COSEAlgorithmIdentifier      alg;\n};",
@@ -1371,7 +1449,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-type"
           },
           {
             "type": "field",
@@ -1386,11 +1465,13 @@
               "idlType": "COSEAlgorithmIdentifier"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-alg"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialparameters"
       },
       "PublicKeyCredentialCreationOptions": {
         "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    sequence<DOMString>                          hints = [];\n    DOMString                                    attestation = \"none\";\n    sequence<DOMString>                          attestationFormats = [];\n    AuthenticationExtensionsClientInputs         extensions;\n};",
@@ -1411,7 +1492,8 @@
               "idlType": "PublicKeyCredentialRpEntity"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-rp"
           },
           {
             "type": "field",
@@ -1426,7 +1508,8 @@
               "idlType": "PublicKeyCredentialUserEntity"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-user"
           },
           {
             "type": "field",
@@ -1441,7 +1524,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-challenge"
           },
           {
             "type": "field",
@@ -1465,7 +1549,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-pubkeycredparams"
           },
           {
             "type": "field",
@@ -1480,7 +1565,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-timeout"
           },
           {
             "type": "field",
@@ -1507,7 +1593,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-excludecredentials"
           },
           {
             "type": "field",
@@ -1522,7 +1609,8 @@
               "idlType": "AuthenticatorSelectionCriteria"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-authenticatorselection"
           },
           {
             "type": "field",
@@ -1549,7 +1637,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-hints"
           },
           {
             "type": "field",
@@ -1567,7 +1656,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation"
           },
           {
             "type": "field",
@@ -1594,7 +1684,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestationformats"
           },
           {
             "type": "field",
@@ -1609,11 +1700,13 @@
               "idlType": "AuthenticationExtensionsClientInputs"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-extensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions"
       },
       "PublicKeyCredentialEntity": {
         "fragment": "dictionary PublicKeyCredentialEntity {\n    required DOMString    name;\n};",
@@ -1634,11 +1727,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialentity"
       },
       "PublicKeyCredentialRpEntity": {
         "fragment": "dictionary PublicKeyCredentialRpEntity : PublicKeyCredentialEntity {\n    DOMString      id;\n};",
@@ -1659,11 +1754,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrpentity-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrpentity"
       },
       "PublicKeyCredentialUserEntity": {
         "fragment": "dictionary PublicKeyCredentialUserEntity : PublicKeyCredentialEntity {\n    required BufferSource   id;\n    required DOMString      displayName;\n};",
@@ -1684,7 +1781,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-id"
           },
           {
             "type": "field",
@@ -1699,11 +1797,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-displayname"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentity"
       },
       "AuthenticatorSelectionCriteria": {
         "fragment": "dictionary AuthenticatorSelectionCriteria {\n    DOMString                    authenticatorAttachment;\n    DOMString                    residentKey;\n    boolean                      requireResidentKey = false;\n    DOMString                    userVerification = \"preferred\";\n};",
@@ -1724,7 +1824,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-authenticatorattachment"
           },
           {
             "type": "field",
@@ -1739,7 +1840,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-residentkey"
           },
           {
             "type": "field",
@@ -1757,7 +1859,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-requireresidentkey"
           },
           {
             "type": "field",
@@ -1775,11 +1878,13 @@
               "type": "string",
               "value": "preferred"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-userverification"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorselectioncriteria"
       },
       "AuthenticatorAttachment": {
         "fragment": "enum AuthenticatorAttachment {\n    \"platform\",\n    \"cross-platform\"\n};",
@@ -1788,14 +1893,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "platform"
+            "value": "platform",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattachment-platform"
           },
           {
             "type": "enum-value",
-            "value": "cross-platform"
+            "value": "cross-platform",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatorattachment-cross-platform"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-authenticatorattachment"
       },
       "ResidentKeyRequirement": {
         "fragment": "enum ResidentKeyRequirement {\n    \"discouraged\",\n    \"preferred\",\n    \"required\"\n};",
@@ -1804,18 +1912,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "discouraged"
+            "value": "discouraged",
+            "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-discouraged"
           },
           {
             "type": "enum-value",
-            "value": "preferred"
+            "value": "preferred",
+            "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-preferred"
           },
           {
             "type": "enum-value",
-            "value": "required"
+            "value": "required",
+            "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-required"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-residentkeyrequirement"
       },
       "AttestationConveyancePreference": {
         "fragment": "enum AttestationConveyancePreference {\n    \"none\",\n    \"indirect\",\n    \"direct\",\n    \"enterprise\"\n};",
@@ -1824,22 +1936,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-none"
           },
           {
             "type": "enum-value",
-            "value": "indirect"
+            "value": "indirect",
+            "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-indirect"
           },
           {
             "type": "enum-value",
-            "value": "direct"
+            "value": "direct",
+            "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-direct"
           },
           {
             "type": "enum-value",
-            "value": "enterprise"
+            "value": "enterprise",
+            "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-enterprise"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-attestationconveyancepreference"
       },
       "PublicKeyCredentialRequestOptions": {
         "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    sequence<DOMString>                  hints = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
@@ -1860,7 +1977,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-challenge"
           },
           {
             "type": "field",
@@ -1875,7 +1993,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-timeout"
           },
           {
             "type": "field",
@@ -1890,7 +2009,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-rpid"
           },
           {
             "type": "field",
@@ -1917,7 +2037,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials"
           },
           {
             "type": "field",
@@ -1935,7 +2056,8 @@
               "type": "string",
               "value": "preferred"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-userverification"
           },
           {
             "type": "field",
@@ -1962,7 +2084,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-hints"
           },
           {
             "type": "field",
@@ -1977,11 +2100,13 @@
               "idlType": "AuthenticationExtensionsClientInputs"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-extensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions"
       },
       "AuthenticationExtensionsClientInputs": {
         "fragment": "dictionary AuthenticationExtensionsClientInputs {\n};",
@@ -1990,7 +2115,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputs"
       },
       "AuthenticationExtensionsClientOutputs": {
         "fragment": "dictionary AuthenticationExtensionsClientOutputs {\n};",
@@ -1999,7 +2125,8 @@
         "inheritance": null,
         "members": [],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs"
       },
       "CollectedClientData": {
         "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    DOMString                    topOrigin;\n    boolean                      crossOrigin;\n};",
@@ -2020,7 +2147,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-type"
           },
           {
             "type": "field",
@@ -2035,7 +2163,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-challenge"
           },
           {
             "type": "field",
@@ -2050,7 +2179,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-origin"
           },
           {
             "type": "field",
@@ -2065,7 +2195,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin"
           },
           {
             "type": "field",
@@ -2080,11 +2211,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-crossorigin"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-collectedclientdata"
       },
       "TokenBinding": {
         "fragment": "dictionary TokenBinding {\n    required DOMString status;\n    DOMString id;\n};",
@@ -2105,7 +2238,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-status"
           },
           {
             "type": "field",
@@ -2120,11 +2254,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-tokenbinding"
       },
       "TokenBindingStatus": {
         "fragment": "enum TokenBindingStatus { \"present\", \"supported\" };",
@@ -2133,14 +2269,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "present"
+            "value": "present",
+            "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-present"
           },
           {
             "type": "enum-value",
-            "value": "supported"
+            "value": "supported",
+            "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-supported"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-tokenbindingstatus"
       },
       "PublicKeyCredentialType": {
         "fragment": "enum PublicKeyCredentialType {\n    \"public-key\"\n};",
@@ -2149,10 +2288,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "public-key"
+            "value": "public-key",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialtype-public-key"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialtype"
       },
       "PublicKeyCredentialDescriptor": {
         "fragment": "dictionary PublicKeyCredentialDescriptor {\n    required DOMString                    type;\n    required BufferSource                 id;\n    sequence<DOMString>                   transports;\n};",
@@ -2173,7 +2314,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-type"
           },
           {
             "type": "field",
@@ -2188,7 +2330,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-id"
           },
           {
             "type": "field",
@@ -2212,11 +2355,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-transports"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptor"
       },
       "AuthenticatorTransport": {
         "fragment": "enum AuthenticatorTransport {\n    \"usb\",\n    \"nfc\",\n    \"ble\",\n    \"smart-card\",\n    \"hybrid\",\n    \"internal\"\n};",
@@ -2225,30 +2370,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "usb"
+            "value": "usb",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-usb"
           },
           {
             "type": "enum-value",
-            "value": "nfc"
+            "value": "nfc",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-nfc"
           },
           {
             "type": "enum-value",
-            "value": "ble"
+            "value": "ble",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-ble"
           },
           {
             "type": "enum-value",
-            "value": "smart-card"
+            "value": "smart-card",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-smart-card"
           },
           {
             "type": "enum-value",
-            "value": "hybrid"
+            "value": "hybrid",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-hybrid"
           },
           {
             "type": "enum-value",
-            "value": "internal"
+            "value": "internal",
+            "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-internal"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-authenticatortransport"
       },
       "COSEAlgorithmIdentifier": {
         "fragment": "typedef long COSEAlgorithmIdentifier;",
@@ -2262,7 +2414,8 @@
           "union": false,
           "idlType": "long"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-cosealgorithmidentifier"
       },
       "UserVerificationRequirement": {
         "fragment": "enum UserVerificationRequirement {\n    \"required\",\n    \"preferred\",\n    \"discouraged\"\n};",
@@ -2271,18 +2424,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "required"
+            "value": "required",
+            "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-required"
           },
           {
             "type": "enum-value",
-            "value": "preferred"
+            "value": "preferred",
+            "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-preferred"
           },
           {
             "type": "enum-value",
-            "value": "discouraged"
+            "value": "discouraged",
+            "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-discouraged"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-userverificationrequirement"
       },
       "ClientCapability": {
         "fragment": "enum ClientCapability {\n    \"conditionalCreate\",\n    \"conditionalMediation\",\n    \"hybridTransport\",\n    \"passkeyPlatformAuthenticator\",\n    \"userVerifyingPlatformAuthenticator\",\n};",
@@ -2291,26 +2448,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "conditionalCreate"
+            "value": "conditionalCreate",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalcreate"
           },
           {
             "type": "enum-value",
-            "value": "conditionalMediation"
+            "value": "conditionalMediation",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalmediation"
           },
           {
             "type": "enum-value",
-            "value": "hybridTransport"
+            "value": "hybridTransport",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-hybridtransport"
           },
           {
             "type": "enum-value",
-            "value": "passkeyPlatformAuthenticator"
+            "value": "passkeyPlatformAuthenticator",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-passkeyplatformauthenticator"
           },
           {
             "type": "enum-value",
-            "value": "userVerifyingPlatformAuthenticator"
+            "value": "userVerifyingPlatformAuthenticator",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-userverifyingplatformauthenticator"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-clientcapability"
       },
       "PublicKeyCredentialHints": {
         "fragment": "enum PublicKeyCredentialHints {\n    \"security-key\",\n    \"client-device\",\n    \"hybrid\",\n};",
@@ -2319,18 +2482,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "security-key"
+            "value": "security-key",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-security-key"
           },
           {
             "type": "enum-value",
-            "value": "client-device"
+            "value": "client-device",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-client-device"
           },
           {
             "type": "enum-value",
-            "value": "hybrid"
+            "value": "hybrid",
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-hybrid"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialhints"
       },
       "CredentialPropertiesOutput": {
         "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n    USVString authenticatorDisplayName;\n};",
@@ -2351,7 +2518,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-credentialpropertiesoutput-rk"
           },
           {
             "type": "field",
@@ -2366,11 +2534,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-credentialpropertiesoutput-authenticatordisplayname"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-credentialpropertiesoutput"
       },
       "AuthenticationExtensionsPRFValues": {
         "fragment": "dictionary AuthenticationExtensionsPRFValues {\n    required BufferSource first;\n    BufferSource second;\n};",
@@ -2391,7 +2561,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first"
           },
           {
             "type": "field",
@@ -2406,11 +2577,13 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues"
       },
       "AuthenticationExtensionsPRFInputs": {
         "fragment": "dictionary AuthenticationExtensionsPRFInputs {\n    AuthenticationExtensionsPRFValues eval;\n    record<USVString, AuthenticationExtensionsPRFValues> evalByCredential;\n};",
@@ -2431,7 +2604,8 @@
               "idlType": "AuthenticationExtensionsPRFValues"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval"
           },
           {
             "type": "field",
@@ -2463,11 +2637,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfinputs"
       },
       "AuthenticationExtensionsPRFOutputs": {
         "fragment": "dictionary AuthenticationExtensionsPRFOutputs {\n    boolean enabled;\n    AuthenticationExtensionsPRFValues results;\n};",
@@ -2488,7 +2664,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled"
           },
           {
             "type": "field",
@@ -2503,11 +2680,13 @@
               "idlType": "AuthenticationExtensionsPRFValues"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfoutputs"
       },
       "LargeBlobSupport": {
         "fragment": "enum LargeBlobSupport {\n  \"required\",\n  \"preferred\",\n};",
@@ -2516,14 +2695,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "required"
+            "value": "required",
+            "href": "https://w3c.github.io/webauthn/#dom-largeblobsupport-required"
           },
           {
             "type": "enum-value",
-            "value": "preferred"
+            "value": "preferred",
+            "href": "https://w3c.github.io/webauthn/#dom-largeblobsupport-preferred"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#enumdef-largeblobsupport"
       },
       "AuthenticationExtensionsLargeBlobInputs": {
         "fragment": "dictionary AuthenticationExtensionsLargeBlobInputs {\n    DOMString support;\n    boolean read;\n    BufferSource write;\n};",
@@ -2544,7 +2726,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputs-support"
           },
           {
             "type": "field",
@@ -2559,7 +2742,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputs-read"
           },
           {
             "type": "field",
@@ -2574,11 +2758,13 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargeblobinputs-write"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargeblobinputs"
       },
       "AuthenticationExtensionsLargeBlobOutputs": {
         "fragment": "dictionary AuthenticationExtensionsLargeBlobOutputs {\n    boolean supported;\n    ArrayBuffer blob;\n    boolean written;\n};",
@@ -2599,7 +2785,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputs-supported"
           },
           {
             "type": "field",
@@ -2614,7 +2801,8 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputs-blob"
           },
           {
             "type": "field",
@@ -2629,11 +2817,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionslargebloboutputs-written"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargebloboutputs"
       },
       "UvmEntry": {
         "fragment": "typedef sequence<unsigned long> UvmEntry;",
@@ -2656,7 +2846,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentry"
       },
       "UvmEntries": {
         "fragment": "typedef sequence<UvmEntry> UvmEntries;",
@@ -2679,7 +2870,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentries"
       },
       "AuthenticationExtensionsSupplementalPubKeysInputs": {
         "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysInputs {\n    required sequence<DOMString> scopes;\n    DOMString attestation = \"indirect\";\n    sequence<DOMString> attestationFormats = [];\n};",
@@ -2709,7 +2901,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-scopes"
           },
           {
             "type": "field",
@@ -2727,7 +2920,8 @@
               "type": "string",
               "value": "indirect"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestation"
           },
           {
             "type": "field",
@@ -2754,11 +2948,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestationformats"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysinputs"
       },
       "AuthenticationExtensionsSupplementalPubKeysOutputs": {
         "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysOutputs {\n    required sequence<ArrayBuffer> signatures;\n};",
@@ -2788,11 +2984,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysoutputs-signatures"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysoutputs"
       }
     },
     "idlExtendedNames": {
@@ -2816,7 +3014,8 @@
                 "idlType": "PublicKeyCredentialCreationOptions"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-credentialcreationoptions-publickey"
             }
           ],
           "extAttrs": [],
@@ -2843,7 +3042,8 @@
                 "idlType": "PublicKeyCredentialRequestOptions"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-credentialrequestoptions-publickey"
             }
           ],
           "extAttrs": [],
@@ -2879,7 +3079,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-isuserverifyingplatformauthenticatoravailable"
             }
           ],
           "extAttrs": [],
@@ -2913,7 +3114,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-getclientcapabilities"
             }
           ],
           "extAttrs": [],
@@ -2955,7 +3157,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parsecreationoptionsfromjson"
             }
           ],
           "extAttrs": [],
@@ -2997,7 +3200,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parserequestoptionsfromjson"
             }
           ],
           "extAttrs": [],
@@ -3024,7 +3228,8 @@
                 "idlType": "USVString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-appid"
             }
           ],
           "extAttrs": [],
@@ -3049,7 +3254,8 @@
                 "idlType": "USVString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-appidexclude"
             }
           ],
           "extAttrs": [],
@@ -3074,7 +3280,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-credprops"
             }
           ],
           "extAttrs": [],
@@ -3099,7 +3306,8 @@
                 "idlType": "AuthenticationExtensionsPRFInputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-prf"
             }
           ],
           "extAttrs": [],
@@ -3124,7 +3332,8 @@
                 "idlType": "AuthenticationExtensionsLargeBlobInputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-largeblob"
             }
           ],
           "extAttrs": [],
@@ -3149,7 +3358,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-uvm"
             }
           ],
           "extAttrs": [],
@@ -3174,7 +3384,8 @@
                 "idlType": "AuthenticationExtensionsSupplementalPubKeysInputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-supplementalpubkeys"
             }
           ],
           "extAttrs": [],
@@ -3201,7 +3412,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-appid"
             }
           ],
           "extAttrs": [],
@@ -3226,7 +3438,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-appidexclude"
             }
           ],
           "extAttrs": [],
@@ -3251,7 +3464,8 @@
                 "idlType": "CredentialPropertiesOutput"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-credprops"
             }
           ],
           "extAttrs": [],
@@ -3276,7 +3490,8 @@
                 "idlType": "AuthenticationExtensionsPRFOutputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-prf"
             }
           ],
           "extAttrs": [],
@@ -3301,7 +3516,8 @@
                 "idlType": "AuthenticationExtensionsLargeBlobOutputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-largeblob"
             }
           ],
           "extAttrs": [],
@@ -3326,7 +3542,8 @@
                 "idlType": "UvmEntries"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-uvm"
             }
           ],
           "extAttrs": [],
@@ -3351,7 +3568,8 @@
                 "idlType": "AuthenticationExtensionsSupplementalPubKeysOutputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-supplementalpubkeys"
             }
           ],
           "extAttrs": [],

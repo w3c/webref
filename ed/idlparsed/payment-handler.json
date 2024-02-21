@@ -37,7 +37,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager-userhint"
           },
           {
             "type": "operation",
@@ -87,7 +88,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager-enabledelegations"
           }
         ],
         "extAttrs": [
@@ -111,7 +113,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager"
       },
       "PaymentDelegation": {
         "fragment": "enum PaymentDelegation {\n  \"shippingAddress\",\n  \"payerName\",\n  \"payerPhone\",\n  \"payerEmail\"\n};",
@@ -120,22 +123,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "shippingAddress"
+            "value": "shippingAddress",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentdelegation-shippingaddress"
           },
           {
             "type": "enum-value",
-            "value": "payerName"
+            "value": "payerName",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentdelegation-payername"
           },
           {
             "type": "enum-value",
-            "value": "payerPhone"
+            "value": "payerPhone",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentdelegation-payerphone"
           },
           {
             "type": "enum-value",
-            "value": "payerEmail"
+            "value": "payerEmail",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentdelegation-payeremail"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentdelegation"
       },
       "CanMakePaymentEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type);\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
@@ -163,7 +171,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent-constructor"
           },
           {
             "type": "operation",
@@ -204,7 +213,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent-respondwith"
           }
         ],
         "extAttrs": [
@@ -218,7 +228,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent"
       },
       "PaymentRequestDetailsUpdate": {
         "fragment": "dictionary PaymentRequestDetailsUpdate {\n  DOMString error;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  sequence<PaymentShippingOption> shippingOptions;\n  object paymentMethodErrors;\n  AddressErrors shippingAddressErrors;\n};",
@@ -239,7 +250,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-error"
           },
           {
             "type": "field",
@@ -254,7 +266,8 @@
               "idlType": "PaymentCurrencyAmount"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-total"
           },
           {
             "type": "field",
@@ -278,7 +291,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-modifiers"
           },
           {
             "type": "field",
@@ -302,7 +316,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-shippingoptions"
           },
           {
             "type": "field",
@@ -317,7 +332,8 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-paymentmethoderrors"
           },
           {
             "type": "field",
@@ -332,11 +348,13 @@
               "idlType": "AddressErrors"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate-shippingaddresserrors"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestdetailsupdate"
       },
       "PaymentRequestEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
@@ -382,7 +400,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-constructor"
           },
           {
             "type": "attribute",
@@ -397,7 +416,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-toporigin"
           },
           {
             "type": "attribute",
@@ -412,7 +432,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestorigin"
           },
           {
             "type": "attribute",
@@ -427,7 +448,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestid"
           },
           {
             "type": "attribute",
@@ -451,7 +473,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-methoddata"
           },
           {
             "type": "attribute",
@@ -466,7 +489,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-total"
           },
           {
             "type": "attribute",
@@ -490,7 +514,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-modifiers"
           },
           {
             "type": "attribute",
@@ -505,7 +530,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentoptions"
           },
           {
             "type": "attribute",
@@ -529,7 +555,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-shippingoptions"
           },
           {
             "type": "operation",
@@ -570,7 +597,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-openwindow"
           },
           {
             "type": "operation",
@@ -629,7 +657,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-changepaymentmethod"
           },
           {
             "type": "operation",
@@ -672,7 +701,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-changeshippingaddress"
           },
           {
             "type": "operation",
@@ -713,7 +743,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-changeshippingoption"
           },
           {
             "type": "operation",
@@ -754,7 +785,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-respondwith"
           }
         ],
         "extAttrs": [
@@ -768,7 +800,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent"
       },
       "PaymentRequestEventInit": {
         "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  PaymentOptions paymentOptions;\n  sequence<PaymentShippingOption> shippingOptions;\n};",
@@ -789,7 +822,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-toporigin"
           },
           {
             "type": "field",
@@ -804,7 +838,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-paymentrequestorigin"
           },
           {
             "type": "field",
@@ -819,7 +854,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-paymentrequestid"
           },
           {
             "type": "field",
@@ -843,7 +879,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-methoddata"
           },
           {
             "type": "field",
@@ -858,7 +895,8 @@
               "idlType": "PaymentCurrencyAmount"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-total"
           },
           {
             "type": "field",
@@ -882,7 +920,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-modifiers"
           },
           {
             "type": "field",
@@ -897,7 +936,8 @@
               "idlType": "PaymentOptions"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-paymentoptions"
           },
           {
             "type": "field",
@@ -921,11 +961,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit-shippingoptions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit"
       },
       "PaymentHandlerResponse": {
         "fragment": "dictionary PaymentHandlerResponse {\nDOMString methodName;\nobject details;\nDOMString? payerName;\nDOMString? payerEmail;\nDOMString? payerPhone;\nAddressInit shippingAddress;\nDOMString? shippingOption;\n};",
@@ -946,7 +988,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-methodname"
           },
           {
             "type": "field",
@@ -961,7 +1004,8 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-details"
           },
           {
             "type": "field",
@@ -976,7 +1020,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-payername"
           },
           {
             "type": "field",
@@ -991,7 +1036,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-payeremail"
           },
           {
             "type": "field",
@@ -1006,7 +1052,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-payerphone"
           },
           {
             "type": "field",
@@ -1021,7 +1068,8 @@
               "idlType": "AddressInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-shippingaddress"
           },
           {
             "type": "field",
@@ -1036,11 +1084,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse-shippingoption"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/payment-handler/#dom-paymenthandlerresponse"
       },
       "AddressInit": {
         "fragment": "dictionary AddressInit {\n  DOMString country = \"\";\n  sequence<DOMString> addressLine = [];\n  DOMString region = \"\";\n  DOMString city = \"\";\n  DOMString dependentLocality = \"\";\n  DOMString postalCode = \"\";\n  DOMString sortingCode = \"\";\n  DOMString organization = \"\";\n  DOMString recipient = \"\";\n  DOMString phone = \"\";\n};",
@@ -1641,7 +1691,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/payment-handler/#dom-serviceworkerregistration-paymentmanager"
             }
           ],
           "extAttrs": [],
@@ -1668,7 +1719,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/payment-handler/#dom-serviceworkerglobalscope-oncanmakepayment"
             }
           ],
           "extAttrs": [],
@@ -1693,7 +1745,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/payment-handler/#dom-serviceworkerglobalscope-onpaymentrequest"
             }
           ],
           "extAttrs": [],

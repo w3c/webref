@@ -20,22 +20,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "next"
+            "value": "next",
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction-next"
           },
           {
             "type": "enum-value",
-            "value": "previous"
+            "value": "previous",
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction-previous"
           },
           {
             "type": "enum-value",
-            "value": "first"
+            "value": "first",
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction-first"
           },
           {
             "type": "enum-value",
-            "value": "last"
+            "value": "last",
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction-last"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction"
       },
       "CaptureActionEvent": {
         "fragment": "[Exposed=Window]\ninterface CaptureActionEvent : Event {\n  constructor(optional CaptureActionEventInit init = {});\n  readonly attribute CaptureAction action;\n};",
@@ -65,7 +70,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactionevent-constructor"
           },
           {
             "type": "attribute",
@@ -80,7 +86,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactionevent-action"
           }
         ],
         "extAttrs": [
@@ -94,7 +101,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactionevent"
       },
       "CaptureActionEventInit": {
         "fragment": "dictionary CaptureActionEventInit : EventInit {\n  DOMString action;\n};",
@@ -115,11 +123,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactioneventinit-action"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactioneventinit"
       }
     },
     "idlExtendedNames": {
@@ -169,7 +179,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediadevices-setsupportedcaptureactions"
             },
             {
               "type": "attribute",
@@ -184,7 +195,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediadevices-oncaptureaction"
             }
           ],
           "extAttrs": [],
@@ -220,7 +232,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediastreamtrack-getsupportedcaptureactions"
             },
             {
               "type": "operation",
@@ -261,7 +274,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediastreamtrack-sendcaptureaction"
             }
           ],
           "extAttrs": [],

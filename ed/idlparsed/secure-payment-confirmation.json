@@ -28,7 +28,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-challenge"
           },
           {
             "type": "field",
@@ -43,7 +44,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid"
           },
           {
             "type": "field",
@@ -67,7 +69,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids"
           },
           {
             "type": "field",
@@ -82,7 +85,8 @@
               "idlType": "PaymentCredentialInstrument"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument"
           },
           {
             "type": "field",
@@ -97,7 +101,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-timeout"
           },
           {
             "type": "field",
@@ -112,7 +117,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename"
           },
           {
             "type": "field",
@@ -127,7 +133,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin"
           },
           {
             "type": "field",
@@ -142,7 +149,8 @@
               "idlType": "AuthenticationExtensionsClientInputs"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-extensions"
           },
           {
             "type": "field",
@@ -166,7 +174,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-locale"
           },
           {
             "type": "field",
@@ -181,11 +190,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-showoptout"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest"
       },
       "AuthenticationExtensionsPaymentInputs": {
         "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
@@ -206,7 +217,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-ispayment"
           },
           {
             "type": "field",
@@ -221,7 +233,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-rpid"
           },
           {
             "type": "field",
@@ -236,7 +249,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-toporigin"
           },
           {
             "type": "field",
@@ -251,7 +265,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeename"
           },
           {
             "type": "field",
@@ -266,7 +281,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeeorigin"
           },
           {
             "type": "field",
@@ -281,7 +297,8 @@
               "idlType": "PaymentCurrencyAmount"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-total"
           },
           {
             "type": "field",
@@ -296,11 +313,13 @@
               "idlType": "PaymentCredentialInstrument"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-instrument"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs"
       },
       "CollectedClientPaymentData": {
         "fragment": "dictionary CollectedClientPaymentData : CollectedClientData {\n    required CollectedClientAdditionalPaymentData payment;\n};",
@@ -321,11 +340,13 @@
               "idlType": "CollectedClientAdditionalPaymentData"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientpaymentdata"
       },
       "CollectedClientAdditionalPaymentData": {
         "fragment": "dictionary CollectedClientAdditionalPaymentData {\n    required USVString rpId;\n    required USVString topOrigin;\n    USVString payeeName;\n    USVString payeeOrigin;\n    required PaymentCurrencyAmount total;\n    required PaymentCredentialInstrument instrument;\n};",
@@ -346,7 +367,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-rpid"
           },
           {
             "type": "field",
@@ -361,7 +383,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-toporigin"
           },
           {
             "type": "field",
@@ -376,7 +399,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-payeename"
           },
           {
             "type": "field",
@@ -391,7 +415,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-payeeorigin"
           },
           {
             "type": "field",
@@ -406,7 +431,8 @@
               "idlType": "PaymentCurrencyAmount"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-total"
           },
           {
             "type": "field",
@@ -421,11 +447,13 @@
               "idlType": "PaymentCredentialInstrument"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-instrument"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-collectedclientadditionalpaymentdata"
       },
       "PaymentCredentialInstrument": {
         "fragment": "dictionary PaymentCredentialInstrument {\n    required USVString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
@@ -446,7 +474,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentcredentialinstrument-displayname"
           },
           {
             "type": "field",
@@ -461,7 +490,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentcredentialinstrument-icon"
           },
           {
             "type": "field",
@@ -479,11 +509,13 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentcredentialinstrument-iconmustbeshown"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-paymentcredentialinstrument"
       }
     },
     "idlExtendedNames": {
@@ -516,7 +548,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": "static"
+              "special": "static",
+              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentrequest-issecurepaymentconfirmationavailable"
             }
           ],
           "extAttrs": [],
@@ -543,7 +576,8 @@
                 "idlType": "AuthenticationExtensionsPaymentInputs"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionsclientinputs-payment"
             }
           ],
           "extAttrs": [],

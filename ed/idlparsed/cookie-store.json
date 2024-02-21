@@ -72,7 +72,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get"
           },
           {
             "type": "operation",
@@ -115,7 +116,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get-options"
           },
           {
             "type": "operation",
@@ -156,7 +158,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall"
           },
           {
             "type": "operation",
@@ -199,7 +202,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall-options"
           },
           {
             "type": "operation",
@@ -256,7 +260,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set"
           },
           {
             "type": "operation",
@@ -297,7 +302,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-options"
           },
           {
             "type": "operation",
@@ -338,7 +344,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete"
           },
           {
             "type": "operation",
@@ -379,7 +386,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete-options"
           },
           {
             "type": "attribute",
@@ -404,7 +412,8 @@
               }
             ],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-onchange"
           }
         ],
         "extAttrs": [
@@ -431,7 +440,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#cookiestore"
       },
       "CookieStoreGetOptions": {
         "fragment": "dictionary CookieStoreGetOptions {\n  USVString name;\n  USVString url;\n};",
@@ -452,7 +462,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-name"
           },
           {
             "type": "field",
@@ -467,11 +478,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-url"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoregetoptions"
       },
       "CookieSameSite": {
         "fragment": "enum CookieSameSite {\n  \"strict\",\n  \"lax\",\n  \"none\"\n};",
@@ -480,18 +493,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "strict"
+            "value": "strict",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-strict"
           },
           {
             "type": "enum-value",
-            "value": "lax"
+            "value": "lax",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-lax"
           },
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-none"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/cookie-store/#enumdef-cookiesamesite"
       },
       "CookieInit": {
         "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n};",
@@ -512,7 +529,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-name"
           },
           {
             "type": "field",
@@ -527,7 +545,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-value"
           },
           {
             "type": "field",
@@ -544,7 +563,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-expires"
           },
           {
             "type": "field",
@@ -561,7 +581,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-domain"
           },
           {
             "type": "field",
@@ -579,7 +600,8 @@
               "type": "string",
               "value": "/"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-path"
           },
           {
             "type": "field",
@@ -597,7 +619,8 @@
               "type": "string",
               "value": "strict"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-samesite"
           },
           {
             "type": "field",
@@ -615,11 +638,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookieinit-partitioned"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-cookieinit"
       },
       "CookieStoreDeleteOptions": {
         "fragment": "dictionary CookieStoreDeleteOptions {\n  required USVString name;\n  USVString? domain = null;\n  USVString path = \"/\";\n  boolean partitioned = false;\n};",
@@ -640,7 +665,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-name"
           },
           {
             "type": "field",
@@ -657,7 +683,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-domain"
           },
           {
             "type": "field",
@@ -675,7 +702,8 @@
               "type": "string",
               "value": "/"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-path"
           },
           {
             "type": "field",
@@ -693,11 +721,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-partitioned"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoredeleteoptions"
       },
       "CookieListItem": {
         "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n  USVString? domain;\n  USVString path;\n  DOMHighResTimeStamp? expires;\n  boolean secure;\n  CookieSameSite sameSite;\n  boolean partitioned;\n};",
@@ -718,7 +748,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-name"
           },
           {
             "type": "field",
@@ -733,7 +764,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-value"
           },
           {
             "type": "field",
@@ -748,7 +780,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-domain"
           },
           {
             "type": "field",
@@ -763,7 +796,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-path"
           },
           {
             "type": "field",
@@ -778,7 +812,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-expires"
           },
           {
             "type": "field",
@@ -793,7 +828,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-secure"
           },
           {
             "type": "field",
@@ -808,7 +844,8 @@
               "idlType": "CookieSameSite"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-samesite"
           },
           {
             "type": "field",
@@ -823,11 +860,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-partitioned"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-cookielistitem"
       },
       "CookieList": {
         "fragment": "typedef sequence<CookieListItem> CookieList;",
@@ -850,7 +889,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/cookie-store/#typedefdef-cookielist"
       },
       "CookieStoreManager": {
         "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStoreManager {\n  Promise<undefined> subscribe(sequence<CookieStoreGetOptions> subscriptions);\n  Promise<sequence<CookieStoreGetOptions>> getSubscriptions();\n  Promise<undefined> unsubscribe(sequence<CookieStoreGetOptions> subscriptions);\n};",
@@ -906,7 +946,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-subscribe"
           },
           {
             "type": "operation",
@@ -939,7 +980,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-getsubscriptions"
           },
           {
             "type": "operation",
@@ -989,7 +1031,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-unsubscribe"
           }
         ],
         "extAttrs": [
@@ -1016,7 +1059,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#cookiestoremanager"
       },
       "CookieChangeEvent": {
         "fragment": "[Exposed=Window,\n SecureContext]\ninterface CookieChangeEvent : Event {\n  constructor(DOMString type, optional CookieChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<CookieListItem> changed;\n  [SameObject] readonly attribute FrozenArray<CookieListItem> deleted;\n};",
@@ -1062,7 +1106,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-cookiechangeevent"
           },
           {
             "type": "attribute",
@@ -1093,7 +1138,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-changed"
           },
           {
             "type": "attribute",
@@ -1124,7 +1170,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-deleted"
           }
         ],
         "extAttrs": [
@@ -1144,7 +1191,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#cookiechangeevent"
       },
       "CookieChangeEventInit": {
         "fragment": "dictionary CookieChangeEventInit : EventInit {\n  CookieList changed;\n  CookieList deleted;\n};",
@@ -1165,7 +1213,8 @@
               "idlType": "CookieList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeeventinit-changed"
           },
           {
             "type": "field",
@@ -1180,11 +1229,13 @@
               "idlType": "CookieList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeeventinit-deleted"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-cookiechangeeventinit"
       },
       "ExtendableCookieChangeEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableCookieChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableCookieChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<CookieListItem> changed;\n  [SameObject] readonly attribute FrozenArray<CookieListItem> deleted;\n};",
@@ -1230,7 +1281,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-extendablecookiechangeevent"
           },
           {
             "type": "attribute",
@@ -1261,7 +1313,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-changed"
           },
           {
             "type": "attribute",
@@ -1292,7 +1345,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-deleted"
           }
         ],
         "extAttrs": [
@@ -1306,7 +1360,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#extendablecookiechangeevent"
       },
       "ExtendableCookieChangeEventInit": {
         "fragment": "dictionary ExtendableCookieChangeEventInit : ExtendableEventInit {\n  CookieList changed;\n  CookieList deleted;\n};",
@@ -1327,7 +1382,8 @@
               "idlType": "CookieList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-changed"
           },
           {
             "type": "field",
@@ -1342,11 +1398,13 @@
               "idlType": "CookieList"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-deleted"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/cookie-store/#dictdef-extendablecookiechangeeventinit"
       }
     },
     "idlExtendedNames": {
@@ -1377,7 +1435,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerregistration-cookies"
             }
           ],
           "extAttrs": [
@@ -1428,7 +1487,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/cookie-store/#dom-window-cookiestore"
             }
           ],
           "extAttrs": [
@@ -1469,7 +1529,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerglobalscope-cookiestore"
             },
             {
               "type": "attribute",
@@ -1484,7 +1545,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerglobalscope-oncookiechange"
             }
           ],
           "extAttrs": [],

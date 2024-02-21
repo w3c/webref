@@ -71,7 +71,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-animationworkletglobalscope-registeranimator"
           }
         ],
         "extAttrs": [
@@ -101,7 +102,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope"
       },
       "AnimatorInstanceConstructor": {
         "fragment": "callback AnimatorInstanceConstructor = any (any options, optional any state);",
@@ -149,7 +151,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#callbackdef-animatorinstanceconstructor"
       },
       "WorkletAnimationEffect": {
         "fragment": "[ Exposed=AnimationWorklet ]\ninterface WorkletAnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    attribute double? localTime;\n};",
@@ -170,7 +173,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimationeffect-gettiming"
           },
           {
             "type": "operation",
@@ -185,7 +189,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimationeffect-getcomputedtiming"
           },
           {
             "type": "attribute",
@@ -200,7 +205,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimationeffect-localtime"
           }
         ],
         "extAttrs": [
@@ -214,7 +220,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#workletanimationeffect"
       },
       "WorkletAnimation": {
         "fragment": "[Exposed=Window]\ninterface WorkletAnimation : Animation {\n        constructor(DOMString animatorName,\n              optional (AnimationEffect or sequence<AnimationEffect>)? effects = null,\n              optional AnimationTimeline? timeline,\n              optional any options);\n        readonly attribute DOMString animatorName;\n};",
@@ -318,7 +325,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimation-workletanimation"
           },
           {
             "type": "attribute",
@@ -333,7 +341,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimation-animatorname"
           }
         ],
         "extAttrs": [
@@ -347,7 +356,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#workletanimation"
       },
       "WorkletGroupEffect": {
         "fragment": "[Exposed=AnimationWorklet]\ninterface WorkletGroupEffect {\n  sequence<WorkletAnimationEffect> getChildren();\n};",
@@ -377,7 +387,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletgroupeffect-getchildren"
           }
         ],
         "extAttrs": [
@@ -391,7 +402,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#workletgroupeffect"
       }
     },
     "idlExtendedNames": {
@@ -422,7 +434,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-css-animationworklet"
             }
           ],
           "extAttrs": [

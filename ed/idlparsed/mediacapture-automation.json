@@ -16,14 +16,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "granted"
+            "value": "granted",
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresult-granted"
           },
           {
             "type": "enum-value",
-            "value": "denied"
+            "value": "denied",
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresult-denied"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresult"
       },
       "MockCapturePromptResultConfiguration": {
         "fragment": "dictionary MockCapturePromptResultConfiguration {\n  MockCapturePromptResult getUserMedia;\n  MockCapturePromptResult getDisplayMedia;\n};",
@@ -44,7 +47,8 @@
               "idlType": "MockCapturePromptResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresultconfiguration-getusermedia"
           },
           {
             "type": "field",
@@ -59,11 +63,13 @@
               "idlType": "MockCapturePromptResult"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresultconfiguration-getdisplaymedia"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresultconfiguration"
       },
       "MockCaptureDeviceConfiguration": {
         "fragment": "dictionary MockCaptureDeviceConfiguration {\n  DOMString label;\n  DOMString deviceId;\n  DOMString groupId;\n};",
@@ -84,7 +90,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-label"
           },
           {
             "type": "field",
@@ -99,7 +106,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid"
           },
           {
             "type": "field",
@@ -114,11 +122,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-groupid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration"
       },
       "MockCameraConfiguration": {
         "fragment": "dictionary MockCameraConfiguration : MockCaptureDeviceConfiguration {\n  double defaultFrameRate = 30;\n  DOMString facingMode = \"user\";\n  // TODO: Add more capabilities parameters like:\n  // ULongRange width;\n  // ULongRange height;\n  // DoubleRange frameRate;\n};",
@@ -142,7 +152,8 @@
               "type": "number",
               "value": "30"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcameraconfiguration-defaultframerate"
           },
           {
             "type": "field",
@@ -160,11 +171,13 @@
               "type": "string",
               "value": "user"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcameraconfiguration-facingmode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcameraconfiguration"
       },
       "MockMicrophoneConfiguration": {
         "fragment": "dictionary MockMicrophoneConfiguration : MockCaptureDeviceConfiguration {\n  unsigned long defaultSampleRate = 44100;\n  // TODO: Add more capabilities parameters like:\n  // ULongRange sampleRate;\n  // sequence echoCancellation;\n};",
@@ -188,11 +201,13 @@
               "type": "number",
               "value": "44100"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration-defaultsamplerate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration"
       }
     },
     "idlExtendedNames": {},

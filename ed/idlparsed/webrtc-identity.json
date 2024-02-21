@@ -37,7 +37,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderglobalscope-rtcidentityprovider"
           }
         ],
         "extAttrs": [
@@ -67,7 +68,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderglobalscope"
       },
       "RTCIdentityProviderRegistrar": {
         "fragment": "[Exposed=RTCIdentityProvider]\ninterface RTCIdentityProviderRegistrar {\n    undefined register (RTCIdentityProvider idp);\n};",
@@ -105,7 +107,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderregistrar-register"
           }
         ],
         "extAttrs": [
@@ -119,7 +122,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderregistrar"
       },
       "RTCIdentityProvider": {
         "fragment": "dictionary RTCIdentityProvider {\n    required GenerateAssertionCallback generateAssertion;\n    required ValidateAssertionCallback validateAssertion;\n};",
@@ -140,7 +144,8 @@
               "idlType": "GenerateAssertionCallback"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider-generateassertion"
           },
           {
             "type": "field",
@@ -155,11 +160,13 @@
               "idlType": "ValidateAssertionCallback"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider-validateassertion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider"
       },
       "GenerateAssertionCallback": {
         "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult>\n(DOMString contents, DOMString origin, RTCIdentityProviderOptions options);",
@@ -232,7 +239,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-identity/#dom-generateassertioncallback"
       },
       "ValidateAssertionCallback": {
         "fragment": "callback ValidateAssertionCallback = Promise<RTCIdentityValidationResult>\n(DOMString assertion, DOMString origin);",
@@ -289,7 +297,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-identity/#dom-validateassertioncallback"
       },
       "RTCIdentityAssertionResult": {
         "fragment": "dictionary RTCIdentityAssertionResult {\n    required RTCIdentityProviderDetails idp;\n    required DOMString                  assertion;\n};",
@@ -310,7 +319,8 @@
               "idlType": "RTCIdentityProviderDetails"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertionresult-idp"
           },
           {
             "type": "field",
@@ -325,11 +335,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertionresult-assertion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertionresult"
       },
       "RTCIdentityProviderDetails": {
         "fragment": "dictionary RTCIdentityProviderDetails {\n    required DOMString domain;\n             DOMString protocol = \"default\";\n};",
@@ -350,7 +362,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderdetails-domain"
           },
           {
             "type": "field",
@@ -368,11 +381,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderdetails-protocol"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderdetails"
       },
       "RTCIdentityValidationResult": {
         "fragment": "dictionary RTCIdentityValidationResult {\n    required DOMString identity;\n    required DOMString contents;\n};",
@@ -393,7 +408,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult-identity"
           },
           {
             "type": "field",
@@ -408,11 +424,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult-contents"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult"
       },
       "RTCIdentityProviderOptions": {
         "fragment": "dictionary RTCIdentityProviderOptions {\n    DOMString protocol = \"default\";\n    DOMString usernameHint;\n    DOMString peerIdentity;\n};",
@@ -436,7 +454,8 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovideroptions-protocol"
           },
           {
             "type": "field",
@@ -451,7 +470,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovideroptions-usernamehint"
           },
           {
             "type": "field",
@@ -466,11 +486,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovideroptions-peeridentity"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovideroptions"
       },
       "RTCIdentityAssertion": {
         "fragment": "[Exposed=Window]\ninterface RTCIdentityAssertion {\n    constructor(DOMString idp, DOMString name);\n    attribute DOMString idp;\n    attribute DOMString name;\n};",
@@ -514,7 +536,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertion-constructor"
           },
           {
             "type": "attribute",
@@ -529,7 +552,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertion-idp"
           },
           {
             "type": "attribute",
@@ -544,7 +568,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertion-name"
           }
         ],
         "extAttrs": [
@@ -558,7 +583,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertion"
       },
       "RTCErrorDetailTypeIdp": {
         "fragment": "// This is an extension of RTCErrorDetailType from [[WEBRTC-PC]]\n// Unfortunately, WebIDL does not support partial enums (yet).\n//\n// partial enum RTCErrorDetailType {\nenum RTCErrorDetailTypeIdp {\n  \"idp-bad-script-failure\",\n  \"idp-execution-failure\",\n  \"idp-load-failure\",\n  \"idp-need-login\",\n  \"idp-timeout\",\n  \"idp-tls-failure\",\n  \"idp-token-expired\",\n  \"idp-token-invalid\",\n};",
@@ -567,38 +593,47 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "idp-bad-script-failure"
+            "value": "idp-bad-script-failure",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-bad-script-failure"
           },
           {
             "type": "enum-value",
-            "value": "idp-execution-failure"
+            "value": "idp-execution-failure",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-execution-failure"
           },
           {
             "type": "enum-value",
-            "value": "idp-load-failure"
+            "value": "idp-load-failure",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-load-failure"
           },
           {
             "type": "enum-value",
-            "value": "idp-need-login"
+            "value": "idp-need-login",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-need-login"
           },
           {
             "type": "enum-value",
-            "value": "idp-timeout"
+            "value": "idp-timeout",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-timeout"
           },
           {
             "type": "enum-value",
-            "value": "idp-tls-failure"
+            "value": "idp-tls-failure",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-tls-failure"
           },
           {
             "type": "enum-value",
-            "value": "idp-token-expired"
+            "value": "idp-token-expired",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-token-expired"
           },
           {
             "type": "enum-value",
-            "value": "idp-token-invalid"
+            "value": "idp-token-invalid",
+            "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp-idp-token-invalid"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrordetailtypeidp"
       }
     },
     "idlExtendedNames": {
@@ -657,7 +692,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-setidentityprovider"
             },
             {
               "type": "operation",
@@ -681,7 +717,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-getidentityassertion"
             },
             {
               "type": "attribute",
@@ -705,7 +742,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-peeridentity"
             },
             {
               "type": "attribute",
@@ -720,7 +758,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-idploginurl"
             },
             {
               "type": "attribute",
@@ -735,7 +774,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-idperrorinfo"
             }
           ],
           "extAttrs": [],
@@ -762,7 +802,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcconfiguration-peeridentity"
             }
           ],
           "extAttrs": [],
@@ -789,7 +830,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerror-httprequeststatuscode"
             }
           ],
           "extAttrs": [],
@@ -816,7 +858,8 @@
                 "idlType": "long"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-rtcerrorinit-httprequeststatuscode"
             }
           ],
           "extAttrs": [],
@@ -843,7 +886,8 @@
                 "idlType": "DOMString"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-mediastreamconstraints-peeridentity"
             }
           ],
           "extAttrs": [],
@@ -870,7 +914,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-mediastreamtrack-isolated"
             },
             {
               "type": "attribute",
@@ -885,7 +930,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-identity/#dom-mediastreamtrack-onisolationchange"
             }
           ],
           "extAttrs": [],

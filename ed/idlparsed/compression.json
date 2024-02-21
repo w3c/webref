@@ -21,18 +21,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "deflate"
+            "value": "deflate",
+            "href": "https://wicg.github.io/compression/#dom-compressionformat-deflate"
           },
           {
             "type": "enum-value",
-            "value": "deflate-raw"
+            "value": "deflate-raw",
+            "href": "https://wicg.github.io/compression/#dom-compressionformat-deflate-raw"
           },
           {
             "type": "enum-value",
-            "value": "gzip"
+            "value": "gzip",
+            "href": "https://wicg.github.io/compression/#dom-compressionformat-gzip"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/compression/#enumdef-compressionformat"
       },
       "CompressionStream": {
         "fragment": "[Exposed=*]\ninterface CompressionStream {\n  constructor(CompressionFormat format);\n};",
@@ -60,7 +64,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/compression/#dom-compressionstream-compressionstream"
           }
         ],
         "extAttrs": [
@@ -74,7 +79,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/compression/#compressionstream"
       },
       "DecompressionStream": {
         "fragment": "[Exposed=*]\ninterface DecompressionStream {\n  constructor(CompressionFormat format);\n};",
@@ -102,7 +108,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/compression/#dom-decompressionstream-decompressionstream"
           }
         ],
         "extAttrs": [
@@ -116,7 +123,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/compression/#decompressionstream"
       }
     },
     "idlExtendedNames": {

@@ -46,18 +46,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "closed"
+            "value": "closed",
+            "href": "https://w3c.github.io/media-source/#dom-readystate-closed"
           },
           {
             "type": "enum-value",
-            "value": "open"
+            "value": "open",
+            "href": "https://w3c.github.io/media-source/#dom-readystate-open"
           },
           {
             "type": "enum-value",
-            "value": "ended"
+            "value": "ended",
+            "href": "https://w3c.github.io/media-source/#dom-readystate-ended"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/media-source/#dom-readystate"
       },
       "EndOfStreamError": {
         "fragment": "enum EndOfStreamError {\n  \"network\",\n  \"decode\",\n};",
@@ -66,14 +70,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "network"
+            "value": "network",
+            "href": "https://w3c.github.io/media-source/#dom-endofstreamerror-network"
           },
           {
             "type": "enum-value",
-            "value": "decode"
+            "value": "decode",
+            "href": "https://w3c.github.io/media-source/#dom-endofstreamerror-decode"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/media-source/#dom-endofstreamerror"
       },
       "MediaSource": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n\n    [ SameObject, Exposed=DedicatedWorker ]\n    readonly              attribute MediaSourceHandle   handle;\n\n    readonly              attribute SourceBufferList    sourceBuffers;\n    readonly              attribute SourceBufferList    activeSourceBuffers;\n    readonly              attribute ReadyState          readyState;\n                          attribute unrestricted double duration;\n                          attribute EventHandler        onsourceopen;\n                          attribute EventHandler        onsourceended;\n                          attribute EventHandler        onsourceclose;\n    static readonly       attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer          addSourceBuffer (DOMString type);\n    undefined             removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined             endOfStream (optional EndOfStreamError error);\n    undefined             setLiveSeekableRange (double start, double end);\n    undefined             clearLiveSeekableRange ();\n    static boolean        isTypeSupported (DOMString type);\n};",
@@ -84,7 +91,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-constructor"
           },
           {
             "type": "attribute",
@@ -115,7 +123,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-handle"
           },
           {
             "type": "attribute",
@@ -130,7 +139,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-sourcebuffers"
           },
           {
             "type": "attribute",
@@ -145,7 +155,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-activesourcebuffers"
           },
           {
             "type": "attribute",
@@ -160,7 +171,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-readystate"
           },
           {
             "type": "attribute",
@@ -175,7 +187,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-duration"
           },
           {
             "type": "attribute",
@@ -190,7 +203,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceopen"
           },
           {
             "type": "attribute",
@@ -205,7 +219,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceended"
           },
           {
             "type": "attribute",
@@ -220,7 +235,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceclose"
           },
           {
             "type": "attribute",
@@ -235,7 +251,8 @@
             },
             "extAttrs": [],
             "special": "static",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-canconstructindedicatedworker"
           },
           {
             "type": "operation",
@@ -267,7 +284,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-addsourcebuffer"
           },
           {
             "type": "operation",
@@ -299,7 +317,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-removesourcebuffer"
           },
           {
             "type": "operation",
@@ -331,7 +350,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-endofstream"
           },
           {
             "type": "operation",
@@ -379,7 +399,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-setliveseekablerange"
           },
           {
             "type": "operation",
@@ -394,7 +415,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-clearliveseekablerange"
           },
           {
             "type": "operation",
@@ -426,7 +448,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://w3c.github.io/media-source/#dom-mediasource-istypesupported"
           }
         ],
         "extAttrs": [
@@ -447,7 +470,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-mediasource"
       },
       "MediaSourceHandle": {
         "fragment": "[Transferable, Exposed=(Window,DedicatedWorker)]\ninterface MediaSourceHandle {};",
@@ -479,7 +503,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-mediasourcehandle"
       },
       "AppendMode": {
         "fragment": "enum AppendMode {\n  \"segments\",\n  \"sequence\",\n};",
@@ -488,14 +513,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "segments"
+            "value": "segments",
+            "href": "https://w3c.github.io/media-source/#dom-appendmode-segments"
           },
           {
             "type": "enum-value",
-            "value": "sequence"
+            "value": "sequence",
+            "href": "https://w3c.github.io/media-source/#dom-appendmode-sequence"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/media-source/#dom-appendmode"
       },
       "SourceBuffer": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
@@ -516,7 +544,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-mode"
           },
           {
             "type": "attribute",
@@ -531,7 +560,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-updating"
           },
           {
             "type": "attribute",
@@ -546,7 +576,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-buffered"
           },
           {
             "type": "attribute",
@@ -561,7 +592,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-timestampoffset"
           },
           {
             "type": "attribute",
@@ -576,7 +608,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-audiotracks"
           },
           {
             "type": "attribute",
@@ -591,7 +624,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-videotracks"
           },
           {
             "type": "attribute",
@@ -606,7 +640,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-texttracks"
           },
           {
             "type": "attribute",
@@ -621,7 +656,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendwindowstart"
           },
           {
             "type": "attribute",
@@ -636,7 +672,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendwindowend"
           },
           {
             "type": "attribute",
@@ -651,7 +688,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdatestart"
           },
           {
             "type": "attribute",
@@ -666,7 +704,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdate"
           },
           {
             "type": "attribute",
@@ -681,7 +720,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-onupdateend"
           },
           {
             "type": "attribute",
@@ -696,7 +736,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-onerror"
           },
           {
             "type": "attribute",
@@ -711,7 +752,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-onabort"
           },
           {
             "type": "operation",
@@ -743,7 +785,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-appendbuffer"
           },
           {
             "type": "operation",
@@ -758,7 +801,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-abort"
           },
           {
             "type": "operation",
@@ -790,7 +834,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-changetype"
           },
           {
             "type": "operation",
@@ -838,7 +883,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-remove"
           }
         ],
         "extAttrs": [
@@ -859,7 +905,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-sourcebuffer"
       },
       "SourceBufferList": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n    readonly        attribute unsigned long length;\n                    attribute EventHandler  onaddsourcebuffer;\n                    attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
@@ -880,7 +927,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebufferlist-length"
           },
           {
             "type": "attribute",
@@ -895,7 +943,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebufferlist-onaddsourcebuffer"
           },
           {
             "type": "attribute",
@@ -910,7 +959,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-sourcebufferlist-onremovesourcebuffer"
           },
           {
             "type": "operation",
@@ -963,7 +1013,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-sourcebufferlist"
       },
       "ManagedMediaSource": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedMediaSource : MediaSource {\n  constructor();\n  readonly attribute boolean streaming;\n  attribute EventHandler onstartstreaming;\n  attribute EventHandler onendstreaming;\n};",
@@ -974,7 +1025,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/media-source/#dom-managedmediasource-constructor"
           },
           {
             "type": "attribute",
@@ -989,7 +1041,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-managedmediasource-streaming"
           },
           {
             "type": "attribute",
@@ -1004,7 +1057,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-managedmediasource-onstartstreaming"
           },
           {
             "type": "attribute",
@@ -1019,7 +1073,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-managedmediasource-onendstreaming"
           }
         ],
         "extAttrs": [
@@ -1040,7 +1095,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-managedmediasource"
       },
       "BufferedChangeEvent": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface BufferedChangeEvent : Event {\n  constructor(DOMString type, optional BufferedChangeEventInit eventInitDict = {});\n\n  [SameObject] readonly attribute TimeRanges addedRanges;\n  [SameObject] readonly attribute TimeRanges removedRanges;\n};",
@@ -1086,7 +1142,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/media-source/#dom-bufferedchangeevent-constructor"
           },
           {
             "type": "attribute",
@@ -1108,7 +1165,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-bufferedchangeevent-addedranges"
           },
           {
             "type": "attribute",
@@ -1130,7 +1188,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/media-source/#dom-bufferedchangeevent-removedranges"
           }
         ],
         "extAttrs": [
@@ -1151,7 +1210,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-bufferedchangeevent"
       },
       "BufferedChangeEventInit": {
         "fragment": "dictionary BufferedChangeEventInit : EventInit {\n  TimeRanges addedRanges;\n  TimeRanges removedRanges;\n};",
@@ -1172,7 +1232,8 @@
               "idlType": "TimeRanges"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/media-source/#dom-bufferedchangeeventinit-addedranges"
           },
           {
             "type": "field",
@@ -1187,11 +1248,13 @@
               "idlType": "TimeRanges"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/media-source/#dom-bufferedchangeeventinit-removedranges"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-bufferedchangeeventinit"
       },
       "ManagedSourceBuffer": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedSourceBuffer : SourceBuffer {\n  attribute EventHandler onbufferedchange;\n};",
@@ -1212,7 +1275,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/media-source/#dom-managedsourcebuffer-onbufferedchange"
           }
         ],
         "extAttrs": [
@@ -1233,7 +1297,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/media-source/#dom-managedsourcebuffer"
       }
     },
     "idlExtendedNames": {
@@ -1257,7 +1322,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/media-source/#dom-audiotrack-sourcebuffer"
             }
           ],
           "extAttrs": [
@@ -1301,7 +1367,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/media-source/#dom-videotrack-sourcebuffer"
             }
           ],
           "extAttrs": [
@@ -1345,7 +1412,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/media-source/#dom-texttrack-sourcebuffer"
             }
           ],
           "extAttrs": [

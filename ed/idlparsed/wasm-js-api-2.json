@@ -36,7 +36,8 @@
               "idlType": "Module"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblyinstantiatedsource-module"
           },
           {
             "type": "field",
@@ -51,11 +52,13 @@
               "idlType": "Instance"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblyinstantiatedsource-instance"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblyinstantiatedsource"
       },
       "WebAssembly": {
         "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
@@ -93,7 +96,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-validate"
           },
           {
             "type": "operation",
@@ -134,7 +138,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-compile"
           },
           {
             "type": "operation",
@@ -191,7 +196,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate"
           },
           {
             "type": "operation",
@@ -248,7 +254,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate-moduleobject-importobject"
           }
         ],
         "extAttrs": [
@@ -262,7 +269,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
       },
       "ImportExportKind": {
         "fragment": "enum ImportExportKind {\n  \"function\",\n  \"table\",\n  \"memory\",\n  \"global\"\n};",
@@ -271,22 +279,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "function"
+            "value": "function",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-function"
           },
           {
             "type": "enum-value",
-            "value": "table"
+            "value": "table",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-table"
           },
           {
             "type": "enum-value",
-            "value": "memory"
+            "value": "memory",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-memory"
           },
           {
             "type": "enum-value",
-            "value": "global"
+            "value": "global",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-global"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webassembly.github.io/spec/js-api/#enumdef-importexportkind"
       },
       "ModuleExportDescriptor": {
         "fragment": "dictionary ModuleExportDescriptor {\n  required USVString name;\n  required ImportExportKind kind;\n  // Note: Other fields such as signature may be added in the future.\n};",
@@ -307,7 +320,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-moduleexportdescriptor-name"
           },
           {
             "type": "field",
@@ -322,11 +336,13 @@
               "idlType": "ImportExportKind"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-moduleexportdescriptor-kind"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-moduleexportdescriptor"
       },
       "ModuleImportDescriptor": {
         "fragment": "dictionary ModuleImportDescriptor {\n  required USVString module;\n  required USVString name;\n  required ImportExportKind kind;\n};",
@@ -347,7 +363,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-moduleimportdescriptor-module"
           },
           {
             "type": "field",
@@ -362,7 +379,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-moduleimportdescriptor-name"
           },
           {
             "type": "field",
@@ -377,11 +395,13 @@
               "idlType": "ImportExportKind"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-moduleimportdescriptor-kind"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-moduleimportdescriptor"
       },
       "Module": {
         "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
@@ -409,7 +429,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-module-module"
           },
           {
             "type": "operation",
@@ -450,7 +471,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-module-exports"
           },
           {
             "type": "operation",
@@ -491,7 +513,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-module-imports"
           },
           {
             "type": "operation",
@@ -548,7 +571,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-module-customsections"
           }
         ],
         "extAttrs": [
@@ -571,7 +595,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#module"
       },
       "Instance": {
         "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
@@ -615,7 +640,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-instance-instance"
           },
           {
             "type": "attribute",
@@ -630,7 +656,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-instance-exports"
           }
         ],
         "extAttrs": [
@@ -653,7 +680,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#instance"
       },
       "MemoryDescriptor": {
         "fragment": "dictionary MemoryDescriptor {\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
@@ -681,7 +709,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-initial"
           },
           {
             "type": "field",
@@ -703,11 +732,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-maximum"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor"
       },
       "Memory": {
         "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
@@ -735,7 +766,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memory-memory"
           },
           {
             "type": "operation",
@@ -774,7 +806,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memory-grow"
           },
           {
             "type": "attribute",
@@ -789,7 +822,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memory-buffer"
           }
         ],
         "extAttrs": [
@@ -812,7 +846,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#memory"
       },
       "TableKind": {
         "fragment": "enum TableKind {\n  \"externref\",\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
@@ -821,14 +856,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "externref"
+            "value": "externref",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tablekind-externref"
           },
           {
             "type": "enum-value",
-            "value": "anyfunc"
+            "value": "anyfunc",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tablekind-anyfunc"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webassembly.github.io/spec/js-api/#enumdef-tablekind"
       },
       "TableDescriptor": {
         "fragment": "dictionary TableDescriptor {\n  required TableKind element;\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
@@ -849,7 +887,8 @@
               "idlType": "TableKind"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-element"
           },
           {
             "type": "field",
@@ -871,7 +910,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-initial"
           },
           {
             "type": "field",
@@ -893,11 +933,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-maximum"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-tabledescriptor"
       },
       "Table": {
         "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
@@ -941,7 +983,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-table-table"
           },
           {
             "type": "operation",
@@ -996,7 +1039,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-table-grow"
           },
           {
             "type": "operation",
@@ -1035,7 +1079,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-table-get"
           },
           {
             "type": "operation",
@@ -1090,7 +1135,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-table-set"
           },
           {
             "type": "attribute",
@@ -1105,7 +1151,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-table-length"
           }
         ],
         "extAttrs": [
@@ -1128,7 +1175,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#table"
       },
       "ValueType": {
         "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\",\n  \"v128\",\n  \"externref\",\n  \"anyfunc\",\n};",
@@ -1137,34 +1185,42 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "i32"
+            "value": "i32",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-i32"
           },
           {
             "type": "enum-value",
-            "value": "i64"
+            "value": "i64",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-i64"
           },
           {
             "type": "enum-value",
-            "value": "f32"
+            "value": "f32",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-f32"
           },
           {
             "type": "enum-value",
-            "value": "f64"
+            "value": "f64",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-f64"
           },
           {
             "type": "enum-value",
-            "value": "v128"
+            "value": "v128",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-v128"
           },
           {
             "type": "enum-value",
-            "value": "externref"
+            "value": "externref",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-externref"
           },
           {
             "type": "enum-value",
-            "value": "anyfunc"
+            "value": "anyfunc",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-valuetype-anyfunc"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webassembly.github.io/spec/js-api/#enumdef-valuetype"
       },
       "GlobalDescriptor": {
         "fragment": "dictionary GlobalDescriptor {\n  required ValueType value;\n  boolean mutable = false;\n};",
@@ -1185,7 +1241,8 @@
               "idlType": "ValueType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-value"
           },
           {
             "type": "field",
@@ -1203,11 +1260,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-mutable"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-globaldescriptor"
       },
       "Global": {
         "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
@@ -1251,7 +1310,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-global-global"
           },
           {
             "type": "operation",
@@ -1266,7 +1326,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-global-valueof"
           },
           {
             "type": "attribute",
@@ -1281,7 +1342,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-global-value"
           }
         ],
         "extAttrs": [
@@ -1304,7 +1366,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#global"
       }
     },
     "idlExtendedNames": {},

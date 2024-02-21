@@ -30,18 +30,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "required"
+            "value": "required",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-required"
           },
           {
             "type": "enum-value",
-            "value": "optional"
+            "value": "optional",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-optional"
           },
           {
             "type": "enum-value",
-            "value": "not-allowed"
+            "value": "not-allowed",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-not-allowed"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement"
       },
       "MediaKeySystemConfiguration": {
         "fragment": "dictionary MediaKeySystemConfiguration {\n             DOMString                               label = \"\";\n             sequence<DOMString>                     initDataTypes = [];\n             sequence<MediaKeySystemMediaCapability> audioCapabilities = [];\n             sequence<MediaKeySystemMediaCapability> videoCapabilities = [];\n             MediaKeysRequirement                    distinctiveIdentifier = \"optional\";\n             MediaKeysRequirement                    persistentState = \"optional\";\n             sequence<DOMString>                     sessionTypes;\n};",
@@ -65,7 +69,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-label"
           },
           {
             "type": "field",
@@ -92,7 +97,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes"
           },
           {
             "type": "field",
@@ -119,7 +125,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities"
           },
           {
             "type": "field",
@@ -146,7 +153,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities"
           },
           {
             "type": "field",
@@ -164,7 +172,8 @@
               "type": "string",
               "value": "optional"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier"
           },
           {
             "type": "field",
@@ -182,7 +191,8 @@
               "type": "string",
               "value": "optional"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate"
           },
           {
             "type": "field",
@@ -206,11 +216,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration"
       },
       "MediaKeySystemMediaCapability": {
         "fragment": "dictionary MediaKeySystemMediaCapability {\n   DOMString contentType = \"\";\n   DOMString? encryptionScheme = null;\n   DOMString robustness = \"\";\n};",
@@ -234,7 +246,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-contenttype"
           },
           {
             "type": "field",
@@ -251,7 +264,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme"
           },
           {
             "type": "field",
@@ -269,11 +283,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-robustness"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability"
       },
       "MediaKeySystemAccess": {
         "fragment": "[Exposed=Window, SecureContext] interface MediaKeySystemAccess {\n    readonly        attribute DOMString keySystem;\n    MediaKeySystemConfiguration getConfiguration ();\n    Promise<MediaKeys>          createMediaKeys ();\n};",
@@ -294,7 +310,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-keysystem"
           },
           {
             "type": "operation",
@@ -309,7 +326,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-getconfiguration"
           },
           {
             "type": "operation",
@@ -333,7 +351,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-createmediakeys"
           }
         ],
         "extAttrs": [
@@ -353,7 +372,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess"
       },
       "MediaKeySessionType": {
         "fragment": "enum MediaKeySessionType {\n    \"temporary\",\n    \"persistent-license\"\n};",
@@ -362,14 +382,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "temporary"
+            "value": "temporary",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype-temporary"
           },
           {
             "type": "enum-value",
-            "value": "persistent-license"
+            "value": "persistent-license",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype-persistent-license"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype"
       },
       "MediaKeys": {
         "fragment": "[Exposed=Window, SecureContext] interface MediaKeys {\n    MediaKeySession  createSession (optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<MediaKeyStatus> getStatusForPolicy (optional MediaKeysPolicy policy = {});\n    Promise<boolean> setServerCertificate (BufferSource serverCertificate);\n};",
@@ -410,7 +433,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys-createsession"
           },
           {
             "type": "operation",
@@ -453,7 +477,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys-getstatusforpolicy"
           },
           {
             "type": "operation",
@@ -494,7 +519,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys-setservercertificate"
           }
         ],
         "extAttrs": [
@@ -514,7 +540,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys"
       },
       "MediaKeysPolicy": {
         "fragment": "dictionary MediaKeysPolicy {\n    HDCPVersion minHdcpVersion;\n};",
@@ -535,11 +562,13 @@
               "idlType": "HDCPVersion"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeyspolicy-minhdcpversion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeyspolicy"
       },
       "HDCPVersion": {
         "fragment": "enum HDCPVersion {\n    \"1.0\",\n    \"1.1\",\n    \"1.2\",\n    \"1.3\",\n    \"1.4\",\n    \"2.0\",\n    \"2.1\",\n    \"2.2\",\n    \"2.3\",\n};",
@@ -548,42 +577,52 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "1.0"
+            "value": "1.0",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.0"
           },
           {
             "type": "enum-value",
-            "value": "1.1"
+            "value": "1.1",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.1"
           },
           {
             "type": "enum-value",
-            "value": "1.2"
+            "value": "1.2",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.2"
           },
           {
             "type": "enum-value",
-            "value": "1.3"
+            "value": "1.3",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.3"
           },
           {
             "type": "enum-value",
-            "value": "1.4"
+            "value": "1.4",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.4"
           },
           {
             "type": "enum-value",
-            "value": "2.0"
+            "value": "2.0",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.0"
           },
           {
             "type": "enum-value",
-            "value": "2.1"
+            "value": "2.1",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.1"
           },
           {
             "type": "enum-value",
-            "value": "2.2"
+            "value": "2.2",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.2"
           },
           {
             "type": "enum-value",
-            "value": "2.3"
+            "value": "2.3",
+            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.3"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion"
       },
       "MediaKeySessionClosedReason": {
         "fragment": "enum MediaKeySessionClosedReason {\n    \"internal-error\",\n    \"closed-by-application\",\n    \"release-acknowledged\",\n    \"hardware-context-reset\",\n    \"resource-evicted\"\n};",
@@ -592,26 +631,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "internal-error"
+            "value": "internal-error",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason-internal-error"
           },
           {
             "type": "enum-value",
-            "value": "closed-by-application"
+            "value": "closed-by-application",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason-closed-by-application"
           },
           {
             "type": "enum-value",
-            "value": "release-acknowledged"
+            "value": "release-acknowledged",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason-release-acknowledged"
           },
           {
             "type": "enum-value",
-            "value": "hardware-context-reset"
+            "value": "hardware-context-reset",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason-hardware-context-reset"
           },
           {
             "type": "enum-value",
-            "value": "resource-evicted"
+            "value": "resource-evicted",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason-resource-evicted"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason"
       },
       "MediaKeySession": {
         "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n    readonly        attribute DOMString                            sessionId;\n    readonly        attribute unrestricted double                  expiration;\n    readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n    readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                    attribute EventHandler                         onkeystatuseschange;\n                    attribute EventHandler                         onmessage;\n    Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n    Promise<boolean> load (DOMString sessionId);\n    Promise<undefined>    update (BufferSource response);\n    Promise<undefined>    close ();\n    Promise<undefined>    remove ();\n};",
@@ -632,7 +677,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-sessionid"
           },
           {
             "type": "attribute",
@@ -647,7 +693,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-expiration"
           },
           {
             "type": "attribute",
@@ -671,7 +718,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-closed"
           },
           {
             "type": "attribute",
@@ -686,7 +734,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-keystatuses"
           },
           {
             "type": "attribute",
@@ -701,7 +750,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onkeystatuseschange"
           },
           {
             "type": "attribute",
@@ -716,7 +766,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onmessage"
           },
           {
             "type": "operation",
@@ -773,7 +824,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-generaterequest"
           },
           {
             "type": "operation",
@@ -814,7 +866,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-load"
           },
           {
             "type": "operation",
@@ -855,7 +908,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-update"
           },
           {
             "type": "operation",
@@ -879,7 +933,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-close"
           },
           {
             "type": "operation",
@@ -903,7 +958,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-remove"
           }
         ],
         "extAttrs": [
@@ -923,7 +979,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession"
       },
       "MediaKeyStatusMap": {
         "fragment": "[Exposed=Window, SecureContext] interface MediaKeyStatusMap {\n    iterable<BufferSource,MediaKeyStatus>;\n    readonly        attribute unsigned long size;\n    boolean has (BufferSource keyId);\n    (MediaKeyStatus or undefined)     get (BufferSource keyId);\n};",
@@ -969,7 +1026,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-size"
           },
           {
             "type": "operation",
@@ -1001,7 +1059,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-has"
           },
           {
             "type": "operation",
@@ -1050,7 +1109,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-get"
           }
         ],
         "extAttrs": [
@@ -1070,7 +1130,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap"
       },
       "MediaKeyStatus": {
         "fragment": "enum MediaKeyStatus {\n    \"usable\",\n    \"expired\",\n    \"released\",\n    \"output-restricted\",\n    \"output-downscaled\",\n    \"usable-in-future\",\n    \"status-pending\",\n    \"internal-error\"\n};",
@@ -1079,38 +1140,47 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "usable"
+            "value": "usable",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-usable"
           },
           {
             "type": "enum-value",
-            "value": "expired"
+            "value": "expired",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-expired"
           },
           {
             "type": "enum-value",
-            "value": "released"
+            "value": "released",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-released"
           },
           {
             "type": "enum-value",
-            "value": "output-restricted"
+            "value": "output-restricted",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-output-restricted"
           },
           {
             "type": "enum-value",
-            "value": "output-downscaled"
+            "value": "output-downscaled",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-output-downscaled"
           },
           {
             "type": "enum-value",
-            "value": "usable-in-future"
+            "value": "usable-in-future",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-usable-in-future"
           },
           {
             "type": "enum-value",
-            "value": "status-pending"
+            "value": "status-pending",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-status-pending"
           },
           {
             "type": "enum-value",
-            "value": "internal-error"
+            "value": "internal-error",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-internal-error"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus"
       },
       "MediaKeyMessageType": {
         "fragment": "enum MediaKeyMessageType {\n    \"license-request\",\n    \"license-renewal\",\n    \"license-release\",\n    \"individualization-request\"\n};",
@@ -1119,22 +1189,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "license-request"
+            "value": "license-request",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-request"
           },
           {
             "type": "enum-value",
-            "value": "license-renewal"
+            "value": "license-renewal",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-renewal"
           },
           {
             "type": "enum-value",
-            "value": "license-release"
+            "value": "license-release",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-release"
           },
           {
             "type": "enum-value",
-            "value": "individualization-request"
+            "value": "individualization-request",
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-individualization-request"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype"
       },
       "MediaKeyMessageEvent": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface MediaKeyMessageEvent : Event {\n    constructor(DOMString type, MediaKeyMessageEventInit eventInitDict);\n    readonly        attribute MediaKeyMessageType messageType;\n    readonly        attribute ArrayBuffer         message;\n};",
@@ -1178,7 +1253,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-constructor"
           },
           {
             "type": "attribute",
@@ -1193,7 +1269,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-messagetype"
           },
           {
             "type": "attribute",
@@ -1208,7 +1285,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-message"
           }
         ],
         "extAttrs": [
@@ -1228,7 +1306,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent"
       },
       "MediaKeyMessageEventInit": {
         "fragment": "dictionary MediaKeyMessageEventInit : EventInit {\n             required MediaKeyMessageType messageType;\n             required ArrayBuffer         message;\n};",
@@ -1249,7 +1328,8 @@
               "idlType": "MediaKeyMessageType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-messagetype"
           },
           {
             "type": "field",
@@ -1264,11 +1344,13 @@
               "idlType": "ArrayBuffer"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-message"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit"
       },
       "MediaEncryptedEvent": {
         "fragment": "[Exposed=Window]\ninterface MediaEncryptedEvent : Event {\n    constructor(DOMString type, optional MediaEncryptedEventInit eventInitDict = {});\n    readonly        attribute DOMString    initDataType;\n    readonly        attribute ArrayBuffer? initData;\n};",
@@ -1314,7 +1396,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-constructor"
           },
           {
             "type": "attribute",
@@ -1329,7 +1412,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdatatype"
           },
           {
             "type": "attribute",
@@ -1344,7 +1428,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdata"
           }
         ],
         "extAttrs": [
@@ -1358,7 +1443,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent"
       },
       "MediaEncryptedEventInit": {
         "fragment": "dictionary MediaEncryptedEventInit : EventInit {\n             DOMString    initDataType = \"\";\n             ArrayBuffer? initData = null;\n};",
@@ -1382,7 +1468,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit-initdatatype"
           },
           {
             "type": "field",
@@ -1399,11 +1486,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit-initdata"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit"
       }
     },
     "idlExtendedNames": {
@@ -1485,7 +1574,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/encrypted-media/#dom-navigator-requestmediakeysystemaccess"
             }
           ],
           "extAttrs": [
@@ -1529,7 +1619,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys"
             },
             {
               "type": "attribute",
@@ -1544,7 +1635,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onencrypted"
             },
             {
               "type": "attribute",
@@ -1559,7 +1651,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onwaitingforkey"
             },
             {
               "type": "operation",
@@ -1607,7 +1700,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-setmediakeys"
             }
           ],
           "extAttrs": [

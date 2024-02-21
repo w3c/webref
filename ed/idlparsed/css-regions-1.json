@@ -57,7 +57,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-regions-1/#namedflowmap"
       },
       "NamedFlow": {
         "fragment": "[Exposed=Window]\ninterface NamedFlow : EventTarget {\n  readonly attribute CSSOMString name;\n  readonly attribute boolean overset;\n  sequence<Element> getRegions();\n  readonly attribute short firstEmptyRegionIndex;\n  sequence<Node> getContent();\n  sequence<Element> getRegionsByContent(Node node);\n};",
@@ -78,7 +79,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-name"
           },
           {
             "type": "attribute",
@@ -93,7 +95,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-overset"
           },
           {
             "type": "operation",
@@ -117,7 +120,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-getregions"
           },
           {
             "type": "attribute",
@@ -132,7 +136,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-firstemptyregionindex"
           },
           {
             "type": "operation",
@@ -156,7 +161,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-getcontent"
           },
           {
             "type": "operation",
@@ -197,7 +203,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-namedflow-getregionsbycontent"
           }
         ],
         "extAttrs": [
@@ -211,7 +218,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-regions-1/#namedflow"
       },
       "Region": {
         "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
@@ -232,7 +240,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-region-regionoverset"
           },
           {
             "type": "operation",
@@ -256,11 +265,13 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-regions-1/#dom-region-getregionflowranges"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-regions-1/#region"
       }
     },
     "idlExtendedNames": {
@@ -284,7 +295,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-regions-1/#dom-document-namedflows"
             }
           ],
           "extAttrs": [],

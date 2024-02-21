@@ -81,7 +81,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsystem-issessionsupported"
           },
           {
             "type": "operation",
@@ -147,7 +148,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsystem-requestsession"
           },
           {
             "type": "attribute",
@@ -162,7 +164,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsystem-ondevicechange"
           }
         ],
         "extAttrs": [
@@ -182,7 +185,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrsystem"
       },
       "XRSessionMode": {
         "fragment": "enum XRSessionMode {\n  \"inline\",\n  \"immersive-vr\",\n  \"immersive-ar\"\n};",
@@ -191,18 +195,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "inline"
+            "value": "inline",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline"
           },
           {
             "type": "enum-value",
-            "value": "immersive-vr"
+            "value": "immersive-vr",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr"
           },
           {
             "type": "enum-value",
-            "value": "immersive-ar"
+            "value": "immersive-ar",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-ar"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xrsessionmode"
       },
       "XRSessionInit": {
         "fragment": "dictionary XRSessionInit {\n  sequence<DOMString> requiredFeatures;\n  sequence<DOMString> optionalFeatures;\n};",
@@ -232,7 +240,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures"
           },
           {
             "type": "field",
@@ -256,11 +265,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrsessioninit"
       },
       "XRVisibilityState": {
         "fragment": "enum XRVisibilityState {\n  \"visible\",\n  \"visible-blurred\",\n  \"hidden\",\n};",
@@ -269,18 +280,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "visible"
+            "value": "visible",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitystate-visible"
           },
           {
             "type": "enum-value",
-            "value": "visible-blurred"
+            "value": "visible-blurred",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitystate-visible-blurred"
           },
           {
             "type": "enum-value",
-            "value": "hidden"
+            "value": "hidden",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitystate-hidden"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xrvisibilitystate"
       },
       "XRSession": {
         "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n  readonly attribute FrozenArray<DOMString> enabledFeatures;\n  readonly attribute boolean isSystemKeyboardSupported;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
@@ -301,7 +316,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-visibilitystate"
           },
           {
             "type": "attribute",
@@ -316,7 +332,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-framerate"
           },
           {
             "type": "attribute",
@@ -331,7 +348,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-supportedframerates"
           },
           {
             "type": "attribute",
@@ -353,7 +371,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-renderstate"
           },
           {
             "type": "attribute",
@@ -375,7 +394,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-inputsources"
           },
           {
             "type": "attribute",
@@ -399,7 +419,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-enabledfeatures"
           },
           {
             "type": "attribute",
@@ -414,7 +435,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-issystemkeyboardsupported"
           },
           {
             "type": "operation",
@@ -448,7 +470,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updaterenderstate"
           },
           {
             "type": "operation",
@@ -489,7 +512,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updatetargetframerate"
           },
           {
             "type": "operation",
@@ -537,7 +561,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestreferencespace"
           },
           {
             "type": "operation",
@@ -569,7 +594,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe"
           },
           {
             "type": "operation",
@@ -601,7 +627,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-cancelanimationframe"
           },
           {
             "type": "operation",
@@ -625,7 +652,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-end"
           },
           {
             "type": "attribute",
@@ -640,7 +668,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onend"
           },
           {
             "type": "attribute",
@@ -655,7 +684,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-oninputsourceschange"
           },
           {
             "type": "attribute",
@@ -670,7 +700,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselect"
           },
           {
             "type": "attribute",
@@ -685,7 +716,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselectstart"
           },
           {
             "type": "attribute",
@@ -700,7 +732,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselectend"
           },
           {
             "type": "attribute",
@@ -715,7 +748,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueeze"
           },
           {
             "type": "attribute",
@@ -730,7 +764,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezestart"
           },
           {
             "type": "attribute",
@@ -745,7 +780,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezeend"
           },
           {
             "type": "attribute",
@@ -760,7 +796,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onvisibilitychange"
           },
           {
             "type": "attribute",
@@ -775,7 +812,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onframeratechange"
           }
         ],
         "extAttrs": [
@@ -795,7 +833,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrsession"
       },
       "XRRenderStateInit": {
         "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
@@ -816,7 +855,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-depthnear"
           },
           {
             "type": "field",
@@ -831,7 +871,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-depthfar"
           },
           {
             "type": "field",
@@ -846,7 +887,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-inlineverticalfieldofview"
           },
           {
             "type": "field",
@@ -861,7 +903,8 @@
               "idlType": "XRWebGLLayer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-baselayer"
           },
           {
             "type": "field",
@@ -885,11 +928,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-layers"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit"
       },
       "XRRenderState": {
         "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
@@ -910,7 +955,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthnear"
           },
           {
             "type": "attribute",
@@ -925,7 +971,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthfar"
           },
           {
             "type": "attribute",
@@ -940,7 +987,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-inlineverticalfieldofview"
           },
           {
             "type": "attribute",
@@ -955,7 +1003,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-baselayer"
           }
         ],
         "extAttrs": [
@@ -975,7 +1024,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrrenderstate"
       },
       "XRFrameRequestCallback": {
         "fragment": "callback XRFrameRequestCallback = undefined (DOMHighResTimeStamp time, XRFrame frame);",
@@ -1023,7 +1073,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#callbackdef-xrframerequestcallback"
       },
       "XRFrame": {
         "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n  readonly attribute DOMHighResTimeStamp predictedDisplayTime;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
@@ -1051,7 +1102,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrframe-session"
           },
           {
             "type": "attribute",
@@ -1066,7 +1118,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrframe-predicteddisplaytime"
           },
           {
             "type": "operation",
@@ -1098,7 +1151,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrframe-getviewerpose"
           },
           {
             "type": "operation",
@@ -1146,7 +1200,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrframe-getpose"
           }
         ],
         "extAttrs": [
@@ -1166,7 +1221,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrframe"
       },
       "XRSpace": {
         "fragment": "[SecureContext, Exposed=Window] interface XRSpace : EventTarget {\n\n};",
@@ -1191,7 +1247,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrspace"
       },
       "XRReferenceSpaceType": {
         "fragment": "enum XRReferenceSpaceType {\n  \"viewer\",\n  \"local\",\n  \"local-floor\",\n  \"bounded-floor\",\n  \"unbounded\"\n};",
@@ -1200,26 +1257,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "viewer"
+            "value": "viewer",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-viewer"
           },
           {
             "type": "enum-value",
-            "value": "local"
+            "value": "local",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-local"
           },
           {
             "type": "enum-value",
-            "value": "local-floor"
+            "value": "local-floor",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-local-floor"
           },
           {
             "type": "enum-value",
-            "value": "bounded-floor"
+            "value": "bounded-floor",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-bounded-floor"
           },
           {
             "type": "enum-value",
-            "value": "unbounded"
+            "value": "unbounded",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-unbounded"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xrreferencespacetype"
       },
       "XRReferenceSpace": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRReferenceSpace : XRSpace {\n  [NewObject] XRReferenceSpace getOffsetReferenceSpace(XRRigidTransform originOffset);\n\n  attribute EventHandler onreset;\n};",
@@ -1264,7 +1327,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespace-getoffsetreferencespace"
           },
           {
             "type": "attribute",
@@ -1279,7 +1343,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespace-onreset"
           }
         ],
         "extAttrs": [
@@ -1299,7 +1364,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrreferencespace"
       },
       "XRBoundedReferenceSpace": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRBoundedReferenceSpace : XRReferenceSpace {\n  readonly attribute FrozenArray<DOMPointReadOnly> boundsGeometry;\n};",
@@ -1329,7 +1395,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrboundedreferencespace-boundsgeometry"
           }
         ],
         "extAttrs": [
@@ -1349,7 +1416,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrboundedreferencespace"
       },
       "XREye": {
         "fragment": "enum XREye {\n  \"none\",\n  \"left\",\n  \"right\"\n};",
@@ -1358,18 +1426,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://immersive-web.github.io/webxr/#dom-xreye-none"
           },
           {
             "type": "enum-value",
-            "value": "left"
+            "value": "left",
+            "href": "https://immersive-web.github.io/webxr/#dom-xreye-left"
           },
           {
             "type": "enum-value",
-            "value": "right"
+            "value": "right",
+            "href": "https://immersive-web.github.io/webxr/#dom-xreye-right"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xreye"
       },
       "XRView": {
         "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
@@ -1390,7 +1462,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-eye"
           },
           {
             "type": "attribute",
@@ -1405,7 +1478,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-projectionmatrix"
           },
           {
             "type": "attribute",
@@ -1427,7 +1501,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-transform"
           },
           {
             "type": "attribute",
@@ -1442,7 +1517,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-recommendedviewportscale"
           },
           {
             "type": "operation",
@@ -1474,7 +1550,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-requestviewportscale"
           }
         ],
         "extAttrs": [
@@ -1494,7 +1571,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrview"
       },
       "XRViewport": {
         "fragment": "[SecureContext, Exposed=Window] interface XRViewport {\n  readonly attribute long x;\n  readonly attribute long y;\n  readonly attribute long width;\n  readonly attribute long height;\n};",
@@ -1515,7 +1593,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-x"
           },
           {
             "type": "attribute",
@@ -1530,7 +1609,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-y"
           },
           {
             "type": "attribute",
@@ -1545,7 +1625,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-width"
           },
           {
             "type": "attribute",
@@ -1560,7 +1641,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-height"
           }
         ],
         "extAttrs": [
@@ -1580,7 +1662,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrviewport"
       },
       "XRRigidTransform": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRRigidTransform {\n  constructor(optional DOMPointInit position = {}, optional DOMPointInit orientation = {});\n  [SameObject] readonly attribute DOMPointReadOnly position;\n  [SameObject] readonly attribute DOMPointReadOnly orientation;\n  readonly attribute Float32Array matrix;\n  [SameObject] readonly attribute XRRigidTransform inverse;\n};",
@@ -1628,7 +1711,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-xrrigidtransform"
           },
           {
             "type": "attribute",
@@ -1650,7 +1734,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-position"
           },
           {
             "type": "attribute",
@@ -1672,7 +1757,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-orientation"
           },
           {
             "type": "attribute",
@@ -1687,7 +1773,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-matrix"
           },
           {
             "type": "attribute",
@@ -1709,7 +1796,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-inverse"
           }
         ],
         "extAttrs": [
@@ -1729,7 +1817,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrrigidtransform"
       },
       "XRPose": {
         "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;\n  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;\n\n  readonly attribute boolean emulatedPosition;\n};",
@@ -1757,7 +1846,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpose-transform"
           },
           {
             "type": "attribute",
@@ -1779,7 +1869,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpose-linearvelocity"
           },
           {
             "type": "attribute",
@@ -1801,7 +1892,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpose-angularvelocity"
           },
           {
             "type": "attribute",
@@ -1816,7 +1908,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpose-emulatedposition"
           }
         ],
         "extAttrs": [
@@ -1836,7 +1929,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrpose"
       },
       "XRViewerPose": {
         "fragment": "[SecureContext, Exposed=Window] interface XRViewerPose : XRPose {\n  [SameObject] readonly attribute FrozenArray<XRView> views;\n};",
@@ -1873,7 +1967,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrviewerpose-views"
           }
         ],
         "extAttrs": [
@@ -1893,7 +1988,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrviewerpose"
       },
       "XRHandedness": {
         "fragment": "enum XRHandedness {\n  \"none\",\n  \"left\",\n  \"right\"\n};",
@@ -1902,18 +1998,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrhandedness-none"
           },
           {
             "type": "enum-value",
-            "value": "left"
+            "value": "left",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrhandedness-left"
           },
           {
             "type": "enum-value",
-            "value": "right"
+            "value": "right",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrhandedness-right"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xrhandedness"
       },
       "XRTargetRayMode": {
         "fragment": "enum XRTargetRayMode {\n  \"gaze\",\n  \"tracked-pointer\",\n  \"screen\",\n  \"transient-pointer\"\n};",
@@ -1922,22 +2022,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "gaze"
+            "value": "gaze",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-gaze"
           },
           {
             "type": "enum-value",
-            "value": "tracked-pointer"
+            "value": "tracked-pointer",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-tracked-pointer"
           },
           {
             "type": "enum-value",
-            "value": "screen"
+            "value": "screen",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-screen"
           },
           {
             "type": "enum-value",
-            "value": "transient-pointer"
+            "value": "transient-pointer",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-transient-pointer"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#enumdef-xrtargetraymode"
       },
       "XRInputSource": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n};",
@@ -1958,7 +2063,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-handedness"
           },
           {
             "type": "attribute",
@@ -1973,7 +2079,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode"
           },
           {
             "type": "attribute",
@@ -1995,7 +2102,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace"
           },
           {
             "type": "attribute",
@@ -2017,7 +2125,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace"
           },
           {
             "type": "attribute",
@@ -2048,7 +2157,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles"
           }
         ],
         "extAttrs": [
@@ -2068,7 +2178,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrinputsource"
       },
       "XRInputSourceArray": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourceArray {\n  iterable<XRInputSource>;\n  readonly attribute unsigned long length;\n  getter XRInputSource(unsigned long index);\n};",
@@ -2106,7 +2217,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourcearray-length"
           },
           {
             "type": "operation",
@@ -2158,7 +2270,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrinputsourcearray"
       },
       "XRLayer": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRLayer : EventTarget {};",
@@ -2183,7 +2296,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrlayer"
       },
       "XRWebGLRenderingContext": {
         "fragment": "typedef (WebGLRenderingContext or\n         WebGL2RenderingContext) XRWebGLRenderingContext;",
@@ -2214,7 +2328,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://immersive-web.github.io/webxr/#typedefdef-xrwebglrenderingcontext"
       },
       "XRWebGLLayerInit": {
         "fragment": "dictionary XRWebGLLayerInit {\n  boolean antialias = true;\n  boolean depth = true;\n  boolean stencil = false;\n  boolean alpha = true;\n  boolean ignoreDepthValues = false;\n  double framebufferScaleFactor = 1.0;\n};",
@@ -2238,7 +2353,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-antialias"
           },
           {
             "type": "field",
@@ -2256,7 +2372,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-depth"
           },
           {
             "type": "field",
@@ -2274,7 +2391,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-stencil"
           },
           {
             "type": "field",
@@ -2292,7 +2410,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-alpha"
           },
           {
             "type": "field",
@@ -2310,7 +2429,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-ignoredepthvalues"
           },
           {
             "type": "field",
@@ -2328,11 +2448,13 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayerinit-framebufferscalefactor"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrwebgllayerinit"
       },
       "XRWebGLLayer": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
@@ -2394,7 +2516,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-xrwebgllayer"
           },
           {
             "type": "attribute",
@@ -2409,7 +2532,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-antialias"
           },
           {
             "type": "attribute",
@@ -2424,7 +2548,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-ignoredepthvalues"
           },
           {
             "type": "attribute",
@@ -2439,7 +2564,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-fixedfoveation"
           },
           {
             "type": "attribute",
@@ -2461,7 +2587,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebuffer"
           },
           {
             "type": "attribute",
@@ -2476,7 +2603,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebufferwidth"
           },
           {
             "type": "attribute",
@@ -2491,7 +2619,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebufferheight"
           },
           {
             "type": "operation",
@@ -2523,7 +2652,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-getviewport"
           },
           {
             "type": "operation",
@@ -2555,7 +2685,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-getnativeframebufferscalefactor"
           }
         ],
         "extAttrs": [
@@ -2575,7 +2706,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrwebgllayer"
       },
       "XRSessionEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRSessionEvent : Event {\n  constructor(DOMString type, XRSessionEventInit eventInitDict);\n  [SameObject] readonly attribute XRSession session;\n};",
@@ -2619,7 +2751,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionevent-xrsessionevent"
           },
           {
             "type": "attribute",
@@ -2641,7 +2774,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionevent-session"
           }
         ],
         "extAttrs": [
@@ -2661,7 +2795,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrsessionevent"
       },
       "XRSessionEventInit": {
         "fragment": "dictionary XRSessionEventInit : EventInit {\n  required XRSession session;\n};",
@@ -2682,11 +2817,13 @@
               "idlType": "XRSession"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessioneventinit-session"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrsessioneventinit"
       },
       "XRInputSourceEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourceEvent : Event {\n  constructor(DOMString type, XRInputSourceEventInit eventInitDict);\n  [SameObject] readonly attribute XRFrame frame;\n  [SameObject] readonly attribute XRInputSource inputSource;\n};",
@@ -2730,7 +2867,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-xrinputsourceevent"
           },
           {
             "type": "attribute",
@@ -2752,7 +2890,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-frame"
           },
           {
             "type": "attribute",
@@ -2774,7 +2913,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-inputsource"
           }
         ],
         "extAttrs": [
@@ -2794,7 +2934,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrinputsourceevent"
       },
       "XRInputSourceEventInit": {
         "fragment": "dictionary XRInputSourceEventInit : EventInit {\n  required XRFrame frame;\n  required XRInputSource inputSource;\n};",
@@ -2815,7 +2956,8 @@
               "idlType": "XRFrame"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceeventinit-frame"
           },
           {
             "type": "field",
@@ -2830,11 +2972,13 @@
               "idlType": "XRInputSource"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceeventinit-inputsource"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrinputsourceeventinit"
       },
       "XRInputSourcesChangeEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourcesChangeEvent : Event {\n  constructor(DOMString type, XRInputSourcesChangeEventInit eventInitDict);\n  [SameObject] readonly attribute XRSession session;\n  [SameObject] readonly attribute FrozenArray<XRInputSource> added;\n  [SameObject] readonly attribute FrozenArray<XRInputSource> removed;\n};",
@@ -2878,7 +3022,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-xrinputsourceschangeevent"
           },
           {
             "type": "attribute",
@@ -2900,7 +3045,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-session"
           },
           {
             "type": "attribute",
@@ -2931,7 +3077,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-added"
           },
           {
             "type": "attribute",
@@ -2962,7 +3109,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-removed"
           }
         ],
         "extAttrs": [
@@ -2982,7 +3130,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent"
       },
       "XRInputSourcesChangeEventInit": {
         "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required FrozenArray<XRInputSource> added;\n  required FrozenArray<XRInputSource> removed;\n\n};",
@@ -3003,7 +3152,8 @@
               "idlType": "XRSession"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-session"
           },
           {
             "type": "field",
@@ -3027,7 +3177,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-added"
           },
           {
             "type": "field",
@@ -3051,11 +3202,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-removed"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrinputsourceschangeeventinit"
       },
       "XRReferenceSpaceEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface XRReferenceSpaceEvent : Event {\n  constructor(DOMString type, XRReferenceSpaceEventInit eventInitDict);\n  [SameObject] readonly attribute XRReferenceSpace referenceSpace;\n  [SameObject] readonly attribute XRRigidTransform? transform;\n};",
@@ -3099,7 +3252,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-xrreferencespaceevent"
           },
           {
             "type": "attribute",
@@ -3121,7 +3275,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-referencespace"
           },
           {
             "type": "attribute",
@@ -3143,7 +3298,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-transform"
           }
         ],
         "extAttrs": [
@@ -3163,7 +3319,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrreferencespaceevent"
       },
       "XRReferenceSpaceEventInit": {
         "fragment": "dictionary XRReferenceSpaceEventInit : EventInit {\n  required XRReferenceSpace referenceSpace;\n  XRRigidTransform? transform = null;\n};",
@@ -3184,7 +3341,8 @@
               "idlType": "XRReferenceSpace"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespaceeventinit-referencespace"
           },
           {
             "type": "field",
@@ -3201,11 +3359,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespaceeventinit-transform"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrreferencespaceeventinit"
       },
       "XRSessionSupportedPermissionDescriptor": {
         "fragment": "dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n};",
@@ -3226,11 +3386,13 @@
               "idlType": "XRSessionMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsessionsupportedpermissiondescriptor-mode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrsessionsupportedpermissiondescriptor"
       },
       "XRPermissionDescriptor": {
         "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<DOMString> requiredFeatures;\n  sequence<DOMString> optionalFeatures;\n};",
@@ -3251,7 +3413,8 @@
               "idlType": "XRSessionMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-mode"
           },
           {
             "type": "field",
@@ -3275,7 +3438,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-requiredfeatures"
           },
           {
             "type": "field",
@@ -3299,11 +3463,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-optionalfeatures"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor"
       },
       "XRPermissionStatus": {
         "fragment": "[Exposed=Window]\ninterface XRPermissionStatus: PermissionStatus {\n  attribute FrozenArray<DOMString> granted;\n};",
@@ -3333,7 +3499,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrpermissionstatus-granted"
           }
         ],
         "extAttrs": [
@@ -3347,7 +3514,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrpermissionstatus"
       }
     },
     "idlExtendedNames": {
@@ -3384,7 +3552,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://immersive-web.github.io/webxr/#dom-navigator-xr"
             }
           ],
           "extAttrs": [],
@@ -3414,7 +3583,8 @@
                 "type": "boolean",
                 "value": false
               },
-              "required": false
+              "required": false,
+              "href": "https://immersive-web.github.io/webxr/#dom-webglcontextattributes-xrcompatible"
             }
           ],
           "extAttrs": [],
@@ -3457,7 +3627,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://immersive-web.github.io/webxr/#dom-webglrenderingcontextbase-makexrcompatible"
             }
           ],
           "extAttrs": [],

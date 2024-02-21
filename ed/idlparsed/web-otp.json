@@ -32,7 +32,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/web-otp/#dom-otpcredential-code"
           }
         ],
         "extAttrs": [
@@ -52,7 +53,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/web-otp/#otpcredential"
       },
       "OTPCredentialRequestOptions": {
         "fragment": "dictionary OTPCredentialRequestOptions {\n  sequence<OTPCredentialTransportType> transport = [];\n};",
@@ -85,11 +87,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/web-otp/#dom-otpcredentialrequestoptions-transport"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/web-otp/#dictdef-otpcredentialrequestoptions"
       },
       "OTPCredentialTransportType": {
         "fragment": "enum OTPCredentialTransportType {\n    \"sms\",\n};",
@@ -98,10 +102,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "sms"
+            "value": "sms",
+            "href": "https://wicg.github.io/web-otp/#dom-otpcredentialtransporttype-sms"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/web-otp/#enumdef-otpcredentialtransporttype"
       }
     },
     "idlExtendedNames": {
@@ -125,7 +131,8 @@
                 "idlType": "OTPCredentialRequestOptions"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://wicg.github.io/web-otp/#dom-credentialrequestoptions-otp"
             }
           ],
           "extAttrs": [],

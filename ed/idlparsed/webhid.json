@@ -42,7 +42,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webhid/#dom-hid-onconnect"
           },
           {
             "type": "attribute",
@@ -57,7 +58,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webhid/#dom-hid-ondisconnect"
           },
           {
             "type": "operation",
@@ -90,7 +92,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hid-getdevices"
           },
           {
             "type": "operation",
@@ -150,7 +153,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hid-requestdevice"
           }
         ],
         "extAttrs": [
@@ -177,7 +181,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hid"
       },
       "HIDDeviceRequestOptions": {
         "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n    sequence<HIDDeviceFilter> exclusionFilters;\n};",
@@ -207,7 +212,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters"
           },
           {
             "type": "field",
@@ -231,11 +237,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions"
       },
       "HIDDeviceFilter": {
         "fragment": "dictionary HIDDeviceFilter {\n    unsigned long vendorId;\n    unsigned short productId;\n    unsigned short usagePage;\n    unsigned short usage;\n};",
@@ -256,7 +264,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid"
           },
           {
             "type": "field",
@@ -271,7 +280,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-productid"
           },
           {
             "type": "field",
@@ -286,7 +296,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage"
           },
           {
             "type": "field",
@@ -301,11 +312,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usage"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter"
       },
       "HIDDevice": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
@@ -326,7 +339,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-oninputreport"
           },
           {
             "type": "attribute",
@@ -341,7 +355,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened"
           },
           {
             "type": "attribute",
@@ -356,7 +371,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid"
           },
           {
             "type": "attribute",
@@ -371,7 +387,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid"
           },
           {
             "type": "attribute",
@@ -386,7 +403,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname"
           },
           {
             "type": "attribute",
@@ -410,7 +428,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections"
           },
           {
             "type": "operation",
@@ -434,7 +453,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-open"
           },
           {
             "type": "operation",
@@ -458,7 +478,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-close"
           },
           {
             "type": "operation",
@@ -482,7 +503,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-forget"
           },
           {
             "type": "operation",
@@ -546,7 +568,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendreport"
           },
           {
             "type": "operation",
@@ -610,7 +633,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport"
           },
           {
             "type": "operation",
@@ -658,7 +682,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport"
           }
         ],
         "extAttrs": [
@@ -678,7 +703,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice"
       },
       "HIDConnectionEvent": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
@@ -722,7 +748,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent-constructor"
           },
           {
             "type": "attribute",
@@ -744,7 +771,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent-device"
           }
         ],
         "extAttrs": [
@@ -764,7 +792,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent"
       },
       "HIDConnectionEventInit": {
         "fragment": "dictionary HIDConnectionEventInit : EventInit {\n    required HIDDevice device;\n};",
@@ -785,11 +814,13 @@
               "idlType": "HIDDevice"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit-device"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit"
       },
       "HIDInputReportEvent": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
@@ -833,7 +864,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-constructor"
           },
           {
             "type": "attribute",
@@ -855,7 +887,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-device"
           },
           {
             "type": "attribute",
@@ -870,7 +903,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-reportid"
           },
           {
             "type": "attribute",
@@ -885,7 +919,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-data"
           }
         ],
         "extAttrs": [
@@ -905,7 +940,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent"
       },
       "HIDInputReportEventInit": {
         "fragment": "dictionary HIDInputReportEventInit : EventInit {\n    required HIDDevice device;\n    required octet reportId;\n    required DataView data;\n};",
@@ -926,7 +962,8 @@
               "idlType": "HIDDevice"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-device"
           },
           {
             "type": "field",
@@ -941,7 +978,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-reportid"
           },
           {
             "type": "field",
@@ -956,11 +994,13 @@
               "idlType": "DataView"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit"
       },
       "HIDCollectionInfo": {
         "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
@@ -981,7 +1021,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage"
           },
           {
             "type": "field",
@@ -996,7 +1037,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage"
           },
           {
             "type": "field",
@@ -1011,7 +1053,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-type"
           },
           {
             "type": "field",
@@ -1035,7 +1078,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-children"
           },
           {
             "type": "field",
@@ -1059,7 +1103,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports"
           },
           {
             "type": "field",
@@ -1083,7 +1128,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports"
           },
           {
             "type": "field",
@@ -1107,11 +1153,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo"
       },
       "HIDReportInfo": {
         "fragment": "dictionary HIDReportInfo {\n    octet reportId;\n    sequence<HIDReportItem> items;\n};",
@@ -1132,7 +1180,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportinfo-reportid"
           },
           {
             "type": "field",
@@ -1156,11 +1205,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportinfo-items"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidreportinfo"
       },
       "HIDReportItem": {
         "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
@@ -1181,7 +1232,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute"
           },
           {
             "type": "field",
@@ -1196,7 +1248,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isarray"
           },
           {
             "type": "field",
@@ -1211,7 +1264,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes"
           },
           {
             "type": "field",
@@ -1226,7 +1280,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isconstant"
           },
           {
             "type": "field",
@@ -1241,7 +1296,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-islinear"
           },
           {
             "type": "field",
@@ -1256,7 +1312,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isrange"
           },
           {
             "type": "field",
@@ -1271,7 +1328,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile"
           },
           {
             "type": "field",
@@ -1286,7 +1344,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-hasnull"
           },
           {
             "type": "field",
@@ -1301,7 +1360,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate"
           },
           {
             "type": "field",
@@ -1316,7 +1376,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-wrap"
           },
           {
             "type": "field",
@@ -1340,7 +1401,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usages"
           },
           {
             "type": "field",
@@ -1355,7 +1417,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum"
           },
           {
             "type": "field",
@@ -1370,7 +1433,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum"
           },
           {
             "type": "field",
@@ -1385,7 +1449,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportsize"
           },
           {
             "type": "field",
@@ -1400,7 +1465,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportcount"
           },
           {
             "type": "field",
@@ -1415,7 +1481,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent"
           },
           {
             "type": "field",
@@ -1430,7 +1497,8 @@
               "idlType": "HIDUnitSystem"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem"
           },
           {
             "type": "field",
@@ -1445,7 +1513,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent"
           },
           {
             "type": "field",
@@ -1460,7 +1529,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent"
           },
           {
             "type": "field",
@@ -1475,7 +1545,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent"
           },
           {
             "type": "field",
@@ -1490,7 +1561,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent"
           },
           {
             "type": "field",
@@ -1505,7 +1577,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent"
           },
           {
             "type": "field",
@@ -1520,7 +1593,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent"
           },
           {
             "type": "field",
@@ -1535,7 +1609,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum"
           },
           {
             "type": "field",
@@ -1550,7 +1625,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum"
           },
           {
             "type": "field",
@@ -1565,7 +1641,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum"
           },
           {
             "type": "field",
@@ -1580,7 +1657,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum"
           },
           {
             "type": "field",
@@ -1604,11 +1682,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-strings"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem"
       },
       "HIDUnitSystem": {
         "fragment": "enum HIDUnitSystem {\n    \"none\", \"si-linear\", \"si-rotation\", \"english-linear\",\n    \"english-rotation\", \"vendor-defined\", \"reserved\"\n};",
@@ -1617,34 +1697,42 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-none"
           },
           {
             "type": "enum-value",
-            "value": "si-linear"
+            "value": "si-linear",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-linear"
           },
           {
             "type": "enum-value",
-            "value": "si-rotation"
+            "value": "si-rotation",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-rotation"
           },
           {
             "type": "enum-value",
-            "value": "english-linear"
+            "value": "english-linear",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-linear"
           },
           {
             "type": "enum-value",
-            "value": "english-rotation"
+            "value": "english-rotation",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-rotation"
           },
           {
             "type": "enum-value",
-            "value": "vendor-defined"
+            "value": "vendor-defined",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-vendor-defined"
           },
           {
             "type": "enum-value",
-            "value": "reserved"
+            "value": "reserved",
+            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-reserved"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/webhid/#dom-hidunitsystem"
       }
     },
     "idlExtendedNames": {
@@ -1675,7 +1763,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/webhid/#dom-navigator-hid"
             }
           ],
           "extAttrs": [
@@ -1716,7 +1805,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/webhid/#dom-workernavigator-hid"
             }
           ],
           "extAttrs": [

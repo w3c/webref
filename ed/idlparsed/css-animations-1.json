@@ -62,7 +62,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationevent-animationevent"
           },
           {
             "type": "attribute",
@@ -77,7 +78,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationevent-animationname"
           },
           {
             "type": "attribute",
@@ -92,7 +94,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationevent-elapsedtime"
           },
           {
             "type": "attribute",
@@ -107,7 +110,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationevent-pseudoelement"
           }
         ],
         "extAttrs": [
@@ -121,7 +125,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-animations-1/#animationevent"
       },
       "AnimationEventInit": {
         "fragment": "dictionary AnimationEventInit : EventInit {\n  CSSOMString animationName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
@@ -145,7 +150,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationeventinit-animationname"
           },
           {
             "type": "field",
@@ -163,7 +169,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationeventinit-elapsedtime"
           },
           {
             "type": "field",
@@ -181,11 +188,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-animationeventinit-pseudoelement"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-animations-1/#dictdef-animationeventinit"
       },
       "CSSKeyframeRule": {
         "fragment": "[Exposed=Window]\ninterface CSSKeyframeRule : CSSRule {\n  attribute CSSOMString keyText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -206,7 +215,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframerule-keytext"
           },
           {
             "type": "attribute",
@@ -237,7 +247,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframerule-style"
           }
         ],
         "extAttrs": [
@@ -251,7 +262,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-animations-1/#csskeyframerule"
       },
       "CSSKeyframesRule": {
         "fragment": "[Exposed=Window]\ninterface CSSKeyframesRule : CSSRule {\n           attribute CSSOMString name;\n  readonly attribute CSSRuleList cssRules;\n  readonly attribute unsigned long length;\n\n  getter CSSKeyframeRule (unsigned long index);\n  undefined        appendRule(CSSOMString rule);\n  undefined        deleteRule(CSSOMString select);\n  CSSKeyframeRule? findRule(CSSOMString select);\n};",
@@ -272,7 +284,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-name"
           },
           {
             "type": "attribute",
@@ -287,7 +300,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-cssrules"
           },
           {
             "type": "attribute",
@@ -302,7 +316,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-length"
           },
           {
             "type": "operation",
@@ -366,7 +381,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-appendrule"
           },
           {
             "type": "operation",
@@ -398,7 +414,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-deleterule"
           },
           {
             "type": "operation",
@@ -430,7 +447,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-findrule"
           }
         ],
         "extAttrs": [
@@ -444,7 +462,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-animations-1/#csskeyframesrule"
       }
     },
     "idlExtendedNames": {
@@ -470,7 +489,8 @@
               "value": {
                 "type": "number",
                 "value": "7"
-              }
+              },
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-cssrule-keyframes_rule"
             },
             {
               "type": "const",
@@ -487,7 +507,8 @@
               "value": {
                 "type": "number",
                 "value": "8"
-              }
+              },
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-cssrule-keyframe_rule"
             }
           ],
           "extAttrs": [],
@@ -514,7 +535,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationstart"
             },
             {
               "type": "attribute",
@@ -529,7 +551,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationiteration"
             },
             {
               "type": "attribute",
@@ -544,7 +567,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationend"
             },
             {
               "type": "attribute",
@@ -559,7 +583,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationcancel"
             }
           ],
           "extAttrs": [],

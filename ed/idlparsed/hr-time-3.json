@@ -28,7 +28,8 @@
           "union": false,
           "idlType": "double"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/hr-time/#dom-domhighrestimestamp"
       },
       "EpochTimeStamp": {
         "fragment": "typedef unsigned long long EpochTimeStamp;",
@@ -42,7 +43,8 @@
           "union": false,
           "idlType": "unsigned long long"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/hr-time/#dom-epochtimestamp"
       },
       "Performance": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
@@ -63,7 +65,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/hr-time/#dom-performance-now"
           },
           {
             "type": "attribute",
@@ -78,7 +81,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/hr-time/#dom-performance-timeorigin"
           },
           {
             "type": "operation",
@@ -100,7 +104,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/hr-time/#dom-performance-tojson"
           }
         ],
         "extAttrs": [
@@ -121,7 +126,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/hr-time/#dom-performance"
       }
     },
     "idlExtendedNames": {
@@ -152,7 +158,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/hr-time/#dom-windoworworkerglobalscope-performance"
             }
           ],
           "extAttrs": [],

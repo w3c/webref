@@ -31,11 +31,13 @@
               "type": "string",
               "value": "avc"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-avcencoderconfig-format"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dictdef-avcencoderconfig"
       },
       "AvcBitstreamFormat": {
         "fragment": "enum AvcBitstreamFormat {\n  \"annexb\",\n  \"avc\",\n};",
@@ -44,14 +46,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "annexb"
+            "value": "annexb",
+            "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-avcbitstreamformat-annexb"
           },
           {
             "type": "enum-value",
-            "value": "avc"
+            "value": "avc",
+            "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-avcbitstreamformat-avc"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#enumdef-avcbitstreamformat"
       },
       "VideoEncoderEncodeOptionsForAvc": {
         "fragment": "dictionary VideoEncoderEncodeOptionsForAvc {\n  unsigned short? quantizer;\n};",
@@ -72,11 +77,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-videoencoderencodeoptionsforavc-quantizer"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dictdef-videoencoderencodeoptionsforavc"
       }
     },
     "idlExtendedNames": {
@@ -100,7 +107,8 @@
                 "idlType": "AvcEncoderConfig"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-videoencoderconfig-avc"
             }
           ],
           "extAttrs": [],
@@ -127,7 +135,8 @@
                 "idlType": "VideoEncoderEncodeOptionsForAvc"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html#dom-videoencoderencodeoptions-avc"
             }
           ],
           "extAttrs": [],

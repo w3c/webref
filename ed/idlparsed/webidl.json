@@ -122,7 +122,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webidl.spec.whatwg.org/#ArrayBufferView"
       },
       "BufferSource": {
         "fragment": "typedef (ArrayBufferView or ArrayBuffer) BufferSource;",
@@ -153,7 +154,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webidl.spec.whatwg.org/#BufferSource"
       },
       "AllowSharedBufferSource": {
         "fragment": "typedef (ArrayBuffer or SharedArrayBuffer or [AllowShared] ArrayBufferView) AllowSharedBufferSource;",
@@ -199,7 +201,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webidl.spec.whatwg.org/#AllowSharedBufferSource"
       },
       "DOMException": {
         "fragment": "[Exposed=*,\n Serializable]\ninterface DOMException { // but see below note about JavaScript binding\n  constructor(optional DOMString message = \"\", optional DOMString name = \"Error\");\n  readonly attribute DOMString name;\n  readonly attribute DOMString message;\n  readonly attribute unsigned short code;\n\n  const unsigned short INDEX_SIZE_ERR = 1;\n  const unsigned short DOMSTRING_SIZE_ERR = 2;\n  const unsigned short HIERARCHY_REQUEST_ERR = 3;\n  const unsigned short WRONG_DOCUMENT_ERR = 4;\n  const unsigned short INVALID_CHARACTER_ERR = 5;\n  const unsigned short NO_DATA_ALLOWED_ERR = 6;\n  const unsigned short NO_MODIFICATION_ALLOWED_ERR = 7;\n  const unsigned short NOT_FOUND_ERR = 8;\n  const unsigned short NOT_SUPPORTED_ERR = 9;\n  const unsigned short INUSE_ATTRIBUTE_ERR = 10;\n  const unsigned short INVALID_STATE_ERR = 11;\n  const unsigned short SYNTAX_ERR = 12;\n  const unsigned short INVALID_MODIFICATION_ERR = 13;\n  const unsigned short NAMESPACE_ERR = 14;\n  const unsigned short INVALID_ACCESS_ERR = 15;\n  const unsigned short VALIDATION_ERR = 16;\n  const unsigned short TYPE_MISMATCH_ERR = 17;\n  const unsigned short SECURITY_ERR = 18;\n  const unsigned short NETWORK_ERR = 19;\n  const unsigned short ABORT_ERR = 20;\n  const unsigned short URL_MISMATCH_ERR = 21;\n  const unsigned short QUOTA_EXCEEDED_ERR = 22;\n  const unsigned short TIMEOUT_ERR = 23;\n  const unsigned short INVALID_NODE_TYPE_ERR = 24;\n  const unsigned short DATA_CLONE_ERR = 25;\n};",
@@ -249,7 +252,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-domexception"
           },
           {
             "type": "attribute",
@@ -264,7 +268,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-name"
           },
           {
             "type": "attribute",
@@ -279,7 +284,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-message"
           },
           {
             "type": "attribute",
@@ -294,7 +300,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-code"
           },
           {
             "type": "const",
@@ -311,7 +318,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-index_size_err"
           },
           {
             "type": "const",
@@ -328,7 +336,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-domstring_size_err"
           },
           {
             "type": "const",
@@ -345,7 +354,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-hierarchy_request_err"
           },
           {
             "type": "const",
@@ -362,7 +372,8 @@
             "value": {
               "type": "number",
               "value": "4"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-wrong_document_err"
           },
           {
             "type": "const",
@@ -379,7 +390,8 @@
             "value": {
               "type": "number",
               "value": "5"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_character_err"
           },
           {
             "type": "const",
@@ -396,7 +408,8 @@
             "value": {
               "type": "number",
               "value": "6"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-no_data_allowed_err"
           },
           {
             "type": "const",
@@ -413,7 +426,8 @@
             "value": {
               "type": "number",
               "value": "7"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-no_modification_allowed_err"
           },
           {
             "type": "const",
@@ -430,7 +444,8 @@
             "value": {
               "type": "number",
               "value": "8"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-not_found_err"
           },
           {
             "type": "const",
@@ -447,7 +462,8 @@
             "value": {
               "type": "number",
               "value": "9"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-not_supported_err"
           },
           {
             "type": "const",
@@ -464,7 +480,8 @@
             "value": {
               "type": "number",
               "value": "10"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-inuse_attribute_err"
           },
           {
             "type": "const",
@@ -481,7 +498,8 @@
             "value": {
               "type": "number",
               "value": "11"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_state_err"
           },
           {
             "type": "const",
@@ -498,7 +516,8 @@
             "value": {
               "type": "number",
               "value": "12"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-syntax_err"
           },
           {
             "type": "const",
@@ -515,7 +534,8 @@
             "value": {
               "type": "number",
               "value": "13"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_modification_err"
           },
           {
             "type": "const",
@@ -532,7 +552,8 @@
             "value": {
               "type": "number",
               "value": "14"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-namespace_err"
           },
           {
             "type": "const",
@@ -549,7 +570,8 @@
             "value": {
               "type": "number",
               "value": "15"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_access_err"
           },
           {
             "type": "const",
@@ -566,7 +588,8 @@
             "value": {
               "type": "number",
               "value": "16"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-validation_err"
           },
           {
             "type": "const",
@@ -583,7 +606,8 @@
             "value": {
               "type": "number",
               "value": "17"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-type_mismatch_err"
           },
           {
             "type": "const",
@@ -600,7 +624,8 @@
             "value": {
               "type": "number",
               "value": "18"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-security_err"
           },
           {
             "type": "const",
@@ -617,7 +642,8 @@
             "value": {
               "type": "number",
               "value": "19"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-network_err"
           },
           {
             "type": "const",
@@ -634,7 +660,8 @@
             "value": {
               "type": "number",
               "value": "20"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-abort_err"
           },
           {
             "type": "const",
@@ -651,7 +678,8 @@
             "value": {
               "type": "number",
               "value": "21"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-url_mismatch_err"
           },
           {
             "type": "const",
@@ -668,7 +696,8 @@
             "value": {
               "type": "number",
               "value": "22"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-quota_exceeded_err"
           },
           {
             "type": "const",
@@ -685,7 +714,8 @@
             "value": {
               "type": "number",
               "value": "23"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-timeout_err"
           },
           {
             "type": "const",
@@ -702,7 +732,8 @@
             "value": {
               "type": "number",
               "value": "24"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_node_type_err"
           },
           {
             "type": "const",
@@ -719,7 +750,8 @@
             "value": {
               "type": "number",
               "value": "25"
-            }
+            },
+            "href": "https://webidl.spec.whatwg.org/#dom-domexception-data_clone_err"
           }
         ],
         "extAttrs": [
@@ -739,7 +771,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webidl.spec.whatwg.org/#idl-DOMException"
       },
       "Function": {
         "fragment": "callback Function = any (any... arguments);",
@@ -771,7 +804,8 @@
             "variadic": true
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webidl.spec.whatwg.org/#Function"
       },
       "VoidFunction": {
         "fragment": "callback VoidFunction = undefined ();",
@@ -786,7 +820,8 @@
           "idlType": "undefined"
         },
         "arguments": [],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webidl.spec.whatwg.org/#VoidFunction"
       }
     },
     "idlExtendedNames": {},

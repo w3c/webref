@@ -69,7 +69,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/IntersectionObserver/#callbackdef-intersectionobservercallback"
       },
       "IntersectionObserver": {
         "fragment": "[Exposed=Window]\ninterface IntersectionObserver {\n  constructor(IntersectionObserverCallback callback, optional IntersectionObserverInit options = {});\n  readonly attribute (Element or Document)? root;\n  readonly attribute DOMString rootMargin;\n  readonly attribute DOMString scrollMargin;\n  readonly attribute FrozenArray<double> thresholds;\n  undefined observe(Element target);\n  undefined unobserve(Element target);\n  undefined disconnect();\n  sequence<IntersectionObserverEntry> takeRecords();\n};",
@@ -115,7 +116,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-intersectionobserver"
           },
           {
             "type": "attribute",
@@ -147,7 +149,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-root"
           },
           {
             "type": "attribute",
@@ -162,7 +165,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-rootmargin"
           },
           {
             "type": "attribute",
@@ -177,7 +181,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-scrollmargin"
           },
           {
             "type": "attribute",
@@ -201,7 +206,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-thresholds"
           },
           {
             "type": "operation",
@@ -233,7 +239,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-observe"
           },
           {
             "type": "operation",
@@ -265,7 +272,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-unobserve"
           },
           {
             "type": "operation",
@@ -280,7 +288,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-disconnect"
           },
           {
             "type": "operation",
@@ -304,7 +313,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-takerecords"
           }
         ],
         "extAttrs": [
@@ -318,7 +328,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserver"
       },
       "IntersectionObserverEntry": {
         "fragment": "[Exposed=Window]\ninterface IntersectionObserverEntry {\n  constructor(IntersectionObserverEntryInit intersectionObserverEntryInit);\n  readonly attribute DOMHighResTimeStamp time;\n  readonly attribute DOMRectReadOnly? rootBounds;\n  readonly attribute DOMRectReadOnly boundingClientRect;\n  readonly attribute DOMRectReadOnly intersectionRect;\n  readonly attribute boolean isIntersecting;\n  readonly attribute double intersectionRatio;\n  readonly attribute Element target;\n};",
@@ -346,7 +357,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionobserverentry"
           },
           {
             "type": "attribute",
@@ -361,7 +373,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-time"
           },
           {
             "type": "attribute",
@@ -376,7 +389,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-rootbounds"
           },
           {
             "type": "attribute",
@@ -391,7 +405,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-boundingclientrect"
           },
           {
             "type": "attribute",
@@ -406,7 +421,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect"
           },
           {
             "type": "attribute",
@@ -421,7 +437,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting"
           },
           {
             "type": "attribute",
@@ -436,7 +453,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionratio"
           },
           {
             "type": "attribute",
@@ -451,7 +469,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target"
           }
         ],
         "extAttrs": [
@@ -465,7 +484,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserverentry"
       },
       "IntersectionObserverEntryInit": {
         "fragment": "dictionary IntersectionObserverEntryInit {\n  required DOMHighResTimeStamp time;\n  required DOMRectInit? rootBounds;\n  required DOMRectInit boundingClientRect;\n  required DOMRectInit intersectionRect;\n  required boolean isIntersecting;\n  required double intersectionRatio;\n  required Element target;\n};",
@@ -486,7 +506,8 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-time"
           },
           {
             "type": "field",
@@ -501,7 +522,8 @@
               "idlType": "DOMRectInit"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-rootbounds"
           },
           {
             "type": "field",
@@ -516,7 +538,8 @@
               "idlType": "DOMRectInit"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-boundingclientrect"
           },
           {
             "type": "field",
@@ -531,7 +554,8 @@
               "idlType": "DOMRectInit"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-intersectionrect"
           },
           {
             "type": "field",
@@ -546,7 +570,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-isintersecting"
           },
           {
             "type": "field",
@@ -561,7 +586,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-intersectionratio"
           },
           {
             "type": "field",
@@ -576,11 +602,13 @@
               "idlType": "Element"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentryinit-target"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IntersectionObserver/#dictdef-intersectionobserverentryinit"
       },
       "IntersectionObserverInit": {
         "fragment": "dictionary IntersectionObserverInit {\n  (Element or Document)?  root = null;\n  DOMString rootMargin = \"0px\";\n  DOMString scrollMargin = \"0px\";\n  (double or sequence<double>) threshold = 0;\n};",
@@ -620,7 +648,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-root"
           },
           {
             "type": "field",
@@ -638,7 +667,8 @@
               "type": "string",
               "value": "0px"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-rootmargin"
           },
           {
             "type": "field",
@@ -656,7 +686,8 @@
               "type": "string",
               "value": "0px"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-scrollmargin"
           },
           {
             "type": "field",
@@ -700,11 +731,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-threshold"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/IntersectionObserver/#dictdef-intersectionobserverinit"
       }
     },
     "idlExtendedNames": {},

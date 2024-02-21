@@ -46,7 +46,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentrylist"
       },
       "PerformanceEntry": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute unsigned long long  id;\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  readonly    attribute unsigned long long  navigationId;\n  [Default] object toJSON();\n};",
@@ -67,7 +68,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-id"
           },
           {
             "type": "attribute",
@@ -82,7 +84,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name"
           },
           {
             "type": "attribute",
@@ -97,7 +100,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype"
           },
           {
             "type": "attribute",
@@ -112,7 +116,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime"
           },
           {
             "type": "attribute",
@@ -127,7 +132,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration"
           },
           {
             "type": "attribute",
@@ -142,7 +148,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid"
           },
           {
             "type": "operation",
@@ -164,7 +171,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-tojson"
           }
         ],
         "extAttrs": [
@@ -185,7 +193,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
       },
       "PerformanceObserverCallback": {
         "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer,\n                                             optional PerformanceObserverCallbackOptions options = {});",
@@ -251,7 +260,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallback"
       },
       "PerformanceObserver": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
@@ -279,7 +289,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-constructor"
           },
           {
             "type": "operation",
@@ -313,7 +324,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe"
           },
           {
             "type": "operation",
@@ -328,7 +340,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-disconnect"
           },
           {
             "type": "operation",
@@ -343,7 +356,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-takerecords"
           },
           {
             "type": "attribute",
@@ -374,7 +388,8 @@
               }
             ],
             "special": "static",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes"
           }
         ],
         "extAttrs": [
@@ -395,7 +410,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver"
       },
       "PerformanceObserverCallbackOptions": {
         "fragment": "dictionary PerformanceObserverCallbackOptions {\n  unsigned long long droppedEntriesCount;\n};",
@@ -416,11 +432,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions-droppedentriescount"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions"
       },
       "PerformanceObserverInit": {
         "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n  boolean buffered;\n};",
@@ -450,7 +468,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes"
           },
           {
             "type": "field",
@@ -465,7 +484,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type"
           },
           {
             "type": "field",
@@ -480,11 +500,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit"
       },
       "PerformanceObserverEntryList": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserverEntryList {\n  PerformanceEntryList getEntries();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
@@ -505,7 +527,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentries"
           },
           {
             "type": "operation",
@@ -537,7 +560,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentriesbytype"
           },
           {
             "type": "operation",
@@ -585,7 +609,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentriesbyname"
           }
         ],
         "extAttrs": [
@@ -606,7 +631,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist"
       }
     },
     "idlExtendedNames": {
@@ -630,7 +656,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentries"
             },
             {
               "type": "operation",
@@ -662,7 +689,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbytype"
             },
             {
               "type": "operation",
@@ -710,7 +738,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbyname"
             }
           ],
           "extAttrs": [],

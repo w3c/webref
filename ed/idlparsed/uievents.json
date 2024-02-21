@@ -67,7 +67,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-uievent-uievent"
           },
           {
             "type": "attribute",
@@ -82,7 +83,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-uievent-view"
           },
           {
             "type": "attribute",
@@ -97,7 +99,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-uievent-detail"
           }
         ],
         "extAttrs": [
@@ -111,7 +114,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#uievent"
       },
       "UIEventInit": {
         "fragment": "dictionary UIEventInit : EventInit {\n  Window? view = null;\n  long detail = 0;\n};",
@@ -134,7 +138,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-uieventinit-view"
           },
           {
             "type": "field",
@@ -152,11 +157,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-uieventinit-detail"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-uieventinit"
       },
       "FocusEvent": {
         "fragment": "[Exposed=Window]\ninterface FocusEvent : UIEvent {\n  constructor(DOMString type, optional FocusEventInit eventInitDict = {});\n  readonly attribute EventTarget? relatedTarget;\n};",
@@ -202,7 +209,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-focusevent-focusevent"
           },
           {
             "type": "attribute",
@@ -217,7 +225,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-focusevent-relatedtarget"
           }
         ],
         "extAttrs": [
@@ -231,7 +240,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#focusevent"
       },
       "FocusEventInit": {
         "fragment": "dictionary FocusEventInit : UIEventInit {\n  EventTarget? relatedTarget = null;\n};",
@@ -254,11 +264,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-focuseventinit-relatedtarget"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-focuseventinit"
       },
       "MouseEvent": {
         "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict = {});\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n  readonly attribute long layerX;\n  readonly attribute long layerY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
@@ -304,7 +316,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-mouseevent"
           },
           {
             "type": "attribute",
@@ -319,7 +332,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-screenx"
           },
           {
             "type": "attribute",
@@ -334,7 +348,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-screeny"
           },
           {
             "type": "attribute",
@@ -349,7 +364,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-clientx"
           },
           {
             "type": "attribute",
@@ -364,7 +380,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-clienty"
           },
           {
             "type": "attribute",
@@ -379,7 +396,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-layerx"
           },
           {
             "type": "attribute",
@@ -394,7 +412,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-layery"
           },
           {
             "type": "attribute",
@@ -409,7 +428,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-ctrlkey"
           },
           {
             "type": "attribute",
@@ -424,7 +444,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-shiftkey"
           },
           {
             "type": "attribute",
@@ -439,7 +460,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-altkey"
           },
           {
             "type": "attribute",
@@ -454,7 +476,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-metakey"
           },
           {
             "type": "attribute",
@@ -469,7 +492,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-button"
           },
           {
             "type": "attribute",
@@ -484,7 +508,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-buttons"
           },
           {
             "type": "attribute",
@@ -499,7 +524,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-relatedtarget"
           },
           {
             "type": "operation",
@@ -531,7 +557,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/uievents/#dom-mouseevent-getmodifierstate"
           }
         ],
         "extAttrs": [
@@ -545,7 +572,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#mouseevent"
       },
       "MouseEventInit": {
         "fragment": "dictionary MouseEventInit : EventModifierInit {\n  long screenX = 0;\n  long screenY = 0;\n  long clientX = 0;\n  long clientY = 0;\n\n  short button = 0;\n  unsigned short buttons = 0;\n  EventTarget? relatedTarget = null;\n};",
@@ -569,7 +597,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screenx"
           },
           {
             "type": "field",
@@ -587,7 +616,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screeny"
           },
           {
             "type": "field",
@@ -605,7 +635,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clientx"
           },
           {
             "type": "field",
@@ -623,7 +654,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clienty"
           },
           {
             "type": "field",
@@ -641,7 +673,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-button"
           },
           {
             "type": "field",
@@ -659,7 +692,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-buttons"
           },
           {
             "type": "field",
@@ -676,11 +710,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-relatedtarget"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-mouseeventinit"
       },
       "EventModifierInit": {
         "fragment": "dictionary EventModifierInit : UIEventInit {\n  boolean ctrlKey = false;\n  boolean shiftKey = false;\n  boolean altKey = false;\n  boolean metaKey = false;\n\n  boolean modifierAltGraph = false;\n  boolean modifierCapsLock = false;\n  boolean modifierFn = false;\n  boolean modifierFnLock = false;\n  boolean modifierHyper = false;\n  boolean modifierNumLock = false;\n  boolean modifierScrollLock = false;\n  boolean modifierSuper = false;\n  boolean modifierSymbol = false;\n  boolean modifierSymbolLock = false;\n};",
@@ -704,7 +740,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-ctrlkey"
           },
           {
             "type": "field",
@@ -722,7 +759,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-shiftkey"
           },
           {
             "type": "field",
@@ -740,7 +778,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-altkey"
           },
           {
             "type": "field",
@@ -758,7 +797,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-metakey"
           },
           {
             "type": "field",
@@ -776,7 +816,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifieraltgraph"
           },
           {
             "type": "field",
@@ -794,7 +835,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiercapslock"
           },
           {
             "type": "field",
@@ -812,7 +854,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfn"
           },
           {
             "type": "field",
@@ -830,7 +873,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfnlock"
           },
           {
             "type": "field",
@@ -848,7 +892,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierhyper"
           },
           {
             "type": "field",
@@ -866,7 +911,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiernumlock"
           },
           {
             "type": "field",
@@ -884,7 +930,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierscrolllock"
           },
           {
             "type": "field",
@@ -902,7 +949,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersuper"
           },
           {
             "type": "field",
@@ -920,7 +968,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbol"
           },
           {
             "type": "field",
@@ -938,11 +987,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbollock"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit"
       },
       "WheelEvent": {
         "fragment": "[Exposed=Window]\ninterface WheelEvent : MouseEvent {\n  constructor(DOMString type, optional WheelEventInit eventInitDict = {});\n  // DeltaModeCode\n  const unsigned long DOM_DELTA_PIXEL = 0x00;\n  const unsigned long DOM_DELTA_LINE  = 0x01;\n  const unsigned long DOM_DELTA_PAGE  = 0x02;\n\n  readonly attribute double deltaX;\n  readonly attribute double deltaY;\n  readonly attribute double deltaZ;\n  readonly attribute unsigned long deltaMode;\n};",
@@ -988,7 +1039,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-wheelevent"
           },
           {
             "type": "const",
@@ -1005,7 +1057,8 @@
             "value": {
               "type": "number",
               "value": "0x00"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_pixel"
           },
           {
             "type": "const",
@@ -1022,7 +1075,8 @@
             "value": {
               "type": "number",
               "value": "0x01"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_line"
           },
           {
             "type": "const",
@@ -1039,7 +1093,8 @@
             "value": {
               "type": "number",
               "value": "0x02"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_page"
           },
           {
             "type": "attribute",
@@ -1054,7 +1109,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltax"
           },
           {
             "type": "attribute",
@@ -1069,7 +1125,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltay"
           },
           {
             "type": "attribute",
@@ -1084,7 +1141,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltaz"
           },
           {
             "type": "attribute",
@@ -1099,7 +1157,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltamode"
           }
         ],
         "extAttrs": [
@@ -1113,7 +1172,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#wheelevent"
       },
       "WheelEventInit": {
         "fragment": "dictionary WheelEventInit : MouseEventInit {\n  double deltaX = 0.0;\n  double deltaY = 0.0;\n  double deltaZ = 0.0;\n  unsigned long deltaMode = 0;\n};",
@@ -1137,7 +1197,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltax"
           },
           {
             "type": "field",
@@ -1155,7 +1216,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltay"
           },
           {
             "type": "field",
@@ -1173,7 +1235,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltaz"
           },
           {
             "type": "field",
@@ -1191,11 +1254,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltamode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-wheeleventinit"
       },
       "InputEvent": {
         "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute USVString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
@@ -1241,7 +1306,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-inputevent-inputevent"
           },
           {
             "type": "attribute",
@@ -1256,7 +1322,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-inputevent-data"
           },
           {
             "type": "attribute",
@@ -1271,7 +1338,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-inputevent-iscomposing"
           },
           {
             "type": "attribute",
@@ -1286,7 +1354,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-inputevent-inputtype"
           }
         ],
         "extAttrs": [
@@ -1300,7 +1369,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#inputevent"
       },
       "InputEventInit": {
         "fragment": "dictionary InputEventInit : UIEventInit {\n  DOMString? data = null;\n  boolean isComposing = false;\n  DOMString inputType = \"\";\n};",
@@ -1323,7 +1393,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-inputeventinit-data"
           },
           {
             "type": "field",
@@ -1341,7 +1412,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-inputeventinit-iscomposing"
           },
           {
             "type": "field",
@@ -1359,11 +1431,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-inputeventinit-inputtype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-inputeventinit"
       },
       "KeyboardEvent": {
         "fragment": "[Exposed=Window]\ninterface KeyboardEvent : UIEvent {\n  constructor(DOMString type, optional KeyboardEventInit eventInitDict = {});\n  // KeyLocationCode\n  const unsigned long DOM_KEY_LOCATION_STANDARD = 0x00;\n  const unsigned long DOM_KEY_LOCATION_LEFT = 0x01;\n  const unsigned long DOM_KEY_LOCATION_RIGHT = 0x02;\n  const unsigned long DOM_KEY_LOCATION_NUMPAD = 0x03;\n\n  readonly attribute DOMString key;\n  readonly attribute DOMString code;\n  readonly attribute unsigned long location;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute boolean repeat;\n  readonly attribute boolean isComposing;\n\n  boolean getModifierState(DOMString keyArg);\n};",
@@ -1409,7 +1483,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent"
           },
           {
             "type": "const",
@@ -1426,7 +1501,8 @@
             "value": {
               "type": "number",
               "value": "0x00"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_standard"
           },
           {
             "type": "const",
@@ -1443,7 +1519,8 @@
             "value": {
               "type": "number",
               "value": "0x01"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_left"
           },
           {
             "type": "const",
@@ -1460,7 +1537,8 @@
             "value": {
               "type": "number",
               "value": "0x02"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_right"
           },
           {
             "type": "const",
@@ -1477,7 +1555,8 @@
             "value": {
               "type": "number",
               "value": "0x03"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_numpad"
           },
           {
             "type": "attribute",
@@ -1492,7 +1571,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-key"
           },
           {
             "type": "attribute",
@@ -1507,7 +1587,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-code"
           },
           {
             "type": "attribute",
@@ -1522,7 +1603,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-location"
           },
           {
             "type": "attribute",
@@ -1537,7 +1619,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-ctrlkey"
           },
           {
             "type": "attribute",
@@ -1552,7 +1635,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-shiftkey"
           },
           {
             "type": "attribute",
@@ -1567,7 +1651,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-altkey"
           },
           {
             "type": "attribute",
@@ -1582,7 +1667,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-metakey"
           },
           {
             "type": "attribute",
@@ -1597,7 +1683,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-repeat"
           },
           {
             "type": "attribute",
@@ -1612,7 +1699,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-iscomposing"
           },
           {
             "type": "operation",
@@ -1644,7 +1732,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/uievents/#dom-keyboardevent-getmodifierstate"
           }
         ],
         "extAttrs": [
@@ -1658,7 +1747,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#keyboardevent"
       },
       "KeyboardEventInit": {
         "fragment": "dictionary KeyboardEventInit : EventModifierInit {\n  DOMString key = \"\";\n  DOMString code = \"\";\n  unsigned long location = 0;\n  boolean repeat = false;\n  boolean isComposing = false;\n};",
@@ -1682,7 +1772,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-key"
           },
           {
             "type": "field",
@@ -1700,7 +1791,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-code"
           },
           {
             "type": "field",
@@ -1718,7 +1810,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-location"
           },
           {
             "type": "field",
@@ -1736,7 +1829,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-repeat"
           },
           {
             "type": "field",
@@ -1754,11 +1848,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-iscomposing"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-keyboardeventinit"
       },
       "CompositionEvent": {
         "fragment": "[Exposed=Window]\ninterface CompositionEvent : UIEvent {\n  constructor(DOMString type, optional CompositionEventInit eventInitDict = {});\n  readonly attribute USVString data;\n};",
@@ -1804,7 +1900,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/uievents/#dom-compositionevent-compositionevent"
           },
           {
             "type": "attribute",
@@ -1819,7 +1916,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-compositionevent-data"
           }
         ],
         "extAttrs": [
@@ -1833,7 +1931,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#compositionevent"
       },
       "CompositionEventInit": {
         "fragment": "dictionary CompositionEventInit : UIEventInit {\n  DOMString data = \"\";\n};",
@@ -1857,11 +1956,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-compositioneventinit-data"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-compositioneventinit"
       },
       "MutationEvent": {
         "fragment": "[Exposed=Window]\ninterface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Node? relatedNodeArg = null,\n    optional DOMString prevValueArg = \"\",\n    optional DOMString newValueArg = \"\",\n    optional DOMString attrNameArg = \"\",\n    optional unsigned short attrChangeArg = 0);\n};",
@@ -1884,7 +1985,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-modification"
           },
           {
             "type": "const",
@@ -1901,7 +2003,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-addition"
           },
           {
             "type": "const",
@@ -1918,7 +2021,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-removal"
           },
           {
             "type": "attribute",
@@ -1933,7 +2037,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-relatednode"
           },
           {
             "type": "attribute",
@@ -1948,7 +2053,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-prevvalue"
           },
           {
             "type": "attribute",
@@ -1963,7 +2069,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-newvalue"
           },
           {
             "type": "attribute",
@@ -1978,7 +2085,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-attrname"
           },
           {
             "type": "attribute",
@@ -1993,7 +2101,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-attrchange"
           },
           {
             "type": "operation",
@@ -2157,7 +2266,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/uievents/#dom-mutationevent-initmutationevent"
           }
         ],
         "extAttrs": [
@@ -2171,7 +2281,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#mutationevent"
       }
     },
     "idlExtendedNames": {
@@ -2287,7 +2398,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/uievents/#dom-uievent-inituievent"
             }
           ],
           "extAttrs": [],
@@ -2312,7 +2424,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/uievents/#dom-uievent-which"
             }
           ],
           "extAttrs": [],
@@ -2620,7 +2733,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/uievents/#dom-mouseevent-initmouseevent"
             }
           ],
           "extAttrs": [],
@@ -2834,7 +2948,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/uievents/#dom-keyboardevent-initkeyboardevent"
             }
           ],
           "extAttrs": [],
@@ -2859,7 +2974,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/uievents/#dom-keyboardevent-charcode"
             },
             {
               "type": "attribute",
@@ -2874,7 +2990,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keycode"
             }
           ],
           "extAttrs": [],
@@ -2993,7 +3110,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/uievents/#dom-compositionevent-initcompositionevent"
             }
           ],
           "extAttrs": [],
@@ -3023,7 +3141,8 @@
                 "type": "number",
                 "value": "0"
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/uievents/#dom-uieventinit-which"
             }
           ],
           "extAttrs": [],
@@ -3053,7 +3172,8 @@
                 "type": "number",
                 "value": "0"
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-charcode"
             },
             {
               "type": "field",
@@ -3071,7 +3191,8 @@
                 "type": "number",
                 "value": "0"
               },
-              "required": false
+              "required": false,
+              "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-keycode"
             }
           ],
           "extAttrs": [],

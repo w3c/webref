@@ -88,7 +88,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-getcurrentposition"
           },
           {
             "type": "operation",
@@ -156,7 +157,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-watchposition"
           },
           {
             "type": "operation",
@@ -188,7 +190,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-clearwatch"
           }
         ],
         "extAttrs": [
@@ -202,7 +205,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocation"
       },
       "PositionCallback": {
         "fragment": "callback PositionCallback = undefined (\n  GeolocationPosition position\n);",
@@ -234,7 +238,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/geolocation-api/#dom-positioncallback"
       },
       "PositionErrorCallback": {
         "fragment": "callback PositionErrorCallback = undefined (\n  GeolocationPositionError positionError\n);",
@@ -266,7 +271,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/geolocation-api/#dom-positionerrorcallback"
       },
       "PositionOptions": {
         "fragment": "dictionary PositionOptions {\n  boolean enableHighAccuracy = false;\n  [Clamp] unsigned long timeout = 0xFFFFFFFF;\n  [Clamp] unsigned long maximumAge = 0;\n};",
@@ -290,7 +296,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-api/#dom-positionoptions-enablehighaccuracy"
           },
           {
             "type": "field",
@@ -315,7 +322,8 @@
               "type": "number",
               "value": "0xFFFFFFFF"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-api/#dom-positionoptions-timeout"
           },
           {
             "type": "field",
@@ -340,11 +348,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/geolocation-api/#dom-positionoptions-maximumage"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-api/#dom-positionoptions"
       },
       "GeolocationPosition": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n};",
@@ -365,7 +375,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition-coords"
           },
           {
             "type": "attribute",
@@ -380,7 +391,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition-timestamp"
           }
         ],
         "extAttrs": [
@@ -400,7 +412,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition"
       },
       "GeolocationCoordinates": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
@@ -421,7 +434,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-accuracy"
           },
           {
             "type": "attribute",
@@ -436,7 +450,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-latitude"
           },
           {
             "type": "attribute",
@@ -451,7 +466,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-longitude"
           },
           {
             "type": "attribute",
@@ -466,7 +482,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitude"
           },
           {
             "type": "attribute",
@@ -481,7 +498,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitudeaccuracy"
           },
           {
             "type": "attribute",
@@ -496,7 +514,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-heading"
           },
           {
             "type": "attribute",
@@ -511,7 +530,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-speed"
           }
         ],
         "extAttrs": [
@@ -531,7 +551,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates"
       },
       "GeolocationPositionError": {
         "fragment": "[Exposed=Window]\ninterface GeolocationPositionError {\n  const unsigned short PERMISSION_DENIED = 1;\n  const unsigned short POSITION_UNAVAILABLE = 2;\n  const unsigned short TIMEOUT = 3;\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
@@ -554,7 +575,8 @@
             "value": {
               "type": "number",
               "value": "1"
-            }
+            },
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-permission_denied"
           },
           {
             "type": "const",
@@ -571,7 +593,8 @@
             "value": {
               "type": "number",
               "value": "2"
-            }
+            },
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-position_unavailable"
           },
           {
             "type": "const",
@@ -588,7 +611,8 @@
             "value": {
               "type": "number",
               "value": "3"
-            }
+            },
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-timeout"
           },
           {
             "type": "attribute",
@@ -603,7 +627,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-code"
           },
           {
             "type": "attribute",
@@ -618,7 +643,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-message"
           }
         ],
         "extAttrs": [
@@ -632,7 +658,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror"
       }
     },
     "idlExtendedNames": {
@@ -663,7 +690,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/geolocation-api/#dom-navigator-geolocation"
             }
           ],
           "extAttrs": [],

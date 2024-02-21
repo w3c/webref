@@ -22,14 +22,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "logged-in"
+            "value": "logged-in",
+            "href": "https://fedidcg.github.io/FedCM/#dom-loginstatus-logged-in"
           },
           {
             "type": "enum-value",
-            "value": "logged-out"
+            "value": "logged-out",
+            "href": "https://fedidcg.github.io/FedCM/#dom-loginstatus-logged-out"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fedidcg.github.io/FedCM/#enumdef-loginstatus"
       },
       "NavigatorLogin": {
         "fragment": "[Exposed=Window, SecureContext]\n\ninterface NavigatorLogin {\n  Promise<undefined> setStatus(LoginStatus status);\n};",
@@ -76,7 +79,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://fedidcg.github.io/FedCM/#dom-navigatorlogin-setstatus"
           }
         ],
         "extAttrs": [
@@ -96,7 +100,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#navigatorlogin"
       },
       "IdentityCredentialDisconnectOptions": {
         "fragment": "dictionary IdentityCredentialDisconnectOptions : IdentityProviderConfig {\n  required USVString accountHint;\n};",
@@ -117,11 +122,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialdisconnectoptions-accounthint"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentialdisconnectoptions"
       },
       "IdentityCredential": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(optional IdentityCredentialDisconnectOptions options = {});\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n};",
@@ -170,7 +177,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-disconnect"
           },
           {
             "type": "attribute",
@@ -185,7 +193,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-token"
           },
           {
             "type": "attribute",
@@ -200,7 +209,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-isautoselected"
           }
         ],
         "extAttrs": [
@@ -220,7 +230,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#identitycredential"
       },
       "DisconnectedAccount": {
         "fragment": "dictionary DisconnectedAccount {\n  required USVString account_id;\n};",
@@ -241,11 +252,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-disconnectedaccount-account_id"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-disconnectedaccount"
       },
       "IdentityCredentialRequestOptionsContext": {
         "fragment": "enum IdentityCredentialRequestOptionsContext {\n  \"signin\",\n  \"signup\",\n  \"use\",\n  \"continue\"\n};",
@@ -254,22 +267,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "signin"
+            "value": "signin",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-signin"
           },
           {
             "type": "enum-value",
-            "value": "signup"
+            "value": "signup",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-signup"
           },
           {
             "type": "enum-value",
-            "value": "use"
+            "value": "use",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-use"
           },
           {
             "type": "enum-value",
-            "value": "continue"
+            "value": "continue",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-continue"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://fedidcg.github.io/FedCM/#enumdef-identitycredentialrequestoptionscontext"
       },
       "IdentityCredentialRequestOptions": {
         "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderRequestOptions> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
@@ -299,7 +317,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptions-providers"
           },
           {
             "type": "field",
@@ -317,11 +336,13 @@
               "type": "string",
               "value": "signin"
             },
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptions-context"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentialrequestoptions"
       },
       "IdentityProviderConfig": {
         "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n};",
@@ -342,7 +363,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-configurl"
           },
           {
             "type": "field",
@@ -357,11 +379,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-clientid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderconfig"
       },
       "IdentityProviderRequestOptions": {
         "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n  DOMString domainHint;\n};",
@@ -382,7 +406,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderrequestoptions-nonce"
           },
           {
             "type": "field",
@@ -397,7 +422,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint"
           },
           {
             "type": "field",
@@ -412,11 +438,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderrequestoptions"
       },
       "IdentityProviderWellKnown": {
         "fragment": "dictionary IdentityProviderWellKnown {\n  required sequence<USVString> provider_urls;\n};",
@@ -446,11 +474,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderwellknown-provider_urls"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderwellknown"
       },
       "IdentityProviderIcon": {
         "fragment": "dictionary IdentityProviderIcon {\n  required USVString url;\n  unsigned long size;\n};",
@@ -471,7 +501,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidericon-url"
           },
           {
             "type": "field",
@@ -486,11 +517,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidericon-size"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovidericon"
       },
       "IdentityProviderBranding": {
         "fragment": "dictionary IdentityProviderBranding {\n  USVString background_color;\n  USVString color;\n  sequence<IdentityProviderIcon> icons;\n  USVString name;\n};",
@@ -511,7 +544,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-background_color"
           },
           {
             "type": "field",
@@ -526,7 +560,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-color"
           },
           {
             "type": "field",
@@ -550,7 +585,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-icons"
           },
           {
             "type": "field",
@@ -565,11 +601,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-name"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderbranding"
       },
       "IdentityProviderAPIConfig": {
         "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n};",
@@ -590,7 +628,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-accounts_endpoint"
           },
           {
             "type": "field",
@@ -605,7 +644,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint"
           },
           {
             "type": "field",
@@ -620,7 +660,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint"
           },
           {
             "type": "field",
@@ -635,7 +676,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-login_url"
           },
           {
             "type": "field",
@@ -650,7 +692,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-disconnect_endpoint"
           },
           {
             "type": "field",
@@ -665,11 +708,13 @@
               "idlType": "IdentityProviderBranding"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-branding"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderapiconfig"
       },
       "IdentityProviderAccount": {
         "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n};",
@@ -690,7 +735,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-id"
           },
           {
             "type": "field",
@@ -705,7 +751,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-name"
           },
           {
             "type": "field",
@@ -720,7 +767,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-email"
           },
           {
             "type": "field",
@@ -735,7 +783,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-given_name"
           },
           {
             "type": "field",
@@ -750,7 +799,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-picture"
           },
           {
             "type": "field",
@@ -774,7 +824,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-approved_clients"
           },
           {
             "type": "field",
@@ -798,7 +849,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-login_hints"
           },
           {
             "type": "field",
@@ -822,11 +874,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-domain_hints"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovideraccount"
       },
       "IdentityProviderAccountList": {
         "fragment": "dictionary IdentityProviderAccountList {\n  sequence<IdentityProviderAccount> accounts;\n};",
@@ -856,11 +910,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccountlist-accounts"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovideraccountlist"
       },
       "IdentityProviderToken": {
         "fragment": "dictionary IdentityProviderToken {\n  required USVString token;\n};",
@@ -881,11 +937,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidertoken-token"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovidertoken"
       },
       "IdentityProviderClientMetadata": {
         "fragment": "dictionary IdentityProviderClientMetadata {\n  USVString privacy_policy_url;\n  USVString terms_of_service_url;\n};",
@@ -906,7 +964,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderclientmetadata-privacy_policy_url"
           },
           {
             "type": "field",
@@ -921,11 +980,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderclientmetadata-terms_of_service_url"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderclientmetadata"
       },
       "IdentityUserInfo": {
         "fragment": "dictionary IdentityUserInfo {\n  USVString email;\n  USVString name;\n  USVString givenName;\n  USVString picture;\n};",
@@ -946,7 +1007,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-email"
           },
           {
             "type": "field",
@@ -961,7 +1023,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-name"
           },
           {
             "type": "field",
@@ -976,7 +1039,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-givenname"
           },
           {
             "type": "field",
@@ -991,11 +1055,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-picture"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-identityuserinfo"
       },
       "IdentityProvider": {
         "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static undefined close();\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
@@ -1016,7 +1082,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-close"
           },
           {
             "type": "operation",
@@ -1066,7 +1133,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-getuserinfo"
           }
         ],
         "extAttrs": [
@@ -1086,7 +1154,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://fedidcg.github.io/FedCM/#identityprovider"
       }
     },
     "idlExtendedNames": {
@@ -1117,7 +1186,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://fedidcg.github.io/FedCM/#dom-navigator-login"
             }
           ],
           "extAttrs": [],
@@ -1144,7 +1214,8 @@
                 "idlType": "IdentityCredentialRequestOptions"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://fedidcg.github.io/FedCM/#dom-credentialrequestoptions-identity"
             }
           ],
           "extAttrs": [],

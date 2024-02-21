@@ -47,7 +47,8 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdatafilterinit-dataprefix"
           },
           {
             "type": "field",
@@ -62,11 +63,13 @@
               "idlType": "BufferSource"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdatafilterinit-mask"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothdatafilterinit"
       },
       "BluetoothManufacturerDataFilterInit": {
         "fragment": "dictionary BluetoothManufacturerDataFilterInit : BluetoothDataFilterInit {\n  required [EnforceRange] unsigned short companyIdentifier;\n};",
@@ -94,11 +97,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothmanufacturerdatafilterinit-companyidentifier"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothmanufacturerdatafilterinit"
       },
       "BluetoothServiceDataFilterInit": {
         "fragment": "dictionary BluetoothServiceDataFilterInit : BluetoothDataFilterInit {\n  required BluetoothServiceUUID service;\n};",
@@ -119,11 +124,13 @@
               "idlType": "BluetoothServiceUUID"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothservicedatafilterinit-service"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothservicedatafilterinit"
       },
       "BluetoothLEScanFilterInit": {
         "fragment": "dictionary BluetoothLEScanFilterInit {\n  sequence<BluetoothServiceUUID> services;\n  DOMString name;\n  DOMString namePrefix;\n  sequence<BluetoothManufacturerDataFilterInit> manufacturerData;\n  sequence<BluetoothServiceDataFilterInit> serviceData;\n};",
@@ -153,7 +160,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-services"
           },
           {
             "type": "field",
@@ -168,7 +176,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-name"
           },
           {
             "type": "field",
@@ -183,7 +192,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-nameprefix"
           },
           {
             "type": "field",
@@ -207,7 +217,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-manufacturerdata"
           },
           {
             "type": "field",
@@ -231,11 +242,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-servicedata"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothlescanfilterinit"
       },
       "RequestDeviceOptions": {
         "fragment": "dictionary RequestDeviceOptions {\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothLEScanFilterInit> exclusionFilters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
@@ -265,7 +278,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-filters"
           },
           {
             "type": "field",
@@ -289,7 +303,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-exclusionfilters"
           },
           {
             "type": "field",
@@ -316,7 +331,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-optionalservices"
           },
           {
             "type": "field",
@@ -343,7 +359,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-optionalmanufacturerdata"
           },
           {
             "type": "field",
@@ -361,11 +378,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-acceptalldevices"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-requestdeviceoptions"
       },
       "Bluetooth": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface Bluetooth : EventTarget {\n  Promise<boolean> getAvailability();\n  attribute EventHandler onavailabilitychanged;\n  [SameObject]\n  readonly attribute BluetoothDevice? referringDevice;\n  Promise<sequence<BluetoothDevice>> getDevices();\n  Promise<BluetoothDevice> requestDevice(optional RequestDeviceOptions options = {});\n};",
@@ -395,7 +414,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-getavailability"
           },
           {
             "type": "attribute",
@@ -410,7 +430,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-onavailabilitychanged"
           },
           {
             "type": "attribute",
@@ -432,7 +453,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-referringdevice"
           },
           {
             "type": "operation",
@@ -465,7 +487,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-getdevices"
           },
           {
             "type": "operation",
@@ -508,7 +531,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-requestdevice"
           }
         ],
         "extAttrs": [
@@ -528,7 +552,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth"
       },
       "BluetoothPermissionDescriptor": {
         "fragment": "dictionary BluetoothPermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n  // These match RequestDeviceOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
@@ -549,7 +574,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-deviceid"
           },
           {
             "type": "field",
@@ -573,7 +599,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-filters"
           },
           {
             "type": "field",
@@ -600,7 +627,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-optionalservices"
           },
           {
             "type": "field",
@@ -627,7 +655,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-optionalmanufacturerdata"
           },
           {
             "type": "field",
@@ -645,11 +674,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-acceptalldevices"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissiondescriptor"
       },
       "AllowedBluetoothDevice": {
         "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n  required sequence<unsigned short> allowedManufacturerData;\n};",
@@ -670,7 +701,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-deviceid"
           },
           {
             "type": "field",
@@ -685,7 +717,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-mayusegatt"
           },
           {
             "type": "field",
@@ -726,7 +759,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-allowedservices"
           },
           {
             "type": "field",
@@ -750,11 +784,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-allowedmanufacturerdata"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-allowedbluetoothdevice"
       },
       "BluetoothPermissionStorage": {
         "fragment": "dictionary BluetoothPermissionStorage {\n  required sequence<AllowedBluetoothDevice> allowedDevices;\n};",
@@ -784,11 +820,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissionstorage-alloweddevices"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissionstorage"
       },
       "BluetoothPermissionResult": {
         "fragment": "[Exposed=Window]\ninterface BluetoothPermissionResult : PermissionStatus {\n  attribute FrozenArray<BluetoothDevice> devices;\n};",
@@ -818,7 +856,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissionresult-devices"
           }
         ],
         "extAttrs": [
@@ -832,7 +871,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothpermissionresult"
       },
       "ValueEvent": {
         "fragment": "[\n  Exposed=Window,\n  SecureContext\n]\ninterface ValueEvent : Event {\n  constructor(DOMString type, optional ValueEventInit initDict = {});\n  readonly attribute any value;\n};",
@@ -878,7 +918,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-valueevent-valueevent"
           },
           {
             "type": "attribute",
@@ -893,7 +934,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-valueevent-value"
           }
         ],
         "extAttrs": [
@@ -913,7 +955,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#valueevent"
       },
       "ValueEventInit": {
         "fragment": "dictionary ValueEventInit : EventInit {\n  any value = null;\n};",
@@ -936,11 +979,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-valueeventinit-value"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-valueeventinit"
       },
       "BluetoothDevice": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> forget();\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
@@ -961,7 +1006,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-id"
           },
           {
             "type": "attribute",
@@ -976,7 +1022,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-name"
           },
           {
             "type": "attribute",
@@ -991,7 +1038,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt"
           },
           {
             "type": "operation",
@@ -1015,7 +1063,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-forget"
           },
           {
             "type": "operation",
@@ -1058,7 +1107,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-watchadvertisements"
           },
           {
             "type": "attribute",
@@ -1073,7 +1123,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-watchingadvertisements"
           }
         ],
         "extAttrs": [
@@ -1093,7 +1144,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice"
       },
       "WatchAdvertisementsOptions": {
         "fragment": "dictionary WatchAdvertisementsOptions {\n  AbortSignal signal;\n};",
@@ -1114,11 +1166,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-watchadvertisementsoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-watchadvertisementsoptions"
       },
       "BluetoothManufacturerDataMap": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothManufacturerDataMap {\n  readonly maplike<unsigned short, DataView>;\n};",
@@ -1169,7 +1223,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothmanufacturerdatamap"
       },
       "BluetoothServiceDataMap": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothServiceDataMap {\n  readonly maplike<UUID, DataView>;\n};",
@@ -1220,7 +1275,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothservicedatamap"
       },
       "BluetoothAdvertisingEvent": {
         "fragment": "[\n  Exposed=Window,\n  SecureContext\n]\ninterface BluetoothAdvertisingEvent : Event {\n  constructor(DOMString type, BluetoothAdvertisingEventInit init);\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute FrozenArray<UUID> uuids;\n  readonly attribute DOMString? name;\n  readonly attribute unsigned short? appearance;\n  readonly attribute byte? txPower;\n  readonly attribute byte? rssi;\n  [SameObject]\n  readonly attribute BluetoothManufacturerDataMap manufacturerData;\n  [SameObject]\n  readonly attribute BluetoothServiceDataMap serviceData;\n};",
@@ -1264,7 +1320,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-bluetoothadvertisingevent"
           },
           {
             "type": "attribute",
@@ -1286,7 +1343,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-device"
           },
           {
             "type": "attribute",
@@ -1310,7 +1368,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-uuids"
           },
           {
             "type": "attribute",
@@ -1325,7 +1384,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-name"
           },
           {
             "type": "attribute",
@@ -1340,7 +1400,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-appearance"
           },
           {
             "type": "attribute",
@@ -1355,7 +1416,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-txpower"
           },
           {
             "type": "attribute",
@@ -1370,7 +1432,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-rssi"
           },
           {
             "type": "attribute",
@@ -1392,7 +1455,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-manufacturerdata"
           },
           {
             "type": "attribute",
@@ -1414,7 +1478,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingevent-servicedata"
           }
         ],
         "extAttrs": [
@@ -1434,7 +1499,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothadvertisingevent"
       },
       "BluetoothAdvertisingEventInit": {
         "fragment": "dictionary BluetoothAdvertisingEventInit : EventInit {\n  required BluetoothDevice device;\n  sequence<(DOMString or unsigned long)> uuids;\n  DOMString name;\n  unsigned short appearance;\n  byte txPower;\n  byte rssi;\n  BluetoothManufacturerDataMap manufacturerData;\n  BluetoothServiceDataMap serviceData;\n};",
@@ -1455,7 +1521,8 @@
               "idlType": "BluetoothDevice"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-device"
           },
           {
             "type": "field",
@@ -1496,7 +1563,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-uuids"
           },
           {
             "type": "field",
@@ -1511,7 +1579,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-name"
           },
           {
             "type": "field",
@@ -1526,7 +1595,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-appearance"
           },
           {
             "type": "field",
@@ -1541,7 +1611,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-txpower"
           },
           {
             "type": "field",
@@ -1556,7 +1627,8 @@
               "idlType": "byte"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-rssi"
           },
           {
             "type": "field",
@@ -1571,7 +1643,8 @@
               "idlType": "BluetoothManufacturerDataMap"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-manufacturerdata"
           },
           {
             "type": "field",
@@ -1586,11 +1659,13 @@
               "idlType": "BluetoothServiceDataMap"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothadvertisingeventinit-servicedata"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothadvertisingeventinit"
       },
       "BluetoothRemoteGATTServer": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTServer {\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute boolean connected;\n  Promise<BluetoothRemoteGATTServer> connect();\n  undefined disconnect();\n  Promise<BluetoothRemoteGATTService> getPrimaryService(BluetoothServiceUUID service);\n  Promise<sequence<BluetoothRemoteGATTService>>\n    getPrimaryServices(optional BluetoothServiceUUID service);\n};",
@@ -1618,7 +1693,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-device"
           },
           {
             "type": "attribute",
@@ -1633,7 +1709,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-connected"
           },
           {
             "type": "operation",
@@ -1657,7 +1734,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-connect"
           },
           {
             "type": "operation",
@@ -1672,7 +1750,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-disconnect"
           },
           {
             "type": "operation",
@@ -1713,7 +1792,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-getprimaryservice"
           },
           {
             "type": "operation",
@@ -1763,7 +1843,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattserver-getprimaryservices"
           }
         ],
         "extAttrs": [
@@ -1783,7 +1864,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattserver"
       },
       "BluetoothRemoteGATTService": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTService : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute UUID uuid;\n  readonly attribute boolean isPrimary;\n  Promise<BluetoothRemoteGATTCharacteristic>\n    getCharacteristic(BluetoothCharacteristicUUID characteristic);\n  Promise<sequence<BluetoothRemoteGATTCharacteristic>>\n    getCharacteristics(optional BluetoothCharacteristicUUID characteristic);\n  Promise<BluetoothRemoteGATTService>\n    getIncludedService(BluetoothServiceUUID service);\n  Promise<sequence<BluetoothRemoteGATTService>>\n    getIncludedServices(optional BluetoothServiceUUID service);\n};",
@@ -1811,7 +1893,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-device"
           },
           {
             "type": "attribute",
@@ -1826,7 +1909,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-uuid"
           },
           {
             "type": "attribute",
@@ -1841,7 +1925,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-isprimary"
           },
           {
             "type": "operation",
@@ -1882,7 +1967,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-getcharacteristic"
           },
           {
             "type": "operation",
@@ -1932,7 +2018,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-getcharacteristics"
           },
           {
             "type": "operation",
@@ -1973,7 +2060,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-getincludedservice"
           },
           {
             "type": "operation",
@@ -2023,7 +2111,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattservice-getincludedservices"
           }
         ],
         "extAttrs": [
@@ -2043,7 +2132,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattservice"
       },
       "BluetoothRemoteGATTCharacteristic": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTCharacteristic : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTService service;\n  readonly attribute UUID uuid;\n  readonly attribute BluetoothCharacteristicProperties properties;\n  readonly attribute DataView? value;\n  Promise<BluetoothRemoteGATTDescriptor> getDescriptor(BluetoothDescriptorUUID descriptor);\n  Promise<sequence<BluetoothRemoteGATTDescriptor>>\n    getDescriptors(optional BluetoothDescriptorUUID descriptor);\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n  Promise<undefined> writeValueWithResponse(BufferSource value);\n  Promise<undefined> writeValueWithoutResponse(BufferSource value);\n  Promise<BluetoothRemoteGATTCharacteristic> startNotifications();\n  Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();\n};",
@@ -2071,7 +2161,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-service"
           },
           {
             "type": "attribute",
@@ -2086,7 +2177,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-uuid"
           },
           {
             "type": "attribute",
@@ -2101,7 +2193,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-properties"
           },
           {
             "type": "attribute",
@@ -2116,7 +2209,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-value"
           },
           {
             "type": "operation",
@@ -2157,7 +2251,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-getdescriptor"
           },
           {
             "type": "operation",
@@ -2207,7 +2302,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-getdescriptors"
           },
           {
             "type": "operation",
@@ -2231,7 +2327,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-readvalue"
           },
           {
             "type": "operation",
@@ -2272,7 +2369,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevalue"
           },
           {
             "type": "operation",
@@ -2313,7 +2411,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevaluewithresponse"
           },
           {
             "type": "operation",
@@ -2354,7 +2453,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevaluewithoutresponse"
           },
           {
             "type": "operation",
@@ -2378,7 +2478,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-startnotifications"
           },
           {
             "type": "operation",
@@ -2402,7 +2503,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-stopnotifications"
           }
         ],
         "extAttrs": [
@@ -2422,7 +2524,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattcharacteristic"
       },
       "BluetoothCharacteristicProperties": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothCharacteristicProperties {\n  readonly attribute boolean broadcast;\n  readonly attribute boolean read;\n  readonly attribute boolean writeWithoutResponse;\n  readonly attribute boolean write;\n  readonly attribute boolean notify;\n  readonly attribute boolean indicate;\n  readonly attribute boolean authenticatedSignedWrites;\n  readonly attribute boolean reliableWrite;\n  readonly attribute boolean writableAuxiliaries;\n};",
@@ -2443,7 +2546,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-broadcast"
           },
           {
             "type": "attribute",
@@ -2458,7 +2562,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-read"
           },
           {
             "type": "attribute",
@@ -2473,7 +2578,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-writewithoutresponse"
           },
           {
             "type": "attribute",
@@ -2488,7 +2594,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-write"
           },
           {
             "type": "attribute",
@@ -2503,7 +2610,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-notify"
           },
           {
             "type": "attribute",
@@ -2518,7 +2626,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-indicate"
           },
           {
             "type": "attribute",
@@ -2533,7 +2642,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-authenticatedsignedwrites"
           },
           {
             "type": "attribute",
@@ -2548,7 +2658,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-reliablewrite"
           },
           {
             "type": "attribute",
@@ -2563,7 +2674,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothcharacteristicproperties-writableauxiliaries"
           }
         ],
         "extAttrs": [
@@ -2583,7 +2695,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothcharacteristicproperties"
       },
       "BluetoothRemoteGATTDescriptor": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n};",
@@ -2611,7 +2724,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-characteristic"
           },
           {
             "type": "attribute",
@@ -2626,7 +2740,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-uuid"
           },
           {
             "type": "attribute",
@@ -2641,7 +2756,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-value"
           },
           {
             "type": "operation",
@@ -2665,7 +2781,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-readvalue"
           },
           {
             "type": "operation",
@@ -2706,7 +2823,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-writevalue"
           }
         ],
         "extAttrs": [
@@ -2726,7 +2844,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattdescriptor"
       },
       "CharacteristicEventHandlers": {
         "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
@@ -2747,7 +2866,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-characteristiceventhandlers-oncharacteristicvaluechanged"
           }
         ],
         "extAttrs": [
@@ -2758,7 +2878,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers"
       },
       "BluetoothDeviceEventHandlers": {
         "fragment": "[SecureContext]\ninterface mixin BluetoothDeviceEventHandlers {\n  attribute EventHandler onadvertisementreceived;\n  attribute EventHandler ongattserverdisconnected;\n};",
@@ -2779,7 +2900,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdeviceeventhandlers-onadvertisementreceived"
           },
           {
             "type": "attribute",
@@ -2794,7 +2916,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdeviceeventhandlers-ongattserverdisconnected"
           }
         ],
         "extAttrs": [
@@ -2805,7 +2928,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdeviceeventhandlers"
       },
       "ServiceEventHandlers": {
         "fragment": "[SecureContext]\ninterface mixin ServiceEventHandlers {\n  attribute EventHandler onserviceadded;\n  attribute EventHandler onservicechanged;\n  attribute EventHandler onserviceremoved;\n};",
@@ -2826,7 +2950,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onserviceadded"
           },
           {
             "type": "attribute",
@@ -2841,7 +2966,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onservicechanged"
           },
           {
             "type": "attribute",
@@ -2856,7 +2982,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onserviceremoved"
           }
         ],
         "extAttrs": [
@@ -2867,7 +2994,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#serviceeventhandlers"
       },
       "UUID": {
         "fragment": "typedef DOMString UUID;",
@@ -2881,7 +3009,8 @@
           "union": false,
           "idlType": "DOMString"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-uuid"
       },
       "BluetoothUUID": {
         "fragment": "[Exposed=Window]\ninterface BluetoothUUID {\n  static UUID getService((DOMString or unsigned long) name);\n  static UUID getCharacteristic((DOMString or unsigned long) name);\n  static UUID getDescriptor((DOMString or unsigned long) name);\n\n  static UUID canonicalUUID([EnforceRange] unsigned long alias);\n};",
@@ -2936,7 +3065,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice"
           },
           {
             "type": "operation",
@@ -2985,7 +3115,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getcharacteristic"
           },
           {
             "type": "operation",
@@ -3034,7 +3165,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getdescriptor"
           },
           {
             "type": "operation",
@@ -3073,7 +3205,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-canonicaluuid"
           }
         ],
         "extAttrs": [
@@ -3087,7 +3220,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid"
       },
       "BluetoothServiceUUID": {
         "fragment": "typedef (DOMString or unsigned long) BluetoothServiceUUID;",
@@ -3118,7 +3252,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid"
       },
       "BluetoothCharacteristicUUID": {
         "fragment": "typedef (DOMString or unsigned long) BluetoothCharacteristicUUID;",
@@ -3149,7 +3284,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothcharacteristicuuid"
       },
       "BluetoothDescriptorUUID": {
         "fragment": "typedef (DOMString or unsigned long) BluetoothDescriptorUUID;",
@@ -3180,7 +3316,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothdescriptoruuid"
       }
     },
     "idlExtendedNames": {
@@ -3282,7 +3419,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-navigator-bluetooth"
             }
           ],
           "extAttrs": [

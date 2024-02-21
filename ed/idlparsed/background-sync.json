@@ -65,7 +65,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register"
           },
           {
             "type": "operation",
@@ -98,7 +99,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-gettags"
           }
         ],
         "extAttrs": [
@@ -119,7 +121,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-sync/spec/#syncmanager"
       },
       "SyncEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface SyncEvent : ExtendableEvent {\n  constructor(DOMString type, SyncEventInit init);\n  readonly attribute DOMString tag;\n  readonly attribute boolean lastChance;\n};",
@@ -163,7 +166,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent"
           },
           {
             "type": "attribute",
@@ -178,7 +182,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-tag"
           },
           {
             "type": "attribute",
@@ -193,7 +198,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-lastchance"
           }
         ],
         "extAttrs": [
@@ -207,7 +213,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-sync/spec/#syncevent"
       },
       "SyncEventInit": {
         "fragment": "dictionary SyncEventInit : ExtendableEventInit {\n  required DOMString tag;\n  boolean lastChance = false;\n};",
@@ -228,7 +235,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/background-sync/spec/#dom-synceventinit-tag"
           },
           {
             "type": "field",
@@ -246,11 +254,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/background-sync/spec/#dom-synceventinit-lastchance"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/background-sync/spec/#dictdef-synceventinit"
       }
     },
     "idlExtendedNames": {
@@ -274,7 +284,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync"
             }
           ],
           "extAttrs": [],
@@ -301,7 +312,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerglobalscope-onsync"
             }
           ],
           "extAttrs": [],

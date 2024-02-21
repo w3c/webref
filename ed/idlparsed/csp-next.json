@@ -23,22 +23,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "externalScript"
+            "value": "externalScript",
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyviolationtype-externalscript"
           },
           {
             "type": "enum-value",
-            "value": "inlineScript"
+            "value": "inlineScript",
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyviolationtype-inlinescript"
           },
           {
             "type": "enum-value",
-            "value": "inlineEventHandler"
+            "value": "inlineEventHandler",
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyviolationtype-inlineeventhandler"
           },
           {
             "type": "enum-value",
-            "value": "eval"
+            "value": "eval",
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyviolationtype-eval"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/csp-next/scripting-policy.html#enumdef-scriptingpolicyviolationtype"
       },
       "ScriptingPolicyReportBody": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ScriptingPolicyReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString     violationType;\n  readonly attribute USVString?    violationURL;\n  readonly attribute USVString?    violationSample;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n};",
@@ -66,7 +71,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-tojson"
           },
           {
             "type": "attribute",
@@ -81,7 +87,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationtype"
           },
           {
             "type": "attribute",
@@ -96,7 +103,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationurl"
           },
           {
             "type": "attribute",
@@ -111,7 +119,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-violationsample"
           },
           {
             "type": "attribute",
@@ -126,7 +135,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-lineno"
           },
           {
             "type": "attribute",
@@ -141,7 +151,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/csp-next/scripting-policy.html#dom-scriptingpolicyreportbody-colno"
           }
         ],
         "extAttrs": [
@@ -168,7 +179,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/csp-next/scripting-policy.html#scriptingpolicyreportbody"
       }
     },
     "idlExtendedNames": {},

@@ -42,7 +42,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-activated"
           },
           {
             "type": "attribute",
@@ -57,7 +58,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-hasreading"
           },
           {
             "type": "attribute",
@@ -72,7 +74,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-timestamp"
           },
           {
             "type": "operation",
@@ -87,7 +90,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/sensors/#dom-sensor-start"
           },
           {
             "type": "operation",
@@ -102,7 +106,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/sensors/#dom-sensor-stop"
           },
           {
             "type": "attribute",
@@ -117,7 +122,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-onreading"
           },
           {
             "type": "attribute",
@@ -132,7 +138,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-onactivate"
           },
           {
             "type": "attribute",
@@ -147,7 +154,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/sensors/#dom-sensor-onerror"
           }
         ],
         "extAttrs": [
@@ -174,7 +182,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/sensors/#sensor"
       },
       "SensorOptions": {
         "fragment": "dictionary SensorOptions {\n  double frequency;\n};",
@@ -195,11 +204,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/sensors/#dom-sensoroptions-frequency"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions"
       },
       "SensorErrorEvent": {
         "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface SensorErrorEvent : Event {\n  constructor(DOMString type, SensorErrorEventInit errorEventInitDict);\n  readonly attribute DOMException error;\n};",
@@ -243,7 +254,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/sensors/#dom-sensorerrorevent-sensorerrorevent"
           },
           {
             "type": "attribute",
@@ -258,7 +270,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/sensors/#dom-sensorerrorevent-error"
           }
         ],
         "extAttrs": [
@@ -285,7 +298,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/sensors/#sensorerrorevent"
       },
       "SensorErrorEventInit": {
         "fragment": "dictionary SensorErrorEventInit : EventInit {\n  required DOMException error;\n};",
@@ -306,11 +320,13 @@
               "idlType": "DOMException"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/sensors/#dom-sensorerroreventinit-error"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/sensors/#dictdef-sensorerroreventinit"
       }
     },
     "idlExtendedNames": {},

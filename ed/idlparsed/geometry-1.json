@@ -118,7 +118,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-dompointreadonly"
           },
           {
             "type": "operation",
@@ -159,7 +160,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-frompoint"
           },
           {
             "type": "attribute",
@@ -174,7 +176,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x"
           },
           {
             "type": "attribute",
@@ -189,7 +192,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y"
           },
           {
             "type": "attribute",
@@ -204,7 +208,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z"
           },
           {
             "type": "attribute",
@@ -219,7 +224,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w"
           },
           {
             "type": "operation",
@@ -260,7 +266,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-matrixtransform"
           },
           {
             "type": "operation",
@@ -282,7 +289,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-tojson"
           }
         ],
         "extAttrs": [
@@ -309,7 +317,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dompointreadonly"
       },
       "DOMPoint": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=SVGPoint]\ninterface DOMPoint : DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPoint fromPoint(optional DOMPointInit other = {});\n\n    inherit attribute unrestricted double x;\n    inherit attribute unrestricted double y;\n    inherit attribute unrestricted double z;\n    inherit attribute unrestricted double w;\n};",
@@ -397,7 +406,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompoint-dompoint"
           },
           {
             "type": "operation",
@@ -438,7 +448,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompoint-frompoint"
           },
           {
             "type": "attribute",
@@ -453,7 +464,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x"
           },
           {
             "type": "attribute",
@@ -468,7 +480,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y"
           },
           {
             "type": "attribute",
@@ -483,7 +496,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z"
           },
           {
             "type": "attribute",
@@ -498,7 +512,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w"
           }
         ],
         "extAttrs": [
@@ -534,7 +549,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dompoint"
       },
       "DOMPointInit": {
         "fragment": "dictionary DOMPointInit {\n    unrestricted double x = 0;\n    unrestricted double y = 0;\n    unrestricted double z = 0;\n    unrestricted double w = 1;\n};",
@@ -558,7 +574,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x"
           },
           {
             "type": "field",
@@ -576,7 +593,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y"
           },
           {
             "type": "field",
@@ -594,7 +612,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z"
           },
           {
             "type": "field",
@@ -612,11 +631,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit"
       },
       "DOMRectReadOnly": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMRectReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double width = 0, optional unrestricted double height = 0);\n\n    [NewObject] static DOMRectReadOnly fromRect(optional DOMRectInit other = {});\n\n    readonly attribute unrestricted double x;\n    readonly attribute unrestricted double y;\n    readonly attribute unrestricted double width;\n    readonly attribute unrestricted double height;\n    readonly attribute unrestricted double top;\n    readonly attribute unrestricted double right;\n    readonly attribute unrestricted double bottom;\n    readonly attribute unrestricted double left;\n\n    [Default] object toJSON();\n};",
@@ -704,7 +725,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-domrectreadonly"
           },
           {
             "type": "operation",
@@ -745,7 +767,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-fromrect"
           },
           {
             "type": "attribute",
@@ -760,7 +783,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-x"
           },
           {
             "type": "attribute",
@@ -775,7 +799,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-y"
           },
           {
             "type": "attribute",
@@ -790,7 +815,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width"
           },
           {
             "type": "attribute",
@@ -805,7 +831,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height"
           },
           {
             "type": "attribute",
@@ -820,7 +847,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-top"
           },
           {
             "type": "attribute",
@@ -835,7 +863,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-right"
           },
           {
             "type": "attribute",
@@ -850,7 +879,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-bottom"
           },
           {
             "type": "attribute",
@@ -865,7 +895,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-left"
           },
           {
             "type": "operation",
@@ -887,7 +918,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-tojson"
           }
         ],
         "extAttrs": [
@@ -914,7 +946,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#domrectreadonly"
       },
       "DOMRect": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=SVGRect]\ninterface DOMRect : DOMRectReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double width = 0, optional unrestricted double height = 0);\n\n    [NewObject] static DOMRect fromRect(optional DOMRectInit other = {});\n\n    inherit attribute unrestricted double x;\n    inherit attribute unrestricted double y;\n    inherit attribute unrestricted double width;\n    inherit attribute unrestricted double height;\n};",
@@ -1002,7 +1035,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-domrect"
           },
           {
             "type": "operation",
@@ -1043,7 +1077,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-fromrect"
           },
           {
             "type": "attribute",
@@ -1058,7 +1093,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-x"
           },
           {
             "type": "attribute",
@@ -1073,7 +1109,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-y"
           },
           {
             "type": "attribute",
@@ -1088,7 +1125,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-width"
           },
           {
             "type": "attribute",
@@ -1103,7 +1141,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrect-height"
           }
         ],
         "extAttrs": [
@@ -1139,7 +1178,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#domrect"
       },
       "DOMRectInit": {
         "fragment": "dictionary DOMRectInit {\n    unrestricted double x = 0;\n    unrestricted double y = 0;\n    unrestricted double width = 0;\n    unrestricted double height = 0;\n};",
@@ -1163,7 +1203,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectinit-x"
           },
           {
             "type": "field",
@@ -1181,7 +1222,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectinit-y"
           },
           {
             "type": "field",
@@ -1199,7 +1241,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectinit-width"
           },
           {
             "type": "field",
@@ -1217,11 +1260,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectinit-height"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit"
       },
       "DOMRectList": {
         "fragment": "[Exposed=Window]\ninterface DOMRectList {\n    readonly attribute unsigned long length;\n    getter DOMRect? item(unsigned long index);\n};",
@@ -1242,7 +1287,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectlist-length"
           },
           {
             "type": "operation",
@@ -1288,7 +1334,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#domrectlist"
       },
       "DOMQuad": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMQuad {\n    constructor(optional DOMPointInit p1 = {}, optional DOMPointInit p2 = {},\n            optional DOMPointInit p3 = {}, optional DOMPointInit p4 = {});\n\n    [NewObject] static DOMQuad fromRect(optional DOMRectInit other = {});\n    [NewObject] static DOMQuad fromQuad(optional DOMQuadInit other = {});\n\n    [SameObject] readonly attribute DOMPoint p1;\n    [SameObject] readonly attribute DOMPoint p2;\n    [SameObject] readonly attribute DOMPoint p3;\n    [SameObject] readonly attribute DOMPoint p4;\n    [NewObject] DOMRect getBounds();\n\n    [Default] object toJSON();\n};",
@@ -1372,7 +1419,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-domquad"
           },
           {
             "type": "operation",
@@ -1413,7 +1461,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-fromrect"
           },
           {
             "type": "operation",
@@ -1454,7 +1503,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-fromquad"
           },
           {
             "type": "attribute",
@@ -1476,7 +1526,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-p1"
           },
           {
             "type": "attribute",
@@ -1498,7 +1549,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-p2"
           },
           {
             "type": "attribute",
@@ -1520,7 +1572,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-p3"
           },
           {
             "type": "attribute",
@@ -1542,7 +1595,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-p4"
           },
           {
             "type": "operation",
@@ -1564,7 +1618,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-getbounds"
           },
           {
             "type": "operation",
@@ -1586,7 +1641,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-tojson"
           }
         ],
         "extAttrs": [
@@ -1613,7 +1669,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#domquad"
       },
       "DOMQuadInit": {
         "fragment": "dictionary DOMQuadInit {\n  DOMPointInit p1;\n  DOMPointInit p2;\n  DOMPointInit p3;\n  DOMPointInit p4;\n};",
@@ -1634,7 +1691,8 @@
               "idlType": "DOMPointInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p1"
           },
           {
             "type": "field",
@@ -1649,7 +1707,8 @@
               "idlType": "DOMPointInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p2"
           },
           {
             "type": "field",
@@ -1664,7 +1723,8 @@
               "idlType": "DOMPointInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p3"
           },
           {
             "type": "field",
@@ -1679,11 +1739,13 @@
               "idlType": "DOMPointInit"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p4"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dictdef-domquadinit"
       },
       "DOMMatrixReadOnly": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMMatrixReadOnly {\n    constructor(optional (DOMString or sequence<unrestricted double>) init);\n\n    [NewObject] static DOMMatrixReadOnly fromMatrix(optional DOMMatrixInit other = {});\n    [NewObject] static DOMMatrixReadOnly fromFloat32Array(Float32Array array32);\n    [NewObject] static DOMMatrixReadOnly fromFloat64Array(Float64Array array64);\n\n    // These attributes are simple aliases for certain elements of the 4x4 matrix\n    readonly attribute unrestricted double a;\n    readonly attribute unrestricted double b;\n    readonly attribute unrestricted double c;\n    readonly attribute unrestricted double d;\n    readonly attribute unrestricted double e;\n    readonly attribute unrestricted double f;\n\n    readonly attribute unrestricted double m11;\n    readonly attribute unrestricted double m12;\n    readonly attribute unrestricted double m13;\n    readonly attribute unrestricted double m14;\n    readonly attribute unrestricted double m21;\n    readonly attribute unrestricted double m22;\n    readonly attribute unrestricted double m23;\n    readonly attribute unrestricted double m24;\n    readonly attribute unrestricted double m31;\n    readonly attribute unrestricted double m32;\n    readonly attribute unrestricted double m33;\n    readonly attribute unrestricted double m34;\n    readonly attribute unrestricted double m41;\n    readonly attribute unrestricted double m42;\n    readonly attribute unrestricted double m43;\n    readonly attribute unrestricted double m44;\n\n    readonly attribute boolean is2D;\n    readonly attribute boolean isIdentity;\n\n    // Immutable transform methods\n    [NewObject] DOMMatrix translate(optional unrestricted double tx = 0,\n                                    optional unrestricted double ty = 0,\n                                    optional unrestricted double tz = 0);\n    [NewObject] DOMMatrix scale(optional unrestricted double scaleX = 1,\n                                optional unrestricted double scaleY,\n                                optional unrestricted double scaleZ = 1,\n                                optional unrestricted double originX = 0,\n                                optional unrestricted double originY = 0,\n                                optional unrestricted double originZ = 0);\n    [NewObject] DOMMatrix scaleNonUniform(optional unrestricted double scaleX = 1,\n                                          optional unrestricted double scaleY = 1);\n    [NewObject] DOMMatrix scale3d(optional unrestricted double scale = 1,\n                                  optional unrestricted double originX = 0,\n                                  optional unrestricted double originY = 0,\n                                  optional unrestricted double originZ = 0);\n    [NewObject] DOMMatrix rotate(optional unrestricted double rotX = 0,\n                                 optional unrestricted double rotY,\n                                 optional unrestricted double rotZ);\n    [NewObject] DOMMatrix rotateFromVector(optional unrestricted double x = 0,\n                                           optional unrestricted double y = 0);\n    [NewObject] DOMMatrix rotateAxisAngle(optional unrestricted double x = 0,\n                                          optional unrestricted double y = 0,\n                                          optional unrestricted double z = 0,\n                                          optional unrestricted double angle = 0);\n    [NewObject] DOMMatrix skewX(optional unrestricted double sx = 0);\n    [NewObject] DOMMatrix skewY(optional unrestricted double sy = 0);\n    [NewObject] DOMMatrix multiply(optional DOMMatrixInit other = {});\n    [NewObject] DOMMatrix flipX();\n    [NewObject] DOMMatrix flipY();\n    [NewObject] DOMMatrix inverse();\n\n    [NewObject] DOMPoint transformPoint(optional DOMPointInit point = {});\n    [NewObject] Float32Array toFloat32Array();\n    [NewObject] Float64Array toFloat64Array();\n\n    [Exposed=Window] stringifier;\n    [Default] object toJSON();\n};",
@@ -1737,7 +1799,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-dommatrixreadonly"
           },
           {
             "type": "operation",
@@ -1778,7 +1841,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-frommatrix"
           },
           {
             "type": "operation",
@@ -1817,7 +1881,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-fromfloat32array"
           },
           {
             "type": "operation",
@@ -1856,7 +1921,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-fromfloat64array"
           },
           {
             "type": "attribute",
@@ -1871,7 +1937,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-a"
           },
           {
             "type": "attribute",
@@ -1886,7 +1953,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-b"
           },
           {
             "type": "attribute",
@@ -1901,7 +1969,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-c"
           },
           {
             "type": "attribute",
@@ -1916,7 +1985,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-d"
           },
           {
             "type": "attribute",
@@ -1931,7 +2001,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-e"
           },
           {
             "type": "attribute",
@@ -1946,7 +2017,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-f"
           },
           {
             "type": "attribute",
@@ -1961,7 +2033,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m11"
           },
           {
             "type": "attribute",
@@ -1976,7 +2049,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m12"
           },
           {
             "type": "attribute",
@@ -1991,7 +2065,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m13"
           },
           {
             "type": "attribute",
@@ -2006,7 +2081,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m14"
           },
           {
             "type": "attribute",
@@ -2021,7 +2097,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m21"
           },
           {
             "type": "attribute",
@@ -2036,7 +2113,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m22"
           },
           {
             "type": "attribute",
@@ -2051,7 +2129,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m23"
           },
           {
             "type": "attribute",
@@ -2066,7 +2145,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m24"
           },
           {
             "type": "attribute",
@@ -2081,7 +2161,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m31"
           },
           {
             "type": "attribute",
@@ -2096,7 +2177,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m32"
           },
           {
             "type": "attribute",
@@ -2111,7 +2193,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m33"
           },
           {
             "type": "attribute",
@@ -2126,7 +2209,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m34"
           },
           {
             "type": "attribute",
@@ -2141,7 +2225,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m41"
           },
           {
             "type": "attribute",
@@ -2156,7 +2241,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m42"
           },
           {
             "type": "attribute",
@@ -2171,7 +2257,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m43"
           },
           {
             "type": "attribute",
@@ -2186,7 +2273,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m44"
           },
           {
             "type": "attribute",
@@ -2201,7 +2289,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-is2d"
           },
           {
             "type": "attribute",
@@ -2216,7 +2305,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-isidentity"
           },
           {
             "type": "operation",
@@ -2296,7 +2386,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-translate"
           },
           {
             "type": "operation",
@@ -2430,7 +2521,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale"
           },
           {
             "type": "operation",
@@ -2491,7 +2583,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform"
           },
           {
             "type": "operation",
@@ -2590,7 +2683,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale3d"
           },
           {
             "type": "operation",
@@ -2664,7 +2758,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate"
           },
           {
             "type": "operation",
@@ -2725,7 +2820,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotatefromvector"
           },
           {
             "type": "operation",
@@ -2824,7 +2920,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotateaxisangle"
           },
           {
             "type": "operation",
@@ -2866,7 +2963,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-skewx"
           },
           {
             "type": "operation",
@@ -2908,7 +3006,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-skewy"
           },
           {
             "type": "operation",
@@ -2949,7 +3048,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-multiply"
           },
           {
             "type": "operation",
@@ -2971,7 +3071,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-flipx"
           },
           {
             "type": "operation",
@@ -2993,7 +3094,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-flipy"
           },
           {
             "type": "operation",
@@ -3015,7 +3117,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-inverse"
           },
           {
             "type": "operation",
@@ -3056,7 +3159,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-transformpoint"
           },
           {
             "type": "operation",
@@ -3078,7 +3182,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-tofloat32array"
           },
           {
             "type": "operation",
@@ -3100,7 +3205,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-tofloat64array"
           },
           {
             "type": "operation",
@@ -3139,7 +3245,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-tojson"
           }
         ],
         "extAttrs": [
@@ -3166,7 +3273,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dommatrixreadonly"
       },
       "DOMMatrix": {
         "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=(SVGMatrix,WebKitCSSMatrix)]\ninterface DOMMatrix : DOMMatrixReadOnly {\n    constructor(optional (DOMString or sequence<unrestricted double>) init);\n\n    [NewObject] static DOMMatrix fromMatrix(optional DOMMatrixInit other = {});\n    [NewObject] static DOMMatrix fromFloat32Array(Float32Array array32);\n    [NewObject] static DOMMatrix fromFloat64Array(Float64Array array64);\n\n    // These attributes are simple aliases for certain elements of the 4x4 matrix\n    inherit attribute unrestricted double a;\n    inherit attribute unrestricted double b;\n    inherit attribute unrestricted double c;\n    inherit attribute unrestricted double d;\n    inherit attribute unrestricted double e;\n    inherit attribute unrestricted double f;\n\n    inherit attribute unrestricted double m11;\n    inherit attribute unrestricted double m12;\n    inherit attribute unrestricted double m13;\n    inherit attribute unrestricted double m14;\n    inherit attribute unrestricted double m21;\n    inherit attribute unrestricted double m22;\n    inherit attribute unrestricted double m23;\n    inherit attribute unrestricted double m24;\n    inherit attribute unrestricted double m31;\n    inherit attribute unrestricted double m32;\n    inherit attribute unrestricted double m33;\n    inherit attribute unrestricted double m34;\n    inherit attribute unrestricted double m41;\n    inherit attribute unrestricted double m42;\n    inherit attribute unrestricted double m43;\n    inherit attribute unrestricted double m44;\n\n    // Mutable transform methods\n    DOMMatrix multiplySelf(optional DOMMatrixInit other = {});\n    DOMMatrix preMultiplySelf(optional DOMMatrixInit other = {});\n    DOMMatrix translateSelf(optional unrestricted double tx = 0,\n                            optional unrestricted double ty = 0,\n                            optional unrestricted double tz = 0);\n    DOMMatrix scaleSelf(optional unrestricted double scaleX = 1,\n                        optional unrestricted double scaleY,\n                        optional unrestricted double scaleZ = 1,\n                        optional unrestricted double originX = 0,\n                        optional unrestricted double originY = 0,\n                        optional unrestricted double originZ = 0);\n    DOMMatrix scale3dSelf(optional unrestricted double scale = 1,\n                          optional unrestricted double originX = 0,\n                          optional unrestricted double originY = 0,\n                          optional unrestricted double originZ = 0);\n    DOMMatrix rotateSelf(optional unrestricted double rotX = 0,\n                         optional unrestricted double rotY,\n                         optional unrestricted double rotZ);\n    DOMMatrix rotateFromVectorSelf(optional unrestricted double x = 0,\n                                   optional unrestricted double y = 0);\n    DOMMatrix rotateAxisAngleSelf(optional unrestricted double x = 0,\n                                  optional unrestricted double y = 0,\n                                  optional unrestricted double z = 0,\n                                  optional unrestricted double angle = 0);\n    DOMMatrix skewXSelf(optional unrestricted double sx = 0);\n    DOMMatrix skewYSelf(optional unrestricted double sy = 0);\n    DOMMatrix invertSelf();\n\n    [Exposed=Window] DOMMatrix setMatrixValue(DOMString transformList);\n};",
@@ -3220,7 +3328,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-dommatrix"
           },
           {
             "type": "operation",
@@ -3261,7 +3370,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-frommatrix"
           },
           {
             "type": "operation",
@@ -3300,7 +3410,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-fromfloat32array"
           },
           {
             "type": "operation",
@@ -3339,7 +3450,8 @@
                 "arguments": []
               }
             ],
-            "special": "static"
+            "special": "static",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-fromfloat64array"
           },
           {
             "type": "attribute",
@@ -3354,7 +3466,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-a"
           },
           {
             "type": "attribute",
@@ -3369,7 +3482,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-b"
           },
           {
             "type": "attribute",
@@ -3384,7 +3498,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-c"
           },
           {
             "type": "attribute",
@@ -3399,7 +3514,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-d"
           },
           {
             "type": "attribute",
@@ -3414,7 +3530,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-e"
           },
           {
             "type": "attribute",
@@ -3429,7 +3546,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-f"
           },
           {
             "type": "attribute",
@@ -3444,7 +3562,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m11"
           },
           {
             "type": "attribute",
@@ -3459,7 +3578,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m12"
           },
           {
             "type": "attribute",
@@ -3474,7 +3594,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m13"
           },
           {
             "type": "attribute",
@@ -3489,7 +3610,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m14"
           },
           {
             "type": "attribute",
@@ -3504,7 +3626,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m21"
           },
           {
             "type": "attribute",
@@ -3519,7 +3642,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m22"
           },
           {
             "type": "attribute",
@@ -3534,7 +3658,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m23"
           },
           {
             "type": "attribute",
@@ -3549,7 +3674,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m24"
           },
           {
             "type": "attribute",
@@ -3564,7 +3690,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m31"
           },
           {
             "type": "attribute",
@@ -3579,7 +3706,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m32"
           },
           {
             "type": "attribute",
@@ -3594,7 +3722,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m33"
           },
           {
             "type": "attribute",
@@ -3609,7 +3738,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m34"
           },
           {
             "type": "attribute",
@@ -3624,7 +3754,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m41"
           },
           {
             "type": "attribute",
@@ -3639,7 +3770,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m42"
           },
           {
             "type": "attribute",
@@ -3654,7 +3786,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m43"
           },
           {
             "type": "attribute",
@@ -3669,7 +3802,8 @@
             },
             "extAttrs": [],
             "special": "inherit",
-            "readonly": false
+            "readonly": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m44"
           },
           {
             "type": "operation",
@@ -3703,7 +3837,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-multiplyself"
           },
           {
             "type": "operation",
@@ -3737,7 +3872,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-premultiplyself"
           },
           {
             "type": "operation",
@@ -3810,7 +3946,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself"
           },
           {
             "type": "operation",
@@ -3937,7 +4074,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself"
           },
           {
             "type": "operation",
@@ -4029,7 +4167,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself"
           },
           {
             "type": "operation",
@@ -4096,7 +4235,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself"
           },
           {
             "type": "operation",
@@ -4150,7 +4290,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotatefromvectorself"
           },
           {
             "type": "operation",
@@ -4242,7 +4383,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateaxisangleself"
           },
           {
             "type": "operation",
@@ -4277,7 +4419,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewxself"
           },
           {
             "type": "operation",
@@ -4312,7 +4455,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewyself"
           },
           {
             "type": "operation",
@@ -4327,7 +4471,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-invertself"
           },
           {
             "type": "operation",
@@ -4369,7 +4514,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-setmatrixvalue"
           }
         ],
         "extAttrs": [
@@ -4412,7 +4558,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dommatrix"
       },
       "DOMMatrix2DInit": {
         "fragment": "dictionary DOMMatrix2DInit {\n    unrestricted double a;\n    unrestricted double b;\n    unrestricted double c;\n    unrestricted double d;\n    unrestricted double e;\n    unrestricted double f;\n    unrestricted double m11;\n    unrestricted double m12;\n    unrestricted double m21;\n    unrestricted double m22;\n    unrestricted double m41;\n    unrestricted double m42;\n};",
@@ -4433,7 +4580,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-a"
           },
           {
             "type": "field",
@@ -4448,7 +4596,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-b"
           },
           {
             "type": "field",
@@ -4463,7 +4612,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-c"
           },
           {
             "type": "field",
@@ -4478,7 +4628,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-d"
           },
           {
             "type": "field",
@@ -4493,7 +4644,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-e"
           },
           {
             "type": "field",
@@ -4508,7 +4660,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-f"
           },
           {
             "type": "field",
@@ -4523,7 +4676,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11"
           },
           {
             "type": "field",
@@ -4538,7 +4692,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12"
           },
           {
             "type": "field",
@@ -4553,7 +4708,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21"
           },
           {
             "type": "field",
@@ -4568,7 +4724,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22"
           },
           {
             "type": "field",
@@ -4583,7 +4740,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41"
           },
           {
             "type": "field",
@@ -4598,11 +4756,13 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dictdef-dommatrix2dinit"
       },
       "DOMMatrixInit": {
         "fragment": "dictionary DOMMatrixInit : DOMMatrix2DInit {\n    unrestricted double m13 = 0;\n    unrestricted double m14 = 0;\n    unrestricted double m23 = 0;\n    unrestricted double m24 = 0;\n    unrestricted double m31 = 0;\n    unrestricted double m32 = 0;\n    unrestricted double m33 = 1;\n    unrestricted double m34 = 0;\n    unrestricted double m43 = 0;\n    unrestricted double m44 = 1;\n    boolean is2D;\n};",
@@ -4626,7 +4786,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m13"
           },
           {
             "type": "field",
@@ -4644,7 +4805,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m14"
           },
           {
             "type": "field",
@@ -4662,7 +4824,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m23"
           },
           {
             "type": "field",
@@ -4680,7 +4843,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m24"
           },
           {
             "type": "field",
@@ -4698,7 +4862,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m31"
           },
           {
             "type": "field",
@@ -4716,7 +4881,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m32"
           },
           {
             "type": "field",
@@ -4734,7 +4900,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m33"
           },
           {
             "type": "field",
@@ -4752,7 +4919,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m34"
           },
           {
             "type": "field",
@@ -4770,7 +4938,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m43"
           },
           {
             "type": "field",
@@ -4788,7 +4957,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m44"
           },
           {
             "type": "field",
@@ -4803,11 +4973,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://drafts.fxtf.org/geometry-1/#dictdef-dommatrixinit"
       }
     },
     "idlExtendedNames": {},

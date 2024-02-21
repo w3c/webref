@@ -63,11 +63,13 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-navigatorml-ml"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#navigatorml"
       },
       "MLDeviceType": {
         "fragment": "enum MLDeviceType {\n  \"cpu\",\n  \"gpu\"\n};",
@@ -76,14 +78,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "cpu"
+            "value": "cpu",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mldevicetype-cpu"
           },
           {
             "type": "enum-value",
-            "value": "gpu"
+            "value": "gpu",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mldevicetype-gpu"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mldevicetype"
       },
       "MLPowerPreference": {
         "fragment": "enum MLPowerPreference {\n  \"default\",\n  \"high-performance\",\n  \"low-power\"\n};",
@@ -92,18 +97,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "default",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpowerpreference-default"
           },
           {
             "type": "enum-value",
-            "value": "high-performance"
+            "value": "high-performance",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpowerpreference-high-performance"
           },
           {
             "type": "enum-value",
-            "value": "low-power"
+            "value": "low-power",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpowerpreference-low-power"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpowerpreference"
       },
       "MLContextOptions": {
         "fragment": "dictionary MLContextOptions {\n  MLDeviceType deviceType = \"cpu\";\n  MLPowerPreference powerPreference = \"default\";\n};",
@@ -127,7 +136,8 @@
               "type": "string",
               "value": "cpu"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-devicetype"
           },
           {
             "type": "field",
@@ -145,11 +155,13 @@
               "type": "string",
               "value": "default"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-powerpreference"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextoptions"
       },
       "ML": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
@@ -198,7 +210,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-ml-createcontext"
           },
           {
             "type": "operation",
@@ -239,7 +252,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-ml-createcontext-gpudevice"
           }
         ],
         "extAttrs": [
@@ -266,7 +280,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#ml"
       },
       "MLActivation": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {\n};",
@@ -298,7 +313,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlactivation"
       },
       "MLNamedArrayBufferViews": {
         "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;",
@@ -329,7 +345,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedarraybufferviews"
       },
       "MLContext": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
@@ -361,7 +378,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
       },
       "MLComputeResult": {
         "fragment": "dictionary MLComputeResult {\n  MLNamedArrayBufferViews inputs;\n  MLNamedArrayBufferViews outputs;\n};",
@@ -382,7 +400,8 @@
               "idlType": "MLNamedArrayBufferViews"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-inputs"
           },
           {
             "type": "field",
@@ -397,11 +416,13 @@
               "idlType": "MLNamedArrayBufferViews"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-outputs"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcomputeresult"
       },
       "MLGraph": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
@@ -433,7 +454,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlgraph"
       },
       "MLNamedOperands": {
         "fragment": "typedef record<DOMString, MLOperand> MLNamedOperands;",
@@ -464,7 +486,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLBufferView": {
         "fragment": "typedef ArrayBufferView MLBufferView;",
@@ -478,7 +501,8 @@
           "union": false,
           "idlType": "ArrayBufferView"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlbufferview"
       },
       "MLGraphBuilder": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
@@ -506,7 +530,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-mlgraphbuilder"
           },
           {
             "type": "operation",
@@ -554,7 +579,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-input"
           },
           {
             "type": "operation",
@@ -602,7 +628,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant"
           },
           {
             "type": "operation",
@@ -653,7 +680,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-value-type"
           },
           {
             "type": "operation",
@@ -694,7 +722,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-build"
           }
         ],
         "extAttrs": [
@@ -721,7 +750,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
       },
       "MLArgMinMaxOptions": {
         "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
@@ -751,7 +781,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-axes"
           },
           {
             "type": "field",
@@ -769,7 +800,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-keepdimensions"
           },
           {
             "type": "field",
@@ -787,11 +819,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-selectlastindex"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlargminmaxoptions"
       },
       "MLBatchNormalizationOptions": {
         "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  unsigned long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
@@ -812,7 +846,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-scale"
           },
           {
             "type": "field",
@@ -827,7 +862,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-bias"
           },
           {
             "type": "field",
@@ -845,7 +881,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-axis"
           },
           {
             "type": "field",
@@ -863,7 +900,8 @@
               "type": "number",
               "value": "1e-5"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-epsilon"
           },
           {
             "type": "field",
@@ -878,11 +916,13 @@
               "idlType": "MLActivation"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-activation"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationoptions"
       },
       "MLClampOptions": {
         "fragment": "dictionary MLClampOptions {\n  float minValue;\n  float maxValue;\n};",
@@ -903,7 +943,8 @@
               "idlType": "float"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-minvalue"
           },
           {
             "type": "field",
@@ -918,11 +959,13 @@
               "idlType": "float"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-maxvalue"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlclampoptions"
       },
       "MLConv2dFilterOperandLayout": {
         "fragment": "enum MLConv2dFilterOperandLayout {\n  \"oihw\",\n  \"hwio\",\n  \"ohwi\",\n  \"ihwo\"\n};",
@@ -931,22 +974,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "oihw"
+            "value": "oihw",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dfilteroperandlayout-oihw"
           },
           {
             "type": "enum-value",
-            "value": "hwio"
+            "value": "hwio",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dfilteroperandlayout-hwio"
           },
           {
             "type": "enum-value",
-            "value": "ohwi"
+            "value": "ohwi",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dfilteroperandlayout-ohwi"
           },
           {
             "type": "enum-value",
-            "value": "ihwo"
+            "value": "ihwo",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dfilteroperandlayout-ihwo"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconv2dfilteroperandlayout"
       },
       "MLAutoPad": {
         "fragment": "enum MLAutoPad {\n  \"explicit\",\n  \"same-upper\",\n  \"same-lower\"\n};",
@@ -955,18 +1003,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "explicit"
+            "value": "explicit",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-explicit"
           },
           {
             "type": "enum-value",
-            "value": "same-upper"
+            "value": "same-upper",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-same-upper"
           },
           {
             "type": "enum-value",
-            "value": "same-lower"
+            "value": "same-lower",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-same-lower"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlautopad"
       },
       "MLConv2dOptions": {
         "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
@@ -996,7 +1048,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-padding"
           },
           {
             "type": "field",
@@ -1020,7 +1073,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-strides"
           },
           {
             "type": "field",
@@ -1044,7 +1098,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-dilations"
           },
           {
             "type": "field",
@@ -1062,7 +1117,8 @@
               "type": "string",
               "value": "explicit"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-autopad"
           },
           {
             "type": "field",
@@ -1080,7 +1136,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-groups"
           },
           {
             "type": "field",
@@ -1098,7 +1155,8 @@
               "type": "string",
               "value": "nchw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-inputlayout"
           },
           {
             "type": "field",
@@ -1116,7 +1174,8 @@
               "type": "string",
               "value": "oihw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-filterlayout"
           },
           {
             "type": "field",
@@ -1131,7 +1190,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-bias"
           },
           {
             "type": "field",
@@ -1146,11 +1206,13 @@
               "idlType": "MLActivation"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-activation"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions"
       },
       "MLConvTranspose2dFilterOperandLayout": {
         "fragment": "enum MLConvTranspose2dFilterOperandLayout {\n  \"iohw\",\n  \"hwoi\",\n  \"ohwi\"\n};",
@@ -1159,18 +1221,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "iohw"
+            "value": "iohw",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2dfilteroperandlayout-iohw"
           },
           {
             "type": "enum-value",
-            "value": "hwoi"
+            "value": "hwoi",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2dfilteroperandlayout-hwoi"
           },
           {
             "type": "enum-value",
-            "value": "ohwi"
+            "value": "ohwi",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2dfilteroperandlayout-ohwi"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconvtranspose2dfilteroperandlayout"
       },
       "MLConvTranspose2dOptions": {
         "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  sequence<unsigned long> outputPadding;\n  sequence<unsigned long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
@@ -1200,7 +1266,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-padding"
           },
           {
             "type": "field",
@@ -1224,7 +1291,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-strides"
           },
           {
             "type": "field",
@@ -1248,7 +1316,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-dilations"
           },
           {
             "type": "field",
@@ -1272,7 +1341,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-outputpadding"
           },
           {
             "type": "field",
@@ -1296,7 +1366,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-outputsizes"
           },
           {
             "type": "field",
@@ -1314,7 +1385,8 @@
               "type": "string",
               "value": "explicit"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-autopad"
           },
           {
             "type": "field",
@@ -1332,7 +1404,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-groups"
           },
           {
             "type": "field",
@@ -1350,7 +1423,8 @@
               "type": "string",
               "value": "nchw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-inputlayout"
           },
           {
             "type": "field",
@@ -1368,7 +1442,8 @@
               "type": "string",
               "value": "iohw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-filterlayout"
           },
           {
             "type": "field",
@@ -1383,7 +1458,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-bias"
           },
           {
             "type": "field",
@@ -1398,11 +1474,13 @@
               "idlType": "MLActivation"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-activation"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
       },
       "MLEluOptions": {
         "fragment": "dictionary MLEluOptions {\n  float alpha = 1;\n};",
@@ -1426,11 +1504,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mleluoptions-alpha"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mleluoptions"
       },
       "MLGatherOptions": {
         "fragment": "dictionary MLGatherOptions {\n  unsigned long axis = 0;\n};",
@@ -1454,11 +1534,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgatheroptions-axis"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgatheroptions"
       },
       "MLGemmOptions": {
         "fragment": "dictionary MLGemmOptions {\n  MLOperand c;\n  float alpha = 1.0;\n  float beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
@@ -1479,7 +1561,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmoptions-c"
           },
           {
             "type": "field",
@@ -1497,7 +1580,8 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmoptions-alpha"
           },
           {
             "type": "field",
@@ -1515,7 +1599,8 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmoptions-beta"
           },
           {
             "type": "field",
@@ -1533,7 +1618,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmoptions-atranspose"
           },
           {
             "type": "field",
@@ -1551,11 +1637,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmoptions-btranspose"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgemmoptions"
       },
       "MLGruWeightLayout": {
         "fragment": "enum MLGruWeightLayout {\n  \"zrn\",  // update-reset-new gate ordering\n  \"rzn\"   // reset-update-new gate ordering\n};",
@@ -1564,14 +1652,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "zrn"
+            "value": "zrn",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruweightlayout-zrn"
           },
           {
             "type": "enum-value",
-            "value": "rzn"
+            "value": "rzn",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruweightlayout-rzn"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlgruweightlayout"
       },
       "MLRecurrentNetworkDirection": {
         "fragment": "enum MLRecurrentNetworkDirection {\n  \"forward\",\n  \"backward\",\n  \"both\"\n};",
@@ -1580,18 +1671,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "forward"
+            "value": "forward",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkdirection-forward"
           },
           {
             "type": "enum-value",
-            "value": "backward"
+            "value": "backward",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkdirection-backward"
           },
           {
             "type": "enum-value",
-            "value": "both"
+            "value": "both",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkdirection-both"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlrecurrentnetworkdirection"
       },
       "MLGruOptions": {
         "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLActivation> activations;\n};",
@@ -1612,7 +1707,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-bias"
           },
           {
             "type": "field",
@@ -1627,7 +1723,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-recurrentbias"
           },
           {
             "type": "field",
@@ -1642,7 +1739,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-initialhiddenstate"
           },
           {
             "type": "field",
@@ -1660,7 +1758,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-resetafter"
           },
           {
             "type": "field",
@@ -1678,7 +1777,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-returnsequence"
           },
           {
             "type": "field",
@@ -1696,7 +1796,8 @@
               "type": "string",
               "value": "forward"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-direction"
           },
           {
             "type": "field",
@@ -1714,7 +1815,8 @@
               "type": "string",
               "value": "zrn"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-layout"
           },
           {
             "type": "field",
@@ -1738,11 +1840,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-activations"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
       },
       "MLGruCellOptions": {
         "fragment": "dictionary MLGruCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  boolean resetAfter = true;\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLActivation> activations;\n};",
@@ -1763,7 +1867,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucelloptions-bias"
           },
           {
             "type": "field",
@@ -1778,7 +1883,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucelloptions-recurrentbias"
           },
           {
             "type": "field",
@@ -1796,7 +1902,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucelloptions-resetafter"
           },
           {
             "type": "field",
@@ -1814,7 +1921,8 @@
               "type": "string",
               "value": "zrn"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucelloptions-layout"
           },
           {
             "type": "field",
@@ -1838,11 +1946,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucelloptions-activations"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrucelloptions"
       },
       "MLHardSigmoidOptions": {
         "fragment": "dictionary MLHardSigmoidOptions {\n  float alpha = 0.2;\n  float beta = 0.5;\n};",
@@ -1866,7 +1976,8 @@
               "type": "number",
               "value": "0.2"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlhardsigmoidoptions-alpha"
           },
           {
             "type": "field",
@@ -1884,11 +1995,13 @@
               "type": "number",
               "value": "0.5"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlhardsigmoidoptions-beta"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlhardsigmoidoptions"
       },
       "MLInstanceNormalizationOptions": {
         "fragment": "dictionary MLInstanceNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  float epsilon = 1e-5;\n  MLInputOperandLayout layout = \"nchw\";\n};",
@@ -1909,7 +2022,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinstancenormalizationoptions-scale"
           },
           {
             "type": "field",
@@ -1924,7 +2038,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinstancenormalizationoptions-bias"
           },
           {
             "type": "field",
@@ -1942,7 +2057,8 @@
               "type": "number",
               "value": "1e-5"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinstancenormalizationoptions-epsilon"
           },
           {
             "type": "field",
@@ -1960,11 +2076,13 @@
               "type": "string",
               "value": "nchw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinstancenormalizationoptions-layout"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlinstancenormalizationoptions"
       },
       "MLLayerNormalizationOptions": {
         "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<unsigned long> axes;\n  float epsilon = 1e-5;\n};",
@@ -1985,7 +2103,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-scale"
           },
           {
             "type": "field",
@@ -2000,7 +2119,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-bias"
           },
           {
             "type": "field",
@@ -2024,7 +2144,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes"
           },
           {
             "type": "field",
@@ -2042,11 +2163,13 @@
               "type": "number",
               "value": "1e-5"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-epsilon"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllayernormalizationoptions"
       },
       "MLLeakyReluOptions": {
         "fragment": "dictionary MLLeakyReluOptions {\n  float alpha = 0.01;\n};",
@@ -2070,11 +2193,13 @@
               "type": "number",
               "value": "0.01"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlleakyreluoptions-alpha"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlleakyreluoptions"
       },
       "MLLinearOptions": {
         "fragment": "dictionary MLLinearOptions {\n  float alpha = 1;\n  float beta = 0;\n};",
@@ -2098,7 +2223,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllinearoptions-alpha"
           },
           {
             "type": "field",
@@ -2116,11 +2242,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllinearoptions-beta"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllinearoptions"
       },
       "MLLstmWeightLayout": {
         "fragment": "enum MLLstmWeightLayout {\n  \"iofg\", // input-output-forget-cell gate ordering\n  \"ifgo\"  // input-forget-cell-output gate ordering\n};",
@@ -2129,14 +2257,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "iofg"
+            "value": "iofg",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmweightlayout-iofg"
           },
           {
             "type": "enum-value",
-            "value": "ifgo"
+            "value": "ifgo",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmweightlayout-ifgo"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mllstmweightlayout"
       },
       "MLLstmOptions": {
         "fragment": "dictionary MLLstmOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLOperand initialHiddenState;\n  MLOperand initialCellState;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLActivation> activations;\n};",
@@ -2157,7 +2288,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-bias"
           },
           {
             "type": "field",
@@ -2172,7 +2304,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-recurrentbias"
           },
           {
             "type": "field",
@@ -2187,7 +2320,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-peepholeweight"
           },
           {
             "type": "field",
@@ -2202,7 +2336,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-initialhiddenstate"
           },
           {
             "type": "field",
@@ -2217,7 +2352,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-initialcellstate"
           },
           {
             "type": "field",
@@ -2235,7 +2371,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-returnsequence"
           },
           {
             "type": "field",
@@ -2253,7 +2390,8 @@
               "type": "string",
               "value": "forward"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-direction"
           },
           {
             "type": "field",
@@ -2271,7 +2409,8 @@
               "type": "string",
               "value": "iofg"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-layout"
           },
           {
             "type": "field",
@@ -2295,11 +2434,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-activations"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmoptions"
       },
       "MLLstmCellOptions": {
         "fragment": "dictionary MLLstmCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLActivation> activations;\n};",
@@ -2320,7 +2461,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-bias"
           },
           {
             "type": "field",
@@ -2335,7 +2477,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-recurrentbias"
           },
           {
             "type": "field",
@@ -2350,7 +2493,8 @@
               "idlType": "MLOperand"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-peepholeweight"
           },
           {
             "type": "field",
@@ -2368,7 +2512,8 @@
               "type": "string",
               "value": "iofg"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-layout"
           },
           {
             "type": "field",
@@ -2392,11 +2537,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-activations"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcelloptions"
       },
       "MLPaddingMode": {
         "fragment": "enum MLPaddingMode {\n  \"constant\",\n  \"edge\",\n  \"reflection\",\n  \"symmetric\"\n};",
@@ -2405,22 +2552,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "constant"
+            "value": "constant",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpaddingmode-constant"
           },
           {
             "type": "enum-value",
-            "value": "edge"
+            "value": "edge",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpaddingmode-edge"
           },
           {
             "type": "enum-value",
-            "value": "reflection"
+            "value": "reflection",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpaddingmode-reflection"
           },
           {
             "type": "enum-value",
-            "value": "symmetric"
+            "value": "symmetric",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpaddingmode-symmetric"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpaddingmode"
       },
       "MLPadOptions": {
         "fragment": "dictionary MLPadOptions {\n  MLPaddingMode mode = \"constant\";\n  float value = 0;\n};",
@@ -2444,7 +2596,8 @@
               "type": "string",
               "value": "constant"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpadoptions-mode"
           },
           {
             "type": "field",
@@ -2462,11 +2615,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpadoptions-value"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpadoptions"
       },
       "MLRoundingType": {
         "fragment": "enum MLRoundingType {\n  \"floor\",\n  \"ceil\"\n};",
@@ -2475,14 +2630,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "floor"
+            "value": "floor",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlroundingtype-floor"
           },
           {
             "type": "enum-value",
-            "value": "ceil"
+            "value": "ceil",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlroundingtype-ceil"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlroundingtype"
       },
       "MLPool2dOptions": {
         "fragment": "dictionary MLPool2dOptions {\n  sequence<unsigned long> windowDimensions;\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<unsigned long> outputSizes;\n};",
@@ -2512,7 +2670,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-windowdimensions"
           },
           {
             "type": "field",
@@ -2536,7 +2695,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding"
           },
           {
             "type": "field",
@@ -2560,7 +2720,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides"
           },
           {
             "type": "field",
@@ -2584,7 +2745,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations"
           },
           {
             "type": "field",
@@ -2602,7 +2764,8 @@
               "type": "string",
               "value": "explicit"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-autopad"
           },
           {
             "type": "field",
@@ -2620,7 +2783,8 @@
               "type": "string",
               "value": "nchw"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-layout"
           },
           {
             "type": "field",
@@ -2638,7 +2802,8 @@
               "type": "string",
               "value": "floor"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-roundingtype"
           },
           {
             "type": "field",
@@ -2662,11 +2827,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-outputsizes"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
       },
       "MLReduceOptions": {
         "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n};",
@@ -2696,7 +2863,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlreduceoptions-axes"
           },
           {
             "type": "field",
@@ -2714,11 +2882,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlreduceoptions-keepdimensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlreduceoptions"
       },
       "MLInterpolationMode": {
         "fragment": "enum MLInterpolationMode {\n  \"nearest-neighbor\",\n  \"linear\"\n};",
@@ -2727,14 +2897,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "nearest-neighbor"
+            "value": "nearest-neighbor",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinterpolationmode-nearest-neighbor"
           },
           {
             "type": "enum-value",
-            "value": "linear"
+            "value": "linear",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinterpolationmode-linear"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlinterpolationmode"
       },
       "MLResample2dOptions": {
         "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<unsigned long> axes;\n};",
@@ -2758,7 +2931,8 @@
               "type": "string",
               "value": "nearest-neighbor"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-mode"
           },
           {
             "type": "field",
@@ -2782,7 +2956,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-scales"
           },
           {
             "type": "field",
@@ -2806,7 +2981,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-sizes"
           },
           {
             "type": "field",
@@ -2830,11 +3006,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlresample2doptions"
       },
       "MLSoftplusOptions": {
         "fragment": "dictionary MLSoftplusOptions {\n  float steepness = 1;\n};",
@@ -2858,11 +3036,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsoftplusoptions-steepness"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsoftplusoptions"
       },
       "MLSplitOptions": {
         "fragment": "dictionary MLSplitOptions {\n  unsigned long axis = 0;\n};",
@@ -2886,11 +3066,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsplitoptions-axis"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsplitoptions"
       },
       "MLTransposeOptions": {
         "fragment": "dictionary MLTransposeOptions {\n  sequence<unsigned long> permutation;\n};",
@@ -2920,11 +3102,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltransposeoptions-permutation"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltransposeoptions"
       },
       "MLTriangularOptions": {
         "fragment": "dictionary MLTriangularOptions {\n  boolean upper = true;\n  long diagonal = 0;\n};",
@@ -2948,7 +3132,8 @@
               "type": "boolean",
               "value": true
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltriangularoptions-upper"
           },
           {
             "type": "field",
@@ -2966,11 +3151,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mltriangularoptions-diagonal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltriangularoptions"
       },
       "MLOperand": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {};",
@@ -3002,7 +3189,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mloperand"
       },
       "MLInputOperandLayout": {
         "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
@@ -3011,14 +3199,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "nchw"
+            "value": "nchw",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nchw"
           },
           {
             "type": "enum-value",
-            "value": "nhwc"
+            "value": "nhwc",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nhwc"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlinputoperandlayout"
       },
       "MLOperandDataType": {
         "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int64\",\n  \"uint64\",\n  \"int8\",\n  \"uint8\"\n};",
@@ -3027,38 +3218,47 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "float32"
+            "value": "float32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float32"
           },
           {
             "type": "enum-value",
-            "value": "float16"
+            "value": "float16",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float16"
           },
           {
             "type": "enum-value",
-            "value": "int32"
+            "value": "int32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int32"
           },
           {
             "type": "enum-value",
-            "value": "uint32"
+            "value": "uint32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint32"
           },
           {
             "type": "enum-value",
-            "value": "int64"
+            "value": "int64",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int64"
           },
           {
             "type": "enum-value",
-            "value": "uint64"
+            "value": "uint64",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint64"
           },
           {
             "type": "enum-value",
-            "value": "int8"
+            "value": "int8",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int8"
           },
           {
             "type": "enum-value",
-            "value": "uint8"
+            "value": "uint8",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint8"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
       },
       "MLOperandDescriptor": {
         "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions = [];\n};",
@@ -3079,7 +3279,8 @@
               "idlType": "MLOperandDataType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype"
           },
           {
             "type": "field",
@@ -3106,11 +3307,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
       }
     },
     "idlExtendedNames": {
@@ -3210,7 +3413,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
             }
           ],
           "extAttrs": [],
@@ -3272,7 +3476,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-argmin"
             },
             {
               "type": "operation",
@@ -3322,7 +3527,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-argmax"
             }
           ],
           "extAttrs": [],
@@ -3414,7 +3620,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-batchnormalization"
             }
           ],
           "extAttrs": [],
@@ -3472,7 +3679,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cast"
             }
           ],
           "extAttrs": [],
@@ -3532,7 +3740,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp"
             },
             {
               "type": "operation",
@@ -3566,7 +3775,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp-options"
             }
           ],
           "extAttrs": [],
@@ -3633,7 +3843,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-concat"
             }
           ],
           "extAttrs": [],
@@ -3709,7 +3920,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-conv2d"
             }
           ],
           "extAttrs": [],
@@ -3785,7 +3997,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-convtranspose2d"
             }
           ],
           "extAttrs": [],
@@ -3843,7 +4056,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-add"
             },
             {
               "type": "operation",
@@ -3891,7 +4105,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sub"
             },
             {
               "type": "operation",
@@ -3939,7 +4154,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-mul"
             },
             {
               "type": "operation",
@@ -3987,7 +4203,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-div"
             },
             {
               "type": "operation",
@@ -4035,7 +4252,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-max"
             },
             {
               "type": "operation",
@@ -4083,7 +4301,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-min"
             },
             {
               "type": "operation",
@@ -4131,7 +4350,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-pow"
             }
           ],
           "extAttrs": [],
@@ -4189,7 +4409,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-equal"
             },
             {
               "type": "operation",
@@ -4237,7 +4458,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-greater"
             },
             {
               "type": "operation",
@@ -4285,7 +4507,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-greaterorequal"
             },
             {
               "type": "operation",
@@ -4333,7 +4556,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lesser"
             },
             {
               "type": "operation",
@@ -4381,7 +4605,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lesserorequal"
             },
             {
               "type": "operation",
@@ -4413,7 +4638,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-not"
             }
           ],
           "extAttrs": [],
@@ -4455,7 +4681,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-abs"
             },
             {
               "type": "operation",
@@ -4487,7 +4714,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-ceil"
             },
             {
               "type": "operation",
@@ -4519,7 +4747,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cos"
             },
             {
               "type": "operation",
@@ -4551,7 +4780,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-erf"
             },
             {
               "type": "operation",
@@ -4583,7 +4813,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-exp"
             },
             {
               "type": "operation",
@@ -4615,7 +4846,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-floor"
             },
             {
               "type": "operation",
@@ -4647,7 +4879,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-identity"
             },
             {
               "type": "operation",
@@ -4679,7 +4912,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-log"
             },
             {
               "type": "operation",
@@ -4711,7 +4945,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-neg"
             },
             {
               "type": "operation",
@@ -4743,7 +4978,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reciprocal"
             },
             {
               "type": "operation",
@@ -4775,7 +5011,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sin"
             },
             {
               "type": "operation",
@@ -4807,7 +5044,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sqrt"
             },
             {
               "type": "operation",
@@ -4839,7 +5077,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tan"
             }
           ],
           "extAttrs": [],
@@ -4899,7 +5138,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu"
             },
             {
               "type": "operation",
@@ -4933,7 +5173,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-options"
             }
           ],
           "extAttrs": [],
@@ -5000,7 +5241,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-expand"
             }
           ],
           "extAttrs": [],
@@ -5076,7 +5318,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gather"
             }
           ],
           "extAttrs": [],
@@ -5152,7 +5395,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gemm"
             }
           ],
           "extAttrs": [],
@@ -5285,7 +5529,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gru"
             }
           ],
           "extAttrs": [],
@@ -5409,7 +5654,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-grucell"
             }
           ],
           "extAttrs": [],
@@ -5469,7 +5715,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid"
             },
             {
               "type": "operation",
@@ -5503,7 +5750,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid-options"
             }
           ],
           "extAttrs": [],
@@ -5545,7 +5793,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardswish"
             },
             {
               "type": "operation",
@@ -5560,7 +5809,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#hardswish-noargs"
             }
           ],
           "extAttrs": [],
@@ -5620,7 +5870,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-instancenormalization"
             }
           ],
           "extAttrs": [],
@@ -5680,7 +5931,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-layernormalization"
             }
           ],
           "extAttrs": [],
@@ -5740,7 +5992,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu"
             },
             {
               "type": "operation",
@@ -5774,7 +6027,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu-options"
             }
           ],
           "extAttrs": [],
@@ -5834,7 +6088,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear"
             },
             {
               "type": "operation",
@@ -5868,7 +6123,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear-options"
             }
           ],
           "extAttrs": [],
@@ -6001,7 +6257,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm"
             }
           ],
           "extAttrs": [],
@@ -6150,7 +6407,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell"
             }
           ],
           "extAttrs": [],
@@ -6208,7 +6466,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul"
             }
           ],
           "extAttrs": [],
@@ -6318,7 +6577,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-pad"
             }
           ],
           "extAttrs": [],
@@ -6378,7 +6638,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-averagepool2d"
             },
             {
               "type": "operation",
@@ -6428,7 +6689,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-l2pool2d"
             },
             {
               "type": "operation",
@@ -6478,7 +6740,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-maxpool2d"
             }
           ],
           "extAttrs": [],
@@ -6536,7 +6799,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-prelu"
             }
           ],
           "extAttrs": [],
@@ -6596,7 +6860,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel1"
             },
             {
               "type": "operation",
@@ -6646,7 +6911,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel2"
             },
             {
               "type": "operation",
@@ -6696,7 +6962,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsum"
             },
             {
               "type": "operation",
@@ -6746,7 +7013,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsumexp"
             },
             {
               "type": "operation",
@@ -6796,7 +7064,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemax"
             },
             {
               "type": "operation",
@@ -6846,7 +7115,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemean"
             },
             {
               "type": "operation",
@@ -6896,7 +7166,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemin"
             },
             {
               "type": "operation",
@@ -6946,7 +7217,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reduceproduct"
             },
             {
               "type": "operation",
@@ -6996,7 +7268,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesum"
             },
             {
               "type": "operation",
@@ -7046,7 +7319,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesumsquare"
             }
           ],
           "extAttrs": [],
@@ -7088,7 +7362,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-relu"
             },
             {
               "type": "operation",
@@ -7103,7 +7378,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#relu-noargs"
             }
           ],
           "extAttrs": [],
@@ -7163,7 +7439,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-resample2d"
             }
           ],
           "extAttrs": [],
@@ -7230,7 +7507,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reshape"
             }
           ],
           "extAttrs": [],
@@ -7272,7 +7550,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sigmoid"
             },
             {
               "type": "operation",
@@ -7287,7 +7566,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#sigmoid-noargs"
             }
           ],
           "extAttrs": [],
@@ -7379,7 +7659,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice"
             }
           ],
           "extAttrs": [],
@@ -7421,7 +7702,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax"
             },
             {
               "type": "operation",
@@ -7436,7 +7718,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#softmax-noargs"
             }
           ],
           "extAttrs": [],
@@ -7496,7 +7779,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus"
             },
             {
               "type": "operation",
@@ -7530,7 +7814,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus-options"
             }
           ],
           "extAttrs": [],
@@ -7572,7 +7857,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softsign"
             },
             {
               "type": "operation",
@@ -7587,7 +7873,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#softsign-noargs"
             }
           ],
           "extAttrs": [],
@@ -7698,7 +7985,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-split"
             }
           ],
           "extAttrs": [],
@@ -7740,7 +8028,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh"
             },
             {
               "type": "operation",
@@ -7755,7 +8044,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#tanh-noargs"
             }
           ],
           "extAttrs": [],
@@ -7815,7 +8105,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-transpose"
             }
           ],
           "extAttrs": [],
@@ -7875,7 +8166,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-triangular"
             }
           ],
           "extAttrs": [],
@@ -7949,7 +8241,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-where"
             }
           ],
           "extAttrs": [],
@@ -7976,7 +8269,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype"
             }
           ],
           "extAttrs": [],
@@ -8010,7 +8304,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape"
             }
           ],
           "extAttrs": [],

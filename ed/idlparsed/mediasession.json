@@ -25,18 +25,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-none"
           },
           {
             "type": "enum-value",
-            "value": "paused"
+            "value": "paused",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-paused"
           },
           {
             "type": "enum-value",
-            "value": "playing"
+            "value": "playing",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-playing"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionplaybackstate"
       },
       "MediaSessionAction": {
         "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\",\n  \"enterpictureinpicture\"\n};",
@@ -45,66 +49,82 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "play"
+            "value": "play",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-play"
           },
           {
             "type": "enum-value",
-            "value": "pause"
+            "value": "pause",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-pause"
           },
           {
             "type": "enum-value",
-            "value": "seekbackward"
+            "value": "seekbackward",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekbackward"
           },
           {
             "type": "enum-value",
-            "value": "seekforward"
+            "value": "seekforward",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekforward"
           },
           {
             "type": "enum-value",
-            "value": "previoustrack"
+            "value": "previoustrack",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-previoustrack"
           },
           {
             "type": "enum-value",
-            "value": "nexttrack"
+            "value": "nexttrack",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-nexttrack"
           },
           {
             "type": "enum-value",
-            "value": "skipad"
+            "value": "skipad",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-skipad"
           },
           {
             "type": "enum-value",
-            "value": "stop"
+            "value": "stop",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-stop"
           },
           {
             "type": "enum-value",
-            "value": "seekto"
+            "value": "seekto",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekto"
           },
           {
             "type": "enum-value",
-            "value": "togglemicrophone"
+            "value": "togglemicrophone",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-togglemicrophone"
           },
           {
             "type": "enum-value",
-            "value": "togglecamera"
+            "value": "togglecamera",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-togglecamera"
           },
           {
             "type": "enum-value",
-            "value": "hangup"
+            "value": "hangup",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-hangup"
           },
           {
             "type": "enum-value",
-            "value": "previousslide"
+            "value": "previousslide",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-previousslide"
           },
           {
             "type": "enum-value",
-            "value": "nextslide"
+            "value": "nextslide",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-nextslide"
           },
           {
             "type": "enum-value",
-            "value": "enterpictureinpicture"
+            "value": "enterpictureinpicture",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-enterpictureinpicture"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionaction"
       },
       "MediaSessionActionHandler": {
         "fragment": "callback MediaSessionActionHandler = undefined(MediaSessionActionDetails details);",
@@ -136,7 +156,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediasession/#callbackdef-mediasessionactionhandler"
       },
       "MediaSession": {
         "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  Promise<undefined> setMicrophoneActive(boolean active);\n\n  Promise<undefined> setCameraActive(boolean active);\n};",
@@ -157,7 +178,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-metadata"
           },
           {
             "type": "attribute",
@@ -172,7 +194,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-playbackstate"
           },
           {
             "type": "operation",
@@ -220,7 +243,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-setactionhandler"
           },
           {
             "type": "operation",
@@ -254,7 +278,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-setpositionstate"
           },
           {
             "type": "operation",
@@ -295,7 +320,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-setmicrophoneactive"
           },
           {
             "type": "operation",
@@ -336,7 +362,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-setcameraactive"
           }
         ],
         "extAttrs": [
@@ -350,7 +377,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#mediasession"
       },
       "MediaMetadata": {
         "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n};",
@@ -380,7 +408,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-mediametadata"
           },
           {
             "type": "attribute",
@@ -395,7 +424,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-title"
           },
           {
             "type": "attribute",
@@ -410,7 +440,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artist"
           },
           {
             "type": "attribute",
@@ -425,7 +456,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-album"
           },
           {
             "type": "attribute",
@@ -449,7 +481,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artwork"
           }
         ],
         "extAttrs": [
@@ -463,7 +496,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#mediametadata"
       },
       "MediaMetadataInit": {
         "fragment": "dictionary MediaMetadataInit {\n  DOMString title = \"\";\n  DOMString artist = \"\";\n  DOMString album = \"\";\n  sequence<MediaImage> artwork = [];\n};",
@@ -487,7 +521,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-title"
           },
           {
             "type": "field",
@@ -505,7 +540,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-artist"
           },
           {
             "type": "field",
@@ -523,7 +559,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-album"
           },
           {
             "type": "field",
@@ -550,11 +587,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-artwork"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediametadatainit"
       },
       "MediaImage": {
         "fragment": "dictionary MediaImage {\n  required USVString src;\n  DOMString sizes = \"\";\n  DOMString type = \"\";\n};",
@@ -575,7 +614,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/mediasession/#dom-mediaimage-src"
           },
           {
             "type": "field",
@@ -593,7 +633,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediaimage-sizes"
           },
           {
             "type": "field",
@@ -611,11 +652,13 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediaimage-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediaimage"
       },
       "MediaPositionState": {
         "fragment": "dictionary MediaPositionState {\n  unrestricted double duration;\n  double playbackRate;\n  double position;\n};",
@@ -636,7 +679,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-duration"
           },
           {
             "type": "field",
@@ -651,7 +695,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-playbackrate"
           },
           {
             "type": "field",
@@ -666,11 +711,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-position"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediapositionstate"
       },
       "MediaSessionActionDetails": {
         "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n};",
@@ -691,11 +738,13 @@
               "idlType": "MediaSessionAction"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-action"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionactiondetails"
       },
       "MediaSessionSeekActionDetails": {
         "fragment": "dictionary MediaSessionSeekActionDetails : MediaSessionActionDetails {\n  double seekOffset;\n};",
@@ -716,11 +765,13 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseekactiondetails-seekoffset"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionseekactiondetails"
       },
       "MediaSessionSeekToActionDetails": {
         "fragment": "dictionary MediaSessionSeekToActionDetails : MediaSessionActionDetails {\n  required double seekTime;\n  boolean fastSeek;\n};",
@@ -741,7 +792,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseektoactiondetails-seektime"
           },
           {
             "type": "field",
@@ -756,11 +808,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseektoactiondetails-fastseek"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionseektoactiondetails"
       },
       "MediaSessionCaptureActionDetails": {
         "fragment": "dictionary MediaSessionCaptureActionDetails : MediaSessionActionDetails {\n  boolean isActivating;\n};",
@@ -781,11 +835,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessioncaptureactiondetails-isactivating"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessioncaptureactiondetails"
       }
     },
     "idlExtendedNames": {
@@ -816,7 +872,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/mediasession/#dom-navigator-mediasession"
             }
           ],
           "extAttrs": [

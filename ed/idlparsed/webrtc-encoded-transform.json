@@ -60,7 +60,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtptransform"
       },
       "SFrameTransformRole": {
         "fragment": "enum SFrameTransformRole {\n    \"encrypt\",\n    \"decrypt\"\n};",
@@ -69,14 +70,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "encrypt"
+            "value": "encrypt",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-encrypt"
           },
           {
             "type": "enum-value",
-            "value": "decrypt"
+            "value": "decrypt",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-decrypt"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformrole"
       },
       "SFrameTransformOptions": {
         "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n};",
@@ -100,11 +104,13 @@
               "type": "string",
               "value": "encrypt"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformoptions"
       },
       "SmallCryptoKeyID": {
         "fragment": "typedef [EnforceRange] unsigned long long SmallCryptoKeyID;",
@@ -125,7 +131,8 @@
           "union": false,
           "idlType": "unsigned long long"
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-smallcryptokeyid"
       },
       "CryptoKeyID": {
         "fragment": "typedef (SmallCryptoKeyID or bigint) CryptoKeyID;",
@@ -156,7 +163,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-cryptokeyid"
       },
       "SFrameTransform": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
@@ -186,7 +194,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-sframetransform"
           },
           {
             "type": "operation",
@@ -243,7 +252,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-setencryptionkey"
           },
           {
             "type": "attribute",
@@ -258,7 +268,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror"
           }
         ],
         "extAttrs": [
@@ -279,7 +290,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
       },
       "SFrameTransformErrorEventType": {
         "fragment": "enum SFrameTransformErrorEventType {\n    \"authentication\",\n    \"keyID\",\n    \"syntax\"\n};",
@@ -288,18 +300,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "authentication"
+            "value": "authentication",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication"
           },
           {
             "type": "enum-value",
-            "value": "keyID"
+            "value": "keyID",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid"
           },
           {
             "type": "enum-value",
-            "value": "syntax"
+            "value": "syntax",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformerroreventtype"
       },
       "SFrameTransformErrorEvent": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
@@ -343,7 +359,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-sframetransformerrorevent"
           },
           {
             "type": "attribute",
@@ -358,7 +375,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype"
           },
           {
             "type": "attribute",
@@ -373,7 +391,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid"
           },
           {
             "type": "attribute",
@@ -388,7 +407,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame"
           }
         ],
         "extAttrs": [
@@ -409,7 +429,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent"
       },
       "SFrameTransformErrorEventInit": {
         "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
@@ -430,7 +451,8 @@
               "idlType": "SFrameTransformErrorEventType"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventinit-errortype"
           },
           {
             "type": "field",
@@ -445,7 +467,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventinit-frame"
           },
           {
             "type": "field",
@@ -460,11 +483,13 @@
               "idlType": "CryptoKeyID"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventinit-keyid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformerroreventinit"
       },
       "RTCEncodedVideoFrameType": {
         "fragment": "// New enum for video frame types. Will eventually re-use the equivalent defined\n// by WebCodecs.\nenum RTCEncodedVideoFrameType {\n    \"empty\",\n    \"key\",\n    \"delta\",\n};",
@@ -473,18 +498,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "empty"
+            "value": "empty",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-empty"
           },
           {
             "type": "enum-value",
-            "value": "key"
+            "value": "key",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-key"
           },
           {
             "type": "enum-value",
-            "value": "delta"
+            "value": "delta",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-delta"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-rtcencodedvideoframetype"
       },
       "RTCEncodedVideoFrameMetadata": {
         "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n    unsigned long rtpTimestamp;\n    DOMString mimeType;\n};",
@@ -505,7 +534,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-frameid"
           },
           {
             "type": "field",
@@ -529,7 +559,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-dependencies"
           },
           {
             "type": "field",
@@ -544,7 +575,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-width"
           },
           {
             "type": "field",
@@ -559,7 +591,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-height"
           },
           {
             "type": "field",
@@ -574,7 +607,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-spatialindex"
           },
           {
             "type": "field",
@@ -589,7 +623,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-temporalindex"
           },
           {
             "type": "field",
@@ -604,7 +639,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-synchronizationsource"
           },
           {
             "type": "field",
@@ -619,7 +655,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-payloadtype"
           },
           {
             "type": "field",
@@ -643,7 +680,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-contributingsources"
           },
           {
             "type": "field",
@@ -658,7 +696,8 @@
               "idlType": "long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-timestamp"
           },
           {
             "type": "field",
@@ -673,7 +712,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-rtptimestamp"
           },
           {
             "type": "field",
@@ -688,11 +728,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-mimetype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata"
       },
       "RTCEncodedVideoFrame": {
         "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
@@ -713,7 +755,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type"
           },
           {
             "type": "attribute",
@@ -728,7 +771,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-data"
           },
           {
             "type": "operation",
@@ -743,7 +787,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-getmetadata"
           }
         ],
         "extAttrs": [
@@ -770,7 +815,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe"
       },
       "RTCEncodedAudioFrameMetadata": {
         "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n    DOMString mimeType;\n};",
@@ -791,7 +837,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-synchronizationsource"
           },
           {
             "type": "field",
@@ -806,7 +853,8 @@
               "idlType": "octet"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-payloadtype"
           },
           {
             "type": "field",
@@ -830,7 +878,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-contributingsources"
           },
           {
             "type": "field",
@@ -845,7 +894,8 @@
               "idlType": "short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-sequencenumber"
           },
           {
             "type": "field",
@@ -860,7 +910,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-rtptimestamp"
           },
           {
             "type": "field",
@@ -875,11 +926,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-mimetype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedaudioframemetadata"
       },
       "RTCEncodedAudioFrame": {
         "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
@@ -900,7 +953,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-data"
           },
           {
             "type": "operation",
@@ -915,7 +969,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-getmetadata"
           }
         ],
         "extAttrs": [
@@ -942,7 +997,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe"
       },
       "RTCTransformEvent": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
@@ -963,7 +1019,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtctransformevent-transformer"
           }
         ],
         "extAttrs": [
@@ -977,7 +1034,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent"
       },
       "RTCRtpScriptTransformer": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<unsigned long long> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
@@ -998,7 +1056,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-readable"
           },
           {
             "type": "operation",
@@ -1039,7 +1098,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe"
           },
           {
             "type": "operation",
@@ -1063,7 +1123,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-sendkeyframerequest"
           },
           {
             "type": "attribute",
@@ -1078,7 +1139,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-writable"
           },
           {
             "type": "attribute",
@@ -1093,7 +1155,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-onkeyframerequest"
           },
           {
             "type": "attribute",
@@ -1108,7 +1171,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-options"
           }
         ],
         "extAttrs": [
@@ -1122,7 +1186,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer"
       },
       "RTCRtpScriptTransform": {
         "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options, optional sequence<object> transfer);\n};",
@@ -1191,7 +1256,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform"
           }
         ],
         "extAttrs": [
@@ -1205,7 +1271,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform"
       },
       "KeyFrameRequestEvent": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface KeyFrameRequestEvent : Event {\n  constructor(DOMString type, optional DOMString rid);\n  readonly attribute DOMString? rid;\n};",
@@ -1249,7 +1316,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-keyframerequestevent-keyframerequestevent"
           },
           {
             "type": "attribute",
@@ -1264,7 +1332,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-keyframerequestevent-rid"
           }
         ],
         "extAttrs": [
@@ -1278,7 +1347,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#keyframerequestevent"
       }
     },
     "idlExtendedNames": {
@@ -1302,7 +1372,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform"
             }
           ],
           "extAttrs": [],
@@ -1362,7 +1433,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe"
             }
           ],
           "extAttrs": [],
@@ -1389,7 +1461,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform"
             }
           ],
           "extAttrs": [],
@@ -1425,7 +1498,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-dedicatedworkerglobalscope-onrtctransform"
             }
           ],
           "extAttrs": [],

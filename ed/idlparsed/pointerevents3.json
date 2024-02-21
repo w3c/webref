@@ -35,7 +35,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pointerid"
           },
           {
             "type": "field",
@@ -53,7 +54,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-width"
           },
           {
             "type": "field",
@@ -71,7 +73,8 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-height"
           },
           {
             "type": "field",
@@ -89,7 +92,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pressure"
           },
           {
             "type": "field",
@@ -107,7 +111,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tangentialpressure"
           },
           {
             "type": "field",
@@ -122,7 +127,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tiltx"
           },
           {
             "type": "field",
@@ -137,7 +143,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tilty"
           },
           {
             "type": "field",
@@ -155,7 +162,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-twist"
           },
           {
             "type": "field",
@@ -170,7 +178,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-altitudeangle"
           },
           {
             "type": "field",
@@ -185,7 +194,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-azimuthangle"
           },
           {
             "type": "field",
@@ -203,7 +213,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pointertype"
           },
           {
             "type": "field",
@@ -221,7 +232,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-isprimary"
           },
           {
             "type": "field",
@@ -248,7 +260,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-coalescedevents"
           },
           {
             "type": "field",
@@ -275,11 +288,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-predictedevents"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit"
       },
       "PointerEvent": {
         "fragment": "[Exposed=Window]\ninterface PointerEvent : MouseEvent {\n    constructor(DOMString type, optional PointerEventInit eventInitDict = {});\n    readonly        attribute long        pointerId;\n    readonly        attribute double      width;\n    readonly        attribute double      height;\n    readonly        attribute float       pressure;\n    readonly        attribute float       tangentialPressure;\n    readonly        attribute long        tiltX;\n    readonly        attribute long        tiltY;\n    readonly        attribute long        twist;\n    readonly        attribute double      altitudeAngle;\n    readonly        attribute double      azimuthAngle;\n    readonly        attribute DOMString   pointerType;\n    readonly        attribute boolean     isPrimary;\n    [SecureContext] sequence<PointerEvent> getCoalescedEvents();\n    sequence<PointerEvent> getPredictedEvents();\n};",
@@ -325,7 +340,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-constructor"
           },
           {
             "type": "attribute",
@@ -340,7 +356,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid"
           },
           {
             "type": "attribute",
@@ -355,7 +372,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-width"
           },
           {
             "type": "attribute",
@@ -370,7 +388,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-height"
           },
           {
             "type": "attribute",
@@ -385,7 +404,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pressure"
           },
           {
             "type": "attribute",
@@ -400,7 +420,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tangentialpressure"
           },
           {
             "type": "attribute",
@@ -415,7 +436,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tiltx"
           },
           {
             "type": "attribute",
@@ -430,7 +452,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tilty"
           },
           {
             "type": "attribute",
@@ -445,7 +468,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-twist"
           },
           {
             "type": "attribute",
@@ -460,7 +484,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-altitudeangle"
           },
           {
             "type": "attribute",
@@ -475,7 +500,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-azimuthangle"
           },
           {
             "type": "attribute",
@@ -490,7 +516,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointertype"
           },
           {
             "type": "attribute",
@@ -505,7 +532,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-isprimary"
           },
           {
             "type": "operation",
@@ -536,7 +564,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-getcoalescedevents"
           },
           {
             "type": "operation",
@@ -560,7 +589,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-getpredictedevents"
           }
         ],
         "extAttrs": [
@@ -574,7 +604,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/pointerevents/#dom-pointerevent"
       }
     },
     "idlExtendedNames": {
@@ -615,7 +646,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/pointerevents/#dom-element-setpointercapture"
             },
             {
               "type": "operation",
@@ -647,7 +679,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/pointerevents/#dom-element-releasepointercapture"
             },
             {
               "type": "operation",
@@ -679,7 +712,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/pointerevents/#dom-element-haspointercapture"
             }
           ],
           "extAttrs": [],
@@ -706,7 +740,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover"
             },
             {
               "type": "attribute",
@@ -721,7 +756,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter"
             },
             {
               "type": "attribute",
@@ -736,7 +772,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerdown"
             },
             {
               "type": "attribute",
@@ -751,7 +788,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointermove"
             },
             {
               "type": "attribute",
@@ -773,7 +811,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerrawupdate"
             },
             {
               "type": "attribute",
@@ -788,7 +827,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerup"
             },
             {
               "type": "attribute",
@@ -803,7 +843,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointercancel"
             },
             {
               "type": "attribute",
@@ -818,7 +859,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerout"
             },
             {
               "type": "attribute",
@@ -833,7 +875,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave"
             },
             {
               "type": "attribute",
@@ -848,7 +891,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture"
             },
             {
               "type": "attribute",
@@ -863,7 +907,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture"
             }
           ],
           "extAttrs": [],
@@ -890,7 +935,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/pointerevents/#dom-navigator-maxtouchpoints"
             }
           ],
           "extAttrs": [],

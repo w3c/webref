@@ -46,7 +46,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector"
           },
           {
             "type": "operation",
@@ -96,7 +97,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-facedetector-detect"
           }
         ],
         "extAttrs": [
@@ -123,7 +125,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#facedetector"
       },
       "FaceDetectorOptions": {
         "fragment": "dictionary FaceDetectorOptions {\n  unsigned short maxDetectedFaces;\n  boolean fastMode;\n};",
@@ -144,7 +147,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-maxdetectedfaces"
           },
           {
             "type": "field",
@@ -159,11 +163,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-facedetectoroptions-fastmode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-facedetectoroptions"
       },
       "DetectedFace": {
         "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required FrozenArray<Landmark>? landmarks;\n};",
@@ -184,7 +190,8 @@
               "idlType": "DOMRectReadOnly"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedface-boundingbox"
           },
           {
             "type": "field",
@@ -208,11 +215,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedface-landmarks"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-detectedface"
       },
       "Landmark": {
         "fragment": "dictionary Landmark {\n  required FrozenArray<Point2D> locations;\n  LandmarkType type;\n};",
@@ -242,7 +251,8 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-landmark-locations"
           },
           {
             "type": "field",
@@ -257,11 +267,13 @@
               "idlType": "LandmarkType"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-landmark-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-landmark"
       },
       "LandmarkType": {
         "fragment": "enum LandmarkType {\n  \"mouth\",\n  \"eye\",\n  \"nose\"\n};",
@@ -270,18 +282,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "mouth"
+            "value": "mouth",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-landmarktype-mouth"
           },
           {
             "type": "enum-value",
-            "value": "eye"
+            "value": "eye",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-landmarktype-eye"
           },
           {
             "type": "enum-value",
-            "value": "nose"
+            "value": "nose",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-landmarktype-nose"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/shape-detection-api/#enumdef-landmarktype"
       },
       "BarcodeDetector": {
         "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface BarcodeDetector {\n  constructor(optional BarcodeDetectorOptions barcodeDetectorOptions = {});\n  static Promise<sequence<BarcodeFormat>> getSupportedFormats();\n\n  Promise<sequence<DetectedBarcode>> detect(ImageBitmapSource image);\n};",
@@ -311,7 +327,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector"
           },
           {
             "type": "operation",
@@ -344,7 +361,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-getsupportedformats"
           },
           {
             "type": "operation",
@@ -394,7 +412,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-detect"
           }
         ],
         "extAttrs": [
@@ -421,7 +440,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#barcodedetector"
       },
       "BarcodeDetectorOptions": {
         "fragment": "dictionary BarcodeDetectorOptions {\n  sequence<BarcodeFormat> formats;\n};",
@@ -451,11 +471,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetectoroptions-formats"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-barcodedetectoroptions"
       },
       "DetectedBarcode": {
         "fragment": "dictionary DetectedBarcode {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required BarcodeFormat format;\n  required FrozenArray<Point2D> cornerPoints;\n};",
@@ -476,7 +498,8 @@
               "idlType": "DOMRectReadOnly"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-boundingbox"
           },
           {
             "type": "field",
@@ -491,7 +514,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-rawvalue"
           },
           {
             "type": "field",
@@ -506,7 +530,8 @@
               "idlType": "BarcodeFormat"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-format"
           },
           {
             "type": "field",
@@ -530,11 +555,13 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/shape-detection-api/#dom-detectedbarcode-cornerpoints"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-detectedbarcode"
       },
       "BarcodeFormat": {
         "fragment": "enum BarcodeFormat {\n  \"aztec\",\n  \"code_128\",\n  \"code_39\",\n  \"code_93\",\n  \"codabar\",\n  \"data_matrix\",\n  \"ean_13\",\n  \"ean_8\",\n  \"itf\",\n  \"pdf417\",\n  \"qr_code\",\n  \"unknown\",\n  \"upc_a\",\n  \"upc_e\"\n};",
@@ -543,62 +570,77 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "aztec"
+            "value": "aztec",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-aztec"
           },
           {
             "type": "enum-value",
-            "value": "code_128"
+            "value": "code_128",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code_128"
           },
           {
             "type": "enum-value",
-            "value": "code_39"
+            "value": "code_39",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code_39"
           },
           {
             "type": "enum-value",
-            "value": "code_93"
+            "value": "code_93",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-code_93"
           },
           {
             "type": "enum-value",
-            "value": "codabar"
+            "value": "codabar",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-codabar"
           },
           {
             "type": "enum-value",
-            "value": "data_matrix"
+            "value": "data_matrix",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-data_matrix"
           },
           {
             "type": "enum-value",
-            "value": "ean_13"
+            "value": "ean_13",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean_13"
           },
           {
             "type": "enum-value",
-            "value": "ean_8"
+            "value": "ean_8",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-ean_8"
           },
           {
             "type": "enum-value",
-            "value": "itf"
+            "value": "itf",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-itf"
           },
           {
             "type": "enum-value",
-            "value": "pdf417"
+            "value": "pdf417",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-pdf417"
           },
           {
             "type": "enum-value",
-            "value": "qr_code"
+            "value": "qr_code",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-qr_code"
           },
           {
             "type": "enum-value",
-            "value": "unknown"
+            "value": "unknown",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-unknown"
           },
           {
             "type": "enum-value",
-            "value": "upc_a"
+            "value": "upc_a",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc_a"
           },
           {
             "type": "enum-value",
-            "value": "upc_e"
+            "value": "upc_e",
+            "href": "https://wicg.github.io/shape-detection-api/#dom-barcodeformat-upc_e"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/shape-detection-api/#enumdef-barcodeformat"
       }
     },
     "idlExtendedNames": {},

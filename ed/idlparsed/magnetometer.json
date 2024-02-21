@@ -42,7 +42,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometer-magnetometer"
           },
           {
             "type": "attribute",
@@ -57,7 +58,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometer-x"
           },
           {
             "type": "attribute",
@@ -72,7 +74,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometer-y"
           },
           {
             "type": "attribute",
@@ -87,7 +90,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometer-z"
           }
         ],
         "extAttrs": [
@@ -107,7 +111,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/magnetometer/#magnetometer"
       },
       "MagnetometerLocalCoordinateSystem": {
         "fragment": "enum MagnetometerLocalCoordinateSystem { \"device\", \"screen\" };",
@@ -116,14 +121,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "device"
+            "value": "device",
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometerlocalcoordinatesystem-device"
           },
           {
             "type": "enum-value",
-            "value": "screen"
+            "value": "screen",
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometerlocalcoordinatesystem-screen"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/magnetometer/#enumdef-magnetometerlocalcoordinatesystem"
       },
       "MagnetometerSensorOptions": {
         "fragment": "dictionary MagnetometerSensorOptions : SensorOptions {\n  MagnetometerLocalCoordinateSystem referenceFrame = \"device\";\n};",
@@ -147,11 +155,13 @@
               "type": "string",
               "value": "device"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/magnetometer/#dom-magnetometersensoroptions-referenceframe"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/magnetometer/#dictdef-magnetometersensoroptions"
       },
       "UncalibratedMagnetometer": {
         "fragment": "[SecureContext,\n  Exposed=Window]\ninterface UncalibratedMagnetometer : Sensor {\n  constructor(optional MagnetometerSensorOptions sensorOptions = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n  readonly attribute double? xBias;\n  readonly attribute double? yBias;\n  readonly attribute double? zBias;\n};",
@@ -181,7 +191,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-uncalibratedmagnetometer"
           },
           {
             "type": "attribute",
@@ -196,7 +207,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-x"
           },
           {
             "type": "attribute",
@@ -211,7 +223,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-y"
           },
           {
             "type": "attribute",
@@ -226,7 +239,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-z"
           },
           {
             "type": "attribute",
@@ -241,7 +255,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-xbias"
           },
           {
             "type": "attribute",
@@ -256,7 +271,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-ybias"
           },
           {
             "type": "attribute",
@@ -271,7 +287,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/magnetometer/#dom-uncalibratedmagnetometer-zbias"
           }
         ],
         "extAttrs": [
@@ -291,7 +308,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/magnetometer/#uncalibratedmagnetometer"
       }
     },
     "idlExtendedNames": {},

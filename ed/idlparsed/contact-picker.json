@@ -22,26 +22,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "address"
+            "value": "address",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactproperty-address"
           },
           {
             "type": "enum-value",
-            "value": "email"
+            "value": "email",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactproperty-email"
           },
           {
             "type": "enum-value",
-            "value": "icon"
+            "value": "icon",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactproperty-icon"
           },
           {
             "type": "enum-value",
-            "value": "name"
+            "value": "name",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactproperty-name"
           },
           {
             "type": "enum-value",
-            "value": "tel"
+            "value": "tel",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactproperty-tel"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/contact-picker/#enumdef-contactproperty"
       },
       "ContactAddress": {
         "fragment": "[Exposed=Window]\ninterface ContactAddress {\n  [Default] object toJSON();\n  readonly attribute DOMString city;\n  readonly attribute DOMString country;\n  readonly attribute DOMString dependentLocality;\n  readonly attribute DOMString organization;\n  readonly attribute DOMString phone;\n  readonly attribute DOMString postalCode;\n  readonly attribute DOMString recipient;\n  readonly attribute DOMString region;\n  readonly attribute DOMString sortingCode;\n  readonly attribute FrozenArray<DOMString> addressLine;\n};",
@@ -69,7 +75,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-tojson"
           },
           {
             "type": "attribute",
@@ -84,7 +91,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-city"
           },
           {
             "type": "attribute",
@@ -99,7 +107,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-country"
           },
           {
             "type": "attribute",
@@ -114,7 +123,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-dependentlocality"
           },
           {
             "type": "attribute",
@@ -129,7 +139,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-organization"
           },
           {
             "type": "attribute",
@@ -144,7 +155,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-phone"
           },
           {
             "type": "attribute",
@@ -159,7 +171,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-postalcode"
           },
           {
             "type": "attribute",
@@ -174,7 +187,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-recipient"
           },
           {
             "type": "attribute",
@@ -189,7 +203,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-region"
           },
           {
             "type": "attribute",
@@ -204,7 +219,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-sortingcode"
           },
           {
             "type": "attribute",
@@ -228,7 +244,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactaddress-addressline"
           }
         ],
         "extAttrs": [
@@ -242,7 +259,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/contact-picker/#contactaddress"
       },
       "ContactInfo": {
         "fragment": "dictionary ContactInfo {\n    sequence<ContactAddress> address;\n    sequence<DOMString> email;\n    sequence<Blob> icon;\n    sequence<DOMString> name;\n    sequence<DOMString> tel;\n};",
@@ -272,7 +290,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactinfo-address"
           },
           {
             "type": "field",
@@ -296,7 +315,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactinfo-email"
           },
           {
             "type": "field",
@@ -320,7 +340,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactinfo-icon"
           },
           {
             "type": "field",
@@ -344,7 +365,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactinfo-name"
           },
           {
             "type": "field",
@@ -368,11 +390,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactinfo-tel"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/contact-picker/#dictdef-contactinfo"
       },
       "ContactsSelectOptions": {
         "fragment": "dictionary ContactsSelectOptions {\n    boolean multiple = false;\n};",
@@ -396,11 +420,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/contact-picker/#dom-contactsselectoptions-multiple"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/contact-picker/#dictdef-contactsselectoptions"
       },
       "ContactsManager": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
@@ -439,7 +465,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactsmanager-getproperties"
           },
           {
             "type": "operation",
@@ -516,7 +543,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/contact-picker/#dom-contactsmanager-select"
           }
         ],
         "extAttrs": [
@@ -536,7 +564,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/contact-picker/#contactsmanager"
       }
     },
     "idlExtendedNames": {
@@ -573,7 +602,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/contact-picker/#dom-navigator-contacts"
             }
           ],
           "extAttrs": [

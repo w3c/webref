@@ -62,7 +62,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/ink-enhancement/#dom-ink-requestpresenter"
           }
         ],
         "extAttrs": [
@@ -76,7 +77,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/ink-enhancement/#ink"
       },
       "InkPresenterParam": {
         "fragment": "dictionary InkPresenterParam {\n    Element? presentationArea = null;\n};",
@@ -99,11 +101,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenterparam-presentationarea"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/ink-enhancement/#dictdef-inkpresenterparam"
       },
       "InkPresenter": {
         "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n    readonly attribute unsigned long expectedImprovement;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
@@ -124,7 +128,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-presentationarea"
           },
           {
             "type": "attribute",
@@ -139,7 +144,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-expectedimprovement"
           },
           {
             "type": "operation",
@@ -187,7 +193,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-updateinktrailstartpoint"
           }
         ],
         "extAttrs": [
@@ -201,7 +208,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/ink-enhancement/#inkpresenter"
       },
       "InkTrailStyle": {
         "fragment": "dictionary InkTrailStyle {\n    required DOMString color;\n    required unrestricted double diameter;\n};",
@@ -222,7 +230,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inktrailstyle-color"
           },
           {
             "type": "field",
@@ -237,11 +246,13 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/ink-enhancement/#dom-inktrailstyle-diameter"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/ink-enhancement/#dictdef-inktrailstyle"
       }
     },
     "idlExtendedNames": {
@@ -272,7 +283,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/ink-enhancement/#dom-navigator-ink"
             }
           ],
           "extAttrs": [

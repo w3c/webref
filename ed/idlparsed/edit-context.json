@@ -36,7 +36,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-text"
           },
           {
             "type": "field",
@@ -51,7 +52,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionstart"
           },
           {
             "type": "field",
@@ -66,11 +68,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionend"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-editcontextinit"
       },
       "EditContext": {
         "fragment": "[Exposed=Window]\ninterface EditContext : EventTarget {\n    constructor(optional EditContextInit options = {});\n\n    undefined updateText(unsigned long rangeStart, unsigned long rangeEnd,\n        DOMString text);\n    undefined updateSelection(unsigned long start, unsigned long end);\n    undefined updateControlBounds(DOMRect controlBounds);\n    undefined updateSelectionBounds(DOMRect selectionBounds);\n    undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);\n\n    sequence<HTMLElement> attachedElements();\n\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long characterBoundsRangeStart;\n    sequence<DOMRect> characterBounds();\n\n    attribute EventHandler ontextupdate;\n    attribute EventHandler ontextformatupdate;\n    attribute EventHandler oncharacterboundsupdate;\n    attribute EventHandler oncompositionstart;\n    attribute EventHandler oncompositionend;\n};",
@@ -100,7 +104,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-constructor"
           },
           {
             "type": "operation",
@@ -164,7 +169,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatetext"
           },
           {
             "type": "operation",
@@ -212,7 +218,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselection"
           },
           {
             "type": "operation",
@@ -244,7 +251,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbounds"
           },
           {
             "type": "operation",
@@ -276,7 +284,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbounds"
           },
           {
             "type": "operation",
@@ -333,7 +342,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds"
           },
           {
             "type": "operation",
@@ -357,7 +367,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-attachedelements"
           },
           {
             "type": "attribute",
@@ -372,7 +383,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-text"
           },
           {
             "type": "attribute",
@@ -387,7 +399,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionstart"
           },
           {
             "type": "attribute",
@@ -402,7 +415,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionend"
           },
           {
             "type": "attribute",
@@ -417,7 +431,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart"
           },
           {
             "type": "operation",
@@ -441,7 +456,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds"
           },
           {
             "type": "attribute",
@@ -456,7 +472,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-ontextupdate"
           },
           {
             "type": "attribute",
@@ -471,7 +488,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-ontextformatupdate"
           },
           {
             "type": "attribute",
@@ -486,7 +504,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate"
           },
           {
             "type": "attribute",
@@ -501,7 +520,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionstart"
           },
           {
             "type": "attribute",
@@ -516,7 +536,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionend"
           }
         ],
         "extAttrs": [
@@ -530,7 +551,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext"
       },
       "TextUpdateEventInit": {
         "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n    unsigned long compositionStart;\n    unsigned long compositionEnd;\n};",
@@ -551,7 +573,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-updaterangestart"
           },
           {
             "type": "field",
@@ -566,7 +589,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-updaterangeend"
           },
           {
             "type": "field",
@@ -581,7 +605,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-text"
           },
           {
             "type": "field",
@@ -596,7 +621,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-selectionstart"
           },
           {
             "type": "field",
@@ -611,7 +637,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-selectionend"
           },
           {
             "type": "field",
@@ -626,7 +653,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-compositionstart"
           },
           {
             "type": "field",
@@ -641,11 +669,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-compositionend"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit"
       },
       "TextUpdateEvent": {
         "fragment": "[Exposed=Window]\ninterface TextUpdateEvent : Event {\n    constructor(DOMString type, optional TextUpdateEventInit options = {});\n    readonly attribute unsigned long updateRangeStart;\n    readonly attribute unsigned long updateRangeEnd;\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n};",
@@ -691,7 +721,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-constructor"
           },
           {
             "type": "attribute",
@@ -706,7 +737,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangestart"
           },
           {
             "type": "attribute",
@@ -721,7 +753,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangeend"
           },
           {
             "type": "attribute",
@@ -736,7 +769,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-text"
           },
           {
             "type": "attribute",
@@ -751,7 +785,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionstart"
           },
           {
             "type": "attribute",
@@ -766,7 +801,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionend"
           }
         ],
         "extAttrs": [
@@ -780,7 +816,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textupdateevent"
       },
       "UnderlineStyle": {
         "fragment": "enum UnderlineStyle { \"none\", \"solid\", \"dotted\", \"dashed\", \"wavy\" };",
@@ -789,26 +826,32 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-none"
           },
           {
             "type": "enum-value",
-            "value": "solid"
+            "value": "solid",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-solid"
           },
           {
             "type": "enum-value",
-            "value": "dotted"
+            "value": "dotted",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-dotted"
           },
           {
             "type": "enum-value",
-            "value": "dashed"
+            "value": "dashed",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-dashed"
           },
           {
             "type": "enum-value",
-            "value": "wavy"
+            "value": "wavy",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-wavy"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/edit-context/#dom-underlinestyle"
       },
       "UnderlineThickness": {
         "fragment": "enum UnderlineThickness { \"none\", \"thin\", \"thick\" };",
@@ -817,18 +860,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "none",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-none"
           },
           {
             "type": "enum-value",
-            "value": "thin"
+            "value": "thin",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-thin"
           },
           {
             "type": "enum-value",
-            "value": "thick"
+            "value": "thick",
+            "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-thick"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/edit-context/#dom-underlinethickness"
       },
       "TextFormatInit": {
         "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n    UnderlineStyle underlineStyle;\n    UnderlineThickness underlineThickness;\n};",
@@ -849,7 +896,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textformatinit-rangestart"
           },
           {
             "type": "field",
@@ -864,7 +912,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textformatinit-rangeend"
           },
           {
             "type": "field",
@@ -879,7 +928,8 @@
               "idlType": "UnderlineStyle"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textformatinit-underlinestyle"
           },
           {
             "type": "field",
@@ -894,11 +944,13 @@
               "idlType": "UnderlineThickness"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textformatinit-underlinethickness"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textformatinit"
       },
       "TextFormat": {
         "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute UnderlineStyle underlineStyle;\n    readonly attribute UnderlineThickness underlineThickness;\n};",
@@ -928,7 +980,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/edit-context/#dom-textformat-constructor"
           },
           {
             "type": "attribute",
@@ -943,7 +996,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textformat-rangestart"
           },
           {
             "type": "attribute",
@@ -958,7 +1012,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textformat-rangeend"
           },
           {
             "type": "attribute",
@@ -973,7 +1028,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textformat-underlinestyle"
           },
           {
             "type": "attribute",
@@ -988,7 +1044,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-textformat-underlinethickness"
           }
         ],
         "extAttrs": [
@@ -1002,7 +1059,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textformat"
       },
       "TextFormatUpdateEventInit": {
         "fragment": "dictionary TextFormatUpdateEventInit : EventInit {\n    sequence<TextFormat> textFormats;\n};",
@@ -1032,11 +1090,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-textformatupdateeventinit-textformats"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textformatupdateeventinit"
       },
       "TextFormatUpdateEvent": {
         "fragment": "[Exposed=Window]\ninterface TextFormatUpdateEvent : Event {\n    constructor(DOMString type, optional TextFormatUpdateEventInit options = {});\n    sequence<TextFormat> getTextFormats();\n};",
@@ -1082,7 +1142,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent-constructor"
           },
           {
             "type": "operation",
@@ -1106,7 +1167,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent-gettextformats"
           }
         ],
         "extAttrs": [
@@ -1120,7 +1182,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent"
       },
       "CharacterBoundsUpdateEventInit": {
         "fragment": "dictionary CharacterBoundsUpdateEventInit : EventInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n};",
@@ -1141,7 +1204,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateeventinit-rangestart"
           },
           {
             "type": "field",
@@ -1156,11 +1220,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateeventinit-rangeend"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateeventinit"
       },
       "CharacterBoundsUpdateEvent": {
         "fragment": "[Exposed=Window]\ninterface CharacterBoundsUpdateEvent : Event {\n    constructor(DOMString type, optional CharacterBoundsUpdateEventInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n};",
@@ -1206,7 +1272,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-constructor"
           },
           {
             "type": "attribute",
@@ -1221,7 +1288,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-rangestart"
           },
           {
             "type": "attribute",
@@ -1236,7 +1304,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-rangeend"
           }
         ],
         "extAttrs": [
@@ -1250,7 +1319,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent"
       }
     },
     "idlExtendedNames": {
@@ -1274,7 +1344,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/edit-context/#dom-htmlelement-editcontext"
             }
           ],
           "extAttrs": [],

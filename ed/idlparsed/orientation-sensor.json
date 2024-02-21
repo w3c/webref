@@ -55,7 +55,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/orientation-sensor/#typedefdef-rotationmatrixtype"
       },
       "OrientationSensor": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface OrientationSensor : Sensor {\n  readonly attribute FrozenArray<double>? quaternion;\n  undefined populateMatrix(RotationMatrixType targetMatrix);\n};",
@@ -85,7 +86,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensor-quaternion"
           },
           {
             "type": "operation",
@@ -117,7 +119,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensor-populatematrix"
           }
         ],
         "extAttrs": [
@@ -137,7 +140,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/orientation-sensor/#orientationsensor"
       },
       "OrientationSensorLocalCoordinateSystem": {
         "fragment": "enum OrientationSensorLocalCoordinateSystem { \"device\", \"screen\" };",
@@ -146,14 +150,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "device"
+            "value": "device",
+            "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensorlocalcoordinatesystem-device"
           },
           {
             "type": "enum-value",
-            "value": "screen"
+            "value": "screen",
+            "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensorlocalcoordinatesystem-screen"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/orientation-sensor/#enumdef-orientationsensorlocalcoordinatesystem"
       },
       "OrientationSensorOptions": {
         "fragment": "dictionary OrientationSensorOptions : SensorOptions {\n  OrientationSensorLocalCoordinateSystem referenceFrame = \"device\";\n};",
@@ -177,11 +184,13 @@
               "type": "string",
               "value": "device"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensoroptions-referenceframe"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/orientation-sensor/#dictdef-orientationsensoroptions"
       },
       "AbsoluteOrientationSensor": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AbsoluteOrientationSensor : OrientationSensor {\n  constructor(optional OrientationSensorOptions sensorOptions = {});\n};",
@@ -211,7 +220,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/orientation-sensor/#dom-absoluteorientationsensor-absoluteorientationsensor"
           }
         ],
         "extAttrs": [
@@ -231,7 +241,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/orientation-sensor/#absoluteorientationsensor"
       },
       "RelativeOrientationSensor": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface RelativeOrientationSensor : OrientationSensor {\n  constructor(optional OrientationSensorOptions sensorOptions = {});\n};",
@@ -261,7 +272,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/orientation-sensor/#dom-relativeorientationsensor-relativeorientationsensor"
           }
         ],
         "extAttrs": [
@@ -281,7 +293,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/orientation-sensor/#relativeorientationsensor"
       }
     },
     "idlExtendedNames": {},

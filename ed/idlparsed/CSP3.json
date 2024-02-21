@@ -46,7 +46,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-tojson"
           },
           {
             "type": "attribute",
@@ -61,7 +62,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl"
           },
           {
             "type": "attribute",
@@ -76,7 +78,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer"
           },
           {
             "type": "attribute",
@@ -91,7 +94,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-blockedurl"
           },
           {
             "type": "attribute",
@@ -106,7 +110,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective"
           },
           {
             "type": "attribute",
@@ -121,7 +126,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy"
           },
           {
             "type": "attribute",
@@ -136,7 +142,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sourcefile"
           },
           {
             "type": "attribute",
@@ -151,7 +158,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample"
           },
           {
             "type": "attribute",
@@ -166,7 +174,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition"
           },
           {
             "type": "attribute",
@@ -181,7 +190,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode"
           },
           {
             "type": "attribute",
@@ -196,7 +206,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber"
           },
           {
             "type": "attribute",
@@ -211,7 +222,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-columnnumber"
           }
         ],
         "extAttrs": [
@@ -225,7 +237,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody"
       },
       "SecurityPolicyViolationEventDisposition": {
         "fragment": "enum SecurityPolicyViolationEventDisposition {\n  \"enforce\", \"report\"\n};",
@@ -234,14 +247,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "enforce"
+            "value": "enforce",
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-enforce"
           },
           {
             "type": "enum-value",
-            "value": "report"
+            "value": "report",
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-report"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webappsec-csp/#enumdef-securitypolicyviolationeventdisposition"
       },
       "SecurityPolicyViolationEvent": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface SecurityPolicyViolationEvent : Event {\n    constructor(DOMString type, optional SecurityPolicyViolationEventInit eventInitDict = {});\n    readonly    attribute USVString      documentURI;\n    readonly    attribute USVString      referrer;\n    readonly    attribute USVString      blockedURI;\n    readonly    attribute DOMString      effectiveDirective;\n    readonly    attribute DOMString      violatedDirective; // historical alias of effectiveDirective\n    readonly    attribute DOMString      originalPolicy;\n    readonly    attribute USVString      sourceFile;\n    readonly    attribute DOMString      sample;\n    readonly    attribute SecurityPolicyViolationEventDisposition      disposition;\n    readonly    attribute unsigned short statusCode;\n    readonly    attribute unsigned long  lineNumber;\n    readonly    attribute unsigned long  columnNumber;\n};",
@@ -287,7 +303,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent"
           },
           {
             "type": "attribute",
@@ -302,7 +319,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi"
           },
           {
             "type": "attribute",
@@ -317,7 +335,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-referrer"
           },
           {
             "type": "attribute",
@@ -332,7 +351,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockeduri"
           },
           {
             "type": "attribute",
@@ -347,7 +367,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-effectivedirective"
           },
           {
             "type": "attribute",
@@ -362,7 +383,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective"
           },
           {
             "type": "attribute",
@@ -377,7 +399,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-originalpolicy"
           },
           {
             "type": "attribute",
@@ -392,7 +415,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sourcefile"
           },
           {
             "type": "attribute",
@@ -407,7 +431,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sample"
           },
           {
             "type": "attribute",
@@ -422,7 +447,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-disposition"
           },
           {
             "type": "attribute",
@@ -437,7 +463,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-statuscode"
           },
           {
             "type": "attribute",
@@ -452,7 +479,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber"
           },
           {
             "type": "attribute",
@@ -467,7 +495,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-columnnumber"
           }
         ],
         "extAttrs": [
@@ -488,7 +517,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent"
       },
       "SecurityPolicyViolationEventInit": {
         "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    USVString      documentURI = \"\";\n    USVString      referrer = \"\";\n    USVString      blockedURI = \"\";\n    DOMString      violatedDirective = \"\";\n    DOMString      effectiveDirective = \"\";\n    DOMString      originalPolicy = \"\";\n    USVString      sourceFile = \"\";\n    DOMString      sample = \"\";\n    SecurityPolicyViolationEventDisposition disposition = \"enforce\";\n    unsigned short statusCode = 0;\n    unsigned long  lineNumber = 0;\n    unsigned long  columnNumber = 0;\n};",
@@ -512,7 +542,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturi"
           },
           {
             "type": "field",
@@ -530,7 +561,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-referrer"
           },
           {
             "type": "field",
@@ -548,7 +580,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-blockeduri"
           },
           {
             "type": "field",
@@ -566,7 +599,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-violateddirective"
           },
           {
             "type": "field",
@@ -584,7 +618,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-effectivedirective"
           },
           {
             "type": "field",
@@ -602,7 +637,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-originalpolicy"
           },
           {
             "type": "field",
@@ -620,7 +656,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sourcefile"
           },
           {
             "type": "field",
@@ -638,7 +675,8 @@
               "type": "string",
               "value": ""
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sample"
           },
           {
             "type": "field",
@@ -656,7 +694,8 @@
               "type": "string",
               "value": "enforce"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-disposition"
           },
           {
             "type": "field",
@@ -674,7 +713,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-statuscode"
           },
           {
             "type": "field",
@@ -692,7 +732,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-linenumber"
           },
           {
             "type": "field",
@@ -710,11 +751,13 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-columnnumber"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit"
       }
     },
     "idlExtendedNames": {},

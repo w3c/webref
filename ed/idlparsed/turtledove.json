@@ -48,7 +48,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-renderurl"
           },
           {
             "type": "field",
@@ -63,7 +64,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-metadata"
           },
           {
             "type": "field",
@@ -78,7 +80,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-buyerreportingid"
           },
           {
             "type": "field",
@@ -93,7 +96,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-buyerandsellerreportingid"
           },
           {
             "type": "field",
@@ -117,11 +121,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-allowedreportingorigins"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionad"
       },
       "GenerateBidInterestGroup": {
         "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
@@ -142,7 +148,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-owner"
           },
           {
             "type": "field",
@@ -157,7 +164,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-name"
           },
           {
             "type": "field",
@@ -172,7 +180,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-lifetimems"
           },
           {
             "type": "field",
@@ -190,7 +199,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-enablebiddingsignalsprioritization"
           },
           {
             "type": "field",
@@ -222,7 +232,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-priorityvector"
           },
           {
             "type": "field",
@@ -240,7 +251,8 @@
               "type": "string",
               "value": "compatibility"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-executionmode"
           },
           {
             "type": "field",
@@ -255,7 +267,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-biddinglogicurl"
           },
           {
             "type": "field",
@@ -270,7 +283,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-biddingwasmhelperurl"
           },
           {
             "type": "field",
@@ -285,7 +299,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-updateurl"
           },
           {
             "type": "field",
@@ -300,7 +315,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-trustedbiddingsignalsurl"
           },
           {
             "type": "field",
@@ -324,7 +340,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-trustedbiddingsignalskeys"
           },
           {
             "type": "field",
@@ -342,7 +359,8 @@
               "type": "string",
               "value": "none"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-trustedbiddingsignalsslotsizemode"
           },
           {
             "type": "field",
@@ -357,7 +375,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-userbiddingsignals"
           },
           {
             "type": "field",
@@ -381,7 +400,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-ads"
           },
           {
             "type": "field",
@@ -405,11 +425,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-adcomponents"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-generatebidinterestgroup"
       },
       "AuctionAdInterestGroup": {
         "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  DOMString additionalBidKey;\n};",
@@ -433,7 +455,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-priority"
           },
           {
             "type": "field",
@@ -465,7 +488,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-prioritysignalsoverrides"
           },
           {
             "type": "field",
@@ -480,11 +504,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-additionalbidkey"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroup"
       },
       "AuctionAdInterestGroupKey": {
         "fragment": "dictionary AuctionAdInterestGroupKey {\n  required USVString owner;\n  required USVString name;\n};",
@@ -505,7 +531,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroupkey-owner"
           },
           {
             "type": "field",
@@ -520,11 +547,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroupkey-name"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupkey"
       },
       "AuctionAdConfig": {
         "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
@@ -545,7 +574,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-seller"
           },
           {
             "type": "field",
@@ -560,7 +590,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-decisionlogicurl"
           },
           {
             "type": "field",
@@ -575,7 +606,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-trustedscoringsignalsurl"
           },
           {
             "type": "field",
@@ -599,7 +631,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-interestgroupbuyers"
           },
           {
             "type": "field",
@@ -623,7 +656,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionsignals"
           },
           {
             "type": "field",
@@ -655,7 +689,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestedsize"
           },
           {
             "type": "field",
@@ -696,7 +731,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes"
           },
           {
             "type": "field",
@@ -720,7 +756,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellersignals"
           },
           {
             "type": "field",
@@ -744,7 +781,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-directfromsellersignalsheaderadslot"
           },
           {
             "type": "field",
@@ -759,7 +797,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellertimeout"
           },
           {
             "type": "field",
@@ -774,7 +813,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellerexperimentgroupid"
           },
           {
             "type": "field",
@@ -789,7 +829,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellercurrency"
           },
           {
             "type": "field",
@@ -830,7 +871,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyersignals"
           },
           {
             "type": "field",
@@ -871,7 +913,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyertimeouts"
           },
           {
             "type": "field",
@@ -912,7 +955,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercumulativetimeouts"
           },
           {
             "type": "field",
@@ -944,7 +988,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyergrouplimits"
           },
           {
             "type": "field",
@@ -976,7 +1021,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyerexperimentgroupids"
           },
           {
             "type": "field",
@@ -1025,7 +1071,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyerprioritysignals"
           },
           {
             "type": "field",
@@ -1066,7 +1113,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercurrencies"
           },
           {
             "type": "field",
@@ -1093,7 +1141,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-componentauctions"
           },
           {
             "type": "field",
@@ -1117,7 +1166,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-additionalbids"
           },
           {
             "type": "field",
@@ -1132,7 +1182,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionnonce"
           },
           {
             "type": "field",
@@ -1147,7 +1198,8 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-signal"
           },
           {
             "type": "field",
@@ -1171,11 +1223,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-resolvetoconfig"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionadconfig"
       },
       "InterestGroupScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
@@ -1194,7 +1248,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope"
       },
       "ForDebuggingOnly": {
         "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface ForDebuggingOnly {\n  undefined reportAdAuctionWin(USVString url);\n  undefined reportAdAuctionLoss(USVString url);\n};",
@@ -1232,7 +1287,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-fordebuggingonly-reportadauctionwin"
           },
           {
             "type": "operation",
@@ -1264,7 +1320,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-fordebuggingonly-reportadauctionloss"
           }
         ],
         "extAttrs": [
@@ -1278,7 +1335,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#fordebuggingonly"
       },
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope,\n Global=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface InterestGroupBiddingAndScoringScriptRunnerGlobalScope : InterestGroupScriptRunnerGlobalScope {\n\n  readonly attribute ForDebuggingOnly forDebuggingOnly;\n};",
@@ -1299,7 +1357,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingandscoringscriptrunnerglobalscope-fordebuggingonly"
           }
         ],
         "extAttrs": [
@@ -1322,7 +1381,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope"
       },
       "InterestGroupBiddingScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n  boolean setBid(optional GenerateBidOutput generateBidOutput = {});\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
@@ -1362,7 +1422,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid"
           },
           {
             "type": "operation",
@@ -1394,7 +1455,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setpriority"
           },
           {
             "type": "operation",
@@ -1442,7 +1504,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setprioritysignalsoverride"
           }
         ],
         "extAttrs": [
@@ -1472,7 +1535,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#interestgroupbiddingscriptrunnerglobalscope"
       },
       "AdRender": {
         "fragment": "dictionary AdRender {\n  required DOMString url;\n  DOMString width;\n  DOMString height;\n};",
@@ -1493,7 +1557,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adrender-url"
           },
           {
             "type": "field",
@@ -1508,7 +1573,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-adrender-width"
           },
           {
             "type": "field",
@@ -1523,11 +1589,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-adrender-height"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-adrender"
       },
       "GenerateBidOutput": {
         "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
@@ -1551,7 +1619,8 @@
               "type": "number",
               "value": "-1"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-bid"
           },
           {
             "type": "field",
@@ -1566,7 +1635,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-bidcurrency"
           },
           {
             "type": "field",
@@ -1598,7 +1668,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-render"
           },
           {
             "type": "field",
@@ -1613,7 +1684,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-ad"
           },
           {
             "type": "field",
@@ -1654,7 +1726,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-adcomponents"
           },
           {
             "type": "field",
@@ -1669,7 +1742,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-adcost"
           },
           {
             "type": "field",
@@ -1684,7 +1758,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-modelingsignals"
           },
           {
             "type": "field",
@@ -1702,11 +1777,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-allowcomponentauction"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-generatebidoutput"
       },
       "InterestGroupScoringScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupScoringScriptRunnerGlobalScope)]\ninterface InterestGroupScoringScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n};",
@@ -1741,7 +1818,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#interestgroupscoringscriptrunnerglobalscope"
       },
       "InterestGroupReportingScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n  undefined registerAdBeacon(record<DOMString, USVString> map);\n  undefined registerAdMacro(DOMString name, USVString value);\n};",
@@ -1779,7 +1857,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-sendreportto"
           },
           {
             "type": "operation",
@@ -1828,7 +1907,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradbeacon"
           },
           {
             "type": "operation",
@@ -1876,7 +1956,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro"
           }
         ],
         "extAttrs": [
@@ -1906,7 +1987,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#interestgroupreportingscriptrunnerglobalscope"
       },
       "ProtectedAudience": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface ProtectedAudience {\n  any queryFeatureSupport(DOMString feature);\n};",
@@ -1944,7 +2026,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-protectedaudience-queryfeaturesupport"
           }
         ],
         "extAttrs": [
@@ -1964,7 +2047,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#protectedaudience"
       },
       "PreviousWin": {
         "fragment": "dictionary PreviousWin {\n  required long long timeDelta;\n  required DOMString adJSON;\n};",
@@ -1985,7 +2069,8 @@
               "idlType": "long long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-previouswin-timedelta"
           },
           {
             "type": "field",
@@ -2000,11 +2085,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-previouswin-adjson"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-previouswin"
       },
       "BiddingBrowserSignals": {
         "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n};",
@@ -2025,7 +2112,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-topwindowhostname"
           },
           {
             "type": "field",
@@ -2040,7 +2128,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-seller"
           },
           {
             "type": "field",
@@ -2055,7 +2144,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-joincount"
           },
           {
             "type": "field",
@@ -2070,7 +2160,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-bidcount"
           },
           {
             "type": "field",
@@ -2085,7 +2176,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-recency"
           },
           {
             "type": "field",
@@ -2100,7 +2192,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-adcomponentslimit"
           },
           {
             "type": "field",
@@ -2115,7 +2208,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-toplevelseller"
           },
           {
             "type": "field",
@@ -2139,7 +2233,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-prevwinsms"
           },
           {
             "type": "field",
@@ -2154,7 +2249,8 @@
               "idlType": "object"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-wasmhelper"
           },
           {
             "type": "field",
@@ -2169,11 +2265,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-dataversion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-biddingbrowsersignals"
       },
       "ScoringBrowserSignals": {
         "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n};",
@@ -2194,7 +2292,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-topwindowhostname"
           },
           {
             "type": "field",
@@ -2209,7 +2308,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-interestgroupowner"
           },
           {
             "type": "field",
@@ -2224,7 +2324,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-renderurl"
           },
           {
             "type": "field",
@@ -2239,7 +2340,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-biddingdurationmsec"
           },
           {
             "type": "field",
@@ -2254,7 +2356,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-bidcurrency"
           },
           {
             "type": "field",
@@ -2269,7 +2372,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-dataversion"
           },
           {
             "type": "field",
@@ -2293,11 +2397,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-adcomponents"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-scoringbrowsersignals"
       },
       "ReportingBrowserSignals": {
         "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n\n  USVString buyerAndSellerReportingId;\n};",
@@ -2318,7 +2424,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-topwindowhostname"
           },
           {
             "type": "field",
@@ -2333,7 +2440,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-interestgroupowner"
           },
           {
             "type": "field",
@@ -2348,7 +2456,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-renderurl"
           },
           {
             "type": "field",
@@ -2363,7 +2472,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-bid"
           },
           {
             "type": "field",
@@ -2378,7 +2488,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-highestscoringotherbid"
           },
           {
             "type": "field",
@@ -2393,7 +2504,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-bidcurrency"
           },
           {
             "type": "field",
@@ -2408,7 +2520,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-highestscoringotherbidcurrency"
           },
           {
             "type": "field",
@@ -2423,7 +2536,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-toplevelseller"
           },
           {
             "type": "field",
@@ -2438,7 +2552,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-componentseller"
           },
           {
             "type": "field",
@@ -2453,11 +2568,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-buyerandsellerreportingid"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-reportingbrowsersignals"
       },
       "ReportResultBrowserSignals": {
         "fragment": "dictionary ReportResultBrowserSignals : ReportingBrowserSignals {\n  required double desirability;\n\n  DOMString topLevelSellerSignals;\n  double modifiedBid;\n  unsigned long dataVersion;\n};",
@@ -2478,7 +2595,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-desirability"
           },
           {
             "type": "field",
@@ -2493,7 +2611,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-toplevelsellersignals"
           },
           {
             "type": "field",
@@ -2508,7 +2627,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-modifiedbid"
           },
           {
             "type": "field",
@@ -2523,11 +2643,13 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-dataversion"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-reportresultbrowsersignals"
       },
       "ReportWinBrowserSignals": {
         "fragment": "dictionary ReportWinBrowserSignals : ReportingBrowserSignals {\n  double adCost;\n  USVString seller;\n  boolean madeHighestScoringOtherBid;\n  DOMString interestGroupName;\n  DOMString buyerReportingId;\n  unsigned short modelingSignals;\n  unsigned long dataVersion;\n  KAnonStatus kAnonStatus;\n};",
@@ -2548,7 +2670,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-adcost"
           },
           {
             "type": "field",
@@ -2563,7 +2686,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-seller"
           },
           {
             "type": "field",
@@ -2578,7 +2702,8 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-madehighestscoringotherbid"
           },
           {
             "type": "field",
@@ -2593,7 +2718,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-interestgroupname"
           },
           {
             "type": "field",
@@ -2608,7 +2734,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-buyerreportingid"
           },
           {
             "type": "field",
@@ -2623,7 +2750,8 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-modelingsignals"
           },
           {
             "type": "field",
@@ -2638,7 +2766,8 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-dataversion"
           },
           {
             "type": "field",
@@ -2653,11 +2782,13 @@
               "idlType": "KAnonStatus"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-kanonstatus"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-reportwinbrowsersignals"
       },
       "KAnonStatus": {
         "fragment": "enum KAnonStatus { \"passedAndEnforced\", \"passedNotEnforced\", \"belowThreshold\", \"notCalculated\" };",
@@ -2666,22 +2797,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "passedAndEnforced"
+            "value": "passedAndEnforced",
+            "href": "https://wicg.github.io/turtledove/#dom-kanonstatus-passedandenforced"
           },
           {
             "type": "enum-value",
-            "value": "passedNotEnforced"
+            "value": "passedNotEnforced",
+            "href": "https://wicg.github.io/turtledove/#dom-kanonstatus-passednotenforced"
           },
           {
             "type": "enum-value",
-            "value": "belowThreshold"
+            "value": "belowThreshold",
+            "href": "https://wicg.github.io/turtledove/#dom-kanonstatus-belowthreshold"
           },
           {
             "type": "enum-value",
-            "value": "notCalculated"
+            "value": "notCalculated",
+            "href": "https://wicg.github.io/turtledove/#dom-kanonstatus-notcalculated"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://wicg.github.io/turtledove/#enumdef-kanonstatus"
       },
       "DirectFromSellerSignalsForBuyer": {
         "fragment": "dictionary DirectFromSellerSignalsForBuyer {\n  any auctionSignals = null;\n  any perBuyerSignals = null;\n};",
@@ -2704,7 +2840,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforbuyer-auctionsignals"
           },
           {
             "type": "field",
@@ -2721,11 +2858,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforbuyer-perbuyersignals"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-directfromsellersignalsforbuyer"
       },
       "DirectFromSellerSignalsForSeller": {
         "fragment": "dictionary DirectFromSellerSignalsForSeller {\n  any auctionSignals = null;\n  any sellerSignals = null;\n};",
@@ -2748,7 +2887,8 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforseller-auctionsignals"
           },
           {
             "type": "field",
@@ -2765,11 +2905,13 @@
             "default": {
               "type": "null"
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforseller-sellersignals"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-directfromsellersignalsforseller"
       },
       "ScoreAdOutput": {
         "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  DOMString bidCurrency;\n  double incomingBidInSellerCurrency;\n  boolean allowComponentAuction = false;\n};",
@@ -2790,7 +2932,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-scoreadoutput-desirability"
           },
           {
             "type": "field",
@@ -2805,7 +2948,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoreadoutput-bid"
           },
           {
             "type": "field",
@@ -2820,7 +2964,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoreadoutput-bidcurrency"
           },
           {
             "type": "field",
@@ -2835,7 +2980,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoreadoutput-incomingbidinsellercurrency"
           },
           {
             "type": "field",
@@ -2853,11 +2999,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoreadoutput-allowcomponentauction"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-scoreadoutput"
       }
     },
     "idlExtendedNames": {
@@ -2907,7 +3055,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-joinadinterestgroup"
             }
           ],
           "extAttrs": [
@@ -2967,7 +3116,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-leaveadinterestgroup"
             }
           ],
           "extAttrs": [
@@ -3053,7 +3203,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-clearoriginjoinedadinterestgroups"
             }
           ],
           "extAttrs": [
@@ -3128,7 +3279,8 @@
                 }
               ],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-runadauction"
             }
           ],
           "extAttrs": [
@@ -3169,7 +3321,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-createauctionnonce"
             }
           ],
           "extAttrs": [
@@ -3201,7 +3354,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-updateadinterestgroups"
             }
           ],
           "extAttrs": [
@@ -3240,7 +3394,8 @@
                 }
               ],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-protectedaudience"
             }
           ],
           "extAttrs": [
@@ -3274,7 +3429,8 @@
                 "idlType": "boolean"
               },
               "default": null,
-              "required": false
+              "required": false,
+              "href": "https://wicg.github.io/turtledove/#dom-requestinit-adauctionheaders"
             }
           ],
           "extAttrs": [],
@@ -3308,7 +3464,8 @@
                 }
               ],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://wicg.github.io/turtledove/#dom-htmliframeelement-adauctionheaders"
             }
           ],
           "extAttrs": [],

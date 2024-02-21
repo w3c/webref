@@ -21,18 +21,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "inactive"
+            "value": "inactive",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive"
           },
           {
             "type": "enum-value",
-            "value": "active"
+            "value": "active",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-active"
           },
           {
             "type": "enum-value",
-            "value": "interrupted"
+            "value": "interrupted",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessionstate"
       },
       "AudioSessionType": {
         "fragment": "enum AudioSessionType {\n  \"auto\",\n  \"playback\",\n  \"transient\",\n  \"transient-solo\",\n  \"ambient\",\n  \"play-and-record\"\n};",
@@ -41,30 +45,37 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "auto"
+            "value": "auto",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-auto"
           },
           {
             "type": "enum-value",
-            "value": "playback"
+            "value": "playback",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-playback"
           },
           {
             "type": "enum-value",
-            "value": "transient"
+            "value": "transient",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient"
           },
           {
             "type": "enum-value",
-            "value": "transient-solo"
+            "value": "transient-solo",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo"
           },
           {
             "type": "enum-value",
-            "value": "ambient"
+            "value": "ambient",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient"
           },
           {
             "type": "enum-value",
-            "value": "play-and-record"
+            "value": "play-and-record",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessiontype"
       },
       "AudioSession": {
         "fragment": "[Exposed=Window]\ninterface AudioSession : EventTarget {\n  attribute AudioSessionType type;\n\n  readonly attribute AudioSessionState state;\n  attribute EventHandler onstatechange;\n};",
@@ -85,7 +96,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/audio-session/#dom-audiosession-type"
           },
           {
             "type": "attribute",
@@ -100,7 +112,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/audio-session/#dom-audiosession-state"
           },
           {
             "type": "attribute",
@@ -115,7 +128,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/audio-session/#dom-audiosession-onstatechange"
           }
         ],
         "extAttrs": [
@@ -129,7 +143,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/audio-session/#audiosession"
       }
     },
     "idlExtendedNames": {
@@ -153,7 +168,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": true,
+              "href": "https://w3c.github.io/audio-session/#dom-navigator-audiosession"
             }
           ],
           "extAttrs": [

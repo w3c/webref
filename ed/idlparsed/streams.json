@@ -72,7 +72,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#rs-constructor"
           },
           {
             "type": "operation",
@@ -104,7 +105,8 @@
               }
             ],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "href": "https://streams.spec.whatwg.org/#rs-from"
           },
           {
             "type": "attribute",
@@ -119,7 +121,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#rs-locked"
           },
           {
             "type": "operation",
@@ -160,7 +163,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-cancel"
           },
           {
             "type": "operation",
@@ -194,7 +198,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-get-reader"
           },
           {
             "type": "operation",
@@ -244,7 +249,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-pipe-through"
           },
           {
             "type": "operation",
@@ -303,7 +309,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-pipe-to"
           },
           {
             "type": "operation",
@@ -327,7 +334,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-tee"
           },
           {
             "type": "iterable",
@@ -383,7 +391,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestream"
       },
       "ReadableStreamReader": {
         "fragment": "typedef (ReadableStreamDefaultReader or ReadableStreamBYOBReader) ReadableStreamReader;",
@@ -414,7 +423,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#typedefdef-readablestreamreader"
       },
       "ReadableStreamReaderMode": {
         "fragment": "enum ReadableStreamReaderMode { \"byob\" };",
@@ -423,10 +433,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "byob"
+            "value": "byob",
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamreadermode-byob"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#enumdef-readablestreamreadermode"
       },
       "ReadableStreamGetReaderOptions": {
         "fragment": "dictionary ReadableStreamGetReaderOptions {\n  ReadableStreamReaderMode mode;\n};",
@@ -447,11 +459,13 @@
               "idlType": "ReadableStreamReaderMode"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamgetreaderoptions-mode"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-readablestreamgetreaderoptions"
       },
       "ReadableStreamIteratorOptions": {
         "fragment": "dictionary ReadableStreamIteratorOptions {\n  boolean preventCancel = false;\n};",
@@ -475,11 +489,13 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamiteratoroptions-preventcancel"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-readablestreamiteratoroptions"
       },
       "ReadableWritablePair": {
         "fragment": "dictionary ReadableWritablePair {\n  required ReadableStream readable;\n  required WritableStream writable;\n};",
@@ -500,7 +516,8 @@
               "idlType": "ReadableStream"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://streams.spec.whatwg.org/#dom-readablewritablepair-readable"
           },
           {
             "type": "field",
@@ -515,11 +532,13 @@
               "idlType": "WritableStream"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://streams.spec.whatwg.org/#dom-readablewritablepair-writable"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-readablewritablepair"
       },
       "StreamPipeOptions": {
         "fragment": "dictionary StreamPipeOptions {\n  boolean preventClose = false;\n  boolean preventAbort = false;\n  boolean preventCancel = false;\n  AbortSignal signal;\n};",
@@ -543,7 +562,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-streampipeoptions-preventclose"
           },
           {
             "type": "field",
@@ -561,7 +581,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-streampipeoptions-preventabort"
           },
           {
             "type": "field",
@@ -579,7 +600,8 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-streampipeoptions-preventcancel"
           },
           {
             "type": "field",
@@ -594,11 +616,13 @@
               "idlType": "AbortSignal"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-streampipeoptions-signal"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-streampipeoptions"
       },
       "UnderlyingSource": {
         "fragment": "dictionary UnderlyingSource {\n  UnderlyingSourceStartCallback start;\n  UnderlyingSourcePullCallback pull;\n  UnderlyingSourceCancelCallback cancel;\n  ReadableStreamType type;\n  [EnforceRange] unsigned long long autoAllocateChunkSize;\n};",
@@ -619,7 +643,8 @@
               "idlType": "UnderlyingSourceStartCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsource-start"
           },
           {
             "type": "field",
@@ -634,7 +659,8 @@
               "idlType": "UnderlyingSourcePullCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsource-pull"
           },
           {
             "type": "field",
@@ -649,7 +675,8 @@
               "idlType": "UnderlyingSourceCancelCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsource-cancel"
           },
           {
             "type": "field",
@@ -664,7 +691,8 @@
               "idlType": "ReadableStreamType"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsource-type"
           },
           {
             "type": "field",
@@ -686,11 +714,13 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsource-autoallocatechunksize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-underlyingsource"
       },
       "ReadableStreamController": {
         "fragment": "typedef (ReadableStreamDefaultController or ReadableByteStreamController) ReadableStreamController;",
@@ -721,7 +751,8 @@
             }
           ]
         },
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#typedefdef-readablestreamcontroller"
       },
       "UnderlyingSourceStartCallback": {
         "fragment": "callback UnderlyingSourceStartCallback = any (ReadableStreamController controller);",
@@ -753,7 +784,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsourcestartcallback"
       },
       "UnderlyingSourcePullCallback": {
         "fragment": "callback UnderlyingSourcePullCallback = Promise<undefined> (ReadableStreamController controller);",
@@ -794,7 +826,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsourcepullcallback"
       },
       "UnderlyingSourceCancelCallback": {
         "fragment": "callback UnderlyingSourceCancelCallback = Promise<undefined> (optional any reason);",
@@ -835,7 +868,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsourcecancelcallback"
       },
       "ReadableStreamType": {
         "fragment": "enum ReadableStreamType { \"bytes\" };",
@@ -844,10 +878,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "bytes"
+            "value": "bytes",
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamtype-bytes"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#enumdef-readablestreamtype"
       },
       "ReadableStreamGenericReader": {
         "fragment": "interface mixin ReadableStreamGenericReader {\n  readonly attribute Promise<undefined> closed;\n\n  Promise<undefined> cancel(optional any reason);\n};",
@@ -877,7 +913,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#generic-reader-closed"
           },
           {
             "type": "operation",
@@ -918,11 +955,13 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#generic-reader-cancel"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestreamgenericreader"
       },
       "ReadableStreamDefaultReader": {
         "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read();\n  undefined releaseLock();\n};",
@@ -950,7 +989,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#default-reader-constructor"
           },
           {
             "type": "operation",
@@ -974,7 +1014,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-reader-read"
           },
           {
             "type": "operation",
@@ -989,7 +1030,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-reader-release-lock"
           }
         ],
         "extAttrs": [
@@ -1003,7 +1045,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader"
       },
       "ReadableStreamReadResult": {
         "fragment": "dictionary ReadableStreamReadResult {\n  any value;\n  boolean done;\n};",
@@ -1024,7 +1067,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamreadresult-value"
           },
           {
             "type": "field",
@@ -1039,11 +1083,13 @@
               "idlType": "boolean"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreamreadresult-done"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-readablestreamreadresult"
       },
       "ReadableStreamBYOBReader": {
         "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read(ArrayBufferView view, optional ReadableStreamBYOBReaderReadOptions options = {});\n  undefined releaseLock();\n};",
@@ -1071,7 +1117,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#byob-reader-constructor"
           },
           {
             "type": "operation",
@@ -1130,7 +1177,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#byob-reader-read"
           },
           {
             "type": "operation",
@@ -1145,7 +1193,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#byob-reader-release-lock"
           }
         ],
         "extAttrs": [
@@ -1159,7 +1208,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestreambyobreader"
       },
       "ReadableStreamBYOBReaderReadOptions": {
         "fragment": "dictionary ReadableStreamBYOBReaderReadOptions {\n  [EnforceRange] unsigned long long min = 1;\n};",
@@ -1190,11 +1240,13 @@
               "type": "number",
               "value": "1"
             },
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-readablestreambyobreaderreadoptions-min"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-readablestreambyobreaderreadoptions"
       },
       "ReadableStreamDefaultController": {
         "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(optional any chunk);\n  undefined error(optional any e);\n};",
@@ -1215,7 +1267,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#rs-default-controller-desired-size"
           },
           {
             "type": "operation",
@@ -1230,7 +1283,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-default-controller-close"
           },
           {
             "type": "operation",
@@ -1262,7 +1316,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-default-controller-enqueue"
           },
           {
             "type": "operation",
@@ -1294,7 +1349,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-default-controller-error"
           }
         ],
         "extAttrs": [
@@ -1308,7 +1364,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestreamdefaultcontroller"
       },
       "ReadableByteStreamController": {
         "fragment": "[Exposed=*]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
@@ -1329,7 +1386,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#rbs-controller-byob-request"
           },
           {
             "type": "attribute",
@@ -1344,7 +1402,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#rbs-controller-desired-size"
           },
           {
             "type": "operation",
@@ -1359,7 +1418,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rbs-controller-close"
           },
           {
             "type": "operation",
@@ -1391,7 +1451,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rbs-controller-enqueue"
           },
           {
             "type": "operation",
@@ -1423,7 +1484,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rbs-controller-error"
           }
         ],
         "extAttrs": [
@@ -1437,7 +1499,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller"
       },
       "ReadableStreamBYOBRequest": {
         "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
@@ -1458,7 +1521,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#rs-byob-request-view"
           },
           {
             "type": "operation",
@@ -1497,7 +1561,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond"
           },
           {
             "type": "operation",
@@ -1529,7 +1594,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond-with-new-view"
           }
         ],
         "extAttrs": [
@@ -1543,7 +1609,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#readablestreambyobrequest"
       },
       "WritableStream": {
         "fragment": "[Exposed=*, Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
@@ -1589,7 +1656,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#ws-constructor"
           },
           {
             "type": "attribute",
@@ -1604,7 +1672,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#ws-locked"
           },
           {
             "type": "operation",
@@ -1645,7 +1714,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ws-abort"
           },
           {
             "type": "operation",
@@ -1669,7 +1739,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ws-close"
           },
           {
             "type": "operation",
@@ -1684,7 +1755,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ws-get-writer"
           }
         ],
         "extAttrs": [
@@ -1704,7 +1776,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#writablestream"
       },
       "UnderlyingSink": {
         "fragment": "dictionary UnderlyingSink {\n  UnderlyingSinkStartCallback start;\n  UnderlyingSinkWriteCallback write;\n  UnderlyingSinkCloseCallback close;\n  UnderlyingSinkAbortCallback abort;\n  any type;\n};",
@@ -1725,7 +1798,8 @@
               "idlType": "UnderlyingSinkStartCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsink-start"
           },
           {
             "type": "field",
@@ -1740,7 +1814,8 @@
               "idlType": "UnderlyingSinkWriteCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsink-write"
           },
           {
             "type": "field",
@@ -1755,7 +1830,8 @@
               "idlType": "UnderlyingSinkCloseCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsink-close"
           },
           {
             "type": "field",
@@ -1770,7 +1846,8 @@
               "idlType": "UnderlyingSinkAbortCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsink-abort"
           },
           {
             "type": "field",
@@ -1785,11 +1862,13 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-underlyingsink-type"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-underlyingsink"
       },
       "UnderlyingSinkStartCallback": {
         "fragment": "callback UnderlyingSinkStartCallback = any (WritableStreamDefaultController controller);",
@@ -1821,7 +1900,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsinkstartcallback"
       },
       "UnderlyingSinkWriteCallback": {
         "fragment": "callback UnderlyingSinkWriteCallback = Promise<undefined> (any chunk, WritableStreamDefaultController controller);",
@@ -1878,7 +1958,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsinkwritecallback"
       },
       "UnderlyingSinkCloseCallback": {
         "fragment": "callback UnderlyingSinkCloseCallback = Promise<undefined> ();",
@@ -1902,7 +1983,8 @@
           ]
         },
         "arguments": [],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsinkclosecallback"
       },
       "UnderlyingSinkAbortCallback": {
         "fragment": "callback UnderlyingSinkAbortCallback = Promise<undefined> (optional any reason);",
@@ -1943,7 +2025,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-underlyingsinkabortcallback"
       },
       "WritableStreamDefaultWriter": {
         "fragment": "[Exposed=*]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
@@ -1971,7 +2054,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#default-writer-constructor"
           },
           {
             "type": "attribute",
@@ -1995,7 +2079,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#default-writer-closed"
           },
           {
             "type": "attribute",
@@ -2010,7 +2095,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#default-writer-desired-size"
           },
           {
             "type": "attribute",
@@ -2034,7 +2120,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#default-writer-ready"
           },
           {
             "type": "operation",
@@ -2075,7 +2162,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-writer-abort"
           },
           {
             "type": "operation",
@@ -2099,7 +2187,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-writer-close"
           },
           {
             "type": "operation",
@@ -2114,7 +2203,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-writer-release-lock"
           },
           {
             "type": "operation",
@@ -2155,7 +2245,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#default-writer-write"
           }
         ],
         "extAttrs": [
@@ -2169,7 +2260,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter"
       },
       "WritableStreamDefaultController": {
         "fragment": "[Exposed=*]\ninterface WritableStreamDefaultController {\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
@@ -2190,7 +2282,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#ws-default-controller-signal"
           },
           {
             "type": "operation",
@@ -2222,7 +2315,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ws-default-controller-error"
           }
         ],
         "extAttrs": [
@@ -2236,7 +2330,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#writablestreamdefaultcontroller"
       },
       "TransformStream": {
         "fragment": "[Exposed=*, Transferable]\ninterface TransformStream {\n  constructor(optional object transformer,\n              optional QueuingStrategy writableStrategy = {},\n              optional QueuingStrategy readableStrategy = {});\n\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
@@ -2300,7 +2395,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#ts-constructor"
           },
           {
             "type": "attribute",
@@ -2315,7 +2411,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#ts-readable"
           },
           {
             "type": "attribute",
@@ -2330,7 +2427,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#ts-writable"
           }
         ],
         "extAttrs": [
@@ -2350,7 +2448,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#transformstream"
       },
       "Transformer": {
         "fragment": "dictionary Transformer {\n  TransformerStartCallback start;\n  TransformerTransformCallback transform;\n  TransformerFlushCallback flush;\n  TransformerCancelCallback cancel;\n  any readableType;\n  any writableType;\n};",
@@ -2371,7 +2470,8 @@
               "idlType": "TransformerStartCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-start"
           },
           {
             "type": "field",
@@ -2386,7 +2486,8 @@
               "idlType": "TransformerTransformCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-transform"
           },
           {
             "type": "field",
@@ -2401,7 +2502,8 @@
               "idlType": "TransformerFlushCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-flush"
           },
           {
             "type": "field",
@@ -2416,7 +2518,8 @@
               "idlType": "TransformerCancelCallback"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-cancel"
           },
           {
             "type": "field",
@@ -2431,7 +2534,8 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-readabletype"
           },
           {
             "type": "field",
@@ -2446,11 +2550,13 @@
               "idlType": "any"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-transformer-writabletype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-transformer"
       },
       "TransformerStartCallback": {
         "fragment": "callback TransformerStartCallback = any (TransformStreamDefaultController controller);",
@@ -2482,7 +2588,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-transformerstartcallback"
       },
       "TransformerFlushCallback": {
         "fragment": "callback TransformerFlushCallback = Promise<undefined> (TransformStreamDefaultController controller);",
@@ -2523,7 +2630,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-transformerflushcallback"
       },
       "TransformerTransformCallback": {
         "fragment": "callback TransformerTransformCallback = Promise<undefined> (any chunk, TransformStreamDefaultController controller);",
@@ -2580,7 +2688,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-transformertransformcallback"
       },
       "TransformerCancelCallback": {
         "fragment": "callback TransformerCancelCallback = Promise<undefined> (any reason);",
@@ -2621,7 +2730,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-transformercancelcallback"
       },
       "TransformStreamDefaultController": {
         "fragment": "[Exposed=*]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
@@ -2642,7 +2752,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#ts-default-controller-desired-size"
           },
           {
             "type": "operation",
@@ -2674,7 +2785,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ts-default-controller-enqueue"
           },
           {
             "type": "operation",
@@ -2706,7 +2818,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ts-default-controller-error"
           },
           {
             "type": "operation",
@@ -2721,7 +2834,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://streams.spec.whatwg.org/#ts-default-controller-terminate"
           }
         ],
         "extAttrs": [
@@ -2735,7 +2849,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#transformstreamdefaultcontroller"
       },
       "QueuingStrategy": {
         "fragment": "dictionary QueuingStrategy {\n  unrestricted double highWaterMark;\n  QueuingStrategySize size;\n};",
@@ -2756,7 +2871,8 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-queuingstrategy-highwatermark"
           },
           {
             "type": "field",
@@ -2771,11 +2887,13 @@
               "idlType": "QueuingStrategySize"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://streams.spec.whatwg.org/#dom-queuingstrategy-size"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-queuingstrategy"
       },
       "QueuingStrategySize": {
         "fragment": "callback QueuingStrategySize = unrestricted double (any chunk);",
@@ -2807,7 +2925,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://streams.spec.whatwg.org/#callbackdef-queuingstrategysize"
       },
       "QueuingStrategyInit": {
         "fragment": "dictionary QueuingStrategyInit {\n  required unrestricted double highWaterMark;\n};",
@@ -2828,11 +2947,13 @@
               "idlType": "unrestricted double"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://streams.spec.whatwg.org/#dom-queuingstrategyinit-highwatermark"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#dictdef-queuingstrategyinit"
       },
       "ByteLengthQueuingStrategy": {
         "fragment": "[Exposed=*]\ninterface ByteLengthQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
@@ -2860,7 +2981,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#blqs-constructor"
           },
           {
             "type": "attribute",
@@ -2875,7 +2997,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#blqs-high-water-mark"
           },
           {
             "type": "attribute",
@@ -2890,7 +3013,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#blqs-size"
           }
         ],
         "extAttrs": [
@@ -2904,7 +3028,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#bytelengthqueuingstrategy"
       },
       "CountQueuingStrategy": {
         "fragment": "[Exposed=*]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
@@ -2932,7 +3057,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://streams.spec.whatwg.org/#cqs-constructor"
           },
           {
             "type": "attribute",
@@ -2947,7 +3073,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#cqs-high-water-mark"
           },
           {
             "type": "attribute",
@@ -2962,7 +3089,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#cqs-size"
           }
         ],
         "extAttrs": [
@@ -2976,7 +3104,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#countqueuingstrategy"
       },
       "GenericTransformStream": {
         "fragment": "interface mixin GenericTransformStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
@@ -2997,7 +3126,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-readable"
           },
           {
             "type": "attribute",
@@ -3012,11 +3142,13 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-writable"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://streams.spec.whatwg.org/#generictransformstream"
       }
     },
     "idlExtendedNames": {

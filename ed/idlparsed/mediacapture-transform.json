@@ -40,7 +40,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-mediastreamtrackprocessor"
           },
           {
             "type": "attribute",
@@ -55,7 +56,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable"
           }
         ],
         "extAttrs": [
@@ -69,7 +71,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor"
       },
       "MediaStreamTrackProcessorInit": {
         "fragment": "dictionary MediaStreamTrackProcessorInit {\n  required MediaStreamTrack track;\n  [EnforceRange] unsigned short maxBufferSize;\n};",
@@ -90,7 +93,8 @@
               "idlType": "MediaStreamTrack"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track"
           },
           {
             "type": "field",
@@ -112,11 +116,13 @@
               "idlType": "unsigned short"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-maxbuffersize"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-transform/#dictdef-mediastreamtrackprocessorinit"
       },
       "VideoTrackGenerator": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface VideoTrackGenerator {\n  constructor();\n  readonly attribute WritableStream writable;\n  attribute boolean muted;\n  readonly attribute MediaStreamTrack track;\n};",
@@ -127,7 +133,8 @@
           {
             "type": "constructor",
             "arguments": [],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-videotrackgenerator"
           },
           {
             "type": "attribute",
@@ -142,7 +149,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable"
           },
           {
             "type": "attribute",
@@ -157,7 +165,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": false,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-muted"
           },
           {
             "type": "attribute",
@@ -172,7 +181,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-track"
           }
         ],
         "extAttrs": [
@@ -186,7 +196,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-transform/#videotrackgenerator"
       }
     },
     "idlExtendedNames": {},

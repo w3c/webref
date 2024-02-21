@@ -1,0 +1,255 @@
+{
+  "spec": {
+    "title": "Digital Credentials",
+    "url": "https://wicg.github.io/digital-identities/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "DigitalCredential"
+        ]
+      }
+    },
+    "idlNames": {
+      "DigitalCredentialRequestOptions": {
+        "fragment": "dictionary DigitalCredentialRequestOptions {\n  sequence<IdentityRequestProvider> providers;\n};",
+        "type": "dictionary",
+        "name": "DigitalCredentialRequestOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "providers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityRequestProvider"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions-providers"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions"
+      },
+      "IdentityRequestProvider": {
+        "fragment": "dictionary IdentityRequestProvider {\n  required DOMString protocol;\n  required DOMString request;\n};",
+        "type": "dictionary",
+        "name": "IdentityRequestProvider",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "protocol",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-protocol"
+          },
+          {
+            "type": "field",
+            "name": "request",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-request"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider"
+      },
+      "DigitalCredential": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  readonly attribute DOMString data;\n};",
+        "type": "interface",
+        "name": "DigitalCredential",
+        "inheritance": "Credential",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "protocol",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-protocol"
+          },
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-data"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential"
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute CredentialsContainer identity;\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "identity",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CredentialsContainer"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true,
+              "href": "https://wicg.github.io/digital-identities/#dom-navigator-identity"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "CredentialRequestOptions": [
+        {
+          "fragment": "partial dictionary CredentialRequestOptions {\n  DigitalCredentialRequestOptions digital;\n};",
+          "type": "dictionary",
+          "name": "CredentialRequestOptions",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "digital",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DigitalCredentialRequestOptions"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://wicg.github.io/digital-identities/#dom-credentialrequestoptions-digital"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "DigitalCredential"
+      ]
+    },
+    "dependencies": {
+      "Navigator": [
+        "CredentialsContainer"
+      ],
+      "CredentialRequestOptions": [
+        "DigitalCredentialRequestOptions"
+      ],
+      "DigitalCredentialRequestOptions": [
+        "IdentityRequestProvider"
+      ],
+      "IdentityRequestProvider": [],
+      "DigitalCredential": [
+        "Credential"
+      ]
+    },
+    "externalDependencies": [
+      "Navigator",
+      "CredentialsContainer",
+      "CredentialRequestOptions",
+      "Credential"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

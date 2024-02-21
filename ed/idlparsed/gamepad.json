@@ -39,7 +39,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-id"
           },
           {
             "type": "attribute",
@@ -54,7 +55,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-index"
           },
           {
             "type": "attribute",
@@ -69,7 +71,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-connected"
           },
           {
             "type": "attribute",
@@ -84,7 +87,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-timestamp"
           },
           {
             "type": "attribute",
@@ -99,7 +103,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-mapping"
           },
           {
             "type": "attribute",
@@ -123,7 +128,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-axes"
           },
           {
             "type": "attribute",
@@ -147,7 +153,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-buttons"
           },
           {
             "type": "attribute",
@@ -169,7 +176,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator"
           }
         ],
         "extAttrs": [
@@ -189,7 +197,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad"
       },
       "GamepadButton": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadButton {\n  readonly attribute boolean pressed;\n  readonly attribute boolean touched;\n  readonly attribute double value;\n};",
@@ -210,7 +219,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-pressed"
           },
           {
             "type": "attribute",
@@ -225,7 +235,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-touched"
           },
           {
             "type": "attribute",
@@ -240,7 +251,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-value"
           }
         ],
         "extAttrs": [
@@ -260,7 +272,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton"
       },
       "GamepadMappingType": {
         "fragment": "enum GamepadMappingType {\n  \"\",\n  \"standard\",\n  \"xr-standard\",\n};",
@@ -269,18 +282,22 @@
         "values": [
           {
             "type": "enum-value",
-            "value": ""
+            "value": "",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadmappingtype-the-empty-string"
           },
           {
             "type": "enum-value",
-            "value": "standard"
+            "value": "standard",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadmappingtype-standard"
           },
           {
             "type": "enum-value",
-            "value": "xr-standard"
+            "value": "xr-standard",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadmappingtype-xr-standard"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadmappingtype"
       },
       "GamepadHapticActuator": {
         "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  [SameObject] readonly attribute FrozenArray<GamepadHapticEffectType> effects;\n  Promise<GamepadHapticsResult> playEffect(\n      GamepadHapticEffectType type,\n      optional GamepadEffectParameters params = {}\n  );\n  Promise<GamepadHapticsResult> reset();\n};",
@@ -317,7 +334,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-effects"
           },
           {
             "type": "operation",
@@ -376,7 +394,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-playeffect"
           },
           {
             "type": "operation",
@@ -400,7 +419,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-reset"
           }
         ],
         "extAttrs": [
@@ -414,7 +434,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator"
       },
       "GamepadHapticsResult": {
         "fragment": "enum GamepadHapticsResult {\n  \"complete\",\n  \"preempted\"\n};",
@@ -423,14 +444,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "complete"
+            "value": "complete",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-complete"
           },
           {
             "type": "enum-value",
-            "value": "preempted"
+            "value": "preempted",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-preempted"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticsresult"
       },
       "GamepadHapticEffectType": {
         "fragment": "enum GamepadHapticEffectType {\n  \"dual-rumble\"\n};",
@@ -439,10 +463,12 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "dual-rumble"
+            "value": "dual-rumble",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype-dual-rumble"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype"
       },
       "GamepadEffectParameters": {
         "fragment": "dictionary GamepadEffectParameters {\n    unsigned long long duration = 0;\n    unsigned long long startDelay = 0;\n    double strongMagnitude = 0.0;\n    double weakMagnitude = 0.0;\n};",
@@ -466,7 +492,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-duration"
           },
           {
             "type": "field",
@@ -484,7 +511,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-startdelay"
           },
           {
             "type": "field",
@@ -502,7 +530,8 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-strongmagnitude"
           },
           {
             "type": "field",
@@ -520,11 +549,13 @@
               "type": "number",
               "value": "0.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-weakmagnitude"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters"
       },
       "GamepadEvent": {
         "fragment": "[Exposed=Window, SecureContext]\n\ninterface GamepadEvent: Event {\n  constructor(DOMString type, GamepadEventInit eventInitDict);\n  [SameObject] readonly attribute Gamepad gamepad;\n};",
@@ -568,7 +599,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadevent-constructor"
           },
           {
             "type": "attribute",
@@ -590,7 +622,8 @@
               }
             ],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadevent-gamepad"
           }
         ],
         "extAttrs": [
@@ -610,7 +643,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadevent"
       },
       "GamepadEventInit": {
         "fragment": "dictionary GamepadEventInit : EventInit {\n  required Gamepad gamepad;\n};",
@@ -631,11 +665,13 @@
               "idlType": "Gamepad"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeventinit-gamepad"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/gamepad/#dom-gamepadeventinit"
       }
     },
     "idlExtendedNames": {
@@ -668,7 +704,8 @@
               },
               "arguments": [],
               "extAttrs": [],
-              "special": ""
+              "special": "",
+              "href": "https://w3c.github.io/gamepad/#dom-navigator-getgamepads"
             }
           ],
           "extAttrs": [
@@ -705,7 +742,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/gamepad/#dom-windoweventhandlers-ongamepadconnected"
             },
             {
               "type": "attribute",
@@ -720,7 +758,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/gamepad/#dom-windoweventhandlers-ongamepaddisconnected"
             }
           ],
           "extAttrs": [],

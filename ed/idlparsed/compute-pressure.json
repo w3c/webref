@@ -36,14 +36,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "thermals"
+            "value": "thermals",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressuresource-thermals"
           },
           {
             "type": "enum-value",
-            "value": "cpu"
+            "value": "cpu",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressuresource-cpu"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressuresource"
       },
       "PressureState": {
         "fragment": "enum PressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
@@ -52,22 +55,27 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "nominal"
+            "value": "nominal",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurestate-nominal"
           },
           {
             "type": "enum-value",
-            "value": "fair"
+            "value": "fair",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurestate-fair"
           },
           {
             "type": "enum-value",
-            "value": "serious"
+            "value": "serious",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurestate-serious"
           },
           {
             "type": "enum-value",
-            "value": "critical"
+            "value": "critical",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurestate-critical"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressurestate"
       },
       "PressureUpdateCallback": {
         "fragment": "callback PressureUpdateCallback = undefined (\n  sequence<PressureRecord> changes,\n  PressureObserver observer\n);",
@@ -124,7 +132,8 @@
             "variadic": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressureupdatecallback"
       },
       "PressureObserver": {
         "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  Promise<undefined> observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n};",
@@ -170,7 +179,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-constructor"
           },
           {
             "type": "operation",
@@ -211,7 +221,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-observe"
           },
           {
             "type": "operation",
@@ -243,7 +254,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-unobserve"
           },
           {
             "type": "operation",
@@ -258,7 +270,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-disconnect"
           },
           {
             "type": "operation",
@@ -282,7 +295,8 @@
             },
             "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-takerecords"
           },
           {
             "type": "attribute",
@@ -313,7 +327,8 @@
               }
             ],
             "special": "static",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-supportedsources"
           }
         ],
         "extAttrs": [
@@ -343,7 +358,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver"
       },
       "PressureRecord": {
         "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute DOMHighResTimeStamp time;\n  [Default] object toJSON();\n};",
@@ -364,7 +380,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord-source"
           },
           {
             "type": "attribute",
@@ -379,7 +396,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord-state"
           },
           {
             "type": "attribute",
@@ -394,7 +412,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord-time"
           },
           {
             "type": "operation",
@@ -416,7 +435,8 @@
                 "arguments": []
               }
             ],
-            "special": ""
+            "special": "",
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord-tojson"
           }
         ],
         "extAttrs": [
@@ -446,7 +466,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord"
       },
       "PressureObserverOptions": {
         "fragment": "dictionary PressureObserverOptions {\n  double sampleRate = 1.0;\n};",
@@ -470,11 +491,13 @@
               "type": "number",
               "value": "1.0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserveroptions-samplerate"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserveroptions"
       }
     },
     "idlExtendedNames": {},

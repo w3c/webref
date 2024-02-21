@@ -25,14 +25,17 @@
         "values": [
           {
             "type": "enum-value",
-            "value": "direct"
+            "value": "direct",
+            "href": "https://w3c.github.io/touch-events/#dom-touchtype-direct"
           },
           {
             "type": "enum-value",
-            "value": "stylus"
+            "value": "stylus",
+            "href": "https://w3c.github.io/touch-events/#dom-touchtype-stylus"
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "href": "https://w3c.github.io/touch-events/#dom-touchtype"
       },
       "TouchInit": {
         "fragment": "dictionary TouchInit {\n    required long        identifier;\n    required EventTarget target;\n             double      clientX = 0;\n             double      clientY = 0;\n             double      screenX = 0;\n             double      screenY = 0;\n             double      pageX = 0;\n             double      pageY = 0;\n             float       radiusX = 0;\n             float       radiusY = 0;\n             float       rotationAngle = 0;\n             float       force = 0;\n             double      altitudeAngle = 0;\n             double      azimuthAngle = 0;\n             TouchType   touchType = \"direct\";\n};",
@@ -53,7 +56,8 @@
               "idlType": "long"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-identifier"
           },
           {
             "type": "field",
@@ -68,7 +72,8 @@
               "idlType": "EventTarget"
             },
             "default": null,
-            "required": true
+            "required": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-target"
           },
           {
             "type": "field",
@@ -86,7 +91,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-clientx"
           },
           {
             "type": "field",
@@ -104,7 +110,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-clienty"
           },
           {
             "type": "field",
@@ -122,7 +129,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-screenx"
           },
           {
             "type": "field",
@@ -140,7 +148,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-screeny"
           },
           {
             "type": "field",
@@ -158,7 +167,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-pagex"
           },
           {
             "type": "field",
@@ -176,7 +186,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-pagey"
           },
           {
             "type": "field",
@@ -194,7 +205,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-radiusx"
           },
           {
             "type": "field",
@@ -212,7 +224,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-radiusy"
           },
           {
             "type": "field",
@@ -230,7 +243,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-rotationangle"
           },
           {
             "type": "field",
@@ -248,7 +262,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-force"
           },
           {
             "type": "field",
@@ -266,7 +281,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-altitudeangle"
           },
           {
             "type": "field",
@@ -284,7 +300,8 @@
               "type": "number",
               "value": "0"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-azimuthangle"
           },
           {
             "type": "field",
@@ -302,11 +319,13 @@
               "type": "string",
               "value": "direct"
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-touchinit-touchtype"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/touch-events/#dom-touchinit"
       },
       "Touch": {
         "fragment": "[Exposed=Window]\ninterface Touch {\n    constructor(TouchInit touchInitDict);\n    readonly        attribute long        identifier;\n    readonly        attribute EventTarget target;\n    readonly        attribute double      screenX;\n    readonly        attribute double      screenY;\n    readonly        attribute double      clientX;\n    readonly        attribute double      clientY;\n    readonly        attribute double      pageX;\n    readonly        attribute double      pageY;\n    readonly        attribute float       radiusX;\n    readonly        attribute float       radiusY;\n    readonly        attribute float       rotationAngle;\n    readonly        attribute float       force;\n    readonly        attribute float       altitudeAngle;\n    readonly        attribute float       azimuthAngle;\n    readonly        attribute TouchType   touchType;\n};",
@@ -334,7 +353,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/touch-events/#dom-touch-constructor"
           },
           {
             "type": "attribute",
@@ -349,7 +369,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-identifier"
           },
           {
             "type": "attribute",
@@ -364,7 +385,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-target"
           },
           {
             "type": "attribute",
@@ -379,7 +401,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-screenx"
           },
           {
             "type": "attribute",
@@ -394,7 +417,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-screeny"
           },
           {
             "type": "attribute",
@@ -409,7 +433,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-clientx"
           },
           {
             "type": "attribute",
@@ -424,7 +449,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-clienty"
           },
           {
             "type": "attribute",
@@ -439,7 +465,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-pagex"
           },
           {
             "type": "attribute",
@@ -454,7 +481,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-pagey"
           },
           {
             "type": "attribute",
@@ -469,7 +497,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-radiusx"
           },
           {
             "type": "attribute",
@@ -484,7 +513,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-radiusy"
           },
           {
             "type": "attribute",
@@ -499,7 +529,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-rotationangle"
           },
           {
             "type": "attribute",
@@ -514,7 +545,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-force"
           },
           {
             "type": "attribute",
@@ -529,7 +561,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-altitudeangle"
           },
           {
             "type": "attribute",
@@ -544,7 +577,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-azimuthangle"
           },
           {
             "type": "attribute",
@@ -559,7 +593,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touch-touchtype"
           }
         ],
         "extAttrs": [
@@ -573,7 +608,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/touch-events/#dom-touch"
       },
       "TouchList": {
         "fragment": "[Exposed=Window]\ninterface TouchList {\n    readonly        attribute unsigned long length;\n    getter Touch? item (unsigned long index);\n};",
@@ -594,7 +630,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchlist-length"
           },
           {
             "type": "operation",
@@ -640,7 +677,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/touch-events/#dom-touchlist"
       },
       "TouchEventInit": {
         "fragment": "dictionary TouchEventInit : EventModifierInit {\n             sequence<Touch> touches = [];\n             sequence<Touch> targetTouches = [];\n             sequence<Touch> changedTouches = [];\n};",
@@ -673,7 +711,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-toucheventinit-touches"
           },
           {
             "type": "field",
@@ -700,7 +739,8 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-toucheventinit-targettouches"
           },
           {
             "type": "field",
@@ -727,11 +767,13 @@
               "type": "sequence",
               "value": []
             },
-            "required": false
+            "required": false,
+            "href": "https://w3c.github.io/touch-events/#dom-toucheventinit-changedtouches"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/touch-events/#dom-toucheventinit"
       },
       "TouchEvent": {
         "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n    getter boolean getModifierState (DOMString keyArg);\n};",
@@ -777,7 +819,8 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-constructor"
           },
           {
             "type": "attribute",
@@ -792,7 +835,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-touches"
           },
           {
             "type": "attribute",
@@ -807,7 +851,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-targettouches"
           },
           {
             "type": "attribute",
@@ -822,7 +867,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-changedtouches"
           },
           {
             "type": "attribute",
@@ -837,7 +883,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-altkey"
           },
           {
             "type": "attribute",
@@ -852,7 +899,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-metakey"
           },
           {
             "type": "attribute",
@@ -867,7 +915,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-ctrlkey"
           },
           {
             "type": "attribute",
@@ -882,7 +931,8 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": true,
+            "href": "https://w3c.github.io/touch-events/#dom-touchevent-shiftkey"
           },
           {
             "type": "operation",
@@ -928,7 +978,8 @@
             "arguments": []
           }
         ],
-        "partial": false
+        "partial": false,
+        "href": "https://w3c.github.io/touch-events/#dom-touchevent"
       }
     },
     "idlExtendedNames": {
@@ -952,7 +1003,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchstart"
             },
             {
               "type": "attribute",
@@ -967,7 +1019,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchend"
             },
             {
               "type": "attribute",
@@ -982,7 +1035,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchmove"
             },
             {
               "type": "attribute",
@@ -997,7 +1051,8 @@
               },
               "extAttrs": [],
               "special": "",
-              "readonly": false
+              "readonly": false,
+              "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchcancel"
             }
           ],
           "extAttrs": [],

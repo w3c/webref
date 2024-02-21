@@ -28,7 +28,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-bytes"
           },
           {
             "type": "field",
@@ -52,11 +53,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-breakdown"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorymeasurement"
       },
       "MemoryBreakdownEntry": {
         "fragment": "dictionary MemoryBreakdownEntry {\n  unsigned long long bytes;\n  sequence<MemoryAttribution> attribution;\n  sequence<DOMString> types;\n};",
@@ -77,7 +80,8 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-bytes"
           },
           {
             "type": "field",
@@ -101,7 +105,8 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-attribution"
           },
           {
             "type": "field",
@@ -125,11 +130,13 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-types"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry"
       },
       "MemoryAttribution": {
         "fragment": "dictionary MemoryAttribution {\n  USVString url;\n  MemoryAttributionContainer container;\n  DOMString scope;\n};",
@@ -150,7 +157,8 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-url"
           },
           {
             "type": "field",
@@ -165,7 +173,8 @@
               "idlType": "MemoryAttributionContainer"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container"
           },
           {
             "type": "field",
@@ -180,11 +189,13 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-scope"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memoryattribution"
       },
       "MemoryAttributionContainer": {
         "fragment": "dictionary MemoryAttributionContainer {\n  DOMString id;\n  USVString src;\n};",
@@ -205,7 +216,8 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-id"
           },
           {
             "type": "field",
@@ -220,11 +232,13 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": false,
+            "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-src"
           }
         ],
         "extAttrs": [],
-        "partial": false
+        "partial": false,
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memoryattributioncontainer"
       }
     },
     "idlExtendedNames": {
@@ -283,7 +297,8 @@
                   "arguments": []
                 }
               ],
-              "special": ""
+              "special": "",
+              "href": "https://wicg.github.io/performance-measure-memory/#dom-performance-measureuseragentspecificmemory"
             }
           ],
           "extAttrs": [],
