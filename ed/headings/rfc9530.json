@@ -1,0 +1,335 @@
+{
+  "spec": {
+    "title": "RFC 9530 - Digest Fields",
+    "url": "https://httpwg.org/specs/rfc9530.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc9530.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc9530.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "document-structure",
+      "href": "https://httpwg.org/specs/rfc9530.html#document-structure",
+      "level": 3,
+      "title": "Document Structure",
+      "number": "1.1"
+    },
+    {
+      "id": "concept-overview",
+      "href": "https://httpwg.org/specs/rfc9530.html#concept-overview",
+      "level": 3,
+      "title": "Concept Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "obsolete-3230",
+      "href": "https://httpwg.org/specs/rfc9530.html#obsolete-3230",
+      "level": 3,
+      "title": "Obsoleting RFC 3230",
+      "number": "1.3"
+    },
+    {
+      "id": "notational-conventions",
+      "href": "https://httpwg.org/specs/rfc9530.html#notational-conventions",
+      "level": 3,
+      "title": "Notational Conventions",
+      "number": "1.4"
+    },
+    {
+      "id": "content-digest",
+      "href": "https://httpwg.org/specs/rfc9530.html#content-digest",
+      "level": 2,
+      "title": "The Content-Digest Field",
+      "number": "2"
+    },
+    {
+      "id": "representation-digest",
+      "href": "https://httpwg.org/specs/rfc9530.html#representation-digest",
+      "level": 2,
+      "title": "The Repr-Digest Field",
+      "number": "3"
+    },
+    {
+      "id": "state-changing-requests",
+      "href": "https://httpwg.org/specs/rfc9530.html#state-changing-requests",
+      "level": 3,
+      "title": "Using Repr-Digest in State-Changing Requests",
+      "number": "3.1"
+    },
+    {
+      "id": "digest-and-content-location",
+      "href": "https://httpwg.org/specs/rfc9530.html#digest-and-content-location",
+      "level": 3,
+      "title": "Repr-Digest and Content-Location in Responses",
+      "number": "3.2"
+    },
+    {
+      "id": "want-fields",
+      "href": "https://httpwg.org/specs/rfc9530.html#want-fields",
+      "level": 2,
+      "title": "Integrity Preference Fields",
+      "number": "4"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://httpwg.org/specs/rfc9530.html#algorithms",
+      "level": 2,
+      "title": "Hash Algorithm Considerations and Registration",
+      "number": "5"
+    },
+    {
+      "id": "security",
+      "href": "https://httpwg.org/specs/rfc9530.html#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "6"
+    },
+    {
+      "id": "sec-limitations",
+      "href": "https://httpwg.org/specs/rfc9530.html#sec-limitations",
+      "level": 3,
+      "title": "HTTP Messages Are Not Protected in Full",
+      "number": "6.1"
+    },
+    {
+      "id": "end-to-end-integrity",
+      "href": "https://httpwg.org/specs/rfc9530.html#end-to-end-integrity",
+      "level": 3,
+      "title": "End-to-End Integrity",
+      "number": "6.2"
+    },
+    {
+      "id": "usage-in-signatures",
+      "href": "https://httpwg.org/specs/rfc9530.html#usage-in-signatures",
+      "level": 3,
+      "title": "Usage in Signatures",
+      "number": "6.3"
+    },
+    {
+      "id": "usage-in-trailer-fields",
+      "href": "https://httpwg.org/specs/rfc9530.html#usage-in-trailer-fields",
+      "level": 3,
+      "title": "Usage in Trailer Fields",
+      "number": "6.4"
+    },
+    {
+      "id": "variations-within-content-encoding",
+      "href": "https://httpwg.org/specs/rfc9530.html#variations-within-content-encoding",
+      "level": 3,
+      "title": "Variations within Content-Encoding",
+      "number": "6.5"
+    },
+    {
+      "id": "sec-agility",
+      "href": "https://httpwg.org/specs/rfc9530.html#sec-agility",
+      "level": 3,
+      "title": "Algorithm Agility",
+      "number": "6.6"
+    },
+    {
+      "id": "sec-exhaustion",
+      "href": "https://httpwg.org/specs/rfc9530.html#sec-exhaustion",
+      "level": 3,
+      "title": "Resource Exhaustion",
+      "number": "6.7"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://httpwg.org/specs/rfc9530.html#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "7"
+    },
+    {
+      "id": "http-field-name-registration",
+      "href": "https://httpwg.org/specs/rfc9530.html#http-field-name-registration",
+      "level": 3,
+      "title": "HTTP Field Name Registration",
+      "number": "7.1"
+    },
+    {
+      "id": "establish-hash-algorithm-registry",
+      "href": "https://httpwg.org/specs/rfc9530.html#establish-hash-algorithm-registry",
+      "level": 3,
+      "title": "Creation of the Hash Algorithms for HTTP Digest Fields Registry",
+      "number": "7.2"
+    },
+    {
+      "id": "deprecate-the-hypertext-transfer-protocol-http-digest-algorithm-values-registry",
+      "href": "https://httpwg.org/specs/rfc9530.html#deprecate-the-hypertext-transfer-protocol-http-digest-algorithm-values-registry",
+      "level": 3,
+      "title": "Deprecate the Hypertext Transfer Protocol (HTTP) Digest Algorithm Values Registry",
+      "number": "7.3"
+    },
+    {
+      "id": "rfc.section.8",
+      "href": "https://httpwg.org/specs/rfc9530.html#rfc.section.8",
+      "level": 2,
+      "title": "References",
+      "number": "8"
+    },
+    {
+      "id": "rfc.section.8.1",
+      "href": "https://httpwg.org/specs/rfc9530.html#rfc.section.8.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "8.1"
+    },
+    {
+      "id": "rfc.section.8.2",
+      "href": "https://httpwg.org/specs/rfc9530.html#rfc.section.8.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "8.2"
+    },
+    {
+      "id": "resource-representation",
+      "href": "https://httpwg.org/specs/rfc9530.html#resource-representation",
+      "level": 2,
+      "title": "Resource Representation and Representation Data",
+      "number": "A"
+    },
+    {
+      "id": "examples-unsolicited",
+      "href": "https://httpwg.org/specs/rfc9530.html#examples-unsolicited",
+      "level": 2,
+      "title": "Examples of Unsolicited Digest",
+      "number": "B"
+    },
+    {
+      "id": "example-full-representation",
+      "href": "https://httpwg.org/specs/rfc9530.html#example-full-representation",
+      "level": 3,
+      "title": "Server Returns Full Representation Data",
+      "number": "B.1"
+    },
+    {
+      "id": "server-returns-no-representation-data",
+      "href": "https://httpwg.org/specs/rfc9530.html#server-returns-no-representation-data",
+      "level": 3,
+      "title": "Server Returns No Representation Data",
+      "number": "B.2"
+    },
+    {
+      "id": "server-returns-partial-representation-data",
+      "href": "https://httpwg.org/specs/rfc9530.html#server-returns-partial-representation-data",
+      "level": 3,
+      "title": "Server Returns Partial Representation Data",
+      "number": "B.3"
+    },
+    {
+      "id": "client-and-server-provide-full-representation-data",
+      "href": "https://httpwg.org/specs/rfc9530.html#client-and-server-provide-full-representation-data",
+      "level": 3,
+      "title": "Client and Server Provide Full Representation Data",
+      "number": "B.4"
+    },
+    {
+      "id": "client-provides-full-representation-data-server-provides-no-representation-data",
+      "href": "https://httpwg.org/specs/rfc9530.html#client-provides-full-representation-data-server-provides-no-representation-data",
+      "level": 3,
+      "title": "Client Provides Full Representation Data and Server Provides No Representation Data",
+      "number": "B.5"
+    },
+    {
+      "id": "client-and-server-provide-full-representation-data-1",
+      "href": "https://httpwg.org/specs/rfc9530.html#client-and-server-provide-full-representation-data-1",
+      "level": 3,
+      "title": "Client and Server Provide Full Representation Data",
+      "number": "B.6"
+    },
+    {
+      "id": "post-not-request-uri",
+      "href": "https://httpwg.org/specs/rfc9530.html#post-not-request-uri",
+      "level": 3,
+      "title": "POST Response Does Not Reference the Request URI",
+      "number": "B.7"
+    },
+    {
+      "id": "post-referencing-status",
+      "href": "https://httpwg.org/specs/rfc9530.html#post-referencing-status",
+      "level": 3,
+      "title": "POST Response Describes the Request Status",
+      "number": "B.8"
+    },
+    {
+      "id": "digest-with-patch",
+      "href": "https://httpwg.org/specs/rfc9530.html#digest-with-patch",
+      "level": 3,
+      "title": "Digest with PATCH",
+      "number": "B.9"
+    },
+    {
+      "id": "error-responses",
+      "href": "https://httpwg.org/specs/rfc9530.html#error-responses",
+      "level": 3,
+      "title": "Error Responses",
+      "number": "B.10"
+    },
+    {
+      "id": "use-with-trailer-fields-and-transfer-coding",
+      "href": "https://httpwg.org/specs/rfc9530.html#use-with-trailer-fields-and-transfer-coding",
+      "level": 3,
+      "title": "Use with Trailer Fields and Transfer Coding",
+      "number": "B.11"
+    },
+    {
+      "id": "examples-solicited",
+      "href": "https://httpwg.org/specs/rfc9530.html#examples-solicited",
+      "level": 2,
+      "title": "Examples of Want-Repr-Digest Solicited Digest",
+      "number": "C"
+    },
+    {
+      "id": "server-selects-clients-least-preferred-algorithm",
+      "href": "https://httpwg.org/specs/rfc9530.html#server-selects-clients-least-preferred-algorithm",
+      "level": 3,
+      "title": "Server Selects Client's Least Preferred Algorithm",
+      "number": "C.1"
+    },
+    {
+      "id": "ex-server-selects-unsupported-algorithm",
+      "href": "https://httpwg.org/specs/rfc9530.html#ex-server-selects-unsupported-algorithm",
+      "level": 3,
+      "title": "Server Selects Algorithm Unsupported by Client",
+      "number": "C.2"
+    },
+    {
+      "id": "server-does-not-support-client-algorithm-and-returns-an-error",
+      "href": "https://httpwg.org/specs/rfc9530.html#server-does-not-support-client-algorithm-and-returns-an-error",
+      "level": 3,
+      "title": "Server Does Not Support Client Algorithm and Returns an Error",
+      "number": "C.3"
+    },
+    {
+      "id": "sample-digest-values",
+      "href": "https://httpwg.org/specs/rfc9530.html#sample-digest-values",
+      "level": 2,
+      "title": "Sample Digest Values",
+      "number": "D"
+    },
+    {
+      "id": "migrating",
+      "href": "https://httpwg.org/specs/rfc9530.html#migrating",
+      "level": 2,
+      "title": "Migrating from RFC 3230",
+      "number": "E"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://httpwg.org/specs/rfc9530.html#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    }
+  ]
+}

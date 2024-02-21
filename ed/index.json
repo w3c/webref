@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-21T12:37:55.567Z",
+  "date": "2024-02-21T15:09:07.795Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -17,7 +17,6 @@
       "console",
       "partitioned-cookies",
       "client-hint-reliability",
-      "digest-headers",
       "rfc6265bis",
       "webp",
       "dom",
@@ -125,6 +124,7 @@
       "ecma-402",
       "tc39-array-from-async",
       "tc39-array-grouping",
+      "tc39-arraybuffer-base64",
       "tc39-arraybuffer-transfer",
       "tc39-async-explicit-resource-management",
       "tc39-decorators",
@@ -194,6 +194,7 @@
       "datacue",
       "deprecation-reporting",
       "digital-goods",
+      "digital-identities",
       "direct-sockets",
       "document-picture-in-picture",
       "document-policy",
@@ -259,6 +260,7 @@
       "webusb",
       "window-controls-overlay",
       "iso18181-2",
+      "iso14496-22",
       "rfc2397",
       "rfc4120",
       "rfc6265",
@@ -285,6 +287,7 @@
       "rfc9113",
       "rfc9114",
       "rfc9163",
+      "rfc9530",
       "promises-guide",
       "w3c-patent-policy",
       "w3c-process",
@@ -635,10 +638,10 @@
     ]
   },
   "stats": {
-    "crawled": 606,
-    "errors": 19
+    "crawled": 609,
+    "errors": 1
   },
-  "crawler": "reffy-14.6.3",
+  "crawler": "reffy-14.7.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1193,54 +1196,6 @@
       "ids": "ids/client-hint-reliability.json"
     },
     {
-      "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers",
-      "seriesComposition": "full",
-      "shortname": "digest-headers",
-      "series": {
-        "shortname": "digest-headers",
-        "currentSpecification": "digest-headers",
-        "title": "Digest Fields",
-        "shortTitle": "Digest Fields",
-        "nightlyUrl": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html"
-      },
-      "organization": "IETF",
-      "groups": [
-        {
-          "name": "HTTP Working Group",
-          "url": "https://datatracker.ietf.org/wg/httpbis/"
-        }
-      ],
-      "nightly": {
-        "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/httpwg/http-extensions",
-        "sourcePath": "draft-ietf-httpbis-digest-headers.md",
-        "filename": "draft-ietf-httpbis-digest-headers.html"
-      },
-      "title": "RFC 9530: Digest Fields",
-      "source": "ietf",
-      "shortTitle": "Digest Fields",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers",
-        "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html"
-      ],
-      "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 21:47:55 GMT"
-      },
-      "date": "14 February 2024",
-      "links": "links/digest-headers.json",
-      "refs": "refs/digest-headers.json",
-      "headings": "headings/digest-headers.json",
-      "ids": "ids/digest-headers.json",
-      "error": "Error: Loading https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html triggered HTTP status 404 Error: Loading https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 11)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
-    },
-    {
       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis",
       "seriesComposition": "full",
       "shortname": "rfc6265bis",
@@ -1449,8 +1404,7 @@
       "links": "links/css-typed-om-2.json",
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
-      "ids": "ids/css-typed-om-2.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-typed-om-2.json"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1500,8 +1454,7 @@
       "idl": "idl/font-metrics-api.idl",
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
-      "ids": "ids/font-metrics-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 16)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/font-metrics-api-1.json"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2911,8 +2864,7 @@
       "css": "css/compositing.json",
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
-      "ids": "ids/compositing-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/compositing-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 40)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/compositing-2.json"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -2970,8 +2922,7 @@
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 41)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/filter-effects-2.json"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -6888,7 +6839,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Feb 2024 02:01:01 GMT"
+        "lastModified": "Tue, 20 Feb 2024 02:01:00 GMT"
       },
       "date": "20 February 2024",
       "links": "links/ecmascript.json",
@@ -7038,6 +6989,52 @@
       "links": "links/tc39-array-grouping.json",
       "headings": "headings/tc39-array-grouping.json",
       "ids": "ids/tc39-array-grouping.json"
+    },
+    {
+      "url": "https://tc39.es/proposal-arraybuffer-base64/spec/",
+      "seriesComposition": "full",
+      "shortname": "tc39-arraybuffer-base64",
+      "series": {
+        "shortname": "tc39-arraybuffer-base64",
+        "currentSpecification": "tc39-arraybuffer-base64",
+        "title": "Uint8Array to/from base64",
+        "shortTitle": "Uint8Array to/from base64",
+        "nightlyUrl": "https://tc39.es/proposal-arraybuffer-base64/spec/"
+      },
+      "nightly": {
+        "url": "https://tc39.es/proposal-arraybuffer-base64/spec/",
+        "status": "Editor's Draft",
+        "sourcePath": "spec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-arraybuffer-base64",
+        "filename": "index.html"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "title": "Uint8Array to/from base64",
+      "source": "spec",
+      "shortTitle": "Uint8Array to/from base64",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-arraybuffer-base64/spec/"
+      ],
+      "crawled": "https://tc39.es/proposal-arraybuffer-base64/spec/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 21 Feb 2024 02:58:01 GMT"
+      },
+      "date": "21 February 2024",
+      "links": "links/tc39-arraybuffer-base64.json",
+      "dfns": "dfns/tc39-arraybuffer-base64.json",
+      "headings": "headings/tc39-arraybuffer-base64.json",
+      "ids": "ids/tc39-arraybuffer-base64.json"
     },
     {
       "url": "https://tc39.es/proposal-arraybuffer-transfer/",
@@ -10505,6 +10502,55 @@
       "ids": "ids/digital-goods.json"
     },
     {
+      "url": "https://wicg.github.io/digital-identities/",
+      "seriesComposition": "full",
+      "shortname": "digital-identities",
+      "series": {
+        "shortname": "digital-identities",
+        "currentSpecification": "digital-identities",
+        "title": "Digital Credentials",
+        "shortTitle": "Digital Credentials",
+        "nightlyUrl": "https://wicg.github.io/digital-identities/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/digital-identities/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/digital-identities",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Digital Credentials",
+      "source": "spec",
+      "shortTitle": "Digital Credentials",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/digital-identities/"
+      ],
+      "crawled": "https://wicg.github.io/digital-identities/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 17 Feb 2024 02:15:39 GMT"
+      },
+      "generator": "respec",
+      "date": "17 February 2024",
+      "links": "links/digital-identities.json",
+      "refs": "refs/digital-identities.json",
+      "idl": "idl/digital-identities.idl",
+      "dfns": "dfns/digital-identities.json",
+      "headings": "headings/digital-identities.json",
+      "ids": "ids/digital-identities.json"
+    },
+    {
       "url": "https://wicg.github.io/direct-sockets/",
       "seriesComposition": "full",
       "shortname": "direct-sockets",
@@ -13925,6 +13971,34 @@
       ]
     },
     {
+      "url": "https://www.iso.org/standard/87621.html",
+      "seriesComposition": "full",
+      "shortname": "iso14496-22",
+      "series": {
+        "shortname": "iso14496-22",
+        "currentSpecification": "iso14496-22",
+        "title": "Information technology — Coding of audio-visual objects — Part 22: Open Font Format",
+        "shortTitle": "Open Font Format"
+      },
+      "shortTitle": "Open Font Format",
+      "organization": "ISO/IEC",
+      "groups": [
+        {
+          "name": "ISO/IEC JTC 1/SC 29",
+          "url": "https://www.iso.org/committee/45316.html"
+        }
+      ],
+      "title": "Information technology — Coding of audio-visual objects — Part 22: Open Font Format",
+      "source": "specref",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.iso.org/standard/87621.html"
+      ]
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc2397",
       "seriesComposition": "full",
       "shortname": "rfc2397",
@@ -14153,9 +14227,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 21 Feb 2024 12:37:46 GMT"
+        "lastModified": "Fri, 16 Feb 2024 23:20:15 GMT"
       },
-      "date": "21 February 2024",
+      "date": "16 February 2024",
       "links": "links/rfc6386.json",
       "ids": "ids/rfc6386.json"
     },
@@ -15168,13 +15242,66 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Feb 2024 08:50:46 GMT"
+        "lastModified": "Fri, 16 Feb 2024 22:40:29 GMT"
       },
-      "date": "20 February 2024",
+      "date": "16 February 2024",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
       "ids": "ids/rfc9163.json"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9530",
+      "seriesComposition": "full",
+      "shortname": "rfc9530",
+      "series": {
+        "shortname": "rfc9530",
+        "currentSpecification": "rfc9530",
+        "title": "Digest Fields",
+        "shortTitle": "Digest Fields",
+        "nightlyUrl": "https://httpwg.org/specs/rfc9530.html"
+      },
+      "formerNames": [
+        "digest-headers"
+      ],
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://httpwg.org/specs/rfc9530.html",
+        "status": "Proposed Standard",
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9530",
+          "https://tools.ietf.org/html/rfc9530"
+        ],
+        "repository": "https://github.com/httpwg/httpwg.github.io",
+        "sourcePath": "specs/rfc9530.xml",
+        "filename": "rfc9530.html"
+      },
+      "title": "RFC 9530 - Digest Fields",
+      "source": "ietf",
+      "shortTitle": "Digest Fields",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc9530",
+        "https://httpwg.org/specs/rfc9530.html"
+      ],
+      "crawled": "https://httpwg.org/specs/rfc9530.html",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 15 Feb 2024 00:06:20 GMT"
+      },
+      "date": "15 February 2024",
+      "links": "links/rfc9530.json",
+      "refs": "refs/rfc9530.json",
+      "headings": "headings/rfc9530.json",
+      "ids": "ids/rfc9530.json"
     },
     {
       "url": "https://www.w3.org/2001/tag/doc/promises-guide",
@@ -15265,8 +15392,7 @@
       "refs": "refs/w3c-patent-policy.json",
       "dfns": "dfns/w3c-patent-policy.json",
       "headings": "headings/w3c-patent-policy.json",
-      "ids": "ids/w3c-patent-policy.json",
-      "error": "Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered HTTP status 520 Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 280)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/w3c-patent-policy.json"
     },
     {
       "url": "https://www.w3.org/Consortium/Process/",
@@ -16236,8 +16362,7 @@
       "refs": "refs/compositing-1.json",
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
-      "ids": "ids/compositing-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/compositing-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 296)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/compositing-1.json"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -16923,8 +17048,7 @@
       "idl": "idl/css-animation-worklet.idl",
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
-      "ids": "ids/css-animation-worklet-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 307)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-animation-worklet-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -19422,8 +19546,7 @@
       "css": "css/css-layout-api.json",
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
-      "ids": "ids/css-layout-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 344)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-layout-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -19683,8 +19806,7 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 348)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-masking-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -20338,8 +20460,7 @@
       "css": "css/css-paint-api.json",
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
-      "ids": "ids/css-paint-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 358)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-paint-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -20475,8 +20596,7 @@
       "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
-      "ids": "ids/css-properties-values-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 360)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-properties-values-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -22216,8 +22336,7 @@
       "idl": "idl/css-typed-om.idl",
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
-      "ids": "ids/css-typed-om-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 386)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/css-typed-om-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -23766,10 +23885,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Feb 2024 14:25:23 GMT"
+        "lastModified": "Wed, 21 Feb 2024 14:25:03 GMT"
       },
       "generator": "respec",
-      "date": "09 February 2024",
+      "date": "21 February 2024",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -23821,10 +23940,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Feb 2024 14:25:23 GMT"
+        "lastModified": "Wed, 21 Feb 2024 14:25:03 GMT"
       },
       "generator": "respec",
-      "date": "09 February 2024",
+      "date": "21 February 2024",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -24079,8 +24198,7 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json",
-      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 414)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/fill-stroke-3.json"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -24146,8 +24264,7 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 415)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/filter-effects-1.json"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -24519,8 +24636,7 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/geometry-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 421)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/geometry-1.json"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -26931,8 +27047,7 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/motion-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 461)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/motion-1.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -28870,7 +28985,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-semantics/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jan 2024 17:36:46 GMT"
+        "lastModified": "Thu, 25 Jan 2024 17:36:45 GMT"
       },
       "generator": "respec",
       "date": "25 January 2024",
@@ -32044,8 +32159,7 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json",
-      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers' Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 545)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
+      "ids": "ids/wai-aria-1.3.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
@@ -32093,7 +32207,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "WebAssembly Core Specification",
@@ -32148,7 +32262,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -32212,7 +32326,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
