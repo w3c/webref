@@ -105,6 +105,7 @@ The following projects are known to use webref data:
 * [WebIDLPedia](https://dontcallmedom.github.io/webidlpedia/)
 * [Webdex](https://dontcallmedom.github.io/webdex/)
 
+Using webref data in a project that is not yet in the list? Let us know!
 ## Potential spec anomalies
 
 This repository used to contain analyses of potential spec anomalies, such as missing references and invalid Web IDL definitions. These analyses are now published in the companion [w3c/webref-analysis](https://github.com/w3c/webref-analysis) repository.
