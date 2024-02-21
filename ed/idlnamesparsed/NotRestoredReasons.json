@@ -1,0 +1,15 @@
+{
+  "name": "NotRestoredReasons",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NotRestoredReasons {\n  readonly attribute DOMString? src;\n  readonly attribute DOMString? id;\n  readonly attribute DOMString? name;\n  readonly attribute DOMString? url;\n  readonly attribute FrozenArray<NotRestoredReasonDetails>? reasons;\n  readonly attribute FrozenArray<NotRestoredReasons>? children;\n  [Default] object toJSON();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#notrestoredreasons"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

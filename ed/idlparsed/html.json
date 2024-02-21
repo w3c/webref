@@ -168,6 +168,8 @@
           "NavigationActivation",
           "NavigationDestination",
           "BeforeUnloadEvent",
+          "NotRestoredReasonDetails",
+          "NotRestoredReasons",
           "Navigator",
           "PluginArray",
           "MimeTypeArray",
@@ -27746,6 +27748,213 @@
         ],
         "partial": false
       },
+      "NotRestoredReasonDetails": {
+        "fragment": "[Exposed=Window]\ninterface NotRestoredReasonDetails {\n  readonly attribute DOMString reason;\n  [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "NotRestoredReasonDetails",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "NotRestoredReasons": {
+        "fragment": "[Exposed=Window]\ninterface NotRestoredReasons {\n  readonly attribute DOMString? src;\n  readonly attribute DOMString? id;\n  readonly attribute DOMString? name;\n  readonly attribute DOMString? url;\n  readonly attribute FrozenArray<NotRestoredReasonDetails>? reasons;\n  readonly attribute FrozenArray<NotRestoredReasons>? children;\n  [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "NotRestoredReasons",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "src",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "url",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "reasons",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NotRestoredReasonDetails"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "children",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NotRestoredReasons"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "ErrorEvent": {
         "fragment": "[Exposed=*]\ninterface ErrorEvent : Event {\n  constructor(DOMString type, optional ErrorEventInit eventInitDict = {});\n\n  readonly attribute DOMString message;\n  readonly attribute USVString filename;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n  readonly attribute any error;\n};",
         "type": "interface",
@@ -40794,6 +41003,8 @@
         "PageRevealEvent",
         "PageTransitionEvent",
         "BeforeUnloadEvent",
+        "NotRestoredReasonDetails",
+        "NotRestoredReasons",
         "DOMParser",
         "Navigator",
         "PluginArray",
@@ -41588,6 +41799,11 @@
       ],
       "BeforeUnloadEvent": [
         "Event"
+      ],
+      "NotRestoredReasonDetails": [],
+      "NotRestoredReasons": [
+        "NotRestoredReasonDetails",
+        "NotRestoredReasons"
       ],
       "ErrorEvent": [
         "Event",
