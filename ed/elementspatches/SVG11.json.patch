@@ -1,123 +1,144 @@
-From ffbc27e5547fc329522bb35a113d051d5a0ef7ec Mon Sep 17 00:00:00 2001
+From 3cd90168f22814eba4e110fd24afe2b0a19fb813 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Wed, 7 Jul 2021 10:53:15 +0200
+Date: Thu, 22 Feb 2024 14:49:06 +0100
 Subject: [PATCH] Drop SVG 1.1 elements deprecated in SVG 2
 
 Note `<clipPath>` and `<mask>` are not defined in SVG 2 but they are defined in
 CSS Masking Level 1.
 ---
- ed/elements/SVG11.json | 72 ------------------------------------------
- 1 file changed, 72 deletions(-)
+ ed/elements/SVG11.json | 90 ------------------------------------------
+ 1 file changed, 90 deletions(-)
 
 diff --git a/ed/elements/SVG11.json b/ed/elements/SVG11.json
-index f625f0541..d085ab508 100644
+index 187dc21b6..dc3c38ea6 100644
 --- a/ed/elements/SVG11.json
 +++ b/ed/elements/SVG11.json
-@@ -80,38 +80,14 @@
-       "name": "tspan",
+@@ -99,46 +99,16 @@
+       "href": "https://www.w3.org/TR/SVG11/text.html#TSpanElement",
        "interface": "SVGTSpanElement"
      },
 -    {
 -      "name": "tref",
+-      "href": "https://www.w3.org/TR/SVG11/text.html#TRefElement",
 -      "interface": "SVGTRefElement"
 -    },
      {
        "name": "textPath",
+       "href": "https://www.w3.org/TR/SVG11/text.html#TextPathElement",
        "interface": "SVGTextPathElement"
      },
 -    {
 -      "name": "altGlyph",
+-      "href": "https://www.w3.org/TR/SVG11/text.html#AltGlyphElement",
 -      "interface": "SVGAltGlyphElement"
 -    },
 -    {
 -      "name": "altGlyphDef",
+-      "href": "https://www.w3.org/TR/SVG11/text.html#AlternateGlyphDefinitions",
 -      "interface": "SVGAltGlyphDefElement"
 -    },
 -    {
 -      "name": "altGlyphItem",
+-      "href": "https://www.w3.org/TR/SVG11/text.html#AlternateGlyphDefinitions",
 -      "interface": "SVGAltGlyphItemElement"
 -    },
 -    {
 -      "name": "glyphRef",
+-      "href": "https://www.w3.org/TR/SVG11/text.html#AlternateGlyphDefinitions",
 -      "interface": "SVGGlyphRefElement"
 -    },
      {
        "name": "marker",
+       "href": "https://www.w3.org/TR/SVG11/painting.html#MarkerElement",
        "interface": "SVGMarkerElement"
      },
 -    {
 -      "name": "color-profile",
+-      "href": "https://www.w3.org/TR/SVG11/color.html#ColorProfileElement",
 -      "interface": "SVGColorProfileElement"
 -    },
      {
        "name": "linearGradient",
-       "interface": "SVGLinearGradientElement"
-@@ -236,10 +212,6 @@
-       "name": "feTurbulence",
+       "href": "https://www.w3.org/TR/SVG11/pservers.html#LinearGradients",
+@@ -294,11 +264,6 @@
+       "href": "https://www.w3.org/TR/SVG11/filters.html#feTurbulenceElement",
        "interface": "SVGFETurbulenceElement"
      },
 -    {
 -      "name": "cursor",
+-      "href": "https://www.w3.org/TR/SVG11/interact.html#CursorElement",
 -      "interface": "SVGCursorElement"
 -    },
      {
        "name": "a",
-       "interface": "SVGAElement"
-@@ -268,54 +240,10 @@
-       "name": "mpath",
+       "href": "https://www.w3.org/TR/SVG11/linking.html#AElement",
+@@ -334,66 +299,11 @@
+       "href": "https://www.w3.org/TR/SVG11/animate.html#MPathElement",
        "interface": "SVGMPathElement"
      },
 -    {
 -      "name": "animateColor",
+-      "href": "https://www.w3.org/TR/SVG11/animate.html#AnimateColorElement",
 -      "interface": "SVGAnimateColorElement"
 -    },
      {
        "name": "animateTransform",
+       "href": "https://www.w3.org/TR/SVG11/animate.html#AnimateTransformElement",
        "interface": "SVGAnimateTransformElement"
      },
 -    {
 -      "name": "font",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontElement",
 -      "interface": "SVGFontElement"
 -    },
 -    {
 -      "name": "glyph",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#GlyphElement",
 -      "interface": "SVGGlyphElement"
 -    },
 -    {
 -      "name": "missing-glyph",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#MissingGlyphElement",
 -      "interface": "SVGMissingGlyphElement"
 -    },
 -    {
 -      "name": "hkern",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#KernElements",
 -      "interface": "SVGHKernElement"
 -    },
 -    {
 -      "name": "vkern",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#KernElements",
 -      "interface": "SVGVKernElement"
 -    },
 -    {
 -      "name": "font-face",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontFaceElement",
 -      "interface": "SVGFontFaceElement"
 -    },
 -    {
 -      "name": "font-face-src",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontFaceSrcElement",
 -      "interface": "SVGFontFaceSrcElement"
 -    },
 -    {
 -      "name": "font-face-uri",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontFaceURIElement",
 -      "interface": "SVGFontFaceUriElement"
 -    },
 -    {
 -      "name": "font-face-format",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontFaceFormatElement",
 -      "interface": "SVGFontFaceFormatElement"
 -    },
 -    {
 -      "name": "font-face-name",
+-      "href": "https://www.w3.org/TR/SVG11/fonts.html#FontFaceNameElement",
 -      "interface": "SVGFontFaceNameElement"
 -    },
      {
        "name": "metadata",
-       "interface": "SVGMetadataElement"
+       "href": "https://www.w3.org/TR/SVG11/metadata.html#MetadataElement",
 -- 
-2.31.1.windows.1
+2.42.0.windows.2
 
