@@ -321,6 +321,12 @@ const patches = {
       pattern: { href: "https://wicg.github.io/BackgroundSync/spec/#sync" },
       matched: 1,
       change: { href: "https://wicg.github.io/background-sync/spec/#sync"}
+    },
+    // pending https://github.com/w3c/ServiceWorker/pull/1706
+    {
+      pattern: { type: "install" },
+      matched: 1,
+      change: { interface: "InstallEvent" }
     }
   ],
   'speech-api': [
