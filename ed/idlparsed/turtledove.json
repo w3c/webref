@@ -2094,7 +2094,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-previouswin"
       },
       "BiddingBrowserSignals": {
-        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n};",
+        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
         "type": "dictionary",
         "name": "BiddingBrowserSignals",
         "inheritance": null,
@@ -2267,6 +2267,25 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-dataversion"
+          },
+          {
+            "type": "field",
+            "name": "forDebuggingOnlyInCooldownOrLockout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-fordebuggingonlyincooldownorlockout"
           }
         ],
         "extAttrs": [],
@@ -2274,7 +2293,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-biddingbrowsersignals"
       },
       "ScoringBrowserSignals": {
-        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n};",
+        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
         "type": "dictionary",
         "name": "ScoringBrowserSignals",
         "inheritance": null,
@@ -2399,6 +2418,25 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-adcomponents"
+          },
+          {
+            "type": "field",
+            "name": "forDebuggingOnlyInCooldownOrLockout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-fordebuggingonlyincooldownorlockout"
           }
         ],
         "extAttrs": [],

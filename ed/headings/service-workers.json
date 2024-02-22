@@ -547,109 +547,123 @@
       "number": "4.4.1"
     },
     {
+      "id": "installevent-interface",
+      "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+      "level": 3,
+      "title": "InstallEvent",
+      "number": "4.5"
+    },
+    {
+      "id": "register-router-method",
+      "href": "https://w3c.github.io/ServiceWorker/#register-router-method",
+      "level": 4,
+      "title": "event.addRoutes(rules)",
+      "number": "4.5.1"
+    },
+    {
       "id": "fetchevent-interface",
       "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
       "level": 3,
       "title": "FetchEvent",
-      "number": "4.5"
+      "number": "4.6"
     },
     {
       "id": "fetch-event-request",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-request",
       "level": 4,
       "title": "event.request",
-      "number": "4.5.1"
+      "number": "4.6.1"
     },
     {
       "id": "fetch-event-preloadresponse",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-preloadresponse",
       "level": 4,
       "title": "event.preloadResponse",
-      "number": "4.5.2"
+      "number": "4.6.2"
     },
     {
       "id": "fetch-event-clientid",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-clientid",
       "level": 4,
       "title": "event.clientId",
-      "number": "4.5.3"
+      "number": "4.6.3"
     },
     {
       "id": "fetch-event-resultingclientid",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-resultingclientid",
       "level": 4,
       "title": "event.resultingClientId",
-      "number": "4.5.4"
+      "number": "4.6.4"
     },
     {
       "id": "fetch-event-replacesClientId",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-replacesClientId",
       "level": 4,
       "title": "event.replacesClientId",
-      "number": "4.5.5"
+      "number": "4.6.5"
     },
     {
       "id": "fetch-event-handled",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-handled",
       "level": 4,
       "title": "event.handled",
-      "number": "4.5.6"
+      "number": "4.6.6"
     },
     {
       "id": "fetch-event-respondwith",
       "href": "https://w3c.github.io/ServiceWorker/#fetch-event-respondwith",
       "level": 4,
       "title": "event.respondWith(r)",
-      "number": "4.5.7"
+      "number": "4.6.7"
     },
     {
       "id": "extendablemessageevent-interface",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
       "level": 3,
       "title": "ExtendableMessageEvent",
-      "number": "4.6"
+      "number": "4.7"
     },
     {
       "id": "extendablemessage-event-data",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-data",
       "level": 4,
       "title": "event.data",
-      "number": "4.6.1"
+      "number": "4.7.1"
     },
     {
       "id": "extendablemessage-event-origin",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-origin",
       "level": 4,
       "title": "event.origin",
-      "number": "4.6.2"
+      "number": "4.7.2"
     },
     {
       "id": "extendablemessage-event-lasteventid",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-lasteventid",
       "level": 4,
       "title": "event.lastEventId",
-      "number": "4.6.3"
+      "number": "4.7.3"
     },
     {
       "id": "extendablemessage-event-source",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-source",
       "level": 4,
       "title": "event.source",
-      "number": "4.6.4"
+      "number": "4.7.4"
     },
     {
       "id": "extendablemessage-event-ports",
       "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-ports",
       "level": 4,
       "title": "event.ports",
-      "number": "4.6.5"
+      "number": "4.7.5"
     },
     {
       "id": "execution-context-events",
       "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
       "level": 3,
       "title": "Events",
-      "number": "4.7"
+      "number": "4.8"
     },
     {
       "id": "cache-objects",
@@ -982,6 +996,12 @@
       "title": "Try Activate"
     },
     {
+      "id": "setup-serviceworkerglobalscope",
+      "href": "https://w3c.github.io/ServiceWorker/#setup-serviceworkerglobalscope",
+      "level": 3,
+      "title": "Setup ServiceWorkerGlobalScope"
+    },
+    {
       "id": "run-service-worker-algorithm",
       "href": "https://w3c.github.io/ServiceWorker/#run-service-worker-algorithm",
       "level": 3,
@@ -1004,6 +1024,36 @@
       "href": "https://w3c.github.io/ServiceWorker/#on-fetch-request-algorithm",
       "level": 3,
       "title": "Handle Fetch"
+    },
+    {
+      "id": "create-fetch-event-and-dispatch-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#create-fetch-event-and-dispatch-algorithm",
+      "level": 3,
+      "title": "Create Fetch Event and Dispatch"
+    },
+    {
+      "id": "parse-urlpattern-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#parse-urlpattern-algorithm",
+      "level": 3,
+      "title": "Parse URL Pattern"
+    },
+    {
+      "id": "verify-router-rule-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#verify-router-rule-algorithm",
+      "level": 3,
+      "title": "Verify Router Condition"
+    },
+    {
+      "id": "match-router-condition-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#match-router-condition-algorithm",
+      "level": 3,
+      "title": "Match Router Condition"
+    },
+    {
+      "id": "get-router-source-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#get-router-source-algorithm",
+      "level": 3,
+      "title": "Get Router Source"
     },
     {
       "id": "should-skip-event-algorithm",
@@ -1148,6 +1198,12 @@
       "href": "https://w3c.github.io/ServiceWorker/#is-async-module-algorithm",
       "level": 3,
       "title": "Is Async Module"
+    },
+    {
+      "id": "lookup-race-response-algorithm",
+      "href": "https://w3c.github.io/ServiceWorker/#lookup-race-response-algorithm",
+      "level": 3,
+      "title": "Lookup Race Response"
     },
     {
       "id": "extended-http-headers",

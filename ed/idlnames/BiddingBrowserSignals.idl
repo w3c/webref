@@ -11,4 +11,5 @@ dictionary BiddingBrowserSignals {
   sequence<PreviousWin> prevWinsMs;
   object wasmHelper;
   unsigned long dataVersion;
+  boolean forDebuggingOnlyInCooldownOrLockout = false;
 };

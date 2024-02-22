@@ -18,6 +18,7 @@
       },
       "functions": {
         "Window": [
+          "TextEvent",
           "MutationEvent"
         ]
       }
@@ -1964,6 +1965,151 @@
         "partial": false,
         "href": "https://w3c.github.io/uievents/#dictdef-compositioneventinit"
       },
+      "TextEvent": {
+        "fragment": "[Exposed=Window]\ninterface TextEvent : UIEvent {\n    readonly attribute DOMString data;\n    undefined initTextEvent(DOMString type,\n        optional boolean bubbles = false,\n        optional boolean cancelable = false,\n        optional Window? view = null,\n        optional DOMString data = \"undefined\");\n};",
+        "type": "interface",
+        "name": "TextEvent",
+        "inheritance": "UIEvent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/uievents/#dom-textevent-data"
+          },
+          {
+            "type": "operation",
+            "name": "initTextEvent",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "bubbles",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "cancelable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "view",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "Window"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": {
+                  "type": "string",
+                  "value": "undefined"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/uievents/#dom-textevent-inittextevent"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#textevent"
+      },
       "MutationEvent": {
         "fragment": "[Exposed=Window]\ninterface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Node? relatedNodeArg = null,\n    optional DOMString prevValueArg = \"\",\n    optional DOMString newValueArg = \"\",\n    optional DOMString attrNameArg = \"\",\n    optional unsigned short attrChangeArg = 0);\n};",
         "type": "interface",
@@ -3210,6 +3356,7 @@
         "InputEvent",
         "KeyboardEvent",
         "CompositionEvent",
+        "TextEvent",
         "MutationEvent"
       ]
     },
@@ -3274,6 +3421,10 @@
       ],
       "CompositionEventInit": [
         "UIEventInit"
+      ],
+      "TextEvent": [
+        "UIEvent",
+        "Window"
       ],
       "MutationEvent": [
         "Event",

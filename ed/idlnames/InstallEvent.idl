@@ -1,0 +1,5 @@
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
+[Exposed=ServiceWorker]
+interface InstallEvent : ExtendableEvent {
+  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);
+};

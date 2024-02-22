@@ -1,0 +1,10 @@
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+[Exposed=Window]
+interface TextEvent : UIEvent {
+    readonly attribute DOMString data;
+    undefined initTextEvent(DOMString type,
+        optional boolean bubbles = false,
+        optional boolean cancelable = false,
+        optional Window? view = null,
+        optional DOMString data = "undefined");
+};

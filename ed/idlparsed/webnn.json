@@ -489,23 +489,8 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
-      "MLBufferView": {
-        "fragment": "typedef ArrayBufferView MLBufferView;",
-        "type": "typedef",
-        "name": "MLBufferView",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "ArrayBufferView"
-        },
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlbufferview"
-      },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -620,7 +605,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLBufferView"
+                  "idlType": "ArrayBufferView"
                 },
                 "default": null,
                 "optional": false,
@@ -8365,7 +8350,7 @@
         "MLContext",
         "MLOperand",
         "MLOperandDescriptor",
-        "MLBufferView",
+        "ArrayBufferView",
         "MLOperandDataType",
         "MLGraph",
         "MLNamedOperands",

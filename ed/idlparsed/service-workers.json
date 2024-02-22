@@ -33,7 +33,8 @@
           "ServiceWorkerGlobalScope",
           "Client",
           "WindowClient",
-          "Clients"
+          "Clients",
+          "InstallEvent"
         ]
       }
     },
@@ -2120,6 +2121,361 @@
         "partial": false,
         "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
       },
+      "InstallEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface InstallEvent : ExtendableEvent {\n  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);\n};",
+        "type": "interface",
+        "name": "InstallEvent",
+        "inheritance": "ExtendableEvent",
+        "members": [
+          {
+            "type": "operation",
+            "name": "addRoutes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "rules",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "RouterRule"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": "argument-type",
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "RouterRule"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-installevent-addroutes"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "ServiceWorker"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/ServiceWorker/#installevent"
+      },
+      "RouterRule": {
+        "fragment": "dictionary RouterRule {\n  required RouterCondition condition;\n  required RouterSource source;\n};",
+        "type": "dictionary",
+        "name": "RouterRule",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "condition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RouterCondition"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routerrule-condition"
+          },
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RouterSource"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routerrule-source"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-routerrule"
+      },
+      "RouterCondition": {
+        "fragment": "dictionary RouterCondition {\n  URLPatternCompatible urlPattern;\n  ByteString requestMethod;\n  RequestMode requestMode;\n  RequestDestination requestDestination;\n  RunningStatus runningStatus;\n\n  sequence<RouterCondition> _or;\n};",
+        "type": "dictionary",
+        "name": "RouterCondition",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "urlPattern",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "URLPatternCompatible"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-urlpattern"
+          },
+          {
+            "type": "field",
+            "name": "requestMethod",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ByteString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestmethod"
+          },
+          {
+            "type": "field",
+            "name": "requestMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestMode"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestmode"
+          },
+          {
+            "type": "field",
+            "name": "requestDestination",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestDestination"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestdestination"
+          },
+          {
+            "type": "field",
+            "name": "runningStatus",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RunningStatus"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-runningstatus"
+          },
+          {
+            "type": "field",
+            "name": "or",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RouterCondition"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-or"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-routercondition"
+      },
+      "RouterSource": {
+        "fragment": "typedef (RouterSourceDict or RouterSourceEnum) RouterSource;",
+        "type": "typedef",
+        "name": "RouterSource",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RouterSourceDict"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RouterSourceEnum"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/ServiceWorker/#typedefdef-routersource"
+      },
+      "RouterSourceDict": {
+        "fragment": "dictionary RouterSourceDict {\n  DOMString cacheName;\n};",
+        "type": "dictionary",
+        "name": "RouterSourceDict",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "cacheName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routersourcedict-cachename"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-routersourcedict"
+      },
+      "RunningStatus": {
+        "fragment": "enum RunningStatus { \"running\", \"not-running\" };",
+        "type": "enum",
+        "name": "RunningStatus",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "running",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-runningstatus-running"
+          },
+          {
+            "type": "enum-value",
+            "value": "not-running",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-runningstatus-not-running"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/ServiceWorker/#enumdef-runningstatus"
+      },
+      "RouterSourceEnum": {
+        "fragment": "enum RouterSourceEnum {\n  \"cache\",\n  \"fetch-event\",\n  \"network\",\n  \"race-network-and-fetch-handler\"\n};",
+        "type": "enum",
+        "name": "RouterSourceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "cache",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-cache"
+          },
+          {
+            "type": "enum-value",
+            "value": "fetch-event",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-fetch-event"
+          },
+          {
+            "type": "enum-value",
+            "value": "network",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network"
+          },
+          {
+            "type": "enum-value",
+            "value": "race-network-and-fetch-handler",
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-race-network-and-fetch-handler"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/ServiceWorker/#enumdef-routersourceenum"
+      },
       "FetchEvent": {
         "fragment": "[Exposed=ServiceWorker]\ninterface FetchEvent : ExtendableEvent {\n  constructor(DOMString type, FetchEventInit eventInitDict);\n  [SameObject] readonly attribute Request request;\n  readonly attribute Promise<any> preloadResponse;\n  readonly attribute DOMString clientId;\n  readonly attribute DOMString resultingClientId;\n  readonly attribute DOMString replacesClientId;\n  readonly attribute Promise<undefined> handled;\n\n  undefined respondWith(Promise<Response> r);\n};",
         "type": "interface",
@@ -3874,6 +4230,7 @@
         "WindowClient",
         "Clients",
         "ExtendableEvent",
+        "InstallEvent",
         "FetchEvent",
         "ExtendableMessageEvent"
       ]
@@ -3946,6 +4303,22 @@
       "ExtendableEventInit": [
         "EventInit"
       ],
+      "InstallEvent": [
+        "ExtendableEvent",
+        "RouterRule"
+      ],
+      "RouterRule": [
+        "RouterCondition",
+        "RouterSource"
+      ],
+      "RouterCondition": [
+        "URLPatternCompatible",
+        "RequestMode",
+        "RequestDestination",
+        "RunningStatus",
+        "RouterCondition"
+      ],
+      "RouterSourceDict": [],
       "FetchEvent": [
         "ExtendableEvent",
         "FetchEventInit",
@@ -4000,6 +4373,9 @@
       "DocumentVisibilityState",
       "Event",
       "EventInit",
+      "URLPatternCompatible",
+      "RequestMode",
+      "RequestDestination",
       "Request",
       "Response",
       "MessagePort",

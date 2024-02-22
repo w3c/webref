@@ -1,0 +1,10 @@
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
+dictionary RouterCondition {
+  URLPatternCompatible urlPattern;
+  ByteString requestMethod;
+  RequestMode requestMode;
+  RequestDestination requestDestination;
+  RunningStatus runningStatus;
+
+  sequence<RouterCondition> _or;
+};

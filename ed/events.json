@@ -3678,7 +3678,7 @@
         "target": "ServiceWorkerGlobalScope"
       }
     ],
-    "interface": "ExtendableEvent"
+    "interface": "InstallEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
@@ -6728,6 +6728,26 @@
         "target": "EditContext"
       }
     ]
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#textinput",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-textinput"
+    },
+    "type": "textInput",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      }
+    ],
+    "interface": "TextEvent"
   },
   {
     "src": {

@@ -1,0 +1,15 @@
+{
+  "name": "RouterCondition",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers/"
+    },
+    "fragment": "dictionary RouterCondition {\n  URLPatternCompatible urlPattern;\n  ByteString requestMethod;\n  RequestMode requestMode;\n  RequestDestination requestDestination;\n  RunningStatus runningStatus;\n\n  sequence<RouterCondition> _or;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#dictdef-routercondition"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

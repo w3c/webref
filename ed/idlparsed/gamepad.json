@@ -21,7 +21,7 @@
     },
     "idlNames": {
       "Gamepad": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
+        "fragment": "[Exposed=Window]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
         "type": "interface",
         "name": "Gamepad",
         "inheritance": null,
@@ -189,19 +189,13 @@
               "value": "Window"
             },
             "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
           }
         ],
         "partial": false,
         "href": "https://w3c.github.io/gamepad/#dom-gamepad"
       },
       "GamepadButton": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadButton {\n  readonly attribute boolean pressed;\n  readonly attribute boolean touched;\n  readonly attribute double value;\n};",
+        "fragment": "[Exposed=Window]\ninterface GamepadButton {\n  readonly attribute boolean pressed;\n  readonly attribute boolean touched;\n  readonly attribute double value;\n};",
         "type": "interface",
         "name": "GamepadButton",
         "inheritance": null,
@@ -263,12 +257,6 @@
               "type": "identifier",
               "value": "Window"
             },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
             "arguments": []
           }
         ],
@@ -558,7 +546,7 @@
         "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters"
       },
       "GamepadEvent": {
-        "fragment": "[Exposed=Window, SecureContext]\n\ninterface GamepadEvent: Event {\n  constructor(DOMString type, GamepadEventInit eventInitDict);\n  [SameObject] readonly attribute Gamepad gamepad;\n};",
+        "fragment": "[Exposed=Window]\n\ninterface GamepadEvent: Event {\n  constructor(DOMString type, GamepadEventInit eventInitDict);\n  [SameObject] readonly attribute Gamepad gamepad;\n};",
         "type": "interface",
         "name": "GamepadEvent",
         "inheritance": "Event",
@@ -634,12 +622,6 @@
               "type": "identifier",
               "value": "Window"
             },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
             "arguments": []
           }
         ],

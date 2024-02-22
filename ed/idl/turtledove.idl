@@ -197,6 +197,7 @@ dictionary BiddingBrowserSignals {
   sequence<PreviousWin> prevWinsMs;
   object wasmHelper;
   unsigned long dataVersion;
+  boolean forDebuggingOnlyInCooldownOrLockout = false;
 };
 
 dictionary ScoringBrowserSignals {
@@ -208,6 +209,7 @@ dictionary ScoringBrowserSignals {
 
   unsigned long dataVersion;
   sequence<USVString> adComponents;
+  boolean forDebuggingOnlyInCooldownOrLockout = false;
 };
 
 dictionary ReportingBrowserSignals {
