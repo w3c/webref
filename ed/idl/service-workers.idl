@@ -166,6 +166,40 @@ dictionary ExtendableEventInit : EventInit {
 };
 
 [Exposed=ServiceWorker]
+interface InstallEvent : ExtendableEvent {
+  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);
+};
+
+dictionary RouterRule {
+  required RouterCondition condition;
+  required RouterSource source;
+};
+
+dictionary RouterCondition {
+  URLPatternCompatible urlPattern;
+  ByteString requestMethod;
+  RequestMode requestMode;
+  RequestDestination requestDestination;
+  RunningStatus runningStatus;
+
+  sequence<RouterCondition> _or;
+};
+
+typedef (RouterSourceDict or RouterSourceEnum) RouterSource;
+
+dictionary RouterSourceDict {
+  DOMString cacheName;
+};
+
+enum RunningStatus { "running", "not-running" };
+enum RouterSourceEnum {
+  "cache",
+  "fetch-event",
+  "network",
+  "race-network-and-fetch-handler"
+};
+
+[Exposed=ServiceWorker]
 interface FetchEvent : ExtendableEvent {
   constructor(DOMString type, FetchEventInit eventInitDict);
   [SameObject] readonly attribute Request request;

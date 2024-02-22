@@ -361,6 +361,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "service-worker-list-of-router-rules",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-list-of-router-rules",
+      "linkingText": [
+        "list of router rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-concept",
+        "href": "https://w3c.github.io/ServiceWorker/#service-worker-concept",
+        "title": "Service Worker",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "service-worker-running",
       "href": "https://w3c.github.io/ServiceWorker/#service-worker-running",
       "linkingText": [
@@ -2566,6 +2587,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "serviceworkerglobalscope-race-response-map",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-race-response-map",
+      "linkingText": [
+        "race response map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-race-response",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-race-response",
+      "linkingText": [
+        "race response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "race-response-value",
+      "href": "https://w3c.github.io/ServiceWorker/#race-response-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "race response"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworkerglobalscope-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-interface",
+        "title": "ServiceWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-serviceworkerglobalscope-clients",
       "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-clients",
       "linkingText": [
@@ -3946,6 +4028,496 @@
       "definedIn": "prose"
     },
     {
+      "id": "installevent",
+      "href": "https://w3c.github.io/ServiceWorker/#installevent",
+      "linkingText": [
+        "InstallEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-addroutes-rules-rules",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-installevent-addroutes-rules-rules",
+      "linkingText": [
+        "rules"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InstallEvent/addRoutes(rules)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routerrule",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-routerrule",
+      "linkingText": [
+        "RouterRule"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routerrule-condition",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routerrule-condition",
+      "linkingText": [
+        "condition"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routerrule-source",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routerrule-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routercondition",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-routercondition",
+      "linkingText": [
+        "RouterCondition"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-urlpattern",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-urlpattern",
+      "linkingText": [
+        "urlPattern"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestmethod",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestmethod",
+      "linkingText": [
+        "requestMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestmode",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestmode",
+      "linkingText": [
+        "requestMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-requestdestination",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-requestdestination",
+      "linkingText": [
+        "requestDestination"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-runningstatus",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-runningstatus",
+      "linkingText": [
+        "runningStatus"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routercondition-or",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-or",
+      "linkingText": [
+        "or"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterCondition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-routersource",
+      "href": "https://w3c.github.io/ServiceWorker/#typedefdef-routersource",
+      "linkingText": [
+        "RouterSource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-routersourcedict",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-routersourcedict",
+      "linkingText": [
+        "RouterSourceDict"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourcedict-cachename",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routersourcedict-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RouterSourceDict"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-runningstatus",
+      "href": "https://w3c.github.io/ServiceWorker/#enumdef-runningstatus",
+      "linkingText": [
+        "RunningStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-runningstatus-running",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-runningstatus-running",
+      "linkingText": [
+        "\"running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RunningStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-runningstatus-not-running",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-runningstatus-not-running",
+      "linkingText": [
+        "\"not-running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RunningStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-routersourceenum",
+      "href": "https://w3c.github.io/ServiceWorker/#enumdef-routersourceenum",
+      "linkingText": [
+        "RouterSourceEnum"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-cache",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-cache",
+      "linkingText": [
+        "\"cache\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-fetch-event",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-fetch-event",
+      "linkingText": [
+        "\"fetch-event\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-network",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-network",
+      "linkingText": [
+        "\"network\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-routersourceenum-race-network-and-fetch-handler",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-routersourceenum-race-network-and-fetch-handler",
+      "linkingText": [
+        "\"race-network-and-fetch-handler\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RouterSourceEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installevent-interface",
+        "href": "https://w3c.github.io/ServiceWorker/#installevent-interface",
+        "title": "InstallEvent",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-installevent-addroutes",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-installevent-addroutes",
+      "linkingText": [
+        "addRoutes(rules)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "InstallEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "register-router-method",
+        "href": "https://w3c.github.io/ServiceWorker/#register-router-method",
+        "title": "event.addRoutes(rules)",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "fetchevent",
       "href": "https://w3c.github.io/ServiceWorker/#fetchevent",
       "linkingText": [
@@ -3960,7 +4532,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -3982,7 +4554,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4004,7 +4576,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4026,7 +4598,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4047,7 +4619,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4066,7 +4638,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4087,7 +4659,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4108,7 +4680,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4129,7 +4701,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4150,7 +4722,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4171,7 +4743,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4192,7 +4764,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "pre"
     },
@@ -4213,7 +4785,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4234,7 +4806,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4255,7 +4827,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4276,7 +4848,7 @@
         "id": "fetchevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
         "title": "FetchEvent",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -4297,7 +4869,7 @@
         "id": "fetch-event-request",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-request",
         "title": "event.request",
-        "number": "4.5.1"
+        "number": "4.6.1"
       },
       "definedIn": "prose"
     },
@@ -4318,7 +4890,7 @@
         "id": "fetch-event-preloadresponse",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-preloadresponse",
         "title": "event.preloadResponse",
-        "number": "4.5.2"
+        "number": "4.6.2"
       },
       "definedIn": "prose"
     },
@@ -4339,7 +4911,7 @@
         "id": "fetch-event-clientid",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-clientid",
         "title": "event.clientId",
-        "number": "4.5.3"
+        "number": "4.6.3"
       },
       "definedIn": "prose"
     },
@@ -4360,7 +4932,7 @@
         "id": "fetch-event-resultingclientid",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-resultingclientid",
         "title": "event.resultingClientId",
-        "number": "4.5.4"
+        "number": "4.6.4"
       },
       "definedIn": "prose"
     },
@@ -4381,7 +4953,7 @@
         "id": "fetch-event-replacesClientId",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-replacesClientId",
         "title": "event.replacesClientId",
-        "number": "4.5.5"
+        "number": "4.6.5"
       },
       "definedIn": "prose"
     },
@@ -4402,7 +4974,7 @@
         "id": "fetch-event-handled",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-handled",
         "title": "event.handled",
-        "number": "4.5.6"
+        "number": "4.6.6"
       },
       "definedIn": "prose"
     },
@@ -4423,7 +4995,7 @@
         "id": "fetch-event-respondwith",
         "href": "https://w3c.github.io/ServiceWorker/#fetch-event-respondwith",
         "title": "event.respondWith(r)",
-        "number": "4.5.7"
+        "number": "4.6.7"
       },
       "definedIn": "prose"
     },
@@ -4442,7 +5014,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4466,7 +5038,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4490,7 +5062,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4514,7 +5086,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4533,7 +5105,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4554,7 +5126,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4575,7 +5147,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4596,7 +5168,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4617,7 +5189,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4638,7 +5210,7 @@
         "id": "extendablemessageevent-interface",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
         "title": "ExtendableMessageEvent",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -4659,7 +5231,7 @@
         "id": "extendablemessage-event-data",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-data",
         "title": "event.data",
-        "number": "4.6.1"
+        "number": "4.7.1"
       },
       "definedIn": "prose"
     },
@@ -4680,7 +5252,7 @@
         "id": "extendablemessage-event-origin",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-origin",
         "title": "event.origin",
-        "number": "4.6.2"
+        "number": "4.7.2"
       },
       "definedIn": "prose"
     },
@@ -4701,7 +5273,7 @@
         "id": "extendablemessage-event-lasteventid",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-lasteventid",
         "title": "event.lastEventId",
-        "number": "4.6.3"
+        "number": "4.7.3"
       },
       "definedIn": "prose"
     },
@@ -4722,7 +5294,7 @@
         "id": "extendablemessage-event-source",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-source",
         "title": "event.source",
-        "number": "4.6.4"
+        "number": "4.7.4"
       },
       "definedIn": "prose"
     },
@@ -4743,7 +5315,7 @@
         "id": "extendablemessage-event-ports",
         "href": "https://w3c.github.io/ServiceWorker/#extendablemessage-event-ports",
         "title": "event.ports",
-        "number": "4.6.5"
+        "number": "4.7.5"
       },
       "definedIn": "prose"
     },
@@ -4764,7 +5336,7 @@
         "id": "execution-context-events",
         "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4785,7 +5357,7 @@
         "id": "execution-context-events",
         "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4806,7 +5378,7 @@
         "id": "execution-context-events",
         "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4827,7 +5399,7 @@
         "id": "execution-context-events",
         "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -4848,7 +5420,7 @@
         "id": "execution-context-events",
         "href": "https://w3c.github.io/ServiceWorker/#execution-context-events",
         "title": "Events",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "table"
     },
@@ -6485,6 +7057,24 @@
       "definedIn": "heading"
     },
     {
+      "id": "setup-serviceworkerglobalscope①",
+      "href": "https://w3c.github.io/ServiceWorker/#setup-serviceworkerglobalscope%E2%91%A0",
+      "linkingText": [
+        "Setup ServiceWorkerGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setup-serviceworkerglobalscope",
+        "href": "https://w3c.github.io/ServiceWorker/#setup-serviceworkerglobalscope",
+        "title": "Setup ServiceWorkerGlobalScope"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "run-service-worker",
       "href": "https://w3c.github.io/ServiceWorker/#run-service-worker",
       "linkingText": [
@@ -6553,6 +7143,96 @@
         "id": "on-fetch-request-algorithm",
         "href": "https://w3c.github.io/ServiceWorker/#on-fetch-request-algorithm",
         "title": "Handle Fetch"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "create-fetch-event-and-dispatch",
+      "href": "https://w3c.github.io/ServiceWorker/#create-fetch-event-and-dispatch",
+      "linkingText": [
+        "Create Fetch Event and Dispatch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-fetch-event-and-dispatch-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#create-fetch-event-and-dispatch-algorithm",
+        "title": "Create Fetch Event and Dispatch"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "parse-url-pattern",
+      "href": "https://w3c.github.io/ServiceWorker/#parse-url-pattern",
+      "linkingText": [
+        "Parse URL Pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parse-urlpattern-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#parse-urlpattern-algorithm",
+        "title": "Parse URL Pattern"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "verify-router-condition",
+      "href": "https://w3c.github.io/ServiceWorker/#verify-router-condition",
+      "linkingText": [
+        "Verify Router Condition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verify-router-rule-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#verify-router-rule-algorithm",
+        "title": "Verify Router Condition"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "match-router-condition",
+      "href": "https://w3c.github.io/ServiceWorker/#match-router-condition",
+      "linkingText": [
+        "Match Router Condition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "match-router-condition-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#match-router-condition-algorithm",
+        "title": "Match Router Condition"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "get-router-source",
+      "href": "https://w3c.github.io/ServiceWorker/#get-router-source",
+      "linkingText": [
+        "Get Router Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-router-source-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#get-router-source-algorithm",
+        "title": "Get Router Source"
       },
       "definedIn": "heading"
     },
@@ -6986,6 +7666,24 @@
         "id": "is-async-module-algorithm",
         "href": "https://w3c.github.io/ServiceWorker/#is-async-module-algorithm",
         "title": "Is Async Module"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "lookup-race-response",
+      "href": "https://w3c.github.io/ServiceWorker/#lookup-race-response",
+      "linkingText": [
+        "Lookup Race Response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "lookup-race-response-algorithm",
+        "href": "https://w3c.github.io/ServiceWorker/#lookup-race-response-algorithm",
+        "title": "Lookup Race Response"
       },
       "definedIn": "heading"
     },
