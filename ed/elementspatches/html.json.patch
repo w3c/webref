@@ -1,6 +1,6 @@
-From 8281cf7530d27497d3577ec01fc156b4ec898359 Mon Sep 17 00:00:00 2001
+From 15bf84f69221f6c8d1d147909f675765b531536f Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 29 Apr 2022 09:48:23 +0200
+Date: Thu, 22 Feb 2024 14:40:00 +0100
 Subject: [PATCH] Add obsolete HTML elements
 
 Patches the list of HTML elements with elements that are entirely obsolete but
@@ -20,166 +20,195 @@ very clear in the spec though, e.g. `xmp` implements the `HTMLPreElement`
 interface whereas `plaintext` does not, yet the prose in the spec is similar in
 both cases).
 ---
- ed/elements/html.json | 145 ++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 145 insertions(+)
+ ed/elements/html.json | 174 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 174 insertions(+)
 
 diff --git a/ed/elements/html.json b/ed/elements/html.json
-index 4754a89db..70cb4557c 100644
+index 177e528f2..e5924f279 100644
 --- a/ed/elements/html.json
 +++ b/ed/elements/html.json
-@@ -447,6 +447,151 @@
-     {
+@@ -563,6 +563,180 @@
        "name": "canvas",
+       "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvas",
        "interface": "HTMLCanvasElement"
 +    },
 +    {
 +      "name": "applet",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#applet",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "acronym",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#acronym",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "bgsound",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#bgsound",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "dir",
 +      "interface": "HTMLDirectoryElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dir",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "frame",
 +      "interface": "HTMLFrameElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#frame",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "frameset",
 +      "interface": "HTMLFrameSetElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#frameset",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "noframes",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#noframes",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "isindex",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#isindex",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "keygen",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#keygen",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "listing",
 +      "interface": "HTMLPreElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#listing",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "menuitem",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#menuitem",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "nextid",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#nextid",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "noembed",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#noembed",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "param",
 +      "interface": "HTMLParamElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#param",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "plaintext",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#plaintext",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "rb",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#rb",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "rtc",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#rtc",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "strike",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#strike",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "xmp",
 +      "interface": "HTMLPreElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#xmp",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "basefont",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#basefont",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "big",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#big",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "blink",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#blink",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "center",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#center",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "font",
 +      "interface": "HTMLFontElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#font",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "marquee",
 +      "interface": "HTMLMarqueeElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#the-marquee-element",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "multicol",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#multicol",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "nobr",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#nobr",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "spacer",
 +      "interface": "HTMLUnknownElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#spacer",
 +      "obsolete": true
 +    },
 +    {
 +      "name": "tt",
 +      "interface": "HTMLElement",
++      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#tt",
 +      "obsolete": true
      }
    ]
  }
 \ No newline at end of file
 -- 
-2.36.0.windows.1
+2.42.0.windows.2
 
