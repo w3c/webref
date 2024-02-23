@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-23T00:48:50.932Z",
+  "date": "2024-02-23T06:31:41.873Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -639,7 +639,7 @@
   },
   "stats": {
     "crawled": 609,
-    "errors": 17
+    "errors": 18
   },
   "crawler": "reffy-14.8.0",
   "results": [
@@ -6895,9 +6895,9 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Feb 2024 15:29:23 GMT"
+        "lastModified": "Fri, 23 Feb 2024 03:04:29 GMT"
       },
-      "date": "22 February 2024",
+      "date": "23 February 2024",
       "links": "links/ecma-402.json",
       "refs": "refs/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
@@ -14231,9 +14231,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Feb 2024 23:20:15 GMT"
+        "lastModified": "Wed, 21 Feb 2024 12:37:46 GMT"
       },
-      "date": "16 February 2024",
+      "date": "21 February 2024",
       "links": "links/rfc6386.json",
       "ids": "ids/rfc6386.json"
     },
@@ -22808,7 +22808,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Feb 2024 22:58:16 GMT"
+        "lastModified": "Fri, 23 Feb 2024 00:59:08 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2024",
@@ -32175,7 +32175,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers' Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 548)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
