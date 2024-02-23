@@ -76,6 +76,7 @@ Data curation brings the following guarantees.
 ### Elements extracts
 
 - All Web IDL interfaces referenced by elements exist in Web IDL extracts.
+- All elements link back to their definition in the spec.
 
 ### Events extracts
 
