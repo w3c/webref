@@ -17,7 +17,7 @@ elements.listAll().then(all => {
 });
 ```
 
-For each spec, value is an object with a `spec` property that describes the specification, and an `elements` property that lists elements defined in the spec, as an array of objects with `name`, `interface` and `obsolete` properties. The `interface` property is not present for elements that do not implement an interface:
+For each spec, value is an object with a `spec` property that describes the specification, and an `elements` property that lists elements defined in the spec, as an array of objects with `name`, `interface`, `href`, and `obsolete` properties. The `interface` property is not present for elements that do not implement an interface:
 
 ```js
 const elements = require('@webref/elements');
@@ -38,6 +38,8 @@ elements.listAll().then(all => {
 });
 ```
 
+The `href` property is the URL to the definition of the element in the specification. The property is always set.
+
 The `obsolete` property is a boolean flag, only present (and set to `true`) for elements that are obsolete.
 
 
@@ -45,3 +47,4 @@ The `obsolete` property is a boolean flag, only present (and set to `true`) for 
 
 The following guarantees are provided by this package:
 - All Web IDL interfaces exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/elements` package is released.
+- All elements link back to their definition in the spec.
