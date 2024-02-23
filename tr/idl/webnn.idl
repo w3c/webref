@@ -55,8 +55,6 @@ interface MLGraph {};
 
 typedef record<DOMString, MLOperand> MLNamedOperands;
 
-typedef ArrayBufferView MLBufferView;
-
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLGraphBuilder {
   // Construct the graph builder from the context.
@@ -66,7 +64,7 @@ interface MLGraphBuilder {
   MLOperand input(DOMString name, MLOperandDescriptor descriptor);
 
   // Create an operand for a graph constant.
-  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);
+  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);
 
   // Create a single-value operand from the specified number of the specified type.
   MLOperand constant(double value, optional MLOperandDataType type = "float32");
