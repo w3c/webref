@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-23T18:31:54.466Z",
+  "date": "2024-02-24T00:45:16.377Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -639,7 +639,7 @@
   },
   "stats": {
     "crawled": 609,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.8.1",
   "results": [
@@ -1233,9 +1233,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Feb 2024 00:40:39 GMT"
+        "lastModified": "Fri, 23 Feb 2024 22:43:47 GMT"
       },
-      "date": "22 February 2024",
+      "date": "23 February 2024",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -13244,11 +13244,11 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Feb 2024 21:57:44 GMT"
+        "lastModified": "Fri, 23 Feb 2024 19:30:37 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 February 2024",
-      "revision": "9a76bb1fc908f037738132652058f9baecd666bf",
+      "date": "23 February 2024",
+      "revision": "5bf50ccf9c56a7b7385765fc3dd33037992aa066",
       "links": "links/turtledove.json",
       "refs": "refs/turtledove.json",
       "idl": "idl/turtledove.idl",
@@ -23828,10 +23828,10 @@
       ],
       "crawled": "https://w3c.github.io/encrypted-media/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 Feb 2024 10:47:24 GMT"
+        "lastModified": "Fri, 23 Feb 2024 18:55:07 GMT"
       },
       "generator": "respec",
-      "date": "15 February 2024",
+      "date": "23 February 2024",
       "links": "links/encrypted-media.json",
       "refs": "refs/encrypted-media.json",
       "events": "events/encrypted-media.json",
@@ -32158,7 +32158,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 548)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
