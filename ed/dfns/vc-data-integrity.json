@@ -271,139 +271,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-data-integrity-proof",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-proof",
-      "linkingText": [
-        "data integrity proof"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-public-key",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-public-key",
-      "linkingText": [
-        "public key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-private-key",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-private-key",
-      "linkingText": [
-        "private key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-proof-type",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-proof-type",
-      "linkingText": [
-        "proof type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-proof-purpose",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-proof-purpose",
-      "linkingText": [
-        "proof purpose"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-challenge",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-challenge",
-      "linkingText": [
-        "challenge"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-domain",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-domain",
-      "linkingText": [
-        "domain"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dfn-authenticated",
       "href": "https://w3c.github.io/vc-data-integrity/#dfn-authenticated",
       "linkingText": [
@@ -422,14 +289,14 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A process by which an entity can prove to a verifier that it has a specific\nattribute or controls a specific secret."
     },
     {
-      "id": "dfn-cryptosuite",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite",
+      "id": "dfn-challenge",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-challenge",
       "linkingText": [
-        "cryptosuite",
-        "cryptographic suite"
+        "challenge"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -442,7 +309,91 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A random or pseudo-random value used by some authentication protocols to\nmitigate replay attacks."
+    },
+    {
+      "id": "dfn-controller-s",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-controller-s",
+      "linkingText": [
+        "controller(s)",
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "An entity that has the capability to make changes to a\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-controller-documents\">controller document</a>."
+    },
+    {
+      "id": "dfn-controller-documents",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-controller-documents",
+      "linkingText": [
+        "controller documents",
+        "controller document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A set of data that specifies one or more relationships between a\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-controller-s\">controller</a> and a set of data, such as a set of public cryptographic keys."
+    },
+    {
+      "id": "dfn-cryptosuite",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite",
+      "linkingText": [
+        "cryptosuite",
+        "cryptographic suite"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A specification defining the usage of specific cryptographic primitives in\norder to achieve a particular security goal. These documents are often used\nto specify <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-method\">verification methods</a>, digital signature types,\ntheir identifiers, and other related properties. See Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#cryptographic-suites\"><bdi>3. </bdi>Cryptographic Suites</a> for further detail."
+    },
+    {
+      "id": "dfn-data-integrity-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-proof",
+      "linkingText": [
+        "data integrity proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A set of attributes that represent a digital proof and the parameters required\nto verify it."
     },
     {
       "id": "dfn-decentralized-identifiers",
@@ -464,14 +415,14 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A globally unique persistent identifier that does not require a centralized\nregistration authority and is often generated and/or registered\ncryptographically. The generic format of a is defined in [<cite><a href=\"https://w3c.github.io/vc-data-integrity/#bib-did-core\" title=\"Decentralized Identifiers (DIDs) v1.0\">DID-CORE</a></cite>]."
     },
     {
-      "id": "dfn-controller-s",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-controller-s",
+      "id": "dfn-domain",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-domain",
       "linkingText": [
-        "controller(s)",
-        "controller"
+        "domain"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -484,14 +435,14 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A string value that specifies the operational domain of a digital proof.\nThis could be an Internet domain name like <code>example.com</code>, an\nad-hoc value such as <code>mycorp-level3-access</code>, or a very\nspecific transaction value like <code>8zF6T8J34qP3mqP</code>. A signer could\ninclude a <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-domain\">domain</a> in its digital proof to restrict its use\nto particular target, identified by the specified <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-domain\">domain</a>."
     },
     {
-      "id": "dfn-controller-documents",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-controller-documents",
+      "id": "dfn-private-key",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-private-key",
       "linkingText": [
-        "controller documents",
-        "controller document"
+        "private key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -504,14 +455,34 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "Cryptographic material that can be used to generate digital proofs."
     },
     {
-      "id": "dfn-subjects",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-subjects",
+      "id": "dfn-proof-purpose",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-proof-purpose",
       "linkingText": [
-        "subjects",
-        "subject"
+        "proof purpose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The specific intent for the proof; the reason why an entity created it. The\nprotected declaration acts as a safeguard to prevent the proof from being\nmisused for a purpose other than the one it was intended for."
+    },
+    {
+      "id": "dfn-proof-type",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-proof-type",
+      "linkingText": [
+        "proof type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -524,15 +495,14 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A specified set of cryptographic primitives bundled together into a\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite\">cryptographic suite</a> for the purposes of safety and convenience, by\ncryptographers for developers (see the section on\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#cryptographic-suites\">cryptographic suites</a>)."
     },
     {
-      "id": "dfn-distributed-ledger-technology",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-distributed-ledger-technology",
+      "id": "dfn-public-key",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-public-key",
       "linkingText": [
-        "distributed ledger technology",
-        "DLT",
-        "distributed ledger"
+        "public key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -545,7 +515,8 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "Cryptographic material that can be used to verify digital proofs created with a\ncorresponding <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-private-key\">private key</a>."
     },
     {
       "id": "dfn-resources",
@@ -565,7 +536,69 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "As defined by [<cite><a href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc3986\" title=\"Uniform Resource Identifier (URI): Generic Syntax\">RFC3986</a></cite>]: \"...the term 'resource' is used in a general sense\nfor whatever might be identified by a URI.\" Similarly, any resource might serve\nas a <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-subjects\">subject</a> identified by a <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-decentralized-identifiers\">DID</a>."
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The entity identified by the <code>id</code> property in a <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-controller-documents\">controller document</a>.\nAnything can be a subject: person, group, organization, physical thing, digital\nthing, logical thing, etc."
+    },
+    {
+      "id": "dfn-verification-method",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verification-method",
+      "linkingText": [
+        "verification method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic public key can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic private key.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
+    },
+    {
+      "id": "dfn-verification-relationship",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verification-relationship",
+      "linkingText": [
+        "verification relationship"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt",
+      "htmlProse": "<p>\nAn expression of the relationship between the <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-subjects\">subject</a> and a\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-method\">verification method</a>. An example of a verification relationship is\n<a href=\"https://w3c.github.io/vc-data-integrity/#authentication\"><bdi>2.3.2.1 </bdi>Authentication</a>.\n            </p>"
     },
     {
       "id": "dfn-verifier",
@@ -586,7 +619,8 @@
         "title": "Terminology",
         "number": "1.4"
       },
-      "definedIn": "dt"
+      "definedIn": "dt",
+      "htmlProse": "A role an entity performs by receiving data containing one or more\n<a href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proofs</a> and then determining whether or not the proof\nis valid."
     },
     {
       "id": "dfn-proof",
@@ -950,29 +984,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-suite-selection-algorithm",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-suite-selection-algorithm",
+      "id": "dfn-cryptosuite-instantiation-algorithm",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite-instantiation-algorithm",
       "linkingText": [
-        "suite selection algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "cryptographic-suites",
-        "href": "https://w3c.github.io/vc-data-integrity/#cryptographic-suites",
-        "title": "Cryptographic Suites",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-vc-cryptographic-suite",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-vc-cryptographic-suite",
-      "linkingText": [
-        "VC cryptographic suite"
+        "cryptosuite instantiation algorithm",
+        "data integrity cryptographic suite instantiation algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -988,10 +1004,32 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-transform",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-transform",
+      "id": "dfn-data-integrity-cryptographic-suite-instance",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance",
       "linkingText": [
-        "transform"
+        "data integrity cryptographic suite instance",
+        "cryptosuite instance"
+      ],
+      "localLinkingText": [
+        "cryptosuite instance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cryptographic-suites",
+        "href": "https://w3c.github.io/vc-data-integrity/#cryptographic-suites",
+        "title": "Cryptographic Suites",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-createproof",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-createproof",
+      "linkingText": [
+        "createProof"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1007,10 +1045,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-hash",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-hash",
+      "id": "dfn-verifyproof",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verifyproof",
       "linkingText": [
-        "hash"
+        "verifyProof"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1026,10 +1064,29 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-proof-creation-options",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-proof-creation-options",
+      "id": "dfn-cryptosuite-verification-result",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite-verification-result",
       "linkingText": [
-        "proof creation options"
+        "cryptosuite verification result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cryptographic-suites",
+        "href": "https://w3c.github.io/vc-data-integrity/#cryptographic-suites",
+        "title": "Cryptographic Suites",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verified",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verified",
+      "linkingText": [
+        "verified"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1045,29 +1102,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-serialize-proof",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-serialize-proof",
+      "id": "dfn-verifieddocument",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verifieddocument",
       "linkingText": [
-        "serialize proof"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "cryptographic-suites",
-        "href": "https://w3c.github.io/vc-data-integrity/#cryptographic-suites",
-        "title": "Cryptographic Suites",
-        "number": "3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-verify-proof",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verify-proof",
-      "linkingText": [
-        "verify proof"
+        "verifiedDocument"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1091,7 +1129,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algorithms",
@@ -1110,7 +1148,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algorithms",
@@ -1140,10 +1178,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-status",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-status",
+      "id": "dfn-verified-0",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verified-0",
       "linkingText": [
-        "status"
+        "verified"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1161,10 +1199,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-document",
-      "href": "https://w3c.github.io/vc-data-integrity/#dfn-document",
+      "id": "dfn-verifieddocument-0",
+      "href": "https://w3c.github.io/vc-data-integrity/#dfn-verifieddocument-0",
       "linkingText": [
-        "document"
+        "verifiedDocument"
       ],
       "localLinkingText": [],
       "type": "dfn",
