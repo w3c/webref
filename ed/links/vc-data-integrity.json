@@ -36,13 +36,13 @@
         "string",
         "struct",
         "struct-item",
-        "byte-sequence",
+        "boolean",
+        "nulls",
         "map-key",
+        "byte-sequence",
         "list",
-        "assert",
         "parse-json-bytes-to-an-infra-value",
-        "map-exists",
-        "implementation-defined"
+        "map-exists"
       ],
       "specShortname": "infra"
     },
@@ -51,8 +51,7 @@
     "https://mimesniff.spec.whatwg.org/": {
       "anchors": [
         "mime-type",
-        "parameters",
-        "mime-type-essence"
+        "parameters"
       ],
       "specShortname": "mimesniff"
     },
@@ -103,6 +102,11 @@
     },
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/2022/WD-vc-data-integrity-20221110/": {},
+    "https://www.w3.org/TR/VC-DATA-MODEL-2.0": {
+      "anchors": [
+        "PARSING_ERROR"
+      ]
+    },
     "https://www.w3.org/TR/did-core/": {},
     "https://www.w3.org/TR/html-rdfa/": {},
     "https://www.w3.org/TR/json-ld-api/": {
@@ -131,8 +135,7 @@
     "https://www.w3.org/TR/turtle/": {},
     "https://www.w3.org/TR/vc-data-integrity/": {
       "anchors": [
-        "cryptographic-suites",
-        "authentication"
+        "cryptographic-suites"
       ],
       "specShortname": "vc-data-integrity"
     },
