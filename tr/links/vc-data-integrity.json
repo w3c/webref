@@ -33,12 +33,28 @@
       "anchors": [
         "ordered-set",
         "ordered-map",
-        "string"
+        "string",
+        "struct",
+        "struct-item",
+        "boolean",
+        "nulls",
+        "map-key",
+        "byte-sequence",
+        "list",
+        "parse-json-bytes-to-an-infra-value",
+        "map-exists"
       ],
       "specShortname": "infra"
     },
     "https://mailarchive.ietf.org/arch/browse/multiformats/": {},
     "https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF": {},
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "mime-type",
+        "parameters"
+      ],
+      "specShortname": "mimesniff"
+    },
     "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
     "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf": {},
     "https://url.spec.whatwg.org/": {
@@ -64,6 +80,11 @@
     "https://www.rfc-editor.org/rfc/rfc7638": {},
     "https://www.rfc-editor.org/rfc/rfc7696": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
+    "https://www.rfc-editor.org/rfc/rfc8259": {
+      "anchors": [
+        "section-4"
+      ]
+    },
     "https://www.rfc-editor.org/rfc/rfc8392": {},
     "https://www.rfc-editor.org/rfc/rfc8785": {},
     "https://www.rfc-editor.org/rfc/rfc9457": {},
@@ -81,8 +102,16 @@
     },
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/2022/WD-vc-data-integrity-20221110/": {},
+    "https://www.w3.org/TR/VC-DATA-MODEL-2.0": {
+      "anchors": [
+        "PARSING_ERROR"
+      ]
+    },
     "https://www.w3.org/TR/did-core/": {},
     "https://www.w3.org/TR/html-rdfa/": {},
+    "https://www.w3.org/TR/json-ld-api/": {
+      "specShortname": "json-ld11-api"
+    },
     "https://www.w3.org/TR/json-ld11/": {
       "specShortname": "json-ld11"
     },
@@ -106,18 +135,19 @@
     "https://www.w3.org/TR/turtle/": {},
     "https://www.w3.org/TR/vc-data-integrity/": {
       "anchors": [
-        "cryptographic-suites",
-        "authentication"
+        "cryptographic-suites"
       ],
       "specShortname": "vc-data-integrity"
     },
     "https://www.w3.org/TR/vc-data-model-2.0/": {
       "anchors": [
         "representing-time",
-        "dfn-verifiable-credential",
-        "dfn-verifiable-presentation",
+        "dfn-vc",
+        "dfn-vp",
         "issuer",
+        "dfn-verifiable-credential",
         "dfn-holders",
+        "dfn-verifiable-presentation",
         "issuer-0",
         "dfn-credential",
         "defn-validFrom",
@@ -125,6 +155,7 @@
         "validation",
         "base-context",
         "vocabularies",
+        "dfn-problemdetails",
         "security-considerations",
         "privacy-considerations"
       ],
