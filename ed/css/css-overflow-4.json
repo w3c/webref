@@ -291,7 +291,7 @@
     {
       "name": "line-clamp",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
-      "value": "none | <integer [1,∞]>? <'block-ellipsis'>?",
+      "value": "none | <integer [1,∞]> || <'block-ellipsis'>",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -308,11 +308,17 @@
           "value": "none"
         },
         {
-          "name": "<integer [1,∞]> <block-ellipsis>?",
-          "prose": "Sets max-lines to the specified <integer> or to none if omitted, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1--block-ellipsis",
+          "name": "<integer [1,∞]>",
+          "prose": "Sets continue to discard if either or both values ares specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1",
           "type": "value",
-          "value": "<integer [1,∞]> <block-ellipsis>?"
+          "value": "<integer [1,∞]>"
+        },
+        {
+          "name": "<block-ellipsis>",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
+          "type": "value",
+          "value": "<block-ellipsis>"
         }
       ],
       "styleDeclaration": [
