@@ -730,26 +730,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-url-variables",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-url-variables",
-      "linkingText": [
-        "url variables",
-        "url variable"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "processing-model",
-        "href": "https://www.w3.org/TR/webdriver2/#processing-model",
-        "title": "Processing model",
-        "number": "6.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-routing-requests",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-routing-requests",
       "linkingText": [
@@ -1571,10 +1551,9 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-capability",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-capability",
+      "id": "dfn-capabilities",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-capabilities",
       "linkingText": [
-        "capability",
         "capabilities"
       ],
       "localLinkingText": [],
@@ -2068,15 +2047,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-session",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-session",
+      "id": "dfn-sessions",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-sessions",
       "linkingText": [
+        "sessions",
         "session"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "sessions",
@@ -2106,10 +2086,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-current-session",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-current-session",
+      "id": "dfn-session-id",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-session-id",
       "linkingText": [
-        "current session"
+        "session ID"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2125,10 +2105,47 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-active-session",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-active-session",
+      "id": "dfn-http-flag",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-http-flag",
       "linkingText": [
-        "active session",
+        "HTTP flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sessions",
+        "href": "https://www.w3.org/TR/webdriver2/#sessions",
+        "title": "Sessions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-http-session",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-http-session",
+      "linkingText": [
+        "HTTP session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sessions",
+        "href": "https://www.w3.org/TR/webdriver2/#sessions",
+        "title": "Sessions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-active-sessions",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-active-sessions",
+      "linkingText": [
         "active sessions"
       ],
       "localLinkingText": [],
@@ -2145,29 +2162,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-maximum-active-sessions",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-maximum-active-sessions",
+      "id": "dfn-active-http-sessions",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-active-http-sessions",
       "linkingText": [
-        "maximum active sessions"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sessions",
-        "href": "https://www.w3.org/TR/webdriver2/#sessions",
-        "title": "Sessions",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-session-id",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-session-id",
-      "linkingText": [
-        "session ID"
+        "active HTTP sessions"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2281,25 +2279,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-secure-tls",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-secure-tls",
-      "linkingText": [
-        "secure TLS"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sessions",
-        "href": "https://www.w3.org/TR/webdriver2/#sessions",
-        "title": "Sessions",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-browsing-context-input-state-map",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-browsing-context-input-state-map",
       "linkingText": [
@@ -2338,10 +2317,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-close-the-session",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-close-the-session",
+      "id": "dfn-session-configuration-flags",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-session-configuration-flags",
       "linkingText": [
-        "close the session"
+        "session configuration flags"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2353,6 +2332,82 @@
         "href": "https://www.w3.org/TR/webdriver2/#sessions",
         "title": "Sessions",
         "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-accept-insecure-tls",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-accept-insecure-tls",
+      "linkingText": [
+        "accept insecure TLS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-state",
+        "href": "https://www.w3.org/TR/webdriver2/#global-state",
+        "title": "Global State",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-has-proxy-configuration",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-has-proxy-configuration",
+      "linkingText": [
+        "has proxy configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-state",
+        "href": "https://www.w3.org/TR/webdriver2/#global-state",
+        "title": "Global State",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-create-a-session",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-create-a-session",
+      "linkingText": [
+        "create a session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-state",
+        "href": "https://www.w3.org/TR/webdriver2/#global-state",
+        "title": "Global State",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-close-the-session",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-close-the-session",
+      "linkingText": [
+        "close the session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-state",
+        "href": "https://www.w3.org/TR/webdriver2/#global-state",
+        "title": "Global State",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -2373,7 +2428,7 @@
         "id": "new-session-0",
         "href": "https://www.w3.org/TR/webdriver2/#new-session-0",
         "title": "New Session",
-        "number": "8.1"
+        "number": "8.2"
       },
       "definedIn": "heading"
     },
@@ -2392,7 +2447,7 @@
         "id": "delete-session",
         "href": "https://www.w3.org/TR/webdriver2/#delete-session",
         "title": "Delete Session",
-        "number": "8.2"
+        "number": "8.3"
       },
       "definedIn": "heading"
     },
@@ -2411,7 +2466,7 @@
         "id": "status",
         "href": "https://www.w3.org/TR/webdriver2/#status",
         "title": "Status",
-        "number": "8.3"
+        "number": "8.4"
       },
       "definedIn": "heading"
     },
@@ -5119,10 +5174,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-internal-json-clone-algorithm",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-internal-json-clone-algorithm",
+      "id": "dfn-internal-json-clone",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-internal-json-clone",
       "linkingText": [
-        "internal JSON clone algorithm"
+        "internal JSON clone"
       ],
       "localLinkingText": [],
       "type": "dfn",
