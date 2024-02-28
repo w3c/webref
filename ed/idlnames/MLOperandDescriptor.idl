@@ -3,6 +3,7 @@ dictionary MLOperandDescriptor {
   // The operand type.
   required MLOperandDataType dataType;
 
-  // The dimensions field is only required for tensor operands.
+  // The dimensions field is empty for scalar operands,
+  // and non-empty for tensor operands.
   sequence<unsigned long> dimensions = [];
 };

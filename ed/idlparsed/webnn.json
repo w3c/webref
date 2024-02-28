@@ -16,17 +16,17 @@
       "functions": {
         "Window": [
           "ML",
-          "MLActivation",
           "MLContext",
           "MLGraph",
-          "MLOperand"
+          "MLOperand",
+          "MLActivation"
         ],
         "DedicatedWorker": [
           "ML",
-          "MLActivation",
           "MLContext",
           "MLGraph",
-          "MLOperand"
+          "MLOperand",
+          "MLActivation"
         ]
       }
     },
@@ -283,39 +283,6 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#ml"
       },
-      "MLActivation": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {\n};",
-        "type": "interface",
-        "name": "MLActivation",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#mlactivation"
-      },
       "MLNamedArrayBufferViews": {
         "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;",
         "type": "typedef",
@@ -347,39 +314,6 @@
         },
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedarraybufferviews"
-      },
-      "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
-        "type": "interface",
-        "name": "MLContext",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
       },
       "MLComputeResult": {
         "fragment": "dictionary MLComputeResult {\n  MLNamedArrayBufferViews inputs;\n  MLNamedArrayBufferViews outputs;\n};",
@@ -424,6 +358,114 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcomputeresult"
       },
+      "MLContext": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
+        "type": "interface",
+        "name": "MLContext",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "compute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLComputeResult"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "graph",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLGraph"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "inputs",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLNamedArrayBufferViews"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "outputs",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLNamedArrayBufferViews"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
+      },
       "MLGraph": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
         "type": "interface",
@@ -456,6 +498,237 @@
         ],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#mlgraph"
+      },
+      "MLInputOperandLayout": {
+        "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
+        "type": "enum",
+        "name": "MLInputOperandLayout",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "nchw",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nchw"
+          },
+          {
+            "type": "enum-value",
+            "value": "nhwc",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nhwc"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlinputoperandlayout"
+      },
+      "MLOperandDataType": {
+        "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int64\",\n  \"uint64\",\n  \"int8\",\n  \"uint8\"\n};",
+        "type": "enum",
+        "name": "MLOperandDataType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "float32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float32"
+          },
+          {
+            "type": "enum-value",
+            "value": "float16",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float16"
+          },
+          {
+            "type": "enum-value",
+            "value": "int32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int32"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint32",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint32"
+          },
+          {
+            "type": "enum-value",
+            "value": "int64",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int64"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint64",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint64"
+          },
+          {
+            "type": "enum-value",
+            "value": "int8",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int8"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint8",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint8"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
+      },
+      "MLOperandDescriptor": {
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is empty for scalar operands,\n  // and non-empty for tensor operands.\n  sequence<unsigned long> dimensions = [];\n};",
+        "type": "dictionary",
+        "name": "MLOperandDescriptor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype"
+          },
+          {
+            "type": "field",
+            "name": "dimensions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
+      },
+      "MLOperand": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {\n  MLOperandDataType dataType();\n  sequence<unsigned long> shape();\n};",
+        "type": "interface",
+        "name": "MLOperand",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "dataType",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype"
+          },
+          {
+            "type": "operation",
+            "name": "shape",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mloperand"
+      },
+      "MLActivation": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {};",
+        "type": "interface",
+        "name": "MLActivation",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#mlactivation"
       },
       "MLNamedOperands": {
         "fragment": "typedef record<DOMString, MLOperand> MLNamedOperands;",
@@ -3062,162 +3335,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltriangularoptions"
-      },
-      "MLOperand": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {};",
-        "type": "interface",
-        "name": "MLOperand",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#mloperand"
-      },
-      "MLInputOperandLayout": {
-        "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
-        "type": "enum",
-        "name": "MLInputOperandLayout",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "nchw",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nchw"
-          },
-          {
-            "type": "enum-value",
-            "value": "nhwc",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlinputoperandlayout-nhwc"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlinputoperandlayout"
-      },
-      "MLOperandDataType": {
-        "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int64\",\n  \"uint64\",\n  \"int8\",\n  \"uint8\"\n};",
-        "type": "enum",
-        "name": "MLOperandDataType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "float32",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float32"
-          },
-          {
-            "type": "enum-value",
-            "value": "float16",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float16"
-          },
-          {
-            "type": "enum-value",
-            "value": "int32",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int32"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint32",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint32"
-          },
-          {
-            "type": "enum-value",
-            "value": "int64",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int64"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint64",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint64"
-          },
-          {
-            "type": "enum-value",
-            "value": "int8",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-int8"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint8",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint8"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
-      },
-      "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions = [];\n};",
-        "type": "dictionary",
-        "name": "MLOperandDescriptor",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "dataType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLOperandDataType"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype"
-          },
-          {
-            "type": "field",
-            "name": "dimensions",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
       }
     },
     "idlExtendedNames": {
@@ -3237,92 +3354,6 @@
           "extAttrs": [],
           "target": "WorkerNavigator",
           "includes": "NavigatorML"
-        }
-      ],
-      "MLContext": [
-        {
-          "fragment": "partial interface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
-          "type": "interface",
-          "name": "MLContext",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "compute",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLComputeResult"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "graph",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLGraph"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "inputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedArrayBufferViews"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "outputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedArrayBufferViews"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
         }
       ],
       "MLGraphBuilder": [
@@ -8152,88 +8183,25 @@
           "extAttrs": [],
           "partial": true
         }
-      ],
-      "MLOperand": [
-        {
-          "fragment": "partial interface MLOperand {\n  MLOperandDataType dataType();\n};",
-          "type": "interface",
-          "name": "MLOperand",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "dataType",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLOperandDataType"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLOperand {\n  sequence<unsigned long> shape();\n};",
-          "type": "interface",
-          "name": "MLOperand",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "shape",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "sequence",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "unsigned long"
-                  }
-                ]
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
       ]
     },
     "globals": {},
     "exposed": {
       "Window": [
         "ML",
-        "MLActivation",
         "MLContext",
         "MLGraph",
-        "MLGraphBuilder",
-        "MLOperand"
+        "MLOperand",
+        "MLActivation",
+        "MLGraphBuilder"
       ],
       "DedicatedWorker": [
         "ML",
-        "MLActivation",
         "MLContext",
         "MLGraph",
-        "MLGraphBuilder",
-        "MLOperand"
+        "MLOperand",
+        "MLActivation",
+        "MLGraphBuilder"
       ]
     },
     "dependencies": {
@@ -8255,16 +8223,22 @@
         "MLContextOptions",
         "GPUDevice"
       ],
-      "MLActivation": [],
+      "MLComputeResult": [
+        "MLNamedArrayBufferViews"
+      ],
       "MLContext": [
         "MLComputeResult",
         "MLGraph",
         "MLNamedArrayBufferViews"
       ],
-      "MLComputeResult": [
-        "MLNamedArrayBufferViews"
-      ],
       "MLGraph": [],
+      "MLOperandDescriptor": [
+        "MLOperandDataType"
+      ],
+      "MLOperand": [
+        "MLOperandDataType"
+      ],
+      "MLActivation": [],
       "MLGraphBuilder": [
         "MLContext",
         "MLOperand",
@@ -8369,13 +8343,7 @@
       "MLSoftplusOptions": [],
       "MLSplitOptions": [],
       "MLTransposeOptions": [],
-      "MLTriangularOptions": [],
-      "MLOperand": [
-        "MLOperandDataType"
-      ],
-      "MLOperandDescriptor": [
-        "MLOperandDataType"
-      ]
+      "MLTriangularOptions": []
     },
     "externalDependencies": [
       "GPUDevice",

@@ -6,25 +6,10 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {\n  MLOperandDataType dataType();\n  sequence<unsigned long> shape();\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mloperand"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Web Neural Network API",
-        "url": "https://www.w3.org/TR/webnn/"
-      },
-      "fragment": "partial interface MLOperand {\n  MLOperandDataType dataType();\n};"
-    },
-    {
-      "spec": {
-        "title": "Web Neural Network API",
-        "url": "https://www.w3.org/TR/webnn/"
-      },
-      "fragment": "partial interface MLOperand {\n  sequence<unsigned long> shape();\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }

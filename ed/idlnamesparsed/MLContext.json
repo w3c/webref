@@ -6,18 +6,10 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Web Neural Network API",
-        "url": "https://www.w3.org/TR/webnn/"
-      },
-      "fragment": "partial interface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }
