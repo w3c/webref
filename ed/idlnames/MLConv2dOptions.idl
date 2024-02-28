@@ -3,7 +3,6 @@ dictionary MLConv2dOptions {
   sequence<unsigned long> padding;
   sequence<unsigned long> strides;
   sequence<unsigned long> dilations;
-  MLAutoPad autoPad = "explicit";
   unsigned long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLConv2dFilterOperandLayout filterLayout = "oihw";

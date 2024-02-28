@@ -4,4 +4,6 @@ dictionary WebTransportOptions {
   boolean requireUnreliable = false;
   sequence<WebTransportHash> serverCertificateHashes;
   WebTransportCongestionControl congestionControl = "default";
+  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;
+  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;
 };

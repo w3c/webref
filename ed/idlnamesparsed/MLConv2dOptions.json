@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+    "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions"
   },
   "extended": [],

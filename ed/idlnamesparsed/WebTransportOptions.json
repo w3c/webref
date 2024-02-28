@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n};",
+    "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportoptions"
   },
   "extended": [],

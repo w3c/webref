@@ -183,7 +183,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportdatagramduplexstream"
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n  WebTransportSendGroup createSendGroup();\n\n  static readonly attribute boolean supportsReliableOnly;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams;\n  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingBidirectionalStreams;\n\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n  WebTransportSendGroup createSendGroup();\n\n  static readonly attribute boolean supportsReliableOnly;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -310,6 +310,52 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransport-congestioncontrol"
+          },
+          {
+            "type": "attribute",
+            "name": "anticipatedConcurrentIncomingUnidirectionalStreams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingunidirectionalstreams"
+          },
+          {
+            "type": "attribute",
+            "name": "anticipatedConcurrentIncomingBidirectionalStreams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingbidirectionalstreams"
           },
           {
             "type": "attribute",
@@ -660,7 +706,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransporthash"
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n};",
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -746,6 +792,56 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-congestioncontrol"
+          },
+          {
+            "type": "field",
+            "name": "anticipatedConcurrentIncomingUnidirectionalStreams",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-anticipatedconcurrentincomingunidirectionalstreams"
+          },
+          {
+            "type": "field",
+            "name": "anticipatedConcurrentIncomingBidirectionalStreams",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-anticipatedconcurrentincomingbidirectionalstreams"
           }
         ],
         "extAttrs": [],

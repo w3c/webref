@@ -981,32 +981,8 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconv2dfilteroperandlayout"
       },
-      "MLAutoPad": {
-        "fragment": "enum MLAutoPad {\n  \"explicit\",\n  \"same-upper\",\n  \"same-lower\"\n};",
-        "type": "enum",
-        "name": "MLAutoPad",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "explicit",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-explicit"
-          },
-          {
-            "type": "enum-value",
-            "value": "same-upper",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-same-upper"
-          },
-          {
-            "type": "enum-value",
-            "value": "same-lower",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlautopad-same-lower"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlautopad"
-      },
       "MLConv2dOptions": {
-        "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLConv2dOptions",
         "inheritance": null,
@@ -1085,25 +1061,6 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-dilations"
-          },
-          {
-            "type": "field",
-            "name": "autoPad",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLAutoPad"
-            },
-            "default": {
-              "type": "string",
-              "value": "explicit"
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-autopad"
           },
           {
             "type": "field",
@@ -1224,7 +1181,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconvtranspose2dfilteroperandlayout"
       },
       "MLConvTranspose2dOptions": {
-        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  sequence<unsigned long> outputPadding;\n  sequence<unsigned long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  sequence<unsigned long> outputPadding;\n  sequence<unsigned long> outputSizes;\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLConvTranspose2dOptions",
         "inheritance": null,
@@ -1353,25 +1310,6 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-outputsizes"
-          },
-          {
-            "type": "field",
-            "name": "autoPad",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLAutoPad"
-            },
-            "default": {
-              "type": "string",
-              "value": "explicit"
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-autopad"
           },
           {
             "type": "field",
@@ -2628,7 +2566,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlroundingtype"
       },
       "MLPool2dOptions": {
-        "fragment": "dictionary MLPool2dOptions {\n  sequence<unsigned long> windowDimensions;\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<unsigned long> outputSizes;\n};",
+        "fragment": "dictionary MLPool2dOptions {\n  sequence<unsigned long> windowDimensions;\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<unsigned long> outputSizes;\n};",
         "type": "dictionary",
         "name": "MLPool2dOptions",
         "inheritance": null,
@@ -2732,25 +2670,6 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations"
-          },
-          {
-            "type": "field",
-            "name": "autoPad",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLAutoPad"
-            },
-            "default": {
-              "type": "string",
-              "value": "explicit"
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-autopad"
           },
           {
             "type": "field",
@@ -8388,14 +8307,12 @@
       ],
       "MLClampOptions": [],
       "MLConv2dOptions": [
-        "MLAutoPad",
         "MLInputOperandLayout",
         "MLConv2dFilterOperandLayout",
         "MLOperand",
         "MLActivation"
       ],
       "MLConvTranspose2dOptions": [
-        "MLAutoPad",
         "MLInputOperandLayout",
         "MLConvTranspose2dFilterOperandLayout",
         "MLOperand",
@@ -8442,7 +8359,6 @@
         "MLPaddingMode"
       ],
       "MLPool2dOptions": [
-        "MLAutoPad",
         "MLInputOperandLayout",
         "MLRoundingType"
       ],
