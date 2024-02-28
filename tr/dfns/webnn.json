@@ -2228,84 +2228,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-mlautopad",
-      "href": "https://www.w3.org/TR/webnn/#enumdef-mlautopad",
-      "linkingText": [
-        "MLAutoPad"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlautopad-explicit",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlautopad-explicit",
-      "linkingText": [
-        "\"explicit\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLAutoPad"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlautopad-same-upper",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlautopad-same-upper",
-      "linkingText": [
-        "\"same-upper\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLAutoPad"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlautopad-same-lower",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlautopad-same-lower",
-      "linkingText": [
-        "\"same-lower\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLAutoPad"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-mlconv2doptions",
       "href": "https://www.w3.org/TR/webnn/#dictdef-mlconv2doptions",
       "linkingText": [
@@ -2447,26 +2369,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlconv2doptions-autopad",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlconv2doptions-autopad",
-      "linkingText": [
-        "autoPad"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLConv2dOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-mlconv2doptions-groups",
       "href": "https://www.w3.org/TR/webnn/#dom-mlconv2doptions-groups",
       "linkingText": [
@@ -2565,6 +2467,46 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-conv-output-size",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-conv-output-size",
+      "linkingText": [
+        "calculate conv output size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-conv2d-output-sizes",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-conv2d-output-sizes",
+      "linkingText": [
+        "calculate conv2d output sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-mlgraphbuilder-conv2d",
@@ -2848,26 +2790,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlconvtranspose2doptions-autopad",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlconvtranspose2doptions-autopad",
-      "linkingText": [
-        "autoPad"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLConvTranspose2dOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-mlconvtranspose2doptions-groups",
       "href": "https://www.w3.org/TR/webnn/#dom-mlconvtranspose2doptions-groups",
       "linkingText": [
@@ -2966,6 +2888,46 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-convtranspose-output-size",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-convtranspose-output-size",
+      "linkingText": [
+        "calculate convtranspose output size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-convtranspose2d-output-sizes",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-convtranspose2d-output-sizes",
+      "linkingText": [
+        "calculate convtranspose2d output sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-mlgraphbuilder-convtranspose2d",
@@ -7885,26 +7847,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlpool2doptions-autopad",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlpool2doptions-autopad",
-      "linkingText": [
-        "autoPad"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLPool2dOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-mlpool2doptions-layout",
       "href": "https://www.w3.org/TR/webnn/#dom-mlpool2doptions-layout",
       "linkingText": [
@@ -7963,6 +7905,26 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-pool2d-output-sizes",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-pool2d-output-sizes",
+      "linkingText": [
+        "calculate pool2d output sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "mlgraphbuilder-pooling-op",
@@ -8588,6 +8550,26 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "mlgraphbuilder-calculate-reduction-output-sizes",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-reduction-output-sizes",
+      "linkingText": [
+        "calculate reduction output sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "mlgraphbuilder-reduce-op",
