@@ -84,6 +84,7 @@
           "NavigationCurrentEntryChangeEvent",
           "PopStateEvent",
           "HashChangeEvent",
+          "PageSwapEvent",
           "PageRevealEvent",
           "PageTransitionEvent",
           "DOMParser",
@@ -28605,6 +28606,146 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#hashchangeeventinit"
       },
+      "PageSwapEvent": {
+        "fragment": "[Exposed=Window]\ninterface PageSwapEvent : Event {\n  constructor(DOMString type, optional PageSwapEventInit eventInitDict = {});\n  readonly attribute NavigationActivation? activation;\n  readonly attribute ViewTransition? viewTransition;\n};",
+        "type": "interface",
+        "name": "PageSwapEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PageSwapEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "activation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "NavigationActivation"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapevent-activation"
+          },
+          {
+            "type": "attribute",
+            "name": "viewTransition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ViewTransition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapevent-viewtransition"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#pageswapevent"
+      },
+      "PageSwapEventInit": {
+        "fragment": "dictionary PageSwapEventInit : EventInit {\n  NavigationActivation? activation = null;\n  ViewTransition? viewTransition = null;\n};",
+        "type": "dictionary",
+        "name": "PageSwapEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "activation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "NavigationActivation"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapeventinit-activation"
+          },
+          {
+            "type": "field",
+            "name": "viewTransition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ViewTransition"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapeventinit-viewtransition"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#pageswapeventinit"
+      },
       "PageRevealEvent": {
         "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  constructor(DOMString type, optional PageRevealEventInit eventInitDict = {});\n  readonly attribute ViewTransition? viewTransition;\n};",
         "type": "interface",
@@ -30913,7 +31054,7 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
       },
       "WindowEventHandlers": {
-        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpagereveal;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
+        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpagereveal;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpageswap;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
         "type": "interface mixin",
         "name": "WindowEventHandlers",
         "inheritance": null,
@@ -31109,6 +31250,22 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow"
+          },
+          {
+            "type": "attribute",
+            "name": "onpageswap",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap"
           },
           {
             "type": "attribute",
@@ -42618,6 +42775,7 @@
         "NavigationCurrentEntryChangeEvent",
         "PopStateEvent",
         "HashChangeEvent",
+        "PageSwapEvent",
         "PageRevealEvent",
         "PageTransitionEvent",
         "BeforeUnloadEvent",
@@ -43398,6 +43556,17 @@
       ],
       "HashChangeEventInit": [
         "EventInit"
+      ],
+      "PageSwapEvent": [
+        "Event",
+        "PageSwapEventInit",
+        "NavigationActivation",
+        "ViewTransition"
+      ],
+      "PageSwapEventInit": [
+        "EventInit",
+        "NavigationActivation",
+        "ViewTransition"
       ],
       "PageRevealEvent": [
         "Event",

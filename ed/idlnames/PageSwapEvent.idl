@@ -1,0 +1,7 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=Window]
+interface PageSwapEvent : Event {
+  constructor(DOMString type, optional PageSwapEventInit eventInitDict = {});
+  readonly attribute NavigationActivation? activation;
+  readonly attribute ViewTransition? viewTransition;
+};
