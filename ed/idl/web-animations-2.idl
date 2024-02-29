@@ -16,6 +16,7 @@ partial interface Animation {
     attribute CSSNumberish?       currentTime;
     attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart;
     attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd;
+    readonly attribute double? progress;
 };
 
 [Exposed=Window]
