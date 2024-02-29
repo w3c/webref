@@ -155,7 +155,7 @@
     {
       "name": "position-try-options",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-options",
-      "value": "none | [ <dashed-ident> || <try-tactic> ]#",
+      "value": "none | [ [<dashed-ident> || <try-tactic>] | inset-area( <'inset-area'> ) ]#",
       "initial": "none",
       "appliesTo": "absolutely-positioned elements",
       "inherited": "no",
@@ -217,6 +217,12 @@
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident--try-tactic",
           "type": "value",
           "value": "<dashed-ident> || <try-tactic>"
+        },
+        {
+          "name": "inset-area()",
+          "value": "inset-area()",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-inset-area-inset-area",
+          "type": "value"
         }
       ],
       "styleDeclaration": [
