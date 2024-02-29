@@ -1,14 +1,13 @@
-From 06ad7a19726182d0f81ff10fd43ad0cc31ca1a0d Mon Sep 17 00:00:00 2001
+From 229ec4c150f1c7fa2b204ab565b476efd1d24e25 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 29 Sep 2023 08:51:32 +0200
-Subject: [PATCH] Drop duplicate `fillMode` enum definition, rollback range
- changes
+Date: Thu, 29 Feb 2024 22:16:05 +0100
+Subject: [PATCH] Drop duplicate `fillMode` enum, rollback range changes
 
 The spec is a delta spec and re-defines the `fillMode` enum to change the
 meaning of one of its values.
 
-Patch will likely need to be kept around for as long as the spec remains a delta
-spec.
+Patch will likely need to be kept around for as long as the spec remains a
+delta spec.
 
 The `rangeStart` and `rangeEnd` definitions are currently invalid, pending:
 https://github.com/w3c/csswg-drafts/pull/9360
@@ -17,7 +16,7 @@ https://github.com/w3c/csswg-drafts/pull/9360
  1 file changed, 4 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index cba20b25f..f9f68a0d4 100644
+index 4dc3980d5..4c3af5351 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
 @@ -14,8 +14,6 @@ partial interface AnimationTimeline {
@@ -26,10 +25,10 @@ index cba20b25f..f9f68a0d4 100644
      attribute CSSNumberish?       currentTime;
 -    attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart;
 -    attribute (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd;
+     readonly attribute double? progress;
  };
  
- [Exposed=Window]
-@@ -49,8 +47,6 @@ partial dictionary ComputedEffectTiming {
+@@ -50,8 +48,6 @@ partial dictionary ComputedEffectTiming {
      CSSNumberish?        localTime;
  };
  
