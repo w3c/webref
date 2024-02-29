@@ -15,7 +15,7 @@
         "title": "Web Animations Level 2",
         "url": "https://www.w3.org/TR/web-animations-2/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n};"
+      "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n    readonly attribute double? progress;\n};"
     }
   ],
   "inheritance": {

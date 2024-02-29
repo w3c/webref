@@ -4694,7 +4694,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-planelayout"
       },
       "VideoPixelFormat": {
-        "fragment": "enum VideoPixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 32bpp RGBA\n  \"RGBA\",\n  // 32bpp RGBX (opaque)\n  \"RGBX\",\n  // 32bpp BGRA\n  \"BGRA\",\n  // 32bpp BGRX (opaque)\n  \"BGRX\",\n};",
+        "fragment": "enum VideoPixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  \"I420P10\",\n  \"I420P12\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  \"I420AP10\",\n  \"I420AP12\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  \"I422P10\",\n  \"I422P12\",\n  // 4:2:2 Y, U, V, A\n  \"I422A\",\n  \"I422AP10\",\n  \"I422AP12\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  \"I444P10\",\n  \"I444P12\",\n  // 4:4:4 Y, U, V, A\n  \"I444A\",\n  \"I444AP10\",\n  \"I444AP12\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 4:4:4 RGBA\n  \"RGBA\",\n  // 4:4:4 RGBX (opaque)\n  \"RGBX\",\n  // 4:4:4 BGRA\n  \"BGRA\",\n  // 4:4:4 BGRX (opaque)\n  \"BGRX\",\n};",
         "type": "enum",
         "name": "VideoPixelFormat",
         "values": [
@@ -4705,8 +4705,28 @@
           },
           {
             "type": "enum-value",
+            "value": "I420P10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i420p10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I420P12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i420p12"
+          },
+          {
+            "type": "enum-value",
             "value": "I420A",
             "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i420a"
+          },
+          {
+            "type": "enum-value",
+            "value": "I420AP10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i420ap10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I420AP12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i420ap12"
           },
           {
             "type": "enum-value",
@@ -4715,8 +4735,58 @@
           },
           {
             "type": "enum-value",
+            "value": "I422P10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i422p10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I422P12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i422p12"
+          },
+          {
+            "type": "enum-value",
+            "value": "I422A",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i422a"
+          },
+          {
+            "type": "enum-value",
+            "value": "I422AP10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i422ap10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I422AP12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i422ap12"
+          },
+          {
+            "type": "enum-value",
             "value": "I444",
             "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444P10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444p10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444P12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444p12"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444A",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444a"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444AP10",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444ap10"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444AP12",
+            "href": "https://w3c.github.io/webcodecs/#dom-videopixelformat-i444ap12"
           },
           {
             "type": "enum-value",

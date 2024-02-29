@@ -31,4 +31,5 @@ interface Animation : EventTarget {
 partial interface Animation {
     attribute CSSNumberish?       startTime;
     attribute CSSNumberish?       currentTime;
+    readonly attribute double? progress;
 };
