@@ -124,7 +124,7 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid.",
+      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have a consistent type or else the function is invalid. The result will be a <number>, made consistent with the consistent type of the arguments.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-progress",
       "type": "function"
     },
@@ -167,14 +167,14 @@
       "values": [
         {
           "name": "<percentage>",
-          "prose": "Represents the mix progress value as a <percentage>.",
+          "prose": "Computes to the equivalent <number>: 0% becomes 0, 100% becomes 1, etc.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-progress-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "<number>",
-          "prose": "Computes to the equivalent <percentage>. Note: This allows the use of the progress(), media-progress(), and container-progress() notations.",
+          "prose": "Represents the mix progress value. For this purpose, a value is allowed to match <number> regardless of its type’s percent hint.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-progress-number",
           "type": "value",
           "value": "<number>"
