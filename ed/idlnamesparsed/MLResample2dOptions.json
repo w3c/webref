@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<unsigned long> axes;\n};",
+    "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<[EnforceRange] unsigned long> sizes;\n  sequence<[EnforceRange] unsigned long> axes;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlresample2doptions"
   },
   "extended": [],

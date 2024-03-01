@@ -5,5 +5,5 @@ dictionary MLOperandDescriptor {
 
   // The dimensions field is empty for scalar operands,
   // and non-empty for tensor operands.
-  sequence<unsigned long> dimensions = [];
+  sequence<[EnforceRange] unsigned long> dimensions = [];
 };

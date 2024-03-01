@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<unsigned long> axes;\n  float epsilon = 1e-5;\n};",
+    "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<[EnforceRange] unsigned long> axes;\n  float epsilon = 1e-5;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllayernormalizationoptions"
   },
   "extended": [],

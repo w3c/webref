@@ -43,7 +43,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, unsigned long axis);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, [EnforceRange] unsigned long axis);\n};"
     },
     {
       "spec": {
@@ -92,7 +92,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<unsigned long> newShape);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};"
     },
     {
       "spec": {
@@ -113,14 +113,14 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                          unsigned long steps, unsigned long hiddenSize,\n                          optional MLGruOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input,\n                          MLOperand weight,\n                          MLOperand recurrentWeight,\n                          [EnforceRange] unsigned long steps,\n                          [EnforceRange] unsigned long hiddenSize,\n                          optional MLGruOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                    MLOperand hiddenState, unsigned long hiddenSize,\n                    optional MLGruCellOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input,\n                    MLOperand weight,\n                    MLOperand recurrentWeight,\n                    MLOperand hiddenState,\n                    [EnforceRange] unsigned long hiddenSize,\n                    optional MLGruCellOptions options = {});\n};"
     },
     {
       "spec": {
@@ -169,14 +169,14 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstm(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                           unsigned long steps, unsigned long hiddenSize,\n                           optional MLLstmOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstm(MLOperand input,\n                           MLOperand weight,\n                           MLOperand recurrentWeight,\n                           [EnforceRange] unsigned long steps,\n                           [EnforceRange] unsigned long hiddenSize,\n                           optional MLLstmOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstmCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                               MLOperand hiddenState, MLOperand cellState, unsigned long hiddenSize,\n                               optional MLLstmCellOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstmCell(MLOperand input,\n                               MLOperand weight,\n                               MLOperand recurrentWeight,\n                               MLOperand hiddenState,\n                               MLOperand cellState,\n                               [EnforceRange] unsigned long hiddenSize,\n                               optional MLLstmCellOptions options = {});\n};"
     },
     {
       "spec": {
@@ -190,7 +190,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<unsigned long> beginningPadding,\n                sequence<unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<[EnforceRange] unsigned long> beginningPadding,\n                sequence<[EnforceRange] unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};"
     },
     {
       "spec": {
@@ -232,7 +232,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<unsigned long> newShape);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};"
     },
     {
       "spec": {
@@ -246,7 +246,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<unsigned long> starts, sequence<unsigned long> sizes);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes);\n};"
     },
     {
       "spec": {
@@ -274,7 +274,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          (unsigned long or sequence<unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};"
     },
     {
       "spec": {

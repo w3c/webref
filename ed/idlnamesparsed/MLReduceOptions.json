@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n};",
+    "fragment": "dictionary MLReduceOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlreduceoptions"
   },
   "extended": [],

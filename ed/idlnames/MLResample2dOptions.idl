@@ -2,6 +2,6 @@
 dictionary MLResample2dOptions {
   MLInterpolationMode mode = "nearest-neighbor";
   sequence<float> scales;
-  sequence<unsigned long> sizes;
-  sequence<unsigned long> axes;
+  sequence<[EnforceRange] unsigned long> sizes;
+  sequence<[EnforceRange] unsigned long> axes;
 };

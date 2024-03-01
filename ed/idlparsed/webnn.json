@@ -568,7 +568,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is empty for scalar operands,\n  // and non-empty for tensor operands.\n  sequence<unsigned long> dimensions = [];\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is empty for scalar operands,\n  // and non-empty for tensor operands.\n  sequence<[EnforceRange] unsigned long> dimensions = [];\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
@@ -602,7 +602,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1012,7 +1019,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
       },
       "MLArgMinMaxOptions": {
-        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
+        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
         "type": "dictionary",
         "name": "MLArgMinMaxOptions",
         "inheritance": null,
@@ -1030,7 +1037,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1086,7 +1100,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlargminmaxoptions"
       },
       "MLBatchNormalizationOptions": {
-        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  unsigned long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLBatchNormalizationOptions",
         "inheritance": null,
@@ -1126,7 +1140,14 @@
           {
             "type": "field",
             "name": "axis",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1255,7 +1276,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconv2dfilteroperandlayout"
       },
       "MLConv2dOptions": {
-        "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConv2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLConv2dOptions",
         "inheritance": null,
@@ -1273,7 +1294,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1298,7 +1326,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1323,7 +1358,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1338,7 +1380,14 @@
           {
             "type": "field",
             "name": "groups",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1454,7 +1503,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconvtranspose2dfilteroperandlayout"
       },
       "MLConvTranspose2dOptions": {
-        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  sequence<unsigned long> outputPadding;\n  sequence<unsigned long> outputSizes;\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  sequence<[EnforceRange] unsigned long> outputPadding;\n  sequence<[EnforceRange] unsigned long> outputSizes;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLConvTranspose2dOptions",
         "inheritance": null,
@@ -1472,7 +1521,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1497,7 +1553,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1522,7 +1585,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1547,7 +1617,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1572,7 +1649,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -1587,7 +1671,14 @@
           {
             "type": "field",
             "name": "groups",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1709,7 +1800,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mleluoptions"
       },
       "MLGatherOptions": {
-        "fragment": "dictionary MLGatherOptions {\n  unsigned long axis = 0;\n};",
+        "fragment": "dictionary MLGatherOptions {\n  [EnforceRange] unsigned long axis = 0;\n};",
         "type": "dictionary",
         "name": "MLGatherOptions",
         "inheritance": null,
@@ -1717,7 +1808,14 @@
           {
             "type": "field",
             "name": "axis",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2281,7 +2379,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlinstancenormalizationoptions"
       },
       "MLLayerNormalizationOptions": {
-        "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<unsigned long> axes;\n  float epsilon = 1e-5;\n};",
+        "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<[EnforceRange] unsigned long> axes;\n  float epsilon = 1e-5;\n};",
         "type": "dictionary",
         "name": "MLLayerNormalizationOptions",
         "inheritance": null,
@@ -2331,7 +2429,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -2839,7 +2944,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlroundingtype"
       },
       "MLPool2dOptions": {
-        "fragment": "dictionary MLPool2dOptions {\n  sequence<unsigned long> windowDimensions;\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<unsigned long> outputSizes;\n};",
+        "fragment": "dictionary MLPool2dOptions {\n  sequence<[EnforceRange] unsigned long> windowDimensions;\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<[EnforceRange] unsigned long> outputSizes;\n};",
         "type": "dictionary",
         "name": "MLPool2dOptions",
         "inheritance": null,
@@ -2857,7 +2962,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -2882,7 +2994,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -2907,7 +3026,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -2932,7 +3058,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -2995,7 +3128,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -3013,7 +3153,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
       },
       "MLReduceOptions": {
-        "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n};",
+        "fragment": "dictionary MLReduceOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
         "name": "MLReduceOptions",
         "inheritance": null,
@@ -3031,7 +3171,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -3087,7 +3234,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlinterpolationmode"
       },
       "MLResample2dOptions": {
-        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<unsigned long> axes;\n};",
+        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<[EnforceRange] unsigned long> sizes;\n  sequence<[EnforceRange] unsigned long> axes;\n};",
         "type": "dictionary",
         "name": "MLResample2dOptions",
         "inheritance": null,
@@ -3149,7 +3296,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -3174,7 +3328,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -3222,7 +3383,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsoftplusoptions"
       },
       "MLSplitOptions": {
-        "fragment": "dictionary MLSplitOptions {\n  unsigned long axis = 0;\n};",
+        "fragment": "dictionary MLSplitOptions {\n  [EnforceRange] unsigned long axis = 0;\n};",
         "type": "dictionary",
         "name": "MLSplitOptions",
         "inheritance": null,
@@ -3230,7 +3391,14 @@
           {
             "type": "field",
             "name": "axis",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3252,7 +3420,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsplitoptions"
       },
       "MLTransposeOptions": {
-        "fragment": "dictionary MLTransposeOptions {\n  sequence<unsigned long> permutation;\n};",
+        "fragment": "dictionary MLTransposeOptions {\n  sequence<[EnforceRange] unsigned long> permutation;\n};",
         "type": "dictionary",
         "name": "MLTransposeOptions",
         "inheritance": null,
@@ -3270,7 +3438,14 @@
               "idlType": [
                 {
                   "type": "dictionary-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": false,
                   "union": false,
@@ -3288,7 +3463,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltransposeoptions"
       },
       "MLTriangularOptions": {
-        "fragment": "dictionary MLTriangularOptions {\n  boolean upper = true;\n  long diagonal = 0;\n};",
+        "fragment": "dictionary MLTriangularOptions {\n  boolean upper = true;\n  [EnforceRange] long diagonal = 0;\n};",
         "type": "dictionary",
         "name": "MLTriangularOptions",
         "inheritance": null,
@@ -3315,7 +3490,14 @@
           {
             "type": "field",
             "name": "diagonal",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3718,7 +3900,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, unsigned long axis);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, [EnforceRange] unsigned long axis);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3763,7 +3945,14 @@
                 {
                   "type": "argument",
                   "name": "axis",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -5116,7 +5305,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<unsigned long> newShape);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5162,7 +5351,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -5338,7 +5534,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                          unsigned long steps, unsigned long hiddenSize,\n                          optional MLGruOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input,\n                          MLOperand weight,\n                          MLOperand recurrentWeight,\n                          [EnforceRange] unsigned long steps,\n                          [EnforceRange] unsigned long hiddenSize,\n                          optional MLGruOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5415,7 +5611,14 @@
                 {
                   "type": "argument",
                   "name": "steps",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -5431,7 +5634,14 @@
                 {
                   "type": "argument",
                   "name": "hiddenSize",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -5472,7 +5682,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                    MLOperand hiddenState, unsigned long hiddenSize,\n                    optional MLGruCellOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input,\n                    MLOperand weight,\n                    MLOperand recurrentWeight,\n                    MLOperand hiddenState,\n                    [EnforceRange] unsigned long hiddenSize,\n                    optional MLGruCellOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5556,7 +5766,14 @@
                 {
                   "type": "argument",
                   "name": "hiddenSize",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -6066,7 +6283,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstm(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                           unsigned long steps, unsigned long hiddenSize,\n                           optional MLLstmOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstm(MLOperand input,\n                           MLOperand weight,\n                           MLOperand recurrentWeight,\n                           [EnforceRange] unsigned long steps,\n                           [EnforceRange] unsigned long hiddenSize,\n                           optional MLLstmOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6143,7 +6360,14 @@
                 {
                   "type": "argument",
                   "name": "steps",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -6159,7 +6383,14 @@
                 {
                   "type": "argument",
                   "name": "hiddenSize",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -6200,7 +6431,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstmCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n                               MLOperand hiddenState, MLOperand cellState, unsigned long hiddenSize,\n                               optional MLLstmCellOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> lstmCell(MLOperand input,\n                               MLOperand weight,\n                               MLOperand recurrentWeight,\n                               MLOperand hiddenState,\n                               MLOperand cellState,\n                               [EnforceRange] unsigned long hiddenSize,\n                               optional MLLstmCellOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6309,7 +6540,14 @@
                 {
                   "type": "argument",
                   "name": "hiddenSize",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
@@ -6409,7 +6647,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<unsigned long> beginningPadding,\n                sequence<unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<[EnforceRange] unsigned long> beginningPadding,\n                sequence<[EnforceRange] unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6455,7 +6693,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -6480,7 +6725,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -7382,7 +7634,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<unsigned long> newShape);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7428,7 +7680,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -7509,7 +7768,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<unsigned long> starts, sequence<unsigned long> sizes);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7555,7 +7814,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -7580,7 +7846,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -7816,7 +8089,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          (unsigned long or sequence<unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7871,7 +8144,14 @@
                     "idlType": [
                       {
                         "type": "argument-type",
-                        "extAttrs": [],
+                        "extAttrs": [
+                          {
+                            "type": "extended-attribute",
+                            "name": "EnforceRange",
+                            "rhs": null,
+                            "arguments": []
+                          }
+                        ],
                         "generic": "",
                         "nullable": false,
                         "union": false,
@@ -7886,7 +8166,14 @@
                         "idlType": [
                           {
                             "type": "argument-type",
-                            "extAttrs": [],
+                            "extAttrs": [
+                              {
+                                "type": "extended-attribute",
+                                "name": "EnforceRange",
+                                "rhs": null,
+                                "arguments": []
+                              }
+                            ],
                             "generic": "",
                             "nullable": false,
                             "union": false,

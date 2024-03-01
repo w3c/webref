@@ -1,9 +1,9 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 dictionary MLConv2dOptions {
-  sequence<unsigned long> padding;
-  sequence<unsigned long> strides;
-  sequence<unsigned long> dilations;
-  unsigned long groups = 1;
+  sequence<[EnforceRange] unsigned long> padding;
+  sequence<[EnforceRange] unsigned long> strides;
+  sequence<[EnforceRange] unsigned long> dilations;
+  [EnforceRange] unsigned long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLConv2dFilterOperandLayout filterLayout = "oihw";
   MLOperand bias;
