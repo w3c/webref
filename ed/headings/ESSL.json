@@ -1,0 +1,1413 @@
+{
+  "spec": {
+    "title": "The OpenGL ES® Shading Language, Version 3.20.8",
+    "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html"
+  },
+  "headings": [
+    {
+      "id": "introduction",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "changes",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes",
+      "level": 3,
+      "title": "Changes",
+      "number": "1.1"
+    },
+    {
+      "id": "_changes_from_glsl_es_3_2_revision_7",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_changes_from_glsl_es_3_2_revision_7",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 7",
+      "number": "1.1.1"
+    },
+    {
+      "id": "_changes_from_glsl_es_3_2_revision_6",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_changes_from_glsl_es_3_2_revision_6",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 6",
+      "number": "1.1.2"
+    },
+    {
+      "id": "_changes_from_glsl_es_3_2_revision_5",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_changes_from_glsl_es_3_2_revision_5",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 5",
+      "number": "1.1.3"
+    },
+    {
+      "id": "changes-from-glsl-es-3.2-revision-4",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes-from-glsl-es-3.2-revision-4",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 4",
+      "number": "1.1.4"
+    },
+    {
+      "id": "changes-from-glsl-es-3.2-revision-3",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes-from-glsl-es-3.2-revision-3",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 3",
+      "number": "1.1.5"
+    },
+    {
+      "id": "changes-from-glsl-es-3.2-revision-2",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes-from-glsl-es-3.2-revision-2",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 2",
+      "number": "1.1.6"
+    },
+    {
+      "id": "changes-from-glsl-es-3.2-revision-1",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes-from-glsl-es-3.2-revision-1",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.2 revision 1",
+      "number": "1.1.7"
+    },
+    {
+      "id": "changes-from-glsl-es-3.1-revision-4",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#changes-from-glsl-es-3.1-revision-4",
+      "level": 4,
+      "title": "Changes from GLSL ES 3.1 revision 4",
+      "number": "1.1.8"
+    },
+    {
+      "id": "overview",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#error-handling",
+      "level": 3,
+      "title": "Error Handling",
+      "number": "1.3"
+    },
+    {
+      "id": "typographical-conventions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#typographical-conventions",
+      "level": 3,
+      "title": "Typographical Conventions",
+      "number": "1.4"
+    },
+    {
+      "id": "compatibility",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#compatibility",
+      "level": 3,
+      "title": "Compatibility",
+      "number": "1.5"
+    },
+    {
+      "id": "overview-of-opengl-shading",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#overview-of-opengl-shading",
+      "level": 2,
+      "title": "Overview of Shading",
+      "number": "2"
+    },
+    {
+      "id": "vertex-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vertex-processor",
+      "level": 3,
+      "title": "Vertex Processor",
+      "number": "2.1"
+    },
+    {
+      "id": "tessellation-control-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-control-processor",
+      "level": 3,
+      "title": "Tessellation Control Processor",
+      "number": "2.2"
+    },
+    {
+      "id": "tessellation-evaluation-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-evaluation-processor",
+      "level": 3,
+      "title": "Tessellation Evaluation Processor",
+      "number": "2.3"
+    },
+    {
+      "id": "geometry-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-processor",
+      "level": 3,
+      "title": "Geometry Processor",
+      "number": "2.4"
+    },
+    {
+      "id": "fragment-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#fragment-processor",
+      "level": 3,
+      "title": "Fragment Processor",
+      "number": "2.5"
+    },
+    {
+      "id": "compute-processor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#compute-processor",
+      "level": 3,
+      "title": "Compute Processor",
+      "number": "2.6"
+    },
+    {
+      "id": "basics",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#basics",
+      "level": 2,
+      "title": "Basics",
+      "number": "3"
+    },
+    {
+      "id": "character-set",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#character-set",
+      "level": 3,
+      "title": "Character Set",
+      "number": "3.1"
+    },
+    {
+      "id": "source-strings",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#source-strings",
+      "level": 3,
+      "title": "Source Strings",
+      "number": "3.2"
+    },
+    {
+      "id": "version-declaration",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#version-declaration",
+      "level": 3,
+      "title": "Version Declaration",
+      "number": "3.3"
+    },
+    {
+      "id": "preprocessor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#preprocessor",
+      "level": 3,
+      "title": "Preprocessor",
+      "number": "3.4"
+    },
+    {
+      "id": "comments",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "3.5"
+    },
+    {
+      "id": "tokens",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tokens",
+      "level": 3,
+      "title": "Tokens",
+      "number": "3.6"
+    },
+    {
+      "id": "keywords",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#keywords",
+      "level": 3,
+      "title": "Keywords",
+      "number": "3.7"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "3.8"
+    },
+    {
+      "id": "definitions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#definitions",
+      "level": 3,
+      "title": "Definitions",
+      "number": "3.9"
+    },
+    {
+      "id": "static-use",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#static-use",
+      "level": 4,
+      "title": "Static Use",
+      "number": "3.9.1"
+    },
+    {
+      "id": "dynamically-uniform-expressions-and-uniform-control-flow",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#dynamically-uniform-expressions-and-uniform-control-flow",
+      "level": 4,
+      "title": "Dynamically Uniform Expressions and Uniform Control Flow",
+      "number": "3.9.2"
+    },
+    {
+      "id": "logical-phases-of-compilation",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#logical-phases-of-compilation",
+      "level": 3,
+      "title": "Logical Phases of Compilation",
+      "number": "3.10"
+    },
+    {
+      "id": "variables-and-types",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#variables-and-types",
+      "level": 2,
+      "title": "Variables and Types",
+      "number": "4"
+    },
+    {
+      "id": "basic-types",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#basic-types",
+      "level": 3,
+      "title": "Basic Types",
+      "number": "4.1"
+    },
+    {
+      "id": "void",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#void",
+      "level": 4,
+      "title": "Void",
+      "number": "4.1.1"
+    },
+    {
+      "id": "booleans",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#booleans",
+      "level": 4,
+      "title": "Booleans",
+      "number": "4.1.2"
+    },
+    {
+      "id": "integers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#integers",
+      "level": 4,
+      "title": "Integers",
+      "number": "4.1.3"
+    },
+    {
+      "id": "floats",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#floats",
+      "level": 4,
+      "title": "Floats",
+      "number": "4.1.4"
+    },
+    {
+      "id": "vectors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vectors",
+      "level": 4,
+      "title": "Vectors",
+      "number": "4.1.5"
+    },
+    {
+      "id": "matrices",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#matrices",
+      "level": 4,
+      "title": "Matrices",
+      "number": "4.1.6"
+    },
+    {
+      "id": "opaque-types",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#opaque-types",
+      "level": 4,
+      "title": "Opaque Types",
+      "number": "4.1.7"
+    },
+    {
+      "id": "samplers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#samplers",
+      "level": 5,
+      "title": "Texture-Combined Samplers"
+    },
+    {
+      "id": "images",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#images",
+      "level": 5,
+      "title": "Images"
+    },
+    {
+      "id": "atomic-counters",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#atomic-counters",
+      "level": 5,
+      "title": "Atomic Counters"
+    },
+    {
+      "id": "_texture_sampler_and_samplershadow_types",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_texture_sampler_and_samplershadow_types",
+      "level": 5,
+      "title": "Texture, sampler, and samplerShadow Types"
+    },
+    {
+      "id": "_subpass_inputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_subpass_inputs",
+      "level": 5,
+      "title": "Subpass Inputs"
+    },
+    {
+      "id": "structures",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#structures",
+      "level": 4,
+      "title": "Structures",
+      "number": "4.1.8"
+    },
+    {
+      "id": "arrays",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#arrays",
+      "level": 4,
+      "title": "Arrays",
+      "number": "4.1.9"
+    },
+    {
+      "id": "scoping",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#scoping",
+      "level": 3,
+      "title": "Scoping",
+      "number": "4.2"
+    },
+    {
+      "id": "definition-of-terms",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#definition-of-terms",
+      "level": 4,
+      "title": "Definition of Terms",
+      "number": "4.2.1"
+    },
+    {
+      "id": "types-of-scope",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#types-of-scope",
+      "level": 4,
+      "title": "Types of Scope",
+      "number": "4.2.2"
+    },
+    {
+      "id": "redeclaring-names",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#redeclaring-names",
+      "level": 4,
+      "title": "Redeclaring Names",
+      "number": "4.2.3"
+    },
+    {
+      "id": "global-scope",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#global-scope",
+      "level": 4,
+      "title": "Global Scope",
+      "number": "4.2.4"
+    },
+    {
+      "id": "shared-globals",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shared-globals",
+      "level": 4,
+      "title": "Shared Globals",
+      "number": "4.2.5"
+    },
+    {
+      "id": "storage-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#storage-qualifiers",
+      "level": 3,
+      "title": "Storage Qualifiers",
+      "number": "4.3"
+    },
+    {
+      "id": "default-storage-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#default-storage-qualifier",
+      "level": 4,
+      "title": "Default Storage Qualifier",
+      "number": "4.3.1"
+    },
+    {
+      "id": "constant-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#constant-qualifier",
+      "level": 4,
+      "title": "Constant Qualifier",
+      "number": "4.3.2"
+    },
+    {
+      "id": "constant-expressions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#constant-expressions",
+      "level": 4,
+      "title": "Constant Expressions",
+      "number": "4.3.3"
+    },
+    {
+      "id": "input-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#input-variables",
+      "level": 4,
+      "title": "Input Variables",
+      "number": "4.3.4"
+    },
+    {
+      "id": "uniform-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#uniform-variables",
+      "level": 4,
+      "title": "Uniform Variables",
+      "number": "4.3.5"
+    },
+    {
+      "id": "output-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#output-variables",
+      "level": 4,
+      "title": "Output Variables",
+      "number": "4.3.6"
+    },
+    {
+      "id": "buffer-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#buffer-variables",
+      "level": 4,
+      "title": "Buffer Variables",
+      "number": "4.3.7"
+    },
+    {
+      "id": "shared-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shared-variables",
+      "level": 4,
+      "title": "Shared Variables",
+      "number": "4.3.8"
+    },
+    {
+      "id": "interface-blocks",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#interface-blocks",
+      "level": 4,
+      "title": "Interface Blocks",
+      "number": "4.3.9"
+    },
+    {
+      "id": "layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#layout-qualifiers",
+      "level": 3,
+      "title": "Layout Qualifiers",
+      "number": "4.4"
+    },
+    {
+      "id": "input-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#input-layout-qualifiers",
+      "level": 4,
+      "title": "Input Layout Qualifiers",
+      "number": "4.4.1"
+    },
+    {
+      "id": "tessellation-evaluation-inputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-evaluation-inputs",
+      "level": 5,
+      "title": "Tessellation Evaluation Inputs"
+    },
+    {
+      "id": "geometry-shader-inputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-shader-inputs",
+      "level": 5,
+      "title": "Geometry Shader Inputs"
+    },
+    {
+      "id": "fragment-shader-inputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#fragment-shader-inputs",
+      "level": 5,
+      "title": "Fragment Shader Inputs"
+    },
+    {
+      "id": "compute-shader-inputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#compute-shader-inputs",
+      "level": 5,
+      "title": "Compute Shader Inputs"
+    },
+    {
+      "id": "output-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#output-layout-qualifiers",
+      "level": 4,
+      "title": "Output Layout Qualifiers",
+      "number": "4.4.2"
+    },
+    {
+      "id": "tessellation-control-outputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-control-outputs",
+      "level": 5,
+      "title": "Tessellation Control Outputs"
+    },
+    {
+      "id": "geometry-outputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-outputs",
+      "level": 5,
+      "title": "Geometry Outputs"
+    },
+    {
+      "id": "fragment-outputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#fragment-outputs",
+      "level": 5,
+      "title": "Fragment Outputs"
+    },
+    {
+      "id": "uniform-variable-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#uniform-variable-layout-qualifiers",
+      "level": 4,
+      "title": "Uniform Variable Layout Qualifiers",
+      "number": "4.4.3"
+    },
+    {
+      "id": "uniform-and-shader-storage-block-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#uniform-and-shader-storage-block-layout-qualifiers",
+      "level": 4,
+      "title": "Uniform and Shader Storage Block Layout Qualifiers",
+      "number": "4.4.4"
+    },
+    {
+      "id": "opaque-uniform-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#opaque-uniform-layout-qualifiers",
+      "level": 4,
+      "title": "Opaque Uniform Layout Qualifiers",
+      "number": "4.4.5"
+    },
+    {
+      "id": "atomic-counter-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#atomic-counter-layout-qualifiers",
+      "level": 4,
+      "title": "Atomic Counter Layout Qualifiers",
+      "number": "4.4.6"
+    },
+    {
+      "id": "format-layout-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#format-layout-qualifiers",
+      "level": 4,
+      "title": "Format Layout Qualifiers",
+      "number": "4.4.7"
+    },
+    {
+      "id": "_subpass_input_qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_subpass_input_qualifier",
+      "level": 4,
+      "title": "Subpass Input Qualifier",
+      "number": "4.4.8"
+    },
+    {
+      "id": "interpolation-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#interpolation-qualifiers",
+      "level": 3,
+      "title": "Interpolation Qualifiers",
+      "number": "4.5"
+    },
+    {
+      "id": "parameter-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#parameter-qualifiers",
+      "level": 3,
+      "title": "Parameter Qualifiers",
+      "number": "4.6"
+    },
+    {
+      "id": "precision-and-precision-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#precision-and-precision-qualifiers",
+      "level": 3,
+      "title": "Precision and Precision Qualifiers",
+      "number": "4.7"
+    },
+    {
+      "id": "range-and-precision",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#range-and-precision",
+      "level": 4,
+      "title": "Range and Precision",
+      "number": "4.7.1"
+    },
+    {
+      "id": "conversion-between-precisions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#conversion-between-precisions",
+      "level": 4,
+      "title": "Conversion between precisions",
+      "number": "4.7.2"
+    },
+    {
+      "id": "precision-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#precision-qualifiers",
+      "level": 4,
+      "title": "Precision Qualifiers",
+      "number": "4.7.3"
+    },
+    {
+      "id": "default-precision-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#default-precision-qualifiers",
+      "level": 4,
+      "title": "Default Precision Qualifiers",
+      "number": "4.7.4"
+    },
+    {
+      "id": "available-precision-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#available-precision-qualifiers",
+      "level": 4,
+      "title": "Available Precision Qualifiers",
+      "number": "4.7.5"
+    },
+    {
+      "id": "variance-and-the-invariant-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#variance-and-the-invariant-qualifier",
+      "level": 3,
+      "title": "Variance and the Invariant Qualifier",
+      "number": "4.8"
+    },
+    {
+      "id": "the-invariant-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#the-invariant-qualifier",
+      "level": 4,
+      "title": "The Invariant Qualifier",
+      "number": "4.8.1"
+    },
+    {
+      "id": "invariance-within-a-shader",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#invariance-within-a-shader",
+      "level": 4,
+      "title": "Invariance Within a Shader",
+      "number": "4.8.2"
+    },
+    {
+      "id": "invariance-of-constant-expressions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#invariance-of-constant-expressions",
+      "level": 4,
+      "title": "Invariance of Constant Expressions",
+      "number": "4.8.3"
+    },
+    {
+      "id": "invariance-of-undefined-values",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#invariance-of-undefined-values",
+      "level": 4,
+      "title": "Invariance of Undefined Values",
+      "number": "4.8.4"
+    },
+    {
+      "id": "the-precise-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#the-precise-qualifier",
+      "level": 3,
+      "title": "The Precise Qualifier",
+      "number": "4.9"
+    },
+    {
+      "id": "memory-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#memory-qualifiers",
+      "level": 3,
+      "title": "Memory Qualifiers",
+      "number": "4.10"
+    },
+    {
+      "id": "specialization-constant-qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#specialization-constant-qualifier",
+      "level": 3,
+      "title": "Specialization-Constant Qualifier",
+      "number": "4.11"
+    },
+    {
+      "id": "order-of-qualification",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#order-of-qualification",
+      "level": 3,
+      "title": "Order and Repetition of Qualification",
+      "number": "4.12"
+    },
+    {
+      "id": "empty-declarations",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#empty-declarations",
+      "level": 3,
+      "title": "Empty Declarations",
+      "number": "4.13"
+    },
+    {
+      "id": "operators-and-expressions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#operators-and-expressions",
+      "level": 2,
+      "title": "Operators and Expressions",
+      "number": "5"
+    },
+    {
+      "id": "operators",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#operators",
+      "level": 3,
+      "title": "Operators",
+      "number": "5.1"
+    },
+    {
+      "id": "array-operations",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#array-operations",
+      "level": 3,
+      "title": "Array Operations",
+      "number": "5.2"
+    },
+    {
+      "id": "function-calls",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#function-calls",
+      "level": 3,
+      "title": "Function Calls",
+      "number": "5.3"
+    },
+    {
+      "id": "constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#constructors",
+      "level": 3,
+      "title": "Constructors",
+      "number": "5.4"
+    },
+    {
+      "id": "conversion-and-scalar-constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#conversion-and-scalar-constructors",
+      "level": 4,
+      "title": "Conversion and Scalar Constructors",
+      "number": "5.4.1"
+    },
+    {
+      "id": "vector-and-matrix-constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vector-and-matrix-constructors",
+      "level": 4,
+      "title": "Vector and Matrix Constructors",
+      "number": "5.4.2"
+    },
+    {
+      "id": "structure-constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#structure-constructors",
+      "level": 4,
+      "title": "Structure Constructors",
+      "number": "5.4.3"
+    },
+    {
+      "id": "array-constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#array-constructors",
+      "level": 4,
+      "title": "Array Constructors",
+      "number": "5.4.4"
+    },
+    {
+      "id": "_texture_combined_sampler_constructors",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_texture_combined_sampler_constructors",
+      "level": 4,
+      "title": "Texture-Combined Sampler Constructors",
+      "number": "5.4.5"
+    },
+    {
+      "id": "vector-components",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vector-components",
+      "level": 3,
+      "title": "Vector Components",
+      "number": "5.5"
+    },
+    {
+      "id": "matrix-components",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#matrix-components",
+      "level": 3,
+      "title": "Matrix Components",
+      "number": "5.6"
+    },
+    {
+      "id": "structure-and-array-operations",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#structure-and-array-operations",
+      "level": 3,
+      "title": "Structure and Array Operations",
+      "number": "5.7"
+    },
+    {
+      "id": "assignments",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#assignments",
+      "level": 3,
+      "title": "Assignments",
+      "number": "5.8"
+    },
+    {
+      "id": "expressions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#expressions",
+      "level": 3,
+      "title": "Expressions",
+      "number": "5.9"
+    },
+    {
+      "id": "vector-and-matrix-operations",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vector-and-matrix-operations",
+      "level": 3,
+      "title": "Vector and Matrix Operations",
+      "number": "5.10"
+    },
+    {
+      "id": "specialization-constant-operations",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#specialization-constant-operations",
+      "level": 3,
+      "title": "Specialization-Constant Operations",
+      "number": "5.11"
+    },
+    {
+      "id": "evaluation-of-expressions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#evaluation-of-expressions",
+      "level": 3,
+      "title": "Evaluation of Expressions",
+      "number": "5.12"
+    },
+    {
+      "id": "statements-and-structure",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#statements-and-structure",
+      "level": 2,
+      "title": "Statements and Structure",
+      "number": "6"
+    },
+    {
+      "id": "function-definitions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#function-definitions",
+      "level": 3,
+      "title": "Function Definitions",
+      "number": "6.1"
+    },
+    {
+      "id": "function-calling-conventions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#function-calling-conventions",
+      "level": 4,
+      "title": "Function Calling Conventions",
+      "number": "6.1.1"
+    },
+    {
+      "id": "selection",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#selection",
+      "level": 3,
+      "title": "Selection",
+      "number": "6.2"
+    },
+    {
+      "id": "iteration",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#iteration",
+      "level": 3,
+      "title": "Iteration",
+      "number": "6.3"
+    },
+    {
+      "id": "jumps",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#jumps",
+      "level": 3,
+      "title": "Jumps",
+      "number": "6.4"
+    },
+    {
+      "id": "built-in-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#built-in-variables",
+      "level": 2,
+      "title": "Built-In Variables",
+      "number": "7"
+    },
+    {
+      "id": "built-in-language-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#built-in-language-variables",
+      "level": 3,
+      "title": "Built-In Language Variables",
+      "number": "7.1"
+    },
+    {
+      "id": "vertex-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vertex-shader-special-variables",
+      "level": 4,
+      "title": "Vertex Shader Special Variables",
+      "number": "7.1.1"
+    },
+    {
+      "id": "tessellation-control-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-control-shader-special-variables",
+      "level": 4,
+      "title": "Tessellation Control Shader Special Variables",
+      "number": "7.1.2"
+    },
+    {
+      "id": "tessellation-control-input-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-control-input-variables",
+      "level": 5,
+      "title": "Tessellation Control Input Variables"
+    },
+    {
+      "id": "tessellation-control-output-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-control-output-variables",
+      "level": 5,
+      "title": "Tessellation Control Output Variables"
+    },
+    {
+      "id": "tessellation-evaluation-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-evaluation-shader-special-variables",
+      "level": 4,
+      "title": "Tessellation Evaluation Shader Special Variables",
+      "number": "7.1.3"
+    },
+    {
+      "id": "tessellation-evaluation-input-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-evaluation-input-variables",
+      "level": 5,
+      "title": "Tessellation Evaluation Input Variables"
+    },
+    {
+      "id": "tessellation-evaluation-output-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#tessellation-evaluation-output-variables",
+      "level": 5,
+      "title": "Tessellation Evaluation Output Variables"
+    },
+    {
+      "id": "geometry-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-shader-special-variables",
+      "level": 4,
+      "title": "Geometry Shader Special Variables",
+      "number": "7.1.4"
+    },
+    {
+      "id": "geometry-shader-input-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-shader-input-variables",
+      "level": 5,
+      "title": "Geometry Shader Input Variables"
+    },
+    {
+      "id": "geometry-shader-output-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-shader-output-variables",
+      "level": 5,
+      "title": "Geometry Shader Output Variables"
+    },
+    {
+      "id": "fragment-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#fragment-shader-special-variables",
+      "level": 4,
+      "title": "Fragment Shader Special Variables",
+      "number": "7.1.5"
+    },
+    {
+      "id": "compute-shader-special-variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#compute-shader-special-variables",
+      "level": 4,
+      "title": "Compute Shader Special Variables",
+      "number": "7.1.6"
+    },
+    {
+      "id": "built-in-constants",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#built-in-constants",
+      "level": 3,
+      "title": "Built-In Constants",
+      "number": "7.2"
+    },
+    {
+      "id": "built-in-uniform-state",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#built-in-uniform-state",
+      "level": 3,
+      "title": "Built-In Uniform State",
+      "number": "7.3"
+    },
+    {
+      "id": "redeclaring-built-in-blocks",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#redeclaring-built-in-blocks",
+      "level": 3,
+      "title": "Redeclaring Built-In Blocks",
+      "number": "7.4"
+    },
+    {
+      "id": "built-in-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#built-in-functions",
+      "level": 2,
+      "title": "Built-In Functions",
+      "number": "8"
+    },
+    {
+      "id": "angle-and-trigonometry-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#angle-and-trigonometry-functions",
+      "level": 3,
+      "title": "Angle and Trigonometry Functions",
+      "number": "8.1"
+    },
+    {
+      "id": "exponential-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#exponential-functions",
+      "level": 3,
+      "title": "Exponential Functions",
+      "number": "8.2"
+    },
+    {
+      "id": "common-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#common-functions",
+      "level": 3,
+      "title": "Common Functions",
+      "number": "8.3"
+    },
+    {
+      "id": "floating-point-pack-and-unpack-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#floating-point-pack-and-unpack-functions",
+      "level": 3,
+      "title": "Floating-Point Pack and Unpack Functions",
+      "number": "8.4"
+    },
+    {
+      "id": "geometric-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometric-functions",
+      "level": 3,
+      "title": "Geometric Functions",
+      "number": "8.5"
+    },
+    {
+      "id": "refraction-equation",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#refraction-equation",
+      "level": 4,
+      "title": "Refraction Equation",
+      "number": "8.5.1"
+    },
+    {
+      "id": "matrix-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#matrix-functions",
+      "level": 3,
+      "title": "Matrix Functions",
+      "number": "8.6"
+    },
+    {
+      "id": "vector-relational-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#vector-relational-functions",
+      "level": 3,
+      "title": "Vector Relational Functions",
+      "number": "8.7"
+    },
+    {
+      "id": "integer-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#integer-functions",
+      "level": 3,
+      "title": "Integer Functions",
+      "number": "8.8"
+    },
+    {
+      "id": "texture-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#texture-functions",
+      "level": 3,
+      "title": "Texture Functions",
+      "number": "8.9"
+    },
+    {
+      "id": "texture-query-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#texture-query-functions",
+      "level": 4,
+      "title": "Texture Query Functions",
+      "number": "8.9.1"
+    },
+    {
+      "id": "texel-lookup-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#texel-lookup-functions",
+      "level": 4,
+      "title": "Texel Lookup Functions",
+      "number": "8.9.2"
+    },
+    {
+      "id": "explicit-gradients",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#explicit-gradients",
+      "level": 4,
+      "title": "Explicit Gradients",
+      "number": "8.9.3"
+    },
+    {
+      "id": "texture-gather-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#texture-gather-functions",
+      "level": 4,
+      "title": "Texture Gather Functions",
+      "number": "8.9.4"
+    },
+    {
+      "id": "atomic-counter-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#atomic-counter-functions",
+      "level": 3,
+      "title": "Atomic Counter Functions",
+      "number": "8.10"
+    },
+    {
+      "id": "atomic-memory-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#atomic-memory-functions",
+      "level": 3,
+      "title": "Atomic Memory Functions",
+      "number": "8.11"
+    },
+    {
+      "id": "image-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#image-functions",
+      "level": 3,
+      "title": "Image Functions",
+      "number": "8.12"
+    },
+    {
+      "id": "geometry-shader-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#geometry-shader-functions",
+      "level": 3,
+      "title": "Geometry Shader Functions",
+      "number": "8.13"
+    },
+    {
+      "id": "fragment-processing-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#fragment-processing-functions",
+      "level": 3,
+      "title": "Fragment Processing Functions",
+      "number": "8.14"
+    },
+    {
+      "id": "derivative-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#derivative-functions",
+      "level": 4,
+      "title": "Derivative Functions",
+      "number": "8.14.1"
+    },
+    {
+      "id": "interpolation-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#interpolation-functions",
+      "level": 4,
+      "title": "Interpolation Functions",
+      "number": "8.14.2"
+    },
+    {
+      "id": "shader-invocation-control-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shader-invocation-control-functions",
+      "level": 3,
+      "title": "Shader Invocation Control Functions",
+      "number": "8.15"
+    },
+    {
+      "id": "shader-memory-control-functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shader-memory-control-functions",
+      "level": 3,
+      "title": "Shader Memory Control Functions",
+      "number": "8.16"
+    },
+    {
+      "id": "_subpass_input_functions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_subpass_input_functions",
+      "level": 3,
+      "title": "Subpass-Input Functions",
+      "number": "8.17"
+    },
+    {
+      "id": "shader-interface-matching",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shader-interface-matching",
+      "level": 2,
+      "title": "Shader Interface Matching",
+      "number": "9"
+    },
+    {
+      "id": "input-output-matching-by-name-in-linked-programs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#input-output-matching-by-name-in-linked-programs",
+      "level": 3,
+      "title": "Input Output Matching by Name in Linked Programs",
+      "number": "9.1"
+    },
+    {
+      "id": "matching-of-qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#matching-of-qualifiers",
+      "level": 3,
+      "title": "Matching of Qualifiers",
+      "number": "9.2"
+    },
+    {
+      "id": "linked-shaders",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#linked-shaders",
+      "level": 4,
+      "title": "Linked Shaders",
+      "number": "9.2.1"
+    },
+    {
+      "id": "separable-programs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#separable-programs",
+      "level": 4,
+      "title": "Separable Programs",
+      "number": "9.2.2"
+    },
+    {
+      "id": "shading-language-grammar",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#shading-language-grammar",
+      "level": 2,
+      "title": "10. Shading Language Grammar"
+    },
+    {
+      "id": "counting-of-inputs-and-outputs",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#counting-of-inputs-and-outputs",
+      "level": 2,
+      "title": "11. Counting of Inputs and Outputs"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#acknowledgments",
+      "level": 2,
+      "title": "12. Acknowledgments"
+    },
+    {
+      "id": "references",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#references",
+      "level": 2,
+      "title": "13. Normative References"
+    },
+    {
+      "id": "_non_normative_spir_v_mappings",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_non_normative_spir_v_mappings",
+      "level": 2,
+      "title": "14. Non-Normative SPIR-V Mappings"
+    },
+    {
+      "id": "_feature_comparisons",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_feature_comparisons",
+      "level": 3,
+      "title": "Feature Comparisons",
+      "number": "14.1"
+    },
+    {
+      "id": "_mapping_from_glsl_to_spir_v",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_from_glsl_to_spir_v",
+      "level": 3,
+      "title": "Mapping from GLSL to SPIR-V",
+      "number": "14.2"
+    },
+    {
+      "id": "_specialization_constants",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_specialization_constants",
+      "level": 4,
+      "title": "Specialization Constants",
+      "number": "14.2.1"
+    },
+    {
+      "id": "_vulkan_only_push_constants",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_vulkan_only_push_constants",
+      "level": 4,
+      "title": "Vulkan Only: Push Constants",
+      "number": "14.2.2"
+    },
+    {
+      "id": "_vulkan_only_descriptor_sets",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_vulkan_only_descriptor_sets",
+      "level": 4,
+      "title": "Vulkan Only: Descriptor Sets",
+      "number": "14.2.3"
+    },
+    {
+      "id": "_vulkan_only_samplers_images_textures_and_buffers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_vulkan_only_samplers_images_textures_and_buffers",
+      "level": 4,
+      "title": "Vulkan Only: Samplers, Images, Textures, and Buffers",
+      "number": "14.2.4"
+    },
+    {
+      "id": "_storage_images",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_storage_images",
+      "level": 5,
+      "title": "Storage Images"
+    },
+    {
+      "id": "_samplers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_samplers",
+      "level": 5,
+      "title": "Samplers"
+    },
+    {
+      "id": "_textures_sampled_images",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_textures_sampled_images",
+      "level": 5,
+      "title": "Textures (Sampled Images)"
+    },
+    {
+      "id": "_combined_texture_and_samplers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_combined_texture_and_samplers",
+      "level": 5,
+      "title": "Combined Texture and Samplers"
+    },
+    {
+      "id": "_combining_separate_samplers_and_textures",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_combining_separate_samplers_and_textures",
+      "level": 5,
+      "title": "Combining Separate Samplers and Textures"
+    },
+    {
+      "id": "_texture_buffers_uniform_texel_buffers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_texture_buffers_uniform_texel_buffers",
+      "level": 5,
+      "title": "Texture Buffers (Uniform Texel Buffers)"
+    },
+    {
+      "id": "_image_buffers_storage_texel_buffers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_image_buffers_storage_texel_buffers",
+      "level": 5,
+      "title": "Image Buffers (Storage Texel Buffers)"
+    },
+    {
+      "id": "_storage_buffers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_storage_buffers",
+      "level": 5,
+      "title": "Storage Buffers"
+    },
+    {
+      "id": "_uniform_buffers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_uniform_buffers",
+      "level": 5,
+      "title": "Uniform Buffers"
+    },
+    {
+      "id": "_subpass_inputs_2",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_subpass_inputs_2",
+      "level": 5,
+      "title": "Subpass Inputs"
+    },
+    {
+      "id": "_mapping_variables",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_variables",
+      "level": 4,
+      "title": "Mapping Variables",
+      "number": "14.2.5"
+    },
+    {
+      "id": "_gl_fragcolor",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_gl_fragcolor",
+      "level": 5,
+      "title": "gl_FragColor"
+    },
+    {
+      "id": "_vulkan_gl_vertexindex_and_gl_instanceindex",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_vulkan_gl_vertexindex_and_gl_instanceindex",
+      "level": 5,
+      "title": "Vulkan gl_VertexIndex and gl_InstanceIndex"
+    },
+    {
+      "id": "_storage_classes",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_storage_classes",
+      "level": 5,
+      "title": "Storage Classes:"
+    },
+    {
+      "id": "_inputoutput",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_inputoutput",
+      "level": 5,
+      "title": "Input/Output"
+    },
+    {
+      "id": "_vulkan_only_mapping_of_precision_qualifiers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_vulkan_only_mapping_of_precision_qualifiers",
+      "level": 4,
+      "title": "Vulkan Only: Mapping of Precision Qualifiers",
+      "number": "14.2.6"
+    },
+    {
+      "id": "_mapping_of_precise",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_precise",
+      "level": 4,
+      "title": "Mapping of precise:",
+      "number": "14.2.7"
+    },
+    {
+      "id": "_opengl_mapping_of_atomic_uint_offset_layout_qualifier",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_opengl_mapping_of_atomic_uint_offset_layout_qualifier",
+      "level": 4,
+      "title": "OpenGL Mapping of atomic_uint offset layout qualifier",
+      "number": "14.2.8"
+    },
+    {
+      "id": "_mapping_of_images",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_images",
+      "level": 4,
+      "title": "Mapping of Images",
+      "number": "14.2.9"
+    },
+    {
+      "id": "_mapping_of_layouts",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_layouts",
+      "level": 4,
+      "title": "Mapping of Layouts",
+      "number": "14.2.10"
+    },
+    {
+      "id": "_mapping_of_barriers",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_barriers",
+      "level": 4,
+      "title": "Mapping of barriers",
+      "number": "14.2.11"
+    },
+    {
+      "id": "_mapping_of_atomics",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_atomics",
+      "level": 4,
+      "title": "Mapping of atomics",
+      "number": "14.2.12"
+    },
+    {
+      "id": "_opengl_only_mapping_of_atomics",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_opengl_only_mapping_of_atomics",
+      "level": 4,
+      "title": "OpenGL Only: Mapping of Atomics",
+      "number": "14.2.13"
+    },
+    {
+      "id": "_mapping_of_other_instructions",
+      "href": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#_mapping_of_other_instructions",
+      "level": 4,
+      "title": "Mapping of other instructions",
+      "number": "14.2.14"
+    }
+  ]
+}

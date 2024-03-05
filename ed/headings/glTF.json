@@ -1,0 +1,2535 @@
+{
+  "spec": {
+    "title": "glTF™ 2.0 Specification",
+    "url": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html"
+  },
+  "headings": [
+    {
+      "id": "foreword",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#foreword",
+      "level": 2,
+      "title": "Foreword",
+      "number": "1"
+    },
+    {
+      "id": "introduction",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "2"
+    },
+    {
+      "id": "introduction-general",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-general",
+      "level": 3,
+      "title": "General",
+      "number": "2.1"
+    },
+    {
+      "id": "introduction-conventions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "number": "2.2"
+    },
+    {
+      "id": "introduction-normative-terminology",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-normative-terminology",
+      "level": 4,
+      "title": "Normative Terminology and References",
+      "number": "2.2.1"
+    },
+    {
+      "id": "introduction-informative-language",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-informative-language",
+      "level": 4,
+      "title": "Informative Language",
+      "number": "2.2.2"
+    },
+    {
+      "id": "introduction-technical-terminology",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-technical-terminology",
+      "level": 4,
+      "title": "Technical Terminology",
+      "number": "2.2.3"
+    },
+    {
+      "id": "introduction-normative-references",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#introduction-normative-references",
+      "level": 4,
+      "title": "Normative References",
+      "number": "2.2.4"
+    },
+    {
+      "id": "_external_specifications",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_external_specifications",
+      "level": 5,
+      "title": "External Specifications",
+      "number": "2.2.4.1"
+    },
+    {
+      "id": "_media_type_registrations",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_media_type_registrations",
+      "level": 5,
+      "title": "Media Type Registrations",
+      "number": "2.2.4.2"
+    },
+    {
+      "id": "motivation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#motivation",
+      "level": 3,
+      "title": "Motivation and Design Goals (Informative)",
+      "number": "2.3"
+    },
+    {
+      "id": "gltf-basics",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#gltf-basics",
+      "level": 3,
+      "title": "glTF Basics",
+      "number": "2.4"
+    },
+    {
+      "id": "versioning",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#versioning",
+      "level": 3,
+      "title": "Versioning",
+      "number": "2.5"
+    },
+    {
+      "id": "file-extensions-and-media-types",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#file-extensions-and-media-types",
+      "level": 3,
+      "title": "File Extensions and Media Types",
+      "number": "2.6"
+    },
+    {
+      "id": "json-encoding",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#json-encoding",
+      "level": 3,
+      "title": "JSON Encoding",
+      "number": "2.7"
+    },
+    {
+      "id": "uris",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#uris",
+      "level": 3,
+      "title": "URIs",
+      "number": "2.8"
+    },
+    {
+      "id": "concepts",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "3"
+    },
+    {
+      "id": "concepts-general",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#concepts-general",
+      "level": 3,
+      "title": "General",
+      "number": "3.1"
+    },
+    {
+      "id": "asset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#asset",
+      "level": 3,
+      "title": "Asset",
+      "number": "3.2"
+    },
+    {
+      "id": "indices-and-names",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#indices-and-names",
+      "level": 3,
+      "title": "Indices and Names",
+      "number": "3.3"
+    },
+    {
+      "id": "coordinate-system-and-units",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#coordinate-system-and-units",
+      "level": 3,
+      "title": "Coordinate System and Units",
+      "number": "3.4"
+    },
+    {
+      "id": "scenes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#scenes",
+      "level": 3,
+      "title": "Scenes",
+      "number": "3.5"
+    },
+    {
+      "id": "scenes-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#scenes-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.5.1"
+    },
+    {
+      "id": "nodes-and-hierarchy",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#nodes-and-hierarchy",
+      "level": 4,
+      "title": "Nodes and Hierarchy",
+      "number": "3.5.2"
+    },
+    {
+      "id": "transformations",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#transformations",
+      "level": 4,
+      "title": "Transformations",
+      "number": "3.5.3"
+    },
+    {
+      "id": "binary-data-storage",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#binary-data-storage",
+      "level": 3,
+      "title": "Binary Data Storage",
+      "number": "3.6"
+    },
+    {
+      "id": "buffers-and-buffer-views",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#buffers-and-buffer-views",
+      "level": 4,
+      "title": "Buffers and Buffer Views",
+      "number": "3.6.1"
+    },
+    {
+      "id": "buffers-and-buffer-views-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#buffers-and-buffer-views-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.6.1.1"
+    },
+    {
+      "id": "glb-stored-buffer",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#glb-stored-buffer",
+      "level": 5,
+      "title": "GLB-stored Buffer",
+      "number": "3.6.1.2"
+    },
+    {
+      "id": "accessors",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#accessors",
+      "level": 4,
+      "title": "Accessors",
+      "number": "3.6.2"
+    },
+    {
+      "id": "accessors-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#accessors-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.6.2.1"
+    },
+    {
+      "id": "accessor-data-types",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#accessor-data-types",
+      "level": 5,
+      "title": "Accessor Data Types",
+      "number": "3.6.2.2"
+    },
+    {
+      "id": "sparse-accessors",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#sparse-accessors",
+      "level": 5,
+      "title": "Sparse Accessors",
+      "number": "3.6.2.3"
+    },
+    {
+      "id": "data-alignment",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#data-alignment",
+      "level": 5,
+      "title": "Data Alignment",
+      "number": "3.6.2.4"
+    },
+    {
+      "id": "accessors-bounds",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#accessors-bounds",
+      "level": 5,
+      "title": "Accessors Bounds",
+      "number": "3.6.2.5"
+    },
+    {
+      "id": "geometry",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#geometry",
+      "level": 3,
+      "title": "Geometry",
+      "number": "3.7"
+    },
+    {
+      "id": "geometry-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#geometry-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.7.1"
+    },
+    {
+      "id": "meshes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#meshes",
+      "level": 4,
+      "title": "Meshes",
+      "number": "3.7.2"
+    },
+    {
+      "id": "meshes-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#meshes-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.7.2.1"
+    },
+    {
+      "id": "morph-targets",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#morph-targets",
+      "level": 5,
+      "title": "Morph Targets",
+      "number": "3.7.2.2"
+    },
+    {
+      "id": "skins",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#skins",
+      "level": 4,
+      "title": "Skins",
+      "number": "3.7.3"
+    },
+    {
+      "id": "skins-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#skins-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.7.3.1"
+    },
+    {
+      "id": "joint-hierarchy",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#joint-hierarchy",
+      "level": 5,
+      "title": "Joint Hierarchy",
+      "number": "3.7.3.2"
+    },
+    {
+      "id": "skinned-mesh-attributes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#skinned-mesh-attributes",
+      "level": 5,
+      "title": "Skinned Mesh Attributes",
+      "number": "3.7.3.3"
+    },
+    {
+      "id": "instantiation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#instantiation",
+      "level": 4,
+      "title": "Instantiation",
+      "number": "3.7.4"
+    },
+    {
+      "id": "texture-data",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#texture-data",
+      "level": 3,
+      "title": "Texture Data",
+      "number": "3.8"
+    },
+    {
+      "id": "texture-data-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#texture-data-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.8.1"
+    },
+    {
+      "id": "textures",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#textures",
+      "level": 4,
+      "title": "Textures",
+      "number": "3.8.2"
+    },
+    {
+      "id": "images",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#images",
+      "level": 4,
+      "title": "Images",
+      "number": "3.8.3"
+    },
+    {
+      "id": "samplers",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#samplers",
+      "level": 4,
+      "title": "Samplers",
+      "number": "3.8.4"
+    },
+    {
+      "id": "_overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.8.4.1"
+    },
+    {
+      "id": "_filtering",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_filtering",
+      "level": 5,
+      "title": "Filtering",
+      "number": "3.8.4.2"
+    },
+    {
+      "id": "_wrapping",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_wrapping",
+      "level": 5,
+      "title": "Wrapping",
+      "number": "3.8.4.3"
+    },
+    {
+      "id": "_example",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_example",
+      "level": 5,
+      "title": "Example",
+      "number": "3.8.4.4"
+    },
+    {
+      "id": "_non_power_of_two_textures",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_non_power_of_two_textures",
+      "level": 5,
+      "title": "Non-power-of-two Textures",
+      "number": "3.8.4.5"
+    },
+    {
+      "id": "materials",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#materials",
+      "level": 3,
+      "title": "Materials",
+      "number": "3.9"
+    },
+    {
+      "id": "materials-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#materials-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.9.1"
+    },
+    {
+      "id": "metallic-roughness-material",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#metallic-roughness-material",
+      "level": 4,
+      "title": "Metallic-Roughness Material",
+      "number": "3.9.2"
+    },
+    {
+      "id": "additional-textures",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#additional-textures",
+      "level": 4,
+      "title": "Additional Textures",
+      "number": "3.9.3"
+    },
+    {
+      "id": "alpha-coverage",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#alpha-coverage",
+      "level": 4,
+      "title": "Alpha Coverage",
+      "number": "3.9.4"
+    },
+    {
+      "id": "double-sided",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#double-sided",
+      "level": 4,
+      "title": "Double Sided",
+      "number": "3.9.5"
+    },
+    {
+      "id": "default-material",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#default-material",
+      "level": 4,
+      "title": "Default Material",
+      "number": "3.9.6"
+    },
+    {
+      "id": "point-and-line-materials",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#point-and-line-materials",
+      "level": 4,
+      "title": "Point and Line Materials",
+      "number": "3.9.7"
+    },
+    {
+      "id": "cameras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#cameras",
+      "level": 3,
+      "title": "Cameras",
+      "number": "3.10"
+    },
+    {
+      "id": "cameras-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#cameras-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.10.1"
+    },
+    {
+      "id": "view-matrix",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#view-matrix",
+      "level": 4,
+      "title": "View Matrix",
+      "number": "3.10.2"
+    },
+    {
+      "id": "projection-matrices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#projection-matrices",
+      "level": 4,
+      "title": "Projection Matrices",
+      "number": "3.10.3"
+    },
+    {
+      "id": "projection-matrices-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#projection-matrices-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "3.10.3.1"
+    },
+    {
+      "id": "infinite-perspective-projection",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#infinite-perspective-projection",
+      "level": 5,
+      "title": "Infinite perspective projection",
+      "number": "3.10.3.2"
+    },
+    {
+      "id": "finite-perspective-projection",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#finite-perspective-projection",
+      "level": 5,
+      "title": "Finite perspective projection",
+      "number": "3.10.3.3"
+    },
+    {
+      "id": "orthographic-projection",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#orthographic-projection",
+      "level": 5,
+      "title": "Orthographic projection",
+      "number": "3.10.3.4"
+    },
+    {
+      "id": "animations",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#animations",
+      "level": 3,
+      "title": "Animations",
+      "number": "3.11"
+    },
+    {
+      "id": "specifying-extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#specifying-extensions",
+      "level": 3,
+      "title": "Specifying Extensions",
+      "number": "3.12"
+    },
+    {
+      "id": "glb-file-format-specification",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#glb-file-format-specification",
+      "level": 2,
+      "title": "GLB File Format Specification",
+      "number": "4"
+    },
+    {
+      "id": "glb-file-format-specification-general",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#glb-file-format-specification-general",
+      "level": 3,
+      "title": "General (Informative)",
+      "number": "4.1"
+    },
+    {
+      "id": "glb-file-format-specification-structure",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#glb-file-format-specification-structure",
+      "level": 3,
+      "title": "Structure",
+      "number": "4.2"
+    },
+    {
+      "id": "glb-file-format-specification-file-extension",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#glb-file-format-specification-file-extension",
+      "level": 3,
+      "title": "File Extension & Media Type",
+      "number": "4.3"
+    },
+    {
+      "id": "binary-gltf-layout",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#binary-gltf-layout",
+      "level": 3,
+      "title": "Binary glTF Layout",
+      "number": "4.4"
+    },
+    {
+      "id": "binary-gltf-layout-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#binary-gltf-layout-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "4.4.1"
+    },
+    {
+      "id": "binary-header",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#binary-header",
+      "level": 4,
+      "title": "Header",
+      "number": "4.4.2"
+    },
+    {
+      "id": "chunks",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#chunks",
+      "level": 4,
+      "title": "Chunks",
+      "number": "4.4.3"
+    },
+    {
+      "id": "chunks-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#chunks-overview",
+      "level": 5,
+      "title": "Overview",
+      "number": "4.4.3.1"
+    },
+    {
+      "id": "structured-json-content",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#structured-json-content",
+      "level": 5,
+      "title": "Structured JSON Content",
+      "number": "4.4.3.2"
+    },
+    {
+      "id": "binary-buffer",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#binary-buffer",
+      "level": 5,
+      "title": "Binary buffer",
+      "number": "4.4.3.3"
+    },
+    {
+      "id": "properties-reference",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#properties-reference",
+      "level": 2,
+      "title": "Properties Reference",
+      "number": "5"
+    },
+    {
+      "id": "reference-accessor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-accessor",
+      "level": 3,
+      "title": "Accessor",
+      "number": "5.1"
+    },
+    {
+      "id": "_accessor_bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_bufferview",
+      "level": 4,
+      "title": "accessor.bufferView",
+      "number": "5.1.1"
+    },
+    {
+      "id": "_accessor_byteoffset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_byteoffset",
+      "level": 4,
+      "title": "accessor.byteOffset",
+      "number": "5.1.2"
+    },
+    {
+      "id": "_accessor_componenttype",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_componenttype",
+      "level": 4,
+      "title": "accessor.componentType",
+      "number": "5.1.3"
+    },
+    {
+      "id": "_accessor_normalized",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_normalized",
+      "level": 4,
+      "title": "accessor.normalized",
+      "number": "5.1.4"
+    },
+    {
+      "id": "_accessor_count",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_count",
+      "level": 4,
+      "title": "accessor.count",
+      "number": "5.1.5"
+    },
+    {
+      "id": "_accessor_type",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_type",
+      "level": 4,
+      "title": "accessor.type",
+      "number": "5.1.6"
+    },
+    {
+      "id": "_accessor_max",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_max",
+      "level": 4,
+      "title": "accessor.max",
+      "number": "5.1.7"
+    },
+    {
+      "id": "_accessor_min",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_min",
+      "level": 4,
+      "title": "accessor.min",
+      "number": "5.1.8"
+    },
+    {
+      "id": "_accessor_sparse",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse",
+      "level": 4,
+      "title": "accessor.sparse",
+      "number": "5.1.9"
+    },
+    {
+      "id": "_accessor_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_name",
+      "level": 4,
+      "title": "accessor.name",
+      "number": "5.1.10"
+    },
+    {
+      "id": "_accessor_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_extensions",
+      "level": 4,
+      "title": "accessor.extensions",
+      "number": "5.1.11"
+    },
+    {
+      "id": "_accessor_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_extras",
+      "level": 4,
+      "title": "accessor.extras",
+      "number": "5.1.12"
+    },
+    {
+      "id": "reference-accessor-sparse",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-accessor-sparse",
+      "level": 3,
+      "title": "Accessor Sparse",
+      "number": "5.2"
+    },
+    {
+      "id": "_accessor_sparse_count",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_count",
+      "level": 4,
+      "title": "accessor.sparse.count",
+      "number": "5.2.1"
+    },
+    {
+      "id": "_accessor_sparse_indices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices",
+      "level": 4,
+      "title": "accessor.sparse.indices",
+      "number": "5.2.2"
+    },
+    {
+      "id": "_accessor_sparse_values",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_values",
+      "level": 4,
+      "title": "accessor.sparse.values",
+      "number": "5.2.3"
+    },
+    {
+      "id": "_accessor_sparse_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_extensions",
+      "level": 4,
+      "title": "accessor.sparse.extensions",
+      "number": "5.2.4"
+    },
+    {
+      "id": "_accessor_sparse_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_extras",
+      "level": 4,
+      "title": "accessor.sparse.extras",
+      "number": "5.2.5"
+    },
+    {
+      "id": "reference-accessor-sparse-indices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-accessor-sparse-indices",
+      "level": 3,
+      "title": "Accessor Sparse Indices",
+      "number": "5.3"
+    },
+    {
+      "id": "_accessor_sparse_indices_bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices_bufferview",
+      "level": 4,
+      "title": "accessor.sparse.indices.bufferView",
+      "number": "5.3.1"
+    },
+    {
+      "id": "_accessor_sparse_indices_byteoffset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices_byteoffset",
+      "level": 4,
+      "title": "accessor.sparse.indices.byteOffset",
+      "number": "5.3.2"
+    },
+    {
+      "id": "_accessor_sparse_indices_componenttype",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices_componenttype",
+      "level": 4,
+      "title": "accessor.sparse.indices.componentType",
+      "number": "5.3.3"
+    },
+    {
+      "id": "_accessor_sparse_indices_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices_extensions",
+      "level": 4,
+      "title": "accessor.sparse.indices.extensions",
+      "number": "5.3.4"
+    },
+    {
+      "id": "_accessor_sparse_indices_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_indices_extras",
+      "level": 4,
+      "title": "accessor.sparse.indices.extras",
+      "number": "5.3.5"
+    },
+    {
+      "id": "reference-accessor-sparse-values",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-accessor-sparse-values",
+      "level": 3,
+      "title": "Accessor Sparse Values",
+      "number": "5.4"
+    },
+    {
+      "id": "_accessor_sparse_values_bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_values_bufferview",
+      "level": 4,
+      "title": "accessor.sparse.values.bufferView",
+      "number": "5.4.1"
+    },
+    {
+      "id": "_accessor_sparse_values_byteoffset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_values_byteoffset",
+      "level": 4,
+      "title": "accessor.sparse.values.byteOffset",
+      "number": "5.4.2"
+    },
+    {
+      "id": "_accessor_sparse_values_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_values_extensions",
+      "level": 4,
+      "title": "accessor.sparse.values.extensions",
+      "number": "5.4.3"
+    },
+    {
+      "id": "_accessor_sparse_values_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_accessor_sparse_values_extras",
+      "level": 4,
+      "title": "accessor.sparse.values.extras",
+      "number": "5.4.4"
+    },
+    {
+      "id": "reference-animation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-animation",
+      "level": 3,
+      "title": "Animation",
+      "number": "5.5"
+    },
+    {
+      "id": "_animation_channels",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channels",
+      "level": 4,
+      "title": "animation.channels",
+      "number": "5.5.1"
+    },
+    {
+      "id": "_animation_samplers",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_samplers",
+      "level": 4,
+      "title": "animation.samplers",
+      "number": "5.5.2"
+    },
+    {
+      "id": "_animation_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_name",
+      "level": 4,
+      "title": "animation.name",
+      "number": "5.5.3"
+    },
+    {
+      "id": "_animation_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_extensions",
+      "level": 4,
+      "title": "animation.extensions",
+      "number": "5.5.4"
+    },
+    {
+      "id": "_animation_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_extras",
+      "level": 4,
+      "title": "animation.extras",
+      "number": "5.5.5"
+    },
+    {
+      "id": "reference-animation-channel",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-animation-channel",
+      "level": 3,
+      "title": "Animation Channel",
+      "number": "5.6"
+    },
+    {
+      "id": "_animation_channel_sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_sampler",
+      "level": 4,
+      "title": "animation.channel.sampler",
+      "number": "5.6.1"
+    },
+    {
+      "id": "_animation_channel_target",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_target",
+      "level": 4,
+      "title": "animation.channel.target",
+      "number": "5.6.2"
+    },
+    {
+      "id": "_animation_channel_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_extensions",
+      "level": 4,
+      "title": "animation.channel.extensions",
+      "number": "5.6.3"
+    },
+    {
+      "id": "_animation_channel_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_extras",
+      "level": 4,
+      "title": "animation.channel.extras",
+      "number": "5.6.4"
+    },
+    {
+      "id": "reference-animation-channel-target",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-animation-channel-target",
+      "level": 3,
+      "title": "Animation Channel Target",
+      "number": "5.7"
+    },
+    {
+      "id": "_animation_channel_target_node",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_target_node",
+      "level": 4,
+      "title": "animation.channel.target.node",
+      "number": "5.7.1"
+    },
+    {
+      "id": "_animation_channel_target_path",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_target_path",
+      "level": 4,
+      "title": "animation.channel.target.path",
+      "number": "5.7.2"
+    },
+    {
+      "id": "_animation_channel_target_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_target_extensions",
+      "level": 4,
+      "title": "animation.channel.target.extensions",
+      "number": "5.7.3"
+    },
+    {
+      "id": "_animation_channel_target_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_channel_target_extras",
+      "level": 4,
+      "title": "animation.channel.target.extras",
+      "number": "5.7.4"
+    },
+    {
+      "id": "reference-animation-sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-animation-sampler",
+      "level": 3,
+      "title": "Animation Sampler",
+      "number": "5.8"
+    },
+    {
+      "id": "_animation_sampler_input",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_sampler_input",
+      "level": 4,
+      "title": "animation.sampler.input",
+      "number": "5.8.1"
+    },
+    {
+      "id": "_animation_sampler_interpolation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_sampler_interpolation",
+      "level": 4,
+      "title": "animation.sampler.interpolation",
+      "number": "5.8.2"
+    },
+    {
+      "id": "_animation_sampler_output",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_sampler_output",
+      "level": 4,
+      "title": "animation.sampler.output",
+      "number": "5.8.3"
+    },
+    {
+      "id": "_animation_sampler_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_sampler_extensions",
+      "level": 4,
+      "title": "animation.sampler.extensions",
+      "number": "5.8.4"
+    },
+    {
+      "id": "_animation_sampler_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_animation_sampler_extras",
+      "level": 4,
+      "title": "animation.sampler.extras",
+      "number": "5.8.5"
+    },
+    {
+      "id": "reference-asset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-asset",
+      "level": 3,
+      "title": "Asset",
+      "number": "5.9"
+    },
+    {
+      "id": "_asset_copyright",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_copyright",
+      "level": 4,
+      "title": "asset.copyright",
+      "number": "5.9.1"
+    },
+    {
+      "id": "_asset_generator",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_generator",
+      "level": 4,
+      "title": "asset.generator",
+      "number": "5.9.2"
+    },
+    {
+      "id": "_asset_version",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_version",
+      "level": 4,
+      "title": "asset.version",
+      "number": "5.9.3"
+    },
+    {
+      "id": "_asset_minversion",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_minversion",
+      "level": 4,
+      "title": "asset.minVersion",
+      "number": "5.9.4"
+    },
+    {
+      "id": "_asset_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_extensions",
+      "level": 4,
+      "title": "asset.extensions",
+      "number": "5.9.5"
+    },
+    {
+      "id": "_asset_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_asset_extras",
+      "level": 4,
+      "title": "asset.extras",
+      "number": "5.9.6"
+    },
+    {
+      "id": "reference-buffer",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-buffer",
+      "level": 3,
+      "title": "Buffer",
+      "number": "5.10"
+    },
+    {
+      "id": "_buffer_uri",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_buffer_uri",
+      "level": 4,
+      "title": "buffer.uri",
+      "number": "5.10.1"
+    },
+    {
+      "id": "_buffer_bytelength",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_buffer_bytelength",
+      "level": 4,
+      "title": "buffer.byteLength",
+      "number": "5.10.2"
+    },
+    {
+      "id": "_buffer_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_buffer_name",
+      "level": 4,
+      "title": "buffer.name",
+      "number": "5.10.3"
+    },
+    {
+      "id": "_buffer_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_buffer_extensions",
+      "level": 4,
+      "title": "buffer.extensions",
+      "number": "5.10.4"
+    },
+    {
+      "id": "_buffer_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_buffer_extras",
+      "level": 4,
+      "title": "buffer.extras",
+      "number": "5.10.5"
+    },
+    {
+      "id": "reference-bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-bufferview",
+      "level": 3,
+      "title": "Buffer View",
+      "number": "5.11"
+    },
+    {
+      "id": "_bufferview_buffer",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_buffer",
+      "level": 4,
+      "title": "bufferView.buffer",
+      "number": "5.11.1"
+    },
+    {
+      "id": "_bufferview_byteoffset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_byteoffset",
+      "level": 4,
+      "title": "bufferView.byteOffset",
+      "number": "5.11.2"
+    },
+    {
+      "id": "_bufferview_bytelength",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_bytelength",
+      "level": 4,
+      "title": "bufferView.byteLength",
+      "number": "5.11.3"
+    },
+    {
+      "id": "_bufferview_bytestride",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_bytestride",
+      "level": 4,
+      "title": "bufferView.byteStride",
+      "number": "5.11.4"
+    },
+    {
+      "id": "_bufferview_target",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_target",
+      "level": 4,
+      "title": "bufferView.target",
+      "number": "5.11.5"
+    },
+    {
+      "id": "_bufferview_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_name",
+      "level": 4,
+      "title": "bufferView.name",
+      "number": "5.11.6"
+    },
+    {
+      "id": "_bufferview_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_extensions",
+      "level": 4,
+      "title": "bufferView.extensions",
+      "number": "5.11.7"
+    },
+    {
+      "id": "_bufferview_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_bufferview_extras",
+      "level": 4,
+      "title": "bufferView.extras",
+      "number": "5.11.8"
+    },
+    {
+      "id": "reference-camera",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera",
+      "level": 3,
+      "title": "Camera",
+      "number": "5.12"
+    },
+    {
+      "id": "_camera_orthographic",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic",
+      "level": 4,
+      "title": "camera.orthographic",
+      "number": "5.12.1"
+    },
+    {
+      "id": "_camera_perspective",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective",
+      "level": 4,
+      "title": "camera.perspective",
+      "number": "5.12.2"
+    },
+    {
+      "id": "_camera_type",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_type",
+      "level": 4,
+      "title": "camera.type",
+      "number": "5.12.3"
+    },
+    {
+      "id": "_camera_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_name",
+      "level": 4,
+      "title": "camera.name",
+      "number": "5.12.4"
+    },
+    {
+      "id": "_camera_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_extensions",
+      "level": 4,
+      "title": "camera.extensions",
+      "number": "5.12.5"
+    },
+    {
+      "id": "_camera_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_extras",
+      "level": 4,
+      "title": "camera.extras",
+      "number": "5.12.6"
+    },
+    {
+      "id": "reference-camera-orthographic",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera-orthographic",
+      "level": 3,
+      "title": "Camera Orthographic",
+      "number": "5.13"
+    },
+    {
+      "id": "_camera_orthographic_xmag",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_xmag",
+      "level": 4,
+      "title": "camera.orthographic.xmag",
+      "number": "5.13.1"
+    },
+    {
+      "id": "_camera_orthographic_ymag",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_ymag",
+      "level": 4,
+      "title": "camera.orthographic.ymag",
+      "number": "5.13.2"
+    },
+    {
+      "id": "_camera_orthographic_zfar",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_zfar",
+      "level": 4,
+      "title": "camera.orthographic.zfar",
+      "number": "5.13.3"
+    },
+    {
+      "id": "_camera_orthographic_znear",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_znear",
+      "level": 4,
+      "title": "camera.orthographic.znear",
+      "number": "5.13.4"
+    },
+    {
+      "id": "_camera_orthographic_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_extensions",
+      "level": 4,
+      "title": "camera.orthographic.extensions",
+      "number": "5.13.5"
+    },
+    {
+      "id": "_camera_orthographic_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_orthographic_extras",
+      "level": 4,
+      "title": "camera.orthographic.extras",
+      "number": "5.13.6"
+    },
+    {
+      "id": "reference-camera-perspective",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera-perspective",
+      "level": 3,
+      "title": "Camera Perspective",
+      "number": "5.14"
+    },
+    {
+      "id": "_camera_perspective_aspectratio",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_aspectratio",
+      "level": 4,
+      "title": "camera.perspective.aspectRatio",
+      "number": "5.14.1"
+    },
+    {
+      "id": "_camera_perspective_yfov",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_yfov",
+      "level": 4,
+      "title": "camera.perspective.yfov",
+      "number": "5.14.2"
+    },
+    {
+      "id": "_camera_perspective_zfar",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_zfar",
+      "level": 4,
+      "title": "camera.perspective.zfar",
+      "number": "5.14.3"
+    },
+    {
+      "id": "_camera_perspective_znear",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_znear",
+      "level": 4,
+      "title": "camera.perspective.znear",
+      "number": "5.14.4"
+    },
+    {
+      "id": "_camera_perspective_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_extensions",
+      "level": 4,
+      "title": "camera.perspective.extensions",
+      "number": "5.14.5"
+    },
+    {
+      "id": "_camera_perspective_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_camera_perspective_extras",
+      "level": 4,
+      "title": "camera.perspective.extras",
+      "number": "5.14.6"
+    },
+    {
+      "id": "reference-extension",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-extension",
+      "level": 3,
+      "title": "Extension",
+      "number": "5.15"
+    },
+    {
+      "id": "reference-extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-extras",
+      "level": 3,
+      "title": "Extras",
+      "number": "5.16"
+    },
+    {
+      "id": "reference-gltf",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-gltf",
+      "level": 3,
+      "title": "glTF",
+      "number": "5.17"
+    },
+    {
+      "id": "_gltf_extensionsused",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_extensionsused",
+      "level": 4,
+      "title": "glTF.extensionsUsed",
+      "number": "5.17.1"
+    },
+    {
+      "id": "_gltf_extensionsrequired",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_extensionsrequired",
+      "level": 4,
+      "title": "glTF.extensionsRequired",
+      "number": "5.17.2"
+    },
+    {
+      "id": "_gltf_accessors",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_accessors",
+      "level": 4,
+      "title": "glTF.accessors",
+      "number": "5.17.3"
+    },
+    {
+      "id": "_gltf_animations",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_animations",
+      "level": 4,
+      "title": "glTF.animations",
+      "number": "5.17.4"
+    },
+    {
+      "id": "_gltf_asset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_asset",
+      "level": 4,
+      "title": "glTF.asset",
+      "number": "5.17.5"
+    },
+    {
+      "id": "_gltf_buffers",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_buffers",
+      "level": 4,
+      "title": "glTF.buffers",
+      "number": "5.17.6"
+    },
+    {
+      "id": "_gltf_bufferviews",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_bufferviews",
+      "level": 4,
+      "title": "glTF.bufferViews",
+      "number": "5.17.7"
+    },
+    {
+      "id": "_gltf_cameras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_cameras",
+      "level": 4,
+      "title": "glTF.cameras",
+      "number": "5.17.8"
+    },
+    {
+      "id": "_gltf_images",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_images",
+      "level": 4,
+      "title": "glTF.images",
+      "number": "5.17.9"
+    },
+    {
+      "id": "_gltf_materials",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_materials",
+      "level": 4,
+      "title": "glTF.materials",
+      "number": "5.17.10"
+    },
+    {
+      "id": "_gltf_meshes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_meshes",
+      "level": 4,
+      "title": "glTF.meshes",
+      "number": "5.17.11"
+    },
+    {
+      "id": "_gltf_nodes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_nodes",
+      "level": 4,
+      "title": "glTF.nodes",
+      "number": "5.17.12"
+    },
+    {
+      "id": "_gltf_samplers",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_samplers",
+      "level": 4,
+      "title": "glTF.samplers",
+      "number": "5.17.13"
+    },
+    {
+      "id": "_gltf_scene",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_scene",
+      "level": 4,
+      "title": "glTF.scene",
+      "number": "5.17.14"
+    },
+    {
+      "id": "_gltf_scenes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_scenes",
+      "level": 4,
+      "title": "glTF.scenes",
+      "number": "5.17.15"
+    },
+    {
+      "id": "_gltf_skins",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_skins",
+      "level": 4,
+      "title": "glTF.skins",
+      "number": "5.17.16"
+    },
+    {
+      "id": "_gltf_textures",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_textures",
+      "level": 4,
+      "title": "glTF.textures",
+      "number": "5.17.17"
+    },
+    {
+      "id": "_gltf_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_extensions",
+      "level": 4,
+      "title": "glTF.extensions",
+      "number": "5.17.18"
+    },
+    {
+      "id": "_gltf_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_gltf_extras",
+      "level": 4,
+      "title": "glTF.extras",
+      "number": "5.17.19"
+    },
+    {
+      "id": "reference-image",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-image",
+      "level": 3,
+      "title": "Image",
+      "number": "5.18"
+    },
+    {
+      "id": "_image_uri",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_uri",
+      "level": 4,
+      "title": "image.uri",
+      "number": "5.18.1"
+    },
+    {
+      "id": "_image_mimetype",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_mimetype",
+      "level": 4,
+      "title": "image.mimeType",
+      "number": "5.18.2"
+    },
+    {
+      "id": "_image_bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_bufferview",
+      "level": 4,
+      "title": "image.bufferView",
+      "number": "5.18.3"
+    },
+    {
+      "id": "_image_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_name",
+      "level": 4,
+      "title": "image.name",
+      "number": "5.18.4"
+    },
+    {
+      "id": "_image_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_extensions",
+      "level": 4,
+      "title": "image.extensions",
+      "number": "5.18.5"
+    },
+    {
+      "id": "_image_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_image_extras",
+      "level": 4,
+      "title": "image.extras",
+      "number": "5.18.6"
+    },
+    {
+      "id": "reference-material",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-material",
+      "level": 3,
+      "title": "Material",
+      "number": "5.19"
+    },
+    {
+      "id": "_material_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_name",
+      "level": 4,
+      "title": "material.name",
+      "number": "5.19.1"
+    },
+    {
+      "id": "_material_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_extensions",
+      "level": 4,
+      "title": "material.extensions",
+      "number": "5.19.2"
+    },
+    {
+      "id": "_material_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_extras",
+      "level": 4,
+      "title": "material.extras",
+      "number": "5.19.3"
+    },
+    {
+      "id": "_material_pbrmetallicroughness",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness",
+      "number": "5.19.4"
+    },
+    {
+      "id": "_material_normaltexture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltexture",
+      "level": 4,
+      "title": "material.normalTexture",
+      "number": "5.19.5"
+    },
+    {
+      "id": "_material_occlusiontexture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontexture",
+      "level": 4,
+      "title": "material.occlusionTexture",
+      "number": "5.19.6"
+    },
+    {
+      "id": "_material_emissivetexture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_emissivetexture",
+      "level": 4,
+      "title": "material.emissiveTexture",
+      "number": "5.19.7"
+    },
+    {
+      "id": "_material_emissivefactor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_emissivefactor",
+      "level": 4,
+      "title": "material.emissiveFactor",
+      "number": "5.19.8"
+    },
+    {
+      "id": "_material_alphamode",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_alphamode",
+      "level": 4,
+      "title": "material.alphaMode",
+      "number": "5.19.9"
+    },
+    {
+      "id": "_material_alphacutoff",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_alphacutoff",
+      "level": 4,
+      "title": "material.alphaCutoff",
+      "number": "5.19.10"
+    },
+    {
+      "id": "_material_doublesided",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_doublesided",
+      "level": 4,
+      "title": "material.doubleSided",
+      "number": "5.19.11"
+    },
+    {
+      "id": "reference-material-normaltextureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-material-normaltextureinfo",
+      "level": 3,
+      "title": "Material Normal Texture Info",
+      "number": "5.20"
+    },
+    {
+      "id": "_material_normaltextureinfo_index",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltextureinfo_index",
+      "level": 4,
+      "title": "material.normalTextureInfo.index",
+      "number": "5.20.1"
+    },
+    {
+      "id": "_material_normaltextureinfo_texcoord",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltextureinfo_texcoord",
+      "level": 4,
+      "title": "material.normalTextureInfo.texCoord",
+      "number": "5.20.2"
+    },
+    {
+      "id": "_material_normaltextureinfo_scale",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltextureinfo_scale",
+      "level": 4,
+      "title": "material.normalTextureInfo.scale",
+      "number": "5.20.3"
+    },
+    {
+      "id": "_material_normaltextureinfo_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltextureinfo_extensions",
+      "level": 4,
+      "title": "material.normalTextureInfo.extensions",
+      "number": "5.20.4"
+    },
+    {
+      "id": "_material_normaltextureinfo_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_normaltextureinfo_extras",
+      "level": 4,
+      "title": "material.normalTextureInfo.extras",
+      "number": "5.20.5"
+    },
+    {
+      "id": "reference-material-occlusiontextureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-material-occlusiontextureinfo",
+      "level": 3,
+      "title": "Material Occlusion Texture Info",
+      "number": "5.21"
+    },
+    {
+      "id": "_material_occlusiontextureinfo_index",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontextureinfo_index",
+      "level": 4,
+      "title": "material.occlusionTextureInfo.index",
+      "number": "5.21.1"
+    },
+    {
+      "id": "_material_occlusiontextureinfo_texcoord",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontextureinfo_texcoord",
+      "level": 4,
+      "title": "material.occlusionTextureInfo.texCoord",
+      "number": "5.21.2"
+    },
+    {
+      "id": "_material_occlusiontextureinfo_strength",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontextureinfo_strength",
+      "level": 4,
+      "title": "material.occlusionTextureInfo.strength",
+      "number": "5.21.3"
+    },
+    {
+      "id": "_material_occlusiontextureinfo_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontextureinfo_extensions",
+      "level": 4,
+      "title": "material.occlusionTextureInfo.extensions",
+      "number": "5.21.4"
+    },
+    {
+      "id": "_material_occlusiontextureinfo_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_occlusiontextureinfo_extras",
+      "level": 4,
+      "title": "material.occlusionTextureInfo.extras",
+      "number": "5.21.5"
+    },
+    {
+      "id": "reference-material-pbrmetallicroughness",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-material-pbrmetallicroughness",
+      "level": 3,
+      "title": "Material PBR Metallic Roughness",
+      "number": "5.22"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_basecolorfactor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_basecolorfactor",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.baseColorFactor",
+      "number": "5.22.1"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_basecolortexture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_basecolortexture",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.baseColorTexture",
+      "number": "5.22.2"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_metallicfactor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_metallicfactor",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.metallicFactor",
+      "number": "5.22.3"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_roughnessfactor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_roughnessfactor",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.roughnessFactor",
+      "number": "5.22.4"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_metallicroughnesstexture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_metallicroughnesstexture",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.metallicRoughnessTexture",
+      "number": "5.22.5"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_extensions",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.extensions",
+      "number": "5.22.6"
+    },
+    {
+      "id": "_material_pbrmetallicroughness_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_material_pbrmetallicroughness_extras",
+      "level": 4,
+      "title": "material.pbrMetallicRoughness.extras",
+      "number": "5.22.7"
+    },
+    {
+      "id": "reference-mesh",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-mesh",
+      "level": 3,
+      "title": "Mesh",
+      "number": "5.23"
+    },
+    {
+      "id": "_mesh_primitives",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitives",
+      "level": 4,
+      "title": "mesh.primitives",
+      "number": "5.23.1"
+    },
+    {
+      "id": "_mesh_weights",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_weights",
+      "level": 4,
+      "title": "mesh.weights",
+      "number": "5.23.2"
+    },
+    {
+      "id": "_mesh_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_name",
+      "level": 4,
+      "title": "mesh.name",
+      "number": "5.23.3"
+    },
+    {
+      "id": "_mesh_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_extensions",
+      "level": 4,
+      "title": "mesh.extensions",
+      "number": "5.23.4"
+    },
+    {
+      "id": "_mesh_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_extras",
+      "level": 4,
+      "title": "mesh.extras",
+      "number": "5.23.5"
+    },
+    {
+      "id": "reference-mesh-primitive",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-mesh-primitive",
+      "level": 3,
+      "title": "Mesh Primitive",
+      "number": "5.24"
+    },
+    {
+      "id": "_mesh_primitive_attributes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_attributes",
+      "level": 4,
+      "title": "mesh.primitive.attributes",
+      "number": "5.24.1"
+    },
+    {
+      "id": "_mesh_primitive_indices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_indices",
+      "level": 4,
+      "title": "mesh.primitive.indices",
+      "number": "5.24.2"
+    },
+    {
+      "id": "_mesh_primitive_material",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_material",
+      "level": 4,
+      "title": "mesh.primitive.material",
+      "number": "5.24.3"
+    },
+    {
+      "id": "_mesh_primitive_mode",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_mode",
+      "level": 4,
+      "title": "mesh.primitive.mode",
+      "number": "5.24.4"
+    },
+    {
+      "id": "_mesh_primitive_targets",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_targets",
+      "level": 4,
+      "title": "mesh.primitive.targets",
+      "number": "5.24.5"
+    },
+    {
+      "id": "_mesh_primitive_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_extensions",
+      "level": 4,
+      "title": "mesh.primitive.extensions",
+      "number": "5.24.6"
+    },
+    {
+      "id": "_mesh_primitive_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_mesh_primitive_extras",
+      "level": 4,
+      "title": "mesh.primitive.extras",
+      "number": "5.24.7"
+    },
+    {
+      "id": "reference-node",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-node",
+      "level": 3,
+      "title": "Node",
+      "number": "5.25"
+    },
+    {
+      "id": "_node_camera",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_camera",
+      "level": 4,
+      "title": "node.camera",
+      "number": "5.25.1"
+    },
+    {
+      "id": "_node_children",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_children",
+      "level": 4,
+      "title": "node.children",
+      "number": "5.25.2"
+    },
+    {
+      "id": "_node_skin",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_skin",
+      "level": 4,
+      "title": "node.skin",
+      "number": "5.25.3"
+    },
+    {
+      "id": "_node_matrix",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_matrix",
+      "level": 4,
+      "title": "node.matrix",
+      "number": "5.25.4"
+    },
+    {
+      "id": "_node_mesh",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_mesh",
+      "level": 4,
+      "title": "node.mesh",
+      "number": "5.25.5"
+    },
+    {
+      "id": "_node_rotation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_rotation",
+      "level": 4,
+      "title": "node.rotation",
+      "number": "5.25.6"
+    },
+    {
+      "id": "_node_scale",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_scale",
+      "level": 4,
+      "title": "node.scale",
+      "number": "5.25.7"
+    },
+    {
+      "id": "_node_translation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_translation",
+      "level": 4,
+      "title": "node.translation",
+      "number": "5.25.8"
+    },
+    {
+      "id": "_node_weights",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_weights",
+      "level": 4,
+      "title": "node.weights",
+      "number": "5.25.9"
+    },
+    {
+      "id": "_node_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_name",
+      "level": 4,
+      "title": "node.name",
+      "number": "5.25.10"
+    },
+    {
+      "id": "_node_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_extensions",
+      "level": 4,
+      "title": "node.extensions",
+      "number": "5.25.11"
+    },
+    {
+      "id": "_node_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_node_extras",
+      "level": 4,
+      "title": "node.extras",
+      "number": "5.25.12"
+    },
+    {
+      "id": "reference-sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-sampler",
+      "level": 3,
+      "title": "Sampler",
+      "number": "5.26"
+    },
+    {
+      "id": "_sampler_magfilter",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_magfilter",
+      "level": 4,
+      "title": "sampler.magFilter",
+      "number": "5.26.1"
+    },
+    {
+      "id": "_sampler_minfilter",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_minfilter",
+      "level": 4,
+      "title": "sampler.minFilter",
+      "number": "5.26.2"
+    },
+    {
+      "id": "_sampler_wraps",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_wraps",
+      "level": 4,
+      "title": "sampler.wrapS",
+      "number": "5.26.3"
+    },
+    {
+      "id": "_sampler_wrapt",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_wrapt",
+      "level": 4,
+      "title": "sampler.wrapT",
+      "number": "5.26.4"
+    },
+    {
+      "id": "_sampler_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_name",
+      "level": 4,
+      "title": "sampler.name",
+      "number": "5.26.5"
+    },
+    {
+      "id": "_sampler_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_extensions",
+      "level": 4,
+      "title": "sampler.extensions",
+      "number": "5.26.6"
+    },
+    {
+      "id": "_sampler_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_sampler_extras",
+      "level": 4,
+      "title": "sampler.extras",
+      "number": "5.26.7"
+    },
+    {
+      "id": "reference-scene",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-scene",
+      "level": 3,
+      "title": "Scene",
+      "number": "5.27"
+    },
+    {
+      "id": "_scene_nodes",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_scene_nodes",
+      "level": 4,
+      "title": "scene.nodes",
+      "number": "5.27.1"
+    },
+    {
+      "id": "_scene_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_scene_name",
+      "level": 4,
+      "title": "scene.name",
+      "number": "5.27.2"
+    },
+    {
+      "id": "_scene_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_scene_extensions",
+      "level": 4,
+      "title": "scene.extensions",
+      "number": "5.27.3"
+    },
+    {
+      "id": "_scene_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_scene_extras",
+      "level": 4,
+      "title": "scene.extras",
+      "number": "5.27.4"
+    },
+    {
+      "id": "reference-skin",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-skin",
+      "level": 3,
+      "title": "Skin",
+      "number": "5.28"
+    },
+    {
+      "id": "_skin_inversebindmatrices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_inversebindmatrices",
+      "level": 4,
+      "title": "skin.inverseBindMatrices",
+      "number": "5.28.1"
+    },
+    {
+      "id": "_skin_skeleton",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_skeleton",
+      "level": 4,
+      "title": "skin.skeleton",
+      "number": "5.28.2"
+    },
+    {
+      "id": "_skin_joints",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_joints",
+      "level": 4,
+      "title": "skin.joints",
+      "number": "5.28.3"
+    },
+    {
+      "id": "_skin_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_name",
+      "level": 4,
+      "title": "skin.name",
+      "number": "5.28.4"
+    },
+    {
+      "id": "_skin_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_extensions",
+      "level": 4,
+      "title": "skin.extensions",
+      "number": "5.28.5"
+    },
+    {
+      "id": "_skin_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_skin_extras",
+      "level": 4,
+      "title": "skin.extras",
+      "number": "5.28.6"
+    },
+    {
+      "id": "reference-texture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-texture",
+      "level": 3,
+      "title": "Texture",
+      "number": "5.29"
+    },
+    {
+      "id": "_texture_sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_texture_sampler",
+      "level": 4,
+      "title": "texture.sampler",
+      "number": "5.29.1"
+    },
+    {
+      "id": "_texture_source",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_texture_source",
+      "level": 4,
+      "title": "texture.source",
+      "number": "5.29.2"
+    },
+    {
+      "id": "_texture_name",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_texture_name",
+      "level": 4,
+      "title": "texture.name",
+      "number": "5.29.3"
+    },
+    {
+      "id": "_texture_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_texture_extensions",
+      "level": 4,
+      "title": "texture.extensions",
+      "number": "5.29.4"
+    },
+    {
+      "id": "_texture_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_texture_extras",
+      "level": 4,
+      "title": "texture.extras",
+      "number": "5.29.5"
+    },
+    {
+      "id": "reference-textureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-textureinfo",
+      "level": 3,
+      "title": "Texture Info",
+      "number": "5.30"
+    },
+    {
+      "id": "_textureinfo_index",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_textureinfo_index",
+      "level": 4,
+      "title": "textureInfo.index",
+      "number": "5.30.1"
+    },
+    {
+      "id": "_textureinfo_texcoord",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_textureinfo_texcoord",
+      "level": 4,
+      "title": "textureInfo.texCoord",
+      "number": "5.30.2"
+    },
+    {
+      "id": "_textureinfo_extensions",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_textureinfo_extensions",
+      "level": 4,
+      "title": "textureInfo.extensions",
+      "number": "5.30.3"
+    },
+    {
+      "id": "_textureinfo_extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_textureinfo_extras",
+      "level": 4,
+      "title": "textureInfo.extras",
+      "number": "5.30.4"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments (Informative)",
+      "number": "6"
+    },
+    {
+      "id": "editors",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#editors",
+      "level": 3,
+      "title": "Editors",
+      "number": "6.1"
+    },
+    {
+      "id": "working-group-and-alumni",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#working-group-and-alumni",
+      "level": 3,
+      "title": "Khronos 3D Formats Working Group and Alumni",
+      "number": "6.2"
+    },
+    {
+      "id": "special-thanks",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#special-thanks",
+      "level": 3,
+      "title": "Special Thanks",
+      "number": "6.3"
+    },
+    {
+      "id": "appendix-a-json-schema-reference",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-a-json-schema-reference",
+      "level": 2,
+      "title": "JSON Schema Reference (Informative)",
+      "number": "A"
+    },
+    {
+      "id": "schema-reference-accessor",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-accessor",
+      "level": 3,
+      "title": "JSON Schema for Accessor",
+      "number": "A.1"
+    },
+    {
+      "id": "schema-reference-accessor-sparse",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-accessor-sparse",
+      "level": 3,
+      "title": "JSON Schema for Accessor Sparse",
+      "number": "A.2"
+    },
+    {
+      "id": "schema-reference-accessor-sparse-indices",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-accessor-sparse-indices",
+      "level": 3,
+      "title": "JSON Schema for Accessor Sparse Indices",
+      "number": "A.3"
+    },
+    {
+      "id": "schema-reference-accessor-sparse-values",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-accessor-sparse-values",
+      "level": 3,
+      "title": "JSON Schema for Accessor Sparse Values",
+      "number": "A.4"
+    },
+    {
+      "id": "schema-reference-animation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-animation",
+      "level": 3,
+      "title": "JSON Schema for Animation",
+      "number": "A.5"
+    },
+    {
+      "id": "schema-reference-animation-channel",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-animation-channel",
+      "level": 3,
+      "title": "JSON Schema for Animation Channel",
+      "number": "A.6"
+    },
+    {
+      "id": "schema-reference-animation-channel-target",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-animation-channel-target",
+      "level": 3,
+      "title": "JSON Schema for Animation Channel Target",
+      "number": "A.7"
+    },
+    {
+      "id": "schema-reference-animation-sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-animation-sampler",
+      "level": 3,
+      "title": "JSON Schema for Animation Sampler",
+      "number": "A.8"
+    },
+    {
+      "id": "schema-reference-asset",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-asset",
+      "level": 3,
+      "title": "JSON Schema for Asset",
+      "number": "A.9"
+    },
+    {
+      "id": "schema-reference-buffer",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-buffer",
+      "level": 3,
+      "title": "JSON Schema for Buffer",
+      "number": "A.10"
+    },
+    {
+      "id": "schema-reference-bufferview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-bufferview",
+      "level": 3,
+      "title": "JSON Schema for Buffer View",
+      "number": "A.11"
+    },
+    {
+      "id": "schema-reference-camera",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-camera",
+      "level": 3,
+      "title": "JSON Schema for Camera",
+      "number": "A.12"
+    },
+    {
+      "id": "schema-reference-camera-orthographic",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-camera-orthographic",
+      "level": 3,
+      "title": "JSON Schema for Camera Orthographic",
+      "number": "A.13"
+    },
+    {
+      "id": "schema-reference-camera-perspective",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-camera-perspective",
+      "level": 3,
+      "title": "JSON Schema for Camera Perspective",
+      "number": "A.14"
+    },
+    {
+      "id": "schema-reference-extension",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-extension",
+      "level": 3,
+      "title": "JSON Schema for Extension",
+      "number": "A.15"
+    },
+    {
+      "id": "schema-reference-extras",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-extras",
+      "level": 3,
+      "title": "JSON Schema for Extras",
+      "number": "A.16"
+    },
+    {
+      "id": "schema-reference-gltf",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-gltf",
+      "level": 3,
+      "title": "JSON Schema for glTF",
+      "number": "A.17"
+    },
+    {
+      "id": "schema-reference-gltfchildofrootproperty",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-gltfchildofrootproperty",
+      "level": 3,
+      "title": "JSON Schema for glTF Child of Root Property",
+      "number": "A.18"
+    },
+    {
+      "id": "schema-reference-gltfid",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-gltfid",
+      "level": 3,
+      "title": "JSON Schema for glTF Id",
+      "number": "A.19"
+    },
+    {
+      "id": "schema-reference-gltfproperty",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-gltfproperty",
+      "level": 3,
+      "title": "JSON Schema for glTF Property",
+      "number": "A.20"
+    },
+    {
+      "id": "schema-reference-image",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-image",
+      "level": 3,
+      "title": "JSON Schema for Image",
+      "number": "A.21"
+    },
+    {
+      "id": "schema-reference-material",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-material",
+      "level": 3,
+      "title": "JSON Schema for Material",
+      "number": "A.22"
+    },
+    {
+      "id": "schema-reference-material-normaltextureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-material-normaltextureinfo",
+      "level": 3,
+      "title": "JSON Schema for Material Normal Texture Info",
+      "number": "A.23"
+    },
+    {
+      "id": "schema-reference-material-occlusiontextureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-material-occlusiontextureinfo",
+      "level": 3,
+      "title": "JSON Schema for Material Occlusion Texture Info",
+      "number": "A.24"
+    },
+    {
+      "id": "schema-reference-material-pbrmetallicroughness",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-material-pbrmetallicroughness",
+      "level": 3,
+      "title": "JSON Schema for Material PBR Metallic Roughness",
+      "number": "A.25"
+    },
+    {
+      "id": "schema-reference-mesh",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-mesh",
+      "level": 3,
+      "title": "JSON Schema for Mesh",
+      "number": "A.26"
+    },
+    {
+      "id": "schema-reference-mesh-primitive",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-mesh-primitive",
+      "level": 3,
+      "title": "JSON Schema for Mesh Primitive",
+      "number": "A.27"
+    },
+    {
+      "id": "schema-reference-node",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-node",
+      "level": 3,
+      "title": "JSON Schema for Node",
+      "number": "A.28"
+    },
+    {
+      "id": "schema-reference-sampler",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-sampler",
+      "level": 3,
+      "title": "JSON Schema for Sampler",
+      "number": "A.29"
+    },
+    {
+      "id": "schema-reference-scene",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-scene",
+      "level": 3,
+      "title": "JSON Schema for Scene",
+      "number": "A.30"
+    },
+    {
+      "id": "schema-reference-skin",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-skin",
+      "level": 3,
+      "title": "JSON Schema for Skin",
+      "number": "A.31"
+    },
+    {
+      "id": "schema-reference-texture",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-texture",
+      "level": 3,
+      "title": "JSON Schema for Texture",
+      "number": "A.32"
+    },
+    {
+      "id": "schema-reference-textureinfo",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schema-reference-textureinfo",
+      "level": 3,
+      "title": "JSON Schema for Texture Info",
+      "number": "A.33"
+    },
+    {
+      "id": "appendix-b-brdf-implementation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-b-brdf-implementation",
+      "level": 2,
+      "title": "BRDF Implementation",
+      "number": "B"
+    },
+    {
+      "id": "appendix-b-brdf-implementation-general",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-b-brdf-implementation-general",
+      "level": 3,
+      "title": "General",
+      "number": "B.1"
+    },
+    {
+      "id": "material-structure",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#material-structure",
+      "level": 3,
+      "title": "Material Structure",
+      "number": "B.2"
+    },
+    {
+      "id": "metals",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#metals",
+      "level": 4,
+      "title": "Metals",
+      "number": "B.2.1"
+    },
+    {
+      "id": "dielectrics",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#dielectrics",
+      "level": 4,
+      "title": "Dielectrics",
+      "number": "B.2.2"
+    },
+    {
+      "id": "microfacet-surfaces",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#microfacet-surfaces",
+      "level": 4,
+      "title": "Microfacet Surfaces",
+      "number": "B.2.3"
+    },
+    {
+      "id": "complete-model",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#complete-model",
+      "level": 4,
+      "title": "Complete Model",
+      "number": "B.2.4"
+    },
+    {
+      "id": "implementation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#implementation",
+      "level": 3,
+      "title": "Sample Implementation (Informative)",
+      "number": "B.3"
+    },
+    {
+      "id": "implementation-overview",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#implementation-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "B.3.1"
+    },
+    {
+      "id": "specular-brdf",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#specular-brdf",
+      "level": 4,
+      "title": "Specular BRDF",
+      "number": "B.3.2"
+    },
+    {
+      "id": "diffuse-brdf",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#diffuse-brdf",
+      "level": 4,
+      "title": "Diffuse BRDF",
+      "number": "B.3.3"
+    },
+    {
+      "id": "fresnel",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#fresnel",
+      "level": 4,
+      "title": "Fresnel",
+      "number": "B.3.4"
+    },
+    {
+      "id": "metal-brdf-and-dielectric-brdf",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#metal-brdf-and-dielectric-brdf",
+      "level": 4,
+      "title": "Metal BRDF and Dielectric BRDF",
+      "number": "B.3.5"
+    },
+    {
+      "id": "discussion",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#discussion",
+      "level": 4,
+      "title": "Discussion",
+      "number": "B.3.6"
+    },
+    {
+      "id": "masking-shadowing-term-and-multiple-scattering",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#masking-shadowing-term-and-multiple-scattering",
+      "level": 5,
+      "title": "Masking-Shadowing Term and Multiple Scattering",
+      "number": "B.3.6.1"
+    },
+    {
+      "id": "schlicks-fresnel-approximation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#schlicks-fresnel-approximation",
+      "level": 5,
+      "title": "Schlick’s Fresnel Approximation",
+      "number": "B.3.6.2"
+    },
+    {
+      "id": "coupling-diffuse-and-specular-reflection",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#coupling-diffuse-and-specular-reflection",
+      "level": 5,
+      "title": "Coupling Diffuse and Specular Reflection",
+      "number": "B.3.6.3"
+    },
+    {
+      "id": "references",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#references",
+      "level": 3,
+      "title": "References",
+      "number": "B.4"
+    },
+    {
+      "id": "appendix-c-interpolation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-c-interpolation",
+      "level": 2,
+      "title": "Animation Sampler Interpolation Modes",
+      "number": "C"
+    },
+    {
+      "id": "_overview_2",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_overview_2",
+      "level": 3,
+      "title": "Overview",
+      "number": "C.1"
+    },
+    {
+      "id": "_step_interpolation",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#_step_interpolation",
+      "level": 3,
+      "title": "Step Interpolation",
+      "number": "C.2"
+    },
+    {
+      "id": "interpolation-lerp",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#interpolation-lerp",
+      "level": 3,
+      "title": "Linear Interpolation",
+      "number": "C.3"
+    },
+    {
+      "id": "interpolation-slerp",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#interpolation-slerp",
+      "level": 3,
+      "title": "Spherical Linear Interpolation",
+      "number": "C.4"
+    },
+    {
+      "id": "interpolation-cubic",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#interpolation-cubic",
+      "level": 3,
+      "title": "Cubic Spline Interpolation",
+      "number": "C.5"
+    }
+  ]
+}
