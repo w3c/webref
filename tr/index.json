@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-03-05T01:21:43.866Z",
+  "date": "2024-03-06T01:27:34.658Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -71,6 +71,8 @@
       "requestStorageAccessFor",
       "storage-access",
       "quirks",
+      "glTF",
+      "ESSL",
       "ANGLE_instanced_arrays",
       "EXT_blend_minmax",
       "EXT_color_buffer_float",
@@ -260,6 +262,7 @@
       "webpackage",
       "webusb",
       "window-controls-overlay",
+      "iso10918-5",
       "iso18181-2",
       "iso14496-22",
       "rfc2397",
@@ -277,10 +280,12 @@
       "rfc7617",
       "rfc7725",
       "rfc7838",
+      "rfc7932",
       "rfc8246",
       "rfc8288",
       "rfc8297",
       "rfc8470",
+      "rfc8878",
       "rfc8942",
       "rfc9110",
       "rfc9111",
@@ -292,6 +297,7 @@
       "promises-guide",
       "w3c-patent-policy",
       "w3c-process",
+      "GIF",
       "accelerometer",
       "accname-1.2",
       "ambient-light",
@@ -631,9 +637,9 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 1
+    "errors": 0
   },
-  "crawler": "reffy-14.8.1",
+  "crawler": "reffy-14.8.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -679,7 +685,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "5 March 2024"
+      "date": "6 March 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -766,7 +772,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/accname-1.2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -2954,8 +2960,7 @@
       "css": "css/css-cascade.json",
       "dfns": "dfns/css-cascade-5.json",
       "headings": "headings/css-cascade-5.json",
-      "ids": "ids/css-cascade-5.json",
-      "error": "Error: Loading https://www.w3.org/TR/css-cascade-5/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 36)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-cascade-5.json"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-6/",
@@ -8837,7 +8842,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -8896,7 +8901,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -12888,11 +12893,11 @@
       ],
       "crawled": "https://www.w3.org/TR/orientation-event/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 17:14:25 GMT"
+        "lastModified": "Tue, 05 Mar 2024 18:42:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "c0f629e841ef788cda818d17a1d8671b23e87ca3",
+      "date": "5 March 2024",
+      "revision": "ccffbb5ad15ce94c5994d125ef967f3087f60081",
       "links": "links/orientation-event.json",
       "refs": "refs/orientation-event.json",
       "events": "events/orientation-event.json",
@@ -13944,11 +13949,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf-canon/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Mar 2024 22:04:09 GMT"
+        "lastModified": "Tue, 05 Mar 2024 16:03:59 GMT"
       },
       "generator": "respec",
-      "date": "01 March 2024",
-      "revision": "e753a2a850d555ba9f095525168f749bde01dede",
+      "date": "05 March 2024",
+      "revision": "3c8e3aaa335c30b368e7c463002fcded572700f6",
       "links": "links/rdf-canon.json",
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",
@@ -17465,11 +17470,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-core-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Feb 2024 17:02:34 GMT"
+        "lastModified": "Tue, 05 Mar 2024 07:10:15 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 February 2024",
-      "revision": "89f7ced5e149cbdc3a6f2d661b0e5f7da0b45925",
+      "date": "5 March 2024",
+      "revision": "eb6f0fa8909130850ae6aa13d6d12ebfe907af06",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
       "headings": "headings/wasm-core-2.json",
@@ -17534,11 +17539,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 19 Feb 2024 06:33:06 GMT"
+        "lastModified": "Tue, 05 Mar 2024 07:05:32 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 February 2024",
-      "revision": "47e3c33641e516a3eb2d475123a03da22327bdc6",
+      "date": "5 March 2024",
+      "revision": "1c5e5d178bd75c79b7a12881c529098beaee2a05",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -17598,11 +17603,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Feb 2024 16:56:55 GMT"
+        "lastModified": "Tue, 05 Mar 2024 07:05:39 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 February 2024",
-      "revision": "89f7ced5e149cbdc3a6f2d661b0e5f7da0b45925",
+      "date": "5 March 2024",
+      "revision": "1c5e5d178bd75c79b7a12881c529098beaee2a05",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
