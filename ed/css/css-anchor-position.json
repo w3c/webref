@@ -347,7 +347,7 @@
       "name": "<inset-area>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area",
       "type": "type",
-      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] || [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] || [ inline-start | center | inline-end | center-inline-start | center-inline-end | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1,2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1,2} ]",
+      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | self-block-start | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | self-inline-start | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]",
       "values": [
         {
           "name": "start",
@@ -525,95 +525,95 @@
           "value": "center"
         },
         {
-          "name": "center-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-start",
+          "name": "span-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-start",
           "type": "value",
-          "value": "center-start"
+          "value": "span-start"
         },
         {
-          "name": "center-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-end",
+          "name": "span-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-end",
           "type": "value",
-          "value": "center-end"
+          "value": "span-end"
         },
         {
-          "name": "center-top",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-top",
+          "name": "span-top",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-top",
           "type": "value",
-          "value": "center-top"
+          "value": "span-top"
         },
         {
-          "name": "center-bottom",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-bottom",
+          "name": "span-bottom",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-bottom",
           "type": "value",
-          "value": "center-bottom"
+          "value": "span-bottom"
         },
         {
-          "name": "center-y-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-y-start",
+          "name": "span-y-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-y-start",
           "type": "value",
-          "value": "center-y-start"
+          "value": "span-y-start"
         },
         {
-          "name": "center-y-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-y-end",
+          "name": "span-y-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-y-end",
           "type": "value",
-          "value": "center-y-end"
+          "value": "span-y-end"
         },
         {
-          "name": "center-x-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-x-start",
+          "name": "span-x-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-x-start",
           "type": "value",
-          "value": "center-x-start"
+          "value": "span-x-start"
         },
         {
-          "name": "center-x-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-x-end",
+          "name": "span-x-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-x-end",
           "type": "value",
-          "value": "center-x-end"
+          "value": "span-x-end"
         },
         {
-          "name": "center-block-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-block-start",
+          "name": "span-block-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-block-start",
           "type": "value",
-          "value": "center-block-start"
+          "value": "span-block-start"
         },
         {
-          "name": "center-block-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-block-end",
+          "name": "span-block-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-block-end",
           "type": "value",
-          "value": "center-block-end"
+          "value": "span-block-end"
         },
         {
-          "name": "center-inline-start",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-inline-start",
+          "name": "span-inline-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-inline-start",
           "type": "value",
-          "value": "center-inline-start"
+          "value": "span-inline-start"
         },
         {
-          "name": "center-inline-end",
-          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-inline-end",
+          "name": "span-inline-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-inline-end",
           "type": "value",
-          "value": "center-inline-end"
+          "value": "span-inline-end"
         },
         {
-          "name": "all",
+          "name": "span-all",
           "prose": "All three rows or columns, depending on which axis this keyword is specifying.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-all",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-span-all",
           "type": "value",
-          "value": "all"
+          "value": "span-all"
         }
       ]
     },
