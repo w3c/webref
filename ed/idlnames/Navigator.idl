@@ -248,13 +248,6 @@ partial interface Navigator {
   [SameObject, SecureContext] readonly attribute MediaDevices mediaDevices;
 };
 
-// Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
-partial interface Navigator {
-  [SecureContext] undefined getUserMedia(MediaStreamConstraints constraints,
-                                    NavigatorUserMediaSuccessCallback successCallback,
-                                    NavigatorUserMediaErrorCallback errorCallback);
-};
-
 // Source: Media Session (https://www.w3.org/TR/mediasession/)
 [Exposed=Window]
 partial interface Navigator {

@@ -2374,72 +2374,6 @@
         "partial": false,
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints"
       },
-      "NavigatorUserMediaSuccessCallback": {
-        "fragment": "callback NavigatorUserMediaSuccessCallback = undefined (MediaStream stream);",
-        "type": "callback",
-        "name": "NavigatorUserMediaSuccessCallback",
-        "idlType": {
-          "type": "return-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "undefined"
-        },
-        "arguments": [
-          {
-            "type": "argument",
-            "name": "stream",
-            "extAttrs": [],
-            "idlType": {
-              "type": "argument-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MediaStream"
-            },
-            "default": null,
-            "optional": false,
-            "variadic": false
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/mediacapture-main/#dom-navigatorusermediasuccesscallback"
-      },
-      "NavigatorUserMediaErrorCallback": {
-        "fragment": "callback NavigatorUserMediaErrorCallback = undefined (DOMException error);",
-        "type": "callback",
-        "name": "NavigatorUserMediaErrorCallback",
-        "idlType": {
-          "type": "return-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "undefined"
-        },
-        "arguments": [
-          {
-            "type": "argument",
-            "name": "error",
-            "extAttrs": [],
-            "idlType": {
-              "type": "argument-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMException"
-            },
-            "default": null,
-            "optional": false,
-            "variadic": false
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/mediacapture-main/#dom-navigatorusermediaerrorcallback"
-      },
       "DoubleRange": {
         "fragment": "dictionary DoubleRange {\n  double max;\n  double min;\n};",
         "type": "dictionary",
@@ -3001,88 +2935,6 @@
           ],
           "extAttrs": [],
           "partial": true
-        },
-        {
-          "fragment": "partial interface Navigator {\n  [SecureContext] undefined getUserMedia(MediaStreamConstraints constraints,\n                                    NavigatorUserMediaSuccessCallback successCallback,\n                                    NavigatorUserMediaErrorCallback errorCallback);\n};",
-          "type": "interface",
-          "name": "Navigator",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "getUserMedia",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "constraints",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MediaStreamConstraints"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "successCallback",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "NavigatorUserMediaSuccessCallback"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "errorCallback",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "NavigatorUserMediaErrorCallback"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SecureContext",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "href": "https://w3c.github.io/mediacapture-main/#dom-navigator-getusermedia"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
         }
       ],
       "MediaDevices": [
@@ -3214,10 +3066,7 @@
         "DOMException"
       ],
       "Navigator": [
-        "MediaDevices",
-        "MediaStreamConstraints",
-        "NavigatorUserMediaSuccessCallback",
-        "NavigatorUserMediaErrorCallback"
+        "MediaDevices"
       ],
       "MediaDevices": [
         "EventTarget",

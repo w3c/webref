@@ -60,7 +60,7 @@
         "href": "https://wicg.github.io/ua-client-hints/#dictdef-navigatoruabrandversion"
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  sequence<NavigatorUABrandVersion> brands;\n  sequence<DOMString> formFactor;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n  DOMString model;\n  boolean mobile;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n};",
+        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  sequence<NavigatorUABrandVersion> brands;\n  sequence<DOMString> formFactors;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n  DOMString model;\n  boolean mobile;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
@@ -124,7 +124,7 @@
           },
           {
             "type": "field",
-            "name": "formFactor",
+            "name": "formFactors",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -145,7 +145,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-formfactor"
+            "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-formfactors"
           },
           {
             "type": "field",
