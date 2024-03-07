@@ -42,13 +42,35 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "<p>\n          Is a <a href=\"https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> about a person.\n        </p>"
+      "htmlProse": "A cryptographically signed digital document containing one or more\n        <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> made by an <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> about one or more <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>.\n        <div><div><span>Note</span><span>: Focus on digital credentials about people</span></div><p>\n          This specification is currently focused on digital credentials\n          pertaining to people.\n        </p></div>"
     },
     {
-      "id": "dfn-identity-credential-provider",
-      "href": "https://wicg.github.io/digital-identities/#dfn-identity-credential-provider",
+      "id": "dfn-exchange-protocol",
+      "href": "https://wicg.github.io/digital-identities/#dfn-exchange-protocol",
       "linkingText": [
-        "Identity credential provider"
+        "Exchange protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "digital credential"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "model",
+        "href": "https://wicg.github.io/digital-identities/#model",
+        "title": "Model",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A protocol used for exchanging a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a> between a\n        <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a> and a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>. See section <a href=\"https://wicg.github.io/digital-identities/#protocol-registry\"><bdi>9. </bdi>\n      Registry of protocols for requesting digital credential</a>."
+    },
+    {
+      "id": "dfn-presentation-response",
+      "href": "https://wicg.github.io/digital-identities/#dfn-presentation-response",
+      "linkingText": [
+        "Presentation response"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -62,17 +84,19 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "An application or service that provides a user interface for selecting\n        and/or querying a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a>, such as a digital wallet that\n        manages various identity documents and credentials."
+      "htmlProse": "A format that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder's</a> software, such as a digital wallet,\n        uses, via an <a href=\"https://wicg.github.io/digital-identities/#dfn-exchange-protocol\">exchange protocol</a>, to respond to a\n        <a href=\"https://wicg.github.io/digital-identities/#dfn-query\">query</a> by a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>."
     },
     {
-      "id": "dfn-request-protocol",
-      "href": "https://wicg.github.io/digital-identities/#dfn-request-protocol",
+      "id": "dfn-query",
+      "href": "https://wicg.github.io/digital-identities/#dfn-query",
       "linkingText": [
-        "Request protocol"
+        "query"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "digital credential"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -82,7 +106,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A standardized format for requesting a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a>, designed\n        to ensure the secure, private, and interoperable exchange of identity\n        information. See section <a href=\"https://wicg.github.io/digital-identities/#protocol-registry\"><bdi>9. </bdi>\n      Registry of protocols for requesting digital credential</a>."
+      "htmlProse": "A format that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> software or a <a href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> uses, via an\n        <a href=\"https://wicg.github.io/digital-identities/#dfn-exchange-protocol\">exchange protocol</a>, to request a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a> from a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a>."
     },
     {
       "id": "dom-navigator-identity",
