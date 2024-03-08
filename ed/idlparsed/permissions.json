@@ -218,7 +218,7 @@
         "href": "https://w3c.github.io/permissions/#dom-permissionstate"
       },
       "PermissionSetParameters": {
-        "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n};",
+        "fragment": "dictionary PermissionSetParameters {\n  required object descriptor;\n  required PermissionState state;\n};",
         "type": "dictionary",
         "name": "PermissionSetParameters",
         "inheritance": null,
@@ -233,7 +233,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PermissionDescriptor"
+              "idlType": "object"
             },
             "default": null,
             "required": true,
@@ -391,7 +391,6 @@
         "EventHandler"
       ],
       "PermissionSetParameters": [
-        "PermissionDescriptor",
         "PermissionState"
       ]
     },
