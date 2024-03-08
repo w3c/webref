@@ -606,7 +606,16 @@
       "prose": "The clamp() function takes three calculations—​a minimum value, a central value, and a maximum value—​and represents its central calculation, clamped according to its min and max calculations, favoring the min calculation if it conflicts with the max. (That is, given clamp(MIN, VAL, MAX), it represents exactly the same value as max(MIN, min(VAL, MAX))).",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-clamp",
       "type": "function",
-      "value": "clamp( <calc-sum>#{3} )"
+      "value": "clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Either the min or max calculations (or even both) can instead be the keyword none, which indicates the value is not clamped from that side. (That is, clamp(MIN, VAL, none) is equivalent to max(MIN, VAL), clamp(none, VAL, MAX) is equivalent to min(VAL, MAX), and clamp(none, VAL, none) is equivalent to just calc(VAL).)",
+          "href": "https://drafts.csswg.org/css-values-4/#valdef-clamp-none",
+          "type": "value",
+          "value": "none"
+        }
+      ]
     },
     {
       "name": "round()",
