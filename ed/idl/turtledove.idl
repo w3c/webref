@@ -74,6 +74,7 @@ dictionary AuctionAdConfig {
   sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;
   Promise<any> sellerSignals;
   Promise<DOMString> directFromSellerSignalsHeaderAdSlot;
+  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;
   unsigned long long sellerTimeout;
   unsigned short sellerExperimentGroupId;
   USVString sellerCurrency;
