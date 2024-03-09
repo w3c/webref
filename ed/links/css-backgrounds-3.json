@@ -67,6 +67,12 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/line-style": {},
     "https://drafts.csswg.org/css-2017/": {},
+    "https://drafts.csswg.org/css-2023/": {
+      "anchors": [
+        "user-agent"
+      ],
+      "specShortname": "css-2023"
+    },
     "https://drafts.csswg.org/css-backgrounds-3/issues-lc-2012": {},
     "https://drafts.csswg.org/css-backgrounds-3/issues-lc-2014": {},
     "https://drafts.csswg.org/css-box-3/": {
@@ -74,17 +80,29 @@
     },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
+        "content-area",
+        "padding",
+        "border",
+        "margin",
+        "border-area",
+        "padding-area",
+        "padding-edge",
         "typedef-visual-box",
         "border-box",
         "padding-box",
         "content-box",
         "propdef-margin",
-        "propdef-padding"
+        "propdef-padding",
+        "border-edge",
+        "content-edge",
+        "margin-edge",
+        "margin-area"
       ],
       "specShortname": "css-box-4"
     },
     "https://drafts.csswg.org/css-break-4/": {
       "anchors": [
+        "box-fragment",
         "propdef-box-decoration-break"
       ],
       "specShortname": "css-break-4"
@@ -94,8 +112,11 @@
     },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
+        "used-value",
         "specified-value",
-        "computed-value"
+        "computed-value",
+        "shorthand-property",
+        "initial-value"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -128,8 +149,16 @@
       ],
       "specShortname": "css-contain-2"
     },
+    "https://drafts.csswg.org/css-content-3/": {
+      "anchors": [
+        "propdef-content"
+      ],
+      "specShortname": "css-content-3"
+    },
     "https://drafts.csswg.org/css-display-4/": {
       "anchors": [
+        "initial-containing-block",
+        "root-element",
         "replaced-element",
         "principal-box"
       ],
@@ -156,7 +185,8 @@
     },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
-        "scroll-container"
+        "scroll-container",
+        "scrollable-overflow-region"
       ],
       "specShortname": "css-overflow-3"
     },
@@ -169,6 +199,12 @@
     },
     "https://drafts.csswg.org/css-shapes/": {
       "specShortname": "css-shapes-1"
+    },
+    "https://drafts.csswg.org/css-sizing-3/": {
+      "anchors": [
+        "propdef-height"
+      ],
+      "specShortname": "css-sizing-3"
     },
     "https://drafts.csswg.org/css-text-decor-4/": {
       "anchors": [
@@ -209,12 +245,27 @@
       ],
       "specShortname": "CSS22"
     },
+    "https://drafts.csswg.org/mediaqueries-5/": {
+      "anchors": [
+        "paged-media"
+      ],
+      "specShortname": "mediaqueries-5"
+    },
     "https://drafts.csswg.org/selectors-3/": {
       "anchors": [
-        "sel-first-line",
-        "first-letter0"
+        "first-letter0",
+        "sel-first-line"
       ],
       "specShortname": "selectors-3"
+    },
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "pseudo-element"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
     },
     "https://drafts.fxtf.org/filter-effects-1/": {
       "anchors": [
@@ -257,17 +308,15 @@
     "https://www.w3.org/TR/2014/CR-css3-background-20140909/": {},
     "https://www.w3.org/TR/2014/WD-css3-background-20140204/": {},
     "https://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "partial"
+      ],
       "specShortname": "CSS22"
     },
     "https://www.w3.org/TR/CSS2/": {},
     "https://www.w3.org/TR/CSS2/about.html": {
       "anchors": [
         "property-defs"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/generate.html": {
-      "anchors": [
-        "content"
       ]
     },
     "https://www.w3.org/TR/CSS2/intro.html": {
@@ -280,20 +329,9 @@
         "page-box"
       ]
     },
-    "https://www.w3.org/TR/CSS2/selector.html": {
-      "anchors": [
-        "first-letter",
-        "first-line-pseudo"
-      ]
-    },
     "https://www.w3.org/TR/CSS2/tables.html": {
       "anchors": [
         "collapsing-borders"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/visudet.html": {
-      "anchors": [
-        "containing-block-details"
       ]
     },
     "https://www.w3.org/TR/CSS21/tables.html": {
@@ -312,6 +350,7 @@
     },
     "https://www.w3.org/TR/CSS21/visuren.html": {
       "anchors": [
+        "x1",
         "propdef-display"
       ],
       "specShortname": "CSS2"
@@ -322,6 +361,9 @@
         "box-model"
       ],
       "specShortname": "css-box-3"
+    },
+    "https://www.w3.org/TR/css-break/": {
+      "specShortname": "css-break-3"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
@@ -360,7 +402,6 @@
       ],
       "specShortname": "css-values-4"
     },
-    "https://www.w3.org/TR/css3-break/": {},
     "https://www.w3.org/TR/css3-images/": {
       "anchors": [
         "default-sizing"

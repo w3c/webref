@@ -34,7 +34,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "A value of none counts as an image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
+          "prose": "A value of none counts as a background image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-image-none",
           "type": "value",
           "value": "none"
@@ -80,7 +80,7 @@
         },
         {
           "name": "space",
-          "prose": "The image is repeated as often as will fit within the background positioning area without being clipped and then the images are spaced out to fill the area. The first and last images touch the edges of the area. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area. The value of background-position for this direction is ignored, unless there is not enough space for two copies of the image in this direction, in which case only one image is placed and background-position determines its position in this direction.",
+          "prose": "The image is repeated as often as will fit within the background positioning area without being clipped, and then the images are spaced out to fill the area. The first and last images touch the edges of the area. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area. The value of background-position for this direction is ignored unless there is not enough space for two copies of the image in this axis, in which case only one image is placed, and background-position determines its position in this axis.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-repeat-space",
           "type": "value",
           "value": "space"
@@ -126,14 +126,14 @@
         },
         {
           "name": "local",
-          "prose": "The background is fixed with regard to the element’s contents: if the element has a scrolling mechanism, the background scrolls with the element’s contents, and the background painting area and background positioning area are relative to the scrollable area of the element rather than to the border framing them. Because the scrollable area does not include the border area, for scrollable elements the border-box value of background-clip may be treated the same as padding-box.",
+          "prose": "The background is fixed with regard to the box’s contents: if the box has a scrolling mechanism, the background scrolls with the box’s contents, and the background painting area and background positioning area are relative to the scrollable overflow area of the box rather than to the border framing them. Because the scrollable overflow area does not include the border area, for scroll containers the border-box value of background-clip may be treated the same as padding-box.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-local",
           "type": "value",
           "value": "local"
         },
         {
           "name": "scroll",
-          "prose": "The background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element’s border.)",
+          "prose": "The background is fixed with regard to the box itself and does not scroll with its contents. (It is effectively attached to the box’s border.)",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-scroll",
           "type": "value",
           "value": "scroll"
@@ -317,14 +317,14 @@
         },
         {
           "name": "<length-percentage [0,∞]>",
-          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A <percentage> is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-size-length-percentage-0",
           "type": "value",
           "value": "<length-percentage [0,∞]>"
         },
         {
           "name": "auto",
-          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A <percentage> is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-background-size-auto",
           "type": "value",
           "value": "auto"
@@ -480,7 +480,7 @@
         },
         {
           "name": "auto",
-          "prose": "If auto is specified then the border image width is the natural width or height (whichever is applicable) of the corresponding image slice (see border-image-slice). If the image does not have the required natural dimension then the corresponding computed border-width is used instead.",
+          "prose": "If auto is specified then the used border-image-width is the natural width or height (whichever is applicable) of the corresponding image slice (see border-image-slice). If the image does not have the required natural dimension then the corresponding computed border-width is used instead.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-border-image-width-auto",
           "type": "value",
           "value": "auto"
@@ -521,28 +521,28 @@
       "values": [
         {
           "name": "stretch",
-          "prose": "The image is stretched to fill the area.",
+          "prose": "The image is stretched to fill its corresponding region.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-border-image-repeat-stretch",
           "type": "value",
           "value": "stretch"
         },
         {
           "name": "repeat",
-          "prose": "The image is tiled (repeated) to fill the area.",
+          "prose": "The image is tiled (repeated) to fill its corresponding region.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-border-image-repeat-repeat",
           "type": "value",
           "value": "repeat"
         },
         {
           "name": "round",
-          "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the image is rescaled so that it does.",
+          "prose": "The image is tiled (repeated) to fill its corresponding region. If it does not fill the area with a whole number of tiles, the image is rescaled so that it does.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-border-image-repeat-round",
           "type": "value",
           "value": "round"
         },
         {
           "name": "space",
-          "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles.",
+          "prose": "The image is tiled (repeated) to fill its corresponding region. If it does not fill the region with a whole number of tiles, the extra space is distributed around the tiles.",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-border-image-repeat-space",
           "type": "value",
           "value": "space"
@@ -665,7 +665,7 @@
         },
         {
           "name": "groove",
-          "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the border-color.)",
+          "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the specified border-color.)",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-groove",
           "type": "value",
           "value": "groove"
@@ -686,7 +686,7 @@
         },
         {
           "name": "outset",
-          "prose": "Looks as if the content on the inside of the border is coming out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
+          "prose": "Looks as if the content on the inside of the border is raised out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
           "href": "https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-outset",
           "type": "value",
           "value": "outset"
