@@ -45,25 +45,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-navigator",
-      "href": "https://www.w3.org/TR/device-posture/#dom-navigator",
-      "linkingText": [
-        "Navigator"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "extensions-to-the-navigator-interface",
-        "href": "https://www.w3.org/TR/device-posture/#extensions-to-the-navigator-interface",
-        "title": "Extensions to the Navigator interface",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-navigator-deviceposture",
       "href": "https://www.w3.org/TR/device-posture/#dom-navigator-deviceposture",
       "linkingText": [
@@ -213,6 +194,27 @@
       "definedIn": "heading"
     },
     {
+      "id": "dfn-change",
+      "href": "https://www.w3.org/TR/device-posture/#dfn-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "DevicePosture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-onchange-attribute-handle-posture-changes",
+        "href": "https://www.w3.org/TR/device-posture/#the-onchange-attribute-handle-posture-changes",
+        "title": "The onchange attribute: Handle posture changes",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-posture",
       "href": "https://www.w3.org/TR/device-posture/#dfn-posture",
       "linkingText": [
@@ -270,10 +272,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dfn-update-the-device-posture-information",
-      "href": "https://www.w3.org/TR/device-posture/#dfn-update-the-device-posture-information",
+      "id": "dfn-calculate-the-device-posture-information",
+      "href": "https://www.w3.org/TR/device-posture/#dfn-calculate-the-device-posture-information",
       "linkingText": [
-        "update the device posture information"
+        "calculate the device posture information"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -281,10 +283,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "updating-the-device-posture-information",
-        "href": "https://www.w3.org/TR/device-posture/#updating-the-device-posture-information",
-        "title": "Updating the device posture information",
+        "id": "calculating-the-device-posture-information",
+        "href": "https://www.w3.org/TR/device-posture/#calculating-the-device-posture-information",
+        "title": "Calculating the device posture information",
         "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-device-posture-change-steps",
+      "href": "https://www.w3.org/TR/device-posture/#dfn-device-posture-change-steps",
+      "linkingText": [
+        "device posture change steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "device-posture-change",
+        "href": "https://www.w3.org/TR/device-posture/#device-posture-change",
+        "title": "Device Posture change",
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -302,7 +323,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/device-posture/#dependencies",
-        "title": "12. Dependencies"
+        "title": "11. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -320,7 +341,7 @@
       "heading": {
         "id": "conformance",
         "href": "https://www.w3.org/TR/device-posture/#conformance",
-        "title": "13. Conformance"
+        "title": "12. Conformance"
       },
       "definedIn": "prose"
     }
