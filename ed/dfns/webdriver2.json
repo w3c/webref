@@ -1626,25 +1626,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-strict-file-interactability",
-      "href": "https://w3c.github.io/webdriver/#dfn-strict-file-interactability",
-      "linkingText": [
-        "Strict file interactability"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capabilities",
-        "href": "https://w3c.github.io/webdriver/#capabilities",
-        "title": "Capabilities",
-        "number": "7"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dfn-unhandled-prompt-behavior",
       "href": "https://w3c.github.io/webdriver/#dfn-unhandled-prompt-behavior",
       "linkingText": [
@@ -2027,12 +2008,9 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-session-script-timeout",
-      "href": "https://w3c.github.io/webdriver/#dfn-session-script-timeout",
+      "id": "dfn-session-timeouts",
+      "href": "https://w3c.github.io/webdriver/#dfn-session-timeouts",
       "linkingText": [
-        "session script timeout",
-        "session page load timeout",
-        "session implicit wait timeout",
         "session timeouts"
       ],
       "localLinkingText": [],
@@ -2053,6 +2031,25 @@
       "href": "https://w3c.github.io/webdriver/#dfn-page-loading-strategy",
       "linkingText": [
         "page loading strategy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sessions",
+        "href": "https://w3c.github.io/webdriver/#sessions",
+        "title": "Sessions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-strict-file-interactability",
+      "href": "https://w3c.github.io/webdriver/#dfn-strict-file-interactability",
+      "linkingText": [
+        "strict file interactability"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2260,6 +2257,65 @@
       "definedIn": "heading"
     },
     {
+      "id": "dfn-timer",
+      "href": "https://w3c.github.io/webdriver/#dfn-timer",
+      "linkingText": [
+        "timer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://w3c.github.io/webdriver/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-timeout-fired-flag",
+      "href": "https://w3c.github.io/webdriver/#dfn-timeout-fired-flag",
+      "linkingText": [
+        "timeout fired flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "timer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://w3c.github.io/webdriver/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-the-timer",
+      "href": "https://w3c.github.io/webdriver/#dfn-start-the-timer",
+      "linkingText": [
+        "start the timer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://w3c.github.io/webdriver/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-timeouts-configuration",
       "href": "https://w3c.github.io/webdriver/#dfn-timeouts-configuration",
       "linkingText": [
@@ -2282,11 +2338,13 @@
       "id": "dfn-script-timeout",
       "href": "https://w3c.github.io/webdriver/#dfn-script-timeout",
       "linkingText": [
-        "Script timeout"
+        "script timeout"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "timeouts"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2295,17 +2353,19 @@
         "title": "Timeouts",
         "number": "9"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-page-load-timeout",
       "href": "https://w3c.github.io/webdriver/#dfn-page-load-timeout",
       "linkingText": [
-        "Page load timeout"
+        "page load timeout"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "timeouts"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2314,13 +2374,34 @@
         "title": "Timeouts",
         "number": "9"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-implicit-wait-timeout",
       "href": "https://w3c.github.io/webdriver/#dfn-implicit-wait-timeout",
       "linkingText": [
-        "Implicit wait timeout"
+        "implicit wait timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "timeouts"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://w3c.github.io/webdriver/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-deserialize-as-timeouts-configuration",
+      "href": "https://w3c.github.io/webdriver/#dfn-deserialize-as-timeouts-configuration",
+      "linkingText": [
+        "deserialize as timeouts configuration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2333,13 +2414,13 @@
         "title": "Timeouts",
         "number": "9"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
-      "id": "dfn-timeouts-object",
-      "href": "https://w3c.github.io/webdriver/#dfn-timeouts-object",
+      "id": "dfn-serialize-the-timeouts-configuration",
+      "href": "https://w3c.github.io/webdriver/#dfn-serialize-the-timeouts-configuration",
       "linkingText": [
-        "timeouts object"
+        "serialize the timeouts configuration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2486,10 +2567,9 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-waiting-for-the-navigation-to-complete",
-      "href": "https://w3c.github.io/webdriver/#dfn-waiting-for-the-navigation-to-complete",
+      "id": "dfn-wait-for-navigation-to-complete",
+      "href": "https://w3c.github.io/webdriver/#dfn-wait-for-navigation-to-complete",
       "linkingText": [
-        "waiting for the navigation to complete",
         "wait for navigation to complete"
       ],
       "localLinkingText": [],
