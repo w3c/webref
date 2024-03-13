@@ -127,14 +127,14 @@
         "concept-attribute-namespace",
         "concept-attribute-local-name",
         "concept-node-document",
+        "shadowroot",
         "dom-node-textcontent",
         "concept-element-attributes-change-ext",
         "concept-element-local-name",
         "eventtarget",
         "concept-attribute",
         "range",
-        "documentfragment",
-        "shadowroot"
+        "documentfragment"
       ],
       "specShortname": "dom"
     },
@@ -240,6 +240,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-tojson.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/tt-block-eval.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/worker-constructor.https.html": {},
+    "https://github.com/whatwg/webidl/pull/1392": {},
     "https://heycam.github.io/webidl/": {
       "anchors": [
         "this"
@@ -269,6 +270,11 @@
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
         "dom-innertext"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
+      "anchors": [
+        "domparser"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -356,11 +362,6 @@
       "specShortname": "ecmascript"
     },
     "https://tc39.es/proposal-dynamic-code-brand-checks/": {},
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-tostring"
-      ]
-    },
     "https://tools.ietf.org/html/rfc5234": {
       "anchors": [
         "appendix-B.1"
@@ -376,8 +377,8 @@
     },
     "https://w3c.github.io/DOM-Parsing/": {
       "anchors": [
-        "dom-innerhtml",
-        "supportedtype"
+        "supportedtype",
+        "dom-innerhtml"
       ],
       "specShortname": "DOM-Parsing"
     },
@@ -399,6 +400,12 @@
       "anchors": [
         "the-inserthtml-command"
       ]
+    },
+    "https://w3c.github.io/trusted-types/dist/spec/": {
+      "anchors": [
+        "dfn-validate-the-string-in-context"
+      ],
+      "specShortname": "trusted-types"
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
@@ -440,29 +447,13 @@
         "dfn-attribute",
         "interface-mixin",
         "include",
-        "dfn-extended-attribute",
-        "dfn-xattr-identifier",
-        "dfn-identifier",
-        "dfn-regular-attribute",
-        "dfn-regular-operation",
-        "dfn-read-only",
-        "js-DOMString",
-        "dfn-idl-fragment",
-        "dfn-variadic",
-        "dfn-operation",
-        "AllowShared",
-        "Clamp",
-        "EnforceRange",
-        "LegacyNullToEmptyString",
-        "dfn-convert-ecmascript-to-idl-value",
-        "js-security",
-        "js-type-mapping",
-        "dfn-platform-object",
         "idl-undefined",
+        "NewObject",
+        "LegacyNullToEmptyString",
         "Function",
         "idl-long",
+        "dfn-identifier",
         "SecureContext",
-        "NewObject",
         "idl-promise",
         "exceptiondef-evalerror"
       ],
