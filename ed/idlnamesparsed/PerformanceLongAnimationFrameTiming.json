@@ -1,0 +1,29 @@
+{
+  "name": "PerformanceLongAnimationFrameTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Long Animation Frames API",
+      "url": "https://w3c.github.io/long-animation-frames/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PerformanceLongAnimationFrameTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute DOMHighResTimeStamp renderStart;\n    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;\n    readonly attribute DOMHighResTimeStamp blockingDuration;\n    readonly attribute DOMHighResTimeStamp firstUIEventTimestamp;\n    [SameObject] readonly attribute FrozenArray<PerformanceScriptTiming> scripts;\n    [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute unsigned long long  id;\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  readonly    attribute unsigned long long  navigationId;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

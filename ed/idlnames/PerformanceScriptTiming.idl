@@ -1,0 +1,21 @@
+// Source: Long Animation Frames API (https://w3c.github.io/long-animation-frames/)
+[Exposed=Window]
+interface PerformanceScriptTiming : PerformanceEntry {
+    /* Overloading PerformanceEntry */
+    readonly attribute DOMHighResTimeStamp startTime;
+    readonly attribute DOMHighResTimeStamp duration;
+    readonly attribute DOMString name;
+    readonly attribute DOMString entryType;
+
+    readonly attribute ScriptInvokerType invokerType;
+    readonly attribute DOMString invoker;
+    readonly attribute DOMHighResTimeStamp executionStart;
+    readonly attribute DOMString sourceURL;
+    readonly attribute DOMString sourceFunctionName;
+    readonly attribute long long sourceCharPosition;
+    readonly attribute DOMHighResTimeStamp pauseDuration;
+    readonly attribute DOMHighResTimeStamp forcedStyleAndLayoutDuration;
+    readonly attribute Window? window;
+    readonly attribute ScriptWindowAttribution windowAttribution;
+    [Default] object toJSON();
+};

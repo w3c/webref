@@ -1,0 +1,232 @@
+{
+  "spec": {
+    "title": "Long Animation Frames API",
+    "url": "https://w3c.github.io/long-animation-frames/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/long-animation-frames/#title",
+      "level": 1,
+      "title": "Long Animation Frames API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/long-animation-frames/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/long-animation-frames/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/long-animation-frames/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/long-animation-frames/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "example",
+      "href": "https://w3c.github.io/long-animation-frames/#example",
+      "level": 3,
+      "title": "Usage Example",
+      "number": "1.1"
+    },
+    {
+      "id": "loaf-vs-longtasks",
+      "href": "https://w3c.github.io/long-animation-frames/#loaf-vs-longtasks",
+      "level": 3,
+      "title": "Long Animation Frames vs. Long Tasks",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-loaf-timing",
+      "href": "https://w3c.github.io/long-animation-frames/#sec-loaf-timing",
+      "level": 2,
+      "title": "Long Animation Frame Timing",
+      "number": "2"
+    },
+    {
+      "id": "sec-PerformanceLongAnimationFrameTiming",
+      "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+      "level": 3,
+      "title": "PerformanceLongAnimationFrameTiming interface",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-PerformanceScriptTiming",
+      "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+      "level": 3,
+      "title": "PerformanceScriptTiming interface",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-processing-model",
+      "href": "https://w3c.github.io/long-animation-frames/#sec-processing-model",
+      "level": 2,
+      "title": "Processing model",
+      "number": "3"
+    },
+    {
+      "id": "sec-frame-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+      "level": 3,
+      "title": "Frame Timing Info",
+      "number": "3.1"
+    },
+    {
+      "id": "loaf-processing-model",
+      "href": "https://w3c.github.io/long-animation-frames/#loaf-processing-model",
+      "level": 3,
+      "title": "Report Long Animation Frames",
+      "number": "3.2"
+    },
+    {
+      "id": "loaf-monitoring",
+      "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+      "level": 4,
+      "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+      "number": "3.2.1"
+    },
+    {
+      "id": "long-script-monitoring",
+      "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+      "level": 4,
+      "title": "Long Script Monitoring",
+      "number": "3.2.2"
+    },
+    {
+      "id": "other-standards",
+      "href": "https://w3c.github.io/long-animation-frames/#other-standards",
+      "level": 2,
+      "title": "Additions to existing standards",
+      "number": "4"
+    },
+    {
+      "id": "webidl-monkey-patches",
+      "href": "https://w3c.github.io/long-animation-frames/#webidl-monkey-patches",
+      "level": 3,
+      "title": "Monkey-patches to the WebIDL standard",
+      "number": "4.1"
+    },
+    {
+      "id": "dom-monkey-patches",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-monkey-patches",
+      "level": 3,
+      "title": "Monkey-patches to the DOM standard",
+      "number": "4.2"
+    },
+    {
+      "id": "html-monkey-patches",
+      "href": "https://w3c.github.io/long-animation-frames/#html-monkey-patches",
+      "level": 3,
+      "title": "Monkey-patches to the HTML standard",
+      "number": "4.3"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://w3c.github.io/long-animation-frames/#priv-sec",
+      "level": 2,
+      "title": "Security & privacy considerations",
+      "number": "5"
+    },
+    {
+      "id": "what-is-exposed",
+      "href": "https://w3c.github.io/long-animation-frames/#what-is-exposed",
+      "level": 3,
+      "title": "What is Exposed to Observers?",
+      "number": "5.1"
+    },
+    {
+      "id": "attack-scenarios",
+      "href": "https://w3c.github.io/long-animation-frames/#attack-scenarios",
+      "level": 3,
+      "title": "Attack Scenarios Considered",
+      "number": "5.2"
+    },
+    {
+      "id": "loaf-sec-priv",
+      "href": "https://w3c.github.io/long-animation-frames/#loaf-sec-priv",
+      "level": 3,
+      "title": "Additional information exposed by the Long Animation Frames API",
+      "number": "5.3"
+    },
+    {
+      "id": "loaf-opaque-scripts-sec",
+      "href": "https://w3c.github.io/long-animation-frames/#loaf-opaque-scripts-sec",
+      "level": 3,
+      "title": "PerformanceScriptTiming and opaque scripts",
+      "number": "5.4"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/long-animation-frames/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/long-animation-frames/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/long-animation-frames/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/long-animation-frames/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/long-animation-frames/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/long-animation-frames/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/long-animation-frames/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/long-animation-frames/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/long-animation-frames/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/long-animation-frames/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

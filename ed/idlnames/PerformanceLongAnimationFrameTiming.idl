@@ -1,0 +1,16 @@
+// Source: Long Animation Frames API (https://w3c.github.io/long-animation-frames/)
+[Exposed=Window]
+interface PerformanceLongAnimationFrameTiming : PerformanceEntry {
+    /* Overloading PerformanceEntry */
+    readonly attribute DOMHighResTimeStamp startTime;
+    readonly attribute DOMHighResTimeStamp duration;
+    readonly attribute DOMString name;
+    readonly attribute DOMString entryType;
+
+    readonly attribute DOMHighResTimeStamp renderStart;
+    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;
+    readonly attribute DOMHighResTimeStamp blockingDuration;
+    readonly attribute DOMHighResTimeStamp firstUIEventTimestamp;
+    [SameObject] readonly attribute FrozenArray<PerformanceScriptTiming> scripts;
+    [Default] object toJSON();
+};
