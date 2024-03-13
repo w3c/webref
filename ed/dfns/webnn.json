@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "platform-operator",
-      "href": "https://webmachinelearning.github.io/webnn/#platform-operator",
+      "id": "computational-graph",
+      "href": "https://webmachinelearning.github.io/webnn/#computational-graph",
       "linkingText": [
-        "platform operator"
+        "computational graph"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24,10 +24,167 @@
       "definedIn": "prose"
     },
     {
-      "id": "platform-operand",
-      "href": "https://webmachinelearning.github.io/webnn/#platform-operand",
+      "id": "mlgraphbuilder-graph",
+      "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder-graph",
       "linkingText": [
-        "platform operand"
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "operators",
+      "href": "https://webmachinelearning.github.io/webnn/#operators",
+      "linkingText": [
+        "operators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computational-graph-input",
+      "href": "https://webmachinelearning.github.io/webnn/#computational-graph-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computational graph"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computational-graph-constants",
+      "href": "https://webmachinelearning.github.io/webnn/#computational-graph-constants",
+      "linkingText": [
+        "constants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computational graph"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "operator-input",
+      "href": "https://webmachinelearning.github.io/webnn/#operator-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "operator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "operator-output",
+      "href": "https://webmachinelearning.github.io/webnn/#operator-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "operator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "operator-activation",
+      "href": "https://webmachinelearning.github.io/webnn/#operator-activation",
+      "linkingText": [
+        "activation",
+        "activation function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "operator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "platform-operators",
+      "href": "https://webmachinelearning.github.io/webnn/#platform-operators",
+      "linkingText": [
+        "platform operators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "platform-operands",
+      "href": "https://webmachinelearning.github.io/webnn/#platform-operands",
+      "linkingText": [
+        "platform operands"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1358,26 +1515,6 @@
       "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-name-slot",
       "linkingText": [
         "[[name]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "MLOperand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-mloperand-operand-slot",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-operand-slot",
-      "linkingText": [
-        "[[operand]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
