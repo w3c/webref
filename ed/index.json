@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-03-13T00:46:51.686Z",
+  "date": "2024-03-13T06:34:38.234Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -645,7 +645,7 @@
   },
   "stats": {
     "crawled": 615,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.8.2",
   "results": [
@@ -3398,9 +3398,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 11 Mar 2024 06:43:21 GMT"
+        "lastModified": "Wed, 13 Mar 2024 02:06:52 GMT"
       },
-      "date": "11 March 2024",
+      "date": "13 March 2024",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -17432,7 +17432,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 22:31:51 GMT"
+        "lastModified": "Tue, 12 Mar 2024 22:31:52 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -18107,7 +18107,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 22:31:51 GMT"
+        "lastModified": "Tue, 12 Mar 2024 22:31:52 GMT"
       },
       "date": "18 January 2022",
       "links": "links/css-color-3.json",
@@ -32416,7 +32416,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 554)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
