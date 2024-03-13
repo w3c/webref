@@ -1,0 +1,1825 @@
+{
+  "spec": {
+    "title": "Long Animation Frames API",
+    "url": "https://w3c.github.io/long-animation-frames/"
+  },
+  "dfns": [
+    {
+      "id": "long-animation-frame",
+      "href": "https://w3c.github.io/long-animation-frames/#long-animation-frame",
+      "linkingText": [
+        "long animation frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-loaf-timing",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-loaf-timing",
+        "title": "Long Animation Frame Timing",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "performancelonganimationframetiming",
+      "href": "https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming",
+      "linkingText": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-starttime",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-duration",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-name",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-entrytype",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-entrytype",
+      "linkingText": [
+        "entryType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-renderstart",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-renderstart",
+      "linkingText": [
+        "renderStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-styleandlayoutstart",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-styleandlayoutstart",
+      "linkingText": [
+        "styleAndLayoutStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-blockingduration",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-blockingduration",
+      "linkingText": [
+        "blockingDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-firstuieventtimestamp",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-firstuieventtimestamp",
+      "linkingText": [
+        "firstUIEventTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-scripts",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-scripts",
+      "linkingText": [
+        "scripts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancelonganimationframetiming-tojson",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "performancelonganimationframetiming-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming-timing-info",
+      "linkingText": [
+        "timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceLongAnimationFrameTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+        "title": "PerformanceLongAnimationFrameTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-scriptinvokertype",
+      "href": "https://w3c.github.io/long-animation-frames/#enumdef-scriptinvokertype",
+      "linkingText": [
+        "ScriptInvokerType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-classic-script",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-classic-script",
+      "linkingText": [
+        "\"classic-script\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-module-script",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-module-script",
+      "linkingText": [
+        "\"module-script\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-event-listener",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-event-listener",
+      "linkingText": [
+        "\"event-listener\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-user-callback",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-user-callback",
+      "linkingText": [
+        "\"user-callback\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-resolve-promise",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-resolve-promise",
+      "linkingText": [
+        "\"resolve-promise\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptinvokertype-reject-promise",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptinvokertype-reject-promise",
+      "linkingText": [
+        "\"reject-promise\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-scriptwindowattribution",
+      "href": "https://w3c.github.io/long-animation-frames/#enumdef-scriptwindowattribution",
+      "linkingText": [
+        "ScriptWindowAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-self",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-self",
+      "linkingText": [
+        "\"self\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-descendant",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-descendant",
+      "linkingText": [
+        "\"descendant\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-ancestor",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-ancestor",
+      "linkingText": [
+        "\"ancestor\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-same-page",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-same-page",
+      "linkingText": [
+        "\"same-page\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-other",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-other",
+      "linkingText": [
+        "\"other\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "performancescripttiming",
+      "href": "https://w3c.github.io/long-animation-frames/#performancescripttiming",
+      "linkingText": [
+        "PerformanceScriptTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-starttime",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-duration",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-name",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-entrytype",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-entrytype",
+      "linkingText": [
+        "entryType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-invokertype",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invokertype",
+      "linkingText": [
+        "invokerType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-invoker",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invoker",
+      "linkingText": [
+        "invoker"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-executionstart",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-executionstart",
+      "linkingText": [
+        "executionStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-sourceurl",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourceurl",
+      "linkingText": [
+        "sourceURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-sourcefunctionname",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourcefunctionname",
+      "linkingText": [
+        "sourceFunctionName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-sourcecharposition",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourcecharposition",
+      "linkingText": [
+        "sourceCharPosition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-pauseduration",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-pauseduration",
+      "linkingText": [
+        "pauseDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-forcedstyleandlayoutduration",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-forcedstyleandlayoutduration",
+      "linkingText": [
+        "forcedStyleAndLayoutDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-window",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-windowattribution",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-windowattribution",
+      "linkingText": [
+        "windowAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-tojson",
+      "href": "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "performancescripttiming-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info",
+      "linkingText": [
+        "timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "performancescripttiming-window-attribution",
+      "href": "https://w3c.github.io/long-animation-frames/#performancescripttiming-window-attribution",
+      "linkingText": [
+        "window attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frame-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info",
+      "linkingText": [
+        "frame timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frame-timing-info-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-current-task-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-current-task-start-time",
+      "linkingText": [
+        "current task start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-update-the-rendering-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-update-the-rendering-start-time",
+      "linkingText": [
+        "update the rendering start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-style-and-layout-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-style-and-layout-start-time",
+      "linkingText": [
+        "style and layout start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-first-ui-event-timestamp",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-first-ui-event-timestamp",
+      "linkingText": [
+        "first ui event timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-end-time",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-task-durations",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-task-durations",
+      "linkingText": [
+        "task durations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-scripts",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-scripts",
+      "linkingText": [
+        "scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "frame-timing-info-pending-script",
+      "href": "https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script",
+      "linkingText": [
+        "pending script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "frame timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info",
+      "linkingText": [
+        "script timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-timing-info-invoker-type",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-type",
+      "linkingText": [
+        "invoker type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-end-time",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-execution-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-execution-start-time",
+      "linkingText": [
+        "execution start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-pause-duration",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-pause-duration",
+      "linkingText": [
+        "pause duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-invoker-name",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name",
+      "linkingText": [
+        "invoker name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-source-url",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-source-url",
+      "linkingText": [
+        "source url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-source-function-name",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-source-function-name",
+      "linkingText": [
+        "source function name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-event-type",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-event-type",
+      "linkingText": [
+        "event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-event-target-element-id",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-id",
+      "linkingText": [
+        "event target element id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-event-target-element-src-attribute",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-src-attribute",
+      "linkingText": [
+        "event target element src attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-source-character-position",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-source-character-position",
+      "linkingText": [
+        "source character position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-window",
+      "href": "https://w3c.github.io/long-animation-frames/#script-timing-info-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "current-frame-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#current-frame-timing-info",
+      "linkingText": [
+        "current frame timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://w3c.github.io/long-animation-frames/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "nearest-same-origin-root",
+      "href": "https://w3c.github.io/long-animation-frames/#nearest-same-origin-root",
+      "linkingText": [
+        "nearest same-origin root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "relevant-frame-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info",
+      "linkingText": [
+        "relevant frame timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-task-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#report-task-start-time",
+      "linkingText": [
+        "report task start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-task-end-time",
+      "href": "https://w3c.github.io/long-animation-frames/#report-task-end-time",
+      "linkingText": [
+        "report task end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-rendering-time",
+      "href": "https://w3c.github.io/long-animation-frames/#report-rendering-time",
+      "linkingText": [
+        "report rendering time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flush-frame-timing",
+      "href": "https://w3c.github.io/long-animation-frames/#flush-frame-timing",
+      "linkingText": [
+        "flush frame timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaf-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#loaf-monitoring",
+        "title": "Long Animation Frame Monitoring {#loaf-monitoring}",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-user-callback",
+      "href": "https://w3c.github.io/long-animation-frames/#report-user-callback",
+      "linkingText": [
+        "report user callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-timer-handler",
+      "href": "https://w3c.github.io/long-animation-frames/#report-timer-handler",
+      "linkingText": [
+        "report timer handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-event-handler",
+      "href": "https://w3c.github.io/long-animation-frames/#report-event-handler",
+      "linkingText": [
+        "report event handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-promise-resolver",
+      "href": "https://w3c.github.io/long-animation-frames/#report-promise-resolver",
+      "linkingText": [
+        "report promise resolver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-source-url-for-script-block",
+      "href": "https://w3c.github.io/long-animation-frames/#set-source-url-for-script-block",
+      "linkingText": [
+        "set source url for script block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-classic-script-creation",
+      "href": "https://w3c.github.io/long-animation-frames/#report-classic-script-creation",
+      "linkingText": [
+        "report classic script creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-classic-script-execution-start",
+      "href": "https://w3c.github.io/long-animation-frames/#report-classic-script-execution-start",
+      "linkingText": [
+        "report classic script execution start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-module-script-execution-start",
+      "href": "https://w3c.github.io/long-animation-frames/#report-module-script-execution-start",
+      "linkingText": [
+        "report module script execution start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-script-entry-point",
+      "href": "https://w3c.github.io/long-animation-frames/#create-script-entry-point",
+      "linkingText": [
+        "create script entry point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flush-script-entry-point",
+      "href": "https://w3c.github.io/long-animation-frames/#flush-script-entry-point",
+      "linkingText": [
+        "flush script entry point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "apply-source-location",
+      "href": "https://w3c.github.io/long-animation-frames/#apply-source-location",
+      "linkingText": [
+        "apply source location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-pause-duration",
+      "href": "https://w3c.github.io/long-animation-frames/#report-pause-duration",
+      "linkingText": [
+        "report pause duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://w3c.github.io/long-animation-frames/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "promise-invoker-name-when-created",
+      "href": "https://w3c.github.io/long-animation-frames/#promise-invoker-name-when-created",
+      "linkingText": [
+        "invoker name when created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Promise"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webidl-monkey-patches",
+        "href": "https://w3c.github.io/long-animation-frames/#webidl-monkey-patches",
+        "title": "Monkey-patches to the WebIDL standard",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "promise-script-url-when-created",
+      "href": "https://w3c.github.io/long-animation-frames/#promise-script-url-when-created",
+      "linkingText": [
+        "script url when created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Promise"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webidl-monkey-patches",
+        "href": "https://w3c.github.io/long-animation-frames/#webidl-monkey-patches",
+        "title": "Monkey-patches to the WebIDL standard",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
