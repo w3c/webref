@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+    "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-generatebidinterestgroup"
   },
   "extended": [],

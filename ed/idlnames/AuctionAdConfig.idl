@@ -3,6 +3,7 @@ dictionary AuctionAdConfig {
   required USVString seller;
   required USVString decisionLogicURL;
   USVString trustedScoringSignalsURL;
+  long maxTrustedScoringSignalsURLLength;
   sequence<USVString> interestGroupBuyers;
   Promise<any> auctionSignals;
   record<DOMString, DOMString> requestedSize;
