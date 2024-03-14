@@ -236,6 +236,34 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "ViewTransition": [
+        {
+          "fragment": "partial interface ViewTransition {\n  readonly attribute DOMTokenList typeList;\n};",
+          "type": "interface",
+          "name": "ViewTransition",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "typeList",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMTokenList"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-typelist"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -257,6 +285,9 @@
       "CSSViewTransitionRule": [
         "CSSRule",
         "ViewTransitionNavigation",
+        "DOMTokenList"
+      ],
+      "ViewTransition": [
         "DOMTokenList"
       ]
     },

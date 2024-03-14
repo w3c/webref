@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n};",
     "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS View Transitions Module Level 2",
+        "url": "https://drafts.csswg.org/css-view-transitions-2/"
+      },
+      "fragment": "partial interface ViewTransition {\n  readonly attribute DOMTokenList typeList;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

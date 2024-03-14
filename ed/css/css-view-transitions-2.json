@@ -78,18 +78,17 @@
   ],
   "selectors": [
     {
-      "name": ":active-view-transition()",
-      "value": ":active-view-transition(<vt-type-selector>)",
+      "name": ":active-view-transition",
+      "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition. It has the following syntax definition:",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo"
+    },
+    {
+      "name": ":active-view-transition-type()",
+      "prose": "The :active-view-transition-type() pseudo-class applies to the root element of the document, if it has a matching active view transition. It has the following syntax definition:",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-type-pseudo"
     }
   ],
   "values": [
-    {
-      "name": "<vt-type-selector>",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-vt-type-selector",
-      "type": "type",
-      "value": "'*' | <custom-ident>#"
-    },
     {
       "name": "<pt-class-selector>",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-class-selector",
