@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-03-13T01:23:17.984Z",
+  "date": "2024-03-14T01:26:00.664Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -152,6 +152,7 @@
       "audio-session",
       "contentEditable",
       "gamepad-extensions",
+      "long-animation-frames",
       "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
@@ -637,9 +638,9 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 0
+    "errors": 1
   },
-  "crawler": "reffy-14.8.2",
+  "crawler": "reffy-14.8.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -685,7 +686,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "13 March 2024"
+      "date": "14 March 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -3027,7 +3028,8 @@
       "css": "css/css-cascade-6.json",
       "dfns": "dfns/css-cascade-6.json",
       "headings": "headings/css-cascade-6.json",
-      "ids": "ids/css-cascade-6.json"
+      "ids": "ids/css-cascade-6.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-cascade-6/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 37)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-3/",
@@ -8738,6 +8740,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "device-posture"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/device-posture/",
         "https://w3c.github.io/device-posture/"
@@ -13584,11 +13592,11 @@
       ],
       "crawled": "https://www.w3.org/TR/pointerevents3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Feb 2024 06:29:42 GMT"
+        "lastModified": "Wed, 13 Mar 2024 14:13:39 GMT"
       },
       "generator": "respec",
-      "date": "01 February 2024",
-      "revision": "9a4500137abb11257eaf7e77023c5fdc1c44ddec",
+      "date": "13 March 2024",
+      "revision": "f831960d20d95240809ef5bf91ecaf85ca0c9c43",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
       "events": "events/pointerevents3.json",
@@ -17150,11 +17158,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 09 Mar 2024 16:51:47 GMT"
+        "lastModified": "Wed, 13 Mar 2024 16:58:06 GMT"
       },
       "generator": "respec",
-      "date": "09 March 2024",
-      "revision": "d41c9af11cc2c2c4db631143679794fa7dc67462",
+      "date": "13 March 2024",
+      "revision": "fc225591f1521c0aa263d78a2cf7b1a8800461bf",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
       "dfns": "dfns/vc-data-model-2.0.json",
@@ -18048,11 +18056,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-aac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:44:13 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:24:58 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-aac-codec-registration.json",
       "refs": "refs/webcodecs-aac-codec-registration.json",
       "idl": "idl/webcodecs-aac-codec-registration.idl",
@@ -18105,11 +18113,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-alaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:55:21 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:37:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-alaw-codec-registration.json",
       "refs": "refs/webcodecs-alaw-codec-registration.json",
       "headings": "headings/webcodecs-alaw-codec-registration.json",
@@ -18160,11 +18168,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-av1-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:48:57 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:30:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-av1-codec-registration.json",
       "refs": "refs/webcodecs-av1-codec-registration.json",
       "idl": "idl/webcodecs-av1-codec-registration.idl",
@@ -18217,11 +18225,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-avc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:39:30 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:19:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-avc-codec-registration.json",
       "refs": "refs/webcodecs-avc-codec-registration.json",
       "idl": "idl/webcodecs-avc-codec-registration.idl",
@@ -18274,11 +18282,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-codec-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:37:45 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:17:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-codec-registry.json",
       "refs": "refs/webcodecs-codec-registry.json",
       "headings": "headings/webcodecs-codec-registry.json",
@@ -18329,11 +18337,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-flac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:45:52 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:26:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-flac-codec-registration.json",
       "refs": "refs/webcodecs-flac-codec-registration.json",
       "idl": "idl/webcodecs-flac-codec-registration.idl",
@@ -18386,11 +18394,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-hevc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:58:42 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:41:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-hevc-codec-registration.json",
       "refs": "refs/webcodecs-hevc-codec-registration.json",
       "idl": "idl/webcodecs-hevc-codec-registration.idl",
@@ -18443,11 +18451,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-mp3-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:42:33 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:23:03 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-mp3-codec-registration.json",
       "refs": "refs/webcodecs-mp3-codec-registration.json",
       "headings": "headings/webcodecs-mp3-codec-registration.json",
@@ -18498,11 +18506,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-opus-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:47:17 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:28:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-opus-codec-registration.json",
       "refs": "refs/webcodecs-opus-codec-registration.json",
       "idl": "idl/webcodecs-opus-codec-registration.idl",
@@ -18555,11 +18563,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-pcm-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:53:43 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:35:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-pcm-codec-registration.json",
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
@@ -18610,11 +18618,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-ulaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:56:46 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:39:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-ulaw-codec-registration.json",
       "refs": "refs/webcodecs-ulaw-codec-registration.json",
       "headings": "headings/webcodecs-ulaw-codec-registration.json",
@@ -18665,11 +18673,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vorbis-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:40:53 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:21:29 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-vorbis-codec-registration.json",
       "refs": "refs/webcodecs-vorbis-codec-registration.json",
       "headings": "headings/webcodecs-vorbis-codec-registration.json",
@@ -18720,11 +18728,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp8-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:52:06 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:33:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-vp8-codec-registration.json",
       "refs": "refs/webcodecs-vp8-codec-registration.json",
       "headings": "headings/webcodecs-vp8-codec-registration.json",
@@ -18775,11 +18783,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp9-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:50:27 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:32:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs-vp9-codec-registration.json",
       "refs": "refs/webcodecs-vp9-codec-registration.json",
       "idl": "idl/webcodecs-vp9-codec-registration.idl",
@@ -18838,11 +18846,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 10:36:02 GMT"
+        "lastModified": "Wed, 13 Mar 2024 15:15:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "c97f2989c9bd3e9bbca9b5a0f96a3ef029e7d7a0",
+      "date": "13 March 2024",
+      "revision": "667c795ce308bcec5f900e3e3e299f355d852329",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "events": "events/webcodecs.json",
@@ -19027,11 +19035,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 07 Mar 2024 00:37:18 GMT"
+        "lastModified": "Wed, 13 Mar 2024 19:58:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 March 2024",
-      "revision": "5b46514900a485e0598cf07a1b3724ae6742e6b1",
+      "date": "13 March 2024",
+      "revision": "4e138b1f121c096dbe615bdfdb40aea7e3645121",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -19154,11 +19162,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Mar 2024 23:21:43 GMT"
+        "lastModified": "Wed, 13 Mar 2024 19:51:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 March 2024",
-      "revision": "1d1b531ad869c5544e5d783ec63ea194654a5032",
+      "date": "13 March 2024",
+      "revision": "36288f5c406af7da7675f6461a2f99cc35d4bf66",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
