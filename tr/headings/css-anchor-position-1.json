@@ -39,14 +39,14 @@
       "id": "determining",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#determining",
       "level": 2,
-      "title": "Determining The Anchor",
+      "title": "Determining the Anchor",
       "number": "2"
     },
     {
       "id": "name",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#name",
       "level": 3,
-      "title": "Creating An Anchor: the anchor-name property",
+      "title": "Creating an Anchor: the anchor-name property",
       "number": "2.1"
     },
     {
@@ -57,18 +57,25 @@
       "number": "2.1.1"
     },
     {
-      "id": "target",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#target",
+      "id": "anchor-scope",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-scope",
       "level": 3,
-      "title": "Finding An Anchor",
+      "title": "Scoping Anchor Names: the anchor-scope property",
       "number": "2.2"
     },
     {
-      "id": "anchor-default",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-default",
+      "id": "target",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#target",
       "level": 3,
-      "title": "Default Anchors: the anchor-default property",
+      "title": "Finding an Anchor",
       "number": "2.3"
+    },
+    {
+      "id": "position-anchor",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#position-anchor",
+      "level": 3,
+      "title": "Default Anchors: the position-anchor property",
+      "number": "2.4"
     },
     {
       "id": "positioning",
@@ -78,38 +85,52 @@
       "number": "3"
     },
     {
+      "id": "inset-area",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#inset-area",
+      "level": 3,
+      "title": "The inset-area Property",
+      "number": "3.1"
+    },
+    {
+      "id": "resolving-spans",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#resolving-spans",
+      "level": 4,
+      "title": "Resolving <inset-area>s",
+      "number": "3.1.1"
+    },
+    {
       "id": "anchor-pos",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-pos",
       "level": 3,
       "title": "The anchor() Function",
-      "number": "3.1"
+      "number": "3.2"
     },
     {
-      "id": "anchor-auto",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-auto",
-      "level": 4,
-      "title": "Automatic Anchor Positioning",
-      "number": "3.1.1"
+      "id": "anchor-center",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
+      "level": 3,
+      "title": "Centering on the Anchor: the anchor-center value",
+      "number": "3.3"
     },
     {
       "id": "scroll",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#scroll",
       "level": 3,
-      "title": "Taking Scroll Into Account: the anchor-scroll property",
-      "number": "3.2"
+      "title": "Taking Scroll Into Account",
+      "number": "3.4"
     },
     {
       "id": "anchor-valid",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-valid",
       "level": 3,
       "title": "Validity",
-      "number": "3.3"
+      "number": "3.5"
     },
     {
       "id": "sizing",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#sizing",
       "level": 2,
-      "title": "Anchor-based Sizing",
+      "title": "Anchor-Based Sizing",
       "number": "4"
     },
     {
@@ -130,57 +151,78 @@
       "id": "fallback",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback",
       "level": 2,
-      "title": "Fallback Sizing/Positioning",
+      "title": "Overflow Management",
       "number": "5"
     },
     {
-      "id": "fallback-property",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-property",
+      "id": "position-try-options",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-options",
       "level": 3,
-      "title": "The position-fallback Property",
+      "title": "Giving Fallback Options: the position-try-options property",
       "number": "5.1"
+    },
+    {
+      "id": "position-try-order-property",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-order-property",
+      "level": 3,
+      "title": "Determining Fallback Order: the position-try-order property",
+      "number": "5.2"
+    },
+    {
+      "id": "position-try-prop",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-prop",
+      "level": 3,
+      "title": "The position-try Shorthand",
+      "number": "5.3"
     },
     {
       "id": "fallback-rule",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-rule",
       "level": 3,
-      "title": "The @position-fallback Rule",
-      "number": "5.2"
-    },
-    {
-      "id": "fallback-bounds",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-bounds",
-      "level": 3,
-      "title": "Applying Stronger Fallback Bounds: the position-fallback-bounds property",
-      "number": "5.3"
+      "title": "The @position-try Rule",
+      "number": "5.4"
     },
     {
       "id": "fallback-apply",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-apply",
       "level": 3,
       "title": "Applying Position Fallback",
-      "number": "5.4"
+      "number": "5.5"
     },
     {
-      "id": "fallback-automatic",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-automatic",
+      "id": "interfaces",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#interfaces",
+      "level": 2,
+      "title": "DOM Interfaces",
+      "number": "6"
+    },
+    {
+      "id": "om-position-try",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#om-position-try",
       "level": 3,
-      "title": "Fallback and Automatic Positioning",
-      "number": "5.5"
+      "title": "The CSSPositionTryRule interface",
+      "number": "6.1"
+    },
+    {
+      "id": "interleaving",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#interleaving",
+      "level": 2,
+      "title": "Appendix: Style & Layout Interleaving",
+      "number": "7"
     },
     {
       "id": "sec",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#sec",
       "level": 2,
       "title": "Security Considerations",
-      "number": "6"
+      "number": "8"
     },
     {
       "id": "priv",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#priv",
       "level": 2,
       "title": "Privacy Considerations",
-      "number": "7"
+      "number": "9"
     },
     {
       "id": "w3c-conformance",
@@ -259,6 +301,12 @@
       "href": "https://www.w3.org/TR/css-anchor-position-1/#property-index",
       "level": 2,
       "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
     },
     {
       "id": "issues-index",
