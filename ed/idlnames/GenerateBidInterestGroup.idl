@@ -7,6 +7,7 @@ dictionary GenerateBidInterestGroup {
   boolean enableBiddingSignalsPrioritization = false;
   record<DOMString, double> priorityVector;
 
+  record<USVString, sequence<DOMString>> sellerCapabilities;
   DOMString executionMode = "compatibility";
   USVString biddingLogicURL;
   USVString biddingWasmHelperURL;

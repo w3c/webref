@@ -312,6 +312,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-generatebidinterestgroup-sellercapabilities",
+      "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-sellercapabilities",
+      "linkingText": [
+        "sellerCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateBidInterestGroup"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "join-ad-interest-groups",
+        "href": "https://wicg.github.io/turtledove/#join-ad-interest-groups",
+        "title": "joinAdInterestGroup()",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-generatebidinterestgroup-executionmode",
       "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-executionmode",
       "linkingText": [
@@ -1097,48 +1118,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-auctionadconfig-requestedsize",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestedsize",
-      "linkingText": [
-        "requestedSize"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuctionAdConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "runadauction",
-        "href": "https://wicg.github.io/turtledove/#runadauction",
-        "title": "runAdAuction()",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-auctionadconfig-allslotsrequestedsizes",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes",
-      "linkingText": [
-        "allSlotsRequestedSizes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuctionAdConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "runadauction",
-        "href": "https://wicg.github.io/turtledove/#runadauction",
-        "title": "runAdAuction()",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-auctionadconfig-sellersignals",
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellersignals",
       "linkingText": [
@@ -1244,27 +1223,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-auctionadconfig-sellercurrency",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellercurrency",
-      "linkingText": [
-        "sellerCurrency"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuctionAdConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "runadauction",
-        "href": "https://wicg.github.io/turtledove/#runadauction",
-        "title": "runAdAuction()",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-auctionadconfig-perbuyersignals",
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyersignals",
       "linkingText": [
@@ -1311,6 +1269,48 @@
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercumulativetimeouts",
       "linkingText": [
         "perBuyerCumulativeTimeouts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-sellercurrency",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellercurrency",
+      "linkingText": [
+        "sellerCurrency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-perbuyercurrencies",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercurrencies",
+      "linkingText": [
+        "perBuyerCurrencies"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1391,10 +1391,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-auctionadconfig-perbuyercurrencies",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercurrencies",
+      "id": "dom-auctionadconfig-requiredsellercapabilities",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requiredsellercapabilities",
       "linkingText": [
-        "perBuyerCurrencies"
+        "requiredSellerCapabilities"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1412,10 +1412,31 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-auctionadconfig-componentauctions",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-componentauctions",
+      "id": "dom-auctionadconfig-requestedsize",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestedsize",
       "linkingText": [
-        "componentAuctions"
+        "requestedSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-allslotsrequestedsizes",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes",
+      "linkingText": [
+        "allSlotsRequestedSizes"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1458,6 +1479,27 @@
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionnonce",
       "linkingText": [
         "auctionNonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-componentauctions",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-componentauctions",
+      "linkingText": [
+        "componentAuctions"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1694,6 +1736,25 @@
       "href": "https://wicg.github.io/turtledove/#build-bid-generators-map",
       "linkingText": [
         "build bid generators map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-required-seller-capabilities-are-permitted",
+      "href": "https://wicg.github.io/turtledove/#check-if-required-seller-capabilities-are-permitted",
+      "linkingText": [
+        "check if required seller capabilities are permitted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6146,6 +6207,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "interest-group-seller-capabilities",
+      "href": "https://wicg.github.io/turtledove/#interest-group-seller-capabilities",
+      "linkingText": [
+        "seller capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "interest-group-all-sellers-capabilities",
+      "href": "https://wicg.github.io/turtledove/#interest-group-all-sellers-capabilities",
+      "linkingText": [
+        "all sellers capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "interest-group-execution-mode",
       "href": "https://wicg.github.io/turtledove/#interest-group-execution-mode",
       "linkingText": [
@@ -6747,6 +6850,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "seller-capability",
+      "href": "https://wicg.github.io/turtledove/#seller-capability",
+      "linkingText": [
+        "seller capability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "14.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "currency-tag",
       "href": "https://wicg.github.io/turtledove/#currency-tag",
       "linkingText": [
@@ -7224,6 +7346,27 @@
       "href": "https://wicg.github.io/turtledove/#auction-config-all-buyers-priority-signals",
       "linkingText": [
         "all buyers priority signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-required-seller-capabilities",
+      "href": "https://wicg.github.io/turtledove/#auction-config-required-seller-capabilities",
+      "linkingText": [
+        "required seller capabilities"
       ],
       "localLinkingText": [],
       "type": "dfn",

@@ -48,7 +48,7 @@
       "id": "valdef-view-transition-class-custom-ident",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
       "linkingText": [
-        "<custom-ident>*"
+        "<custom-ident>+"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -537,6 +537,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "document-can-initiate-outbound-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-can-initiate-outbound-view-transition",
+      "linkingText": [
+        "can initiate outbound view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "7.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "view-transition-params",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-params",
       "linkingText": [
@@ -739,10 +760,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "resolve-cross-document-view-transition",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#resolve-cross-document-view-transition",
+      "id": "resolve-inbound-cross-document-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#resolve-inbound-cross-document-view-transition",
       "linkingText": [
-        "resolve cross-document view-transition"
+        "resolve inbound cross-document view-transition"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -754,6 +775,25 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#access-view-transition-in-new-doc",
         "title": "Accessing the view-transition in the new Document",
         "number": "7.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-opt-in-state-for-outbound-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#update-the-opt-in-state-for-outbound-transitions",
+      "linkingText": [
+        "update the opt-in state for outbound transitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "update-opt-in-state-for-outbound",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#update-opt-in-state-for-outbound",
+        "title": "Updating the opt-in state for outbound view transitions",
+        "number": "7.6.4"
       },
       "definedIn": "prose"
     }
