@@ -146,7 +146,7 @@ const patches = {
   'css-scroll-snap-2': [
     // deleting until we have clarity on the events https://github.com/w3c/csswg-drafts/issues/7442
     {
-      pattern: { type: /^snapChang(ed|ing)$/ },
+      pattern: { type: /^snapchang(ed|ing)$/ },
       matched: 2,
       delete: true
     }
