@@ -91,7 +91,7 @@ interface ManagedMediaSource : MediaSource {
 
 [Exposed=(Window,DedicatedWorker)]
 interface BufferedChangeEvent : Event {
-  constructor(DOMString type, BufferedChangeEventInit eventInitDict);
+  constructor(DOMString type, optional BufferedChangeEventInit eventInitDict = {});
 
   [SameObject] readonly attribute TimeRanges addedRanges;
   [SameObject] readonly attribute TimeRanges removedRanges;
