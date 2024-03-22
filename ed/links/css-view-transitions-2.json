@@ -11,8 +11,7 @@
         "document",
         "document-element",
         "concept-node-document",
-        "concept-dtl-tokens",
-        "domtokenlist",
+        "concept-class",
         "concept-document-origin"
       ],
       "specShortname": "dom"
@@ -44,17 +43,23 @@
       "anchors": [
         "comb-one",
         "identifier-value",
-        "mult-one-plus",
         "mult-comma",
+        "mult-one-plus",
         "mult-zero-plus"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-view-transitions-1/": {
       "anchors": [
+        "document-active-view-transition",
         "viewtransition",
+        "dom-viewtransition-finished",
+        "dom-viewtransition-ready",
+        "dom-viewtransition-skiptransition",
+        "capture-the-old-state",
         "dom-viewtransition-updatecallbackdone",
         "captured-element",
+        "capture-the-new-state",
         "activate-view-transition",
         "examples",
         "named-view-transition-pseudo-elements",
@@ -63,7 +68,6 @@
         "selectordef-view-transition-image-pair",
         "selectordef-view-transition-old",
         "selectordef-view-transition-new",
-        "document-active-view-transition",
         "typedef-pt-name-selector",
         "viewtransition-named-elements",
         "callbackdef-updatecallback",
@@ -73,7 +77,6 @@
         "perform-pending-transition-operations",
         "viewtransition-phase",
         "document-rendering-suppression-for-view-transitions",
-        "capture-the-old-state",
         "viewtransition-initial-snapshot-containing-block-size",
         "viewtransition-update-callback-done-promise"
       ],
@@ -87,7 +90,8 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
-        "cssrule"
+        "cssrule",
+        "cssomstring"
       ],
       "specShortname": "cssom-1"
     },
@@ -103,6 +107,7 @@
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "specificity",
+        "class-selector",
         "selector",
         "type-selector"
       ],
@@ -123,31 +128,24 @@
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
         "user-navigation-involvement",
-        "apply-the-history-step",
-        "updating-the-traversable:queue-a-global-task-3",
         "has-been-revealed",
         "reactivate-a-document"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unload-a-document"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "nav-window",
-        "navigable",
         "fully-active"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
+        "render-blocking-mechanism",
         "was-created-via-cross-origin-redirects"
       ]
     },
     "https://html.spec.whatwg.org/multipage/indices.html": {
       "anchors": [
+        "event-pageswap",
         "event-pagereveal"
       ]
     },
@@ -161,21 +159,41 @@
         "visibility-state"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/links.html": {
+      "anchors": [
+        "link-type-expect"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "navigationtype",
         "dom-navigationtype-traverse",
+        "pageswapevent",
+        "dom-pageswapevent-viewtransition",
+        "dom-pageswapevent-activation",
+        "dom-pagerevealevent-viewtransition",
+        "navigationtype",
         "dom-navigationtype-push",
         "dom-navigationtype-replace",
         "dom-navigationtype-reload"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/scripting.html": {
+      "anchors": [
+        "dom-script-blocking"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "dom-style-blocking",
+        "htmllinkelement"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "rendering-opportunity",
         "concept-relevant-realm",
-        "queue-a-global-task",
         "concept-task",
+        "queue-a-global-task",
         "dom-manipulation-task-source",
         "concept-relevant-global",
         "concept-settings-object-cross-origin-isolated-capability"
@@ -196,9 +214,9 @@
         "ordered-map",
         "tuple",
         "list",
-        "map-clone",
         "implementation-defined",
-        "assert"
+        "assert",
+        "map-clone"
       ],
       "specShortname": "infra"
     },
@@ -207,15 +225,15 @@
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "idl-sequence",
+        "idl-unsigned-short",
+        "Exposed",
         "idl-DOMString",
+        "getter-steps",
+        "this",
+        "idl-sequence",
         "method-steps",
         "invalidstateerror",
         "idl-DOMException",
-        "idl-unsigned-short",
-        "Exposed",
-        "getter-steps",
-        "this",
         "aborterror",
         "resolve",
         "timeouterror"
