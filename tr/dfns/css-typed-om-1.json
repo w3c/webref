@@ -5,15 +5,17 @@
   },
   "dfns": [
     {
-      "id": "underlying-values",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#underlying-values",
+      "id": "css-internal-representation",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#css-internal-representation",
       "linkingText": [
-        "underlying values"
+        "internal representation"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "intro",
@@ -53,7 +55,7 @@
       "for": [
         "CSSStyleValue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "stylevalue-objects",
@@ -198,7 +200,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "stylevalue-objects",
@@ -331,27 +333,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-stylepropertymapreadonly-size",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-stylepropertymapreadonly-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "StylePropertyMapReadOnly"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-stylepropertymap",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#the-stylepropertymap",
-        "title": "The StylePropertyMap",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "stylepropertymap",
       "href": "https://www.w3.org/TR/css-typed-om-1/#stylepropertymap",
       "linkingText": [
@@ -379,7 +360,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StylePropertyMap/set(property, ...values)"
+        "StylePropertyMap/set(property, ...values)",
+        "StylePropertyMap/set(property)"
       ],
       "access": "public",
       "informative": false,
@@ -400,7 +382,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StylePropertyMap/set(property, ...values)"
+        "StylePropertyMap/set(property, ...values)",
+        "StylePropertyMap/set(property)"
       ],
       "access": "public",
       "informative": false,
@@ -421,7 +404,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StylePropertyMap/append(property, ...values)"
+        "StylePropertyMap/append(property, ...values)",
+        "StylePropertyMap/append(property)"
       ],
       "access": "public",
       "informative": false,
@@ -442,7 +426,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StylePropertyMap/append(property, ...values)"
+        "StylePropertyMap/append(property, ...values)",
+        "StylePropertyMap/append(property)"
       ],
       "access": "public",
       "informative": false,
@@ -484,7 +469,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "StylePropertyMapReadonly",
+        "StylePropertyMapReadOnly",
         "StylePropertyMap"
       ],
       "access": "public",
@@ -606,15 +591,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-stylepropertymapreadonly-size①",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-stylepropertymapreadonly-size%E2%91%A0",
+      "id": "dom-stylepropertymapreadonly-size",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-stylepropertymapreadonly-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "StylePropertyMapReadonly",
+        "StylePropertyMapReadOnly",
         "StylePropertyMap"
       ],
       "access": "public",
@@ -631,7 +616,8 @@
       "id": "dom-stylepropertymap-set",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-stylepropertymap-set",
       "linkingText": [
-        "set(property, ...values)"
+        "set(property, ...values)",
+        "set(property)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -652,7 +638,8 @@
       "id": "dom-stylepropertymap-append",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-stylepropertymap-append",
       "linkingText": [
-        "append(property, ...values)"
+        "append(property, ...values)",
+        "append(property)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -712,10 +699,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-an-underlying-value",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#create-an-underlying-value",
+      "id": "create-an-internal-representation",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#create-an-internal-representation",
       "linkingText": [
-        "create an underlying value"
+        "create an internal representation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -731,15 +718,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "match-a-css-production",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#match-a-css-production",
+      "id": "cssstylevalue-match-a-grammar",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssstylevalue-match-a-grammar",
       "linkingText": [
-        "match a CSS production"
+        "match a grammar",
+        "match the grammar"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSSStyleValue"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-stylepropertymap",
@@ -758,7 +748,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-stylepropertymap",
@@ -777,7 +767,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-stylepropertymap",
@@ -796,7 +786,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "computed-stylepropertymapreadonly-objects",
@@ -857,7 +847,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "declared-stylepropertymap-objects",
@@ -910,10 +900,30 @@
       "definedIn": "prose"
     },
     {
+      "id": "cssunparsedvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssunparsedvalue",
+      "linkingText": [
+        "CSSUnparsedValue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unparsedvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#unparsedvalue-objects",
+        "title": "CSSUnparsedValue objects",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssunparsedvalue-cssunparsedvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssunparsedvalue-cssunparsedvalue",
       "linkingText": [
-        "CSSUnparsedValue(members)"
+        "CSSUnparsedValue(members)",
+        "constructor(members)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -939,27 +949,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSUnparsedValue/CSSUnparsedValue(members)"
+        "CSSUnparsedValue/CSSUnparsedValue(members)",
+        "CSSUnparsedValue/constructor(members)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "unparsedvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#unparsedvalue-objects",
-        "title": "CSSUnparsedValue objects",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssunparsedvalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssunparsedvalue",
-      "linkingText": [
-        "CSSUnparsedValue"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1053,6 +1045,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssvariablereferencevalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssvariablereferencevalue",
+      "linkingText": [
+        "CSSVariableReferenceValue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unparsedvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#unparsedvalue-objects",
+        "title": "CSSUnparsedValue objects",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssvariablereferencevalue-cssvariablereferencevalue-variable-fallback-variable",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssvariablereferencevalue-cssvariablereferencevalue-variable-fallback-variable",
       "linkingText": [
@@ -1061,7 +1072,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable, fallback)"
+        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable, fallback)",
+        "CSSVariableReferenceValue/constructor(variable, fallback)",
+        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable)",
+        "CSSVariableReferenceValue/constructor(variable)"
       ],
       "access": "public",
       "informative": false,
@@ -1082,27 +1096,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable, fallback)"
+        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable, fallback)",
+        "CSSVariableReferenceValue/constructor(variable, fallback)",
+        "CSSVariableReferenceValue/CSSVariableReferenceValue(variable)",
+        "CSSVariableReferenceValue/constructor(variable)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "unparsedvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#unparsedvalue-objects",
-        "title": "CSSUnparsedValue objects",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssvariablereferencevalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssvariablereferencevalue",
-      "linkingText": [
-        "CSSVariableReferenceValue"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1201,7 +1199,10 @@
       "id": "dom-cssvariablereferencevalue-cssvariablereferencevalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssvariablereferencevalue-cssvariablereferencevalue",
       "linkingText": [
-        "CSSVariableReferenceValue(variable, fallback)"
+        "CSSVariableReferenceValue(variable, fallback)",
+        "constructor(variable, fallback)",
+        "CSSVariableReferenceValue(variable)",
+        "constructor(variable)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1217,27 +1218,6 @@
         "number": "4.1"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-csskeywordvalue-csskeywordvalue-value-value",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csskeywordvalue-csskeywordvalue-value-value",
-      "linkingText": [
-        "value"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSKeywordValue/CSSKeywordValue(value)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "keywordvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#keywordvalue-objects",
-        "title": "CSSKeywordValue objects",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "csskeywordvalue",
@@ -1259,16 +1239,77 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-csskeywordvalue-csskeywordvalue-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csskeywordvalue-csskeywordvalue-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSKeywordValue/CSSKeywordValue(value)",
+        "CSSKeywordValue/constructor(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keywordvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#keywordvalue-objects",
+        "title": "CSSKeywordValue objects",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-csskeywordvalue-csskeywordvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csskeywordvalue-csskeywordvalue",
       "linkingText": [
-        "CSSKeywordValue(value)"
+        "CSSKeywordValue(value)",
+        "constructor(value)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
         "CSSKeywordValue"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keywordvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#keywordvalue-objects",
+        "title": "CSSKeywordValue objects",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedefdef-csskeywordish",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-csskeywordish",
+      "linkingText": [
+        "CSSKeywordish"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keywordvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#keywordvalue-objects",
+        "title": "CSSKeywordValue objects",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "rectify-a-keywordish-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-keywordish-value",
+      "linkingText": [
+        "rectify a keywordish value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1323,8 +1364,7 @@
       "id": "rectify-a-numberish-value",
       "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-numberish-value",
       "linkingText": [
-        "rectify a numberish value",
-        "rectifying a numberish value"
+        "rectify a numberish value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1362,8 +1402,7 @@
       "id": "dom-cssnumericbasetype-length",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-length",
       "linkingText": [
-        "\"length\"",
-        "length"
+        "\"length\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1384,8 +1423,7 @@
       "id": "dom-cssnumericbasetype-angle",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-angle",
       "linkingText": [
-        "\"angle\"",
-        "angle"
+        "\"angle\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1406,8 +1444,7 @@
       "id": "dom-cssnumericbasetype-time",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-time",
       "linkingText": [
-        "\"time\"",
-        "time"
+        "\"time\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1428,8 +1465,7 @@
       "id": "dom-cssnumericbasetype-frequency",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-frequency",
       "linkingText": [
-        "\"frequency\"",
-        "frequency"
+        "\"frequency\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1450,8 +1486,7 @@
       "id": "dom-cssnumericbasetype-resolution",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-resolution",
       "linkingText": [
-        "\"resolution\"",
-        "resolution"
+        "\"resolution\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1472,8 +1507,7 @@
       "id": "dom-cssnumericbasetype-flex",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-flex",
       "linkingText": [
-        "\"flex\"",
-        "flex"
+        "\"flex\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1494,8 +1528,7 @@
       "id": "dom-cssnumericbasetype-percent",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericbasetype-percent",
       "linkingText": [
-        "\"percent\"",
-        "percent"
+        "\"percent\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1727,7 +1760,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/add(...values)"
+        "CSSNumericValue/add(...values)",
+        "CSSNumericValue/add()"
       ],
       "access": "public",
       "informative": false,
@@ -1748,7 +1782,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/sub(...values)"
+        "CSSNumericValue/sub(...values)",
+        "CSSNumericValue/sub()"
       ],
       "access": "public",
       "informative": false,
@@ -1769,7 +1804,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/mul(...values)"
+        "CSSNumericValue/mul(...values)",
+        "CSSNumericValue/mul()"
       ],
       "access": "public",
       "informative": false,
@@ -1790,7 +1826,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/div(...values)"
+        "CSSNumericValue/div(...values)",
+        "CSSNumericValue/div()"
       ],
       "access": "public",
       "informative": false,
@@ -1811,7 +1848,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/min(...values)"
+        "CSSNumericValue/min(...values)",
+        "CSSNumericValue/min()"
       ],
       "access": "public",
       "informative": false,
@@ -1832,7 +1870,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/max(...values)"
+        "CSSNumericValue/max(...values)",
+        "CSSNumericValue/max()"
       ],
       "access": "public",
       "informative": false,
@@ -1853,7 +1892,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/equals(...value)"
+        "CSSNumericValue/equals(...value)",
+        "CSSNumericValue/equals()"
       ],
       "access": "public",
       "informative": false,
@@ -1895,7 +1935,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSNumericValue/toSum(...units)"
+        "CSSNumericValue/toSum(...units)",
+        "CSSNumericValue/toSum()"
       ],
       "access": "public",
       "informative": false,
@@ -1932,7 +1973,8 @@
       "id": "dom-cssnumericvalue-add",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-add",
       "linkingText": [
-        "add(...values)"
+        "add(...values)",
+        "add()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1953,7 +1995,8 @@
       "id": "dom-cssnumericvalue-sub",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-sub",
       "linkingText": [
-        "sub(...values)"
+        "sub(...values)",
+        "sub()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1971,17 +2014,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "cssmath-negate",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmath-negate",
+      "id": "cssmath-negate-a-cssnumericvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmath-negate-a-cssnumericvalue",
       "linkingText": [
+        "negate a CSSNumericValue"
+      ],
+      "localLinkingText": [
         "negate"
       ],
-      "localLinkingText": [],
       "type": "dfn",
       "for": [
         "CSSMath"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -1995,7 +2040,8 @@
       "id": "dom-cssnumericvalue-mul",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-mul",
       "linkingText": [
-        "mul(...values)"
+        "mul(...values)",
+        "mul()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2016,7 +2062,8 @@
       "id": "dom-cssnumericvalue-div",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-div",
       "linkingText": [
-        "div(...values)"
+        "div(...values)",
+        "div()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2034,17 +2081,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "cssmath-invert",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmath-invert",
+      "id": "cssmath-invert-a-cssnumericvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmath-invert-a-cssnumericvalue",
       "linkingText": [
+        "invert a CSSNumericValue"
+      ],
+      "localLinkingText": [
         "invert"
       ],
-      "localLinkingText": [],
       "type": "dfn",
       "for": [
         "CSSMath"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2058,7 +2107,8 @@
       "id": "dom-cssnumericvalue-min",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-min",
       "linkingText": [
-        "min(...values)"
+        "min(...values)",
+        "min()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2079,7 +2129,8 @@
       "id": "dom-cssnumericvalue-max",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-max",
       "linkingText": [
-        "max(...values)"
+        "max(...values)",
+        "max()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2100,6 +2151,8 @@
       "id": "dom-cssnumericvalue-equals",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-equals",
       "linkingText": [
+        "equals(...value)",
+        "equals()",
         "equals(...values)"
       ],
       "localLinkingText": [],
@@ -2180,7 +2233,8 @@
       "id": "dom-cssnumericvalue-tosum",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssnumericvalue-tosum",
       "linkingText": [
-        "toSum(...units)"
+        "toSum(...units)",
+        "toSum()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2219,15 +2273,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "sum-value",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#sum-value",
+      "id": "cssnumericvalue-sum-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssnumericvalue-sum-value",
       "linkingText": [
         "sum value"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2248,7 +2304,7 @@
       "for": [
         "sum value"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2269,7 +2325,7 @@
       "for": [
         "sum value"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2289,7 +2345,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2308,7 +2364,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2327,7 +2383,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-value",
@@ -2369,7 +2425,7 @@
       "for": [
         "CSSNumericValue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2390,7 +2446,7 @@
       "for": [
         "CSSNumericValue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2411,7 +2467,7 @@
       "for": [
         "CSSNumericValue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2422,16 +2478,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-a-type",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#create-a-type",
+      "id": "cssnumericvalue-create-a-type",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssnumericvalue-create-a-type",
       "linkingText": [
         "create a type",
         "creating a type"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2442,8 +2500,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "add-two-types",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#add-two-types",
+      "id": "cssnumericvalue-add-two-types",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssnumericvalue-add-two-types",
       "linkingText": [
         "add two types"
       ],
@@ -2452,8 +2510,10 @@
         "addition"
       ],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2472,7 +2532,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2496,7 +2556,28 @@
       "for": [
         "CSSNumericValue"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-typing",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-typing",
+        "title": "Numeric Value Typing",
+        "number": "4.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cssnumericvalue-invert-a-type",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssnumericvalue-invert-a-type",
+      "linkingText": [
+        "invert a type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2517,7 +2598,7 @@
       "for": [
         "CSSNumericValue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-typing",
@@ -2528,6 +2609,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "cssunitvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssunitvalue",
+      "linkingText": [
+        "CSSUnitValue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#simple-numeric",
+        "title": "Value + Unit: CSSUnitValue objects",
+        "number": "4.3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssunitvalue-cssunitvalue-value-unit-value",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssunitvalue-cssunitvalue-value-unit-value",
       "linkingText": [
@@ -2536,7 +2636,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSUnitValue/CSSUnitValue(value, unit)"
+        "CSSUnitValue/CSSUnitValue(value, unit)",
+        "CSSUnitValue/constructor(value, unit)"
       ],
       "access": "public",
       "informative": false,
@@ -2557,27 +2658,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSUnitValue/CSSUnitValue(value, unit)"
+        "CSSUnitValue/CSSUnitValue(value, unit)",
+        "CSSUnitValue/constructor(value, unit)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "simple-numeric",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#simple-numeric",
-        "title": "Value + Unit: CSSUnitValue objects",
-        "number": "4.3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssunitvalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssunitvalue",
-      "linkingText": [
-        "CSSUnitValue"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2634,7 +2717,8 @@
       "id": "dom-cssunitvalue-cssunitvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssunitvalue-cssunitvalue",
       "linkingText": [
-        "CSSUnitValue(value, unit)"
+        "CSSUnitValue(value, unit)",
+        "constructor(value, unit)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -2660,7 +2744,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "simple-numeric",
@@ -2674,7 +2758,8 @@
       "id": "create-a-cssunitvalue-from-a-pair",
       "href": "https://www.w3.org/TR/css-typed-om-1/#create-a-cssunitvalue-from-a-pair",
       "linkingText": [
-        "create a CSSUnitValue from a pair"
+        "create a CSSUnitValue from a pair",
+        "new unit value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2728,16 +2813,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathsum-cssmathsum-args-args",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathsum-cssmathsum-args-args",
+      "id": "cssmathsum",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathsum",
       "linkingText": [
-        "args"
+        "CSSMathSum"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathSum/CSSMathSum(args)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2749,14 +2832,19 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathsum",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathsum",
+      "id": "dom-cssmathsum-cssmathsum-args-args",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathsum-cssmathsum-args-args",
       "linkingText": [
-        "CSSMathSum"
+        "args"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathSum/CSSMathSum(...args)",
+        "CSSMathSum/constructor(...args)",
+        "CSSMathSum/CSSMathSum()",
+        "CSSMathSum/constructor()"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2789,16 +2877,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathproduct-cssmathproduct-args-args",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathproduct-cssmathproduct-args-args",
+      "id": "cssmathproduct",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathproduct",
       "linkingText": [
-        "args"
+        "CSSMathProduct"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathProduct/CSSMathProduct(args)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2810,14 +2896,19 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathproduct",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathproduct",
+      "id": "dom-cssmathproduct-cssmathproduct-args-args",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathproduct-cssmathproduct-args-args",
       "linkingText": [
-        "CSSMathProduct"
+        "args"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathProduct/CSSMathProduct(...args)",
+        "CSSMathProduct/constructor(...args)",
+        "CSSMathProduct/CSSMathProduct()",
+        "CSSMathProduct/constructor()"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2850,16 +2941,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathnegate-cssmathnegate-arg-arg",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathnegate-cssmathnegate-arg-arg",
+      "id": "cssmathnegate",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathnegate",
       "linkingText": [
-        "arg"
+        "CSSMathNegate"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathNegate/CSSMathNegate(arg)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2871,14 +2960,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathnegate",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathnegate",
+      "id": "dom-cssmathnegate-cssmathnegate-arg-arg",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathnegate-cssmathnegate-arg-arg",
       "linkingText": [
-        "CSSMathNegate"
+        "arg"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathNegate/CSSMathNegate(arg)",
+        "CSSMathNegate/constructor(arg)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2911,16 +3003,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathinvert-cssmathinvert-arg-arg",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathinvert-cssmathinvert-arg-arg",
+      "id": "cssmathinvert",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathinvert",
       "linkingText": [
-        "arg"
+        "CSSMathInvert"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathInvert/CSSMathInvert(arg)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2932,14 +3022,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathinvert",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathinvert",
+      "id": "dom-cssmathinvert-cssmathinvert-arg-arg",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathinvert-cssmathinvert-arg-arg",
       "linkingText": [
-        "CSSMathInvert"
+        "arg"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathInvert/CSSMathInvert(arg)",
+        "CSSMathInvert/constructor(arg)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2972,16 +3065,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathmin-cssmathmin-args-args",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmin-cssmathmin-args-args",
+      "id": "cssmathmin",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathmin",
       "linkingText": [
-        "args"
+        "CSSMathMin"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathMin/CSSMathMin(args)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2993,14 +3084,19 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathmin",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathmin",
+      "id": "dom-cssmathmin-cssmathmin-args-args",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmin-cssmathmin-args-args",
       "linkingText": [
-        "CSSMathMin"
+        "args"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathMin/CSSMathMin(...args)",
+        "CSSMathMin/constructor(...args)",
+        "CSSMathMin/CSSMathMin()",
+        "CSSMathMin/constructor()"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -3033,16 +3129,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssmathmax-cssmathmax-args-args",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmax-cssmathmax-args-args",
+      "id": "cssmathmax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathmax",
       "linkingText": [
-        "args"
+        "CSSMathMax"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSMathMax/CSSMathMax(args)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -3054,14 +3148,19 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssmathmax",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathmax",
+      "id": "dom-cssmathmax-cssmathmax-args-args",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmax-cssmathmax-args-args",
       "linkingText": [
-        "CSSMathMax"
+        "args"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSMathMax/CSSMathMax(...args)",
+        "CSSMathMax/constructor(...args)",
+        "CSSMathMax/CSSMathMax()",
+        "CSSMathMax/constructor()"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -3082,6 +3181,154 @@
       "type": "attribute",
       "for": [
         "CSSMathMax"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssmathclamp",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmathclamp",
+      "linkingText": [
+        "CSSMathClamp"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-cssmathclamp-lower-value-upper-lower",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-cssmathclamp-lower-value-upper-lower",
+      "linkingText": [
+        "lower"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSMathClamp/CSSMathClamp(lower, value, upper)",
+        "CSSMathClamp/constructor(lower, value, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-cssmathclamp-lower-value-upper-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-cssmathclamp-lower-value-upper-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSMathClamp/CSSMathClamp(lower, value, upper)",
+        "CSSMathClamp/constructor(lower, value, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-cssmathclamp-lower-value-upper-upper",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-cssmathclamp-lower-value-upper-upper",
+      "linkingText": [
+        "upper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSMathClamp/CSSMathClamp(lower, value, upper)",
+        "CSSMathClamp/constructor(lower, value, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-lower",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-lower",
+      "linkingText": [
+        "lower"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMathClamp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMathClamp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathclamp-upper",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-upper",
+      "linkingText": [
+        "upper"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMathClamp"
       ],
       "access": "public",
       "informative": false,
@@ -3156,8 +3403,7 @@
       "id": "dom-cssmathoperator-sum",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-sum",
       "linkingText": [
-        "\"sum\"",
-        "sum"
+        "\"sum\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3178,8 +3424,7 @@
       "id": "dom-cssmathoperator-product",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-product",
       "linkingText": [
-        "\"product\"",
-        "product"
+        "\"product\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3200,8 +3445,7 @@
       "id": "dom-cssmathoperator-negate",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-negate",
       "linkingText": [
-        "\"negate\"",
-        "negate"
+        "\"negate\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3222,8 +3466,7 @@
       "id": "dom-cssmathoperator-invert",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-invert",
       "linkingText": [
-        "\"invert\"",
-        "invert"
+        "\"invert\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3244,8 +3487,7 @@
       "id": "dom-cssmathoperator-min",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-min",
       "linkingText": [
-        "\"min\"",
-        "min"
+        "\"min\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3266,8 +3508,28 @@
       "id": "dom-cssmathoperator-max",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-max",
       "linkingText": [
-        "\"max\"",
-        "max"
+        "\"max\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CSSMathOperator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmathoperator-clamp",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathoperator-clamp",
+      "linkingText": [
+        "\"clamp\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3298,6 +3560,7 @@
         "CSSMathProduct",
         "CSSMathMin",
         "CSSMathMax",
+        "CSSMathClamp",
         "CSSMathNegate",
         "CSSMathInvert"
       ],
@@ -3315,7 +3578,10 @@
       "id": "dom-cssmathsum-cssmathsum",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathsum-cssmathsum",
       "linkingText": [
-        "CSSMathSum(...args)"
+        "CSSMathSum(...args)",
+        "constructor(...args)",
+        "CSSMathSum()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3336,7 +3602,10 @@
       "id": "dom-cssmathmin-cssmathmin",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmin-cssmathmin",
       "linkingText": [
-        "CSSMathMin(...args)"
+        "CSSMathMin(...args)",
+        "constructor(...args)",
+        "CSSMathMin()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3357,7 +3626,10 @@
       "id": "dom-cssmathmax-cssmathmax",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathmax-cssmathmax",
       "linkingText": [
-        "CSSMathMax(...args)"
+        "CSSMathMax(...args)",
+        "constructor(...args)",
+        "CSSMathMax()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3378,7 +3650,10 @@
       "id": "dom-cssmathproduct-cssmathproduct",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathproduct-cssmathproduct",
       "linkingText": [
-        "CSSMathProduct(...args)"
+        "CSSMathProduct(...args)",
+        "constructor(...args)",
+        "CSSMathProduct()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3396,10 +3671,33 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-cssmathclamp-cssmathclamp",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathclamp-cssmathclamp",
+      "linkingText": [
+        "CSSMathClamp(lower, value, upper)",
+        "constructor(lower, value, upper)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSMathClamp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "complex-numeric",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
+        "title": "Complex Numeric Values: CSSMathValue objects",
+        "number": "4.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-cssmathnegate-cssmathnegate",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathnegate-cssmathnegate",
       "linkingText": [
-        "CSSMathNegate(arg)"
+        "CSSMathNegate(arg)",
+        "constructor(arg)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3420,7 +3718,8 @@
       "id": "dom-cssmathinvert-cssmathinvert",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmathinvert-cssmathinvert",
       "linkingText": [
-        "CSSMathInvert(arg)"
+        "CSSMathInvert(arg)",
+        "constructor(arg)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3446,7 +3745,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "complex-numeric",
@@ -3468,27 +3767,6 @@
         "CSSNumericArray"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "complex-numeric",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#complex-numeric",
-        "title": "Complex Numeric Values: CSSMathValue objects",
-        "number": "4.3.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "cssnumericarray-indexed-getter",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssnumericarray-indexed-getter",
-      "linkingText": [
-        "indexed getter"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "CSSNumericArray"
-      ],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "complex-numeric",
@@ -3571,6 +3849,90 @@
       "type": "argument",
       "for": [
         "CSS/percent(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cap",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cap",
+      "linkingText": [
+        "cap(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cap-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cap-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cap(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-ch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ch",
+      "linkingText": [
+        "ch(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-ch-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ch-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/ch(value)"
       ],
       "access": "public",
       "informative": false,
@@ -3667,48 +4029,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-css-ch",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ch",
-      "linkingText": [
-        "ch(value)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "CSS"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "numeric-factory",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
-        "title": "Numeric Factory Functions",
-        "number": "4.3.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-css-ch-value-value",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ch-value-value",
-      "linkingText": [
-        "value"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSS/ch(value)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "numeric-factory",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
-        "title": "Numeric Factory Functions",
-        "number": "4.3.5"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-css-ic",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ic",
       "linkingText": [
@@ -3739,6 +4059,132 @@
       "type": "argument",
       "for": [
         "CSS/ic(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lh",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lh",
+      "linkingText": [
+        "lh(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lh-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lh-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lh(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-rcap",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rcap",
+      "linkingText": [
+        "rcap(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-rcap-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rcap-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/rcap(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-rch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rch",
+      "linkingText": [
+        "rch(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-rch-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rch-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/rch(value)"
       ],
       "access": "public",
       "informative": false,
@@ -3793,10 +4239,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-css-lh",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lh",
+      "id": "dom-css-rex",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rex",
       "linkingText": [
-        "lh(value)"
+        "rex(value)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3814,15 +4260,57 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-css-lh-value-value",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lh-value-value",
+      "id": "dom-css-rex-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-rex-value-value",
       "linkingText": [
         "value"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSS/lh(value)"
+        "CSS/rex(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-ric",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ric",
+      "linkingText": [
+        "ric(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-ric-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-ric-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/ric(value)"
       ],
       "access": "public",
       "informative": false,
@@ -4117,6 +4605,1014 @@
       "type": "argument",
       "for": [
         "CSS/vmax(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svw",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svw",
+      "linkingText": [
+        "svw(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svw-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svw-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svw(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svh",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svh",
+      "linkingText": [
+        "svh(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svh-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svh-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svh(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svi",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svi",
+      "linkingText": [
+        "svi(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svi-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svi-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svi(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svb",
+      "linkingText": [
+        "svb(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svb-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svb-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svb(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svmin",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svmin",
+      "linkingText": [
+        "svmin(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svmin-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svmin-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svmin(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svmax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svmax",
+      "linkingText": [
+        "svmax(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-svmax-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-svmax-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/svmax(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvw",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvw",
+      "linkingText": [
+        "lvw(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvw-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvw-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvw(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvh",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvh",
+      "linkingText": [
+        "lvh(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvh-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvh-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvh(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvi",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvi",
+      "linkingText": [
+        "lvi(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvi-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvi-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvi(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvb",
+      "linkingText": [
+        "lvb(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvb-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvb-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvb(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvmin",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvmin",
+      "linkingText": [
+        "lvmin(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvmin-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvmin-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvmin(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvmax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvmax",
+      "linkingText": [
+        "lvmax(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-lvmax-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-lvmax-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/lvmax(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvw",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvw",
+      "linkingText": [
+        "dvw(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvw-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvw-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvw(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvh",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvh",
+      "linkingText": [
+        "dvh(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvh-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvh-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvh(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvi",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvi",
+      "linkingText": [
+        "dvi(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvi-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvi-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvi(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvb",
+      "linkingText": [
+        "dvb(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvb-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvb-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvb(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvmin",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvmin",
+      "linkingText": [
+        "dvmin(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvmin-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvmin-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvmin(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvmax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvmax",
+      "linkingText": [
+        "dvmax(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-dvmax-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-dvmax-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/dvmax(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqw",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqw",
+      "linkingText": [
+        "cqw(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqw-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqw-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqw(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqh",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqh",
+      "linkingText": [
+        "cqh(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqh-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqh-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqh(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqi",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqi",
+      "linkingText": [
+        "cqi(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqi-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqi-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqi(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqb",
+      "linkingText": [
+        "cqb(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqb-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqb-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqb(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqmin",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqmin",
+      "linkingText": [
+        "cqmin(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqmin-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqmin-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqmin(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqmax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqmax",
+      "linkingText": [
+        "cqmax(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-factory",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numeric-factory",
+        "title": "Numeric Factory Functions",
+        "number": "4.3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-cqmax-value-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-css-cqmax-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/cqmax(value)"
       ],
       "access": "public",
       "informative": false,
@@ -4927,16 +6423,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-csstransformvalue-csstransformvalue-transforms-transforms",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csstransformvalue-csstransformvalue-transforms-transforms",
+      "id": "csstransformvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csstransformvalue",
       "linkingText": [
-        "transforms"
+        "CSSTransformValue"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSTransformValue/CSSTransformValue(transforms)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -4948,14 +6442,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "csstransformvalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#csstransformvalue",
+      "id": "dom-csstransformvalue-csstransformvalue-transforms-transforms",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csstransformvalue-csstransformvalue-transforms-transforms",
       "linkingText": [
-        "CSSTransformValue"
+        "transforms"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSTransformValue/CSSTransformValue(transforms)",
+        "CSSTransformValue/constructor(transforms)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5033,7 +6530,8 @@
       "id": "dom-csstransformvalue-csstransformvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csstransformvalue-csstransformvalue",
       "linkingText": [
-        "CSSTransformValue(transforms)"
+        "CSSTransformValue(transforms)",
+        "constructor(transforms)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -5135,6 +6633,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedefdef-cssperspectivevalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-cssperspectivevalue",
+      "linkingText": [
+        "CSSPerspectiveValue"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transformvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
+        "title": "CSSTransformValue objects",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "csstransformcomponent",
       "href": "https://www.w3.org/TR/css-typed-om-1/#csstransformcomponent",
       "linkingText": [
@@ -5164,7 +6681,26 @@
       "for": [
         "CSSTransformComponent"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transformvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
+        "title": "CSSTransformValue objects",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "csstranslate",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csstranslate",
+      "linkingText": [
+        "CSSTranslate"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "transformvalue-objects",
@@ -5183,7 +6719,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSTranslate/CSSTranslate(x, y, z)"
+        "CSSTranslate/CSSTranslate(x, y, z)",
+        "CSSTranslate/constructor(x, y, z)",
+        "CSSTranslate/CSSTranslate(x, y)",
+        "CSSTranslate/constructor(x, y)"
       ],
       "access": "public",
       "informative": false,
@@ -5204,7 +6743,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSTranslate/CSSTranslate(x, y, z)"
+        "CSSTranslate/CSSTranslate(x, y, z)",
+        "CSSTranslate/constructor(x, y, z)",
+        "CSSTranslate/CSSTranslate(x, y)",
+        "CSSTranslate/constructor(x, y)"
       ],
       "access": "public",
       "informative": false,
@@ -5225,27 +6767,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSTranslate/CSSTranslate(x, y, z)"
+        "CSSTranslate/CSSTranslate(x, y, z)",
+        "CSSTranslate/constructor(x, y, z)",
+        "CSSTranslate/CSSTranslate(x, y)",
+        "CSSTranslate/constructor(x, y)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "transformvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
-        "title": "CSSTransformValue objects",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "csstranslate",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#csstranslate",
-      "linkingText": [
-        "CSSTranslate"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5320,6 +6846,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssrotate",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssrotate",
+      "linkingText": [
+        "CSSRotate"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transformvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
+        "title": "CSSTransformValue objects",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssrotate-cssrotate-angle-angle",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrotate-cssrotate-angle-angle",
       "linkingText": [
@@ -5328,7 +6873,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSRotate/CSSRotate(angle)"
+        "CSSRotate/CSSRotate(angle)",
+        "CSSRotate/constructor(angle)"
       ],
       "access": "public",
       "informative": false,
@@ -5349,7 +6895,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSRotate/CSSRotate(x, y, z, angle)"
+        "CSSRotate/CSSRotate(x, y, z, angle)",
+        "CSSRotate/constructor(x, y, z, angle)"
       ],
       "access": "public",
       "informative": false,
@@ -5370,7 +6917,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSRotate/CSSRotate(x, y, z, angle)"
+        "CSSRotate/CSSRotate(x, y, z, angle)",
+        "CSSRotate/constructor(x, y, z, angle)"
       ],
       "access": "public",
       "informative": false,
@@ -5391,7 +6939,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSRotate/CSSRotate(x, y, z, angle)"
+        "CSSRotate/CSSRotate(x, y, z, angle)",
+        "CSSRotate/constructor(x, y, z, angle)"
       ],
       "access": "public",
       "informative": false,
@@ -5412,27 +6961,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSRotate/CSSRotate(x, y, z, angle)"
+        "CSSRotate/CSSRotate(x, y, z, angle)",
+        "CSSRotate/constructor(x, y, z, angle)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "transformvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
-        "title": "CSSTransformValue objects",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssrotate",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssrotate",
-      "linkingText": [
-        "CSSRotate"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5465,6 +6996,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssscale",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssscale",
+      "linkingText": [
+        "CSSScale"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transformvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
+        "title": "CSSTransformValue objects",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssscale-cssscale-x-y-z-x",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssscale-cssscale-x-y-z-x",
       "linkingText": [
@@ -5473,7 +7023,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSScale/CSSScale(x, y, z)"
+        "CSSScale/CSSScale(x, y, z)",
+        "CSSScale/constructor(x, y, z)",
+        "CSSScale/CSSScale(x, y)",
+        "CSSScale/constructor(x, y)"
       ],
       "access": "public",
       "informative": false,
@@ -5494,7 +7047,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSScale/CSSScale(x, y, z)"
+        "CSSScale/CSSScale(x, y, z)",
+        "CSSScale/constructor(x, y, z)",
+        "CSSScale/CSSScale(x, y)",
+        "CSSScale/constructor(x, y)"
       ],
       "access": "public",
       "informative": false,
@@ -5515,7 +7071,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSScale/CSSScale(x, y, z)"
+        "CSSScale/CSSScale(x, y, z)",
+        "CSSScale/constructor(x, y, z)",
+        "CSSScale/CSSScale(x, y)",
+        "CSSScale/constructor(x, y)"
       ],
       "access": "public",
       "informative": false,
@@ -5528,10 +7087,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssscale",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssscale",
+      "id": "cssskew",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskew",
       "linkingText": [
-        "CSSScale"
+        "CSSSkew"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -5555,7 +7114,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSSkew/CSSSkew(ax, ay)"
+        "CSSSkew/CSSSkew(ax, ay)",
+        "CSSSkew/constructor(ax, ay)"
       ],
       "access": "public",
       "informative": false,
@@ -5576,27 +7136,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSSkew/CSSSkew(ax, ay)"
+        "CSSSkew/CSSSkew(ax, ay)",
+        "CSSSkew/constructor(ax, ay)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "transformvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
-        "title": "CSSTransformValue objects",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssskew",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskew",
-      "linkingText": [
-        "CSSSkew"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5650,16 +7192,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssskewx-cssskewx-ax-ax",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewx-cssskewx-ax-ax",
+      "id": "cssskewx",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskewx",
       "linkingText": [
-        "ax"
+        "CSSSkewX"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSSkewX/CSSSkewX(ax)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5671,14 +7211,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssskewx",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskewx",
+      "id": "dom-cssskewx-cssskewx-ax-ax",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewx-cssskewx-ax-ax",
       "linkingText": [
-        "CSSSkewX"
+        "ax"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSSkewX/CSSSkewX(ax)",
+        "CSSSkewX/constructor(ax)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5711,16 +7254,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssskewy-cssskewy-ay-ay",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewy-cssskewy-ay-ay",
+      "id": "cssskewy",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskewy",
       "linkingText": [
-        "ay"
+        "CSSSkewY"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSSkewY/CSSSkewY(ay)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5732,14 +7273,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssskewy",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssskewy",
+      "id": "dom-cssskewy-cssskewy-ay-ay",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewy-cssskewy-ay-ay",
       "linkingText": [
-        "CSSSkewY"
+        "ay"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSSkewY/CSSSkewY(ay)",
+        "CSSSkewY/constructor(ay)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5772,16 +7316,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssperspective-cssperspective-length-length",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssperspective-cssperspective-length-length",
+      "id": "cssperspective",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssperspective",
       "linkingText": [
-        "length"
+        "CSSPerspective"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSPerspective/CSSPerspective(length)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5793,14 +7335,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssperspective",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssperspective",
+      "id": "dom-cssperspective-cssperspective-length-length",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssperspective-cssperspective-length-length",
       "linkingText": [
-        "CSSPerspective"
+        "length"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "CSSPerspective/CSSPerspective(length)",
+        "CSSPerspective/constructor(length)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -5833,6 +7378,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssmatrixcomponent",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmatrixcomponent",
+      "linkingText": [
+        "CSSMatrixComponent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transformvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
+        "title": "CSSTransformValue objects",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssmatrixcomponent-cssmatrixcomponent-matrix-options-matrix",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmatrixcomponent-cssmatrixcomponent-matrix-options-matrix",
       "linkingText": [
@@ -5841,7 +7405,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSMatrixComponent/CSSMatrixComponent(matrix, options)"
+        "CSSMatrixComponent/CSSMatrixComponent(matrix, options)",
+        "CSSMatrixComponent/constructor(matrix, options)",
+        "CSSMatrixComponent/CSSMatrixComponent(matrix)",
+        "CSSMatrixComponent/constructor(matrix)"
       ],
       "access": "public",
       "informative": false,
@@ -5862,27 +7429,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSMatrixComponent/CSSMatrixComponent(matrix, options)"
+        "CSSMatrixComponent/CSSMatrixComponent(matrix, options)",
+        "CSSMatrixComponent/constructor(matrix, options)",
+        "CSSMatrixComponent/CSSMatrixComponent(matrix)",
+        "CSSMatrixComponent/constructor(matrix)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "transformvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
-        "title": "CSSTransformValue objects",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssmatrixcomponent",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#cssmatrixcomponent",
-      "linkingText": [
-        "CSSMatrixComponent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -6000,7 +7551,10 @@
       "id": "dom-csstranslate-csstranslate",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csstranslate-csstranslate",
       "linkingText": [
-        "CSSTranslate(x, y, z)"
+        "CSSTranslate(x, y, z)",
+        "constructor(x, y, z)",
+        "CSSTranslate(x, y)",
+        "constructor(x, y)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6021,7 +7575,8 @@
       "id": "dom-cssrotate-cssrotate",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrotate-cssrotate",
       "linkingText": [
-        "CSSRotate(angle)"
+        "CSSRotate(angle)",
+        "constructor(angle)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6042,7 +7597,8 @@
       "id": "dom-cssrotate-cssrotate-x-y-z-angle",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrotate-cssrotate-x-y-z-angle",
       "linkingText": [
-        "CSSRotate(x, y, z, angle)"
+        "CSSRotate(x, y, z, angle)",
+        "constructor(x, y, z, angle)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6126,7 +7682,10 @@
       "id": "dom-cssscale-cssscale",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssscale-cssscale",
       "linkingText": [
-        "CSSScale(x, y, z)"
+        "CSSScale(x, y, z)",
+        "constructor(x, y, z)",
+        "CSSScale(x, y)",
+        "constructor(x, y)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6210,7 +7769,8 @@
       "id": "dom-cssskew-cssskew",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskew-cssskew",
       "linkingText": [
-        "CSSSkew(ax, ay)"
+        "CSSSkew(ax, ay)",
+        "constructor(ax, ay)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6231,7 +7791,8 @@
       "id": "dom-cssskewx-cssskewx",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewx-cssskewx",
       "linkingText": [
-        "CSSSkewX(ax)"
+        "CSSSkewX(ax)",
+        "constructor(ax)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6252,7 +7813,8 @@
       "id": "dom-cssskewy-cssskewy",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssskewy-cssskewy",
       "linkingText": [
-        "CSSSkewY(ay)"
+        "CSSSkewY(ay)",
+        "constructor(ay)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6296,7 +7858,8 @@
       "id": "dom-cssperspective-cssperspective",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssperspective-cssperspective",
       "linkingText": [
-        "CSSPerspective(length)"
+        "CSSPerspective(length)",
+        "constructor(length)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6338,7 +7901,10 @@
       "id": "dom-cssmatrixcomponent-cssmatrixcomponent",
       "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssmatrixcomponent-cssmatrixcomponent",
       "linkingText": [
-        "CSSMatrixComponent(matrix, options)"
+        "CSSMatrixComponent(matrix, options)",
+        "constructor(matrix, options)",
+        "CSSMatrixComponent(matrix)",
+        "constructor(matrix)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6352,130 +7918,6 @@
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-objects",
         "title": "CSSTransformValue objects",
         "number": "4.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-csspositionvalue-csspositionvalue-x-y-x",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csspositionvalue-csspositionvalue-x-y-x",
-      "linkingText": [
-        "x"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSPositionValue/CSSPositionValue(x, y)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-csspositionvalue-csspositionvalue-x-y-y",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csspositionvalue-csspositionvalue-x-y-y",
-      "linkingText": [
-        "y"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "CSSPositionValue/CSSPositionValue(x, y)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "csspositionvalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#csspositionvalue",
-      "linkingText": [
-        "CSSPositionValue"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-csspositionvalue-csspositionvalue",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csspositionvalue-csspositionvalue",
-      "linkingText": [
-        "CSSPositionValue(x, y)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "CSSPositionValue"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-csspositionvalue-x",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csspositionvalue-x",
-      "linkingText": [
-        "x"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "CSSPositionValue"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-csspositionvalue-y",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csspositionvalue-y",
-      "linkingText": [
-        "y"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "CSSPositionValue"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "positionvalue-objects",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-        "title": "CSSPositionValue objects",
-        "number": "4.5"
       },
       "definedIn": "prose"
     },
@@ -6494,9 +7936,2129 @@
         "id": "imagevalue-objects",
         "href": "https://www.w3.org/TR/css-typed-om-1/#imagevalue-objects",
         "title": "CSSImageValue objects",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "csscolorvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csscolorvalue",
+      "linkingText": [
+        "CSSColorValue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
         "number": "4.6"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolorvalue-parse-csstext-csstext",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolorvalue-parse-csstext-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColorValue/parse(cssText)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolorvalue-parse",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolorvalue-parse",
+      "linkingText": [
+        "parse(cssText)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSColorValue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedefdef-csscolorrgbcomp",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-csscolorrgbcomp",
+      "linkingText": [
+        "CSSColorRGBComp"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-csscolorpercent",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-csscolorpercent",
+      "linkingText": [
+        "CSSColorPercent"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-csscolornumber",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-csscolornumber",
+      "linkingText": [
+        "CSSColorNumber"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-csscolorangle",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#typedefdef-csscolorangle",
+      "linkingText": [
+        "CSSColorAngle"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "rectify-a-csscolorrgbcomp",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-csscolorrgbcomp",
+      "linkingText": [
+        "rectify a CSSColorRGBComp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rectify-a-csscolorpercent",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-csscolorpercent",
+      "linkingText": [
+        "rectify a CSSColorPercent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rectify-a-csscolornumber",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-csscolornumber",
+      "linkingText": [
+        "rectify a CSSColorNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rectify-a-csscolorangle",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#rectify-a-csscolorangle",
+      "linkingText": [
+        "rectify a CSSColorAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cssrgb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssrgb",
+      "linkingText": [
+        "CSSRGB"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb",
+      "linkingText": [
+        "CSSRGB(r, g, b, alpha)",
+        "constructor(r, g, b, alpha)",
+        "CSSRGB(r, g, b)",
+        "constructor(r, g, b)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb-r-g-b-alpha-r",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb-r-g-b-alpha-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRGB/CSSRGB(r, g, b, alpha)",
+        "CSSRGB/constructor(r, g, b, alpha)",
+        "CSSRGB/CSSRGB(r, g, b)",
+        "CSSRGB/constructor(r, g, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb-r-g-b-alpha-g",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb-r-g-b-alpha-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRGB/CSSRGB(r, g, b, alpha)",
+        "CSSRGB/constructor(r, g, b, alpha)",
+        "CSSRGB/CSSRGB(r, g, b)",
+        "CSSRGB/constructor(r, g, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb-r-g-b-alpha-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb-r-g-b-alpha-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRGB/CSSRGB(r, g, b, alpha)",
+        "CSSRGB/constructor(r, g, b, alpha)",
+        "CSSRGB/CSSRGB(r, g, b)",
+        "CSSRGB/constructor(r, g, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb-r-g-b-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb-r-g-b-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRGB/CSSRGB(r, g, b, alpha)",
+        "CSSRGB/constructor(r, g, b, alpha)",
+        "CSSRGB/CSSRGB(r, g, b)",
+        "CSSRGB/constructor(r, g, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssrgb-cssrgb-r-g-b-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-cssrgb-r-g-b-optional-alpha",
+      "linkingText": [
+        "CSSRGB(r, g, b, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssrgb-r",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssrgb-g",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssrgb-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssrgb-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssrgb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRGB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csshsl",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csshsl",
+      "linkingText": [
+        "CSSHSL"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl",
+      "linkingText": [
+        "CSSHSL(h, s, l, alpha)",
+        "constructor(h, s, l, alpha)",
+        "CSSHSL(h, s, l)",
+        "constructor(h, s, l)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl-h-s-l-alpha-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl-h-s-l-alpha-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHSL/CSSHSL(h, s, l, alpha)",
+        "CSSHSL/constructor(h, s, l, alpha)",
+        "CSSHSL/CSSHSL(h, s, l)",
+        "CSSHSL/constructor(h, s, l)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl-h-s-l-alpha-s",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl-h-s-l-alpha-s",
+      "linkingText": [
+        "s"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHSL/CSSHSL(h, s, l, alpha)",
+        "CSSHSL/constructor(h, s, l, alpha)",
+        "CSSHSL/CSSHSL(h, s, l)",
+        "CSSHSL/constructor(h, s, l)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl-h-s-l-alpha-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl-h-s-l-alpha-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHSL/CSSHSL(h, s, l, alpha)",
+        "CSSHSL/constructor(h, s, l, alpha)",
+        "CSSHSL/CSSHSL(h, s, l)",
+        "CSSHSL/constructor(h, s, l)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl-h-s-l-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl-h-s-l-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHSL/CSSHSL(h, s, l, alpha)",
+        "CSSHSL/constructor(h, s, l, alpha)",
+        "CSSHSL/CSSHSL(h, s, l)",
+        "CSSHSL/constructor(h, s, l)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshsl-csshsl-h-s-l-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-csshsl-h-s-l-optional-alpha",
+      "linkingText": [
+        "CSSHSL(h, s, l, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshsl-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshsl-s",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-s",
+      "linkingText": [
+        "s"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshsl-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshsl-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshsl-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHSL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csshwb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csshwb",
+      "linkingText": [
+        "CSSHWB"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb",
+      "linkingText": [
+        "CSSHWB(h, w, b, alpha)",
+        "constructor(h, w, b, alpha)",
+        "CSSHWB(h, w, b)",
+        "constructor(h, w, b)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb-h-w-b-alpha-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb-h-w-b-alpha-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHWB/CSSHWB(h, w, b, alpha)",
+        "CSSHWB/constructor(h, w, b, alpha)",
+        "CSSHWB/CSSHWB(h, w, b)",
+        "CSSHWB/constructor(h, w, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb-h-w-b-alpha-w",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb-h-w-b-alpha-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHWB/CSSHWB(h, w, b, alpha)",
+        "CSSHWB/constructor(h, w, b, alpha)",
+        "CSSHWB/CSSHWB(h, w, b)",
+        "CSSHWB/constructor(h, w, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb-h-w-b-alpha-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb-h-w-b-alpha-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHWB/CSSHWB(h, w, b, alpha)",
+        "CSSHWB/constructor(h, w, b, alpha)",
+        "CSSHWB/CSSHWB(h, w, b)",
+        "CSSHWB/constructor(h, w, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb-h-w-b-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb-h-w-b-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSHWB/CSSHWB(h, w, b, alpha)",
+        "CSSHWB/constructor(h, w, b, alpha)",
+        "CSSHWB/CSSHWB(h, w, b)",
+        "CSSHWB/constructor(h, w, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csshwb-csshwb-h-w-b-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-csshwb-h-w-b-optional-alpha",
+      "linkingText": [
+        "CSSHWB(h, w, b, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshwb-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshwb-w",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshwb-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csshwb-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csshwb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSHWB"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csslab",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csslab",
+      "linkingText": [
+        "CSSLab"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab",
+      "linkingText": [
+        "CSSLab(l, a, b, alpha)",
+        "constructor(l, a, b, alpha)",
+        "CSSLab(l, a, b)",
+        "constructor(l, a, b)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab-l-a-b-alpha-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab-l-a-b-alpha-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLab/CSSLab(l, a, b, alpha)",
+        "CSSLab/constructor(l, a, b, alpha)",
+        "CSSLab/CSSLab(l, a, b)",
+        "CSSLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab-l-a-b-alpha-a",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab-l-a-b-alpha-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLab/CSSLab(l, a, b, alpha)",
+        "CSSLab/constructor(l, a, b, alpha)",
+        "CSSLab/CSSLab(l, a, b)",
+        "CSSLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab-l-a-b-alpha-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab-l-a-b-alpha-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLab/CSSLab(l, a, b, alpha)",
+        "CSSLab/constructor(l, a, b, alpha)",
+        "CSSLab/CSSLab(l, a, b)",
+        "CSSLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab-l-a-b-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab-l-a-b-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLab/CSSLab(l, a, b, alpha)",
+        "CSSLab/constructor(l, a, b, alpha)",
+        "CSSLab/CSSLab(l, a, b)",
+        "CSSLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslab-csslab-l-a-b-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-csslab-l-a-b-optional-alpha",
+      "linkingText": [
+        "CSSLab(l, a, b, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslab-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslab-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslab-a",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslab-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslab-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csslch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csslch",
+      "linkingText": [
+        "CSSLCH"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch",
+      "linkingText": [
+        "CSSLCH(l, c, h, alpha)",
+        "constructor(l, c, h, alpha)",
+        "CSSLCH(l, c, h)",
+        "constructor(l, c, h)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch-l-c-h-alpha-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch-l-c-h-alpha-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLCH/CSSLCH(l, c, h, alpha)",
+        "CSSLCH/constructor(l, c, h, alpha)",
+        "CSSLCH/CSSLCH(l, c, h)",
+        "CSSLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch-l-c-h-alpha-c",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch-l-c-h-alpha-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLCH/CSSLCH(l, c, h, alpha)",
+        "CSSLCH/constructor(l, c, h, alpha)",
+        "CSSLCH/CSSLCH(l, c, h)",
+        "CSSLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch-l-c-h-alpha-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch-l-c-h-alpha-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLCH/CSSLCH(l, c, h, alpha)",
+        "CSSLCH/constructor(l, c, h, alpha)",
+        "CSSLCH/CSSLCH(l, c, h)",
+        "CSSLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch-l-c-h-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch-l-c-h-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSLCH/CSSLCH(l, c, h, alpha)",
+        "CSSLCH/constructor(l, c, h, alpha)",
+        "CSSLCH/CSSLCH(l, c, h)",
+        "CSSLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslch-csslch-l-c-h-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-csslch-l-c-h-optional-alpha",
+      "linkingText": [
+        "CSSLCH(l, c, h, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslch-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslch-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslch-c",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csslch-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csslch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cssoklab",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssoklab",
+      "linkingText": [
+        "CSSOKLab"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab",
+      "linkingText": [
+        "CSSOKLab(l, a, b, alpha)",
+        "constructor(l, a, b, alpha)",
+        "CSSOKLab(l, a, b)",
+        "constructor(l, a, b)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab-l-a-b-alpha-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab-l-a-b-alpha-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLab/CSSOKLab(l, a, b, alpha)",
+        "CSSOKLab/constructor(l, a, b, alpha)",
+        "CSSOKLab/CSSOKLab(l, a, b)",
+        "CSSOKLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab-l-a-b-alpha-a",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab-l-a-b-alpha-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLab/CSSOKLab(l, a, b, alpha)",
+        "CSSOKLab/constructor(l, a, b, alpha)",
+        "CSSOKLab/CSSOKLab(l, a, b)",
+        "CSSOKLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab-l-a-b-alpha-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab-l-a-b-alpha-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLab/CSSOKLab(l, a, b, alpha)",
+        "CSSOKLab/constructor(l, a, b, alpha)",
+        "CSSOKLab/CSSOKLab(l, a, b)",
+        "CSSOKLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab-l-a-b-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab-l-a-b-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLab/CSSOKLab(l, a, b, alpha)",
+        "CSSOKLab/constructor(l, a, b, alpha)",
+        "CSSOKLab/CSSOKLab(l, a, b)",
+        "CSSOKLab/constructor(l, a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklab-cssoklab-l-a-b-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-cssoklab-l-a-b-optional-alpha",
+      "linkingText": [
+        "CSSOKLab(l, a, b, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklab-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklab-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklab-a",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklab-b",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklab-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLab"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cssoklch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssoklch",
+      "linkingText": [
+        "CSSOKLCH"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch",
+      "linkingText": [
+        "CSSOKLCH(l, c, h, alpha)",
+        "constructor(l, c, h, alpha)",
+        "CSSOKLCH(l, c, h)",
+        "constructor(l, c, h)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch-l-c-h-alpha-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch-l-c-h-alpha-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLCH/CSSOKLCH(l, c, h, alpha)",
+        "CSSOKLCH/constructor(l, c, h, alpha)",
+        "CSSOKLCH/CSSOKLCH(l, c, h)",
+        "CSSOKLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch-l-c-h-alpha-c",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch-l-c-h-alpha-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLCH/CSSOKLCH(l, c, h, alpha)",
+        "CSSOKLCH/constructor(l, c, h, alpha)",
+        "CSSOKLCH/CSSOKLCH(l, c, h)",
+        "CSSOKLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch-l-c-h-alpha-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch-l-c-h-alpha-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLCH/CSSOKLCH(l, c, h, alpha)",
+        "CSSOKLCH/constructor(l, c, h, alpha)",
+        "CSSOKLCH/CSSOKLCH(l, c, h)",
+        "CSSOKLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch-l-c-h-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch-l-c-h-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSOKLCH/CSSOKLCH(l, c, h, alpha)",
+        "CSSOKLCH/constructor(l, c, h, alpha)",
+        "CSSOKLCH/CSSOKLCH(l, c, h)",
+        "CSSOKLCH/constructor(l, c, h)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssoklch-cssoklch-l-c-h-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-cssoklch-l-c-h-optional-alpha",
+      "linkingText": [
+        "CSSOKLCH(l, c, h, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklch-h",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklch-l",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklch-c",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssoklch-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-cssoklch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSOKLCH"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csscolor",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csscolor",
+      "linkingText": [
+        "CSSColor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-csscolor",
+      "linkingText": [
+        "CSSColor(colorSpace, channels, alpha)",
+        "constructor(colorSpace, channels, alpha)",
+        "CSSColor(colorSpace, channels)",
+        "constructor(colorSpace, channels)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-colorspace",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColor/CSSColor(colorSpace, channels, alpha)",
+        "CSSColor/constructor(colorSpace, channels, alpha)",
+        "CSSColor/CSSColor(colorSpace, channels)",
+        "CSSColor/constructor(colorSpace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-channels",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColor/CSSColor(colorSpace, channels, alpha)",
+        "CSSColor/constructor(colorSpace, channels, alpha)",
+        "CSSColor/CSSColor(colorSpace, channels)",
+        "CSSColor/constructor(colorSpace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColor/CSSColor(colorSpace, channels, alpha)",
+        "CSSColor/constructor(colorSpace, channels, alpha)",
+        "CSSColor/CSSColor(colorSpace, channels)",
+        "CSSColor/constructor(colorSpace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-channels",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-optional-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-optional-alpha",
+      "linkingText": [
+        "CSSColor(colorSpace, channels, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csscolor-colorspace",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-csscolor-alpha",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#dom-csscolor-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "css-reify",
@@ -6536,7 +10098,7 @@
         "id": "reify-failure",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-failure",
         "title": "Unrepresentable Values",
-        "number": "5.1"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -6555,7 +10117,7 @@
         "id": "reify-tokens",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-tokens",
         "title": "Raw CSS tokens: properties with var() references",
-        "number": "5.2"
+        "number": "5.3"
       },
       "definedIn": "prose"
     },
@@ -6574,7 +10136,7 @@
         "id": "reify-var",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-var",
         "title": "var() References",
-        "number": "5.3"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -6593,7 +10155,7 @@
         "id": "reify-ident",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-ident",
         "title": "Identifier Values",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -6612,7 +10174,7 @@
         "id": "reify-numeric",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-numeric",
         "title": "<number>, <percentage>, and <dimension> values",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose"
     },
@@ -6631,7 +10193,26 @@
         "id": "reify-numeric",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-numeric",
         "title": "<number>, <percentage>, and <dimension> values",
-        "number": "5.5"
+        "number": "5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reify-a-color-value",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#reify-a-color-value",
+      "linkingText": [
+        "reify a color value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reify-color",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#reify-color",
+        "title": "<color> Values",
+        "number": "5.7"
       },
       "definedIn": "prose"
     },
@@ -6649,8 +10230,8 @@
       "heading": {
         "id": "reify-transformvalue",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-transformvalue",
-        "title": "<transform-list> and <transform-function> values",
-        "number": "5.6"
+        "title": "<transform-list> and <transform-function> Values",
+        "number": "5.8"
       },
       "definedIn": "prose"
     },
@@ -6668,8 +10249,8 @@
       "heading": {
         "id": "reify-transformvalue",
         "href": "https://www.w3.org/TR/css-typed-om-1/#reify-transformvalue",
-        "title": "<transform-list> and <transform-function> values",
-        "number": "5.6"
+        "title": "<transform-list> and <transform-function> Values",
+        "number": "5.8"
       },
       "definedIn": "prose"
     },
@@ -6731,6 +10312,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "serialize-a-cssnumericvalue",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#serialize-a-cssnumericvalue",
+      "linkingText": [
+        "serialize a CSSNumericValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numericvalue-serialization",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#numericvalue-serialization",
+        "title": "CSSNumericValue Serialization",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "serialize-a-cssunitvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#serialize-a-cssunitvalue",
       "linkingText": [
@@ -6742,10 +10342,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "numericvalue-serialization",
-        "href": "https://www.w3.org/TR/css-typed-om-1/#numericvalue-serialization",
+        "id": "unitvalue-serialization",
+        "href": "https://www.w3.org/TR/css-typed-om-1/#unitvalue-serialization",
         "title": "CSSUnitValue Serialization",
-        "number": "6.3"
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
@@ -6764,7 +10364,7 @@
         "id": "calc-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#calc-serialization",
         "title": "CSSMathValue Serialization",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
@@ -6783,7 +10383,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6802,7 +10402,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6821,7 +10421,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6840,7 +10440,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6859,7 +10459,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6878,7 +10478,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6897,7 +10497,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6916,7 +10516,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -6935,7 +10535,7 @@
         "id": "transformvalue-serialization",
         "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
         "title": "CSSTransformValue and CSSTransformComponent Serialization",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "prose"
     }

@@ -11,20 +11,14 @@
       "title": "CSS Typed OM Level 1"
     },
     {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#subtitle",
-      "level": 2,
-      "title": "W3C Working Draft, 10 April 2018"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/css-typed-om-1/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -147,17 +141,17 @@
       "number": "4.4"
     },
     {
-      "id": "positionvalue-objects",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-objects",
-      "level": 3,
-      "title": "CSSPositionValue objects",
-      "number": "4.5"
-    },
-    {
       "id": "imagevalue-objects",
       "href": "https://www.w3.org/TR/css-typed-om-1/#imagevalue-objects",
       "level": 3,
       "title": "CSSImageValue objects",
+      "number": "4.5"
+    },
+    {
+      "id": "colorvalue-objects",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#colorvalue-objects",
+      "level": 3,
+      "title": "CSSColorValue objects",
       "number": "4.6"
     },
     {
@@ -168,73 +162,59 @@
       "number": "5"
     },
     {
+      "id": "reify-property",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#reify-property",
+      "level": 3,
+      "title": "Property-specific Rules",
+      "number": "5.1"
+    },
+    {
       "id": "reify-failure",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-failure",
       "level": 3,
       "title": "Unrepresentable Values",
-      "number": "5.1"
+      "number": "5.2"
     },
     {
       "id": "reify-tokens",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-tokens",
       "level": 3,
       "title": "Raw CSS tokens: properties with var() references",
-      "number": "5.2"
+      "number": "5.3"
     },
     {
       "id": "reify-var",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-var",
       "level": 3,
       "title": "var() References",
-      "number": "5.3"
+      "number": "5.4"
     },
     {
       "id": "reify-ident",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-ident",
       "level": 3,
       "title": "Identifier Values",
-      "number": "5.4"
+      "number": "5.5"
     },
     {
       "id": "reify-numeric",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-numeric",
       "level": 3,
       "title": "<number>, <percentage>, and <dimension> values",
-      "number": "5.5"
+      "number": "5.6"
+    },
+    {
+      "id": "reify-color",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#reify-color",
+      "level": 3,
+      "title": "<color> Values",
+      "number": "5.7"
     },
     {
       "id": "reify-transformvalue",
       "href": "https://www.w3.org/TR/css-typed-om-1/#reify-transformvalue",
       "level": 3,
-      "title": "<transform-list> and <transform-function> values",
-      "number": "5.6"
-    },
-    {
-      "id": "reify-position",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#reify-position",
-      "level": 3,
-      "title": "<position> Values",
-      "number": "5.7"
-    },
-    {
-      "id": "from-single-keyword",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#from-single-keyword",
-      "level": 4,
-      "title": "Determining x or y from a single value",
-      "number": "5.7.1"
-    },
-    {
-      "id": "from-keyword-and-length",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#from-keyword-and-length",
-      "level": 4,
-      "title": "Determining x or y from a keyword and a length",
-      "number": "5.7.2"
-    },
-    {
-      "id": "reify-url",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#reify-url",
-      "level": 3,
-      "title": "<url> (and subtype) Values",
+      "title": "<transform-list> and <transform-function> Values",
       "number": "5.8"
     },
     {
@@ -262,43 +242,36 @@
       "id": "numericvalue-serialization",
       "href": "https://www.w3.org/TR/css-typed-om-1/#numericvalue-serialization",
       "level": 3,
-      "title": "CSSUnitValue Serialization",
+      "title": "CSSNumericValue Serialization",
       "number": "6.3"
+    },
+    {
+      "id": "unitvalue-serialization",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#unitvalue-serialization",
+      "level": 3,
+      "title": "CSSUnitValue Serialization",
+      "number": "6.4"
     },
     {
       "id": "calc-serialization",
       "href": "https://www.w3.org/TR/css-typed-om-1/#calc-serialization",
       "level": 3,
       "title": "CSSMathValue Serialization",
-      "number": "6.4"
+      "number": "6.5"
     },
     {
       "id": "transformvalue-serialization",
       "href": "https://www.w3.org/TR/css-typed-om-1/#transformvalue-serialization",
       "level": 3,
       "title": "CSSTransformValue and CSSTransformComponent Serialization",
-      "number": "6.5"
-    },
-    {
-      "id": "positionvalue-serialization",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#positionvalue-serialization",
-      "level": 3,
-      "title": "CSSPositionValue Serialization",
       "number": "6.6"
-    },
-    {
-      "id": "urlimagevalue-serialization",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#urlimagevalue-serialization",
-      "level": 3,
-      "title": "CSSURLImageValue Serialization",
-      "number": "6.7"
     },
     {
       "id": "cssom-serialization",
       "href": "https://www.w3.org/TR/css-typed-om-1/#cssom-serialization",
       "level": 3,
       "title": "Serialization from CSSOM Values",
-      "number": "6.8"
+      "number": "6.7"
     },
     {
       "id": "security-considerations",
@@ -315,38 +288,52 @@
       "number": "8"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#conformance",
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "9"
+    },
+    {
+      "id": "changes-20180410",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#changes-20180410",
+      "level": 3,
+      "title": "Changes since the 10 April 2018 Working Draft",
+      "number": "9.1"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "conventions",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conformance-classes",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#conformance-classes",
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "partial",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#partial",
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-partial",
       "level": 3,
       "title": "Partial implementations"
     },
     {
-      "id": "conform-future-proofing",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "testing",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#testing",
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#w3c-testing",
       "level": 3,
       "title": "Non-experimental implementations"
     },
@@ -379,12 +366,6 @@
       "href": "https://www.w3.org/TR/css-typed-om-1/#normative",
       "level": 3,
       "title": "Normative References"
-    },
-    {
-      "id": "informative",
-      "href": "https://www.w3.org/TR/css-typed-om-1/#informative",
-      "level": 3,
-      "title": "Informative References"
     },
     {
       "id": "idl-index",
