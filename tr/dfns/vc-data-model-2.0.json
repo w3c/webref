@@ -444,7 +444,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verify\">verification</a>\nof identifiers, keys, and other relevant data, such as\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> schemas, revocation registries, issuer public keys,\nand so on, which might be required to use <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and public keys, might just act as namespaces\nfor identifiers."
+      "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verify\">verification</a>\nof identifiers, <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verification-material\">verification material</a>, and other relevant data, such as\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> schemas, revocation registries,\nand so on, which might be required to use <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verification-material\">verification material</a>, might just act\nas namespaces for identifiers."
     },
     {
       "id": "dfn-verifiable-presentation",
@@ -553,7 +553,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "Information that could be a cryptographic public key or any other data used to\nverify a proof."
+      "htmlProse": "Information that is used to verify the security of cryptographically\nprotected information. For example, a cryptographic public key used to verify\na digital signature associated with a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>."
     },
     {
       "id": "dfn-url",
