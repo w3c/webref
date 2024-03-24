@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-03-24T12:38:28.493Z",
+  "date": "2024-03-24T18:32:08.842Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -646,7 +646,7 @@
   },
   "stats": {
     "crawled": 616,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-14.8.3",
   "results": [
@@ -11770,7 +11770,8 @@
       "idl": "idl/local-font-access.idl",
       "dfns": "dfns/local-font-access.json",
       "headings": "headings/local-font-access.json",
-      "ids": "ids/local-font-access.json"
+      "ids": "ids/local-font-access.json",
+      "error": "Error: Loading https://wicg.github.io/local-font-access/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 211)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://wicg.github.io/manifest-incubations/",
