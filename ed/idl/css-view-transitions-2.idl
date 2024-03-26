@@ -16,8 +16,8 @@ interface CSSViewTransitionTypeSet {
 
 [Exposed=Window]
 interface CSSViewTransitionRule : CSSRule {
-  attribute ViewTransitionNavigation navigation;
-  attribute CSSViewTransitionTypeSet types;
+  readonly attribute ViewTransitionNavigation navigation;
+  readonly attribute CSSViewTransitionTypeSet types;
 };
 
 interface ViewTransitionTypeSet {
