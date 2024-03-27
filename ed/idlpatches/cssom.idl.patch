@@ -1,0 +1,27 @@
+From 7cad4a97f784a7a4e2325e3b8ad8a6d8f3cb1eee Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 27 Mar 2024 08:16:59 +0100
+Subject: [PATCH] Rollback definition of CSSMarginRule.style
+
+The newly used `CSSMarginDescriptors` type is not yet defined, see:
+https://github.com/w3c/csswg-drafts/issues/10106
+---
+ ed/idl/cssom.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/cssom.idl b/ed/idl/cssom.idl
+index d25eae1b5..41ad28e3b 100644
+--- a/ed/idl/cssom.idl
++++ b/ed/idl/cssom.idl
+@@ -135,7 +135,7 @@ interface CSSPageRule : CSSGroupingRule {
+ [Exposed=Window]
+ interface CSSMarginRule : CSSRule {
+   readonly attribute CSSOMString name;
+-  [SameObject, PutForwards=cssText] readonly attribute CSSMarginDescriptors style;
++  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+ };
+ 
+ [Exposed=Window]
+-- 
+2.37.1.windows.1
+
