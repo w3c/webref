@@ -1,0 +1,25 @@
+From ab0c6ef3229612914cbdce9db6aa2de94d583e2c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 27 Mar 2024 08:24:00 +0100
+Subject: [PATCH] Add `[Exposed]` to `ViewTransitionTypeSet`
+
+Pending https://github.com/w3c/csswg-drafts/pull/10123
+---
+ ed/idl/css-view-transitions-2.idl | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ed/idl/css-view-transitions-2.idl b/ed/idl/css-view-transitions-2.idl
+index ced3477dc..41337f4e1 100644
+--- a/ed/idl/css-view-transitions-2.idl
++++ b/ed/idl/css-view-transitions-2.idl
+@@ -20,6 +20,7 @@ interface CSSViewTransitionRule : CSSRule {
+   readonly attribute CSSViewTransitionTypeSet types;
+ };
+ 
++[Exposed=Window]
+ interface ViewTransitionTypeSet {
+   setlike<DOMString>;
+ };
+-- 
+2.37.1.windows.1
+
