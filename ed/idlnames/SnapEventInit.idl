@@ -1,7 +1,5 @@
 // Source: CSS Scroll Snap Module Level 2 (https://drafts.csswg.org/css-scroll-snap-2/)
-dictionary SnapEventInit : EventModifierInit {
-    sequence<EventTarget> snappedTargetsX = [];
-    sequence<EventTarget> snappedTargetsY = [];
-    sequence<EventTarget> snapTargetsListX = [];
-    sequence<EventTarget> snapTargetsListY = [];
+dictionary SnapEventInit : EventInit {
+  Node? snapTargetBlock;
+  Node? snapTargetInline;
 };

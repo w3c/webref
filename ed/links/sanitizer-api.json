@@ -4,178 +4,113 @@
     "url": "https://wicg.github.io/sanitizer-api/"
   },
   "links": {
-    "http://wpt.live/sanitizer-api/sanitizer-insecure-context.html": {},
     "http://www.w3.org/community/": {},
     "https://cure53.de/fp170.pdf": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "element",
         "widl-Element-innerHTML",
+        "shadowroot",
+        "node",
         "document",
+        "element-shadow-host",
+        "concept-document-content-type",
+        "document-allow-declarative-shadow-roots",
+        "concept-tree-root",
         "documentfragment",
         "concept-element-local-name",
-        "concept-attribute-local-name",
-        "concept-create-element",
-        "concept-node-replace-all",
-        "concept-node-clone",
-        "concept-node-document",
-        "concept-node-append",
-        "concept-tree-inclusive-descendant",
-        "concept-tree-order",
-        "concept-node-remove",
-        "concept-tree-child",
-        "concept-node-replace",
-        "concept-tree-parent",
-        "attr",
-        "documenttype",
-        "concept-node",
-        "concept-element-attribute",
-        "concept-element-attributes-remove",
-        "comment",
-        "boundary-point-node",
-        "text",
-        "processinginstruction",
         "concept-element-namespace",
-        "concept-attribute-namespace",
-        "concept-element-interface"
+        "concept-node-document",
+        "concept-node-replace-all",
+        "parentnode",
+        "concept-tree-child",
+        "text",
+        "comment",
+        "concept-node-remove",
+        "concept-element-shadow-root",
+        "concept-element-attribute",
+        "concept-attribute-local-name",
+        "concept-attribute-namespace"
       ],
       "specShortname": "dom"
     },
-    "https://github.com/WICG/sanitizer-api/blob/main/resources/defaults-derivation.html": {},
-    "https://github.com/WICG/sanitizer-api/issues/140": {},
-    "https://github.com/WICG/sanitizer-api/issues/146": {},
-    "https://github.com/WICG/sanitizer-api/issues/147": {},
-    "https://github.com/WICG/sanitizer-api/issues/148": {},
-    "https://github.com/WICG/sanitizer-api/issues/149": {},
-    "https://github.com/WICG/sanitizer-api/issues/150": {},
-    "https://github.com/WICG/sanitizer-api/issues/151": {},
-    "https://github.com/WICG/sanitizer-api/issues/154": {},
-    "https://github.com/WICG/sanitizer-api/issues/156": {},
     "https://github.com/cure53/DOMPurify": {},
     "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/element-set-sanitized-html.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/idlharness.https.window.js": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-config.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-insecure-context.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-query-config.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-sanitize.https.tentative.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-sanitizeFor.https.tentative.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-secure-context.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-unknown.https.html": {},
     "https://html.spec.whatwg.org/": {
       "anchors": [
-        "template-contents",
-        "event-handler-attributes",
-        "non-conforming-features"
+        "template-contents"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/custom-elements.html": {
       "anchors": [
-        "custom-element",
-        "valid-custom-element-name"
+        "cereactions"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
       "anchors": [
-        "htmlunknownelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "htmliframeelement",
-        "htmlobjectelement",
-        "htmlembedelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/obsolete.html": {
-      "anchors": [
-        "htmlparamelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/parsing.html": {
-      "anchors": [
-        "parsing",
-        "html-parser"
+        "domparser",
+        "dom-domparser-parsefromstring"
       ]
     },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
       "anchors": [
-        "htmlscriptelement",
-        "htmltemplateelement",
-        "htmlslotelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "htmlbaseelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "htmldataelement"
+        "htmltemplateelement"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "list-empty",
+        "string",
+        "boolean",
         "html-namespace",
-        "map-exists",
-        "map-get",
+        "svg-namespace",
         "list-iterate",
-        "map-set",
+        "list-append",
         "assert",
-        "string-is"
+        "iteration-continue",
+        "code-unit-prefix",
+        "map-getting-the-keys",
+        "list-contain",
+        "map-exists",
+        "set-intersection",
+        "list",
+        "set-subset",
+        "map-getting-the-values",
+        "list-remove",
+        "ordered-set",
+        "set-append",
+        "ordered-map",
+        "set-superset"
       ],
       "specShortname": "infra"
     },
     "https://msdn.microsoft.com/en-us/library/cc848922(v=vs.85).aspx": {},
-    "https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/": {},
-    "https://url.spec.whatwg.org/": {
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/DOM-Parsing/": {
+    "https://urlpattern.spec.whatwg.org/": {
       "anchors": [
-        "dfn-fragment-parsing-algorithm"
+        "constructor-string-parser-state-protocol"
       ],
-      "specShortname": "DOM-Parsing"
+      "specShortname": "urlpattern"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "Exposed",
-        "SecureContext",
         "idl-DOMString",
-        "this",
         "idl-undefined",
+        "this",
         "idl-sequence",
         "idl-boolean",
-        "idl-record",
+        "dfn-dictionary",
+        "implements",
+        "dfn-throw",
         "exceptiondef-typeerror"
       ],
       "specShortname": "webidl"
     },
-    "https://wicg.github.io/portals/": {
-      "specShortname": "portals"
-    },
-    "https://wpt.fyi/results/sanitizer-api/element-set-sanitized-html.https.html": {},
-    "https://wpt.fyi/results/sanitizer-api/idlharness.https.window.js": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-config.https.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-insecure-context.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-query-config.https.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-sanitize.https.tentative.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-sanitizeFor.https.tentative.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-secure-context.https.html": {},
-    "https://wpt.fyi/results/sanitizer-api/sanitizer-unknown.https.html": {},
-    "https://wpt.live/sanitizer-api/element-set-sanitized-html.https.html": {},
-    "https://wpt.live/sanitizer-api/idlharness.https.window.js": {},
-    "https://wpt.live/sanitizer-api/sanitizer-config.https.html": {},
-    "https://wpt.live/sanitizer-api/sanitizer-query-config.https.html": {},
-    "https://wpt.live/sanitizer-api/sanitizer-sanitize.https.tentative.html": {},
-    "https://wpt.live/sanitizer-api/sanitizer-sanitizeFor.https.tentative.html": {},
-    "https://wpt.live/sanitizer-api/sanitizer-secure-context.https.html": {},
-    "https://wpt.live/sanitizer-api/sanitizer-unknown.https.html": {},
-    "https://www.checkmarx.com/blog/technical-blog/vulnerabilities-discovered-in-mozilla-bleach/": {},
-    "https://www.w3.org/TR/payment-request/": {
-      "specShortname": "payment-request-1.1"
+    "https://wicg.github.io/speech-api/": {
+      "anchors": [
+        "dom-speechgrammarlist-addfromstring-string-weight-string"
+      ],
+      "specShortname": "speech-api"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}

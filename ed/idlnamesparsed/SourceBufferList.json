@@ -6,7 +6,7 @@
       "title": "Media Source Extensions™",
       "url": "https://www.w3.org/TR/media-source-2/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n    readonly        attribute unsigned long length;\n                    attribute EventHandler  onaddsourcebuffer;\n                    attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n  readonly attribute unsigned long length;\n\n  attribute EventHandler onaddsourcebuffer;\n  attribute EventHandler onremovesourcebuffer;\n\n  getter SourceBuffer (unsigned long index);\n};",
     "href": "https://w3c.github.io/media-source/#dom-sourcebufferlist"
   },
   "extended": [],

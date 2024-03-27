@@ -125,7 +125,7 @@
             "title": "HTML Standard",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(DOMString html);\n};"
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};"
         },
         {
           "spec": {
@@ -139,7 +139,7 @@
             "title": "HTML Sanitizer API",
             "url": "https://wicg.github.io/sanitizer-api/"
           },
-          "fragment": "[SecureContext]\npartial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};"
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};"
         },
         {
           "spec": {
@@ -181,7 +181,7 @@
             "title": "CSSOM View Module",
             "url": "https://www.w3.org/TR/cssom-view-1/"
           },
-          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean checkVisibility(optional CheckVisibilityOptions options = {});\n\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
+          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean checkVisibility(optional CheckVisibilityOptions options = {});\n\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n  readonly attribute double currentCSSZoom;\n};"
         },
         {
           "spec": {

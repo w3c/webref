@@ -9,5 +9,4 @@ interface CSSStyleDeclaration {
   [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = "");
   [CEReactions] CSSOMString removeProperty(CSSOMString property);
   readonly attribute CSSRule? parentRule;
-  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;
 };

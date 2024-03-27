@@ -6,7 +6,7 @@
       "title": "URL Standard",
       "url": "https://url.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=*,\n LegacyWindowAlias=webkitURL]\ninterface URL {\n  constructor(USVString url, optional USVString base);\n\n  static boolean canParse(USVString url, optional USVString base);\n\n  stringifier attribute USVString href;\n  readonly attribute USVString origin;\n           attribute USVString protocol;\n           attribute USVString username;\n           attribute USVString password;\n           attribute USVString host;\n           attribute USVString hostname;\n           attribute USVString port;\n           attribute USVString pathname;\n           attribute USVString search;\n  [SameObject] readonly attribute URLSearchParams searchParams;\n           attribute USVString hash;\n\n  USVString toJSON();\n};",
+    "fragment": "[Exposed=*,\n LegacyWindowAlias=webkitURL]\ninterface URL {\n  constructor(USVString url, optional USVString base);\n\n  static URL? parse(USVString url, optional USVString base);\n  static boolean canParse(USVString url, optional USVString base);\n\n  stringifier attribute USVString href;\n  readonly attribute USVString origin;\n           attribute USVString protocol;\n           attribute USVString username;\n           attribute USVString password;\n           attribute USVString host;\n           attribute USVString hostname;\n           attribute USVString port;\n           attribute USVString pathname;\n           attribute USVString search;\n  [SameObject] readonly attribute URLSearchParams searchParams;\n           attribute USVString hash;\n\n  USVString toJSON();\n};",
     "href": "https://url.spec.whatwg.org/#url"
   },
   "extended": [

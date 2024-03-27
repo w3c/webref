@@ -470,29 +470,36 @@
         "href": "https://w3c.github.io/compute-pressure/#dom-pressurerecord"
       },
       "PressureObserverOptions": {
-        "fragment": "dictionary PressureObserverOptions {\n  double sampleRate = 1.0;\n};",
+        "fragment": "dictionary PressureObserverOptions {\n  [EnforceRange] unsigned long sampleInterval = 0;\n};",
         "type": "dictionary",
         "name": "PressureObserverOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "sampleRate",
-            "extAttrs": [],
+            "name": "sampleInterval",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
-              "value": "1.0"
+              "value": "0"
             },
             "required": false,
-            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserveroptions-samplerate"
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserveroptions-sampleinterval"
           }
         ],
         "extAttrs": [],

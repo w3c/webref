@@ -8,6 +8,7 @@ interface ViewTransition {
 };
 
 // Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
+[Exposed=Window]
 partial interface ViewTransition {
-  readonly attribute DOMTokenList typeList;
+  attribute ViewTransitionTypeSet types;
 };

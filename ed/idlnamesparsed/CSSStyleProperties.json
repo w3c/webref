@@ -1,0 +1,29 @@
+{
+  "name": "CSSStyleProperties",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSStyleProperties : CSSStyleDeclaration {\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
+    "href": "https://drafts.csswg.org/cssom-1/#cssstyleproperties"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSStyleDeclaration",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n};",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -6,7 +6,7 @@
       "title": "CSS Scroll Snap Module Level 2",
       "url": "https://drafts.csswg.org/css-scroll-snap-2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute EventTarget? target;\n  readonly attribute SnapTargetList snappedTargets;\n  readonly attribute SnapTargetList snapTargets;\n  readonly attribute boolean invokedProgrammatically;\n  readonly attribute boolean smoothlyScrolled;\n};",
+    "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute Node? snapTargetBlock;\n  readonly attribute Node? snapTargetInline;\n};",
     "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapevent"
   },
   "extended": [],

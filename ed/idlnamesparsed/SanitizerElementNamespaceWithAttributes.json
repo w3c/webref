@@ -1,0 +1,29 @@
+{
+  "name": "SanitizerElementNamespaceWithAttributes",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "HTML Sanitizer API",
+      "url": "https://wicg.github.io/sanitizer-api/"
+    },
+    "fragment": "// Used by \"elements\"\ndictionary SanitizerElementNamespaceWithAttributes : SanitizerElementNamespace {\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n};",
+    "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerelementnamespacewithattributes"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SanitizerElementNamespace",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "HTML Sanitizer API",
+        "url": "https://wicg.github.io/sanitizer-api/"
+      },
+      "fragment": "dictionary SanitizerElementNamespace {\n  required DOMString name;\n  DOMString? _namespace = \"http://www.w3.org/1999/xhtml\";\n};",
+      "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerelementnamespace"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

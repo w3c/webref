@@ -2,9 +2,6 @@
 [Exposed=Window]
 interface SnapEvent : Event {
   constructor(DOMString type, optional SnapEventInit eventInitDict = {});
-  readonly attribute EventTarget? target;
-  readonly attribute SnapTargetList snappedTargets;
-  readonly attribute SnapTargetList snapTargets;
-  readonly attribute boolean invokedProgrammatically;
-  readonly attribute boolean smoothlyScrolled;
+  readonly attribute Node? snapTargetBlock;
+  readonly attribute Node? snapTargetInline;
 };

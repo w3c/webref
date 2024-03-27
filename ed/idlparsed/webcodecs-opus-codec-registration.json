@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "OpusEncoderConfig": {
-        "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  [EnforceRange] unsigned long long frameDuration = 20000;\n  [EnforceRange] unsigned long complexity;\n  [EnforceRange] unsigned long packetlossperc = 0;\n  boolean useinbandfec = false;\n  boolean usedtx = false;\n};",
+        "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  OpusSignal signal = \"auto\";\n  OpusApplication application = \"audio\";\n  [EnforceRange] unsigned long long frameDuration = 20000;\n  [EnforceRange] unsigned long complexity;\n  [EnforceRange] unsigned long packetlossperc = 0;\n  boolean useinbandfec = false;\n  boolean usedtx = false;\n};",
         "type": "dictionary",
         "name": "OpusEncoderConfig",
         "inheritance": null,
@@ -33,6 +33,44 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusencoderconfig-format"
+          },
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OpusSignal"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusencoderconfig-signal"
+          },
+          {
+            "type": "field",
+            "name": "application",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OpusApplication"
+            },
+            "default": {
+              "type": "string",
+              "value": "audio"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusencoderconfig-application"
           },
           {
             "type": "field",
@@ -170,6 +208,54 @@
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#enumdef-opusbitstreamformat"
+      },
+      "OpusSignal": {
+        "fragment": "enum OpusSignal {\n  \"auto\",\n  \"music\",\n  \"voice\",\n};",
+        "type": "enum",
+        "name": "OpusSignal",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opussignal-auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "music",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opussignal-music"
+          },
+          {
+            "type": "enum-value",
+            "value": "voice",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opussignal-voice"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#enumdef-opussignal"
+      },
+      "OpusApplication": {
+        "fragment": "enum OpusApplication {\n  \"voip\",\n  \"audio\",\n  \"lowdelay\",\n};",
+        "type": "enum",
+        "name": "OpusApplication",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "voip",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusapplication-voip"
+          },
+          {
+            "type": "enum-value",
+            "value": "audio",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusapplication-audio"
+          },
+          {
+            "type": "enum-value",
+            "value": "lowdelay",
+            "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dom-opusapplication-lowdelay"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#enumdef-opusapplication"
       }
     },
     "idlExtendedNames": {
@@ -209,7 +295,9 @@
         "OpusEncoderConfig"
       ],
       "OpusEncoderConfig": [
-        "OpusBitstreamFormat"
+        "OpusBitstreamFormat",
+        "OpusSignal",
+        "OpusApplication"
       ]
     },
     "externalDependencies": [

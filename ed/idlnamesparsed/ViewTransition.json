@@ -15,7 +15,7 @@
         "title": "CSS View Transitions Module Level 2",
         "url": "https://drafts.csswg.org/css-view-transitions-2/"
       },
-      "fragment": "partial interface ViewTransition {\n  readonly attribute DOMTokenList typeList;\n};"
+      "fragment": "[Exposed=Window]\npartial interface ViewTransition {\n  attribute ViewTransitionTypeSet types;\n};"
     }
   ],
   "inheritance": null,

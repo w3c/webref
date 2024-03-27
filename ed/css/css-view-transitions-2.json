@@ -25,7 +25,7 @@
         },
         {
           "name": "<custom-ident>+",
-          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with other <custom-ident>s.",
+          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with another <custom-ident>.",
           "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
           "type": "value",
           "value": "<custom-ident>+"
@@ -58,7 +58,7 @@
             },
             {
               "name": "auto",
-              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whoes NavigationType is traverse or push or replace with user navigation involvement not equal to \"browser UI\".",
+              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whose NavigationType is traverse, or push or replace, with user navigation involvement not equal to \"browser UI\".",
               "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-auto",
               "type": "value",
               "value": "auto"
@@ -66,8 +66,8 @@
           ]
         },
         {
-          "name": "type",
-          "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-type",
+          "name": "types",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-types",
           "for": "@view-transition",
           "value": "none | <custom-ident>+",
           "initial": "none"
@@ -79,7 +79,7 @@
   "selectors": [
     {
       "name": ":active-view-transition",
-      "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition. It has the following syntax definition:",
+      "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition.",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo"
     },
     {

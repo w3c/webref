@@ -6,7 +6,7 @@
       "title": "Opus WebCodecs Registration",
       "url": "https://www.w3.org/TR/webcodecs-opus-codec-registration/"
     },
-    "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  [EnforceRange] unsigned long long frameDuration = 20000;\n  [EnforceRange] unsigned long complexity;\n  [EnforceRange] unsigned long packetlossperc = 0;\n  boolean useinbandfec = false;\n  boolean usedtx = false;\n};",
+    "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  OpusSignal signal = \"auto\";\n  OpusApplication application = \"audio\";\n  [EnforceRange] unsigned long long frameDuration = 20000;\n  [EnforceRange] unsigned long complexity;\n  [EnforceRange] unsigned long packetlossperc = 0;\n  boolean useinbandfec = false;\n  boolean usedtx = false;\n};",
     "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html#dictdef-opusencoderconfig"
   },
   "extended": [],

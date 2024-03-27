@@ -292,6 +292,20 @@
       "number": "4.1.2.1"
     },
     {
+      "id": "sec-newfunctionenvironment",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-newfunctionenvironment",
+      "title": "NewFunctionEnvironment ( F, newTarget )",
+      "level": 4,
+      "number": "4.1.2.2"
+    },
+    {
+      "id": "sec-newmoduleenvironment",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-newmoduleenvironment",
+      "title": "NewModuleEnvironment ( E )",
+      "level": 4,
+      "number": "4.1.2.3"
+    },
+    {
       "id": "sec-ordinary-and-exotic-objects-behaviours",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-ordinary-and-exotic-objects-behaviours",
       "title": "Ordinary and Exotic Objects Behaviours",
@@ -364,7 +378,7 @@
     {
       "id": "sec-let-and-const-declarations",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-let-and-const-declarations",
-      "title": "Let and Const, Const, and Using Declarations",
+      "title": "Let and Const, Const, Using, and Await Using Declarations",
       "level": 3,
       "number": "7.2.1"
     },
@@ -481,16 +495,16 @@
       "number": "8.1"
     },
     {
-      "id": "sec-runtime-semantics-evaluatefunctionbody",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-runtime-semantics-evaluatefunctionbody",
-      "title": "Runtime Semantics: EvaluateFunctionBody",
+      "id": "sec-runtime-semantics-instantiateordinaryfunctionexpression",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-runtime-semantics-instantiateordinaryfunctionexpression",
+      "title": "Runtime Semantics: InstantiateOrdinaryFunctionExpression",
       "level": 3,
       "number": "8.1.1"
     },
     {
-      "id": "sec-runtime-semantics-instantiateordinaryfunctionexpression",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-runtime-semantics-instantiateordinaryfunctionexpression",
-      "title": "Runtime Semantics: InstantiateOrdinaryFunctionExpression",
+      "id": "sec-function-definitions-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-function-definitions-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
       "level": 3,
       "number": "8.1.2"
     },
@@ -929,13 +943,6 @@
       "number": "12.3.3.4"
     },
     {
-      "id": "sec-disposablestack-adopt-callback-functions",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposablestack-adopt-callback-functions",
-      "title": "DisposableStack Adopt Callback Functions",
-      "level": 5,
-      "number": "12.3.3.4.1"
-    },
-    {
       "id": "sec-disposablestack.prototype.defer",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposablestack.prototype.defer",
       "title": "DisposableStack.prototype.defer( onDispose )",
@@ -1074,69 +1081,6 @@
       "title": "Properties of AsyncDisposableStack Instances",
       "level": 3,
       "number": "12.4.4"
-    },
-    {
-      "id": "sec-generator-objects",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generator-objects",
-      "title": "Generator Objects",
-      "level": 2,
-      "number": "12.5"
-    },
-    {
-      "id": "sec-generator-abstract-operations",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generator-abstract-operations",
-      "title": "Generator Abstract Operations",
-      "level": 3,
-      "number": "12.5.1"
-    },
-    {
-      "id": "sec-generatorstart",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generatorstart",
-      "title": "GeneratorStart ( generator, generatorBody )",
-      "level": 4,
-      "number": "12.5.1.1"
-    },
-    {
-      "id": "sec-asyncgenerator-objects",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgenerator-objects",
-      "title": "AsyncGenerator Objects",
-      "level": 2,
-      "number": "12.6"
-    },
-    {
-      "id": "sec-asyncgenerator-abstract-operations",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgenerator-abstract-operations",
-      "title": "AsyncGenerator Abstract Operations",
-      "level": 3,
-      "number": "12.6.1"
-    },
-    {
-      "id": "sec-asyncgeneratorstart",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgeneratorstart",
-      "title": "AsyncGeneratorStart ( generator, generatorBody )",
-      "level": 4,
-      "number": "12.6.1.1"
-    },
-    {
-      "id": "sec-async-function-objects",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-async-function-objects",
-      "title": "AsyncFunction Objects",
-      "level": 2,
-      "number": "12.7"
-    },
-    {
-      "id": "sec-async-functions-abstract-operations",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-async-functions-abstract-operations",
-      "title": "Async Functions Abstract Operations",
-      "level": 3,
-      "number": "12.7.1"
-    },
-    {
-      "id": "sec-asyncblockstart",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncblockstart",
-      "title": "AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )",
-      "level": 4,
-      "number": "12.7.1.1"
     }
   ]
 }

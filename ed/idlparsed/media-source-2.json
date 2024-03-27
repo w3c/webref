@@ -83,7 +83,7 @@
         "href": "https://w3c.github.io/media-source/#dom-endofstreamerror"
       },
       "MediaSource": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n\n    [ SameObject, Exposed=DedicatedWorker ]\n    readonly              attribute MediaSourceHandle   handle;\n\n    readonly              attribute SourceBufferList    sourceBuffers;\n    readonly              attribute SourceBufferList    activeSourceBuffers;\n    readonly              attribute ReadyState          readyState;\n                          attribute unrestricted double duration;\n                          attribute EventHandler        onsourceopen;\n                          attribute EventHandler        onsourceended;\n                          attribute EventHandler        onsourceclose;\n    static readonly       attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer          addSourceBuffer (DOMString type);\n    undefined             removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined             endOfStream (optional EndOfStreamError error);\n    undefined             setLiveSeekableRange (double start, double end);\n    undefined             clearLiveSeekableRange ();\n    static boolean        isTypeSupported (DOMString type);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n\n    [SameObject, Exposed=DedicatedWorker]\n    readonly  attribute MediaSourceHandle handle;\n    readonly  attribute SourceBufferList sourceBuffers;\n    readonly  attribute SourceBufferList activeSourceBuffers;\n    readonly  attribute ReadyState readyState;\n\n    attribute unrestricted double duration;\n    attribute EventHandler onsourceopen;\n    attribute EventHandler onsourceended;\n    attribute EventHandler onsourceclose;\n\n    static readonly attribute boolean canConstructInDedicatedWorker;\n\n    SourceBuffer addSourceBuffer(DOMString type);\n    undefined removeSourceBuffer(SourceBuffer sourceBuffer);\n    undefined endOfStream(optional EndOfStreamError error);\n    undefined setLiveSeekableRange(double start, double end);\n    undefined clearLiveSeekableRange();\n    static boolean isTypeSupported(DOMString type);\n};",
         "type": "interface",
         "name": "MediaSource",
         "inheritance": "EventTarget",
@@ -526,7 +526,7 @@
         "href": "https://w3c.github.io/media-source/#dom-appendmode"
       },
       "SourceBuffer": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n  attribute AppendMode mode;\n  readonly  attribute boolean updating;\n  readonly  attribute TimeRanges buffered;\n  attribute double timestampOffset;\n  readonly  attribute AudioTrackList audioTracks;\n  readonly  attribute VideoTrackList videoTracks;\n  readonly  attribute TextTrackList textTracks;\n  attribute double appendWindowStart;\n  attribute unrestricted double appendWindowEnd;\n\n  attribute EventHandler onupdatestart;\n  attribute EventHandler onupdate;\n  attribute EventHandler onupdateend;\n  attribute EventHandler onerror;\n  attribute EventHandler onabort;\n\n  undefined appendBuffer(BufferSource data);\n  undefined abort();\n  undefined changeType(DOMString type);\n  undefined remove(double start, unrestricted double end);\n};",
         "type": "interface",
         "name": "SourceBuffer",
         "inheritance": "EventTarget",
@@ -909,7 +909,7 @@
         "href": "https://w3c.github.io/media-source/#dom-sourcebuffer"
       },
       "SourceBufferList": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n    readonly        attribute unsigned long length;\n                    attribute EventHandler  onaddsourcebuffer;\n                    attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n  readonly attribute unsigned long length;\n\n  attribute EventHandler onaddsourcebuffer;\n  attribute EventHandler onremovesourcebuffer;\n\n  getter SourceBuffer (unsigned long index);\n};",
         "type": "interface",
         "name": "SourceBufferList",
         "inheritance": "EventTarget",
@@ -1304,7 +1304,7 @@
     "idlExtendedNames": {
       "AudioTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "AudioTrack",
           "inheritance": null,
@@ -1349,7 +1349,7 @@
       ],
       "VideoTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface VideoTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface VideoTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "VideoTrack",
           "inheritance": null,
@@ -1394,7 +1394,7 @@
       ],
       "TextTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface TextTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface TextTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "TextTrack",
           "inheritance": null,

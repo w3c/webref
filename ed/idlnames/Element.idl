@@ -67,7 +67,7 @@ partial interface Element {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Element {
-  [CEReactions] undefined setHTMLUnsafe(DOMString html);
+  [CEReactions] undefined setHTMLUnsafe(HTMLString html);
 };
 
 // Source: Element Timing API (https://wicg.github.io/element-timing/)
@@ -76,9 +76,9 @@ partial interface Element {
 };
 
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
-[SecureContext]
 partial interface Element {
-  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});
+  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});
+  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});
 };
 
 // Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
@@ -128,6 +128,7 @@ partial interface Element {
   readonly attribute long clientLeft;
   readonly attribute long clientWidth;
   readonly attribute long clientHeight;
+  readonly attribute double currentCSSZoom;
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)

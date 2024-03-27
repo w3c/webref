@@ -6,7 +6,7 @@
       "title": "CSS Object Model (CSSOM)",
       "url": "https://www.w3.org/TR/cssom-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
     "href": "https://drafts.csswg.org/cssom-1/#cssstylerule"
   },
   "extended": [

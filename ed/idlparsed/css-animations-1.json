@@ -197,7 +197,7 @@
         "href": "https://drafts.csswg.org/css-animations-1/#dictdef-animationeventinit"
       },
       "CSSKeyframeRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSKeyframeRule : CSSRule {\n  attribute CSSOMString keyText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSKeyframeRule : CSSRule {\n  attribute CSSOMString keyText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
         "type": "interface",
         "name": "CSSKeyframeRule",
         "inheritance": "CSSRule",
@@ -227,7 +227,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSStyleDeclaration"
+              "idlType": "CSSStyleProperties"
             },
             "extAttrs": [
               {
@@ -614,7 +614,7 @@
       "CSSKeyframeRule": [
         "CSSRule",
         "CSSOMString",
-        "CSSStyleDeclaration"
+        "CSSStyleProperties"
       ],
       "CSSKeyframesRule": [
         "CSSRule",
@@ -631,7 +631,7 @@
       "CSSOMString",
       "EventInit",
       "CSSRule",
-      "CSSStyleDeclaration",
+      "CSSStyleProperties",
       "CSSRuleList",
       "GlobalEventHandlers",
       "EventHandler"

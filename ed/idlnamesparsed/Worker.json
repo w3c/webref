@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(USVString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(ScriptURLString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
     "href": "https://html.spec.whatwg.org/multipage/workers.html#worker"
   },
   "extended": [

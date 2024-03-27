@@ -2,7 +2,7 @@
 [Exposed=Window]
 interface CSSStyleRule : CSSGroupingRule {
   attribute CSSOMString selectorText;
-  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;
 };
 
 // Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)

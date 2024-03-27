@@ -6,7 +6,7 @@
       "title": "CSS View Transitions Module Level 2",
       "url": "https://drafts.csswg.org/css-view-transitions-2/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  attribute ViewTransitionNavigation navigation;\n  attribute DOMTokenList typeList;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  readonly attribute CSSViewTransitionTypeSet types;\n};",
     "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule"
   },
   "extended": [],

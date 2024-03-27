@@ -1,11 +1,12 @@
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
 dictionary SanitizerConfig {
-  sequence<DOMString> allowElements;
-  sequence<DOMString> blockElements;
-  sequence<DOMString> dropElements;
-  AttributeMatchList allowAttributes;
-  AttributeMatchList dropAttributes;
-  boolean allowCustomElements;
-  boolean allowUnknownMarkup;
-  boolean allowComments;
+  sequence<SanitizerElementWithAttributes> elements;
+  sequence<SanitizerElement> removeElements;
+  sequence<SanitizerElement> replaceWithChildrenElements;
+
+  sequence<SanitizerAttribute> attributes;
+  sequence<SanitizerAttribute> removeAttributes;
+
+  boolean comments;
+  boolean dataAttributes;
 };

@@ -2042,7 +2042,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig"
       },
       "AudioEncoderConfig": {
-        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] unsigned long sampleRate;\n  [EnforceRange] unsigned long numberOfChannels;\n  [EnforceRange] unsigned long long bitrate;\n  BitrateMode bitrateMode = \"variable\";\n};",
+        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] unsigned long long bitrate;\n  BitrateMode bitrateMode = \"variable\";\n};",
         "type": "dictionary",
         "name": "AudioEncoderConfig",
         "inheritance": null,
@@ -2083,7 +2083,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webcodecs/#dom-audioencoderconfig-samplerate"
           },
           {
@@ -2106,7 +2106,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webcodecs/#dom-audioencoderconfig-numberofchannels"
           },
           {

@@ -5,237 +5,65 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {
-        "Window": [
-          "Sanitizer"
-        ]
-      },
+      "constructors": {},
       "functions": {}
     },
     "idlNames": {
-      "Sanitizer": {
-        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize((Document or DocumentFragment) input);\n  Element? sanitizeFor(DOMString element, DOMString input);\n\n  SanitizerConfig getConfiguration();\n  static SanitizerConfig getDefaultConfiguration();\n};",
-        "type": "interface",
-        "name": "Sanitizer",
+      "SanitizerElementNamespace": {
+        "fragment": "dictionary SanitizerElementNamespace {\n  required DOMString name;\n  DOMString? _namespace = \"http://www.w3.org/1999/xhtml\";\n};",
+        "type": "dictionary",
+        "name": "SanitizerElementNamespace",
         "inheritance": null,
         "members": [
           {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "config",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SanitizerConfig"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "type": "field",
+            "name": "name",
             "extAttrs": [],
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizer"
-          },
-          {
-            "type": "operation",
-            "name": "sanitize",
             "idlType": {
-              "type": "return-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DocumentFragment"
+              "idlType": "DOMString"
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "input",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Document"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DocumentFragment"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitize"
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespace-name"
           },
           {
-            "type": "operation",
-            "name": "sanitizeFor",
+            "type": "field",
+            "name": "namespace",
+            "extAttrs": [],
             "idlType": {
-              "type": "return-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "Element"
+              "idlType": "DOMString"
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "element",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "input",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor"
-          },
-          {
-            "type": "operation",
-            "name": "getConfiguration",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SanitizerConfig"
+            "default": {
+              "type": "string",
+              "value": "http://www.w3.org/1999/xhtml"
             },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getconfiguration"
-          },
-          {
-            "type": "operation",
-            "name": "getDefaultConfiguration",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SanitizerConfig"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "static",
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getdefaultconfiguration"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
-      },
-      "SetHTMLOptions": {
-        "fragment": "dictionary SetHTMLOptions {\n  Sanitizer sanitizer;\n};",
-        "type": "dictionary",
-        "name": "SetHTMLOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "sanitizer",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Sanitizer"
-            },
-            "default": null,
             "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmloptions-sanitizer"
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespace-namespace"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions"
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerelementnamespace"
       },
-      "SanitizerConfig": {
-        "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowUnknownMarkup;\n  boolean allowComments;\n};",
+      "SanitizerElementNamespaceWithAttributes": {
+        "fragment": "// Used by \"elements\"\ndictionary SanitizerElementNamespaceWithAttributes : SanitizerElementNamespace {\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n};",
         "type": "dictionary",
-        "name": "SanitizerConfig",
-        "inheritance": null,
+        "name": "SanitizerElementNamespaceWithAttributes",
+        "inheritance": "SanitizerElementNamespace",
         "members": [
           {
             "type": "field",
-            "name": "allowElements",
+            "name": "attributes",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -250,17 +78,17 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "SanitizerAttribute"
                 }
               ]
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowelements"
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes"
           },
           {
             "type": "field",
-            "name": "blockElements",
+            "name": "removeAttributes",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -275,134 +103,29 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "SanitizerAttribute"
                 }
               ]
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-blockelements"
-          },
-          {
-            "type": "field",
-            "name": "dropElements",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                }
-              ]
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dropelements"
-          },
-          {
-            "type": "field",
-            "name": "allowAttributes",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AttributeMatchList"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowattributes"
-          },
-          {
-            "type": "field",
-            "name": "dropAttributes",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AttributeMatchList"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dropattributes"
-          },
-          {
-            "type": "field",
-            "name": "allowCustomElements",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcustomelements"
-          },
-          {
-            "type": "field",
-            "name": "allowUnknownMarkup",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowunknownmarkup"
-          },
-          {
-            "type": "field",
-            "name": "allowComments",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcomments"
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig"
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerelementnamespacewithattributes"
       },
-      "AttributeMatchList": {
-        "fragment": "typedef record<DOMString, sequence<DOMString>> AttributeMatchList;",
+      "SanitizerElement": {
+        "fragment": "typedef (DOMString or SanitizerElementNamespace) SanitizerElement;",
         "type": "typedef",
-        "name": "AttributeMatchList",
+        "name": "SanitizerElement",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
-          "generic": "record",
+          "generic": "",
           "nullable": false,
-          "union": false,
+          "union": true,
           "idlType": [
             {
               "type": "typedef-type",
@@ -415,37 +138,305 @@
             {
               "type": "typedef-type",
               "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerElementNamespace"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerelement"
+      },
+      "SanitizerElementWithAttributes": {
+        "fragment": "typedef (DOMString or SanitizerElementNamespaceWithAttributes) SanitizerElementWithAttributes;",
+        "type": "typedef",
+        "name": "SanitizerElementWithAttributes",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerElementNamespaceWithAttributes"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerelementwithattributes"
+      },
+      "SanitizerAttributeNamespace": {
+        "fragment": "dictionary SanitizerAttributeNamespace {\n  required DOMString name;\n  DOMString? _namespace = null;\n};",
+        "type": "dictionary",
+        "name": "SanitizerAttributeNamespace",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerattributenamespace-name"
+          },
+          {
+            "type": "field",
+            "name": "namespace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerattributenamespace-namespace"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerattributenamespace"
+      },
+      "SanitizerAttribute": {
+        "fragment": "typedef (DOMString or SanitizerAttributeNamespace) SanitizerAttribute;",
+        "type": "typedef",
+        "name": "SanitizerAttribute",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerAttributeNamespace"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerattribute"
+      },
+      "SanitizerConfig": {
+        "fragment": "dictionary SanitizerConfig {\n  sequence<SanitizerElementWithAttributes> elements;\n  sequence<SanitizerElement> removeElements;\n  sequence<SanitizerElement> replaceWithChildrenElements;\n\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n\n  boolean comments;\n  boolean dataAttributes;\n};",
+        "type": "dictionary",
+        "name": "SanitizerConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "elements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
               "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
                 {
-                  "type": "typedef-type",
+                  "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "SanitizerElementWithAttributes"
                 }
               ]
-            }
-          ]
-        },
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements"
+          },
+          {
+            "type": "field",
+            "name": "removeElements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements"
+          },
+          {
+            "type": "field",
+            "name": "replaceWithChildrenElements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements"
+          },
+          {
+            "type": "field",
+            "name": "attributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes"
+          },
+          {
+            "type": "field",
+            "name": "removeAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes"
+          },
+          {
+            "type": "field",
+            "name": "comments",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-comments"
+          },
+          {
+            "type": "field",
+            "name": "dataAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dataattributes"
+          }
+        ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/sanitizer-api/#typedefdef-attributematchlist"
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig"
       }
     },
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "[SecureContext]\npartial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
           "members": [
             {
               "type": "operation",
-              "name": "setHTML",
+              "name": "setHTMLUnsafe__TO_BE_MERGED",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -457,7 +448,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "input",
+                  "name": "html",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -473,7 +464,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "options",
+                  "name": "config",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -481,7 +472,263 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "SetHTMLOptions"
+                    "idlType": "SanitizerConfig"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtmlunsafe__to_be_merged"
+            },
+            {
+              "type": "operation",
+              "name": "setHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SanitizerConfig"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "ShadowRoot": [
+        {
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
+          "type": "interface",
+          "name": "ShadowRoot",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "setHTMLUnsafe__TO_BE_MERGED",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SanitizerConfig"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-shadowroot-sethtmlunsafe__to_be_merged"
+            },
+            {
+              "type": "operation",
+              "name": "setHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SanitizerConfig"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-shadowroot-sethtml"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  static Document parseHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  static Document parseHTML(DOMString html, optional SanitizerConfig config = {});\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "parseHTMLUnsafe__TO_BE_MERGED",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Document"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SanitizerConfig"
                   },
                   "default": {
                     "type": "dictionary"
@@ -491,49 +738,95 @@
                 }
               ],
               "extAttrs": [],
-              "special": "",
-              "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml"
-            }
-          ],
-          "extAttrs": [
+              "special": "static",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-document-parsehtmlunsafe__to_be_merged"
+            },
             {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
+              "type": "operation",
+              "name": "parseHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Document"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SanitizerConfig"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://wicg.github.io/sanitizer-api/#dom-document-parsehtml"
             }
           ],
+          "extAttrs": [],
           "partial": true
         }
       ]
     },
     "globals": {},
-    "exposed": {
-      "Window": [
-        "Sanitizer"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
-      "Sanitizer": [
-        "SanitizerConfig",
-        "DocumentFragment",
-        "Document",
-        "Element"
-      ],
-      "SetHTMLOptions": [
-        "Sanitizer"
-      ],
       "Element": [
-        "SetHTMLOptions"
+        "SanitizerConfig"
       ],
+      "ShadowRoot": [
+        "SanitizerConfig"
+      ],
+      "Document": [
+        "Document",
+        "SanitizerConfig"
+      ],
+      "SanitizerElementNamespace": [],
+      "SanitizerElementNamespaceWithAttributes": [
+        "SanitizerElementNamespace",
+        "SanitizerAttribute"
+      ],
+      "SanitizerAttributeNamespace": [],
       "SanitizerConfig": [
-        "AttributeMatchList"
+        "SanitizerElementWithAttributes",
+        "SanitizerElement",
+        "SanitizerAttribute"
       ]
     },
     "externalDependencies": [
-      "DocumentFragment",
-      "Document",
-      "Element"
+      "Element",
+      "ShadowRoot",
+      "Document"
     ],
     "hasObsoleteIdl": false
   }

@@ -4565,7 +4565,7 @@
         "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement"
       },
       "HTMLIFrameElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLIFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString srcdoc;\n  [CEReactions] attribute DOMString name;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n  [CEReactions] attribute boolean allowFullscreen;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString loading;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLIFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute HTMLString srcdoc;\n  [CEReactions] attribute DOMString name;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n  [CEReactions] attribute boolean allowFullscreen;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString loading;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLIFrameElement",
         "inheritance": "HTMLElement",
@@ -4614,7 +4614,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "HTMLString"
             },
             "extAttrs": [
               {
@@ -32048,7 +32048,7 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
       },
       "DOMParser": {
-        "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString(DOMString string, DOMParserSupportedType type);\n};",
+        "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString(HTMLString string, DOMParserSupportedType type);\n};",
         "type": "interface",
         "name": "DOMParser",
         "inheritance": null,
@@ -32080,7 +32080,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "HTMLString"
                 },
                 "default": null,
                 "optional": false,
@@ -34841,7 +34841,7 @@
         "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcastchannel"
       },
       "WorkerGlobalScope": {
-        "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(USVString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
+        "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(ScriptURLString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
         "type": "interface",
         "name": "WorkerGlobalScope",
         "inheritance": "EventTarget",
@@ -34916,7 +34916,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "ScriptURLString"
                 },
                 "default": null,
                 "optional": false,
@@ -35375,7 +35375,7 @@
         "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker"
       },
       "Worker": {
-        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(USVString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(ScriptURLString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "Worker",
         "inheritance": "EventTarget",
@@ -35393,7 +35393,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "ScriptURLString"
                 },
                 "default": null,
                 "optional": false,
@@ -35685,7 +35685,7 @@
         "href": "https://html.spec.whatwg.org/multipage/workers.html#workertype"
       },
       "SharedWorker": {
-        "fragment": "[Exposed=Window]\ninterface SharedWorker : EventTarget {\n  constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options = {});\n\n  readonly attribute MessagePort port;\n};",
+        "fragment": "[Exposed=Window]\ninterface SharedWorker : EventTarget {\n  constructor(ScriptURLString scriptURL, optional (DOMString or WorkerOptions) options = {});\n\n  readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "SharedWorker",
         "inheritance": "EventTarget",
@@ -35703,7 +35703,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "ScriptURLString"
                 },
                 "default": null,
                 "optional": false,
@@ -37797,7 +37797,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe(DOMString html);\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write(DOMString... text);\n  [CEReactions] undefined writeln(DOMString... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
+          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe(HTMLString html);\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write(HTMLString... text);\n  [CEReactions] undefined writeln(HTMLString... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -37824,7 +37824,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -38417,7 +38417,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -38456,7 +38456,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -40204,7 +40204,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(DOMString html);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -40231,7 +40231,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -40256,7 +40256,7 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(DOMString html);\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
@@ -40283,7 +40283,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -42891,6 +42891,7 @@
       "DOMStringList": [],
       "Document": [
         "Document",
+        "HTMLString",
         "Location",
         "DocumentReadyState",
         "HTMLElement",
@@ -43016,6 +43017,7 @@
       ],
       "HTMLIFrameElement": [
         "HTMLElement",
+        "HTMLString",
         "DOMTokenList",
         "Document",
         "WindowProxy"
@@ -43651,15 +43653,21 @@
         "WorkerGlobalScope",
         "WorkerLocation",
         "WorkerNavigator",
+        "ScriptURLString",
         "OnErrorEventHandler",
         "EventHandler"
       ],
       "DOMParser": [
         "Document",
+        "HTMLString",
         "DOMParserSupportedType"
       ],
-      "Element": [],
-      "ShadowRoot": [],
+      "Element": [
+        "HTMLString"
+      ],
+      "ShadowRoot": [
+        "HTMLString"
+      ],
       "NavigatorID": [],
       "NavigatorLanguage": [],
       "NavigatorOnLine": [],
@@ -43736,6 +43744,7 @@
       ],
       "Worker": [
         "EventTarget",
+        "ScriptURLString",
         "WorkerOptions",
         "StructuredSerializeOptions",
         "EventHandler",
@@ -43747,6 +43756,7 @@
       ],
       "SharedWorker": [
         "EventTarget",
+        "ScriptURLString",
         "WorkerOptions",
         "MessagePort",
         "AbstractWorker"
@@ -43811,6 +43821,7 @@
       "NodeList",
       "SVGScriptElement",
       "Document",
+      "HTMLString",
       "WindowProxy",
       "DocumentOrShadowRoot",
       "DOMTokenList",
@@ -43845,6 +43856,7 @@
       "Function",
       "VoidFunction",
       "ServiceWorker",
+      "ScriptURLString",
       "RequestCredentials"
     ],
     "hasObsoleteIdl": false

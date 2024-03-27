@@ -10,16 +10,54 @@
           "SnapEvent"
         ]
       },
-      "functions": {
-        "Window": [
-          "SnapTargetList",
-          "SnapTargetArray"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
+      "SnapEventInit": {
+        "fragment": "dictionary SnapEventInit : EventInit {\n  Node? snapTargetBlock;\n  Node? snapTargetInline;\n};",
+        "type": "dictionary",
+        "name": "SnapEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "snapTargetBlock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Node"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetblock"
+          },
+          {
+            "type": "field",
+            "name": "snapTargetInline",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Node"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetinline"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#dictdef-snapeventinit"
+      },
       "SnapEvent": {
-        "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute EventTarget? target;\n  readonly attribute SnapTargetList snappedTargets;\n  readonly attribute SnapTargetList snapTargets;\n  readonly attribute boolean invokedProgrammatically;\n  readonly attribute boolean smoothlyScrolled;\n};",
+        "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute Node? snapTargetBlock;\n  readonly attribute Node? snapTargetInline;\n};",
         "type": "interface",
         "name": "SnapEvent",
         "inheritance": "Event",
@@ -67,83 +105,35 @@
           },
           {
             "type": "attribute",
-            "name": "target",
+            "name": "snapTargetBlock",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "EventTarget"
+              "idlType": "Node"
             },
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-target"
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock"
           },
           {
             "type": "attribute",
-            "name": "snappedTargets",
+            "name": "snapTargetInline",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
-              "idlType": "SnapTargetList"
+              "idlType": "Node"
             },
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snappedtargets"
-          },
-          {
-            "type": "attribute",
-            "name": "snapTargets",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SnapTargetList"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargets"
-          },
-          {
-            "type": "attribute",
-            "name": "invokedProgrammatically",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-invokedprogrammatically"
-          },
-          {
-            "type": "attribute",
-            "name": "smoothlyScrolled",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-smoothlyscrolled"
+            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline"
           }
         ],
         "extAttrs": [
@@ -159,284 +149,30 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapevent"
-      },
-      "SnapTargetList": {
-        "fragment": "[Exposed=Window]\ninterface SnapTargetList {\n    readonly attribute SnapTargetArray x;\n    readonly attribute SnapTargetArray y;\n};",
-        "type": "interface",
-        "name": "SnapTargetList",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "x",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SnapTargetArray"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetlist-x"
-          },
-          {
-            "type": "attribute",
-            "name": "y",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SnapTargetArray"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetlist-y"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snaptargetlist"
-      },
-      "SnapTargetArray": {
-        "fragment": "[Exposed=Window]\ninterface SnapTargetArray {\n    readonly attribute unsigned long length;\n    getter EventTarget? item (unsigned long index);\n};",
-        "type": "interface",
-        "name": "SnapTargetArray",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "length",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snaptargetarray-length"
-          },
-          {
-            "type": "operation",
-            "name": "item",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "EventTarget"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "index",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "getter"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snaptargetarray"
-      },
-      "SnapEventInit": {
-        "fragment": "dictionary SnapEventInit : EventModifierInit {\n    sequence<EventTarget> snappedTargetsX = [];\n    sequence<EventTarget> snappedTargetsY = [];\n    sequence<EventTarget> snapTargetsListX = [];\n    sequence<EventTarget> snapTargetsListY = [];\n};",
-        "type": "dictionary",
-        "name": "SnapEventInit",
-        "inheritance": "EventModifierInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "snappedTargetsX",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventTarget"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snappedtargetsx"
-          },
-          {
-            "type": "field",
-            "name": "snappedTargetsY",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventTarget"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snappedtargetsy"
-          },
-          {
-            "type": "field",
-            "name": "snapTargetsListX",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventTarget"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetslistx"
-          },
-          {
-            "type": "field",
-            "name": "snapTargetsListY",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventTarget"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-snapeventinit-snaptargetslisty"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#dictdef-snapeventinit"
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "SnapEvent",
-        "SnapTargetList",
-        "SnapTargetArray"
+        "SnapEvent"
       ]
     },
     "dependencies": {
+      "SnapEventInit": [
+        "EventInit",
+        "Node"
+      ],
       "SnapEvent": [
         "Event",
         "SnapEventInit",
-        "EventTarget",
-        "SnapTargetList"
-      ],
-      "SnapTargetList": [
-        "SnapTargetArray"
-      ],
-      "SnapTargetArray": [
-        "EventTarget"
-      ],
-      "SnapEventInit": [
-        "EventModifierInit",
-        "EventTarget"
+        "Node"
       ]
     },
     "externalDependencies": [
-      "Event",
-      "EventTarget",
-      "EventModifierInit"
+      "EventInit",
+      "Node",
+      "Event"
     ],
     "hasObsoleteIdl": false
   }

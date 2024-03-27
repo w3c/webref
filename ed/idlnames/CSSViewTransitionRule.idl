@@ -1,6 +1,6 @@
 // Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
 [Exposed=Window]
 interface CSSViewTransitionRule : CSSRule {
-  attribute ViewTransitionNavigation navigation;
-  attribute DOMTokenList typeList;
+  readonly attribute ViewTransitionNavigation navigation;
+  readonly attribute CSSViewTransitionTypeSet types;
 };

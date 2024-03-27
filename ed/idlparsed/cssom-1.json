@@ -20,10 +20,12 @@
           "CSSStyleRule",
           "CSSImportRule",
           "CSSGroupingRule",
+          "CSSPageDescriptors",
           "CSSPageRule",
           "CSSMarginRule",
           "CSSNamespaceRule",
-          "CSSStyleDeclaration"
+          "CSSStyleDeclaration",
+          "CSSStyleProperties"
         ]
       }
     },
@@ -1075,7 +1077,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#cssrule"
       },
       "CSSStyleRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
         "type": "interface",
         "name": "CSSStyleRule",
         "inheritance": "CSSGroupingRule",
@@ -1105,7 +1107,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSStyleDeclaration"
+              "idlType": "CSSStyleProperties"
             },
             "extAttrs": [
               {
@@ -1396,8 +1398,305 @@
         "partial": false,
         "href": "https://drafts.csswg.org/cssom-1/#cssgroupingrule"
       },
+      "CSSPageDescriptors": {
+        "fragment": "[Exposed=Window]\ninterface CSSPageDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString margin;\n  attribute [LegacyNullToEmptyString] CSSOMString marginTop;\n  attribute [LegacyNullToEmptyString] CSSOMString marginRight;\n  attribute [LegacyNullToEmptyString] CSSOMString marginBottom;\n  attribute [LegacyNullToEmptyString] CSSOMString marginLeft;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-top;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-right;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-bottom;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-left;\n  attribute [LegacyNullToEmptyString] CSSOMString size;\n  attribute [LegacyNullToEmptyString] CSSOMString marks;\n  attribute [LegacyNullToEmptyString] CSSOMString bleed;\n};",
+        "type": "interface",
+        "name": "CSSPageDescriptors",
+        "inheritance": "CSSStyleDeclaration",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "margin",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margin"
+          },
+          {
+            "type": "attribute",
+            "name": "marginTop",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margintop"
+          },
+          {
+            "type": "attribute",
+            "name": "marginRight",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-marginright"
+          },
+          {
+            "type": "attribute",
+            "name": "marginBottom",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-marginbottom"
+          },
+          {
+            "type": "attribute",
+            "name": "marginLeft",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-marginleft"
+          },
+          {
+            "type": "attribute",
+            "name": "margin-top",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margin-top"
+          },
+          {
+            "type": "attribute",
+            "name": "margin-right",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margin-right"
+          },
+          {
+            "type": "attribute",
+            "name": "margin-bottom",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margin-bottom"
+          },
+          {
+            "type": "attribute",
+            "name": "margin-left",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-margin-left"
+          },
+          {
+            "type": "attribute",
+            "name": "size",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-size"
+          },
+          {
+            "type": "attribute",
+            "name": "marks",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-marks"
+          },
+          {
+            "type": "attribute",
+            "name": "bleed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-bleed"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#csspagedescriptors"
+      },
       "CSSPageRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSPageRule : CSSGroupingRule {\n           attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSPageRule : CSSGroupingRule {\n           attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSPageDescriptors style;\n};",
         "type": "interface",
         "name": "CSSPageRule",
         "inheritance": "CSSGroupingRule",
@@ -1427,7 +1726,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSStyleDeclaration"
+              "idlType": "CSSPageDescriptors"
             },
             "extAttrs": [
               {
@@ -1588,7 +1887,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#cssnamespacerule"
       },
       "CSSStyleDeclaration": {
-        "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n};",
         "type": "interface",
         "name": "CSSStyleDeclaration",
         "inheritance": null,
@@ -1874,7 +2173,28 @@
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-parentrule"
-          },
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration"
+      },
+      "CSSStyleProperties": {
+        "fragment": "[Exposed=Window]\ninterface CSSStyleProperties : CSSStyleDeclaration {\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
+        "type": "interface",
+        "name": "CSSStyleProperties",
+        "inheritance": "CSSStyleDeclaration",
+        "members": [
           {
             "type": "attribute",
             "name": "cssFloat",
@@ -1903,7 +2223,7 @@
             ],
             "special": "",
             "readonly": false,
-            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-cssfloat"
+            "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyleproperties-cssfloat"
           }
         ],
         "extAttrs": [
@@ -1918,7 +2238,7 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration"
+        "href": "https://drafts.csswg.org/cssom-1/#cssstyleproperties"
       },
       "ElementCSSInlineStyle": {
         "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
@@ -2338,10 +2658,12 @@
         "CSSStyleRule",
         "CSSImportRule",
         "CSSGroupingRule",
+        "CSSPageDescriptors",
         "CSSPageRule",
         "CSSMarginRule",
         "CSSNamespaceRule",
         "CSSStyleDeclaration",
+        "CSSStyleProperties",
         "CSS"
       ]
     },
@@ -2391,7 +2713,7 @@
       "CSSStyleRule": [
         "CSSGroupingRule",
         "CSSOMString",
-        "CSSStyleDeclaration"
+        "CSSStyleProperties"
       ],
       "CSSImportRule": [
         "CSSRule",
@@ -2404,10 +2726,14 @@
         "CSSRuleList",
         "CSSOMString"
       ],
+      "CSSPageDescriptors": [
+        "CSSStyleDeclaration",
+        "CSSOMString"
+      ],
       "CSSPageRule": [
         "CSSGroupingRule",
         "CSSOMString",
-        "CSSStyleDeclaration"
+        "CSSPageDescriptors"
       ],
       "CSSMarginRule": [
         "CSSRule",
@@ -2421,6 +2747,10 @@
       "CSSStyleDeclaration": [
         "CSSOMString",
         "CSSRule"
+      ],
+      "CSSStyleProperties": [
+        "CSSStyleDeclaration",
+        "CSSOMString"
       ],
       "ElementCSSInlineStyle": [
         "CSSStyleDeclaration"

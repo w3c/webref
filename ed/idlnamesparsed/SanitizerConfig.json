@@ -6,7 +6,7 @@
       "title": "HTML Sanitizer API",
       "url": "https://wicg.github.io/sanitizer-api/"
     },
-    "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowUnknownMarkup;\n  boolean allowComments;\n};",
+    "fragment": "dictionary SanitizerConfig {\n  sequence<SanitizerElementWithAttributes> elements;\n  sequence<SanitizerElement> removeElements;\n  sequence<SanitizerElement> replaceWithChildrenElements;\n\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n\n  boolean comments;\n  boolean dataAttributes;\n};",
     "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig"
   },
   "extended": [],

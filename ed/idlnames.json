@@ -264,11 +264,6 @@
     "parsed": "idlnamesparsed/Attr.json",
     "type": "interface"
   },
-  "AttributeMatchList": {
-    "fragment": "idlnames/AttributeMatchList.idl",
-    "parsed": "idlnamesparsed/AttributeMatchList.json",
-    "type": "typedef"
-  },
   "AttributionReportingRequestOptions": {
     "fragment": "idlnames/AttributionReportingRequestOptions.idl",
     "parsed": "idlnamesparsed/AttributionReportingRequestOptions.json",
@@ -1189,6 +1184,11 @@
     "parsed": "idlnamesparsed/CSSCounterStyleRule.json",
     "type": "interface"
   },
+  "CSSFontFaceDescriptors": {
+    "fragment": "idlnames/CSSFontFaceDescriptors.idl",
+    "parsed": "idlnamesparsed/CSSFontFaceDescriptors.json",
+    "type": "interface"
+  },
   "CSSFontFaceRule": {
     "fragment": "idlnames/CSSFontFaceRule.idl",
     "parsed": "idlnamesparsed/CSSFontFaceRule.json",
@@ -1379,6 +1379,11 @@
     "parsed": "idlnamesparsed/CSSOKLab.json",
     "type": "interface"
   },
+  "CSSPageDescriptors": {
+    "fragment": "idlnames/CSSPageDescriptors.idl",
+    "parsed": "idlnamesparsed/CSSPageDescriptors.json",
+    "type": "interface"
+  },
   "CSSPageRule": {
     "fragment": "idlnames/CSSPageRule.idl",
     "parsed": "idlnamesparsed/CSSPageRule.json",
@@ -1509,6 +1514,11 @@
     "parsed": "idlnamesparsed/CSSStyleDeclaration.json",
     "type": "interface"
   },
+  "CSSStyleProperties": {
+    "fragment": "idlnames/CSSStyleProperties.idl",
+    "parsed": "idlnamesparsed/CSSStyleProperties.json",
+    "type": "interface"
+  },
   "CSSStyleRule": {
     "fragment": "idlnames/CSSStyleRule.idl",
     "parsed": "idlnamesparsed/CSSStyleRule.json",
@@ -1582,6 +1592,11 @@
   "CSSViewTransitionRule": {
     "fragment": "idlnames/CSSViewTransitionRule.idl",
     "parsed": "idlnamesparsed/CSSViewTransitionRule.json",
+    "type": "interface"
+  },
+  "CSSViewTransitionTypeSet": {
+    "fragment": "idlnames/CSSViewTransitionTypeSet.idl",
+    "parsed": "idlnamesparsed/CSSViewTransitionTypeSet.json",
     "type": "interface"
   },
   "Cache": {
@@ -7379,6 +7394,11 @@
     "parsed": "idlnamesparsed/OptionalEffectTiming.json",
     "type": "dictionary"
   },
+  "OpusApplication": {
+    "fragment": "idlnames/OpusApplication.idl",
+    "parsed": "idlnamesparsed/OpusApplication.json",
+    "type": "enum"
+  },
   "OpusBitstreamFormat": {
     "fragment": "idlnames/OpusBitstreamFormat.idl",
     "parsed": "idlnamesparsed/OpusBitstreamFormat.json",
@@ -7388,6 +7408,11 @@
     "fragment": "idlnames/OpusEncoderConfig.idl",
     "parsed": "idlnamesparsed/OpusEncoderConfig.json",
     "type": "dictionary"
+  },
+  "OpusSignal": {
+    "fragment": "idlnames/OpusSignal.idl",
+    "parsed": "idlnamesparsed/OpusSignal.json",
+    "type": "enum"
   },
   "OrientationLockType": {
     "fragment": "idlnames/OrientationLockType.idl",
@@ -9929,15 +9954,40 @@
     "parsed": "idlnamesparsed/SVGViewElement.json",
     "type": "interface"
   },
-  "Sanitizer": {
-    "fragment": "idlnames/Sanitizer.idl",
-    "parsed": "idlnamesparsed/Sanitizer.json",
-    "type": "interface"
+  "SanitizerAttribute": {
+    "fragment": "idlnames/SanitizerAttribute.idl",
+    "parsed": "idlnamesparsed/SanitizerAttribute.json",
+    "type": "typedef"
+  },
+  "SanitizerAttributeNamespace": {
+    "fragment": "idlnames/SanitizerAttributeNamespace.idl",
+    "parsed": "idlnamesparsed/SanitizerAttributeNamespace.json",
+    "type": "dictionary"
   },
   "SanitizerConfig": {
     "fragment": "idlnames/SanitizerConfig.idl",
     "parsed": "idlnamesparsed/SanitizerConfig.json",
     "type": "dictionary"
+  },
+  "SanitizerElement": {
+    "fragment": "idlnames/SanitizerElement.idl",
+    "parsed": "idlnamesparsed/SanitizerElement.json",
+    "type": "typedef"
+  },
+  "SanitizerElementNamespace": {
+    "fragment": "idlnames/SanitizerElementNamespace.idl",
+    "parsed": "idlnamesparsed/SanitizerElementNamespace.json",
+    "type": "dictionary"
+  },
+  "SanitizerElementNamespaceWithAttributes": {
+    "fragment": "idlnames/SanitizerElementNamespaceWithAttributes.idl",
+    "parsed": "idlnamesparsed/SanitizerElementNamespaceWithAttributes.json",
+    "type": "dictionary"
+  },
+  "SanitizerElementWithAttributes": {
+    "fragment": "idlnames/SanitizerElementWithAttributes.idl",
+    "parsed": "idlnamesparsed/SanitizerElementWithAttributes.json",
+    "type": "typedef"
   },
   "SaveFilePickerOptions": {
     "fragment": "idlnames/SaveFilePickerOptions.idl",
@@ -10219,11 +10269,6 @@
     "parsed": "idlnamesparsed/ServiceWorkerUpdateViaCache.json",
     "type": "enum"
   },
-  "SetHTMLOptions": {
-    "fragment": "idlnames/SetHTMLOptions.idl",
-    "parsed": "idlnamesparsed/SetHTMLOptions.json",
-    "type": "dictionary"
-  },
   "ShadowAnimation": {
     "fragment": "idlnames/ShadowAnimation.idl",
     "parsed": "idlnamesparsed/ShadowAnimation.json",
@@ -10338,16 +10383,6 @@
     "fragment": "idlnames/SnapEventInit.idl",
     "parsed": "idlnamesparsed/SnapEventInit.json",
     "type": "dictionary"
-  },
-  "SnapTargetArray": {
-    "fragment": "idlnames/SnapTargetArray.idl",
-    "parsed": "idlnamesparsed/SnapTargetArray.json",
-    "type": "interface"
-  },
-  "SnapTargetList": {
-    "fragment": "idlnames/SnapTargetList.idl",
-    "parsed": "idlnamesparsed/SnapTargetList.json",
-    "type": "interface"
   },
   "SourceBuffer": {
     "fragment": "idlnames/SourceBuffer.idl",
@@ -11523,6 +11558,11 @@
     "fragment": "idlnames/ViewTransitionNavigation.idl",
     "parsed": "idlnamesparsed/ViewTransitionNavigation.json",
     "type": "enum"
+  },
+  "ViewTransitionTypeSet": {
+    "fragment": "idlnames/ViewTransitionTypeSet.idl",
+    "parsed": "idlnamesparsed/ViewTransitionTypeSet.json",
+    "type": "interface"
   },
   "ViewportMediaStreamConstraints": {
     "fragment": "idlnames/ViewportMediaStreamConstraints.idl",

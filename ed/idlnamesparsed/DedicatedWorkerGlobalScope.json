@@ -33,7 +33,7 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(USVString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
+      "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(ScriptURLString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
       "href": "https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope"
     },
     "extended": [
