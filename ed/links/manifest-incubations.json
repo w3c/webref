@@ -18,7 +18,12 @@
       ],
       "specShortname": "dom"
     },
-    "https://github.com/WICG/isolated-web-apps": {},
+    "https://fs.spec.whatwg.org/": {
+      "anchors": [
+        "filesystemhandle"
+      ],
+      "specShortname": "fs"
+    },
     "https://github.com/WICG/manifest-incubations/issues/": {},
     "https://html.spec.whatwg.org/multipage/": {
       "anchors": [
@@ -76,8 +81,8 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list-iterate",
-        "string",
         "ordered-map",
+        "string",
         "map-exists",
         "list",
         "iteration-continue",
@@ -100,8 +105,7 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
-        "concept-url-parser",
-        "concept-url-scheme"
+        "concept-url-parser"
       ],
       "specShortname": "url"
     },
@@ -130,8 +134,8 @@
     },
     "https://wicg.github.io/web-app-launch/": {
       "anchors": [
-        "dom-launchparams",
         "dom-launchparams-files",
+        "dom-launchparams",
         "dfn-launching-a-web-application-with-handling"
       ],
       "specShortname": "web-app-launch"
@@ -154,15 +158,16 @@
         "dfn-processing-extension-point",
         "dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
         "dfn-display-mode",
+        "dfn-processing-extension-point-of-web-manifest",
+        "dfn-processing-a-manifest",
         "web-application-manifest",
         "dfn-object",
         "dfn-ignore",
         "dfn-manifest-url",
         "dfn-within-scope-0",
-        "dfn-processing-extension-point-of-web-manifest",
-        "dfn-processing-a-manifest",
         "dfn-processed-manifest",
         "dfn-launching-a-web-application",
+        "dfn-installed-web-application",
         "dfn-start_url",
         "dfn-scope",
         "dfn-process-image-resources"
