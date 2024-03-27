@@ -4,197 +4,348 @@
     "url": "https://wicg.github.io/file-system-access/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/getAsFileSystemHandle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission": {},
-    "https://developer.mozilla.org/en-US/docs/Web/api/window/showdirectorypicker": {},
-    "https://developer.mozilla.org/en-US/docs/Web/api/window/showopenfilepicker": {},
-    "https://developer.mozilla.org/en-US/docs/Web/api/window/showsavefilepicker": {},
-    "https://fs.spec.whatwg.org/": {
-      "anchors": [
-        "origin-private-file-system",
-        "filesystemhandle",
-        "entry",
-        "entry-parent",
-        "filesystemfilehandle",
-        "filesystemdirectoryhandle",
-        "filesystemhandle-is-in-a-bucket-file-system",
-        "locating-an-entry",
-        "filesystemhandle-locator",
-        "file",
-        "directory",
-        "file-entry-binary-data",
-        "dom-filesystemwritablefilestream-truncate"
-      ],
-      "specShortname": "fs"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/getAsFileSystemHandle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission": {},
+      "https://developer.mozilla.org/en-US/docs/Web/api/window/showdirectorypicker": {},
+      "https://developer.mozilla.org/en-US/docs/Web/api/window/showopenfilepicker": {},
+      "https://developer.mozilla.org/en-US/docs/Web/api/window/showsavefilepicker": {},
+      "https://fs.spec.whatwg.org/": {
+        "anchors": [
+          "filesystemdirectoryhandle",
+          "filesystemfilehandle",
+          "filesystemhandle",
+          "file-entry-binary-data",
+          "origin-private-file-system",
+          "directory",
+          "file",
+          "entry",
+          "filesystemhandle-is-in-a-bucket-file-system",
+          "locating-an-entry",
+          "filesystemhandle-locator",
+          "entry-parent",
+          "dom-filesystemwritablefilestream-truncate"
+        ]
+      },
+      "https://github.com/WICG/permissions-request/issues/2": {},
+      "https://github.com/whatwg/fs/issues/101": {},
+      "https://github.com/wicg/file-system-access/issues/119": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin-opaque",
+          "concept-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dnd.html": {
+        "anchors": [
+          "datatransferitem",
+          "concept-dnd-ro",
+          "concept-dnd-rw",
+          "the-drag-data-item-kind"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-messageerror"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "file-upload-state-(type=file)"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation-notification",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "as-a-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "concept-settings-object-origin",
+          "relevant-settings-object",
+          "concept-environment-top-level-origin"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "ascii-alphanumeric",
+          "byte-sequence",
+          "code-point",
+          "list-empty",
+          "map-exists",
+          "list-iterate",
+          "map-iterate",
+          "implementation-defined",
+          "string-length",
+          "list",
+          "ordered-map",
+          "string-starts-with",
+          "string",
+          "tuple"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type-essence",
+          "mime-type",
+          "parameters",
+          "parse-a-mime-type",
+          "subtype",
+          "type"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "site-storage",
+          "storage-quota"
+        ]
+      },
+      "https://w3c.github.io/FileAPI/": {},
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dom-permissiondescriptor",
+          "dom-permissionstate",
+          "dom-permissionstatus",
+          "dfn-create-a-permissionstatus",
+          "dfn-default-permission-query-algorithm",
+          "dom-permissionstate-denied",
+          "dom-permissionstate-granted",
+          "dom-permissiondescriptor-name",
+          "dfn-permission-descriptor-type",
+          "dfn-permission-state",
+          "dfn-permission-state-constraints",
+          "dom-navigator-permissions",
+          "dfn-powerful-feature",
+          "dom-permissionstate-prompt",
+          "dom-permissions-query",
+          "dfn-request-permission-to-use",
+          "dom-permissionstatus-state"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "aborterror",
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "idl-promise",
+          "SecureContext",
+          "securityerror",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "a-promise-resolved-with",
+          "idl-boolean",
+          "idl-record",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "dfn-throw"
+        ]
+      },
+      "https://wicg.github.io/entries-api/": {
+        "anchors": [
+          "html-forms"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "permission-request-algorithm"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://github.com/WICG/permissions-request/issues/2": {},
-    "https://github.com/whatwg/fs/issues/101": {},
-    "https://github.com/wicg/file-system-access/issues/119": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin",
-        "concept-origin-opaque",
-        "concept-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dnd.html": {
-      "anchors": [
-        "datatransferitem",
-        "concept-dnd-rw",
-        "concept-dnd-ro",
-        "the-drag-data-item-kind"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/indices.html": {
-      "anchors": [
-        "event-messageerror"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/input.html": {
-      "anchors": [
-        "file-upload-state-(type=file)"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation",
-        "activation-notification"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "as-a-download"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "serializable"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "relevant-settings-object",
-        "concept-settings-object-global",
-        "concept-settings-object-origin",
-        "concept-environment-top-level-origin",
-        "environment-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "code-point",
-        "ascii-alphanumeric",
-        "list",
-        "tuple",
-        "list-iterate",
-        "map-iterate",
-        "string",
-        "list-append",
-        "list-empty",
-        "string-starts-with",
-        "string-length",
-        "ordered-map",
-        "implementation-defined",
-        "map-exists",
-        "byte-sequence"
-      ],
-      "specShortname": "infra"
-    },
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "parse-a-mime-type",
-        "parameters",
-        "mime-type",
-        "subtype",
-        "type",
-        "mime-type-essence"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://storage.spec.whatwg.org/": {
-      "anchors": [
-        "site-storage",
-        "storage-quota"
-      ],
-      "specShortname": "storage"
-    },
-    "https://w3c.github.io/FileAPI/": {
-      "specShortname": "FileAPI"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-powerful-feature",
-        "dfn-permission-descriptor-type",
-        "dom-permissiondescriptor",
-        "dfn-permission-state-constraints",
-        "dfn-permission-state",
-        "dom-permissionstate-granted",
-        "dom-permissionstatus",
-        "dfn-default-permission-query-algorithm",
-        "dom-permissionstatus-state",
-        "dom-permissionstate-prompt",
-        "dfn-request-permission-to-use",
-        "dom-permissiondescriptor-name",
-        "dfn-create-a-permissionstatus",
-        "dom-permissionstate",
-        "dom-navigator-permissions",
-        "dom-permissions-query",
-        "dom-permissionstate-denied"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "dfn-throw",
-        "securityerror",
-        "idl-DOMException",
-        "Exposed",
-        "SecureContext",
-        "idl-promise",
-        "a-new-promise",
-        "this",
-        "resolve",
-        "reject",
-        "idl-USVString",
-        "idl-record",
-        "idl-sequence",
-        "idl-boolean",
-        "idl-DOMString",
-        "a-promise-rejected-with",
-        "exceptiondef-typeerror",
-        "aborterror",
-        "a-promise-resolved-with"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/entries-api/": {
-      "anchors": [
-        "html-forms"
-      ],
-      "specShortname": "entries-api"
-    },
-    "https://wicg.github.io/permissions-request/": {
-      "anchors": [
-        "permission-request-algorithm"
-      ],
-      "specShortname": "permissions-request"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://fs.spec.whatwg.org/": {
+        "anchors": [
+          "origin-private-file-system",
+          "filesystemhandle",
+          "entry",
+          "entry-parent",
+          "filesystemfilehandle",
+          "filesystemdirectoryhandle",
+          "filesystemhandle-is-in-a-bucket-file-system",
+          "locating-an-entry",
+          "filesystemhandle-locator",
+          "file",
+          "directory",
+          "file-entry-binary-data",
+          "dom-filesystemwritablefilestream-truncate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin",
+          "concept-origin-opaque",
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dnd.html": {
+        "anchors": [
+          "datatransferitem",
+          "concept-dnd-rw",
+          "concept-dnd-ro",
+          "the-drag-data-item-kind"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-messageerror"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation",
+          "activation-notification"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "as-a-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "relevant-settings-object",
+          "concept-settings-object-global",
+          "concept-settings-object-origin",
+          "concept-environment-top-level-origin",
+          "environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "code-point",
+          "ascii-alphanumeric",
+          "list",
+          "tuple",
+          "list-iterate",
+          "map-iterate",
+          "string",
+          "list-append",
+          "list-empty",
+          "string-starts-with",
+          "string-length",
+          "ordered-map",
+          "implementation-defined",
+          "map-exists",
+          "byte-sequence"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "parse-a-mime-type",
+          "parameters",
+          "mime-type",
+          "subtype",
+          "type",
+          "mime-type-essence"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "site-storage",
+          "storage-quota"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-powerful-feature",
+          "dfn-permission-descriptor-type",
+          "dom-permissiondescriptor",
+          "dfn-permission-state-constraints",
+          "dfn-permission-state",
+          "dom-permissionstate-granted",
+          "dom-permissionstatus",
+          "dfn-default-permission-query-algorithm",
+          "dom-permissionstatus-state",
+          "dom-permissionstate-prompt",
+          "dfn-request-permission-to-use",
+          "dom-permissiondescriptor-name",
+          "dfn-create-a-permissionstatus",
+          "dom-permissionstate",
+          "dom-navigator-permissions",
+          "dom-permissions-query",
+          "dom-permissionstate-denied"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "dfn-throw",
+          "securityerror",
+          "idl-DOMException",
+          "Exposed",
+          "SecureContext",
+          "idl-promise",
+          "a-new-promise",
+          "this",
+          "resolve",
+          "reject",
+          "idl-USVString",
+          "idl-record",
+          "idl-sequence",
+          "idl-boolean",
+          "idl-DOMString",
+          "a-promise-rejected-with",
+          "exceptiondef-typeerror",
+          "aborterror",
+          "a-promise-resolved-with"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "permission-request-algorithm"
+        ]
+      }
+    }
   }
 }

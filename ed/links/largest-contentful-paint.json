@@ -4,172 +4,286 @@
     "url": "https://w3c.github.io/largest-contentful-paint/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-element",
-        "element",
-        "concept-tree-descendant",
-        "document",
-        "concept-event-dispatch",
-        "dom-event-type",
-        "dom-event-istrusted",
-        "text",
-        "boundary-point-node",
-        "concept-document",
-        "dom-element-id"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "text",
+          "concept-tree-descendant",
+          "concept-document",
+          "concept-element",
+          "dom-element-id",
+          "concept-event-dispatch",
+          "dom-event-istrusted",
+          "boundary-point-node",
+          "dom-event-type"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "content-box"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "concrete-object-size",
+          "natural-height",
+          "natural-width",
+          "propdef-object-position"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "eventdef-document-scroll"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "anchors": [
+          "visual-viewport"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "domrectreadonly",
+          "dom-domrectreadonly-height",
+          "dom-domrectreadonly-width"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "request",
+          "concept-request",
+          "dom-request-url",
+          "concept-response"
+        ]
+      },
+      "https://github.com/w3c/largest-contentful-paint/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "concept-document-bc",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "set-append",
+          "list-contain",
+          "list-iterate",
+          "ordered-map",
+          "ordered-set",
+          "struct",
+          "tuple"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "generictransformstream-transform"
+        ]
+      },
+      "https://w3c.github.io/event-timing/": {},
+      "https://w3c.github.io/hr-time": {
+        "anchors": [
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/paint-timing/": {
+        "anchors": [
+          "pending-image-record-element",
+          "exposed-for-paint-timing",
+          "pending-image-record-loadtime",
+          "pending-image-record",
+          "pending-image-record-request",
+          "set-of-owned-text-nodes",
+          "timing-eligible"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "the-performanceentry-interface",
+          "dom-performanceentry-duration",
+          "dom-performanceentry-entrytype",
+          "dom-performanceentry-name",
+          "dfn-queue-a-performanceentry",
+          "dom-performanceentry-starttime",
+          "supportedentrytypes-attribute"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Default",
+          "Exposed",
+          "idl-object",
+          "this",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://wicg.github.io/element-timing/": {},
+      "https://wicg.github.io/event-timing": {
+        "anchors": [
+          "has-dispatched-input-event"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {}
     },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-background-position"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-box-4/": {
-      "anchors": [
-        "content-box"
-      ],
-      "specShortname": "css-box-4"
-    },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "concrete-object-size",
-        "propdef-object-position",
-        "natural-width",
-        "natural-height"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "eventdef-document-scroll"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "anchors": [
-        "visual-viewport"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
-      "anchors": [
-        "domrectreadonly",
-        "dom-domrectreadonly-width",
-        "dom-domrectreadonly-height"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-response",
-        "request",
-        "dom-request-url"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/largest-contentful-paint/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "concept-document-bc",
-        "top-level-browsing-context",
-        "nav-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "concept-relevant-realm"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "struct",
-        "ordered-set",
-        "tuple",
-        "list-iterate",
-        "list-contain",
-        "set-append",
-        "ordered-map"
-      ],
-      "specShortname": "infra"
-    },
-    "https://streams.spec.whatwg.org/": {
-      "anchors": [
-        "generictransformstream-transform"
-      ],
-      "specShortname": "streams"
-    },
-    "https://w3c.github.io/event-timing/": {
-      "specShortname": "event-timing"
-    },
-    "https://w3c.github.io/hr-time": {
-      "anchors": [
-        "dom-domhighrestimestamp"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/paint-timing/": {
-      "anchors": [
-        "timing-eligible",
-        "exposed-for-paint-timing",
-        "pending-image-record",
-        "pending-image-record-element",
-        "pending-image-record-request",
-        "pending-image-record-loadtime",
-        "set-of-owned-text-nodes"
-      ],
-      "specShortname": "paint-timing"
-    },
-    "https://w3c.github.io/performance-timeline/": {
-      "anchors": [
-        "the-performanceentry-interface",
-        "dom-performanceentry-entrytype",
-        "dom-performanceentry-name",
-        "dom-performanceentry-starttime",
-        "dom-performanceentry-duration",
-        "supportedentrytypes-attribute",
-        "dfn-queue-a-performanceentry"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-unsigned-long",
-        "idl-DOMString",
-        "Default",
-        "idl-object",
-        "this"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/element-timing/": {
-      "specShortname": "element-timing"
-    },
-    "https://wicg.github.io/event-timing": {
-      "anchors": [
-        "has-dispatched-input-event"
-      ]
-    },
-    "https://www.w3.org/2023/Process-20231103/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-element",
+          "element",
+          "concept-tree-descendant",
+          "document",
+          "concept-event-dispatch",
+          "dom-event-type",
+          "dom-event-istrusted",
+          "text",
+          "boundary-point-node",
+          "concept-document",
+          "dom-element-id"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "content-box"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "concrete-object-size",
+          "propdef-object-position",
+          "natural-width",
+          "natural-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "eventdef-document-scroll"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "anchors": [
+          "visual-viewport"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "domrectreadonly",
+          "dom-domrectreadonly-width",
+          "dom-domrectreadonly-height"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-response",
+          "request",
+          "dom-request-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "concept-document-bc",
+          "top-level-browsing-context",
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "struct",
+          "ordered-set",
+          "tuple",
+          "list-iterate",
+          "list-contain",
+          "set-append",
+          "ordered-map"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "generictransformstream-transform"
+        ]
+      },
+      "https://w3c.github.io/hr-time": {
+        "anchors": [
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://w3c.github.io/paint-timing/": {
+        "anchors": [
+          "timing-eligible",
+          "exposed-for-paint-timing",
+          "pending-image-record",
+          "pending-image-record-element",
+          "pending-image-record-request",
+          "pending-image-record-loadtime",
+          "set-of-owned-text-nodes"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "the-performanceentry-interface",
+          "dom-performanceentry-entrytype",
+          "dom-performanceentry-name",
+          "dom-performanceentry-starttime",
+          "dom-performanceentry-duration",
+          "supportedentrytypes-attribute",
+          "dfn-queue-a-performanceentry"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-unsigned-long",
+          "idl-DOMString",
+          "Default",
+          "idl-object",
+          "this"
+        ]
+      },
+      "https://wicg.github.io/event-timing": {
+        "anchors": [
+          "has-dispatched-input-event"
+        ]
+      }
+    }
   }
 }

@@ -4,237 +4,371 @@
     "url": "https://wicg.github.io/webusb/"
   },
   "links": {
-    "http://www.usb.org/developers/docs/": {},
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USB": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USB/connect_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USB/disconnect_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USB/getDevices": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBAlternateInterface": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/USBConfiguration": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/configurationName": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/configurationValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/interfaces": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent/USBConnectionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent/device": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/claimInterface": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/clearHalt": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/close": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/configuration": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/configurations": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/controlTransferIn": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/controlTransferOut": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceClass": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceProtocol": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceSubclass": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionMajor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionMinor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionSubminor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/forget": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/isochronousTransferIn": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/isochronousTransferOut": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/manufacturerName": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/open": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/opened": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/productId": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/productName": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/releaseInterface": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/reset": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectAlternateInterface": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectConfiguration": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/serialNumber": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/transferIn": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/transferOut": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionMajor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionMinor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionSubminor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/vendorId": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBEndpoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBInTransferResult": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBInterface": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousInTransferPacket": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousInTransferResult": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousOutTransferPacket": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousOutTransferResult": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/USBOutTransferResult": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/usb": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/usb": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "document",
-        "dictdef-eventinit",
-        "event",
-        "concept-event-fire"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.usb.org/developers/docs/": {},
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USB": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USB/connect_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USB/disconnect_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USB/getDevices": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBAlternateInterface": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/USBConfiguration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/configurationName": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/configurationValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConfiguration/interfaces": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent/USBConnectionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBConnectionEvent/device": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/claimInterface": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/clearHalt": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/close": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/configuration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/configurations": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/controlTransferIn": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/controlTransferOut": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceClass": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceProtocol": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceSubclass": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionMajor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionMinor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/deviceVersionSubminor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/forget": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/isochronousTransferIn": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/isochronousTransferOut": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/manufacturerName": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/open": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/opened": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/productId": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/productName": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/releaseInterface": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/reset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectAlternateInterface": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/selectConfiguration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/serialNumber": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/transferIn": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/transferOut": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionMajor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionMinor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/usbVersionSubminor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBDevice/vendorId": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBEndpoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBInTransferResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBInterface": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousInTransferPacket": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousInTransferResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousOutTransferPacket": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBIsochronousOutTransferResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/USBOutTransferResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/usb": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/usb": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "integer"
+        ]
+      },
+      "https://github.com/WICG/isolated-web-apps/blob/main/README.md": {},
+      "https://github.com/WICG/webusb/issues/36": {},
+      "https://github.com/WICG/webusb/issues/46": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "bc-traversable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workernavigator"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "assert",
+          "boolean",
+          "collect-a-sequence-of-code-points",
+          "iteration-continue",
+          "list-empty",
+          "list-iterate",
+          "list",
+          "ordered-set",
+          "list-size",
+          "strictly-split",
+          "strip-leading-and-trailing-ascii-whitespace"
+        ]
+      },
+      "https://raw.githubusercontent.com/WICG/webusb/main/blocklist.txt": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-array-objects",
+          "sec-promise-objects",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc4122": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "url"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope",
+          "dfn-service-worker-client"
+        ]
+      },
+      "https://w3c.github.io/manifest/": {},
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dom-permissiondescriptor",
+          "dom-permissionstatus",
+          "dfn-extra-permission-data-type",
+          "dfn-permission-descriptor-type",
+          "dfn-permission-query-algorithm",
+          "dfn-permission-result-type",
+          "dfn-powerful-feature",
+          "dom-permissionstate-prompt",
+          "dfn-request-permission-to-use",
+          "dom-permissionstatus-state"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "aborterror",
+          "idl-ArrayBuffer",
+          "BufferSource",
+          "idl-DOMString",
+          "idl-DataView",
+          "Exposed",
+          "idl-frozen-array",
+          "invalidaccesserror",
+          "invalidstateerror",
+          "networkerror",
+          "notfounderror",
+          "idl-promise",
+          "SameObject",
+          "SecureContext",
+          "securityerror",
+          "idl-boolean",
+          "new",
+          "idl-octet",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "idl-unsigned-short",
+          "upon-fulfillment"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "permission-request-algorithm"
+        ]
+      },
+      "https://www.w3.org/TR/cors/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "integer"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://github.com/WICG/isolated-web-apps/blob/main/README.md": {},
-    "https://github.com/WICG/webusb/issues/36": {},
-    "https://github.com/WICG/webusb/issues/46": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "bc-traversable"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "concept-relevant-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "workernavigator"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "iteration-continue",
-        "list-empty",
-        "boolean",
-        "list",
-        "list-append",
-        "list-iterate",
-        "list-size",
-        "ordered-set",
-        "assert",
-        "strictly-split",
-        "collect-a-sequence-of-code-points",
-        "strip-leading-and-trailing-ascii-whitespace"
-      ],
-      "specShortname": "infra"
-    },
-    "https://raw.githubusercontent.com/WICG/webusb/main/blocklist.txt": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-promise-objects",
-        "sec-array-objects",
-        "sec-native-error-types-used-in-this-standard-typeerror",
-        "sec-object-internal-methods-and-internal-slots"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc4122": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "url"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "dfn-service-worker-client",
-        "serviceworkerglobalscope"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/manifest/": {
-      "specShortname": "appmanifest"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dom-permissionstatus-state",
-        "dfn-powerful-feature",
-        "dfn-permission-descriptor-type",
-        "dom-permissiondescriptor",
-        "dfn-extra-permission-data-type",
-        "dfn-permission-result-type",
-        "dom-permissionstatus",
-        "dfn-permission-query-algorithm",
-        "dom-permissionstate-prompt"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://w3c.github.io/webappsec-secure-contexts/": {
-      "specShortname": "secure-contexts"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-unsigned-short",
-        "idl-octet",
-        "idl-DOMString",
-        "idl-sequence",
-        "Exposed",
-        "SecureContext",
-        "idl-promise",
-        "SameObject",
-        "this",
-        "resolve",
-        "upon-fulfillment",
-        "notfounderror",
-        "reject",
-        "securityerror",
-        "idl-frozen-array",
-        "idl-DataView",
-        "idl-unsigned-long",
-        "idl-boolean",
-        "idl-undefined",
-        "BufferSource",
-        "aborterror",
-        "invalidstateerror",
-        "new",
-        "networkerror",
-        "idl-ArrayBuffer",
-        "invalidaccesserror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/permissions-request/": {
-      "anchors": [
-        "permission-request-algorithm"
-      ],
-      "specShortname": "permissions-request"
-    },
-    "https://www.w3.org/TR/cors/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "document",
+          "dictdef-eventinit",
+          "event",
+          "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "integer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "bc-traversable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workernavigator"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "iteration-continue",
+          "list-empty",
+          "boolean",
+          "list",
+          "list-append",
+          "list-iterate",
+          "list-size",
+          "ordered-set",
+          "assert",
+          "strictly-split",
+          "collect-a-sequence-of-code-points",
+          "strip-leading-and-trailing-ascii-whitespace"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-promise-objects",
+          "sec-array-objects",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "url"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dfn-service-worker-client",
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-request-permission-to-use",
+          "dom-permissionstatus-state",
+          "dfn-powerful-feature",
+          "dfn-permission-descriptor-type",
+          "dom-permissiondescriptor",
+          "dfn-extra-permission-data-type",
+          "dfn-permission-result-type",
+          "dom-permissionstatus",
+          "dfn-permission-query-algorithm",
+          "dom-permissionstate-prompt"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-unsigned-short",
+          "idl-octet",
+          "idl-DOMString",
+          "idl-sequence",
+          "Exposed",
+          "SecureContext",
+          "idl-promise",
+          "SameObject",
+          "this",
+          "resolve",
+          "upon-fulfillment",
+          "notfounderror",
+          "reject",
+          "securityerror",
+          "idl-frozen-array",
+          "idl-DataView",
+          "idl-unsigned-long",
+          "idl-boolean",
+          "idl-undefined",
+          "BufferSource",
+          "aborterror",
+          "invalidstateerror",
+          "new",
+          "networkerror",
+          "idl-ArrayBuffer",
+          "invalidaccesserror"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "permission-request-algorithm"
+        ]
+      }
+    }
   }
 }

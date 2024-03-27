@@ -4,219 +4,366 @@
     "url": "https://wicg.github.io/anonymous-iframe/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-07": {
-      "anchors": [
-        "section-5.3",
-        "section-5.4",
-        "section-5.5"
-      ]
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-07": {
+        "anchors": [
+          "section-5.3",
+          "section-5.4",
+          "section-5.5"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "concept-node-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-3/": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response",
+          "network-partition-key",
+          "dom-requestdestination-iframe",
+          "determine-the-network-partition-key"
+        ]
+      },
+      "https://github.com/DCtheTall/CHIPS": {},
+      "https://github.com/MattMenke2/Explainer---Partition-Network-State": {},
+      "https://github.com/WICG/CHIPS": {},
+      "https://github.com/WICG/CHIPS/blob/main/README.md": {
+        "anchors": [
+          "algorithm"
+        ]
+      },
+      "https://github.com/privacycg/first-party-sets": {},
+      "https://github.com/w3c/mediacapture-viewport": {
+        "anchors": [
+          "/issues/1"
+        ]
+      },
+      "https://github.com/wanderview/quota-storage-partitioning/blob/main/explainer.md": {},
+      "https://github.com/whatwg/fetch/issues/1035": {},
+      "https://github.com/whatwg/fetch/pull/1416": {},
+      "https://github.com/whatwg/html/pull/7695": {},
+      "https://github.com/whatwg/storage/pull/139": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "the-iframe-element",
+          "sites"
+        ]
+      },
+      "https://html.spec.whatwg.org/C/": {
+        "anchors": [
+          "browsers",
+          "sandboxing",
+          "cross-origin-opener-policies",
+          "active-window",
+          "bc-container",
+          "bc-container-document",
+          "broadcasting-to-other-browsing-contexts",
+          "check-a-navigation-response's-adherence-to-its-embedder-policy",
+          "child-browsing-context",
+          "coep",
+          "compatible-with-cross-origin-isolation",
+          "concept-document-bc",
+          "concept-document-origin",
+          "concept-document-policy-container",
+          "concept-environment-active-service-worker",
+          "concept-environment-creation-url",
+          "concept-environment-id",
+          "concept-environment-target-browsing-context",
+          "concept-request-reserved-client",
+          "creating-a-new-browsing-context",
+          "concept-settings-object-cross-origin-isolated-capability",
+          "embedder-policy-report-only-reporting-endpoint",
+          "embedder-policy-report-only-value",
+          "embedder-policy-reporting-endpoint",
+          "embedder-policy-value",
+          "entry-global-object",
+          "environment",
+          "hh-replace",
+          "HTMLIframeElement",
+          "the-iframe-element",
+          "initialise-the-document-object",
+          "is-initial-about:blank",
+          "navigation-params",
+          "navigation-params-hh",
+          "navigation-params-origin",
+          "navigation-params-reserved-environment",
+          "concept-origin",
+          "policy-container-embedder-policy",
+          "process-a-navigate-fetch",
+          "queue-a-cross-origin-embedder-policy-inheritance-violation",
+          "script-:settings-for-workers",
+          "service-worker-obj",
+          "set-up-a-window-environment-settings-object",
+          "set-up-a-worklet-environment-settings-object",
+          "sharedworer",
+          "still-on-its-initial-about:blank-document",
+          "window-open-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "policy-container-embedder-policy",
+          "obtain-a-site",
+          "same-origin-domain",
+          "site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-environment-creation-url",
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "concept-environment-target-browsing-context",
+          "concept-environment-top-level-creation-url",
+          "concept-environment-top-level-origin"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "implementation-defined",
+          "struct",
+          "tuple"
+        ]
+      },
+      "https://privacycg.github.io/storage-partitioning/": {},
+      "https://spectreattack.com/spectre.pdf": {},
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "storage-shelf",
+          "storage-key",
+          "obtain-a-storage-key-for-non-storage-purposes"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-execution-contextssec-execution-contexts",
+          "sec-sharedarraybuffer-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/IndexedDB/": {},
+      "https://w3c.github.io/webstorage/": {},
+      "https://web.dev/bfcache/": {},
+      "https://web.dev/why-coop-coep/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean"
+        ]
+      },
+      "https://wicg.github.io/cross-origin-embedder-policy/": {},
+      "https://wicg.github.io/private-network-access/": {},
+      "https://wpt.fyi/results/html/credentialless-iframe/": {},
+      "https://www.w3.org/TR/hr-time//issues/1": {
+        "anchors": [
+          "issuecomment-812"
+        ]
+      },
+      "https://www.w3.org/TR/security-privacy-questionnaire/": {},
+      "https://www.w3.org/TR/webdatabase/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document",
-        "concept-node-document"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-color-3/": {
-      "anchors": [
-        "window"
-      ],
-      "specShortname": "css-color-3"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "dom-requestdestination-iframe",
-        "concept-response",
-        "network-partition-key",
-        "determine-the-network-partition-key"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/DCtheTall/CHIPS": {},
-    "https://github.com/MattMenke2/Explainer---Partition-Network-State": {},
-    "https://github.com/WICG/CHIPS": {},
-    "https://github.com/WICG/CHIPS/blob/main/README.md": {
-      "anchors": [
-        "algorithm"
-      ]
-    },
-    "https://github.com/privacycg/first-party-sets": {},
-    "https://github.com/w3c/mediacapture-viewport": {
-      "anchors": [
-        "/issues/1"
-      ]
-    },
-    "https://github.com/wanderview/quota-storage-partitioning/blob/main/explainer.md": {},
-    "https://github.com/whatwg/fetch/issues/1035": {},
-    "https://github.com/whatwg/fetch/pull/1416": {},
-    "https://github.com/whatwg/html/pull/7695": {},
-    "https://github.com/whatwg/storage/pull/139": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "the-iframe-element",
-        "sites"
-      ]
-    },
-    "https://html.spec.whatwg.org/C/": {
-      "anchors": [
-        "cross-origin-opener-policies",
-        "coep",
-        "concept-settings-object-cross-origin-isolated-capability",
-        "broadcasting-to-other-browsing-contexts",
-        "sharedworer",
-        "service-worker-obj",
-        "the-iframe-element",
-        "HTMLIframeElement",
-        "creating-a-new-browsing-context",
-        "navigation-params",
-        "process-a-navigate-fetch",
-        "initialise-the-document-object",
-        "still-on-its-initial-about:blank-document",
-        "navigation-params-hh",
-        "hh-replace",
-        "concept-document-origin",
-        "navigation-params-origin",
-        "active-window",
-        "is-initial-about:blank",
-        "window-open-steps",
-        "entry-global-object",
-        "browsers",
-        "sandboxing",
-        "concept-document-bc",
-        "bc-container",
-        "check-a-navigation-response's-adherence-to-its-embedder-policy",
-        "child-browsing-context",
-        "bc-container-document",
-        "concept-document-policy-container",
-        "policy-container-embedder-policy",
-        "embedder-policy-report-only-value",
-        "compatible-with-cross-origin-isolation",
-        "embedder-policy-value",
-        "queue-a-cross-origin-embedder-policy-inheritance-violation",
-        "embedder-policy-report-only-reporting-endpoint",
-        "embedder-policy-reporting-endpoint",
-        "environment",
-        "concept-request-reserved-client",
-        "concept-environment-id",
-        "concept-environment-target-browsing-context",
-        "concept-environment-creation-url",
-        "set-up-a-window-environment-settings-object",
-        "navigation-params-reserved-environment",
-        "concept-origin",
-        "script-:settings-for-workers",
-        "set-up-a-worklet-environment-settings-object",
-        "concept-environment-active-service-worker"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin-domain",
-        "policy-container-embedder-policy",
-        "site",
-        "obtain-a-site"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "navigate"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "reflect"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "nav-document",
-        "top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "htmliframeelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "relevant-settings-object",
-        "concept-environment-top-level-creation-url",
-        "concept-environment-top-level-origin",
-        "concept-environment-target-browsing-context",
-        "concept-settings-object-origin",
-        "environment-settings-object",
-        "concept-environment-creation-url"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "struct",
-        "implementation-defined",
-        "tuple"
-      ],
-      "specShortname": "infra"
-    },
-    "https://privacycg.github.io/storage-partitioning/": {},
-    "https://spectreattack.com/spectre.pdf": {},
-    "https://storage.spec.whatwg.org/": {
-      "anchors": [
-        "storage-shelf",
-        "storage-key",
-        "obtain-a-storage-key-for-non-storage-purposes"
-      ],
-      "specShortname": "storage"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-sharedarraybuffer-objects",
-        "sec-execution-contextssec-execution-contexts"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/IndexedDB/": {
-      "specShortname": "IndexedDB-3"
-    },
-    "https://w3c.github.io/webstorage/": {},
-    "https://web.dev/bfcache/": {},
-    "https://web.dev/why-coop-coep/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-boolean"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/cross-origin-embedder-policy/": {},
-    "https://wicg.github.io/private-network-access/": {
-      "specShortname": "private-network-access"
-    },
-    "https://wpt.fyi/results/html/credentialless-iframe/": {},
-    "https://www.w3.org/TR/hr-time//issues/1": {
-      "anchors": [
-        "issuecomment-812"
-      ]
-    },
-    "https://www.w3.org/TR/security-privacy-questionnaire/": {},
-    "https://www.w3.org/TR/webdatabase/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "concept-node-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-3/": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "dom-requestdestination-iframe",
+          "concept-response",
+          "network-partition-key",
+          "determine-the-network-partition-key"
+        ]
+      },
+      "https://github.com/w3c/mediacapture-viewport": {
+        "anchors": [
+          "/issues/1"
+        ]
+      },
+      "https://html.spec.whatwg.org/C/": {
+        "anchors": [
+          "cross-origin-opener-policies",
+          "coep",
+          "concept-settings-object-cross-origin-isolated-capability",
+          "broadcasting-to-other-browsing-contexts",
+          "sharedworer",
+          "service-worker-obj",
+          "the-iframe-element",
+          "HTMLIframeElement",
+          "creating-a-new-browsing-context",
+          "navigation-params",
+          "process-a-navigate-fetch",
+          "initialise-the-document-object",
+          "still-on-its-initial-about:blank-document",
+          "navigation-params-hh",
+          "hh-replace",
+          "concept-document-origin",
+          "navigation-params-origin",
+          "active-window",
+          "is-initial-about:blank",
+          "window-open-steps",
+          "entry-global-object",
+          "concept-document-bc",
+          "bc-container",
+          "check-a-navigation-response's-adherence-to-its-embedder-policy",
+          "child-browsing-context",
+          "bc-container-document",
+          "concept-document-policy-container",
+          "policy-container-embedder-policy",
+          "embedder-policy-report-only-value",
+          "compatible-with-cross-origin-isolation",
+          "embedder-policy-value",
+          "queue-a-cross-origin-embedder-policy-inheritance-violation",
+          "embedder-policy-report-only-reporting-endpoint",
+          "embedder-policy-reporting-endpoint",
+          "environment",
+          "concept-request-reserved-client",
+          "concept-environment-id",
+          "concept-environment-target-browsing-context",
+          "concept-environment-creation-url",
+          "set-up-a-window-environment-settings-object",
+          "navigation-params-reserved-environment",
+          "concept-origin",
+          "script-:settings-for-workers",
+          "set-up-a-worklet-environment-settings-object",
+          "concept-environment-active-service-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin-domain",
+          "policy-container-embedder-policy",
+          "site",
+          "obtain-a-site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "concept-environment-top-level-creation-url",
+          "concept-environment-top-level-origin",
+          "concept-environment-target-browsing-context",
+          "concept-settings-object-origin",
+          "environment-settings-object",
+          "concept-environment-creation-url"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "struct",
+          "implementation-defined",
+          "tuple"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "storage-key",
+          "obtain-a-storage-key-for-non-storage-purposes"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-sharedarraybuffer-objects",
+          "sec-execution-contextssec-execution-contexts"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-origin"
+        ]
+      },
+      "https://web.dev/bfcache/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time//issues/1": {
+        "anchors": [
+          "issuecomment-812"
+        ]
+      }
+    }
   }
 }

@@ -4,203 +4,352 @@
     "url": "https://w3c.github.io/webappsec-referrer-policy/"
   },
   "links": {
-    "http://wiki.whatwg.org/wiki/Meta_referrer": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-node-document",
-        "concept-document-url",
-        "concept-document-origin"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://wiki.whatwg.org/wiki/Meta_referrer": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-node-document",
+          "concept-document-origin",
+          "concept-document-url"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "css-declaration-block",
+          "css-style-sheet",
+          "concept-css-style-sheet-location",
+          "cssstyledeclaration-owner-node",
+          "concept-css-style-sheet-owner-node"
+        ]
+      },
+      "https://drafts.csswg.org/cssom/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "http-redirect-fetch",
+          "main-fetch",
+          "request",
+          "concept-request-client",
+          "concept-request-current-url",
+          "extract-header-list-values",
+          "concept-fetch",
+          "concept-response-header-list",
+          "local-scheme",
+          "concept-request-referrer",
+          "concept-request-referrer-policy",
+          "concept-request",
+          "concept-response"
+        ]
+      },
+      "https://github.com/w3c/webappsec": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "ascii-serialisation-of-an-origin",
+          "concept-document-window",
+          "browsing-context",
+          "browsing-context-container",
+          "navigate",
+          "concept-origin-opaque",
+          "concept-origin",
+          "policy-container",
+          "policy-container-referrer-policy",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "concept-document-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "document",
+          "concept-document-policy-container",
+          "the-style-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "an-iframe-srcdoc-document",
+          "the-img-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/image-maps.html": {
+        "anchors": [
+          "the-area-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "referrer-policy-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "presentational-hints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-link-element",
+          "meta",
+          "attr-meta-name",
+          "link-type-noreferrer",
+          "meta-referrer",
+          "attr-hyperlink-referrerpolicy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-environment-creation-url",
+          "environment-settings-object",
+          "concept-settings-object-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workerglobalscope",
+          "concept-workerglobalscope-policy-container",
+          "run-a-worker"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7231.html": {},
+      "https://httpwg.org/specs/rfc9110.html": {
+        "anchors": [
+          "abnf.extension"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "string-length"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://lists.w3.org/Archives/Public/public-webappsec/2016Mar/0085.html": {},
+      "https://tools.ietf.org/html/rfc5234": {
+        "anchors": [
+          "appendix-B.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7231": {
+        "anchors": [
+          "section-5.5.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-fragment",
+          "concept-url-host",
+          "concept-url-origin",
+          "concept-url-password",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-serializer",
+          "concept-url-username"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
+        ]
+      },
+      "https://w3ctag.github.io/capability-urls/": {},
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {}
     },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "css-style-sheet",
-        "concept-css-style-sheet-location",
-        "concept-css-style-sheet-owner-node",
-        "css-declaration-block",
-        "cssstyledeclaration-owner-node"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "concept-request",
-        "concept-request-client",
-        "request",
-        "concept-request-current-url",
-        "concept-request-referrer-policy",
-        "http-redirect-fetch",
-        "main-fetch",
-        "concept-request-referrer",
-        "concept-response",
-        "extract-header-list-values",
-        "concept-response-header-list",
-        "local-scheme"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/webappsec": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin",
-        "concept-origin",
-        "ascii-serialisation-of-an-origin",
-        "policy-container-referrer-policy",
-        "browsing-context",
-        "policy-container",
-        "navigate",
-        "concept-document-window",
-        "concept-origin-opaque",
-        "browsing-context-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "concept-document-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-policy-container",
-        "document",
-        "the-style-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element",
-        "an-iframe-srcdoc-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/image-maps.html": {
-      "anchors": [
-        "the-area-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "referrer-policy-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "presentational-hints"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "link-type-noreferrer",
-        "meta-referrer",
-        "attr-hyperlink-referrerpolicy",
-        "meta",
-        "attr-meta-name",
-        "the-link-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-a-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object",
-        "concept-settings-object-global",
-        "concept-environment-creation-url"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "run-a-worker",
-        "workerglobalscope",
-        "concept-workerglobalscope-policy-container"
-      ]
-    },
-    "https://httpwg.org/specs/rfc7231.html": {
-      "specShortname": "rfc7231"
-    },
-    "https://httpwg.org/specs/rfc9110.html": {
-      "anchors": [
-        "abnf.extension"
-      ],
-      "specShortname": "rfc9110"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string-length",
-        "assert"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://lists.w3.org/Archives/Public/public-webappsec/2016Mar/0085.html": {},
-    "https://tools.ietf.org/html/rfc5234": {
-      "anchors": [
-        "appendix-B.1"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7231": {
-      "anchors": [
-        "section-5.5.2"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin",
-        "concept-url",
-        "concept-url-serializer",
-        "concept-url-host",
-        "concept-url-scheme",
-        "concept-url-username",
-        "concept-url-password",
-        "concept-url-fragment",
-        "concept-url-path",
-        "concept-url-query"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/webappsec-secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-url"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://w3ctag.github.io/capability-urls/": {},
-    "https://www.rfc-editor.org/rfc/rfc5234": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-node-document",
+          "concept-document-url",
+          "concept-document-origin"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "css-style-sheet",
+          "concept-css-style-sheet-location",
+          "concept-css-style-sheet-owner-node",
+          "css-declaration-block",
+          "cssstyledeclaration-owner-node"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-request",
+          "concept-request-client",
+          "request",
+          "concept-request-current-url",
+          "concept-request-referrer-policy",
+          "concept-request-referrer",
+          "concept-response",
+          "extract-header-list-values",
+          "concept-response-header-list",
+          "local-scheme"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin",
+          "concept-origin",
+          "ascii-serialisation-of-an-origin",
+          "policy-container-referrer-policy",
+          "browsing-context",
+          "policy-container",
+          "navigate",
+          "concept-document-window",
+          "concept-origin-opaque",
+          "browsing-context-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "concept-document-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-policy-container",
+          "document",
+          "the-style-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "an-iframe-srcdoc-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/image-maps.html": {
+        "anchors": [
+          "the-area-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "referrer-policy-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "presentational-hints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "link-type-noreferrer",
+          "meta-referrer",
+          "attr-hyperlink-referrerpolicy",
+          "meta",
+          "attr-meta-name",
+          "the-link-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "concept-environment-creation-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "run-a-worker",
+          "workerglobalscope",
+          "concept-workerglobalscope-policy-container"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string-length",
+          "assert"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc5234": {
+        "anchors": [
+          "appendix-B.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7231": {
+        "anchors": [
+          "section-5.5.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url",
+          "concept-url-serializer",
+          "concept-url-host",
+          "concept-url-scheme",
+          "concept-url-username",
+          "concept-url-password",
+          "concept-url-fragment",
+          "concept-url-path",
+          "concept-url-query"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
+        ]
+      }
+    }
   }
 }

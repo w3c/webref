@@ -4,742 +4,1169 @@
     "url": "https://wicg.github.io/fenced-frame/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "connected",
-        "concept-node-document",
-        "concept-document-origin",
-        "concept-node-append",
-        "concept-shadow-including-descendant",
-        "concept-shadow-including-tree-order",
-        "concept-element",
-        "element",
-        "concept-tree-ancestor"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "concept-tree-ancestor",
+          "concept-node-append",
+          "connected",
+          "concept-element",
+          "concept-node-document",
+          "concept-document-origin",
+          "concept-shadow-including-descendant",
+          "concept-shadow-including-tree-order"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "scroll-a-target-into-view",
+          "dom-element-scrollintoview"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "network-partition-key",
+          "destination-table",
+          "requestdestination",
+          "concept-body",
+          "concept-request-body",
+          "concept-request-client",
+          "concept-request-credentials-mode",
+          "cross-origin-resource-policy-check",
+          "concept-request-destination",
+          "concept-fetch",
+          "concept-header-list-get-structured-header",
+          "concept-header",
+          "concept-header-list",
+          "concept-request-header-list",
+          "concept-response-header-list",
+          "concept-request-initiator",
+          "is-local",
+          "concept-request-method",
+          "concept-request-mode",
+          "concept-header-name",
+          "navigation-request",
+          "concept-network-error",
+          "non-subresource-request",
+          "concept-request-origin",
+          "process-response",
+          "queue-a-cross-origin-embedder-policy-corp-violation-report",
+          "concept-request-referrer",
+          "concept-request",
+          "concept-response",
+          "request-service-workers-mode",
+          "concept-body-source",
+          "concept-request-url",
+          "concept-response-url",
+          "fetch-useparallelqueue",
+          "concept-header-value"
+        ]
+      },
+      "https://github.com/WICG/fenced-frame/blob/master/explainer/TAG_Security_Privacy_Questionnaire.md": {},
+      "https://github.com/WICG/fenced-frame/blob/master/explainer/interaction_with_content_security_policy.md": {
+        "anchors": [
+          "proposal---scheme-source-matching"
+        ]
+      },
+      "https://github.com/WICG/fenced-frame/issues/116": {},
+      "https://github.com/WICG/fenced-frame/issues/94": {},
+      "https://github.com/WICG/fenced-frame/issues/new": {},
+      "https://github.com/WICG/fenced-frame/pull/84": {
+        "anchors": [
+          "discussion_r1186531028"
+        ]
+      },
+      "https://github.com/WICG/fenced-frame/tree/master/explainer": {
+        "anchors": [
+          "security-considerations",
+          "privacy-considerations"
+        ]
+      },
+      "https://github.com/WICG/turtledove/blob/main/FLEDGE.md": {
+        "anchors": [
+          "34-ads-composed-of-multiple-pieces"
+        ]
+      },
+      "https://github.com/WICG/turtledove/blob/main/Fenced_Frames_Ads_Reporting.md": {
+        "anchors": [
+          "support-for-ad-components"
+        ]
+      },
+      "https://github.com/WICG/turtledove/issues/286": {
+        "anchors": [
+          "issuecomment-1682842636"
+        ]
+      },
+      "https://github.com/privacysandbox/attestation": {},
+      "https://github.com/w3c/web-advertising/blob/main/support_for_advertising_use_cases.md": {
+        "anchors": [
+          "conversion-lift-measurement"
+        ]
+      },
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/ancestor-throttle.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/anchor-focus.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/autofocus-denied.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-click-handler.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-destination.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-shared-storage.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/before-unload.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/config-cross-origin-apis.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/consume-user-activation.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-allowed.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-blocked.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-frame-src-allowed.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-frame-src-blocked.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-transparent-url.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/cspee.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-all.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-none.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-self.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-change.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-subframe.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-unset.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/deprecated-config-apis.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-coop-coep-blocked.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-csp-not-propagate.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-no-coep.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-require-corp.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-api.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-destination-url.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fragment-navigation.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/frame-navigation.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/get-nested-configs.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/header-referrer.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/header-secFetchDest.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-api-denied-non-standard.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-api-denied.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-geolocation.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-notification.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/prerender.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/script-focus.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/scroll-into-view.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/set-automatic-beacon.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/window-frameElement.https.html": {},
+      "https://github.com/whatwg/html/issues/9030": {},
+      "https://github.com/wicg/portals": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "sandboxing:active-sandboxing-flag-set-3",
+          "page-visibility"
+        ]
+      },
+      "https://html.spec.whatwg.org/C": {
+        "anchors": [
+          "populating-a-session-history-entry:top-level-traversable-2",
+          "populating-a-session-history-entry:cross-origin-resource-policy-check"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "immediately"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-sandboxing-flag-set",
+          "check-a-navigation-response's-adherence-to-its-embedder-policy",
+          "clone-a-policy-container",
+          "cross-origin-embedder-policy",
+          "cross-origin-opener-policy-2",
+          "determining-navigation-params-policy-container",
+          "policy-container-embedder-policy",
+          "coop-enforcement-bcg-switch",
+          "concept-origin",
+          "policy-container",
+          "queue-a-cross-origin-embedder-policy-inheritance-violation",
+          "same-origin",
+          "sandboxing-flag-set",
+          "site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "url-and-history-update-steps",
+          "attempt-to-populate-the-history-entry's-document",
+          "checking-if-unloading-is-user-canceled",
+          "navigation-params-coop-enforcement-result",
+          "initialise-the-document-object",
+          "create-navigation-params-by-fetching",
+          "document-state-document",
+          "she-document-state",
+          "source-snapshot-params-client",
+          "source-snapshot-params-activation",
+          "document-state-history-policy-container",
+          "navigation-hh",
+          "document-state-initiator-origin",
+          "navigation-params-navigable",
+          "navigate",
+          "navigation-params",
+          "navigation-params-origin",
+          "navigation-referrer-policy",
+          "hh-replace",
+          "navigation-params-response",
+          "snapshotting-source-snapshot-params",
+          "source-snapshot-params-policy-container",
+          "source-snapshot-params",
+          "she-step"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions",
+          "face-validation-anchor",
+          "form-associated-custom-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "traversable-navigable",
+          "navigables",
+          "top-level-traversables",
+          "nav-bc",
+          "nav-document",
+          "nav-active-history-entry",
+          "ancestor-navigables",
+          "browsing-context",
+          "concept-document-bc",
+          "browsing-context-group",
+          "browsing-context-group-set",
+          "child-navigable",
+          "nav-container-document",
+          "content-navigable",
+          "creating-a-new-browsing-context",
+          "creating-a-new-browsing-context-group",
+          "creator-base-url",
+          "bcg-cross-origin-isolation",
+          "descendant-navigables",
+          "inclusive-descendant-navigables",
+          "initialize-the-navigable",
+          "navigable",
+          "navigable-container",
+          "node-navigable",
+          "cross-origin-isolation-none",
+          "ongoing-navigation",
+          "nav-parent",
+          "tn-session-history-entries",
+          "system-visibility-state",
+          "nav-traversable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlconstructor",
+          "htmlelement",
+          "concept-element-accessibility-considerations",
+          "concept-element-categories",
+          "concept-element-attributes",
+          "concept-element-content-model",
+          "concept-element-contexts",
+          "concept-element-dom",
+          "embedded-content-category",
+          "flow-content-2",
+          "global-attributes",
+          "interactive-content-2",
+          "concept-content-nothing",
+          "palpable-content-2",
+          "concept-document-permissions-policy",
+          "phrasing-content-2",
+          "concept-document-policy-container",
+          "represents",
+          "the-document's-referrer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content-other.html": {
+        "anchors": [
+          "dimension-attributes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedder-content-other.html": {
+        "anchors": [
+          "attr-dim-height",
+          "attr-dim-width"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "interactively-validate-the-constraints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-elements.html": {
+        "anchors": [
+          "the-button-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element:url-and-history-update-steps",
+          "attr-iframe-allow",
+          "allowed-to-use",
+          "the-iframe-element",
+          "attr-iframe-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel",
+          "insert-an-element-into-a-document",
+          "remove-an-element-from-a-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation",
+          "activation-notification",
+          "click-focusable",
+          "consume-user-activation",
+          "currently-focused-area-of-a-top-level-traversable",
+          "dom-anchor",
+          "focus-chain",
+          "focus-update-steps",
+          "dom-focus",
+          "focusable-area",
+          "focused",
+          "focused-area-of-the-document",
+          "focusing-steps",
+          "gains-focus",
+          "get-the-focusable-area",
+          "has-focus-steps",
+          "sequential-focus-navigation",
+          "sequential-navigation-search-algorithm",
+          "tracking-user-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html": {
+        "anchors": [
+          "using-the-accesskey-attribute-to-define-a-command-on-other-elements",
+          "previously-focused-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
+          "history-3",
+          "window",
+          "concept-document-window",
+          "window-bc",
+          "dom-history-length",
+          "dom-opener"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/popover.html": {
+        "anchors": [
+          "hide-popover-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "deserialization-steps",
+          "serializable-objects",
+          "serialization-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator",
+          "dom-navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "about:srcdoc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "dom-manipulation-task-source",
+          "fire-a-click-event",
+          "navigation-and-traversal-task-source",
+          "concept-settings-object-origin",
+          "queue-a-global-task",
+          "queue-a-task",
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "relevant-settings-object"
+        ]
+      },
+      "https://httpwg.org/specs/rfc8941.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "set-append",
+          "assert",
+          "boolean",
+          "iteration-break",
+          "list-contain",
+          "iteration-continue",
+          "string-ends-with",
+          "map-exists",
+          "list-extend",
+          "list-iterate",
+          "map-iterate",
+          "implementation-defined",
+          "list-is-empty",
+          "struct-item",
+          "map-getting-the-keys",
+          "list",
+          "ordered-map",
+          "map-remove",
+          "map-set",
+          "map-size",
+          "string-starts-with",
+          "string",
+          "struct",
+          "map-getting-the-values",
+          "iteration-while"
+        ]
+      },
+      "https://source.chromium.org/chromium/chromium/src/+/refs/heads/main:content/browser/fenced_frame/fenced_frame_reporter.cc;l=384;drc=183dd920ea5d6aed92e007c40e226f1f840c0567": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "frame-src-pre-request",
+          "frame-src-post-request",
+          "directive-frame-src",
+          "directive-fallback-list",
+          "grammardef-self",
+          "connect-src",
+          "header-content-security-policy",
+          "default-src",
+          "directive-value",
+          "directives",
+          "frame-src",
+          "effective-directive-for-a-request",
+          "grammardef-host-source",
+          "grammardef-scheme-source",
+          "grammardef-serialized-source-list",
+          "source-expression",
+          "source-lists",
+          "worker-src"
+        ]
+      },
+      "https://w3c.github.io/webappsec-cspee/": {
+        "anchors": [
+          "process-response",
+          "browsing-context-required-csp"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "anchors": [
+          "serialized-policy-directive",
+          "permissions-policy-declared-policy",
+          "permissions-policy-inherited-policy",
+          "matches",
+          "permissions-policy",
+          "policy-directive",
+          "serialized-permissions-policy",
+          "supported-features",
+          "the-special-value"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "iframe-allow-attribute",
+          "default-allowlist-self",
+          "create-for-navigable",
+          "create-from-response",
+          "define-inherited-policy-in-container",
+          "is-feature-enabled",
+          "process-policy-attributes",
+          "allowlist",
+          "container-policy",
+          "policy-controlled-feature-default-allowlist",
+          "inherited-policy-for-a-feature",
+          "permissions-policy-header",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "anchors": [
+          "referrer-policy-no-referrer"
+        ]
+      },
+      "https://w3ctag.github.io/web-without-3p-cookies/": {
+        "anchors": [
+          "introduction"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "datacloneerror",
+          "Exposed",
+          "idl-promise",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-new-promise",
+          "idl-boolean",
+          "new",
+          "idl-record",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://wicg.github.io/attribution-reporting-api/": {
+        "anchors": [
+          "ref-for-request-service-workers-mode",
+          "eligibility-event-source",
+          "eligibility-navigation-source",
+          "eligibility-unset",
+          "request-attribution-reporting-eligibility",
+          "dom-permissionpolicy-attribution-reporting",
+          "check-if-an-origin-is-suitable",
+          "node-context-origin",
+          "get-supported-registrars",
+          "process-an-attribution-eligible-response"
+        ]
+      },
+      "https://wicg.github.io/nav-speculation/prerendering.html": {
+        "anchors": [
+          "get-the-supported-loading-modes",
+          "navigable-loading-mode",
+          "http-headerdef-supports-loading-mode"
+        ]
+      },
+      "https://wicg.github.io/shared-storage/": {},
+      "https://wicg.github.io/turtledove/": {
+        "anchors": [
+          "construct-a-pending-fenced-frame-config"
+        ]
+      },
+      "https://wpt.fyi/results/fenced-frame/ancestor-throttle.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/anchor-focus.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/autofocus-denied.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-click-handler.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-destination.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-shared-storage.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/before-unload.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/config-cross-origin-apis.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/consume-user-activation.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-allowed.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-blocked.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-frame-src-allowed.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-frame-src-blocked.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp-transparent-url.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/csp.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/cspee.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-all.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-none.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-self.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-change.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-subframe.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/default-enabled-features-unset.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/deprecated-config-apis.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/embedder-coop-coep-blocked.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/embedder-csp-not-propagate.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/embedder-no-coep.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/embedder-require-corp.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/fence-api.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/fence-report-event-destination-url.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/fence-report-event.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/fragment-navigation.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/frame-navigation.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/get-nested-configs.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/header-referrer.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/header-secFetchDest.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/permission-api-denied-non-standard.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/permission-api-denied.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/permission-geolocation.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/permission-notification.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/prerender.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/script-focus.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/scroll-into-view.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/set-automatic-beacon.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/window-frameElement.https.html": {},
+      "https://wpt.live/fenced-frame/ancestor-throttle.https.html": {},
+      "https://wpt.live/fenced-frame/anchor-focus.https.html": {},
+      "https://wpt.live/fenced-frame/autofocus-denied.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-click-handler.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-no-destination.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-shared-storage.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+      "https://wpt.live/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
+      "https://wpt.live/fenced-frame/before-unload.https.html": {},
+      "https://wpt.live/fenced-frame/config-cross-origin-apis.https.html": {},
+      "https://wpt.live/fenced-frame/consume-user-activation.https.html": {},
+      "https://wpt.live/fenced-frame/csp-allowed.https.html": {},
+      "https://wpt.live/fenced-frame/csp-blocked.https.html": {},
+      "https://wpt.live/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
+      "https://wpt.live/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
+      "https://wpt.live/fenced-frame/csp-frame-src-allowed.https.html": {},
+      "https://wpt.live/fenced-frame/csp-frame-src-blocked.https.html": {},
+      "https://wpt.live/fenced-frame/csp-transparent-url.https.html": {},
+      "https://wpt.live/fenced-frame/csp.https.html": {},
+      "https://wpt.live/fenced-frame/cspee.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-allow-all.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-allow-none.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-allow-self.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-attribute-change.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-subframe.https.html": {},
+      "https://wpt.live/fenced-frame/default-enabled-features-unset.https.html": {},
+      "https://wpt.live/fenced-frame/deprecated-config-apis.https.html": {},
+      "https://wpt.live/fenced-frame/embedder-coop-coep-blocked.https.html": {},
+      "https://wpt.live/fenced-frame/embedder-csp-not-propagate.https.html": {},
+      "https://wpt.live/fenced-frame/embedder-no-coep.https.html": {},
+      "https://wpt.live/fenced-frame/embedder-require-corp.https.html": {},
+      "https://wpt.live/fenced-frame/fence-api.https.html": {},
+      "https://wpt.live/fenced-frame/fence-report-event-destination-url.https.html": {},
+      "https://wpt.live/fenced-frame/fence-report-event.https.html": {},
+      "https://wpt.live/fenced-frame/fragment-navigation.https.html": {},
+      "https://wpt.live/fenced-frame/frame-navigation.https.html": {},
+      "https://wpt.live/fenced-frame/get-nested-configs.https.html": {},
+      "https://wpt.live/fenced-frame/header-referrer.https.html": {},
+      "https://wpt.live/fenced-frame/header-secFetchDest.https.html": {},
+      "https://wpt.live/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
+      "https://wpt.live/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
+      "https://wpt.live/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
+      "https://wpt.live/fenced-frame/permission-api-denied-non-standard.https.html": {},
+      "https://wpt.live/fenced-frame/permission-api-denied.https.html": {},
+      "https://wpt.live/fenced-frame/permission-geolocation.https.html": {},
+      "https://wpt.live/fenced-frame/permission-notification.https.html": {},
+      "https://wpt.live/fenced-frame/prerender.https.html": {},
+      "https://wpt.live/fenced-frame/script-focus.https.html": {},
+      "https://wpt.live/fenced-frame/scroll-into-view.https.html": {},
+      "https://wpt.live/fenced-frame/set-automatic-beacon.https.html": {},
+      "https://wpt.live/fenced-frame/window-frameElement.https.html": {},
+      "https://www.ietf.org/rfc/rfc4122.txt": {
+        "anchors": [
+          "urn-uuid"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8941.html": {
+        "anchors": [
+          "name-tokens"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "viewport"
+        ]
+      },
+      "https://www.w3.org/TR/CSS22/visufx.html": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://drafts.csswg.org/css2/": {
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "dom-element-scrollintoview",
-        "scroll-a-target-into-view"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-response",
-        "concept-request",
-        "concept-request-method",
-        "concept-request-url",
-        "concept-request-header-list",
-        "concept-header-list",
-        "concept-header",
-        "concept-header-name",
-        "concept-header-value",
-        "concept-request-body",
-        "concept-body",
-        "concept-body-source",
-        "concept-request-client",
-        "request-service-workers-mode",
-        "concept-request-origin",
-        "concept-request-referrer",
-        "concept-request-mode",
-        "concept-request-credentials-mode",
-        "concept-fetch",
-        "process-response",
-        "fetch-useparallelqueue",
-        "network-partition-key",
-        "concept-request-destination",
-        "navigation-request",
-        "non-subresource-request",
-        "requestdestination",
-        "destination-table",
-        "concept-request-initiator",
-        "is-local",
-        "concept-response-url",
-        "cross-origin-resource-policy-check",
-        "concept-network-error",
-        "queue-a-cross-origin-embedder-policy-corp-violation-report",
-        "concept-header-list-get-structured-header",
-        "concept-response-header-list"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/WICG/fenced-frame/blob/master/explainer/TAG_Security_Privacy_Questionnaire.md": {},
-    "https://github.com/WICG/fenced-frame/blob/master/explainer/interaction_with_content_security_policy.md": {
-      "anchors": [
-        "proposal---scheme-source-matching"
-      ]
-    },
-    "https://github.com/WICG/fenced-frame/issues/116": {},
-    "https://github.com/WICG/fenced-frame/issues/94": {},
-    "https://github.com/WICG/fenced-frame/issues/new": {},
-    "https://github.com/WICG/fenced-frame/pull/84": {
-      "anchors": [
-        "discussion_r1186531028"
-      ]
-    },
-    "https://github.com/WICG/fenced-frame/tree/master/explainer": {
-      "anchors": [
-        "security-considerations",
-        "privacy-considerations"
-      ]
-    },
-    "https://github.com/WICG/turtledove/blob/main/FLEDGE.md": {
-      "anchors": [
-        "34-ads-composed-of-multiple-pieces"
-      ]
-    },
-    "https://github.com/WICG/turtledove/blob/main/Fenced_Frames_Ads_Reporting.md": {
-      "anchors": [
-        "support-for-ad-components"
-      ]
-    },
-    "https://github.com/WICG/turtledove/issues/286": {
-      "anchors": [
-        "issuecomment-1682842636"
-      ]
-    },
-    "https://github.com/privacysandbox/attestation": {},
-    "https://github.com/w3c/web-advertising/blob/main/support_for_advertising_use_cases.md": {
-      "anchors": [
-        "conversion-lift-measurement"
-      ]
-    },
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/ancestor-throttle.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/anchor-focus.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/autofocus-denied.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-click-handler.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-destination.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-shared-storage.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/before-unload.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/config-cross-origin-apis.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/consume-user-activation.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-allowed.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-blocked.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-frame-src-allowed.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-frame-src-blocked.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp-transparent-url.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/csp.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/cspee.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-all.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-none.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-allow-self.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-change.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-subframe.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-unset.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/deprecated-config-apis.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-coop-coep-blocked.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-csp-not-propagate.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-no-coep.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-require-corp.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-api.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-destination-url.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fragment-navigation.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/frame-navigation.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/get-nested-configs.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/header-referrer.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/header-secFetchDest.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-api-denied-non-standard.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-api-denied.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-geolocation.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/permission-notification.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/prerender.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/script-focus.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/scroll-into-view.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/set-automatic-beacon.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/window-frameElement.https.html": {},
-    "https://github.com/whatwg/html/issues/9030": {},
-    "https://github.com/wicg/portals": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "sandboxing:active-sandboxing-flag-set-3",
-        "page-visibility"
-      ]
-    },
-    "https://html.spec.whatwg.org/C": {
-      "anchors": [
-        "populating-a-session-history-entry:top-level-traversable-2",
-        "populating-a-session-history-entry:cross-origin-resource-policy-check"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "immediately"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-origin",
-        "sandboxing-flag-set",
-        "site",
-        "same-origin",
-        "determining-navigation-params-policy-container",
-        "clone-a-policy-container",
-        "policy-container",
-        "active-sandboxing-flag-set",
-        "cross-origin-opener-policy-2",
-        "policy-container-embedder-policy",
-        "check-a-navigation-response's-adherence-to-its-embedder-policy",
-        "cross-origin-embedder-policy",
-        "queue-a-cross-origin-embedder-policy-inheritance-violation",
-        "coop-enforcement-bcg-switch"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "url-and-history-update-steps",
-        "navigate",
-        "navigation-hh",
-        "hh-replace",
-        "navigation-referrer-policy",
-        "source-snapshot-params",
-        "source-snapshot-params-activation",
-        "attempt-to-populate-the-history-entry's-document",
-        "she-document-state",
-        "document-state-initiator-origin",
-        "create-navigation-params-by-fetching",
-        "document-state-history-policy-container",
-        "source-snapshot-params-policy-container",
-        "document-state-document",
-        "she-step",
-        "navigation-params-navigable",
-        "navigation-params-response",
-        "snapshotting-source-snapshot-params",
-        "checking-if-unloading-is-user-canceled",
-        "navigation-params",
-        "initialise-the-document-object",
-        "source-snapshot-params-client",
-        "navigation-params-coop-enforcement-result",
-        "navigation-params-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "reflect"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
-      "anchors": [
-        "cereactions",
-        "form-associated-custom-element",
-        "face-validation-anchor"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "concept-document-bc",
-        "traversable-navigable",
-        "browsing-context-group",
-        "browsing-context",
-        "content-navigable",
-        "node-navigable",
-        "nav-traversable",
-        "creating-a-new-browsing-context",
-        "creator-base-url",
-        "nav-document",
-        "navigable",
-        "child-navigable",
-        "navigable-container",
-        "nav-parent",
-        "descendant-navigables",
-        "ancestor-navigables",
-        "navigables",
-        "initialize-the-navigable",
-        "browsing-context-group-set",
-        "creating-a-new-browsing-context-group",
-        "nav-active-history-entry",
-        "tn-session-history-entries",
-        "top-level-traversables",
-        "inclusive-descendant-navigables",
-        "bcg-cross-origin-isolation",
-        "cross-origin-isolation-none",
-        "nav-container-document",
-        "ongoing-navigation",
-        "nav-bc",
-        "system-visibility-state"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-element-categories",
-        "flow-content-2",
-        "phrasing-content-2",
-        "embedded-content-category",
-        "interactive-content-2",
-        "palpable-content-2",
-        "concept-element-contexts",
-        "concept-element-content-model",
-        "concept-content-nothing",
-        "concept-element-attributes",
-        "global-attributes",
-        "concept-element-accessibility-considerations",
-        "concept-element-dom",
-        "htmlelement",
-        "htmlconstructor",
-        "represents",
-        "concept-document-permissions-policy",
-        "the-document's-referrer",
-        "concept-document-policy-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content-other.html": {
-      "anchors": [
-        "dimension-attributes"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedder-content-other.html": {
-      "anchors": [
-        "attr-dim-width",
-        "attr-dim-height"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
-      "anchors": [
-        "interactively-validate-the-constraints"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-elements.html": {
-      "anchors": [
-        "the-button-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element",
-        "the-iframe-element:url-and-history-update-steps",
-        "allowed-to-use",
-        "attr-iframe-allow",
-        "attr-iframe-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "insert-an-element-into-a-document",
-        "remove-an-element-from-a-document",
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "tracking-user-activation",
-        "activation-notification",
-        "consume-user-activation",
-        "focusing-steps",
-        "focused",
-        "gains-focus",
-        "dom-focus",
-        "focus-update-steps",
-        "focusable-area",
-        "activation",
-        "click-focusable",
-        "has-focus-steps",
-        "focused-area-of-the-document",
-        "focus-chain",
-        "dom-anchor",
-        "get-the-focusable-area",
-        "currently-focused-area-of-a-top-level-traversable",
-        "sequential-focus-navigation",
-        "sequential-navigation-search-algorithm"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interactive-elements.html": {
-      "anchors": [
-        "using-the-accesskey-attribute-to-define-a-command-on-other-elements",
-        "previously-focused-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
-        "history-3",
-        "dom-history-length",
-        "concept-document-window",
-        "window-bc",
-        "dom-opener",
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/popover.html": {
-      "anchors": [
-        "hide-popover-algorithm"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "serializable",
-        "serializable-objects",
-        "serialization-steps",
-        "deserialization-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "dom-navigator",
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "about:srcdoc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "queue-a-global-task",
-        "dom-manipulation-task-source",
-        "relevant-settings-object",
-        "concept-settings-object-origin",
-        "concept-relevant-realm",
-        "fire-a-click-event",
-        "queue-a-task",
-        "navigation-and-traversal-task-source"
-      ]
-    },
-    "https://httpwg.org/specs/rfc8941.html": {},
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "assert",
-        "ordered-map",
-        "map-getting-the-keys",
-        "map-getting-the-values",
-        "map-size",
-        "map-exists",
-        "map-set",
-        "map-remove",
-        "map-iterate",
-        "struct",
-        "struct-item",
-        "string",
-        "list",
-        "list-iterate",
-        "boolean",
-        "list-is-empty",
-        "implementation-defined",
-        "list-append",
-        "string-starts-with",
-        "string-ends-with",
-        "list-contain",
-        "set-append",
-        "iteration-while",
-        "iteration-break",
-        "list-extend",
-        "iteration-continue"
-      ],
-      "specShortname": "infra"
-    },
-    "https://source.chromium.org/chromium/chromium/src/+/refs/heads/main:content/browser/fenced_frame/fenced_frame_reporter.cc;l=384;drc=183dd920ea5d6aed92e007c40e226f1f840c0567": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-origin",
-        "concept-url-parser",
-        "concept-url-scheme"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "anchors": [
-        "source-expression",
-        "grammardef-scheme-source",
-        "grammardef-host-source",
-        "frame-src-pre-request",
-        "directive-value",
-        "frame-src-post-request",
-        "directives",
-        "frame-src",
-        "grammardef-serialized-source-list",
-        "header-content-security-policy",
-        "source-lists",
-        "directive-frame-src",
-        "default-src",
-        "connect-src",
-        "grammardef-self",
-        "worker-src",
-        "directive-fallback-list",
-        "effective-directive-for-a-request"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://w3c.github.io/webappsec-cspee/": {
-      "anchors": [
-        "browsing-context-required-csp",
-        "process-response"
-      ],
-      "specShortname": "csp-embedded-enforcement"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy": {
-      "anchors": [
-        "permissions-policy",
-        "serialized-permissions-policy",
-        "permissions-policy-inherited-policy",
-        "the-special-value",
-        "serialized-policy-directive",
-        "supported-features",
-        "permissions-policy-declared-policy",
-        "policy-directive",
-        "matches"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "container-policy",
-        "policy-controlled-feature",
-        "inherited-policy-for-a-feature",
-        "allowlist",
-        "policy-controlled-feature-default-allowlist",
-        "permissions-policy-header",
-        "default-allowlist-self",
-        "iframe-allow-attribute",
-        "create-for-navigable",
-        "define-inherited-policy-in-container",
-        "create-from-response",
-        "process-policy-attributes",
-        "is-feature-enabled"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://w3c.github.io/webappsec-referrer-policy/": {
-      "anchors": [
-        "referrer-policy-no-referrer"
-      ],
-      "specShortname": "referrer-policy"
-    },
-    "https://w3ctag.github.io/web-without-3p-cookies/": {
-      "anchors": [
-        "introduction"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString",
-        "this",
-        "idl-unsigned-long",
-        "idl-USVString",
-        "idl-undefined",
-        "datacloneerror",
-        "idl-DOMException",
-        "idl-promise",
-        "idl-record",
-        "dfn-throw",
-        "exceptiondef-typeerror",
-        "a-new-promise",
-        "resolve",
-        "idl-sequence",
-        "idl-boolean",
-        "new"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/attribution-reporting-api/": {
-      "anchors": [
-        "eligibility-unset",
-        "get-supported-registrars",
-        "check-if-an-origin-is-suitable",
-        "eligibility-navigation-source",
-        "eligibility-event-source",
-        "process-an-attribution-eligible-response",
-        "ref-for-request-service-workers-mode",
-        "request-attribution-reporting-eligibility",
-        "dom-permissionpolicy-attribution-reporting",
-        "node-context-origin"
-      ],
-      "specShortname": "attribution-reporting-api"
-    },
-    "https://wicg.github.io/nav-speculation/prerendering.html": {
-      "anchors": [
-        "navigable-loading-mode",
-        "http-headerdef-supports-loading-mode",
-        "get-the-supported-loading-modes"
-      ],
-      "specShortname": "prerendering-revamped"
-    },
-    "https://wicg.github.io/shared-storage/": {
-      "specShortname": "shared-storage"
-    },
-    "https://wicg.github.io/turtledove/": {
-      "anchors": [
-        "construct-a-pending-fenced-frame-config"
-      ],
-      "specShortname": "turtledove"
-    },
-    "https://wpt.fyi/results/fenced-frame/ancestor-throttle.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/anchor-focus.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/autofocus-denied.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-click-handler.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-destination.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-shared-storage.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/before-unload.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/config-cross-origin-apis.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/consume-user-activation.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-allowed.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-blocked.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-frame-src-allowed.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-frame-src-blocked.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp-transparent-url.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/csp.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/cspee.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-all.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-none.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-allow-self.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-change.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-subframe.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/default-enabled-features-unset.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/deprecated-config-apis.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/embedder-coop-coep-blocked.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/embedder-csp-not-propagate.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/embedder-no-coep.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/embedder-require-corp.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/fence-api.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/fence-report-event-destination-url.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/fence-report-event.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/fragment-navigation.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/frame-navigation.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/get-nested-configs.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/header-referrer.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/header-secFetchDest.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/permission-api-denied-non-standard.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/permission-api-denied.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/permission-geolocation.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/permission-notification.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/prerender.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/script-focus.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/scroll-into-view.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/set-automatic-beacon.https.html": {},
-    "https://wpt.fyi/results/fenced-frame/window-frameElement.https.html": {},
-    "https://wpt.live/fenced-frame/ancestor-throttle.https.html": {},
-    "https://wpt.live/fenced-frame/anchor-focus.https.html": {},
-    "https://wpt.live/fenced-frame/autofocus-denied.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-click-handler.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-no-destination.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-shared-storage.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
-    "https://wpt.live/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
-    "https://wpt.live/fenced-frame/before-unload.https.html": {},
-    "https://wpt.live/fenced-frame/config-cross-origin-apis.https.html": {},
-    "https://wpt.live/fenced-frame/consume-user-activation.https.html": {},
-    "https://wpt.live/fenced-frame/csp-allowed.https.html": {},
-    "https://wpt.live/fenced-frame/csp-blocked.https.html": {},
-    "https://wpt.live/fenced-frame/csp-fenced-frame-src-allowed.https.html": {},
-    "https://wpt.live/fenced-frame/csp-fenced-frame-src-blocked.https.html": {},
-    "https://wpt.live/fenced-frame/csp-frame-src-allowed.https.html": {},
-    "https://wpt.live/fenced-frame/csp-frame-src-blocked.https.html": {},
-    "https://wpt.live/fenced-frame/csp-transparent-url.https.html": {},
-    "https://wpt.live/fenced-frame/csp.https.html": {},
-    "https://wpt.live/fenced-frame/cspee.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-allow-all.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-allow-none.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-allow-self.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-attribute-allow.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-attribute-change.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-attribute-disallow.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-subframe.https.html": {},
-    "https://wpt.live/fenced-frame/default-enabled-features-unset.https.html": {},
-    "https://wpt.live/fenced-frame/deprecated-config-apis.https.html": {},
-    "https://wpt.live/fenced-frame/embedder-coop-coep-blocked.https.html": {},
-    "https://wpt.live/fenced-frame/embedder-csp-not-propagate.https.html": {},
-    "https://wpt.live/fenced-frame/embedder-no-coep.https.html": {},
-    "https://wpt.live/fenced-frame/embedder-require-corp.https.html": {},
-    "https://wpt.live/fenced-frame/fence-api.https.html": {},
-    "https://wpt.live/fenced-frame/fence-report-event-destination-url.https.html": {},
-    "https://wpt.live/fenced-frame/fence-report-event.https.html": {},
-    "https://wpt.live/fenced-frame/fragment-navigation.https.html": {},
-    "https://wpt.live/fenced-frame/frame-navigation.https.html": {},
-    "https://wpt.live/fenced-frame/get-nested-configs.https.html": {},
-    "https://wpt.live/fenced-frame/header-referrer.https.html": {},
-    "https://wpt.live/fenced-frame/header-secFetchDest.https.html": {},
-    "https://wpt.live/fenced-frame/history-back-and-forward-should-not-work-in-fenced-tree.https.html": {},
-    "https://wpt.live/fenced-frame/history-length-fenced-navigations-replace-do-not-contribute-to-joint.https.html": {},
-    "https://wpt.live/fenced-frame/history-length-outer-page-navigation-not-reflected-in-fenced.https.html": {},
-    "https://wpt.live/fenced-frame/permission-api-denied-non-standard.https.html": {},
-    "https://wpt.live/fenced-frame/permission-api-denied.https.html": {},
-    "https://wpt.live/fenced-frame/permission-geolocation.https.html": {},
-    "https://wpt.live/fenced-frame/permission-notification.https.html": {},
-    "https://wpt.live/fenced-frame/prerender.https.html": {},
-    "https://wpt.live/fenced-frame/script-focus.https.html": {},
-    "https://wpt.live/fenced-frame/scroll-into-view.https.html": {},
-    "https://wpt.live/fenced-frame/set-automatic-beacon.https.html": {},
-    "https://wpt.live/fenced-frame/window-frameElement.https.html": {},
-    "https://www.ietf.org/rfc/rfc4122.txt": {
-      "anchors": [
-        "urn-uuid"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc8941.html": {
-      "anchors": [
-        "name-tokens"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "viewport"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS22/visufx.html": {
-      "anchors": [
-        "propdef-visibility"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "connected",
+          "concept-node-document",
+          "concept-document-origin",
+          "concept-node-append",
+          "concept-shadow-including-descendant",
+          "concept-shadow-including-tree-order",
+          "concept-element",
+          "element",
+          "concept-tree-ancestor"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "dom-element-scrollintoview",
+          "scroll-a-target-into-view"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response",
+          "concept-request",
+          "concept-request-method",
+          "concept-request-url",
+          "concept-request-header-list",
+          "concept-header-list",
+          "concept-header",
+          "concept-header-name",
+          "concept-header-value",
+          "concept-request-body",
+          "concept-body",
+          "concept-body-source",
+          "concept-request-client",
+          "request-service-workers-mode",
+          "concept-request-origin",
+          "concept-request-referrer",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-fetch",
+          "process-response",
+          "fetch-useparallelqueue",
+          "concept-request-destination",
+          "navigation-request",
+          "non-subresource-request",
+          "requestdestination",
+          "concept-request-initiator",
+          "is-local",
+          "concept-response-url",
+          "cross-origin-resource-policy-check",
+          "concept-network-error",
+          "queue-a-cross-origin-embedder-policy-corp-violation-report",
+          "concept-header-list-get-structured-header",
+          "concept-response-header-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "immediately"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "sandboxing-flag-set",
+          "site",
+          "same-origin",
+          "determining-navigation-params-policy-container",
+          "clone-a-policy-container",
+          "policy-container",
+          "active-sandboxing-flag-set",
+          "cross-origin-opener-policy-2",
+          "policy-container-embedder-policy",
+          "check-a-navigation-response's-adherence-to-its-embedder-policy",
+          "cross-origin-embedder-policy",
+          "queue-a-cross-origin-embedder-policy-inheritance-violation",
+          "coop-enforcement-bcg-switch"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate",
+          "navigation-hh",
+          "hh-replace",
+          "navigation-referrer-policy",
+          "source-snapshot-params",
+          "source-snapshot-params-activation",
+          "attempt-to-populate-the-history-entry's-document",
+          "she-document-state",
+          "document-state-initiator-origin",
+          "create-navigation-params-by-fetching",
+          "document-state-history-policy-container",
+          "source-snapshot-params-policy-container",
+          "document-state-document",
+          "she-step",
+          "navigation-params-navigable",
+          "navigation-params-response",
+          "snapshotting-source-snapshot-params",
+          "checking-if-unloading-is-user-canceled",
+          "navigation-params",
+          "initialise-the-document-object",
+          "source-snapshot-params-client",
+          "navigation-params-coop-enforcement-result",
+          "navigation-params-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions",
+          "form-associated-custom-element",
+          "face-validation-anchor"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "concept-document-bc",
+          "traversable-navigable",
+          "browsing-context-group",
+          "browsing-context",
+          "content-navigable",
+          "node-navigable",
+          "nav-traversable",
+          "creating-a-new-browsing-context",
+          "creator-base-url",
+          "nav-document",
+          "navigable",
+          "child-navigable",
+          "navigable-container",
+          "nav-parent",
+          "descendant-navigables",
+          "ancestor-navigables",
+          "initialize-the-navigable",
+          "browsing-context-group-set",
+          "creating-a-new-browsing-context-group",
+          "nav-active-history-entry",
+          "tn-session-history-entries",
+          "inclusive-descendant-navigables",
+          "bcg-cross-origin-isolation",
+          "cross-origin-isolation-none",
+          "nav-container-document",
+          "ongoing-navigation",
+          "nav-bc",
+          "system-visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-element-categories",
+          "flow-content-2",
+          "phrasing-content-2",
+          "embedded-content-category",
+          "interactive-content-2",
+          "palpable-content-2",
+          "concept-element-contexts",
+          "concept-element-content-model",
+          "concept-content-nothing",
+          "concept-element-attributes",
+          "global-attributes",
+          "concept-element-accessibility-considerations",
+          "concept-element-dom",
+          "htmlelement",
+          "htmlconstructor",
+          "represents",
+          "concept-document-permissions-policy",
+          "the-document's-referrer",
+          "concept-document-policy-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedder-content-other.html": {
+        "anchors": [
+          "attr-dim-width",
+          "attr-dim-height"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "interactively-validate-the-constraints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-elements.html": {
+        "anchors": [
+          "the-button-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "allowed-to-use",
+          "attr-iframe-allow",
+          "attr-iframe-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "insert-an-element-into-a-document",
+          "remove-an-element-from-a-document",
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "tracking-user-activation",
+          "activation-notification",
+          "consume-user-activation",
+          "focusing-steps",
+          "focused",
+          "gains-focus",
+          "dom-focus",
+          "focus-update-steps",
+          "focusable-area",
+          "activation",
+          "click-focusable",
+          "has-focus-steps",
+          "focused-area-of-the-document",
+          "focus-chain",
+          "dom-anchor",
+          "get-the-focusable-area",
+          "currently-focused-area-of-a-top-level-traversable",
+          "sequential-focus-navigation",
+          "sequential-navigation-search-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html": {
+        "anchors": [
+          "using-the-accesskey-attribute-to-define-a-command-on-other-elements",
+          "previously-focused-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "history-3",
+          "dom-history-length",
+          "concept-document-window",
+          "window-bc",
+          "dom-opener",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/popover.html": {
+        "anchors": [
+          "hide-popover-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "serializable-objects",
+          "serialization-steps",
+          "deserialization-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "dom-navigator",
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "about:srcdoc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "queue-a-global-task",
+          "dom-manipulation-task-source",
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "concept-relevant-realm",
+          "fire-a-click-event",
+          "queue-a-task",
+          "navigation-and-traversal-task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "ordered-map",
+          "map-getting-the-keys",
+          "map-getting-the-values",
+          "map-size",
+          "map-exists",
+          "map-set",
+          "map-remove",
+          "map-iterate",
+          "struct",
+          "struct-item",
+          "string",
+          "list",
+          "list-iterate",
+          "boolean",
+          "list-is-empty",
+          "implementation-defined",
+          "list-append",
+          "string-starts-with",
+          "string-ends-with",
+          "list-contain",
+          "set-append",
+          "iteration-while",
+          "iteration-break",
+          "list-extend",
+          "iteration-continue"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-origin",
+          "concept-url-parser",
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "source-expression",
+          "grammardef-scheme-source",
+          "grammardef-host-source",
+          "frame-src-pre-request",
+          "directive-value",
+          "frame-src-post-request",
+          "directives",
+          "frame-src",
+          "grammardef-serialized-source-list",
+          "header-content-security-policy",
+          "source-lists",
+          "default-src",
+          "connect-src",
+          "grammardef-self",
+          "worker-src",
+          "effective-directive-for-a-request"
+        ]
+      },
+      "https://w3c.github.io/webappsec-cspee/": {
+        "anchors": [
+          "browsing-context-required-csp",
+          "process-response"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "anchors": [
+          "permissions-policy",
+          "serialized-permissions-policy",
+          "permissions-policy-inherited-policy",
+          "the-special-value",
+          "serialized-policy-directive",
+          "supported-features",
+          "permissions-policy-declared-policy",
+          "policy-directive",
+          "matches"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "container-policy",
+          "policy-controlled-feature",
+          "inherited-policy-for-a-feature",
+          "allowlist",
+          "policy-controlled-feature-default-allowlist",
+          "permissions-policy-header",
+          "default-allowlist-self",
+          "create-for-navigable",
+          "define-inherited-policy-in-container",
+          "create-from-response",
+          "process-policy-attributes",
+          "is-feature-enabled"
+        ]
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "anchors": [
+          "referrer-policy-no-referrer"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-DOMString",
+          "this",
+          "idl-unsigned-long",
+          "idl-USVString",
+          "idl-undefined",
+          "datacloneerror",
+          "idl-DOMException",
+          "idl-promise",
+          "idl-record",
+          "dfn-throw",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "resolve",
+          "idl-sequence",
+          "idl-boolean",
+          "new"
+        ]
+      },
+      "https://wicg.github.io/attribution-reporting-api/": {
+        "anchors": [
+          "eligibility-unset",
+          "get-supported-registrars",
+          "check-if-an-origin-is-suitable",
+          "eligibility-navigation-source",
+          "eligibility-event-source",
+          "process-an-attribution-eligible-response",
+          "request-attribution-reporting-eligibility",
+          "dom-permissionpolicy-attribution-reporting",
+          "node-context-origin"
+        ]
+      },
+      "https://wicg.github.io/nav-speculation/prerendering.html": {
+        "anchors": [
+          "navigable-loading-mode",
+          "http-headerdef-supports-loading-mode",
+          "get-the-supported-loading-modes"
+        ]
+      },
+      "https://wicg.github.io/turtledove/": {
+        "anchors": [
+          "construct-a-pending-fenced-frame-config"
+        ]
+      },
+      "https://www.ietf.org/rfc/rfc4122.txt": {
+        "anchors": [
+          "urn-uuid"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8941.html": {
+        "anchors": [
+          "name-tokens"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "viewport"
+        ]
+      },
+      "https://www.w3.org/TR/CSS22/visufx.html": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      }
+    }
   }
 }

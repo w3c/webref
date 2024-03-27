@@ -4,254 +4,440 @@
     "url": "https://immersive-web.github.io/layers/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
-    "http://www.w3.org/TR/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-event-fire",
-        "event",
-        "dictdef-eventinit"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
+      "http://www.w3.org/TR/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "dictdef-eventinit",
+          "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "css-end"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-1/": {},
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "dictdef-dompointinit",
+          "dompointreadonly",
+          "dom-dompointreadonly-frompoint"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry/": {},
+      "https://github.com/immersive-web/layers/issues": {},
+      "https://github.com/immersive-web/layers/pull/234": {},
+      "https://github.com/immersive-web/layers/pull/241": {},
+      "https://github.com/immersive-web/layers/pull/242": {},
+      "https://github.com/immersive-web/layers/pull/243": {},
+      "https://github.com/immersive-web/layers/pull/245": {},
+      "https://github.com/immersive-web/layers/pull/247": {},
+      "https://github.com/immersive-web/layers/pull/248": {},
+      "https://github.com/immersive-web/layers/pull/250": {},
+      "https://github.com/immersive-web/layers/pull/251": {},
+      "https://github.com/immersive-web/layers/pull/253": {},
+      "https://github.com/immersive-web/layers/pull/254": {},
+      "https://github.com/immersive-web/layers/pull/255": {},
+      "https://github.com/immersive-web/layers/pull/256": {},
+      "https://github.com/immersive-web/layers/pull/257": {},
+      "https://github.com/immersive-web/layers/pull/269": {},
+      "https://github.com/immersive-web/layers/pull/271": {},
+      "https://github.com/immersive-web/layers/pull/284": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "check-the-usability-of-the-image-argument"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlvideoelement",
+          "dom-video-videoheight",
+          "dom-video-videowidth"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "queue-a-task",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://immersive-web.github.io/webxr-ar-module/": {
+        "anchors": [
+          "dom-xrsessionmode-immersive-ar"
+        ]
+      },
+      "https://immersive-web.github.io/webxr/": {
+        "anchors": [
+          "dom-xrreferencespacetype-bounded-floor",
+          "dom-xrsessionmode-immersive-vr",
+          "dom-xrsessionmode-inline",
+          "dom-xreye-left",
+          "dom-xrreferencespacetype-local",
+          "dom-xrreferencespacetype-local-floor",
+          "dom-xreye-none",
+          "dom-xreye-right",
+          "dom-xrreferencespacetype-unbounded",
+          "dom-xrreferencespacetype-viewer",
+          "enumdef-xreye",
+          "xrframe",
+          "xrlayer",
+          "xrreferencespace",
+          "xrrenderstate",
+          "dictdef-xrrenderstateinit",
+          "xrrigidtransform",
+          "xrsession",
+          "xrspace",
+          "xrview",
+          "xrviewport",
+          "xrwebgllayer",
+          "typedefdef-xrwebglrenderingcontext",
+          "xrframe-active",
+          "view-active",
+          "active-immersive-session",
+          "active-render-state",
+          "dom-xrrenderstate-baselayer",
+          "dom-xrrenderstateinit-baselayer",
+          "feature-requirements",
+          "dom-xrviewport-height",
+          "immersive-xr-device",
+          "dom-xrrenderstateinit-layers",
+          "xrsession-list-of-views",
+          "opaque-framebuffer",
+          "dom-xrpermissiondescriptor-optionalfeatures",
+          "dom-xrrigidtransform-orientation",
+          "pending-render-state",
+          "dom-xrrigidtransform-position",
+          "primary-view",
+          "dom-xrsession-renderstate",
+          "dom-xrsession-requestanimationframe",
+          "dom-xrsystem-requestsession",
+          "dom-xrpermissiondescriptor-requiredfeatures",
+          "secondary-view",
+          "secondary-view-secondary-views",
+          "dom-xrframe-session",
+          "xrspace-session",
+          "xrwebgllayer-session",
+          "xrreferencespace-type",
+          "dom-xrsession-updaterenderstate",
+          "view",
+          "dom-xrviewport-width",
+          "dom-xrviewport-x",
+          "xr-animation-frame",
+          "xr-device",
+          "dom-xrviewport-y"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "idl-frozen-array",
+          "invalidstateerror",
+          "notsupportederror",
+          "operationerror",
+          "SameObject",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "idl-boolean",
+          "idl-double",
+          "idl-float",
+          "new",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "dom-permissions-request"
+        ]
+      },
+      "https://www.khronos.org/registry/OpenGL/specs/es/3.0/es_spec_3.0.pdf": {
+        "anchors": [
+          "nameddest=section-3.8.4"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/": {
+        "anchors": [
+          "ext_srgb",
+          "srgb_alpha_ext",
+          "srgb_ext"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/": {
+        "anchors": [
+          "webgl_compressed_texture_astc"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/": {
+        "anchors": [
+          "compressed_rgb8_etc2",
+          "compressed_rgb8_punchthrough_alpha1_etc2",
+          "compressed_rgba8_etc2_eac",
+          "compressed_srgb8_alpha8_etc2_eac",
+          "compressed_srgb8_etc2",
+          "compressed_srgb8_punchthrough_alpha1_etc2",
+          "webgl_compressed_texture_etc"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/": {
+        "anchors": [
+          "depth_component",
+          "depth_stencil",
+          "webgl_depth_texture"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
+        "anchors": [
+          "5.1",
+          "WebGLRenderingContextBase",
+          "5.14",
+          "WebGLRenderingContext",
+          "5.8",
+          "WebGLTexture",
+          "5.14.11",
+          "5.14.8",
+          "5.14.14"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
+        "anchors": [
+          "5.14",
+          "3.7",
+          "WebGL2RenderingContext",
+          "3.7.6"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/": {},
+      "https://www.w3.org/TR/compositing-1/": {
+        "anchors": [
+          "porterduffcompositingoperators_srcover"
+        ]
+      },
+      "https://www.w3.org/TR/webxr/": {
+        "anchors": [
+          "animationframe",
+          "feature-descriptor",
+          "immersive-session",
+          "native-webgl-framebuffer-resolution",
+          "recommended-webgl-framebuffer-resolution",
+          "xr-compatible",
+          "xr-compositor"
+        ]
+      },
+      "https://www.w3.org/groups/wg/immersive-web": {},
+      "https://www.w3.org/groups/wg/immersive-web/ipr": {}
     },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "css-end"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.fxtf.org/compositing-1/": {
-      "specShortname": "compositing-1"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
-      "anchors": [
-        "dictdef-dompointinit",
-        "dompointreadonly",
-        "dom-dompointreadonly-frompoint"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
-    },
-    "https://github.com/immersive-web/layers/issues": {},
-    "https://github.com/immersive-web/layers/pull/234": {},
-    "https://github.com/immersive-web/layers/pull/241": {},
-    "https://github.com/immersive-web/layers/pull/242": {},
-    "https://github.com/immersive-web/layers/pull/243": {},
-    "https://github.com/immersive-web/layers/pull/245": {},
-    "https://github.com/immersive-web/layers/pull/247": {},
-    "https://github.com/immersive-web/layers/pull/248": {},
-    "https://github.com/immersive-web/layers/pull/250": {},
-    "https://github.com/immersive-web/layers/pull/251": {},
-    "https://github.com/immersive-web/layers/pull/253": {},
-    "https://github.com/immersive-web/layers/pull/254": {},
-    "https://github.com/immersive-web/layers/pull/255": {},
-    "https://github.com/immersive-web/layers/pull/256": {},
-    "https://github.com/immersive-web/layers/pull/257": {},
-    "https://github.com/immersive-web/layers/pull/269": {},
-    "https://github.com/immersive-web/layers/pull/271": {},
-    "https://github.com/immersive-web/layers/pull/284": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "check-the-usability-of-the-image-argument"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "htmlvideoelement",
-        "dom-video-videowidth",
-        "dom-video-videoheight"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "queue-a-task",
-        "eventhandler",
-        "concept-relevant-realm"
-      ]
-    },
-    "https://immersive-web.github.io/webxr-ar-module/": {
-      "anchors": [
-        "dom-xrsessionmode-immersive-ar"
-      ],
-      "specShortname": "webxr-ar-module-1"
-    },
-    "https://immersive-web.github.io/webxr/": {
-      "anchors": [
-        "xrwebgllayer",
-        "dom-xrpermissiondescriptor-requiredfeatures",
-        "dom-xrpermissiondescriptor-optionalfeatures",
-        "dom-xrsystem-requestsession",
-        "dictdef-xrrenderstateinit",
-        "dom-xrsession-updaterenderstate",
-        "dom-xrsession-requestanimationframe",
-        "dom-xrsessionmode-immersive-vr",
-        "dom-xrsessionmode-inline",
-        "feature-requirements",
-        "active-immersive-session",
-        "xrsession-list-of-views",
-        "xrlayer",
-        "xrsession",
-        "xr-animation-frame",
-        "xrspace",
-        "xrspace-session",
-        "xrframe",
-        "xrrigidtransform",
-        "dom-xrrigidtransform-position",
-        "dom-xrrigidtransform-orientation",
-        "xrreferencespace",
-        "xrreferencespace-type",
-        "dom-xrreferencespacetype-viewer",
-        "dom-xrreferencespacetype-local",
-        "dom-xrreferencespacetype-unbounded",
-        "dom-xrreferencespacetype-local-floor",
-        "dom-xrreferencespacetype-bounded-floor",
-        "xrviewport",
-        "typedefdef-xrwebglrenderingcontext",
-        "enumdef-xreye",
-        "xrview",
-        "secondary-view",
-        "view",
-        "secondary-view-secondary-views",
-        "dom-xrframe-session",
-        "xrframe-active",
-        "dom-xrviewport-x",
-        "dom-xrviewport-y",
-        "dom-xrviewport-width",
-        "dom-xrviewport-height",
-        "dom-xreye-none",
-        "dom-xreye-right",
-        "view-active",
-        "primary-view",
-        "immersive-xr-device",
-        "opaque-framebuffer",
-        "dom-xrsession-renderstate",
-        "xr-device",
-        "dom-xrrenderstateinit-layers",
-        "xrrenderstate",
-        "dom-xrrenderstateinit-baselayer",
-        "active-render-state",
-        "pending-render-state",
-        "xrwebgllayer-session",
-        "dom-xrrenderstate-baselayer",
-        "dom-xreye-left"
-      ],
-      "specShortname": "webxr"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-boolean",
-        "idl-float",
-        "idl-unsigned-long",
-        "idl-undefined",
-        "this",
-        "exceptiondef-typeerror",
-        "new",
-        "SameObject",
-        "idl-double",
-        "invalidstateerror",
-        "notsupportederror",
-        "operationerror",
-        "SecureContext",
-        "idl-DOMString",
-        "idl-frozen-array"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/permissions-request/": {
-      "anchors": [
-        "dom-permissions-request"
-      ],
-      "specShortname": "permissions-request"
-    },
-    "https://www.khronos.org/registry/OpenGL/specs/es/3.0/es_spec_3.0.pdf": {
-      "anchors": [
-        "nameddest=section-3.8.4"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/": {
-      "anchors": [
-        "srgb_ext",
-        "ext_srgb",
-        "srgb_alpha_ext"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/": {
-      "anchors": [
-        "webgl_compressed_texture_astc"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/": {
-      "anchors": [
-        "webgl_compressed_texture_etc",
-        "compressed_rgb8_etc2",
-        "compressed_rgb8_punchthrough_alpha1_etc2",
-        "compressed_rgba8_etc2_eac",
-        "compressed_srgb8_etc2",
-        "compressed_srgb8_punchthrough_alpha1_etc2",
-        "compressed_srgb8_alpha8_etc2_eac"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/": {
-      "anchors": [
-        "webgl_depth_texture",
-        "depth_component",
-        "depth_stencil"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
-      "anchors": [
-        "WebGLRenderingContext",
-        "WebGLTexture",
-        "5.14",
-        "5.8",
-        "5.14.8",
-        "WebGLRenderingContextBase",
-        "5.1",
-        "5.14.14",
-        "5.14.11"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
-      "anchors": [
-        "WebGL2RenderingContext",
-        "3.7",
-        "3.7.6",
-        "5.14"
-      ]
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/": {},
-    "https://www.w3.org/TR/compositing-1/": {
-      "anchors": [
-        "porterduffcompositingoperators_srcover"
-      ],
-      "specShortname": "compositing-1"
-    },
-    "https://www.w3.org/TR/webxr/": {
-      "anchors": [
-        "feature-descriptor",
-        "xr-compositor",
-        "recommended-webgl-framebuffer-resolution",
-        "immersive-session",
-        "xr-compatible",
-        "native-webgl-framebuffer-resolution",
-        "animationframe"
-      ],
-      "specShortname": "webxr"
-    },
-    "https://www.w3.org/groups/wg/immersive-web": {},
-    "https://www.w3.org/groups/wg/immersive-web/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire",
+          "event",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "css-end"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "dictdef-dompointinit",
+          "dompointreadonly",
+          "dom-dompointreadonly-frompoint"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "check-the-usability-of-the-image-argument"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlvideoelement",
+          "dom-video-videowidth",
+          "dom-video-videoheight"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task",
+          "eventhandler",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://immersive-web.github.io/webxr-ar-module/": {
+        "anchors": [
+          "dom-xrsessionmode-immersive-ar"
+        ]
+      },
+      "https://immersive-web.github.io/webxr/": {
+        "anchors": [
+          "xrwebgllayer",
+          "dom-xrpermissiondescriptor-requiredfeatures",
+          "dom-xrpermissiondescriptor-optionalfeatures",
+          "dom-xrsystem-requestsession",
+          "dictdef-xrrenderstateinit",
+          "dom-xrsession-updaterenderstate",
+          "dom-xrsession-requestanimationframe",
+          "dom-xrsessionmode-immersive-vr",
+          "dom-xrsessionmode-inline",
+          "feature-requirements",
+          "active-immersive-session",
+          "xrsession-list-of-views",
+          "xrlayer",
+          "xrsession",
+          "xr-animation-frame",
+          "xrspace",
+          "xrspace-session",
+          "xrframe",
+          "xrrigidtransform",
+          "dom-xrrigidtransform-position",
+          "dom-xrrigidtransform-orientation",
+          "xrreferencespace",
+          "xrreferencespace-type",
+          "dom-xrreferencespacetype-viewer",
+          "dom-xrreferencespacetype-local",
+          "dom-xrreferencespacetype-unbounded",
+          "dom-xrreferencespacetype-local-floor",
+          "dom-xrreferencespacetype-bounded-floor",
+          "xrviewport",
+          "typedefdef-xrwebglrenderingcontext",
+          "enumdef-xreye",
+          "xrview",
+          "secondary-view",
+          "view",
+          "secondary-view-secondary-views",
+          "dom-xrframe-session",
+          "xrframe-active",
+          "dom-xrviewport-x",
+          "dom-xrviewport-y",
+          "dom-xrviewport-width",
+          "dom-xrviewport-height",
+          "dom-xreye-none",
+          "dom-xreye-right",
+          "view-active",
+          "primary-view",
+          "immersive-xr-device",
+          "opaque-framebuffer",
+          "dom-xrsession-renderstate",
+          "xr-device",
+          "dom-xrrenderstateinit-layers",
+          "xrrenderstate",
+          "dom-xrrenderstateinit-baselayer",
+          "active-render-state",
+          "pending-render-state",
+          "xrwebgllayer-session",
+          "dom-xrrenderstate-baselayer",
+          "dom-xreye-left"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-boolean",
+          "idl-float",
+          "idl-unsigned-long",
+          "idl-undefined",
+          "this",
+          "exceptiondef-typeerror",
+          "new",
+          "SameObject",
+          "idl-double",
+          "invalidstateerror",
+          "notsupportederror",
+          "operationerror",
+          "SecureContext",
+          "idl-DOMString",
+          "idl-frozen-array"
+        ]
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "anchors": [
+          "dom-permissions-request"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/": {
+        "anchors": [
+          "srgb_ext",
+          "ext_srgb",
+          "srgb_alpha_ext"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/": {
+        "anchors": [
+          "webgl_compressed_texture_astc"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/": {
+        "anchors": [
+          "webgl_compressed_texture_etc",
+          "compressed_rgb8_etc2",
+          "compressed_rgb8_punchthrough_alpha1_etc2",
+          "compressed_rgba8_etc2_eac",
+          "compressed_srgb8_etc2",
+          "compressed_srgb8_punchthrough_alpha1_etc2",
+          "compressed_srgb8_alpha8_etc2_eac"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/": {
+        "anchors": [
+          "webgl_depth_texture",
+          "depth_component",
+          "depth_stencil"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
+        "anchors": [
+          "WebGLRenderingContext",
+          "WebGLTexture",
+          "5.14",
+          "5.8",
+          "5.14.8",
+          "WebGLRenderingContextBase",
+          "5.1",
+          "5.14.14",
+          "5.14.11"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
+        "anchors": [
+          "WebGL2RenderingContext",
+          "3.7",
+          "3.7.6",
+          "5.14"
+        ]
+      },
+      "https://www.w3.org/TR/compositing-1/": {
+        "anchors": [
+          "porterduffcompositingoperators_srcover"
+        ]
+      },
+      "https://www.w3.org/TR/webxr/": {
+        "anchors": [
+          "feature-descriptor",
+          "xr-compositor",
+          "recommended-webgl-framebuffer-resolution",
+          "immersive-session",
+          "xr-compatible",
+          "native-webgl-framebuffer-resolution",
+          "animationframe"
+        ]
+      }
+    }
   }
 }

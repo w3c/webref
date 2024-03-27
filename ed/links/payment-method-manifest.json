@@ -4,129 +4,223 @@
     "url": "https://w3c.github.io/payment-method-manifest/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8",
-        "utf-8-decode"
-      ],
-      "specShortname": "encoding"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8",
+          "utf-8-decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response-body",
+          "concept-request-client",
+          "concept-request-credentials-mode",
+          "extract-header-list-values",
+          "concept-fetch",
+          "concept-response-header-list",
+          "concept-request-method",
+          "concept-request-mode",
+          "concept-network-error",
+          "ok-status",
+          "process-response",
+          "process-response-end-of-body",
+          "concept-request-redirect-mode",
+          "concept-request-referrer",
+          "concept-request-referrer-policy",
+          "concept-request",
+          "concept-response",
+          "concept-response-status",
+          "fetch-controller-terminate",
+          "concept-response-url"
+        ]
+      },
+      "https://github.com/w3c/payment-method-manifest/issues/11": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "environment-settings-object"
+        ]
+      },
+      "https://httpwg.org/specs/rfc8288.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "set-append",
+          "ascii-case-insensitive",
+          "iteration-break",
+          "byte-sequence",
+          "iteration-continue",
+          "map-exists",
+          "list-iterate",
+          "struct-item",
+          "string",
+          "list",
+          "ordered-map",
+          "ordered-set",
+          "parse-a-json-string-to-an-infra-value",
+          "scalar-value-string",
+          "map-set",
+          "list-size",
+          "struct",
+          "tuple"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "absolute-url-string",
+          "concept-basic-url-parser",
+          "concept-url-fragment",
+          "concept-url-origin",
+          "concept-url-password",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-username",
+          "valid-url-string"
+        ]
+      },
+      "https://w3c.github.io/manifest/": {
+        "anchors": [
+          "dfn-processed-manifest",
+          "dfn-processing-a-manifest",
+          "dfn-manifest-url",
+          "dfn-manifest"
+        ]
+      },
+      "https://w3c.github.io/payment-handler/": {},
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "dfn-pmi",
+          "dfn-standardized-payment-method-identifier",
+          "dfn-url-based-payment-method-identifier",
+          "dfn-validate-a-url-based-payment-method-identifier"
+        ]
+      },
+      "https://w3c.github.io/payment-method-manifest/": {},
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dom-paymentrequest",
+          "dfn-paymentrequest-paymentrequest",
+          "dfn-serializedmethoddata",
+          "dfn-payment-method"
+        ]
+      }
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-method",
-        "concept-request-url",
-        "concept-request-client",
-        "concept-request-mode",
-        "concept-request-credentials-mode",
-        "concept-request-redirect-mode",
-        "concept-request-referrer-policy",
-        "concept-fetch",
-        "process-response",
-        "concept-response",
-        "concept-network-error",
-        "concept-response-status",
-        "ok-status",
-        "extract-header-list-values",
-        "concept-response-header-list",
-        "fetch-controller-terminate",
-        "concept-response-body",
-        "concept-response-url",
-        "concept-request-referrer",
-        "process-response-end-of-body"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/payment-method-manifest/issues/11": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin",
-        "ascii-serialisation-of-an-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-settings-object",
-        "environment-settings-object"
-      ]
-    },
-    "https://httpwg.org/specs/rfc8288.html": {
-      "specShortname": "rfc8288"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "struct-item",
-        "list-iterate",
-        "iteration-continue",
-        "list",
-        "string",
-        "ordered-map",
-        "byte-sequence",
-        "tuple",
-        "list-append",
-        "ascii-case-insensitive",
-        "iteration-break",
-        "map-set",
-        "struct",
-        "ordered-set",
-        "parse-a-json-string-to-an-infra-value",
-        "map-exists",
-        "list-size",
-        "set-append",
-        "scalar-value-string"
-      ],
-      "specShortname": "infra"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "valid-url-string",
-        "concept-url",
-        "concept-url-scheme",
-        "absolute-url-string",
-        "concept-url-origin",
-        "concept-basic-url-parser",
-        "concept-url-username",
-        "concept-url-password",
-        "concept-url-path",
-        "concept-url-query",
-        "concept-url-fragment"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/manifest/": {
-      "anchors": [
-        "dfn-manifest-url",
-        "dfn-manifest",
-        "dfn-processing-a-manifest",
-        "dfn-processed-manifest"
-      ],
-      "specShortname": "appmanifest"
-    },
-    "https://w3c.github.io/payment-handler/": {
-      "specShortname": "payment-handler"
-    },
-    "https://w3c.github.io/payment-method-id/": {
-      "anchors": [
-        "dfn-pmi",
-        "dfn-url-based-payment-method-identifier",
-        "dfn-standardized-payment-method-identifier",
-        "dfn-validate-a-url-based-payment-method-identifier"
-      ],
-      "specShortname": "payment-method-id"
-    },
-    "https://w3c.github.io/payment-method-manifest/": {
-      "specShortname": "payment-method-manifest"
-    },
-    "https://w3c.github.io/payment-request/": {
-      "anchors": [
-        "dfn-payment-method",
-        "dfn-paymentrequest-paymentrequest",
-        "dom-paymentrequest",
-        "dfn-serializedmethoddata"
-      ],
-      "specShortname": "payment-request-1.1"
+    "autolinks": {
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8",
+          "utf-8-decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-method",
+          "concept-request-url",
+          "concept-request-client",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-request-redirect-mode",
+          "concept-request-referrer-policy",
+          "concept-fetch",
+          "process-response",
+          "concept-response",
+          "concept-network-error",
+          "concept-response-status",
+          "ok-status",
+          "extract-header-list-values",
+          "concept-response-header-list",
+          "fetch-controller-terminate",
+          "concept-response-body",
+          "concept-response-url",
+          "concept-request-referrer",
+          "process-response-end-of-body"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "struct-item",
+          "list-iterate",
+          "iteration-continue",
+          "list",
+          "string",
+          "ordered-map",
+          "byte-sequence",
+          "tuple",
+          "list-append",
+          "ascii-case-insensitive",
+          "iteration-break",
+          "map-set",
+          "struct",
+          "ordered-set",
+          "parse-a-json-string-to-an-infra-value",
+          "map-exists",
+          "list-size",
+          "set-append",
+          "scalar-value-string"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "valid-url-string",
+          "concept-url",
+          "concept-url-scheme",
+          "absolute-url-string",
+          "concept-url-origin",
+          "concept-basic-url-parser",
+          "concept-url-username",
+          "concept-url-password",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-fragment"
+        ]
+      },
+      "https://w3c.github.io/manifest/": {
+        "anchors": [
+          "dfn-manifest-url",
+          "dfn-manifest",
+          "dfn-processing-a-manifest",
+          "dfn-processed-manifest"
+        ]
+      },
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "dfn-pmi",
+          "dfn-url-based-payment-method-identifier",
+          "dfn-standardized-payment-method-identifier",
+          "dfn-validate-a-url-based-payment-method-identifier"
+        ]
+      },
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dfn-payment-method",
+          "dfn-paymentrequest-paymentrequest",
+          "dom-paymentrequest",
+          "dfn-serializedmethoddata"
+        ]
+      }
     }
   }
 }

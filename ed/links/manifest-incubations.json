@@ -4,184 +4,215 @@
     "url": "https://wicg.github.io/manifest-incubations/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "concept-event-fire",
-        "dom-event-cancelable",
-        "concept-event",
-        "event",
-        "dictdef-eventinit",
-        "dom-event-preventdefault",
-        "dom-event-istrusted"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire"
+        ]
+      },
+      "https://fs.spec.whatwg.org/": {},
+      "https://github.com/WICG/manifest-incubations/issues/": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "completely-loaded"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task",
+          "event-handler-idl-attributes"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/web-share-target/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-sequence",
+          "dfn-dictionary",
+          "Exposed",
+          "idl-promise"
+        ]
+      },
+      "https://wicg.github.io/file-system-access/": {
+        "anchors": [
+          "valid-suffix-code-points"
+        ]
+      },
+      "https://wicg.github.io/web-app-launch/": {},
+      "https://wicg.github.io/window-controls-overlay/": {},
+      "https://www.iana.org/assignments/media-types/": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-display-modes-list",
+          "dfn-display",
+          "dfn-process-the-display-member",
+          "dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
+          "dfn-display-mode",
+          "dfn-processing-extension-point-of-web-manifest",
+          "web-application-manifest",
+          "dfn-object",
+          "dfn-ignore",
+          "dfn-manifest-url",
+          "dfn-processed-manifest",
+          "dfn-process-image-resources",
+          "dfn-manifest"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {},
+      "https://www.w3.org/community/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/groups/cg/wicg": {}
     },
-    "https://fs.spec.whatwg.org/": {
-      "anchors": [
-        "filesystemhandle"
-      ],
-      "specShortname": "fs"
-    },
-    "https://github.com/WICG/manifest-incubations/issues/": {},
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "completely-loaded"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "navigate"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-object-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-html-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "protocol-handler-invocation",
-        "normalize-protocol-handler-parameters",
-        "protocol-handler-registration",
-        "safelisted-scheme",
-        "dom-navigator-registerprotocolhandler"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object",
-        "queue-a-task",
-        "concept-relevant-global",
-        "eventhandler",
-        "event-handler-idl-attributes"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list-iterate",
-        "ordered-map",
-        "string",
-        "map-exists",
-        "list",
-        "iteration-continue",
-        "list-contain",
-        "list-append",
-        "user-agent",
-        "map-is-empty",
-        "map-iterate",
-        "list-empty"
-      ],
-      "specShortname": "infra"
-    },
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "mime-type",
-        "parse-a-mime-type"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-parser"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/web-share-target/": {
-      "specShortname": "web-share-target"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-sequence",
-        "this",
-        "dfn-dictionary",
-        "idl-frozen-array",
-        "Exposed",
-        "idl-DOMString",
-        "idl-promise",
-        "notallowederror",
-        "resolve"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/file-system-access/": {
-      "anchors": [
-        "valid-suffix-code-points"
-      ],
-      "specShortname": "file-system-access"
-    },
-    "https://wicg.github.io/web-app-launch/": {
-      "anchors": [
-        "dom-launchparams-files",
-        "dom-launchparams",
-        "dfn-launching-a-web-application-with-handling"
-      ],
-      "specShortname": "web-app-launch"
-    },
-    "https://wicg.github.io/window-controls-overlay/": {
-      "anchors": [
-        "dfn-window-controls-overlay-0"
-      ],
-      "specShortname": "window-controls-overlay"
-    },
-    "https://www.iana.org/assignments/media-types/": {},
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/TR/appmanifest/": {
-      "anchors": [
-        "dfn-display-modes-list",
-        "dfn-display",
-        "dfn-manifest",
-        "dfn-process-the-display-member",
-        "dfn-processing-extension-point",
-        "dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
-        "dfn-display-mode",
-        "dfn-processing-extension-point-of-web-manifest",
-        "dfn-processing-a-manifest",
-        "web-application-manifest",
-        "dfn-object",
-        "dfn-ignore",
-        "dfn-manifest-url",
-        "dfn-within-scope-0",
-        "dfn-processed-manifest",
-        "dfn-launching-a-web-application",
-        "dfn-installed-web-application",
-        "dfn-start_url",
-        "dfn-scope",
-        "dfn-process-image-resources"
-      ],
-      "specShortname": "appmanifest"
-    },
-    "https://www.w3.org/TR/mediaqueries-5/": {
-      "anchors": [
-        "display-mode"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://www.w3.org/community/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/groups/cg/wicg": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-event-fire",
+          "dom-event-cancelable",
+          "concept-event",
+          "event",
+          "dictdef-eventinit",
+          "dom-event-preventdefault",
+          "dom-event-istrusted"
+        ]
+      },
+      "https://fs.spec.whatwg.org/": {
+        "anchors": [
+          "filesystemhandle"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-object-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-html-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "protocol-handler-invocation",
+          "normalize-protocol-handler-parameters",
+          "protocol-handler-registration",
+          "safelisted-scheme",
+          "dom-navigator-registerprotocolhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-relevant-global",
+          "eventhandler"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-iterate",
+          "ordered-map",
+          "string",
+          "map-exists",
+          "list",
+          "iteration-continue",
+          "list-contain",
+          "list-append",
+          "user-agent",
+          "map-is-empty",
+          "map-iterate",
+          "list-empty"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type",
+          "parse-a-mime-type"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-parser"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "this",
+          "dfn-dictionary",
+          "idl-frozen-array",
+          "idl-DOMString",
+          "notallowederror",
+          "resolve"
+        ]
+      },
+      "https://wicg.github.io/web-app-launch/": {
+        "anchors": [
+          "dom-launchparams-files",
+          "dom-launchparams",
+          "dfn-launching-a-web-application-with-handling"
+        ]
+      },
+      "https://wicg.github.io/window-controls-overlay/": {
+        "anchors": [
+          "dfn-window-controls-overlay-0"
+        ]
+      },
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-manifest",
+          "dfn-display",
+          "dfn-processing-extension-point",
+          "dfn-processing-a-manifest",
+          "dfn-within-scope-0",
+          "dfn-launching-a-web-application",
+          "dfn-installed-web-application",
+          "dfn-start_url",
+          "dfn-scope"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "display-mode"
+        ]
+      }
+    }
   }
 }

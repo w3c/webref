@@ -4,617 +4,844 @@
     "url": "https://drafts.fxtf.org/filter-effects-1/"
   },
   "links": {
-    "http://en.wikipedia.org/wiki/Periodic_boundary_conditions": {},
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://lists.w3.org/Archives/Public/public-fx/": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/intro.html": {
-      "anchors": [
-        "TermPresentationAttribute",
-        "TermUnsupportedValue"
-      ]
-    },
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGComponentTransferFunctionElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEBlendElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEColorMatrixElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEComponentTransferElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFECompositeElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEConvolveMatrixElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDiffuseLightingElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDisplacementMapElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDistantLightElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDropShadowElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFloodElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncAElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncBElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncGElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncRElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEGaussianBlurElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEImageElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeNodeElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMorphologyElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEOffsetElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEPointLightElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpecularLightingElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpotLightElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETileElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETurbulenceElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFilterElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/opacity": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/azimuth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseFrequency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/bias": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolation-filters": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/crossorigin": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseConstant": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/divisor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/edgeMode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/elevation": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filter": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterUnits": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-color": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-opacity": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k1": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k2": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k3": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k4": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelUnitLength": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/limitingConeAngle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numOctaves": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/order": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAlpha": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveUnits": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/radius": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/scale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/seed": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularConstant": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stdDeviation": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stitchTiles": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfaceScale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xChannelSelector": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/yChannelSelector": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence": {},
-    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": {},
-    "https://drafts.csswg.org/css-animations/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border",
-        "propdef-box-shadow",
-        "propdef-border-image"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "used-value",
-        "specified-value"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-color-3/": {
-      "specShortname": "css-color-3"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "propdef-opacity",
-        "valdef-color-transparent",
-        "propdef-color",
-        "sRGB-space",
-        "sRGB-linear-space"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-color-5/": {
-      "anchors": [
-        "typedef-color",
-        "valdef-lab-a"
-      ],
-      "specShortname": "css-color-5"
-    },
-    "https://drafts.csswg.org/css-color/": {
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-display-3/": {
-      "anchors": [
-        "propdef-display"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://drafts.csswg.org/css-display-4/": {
-      "anchors": [
-        "containing-block",
-        "propdef-visibility"
-      ],
-      "specShortname": "css-display-4"
-    },
-    "https://drafts.csswg.org/css-display/": {
-      "specShortname": "css-display-3"
-    },
-    "https://drafts.csswg.org/css-fonts-4/": {
-      "anchors": [
-        "propdef-font",
-        "propdef-font-size"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-fonts-5/": {
-      "anchors": [
-        "propdef-font-size-adjust"
-      ],
-      "specShortname": "css-fonts-5"
-    },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "typedef-image",
-        "propdef-image-rendering",
-        "concrete-object-size"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/css-overflow-3/": {
-      "anchors": [
-        "ink-overflow-region",
-        "ink-overflow-rectangle",
-        "propdef-overflow"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://drafts.csswg.org/css-position-4/": {
-      "anchors": [
-        "propdef-overlay"
-      ],
-      "specShortname": "css-position-4"
-    },
-    "https://drafts.csswg.org/css-text-4/": {
-      "anchors": [
-        "propdef-letter-spacing",
-        "propdef-word-spacing"
-      ],
-      "specShortname": "css-text-4"
-    },
-    "https://drafts.csswg.org/css-text-decor-4/": {
-      "anchors": [
-        "propdef-text-decoration",
-        "propdef-text-shadow"
-      ],
-      "specShortname": "css-text-decor-4"
-    },
-    "https://drafts.csswg.org/css-transforms-1/": {
-      "anchors": [
-        "local-coordinate-system"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "anchors": [
-        "animtype-length",
-        "animtype-number",
-        "animtype-shadow-list"
-      ],
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-cursor",
-        "propdef-pointer-events",
-        "propdef-outline"
-      ],
-      "specShortname": "css-ui-4"
-    },
-    "https://drafts.csswg.org/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "comb-one",
-        "mult-one-plus",
-        "length-value",
-        "mult-opt",
-        "number-value",
-        "percentage-value",
-        "comb-all",
-        "mult-num-range",
-        "angle-value",
-        "zero-value",
-        "funcdef-calc",
-        "typedef-length-percentage",
-        "identifier-value",
-        "integer-value",
-        "string-value",
-        "comb-comma"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-writing-modes-3/": {
-      "anchors": [
-        "propdef-direction",
-        "propdef-unicode-bidi"
-      ],
-      "specShortname": "css-writing-modes-3"
-    },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "propdef-writing-mode"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/mediaqueries-5/": {
-      "anchors": [
-        "valdef-custom-media-false"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://drafts.csswg.org/selectors-4/": {
-      "anchors": [
-        "visited-pseudo"
-      ],
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.csswg.org/selectors/": {
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "composite-operation-replace"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://drafts.fxtf.org/compositing-1/": {
-      "anchors": [
-        "valdef-blend-mode-normal",
-        "blending",
-        "porterduffcompositingoperators_srcover"
-      ],
-      "specShortname": "compositing-1"
-    },
-    "https://drafts.fxtf.org/compositing-2/": {
-      "anchors": [
-        "propdef-isolation",
-        "ltblendmodegt",
-        "backdrop"
-      ],
-      "specShortname": "compositing-2"
-    },
-    "https://drafts.fxtf.org/css-masking-1/": {
-      "anchors": [
-        "propdef-clip",
-        "propdef-clip-path",
-        "propdef-clip-rule",
-        "propdef-mask"
-      ],
-      "specShortname": "css-masking-1"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "cors-request"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/fxtf-drafts/issues": {},
-    "https://github.com/w3c/fxtf-drafts/issues/113": {},
-    "https://github.com/w3c/fxtf-drafts/issues/237": {},
-    "https://github.com/w3c/fxtf-drafts/issues/238": {},
-    "https://github.com/w3c/fxtf-drafts/issues/91": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "attr-img-crossorigin",
-        "the-img-element"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
-    "https://svgwg.org/specs/animations/": {
-      "anchors": [
-        "elementdef-animate",
-        "elementdef-set",
-        "elementdef-animateTransform"
-      ],
-      "specShortname": "svg-animations"
-    },
-    "https://svgwg.org/svg2-draft/": {
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/coords.html": {
-      "anchors": [
-        "ObjectBoundingBoxUnits",
-        "bounding-box",
-        "InterfaceSVGAnimatedPreserveAspectRatio"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/embedded.html": {
-      "anchors": [
-        "elementdef-image"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/geometry.html": {
-      "anchors": [
-        "RProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/interact.html": {
-      "anchors": [
-        "elementdef-script"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/painting.html": {
-      "anchors": [
-        "ColorInterpolationProperty",
-        "FillProperty",
-        "FillOpacityProperty",
-        "FillRuleProperty",
-        "MarkerProperty",
-        "MarkerEndProperty",
-        "MarkerMidProperty",
-        "MarkerStartProperty",
-        "ShapeRenderingProperty",
-        "StrokeProperty",
-        "StrokeDasharrayProperty",
-        "StrokeDashoffsetProperty",
-        "StrokeLinecapProperty",
-        "StrokeLinejoinProperty",
-        "StrokeMiterlimitProperty",
-        "StrokeOpacityProperty",
-        "StrokeWidthProperty",
-        "TextRenderingProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/pservers.html": {
-      "anchors": [
-        "StopColorProperty",
-        "StopOpacityProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/shapes.html": {
-      "anchors": [
-        "elementdef-rect"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/struct.html": {
-      "anchors": [
-        "container-element",
-        "elementdef-defs",
-        "graphics-element",
-        "elementdef-use",
-        "elementdef-desc",
-        "elementdef-title",
-        "elementdef-metadata",
-        "TermDescriptiveElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/text.html": {
-      "anchors": [
-        "TextAnchorProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/types.html": {
-      "anchors": [
-        "TermInitialValue",
-        "InterfaceSVGElement",
-        "InterfaceSVGAnimatedEnumeration",
-        "InterfaceSVGAnimatedLength",
-        "InterfaceSVGURIReference",
-        "InterfaceSVGUnitTypes",
-        "InterfaceSVGAnimatedString",
-        "InterfaceSVGAnimatedNumberList",
-        "InterfaceSVGAnimatedNumber",
-        "InterfaceSVGAnimatedInteger",
-        "InterfaceSVGAnimatedBoolean"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-unsigned-short",
-        "idl-undefined",
-        "idl-float"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://webstore.iec.ch/publication/6169": {},
-    "https://wiki.mozilla.org/User:Bjacob/ArithmeticTimingDifferences": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/": {},
-    "https://www.w3.org/TR/2011/REC-SVG11-20110816/intro.html": {
-      "anchors": [
-        "TermPresentationAttribute",
-        "TermDescriptiveElement",
-        "TermCoreAttributes"
-      ]
-    },
-    "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html": {
-      "anchors": [
-        "IDAttribute",
-        "XMLBaseAttribute",
-        "XMLLangAttribute",
-        "XMLSpaceAttribute",
-        "ExternalResourcesRequiredAttribute"
-      ]
-    },
-    "https://www.w3.org/TR/2011/REC-SVG11-20110816/styling.html": {
-      "anchors": [
-        "ClassAttribute",
-        "StyleAttribute"
-      ]
-    },
-    "https://www.w3.org/TR/2012/WD-filter-effects-20121025/": {},
-    "https://www.w3.org/TR/2013/WD-filter-effects-1-20131126/": {},
-    "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/": {},
-    "https://www.w3.org/TR/CSS2/visuren.html": {},
-    "https://www.w3.org/TR/CSS21/about.html": {
-      "anchors": [
-        "property-defs"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/cascade.html": {
-      "anchors": [
-        "value-def-inherit"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "x43"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/zindex.html": {},
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/coords.html": {
-      "anchors": [
-        "Units_viewport_percentage"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/masking.html": {
-      "anchors": [
-        "SimpleAlphaBlending"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/render.html": {
-      "anchors": [
-        "Introduction"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG2/painting.html": {
-      "anchors": [
-        "ColorRenderingProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "applies-to",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/cssom/": {
-      "anchors": [
-        "serializing-css-values"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/web-animations/": {
-      "anchors": [
-        "animation-type"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://www.w3.org/groups/wg/css": {},
-    "https://www.w3.org/groups/wg/css/ipr": {}
+    "rawlinks": {
+      "http://en.wikipedia.org/wiki/Periodic_boundary_conditions": {},
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://lists.w3.org/Archives/Public/public-fx/": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/intro.html": {
+        "anchors": [
+          "TermPresentationAttribute",
+          "TermUnsupportedValue"
+        ]
+      },
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGComponentTransferFunctionElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEBlendElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEColorMatrixElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEComponentTransferElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFECompositeElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEConvolveMatrixElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDiffuseLightingElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDisplacementMapElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDistantLightElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDropShadowElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFloodElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncAElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncBElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncGElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncRElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEGaussianBlurElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEImageElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeNodeElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMorphologyElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEOffsetElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEPointLightElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpecularLightingElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpotLightElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETileElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETurbulenceElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGFilterElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/opacity": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/azimuth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseFrequency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/bias": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolation-filters": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/crossorigin": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseConstant": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/divisor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/edgeMode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/elevation": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filter": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterUnits": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-color": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-opacity": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k1": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k2": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k3": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k4": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelUnitLength": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/limitingConeAngle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numOctaves": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/order": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAlpha": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveUnits": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/radius": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/scale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/seed": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularConstant": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stdDeviation": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stitchTiles": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfaceScale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xChannelSelector": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/yChannelSelector": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence": {},
+      "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": {},
+      "https://drafts.csswg.org/css-animations/": {},
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border",
+          "propdef-border-image",
+          "propdef-box-shadow"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "specified-value",
+          "used-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-3/": {},
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-color",
+          "propdef-opacity",
+          "sRGB-space",
+          "sRGB-linear-space",
+          "valdef-color-transparent"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color",
+          "valdef-lab-a"
+        ]
+      },
+      "https://drafts.csswg.org/css-color/": {},
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "containing-block",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-display/": {},
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font",
+          "propdef-font-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "propdef-font-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image",
+          "concrete-object-size",
+          "propdef-image-rendering"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "ink-overflow-region",
+          "ink-overflow-rectangle",
+          "propdef-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "propdef-overlay"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-letter-spacing",
+          "propdef-word-spacing"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-shadow"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "local-coordinate-system"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-transitions/": {
+        "anchors": [
+          "animtype-length",
+          "animtype-number",
+          "animtype-shadow-list"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-cursor",
+          "propdef-outline",
+          "propdef-pointer-events"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-3/": {},
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "comb-all",
+          "mult-one-plus",
+          "comb-comma",
+          "angle-value",
+          "identifier-value",
+          "integer-value",
+          "typedef-length-percentage",
+          "length-value",
+          "number-value",
+          "percentage-value",
+          "string-value",
+          "zero-value",
+          "mult-opt",
+          "funcdef-calc",
+          "mult-num-range",
+          "comb-one"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction",
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "propdef-writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "valdef-custom-media-false"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "visited-pseudo"
+        ]
+      },
+      "https://drafts.csswg.org/selectors/": {},
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "composite-operation-replace"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-1/": {
+        "anchors": [
+          "blending",
+          "porterduffcompositingoperators_srcover",
+          "valdef-blend-mode-normal"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-2/": {
+        "anchors": [
+          "ltblendmodegt",
+          "backdrop",
+          "propdef-isolation"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip",
+          "propdef-clip-path",
+          "propdef-clip-rule",
+          "propdef-mask"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "cors-request"
+        ]
+      },
+      "https://github.com/w3c/fxtf-drafts/issues": {},
+      "https://github.com/w3c/fxtf-drafts/issues/113": {},
+      "https://github.com/w3c/fxtf-drafts/issues/237": {},
+      "https://github.com/w3c/fxtf-drafts/issues/238": {},
+      "https://github.com/w3c/fxtf-drafts/issues/91": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "attr-img-crossorigin",
+          "the-img-element"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
+      "https://svgwg.org/specs/animations/": {
+        "anchors": [
+          "elementdef-animate",
+          "elementdef-animateTransform",
+          "elementdef-set"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/": {},
+      "https://svgwg.org/svg2-draft/coords.html": {
+        "anchors": [
+          "InterfaceSVGAnimatedPreserveAspectRatio",
+          "bounding-box",
+          "ObjectBoundingBoxUnits"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/embedded.html": {
+        "anchors": [
+          "elementdef-image"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/geometry.html": {
+        "anchors": [
+          "RProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/interact.html": {
+        "anchors": [
+          "elementdef-script"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/painting.html": {
+        "anchors": [
+          "ColorInterpolationProperty",
+          "FillProperty",
+          "FillOpacityProperty",
+          "FillRuleProperty",
+          "MarkerProperty",
+          "MarkerEndProperty",
+          "MarkerMidProperty",
+          "MarkerStartProperty",
+          "ShapeRenderingProperty",
+          "StrokeProperty",
+          "StrokeDasharrayProperty",
+          "StrokeDashoffsetProperty",
+          "StrokeLinecapProperty",
+          "StrokeLinejoinProperty",
+          "StrokeMiterlimitProperty",
+          "StrokeOpacityProperty",
+          "StrokeWidthProperty",
+          "TextRenderingProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/pservers.html": {
+        "anchors": [
+          "StopColorProperty",
+          "StopOpacityProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/shapes.html": {
+        "anchors": [
+          "elementdef-rect"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/struct.html": {
+        "anchors": [
+          "container-element",
+          "elementdef-defs",
+          "elementdef-desc",
+          "TermDescriptiveElement",
+          "graphics-element",
+          "elementdef-metadata",
+          "elementdef-title",
+          "elementdef-use"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/text.html": {
+        "anchors": [
+          "TextAnchorProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/types.html": {
+        "anchors": [
+          "InterfaceSVGAnimatedBoolean",
+          "InterfaceSVGAnimatedEnumeration",
+          "InterfaceSVGAnimatedInteger",
+          "InterfaceSVGAnimatedLength",
+          "InterfaceSVGAnimatedNumber",
+          "InterfaceSVGAnimatedNumberList",
+          "InterfaceSVGAnimatedString",
+          "InterfaceSVGElement",
+          "InterfaceSVGURIReference",
+          "InterfaceSVGUnitTypes",
+          "TermInitialValue"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-float",
+          "idl-undefined",
+          "idl-unsigned-short"
+        ]
+      },
+      "https://webstore.iec.ch/publication/6169": {},
+      "https://wiki.mozilla.org/User:Bjacob/ArithmeticTimingDifferences": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/": {},
+      "https://www.w3.org/TR/2011/REC-SVG11-20110816/intro.html": {
+        "anchors": [
+          "TermPresentationAttribute",
+          "TermDescriptiveElement",
+          "TermCoreAttributes"
+        ]
+      },
+      "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html": {
+        "anchors": [
+          "IDAttribute",
+          "XMLBaseAttribute",
+          "XMLLangAttribute",
+          "XMLSpaceAttribute",
+          "ExternalResourcesRequiredAttribute"
+        ]
+      },
+      "https://www.w3.org/TR/2011/REC-SVG11-20110816/styling.html": {
+        "anchors": [
+          "ClassAttribute",
+          "StyleAttribute"
+        ]
+      },
+      "https://www.w3.org/TR/2012/WD-filter-effects-20121025/": {},
+      "https://www.w3.org/TR/2013/WD-filter-effects-1-20131126/": {},
+      "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/": {},
+      "https://www.w3.org/TR/CSS2/visuren.html": {},
+      "https://www.w3.org/TR/CSS21/about.html": {
+        "anchors": [
+          "property-defs"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/cascade.html": {
+        "anchors": [
+          "value-def-inherit"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "x43"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/zindex.html": {},
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/SVG11/coords.html": {
+        "anchors": [
+          "Units_viewport_percentage"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/masking.html": {
+        "anchors": [
+          "SimpleAlphaBlending"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/render.html": {
+        "anchors": [
+          "Introduction"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/painting.html": {
+        "anchors": [
+          "ColorRenderingProperty"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ]
+      },
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {}
+    },
+    "autolinks": {
+      "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/intro.html": {
+        "anchors": [
+          "TermUnsupportedValue"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border",
+          "propdef-box-shadow",
+          "propdef-border-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "used-value",
+          "specified-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-opacity",
+          "valdef-color-transparent",
+          "propdef-color",
+          "sRGB-space",
+          "sRGB-linear-space"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color",
+          "valdef-lab-a"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "containing-block",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font",
+          "propdef-font-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "propdef-font-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image",
+          "propdef-image-rendering",
+          "concrete-object-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "ink-overflow-region",
+          "ink-overflow-rectangle",
+          "propdef-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "propdef-overlay"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-letter-spacing",
+          "propdef-word-spacing"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-shadow"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "local-coordinate-system"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-cursor",
+          "propdef-pointer-events",
+          "propdef-outline"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "comb-one",
+          "mult-one-plus",
+          "length-value",
+          "mult-opt",
+          "number-value",
+          "percentage-value",
+          "comb-all",
+          "mult-num-range",
+          "angle-value",
+          "zero-value",
+          "funcdef-calc",
+          "typedef-length-percentage",
+          "identifier-value",
+          "integer-value",
+          "string-value",
+          "comb-comma"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction",
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "propdef-writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "valdef-custom-media-false"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "visited-pseudo"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "composite-operation-replace"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-1/": {
+        "anchors": [
+          "valdef-blend-mode-normal"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-2/": {
+        "anchors": [
+          "propdef-isolation",
+          "ltblendmodegt",
+          "backdrop"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip",
+          "propdef-clip-path",
+          "propdef-clip-rule",
+          "propdef-mask"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "cors-request"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element"
+        ]
+      },
+      "https://svgwg.org/specs/animations/": {
+        "anchors": [
+          "elementdef-animate",
+          "elementdef-set",
+          "elementdef-animateTransform"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/coords.html": {
+        "anchors": [
+          "ObjectBoundingBoxUnits",
+          "bounding-box",
+          "InterfaceSVGAnimatedPreserveAspectRatio"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/embedded.html": {
+        "anchors": [
+          "elementdef-image"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/geometry.html": {
+        "anchors": [
+          "RProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/interact.html": {
+        "anchors": [
+          "elementdef-script"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/painting.html": {
+        "anchors": [
+          "ColorInterpolationProperty",
+          "FillProperty",
+          "FillOpacityProperty",
+          "FillRuleProperty",
+          "MarkerProperty",
+          "MarkerEndProperty",
+          "MarkerMidProperty",
+          "MarkerStartProperty",
+          "ShapeRenderingProperty",
+          "StrokeProperty",
+          "StrokeDasharrayProperty",
+          "StrokeDashoffsetProperty",
+          "StrokeLinecapProperty",
+          "StrokeLinejoinProperty",
+          "StrokeMiterlimitProperty",
+          "StrokeOpacityProperty",
+          "StrokeWidthProperty",
+          "TextRenderingProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/pservers.html": {
+        "anchors": [
+          "StopColorProperty",
+          "StopOpacityProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/shapes.html": {
+        "anchors": [
+          "elementdef-rect"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/struct.html": {
+        "anchors": [
+          "container-element",
+          "elementdef-defs",
+          "graphics-element",
+          "elementdef-use",
+          "elementdef-desc",
+          "elementdef-title",
+          "elementdef-metadata",
+          "TermDescriptiveElement"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/text.html": {
+        "anchors": [
+          "TextAnchorProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/types.html": {
+        "anchors": [
+          "TermInitialValue",
+          "InterfaceSVGElement",
+          "InterfaceSVGAnimatedEnumeration",
+          "InterfaceSVGAnimatedLength",
+          "InterfaceSVGURIReference",
+          "InterfaceSVGUnitTypes",
+          "InterfaceSVGAnimatedString",
+          "InterfaceSVGAnimatedNumberList",
+          "InterfaceSVGAnimatedNumber",
+          "InterfaceSVGAnimatedInteger",
+          "InterfaceSVGAnimatedBoolean"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-unsigned-short",
+          "idl-undefined",
+          "idl-float"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "x43"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/masking.html": {
+        "anchors": [
+          "SimpleAlphaBlending"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/painting.html": {
+        "anchors": [
+          "ColorRenderingProperty"
+        ]
+      }
+    }
   }
 }

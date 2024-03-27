@@ -4,285 +4,475 @@
     "url": "https://w3c.github.io/FileAPI/"
   },
   "links": {
-    "http://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-date-constructor",
-        "sec-array-constructor"
-      ]
+    "rawlinks": {
+      "http://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-array-constructor",
+          "sec-date-constructor"
+        ]
+      },
+      "http://w3c.github.io/media-source/": {
+        "anchors": [
+          "mediasource"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/arrayBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/size": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/slice": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/stream": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Blob/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/File": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/File/File": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/File/lastModified": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/File/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/File/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileList": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileList/item": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileList/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/abort": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/abort_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/load_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/loadend_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/loadstart_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/progress_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsArrayBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsBinaryString": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsText": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readyState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/result": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsArrayBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsDataURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsText": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL": {},
+      "https://developers.google.com/gears/?csw=1": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "decode",
+          "concept-encoding-get",
+          "utf-8",
+          "utf-8-decode",
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-network-error",
+          "dom-body-text"
+        ]
+      },
+      "https://github.com/w3c/FileAPI/issues": {},
+      "https://github.com/w3c/FileAPI/issues/104": {},
+      "https://github.com/w3c/FileAPI/issues/119": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "ascii-serialisation-of-an-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dnd.html": {
+        "anchors": [
+          "datatransfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "htmlinputelement",
+          "the-input-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "attr-hyperlink-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "deserialization-steps",
+          "serializable-objects",
+          "serialization-steps",
+          "sub-deserialization",
+          "sub-serialization"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "current-settings-object",
+          "environment-settings-object",
+          "event-handler-content-attributes",
+          "event-handler-event-type",
+          "concept-settings-object-origin",
+          "queue-a-global-task",
+          "queue-a-task",
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "relevant-settings-object",
+          "concept-task",
+          "task-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dom-worker-postmessage-options"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-lowercase",
+          "assert",
+          "byte",
+          "byte-sequence",
+          "code-point",
+          "collect-a-sequence-of-code-points",
+          "map-exists",
+          "list-iterate",
+          "map-getting-the-keys",
+          "list",
+          "ordered-map",
+          "string-position-variable",
+          "map-remove",
+          "map-set",
+          "string",
+          "map-value",
+          "map-getting-the-values"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webapi/": {},
+      "https://lists.w3.org/Archives/Public/public-webapps/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "parameters",
+          "parsable-mime-type",
+          "parse-a-mime-type"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream",
+          "chunk",
+          "readablestream-enqueue",
+          "readablestream-error",
+          "readablestream-get-a-reader",
+          "readablestreamdefaultreader-read-a-chunk",
+          "readablestreamdefaultreader-read-all-bytes",
+          "readablestream-set-up-with-byte-reading-support"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "url",
+          "empty-host",
+          "concept-url-origin",
+          "concept-url-path",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-parser",
+          "concept-url-serializer",
+          "valid-url-string"
+        ]
+      },
+      "https://w3c.github.io/media-source/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-ArrayBuffer",
+          "BufferSource",
+          "Clamp",
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "invalidstateerror",
+          "NewObject",
+          "notfounderror",
+          "notreadableerror",
+          "idl-promise",
+          "securityerror",
+          "idl-USVString",
+          "idl-Uint8Array",
+          "dfn-get-buffer-source-copy",
+          "idl-long-long",
+          "new",
+          "idl-sequence",
+          "dfn-supported-property-indices",
+          "this",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "idl-unsigned-long-long",
+          "idl-unsigned-short"
+        ]
+      },
+      "https://wpt.fyi/results/FileAPI": {},
+      "https://www.rfc-editor.org/rfc/rfc2397": {},
+      "https://www.rfc-editor.org/rfc/rfc4122": {},
+      "https://www.w3.org/2004/01/pp-impl/114929/status": {},
+      "https://www.w3.org/2021/Process-20211102/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/groups/wg/webapps": {},
+      "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": {},
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "progressevent",
+          "xmlhttprequest",
+          "dom-xmlhttprequest-send"
+        ]
+      }
     },
-    "http://w3c.github.io/media-source/": {
-      "anchors": [
-        "mediasource"
-      ],
-      "specShortname": "media-source-2"
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/arrayBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/size": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/slice": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/stream": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Blob/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/File": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/File/File": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/File/lastModified": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/File/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/File/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileList": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileList/item": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileList/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/abort": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/abort_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/load_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/loadend_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/loadstart_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/progress_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsArrayBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsBinaryString": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsText": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readyState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/result": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsArrayBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsDataURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsText": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL": {},
-    "https://developers.google.com/gears/?csw=1": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "document"
-      ],
-      "specShortname": "dom"
-    },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-encode",
-        "utf-8-decode",
-        "concept-encoding-get",
-        "utf-8",
-        "decode"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "dom-body-text",
-        "concept-network-error"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/FileAPI/issues": {},
-    "https://github.com/w3c/FileAPI/issues/104": {},
-    "https://github.com/w3c/FileAPI/issues/119": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "ascii-serialisation-of-an-origin",
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dnd.html": {
-      "anchors": [
-        "datatransfer"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unloading-document-cleanup-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/input.html": {
-      "anchors": [
-        "the-input-element",
-        "htmlinputelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "attr-hyperlink-download"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "serializable",
-        "serializable-objects",
-        "serialization-steps",
-        "deserialization-steps",
-        "sub-serialization",
-        "sub-deserialization"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-a-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-realm",
-        "queue-a-global-task",
-        "concept-relevant-global",
-        "task-source",
-        "queue-a-task",
-        "eventhandler",
-        "event-handler-content-attributes",
-        "event-handler-event-type",
-        "concept-task",
-        "environment-settings-object",
-        "current-settings-object",
-        "concept-settings-object-origin",
-        "relevant-settings-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "dom-worker-postmessage-options"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ascii-lowercase",
-        "byte",
-        "byte-sequence",
-        "string",
-        "code-point",
-        "string-position-variable",
-        "collect-a-sequence-of-code-points",
-        "list",
-        "list-iterate",
-        "ordered-map",
-        "map-getting-the-keys",
-        "map-getting-the-values",
-        "map-set",
-        "map-remove",
-        "assert",
-        "map-exists",
-        "map-value"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webapi/": {},
-    "https://lists.w3.org/Archives/Public/public-webapps/": {},
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "parsable-mime-type",
-        "parse-a-mime-type",
-        "parameters"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://streams.spec.whatwg.org/": {
-      "anchors": [
-        "readablestream",
-        "readablestream-set-up-with-byte-reading-support",
-        "chunk",
-        "readablestream-error",
-        "readablestream-enqueue",
-        "readablestream-get-a-reader",
-        "readablestreamdefaultreader-read-all-bytes",
-        "readablestreamdefaultreader-read-a-chunk"
-      ],
-      "specShortname": "streams"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-scheme",
-        "concept-url",
-        "url",
-        "valid-url-string",
-        "concept-url-parser",
-        "empty-host",
-        "concept-url-path",
-        "concept-url-serializer",
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/media-source/": {
-      "specShortname": "media-source-2"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-sequence",
-        "idl-unsigned-long-long",
-        "idl-DOMString",
-        "Clamp",
-        "idl-long-long",
-        "NewObject",
-        "idl-promise",
-        "idl-USVString",
-        "idl-ArrayBuffer",
-        "BufferSource",
-        "new",
-        "idl-Uint8Array",
-        "dfn-get-buffer-source-copy",
-        "this",
-        "notfounderror",
-        "idl-unsigned-long",
-        "dfn-supported-property-indices",
-        "idl-undefined",
-        "idl-unsigned-short",
-        "idl-DOMException",
-        "invalidstateerror",
-        "notreadableerror",
-        "securityerror",
-        "dfn-throw"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wpt.fyi/results/FileAPI": {},
-    "https://www.rfc-editor.org/rfc/rfc2397": {
-      "specShortname": "rfc2397"
-    },
-    "https://www.rfc-editor.org/rfc/rfc4122": {},
-    "https://www.w3.org/2004/01/pp-impl/114929/status": {},
-    "https://www.w3.org/2021/Process-20211102/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/groups/wg/webapps": {},
-    "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": {},
-    "https://xhr.spec.whatwg.org/": {
-      "anchors": [
-        "xmlhttprequest",
-        "dom-xmlhttprequest-send",
-        "progressevent"
-      ],
-      "specShortname": "xhr"
+    "autolinks": {
+      "http://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-date-constructor",
+          "sec-array-constructor"
+        ]
+      },
+      "http://w3c.github.io/media-source/": {
+        "anchors": [
+          "mediasource"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "document"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode",
+          "utf-8-decode",
+          "concept-encoding-get",
+          "utf-8",
+          "decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "dom-body-text",
+          "concept-network-error"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "ascii-serialisation-of-an-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dnd.html": {
+        "anchors": [
+          "datatransfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "the-input-element",
+          "htmlinputelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "attr-hyperlink-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "serializable-objects",
+          "serialization-steps",
+          "deserialization-steps",
+          "sub-serialization",
+          "sub-deserialization"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm",
+          "queue-a-global-task",
+          "concept-relevant-global",
+          "task-source",
+          "queue-a-task",
+          "eventhandler",
+          "event-handler-content-attributes",
+          "event-handler-event-type",
+          "concept-task",
+          "environment-settings-object",
+          "current-settings-object",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dom-worker-postmessage-options"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-lowercase",
+          "byte",
+          "byte-sequence",
+          "string",
+          "code-point",
+          "string-position-variable",
+          "collect-a-sequence-of-code-points",
+          "list",
+          "list-iterate",
+          "ordered-map",
+          "map-getting-the-keys",
+          "map-getting-the-values",
+          "map-set",
+          "map-remove",
+          "assert",
+          "map-exists",
+          "map-value"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "parsable-mime-type",
+          "parse-a-mime-type",
+          "parameters"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream",
+          "readablestream-set-up-with-byte-reading-support",
+          "chunk",
+          "readablestream-error",
+          "readablestream-enqueue",
+          "readablestream-get-a-reader",
+          "readablestreamdefaultreader-read-all-bytes",
+          "readablestreamdefaultreader-read-a-chunk"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "concept-url",
+          "url",
+          "valid-url-string",
+          "concept-url-parser",
+          "empty-host",
+          "concept-url-path",
+          "concept-url-serializer",
+          "concept-url-origin"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-sequence",
+          "idl-unsigned-long-long",
+          "idl-DOMString",
+          "Clamp",
+          "idl-long-long",
+          "NewObject",
+          "idl-promise",
+          "idl-USVString",
+          "idl-ArrayBuffer",
+          "BufferSource",
+          "new",
+          "idl-Uint8Array",
+          "dfn-get-buffer-source-copy",
+          "this",
+          "notfounderror",
+          "idl-unsigned-long",
+          "dfn-supported-property-indices",
+          "idl-undefined",
+          "idl-unsigned-short",
+          "idl-DOMException",
+          "invalidstateerror",
+          "notreadableerror",
+          "securityerror",
+          "dfn-throw"
+        ]
+      },
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest",
+          "dom-xmlhttprequest-send",
+          "progressevent"
+        ]
+      }
     }
   }
 }

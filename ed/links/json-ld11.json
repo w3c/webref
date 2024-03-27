@@ -4,371 +4,444 @@
     "url": "https://w3c.github.io/json-ld-syntax/"
   },
   "links": {
-    "http://schema.org/": {},
-    "http://yaml.org/spec/1.2/spec.html": {},
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-id"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://schema.org/": {},
+      "http://yaml.org/spec/1.2/spec.html": {},
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-id"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Ampersand": {},
+      "https://en.wikipedia.org/wiki/Content_negotiation": {},
+      "https://en.wikipedia.org/wiki/Link_relation": {},
+      "https://en.wikipedia.org/wiki/Total_order": {},
+      "https://github.com/w3c/json-ld-syntax/issues/108": {},
+      "https://github.com/w3c/json-ld-syntax/issues/191": {},
+      "https://github.com/w3c/json-ld-syntax/issues/280": {},
+      "https://github.com/w3c/json-ld-syntax/issues/323": {},
+      "https://github.com/w3c/json-ld-syntax/issues/328": {},
+      "https://github.com/w3c/json-ld-syntax/issues/329": {},
+      "https://github.com/w3c/json-ld-syntax/issues/335": {},
+      "https://github.com/w3c/json-ld-syntax/issues/358": {},
+      "https://github.com/w3c/json-ld-syntax/issues/86": {},
+      "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22defer-future-version%22": {},
+      "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22privacy-tracker%22": {},
+      "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22security-tracker%22": {},
+      "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Aenhancement%22": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-dir-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "the-script-element",
+          "data-block",
+          "restrictions-for-contents-of-script-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "document-base-url",
+          "dynamic-changes-to-base-urls"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7231.html": {
+        "anchors": [
+          "rfc.section.5.3.2"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "boolean",
+          "ordered-map",
+          "map-entry",
+          "nulls",
+          "primitive-data-types",
+          "javascript-string",
+          "code-point"
+        ]
+      },
+      "https://irc.w3.org/": {},
+      "https://irc.w3.org/?channels=json-ld": {},
+      "https://json-ld.org/playground/": {
+        "anchors": [
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22http%3A%2F%2Fschema.org%2Fname%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22http%3A%2F%2Fschema.org%2Furl%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%22http%3A%2F%2Fschema.org%2Fimage%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22image%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22image%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Fimage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Furl%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22image%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22status%22%3A%20%22trollin'%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Furl%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22givenName%22%3A%20%22http%3A%2F%2Fschema.org%2FgivenName%22%2C%0A%20%20%20%20%22familyName%22%3A%20%22http%3A%2F%2Fschema.org%2FfamilyName%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%22givenName%22%3A%20%22Markus%22%2C%0A%20%20%22familyName%22%3A%20%22Lanthaler%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%5B%0A%20%20%20%20%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%0A%20%20%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%20%20%22depiction%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fplace.jsonld%22%2C%0A%20%20%20%20%22name%22%3A%20%22The%20Empire%20State%20Building%22%2C%0A%20%20%20%20%22description%22%3A%20%22The%20Empire%20State%20Building%20is%20a%20102-story%20landmark%20in%20New%20York%20City.%22%2C%0A%20%20%20%20%22geo%22%3A%20%7B%0A%20%20%20%20%20%20%22latitude%22%3A%20%2240.75%22%2C%0A%20%20%20%20%20%20%22longitude%22%3A%20%2273.98%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%5D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fplace.jsonld%22%2C%0A%20%20%20%20%7B%22title%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%7D%0A%20%20%5D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%20%20%22depiction%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22title%22%3A%20%22The%20Empire%20State%20Building%22%2C%0A%20%20%20%20%22description%22%3A%20%22The%20Empire%20State%20Building%20is%20a%20102-story%20landmark%20in%20New%20York%20City.%22%2C%0A%20%20%20%20%22geo%22%3A%20%7B%0A%20%20%20%20%20%20%22latitude%22%3A%20%2240.75%22%2C%0A%20%20%20%20%20%20%22longitude%22%3A%20%2273.98%22%0A%20%20%20%20%7D%0A%20%20%7D%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Fperson%23name%22%2C%0A%20%20%20%20%22details%22%3A%20%22http%3A%2F%2Fexample.com%2Fperson%23details%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%0A%20%20%22details%22%3A%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Forganization%23name%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22name%22%3A%20%22Graz%20University%20of%20Technology%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22pic%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fdepiction%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22pic%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%20%22databaseId%22%3A%20null%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%2C%0A%20%20%22databaseId%22%3A%20%2223987520%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22vocab%2F%22%0A%20%20%7D%5D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample.com%2Fdocument.jsonld%22%2C%0A%20%20%20%20%22label%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22%22%2C%0A%20%20%22label%22%3A%20%22Just%20a%20simple%20document%22%0A%7D",
+          "startTab=tab-expand&json-ld=%5B%7B%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%5B%22http%3A%2F%2Fexample%2Fdocument%23Restaurant%22%5D%2C%0A%20%20%22http%3A%2F%2Fexample%2Fdocument%23name%22%3A%20%5B%7B%22%40value%22%3A%20%22Brew%20Eats%22%7D%5D%0A%7D%5D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22foaf%3APerson%22%2C%0A%20%20%22foaf%3Aname%22%3A%20%22Dave%20Longley%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22foaf%3Ahomepage%22%3A%20%7B%20%22%40type%22%3A%20%22%40id%22%20%7D%2C%0A%20%20%20%20%22picture%22%3A%20%7B%20%22%40id%22%3A%20%22foaf%3Adepiction%22%2C%20%22%40type%22%3A%20%22%40id%22%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22foaf%3APerson%22%2C%0A%20%20%22foaf%3Aname%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22foaf%3Ahomepage%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%2C%0A%20%20%22picture%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmarkuslanthaler%22%0A%7D",
+          "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%3A%20%5B%7B%22%40value%22%3A%20%22property%22%7D%5D%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2FpropertyOne%22%3A%20%5B%7B%22%40value%22%3A%20%22propertyOne%22%7D%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22property%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%3A%20%5B%7B%22%40value%22%3A%20%22property%22%7D%5D%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2FpropertyOne%22%3A%20%5B%7B%22%40value%22%3A%20%22propertyOne%22%7D%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22property%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%2C%0A%20%20%20%20%20%20%22%40prefix%22%3A%20true%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22url%22%3A%20%22%40id%22%2C%0A%20%20%20%20%22a%22%3A%20%22%40type%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%0A%20%20%7D%2C%0A%20%20%22url%22%3A%20%22http%3A%2F%2Fexample.com%2Fabout%23gregg%22%2C%0A%20%20%22a%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Finterest%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.w3.org%2FTR%2Fjson-ld11%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22JSON-LD%22%2C%0A%20%20%20%20%22topic%22%3A%20%22Linking%20Data%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22interest%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Finterest%22%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%22Document%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FDocument%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.w3.org%2FTR%2Fjson-ld11%2F%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Document%22%2C%0A%20%20%20%20%22name%22%3A%20%22JSON-LD%22%2C%0A%20%20%20%20%22topic%22%3A%20%22Linking%20Data%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22term%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Foriginal%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40propagate%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%22term%22%3A%20%22http%3A%2F%2Fexample.org%2Fnon-propagated-term%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22term%22%3A%20%7B%0A%20%20%0A%20%20%20%20%22term%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%20%20%22term%22%3A%20%22This%20term%20is%20from%20the%20first%20context%22%0A%20%20%20%20%20%20%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%20%20%22member%22%3A%20%22http%3A%2F%2Fschema.org%2Fmember%22%2C%0A%20%20%20%20%20%20%22Person%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%20%20%20%22%40protected%22%3A%20false%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22name%22%3A%20%22Digital%20Bazaar%22%2C%0A%20%20%22member%22%3A%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22id%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%20%20%22Organization%22%3A%20%22http%3A%2F%2Fexample.org%2Forga%2FOrganization%22%2C%0A%20%20%20%20%20%20%22member%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Forga%2Fmember%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22id%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%22type%22%3A%20%22Organization%22%2C%0A%20%20%22member%22%20%3A%20%7B%0A%20%20%20%20%22id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22Organization%22%3A%20%22http%3A%2F%2Fschema.org%2FOrganization%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%20%20%22employee%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Femployee%22%2C%0A%20%20%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2FfamilyName%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22location%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fbased_near%22%2C%0A%20%20%20%20%20%20%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%20%7D%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22%40type%22%3A%20%22Organization%22%2C%0A%20%20%22name%22%3A%20%22Digital%20Bazaar%22%2C%0A%20%20%22employee%22%20%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22Sporny%22%2C%0A%20%20%20%20%22location%22%3A%20%7B%22name%22%3A%20%22Blacksburg%2C%20Virginia%22%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fdocs%2F1%22%2C%0A%20%20%22modified%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%22%40value%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%7D%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fposts%23TripToWestVirginia%22%2C%0A%20%20%22%40type%22%3A%20%22http%3A%2F%2Fschema.org%2FBlogPosting%22%2C%20%20%0A%20%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%3A%20%7B%0A%20%20%20%20%22%40value%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%20%20%0A%20%20%7D%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22e%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fjson%22%2C%20%22%40type%22%3A%20%22%40json%22%7D%0A%20%20%7D%2C%0A%20%20%22e%22%3A%20%5B%0A%20%20%20%2056.0%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22d%22%3A%20true%2C%0A%20%20%20%20%20%20%2210%22%3A%20null%2C%0A%20%20%20%20%20%20%221%22%3A%20%5B%20%5D%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22age%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22xsd%3Ainteger%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fpeople%23john%22%2C%0A%20%20%22name%22%3A%20%22John%20Smith%22%2C%0A%20%20%22age%22%3A%20%2241%22%2C%0A%20%20%22homepage%22%3A%20%5B%0A%20%20%20%20%22http%3A%2F%2Fpersonal.example.org%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fwork.example.com%2Fjsmith%2F%22%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample1.com%2F%22%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample2.com%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40vocab%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22fred%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22barney%22%2C%20%22mnemonic%22%3A%20%22the%20sidekick%22%7D%2C%0A%20%20%20%20%22barney%22%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample1.com%2F%22%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample2.com%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22fred%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22barney%22%2C%20%22mnemonic%22%3A%20%22the%20sidekick%22%7D%2C%0A%20%20%20%20%22barney%22%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22foaf%3Aage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22xsd%3Ainteger%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22foaf%3Aname%22%3A%20%22John%20Smith%22%2C%0A%20%20%22foaf%3Aage%22%3A%20%2241%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%22http%3A%2F%2Fpersonal.example.org%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fwork.example.com%2Fjsmith%2F%22%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.org%2Fname%22%2C%0A%20%20%20%20%22occupation%22%3A%20%22http%3A%2F%2Fexample.org%2Foccupation%22%2C%0A%20%20%20%20%0A%20%20%20%20%22%40language%22%3A%20%22ja%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22%E8%8A%B1%E6%BE%84%22%2C%0A%20%20%22occupation%22%3A%20%22%E7%A7%91%E5%AD%A6%E8%80%85%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22title%22%3A%20%22http%3A%2F%2Fexample.org%2Ftitle%22%2C%0A%20%20%20%20%22publisher%22%3A%20%22http%3A%2F%2Fexample.org%2Fpublisher%22%2C%0A%20%20%20%20%0A%20%20%20%20%22%40language%22%3A%20%22ar-EG%22%2C%0A%20%20%20%20%22%40direction%22%3A%20%22rtl%22%0A%20%20%7D%2C%0A%20%20%22title%22%3A%20%22HTML%20%D9%88%20CSS%3A%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%20%D8%A5%D9%86%D8%B4%D8%A7%D8%A1%20%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%22%2C%0A%20%20%22publisher%22%3A%20%22%D9%85%D9%83%D8%AA%D8%A8%D8%A9%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22JB%22%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22dcterms%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Farticles%2F8%22%2C%0A%20%20%22dcterms%3Atitle%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40value%22%3A%20%22Das%20Kapital%22%2C%0A%20%20%20%20%20%20%22%40language%22%3A%20%22de%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40value%22%3A%20%22Capital%22%2C%0A%20%20%20%20%20%20%22%40language%22%3A%20%22en%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22ex%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23michael%22%2C%0A%20%20%22ex%3Aname%22%3A%20%5B%0A%20%20%20%20%22Michael%22%2C%0A%20%20%20%20%7B%22%40value%22%3A%20%22Mike%22%7D%2C%0A%20%20%20%20%7B%22%40value%22%3A%20%22Miguel%22%2C%20%22%40language%22%3A%20%22es%22%7D%2C%0A%20%20%20%20%7B%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.wikidata.org%2Fwiki%2FQ4927524%22%20%7D%2C%0A%20%20%20%2042%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%7B%0A%20%20%20%20%22%40list%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22nick%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fnick%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40list%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22nick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22https%3A%2F%2Fpurl.org%2Fgeojson%2Fvocab%23%22%2C%0A%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%22bbox%22%3A%20%7B%22%40container%22%3A%20%22%40list%22%7D%2C%0A%20%20%20%20%22coordinates%22%3A%20%7B%22%40container%22%3A%20%22%40list%22%7D%0A%20%20%7D%2C%0A%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%22bbox%22%3A%20%5B-10.0%2C%20-10.0%2C%2010.0%2C%2010.0%5D%2C%0A%20%20%22geometry%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22Polygon%22%2C%0A%20%20%20%20%22coordinates%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-10.0%2C%20-10.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B10.0%2C%20-10.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B10.0%2C%2010.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-10.0%2C%20-10.0%5D%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%5D%0A%20%20%7D%0A%20%20%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%7B%0A%20%20%20%20%22%40set%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22nick%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fnick%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40set%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22nick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22labels%22%3A%20%22%40nest%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fexample.org%22%2C%0A%20%20%22labels%22%3A%20%7B%0A%20%20%20%20%20%22main_label%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%2C%0A%20%20%20%20%20%22other_label%22%3A%20%22This%20is%20the%20other%20label%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fexample.org%22%2C%0A%20%20%22main_label%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%2C%0A%20%20%22other_label%22%3A%20%22This%20is%20the%20other%20label%22%0A%7D",
+          "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%22%7D%0A%20%20%5D%2C%0A%20%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel%22%3A%20%5B%0A%20%20%20%20%7B%22%40value%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%7D%0A%20%20%5D%2C%0A%20%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23altLabel%22%3A%20%5B%0A%20%20%20%20%7B%22%40value%22%3A%20%22This%20is%20the%20other%20label%22%7D%0A%20%20%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22labels%22%3A%20%22%40nest%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%2C%20%22%40nest%22%3A%20%22labels%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%2C%20%22%40nest%22%3A%20%22labels%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22_%3Ab0%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22_%3Ab0%22%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%0A%20%20%20%22%40id%22%3A%20%22_%3An1%22%2C%0A%20%20%20%22name%22%3A%20%22Secret%20Agent%201%22%2C%0A%20%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%20%22name%22%3A%20%22Secret%20Agent%202%22%2C%0A%20%20%20%20%20%22knows%22%3A%20%7B%20%22%40id%22%3A%20%22_%3An1%22%20%7D%0A%20%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22position%22%3A%20%22schema%3AjobTitle%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22catcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Catcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Starting%20Pitcher%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22position%22%3A%20%22schema%3AjobTitle%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22catcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Catcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Starting%20Pitcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40none%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Lou%20Seal%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Mascot%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%2C%0A%20%20%20%20%20%20%22%40index%22%3A%20%22schema%3AjobTitle%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22Catcher%22%3A%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Starting%20Pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40language%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%22The%20Queen%22%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40language%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%5B%22The%20Queen%22%5D%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40language%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%22The%20Queen%22%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%2C%0A%20%20%20%20%22%40none%22%3A%20%22The%20Queen%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%221%2Fen%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%2C%0A%20%20%20%20%221%2Fde%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40id%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%5D%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%22%40none%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Description%20for%20object%20without%20an%20%40id%22%2C%0A%20%20%20%20%20%20%22words%22%3A%2020%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40type%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40type%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%5D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40type%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%22%40none%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%2C%0A%20%20%20%20%22classification%22%3A%20%7B%22%40type%22%3A%20%22%40vocab%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Forg-1%22%2C%0A%20%20%22members%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%22http%3A%2F%2Fexample.org%2Fperson-1%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22classification%22%3A%20%22employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%22http%3A%2F%2Fexample.org%2Fperson-2%22%2C%0A%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%2C%0A%20%20%20%20%22classification%22%3A%20%22employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fperson-3%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22classification%22%3A%20%22contractor%22%0A%20%20%7D%5D%2C%0A%20%20%22%40included%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Femployee%22%2C%0A%20%20%20%20%22label%22%3A%20%22An%20Employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fcontractor%22%2C%0A%20%20%20%20%22label%22%3A%20%22A%20Contractor%22%0A%20%20%7D%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40included%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%7D%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Homer%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Bart%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%7B%20%22%40id%22%3A%20%22%23homer%22%20%7D%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Lisa%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%7B%20%22%40id%22%3A%20%22%23homer%22%20%7D%0A%20%20%7D%0A%5D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Homer%22%2C%0A%20%20%22%40reverse%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Bart%22%0A%20%20%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Lisa%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%2C%0A%20%20%20%20%22children%22%3A%20%7B%20%22%40reverse%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%22name%22%3A%20%22Homer%22%2C%0A%20%20%22children%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Bart%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Lisa%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22%40graph%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%7D%0A%5D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fdbpedia.org%2Fresource%2F%22%2C%0A%20%20%20%20%22said%22%3A%20%22http%3A%2F%2Fexample.com%2Fsaid%22%2C%0A%20%20%20%20%22wrote%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fwrote%22%2C%20%22%40container%22%3A%20%22%40graph%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22William_Shakespeare%22%2C%0A%20%20%22wrote%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22Richard_III_of_England%22%2C%0A%20%20%20%20%22said%22%3A%20%22My%20kingdom%20for%20a%20horse%22%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40index%22%5D%0A%20%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%22en%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%22de%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40index%22%5D%0A%20%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%22en%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%22%40none%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fno-language%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2FgraphMap%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40id%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%2C%0A%20%20%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2FgraphMap%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40id%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%22%40none%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D%2C%0A%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%7D",
+          "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
+          "startTab=tab-framed&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%2C%0A%20%20%20%20%22contains%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Library%22%2C%0A%20%20%20%20%22contains%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Book%22%2C%0A%20%20%20%20%22creator%22%3A%20%22Plato%22%2C%0A%20%20%20%20%22title%22%3A%20%22The%20Republic%22%2C%0A%20%20%20%20%22contains%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%23introduction%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%23introduction%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Chapter%22%2C%0A%20%20%20%20%22description%22%3A%20%22An%20introductory%20chapter%20on%20The%20Republic.%22%2C%0A%20%20%20%20%22title%22%3A%20%22The%20Introduction%22%0A%20%20%7D%5D%0A%7D&context=%7B%7D&frame=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Library%22%2C%0A%20%20%22contains%22%3A%20%7B%0A%20%20%20%20%22%40type%22%3A%20%22Book%22%2C%0A%20%20%20%20%22contains%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Chapter%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D"
+        ]
+      },
+      "https://jsonapi.org/format/": {
+        "anchors": [
+          "fetching-includes"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-json-ld-wg/": {},
+      "https://lists.w3.org/Archives/Public/public-rdf-comments/2018Jan/0002.html": {},
+      "https://semver.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-terms-and-definitions-number-value",
+          "sec-tostring-applied-to-the-number-type",
+          "sec-json-object"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7231": {},
+      "https://tools.ietf.org/html/rfc8288": {
+        "anchors": [
+          "section-3"
+        ]
+      },
+      "https://w3c.github.io/json-ld-syntax/": {},
+      "https://webchat.freenode.net/?channels=json-ld": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-record",
+          "idl-long",
+          "idl-double"
+        ]
+      },
+      "https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc2141": {},
+      "https://www.rfc-editor.org/rfc/rfc3986": {
+        "anchors": [
+          "section-5.1",
+          "section-2.2"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc3987": {
+        "anchors": [
+          "section-2",
+          "section-1.3",
+          "section-6.5",
+          "section-2.2"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc4122": {},
+      "https://www.rfc-editor.org/rfc/rfc4288": {
+        "anchors": [
+          "section-4.3"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.rfc-editor.org/rfc/rfc5646": {
+        "anchors": [
+          "section-2.2.9",
+          "section-2",
+          "section-2.1.1"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc6838": {
+        "anchors": [
+          "section-6.2"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc6839": {},
+      "https://www.rfc-editor.org/rfc/rfc6906": {},
+      "https://www.rfc-editor.org/rfc/rfc7049": {},
+      "https://www.rfc-editor.org/rfc/rfc7946": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.rfc-editor.org/rfc/rfc8259": {
+        "anchors": [
+          "section-4",
+          "section-2",
+          "section-12",
+          "section-11"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8785": {},
+      "https://www.unicode.org/reports/tr9/tr9-48.html": {},
+      "https://www.unicode.org/versions/latest/": {},
+      "https://www.w3.org/2018/json-ld-wg/": {},
+      "https://www.w3.org/2018/jsonld-cg-reports/json-ld/": {},
+      "https://www.w3.org/2019/Process-20190301/": {
+        "anchors": [
+          "rec-rescind"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/DesignIssues/LinkedData.html": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2014/REC-json-ld-20140116/": {
+        "anchors": [
+          "application-ld-json"
+        ]
+      },
+      "https://www.w3.org/TR/SRI/": {},
+      "https://www.w3.org/TR/fingerprinting-guidance/": {},
+      "https://www.w3.org/TR/json-ld11-api/": {
+        "anchors": [
+          "the-application-programming-interface",
+          "dfn-internal-representation",
+          "dfn-json-ld-processor",
+          "conformance",
+          "compaction-algorithm",
+          "data-round-tripping",
+          "remote-document-and-context-retrieval",
+          "dom-jsonldoptions-documentloader",
+          "dfn-expanded",
+          "expansion-algorithm",
+          "dfn-compact",
+          "value-compaction",
+          "dfn-flattened",
+          "flattening-algorithm",
+          "dom-jsonldoptions-expandcontext",
+          "extract-script-content",
+          "deserialize-json-ld-to-rdf-algorithm",
+          "rdf-serialization-deserialization-algorithms",
+          "dom-jsonldoptions-rdfdirection"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11-framing/": {
+        "anchors": [
+          "dfn-frame",
+          "dfn-frame-object",
+          "dfn-framing",
+          "dfn-wildcard",
+          "dfn-match-none",
+          "dfn-value-pattern",
+          "framing-algorithm"
+        ]
+      },
+      "https://www.w3.org/TR/ld-glossary/": {
+        "anchors": [
+          "internationalized-resource-identifier",
+          "uniform-resource-locator",
+          "uniform-resource-identifier"
+        ]
+      },
+      "https://www.w3.org/TR/microdata/": {},
+      "https://www.w3.org/TR/rdf-schema/": {
+        "anchors": [
+          "ch_collectionvocab"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-concepts/": {
+        "anchors": [
+          "dfn-base-iri",
+          "dfn-blank-node",
+          "dfn-blank-node-identifier",
+          "dfn-rdf-dataset",
+          "dfn-rdf-graph",
+          "dfn-datatype-iri",
+          "dfn-literal-value",
+          "dfn-default-graph",
+          "dfn-graph-name",
+          "dfn-language-tagged-string",
+          "dfn-language-tag",
+          "dfn-literal",
+          "dfn-named-graph",
+          "dfn-node",
+          "dfn-object",
+          "dfn-property",
+          "dfn-predicate",
+          "dfn-resource",
+          "dfn-subject",
+          "dfn-rdf-triple",
+          "data-model",
+          "dfn-concrete-rdf-syntax",
+          "dfn-generalized-rdf-dataset",
+          "section-skolemization",
+          "dfn-rdf-source",
+          "section-fragID"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-mt/": {
+        "anchors": [
+          "rdf-collections"
+        ]
+      },
+      "https://www.w3.org/TR/rdfa-core/": {},
+      "https://www.w3.org/TR/sparql11-overview/": {},
+      "https://www.w3.org/TR/string-meta/": {},
+      "https://www.w3.org/TR/trig/": {},
+      "https://www.w3.org/TR/turtle/": {},
+      "https://www.w3.org/TR/xpath-functions/": {
+        "anchors": [
+          "codepoint-collation"
+        ]
+      },
+      "https://www.w3.org/community/json-ld/": {},
+      "https://www.w3.org/groups/wg/json-ld": {},
+      "https://www.w3.org/groups/wg/json-ld/ipr": {}
     },
-    "https://en.wikipedia.org/wiki/Ampersand": {},
-    "https://en.wikipedia.org/wiki/Content_negotiation": {},
-    "https://en.wikipedia.org/wiki/Link_relation": {},
-    "https://en.wikipedia.org/wiki/Total_order": {},
-    "https://github.com/w3c/json-ld-syntax/issues/108": {},
-    "https://github.com/w3c/json-ld-syntax/issues/191": {},
-    "https://github.com/w3c/json-ld-syntax/issues/280": {},
-    "https://github.com/w3c/json-ld-syntax/issues/323": {},
-    "https://github.com/w3c/json-ld-syntax/issues/328": {},
-    "https://github.com/w3c/json-ld-syntax/issues/329": {},
-    "https://github.com/w3c/json-ld-syntax/issues/335": {},
-    "https://github.com/w3c/json-ld-syntax/issues/358": {},
-    "https://github.com/w3c/json-ld-syntax/issues/86": {},
-    "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22defer-future-version%22": {},
-    "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22privacy-tracker%22": {},
-    "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22security-tracker%22": {},
-    "https://github.com/w3c/json-ld-syntax/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Aenhancement%22": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-dir-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "the-script-element",
-        "data-block",
-        "restrictions-for-contents-of-script-elements"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "document-base-url",
-        "dynamic-changes-to-base-urls"
-      ]
-    },
-    "https://httpwg.org/specs/rfc7231.html": {
-      "anchors": [
-        "rfc.section.5.3.2"
-      ],
-      "specShortname": "rfc7231"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "javascript-string",
-        "list",
-        "boolean",
-        "ordered-map",
-        "map-entry",
-        "nulls",
-        "primitive-data-types",
-        "code-point"
-      ],
-      "specShortname": "infra"
-    },
-    "https://irc.w3.org/": {},
-    "https://irc.w3.org/?channels=json-ld": {},
-    "https://json-ld.org/playground/": {
-      "anchors": [
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22http%3A%2F%2Fschema.org%2Fname%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22http%3A%2F%2Fschema.org%2Furl%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%22http%3A%2F%2Fschema.org%2Fimage%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22image%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22image%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Fimage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Furl%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22image%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fimages%2Fmanu.png%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22status%22%3A%20%22trollin'%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Furl%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22givenName%22%3A%20%22http%3A%2F%2Fschema.org%2FgivenName%22%2C%0A%20%20%20%20%22familyName%22%3A%20%22http%3A%2F%2Fschema.org%2FfamilyName%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%22givenName%22%3A%20%22Markus%22%2C%0A%20%20%22familyName%22%3A%20%22Lanthaler%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%5B%0A%20%20%20%20%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%0A%20%20%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%20%20%22depiction%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40context%22%3A%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fplace.jsonld%22%2C%0A%20%20%20%20%22name%22%3A%20%22The%20Empire%20State%20Building%22%2C%0A%20%20%20%20%22description%22%3A%20%22The%20Empire%20State%20Building%20is%20a%20102-story%20landmark%20in%20New%20York%20City.%22%2C%0A%20%20%20%20%22geo%22%3A%20%7B%0A%20%20%20%20%20%20%22latitude%22%3A%20%2240.75%22%2C%0A%20%20%20%20%20%20%22longitude%22%3A%20%2273.98%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%5D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fplace.jsonld%22%2C%0A%20%20%20%20%7B%22title%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%7D%0A%20%20%5D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%20%20%22depiction%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22title%22%3A%20%22The%20Empire%20State%20Building%22%2C%0A%20%20%20%20%22description%22%3A%20%22The%20Empire%20State%20Building%20is%20a%20102-story%20landmark%20in%20New%20York%20City.%22%2C%0A%20%20%20%20%22geo%22%3A%20%7B%0A%20%20%20%20%20%20%22latitude%22%3A%20%2240.75%22%2C%0A%20%20%20%20%20%20%22longitude%22%3A%20%2273.98%22%0A%20%20%20%20%7D%0A%20%20%7D%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Fperson%23name%22%2C%0A%20%20%20%20%22details%22%3A%20%22http%3A%2F%2Fexample.com%2Fperson%23details%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%0A%20%20%22details%22%3A%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Forganization%23name%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22name%22%3A%20%22Graz%20University%20of%20Technology%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%22https%3A%2F%2Fjson-ld.org%2Fcontexts%2Fperson.jsonld%22%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22pic%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fdepiction%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%2C%0A%20%20%22pic%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmanusporny%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%20%22databaseId%22%3A%20null%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%2C%0A%20%20%22databaseId%22%3A%20%2223987520%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22vocab%2F%22%0A%20%20%7D%5D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%22Restaurant%22%2C%0A%20%20%22name%22%3A%20%22Brew%20Eats%22%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample.com%2Fdocument.jsonld%22%2C%0A%20%20%20%20%22label%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22%22%2C%0A%20%20%22label%22%3A%20%22Just%20a%20simple%20document%22%0A%7D",
-        "startTab=tab-expand&json-ld=%5B%7B%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fplaces%23BrewEats%22%2C%0A%20%20%22%40type%22%3A%20%5B%22http%3A%2F%2Fexample%2Fdocument%23Restaurant%22%5D%2C%0A%20%20%22http%3A%2F%2Fexample%2Fdocument%23name%22%3A%20%5B%7B%22%40value%22%3A%20%22Brew%20Eats%22%7D%5D%0A%7D%5D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%20%20%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22foaf%3APerson%22%2C%0A%20%20%22foaf%3Aname%22%3A%20%22Dave%20Longley%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22foaf%3Ahomepage%22%3A%20%7B%20%22%40type%22%3A%20%22%40id%22%20%7D%2C%0A%20%20%20%20%22picture%22%3A%20%7B%20%22%40id%22%3A%20%22foaf%3Adepiction%22%2C%20%22%40type%22%3A%20%22%40id%22%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22foaf%3APerson%22%2C%0A%20%20%22foaf%3Aname%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22foaf%3Ahomepage%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%2C%0A%20%20%22picture%22%3A%20%22http%3A%2F%2Ftwitter.com%2Faccount%2Fprofile_image%2Fmarkuslanthaler%22%0A%7D",
-        "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%3A%20%5B%7B%22%40value%22%3A%20%22property%22%7D%5D%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2FpropertyOne%22%3A%20%5B%7B%22%40value%22%3A%20%22propertyOne%22%7D%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22property%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%3A%20%5B%7B%22%40value%22%3A%20%22property%22%7D%5D%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%2FpropertyOne%22%3A%20%5B%7B%22%40value%22%3A%20%22propertyOne%22%7D%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22property%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fproperty%22%2C%0A%20%20%20%20%20%20%22%40prefix%22%3A%20true%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22url%22%3A%20%22%40id%22%2C%0A%20%20%20%20%22a%22%3A%20%22%40type%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%0A%20%20%7D%2C%0A%20%20%22url%22%3A%20%22http%3A%2F%2Fexample.com%2Fabout%23gregg%22%2C%0A%20%20%22a%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Finterest%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.w3.org%2FTR%2Fjson-ld11%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22JSON-LD%22%2C%0A%20%20%20%20%22topic%22%3A%20%22Linking%20Data%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%22interest%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Finterest%22%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%22Document%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FDocument%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22interest%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.w3.org%2FTR%2Fjson-ld11%2F%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Document%22%2C%0A%20%20%20%20%22name%22%3A%20%22JSON-LD%22%2C%0A%20%20%20%20%22topic%22%3A%20%22Linking%20Data%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22term%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Foriginal%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40propagate%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%22term%22%3A%20%22http%3A%2F%2Fexample.org%2Fnon-propagated-term%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22term%22%3A%20%7B%0A%20%20%0A%20%20%20%20%22term%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%20%20%22term%22%3A%20%22This%20term%20is%20from%20the%20first%20context%22%0A%20%20%20%20%20%20%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%20%20%22member%22%3A%20%22http%3A%2F%2Fschema.org%2Fmember%22%2C%0A%20%20%20%20%20%20%22Person%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%20%20%20%22%40protected%22%3A%20false%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22name%22%3A%20%22Digital%20Bazaar%22%2C%0A%20%20%22member%22%3A%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22id%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%20%20%22Organization%22%3A%20%22http%3A%2F%2Fexample.org%2Forga%2FOrganization%22%2C%0A%20%20%20%20%20%20%22member%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Forga%2Fmember%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22id%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fschema.org%2FPerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%22type%22%3A%20%22Organization%22%2C%0A%20%20%22member%22%20%3A%20%7B%0A%20%20%20%20%22id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%22Organization%22%3A%20%22http%3A%2F%2Fschema.org%2FOrganization%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2Fname%22%2C%0A%20%20%20%20%20%20%22employee%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fschema.org%2Femployee%22%2C%0A%20%20%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22%40protected%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fschema.org%2FfamilyName%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22location%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fbased_near%22%2C%0A%20%20%20%20%20%20%20%20%22%40context%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%20%7D%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22%40type%22%3A%20%22Organization%22%2C%0A%20%20%22name%22%3A%20%22Digital%20Bazaar%22%2C%0A%20%20%22employee%22%20%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22Sporny%22%2C%0A%20%20%20%20%22location%22%3A%20%7B%22name%22%3A%20%22Blacksburg%2C%20Virginia%22%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fdocs%2F1%22%2C%0A%20%20%22modified%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22modified%22%3A%20%7B%0A%20%20%20%20%22%40value%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%7D%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fposts%23TripToWestVirginia%22%2C%0A%20%20%22%40type%22%3A%20%22http%3A%2F%2Fschema.org%2FBlogPosting%22%2C%20%20%0A%20%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fmodified%22%3A%20%7B%0A%20%20%20%20%22%40value%22%3A%20%222010-05-29T14%3A17%3A39%2B02%3A00%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%20%20%0A%20%20%7D%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22e%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2Fjson%22%2C%20%22%40type%22%3A%20%22%40json%22%7D%0A%20%20%7D%2C%0A%20%20%22e%22%3A%20%5B%0A%20%20%20%2056.0%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22d%22%3A%20true%2C%0A%20%20%20%20%20%20%2210%22%3A%20null%2C%0A%20%20%20%20%20%20%221%22%3A%20%5B%20%5D%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22age%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22xsd%3Ainteger%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fpeople%23john%22%2C%0A%20%20%22name%22%3A%20%22John%20Smith%22%2C%0A%20%20%22age%22%3A%20%2241%22%2C%0A%20%20%22homepage%22%3A%20%5B%0A%20%20%20%20%22http%3A%2F%2Fpersonal.example.org%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fwork.example.com%2Fjsmith%2F%22%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample1.com%2F%22%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample2.com%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40vocab%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22fred%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22barney%22%2C%20%22mnemonic%22%3A%20%22the%20sidekick%22%7D%2C%0A%20%20%20%20%22barney%22%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample1.com%2F%22%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample2.com%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22fred%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22barney%22%2C%20%22mnemonic%22%3A%20%22the%20sidekick%22%7D%2C%0A%20%20%20%20%22barney%22%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22xsd%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%22%2C%0A%20%20%20%20%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22foaf%3Aage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22xsd%3Ainteger%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22foaf%3Aname%22%3A%20%22John%20Smith%22%2C%0A%20%20%22foaf%3Aage%22%3A%20%2241%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%22http%3A%2F%2Fpersonal.example.org%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fwork.example.com%2Fjsmith%2F%22%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fexample.org%2Fname%22%2C%0A%20%20%20%20%22occupation%22%3A%20%22http%3A%2F%2Fexample.org%2Foccupation%22%2C%0A%20%20%20%20%0A%20%20%20%20%22%40language%22%3A%20%22ja%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22%E8%8A%B1%E6%BE%84%22%2C%0A%20%20%22occupation%22%3A%20%22%E7%A7%91%E5%AD%A6%E8%80%85%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22title%22%3A%20%22http%3A%2F%2Fexample.org%2Ftitle%22%2C%0A%20%20%20%20%22publisher%22%3A%20%22http%3A%2F%2Fexample.org%2Fpublisher%22%2C%0A%20%20%20%20%0A%20%20%20%20%22%40language%22%3A%20%22ar-EG%22%2C%0A%20%20%20%20%22%40direction%22%3A%20%22rtl%22%0A%20%20%7D%2C%0A%20%20%22title%22%3A%20%22HTML%20%D9%88%20CSS%3A%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%20%D8%A5%D9%86%D8%B4%D8%A7%D8%A1%20%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%22%2C%0A%20%20%22publisher%22%3A%20%22%D9%85%D9%83%D8%AA%D8%A8%D8%A9%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22JB%22%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22dcterms%22%3A%20%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Farticles%2F8%22%2C%0A%20%20%22dcterms%3Atitle%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40value%22%3A%20%22Das%20Kapital%22%2C%0A%20%20%20%20%20%20%22%40language%22%3A%20%22de%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40value%22%3A%20%22Capital%22%2C%0A%20%20%20%20%20%20%22%40language%22%3A%20%22en%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22ex%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23michael%22%2C%0A%20%20%22ex%3Aname%22%3A%20%5B%0A%20%20%20%20%22Michael%22%2C%0A%20%20%20%20%7B%22%40value%22%3A%20%22Mike%22%7D%2C%0A%20%20%20%20%7B%22%40value%22%3A%20%22Miguel%22%2C%20%22%40language%22%3A%20%22es%22%7D%2C%0A%20%20%20%20%7B%20%22%40id%22%3A%20%22https%3A%2F%2Fwww.wikidata.org%2Fwiki%2FQ4927524%22%20%7D%2C%0A%20%20%20%2042%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%7B%0A%20%20%20%20%22%40list%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22nick%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fnick%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40list%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22nick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22https%3A%2F%2Fpurl.org%2Fgeojson%2Fvocab%23%22%2C%0A%20%20%20%20%22type%22%3A%20%22%40type%22%2C%0A%20%20%20%20%22bbox%22%3A%20%7B%22%40container%22%3A%20%22%40list%22%7D%2C%0A%20%20%20%20%22coordinates%22%3A%20%7B%22%40container%22%3A%20%22%40list%22%7D%0A%20%20%7D%2C%0A%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%22bbox%22%3A%20%5B-10.0%2C%20-10.0%2C%2010.0%2C%2010.0%5D%2C%0A%20%20%22geometry%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22Polygon%22%2C%0A%20%20%20%20%22coordinates%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-10.0%2C%20-10.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B10.0%2C%20-10.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B10.0%2C%2010.0%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-10.0%2C%20-10.0%5D%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%5D%0A%20%20%7D%0A%20%20%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%22foaf%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22foaf%3Anick%22%3A%20%7B%0A%20%20%20%20%22%40set%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%0A%20%20%20%20%22nick%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fnick%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40set%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fpeople%23joebob%22%2C%0A%20%20%22nick%22%3A%20%5B%20%22joe%22%2C%20%22bob%22%2C%20%22jaybee%22%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22labels%22%3A%20%22%40nest%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fexample.org%22%2C%0A%20%20%22labels%22%3A%20%7B%0A%20%20%20%20%20%22main_label%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%2C%0A%20%20%20%20%20%22other_label%22%3A%20%22This%20is%20the%20other%20label%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fexample.org%22%2C%0A%20%20%22main_label%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%2C%0A%20%20%22other_label%22%3A%20%22This%20is%20the%20other%20label%22%0A%7D",
-        "startTab=tab-compacted&json-ld=%5B%7B%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fmyresource%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%22%7D%0A%20%20%5D%2C%0A%20%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel%22%3A%20%5B%0A%20%20%20%20%7B%22%40value%22%3A%20%22This%20is%20the%20main%20label%20for%20my%20resource%22%7D%0A%20%20%5D%2C%0A%20%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23altLabel%22%3A%20%5B%0A%20%20%20%20%7B%22%40value%22%3A%20%22This%20is%20the%20other%20label%22%7D%0A%20%20%5D%0A%7D%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22skos%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%22%2C%0A%20%20%20%20%22labels%22%3A%20%22%40nest%22%2C%0A%20%20%20%20%22main_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AprefLabel%22%2C%20%22%40nest%22%3A%20%22labels%22%7D%2C%0A%20%20%20%20%22other_label%22%3A%20%7B%22%40id%22%3A%20%22skos%3AaltLabel%22%2C%20%22%40nest%22%3A%20%22labels%22%7D%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22_%3Ab0%22%2C%0A%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22_%3Ab0%22%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%0A%20%20%20%22%40id%22%3A%20%22_%3An1%22%2C%0A%20%20%20%22name%22%3A%20%22Secret%20Agent%201%22%2C%0A%20%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%20%22name%22%3A%20%22Secret%20Agent%202%22%2C%0A%20%20%20%20%20%22knows%22%3A%20%7B%20%22%40id%22%3A%20%22_%3An1%22%20%7D%0A%20%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22position%22%3A%20%22schema%3AjobTitle%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22catcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Catcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Starting%20Pitcher%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22position%22%3A%20%22schema%3AjobTitle%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22catcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Catcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Starting%20Pitcher%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40none%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Lou%20Seal%22%2C%0A%20%20%20%20%20%20%22position%22%3A%20%22Mascot%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aathlete%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40index%22%2C%0A%20%20%20%20%20%20%22%40index%22%3A%20%22schema%3AjobTitle%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ASportsTeam%22%2C%0A%20%20%22name%22%3A%20%22San%20Francisco%20Giants%22%2C%0A%20%20%22athletes%22%3A%20%7B%0A%20%20%20%20%22Catcher%22%3A%20%7B%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Buster%20Posey%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Starting%20Pitcher%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22schema%3APerson%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Madison%20Bumgarner%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40language%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%22The%20Queen%22%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40language%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%5B%22The%20Queen%22%5D%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22vocab%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%2F%22%2C%0A%20%20%20%20%22label%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22vocab%3Alabel%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40language%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fqueen%22%2C%0A%20%20%22label%22%3A%20%7B%0A%20%20%20%20%22en%22%3A%20%22The%20Queen%22%2C%0A%20%20%20%20%22de%22%3A%20%5B%20%22Die%20K%C3%B6nigin%22%2C%20%22Ihre%20Majest%C3%A4t%22%20%5D%2C%0A%20%20%20%20%22%40none%22%3A%20%22The%20Queen%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40id%22%2C%0A%20%20%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%221%2Fen%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%2C%0A%20%20%20%20%221%2Fde%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40id%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%5D%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%22%40none%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%7B%0A%20%20%20%20%20%20%22body%22%3A%20%22Description%20for%20object%20without%20an%20%40id%22%2C%0A%20%20%20%20%20%20%22words%22%3A%2020%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40type%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40type%22%2C%20%22%40set%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%5D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3Aaffiliation%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%22%40type%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%22%40none%22%0A%20%20%7D%2C%0A%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%22affiliation%22%3A%20%7B%0A%20%20%20%20%22schema%3ACorporation%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fdigitalbazaar.com%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Digital%20Bazaar%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22schema%3AProfessionalService%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fspec-ops.io%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Spec-Ops%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22none%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2F%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%2C%0A%20%20%20%20%22classification%22%3A%20%7B%22%40type%22%3A%20%22%40vocab%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Forg-1%22%2C%0A%20%20%22members%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%22http%3A%2F%2Fexample.org%2Fperson-1%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22classification%22%3A%20%22employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%22http%3A%2F%2Fexample.org%2Fperson-2%22%2C%0A%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%2C%0A%20%20%20%20%22classification%22%3A%20%22employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fperson-3%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22classification%22%3A%20%22contractor%22%0A%20%20%7D%5D%2C%0A%20%20%22%40included%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Femployee%22%2C%0A%20%20%20%20%22label%22%3A%20%22An%20Employee%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Fcontractor%22%2C%0A%20%20%20%20%22label%22%3A%20%22A%20Contractor%22%0A%20%20%7D%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40included%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%7D%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Homer%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Bart%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%7B%20%22%40id%22%3A%20%22%23homer%22%20%7D%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Lisa%22%2C%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%7B%20%22%40id%22%3A%20%22%23homer%22%20%7D%0A%20%20%7D%0A%5D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Homer%22%2C%0A%20%20%22%40reverse%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Bart%22%0A%20%20%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%20%20%20%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%3A%20%22Lisa%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%20%22name%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%23name%22%2C%0A%20%20%20%20%22children%22%3A%20%7B%20%22%40reverse%22%3A%20%22http%3A%2F%2Fexample.com%2Fvocab%23parent%22%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22%23homer%22%2C%0A%20%20%22name%22%3A%20%22Homer%22%2C%0A%20%20%22children%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22%23bart%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Bart%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22%23lisa%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Lisa%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22%40graph%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-expand&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%7D%2C%0A%20%20%7B%0A%20%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%7D%0A%5D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40base%22%3A%20%22http%3A%2F%2Fdbpedia.org%2Fresource%2F%22%2C%0A%20%20%20%20%22said%22%3A%20%22http%3A%2F%2Fexample.com%2Fsaid%22%2C%0A%20%20%20%20%22wrote%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fwrote%22%2C%20%22%40container%22%3A%20%22%40graph%22%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22William_Shakespeare%22%2C%0A%20%20%22wrote%22%3A%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22Richard_III_of_England%22%2C%0A%20%20%20%20%22said%22%3A%20%22My%20kingdom%20for%20a%20horse%22%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40index%22%5D%0A%20%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%22en%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%22de%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fde%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%20%22schema%22%3A%20%22http%3A%2F%2Fschema.org%2F%22%2C%0A%20%20%20%20%20%22name%22%3A%20%22schema%3Aname%22%2C%0A%20%20%20%20%20%22body%22%3A%20%22schema%3AarticleBody%22%2C%0A%20%20%20%20%20%22words%22%3A%20%22schema%3AwordCount%22%2C%0A%20%20%20%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22schema%3AblogPost%22%2C%0A%20%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40index%22%5D%0A%20%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2F%22%2C%0A%20%20%22%40type%22%3A%20%22schema%3ABlog%22%2C%0A%20%20%22name%22%3A%20%22World%20Financial%20News%22%2C%0A%20%20%22post%22%3A%20%7B%0A%20%20%20%20%20%22en%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fen%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22World%20commodities%20were%20up%20today%20with%20heavy%20trading%20of%20crude%20oil...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201539%0A%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%22%40none%22%3A%20%7B%0A%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.com%2Fposts%2F1%2Fno-language%22%2C%0A%20%20%20%20%20%20%20%22body%22%3A%20%22Die%20Werte%20an%20Warenb%C3%B6rsen%20stiegen%20im%20Sog%20eines%20starken%20Handels%20von%20Roh%C3%B6l...%22%2C%0A%20%20%20%20%20%20%20%22words%22%3A%201204%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2FgraphMap%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40id%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22generatedAt%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23generatedAtTime%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23dateTime%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22Person%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson%22%2C%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%7B%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%2C%20%22%40type%22%3A%20%22%40id%22%7D%2C%0A%20%20%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2FgraphMap%22%2C%0A%20%20%20%20%20%20%22%40container%22%3A%20%5B%22%40graph%22%2C%20%22%40id%22%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Ffoaf-graph%22%2C%0A%20%20%22generatedAt%22%3A%20%222012-04-09T00%3A00%3A00%22%2C%0A%20%20%22graphMap%22%3A%20%7B%0A%20%20%20%20%22%40none%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22https%3A%2F%2Fgreggkellogg.net%2Ffoaf%23me%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Person%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Gregg%20Kellogg%22%2C%0A%20%20%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%0A%20%20%20%20%7D%5D%0A%20%20%7D%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D%2C%0A%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%2C%0A%20%20%20%22homepage%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2F%22%0A%7D",
-        "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fmanu.sporny.org%2Fabout%23manu%22%2C%0A%20%20%20%20%20%20%22name%22%3A%20%22Manu%20Sporny%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22name%22%3A%20%22Dave%20Longley%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D",
-        "startTab=tab-framed&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%2C%0A%20%20%20%20%22contains%22%3A%20%7B%22%40type%22%3A%20%22%40id%22%7D%0A%20%20%7D%2C%0A%20%20%22%40graph%22%3A%20%5B%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Library%22%2C%0A%20%20%20%20%22contains%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Book%22%2C%0A%20%20%20%20%22creator%22%3A%20%22Plato%22%2C%0A%20%20%20%20%22title%22%3A%20%22The%20Republic%22%2C%0A%20%20%20%20%22contains%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%23introduction%22%0A%20%20%7D%2C%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fexample.org%2Flibrary%2Fthe-republic%23introduction%22%2C%0A%20%20%20%20%22%40type%22%3A%20%22Chapter%22%2C%0A%20%20%20%20%22description%22%3A%20%22An%20introductory%20chapter%20on%20The%20Republic.%22%2C%0A%20%20%20%20%22title%22%3A%20%22The%20Introduction%22%0A%20%20%7D%5D%0A%7D&context=%7B%7D&frame=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22%40version%22%3A%201.1%2C%0A%20%20%20%20%22%40vocab%22%3A%20%22http%3A%2F%2Fexample.org%2F%22%0A%20%20%7D%2C%0A%20%20%22%40type%22%3A%20%22Library%22%2C%0A%20%20%22contains%22%3A%20%7B%0A%20%20%20%20%22%40type%22%3A%20%22Book%22%2C%0A%20%20%20%20%22contains%22%3A%20%7B%0A%20%20%20%20%20%20%22%40type%22%3A%20%22Chapter%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D"
-      ]
-    },
-    "https://jsonapi.org/format/": {
-      "anchors": [
-        "fetching-includes"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-json-ld-wg/": {},
-    "https://lists.w3.org/Archives/Public/public-rdf-comments/2018Jan/0002.html": {},
-    "https://semver.org/": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "sec-terms-and-definitions-number-value",
-        "sec-tostring-applied-to-the-number-type",
-        "sec-json-object"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tools.ietf.org/html/rfc7231": {},
-    "https://tools.ietf.org/html/rfc8288": {
-      "anchors": [
-        "section-3"
-      ]
-    },
-    "https://w3c.github.io/json-ld-syntax/": {
-      "specShortname": "json-ld11"
-    },
-    "https://webchat.freenode.net/?channels=json-ld": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-record",
-        "idl-long",
-        "idl-double"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml": {},
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc2141": {},
-    "https://www.rfc-editor.org/rfc/rfc3986": {
-      "anchors": [
-        "section-5.1",
-        "section-2.2"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc3987": {
-      "anchors": [
-        "section-2",
-        "section-1.3",
-        "section-6.5",
-        "section-2.2"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc4122": {},
-    "https://www.rfc-editor.org/rfc/rfc4288": {
-      "anchors": [
-        "section-4.3"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc5234": {},
-    "https://www.rfc-editor.org/rfc/rfc5646": {
-      "anchors": [
-        "section-2.2.9",
-        "section-2",
-        "section-2.1.1"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc6838": {
-      "anchors": [
-        "section-6.2"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc6839": {},
-    "https://www.rfc-editor.org/rfc/rfc6906": {},
-    "https://www.rfc-editor.org/rfc/rfc7049": {},
-    "https://www.rfc-editor.org/rfc/rfc7946": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.rfc-editor.org/rfc/rfc8259": {
-      "anchors": [
-        "section-4",
-        "section-2",
-        "section-12",
-        "section-11"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc8785": {},
-    "https://www.unicode.org/reports/tr9/tr9-48.html": {},
-    "https://www.unicode.org/versions/latest/": {},
-    "https://www.w3.org/2018/json-ld-wg/": {},
-    "https://www.w3.org/2018/jsonld-cg-reports/json-ld/": {},
-    "https://www.w3.org/2019/Process-20190301/": {
-      "anchors": [
-        "rec-rescind"
-      ]
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/DesignIssues/LinkedData.html": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2014/REC-json-ld-20140116/": {
-      "anchors": [
-        "application-ld-json"
-      ]
-    },
-    "https://www.w3.org/TR/SRI/": {
-      "specShortname": "SRI"
-    },
-    "https://www.w3.org/TR/fingerprinting-guidance/": {
-      "specShortname": "fingerprinting-guidance"
-    },
-    "https://www.w3.org/TR/json-ld11-api/": {
-      "anchors": [
-        "dfn-internal-representation",
-        "the-application-programming-interface",
-        "dfn-json-ld-processor",
-        "conformance",
-        "dfn-expanded",
-        "compaction-algorithm",
-        "data-round-tripping",
-        "dfn-flattened",
-        "remote-document-and-context-retrieval",
-        "dom-jsonldoptions-documentloader",
-        "dfn-compact",
-        "expansion-algorithm",
-        "value-compaction",
-        "flattening-algorithm",
-        "dom-jsonldoptions-expandcontext",
-        "extract-script-content",
-        "deserialize-json-ld-to-rdf-algorithm",
-        "rdf-serialization-deserialization-algorithms",
-        "dom-jsonldoptions-rdfdirection"
-      ],
-      "specShortname": "json-ld11-api"
-    },
-    "https://www.w3.org/TR/json-ld11-framing/": {
-      "anchors": [
-        "dfn-frame",
-        "dfn-frame-object",
-        "dfn-framing",
-        "dfn-wildcard",
-        "dfn-match-none",
-        "dfn-value-pattern",
-        "framing-algorithm"
-      ],
-      "specShortname": "json-ld11-framing"
-    },
-    "https://www.w3.org/TR/ld-glossary/": {
-      "anchors": [
-        "internationalized-resource-identifier",
-        "uniform-resource-locator",
-        "uniform-resource-identifier"
-      ]
-    },
-    "https://www.w3.org/TR/microdata/": {},
-    "https://www.w3.org/TR/rdf-schema/": {
-      "anchors": [
-        "ch_collectionvocab"
-      ],
-      "specShortname": "rdf12-schema"
-    },
-    "https://www.w3.org/TR/rdf11-concepts/": {
-      "anchors": [
-        "dfn-resource",
-        "dfn-rdf-graph",
-        "dfn-rdf-dataset",
-        "dfn-object",
-        "dfn-base-iri",
-        "dfn-property",
-        "dfn-blank-node",
-        "dfn-node",
-        "dfn-literal",
-        "dfn-blank-node-identifier",
-        "dfn-default-graph",
-        "dfn-named-graph",
-        "dfn-datatype-iri",
-        "dfn-literal-value",
-        "dfn-graph-name",
-        "dfn-language-tagged-string",
-        "dfn-language-tag",
-        "dfn-subject",
-        "dfn-rdf-triple",
-        "dfn-predicate",
-        "data-model",
-        "dfn-concrete-rdf-syntax",
-        "dfn-generalized-rdf-dataset",
-        "section-skolemization",
-        "dfn-rdf-source",
-        "section-fragID"
-      ]
-    },
-    "https://www.w3.org/TR/rdf11-mt/": {
-      "anchors": [
-        "rdf-collections"
-      ]
-    },
-    "https://www.w3.org/TR/rdfa-core/": {},
-    "https://www.w3.org/TR/sparql11-overview/": {},
-    "https://www.w3.org/TR/string-meta/": {},
-    "https://www.w3.org/TR/trig/": {},
-    "https://www.w3.org/TR/turtle/": {},
-    "https://www.w3.org/TR/xpath-functions/": {
-      "anchors": [
-        "codepoint-collation"
-      ]
-    },
-    "https://www.w3.org/community/json-ld/": {},
-    "https://www.w3.org/groups/wg/json-ld": {},
-    "https://www.w3.org/groups/wg/json-ld/ipr": {}
+    "autolinks": {
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "javascript-string",
+          "list",
+          "ordered-map",
+          "nulls",
+          "map-entry",
+          "boolean"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-terms-and-definitions-number-value"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8288": {
+        "anchors": [
+          "section-3"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc3987": {
+        "anchors": [
+          "section-2",
+          "section-1.3",
+          "section-6.5"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8259": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11-api/": {
+        "anchors": [
+          "dfn-internal-representation",
+          "dfn-json-ld-processor",
+          "dfn-expanded",
+          "dfn-flattened",
+          "dom-jsonldoptions-documentloader",
+          "dfn-compact",
+          "dom-jsonldoptions-rdfdirection"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11-framing/": {
+        "anchors": [
+          "dfn-frame",
+          "dfn-framing",
+          "dfn-frame-object"
+        ]
+      },
+      "https://www.w3.org/TR/rdf-schema/": {
+        "anchors": [
+          "ch_collectionvocab"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-concepts/": {
+        "anchors": [
+          "dfn-resource",
+          "dfn-rdf-graph",
+          "dfn-rdf-dataset",
+          "dfn-object",
+          "dfn-base-iri",
+          "dfn-property",
+          "dfn-node",
+          "dfn-literal",
+          "dfn-blank-node",
+          "dfn-blank-node-identifier",
+          "dfn-default-graph",
+          "dfn-named-graph",
+          "dfn-datatype-iri",
+          "dfn-graph-name",
+          "dfn-language-tagged-string",
+          "dfn-language-tag",
+          "dfn-subject",
+          "dfn-rdf-triple",
+          "dfn-predicate",
+          "dfn-generalized-rdf-dataset"
+        ]
+      },
+      "https://www.w3.org/TR/xpath-functions/": {
+        "anchors": [
+          "codepoint-collation"
+        ]
+      }
+    }
   }
 }

@@ -4,1045 +4,1001 @@
     "url": "https://drafts.csswg.org/css-values-4/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://unicode.org/reports/tr11/": {
-      "anchors": [
-        "Definitions"
-      ]
-    },
-    "http://wpt.live/css/CSS2/values/numbers-units-001.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-003.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-004.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-005.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-006.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-007.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-009.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-010.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-011.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-012.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-013.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-015.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-016.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-017.xht": {},
-    "http://wpt.live/css/CSS2/values/numbers-units-019.xht": {},
-    "http://wpt.live/css/CSS2/values/units-001.xht": {},
-    "http://wpt.live/css/CSS2/values/units-002.xht": {},
-    "http://wpt.live/css/CSS2/values/units-003.xht": {},
-    "http://wpt.live/css/CSS2/values/units-004.xht": {},
-    "http://wpt.live/css/CSS2/values/units-005.xht": {},
-    "http://wpt.live/css/CSS2/values/units-006.xht": {},
-    "http://wpt.live/css/CSS2/values/units-008.xht": {},
-    "http://wpt.live/css/CSS2/values/units-009.xht": {},
-    "http://wpt.live/css/css-animations/animation-iteration-count-calc.html": {},
-    "http://wpt.live/css/css-multicol/multicol-count-non-integer-001.xht": {},
-    "http://wpt.live/css/css-multicol/multicol-count-non-integer-002.xht": {},
-    "http://wpt.live/css/css-multicol/multicol-count-non-integer-003.xht": {},
-    "http://wpt.live/css/css-multicol/multicol-inherit-002.xht": {},
-    "http://wpt.live/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
-    "http://wpt.live/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
-    "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
-    "http://wpt.live/css/css-transitions/transition-delay-001.html": {},
-    "http://wpt.live/css/css-transitions/transition-duration-001.html": {},
-    "http://wpt.live/css/css-values/absolute-length-units-001.html": {},
-    "http://wpt.live/css/css-values/angle-units-001.html": {},
-    "http://wpt.live/css/css-values/angle-units-002.html": {},
-    "http://wpt.live/css/css-values/angle-units-003.html": {},
-    "http://wpt.live/css/css-values/angle-units-004.html": {},
-    "http://wpt.live/css/css-values/angle-units-005.html": {},
-    "http://wpt.live/css/css-values/calc-angle-values.html": {},
-    "http://wpt.live/css/css-values/calc-background-position-003.html": {},
-    "http://wpt.live/css/css-values/calc-ch-ex-lang.html": {},
-    "http://wpt.live/css/css-values/calc-in-color-001.html": {},
-    "http://wpt.live/css/css-values/calc-in-font-feature-settings.html": {},
-    "http://wpt.live/css/css-values/calc-integer.html": {},
-    "http://wpt.live/css/css-values/calc-nesting-002.html": {},
-    "http://wpt.live/css/css-values/calc-positive-fraction-001.html": {},
-    "http://wpt.live/css/css-values/calc-rem-lang.html": {},
-    "http://wpt.live/css/css-values/calc-rgb-percent-001.html": {},
-    "http://wpt.live/css/css-values/calc-rounding-001.html": {},
-    "http://wpt.live/css/css-values/calc-serialization-002.html": {},
-    "http://wpt.live/css/css-values/calc-serialization.html": {},
-    "http://wpt.live/css/css-values/calc-time-values.html": {},
-    "http://wpt.live/css/css-values/calc-unit-analysis.html": {},
-    "http://wpt.live/css/css-values/calc-z-index-fractions-001.html": {},
-    "http://wpt.live/css/css-values/ch-unit-001.html": {},
-    "http://wpt.live/css/css-values/ch-unit-002.html": {},
-    "http://wpt.live/css/css-values/ch-unit-003.html": {},
-    "http://wpt.live/css/css-values/ch-unit-004.html": {},
-    "http://wpt.live/css/css-values/ch-unit-008.html": {},
-    "http://wpt.live/css/css-values/ch-unit-009.html": {},
-    "http://wpt.live/css/css-values/ch-unit-010.html": {},
-    "http://wpt.live/css/css-values/ch-unit-011.html": {},
-    "http://wpt.live/css/css-values/ch-unit-012.html": {},
-    "http://wpt.live/css/css-values/ch-unit-016.html": {},
-    "http://wpt.live/css/css-values/ch-unit-017.html": {},
-    "http://wpt.live/css/css-values/ex-calc-expression-001.html": {},
-    "http://wpt.live/css/css-values/ex-unit-001.html": {},
-    "http://wpt.live/css/css-values/ex-unit-002.html": {},
-    "http://wpt.live/css/css-values/ex-unit-003.html": {},
-    "http://wpt.live/css/css-values/getComputedStyle-border-radius-001.html": {},
-    "http://wpt.live/css/css-values/getComputedStyle-border-radius-003.html": {},
-    "http://wpt.live/css/css-values/ic-unit-001.html": {},
-    "http://wpt.live/css/css-values/ic-unit-002.html": {},
-    "http://wpt.live/css/css-values/ic-unit-003.html": {},
-    "http://wpt.live/css/css-values/ic-unit-004.html": {},
-    "http://wpt.live/css/css-values/ic-unit-008.html": {},
-    "http://wpt.live/css/css-values/ic-unit-009.html": {},
-    "http://wpt.live/css/css-values/ic-unit-010.html": {},
-    "http://wpt.live/css/css-values/ic-unit-011.html": {},
-    "http://wpt.live/css/css-values/ic-unit-012.html": {},
-    "http://wpt.live/css/css-values/lh-rlh-on-root-001.html": {},
-    "http://wpt.live/css/css-values/lh-unit-001.html": {},
-    "http://wpt.live/css/css-values/lh-unit-002.html": {},
-    "http://wpt.live/css/css-values/line-break-ch-unit.html": {},
-    "http://wpt.live/css/css-values/q-unit-case-insensitivity-001.html": {},
-    "http://wpt.live/css/css-values/q-unit-case-insensitivity-002.html": {},
-    "http://wpt.live/css/css-values/rgba-011.html": {},
-    "http://wpt.live/css/css-values/urls/empty.html": {},
-    "http://wpt.live/css/css-values/vh-calc-support-pct.html": {},
-    "http://wpt.live/css/css-values/vh-calc-support.html": {},
-    "http://wpt.live/css/css-values/vh-em-inherit.html": {},
-    "http://wpt.live/css/css-values/vh-inherit.html": {},
-    "http://wpt.live/css/css-values/vh-interpolate-pct.html": {},
-    "http://wpt.live/css/css-values/vh-interpolate-px.html": {},
-    "http://wpt.live/css/css-values/vh-interpolate-vh.html": {},
-    "http://wpt.live/css/css-values/vh-support-margin.html": {},
-    "http://wpt.live/css/css-values/vh-support-transform-origin.html": {},
-    "http://wpt.live/css/css-values/vh-support-transform-translate.html": {},
-    "http://wpt.live/css/css-values/vh-support.html": {},
-    "http://wpt.live/css/css-values/vh-zero-support.html": {},
-    "http://wpt.live/css/css-values/vh_not_refreshing_on_chrome.html": {},
-    "http://wpt.live/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
-    "http://wpt.live/css/css-values/viewport-unit-011.html": {},
-    "http://wpt.live/css/css-values/viewport-units-css2-001.html": {},
-    "http://wpt.live/css/mediaqueries/min-width-001.xht": {},
-    "http://www.iana.org/assignments/about-uri-tokens/about-uri-tokens.xhtml": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "http://www.w3.org/TR/css-values-3/": {
-      "anchors": [
-        "acknowledgments"
-      ],
-      "specShortname": "css-values-3"
-    },
-    "https://caniuse.com/": {
-      "anchors": [
-        "feat=rem",
-        "feat=ch-unit",
-        "feat=viewport-units",
-        "feat=calc"
-      ]
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/abs": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/acos": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/angle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/angle-percentage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/asin": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/atan": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/atan2": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/calc": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/calc()": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/cos": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/dimension": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/exp": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency-percentage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/hypot": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/integer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/log": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/max": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/min": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/mod": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/number": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/percentage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/position_value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/pow": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/rem": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/resolution": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/round": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/sign()": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/sin": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/string": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/tan": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/time": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/time-percentage": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/url": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/url()": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-tree-order",
-        "concept-node-tree",
-        "document",
-        "shadowroot",
-        "concept-document-quirks"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.css-houdini.org/css-typed-om-1/": {
-      "anchors": [
-        "cssnumericvalue-type",
-        "cssnumericvalue-match",
-        "cssnumericvalue-add-two-types",
-        "cssnumericvalue-multiply-two-types",
-        "cssnumericvalue-invert-a-type",
-        "cssnumericvalue-percent-hint",
-        "css-internal-representation"
-      ],
-      "specShortname": "css-typed-om-1"
-    },
-    "https://drafts.csswg.org/css-2023/": {
-      "anchors": [
-        "user-agent"
-      ],
-      "specShortname": "css-2023"
-    },
-    "https://drafts.csswg.org/css-animations-1/": {
-      "anchors": [
-        "propdef-animation",
-        "propdef-animation-timing-function",
-        "propdef-animation-name",
-        "propdef-animation-iteration-count"
-      ],
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-animations/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border-width",
-        "propdef-background-attachment",
-        "propdef-border-color",
-        "propdef-background",
-        "propdef-box-shadow",
-        "propdef-background-position",
-        "valdef-background-position-center",
-        "propdef-background-image",
-        "propdef-border-top-width",
-        "propdef-border-right-width",
-        "propdef-border-bottom-width",
-        "propdef-border-left-width"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-box-4/": {
-      "anchors": [
-        "propdef-padding-top",
-        "propdef-margin-right",
-        "propdef-margin-left",
-        "propdef-margin-top",
-        "propdef-margin-bottom",
-        "propdef-margin",
-        "propdef-padding-right",
-        "propdef-padding-bottom",
-        "propdef-padding-left",
-        "propdef-padding"
-      ],
-      "specShortname": "css-box-4"
-    },
-    "https://drafts.csswg.org/css-break-3/": {
-      "anchors": [
-        "propdef-orphans"
-      ],
-      "specShortname": "css-break-3"
-    },
-    "https://drafts.csswg.org/css-break/": {
-      "specShortname": "css-break-3"
-    },
-    "https://drafts.csswg.org/css-cascade-3/": {
-      "specShortname": "css-cascade-3"
-    },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "valdef-all-inherit",
-        "computed-value",
-        "specified-value",
-        "valdef-all-initial",
-        "valdef-all-unset",
-        "at-ruledef-import",
-        "used-value",
-        "actual-value",
-        "shorthand-property"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-color-3/": {
-      "specShortname": "css-color-3"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "funcdef-hsl",
-        "interpolation",
-        "interpolation-alpha",
-        "funcdef-rgba",
-        "propdef-opacity"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-color-5/": {
-      "anchors": [
-        "at-ruledef-profile",
-        "typedef-color",
-        "relative-color"
-      ],
-      "specShortname": "css-color-5"
-    },
-    "https://drafts.csswg.org/css-conditional-3/": {
-      "anchors": [
-        "at-ruledef-supports",
-        "dom-css-supports-conditiontext"
-      ],
-      "specShortname": "css-conditional-3"
-    },
-    "https://drafts.csswg.org/css-counter-styles-3/": {
-      "anchors": [
-        "disc"
-      ],
-      "specShortname": "css-counter-styles-3"
-    },
-    "https://drafts.csswg.org/css-counter-styles/": {
-      "specShortname": "css-counter-styles-3"
-    },
-    "https://drafts.csswg.org/css-display-4/": {
-      "anchors": [
-        "containing-block",
-        "initial-containing-block",
-        "root-element"
-      ],
-      "specShortname": "css-display-4"
-    },
-    "https://drafts.csswg.org/css-easing-2/": {
-      "anchors": [
-        "easing-function",
-        "valdef-cubic-bezier-easing-function-ease-in",
-        "typedef-easing-function",
-        "valdef-cubic-bezier-easing-function-ease-out"
-      ],
-      "specShortname": "css-easing-2"
-    },
-    "https://drafts.csswg.org/css-fonts-3/": {},
-    "https://drafts.csswg.org/css-fonts-4/": {
-      "anchors": [
-        "propdef-font-family",
-        "propdef-font-size",
-        "propdef-font"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-fonts-5/": {
-      "anchors": [
-        "descdef-font-face-font-size",
-        "at-font-face-rule"
-      ],
-      "specShortname": "css-fonts-5"
-    },
-    "https://drafts.csswg.org/css-grid-2/": {
-      "anchors": [
-        "valdef-flex-fr",
-        "typedef-flex"
-      ],
-      "specShortname": "css-grid-2"
-    },
-    "https://drafts.csswg.org/css-grid/": {
-      "specShortname": "css-grid-2"
-    },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "funcdef-linear-gradient",
-        "typedef-image",
-        "interpolation"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/css-images-4/": {
-      "anchors": [
-        "propdef-image-resolution"
-      ],
-      "specShortname": "css-images-4"
-    },
-    "https://drafts.csswg.org/css-inline-3/": {
-      "anchors": [
-        "valdef-line-height-normal",
-        "propdef-vertical-align"
-      ],
-      "specShortname": "css-inline-3"
-    },
-    "https://drafts.csswg.org/css-overflow-3/": {
-      "anchors": [
-        "propdef-overflow",
-        "propdef-scrollbar-gutter"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://drafts.csswg.org/css-overflow-4/": {
-      "anchors": [
-        "propdef-max-lines"
-      ],
-      "specShortname": "css-overflow-4"
-    },
-    "https://drafts.csswg.org/css-page-3/": {
-      "anchors": [
-        "page-area"
-      ],
-      "specShortname": "css-page-3"
-    },
-    "https://drafts.csswg.org/css-position-3/": {
-      "anchors": [
-        "propdef-bottom",
-        "propdef-left",
-        "propdef-right",
-        "propdef-top"
-      ],
-      "specShortname": "css-position-3"
-    },
-    "https://drafts.csswg.org/css-rhythm-1/": {
-      "anchors": [
-        "propdef-block-step-size"
-      ],
-      "specShortname": "css-rhythm-1"
-    },
-    "https://drafts.csswg.org/css-rhythm/": {
-      "specShortname": "css-rhythm-1"
-    },
-    "https://drafts.csswg.org/css-scoping-1/": {
-      "anchors": [
-        "css-tree-scoped-reference",
-        "css-tree-scoped-name"
-      ],
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-scoping/": {
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-shapes-1/": {
-      "anchors": [
-        "funcdef-basic-shape-rect"
-      ],
-      "specShortname": "css-shapes-1"
-    },
-    "https://drafts.csswg.org/css-shapes/": {
-      "specShortname": "css-shapes-1"
-    },
-    "https://drafts.csswg.org/css-sizing-3/": {
-      "anchors": [
-        "propdef-width",
-        "propdef-height",
-        "propdef-box-sizing",
-        "propdef-min-width",
-        "valdef-width-auto",
-        "propdef-max-height",
-        "propdef-max-width",
-        "propdef-min-height"
-      ],
-      "specShortname": "css-sizing-3"
-    },
-    "https://drafts.csswg.org/css-syntax-3/": {
-      "anchors": [
-        "component-value",
-        "typedef-dimension-token",
-        "typedef-function-token",
-        "typedef-any-value",
-        "escaping",
-        "typedef-ident-token",
-        "typedef-string-token",
-        "typedef-url-token",
-        "consume-a-url-token",
-        "consume-url-token",
-        "input-byte-stream",
-        "typedef-number-token",
-        "typedef-percentage-token",
-        "whitespace",
-        "typedef-whitespace-token",
-        "typedef-delim-token",
-        "simple-block"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-syntax/": {
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-text-3/": {
-      "anchors": [
-        "propdef-text-align"
-      ],
-      "specShortname": "css-text-3"
-    },
-    "https://drafts.csswg.org/css-text-4/": {
-      "anchors": [
-        "valdef-text-align-center",
-        "propdef-tab-size",
-        "propdef-letter-spacing",
-        "propdef-text-indent",
-        "propdef-word-spacing"
-      ],
-      "specShortname": "css-text-4"
-    },
-    "https://drafts.csswg.org/css-text-decor-4/": {
-      "anchors": [
-        "propdef-text-decoration"
-      ],
-      "specShortname": "css-text-decor-4"
-    },
-    "https://drafts.csswg.org/css-transforms-1/": {
-      "anchors": [
-        "propdef-transform-origin"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-outline-color"
-      ],
-      "specShortname": "css-ui-4"
-    },
-    "https://drafts.csswg.org/css-values-5/": {
-      "anchors": [
-        "funcdef-mix",
-        "funcdef-toggle",
-        "funcdef-attr"
-      ],
-      "specShortname": "css-values-5"
-    },
-    "https://drafts.csswg.org/css-variables-2/": {
-      "anchors": [
-        "custom-property",
-        "funcdef-var"
-      ],
-      "specShortname": "css-variables-2"
-    },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "inline-axis",
-        "block-axis",
-        "propdef-writing-mode",
-        "valdef-writing-mode-vertical-rl",
-        "valdef-writing-mode-vertical-lr",
-        "propdef-text-orientation",
-        "valdef-text-orientation-upright",
-        "writing-mode"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "propdef-line-height"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "cssstylesheet",
-        "concept-css-style-sheet-stylesheet-base-url",
-        "concept-css-style-sheet-location",
-        "concept-css-style-sheet-origin-clean-flag"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/mediaqueries-4/": {
-      "specShortname": "mediaqueries-4"
-    },
-    "https://drafts.csswg.org/mediaqueries-5/": {
-      "anchors": [
-        "media-query",
-        "continuous-media",
-        "paged-media"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "discrete"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://drafts.fxtf.org/css-masking-1/": {
-      "anchors": [
-        "propdef-clip"
-      ],
-      "specShortname": "css-masking-1"
-    },
-    "https://en.wikipedia.org/wiki/Scientific_notation": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "requestdestination",
-        "concept-response",
-        "concept-request",
-        "concept-request-url",
-        "concept-request-destination",
-        "concept-request-mode",
-        "concept-request-origin",
-        "concept-request-credentials-mode",
-        "concept-request-use-url-credentials-flag",
-        "concept-request-client",
-        "concept-request-referrer",
-        "request-initiator-type",
-        "concept-fetch",
-        "process-response-end-of-body"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/sass/sass/issues/684": {},
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/10017": {},
-    "https://github.com/w3c/csswg-drafts/issues/2274": {},
-    "https://github.com/w3c/csswg-drafts/issues/2921": {},
-    "https://github.com/w3c/csswg-drafts/issues/3257": {},
-    "https://github.com/w3c/csswg-drafts/issues/3320": {},
-    "https://github.com/w3c/csswg-drafts/issues/3462": {},
-    "https://github.com/w3c/csswg-drafts/issues/4329": {},
-    "https://github.com/w3c/csswg-drafts/issues/4723": {},
-    "https://github.com/w3c/csswg-drafts/issues/5210": {},
-    "https://github.com/w3c/csswg-drafts/issues/562": {},
-    "https://github.com/w3c/csswg-drafts/issues/5689": {},
-    "https://github.com/w3c/csswg-drafts/issues/5728": {},
-    "https://github.com/w3c/csswg-drafts/issues/5858": {},
-    "https://github.com/w3c/csswg-drafts/issues/6026": {},
-    "https://github.com/w3c/csswg-drafts/issues/6097": {},
-    "https://github.com/w3c/csswg-drafts/issues/6100": {},
-    "https://github.com/w3c/csswg-drafts/issues/6105": {},
-    "https://github.com/w3c/csswg-drafts/issues/6113": {},
-    "https://github.com/w3c/csswg-drafts/issues/6298": {},
-    "https://github.com/w3c/csswg-drafts/issues/6447": {},
-    "https://github.com/w3c/csswg-drafts/issues/6454": {},
-    "https://github.com/w3c/csswg-drafts/issues/6506": {},
-    "https://github.com/w3c/csswg-drafts/issues/6700": {},
-    "https://github.com/w3c/csswg-drafts/issues/6701": {},
-    "https://github.com/w3c/csswg-drafts/issues/6873": {},
-    "https://github.com/w3c/csswg-drafts/issues/7067": {},
-    "https://github.com/w3c/csswg-drafts/issues/7164": {},
-    "https://github.com/w3c/csswg-drafts/issues/7248": {},
-    "https://github.com/w3c/csswg-drafts/issues/7486": {},
-    "https://github.com/w3c/csswg-drafts/issues/7964": {},
-    "https://github.com/w3c/csswg-drafts/issues/8096": {},
-    "https://github.com/w3c/csswg-drafts/issues/8158": {},
-    "https://github.com/w3c/csswg-drafts/issues/8169": {},
-    "https://github.com/w3c/csswg-drafts/issues/8527": {},
-    "https://github.com/w3c/csswg-drafts/issues/8532": {},
-    "https://github.com/w3c/csswg-drafts/issues/8556": {},
-    "https://github.com/w3c/csswg-drafts/issues/8576": {},
-    "https://github.com/w3c/csswg-drafts/issues/9070": {},
-    "https://github.com/w3c/csswg-drafts/issues/9301": {},
-    "https://github.com/w3c/csswg-drafts/issues/9343": {},
-    "https://github.com/w3c/csswg-drafts/issues/9559": {},
-    "https://github.com/w3c/csswg-drafts/issues/9668": {},
-    "https://github.com/w3c/csswg-drafts/issues/9713": {},
-    "https://github.com/w3c/csswg-drafts/issues/new": {},
-    "https://github.com/w3c/csswg-drafts/pull/7160": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-001.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-002.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-003.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-004.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-005.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-006.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-007.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-009.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-010.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-011.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-012.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-013.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-015.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-016.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-017.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-019.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-001.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-002.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-003.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-004.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-005.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-006.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-008.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-009.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-animations/animation-iteration-count-calc.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-001.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-002.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-003.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-inherit-002.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/absolute-length-units-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-005.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-angle-values.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-background-position-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-ch-ex-lang.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-in-color-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-in-font-feature-settings.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-integer.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-nesting-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-positive-fraction-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rem-lang.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rgb-percent-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rounding-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-serialization-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-serialization.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-time-values.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-unit-analysis.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-z-index-fractions-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-008.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-009.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-010.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-011.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-012.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-016.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-017.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-calc-expression-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/getComputedStyle-border-radius-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/getComputedStyle-border-radius-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-003.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-004.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-008.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-009.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-010.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-011.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-012.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-rlh-on-root-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-unit-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-unit-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/line-break-ch-unit.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/q-unit-case-insensitivity-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/q-unit-case-insensitivity-002.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/rgba-011.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/urls/empty.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-calc-support-pct.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-calc-support.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-em-inherit.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-inherit.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-pct.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-px.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-vh.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-margin.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-transform-origin.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-transform-translate.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-zero-support.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh_not_refreshing_on_chrome.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-unit-011.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-units-css2-001.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/mediaqueries/min-width-001.xht": {},
-    "https://github.com/whatwg/fetch/pull/1413": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "find-a-potential-indicated-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-body-element-2"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-base-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "dynamic-changes-to-base-urls"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "relevant-settings-object",
-        "api-base-url",
-        "concept-settings-object-origin"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ascii-case-insensitive",
-        "string-is",
-        "string",
-        "code-point",
-        "implementation-defined",
-        "list-iterate",
-        "string-concatenate"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Member/w3c-css-wg/2016AprJun/0239.html": {},
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://quirks.spec.whatwg.org/": {
-      "specShortname": "quirks"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-fragment",
-        "concept-url-parser",
-        "string-percent-encode-after-encoding"
-      ],
-      "specShortname": "url"
-    },
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-001.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-003.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-004.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-005.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-006.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-007.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-009.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-010.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-011.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-012.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-013.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-015.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-016.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-017.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/numbers-units-019.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-001.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-002.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-003.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-004.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-005.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-006.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-008.xht": {},
-    "https://wpt.fyi/results/css/CSS2/values/units-009.xht": {},
-    "https://wpt.fyi/results/css/css-animations/animation-iteration-count-calc.html": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-001.xht": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-002.xht": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-003.xht": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-inherit-002.xht": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
-    "https://wpt.fyi/results/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
-    "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
-    "https://wpt.fyi/results/css/css-transitions/transition-delay-001.html": {},
-    "https://wpt.fyi/results/css/css-transitions/transition-duration-001.html": {},
-    "https://wpt.fyi/results/css/css-values/absolute-length-units-001.html": {},
-    "https://wpt.fyi/results/css/css-values/angle-units-001.html": {},
-    "https://wpt.fyi/results/css/css-values/angle-units-002.html": {},
-    "https://wpt.fyi/results/css/css-values/angle-units-003.html": {},
-    "https://wpt.fyi/results/css/css-values/angle-units-004.html": {},
-    "https://wpt.fyi/results/css/css-values/angle-units-005.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-angle-values.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-background-position-003.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-ch-ex-lang.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-in-color-001.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-in-font-feature-settings.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-integer.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-nesting-002.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-positive-fraction-001.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-rem-lang.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-rgb-percent-001.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-rounding-001.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-serialization-002.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-serialization.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-time-values.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-unit-analysis.html": {},
-    "https://wpt.fyi/results/css/css-values/calc-z-index-fractions-001.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-001.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-002.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-003.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-004.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-008.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-009.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-010.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-011.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-012.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-016.html": {},
-    "https://wpt.fyi/results/css/css-values/ch-unit-017.html": {},
-    "https://wpt.fyi/results/css/css-values/ex-calc-expression-001.html": {},
-    "https://wpt.fyi/results/css/css-values/ex-unit-001.html": {},
-    "https://wpt.fyi/results/css/css-values/ex-unit-002.html": {},
-    "https://wpt.fyi/results/css/css-values/ex-unit-003.html": {},
-    "https://wpt.fyi/results/css/css-values/getComputedStyle-border-radius-001.html": {},
-    "https://wpt.fyi/results/css/css-values/getComputedStyle-border-radius-003.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-001.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-002.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-003.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-004.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-008.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-009.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-010.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-011.html": {},
-    "https://wpt.fyi/results/css/css-values/ic-unit-012.html": {},
-    "https://wpt.fyi/results/css/css-values/lh-rlh-on-root-001.html": {},
-    "https://wpt.fyi/results/css/css-values/lh-unit-001.html": {},
-    "https://wpt.fyi/results/css/css-values/lh-unit-002.html": {},
-    "https://wpt.fyi/results/css/css-values/line-break-ch-unit.html": {},
-    "https://wpt.fyi/results/css/css-values/q-unit-case-insensitivity-001.html": {},
-    "https://wpt.fyi/results/css/css-values/q-unit-case-insensitivity-002.html": {},
-    "https://wpt.fyi/results/css/css-values/rgba-011.html": {},
-    "https://wpt.fyi/results/css/css-values/urls/empty.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-calc-support-pct.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-calc-support.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-em-inherit.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-inherit.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-interpolate-pct.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-interpolate-px.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-interpolate-vh.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-support-margin.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-support-transform-origin.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-support-transform-translate.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-support.html": {},
-    "https://wpt.fyi/results/css/css-values/vh-zero-support.html": {},
-    "https://wpt.fyi/results/css/css-values/vh_not_refreshing_on_chrome.html": {},
-    "https://wpt.fyi/results/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
-    "https://wpt.fyi/results/css/css-values/viewport-unit-011.html": {},
-    "https://wpt.fyi/results/css/css-values/viewport-units-css2-001.html": {},
-    "https://wpt.fyi/results/css/mediaqueries/min-width-001.xht": {},
-    "https://www.modularscale.com/": {},
-    "https://www.rfc-editor.org/rfc/rfc6694": {},
-    "https://www.unicode.org/versions/latest/": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/TR/2020/WD-css-values-4-20201111/": {},
-    "https://www.w3.org/TR/2021/WD-css-values-4-20210715/": {},
-    "https://www.w3.org/TR/2021/WD-css-values-4-20210930/": {},
-    "https://www.w3.org/TR/2021/WD-css-values-4-20211016/": {},
-    "https://www.w3.org/TR/2021/WD-css-values-4-20211216/": {},
-    "https://www.w3.org/TR/2022/WD-css-values-4-20221019/": {},
-    "https://www.w3.org/TR/2023/WD-css-values-4-20230406/": {},
-    "https://www.w3.org/TR/2023/WD-css-values-4-20231027/": {},
-    "https://www.w3.org/TR/2023/WD-css-values-4-20231218/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/about.html": {
-      "anchors": [
-        "value-defs"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/aural.html": {
-      "anchors": [
-        "aural-intro"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "ignore"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/syndata.html": {
-      "anchors": [
-        "values",
-        "escaped-characters"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/visudet.html": {
-      "anchors": [
-        "containing-block-details",
-        "the-height-property"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/box.html": {
-      "anchors": [
-        "value-def-border-width"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/tables.html": {
-      "anchors": [
-        "propdef-border-collapse",
-        "propdef-border-spacing"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/css-animations/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "anchors": [
-        "layering"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://www.w3.org/TR/css-cascade/": {
-      "anchors": [
-        "defaulting-keywords"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-syntax/": {
-      "anchors": [
-        "whitespace"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://www.w3.org/TR/css-transitions-1/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://www.w3.org/TR/css-transitions/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://www.w3.org/TR/css-values-3/": {
-      "anchors": [
-        "viewport-relative-lengths"
-      ],
-      "specShortname": "css-values-3"
-    },
-    "https://www.w3.org/TR/css3-fonts/": {
-      "anchors": [
-        "first-available-font"
-      ]
-    },
-    "https://www.w3.org/TR/css3-values/": {},
-    "https://www.w3.org/TR/cssom-1/": {
-      "anchors": [
-        "serializing-css-values",
-        "resolved-values"
-      ],
-      "specShortname": "cssom-1"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://unicode.org/reports/tr11/": {
+        "anchors": [
+          "Definitions"
+        ]
+      },
+      "http://wpt.live/css/CSS2/values/numbers-units-001.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-003.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-004.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-005.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-006.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-007.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-009.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-010.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-011.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-012.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-013.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-015.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-016.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-017.xht": {},
+      "http://wpt.live/css/CSS2/values/numbers-units-019.xht": {},
+      "http://wpt.live/css/CSS2/values/units-001.xht": {},
+      "http://wpt.live/css/CSS2/values/units-002.xht": {},
+      "http://wpt.live/css/CSS2/values/units-003.xht": {},
+      "http://wpt.live/css/CSS2/values/units-004.xht": {},
+      "http://wpt.live/css/CSS2/values/units-005.xht": {},
+      "http://wpt.live/css/CSS2/values/units-006.xht": {},
+      "http://wpt.live/css/CSS2/values/units-008.xht": {},
+      "http://wpt.live/css/CSS2/values/units-009.xht": {},
+      "http://wpt.live/css/css-animations/animation-iteration-count-calc.html": {},
+      "http://wpt.live/css/css-multicol/multicol-count-non-integer-001.xht": {},
+      "http://wpt.live/css/css-multicol/multicol-count-non-integer-002.xht": {},
+      "http://wpt.live/css/css-multicol/multicol-count-non-integer-003.xht": {},
+      "http://wpt.live/css/css-multicol/multicol-inherit-002.xht": {},
+      "http://wpt.live/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
+      "http://wpt.live/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
+      "http://wpt.live/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
+      "http://wpt.live/css/css-transitions/transition-delay-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-duration-001.html": {},
+      "http://wpt.live/css/css-values/absolute-length-units-001.html": {},
+      "http://wpt.live/css/css-values/angle-units-001.html": {},
+      "http://wpt.live/css/css-values/angle-units-002.html": {},
+      "http://wpt.live/css/css-values/angle-units-003.html": {},
+      "http://wpt.live/css/css-values/angle-units-004.html": {},
+      "http://wpt.live/css/css-values/angle-units-005.html": {},
+      "http://wpt.live/css/css-values/calc-angle-values.html": {},
+      "http://wpt.live/css/css-values/calc-background-position-003.html": {},
+      "http://wpt.live/css/css-values/calc-ch-ex-lang.html": {},
+      "http://wpt.live/css/css-values/calc-in-color-001.html": {},
+      "http://wpt.live/css/css-values/calc-in-font-feature-settings.html": {},
+      "http://wpt.live/css/css-values/calc-integer.html": {},
+      "http://wpt.live/css/css-values/calc-nesting-002.html": {},
+      "http://wpt.live/css/css-values/calc-positive-fraction-001.html": {},
+      "http://wpt.live/css/css-values/calc-rem-lang.html": {},
+      "http://wpt.live/css/css-values/calc-rgb-percent-001.html": {},
+      "http://wpt.live/css/css-values/calc-rounding-001.html": {},
+      "http://wpt.live/css/css-values/calc-serialization-002.html": {},
+      "http://wpt.live/css/css-values/calc-serialization.html": {},
+      "http://wpt.live/css/css-values/calc-time-values.html": {},
+      "http://wpt.live/css/css-values/calc-unit-analysis.html": {},
+      "http://wpt.live/css/css-values/calc-z-index-fractions-001.html": {},
+      "http://wpt.live/css/css-values/ch-unit-001.html": {},
+      "http://wpt.live/css/css-values/ch-unit-002.html": {},
+      "http://wpt.live/css/css-values/ch-unit-003.html": {},
+      "http://wpt.live/css/css-values/ch-unit-004.html": {},
+      "http://wpt.live/css/css-values/ch-unit-008.html": {},
+      "http://wpt.live/css/css-values/ch-unit-009.html": {},
+      "http://wpt.live/css/css-values/ch-unit-010.html": {},
+      "http://wpt.live/css/css-values/ch-unit-011.html": {},
+      "http://wpt.live/css/css-values/ch-unit-012.html": {},
+      "http://wpt.live/css/css-values/ch-unit-016.html": {},
+      "http://wpt.live/css/css-values/ch-unit-017.html": {},
+      "http://wpt.live/css/css-values/ex-calc-expression-001.html": {},
+      "http://wpt.live/css/css-values/ex-unit-001.html": {},
+      "http://wpt.live/css/css-values/ex-unit-002.html": {},
+      "http://wpt.live/css/css-values/ex-unit-003.html": {},
+      "http://wpt.live/css/css-values/getComputedStyle-border-radius-001.html": {},
+      "http://wpt.live/css/css-values/getComputedStyle-border-radius-003.html": {},
+      "http://wpt.live/css/css-values/ic-unit-001.html": {},
+      "http://wpt.live/css/css-values/ic-unit-002.html": {},
+      "http://wpt.live/css/css-values/ic-unit-003.html": {},
+      "http://wpt.live/css/css-values/ic-unit-004.html": {},
+      "http://wpt.live/css/css-values/ic-unit-008.html": {},
+      "http://wpt.live/css/css-values/ic-unit-009.html": {},
+      "http://wpt.live/css/css-values/ic-unit-010.html": {},
+      "http://wpt.live/css/css-values/ic-unit-011.html": {},
+      "http://wpt.live/css/css-values/ic-unit-012.html": {},
+      "http://wpt.live/css/css-values/lh-rlh-on-root-001.html": {},
+      "http://wpt.live/css/css-values/lh-unit-001.html": {},
+      "http://wpt.live/css/css-values/lh-unit-002.html": {},
+      "http://wpt.live/css/css-values/line-break-ch-unit.html": {},
+      "http://wpt.live/css/css-values/q-unit-case-insensitivity-001.html": {},
+      "http://wpt.live/css/css-values/q-unit-case-insensitivity-002.html": {},
+      "http://wpt.live/css/css-values/rgba-011.html": {},
+      "http://wpt.live/css/css-values/urls/empty.html": {},
+      "http://wpt.live/css/css-values/vh-calc-support-pct.html": {},
+      "http://wpt.live/css/css-values/vh-calc-support.html": {},
+      "http://wpt.live/css/css-values/vh-em-inherit.html": {},
+      "http://wpt.live/css/css-values/vh-inherit.html": {},
+      "http://wpt.live/css/css-values/vh-interpolate-pct.html": {},
+      "http://wpt.live/css/css-values/vh-interpolate-px.html": {},
+      "http://wpt.live/css/css-values/vh-interpolate-vh.html": {},
+      "http://wpt.live/css/css-values/vh-support-margin.html": {},
+      "http://wpt.live/css/css-values/vh-support-transform-origin.html": {},
+      "http://wpt.live/css/css-values/vh-support-transform-translate.html": {},
+      "http://wpt.live/css/css-values/vh-support.html": {},
+      "http://wpt.live/css/css-values/vh-zero-support.html": {},
+      "http://wpt.live/css/css-values/vh_not_refreshing_on_chrome.html": {},
+      "http://wpt.live/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
+      "http://wpt.live/css/css-values/viewport-unit-011.html": {},
+      "http://wpt.live/css/css-values/viewport-units-css2-001.html": {},
+      "http://wpt.live/css/mediaqueries/min-width-001.xht": {},
+      "http://www.iana.org/assignments/about-uri-tokens/about-uri-tokens.xhtml": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "http://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "acknowledgments"
+        ]
+      },
+      "https://caniuse.com/": {
+        "anchors": [
+          "feat=rem",
+          "feat=ch-unit",
+          "feat=viewport-units",
+          "feat=calc"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/abs": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/acos": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/angle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/angle-percentage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/asin": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/atan": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/atan2": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/calc": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/calc()": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/cos": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/dimension": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/exp": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency-percentage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/hypot": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/integer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/log": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/max": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/min": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/mod": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/number": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/percentage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/position_value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/pow": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/rem": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/resolution": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/round": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/sign()": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/sin": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/string": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/tan": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/time": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/time-percentage": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/url": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/url()": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://drafts.css-houdini.org/css-typed-om-1/": {},
+      "https://drafts.csswg.org/css-2023/": {},
+      "https://drafts.csswg.org/css-animations/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-4/": {},
+      "https://drafts.csswg.org/css-break/": {},
+      "https://drafts.csswg.org/css-cascade-3/": {},
+      "https://drafts.csswg.org/css-cascade-5/": {},
+      "https://drafts.csswg.org/css-color-3/": {},
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "interpolation",
+          "interpolation-alpha"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {},
+      "https://drafts.csswg.org/css-conditional-3/": {},
+      "https://drafts.csswg.org/css-counter-styles/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-easing-2/": {},
+      "https://drafts.csswg.org/css-fonts-3/": {},
+      "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-fonts-5/": {},
+      "https://drafts.csswg.org/css-grid-2/": {},
+      "https://drafts.csswg.org/css-grid/": {},
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "interpolation"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {},
+      "https://drafts.csswg.org/css-inline-3/": {},
+      "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-overflow-4/": {},
+      "https://drafts.csswg.org/css-page-3/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
+      "https://drafts.csswg.org/css-rhythm/": {},
+      "https://drafts.csswg.org/css-scoping/": {},
+      "https://drafts.csswg.org/css-shapes/": {},
+      "https://drafts.csswg.org/css-sizing-3/": {},
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "escaping",
+          "consume-url-token",
+          "input-byte-stream"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax/": {},
+      "https://drafts.csswg.org/css-text-3/": {},
+      "https://drafts.csswg.org/css-text-4/": {},
+      "https://drafts.csswg.org/css-text-decor-4/": {},
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-ui-4/": {},
+      "https://drafts.csswg.org/css-values-5/": {},
+      "https://drafts.csswg.org/css-variables-2/": {},
+      "https://drafts.csswg.org/css-writing-modes-4/": {},
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.csswg.org/mediaqueries-4/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {},
+      "https://drafts.csswg.org/web-animations-1/": {},
+      "https://drafts.fxtf.org/css-masking-1/": {},
+      "https://en.wikipedia.org/wiki/Scientific_notation": {},
+      "https://fetch.spec.whatwg.org/": {},
+      "https://github.com/sass/sass/issues/684": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10017": {},
+      "https://github.com/w3c/csswg-drafts/issues/2274": {},
+      "https://github.com/w3c/csswg-drafts/issues/2921": {},
+      "https://github.com/w3c/csswg-drafts/issues/3257": {},
+      "https://github.com/w3c/csswg-drafts/issues/3320": {},
+      "https://github.com/w3c/csswg-drafts/issues/3462": {},
+      "https://github.com/w3c/csswg-drafts/issues/4329": {},
+      "https://github.com/w3c/csswg-drafts/issues/4723": {},
+      "https://github.com/w3c/csswg-drafts/issues/5210": {},
+      "https://github.com/w3c/csswg-drafts/issues/562": {},
+      "https://github.com/w3c/csswg-drafts/issues/5689": {},
+      "https://github.com/w3c/csswg-drafts/issues/5728": {},
+      "https://github.com/w3c/csswg-drafts/issues/5858": {},
+      "https://github.com/w3c/csswg-drafts/issues/6026": {},
+      "https://github.com/w3c/csswg-drafts/issues/6097": {},
+      "https://github.com/w3c/csswg-drafts/issues/6100": {},
+      "https://github.com/w3c/csswg-drafts/issues/6105": {},
+      "https://github.com/w3c/csswg-drafts/issues/6113": {},
+      "https://github.com/w3c/csswg-drafts/issues/6298": {},
+      "https://github.com/w3c/csswg-drafts/issues/6447": {},
+      "https://github.com/w3c/csswg-drafts/issues/6454": {},
+      "https://github.com/w3c/csswg-drafts/issues/6506": {},
+      "https://github.com/w3c/csswg-drafts/issues/6700": {},
+      "https://github.com/w3c/csswg-drafts/issues/6701": {},
+      "https://github.com/w3c/csswg-drafts/issues/6873": {},
+      "https://github.com/w3c/csswg-drafts/issues/7067": {},
+      "https://github.com/w3c/csswg-drafts/issues/7164": {},
+      "https://github.com/w3c/csswg-drafts/issues/7248": {},
+      "https://github.com/w3c/csswg-drafts/issues/7486": {},
+      "https://github.com/w3c/csswg-drafts/issues/7964": {},
+      "https://github.com/w3c/csswg-drafts/issues/8096": {},
+      "https://github.com/w3c/csswg-drafts/issues/8158": {},
+      "https://github.com/w3c/csswg-drafts/issues/8169": {},
+      "https://github.com/w3c/csswg-drafts/issues/8527": {},
+      "https://github.com/w3c/csswg-drafts/issues/8532": {},
+      "https://github.com/w3c/csswg-drafts/issues/8556": {},
+      "https://github.com/w3c/csswg-drafts/issues/8576": {},
+      "https://github.com/w3c/csswg-drafts/issues/9070": {},
+      "https://github.com/w3c/csswg-drafts/issues/9301": {},
+      "https://github.com/w3c/csswg-drafts/issues/9343": {},
+      "https://github.com/w3c/csswg-drafts/issues/9559": {},
+      "https://github.com/w3c/csswg-drafts/issues/9668": {},
+      "https://github.com/w3c/csswg-drafts/issues/9713": {},
+      "https://github.com/w3c/csswg-drafts/issues/new": {},
+      "https://github.com/w3c/csswg-drafts/pull/7160": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-001.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-002.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-003.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-004.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-005.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-006.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-007.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-009.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-010.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-011.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-012.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-013.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-015.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-016.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-017.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/numbers-units-019.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-001.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-002.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-003.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-004.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-005.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-006.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-008.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/values/units-009.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-animations/animation-iteration-count-calc.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-001.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-002.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-count-non-integer-003.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-inherit-002.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/absolute-length-units-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/angle-units-005.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-angle-values.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-background-position-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-ch-ex-lang.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-in-color-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-in-font-feature-settings.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-integer.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-nesting-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-positive-fraction-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rem-lang.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rgb-percent-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-rounding-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-serialization-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-serialization.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-time-values.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-unit-analysis.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-z-index-fractions-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-008.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-009.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-010.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-011.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-012.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-016.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ch-unit-017.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-calc-expression-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ex-unit-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/getComputedStyle-border-radius-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/getComputedStyle-border-radius-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-008.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-009.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-010.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-011.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/ic-unit-012.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-rlh-on-root-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-unit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/lh-unit-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/line-break-ch-unit.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/q-unit-case-insensitivity-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/q-unit-case-insensitivity-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/rgba-011.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/urls/empty.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-calc-support-pct.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-calc-support.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-em-inherit.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-inherit.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-pct.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-px.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-interpolate-vh.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-margin.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-transform-origin.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support-transform-translate.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-support.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh-zero-support.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/vh_not_refreshing_on_chrome.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-unit-011.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/viewport-units-css2-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/mediaqueries/min-width-001.xht": {},
+      "https://github.com/whatwg/fetch/pull/1413": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "dynamic-changes-to-base-urls"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://lists.w3.org/Archives/Member/w3c-css-wg/2016AprJun/0239.html": {},
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://quirks.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-001.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-003.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-004.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-005.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-006.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-007.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-009.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-010.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-011.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-012.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-013.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-015.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-016.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-017.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/numbers-units-019.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-001.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-002.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-003.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-004.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-005.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-006.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-008.xht": {},
+      "https://wpt.fyi/results/css/CSS2/values/units-009.xht": {},
+      "https://wpt.fyi/results/css/css-animations/animation-iteration-count-calc.html": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-001.xht": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-002.xht": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-count-non-integer-003.xht": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-inherit-002.xht": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-rule-color-inherit-001.xht": {},
+      "https://wpt.fyi/results/css/css-multicol/multicol-rule-color-inherit-002.xht": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-circle-002.html": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-circle-004.html": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-ellipse-002.html": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-ellipse-004.html": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-inset-003.html": {},
+      "https://wpt.fyi/results/css/css-shapes/shape-outside/values/shape-outside-polygon-004.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-delay-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-duration-001.html": {},
+      "https://wpt.fyi/results/css/css-values/absolute-length-units-001.html": {},
+      "https://wpt.fyi/results/css/css-values/angle-units-001.html": {},
+      "https://wpt.fyi/results/css/css-values/angle-units-002.html": {},
+      "https://wpt.fyi/results/css/css-values/angle-units-003.html": {},
+      "https://wpt.fyi/results/css/css-values/angle-units-004.html": {},
+      "https://wpt.fyi/results/css/css-values/angle-units-005.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-angle-values.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-background-position-003.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-ch-ex-lang.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-in-color-001.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-in-font-feature-settings.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-integer.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-nesting-002.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-positive-fraction-001.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-rem-lang.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-rgb-percent-001.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-rounding-001.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-serialization-002.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-serialization.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-time-values.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-unit-analysis.html": {},
+      "https://wpt.fyi/results/css/css-values/calc-z-index-fractions-001.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-001.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-002.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-003.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-004.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-008.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-009.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-010.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-011.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-012.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-016.html": {},
+      "https://wpt.fyi/results/css/css-values/ch-unit-017.html": {},
+      "https://wpt.fyi/results/css/css-values/ex-calc-expression-001.html": {},
+      "https://wpt.fyi/results/css/css-values/ex-unit-001.html": {},
+      "https://wpt.fyi/results/css/css-values/ex-unit-002.html": {},
+      "https://wpt.fyi/results/css/css-values/ex-unit-003.html": {},
+      "https://wpt.fyi/results/css/css-values/getComputedStyle-border-radius-001.html": {},
+      "https://wpt.fyi/results/css/css-values/getComputedStyle-border-radius-003.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-001.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-002.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-003.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-004.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-008.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-009.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-010.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-011.html": {},
+      "https://wpt.fyi/results/css/css-values/ic-unit-012.html": {},
+      "https://wpt.fyi/results/css/css-values/lh-rlh-on-root-001.html": {},
+      "https://wpt.fyi/results/css/css-values/lh-unit-001.html": {},
+      "https://wpt.fyi/results/css/css-values/lh-unit-002.html": {},
+      "https://wpt.fyi/results/css/css-values/line-break-ch-unit.html": {},
+      "https://wpt.fyi/results/css/css-values/q-unit-case-insensitivity-001.html": {},
+      "https://wpt.fyi/results/css/css-values/q-unit-case-insensitivity-002.html": {},
+      "https://wpt.fyi/results/css/css-values/rgba-011.html": {},
+      "https://wpt.fyi/results/css/css-values/urls/empty.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-calc-support-pct.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-calc-support.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-em-inherit.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-inherit.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-interpolate-pct.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-interpolate-px.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-interpolate-vh.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-support-margin.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-support-transform-origin.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-support-transform-translate.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-support.html": {},
+      "https://wpt.fyi/results/css/css-values/vh-zero-support.html": {},
+      "https://wpt.fyi/results/css/css-values/vh_not_refreshing_on_chrome.html": {},
+      "https://wpt.fyi/results/css/css-values/viewport-relative-lengths-scaled-viewport.html": {},
+      "https://wpt.fyi/results/css/css-values/viewport-unit-011.html": {},
+      "https://wpt.fyi/results/css/css-values/viewport-units-css2-001.html": {},
+      "https://wpt.fyi/results/css/mediaqueries/min-width-001.xht": {},
+      "https://www.modularscale.com/": {},
+      "https://www.rfc-editor.org/rfc/rfc6694": {},
+      "https://www.unicode.org/versions/latest/": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/TR/2020/WD-css-values-4-20201111/": {},
+      "https://www.w3.org/TR/2021/WD-css-values-4-20210715/": {},
+      "https://www.w3.org/TR/2021/WD-css-values-4-20210930/": {},
+      "https://www.w3.org/TR/2021/WD-css-values-4-20211016/": {},
+      "https://www.w3.org/TR/2021/WD-css-values-4-20211216/": {},
+      "https://www.w3.org/TR/2022/WD-css-values-4-20221019/": {},
+      "https://www.w3.org/TR/2023/WD-css-values-4-20230406/": {},
+      "https://www.w3.org/TR/2023/WD-css-values-4-20231027/": {},
+      "https://www.w3.org/TR/2023/WD-css-values-4-20231218/": {},
+      "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "value-defs"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/aural.html": {
+        "anchors": [
+          "aural-intro"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/syndata.html": {
+        "anchors": [
+          "values",
+          "escaped-characters"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visudet.html": {
+        "anchors": [
+          "containing-block-details",
+          "the-height-property"
+        ]
+      },
+      "https://www.w3.org/TR/css-animations/": {},
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "layering"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "defaulting-keywords"
+        ]
+      },
+      "https://www.w3.org/TR/css-syntax/": {
+        "anchors": [
+          "whitespace"
+        ]
+      },
+      "https://www.w3.org/TR/css-transitions-1/": {},
+      "https://www.w3.org/TR/css-transitions/": {},
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "viewport-relative-lengths"
+        ]
+      },
+      "https://www.w3.org/TR/css3-fonts/": {
+        "anchors": [
+          "first-available-font"
+        ]
+      },
+      "https://www.w3.org/TR/css3-values/": {},
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "serializing-css-values",
+          "resolved-values"
+        ]
+      }
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-tree-order",
+          "concept-node-tree",
+          "document",
+          "shadowroot",
+          "concept-document-quirks"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-typed-om-1/": {
+        "anchors": [
+          "cssnumericvalue-type",
+          "cssnumericvalue-match",
+          "cssnumericvalue-add-two-types",
+          "cssnumericvalue-multiply-two-types",
+          "cssnumericvalue-invert-a-type",
+          "cssnumericvalue-percent-hint",
+          "css-internal-representation"
+        ]
+      },
+      "https://drafts.csswg.org/css-2023/": {
+        "anchors": [
+          "user-agent"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations-1/": {
+        "anchors": [
+          "propdef-animation",
+          "propdef-animation-timing-function",
+          "propdef-animation-name",
+          "propdef-animation-iteration-count"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border-width",
+          "propdef-background-attachment",
+          "propdef-border-color",
+          "propdef-background",
+          "propdef-box-shadow",
+          "propdef-background-position",
+          "valdef-background-position-center",
+          "propdef-background-image",
+          "propdef-border-top-width",
+          "propdef-border-right-width",
+          "propdef-border-bottom-width",
+          "propdef-border-left-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "propdef-padding-top",
+          "propdef-margin-right",
+          "propdef-margin-left",
+          "propdef-margin-top",
+          "propdef-margin-bottom",
+          "propdef-margin",
+          "propdef-padding-right",
+          "propdef-padding-bottom",
+          "propdef-padding-left",
+          "propdef-padding"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-3/": {
+        "anchors": [
+          "propdef-orphans"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "valdef-all-inherit",
+          "computed-value",
+          "specified-value",
+          "valdef-all-initial",
+          "valdef-all-unset",
+          "at-ruledef-import",
+          "used-value",
+          "actual-value",
+          "shorthand-property"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "funcdef-hsl",
+          "funcdef-rgba",
+          "propdef-opacity"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "at-ruledef-profile",
+          "typedef-color",
+          "relative-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-supports",
+          "dom-css-supports-conditiontext"
+        ]
+      },
+      "https://drafts.csswg.org/css-counter-styles-3/": {
+        "anchors": [
+          "disc"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "containing-block",
+          "initial-containing-block",
+          "root-element"
+        ]
+      },
+      "https://drafts.csswg.org/css-easing-2/": {
+        "anchors": [
+          "easing-function",
+          "valdef-cubic-bezier-easing-function-ease-in",
+          "typedef-easing-function",
+          "valdef-cubic-bezier-easing-function-ease-out"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font-family",
+          "propdef-font-size",
+          "propdef-font"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "descdef-font-face-font-size",
+          "at-font-face-rule"
+        ]
+      },
+      "https://drafts.csswg.org/css-grid-2/": {
+        "anchors": [
+          "valdef-flex-fr",
+          "typedef-flex"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "funcdef-linear-gradient",
+          "typedef-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {
+        "anchors": [
+          "propdef-image-resolution"
+        ]
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "valdef-line-height-normal",
+          "propdef-vertical-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow",
+          "propdef-scrollbar-gutter"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "anchors": [
+          "propdef-max-lines"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {
+        "anchors": [
+          "page-area"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-bottom",
+          "propdef-left",
+          "propdef-right",
+          "propdef-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-rhythm-1/": {
+        "anchors": [
+          "propdef-block-step-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "css-tree-scoped-reference",
+          "css-tree-scoped-name"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-1/": {
+        "anchors": [
+          "funcdef-basic-shape-rect"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "propdef-width",
+          "propdef-height",
+          "propdef-box-sizing",
+          "propdef-min-width",
+          "valdef-width-auto",
+          "propdef-max-height",
+          "propdef-max-width",
+          "propdef-min-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "component-value",
+          "typedef-dimension-token",
+          "typedef-function-token",
+          "typedef-any-value",
+          "typedef-ident-token",
+          "typedef-string-token",
+          "typedef-url-token",
+          "consume-a-url-token",
+          "typedef-number-token",
+          "typedef-percentage-token",
+          "whitespace",
+          "typedef-whitespace-token",
+          "typedef-delim-token",
+          "simple-block"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-3/": {
+        "anchors": [
+          "propdef-text-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "valdef-text-align-center",
+          "propdef-tab-size",
+          "propdef-letter-spacing",
+          "propdef-text-indent",
+          "propdef-word-spacing"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform-origin"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-outline-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-5/": {
+        "anchors": [
+          "funcdef-mix",
+          "funcdef-toggle",
+          "funcdef-attr"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "custom-property",
+          "funcdef-var"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "inline-axis",
+          "block-axis",
+          "propdef-writing-mode",
+          "valdef-writing-mode-vertical-rl",
+          "valdef-writing-mode-vertical-lr",
+          "propdef-text-orientation",
+          "valdef-text-orientation-upright",
+          "writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "cssstylesheet",
+          "concept-css-style-sheet-stylesheet-base-url",
+          "concept-css-style-sheet-location",
+          "concept-css-style-sheet-origin-clean-flag"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "media-query",
+          "continuous-media",
+          "paged-media"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "discrete"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "requestdestination",
+          "concept-response",
+          "concept-request",
+          "concept-request-url",
+          "concept-request-destination",
+          "concept-request-mode",
+          "concept-request-origin",
+          "concept-request-credentials-mode",
+          "concept-request-use-url-credentials-flag",
+          "concept-request-client",
+          "concept-request-referrer",
+          "request-initiator-type",
+          "concept-fetch",
+          "process-response-end-of-body"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "find-a-potential-indicated-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-body-element-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-base-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "relevant-settings-object",
+          "api-base-url",
+          "concept-settings-object-origin"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-case-insensitive",
+          "string-is",
+          "string",
+          "code-point",
+          "implementation-defined",
+          "list-iterate",
+          "string-concatenate"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-fragment",
+          "concept-url-parser",
+          "string-percent-encode-after-encoding"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/box.html": {
+        "anchors": [
+          "value-def-border-width"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/tables.html": {
+        "anchors": [
+          "propdef-border-collapse",
+          "propdef-border-spacing"
+        ]
+      }
     }
   }
 }

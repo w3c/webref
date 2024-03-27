@@ -4,96 +4,153 @@
     "url": "https://wicg.github.io/document-policy/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document",
-        "html-document",
-        "concept-document-quirks",
-        "concept-document-content-type",
-        "document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-document-content-type",
+          "concept-document",
+          "html-document",
+          "concept-document-quirks"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "requests",
+          "http-network-or-cache-fetch",
+          "main-fetch",
+          "concept-header-list-get-structured-header",
+          "concept-response-header-list",
+          "concept-request-request",
+          "concept-response-response"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "browsing-context-container",
+          "bc-container-document",
+          "creating-a-new-browsing-context",
+          "initialise-the-document-object",
+          "nested-browsing-context",
+          "opener-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "process-a-navigate-fetch"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-document-object",
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "attr-iframe-sandbox"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "concept-request-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "active-sandboxing-flag-set"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "queue-report",
+          "endpoint"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/TR/reporting-1/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-response-response",
-        "requests",
-        "concept-request-request",
-        "http-network-or-cache-fetch",
-        "concept-request-header-list",
-        "main-fetch",
-        "concept-header-list-get-structured-header",
-        "concept-response-header-list"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context",
-        "opener-browsing-context",
-        "nested-browsing-context",
-        "creating-a-new-browsing-context",
-        "initialise-the-document-object",
-        "bc-container-document",
-        "browsing-context-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "process-a-navigate-fetch"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-document-object",
-        "concept-document-permissions-policy"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element",
-        "attr-iframe-sandbox"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "concept-request-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "active-sandboxing-flag-set"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://w3c.github.io/reporting/": {
-      "anchors": [
-        "endpoint",
-        "queue-report"
-      ],
-      "specShortname": "reporting-1"
-    },
-    "https://www.rfc-editor.org/rfc/rfc3864": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/reporting-1/": {
-      "specShortname": "reporting-1"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "html-document",
+          "concept-document-quirks",
+          "concept-document-content-type",
+          "document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response-response",
+          "concept-request-request",
+          "concept-request-header-list",
+          "concept-header-list-get-structured-header",
+          "concept-response-header-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "opener-browsing-context",
+          "nested-browsing-context",
+          "creating-a-new-browsing-context",
+          "initialise-the-document-object",
+          "bc-container-document",
+          "browsing-context-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "process-a-navigate-fetch"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "attr-iframe-sandbox"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "concept-request-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "active-sandboxing-flag-set"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "endpoint"
+        ]
+      }
+    }
   }
 }

@@ -4,86 +4,93 @@
     "url": "https://wicg.github.io/webcrypto-secure-curves/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://github.com/WICG/webcrypto-secure-curves/issues/": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global"
-      ]
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://github.com/WICG/webcrypto-secure-curves/issues/": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://safecurves.cr.yp.to/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc5208": {},
+      "https://www.rfc-editor.org/rfc/rfc5280": {},
+      "https://www.rfc-editor.org/rfc/rfc7517": {},
+      "https://www.rfc-editor.org/rfc/rfc7748": {},
+      "https://www.rfc-editor.org/rfc/rfc8032": {},
+      "https://www.rfc-editor.org/rfc/rfc8037": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.rfc-editor.org/rfc/rfc8410": {},
+      "https://www.w3.org/TR/WebCryptoAPI/": {
+        "anchors": [
+          "algorithm-conventions",
+          "concept-define-an-algorithm",
+          "recognized-algorithm-name",
+          "supported-operations",
+          "algorithm-specific-params",
+          "algorithm-result",
+          "dfn-octet-string",
+          "dfn-CryptoKey-slot-type",
+          "dfn-CryptoKey-slot-algorithm",
+          "dfn-CryptoKey-slot-handle",
+          "octet-string-containing",
+          "dfn-CryptoKey-slot-extractable",
+          "dfn-CryptoKey-slot-usages",
+          "concept-usage-intersection",
+          "concept-parse-a-spki",
+          "concept-parse-a-privateKeyInfo",
+          "concept-parse-an-asn1-structure",
+          "concept-contents-of-arraybuffer"
+        ]
+      },
+      "https://www.w3.org/community/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/groups/cg/wicg": {}
     },
-    "https://safecurves.cr.yp.to/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "dfn-throw",
-        "invalidaccesserror",
-        "operationerror",
-        "syntaxerror",
-        "dataerror",
-        "notsupportederror",
-        "idl-ArrayBuffer",
-        "BufferSource"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc5208": {},
-    "https://www.rfc-editor.org/rfc/rfc5280": {},
-    "https://www.rfc-editor.org/rfc/rfc7517": {},
-    "https://www.rfc-editor.org/rfc/rfc7748": {},
-    "https://www.rfc-editor.org/rfc/rfc8032": {},
-    "https://www.rfc-editor.org/rfc/rfc8037": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.rfc-editor.org/rfc/rfc8410": {},
-    "https://www.w3.org/TR/WebCryptoAPI/": {
-      "anchors": [
-        "algorithm-conventions",
-        "concept-define-an-algorithm",
-        "recognized-algorithm-name",
-        "supported-operations",
-        "algorithm-specific-params",
-        "algorithm-result",
-        "dfn-EcdhKeyDeriveParams",
-        "dfn-octet-string",
-        "dfn-CryptoKeyPair",
-        "dfn-CryptoKey",
-        "dfn-CryptoKey-slot-type",
-        "dom-keytype-private",
-        "dfn-EcdhKeyDeriveParams-public",
-        "dom-keyalgorithm-name",
-        "dfn-CryptoKey-slot-algorithm",
-        "dfn-CryptoKey-slot-handle",
-        "octet-string-containing",
-        "dfn-KeyAlgorithm",
-        "dfn-CryptoKey-slot-extractable",
-        "dfn-CryptoKey-slot-usages",
-        "concept-usage-intersection",
-        "dfn-CryptoKeyPair-publicKey",
-        "dfn-CryptoKeyPair-privateKey",
-        "dom-keyformat-spki",
-        "concept-parse-a-spki",
-        "dom-keyformat-pkcs8",
-        "concept-parse-a-privateKeyInfo",
-        "concept-parse-an-asn1-structure",
-        "dom-keyformat-jwk",
-        "dfn-JsonWebKey",
-        "dom-jsonwebkey-d",
-        "dom-jsonwebkey-kty",
-        "dom-jsonwebkey-crv",
-        "dom-jsonwebkey-use",
-        "dom-jsonwebkey-key_ops",
-        "dom-jsonwebkey-ext",
-        "dom-keytype-public",
-        "dom-keyformat-raw",
-        "dom-jsonwebkey-x",
-        "dom-cryptokey-usages",
-        "dfn-Algorithm",
-        "concept-contents-of-arraybuffer"
-      ],
-      "specShortname": "WebCryptoAPI"
-    },
-    "https://www.w3.org/community/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/groups/cg/wicg": {}
+    "autolinks": {
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "dfn-throw",
+          "invalidaccesserror",
+          "operationerror",
+          "syntaxerror",
+          "dataerror",
+          "notsupportederror",
+          "idl-ArrayBuffer",
+          "BufferSource"
+        ]
+      },
+      "https://www.w3.org/TR/WebCryptoAPI/": {
+        "anchors": [
+          "dfn-EcdhKeyDeriveParams",
+          "dfn-CryptoKeyPair",
+          "dfn-CryptoKey",
+          "dom-keytype-private",
+          "dfn-EcdhKeyDeriveParams-public",
+          "dom-keyalgorithm-name",
+          "dfn-KeyAlgorithm",
+          "dfn-CryptoKeyPair-publicKey",
+          "dfn-CryptoKeyPair-privateKey",
+          "dom-keyformat-spki",
+          "dom-keyformat-pkcs8",
+          "dom-keyformat-jwk",
+          "dfn-JsonWebKey",
+          "dom-jsonwebkey-d",
+          "dom-jsonwebkey-kty",
+          "dom-jsonwebkey-crv",
+          "dom-jsonwebkey-use",
+          "dom-jsonwebkey-key_ops",
+          "dom-jsonwebkey-ext",
+          "dom-keytype-public",
+          "dom-keyformat-raw",
+          "dom-jsonwebkey-x",
+          "dom-cryptokey-usages",
+          "dfn-Algorithm"
+        ]
+      }
+    }
   }
 }

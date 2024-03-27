@@ -4,148 +4,258 @@
     "url": "https://wicg.github.io/performance-measure-memory/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-element-local-name"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-element-local-name"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "idl-promise",
+          "securityerror",
+          "idl-USVString",
+          "a-promise-rejected-with",
+          "dfn-identifier",
+          "dfn-interface",
+          "resolve",
+          "idl-sequence",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context-group"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "attr-object-data",
+          "the-object-element",
+          "attr-iframe-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "dom-navigator-platform",
+          "dom-navigator-useragent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "windoworworkerglobalscope",
+          "concept-environment-creation-url",
+          "concept-settings-object-cross-origin-isolated-capability",
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "concept-settings-object-origin",
+          "queue-a-global-task",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "concept-realm-settings-object",
+          "concept-environment-top-level-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dedicatedworkerglobalscope",
+          "sharedworkerglobalscope",
+          "workerglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "assert",
+          "boolean",
+          "list-iterate",
+          "map-getting-the-values",
+          "implementation-defined",
+          "struct-item",
+          "list",
+          "ordered-set",
+          "string",
+          "struct"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-agents",
+          "sec-agent-clusters",
+          "sec-code-realms",
+          "sec-agent"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "sec-performance"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://github.com/heycam/webidl": {
-      "anchors": [
-        "pull/883"
-      ]
-    },
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-promise",
-        "idl-unsigned-long-long",
-        "idl-sequence",
-        "idl-DOMString",
-        "idl-USVString",
-        "Exposed",
-        "a-promise-rejected-with",
-        "securityerror",
-        "idl-DOMException",
-        "resolve",
-        "dfn-identifier",
-        "dfn-interface"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context-group",
-        "agent-cluster-map",
-        "creating-a-new-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "initialise-the-document-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "htmlelement",
-        "the-id-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-object-element",
-        "attr-object-data",
-        "attr-iframe-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/obsolete.html": {
-      "anchors": [
-        "dom-frame-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "dom-navigator-useragent",
-        "dom-navigator-platform"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-settings-object-cross-origin-isolated-capability",
-        "windoworworkerglobalscope",
-        "concept-realm-settings-object",
-        "concept-realm-global",
-        "concept-settings-object-origin",
-        "concept-environment-top-level-origin",
-        "queue-a-global-task",
-        "concept-relevant-global",
-        "concept-environment-creation-url",
-        "environment-settings-object",
-        "concept-settings-object-global",
-        "relevant-settings-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "sharedworkerglobalscope",
-        "workerglobalscope",
-        "dedicatedworkerglobalscope",
-        "run-a-worker"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "implementation-defined",
-        "ordered-set",
-        "struct",
-        "struct-item",
-        "string",
-        "boolean",
-        "assert",
-        "map-getting-the-values",
-        "list-iterate",
-        "list",
-        "list-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-code-realms",
-        "sec-agent-clusters",
-        "sec-agent",
-        "sec-agents"
-      ]
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworkerglobalscope"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "sec-performance"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-element-local-name"
+        ]
+      },
+      "https://github.com/heycam/webidl": {
+        "anchors": [
+          "pull/883"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-promise",
+          "idl-unsigned-long-long",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-USVString",
+          "Exposed",
+          "a-promise-rejected-with",
+          "securityerror",
+          "idl-DOMException",
+          "resolve",
+          "dfn-identifier",
+          "dfn-interface"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context-group",
+          "agent-cluster-map",
+          "creating-a-new-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "initialise-the-document-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement",
+          "the-id-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-object-element",
+          "attr-object-data",
+          "attr-iframe-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/obsolete.html": {
+        "anchors": [
+          "dom-frame-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "dom-navigator-useragent",
+          "dom-navigator-platform"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-settings-object-cross-origin-isolated-capability",
+          "windoworworkerglobalscope",
+          "concept-realm-settings-object",
+          "concept-realm-global",
+          "concept-settings-object-origin",
+          "concept-environment-top-level-origin",
+          "queue-a-global-task",
+          "concept-relevant-global",
+          "concept-environment-creation-url",
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "sharedworkerglobalscope",
+          "workerglobalscope",
+          "dedicatedworkerglobalscope",
+          "run-a-worker"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "implementation-defined",
+          "ordered-set",
+          "struct",
+          "struct-item",
+          "string",
+          "boolean",
+          "assert",
+          "map-getting-the-values",
+          "list-iterate",
+          "list",
+          "list-append"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-code-realms",
+          "sec-agent-clusters",
+          "sec-agent",
+          "sec-agents"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "sec-performance"
+        ]
+      }
+    }
   }
 }

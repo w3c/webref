@@ -4,203 +4,357 @@
     "url": "https://wicg.github.io/trust-token-api/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://datatracker.ietf.org/wg/privacypass/about/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://datatracker.ietf.org/wg/privacypass/about/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "request",
+          "dom-request",
+          "requestinit",
+          "concept-request-cache-mode",
+          "concept-request-client",
+          "header-list-contains",
+          "concept-header-list-delete",
+          "concept-header-list-get",
+          "concept-request-header-list",
+          "concept-response-header-list",
+          "concept-http-fetch",
+          "http-scheme",
+          "concept-http-network-or-cache-fetch",
+          "concept-network-error",
+          "concept-request",
+          "concept-request-request",
+          "concept-response",
+          "concept-header-list-set-structured-header",
+          "concept-request-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "create-navigation-params-by-fetching",
+          "navigation-params"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-container",
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-element-attributes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement",
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "networking-task-source",
+          "queue-a-global-task",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "secure-context",
+          "concept-environment-top-level-origin"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {},
+      "https://httpwg.org/specs/rfc8941.html": {},
+      "https://httpwg.org/specs/rfc9110.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "assert",
+          "byte-sequence",
+          "list-contain",
+          "iteration-continue",
+          "list-empty",
+          "map-exists",
+          "list-iterate",
+          "map-iterate",
+          "implementation-defined",
+          "byte-sequence-length",
+          "list",
+          "ordered-map",
+          "list-remove",
+          "map-set",
+          "list-size",
+          "tuple"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8941": {
+        "anchors": [
+          "section-3.3.1",
+          "section-3.3.3",
+          "name-introduction"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url-scheme",
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-duration"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "should-request-be-allowed-to-use-feature",
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-origin"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "invalidstateerror",
+          "notallowederror",
+          "idl-promise",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-new-promise",
+          "idl-boolean",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "dfn-throw",
+          "idl-undefined"
+        ]
+      },
+      "https://www.ietf.org/archive/id/draft-ietf-privacypass-architecture-10.html": {},
+      "https://www.ietf.org/archive/id/draft-ietf-privacypass-auth-scheme-10.html": {},
+      "https://www.ietf.org/archive/id/draft-ietf-privacypass-protocol-10.html": {},
+      "https://www.ietf.org/archive/id/draft-irtf-cfrg-voprf-21.html": {
+        "anchors": [
+          "section-3.3.1-2",
+          "section-3.3.1-9",
+          "name-oprfp-384-sha-384"
+        ]
+      },
+      "https://www.ietf.org/archive/id/draft-robert-privacypass-batched-tokens-01.html": {
+        "anchors": [
+          "section-4-5",
+          "section-5-4"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc4648": {},
+      "https://www.rfc-editor.org/rfc/rfc8259": {},
+      "https://www.rfc-editor.org/rfc/rfc8446": {},
+      "https://www.rfc-editor.org/rfc/rfc8536": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {},
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest",
+          "send-flag",
+          "dom-xmlhttprequest-send",
+          "concept-xmlhttprequest-state"
+        ]
+      }
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "http-scheme",
-        "requestinit",
-        "dom-request",
-        "concept-request-request",
-        "request",
-        "concept-http-network-or-cache-fetch",
-        "concept-http-fetch",
-        "concept-response",
-        "concept-network-error",
-        "concept-request-client",
-        "concept-request-url",
-        "concept-request-cache-mode",
-        "concept-header-list-set-structured-header",
-        "concept-request-header-list",
-        "header-list-contains",
-        "concept-response-header-list",
-        "concept-header-list-get",
-        "concept-header-list-delete"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "create-navigation-params-by-fetching",
-        "navigation-params"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "reflect"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "nav-container",
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-element-attributes"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element",
-        "htmliframeelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "secure-context",
-        "concept-environment-top-level-origin",
-        "concept-relevant-global",
-        "relevant-settings-object",
-        "queue-a-global-task",
-        "networking-task-source"
-      ]
-    },
-    "https://httpwg.org/specs/rfc6265.html": {
-      "specShortname": "rfc6265"
-    },
-    "https://httpwg.org/specs/rfc8941.html": {},
-    "https://httpwg.org/specs/rfc9110.html": {
-      "specShortname": "rfc9110"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-map",
-        "implementation-defined",
-        "list",
-        "map-exists",
-        "list-contain",
-        "list-size",
-        "map-set",
-        "list-append",
-        "tuple",
-        "byte-sequence",
-        "list-iterate",
-        "list-remove",
-        "byte-sequence-length",
-        "list-empty",
-        "assert",
-        "iteration-continue",
-        "map-iterate"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tools.ietf.org/html/rfc8941": {
-      "anchors": [
-        "name-introduction",
-        "section-3.3.3",
-        "section-3.3.1"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-parser",
-        "concept-url-scheme",
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dfn-duration"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "should-request-be-allowed-to-use-feature",
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://w3c.github.io/webappsec-secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-origin"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "notallowederror",
-        "idl-DOMException",
-        "exceptiondef-typeerror",
-        "idl-sequence",
-        "idl-USVString",
-        "this",
-        "SecureContext",
-        "idl-DOMString",
-        "idl-undefined",
-        "invalidstateerror",
-        "dfn-throw",
-        "idl-promise",
-        "idl-boolean",
-        "a-new-promise",
-        "reject",
-        "resolve"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.ietf.org/archive/id/draft-ietf-privacypass-architecture-10.html": {},
-    "https://www.ietf.org/archive/id/draft-ietf-privacypass-auth-scheme-10.html": {},
-    "https://www.ietf.org/archive/id/draft-ietf-privacypass-protocol-10.html": {},
-    "https://www.ietf.org/archive/id/draft-irtf-cfrg-voprf-21.html": {
-      "anchors": [
-        "name-oprfp-384-sha-384",
-        "section-3.3.1-9",
-        "section-3.3.1-2"
-      ]
-    },
-    "https://www.ietf.org/archive/id/draft-robert-privacypass-batched-tokens-01.html": {
-      "anchors": [
-        "section-4-5",
-        "section-5-4"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc4648": {},
-    "https://www.rfc-editor.org/rfc/rfc8259": {},
-    "https://www.rfc-editor.org/rfc/rfc8446": {},
-    "https://www.rfc-editor.org/rfc/rfc8536": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {},
-    "https://xhr.spec.whatwg.org/": {
-      "anchors": [
-        "xmlhttprequest",
-        "concept-xmlhttprequest-state",
-        "send-flag",
-        "dom-xmlhttprequest-send"
-      ],
-      "specShortname": "xhr"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "http-scheme",
+          "requestinit",
+          "dom-request",
+          "concept-request-request",
+          "request",
+          "concept-http-network-or-cache-fetch",
+          "concept-http-fetch",
+          "concept-response",
+          "concept-network-error",
+          "concept-request-client",
+          "concept-request-url",
+          "concept-request-cache-mode",
+          "concept-header-list-set-structured-header",
+          "concept-request-header-list",
+          "header-list-contains",
+          "concept-response-header-list",
+          "concept-header-list-get",
+          "concept-header-list-delete"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-container",
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-element-attributes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "htmliframeelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "secure-context",
+          "concept-environment-top-level-origin",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "queue-a-global-task",
+          "networking-task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "implementation-defined",
+          "list",
+          "map-exists",
+          "list-contain",
+          "list-size",
+          "map-set",
+          "list-append",
+          "tuple",
+          "byte-sequence",
+          "list-iterate",
+          "list-remove",
+          "byte-sequence-length",
+          "list-empty",
+          "assert",
+          "iteration-continue",
+          "map-iterate"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8941": {
+        "anchors": [
+          "name-introduction",
+          "section-3.3.3",
+          "section-3.3.1"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-parser",
+          "concept-url-scheme",
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-duration"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "should-request-be-allowed-to-use-feature",
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-origin"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "notallowederror",
+          "idl-DOMException",
+          "exceptiondef-typeerror",
+          "idl-sequence",
+          "idl-USVString",
+          "this",
+          "SecureContext",
+          "idl-DOMString",
+          "idl-undefined",
+          "invalidstateerror",
+          "dfn-throw",
+          "idl-promise",
+          "idl-boolean",
+          "a-new-promise",
+          "reject",
+          "resolve"
+        ]
+      },
+      "https://www.ietf.org/archive/id/draft-irtf-cfrg-voprf-21.html": {
+        "anchors": [
+          "name-oprfp-384-sha-384",
+          "section-3.3.1-9",
+          "section-3.3.1-2"
+        ]
+      },
+      "https://www.ietf.org/archive/id/draft-robert-privacypass-batched-tokens-01.html": {
+        "anchors": [
+          "section-4-5",
+          "section-5-4"
+        ]
+      },
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest",
+          "concept-xmlhttprequest-state",
+          "send-flag",
+          "dom-xmlhttprequest-send"
+        ]
+      }
     }
   }
 }

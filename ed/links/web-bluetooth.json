@@ -4,321 +4,530 @@
     "url": "https://webbluetoothcg.github.io/web-bluetooth/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-web-bluetooth/": {},
-    "http://www.w3.org/community/": {},
-    "http://www.warski.org/blog/2014/01/how-ibeacons-work/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html": {},
-    "https://developer.bluetooth.org/": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/availabilitychanged_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/getAvailability": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/getDevices": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/authenticatedSignedWrites": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/broadcast": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/indicate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/notify": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/read": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/reliableWrite": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/writableAuxiliaries": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/write": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/writeWithoutResponse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/gatt": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/id": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptors": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/properties": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/readValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/service": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/startNotifications": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/stopNotifications": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/uuid": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithResponse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithoutResponse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/characteristic": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/readValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/uuid": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/writeValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/connect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/connected": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/device": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/disconnect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryService": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryServices": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/device": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/getCharacteristic": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/getCharacteristics": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/isPrimary": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/uuid": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/canonicalUUID_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getCharacteristic_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getDescriptor_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getService_static": {},
-    "https://developers.google.com/beacons/eddystone": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "event",
-        "dictdef-eventinit",
-        "constructing-events",
-        "abortsignal",
-        "abortsignal-aborted",
-        "abortsignal-add",
-        "abortcontroller",
-        "concept-document",
-        "dom-event-istrusted",
-        "concept-tree-participate",
-        "concept-tree-child",
-        "dom-event-bubbles"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-web-bluetooth/": {},
+      "http://www.w3.org/community/": {},
+      "http://www.warski.org/blog/2014/01/how-ibeacons-work/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html": {},
+      "https://developer.bluetooth.org/": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/availabilitychanged_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/getAvailability": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/getDevices": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/authenticatedSignedWrites": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/broadcast": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/indicate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/notify": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/read": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/reliableWrite": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/writableAuxiliaries": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/write": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothCharacteristicProperties/writeWithoutResponse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/gatt": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/id": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothDevice/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptors": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/properties": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/readValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/service": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/startNotifications": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/stopNotifications": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/uuid": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithResponse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithoutResponse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/characteristic": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/readValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/uuid": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/writeValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/connect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/connected": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/device": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/disconnect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryService": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryServices": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/device": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/getCharacteristic": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/getCharacteristics": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/isPrimary": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothRemoteGATTService/uuid": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/canonicalUUID_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getCharacteristic_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getDescriptor_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BluetoothUUID/getService_static": {},
+      "https://developers.google.com/beacons/eddystone": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "constructing-events",
+          "abortcontroller",
+          "abortsignal",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "abortsignal-aborted",
+          "abortsignal-add",
+          "dom-event-bubbles",
+          "concept-tree-child",
+          "concept-document",
+          "concept-event-fire",
+          "dom-event-istrusted",
+          "concept-tree-participate"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode-without-bom",
+          "utf-8-encode"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries": {},
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_characteristics.txt": {
+        "anchors": [
+          ":~:text=body_sensor_location",
+          ":~:text=gap.appearance",
+          ":~:text=heart_rate_control_point",
+          ":~:text=heart_rate_measurement",
+          ":~:text=ieee_11073-20601_regulatory_certification_data_list"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_descriptors.txt": {
+        "anchors": [
+          ":~:text=gatt.characteristic_presentation_format",
+          ":~:text=gatt.client_characteristic_configuration"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_services.txt": {
+        "anchors": [
+          ":~:text=cycling_power",
+          ":~:text=heart_rate"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_blocklist.txt": {},
+      "https://github.com/WebBluetoothCG/registries/blob/master/manufacturer_data_blocklist.txt": {},
+      "https://github.com/WebBluetoothCG/web-bluetooth/commits/gh-pages": {},
+      "https://github.com/WebBluetoothCG/web-bluetooth/issues": {},
+      "https://github.com/WebBluetoothCG/web-bluetooth/issues/188": {},
+      "https://github.com/WebBluetoothCG/web-bluetooth/issues/238": {},
+      "https://github.com/WebBluetoothCG/web-bluetooth/issues/575": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "dfn-get-buffer-source-copy"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "tracking-user-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "initialise-the-document-object",
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "enqueue-the-following-steps",
+          "in-parallel",
+          "starting-a-new-parallel-queue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "current-settings-object",
+          "environment-settings-object",
+          "event-handler-idl-attributes",
+          "global-object",
+          "concept-settings-object-global",
+          "non-secure-context",
+          "perform-a-microtask-checkpoint",
+          "queue-a-task",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "responsible-event-loop",
+          "secure-context"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "abort-when",
+          "ascii-lower-hex-digit",
+          "map-iterate",
+          "if-aborted",
+          "strictly-split",
+          "string"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/text-processing.html": {
+        "anchors": [
+          "sec-regexp-regular-expression-objects",
+          "sec-regexp.prototype.exec",
+          "sec-string.prototype.split"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-array-objects",
+          "sec-array.prototype.map",
+          "sec-arraybuffer-constructor",
+          "sec-dataview-constructor",
+          "sec-promise-objects",
+          "sec-set-objects",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-typedarray-constructors",
+          "current-realm",
+          "sec-object-internal-methods-and-internal-slots",
+          "sec-code-realms"
+        ]
+      },
+      "https://w3c.github.io/fingerprinting-guidance/": {
+        "anchors": [
+          "dfn-fingerprinting-surface"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dom-permissiondescriptor",
+          "dom-permissionstatus",
+          "dom-permissionstate-denied",
+          "dfn-extra-permission-data",
+          "dfn-extra-permission-data-constraints",
+          "dfn-extra-permission-data-type",
+          "dom-permissiondescriptor-name",
+          "dfn-name",
+          "dfn-permission-descriptor-type",
+          "dfn-permission-query-algorithm",
+          "dfn-permission-result-type",
+          "dfn-permission-revocation-algorithm",
+          "dfn-permission-state",
+          "dfn-powerful-feature",
+          "dfn-prompt-the-user-to-choose",
+          "dom-permissions-query",
+          "dom-permissionstatus-state"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "aborterror",
+          "BufferSource",
+          "idl-DOMException",
+          "idl-DOMString",
+          "EnforceRange",
+          "Exposed",
+          "idl-frozen-array",
+          "invalidmodificationerror",
+          "invalidstateerror",
+          "networkerror",
+          "notfounderror",
+          "notsupportederror",
+          "idl-promise",
+          "SameObject",
+          "SecureContext",
+          "securityerror",
+          "idl-Uint8Array",
+          "unknownerror",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "idl-any",
+          "idl-boolean",
+          "idl-byte",
+          "dfn-convert-idl-to-ecmascript-value",
+          "dfn-maplike",
+          "dfn-perform-steps-once-promise-is-settled",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "idl-unsigned-short",
+          "upon-fulfillment",
+          "wait-for-all"
+        ]
+      },
+      "https://www.bluetooth.com/specifications/assigned-numbers/": {
+        "anchors": [
+          ":~:text=Generic%20Access%20Profile"
+        ]
+      },
+      "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439": {},
+      "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735": {},
+      "https://www.bluetooth.org/en-us/specification/assigned-numbers/company-identifiers": {},
+      "https://www.rfc-editor.org/rfc/rfc4122": {},
+      "https://www.usenix.org/legacy/events/woot11/tech/final_files/Goodspeed.pdf": {},
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "dom-visibilitystate"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/web-bluetooth/": {}
     },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-encode",
-        "utf-8-decode-without-bom"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://github.com/WebBluetoothCG/registries": {},
-    "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_characteristics.txt": {
-      "anchors": [
-        ":~:text=body_sensor_location",
-        ":~:text=heart_rate_measurement",
-        ":~:text=heart_rate_control_point",
-        ":~:text=gap.appearance",
-        ":~:text=ieee_11073-20601_regulatory_certification_data_list"
-      ]
-    },
-    "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_descriptors.txt": {
-      "anchors": [
-        ":~:text=gatt.client_characteristic_configuration",
-        ":~:text=gatt.characteristic_presentation_format"
-      ]
-    },
-    "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_services.txt": {
-      "anchors": [
-        ":~:text=heart_rate",
-        ":~:text=cycling_power"
-      ]
-    },
-    "https://github.com/WebBluetoothCG/registries/blob/master/gatt_blocklist.txt": {},
-    "https://github.com/WebBluetoothCG/registries/blob/master/manufacturer_data_blocklist.txt": {},
-    "https://github.com/WebBluetoothCG/web-bluetooth/commits/gh-pages": {},
-    "https://github.com/WebBluetoothCG/web-bluetooth/issues": {},
-    "https://github.com/WebBluetoothCG/web-bluetooth/issues/188": {},
-    "https://github.com/WebBluetoothCG/web-bluetooth/issues/238": {},
-    "https://github.com/WebBluetoothCG/web-bluetooth/issues/575": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "dfn-get-buffer-source-copy"
-      ]
-    },
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "tracking-user-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "initialise-the-document-object",
-        "navigate"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel",
-        "starting-a-new-parallel-queue",
-        "enqueue-the-following-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "secure-context",
-        "eventhandler",
-        "concept-relevant-global",
-        "non-secure-context",
-        "current-settings-object",
-        "queue-a-task",
-        "global-object",
-        "responsible-event-loop",
-        "relevant-settings-object",
-        "perform-a-microtask-checkpoint",
-        "environment-settings-object",
-        "concept-settings-object-global",
-        "event-handler-idl-attributes"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "abort-when",
-        "if-aborted",
-        "map-iterate",
-        "string",
-        "strictly-split",
-        "ascii-lower-hex-digit"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/text-processing.html": {
-      "anchors": [
-        "sec-string.prototype.split",
-        "sec-regexp-regular-expression-objects",
-        "sec-regexp.prototype.exec"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-dataview-constructor",
-        "sec-promise-objects",
-        "sec-native-error-types-used-in-this-standard-typeerror",
-        "sec-object-internal-methods-and-internal-slots",
-        "sec-code-realms",
-        "sec-array-objects",
-        "sec-set-objects",
-        "sec-array.prototype.map",
-        "current-realm",
-        "sec-arraybuffer-constructor",
-        "sec-typedarray-constructors"
-      ]
-    },
-    "https://w3c.github.io/fingerprinting-guidance/": {
-      "anchors": [
-        "dfn-fingerprinting-surface"
-      ],
-      "specShortname": "fingerprinting-guidance"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-permission-state",
-        "dom-permissionstate-denied",
-        "dfn-prompt-the-user-to-choose",
-        "dfn-extra-permission-data",
-        "dom-permissions-query",
-        "dom-permissiondescriptor-name",
-        "dfn-powerful-feature",
-        "dfn-name",
-        "dfn-permission-descriptor-type",
-        "dom-permissiondescriptor",
-        "dfn-extra-permission-data-type",
-        "dfn-extra-permission-data-constraints",
-        "dfn-permission-result-type",
-        "dom-permissionstatus",
-        "dfn-permission-query-algorithm",
-        "dom-permissionstatus-state",
-        "dfn-permission-revocation-algorithm"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "specShortname": "CSP3"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "BufferSource",
-        "EnforceRange",
-        "idl-unsigned-short",
-        "idl-sequence",
-        "idl-DOMString",
-        "idl-boolean",
-        "Exposed",
-        "SecureContext",
-        "idl-promise",
-        "SameObject",
-        "a-new-promise",
-        "this",
-        "reject",
-        "securityerror",
-        "resolve",
-        "notfounderror",
-        "dfn-convert-idl-to-ecmascript-value",
-        "idl-DOMException",
-        "idl-frozen-array",
-        "idl-any",
-        "idl-undefined",
-        "aborterror",
-        "notsupportederror",
-        "invalidstateerror",
-        "unknownerror",
-        "idl-byte",
-        "idl-unsigned-long",
-        "dfn-maplike",
-        "wait-for-all",
-        "a-promise-rejected-with",
-        "networkerror",
-        "upon-fulfillment",
-        "dfn-perform-steps-once-promise-is-settled",
-        "invalidmodificationerror",
-        "idl-Uint8Array"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.bluetooth.com/specifications/assigned-numbers/": {
-      "anchors": [
-        ":~:text=Generic%20Access%20Profile"
-      ]
-    },
-    "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439": {},
-    "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735": {},
-    "https://www.bluetooth.org/en-us/specification/assigned-numbers/company-identifiers": {},
-    "https://www.rfc-editor.org/rfc/rfc4122": {},
-    "https://www.usenix.org/legacy/events/woot11/tech/final_files/Goodspeed.pdf": {},
-    "https://www.w3.org/TR/page-visibility-2/": {
-      "anchors": [
-        "dom-visibilitystate"
-      ]
-    },
-    "https://www.w3.org/TR/page-visibility/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/web-bluetooth/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "event",
+          "dictdef-eventinit",
+          "abortsignal",
+          "abortsignal-aborted",
+          "abortsignal-add",
+          "abortcontroller",
+          "concept-document",
+          "dom-event-istrusted",
+          "concept-tree-participate",
+          "concept-tree-child",
+          "dom-event-bubbles"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode",
+          "utf-8-decode-without-bom"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_characteristics.txt": {
+        "anchors": [
+          ":~:text=body_sensor_location",
+          ":~:text=heart_rate_measurement",
+          ":~:text=heart_rate_control_point",
+          ":~:text=gap.appearance",
+          ":~:text=ieee_11073-20601_regulatory_certification_data_list"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_descriptors.txt": {
+        "anchors": [
+          ":~:text=gatt.client_characteristic_configuration",
+          ":~:text=gatt.characteristic_presentation_format"
+        ]
+      },
+      "https://github.com/WebBluetoothCG/registries/blob/master/gatt_assigned_services.txt": {
+        "anchors": [
+          ":~:text=heart_rate",
+          ":~:text=cycling_power"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "dfn-get-buffer-source-copy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "initialise-the-document-object",
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel",
+          "starting-a-new-parallel-queue",
+          "enqueue-the-following-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "secure-context",
+          "eventhandler",
+          "concept-relevant-global",
+          "non-secure-context",
+          "current-settings-object",
+          "queue-a-task",
+          "global-object",
+          "responsible-event-loop",
+          "relevant-settings-object",
+          "perform-a-microtask-checkpoint",
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "event-handler-idl-attributes"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "abort-when",
+          "if-aborted",
+          "map-iterate",
+          "string",
+          "strictly-split",
+          "ascii-lower-hex-digit"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/text-processing.html": {
+        "anchors": [
+          "sec-string.prototype.split",
+          "sec-regexp-regular-expression-objects",
+          "sec-regexp.prototype.exec"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-dataview-constructor",
+          "sec-promise-objects",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-object-internal-methods-and-internal-slots",
+          "sec-code-realms",
+          "sec-array-objects",
+          "sec-set-objects",
+          "sec-array.prototype.map",
+          "current-realm",
+          "sec-arraybuffer-constructor",
+          "sec-typedarray-constructors"
+        ]
+      },
+      "https://w3c.github.io/fingerprinting-guidance/": {
+        "anchors": [
+          "dfn-fingerprinting-surface"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-permission-state",
+          "dom-permissionstate-denied",
+          "dfn-prompt-the-user-to-choose",
+          "dfn-extra-permission-data",
+          "dom-permissions-query",
+          "dom-permissiondescriptor-name",
+          "dfn-powerful-feature",
+          "dfn-name",
+          "dfn-permission-descriptor-type",
+          "dom-permissiondescriptor",
+          "dfn-extra-permission-data-type",
+          "dfn-extra-permission-data-constraints",
+          "dfn-permission-result-type",
+          "dom-permissionstatus",
+          "dfn-permission-query-algorithm",
+          "dom-permissionstatus-state",
+          "dfn-permission-revocation-algorithm"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "BufferSource",
+          "EnforceRange",
+          "idl-unsigned-short",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-boolean",
+          "Exposed",
+          "SecureContext",
+          "idl-promise",
+          "SameObject",
+          "a-new-promise",
+          "this",
+          "reject",
+          "securityerror",
+          "resolve",
+          "notfounderror",
+          "dfn-convert-idl-to-ecmascript-value",
+          "idl-DOMException",
+          "idl-frozen-array",
+          "idl-any",
+          "idl-undefined",
+          "aborterror",
+          "notsupportederror",
+          "invalidstateerror",
+          "unknownerror",
+          "idl-byte",
+          "idl-unsigned-long",
+          "dfn-maplike",
+          "wait-for-all",
+          "a-promise-rejected-with",
+          "networkerror",
+          "upon-fulfillment",
+          "dfn-perform-steps-once-promise-is-settled",
+          "invalidmodificationerror",
+          "idl-Uint8Array"
+        ]
+      },
+      "https://www.bluetooth.com/specifications/assigned-numbers/": {
+        "anchors": [
+          ":~:text=Generic%20Access%20Profile"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "dom-visibilitystate"
+        ]
+      }
+    }
   }
 }

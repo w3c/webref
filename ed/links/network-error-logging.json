@@ -4,157 +4,248 @@
     "url": "https://w3c.github.io/network-error-logging/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://datatracker.ietf.org/doc/html/draft-reschke-http-jfv": {
-      "anchors": [
-        "json-field-value"
-      ]
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://datatracker.ietf.org/doc/html/draft-reschke-http-jfv": {
+        "anchors": [
+          "json-field-value"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-client",
+          "cors-preflight-request",
+          "determine-the-network-partition-key",
+          "extract-header-list-values",
+          "header-list-contains",
+          "concept-header-name",
+          "concept-header-value",
+          "http-network-fetch",
+          "http-network-or-cache-fetch",
+          "network-partition-key",
+          "redirect-status",
+          "concept-request-header-list",
+          "concept-response",
+          "concept-response-header-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "navigate",
+          "navigator.online",
+          "origin"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7230.html": {
+        "anchors": [
+          "section-6.3",
+          "section-2.1"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7231.html": {
+        "anchors": [
+          "section-6.3.1",
+          "section-6.5",
+          "section-6.6",
+          "section-4",
+          "section-3",
+          "section-7",
+          "section-6"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7232.html": {
+        "anchors": [
+          "section-2.3",
+          "section-3.2"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7234.html": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-fragment",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url",
+          "concept-url-serializer"
+        ]
+      },
+      "https://w3c.github.io/reporting/network-reporting.html": {
+        "anchors": [
+          "endpoint-group",
+          "generate-a-network-report"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc1034": {
+        "anchors": [
+          "section-3.1",
+          "section-5"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc1123": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.rfc-editor.org/rfc/rfc4291": {},
+      "https://www.rfc-editor.org/rfc/rfc6797": {
+        "anchors": [
+          "section-8.2"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc7159": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/capability-urls/": {},
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dfn-current-wall-time",
+          "dfn-duration-from"
+        ]
+      },
+      "https://www.w3.org/TR/referrer-policy/": {
+        "anchors": [
+          "referrer-policy"
+        ]
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "anchors": [
+          "report",
+          "report-body",
+          "report-type",
+          "visible-to-reportingobservers"
+        ]
+      },
+      "https://www.w3.org/TR/resource-timing/": {
+        "anchors": [
+          "dom-performanceresourcetiming-nexthopprotocol"
+        ]
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "is-origin-trustworthy",
+          "potentially-trustworthy-origin"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webperf": {},
+      "https://www.w3.org/groups/wg/webperf/ipr": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request-client",
-        "cors-preflight-request",
-        "determine-the-network-partition-key",
-        "extract-header-list-values",
-        "header-list-contains",
-        "concept-header-name",
-        "concept-header-value",
-        "http-network-fetch",
-        "http-network-or-cache-fetch",
-        "network-partition-key",
-        "redirect-status",
-        "concept-request-header-list",
-        "concept-response",
-        "concept-response-header-list"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "navigate",
-        "navigator.online",
-        "origin"
-      ]
-    },
-    "https://httpwg.org/specs/rfc7230.html": {
-      "anchors": [
-        "section-6.3",
-        "section-2.1"
-      ],
-      "specShortname": "rfc7230"
-    },
-    "https://httpwg.org/specs/rfc7231.html": {
-      "anchors": [
-        "section-6.3.1",
-        "section-6.5",
-        "section-6.6",
-        "section-4",
-        "section-3",
-        "section-7",
-        "section-6"
-      ],
-      "specShortname": "rfc7231"
-    },
-    "https://httpwg.org/specs/rfc7232.html": {
-      "anchors": [
-        "section-2.3",
-        "section-3.2"
-      ],
-      "specShortname": "rfc7232"
-    },
-    "https://httpwg.org/specs/rfc7234.html": {
-      "specShortname": "rfc7234"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-fragment",
-        "concept-url-path",
-        "concept-url-query",
-        "concept-url",
-        "concept-url-serializer"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/reporting/network-reporting.html": {
-      "anchors": [
-        "endpoint-group",
-        "generate-a-network-report"
-      ],
-      "specShortname": "network-reporting"
-    },
-    "https://www.rfc-editor.org/rfc/rfc1034": {
-      "anchors": [
-        "section-3.1",
-        "section-5"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc1123": {},
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc3864": {},
-    "https://www.rfc-editor.org/rfc/rfc4291": {},
-    "https://www.rfc-editor.org/rfc/rfc6797": {
-      "anchors": [
-        "section-8.2"
-      ],
-      "specShortname": "rfc6797"
-    },
-    "https://www.rfc-editor.org/rfc/rfc7159": {
-      "anchors": [
-        "section-4"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/capability-urls/": {},
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dfn-current-wall-time",
-        "dfn-duration-from"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/referrer-policy/": {
-      "anchors": [
-        "referrer-policy"
-      ],
-      "specShortname": "referrer-policy"
-    },
-    "https://www.w3.org/TR/reporting-1/": {
-      "anchors": [
-        "report",
-        "report-body",
-        "report-type",
-        "visible-to-reportingobservers"
-      ],
-      "specShortname": "reporting-1"
-    },
-    "https://www.w3.org/TR/resource-timing-2/": {
-      "anchors": [
-        "dom-performanceresourcetiming-nexthopprotocol"
-      ]
-    },
-    "https://www.w3.org/TR/secure-contexts/": {
-      "anchors": [
-        "is-origin-trustworthy",
-        "potentially-trustworthy-origin"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://www.w3.org/groups/wg/webperf": {},
-    "https://www.w3.org/groups/wg/webperf/ipr": {}
+    "autolinks": {
+      "https://datatracker.ietf.org/doc/html/draft-reschke-http-jfv": {
+        "anchors": [
+          "json-field-value"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "redirect-status",
+          "cors-preflight-request",
+          "http-network-fetch",
+          "concept-header-name",
+          "network-partition-key",
+          "concept-header-value",
+          "concept-response",
+          "determine-the-network-partition-key",
+          "concept-request-header-list",
+          "header-list-contains",
+          "concept-response-header-list",
+          "concept-request-client"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "navigate",
+          "navigator.online",
+          "origin"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7230.html": {
+        "anchors": [
+          "section-2.1",
+          "section-6.3"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7231.html": {
+        "anchors": [
+          "section-6.5",
+          "section-6.6",
+          "section-7",
+          "section-4",
+          "section-6",
+          "section-6.3.1"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7232.html": {
+        "anchors": [
+          "section-2.3",
+          "section-3.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-fragment",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-serializer"
+        ]
+      },
+      "https://w3c.github.io/reporting/network-reporting.html": {
+        "anchors": [
+          "endpoint-group",
+          "generate-a-network-report"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc1034": {
+        "anchors": [
+          "section-3.1",
+          "section-5"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc6797": {
+        "anchors": [
+          "section-8.2"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dfn-duration-from",
+          "dfn-current-wall-time"
+        ]
+      },
+      "https://www.w3.org/TR/referrer-policy/": {
+        "anchors": [
+          "referrer-policy"
+        ]
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "anchors": [
+          "report",
+          "report-type",
+          "visible-to-reportingobservers",
+          "report-body"
+        ]
+      },
+      "https://www.w3.org/TR/resource-timing/": {
+        "anchors": [
+          "dom-performanceresourcetiming-nexthopprotocol"
+        ]
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "is-origin-trustworthy",
+          "potentially-trustworthy-origin"
+        ]
+      }
+    }
   }
 }

@@ -4,591 +4,825 @@
     "url": "https://immersive-web.github.io/webxr/"
   },
   "links": {
-    "http://intel.com/": {},
-    "http://www.brainwaive.com/": {},
-    "https://8thwall.com/": {},
-    "https://about.fb.com/company-info/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/xr": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/makeXRCompatible": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getPose": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getViewerPose": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/session": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/gripSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/handedness": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/profiles": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRaySpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/frame": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/inputSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/added": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/removed": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/session": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRLayer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRPose": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/angularVelocity": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/emulatedPosition": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/linearVelocity": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/transform": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/getOffsetReferenceSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/referenceSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/transform": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/baseLayer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthFar": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthNear": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/inlineVerticalFieldOfView": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/XRRigidTransform": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/inverse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/matrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/orientation": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/position": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/cancelAnimationFrame": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputSources": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputsourceschange_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/renderState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestAnimationFrame": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/select_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectend_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectstart_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeeze_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezeend_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezestart_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/updateRenderState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilityState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilitychange_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/session": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSpace": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/devicechange_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/isSessionSupported": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView/eye": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView/projectionMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView/recommendedViewportScale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView/requestViewportScale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRView/transform": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose/views": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/height": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/width": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/XRWebGLLayer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/antialias": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/fixedFoveation": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getViewport": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/ignoreDepthValues": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/xr-spatial-tracking": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/xr-spatial-tracking": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "document",
-        "canceled-flag",
-        "event",
-        "dictdef-eventinit",
-        "dom-event-type",
-        "concept-event-dispatch",
-        "concept-tree-ancestor",
-        "concept-tree-descendant"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://intel.com/": {},
+      "http://www.brainwaive.com/": {},
+      "https://8thwall.com/": {},
+      "https://about.fb.com/company-info/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/xr": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/makeXRCompatible": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getPose": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getViewerPose": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/session": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/gripSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/handedness": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/profiles": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRaySpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/frame": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/inputSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/added": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/removed": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/session": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRLayer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRPose": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/angularVelocity": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/emulatedPosition": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/linearVelocity": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/transform": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/getOffsetReferenceSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/referenceSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/transform": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/baseLayer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthFar": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthNear": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/inlineVerticalFieldOfView": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/XRRigidTransform": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/inverse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/matrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/orientation": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/position": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/cancelAnimationFrame": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputSources": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputsourceschange_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/renderState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestAnimationFrame": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/select_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectend_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectstart_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeeze_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezeend_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezestart_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/updateRenderState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilityState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilitychange_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/session": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSpace": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/devicechange_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/isSessionSupported": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView/eye": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView/projectionMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView/recommendedViewportScale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView/requestViewportScale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRView/transform": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose/views": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/height": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/XRWebGLLayer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/antialias": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/fixedFoveation": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getViewport": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/ignoreDepthValues": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/xr-spatial-tracking": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/xr-spatial-tracking": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "concept-tree-ancestor",
+          "canceled-flag",
+          "concept-tree-descendant",
+          "concept-event-dispatch",
+          "concept-event-fire",
+          "dom-event-type"
+        ]
+      },
+      "https://exokit.org/": {},
+      "https://github.com/immersive-web/webxr-input-profiles/tree/master/packages/registry": {},
+      "https://github.com/immersive-web/webxr/issues": {},
+      "https://github.com/immersive-web/webxr/pull/1002": {},
+      "https://github.com/immersive-web/webxr/pull/1004": {},
+      "https://github.com/immersive-web/webxr/pull/1005": {},
+      "https://github.com/immersive-web/webxr/pull/1012": {},
+      "https://github.com/immersive-web/webxr/pull/1015": {},
+      "https://github.com/immersive-web/webxr/pull/1023": {},
+      "https://github.com/immersive-web/webxr/pull/1024": {},
+      "https://github.com/immersive-web/webxr/pull/1029": {},
+      "https://github.com/immersive-web/webxr/pull/1030": {},
+      "https://github.com/immersive-web/webxr/pull/1031": {},
+      "https://github.com/immersive-web/webxr/pull/1032": {},
+      "https://github.com/immersive-web/webxr/pull/1033": {},
+      "https://github.com/immersive-web/webxr/pull/1034": {},
+      "https://github.com/immersive-web/webxr/pull/1037": {},
+      "https://github.com/immersive-web/webxr/pull/1043": {},
+      "https://github.com/immersive-web/webxr/pull/1053": {},
+      "https://github.com/immersive-web/webxr/pull/1058": {},
+      "https://github.com/immersive-web/webxr/pull/1064": {},
+      "https://github.com/immersive-web/webxr/pull/1067": {},
+      "https://github.com/immersive-web/webxr/pull/1071": {},
+      "https://github.com/immersive-web/webxr/pull/1081": {},
+      "https://github.com/immersive-web/webxr/pull/1083": {},
+      "https://github.com/immersive-web/webxr/pull/1084": {},
+      "https://github.com/immersive-web/webxr/pull/1088": {},
+      "https://github.com/immersive-web/webxr/pull/1093": {},
+      "https://github.com/immersive-web/webxr/pull/1096": {},
+      "https://github.com/immersive-web/webxr/pull/1097": {},
+      "https://github.com/immersive-web/webxr/pull/1105": {},
+      "https://github.com/immersive-web/webxr/pull/1111": {},
+      "https://github.com/immersive-web/webxr/pull/1124": {},
+      "https://github.com/immersive-web/webxr/pull/1126": {},
+      "https://github.com/immersive-web/webxr/pull/1128": {},
+      "https://github.com/immersive-web/webxr/pull/1131": {},
+      "https://github.com/immersive-web/webxr/pull/1132": {},
+      "https://github.com/immersive-web/webxr/pull/1133": {},
+      "https://github.com/immersive-web/webxr/pull/1134": {},
+      "https://github.com/immersive-web/webxr/pull/1136": {},
+      "https://github.com/immersive-web/webxr/pull/1151": {},
+      "https://github.com/immersive-web/webxr/pull/1169": {},
+      "https://github.com/immersive-web/webxr/pull/1170": {},
+      "https://github.com/immersive-web/webxr/pull/1172": {},
+      "https://github.com/immersive-web/webxr/pull/1180": {},
+      "https://github.com/immersive-web/webxr/pull/1182": {},
+      "https://github.com/immersive-web/webxr/pull/1188": {},
+      "https://github.com/immersive-web/webxr/pull/1189": {},
+      "https://github.com/immersive-web/webxr/pull/1195": {},
+      "https://github.com/immersive-web/webxr/pull/1201": {},
+      "https://github.com/immersive-web/webxr/pull/1217": {},
+      "https://github.com/immersive-web/webxr/pull/1230": {},
+      "https://github.com/immersive-web/webxr/pull/360": {},
+      "https://github.com/immersive-web/webxr/pull/496": {},
+      "https://github.com/immersive-web/webxr/pull/501": {},
+      "https://github.com/immersive-web/webxr/pull/511": {},
+      "https://github.com/immersive-web/webxr/pull/512": {},
+      "https://github.com/immersive-web/webxr/pull/519": {},
+      "https://github.com/immersive-web/webxr/pull/520": {},
+      "https://github.com/immersive-web/webxr/pull/521": {},
+      "https://github.com/immersive-web/webxr/pull/522": {},
+      "https://github.com/immersive-web/webxr/pull/524": {},
+      "https://github.com/immersive-web/webxr/pull/526": {},
+      "https://github.com/immersive-web/webxr/pull/531": {},
+      "https://github.com/immersive-web/webxr/pull/535": {},
+      "https://github.com/immersive-web/webxr/pull/536": {},
+      "https://github.com/immersive-web/webxr/pull/537": {},
+      "https://github.com/immersive-web/webxr/pull/548": {},
+      "https://github.com/immersive-web/webxr/pull/553": {},
+      "https://github.com/immersive-web/webxr/pull/559": {},
+      "https://github.com/immersive-web/webxr/pull/560": {},
+      "https://github.com/immersive-web/webxr/pull/563": {},
+      "https://github.com/immersive-web/webxr/pull/566": {},
+      "https://github.com/immersive-web/webxr/pull/568": {},
+      "https://github.com/immersive-web/webxr/pull/574": {},
+      "https://github.com/immersive-web/webxr/pull/575": {},
+      "https://github.com/immersive-web/webxr/pull/585": {},
+      "https://github.com/immersive-web/webxr/pull/586": {},
+      "https://github.com/immersive-web/webxr/pull/587": {},
+      "https://github.com/immersive-web/webxr/pull/595": {},
+      "https://github.com/immersive-web/webxr/pull/601": {},
+      "https://github.com/immersive-web/webxr/pull/609": {},
+      "https://github.com/immersive-web/webxr/pull/612": {},
+      "https://github.com/immersive-web/webxr/pull/613": {},
+      "https://github.com/immersive-web/webxr/pull/614": {},
+      "https://github.com/immersive-web/webxr/pull/615": {},
+      "https://github.com/immersive-web/webxr/pull/621": {},
+      "https://github.com/immersive-web/webxr/pull/624": {},
+      "https://github.com/immersive-web/webxr/pull/626": {},
+      "https://github.com/immersive-web/webxr/pull/628": {},
+      "https://github.com/immersive-web/webxr/pull/629": {},
+      "https://github.com/immersive-web/webxr/pull/631": {},
+      "https://github.com/immersive-web/webxr/pull/637": {},
+      "https://github.com/immersive-web/webxr/pull/641": {},
+      "https://github.com/immersive-web/webxr/pull/648": {},
+      "https://github.com/immersive-web/webxr/pull/649": {},
+      "https://github.com/immersive-web/webxr/pull/651": {},
+      "https://github.com/immersive-web/webxr/pull/655": {},
+      "https://github.com/immersive-web/webxr/pull/656": {},
+      "https://github.com/immersive-web/webxr/pull/659": {},
+      "https://github.com/immersive-web/webxr/pull/660": {},
+      "https://github.com/immersive-web/webxr/pull/661": {},
+      "https://github.com/immersive-web/webxr/pull/684": {},
+      "https://github.com/immersive-web/webxr/pull/685": {},
+      "https://github.com/immersive-web/webxr/pull/687": {},
+      "https://github.com/immersive-web/webxr/pull/688": {},
+      "https://github.com/immersive-web/webxr/pull/690": {},
+      "https://github.com/immersive-web/webxr/pull/695": {},
+      "https://github.com/immersive-web/webxr/pull/700": {},
+      "https://github.com/immersive-web/webxr/pull/701": {},
+      "https://github.com/immersive-web/webxr/pull/703": {},
+      "https://github.com/immersive-web/webxr/pull/705": {},
+      "https://github.com/immersive-web/webxr/pull/706": {},
+      "https://github.com/immersive-web/webxr/pull/707": {},
+      "https://github.com/immersive-web/webxr/pull/709": {},
+      "https://github.com/immersive-web/webxr/pull/710": {},
+      "https://github.com/immersive-web/webxr/pull/714": {},
+      "https://github.com/immersive-web/webxr/pull/716": {},
+      "https://github.com/immersive-web/webxr/pull/728": {},
+      "https://github.com/immersive-web/webxr/pull/735": {},
+      "https://github.com/immersive-web/webxr/pull/737": {},
+      "https://github.com/immersive-web/webxr/pull/741": {},
+      "https://github.com/immersive-web/webxr/pull/742": {},
+      "https://github.com/immersive-web/webxr/pull/749": {},
+      "https://github.com/immersive-web/webxr/pull/757": {},
+      "https://github.com/immersive-web/webxr/pull/761": {},
+      "https://github.com/immersive-web/webxr/pull/762": {},
+      "https://github.com/immersive-web/webxr/pull/767": {},
+      "https://github.com/immersive-web/webxr/pull/771": {},
+      "https://github.com/immersive-web/webxr/pull/782": {},
+      "https://github.com/immersive-web/webxr/pull/784": {},
+      "https://github.com/immersive-web/webxr/pull/795": {},
+      "https://github.com/immersive-web/webxr/pull/796": {},
+      "https://github.com/immersive-web/webxr/pull/797": {},
+      "https://github.com/immersive-web/webxr/pull/798": {},
+      "https://github.com/immersive-web/webxr/pull/799": {},
+      "https://github.com/immersive-web/webxr/pull/800": {},
+      "https://github.com/immersive-web/webxr/pull/802": {},
+      "https://github.com/immersive-web/webxr/pull/804": {},
+      "https://github.com/immersive-web/webxr/pull/805": {},
+      "https://github.com/immersive-web/webxr/pull/806": {},
+      "https://github.com/immersive-web/webxr/pull/807": {},
+      "https://github.com/immersive-web/webxr/pull/809": {},
+      "https://github.com/immersive-web/webxr/pull/829": {},
+      "https://github.com/immersive-web/webxr/pull/830": {},
+      "https://github.com/immersive-web/webxr/pull/834": {},
+      "https://github.com/immersive-web/webxr/pull/839": {},
+      "https://github.com/immersive-web/webxr/pull/840": {},
+      "https://github.com/immersive-web/webxr/pull/843": {},
+      "https://github.com/immersive-web/webxr/pull/866": {},
+      "https://github.com/immersive-web/webxr/pull/871": {},
+      "https://github.com/immersive-web/webxr/pull/875": {},
+      "https://github.com/immersive-web/webxr/pull/888": {},
+      "https://github.com/immersive-web/webxr/pull/893": {},
+      "https://github.com/immersive-web/webxr/pull/921": {},
+      "https://github.com/immersive-web/webxr/pull/927": {},
+      "https://github.com/immersive-web/webxr/pull/929": {},
+      "https://github.com/immersive-web/webxr/pull/938": {},
+      "https://github.com/immersive-web/webxr/pull/947": {},
+      "https://github.com/immersive-web/webxr/pull/970": {},
+      "https://github.com/immersive-web/webxr/pull/974": {},
+      "https://github.com/immersive-web/webxr/pull/975": {},
+      "https://github.com/immersive-web/webxr/pull/976": {},
+      "https://github.com/immersive-web/webxr/pull/985": {},
+      "https://github.com/immersive-web/webxr/pull/986": {},
+      "https://github.com/immersive-web/webxr/pull/987": {},
+      "https://github.com/immersive-web/webxr/pull/993": {},
+      "https://github.com/immersive-web/webxr/pull/999": {},
+      "https://google.com/": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "dom-focus-dev"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "htmlcanvaselement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "dom-animationframeprovider-requestanimationframe"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "currently-focused-area-of-a-top-level-browsing-context",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin-domain"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator",
+          "dom-navigator-appversion",
+          "dom-navigator",
+          "dom-navigator-useragent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "current-global-object",
+          "current",
+          "event-handler-idl-attributes",
+          "queue-a-task",
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "rendering-opportunity",
+          "report-the-exception",
+          "task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "list-contain",
+          "iteration-continue",
+          "list-extend",
+          "list-is-empty",
+          "list",
+          "list-remove",
+          "ordered-set",
+          "list-size",
+          "string",
+          "tuple"
+        ]
+      },
+      "https://metavrse.com/": {},
+      "https://microsoft.com/": {},
+      "https://moar.io/": {},
+      "https://mozilla.org/": {},
+      "https://nfb.ca/interactive": {},
+      "https://realism.com/": {},
+      "https://samsung.com/": {},
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-isdetachedbuffer",
+          "realm"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://transmutable.com/": {},
+      "https://unity3d.com/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "aborterror",
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "idl-Float32Array",
+          "idl-frozen-array",
+          "invalidstateerror",
+          "NewObject",
+          "notsupportederror",
+          "operationerror",
+          "idl-promise",
+          "SameObject",
+          "SecureContext",
+          "securityerror",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "idl-boolean",
+          "idl-double",
+          "idl-float",
+          "dfn-frozen-array-type",
+          "dfn-indexed-property-getter",
+          "invoke-a-callback-function",
+          "idl-long",
+          "new",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.google.com/": {},
+      "https://www.intel.com/": {},
+      "https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glDepthRangef.xml": {},
+      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
+        "anchors": [
+          "WebGLRenderingContextBase",
+          "5.14",
+          "WebGLContextAttributes",
+          "WebGLFramebuffer",
+          "WebGLObject",
+          "WebGLRenderingContext",
+          "actual-context-parameters",
+          "context-canvas",
+          "5.14.6",
+          "5.14.11",
+          "create-a-drawing-buffer",
+          "2.1",
+          "2.2",
+          "fire-a-webgl-context-event",
+          "CONTEXT_LOST",
+          "webgl-object-invalidated-flag",
+          "restore-the-drawing-buffer",
+          "5.15.1",
+          "5.14.10",
+          "webgl-context-lost-flag",
+          "5.15",
+          "5.14.4"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
+        "anchors": [
+          "5.14",
+          "WebGL2RenderingContext"
+        ]
+      },
+      "https://www.plutovr.com/": {},
+      "https://www.w3.org/2023/Process-20231103/": {
+        "anchors": [
+          "recs-and-notes",
+          "dfn-wide-review"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "sec-Requirements",
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2019/WD-webxr-20190205/": {},
+      "https://www.w3.org/TR/2019/WD-webxr-20191010/": {},
+      "https://www.w3.org/TR/2020/WD-webxr-20200724/": {},
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "dommatrix",
+          "dictdef-dompointinit",
+          "dompointreadonly",
+          "dom-dompointreadonly-w",
+          "dom-dompointreadonly-x",
+          "dom-dompointreadonly-y",
+          "dom-dompointreadonly-z"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/orientation-event/": {},
+      "https://www.w3.org/TR/orientation-sensor/": {
+        "anchors": [
+          "absoluteorientationsensor",
+          "relativeorientationsensor"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "visibilitystate-attribute"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dom-permissiondescriptor",
+          "dom-permissionstatus",
+          "dom-permissionstate-denied",
+          "dom-permissionstate-granted",
+          "dom-permissiondescriptor-name",
+          "dfn-permission-descriptor-type",
+          "dfn-permission-query-algorithm",
+          "dfn-permission-result-type",
+          "dfn-permission-state",
+          "dfn-powerful-feature",
+          "dom-permissionstate-prompt",
+          "dfn-request-permission-to-use",
+          "dom-permissionstatus-state"
+        ]
+      },
+      "https://www.w3.org/TR/pointerevents/": {
+        "anchors": [
+          "dfn-primary-pointer"
+        ]
+      },
+      "https://www.w3.org/TR/pointerlock/": {},
+      "https://www.w3.org/TR/requestidlecallback/": {
+        "anchors": [
+          "the-requestidlecallback-method"
+        ]
+      },
+      "https://www.w3.org/TR/webxr-ar-module-1/": {
+        "anchors": [
+          "first-person-observer-view"
+        ]
+      },
+      "https://www.w3.org/TR/webxr-gamepads-module-1/": {},
+      "https://www.w3.org/TR/webxrlayers-1/": {
+        "anchors": [
+          "dom-xrlayerinit-colorformat",
+          "dom-xrrenderstate-layers"
+        ]
+      },
+      "https://www.w3.org/groups/wg/immersive-web": {},
+      "https://www.w3.org/groups/wg/immersive-web/ipr": {},
+      "https://www.xandr.com/": {}
     },
-    "https://exokit.org/": {},
-    "https://github.com/immersive-web/webxr-input-profiles/tree/master/packages/registry": {},
-    "https://github.com/immersive-web/webxr/issues": {},
-    "https://github.com/immersive-web/webxr/pull/1002": {},
-    "https://github.com/immersive-web/webxr/pull/1004": {},
-    "https://github.com/immersive-web/webxr/pull/1005": {},
-    "https://github.com/immersive-web/webxr/pull/1012": {},
-    "https://github.com/immersive-web/webxr/pull/1015": {},
-    "https://github.com/immersive-web/webxr/pull/1023": {},
-    "https://github.com/immersive-web/webxr/pull/1024": {},
-    "https://github.com/immersive-web/webxr/pull/1029": {},
-    "https://github.com/immersive-web/webxr/pull/1030": {},
-    "https://github.com/immersive-web/webxr/pull/1031": {},
-    "https://github.com/immersive-web/webxr/pull/1032": {},
-    "https://github.com/immersive-web/webxr/pull/1033": {},
-    "https://github.com/immersive-web/webxr/pull/1034": {},
-    "https://github.com/immersive-web/webxr/pull/1037": {},
-    "https://github.com/immersive-web/webxr/pull/1043": {},
-    "https://github.com/immersive-web/webxr/pull/1053": {},
-    "https://github.com/immersive-web/webxr/pull/1058": {},
-    "https://github.com/immersive-web/webxr/pull/1064": {},
-    "https://github.com/immersive-web/webxr/pull/1067": {},
-    "https://github.com/immersive-web/webxr/pull/1071": {},
-    "https://github.com/immersive-web/webxr/pull/1081": {},
-    "https://github.com/immersive-web/webxr/pull/1083": {},
-    "https://github.com/immersive-web/webxr/pull/1084": {},
-    "https://github.com/immersive-web/webxr/pull/1088": {},
-    "https://github.com/immersive-web/webxr/pull/1093": {},
-    "https://github.com/immersive-web/webxr/pull/1096": {},
-    "https://github.com/immersive-web/webxr/pull/1097": {},
-    "https://github.com/immersive-web/webxr/pull/1105": {},
-    "https://github.com/immersive-web/webxr/pull/1111": {},
-    "https://github.com/immersive-web/webxr/pull/1124": {},
-    "https://github.com/immersive-web/webxr/pull/1126": {},
-    "https://github.com/immersive-web/webxr/pull/1128": {},
-    "https://github.com/immersive-web/webxr/pull/1131": {},
-    "https://github.com/immersive-web/webxr/pull/1132": {},
-    "https://github.com/immersive-web/webxr/pull/1133": {},
-    "https://github.com/immersive-web/webxr/pull/1134": {},
-    "https://github.com/immersive-web/webxr/pull/1136": {},
-    "https://github.com/immersive-web/webxr/pull/1151": {},
-    "https://github.com/immersive-web/webxr/pull/1169": {},
-    "https://github.com/immersive-web/webxr/pull/1170": {},
-    "https://github.com/immersive-web/webxr/pull/1172": {},
-    "https://github.com/immersive-web/webxr/pull/1180": {},
-    "https://github.com/immersive-web/webxr/pull/1182": {},
-    "https://github.com/immersive-web/webxr/pull/1188": {},
-    "https://github.com/immersive-web/webxr/pull/1189": {},
-    "https://github.com/immersive-web/webxr/pull/1195": {},
-    "https://github.com/immersive-web/webxr/pull/1201": {},
-    "https://github.com/immersive-web/webxr/pull/1217": {},
-    "https://github.com/immersive-web/webxr/pull/1230": {},
-    "https://github.com/immersive-web/webxr/pull/360": {},
-    "https://github.com/immersive-web/webxr/pull/496": {},
-    "https://github.com/immersive-web/webxr/pull/501": {},
-    "https://github.com/immersive-web/webxr/pull/511": {},
-    "https://github.com/immersive-web/webxr/pull/512": {},
-    "https://github.com/immersive-web/webxr/pull/519": {},
-    "https://github.com/immersive-web/webxr/pull/520": {},
-    "https://github.com/immersive-web/webxr/pull/521": {},
-    "https://github.com/immersive-web/webxr/pull/522": {},
-    "https://github.com/immersive-web/webxr/pull/524": {},
-    "https://github.com/immersive-web/webxr/pull/526": {},
-    "https://github.com/immersive-web/webxr/pull/531": {},
-    "https://github.com/immersive-web/webxr/pull/535": {},
-    "https://github.com/immersive-web/webxr/pull/536": {},
-    "https://github.com/immersive-web/webxr/pull/537": {},
-    "https://github.com/immersive-web/webxr/pull/548": {},
-    "https://github.com/immersive-web/webxr/pull/553": {},
-    "https://github.com/immersive-web/webxr/pull/559": {},
-    "https://github.com/immersive-web/webxr/pull/560": {},
-    "https://github.com/immersive-web/webxr/pull/563": {},
-    "https://github.com/immersive-web/webxr/pull/566": {},
-    "https://github.com/immersive-web/webxr/pull/568": {},
-    "https://github.com/immersive-web/webxr/pull/574": {},
-    "https://github.com/immersive-web/webxr/pull/575": {},
-    "https://github.com/immersive-web/webxr/pull/585": {},
-    "https://github.com/immersive-web/webxr/pull/586": {},
-    "https://github.com/immersive-web/webxr/pull/587": {},
-    "https://github.com/immersive-web/webxr/pull/595": {},
-    "https://github.com/immersive-web/webxr/pull/601": {},
-    "https://github.com/immersive-web/webxr/pull/609": {},
-    "https://github.com/immersive-web/webxr/pull/612": {},
-    "https://github.com/immersive-web/webxr/pull/613": {},
-    "https://github.com/immersive-web/webxr/pull/614": {},
-    "https://github.com/immersive-web/webxr/pull/615": {},
-    "https://github.com/immersive-web/webxr/pull/621": {},
-    "https://github.com/immersive-web/webxr/pull/624": {},
-    "https://github.com/immersive-web/webxr/pull/626": {},
-    "https://github.com/immersive-web/webxr/pull/628": {},
-    "https://github.com/immersive-web/webxr/pull/629": {},
-    "https://github.com/immersive-web/webxr/pull/631": {},
-    "https://github.com/immersive-web/webxr/pull/637": {},
-    "https://github.com/immersive-web/webxr/pull/641": {},
-    "https://github.com/immersive-web/webxr/pull/648": {},
-    "https://github.com/immersive-web/webxr/pull/649": {},
-    "https://github.com/immersive-web/webxr/pull/651": {},
-    "https://github.com/immersive-web/webxr/pull/655": {},
-    "https://github.com/immersive-web/webxr/pull/656": {},
-    "https://github.com/immersive-web/webxr/pull/659": {},
-    "https://github.com/immersive-web/webxr/pull/660": {},
-    "https://github.com/immersive-web/webxr/pull/661": {},
-    "https://github.com/immersive-web/webxr/pull/684": {},
-    "https://github.com/immersive-web/webxr/pull/685": {},
-    "https://github.com/immersive-web/webxr/pull/687": {},
-    "https://github.com/immersive-web/webxr/pull/688": {},
-    "https://github.com/immersive-web/webxr/pull/690": {},
-    "https://github.com/immersive-web/webxr/pull/695": {},
-    "https://github.com/immersive-web/webxr/pull/700": {},
-    "https://github.com/immersive-web/webxr/pull/701": {},
-    "https://github.com/immersive-web/webxr/pull/703": {},
-    "https://github.com/immersive-web/webxr/pull/705": {},
-    "https://github.com/immersive-web/webxr/pull/706": {},
-    "https://github.com/immersive-web/webxr/pull/707": {},
-    "https://github.com/immersive-web/webxr/pull/709": {},
-    "https://github.com/immersive-web/webxr/pull/710": {},
-    "https://github.com/immersive-web/webxr/pull/714": {},
-    "https://github.com/immersive-web/webxr/pull/716": {},
-    "https://github.com/immersive-web/webxr/pull/728": {},
-    "https://github.com/immersive-web/webxr/pull/735": {},
-    "https://github.com/immersive-web/webxr/pull/737": {},
-    "https://github.com/immersive-web/webxr/pull/741": {},
-    "https://github.com/immersive-web/webxr/pull/742": {},
-    "https://github.com/immersive-web/webxr/pull/749": {},
-    "https://github.com/immersive-web/webxr/pull/757": {},
-    "https://github.com/immersive-web/webxr/pull/761": {},
-    "https://github.com/immersive-web/webxr/pull/762": {},
-    "https://github.com/immersive-web/webxr/pull/767": {},
-    "https://github.com/immersive-web/webxr/pull/771": {},
-    "https://github.com/immersive-web/webxr/pull/782": {},
-    "https://github.com/immersive-web/webxr/pull/784": {},
-    "https://github.com/immersive-web/webxr/pull/795": {},
-    "https://github.com/immersive-web/webxr/pull/796": {},
-    "https://github.com/immersive-web/webxr/pull/797": {},
-    "https://github.com/immersive-web/webxr/pull/798": {},
-    "https://github.com/immersive-web/webxr/pull/799": {},
-    "https://github.com/immersive-web/webxr/pull/800": {},
-    "https://github.com/immersive-web/webxr/pull/802": {},
-    "https://github.com/immersive-web/webxr/pull/804": {},
-    "https://github.com/immersive-web/webxr/pull/805": {},
-    "https://github.com/immersive-web/webxr/pull/806": {},
-    "https://github.com/immersive-web/webxr/pull/807": {},
-    "https://github.com/immersive-web/webxr/pull/809": {},
-    "https://github.com/immersive-web/webxr/pull/829": {},
-    "https://github.com/immersive-web/webxr/pull/830": {},
-    "https://github.com/immersive-web/webxr/pull/834": {},
-    "https://github.com/immersive-web/webxr/pull/839": {},
-    "https://github.com/immersive-web/webxr/pull/840": {},
-    "https://github.com/immersive-web/webxr/pull/843": {},
-    "https://github.com/immersive-web/webxr/pull/866": {},
-    "https://github.com/immersive-web/webxr/pull/871": {},
-    "https://github.com/immersive-web/webxr/pull/875": {},
-    "https://github.com/immersive-web/webxr/pull/888": {},
-    "https://github.com/immersive-web/webxr/pull/893": {},
-    "https://github.com/immersive-web/webxr/pull/921": {},
-    "https://github.com/immersive-web/webxr/pull/927": {},
-    "https://github.com/immersive-web/webxr/pull/929": {},
-    "https://github.com/immersive-web/webxr/pull/938": {},
-    "https://github.com/immersive-web/webxr/pull/947": {},
-    "https://github.com/immersive-web/webxr/pull/970": {},
-    "https://github.com/immersive-web/webxr/pull/974": {},
-    "https://github.com/immersive-web/webxr/pull/975": {},
-    "https://github.com/immersive-web/webxr/pull/976": {},
-    "https://github.com/immersive-web/webxr/pull/985": {},
-    "https://github.com/immersive-web/webxr/pull/986": {},
-    "https://github.com/immersive-web/webxr/pull/987": {},
-    "https://github.com/immersive-web/webxr/pull/993": {},
-    "https://github.com/immersive-web/webxr/pull/999": {},
-    "https://google.com/": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "dom-focus-dev"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context",
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "htmlcanvaselement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "nav-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-permissions-policy"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
-      "anchors": [
-        "dom-animationframeprovider-requestanimationframe"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation",
-        "currently-focused-area-of-a-top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin",
-        "same-origin-domain"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator",
-        "dom-navigator",
-        "dom-navigator-useragent",
-        "dom-navigator-appversion"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "queue-a-task",
-        "concept-relevant-global",
-        "event-handler-idl-attributes",
-        "concept-relevant-realm",
-        "report-the-exception",
-        "rendering-opportunity",
-        "current",
-        "task-source",
-        "current-global-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list",
-        "string",
-        "list-contain",
-        "ordered-set",
-        "list-size",
-        "list-extend",
-        "list-remove",
-        "list-append",
-        "list-is-empty",
-        "tuple",
-        "iteration-continue"
-      ],
-      "specShortname": "infra"
-    },
-    "https://metavrse.com/": {},
-    "https://microsoft.com/": {},
-    "https://moar.io/": {},
-    "https://mozilla.org/": {},
-    "https://nfb.ca/interactive": {},
-    "https://realism.com/": {},
-    "https://samsung.com/": {},
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-isdetachedbuffer",
-        "realm"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://transmutable.com/": {},
-    "https://unity3d.com/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SecureContext",
-        "SameObject",
-        "Exposed",
-        "idl-promise",
-        "idl-boolean",
-        "NewObject",
-        "a-new-promise",
-        "resolve",
-        "reject",
-        "securityerror",
-        "idl-DOMException",
-        "invalidstateerror",
-        "notsupportederror",
-        "new",
-        "idl-sequence",
-        "idl-DOMString",
-        "idl-float",
-        "idl-Float32Array",
-        "idl-frozen-array",
-        "idl-undefined",
-        "idl-unsigned-long",
-        "this",
-        "exceptiondef-typeerror",
-        "idl-double",
-        "invoke-a-callback-function",
-        "idl-long",
-        "dfn-frozen-array-type",
-        "dfn-indexed-property-getter",
-        "operationerror",
-        "aborterror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.google.com/": {},
-    "https://www.intel.com/": {},
-    "https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glDepthRangef.xml": {},
-    "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
-      "anchors": [
-        "WebGLRenderingContextBase",
-        "WebGLRenderingContext",
-        "5.14.4",
-        "5.14.10",
-        "WebGLFramebuffer",
-        "actual-context-parameters",
-        "WebGLContextAttributes",
-        "2.2",
-        "5.14.6",
-        "create-a-drawing-buffer",
-        "5.14",
-        "5.14.11",
-        "2.1",
-        "webgl-context-lost-flag",
-        "5.15",
-        "CONTEXT_LOST",
-        "context-canvas",
-        "webgl-object-invalidated-flag",
-        "WebGLObject",
-        "fire-a-webgl-context-event",
-        "5.15.1",
-        "restore-the-drawing-buffer"
-      ]
-    },
-    "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
-      "anchors": [
-        "WebGL2RenderingContext",
-        "5.14"
-      ]
-    },
-    "https://www.plutovr.com/": {},
-    "https://www.w3.org/2023/Process-20231103/": {
-      "anchors": [
-        "recs-and-notes",
-        "dfn-wide-review"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "sec-Requirements",
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2019/WD-webxr-20190205/": {},
-    "https://www.w3.org/TR/2019/WD-webxr-20191010/": {},
-    "https://www.w3.org/TR/2020/WD-webxr-20200724/": {},
-    "https://www.w3.org/TR/geometry-1/": {
-      "anchors": [
-        "dompointreadonly",
-        "dom-dompointreadonly-y",
-        "dom-dompointreadonly-w",
-        "dommatrix",
-        "dictdef-dompointinit",
-        "dom-dompointreadonly-x",
-        "dom-dompointreadonly-z"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dfn-current-high-resolution-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/hr-time/": {
-      "anchors": [
-        "dom-domhighrestimestamp"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/orientation-event/": {
-      "specShortname": "orientation-event"
-    },
-    "https://www.w3.org/TR/orientation-sensor/": {
-      "anchors": [
-        "relativeorientationsensor",
-        "absoluteorientationsensor"
-      ],
-      "specShortname": "orientation-sensor"
-    },
-    "https://www.w3.org/TR/page-visibility-2/": {
-      "anchors": [
-        "visibilitystate-attribute"
-      ]
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dfn-powerful-feature",
-        "dom-permissionstate-denied",
-        "dom-permissionstatus-state",
-        "dfn-permission-descriptor-type",
-        "dom-permissiondescriptor",
-        "dom-permissiondescriptor-name",
-        "dfn-permission-result-type",
-        "dom-permissionstatus",
-        "dfn-permission-query-algorithm",
-        "dfn-permission-state",
-        "dom-permissionstate-granted",
-        "dom-permissionstate-prompt"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/pointerevents/": {
-      "anchors": [
-        "dfn-primary-pointer"
-      ],
-      "specShortname": "pointerevents3"
-    },
-    "https://www.w3.org/TR/pointerlock/": {
-      "specShortname": "pointerlock-2"
-    },
-    "https://www.w3.org/TR/requestidlecallback/": {
-      "anchors": [
-        "the-requestidlecallback-method"
-      ],
-      "specShortname": "requestidlecallback"
-    },
-    "https://www.w3.org/TR/webxr-ar-module-1/": {
-      "anchors": [
-        "first-person-observer-view"
-      ],
-      "specShortname": "webxr-ar-module-1"
-    },
-    "https://www.w3.org/TR/webxr-gamepads-module-1/": {
-      "specShortname": "webxr-gamepads-module-1"
-    },
-    "https://www.w3.org/TR/webxrlayers-1/": {
-      "anchors": [
-        "dom-xrrenderstate-layers",
-        "dom-xrlayerinit-colorformat"
-      ],
-      "specShortname": "webxrlayers-1"
-    },
-    "https://www.w3.org/groups/wg/immersive-web": {},
-    "https://www.w3.org/groups/wg/immersive-web/ipr": {},
-    "https://www.xandr.com/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "document",
+          "canceled-flag",
+          "event",
+          "dictdef-eventinit",
+          "dom-event-type",
+          "concept-event-dispatch",
+          "concept-tree-ancestor",
+          "concept-tree-descendant"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "dom-focus-dev"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "htmlcanvaselement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "dom-animationframeprovider-requestanimationframe"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation",
+          "currently-focused-area-of-a-top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin-domain"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator",
+          "dom-navigator",
+          "dom-navigator-useragent",
+          "dom-navigator-appversion"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "queue-a-task",
+          "concept-relevant-global",
+          "event-handler-idl-attributes",
+          "concept-relevant-realm",
+          "report-the-exception",
+          "rendering-opportunity",
+          "current",
+          "task-source",
+          "current-global-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "string",
+          "list-contain",
+          "ordered-set",
+          "list-size",
+          "list-extend",
+          "list-remove",
+          "list-append",
+          "list-is-empty",
+          "tuple",
+          "iteration-continue"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-isdetachedbuffer",
+          "realm"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "SameObject",
+          "Exposed",
+          "idl-promise",
+          "idl-boolean",
+          "NewObject",
+          "a-new-promise",
+          "resolve",
+          "reject",
+          "securityerror",
+          "idl-DOMException",
+          "invalidstateerror",
+          "notsupportederror",
+          "new",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-float",
+          "idl-Float32Array",
+          "idl-frozen-array",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "this",
+          "exceptiondef-typeerror",
+          "idl-double",
+          "invoke-a-callback-function",
+          "idl-long",
+          "dfn-frozen-array-type",
+          "dfn-indexed-property-getter",
+          "operationerror",
+          "aborterror"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
+        "anchors": [
+          "WebGLRenderingContextBase",
+          "WebGLRenderingContext",
+          "5.14.4",
+          "5.14.10",
+          "WebGLFramebuffer",
+          "actual-context-parameters",
+          "WebGLContextAttributes",
+          "2.2",
+          "5.14.6",
+          "create-a-drawing-buffer",
+          "5.14",
+          "5.14.11",
+          "2.1",
+          "webgl-context-lost-flag",
+          "5.15",
+          "CONTEXT_LOST",
+          "context-canvas",
+          "webgl-object-invalidated-flag",
+          "WebGLObject",
+          "fire-a-webgl-context-event",
+          "5.15.1",
+          "restore-the-drawing-buffer"
+        ]
+      },
+      "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
+        "anchors": [
+          "WebGL2RenderingContext",
+          "5.14"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "dompointreadonly",
+          "dom-dompointreadonly-y",
+          "dom-dompointreadonly-w",
+          "dommatrix",
+          "dictdef-dompointinit",
+          "dom-dompointreadonly-x",
+          "dom-dompointreadonly-z"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/orientation-sensor/": {
+        "anchors": [
+          "relativeorientationsensor",
+          "absoluteorientationsensor"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "visibilitystate-attribute"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-request-permission-to-use",
+          "dfn-powerful-feature",
+          "dom-permissionstate-denied",
+          "dom-permissionstatus-state",
+          "dfn-permission-descriptor-type",
+          "dom-permissiondescriptor",
+          "dom-permissiondescriptor-name",
+          "dfn-permission-result-type",
+          "dom-permissionstatus",
+          "dfn-permission-query-algorithm",
+          "dfn-permission-state",
+          "dom-permissionstate-granted",
+          "dom-permissionstate-prompt"
+        ]
+      },
+      "https://www.w3.org/TR/pointerevents/": {
+        "anchors": [
+          "dfn-primary-pointer"
+        ]
+      },
+      "https://www.w3.org/TR/requestidlecallback/": {
+        "anchors": [
+          "the-requestidlecallback-method"
+        ]
+      },
+      "https://www.w3.org/TR/webxr-ar-module-1/": {
+        "anchors": [
+          "first-person-observer-view"
+        ]
+      },
+      "https://www.w3.org/TR/webxrlayers-1/": {
+        "anchors": [
+          "dom-xrrenderstate-layers",
+          "dom-xrlayerinit-colorformat"
+        ]
+      }
+    }
   }
 }

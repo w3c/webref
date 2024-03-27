@@ -4,128 +4,142 @@
     "url": "https://wicg.github.io/direct-sockets/"
   },
   "links": {
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "abortsignal-aborted",
-        "abortsignal-abort-reason",
-        "abortsignal-add"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://dom.spec.whatwg.org/": {},
+      "https://en.wikipedia.org/wiki/Nagle%27s_algorithm": {},
+      "https://github.com/WICG/direct-sockets": {},
+      "https://github.com/WICG/direct-sockets/blob/main/docs/explainer.md": {
+        "anchors": [
+          "security-considerations"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
+      "https://learn.microsoft.com/en-us/windows/win32/winsock/sio-keepalive-vals": {},
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "lock",
+          "desired-size-to-fill-a-streams-internal-queue",
+          "internal-queues",
+          "readablestream-set-up-pullalgorithm",
+          "readablestream-set-up-cancelalgorithm",
+          "readablestream-set-up-highwatermark"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "SecureContext",
+          "idl-promise",
+          "EnforceRange"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {}
     },
-    "https://en.wikipedia.org/wiki/Nagle%27s_algorithm": {},
-    "https://github.com/WICG/direct-sockets": {},
-    "https://github.com/WICG/direct-sockets/blob/main/docs/explainer.md": {
-      "anchors": [
-        "security-considerations"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "queue-a-global-task",
-        "concept-relevant-realm"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "byte-sequence"
-      ],
-      "specShortname": "infra"
-    },
-    "https://learn.microsoft.com/en-us/windows/win32/winsock/sio-keepalive-vals": {},
-    "https://streams.spec.whatwg.org/": {
-      "anchors": [
-        "readablestream",
-        "writablestream",
-        "readablestream-desired-size-to-fill-up-to-the-high-water-mark",
-        "readablestream-current-byob-request-view",
-        "readablestream-close",
-        "readablestream-enqueue",
-        "readablestream-error",
-        "readablestream-set-up-with-byte-reading-support",
-        "readablestream-set-up-with-byte-reading-support-pullalgorithm",
-        "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
-        "readablestream-set-up-with-byte-reading-support-highwatermark",
-        "writablestreamdefaultwriter",
-        "default-writer-write",
-        "writablestream-signal",
-        "writablestream-set-up",
-        "writablestream-set-up-writealgorithm",
-        "writablestream-set-up-abortalgorithm",
-        "writablestream-set-up-closealgorithm",
-        "writablestream-set-up-highwatermark",
-        "rs-cancel",
-        "ws-abort",
-        "rs-get-reader",
-        "ws-get-writer",
-        "default-writer-close",
-        "default-writer-abort",
-        "lock",
-        "readablestream-cancel",
-        "writablestream-abort",
-        "readablestream-set-up",
-        "readablestream-set-up-pullalgorithm",
-        "readablestream-set-up-cancelalgorithm",
-        "readablestream-set-up-highwatermark",
-        "desired-size-to-fill-a-streams-internal-queue",
-        "internal-queues"
-      ],
-      "specShortname": "streams"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "SecureContext",
-        "idl-DOMString",
-        "idl-unsigned-short",
-        "idl-promise",
-        "idl-undefined",
-        "this",
-        "notallowederror",
-        "idl-DOMException",
-        "exceptiondef-typeerror",
-        "reject",
-        "networkerror",
-        "resolve",
-        "EnforceRange",
-        "idl-unsigned-long",
-        "idl-boolean",
-        "new",
-        "buffersource-byte-length",
-        "arraybufferview-write",
-        "arraybufferview-create",
-        "idl-Uint8Array",
-        "a-promise-resolved-with",
-        "a-new-promise",
-        "dfn-convert-ecmascript-to-idl-value",
-        "BufferSource",
-        "dfn-get-buffer-source-copy",
-        "invalidstateerror",
-        "idl-ArrayBuffer"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "anchors": [
-        "policy-controlled-feature"
-      ],
-      "specShortname": "permissions-policy-1"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "abortsignal-aborted",
+          "abortsignal-abort-reason",
+          "abortsignal-add"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "queue-a-global-task",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "byte-sequence"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream",
+          "writablestream",
+          "readablestream-desired-size-to-fill-up-to-the-high-water-mark",
+          "readablestream-current-byob-request-view",
+          "readablestream-close",
+          "readablestream-enqueue",
+          "readablestream-error",
+          "readablestream-set-up-with-byte-reading-support",
+          "readablestream-set-up-with-byte-reading-support-pullalgorithm",
+          "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+          "readablestream-set-up-with-byte-reading-support-highwatermark",
+          "writablestreamdefaultwriter",
+          "default-writer-write",
+          "writablestream-signal",
+          "writablestream-set-up",
+          "writablestream-set-up-writealgorithm",
+          "writablestream-set-up-abortalgorithm",
+          "writablestream-set-up-closealgorithm",
+          "writablestream-set-up-highwatermark",
+          "rs-cancel",
+          "ws-abort",
+          "rs-get-reader",
+          "ws-get-writer",
+          "default-writer-close",
+          "default-writer-abort",
+          "readablestream-cancel",
+          "writablestream-abort",
+          "readablestream-set-up",
+          "readablestream-set-up-pullalgorithm",
+          "readablestream-set-up-cancelalgorithm",
+          "readablestream-set-up-highwatermark"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "idl-unsigned-short",
+          "idl-undefined",
+          "idl-promise",
+          "this",
+          "notallowederror",
+          "idl-DOMException",
+          "exceptiondef-typeerror",
+          "reject",
+          "networkerror",
+          "resolve",
+          "idl-unsigned-long",
+          "idl-boolean",
+          "new",
+          "buffersource-byte-length",
+          "arraybufferview-write",
+          "arraybufferview-create",
+          "idl-Uint8Array",
+          "a-promise-resolved-with",
+          "a-new-promise",
+          "dfn-convert-ecmascript-to-idl-value",
+          "BufferSource",
+          "dfn-get-buffer-source-copy",
+          "invalidstateerror",
+          "idl-ArrayBuffer"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature"
+        ]
+      }
     }
   }
 }

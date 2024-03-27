@@ -4,191 +4,305 @@
     "url": "https://wicg.github.io/client-hints-infrastructure/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "concept-request-request",
-        "concept-request-client",
-        "non-subresource-request",
-        "concept-request-destination",
-        "concept-request-header-list",
-        "navigation-request",
-        "concept-header-list-append",
-        "header-list-contains",
-        "concept-http-network-or-cache-fetch",
-        "concept-http-redirect-fetch",
-        "forbidden-request-header",
-        "concept-header-name",
-        "concept-header-value"
-      ],
-      "specShortname": "fetch"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-header-list-append",
+          "concept-request-client",
+          "header-list-contains",
+          "concept-request-destination",
+          "concept-fetch",
+          "forbidden-request-header",
+          "concept-request-header-list",
+          "concept-http-network-or-cache-fetch",
+          "concept-http-redirect-fetch",
+          "concept-header-name",
+          "navigation-request",
+          "non-subresource-request",
+          "concept-request-request",
+          "concept-header-value"
+        ]
+      },
+      "https://github.com/WICG/client-hints-infrastructure/issues/110": {},
+      "https://github.com/WICG/client-hints-infrastructure/issues/154": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "changing-nav-continuation-navigable",
+          "populating-a-session-history-entry"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "attr-meta-content",
+          "the-link-element",
+          "meta",
+          "attr-meta-name",
+          "standard-metadata-names",
+          "the-style-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "non-secure-context",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "set-up-a-worker-environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "set-append",
+          "byte-lowercase",
+          "list-clone",
+          "list-iterate",
+          "implementation-defined",
+          "map-key",
+          "ordered-map",
+          "ordered-set",
+          "map-set",
+          "user-agent"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/device-memory/": {
+        "anchors": [
+          "sec-device-memory-client-hint-header"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "anchors": [
+          "dfn-create-the-navigation-timing-entry"
+        ]
+      },
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "anchors": [
+          "header"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "algo-should-request-be-allowed-to-use-feature",
+          "algo-parse-policy-directive",
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://wicg.github.io/netinfo/": {
+        "anchors": [
+          "rtt-request-header-field",
+          "downlink-request-header-field",
+          "ect-request-header-field"
+        ]
+      },
+      "https://wicg.github.io/savedata/": {
+        "anchors": [
+          "save-data-request-header-field"
+        ]
+      },
+      "https://wicg.github.io/ua-client-hints/": {
+        "anchors": [
+          "sec-ch-ua",
+          "sec-ch-ua-mobile",
+          "sec-ch-ua-platform",
+          "sec-ch-ua-arch",
+          "sec-ch-ua-bitness",
+          "sec-ch-ua-full-version",
+          "sec-ch-ua-full-version-list",
+          "sec-ch-ua-model",
+          "sec-ch-ua-platform-version",
+          "sec-ch-ua-wow64"
+        ]
+      },
+      "https://wicg.github.io/user-preference-media-features-headers/": {
+        "anchors": [
+          "sec-ch-prefers-color-scheme",
+          "sec-ch-prefers-reduced-motion"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8941.html": {
+        "anchors": [
+          "name-lists"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8942": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://github.com/WICG/client-hints-infrastructure/issues/110": {},
-    "https://github.com/WICG/client-hints-infrastructure/issues/154": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "changing-nav-continuation-navigable",
-        "populating-a-session-history-entry"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-permissions-policy"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "meta",
-        "the-link-element",
-        "the-style-element",
-        "attr-meta-name",
-        "attr-meta-content",
-        "standard-metadata-names"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-settings-object-origin",
-        "non-secure-context",
-        "concept-settings-object-global",
-        "environment-settings-object",
-        "relevant-settings-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "set-up-a-worker-environment-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-set",
-        "ordered-map",
-        "map-key",
-        "set-append",
-        "map-set",
-        "list-clone",
-        "implementation-defined",
-        "list-iterate",
-        "byte-lowercase",
-        "user-agent"
-      ],
-      "specShortname": "infra"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworkerglobalscope"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/device-memory/": {
-      "anchors": [
-        "sec-device-memory-client-hint-header"
-      ]
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-current-high-resolution-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/navigation-timing/": {
-      "anchors": [
-        "dfn-create-the-navigation-timing-entry"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
-    "https://w3c.github.io/webappsec-clear-site-data/": {
-      "anchors": [
-        "header"
-      ],
-      "specShortname": "clear-site-data"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "algo-should-request-be-allowed-to-use-feature",
-        "algo-parse-policy-directive",
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://wicg.github.io/netinfo/": {
-      "anchors": [
-        "rtt-request-header-field",
-        "downlink-request-header-field",
-        "ect-request-header-field"
-      ],
-      "specShortname": "netinfo"
-    },
-    "https://wicg.github.io/savedata/": {
-      "anchors": [
-        "save-data-request-header-field"
-      ],
-      "specShortname": "savedata"
-    },
-    "https://wicg.github.io/ua-client-hints/": {
-      "anchors": [
-        "sec-ch-ua",
-        "sec-ch-ua-mobile",
-        "sec-ch-ua-platform",
-        "sec-ch-ua-arch",
-        "sec-ch-ua-bitness",
-        "sec-ch-ua-full-version",
-        "sec-ch-ua-full-version-list",
-        "sec-ch-ua-model",
-        "sec-ch-ua-platform-version",
-        "sec-ch-ua-wow64"
-      ],
-      "specShortname": "ua-client-hints"
-    },
-    "https://wicg.github.io/user-preference-media-features-headers/": {
-      "anchors": [
-        "sec-ch-prefers-color-scheme",
-        "sec-ch-prefers-reduced-motion"
-      ],
-      "specShortname": "user-preference-media-features-headers"
-    },
-    "https://www.rfc-editor.org/rfc/rfc8941.html": {
-      "anchors": [
-        "name-lists"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc8942": {
-      "specShortname": "rfc8942"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-request-request",
+          "concept-request-client",
+          "non-subresource-request",
+          "concept-request-destination",
+          "concept-request-header-list",
+          "navigation-request",
+          "concept-header-list-append",
+          "header-list-contains",
+          "concept-http-network-or-cache-fetch",
+          "concept-http-redirect-fetch",
+          "forbidden-request-header",
+          "concept-header-name",
+          "concept-header-value"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "changing-nav-continuation-navigable",
+          "populating-a-session-history-entry"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "meta",
+          "the-link-element",
+          "the-style-element",
+          "attr-meta-name",
+          "attr-meta-content",
+          "standard-metadata-names"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-settings-object-origin",
+          "non-secure-context",
+          "concept-settings-object-global",
+          "environment-settings-object",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "set-up-a-worker-environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-set",
+          "ordered-map",
+          "map-key",
+          "set-append",
+          "map-set",
+          "list-clone",
+          "implementation-defined",
+          "list-iterate",
+          "byte-lowercase",
+          "user-agent"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "anchors": [
+          "dfn-create-the-navigation-timing-entry"
+        ]
+      },
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "anchors": [
+          "header"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8941.html": {
+        "anchors": [
+          "name-lists"
+        ]
+      }
+    }
   }
 }

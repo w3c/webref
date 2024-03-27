@@ -4,82 +4,88 @@
     "url": "https://w3c.github.io/webrtc-ice/"
   },
   "links": {
-    "http://draft.ortc.org/": {},
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler"
-      ]
+    "rawlinks": {
+      "http://draft.ortc.org/": {},
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-sequence",
+          "Exposed"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc3986": {},
+      "https://www.rfc-editor.org/rfc/rfc5245": {},
+      "https://www.rfc-editor.org/rfc/rfc7064": {},
+      "https://www.rfc-editor.org/rfc/rfc7065": {},
+      "https://www.rfc-editor.org/rfc/rfc7675": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.rfc-editor.org/rfc/rfc8827": {},
+      "https://www.rfc-editor.org/rfc/rfc8835": {},
+      "https://www.rfc-editor.org/rfc/rfc8839": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/webrtc/": {},
+      "https://www.w3.org/community/ortc/": {},
+      "https://www.w3.org/groups/wg/webrtc": {},
+      "https://www.w3.org/groups/wg/webrtc/ipr": {}
     },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-boolean",
-        "idl-sequence",
-        "Exposed",
-        "idl-undefined",
-        "dfn-throw",
-        "invalidstateerror",
-        "syntaxerror",
-        "notsupportederror",
-        "invalidaccesserror",
-        "exceptiondef-typeerror",
-        "operationerror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc3986": {},
-    "https://www.rfc-editor.org/rfc/rfc5245": {},
-    "https://www.rfc-editor.org/rfc/rfc7064": {},
-    "https://www.rfc-editor.org/rfc/rfc7065": {},
-    "https://www.rfc-editor.org/rfc/rfc7675": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.rfc-editor.org/rfc/rfc8827": {},
-    "https://www.rfc-editor.org/rfc/rfc8835": {},
-    "https://www.rfc-editor.org/rfc/rfc8839": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/webrtc/": {
-      "anchors": [
-        "dom-rtcicetransport",
-        "dom-rtcdatachannel",
-        "dom-rtciceparameters",
-        "dom-rtcicetransport-getlocalparameters",
-        "dom-rtcicetransportpolicy",
-        "dom-rtciceserver",
-        "dom-rtcicerole",
-        "dom-rtcicecandidateinit",
-        "dfn-icetransportstate",
-        "dfn-icegathererstate",
-        "dfn-selectedcandidatepair",
-        "dfn-icerole",
-        "dom-icetransport-state",
-        "dom-rtcicetransportstate-closed",
-        "dom-rtciceserver-urls",
-        "dom-rtciceserver-username",
-        "dom-rtciceserver-credential",
-        "dom-rtciceparameters-usernamefragment",
-        "dom-rtciceparameters-password",
-        "dom-icetransport-role",
-        "dom-rtcicetransportstate-checking",
-        "dom-rtcicetransportstate-new",
-        "dom-rtcicetransportstate-completed",
-        "dom-rtcpeerconnectioniceerrorevent",
-        "dom-rtcpeerconnectioniceevent",
-        "dom-rtcicecandidate"
-      ],
-      "specShortname": "webrtc"
-    },
-    "https://www.w3.org/community/ortc/": {},
-    "https://www.w3.org/groups/wg/webrtc": {},
-    "https://www.w3.org/groups/wg/webrtc/ipr": {}
+    "autolinks": {
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "idl-undefined",
+          "dfn-throw",
+          "invalidstateerror",
+          "syntaxerror",
+          "notsupportederror",
+          "invalidaccesserror",
+          "exceptiondef-typeerror",
+          "operationerror"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcicetransport",
+          "dom-rtcdatachannel",
+          "dom-rtciceparameters",
+          "dom-rtcicetransport-getlocalparameters",
+          "dom-rtcicetransportpolicy",
+          "dom-rtciceserver",
+          "dom-rtcicerole",
+          "dom-rtcicecandidateinit",
+          "dfn-icetransportstate",
+          "dfn-icegathererstate",
+          "dfn-selectedcandidatepair",
+          "dfn-icerole",
+          "dom-icetransport-state",
+          "dom-rtcicetransportstate-closed",
+          "dom-rtciceserver-urls",
+          "dom-rtciceserver-username",
+          "dom-rtciceserver-credential",
+          "dom-rtciceparameters-usernamefragment",
+          "dom-rtciceparameters-password",
+          "dom-icetransport-role",
+          "dom-rtcicetransportstate-checking",
+          "dom-rtcicetransportstate-new",
+          "dom-rtcicetransportstate-completed",
+          "dom-rtcpeerconnectioniceerrorevent",
+          "dom-rtcpeerconnectioniceevent",
+          "dom-rtcicecandidate"
+        ]
+      }
+    }
   }
 }

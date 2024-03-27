@@ -4,142 +4,209 @@
     "url": "https://w3c.github.io/screen-wake-lock/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "eventtarget",
-        "concept-event-fire"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire",
+          "document",
+          "eventtarget"
+        ]
+      },
+      "https://github.com/w3c/screen-wake-lock/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "page-visibility-change-steps",
+          "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "task-source",
+          "concept-task",
+          "queue-a-global-task",
+          "concept-relevant-global",
+          "event-handler-idl-attributes",
+          "event-handlers",
+          "event-handler-event-type",
+          "current-global-object",
+          "eventhandler"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "list",
+          "if-aborted",
+          "list-append",
+          "list-iterate",
+          "list-is-empty"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "SameObject",
+          "Exposed",
+          "idl-promise",
+          "this",
+          "a-promise-resolved-with",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "idl-DOMException",
+          "notallowederror",
+          "idl-undefined"
+        ]
+      },
+      "https://wpt.live/screen-wake-lock/wakelock-active-document.https.window.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-disabled-by-permissions-policy.https.sub.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-document-hidden-manual.https.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute-redirect-on-load.https.sub.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute.https.sub.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy.https.sub.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-enabled-on-self-origin-by-permissions-policy.https.sub.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-insecure-context.any.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-onrelease.https.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-released.https.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-request-denied.https.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-screen-type-on-worker.https.worker.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-supported-by-permissions-policy.html": {},
+      "https://wpt.live/screen-wake-lock/wakelock-type.https.any.html": {},
+      "https://wpt.live/screen-wake-lock/wakelockpermissiondescriptor.https.html": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-powerful-feature",
+          "dfn-request-permission-to-use",
+          "dom-permissionstate-denied",
+          "dfn-permission-revocation-algorithm"
+        ]
+      },
+      "https://www.w3.org/TR/wake-lock-use-cases/": {},
+      "https://www.w3.org/groups/wg/das": {},
+      "https://www.w3.org/groups/wg/das/ipr": {},
+      "https://www.w3.org/groups/wg/webapps": {},
+      "https://www.w3.org/groups/wg/webapps/ipr": {}
     },
-    "https://github.com/w3c/screen-wake-lock/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "visibility-state",
-        "page-visibility-change-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window",
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-global-object",
-        "task-source",
-        "concept-task",
-        "concept-relevant-global",
-        "queue-a-global-task",
-        "eventhandler",
-        "event-handler-idl-attributes",
-        "event-handlers",
-        "event-handler-event-type"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list-iterate",
-        "ordered-map",
-        "list",
-        "list-is-empty",
-        "list-append",
-        "if-aborted"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "sec-object-internal-methods-and-internal-slots"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SecureContext",
-        "SameObject",
-        "Exposed",
-        "idl-promise",
-        "this",
-        "a-promise-rejected-with",
-        "notallowederror",
-        "idl-DOMException",
-        "a-new-promise",
-        "idl-boolean",
-        "idl-undefined",
-        "a-promise-resolved-with"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wpt.live/screen-wake-lock/wakelock-active-document.https.window.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-disabled-by-permissions-policy.https.sub.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-document-hidden-manual.https.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute-redirect-on-load.https.sub.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy-attribute.https.sub.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-enabled-by-permissions-policy.https.sub.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-enabled-on-self-origin-by-permissions-policy.https.sub.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-insecure-context.any.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-onrelease.https.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-released.https.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-request-denied.https.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-screen-type-on-worker.https.worker.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-supported-by-permissions-policy.html": {},
-    "https://wpt.live/screen-wake-lock/wakelock-type.https.any.html": {},
-    "https://wpt.live/screen-wake-lock/wakelockpermissiondescriptor.https.html": {},
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dfn-powerful-feature",
-        "dfn-permission-revocation-algorithm",
-        "dfn-request-permission-to-use",
-        "dom-permissionstate-denied"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/wake-lock-use-cases/": {},
-    "https://www.w3.org/groups/wg/das": {},
-    "https://www.w3.org/groups/wg/das/ipr": {},
-    "https://www.w3.org/groups/wg/webapps": {},
-    "https://www.w3.org/groups/wg/webapps/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "eventtarget"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "visibility-state",
+          "page-visibility-change-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object",
+          "concept-relevant-global",
+          "eventhandler"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-iterate",
+          "list-is-empty",
+          "list-append"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "this",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "idl-DOMException",
+          "a-new-promise",
+          "idl-boolean",
+          "idl-undefined"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-permission-revocation-algorithm",
+          "dom-permissionstate-denied"
+        ]
+      }
+    }
   }
 }

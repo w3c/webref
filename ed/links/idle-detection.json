@@ -4,157 +4,252 @@
     "url": "https://wicg.github.io/idle-detection/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/IdleDetector": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/change_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/requestPermission_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/screenState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/start": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/userState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/idle-detection": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "abortsignal",
-        "eventtarget",
-        "abortsignal-aborted",
-        "abortsignal-abort-reason",
-        "abortsignal-add",
-        "concept-event-fire"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/IdleDetector": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/change_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/requestPermission_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/screenState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/start": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/userState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/idle-detection": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "abortsignal",
+          "eventtarget",
+          "abortsignal-abort-reason",
+          "abortsignal-aborted",
+          "abortsignal-add",
+          "concept-event-fire"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "dom-requestdestination-iframe"
+        ]
+      },
+      "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/basics.tentative.https.window.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idle-permission.tentative.https.window.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idlharness-worker.https.window.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idlharness.https.window.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/interceptor.https.html": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-change"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "handler-onkeypress",
+          "handler-onmousemove",
+          "queue-a-global-task",
+          "queue-a-task",
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "abort-when",
+          "user-agent"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://w3c.github.io/deviceorientation/": {},
+      "https://w3c.github.io/geolocation-api/": {},
+      "https://w3c.github.io/page-visibility/": {},
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dom-permissionstate",
+          "dfn-default-powerful-feature",
+          "dfn-denied",
+          "dfn-granted",
+          "dfn-permission",
+          "dfn-permission-state",
+          "dfn-request-permission-to-use"
+        ]
+      },
+      "https://w3c.github.io/push-api/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "EnforceRange",
+          "Exposed",
+          "invalidstateerror",
+          "notallowederror",
+          "idl-promise",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "reject",
+          "resolve",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://wpt.fyi/results/idle-detection/basics.tentative.https.window.js": {},
+      "https://wpt.fyi/results/idle-detection/idle-permission.tentative.https.window.js": {},
+      "https://wpt.fyi/results/idle-detection/idlharness-worker.https.window.js": {},
+      "https://wpt.fyi/results/idle-detection/idlharness.https.window.js": {},
+      "https://wpt.fyi/results/idle-detection/interceptor.https.html": {},
+      "https://wpt.live/idle-detection/basics.tentative.https.window.js": {},
+      "https://wpt.live/idle-detection/idle-permission.tentative.https.window.js": {},
+      "https://wpt.live/idle-detection/idlharness-worker.https.window.js": {},
+      "https://wpt.live/idle-detection/idlharness.https.window.js": {},
+      "https://wpt.live/idle-detection/interceptor.https.html": {},
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "dom-document-hidden",
+          "dom-document-onvisibilitychange"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "dom-requestdestination-iframe"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/basics.tentative.https.window.js": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idle-permission.tentative.https.window.js": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idlharness-worker.https.window.js": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idlharness.https.window.js": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/interceptor.https.html": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/indices.html": {
-      "anchors": [
-        "event-change"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window",
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "handler-onmousemove",
-        "handler-onkeypress",
-        "eventhandler",
-        "event-handler-idl-attributes",
-        "concept-relevant-global",
-        "queue-a-task",
-        "queue-a-global-task"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "abort-when",
-        "user-agent"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-object-internal-methods-and-internal-slots"
-      ]
-    },
-    "https://w3c.github.io/deviceorientation/": {
-      "specShortname": "orientation-event"
-    },
-    "https://w3c.github.io/geolocation-api/": {
-      "specShortname": "geolocation"
-    },
-    "https://w3c.github.io/page-visibility/": {},
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-default-powerful-feature",
-        "dom-permissionstate",
-        "dfn-request-permission-to-use",
-        "dfn-permission-state",
-        "dfn-granted",
-        "dfn-permission",
-        "dfn-denied"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/push-api/": {
-      "specShortname": "push-api"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "EnforceRange",
-        "idl-unsigned-long-long",
-        "SecureContext",
-        "Exposed",
-        "idl-promise",
-        "idl-undefined",
-        "this",
-        "a-promise-rejected-with",
-        "notallowederror",
-        "idl-DOMException",
-        "a-new-promise",
-        "resolve",
-        "invalidstateerror",
-        "exceptiondef-typeerror",
-        "reject"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wpt.fyi/results/idle-detection/basics.tentative.https.window.js": {},
-    "https://wpt.fyi/results/idle-detection/idle-permission.tentative.https.window.js": {},
-    "https://wpt.fyi/results/idle-detection/idlharness-worker.https.window.js": {},
-    "https://wpt.fyi/results/idle-detection/idlharness.https.window.js": {},
-    "https://wpt.fyi/results/idle-detection/interceptor.https.html": {},
-    "https://wpt.live/idle-detection/basics.tentative.https.window.js": {},
-    "https://wpt.live/idle-detection/idle-permission.tentative.https.window.js": {},
-    "https://wpt.live/idle-detection/idlharness-worker.https.window.js": {},
-    "https://wpt.live/idle-detection/idlharness.https.window.js": {},
-    "https://wpt.live/idle-detection/interceptor.https.html": {},
-    "https://www.w3.org/TR/page-visibility-2/": {
-      "anchors": [
-        "dom-document-hidden",
-        "dom-document-onvisibilitychange"
-      ]
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "abortsignal",
+          "eventtarget",
+          "abortsignal-aborted",
+          "abortsignal-abort-reason",
+          "abortsignal-add",
+          "concept-event-fire"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "dom-requestdestination-iframe"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-change"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "handler-onmousemove",
+          "handler-onkeypress",
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "concept-relevant-global",
+          "queue-a-task",
+          "queue-a-global-task"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "abort-when",
+          "user-agent"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-default-powerful-feature",
+          "dom-permissionstate",
+          "dfn-request-permission-to-use",
+          "dfn-permission-state",
+          "dfn-granted",
+          "dfn-permission",
+          "dfn-denied"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "EnforceRange",
+          "idl-unsigned-long-long",
+          "SecureContext",
+          "Exposed",
+          "idl-promise",
+          "idl-undefined",
+          "this",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "idl-DOMException",
+          "a-new-promise",
+          "resolve",
+          "invalidstateerror",
+          "exceptiondef-typeerror",
+          "reject"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "dom-document-hidden",
+          "dom-document-onvisibilitychange"
+        ]
+      }
+    }
   }
 }

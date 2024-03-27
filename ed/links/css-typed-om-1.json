@@ -4,1199 +4,1987 @@
     "url": "https://drafts.css-houdini.org/css-typed-om-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/factory_functions_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImageValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/CSSKeywordValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/CSSMathInvert": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/CSSMathMax": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/values": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/CSSMathMin": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/values": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/CSSMathNegate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/CSSMathProduct": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/values": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/CSSMathSum": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/values": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue/operator": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/CSSMatrixComponent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/matrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/add": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/div": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/equals": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/max": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/min": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/mul": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/parse_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/sub": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/to": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/toSum": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/CSSPerspective": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/CSSRotate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/angle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/z": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/CSSScale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/z": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/CSSSkew": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ax": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ay": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/CSSSkewX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/ax": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/CSSSkewY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/ay": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/styleMap": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parseAll_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parse_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/is2D": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toString": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/CSSTransformValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/is2D": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/toMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/CSSTranslate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/z": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/CSSUnitValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/unit": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/CSSUnparsedValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/CSSVariableReferenceValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/fallback": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/variable": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/computedStyleMap": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/append": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/clear": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/delete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/set": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "element"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.css-houdini.org/css-properties-values-api-1/": {
-      "anchors": [
-        "css-style-value-reification"
-      ],
-      "specShortname": "css-properties-values-api-1"
-    },
-    "https://drafts.csswg.org/css-align-3/": {
-      "anchors": [
-        "propdef-align-content",
-        "propdef-align-items",
-        "typedef-self-position",
-        "typedef-overflow-position",
-        "propdef-align-self",
-        "propdef-column-gap",
-        "propdef-gap",
-        "propdef-grid-column-gap",
-        "propdef-grid-gap",
-        "propdef-grid-row-gap",
-        "propdef-justify-content",
-        "propdef-justify-items",
-        "propdef-justify-self",
-        "propdef-place-content",
-        "propdef-place-items",
-        "propdef-place-self",
-        "propdef-row-gap"
-      ],
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-align/": {
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-animations-1/": {
-      "anchors": [
-        "propdef-animation"
-      ],
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-animations-2/": {
-      "anchors": [
-        "propdef-animation-composition"
-      ],
-      "specShortname": "css-animations-2"
-    },
-    "https://drafts.csswg.org/css-animations/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-background-image",
-        "propdef-border-image-source",
-        "propdef-background",
-        "propdef-background-attachment",
-        "propdef-background-clip",
-        "propdef-background-color",
-        "propdef-background-position",
-        "propdef-background-repeat",
-        "propdef-border",
-        "propdef-border-top-color",
-        "propdef-border-top-style",
-        "propdef-border-top-width",
-        "propdef-border-top",
-        "propdef-border-bottom",
-        "propdef-border-bottom-color",
-        "propdef-border-bottom-style",
-        "propdef-border-bottom-width",
-        "propdef-border-color",
-        "propdef-border-left",
-        "propdef-border-left-color",
-        "propdef-border-left-style",
-        "propdef-border-left-width",
-        "propdef-border-radius",
-        "propdef-border-right",
-        "propdef-border-right-color",
-        "propdef-border-right-style",
-        "propdef-border-right-width",
-        "propdef-border-style",
-        "propdef-border-width",
-        "propdef-border-image",
-        "propdef-border-image-slice",
-        "border-image-slice-fill",
-        "propdef-border-image-width",
-        "propdef-border-image-outset",
-        "propdef-border-image-repeat",
-        "valdef-border-image-repeat-stretch"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-borders-4/": {
-      "anchors": [
-        "propdef-border-block",
-        "propdef-border-block-start",
-        "propdef-border-block-color",
-        "propdef-border-block-end",
-        "propdef-border-block-end-color",
-        "propdef-border-block-end-style",
-        "propdef-border-block-end-width",
-        "propdef-border-block-start-color",
-        "propdef-border-block-start-style",
-        "propdef-border-block-start-width",
-        "propdef-border-block-style",
-        "propdef-border-block-width",
-        "propdef-border-inline",
-        "propdef-border-inline-color",
-        "propdef-border-inline-end",
-        "propdef-border-inline-end-color",
-        "propdef-border-inline-end-style",
-        "propdef-border-inline-end-width",
-        "propdef-border-inline-start",
-        "propdef-border-inline-start-color",
-        "propdef-border-inline-start-style",
-        "propdef-border-inline-start-width",
-        "propdef-border-inline-style",
-        "propdef-border-inline-width"
-      ],
-      "specShortname": "css-borders-4"
-    },
-    "https://drafts.csswg.org/css-box-4/": {
-      "anchors": [
-        "propdef-margin",
-        "propdef-margin-bottom",
-        "propdef-margin-top",
-        "propdef-margin-left",
-        "propdef-margin-right",
-        "propdef-padding",
-        "propdef-padding-bottom",
-        "propdef-padding-top",
-        "propdef-padding-left",
-        "propdef-padding-right"
-      ],
-      "specShortname": "css-box-4"
-    },
-    "https://drafts.csswg.org/css-break-3/": {
-      "anchors": [
-        "propdef-break-after",
-        "propdef-break-before",
-        "propdef-break-inside",
-        "propdef-orphans"
-      ],
-      "specShortname": "css-break-3"
-    },
-    "https://drafts.csswg.org/css-break-4/": {
-      "anchors": [
-        "propdef-box-decoration-break",
-        "propdef-widows"
-      ],
-      "specShortname": "css-break-4"
-    },
-    "https://drafts.csswg.org/css-break/": {
-      "specShortname": "css-break-3"
-    },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "shorthand-property",
-        "computed-value",
-        "propdef-all"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "propdef-color",
-        "propdef-opacity",
-        "funcdef-rgb",
-        "funcdef-rgba",
-        "funcdef-hsl",
-        "funcdef-hsla",
-        "typedef-hex-color",
-        "typedef-named-color",
-        "valdef-color-transparent",
-        "valdef-color-currentcolor"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-color-5/": {
-      "anchors": [
-        "typedef-color",
-        "funcdef-hwb",
-        "funcdef-lab",
-        "funcdef-lch",
-        "funcdef-oklab",
-        "funcdef-color"
-      ],
-      "specShortname": "css-color-5"
-    },
-    "https://drafts.csswg.org/css-color-adjust-1/": {
-      "anchors": [
-        "propdef-color-adjust"
-      ],
-      "specShortname": "css-color-adjust-1"
-    },
-    "https://drafts.csswg.org/css-color/": {
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-contain-2/": {
-      "anchors": [
-        "propdef-contain"
-      ],
-      "specShortname": "css-contain-2"
-    },
-    "https://drafts.csswg.org/css-content-3/": {
-      "anchors": [
-        "propdef-bookmark-label",
-        "propdef-bookmark-level",
-        "propdef-bookmark-state",
-        "propdef-content",
-        "propdef-quotes"
-      ],
-      "specShortname": "css-content-3"
-    },
-    "https://drafts.csswg.org/css-display-4/": {
-      "anchors": [
-        "propdef-display",
-        "propdef-order",
-        "propdef-visibility"
-      ],
-      "specShortname": "css-display-4"
-    },
-    "https://drafts.csswg.org/css-flexbox-1/": {
-      "anchors": [
-        "propdef-flex",
-        "propdef-flex-basis",
-        "propdef-flex-direction",
-        "propdef-flex-flow",
-        "propdef-flex-grow",
-        "propdef-flex-shrink",
-        "propdef-flex-wrap"
-      ],
-      "specShortname": "css-flexbox-1"
-    },
-    "https://drafts.csswg.org/css-fonts-4/": {
-      "anchors": [
-        "propdef-font",
-        "propdef-font-family",
-        "propdef-font-language-override",
-        "propdef-font-optical-sizing",
-        "propdef-font-palette",
-        "propdef-font-size",
-        "propdef-font-stretch",
-        "propdef-font-style",
-        "propdef-font-synthesis",
-        "propdef-font-variant",
-        "propdef-font-variant-alternates",
-        "propdef-font-variant-emoji",
-        "propdef-font-variation-settings",
-        "propdef-font-weight"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-fonts-5/": {
-      "anchors": [
-        "propdef-font-size-adjust"
-      ],
-      "specShortname": "css-fonts-5"
-    },
-    "https://drafts.csswg.org/css-gcpm-4/": {
-      "anchors": [
-        "propdef-copy-into"
-      ],
-      "specShortname": "css-gcpm-4"
-    },
-    "https://drafts.csswg.org/css-grid-2/": {
-      "anchors": [
-        "typedef-flex",
-        "propdef-grid",
-        "propdef-grid-area",
-        "propdef-grid-auto-columns",
-        "propdef-grid-auto-flow",
-        "propdef-grid-auto-rows",
-        "propdef-grid-column",
-        "propdef-grid-column-end",
-        "propdef-grid-column-start",
-        "propdef-grid-row",
-        "propdef-grid-row-end",
-        "propdef-grid-row-start",
-        "propdef-grid-template",
-        "propdef-grid-template-areas",
-        "propdef-grid-template-columns",
-        "propdef-grid-template-rows"
-      ],
-      "specShortname": "css-grid-2"
-    },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "typedef-image",
-        "propdef-image-rendering"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/css-images-4/": {
-      "anchors": [
-        "funcdef-image",
-        "propdef-image-resolution",
-        "propdef-object-fit"
-      ],
-      "specShortname": "css-images-4"
-    },
-    "https://drafts.csswg.org/css-inline-3/": {
-      "anchors": [
-        "propdef-alignment-baseline",
-        "propdef-baseline-shift",
-        "propdef-dominant-baseline",
-        "propdef-initial-letter",
-        "propdef-initial-letter-align",
-        "propdef-initial-letter-wrap",
-        "propdef-vertical-align"
-      ],
-      "specShortname": "css-inline-3"
-    },
-    "https://drafts.csswg.org/css-line-grid-1/": {
-      "anchors": [
-        "propdef-box-snap",
-        "propdef-line-grid",
-        "propdef-line-snap"
-      ],
-      "specShortname": "css-line-grid-1"
-    },
-    "https://drafts.csswg.org/css-line-grid/": {
-      "specShortname": "css-line-grid-1"
-    },
-    "https://drafts.csswg.org/css-lists-3/": {
-      "anchors": [
-        "propdef-counter-reset",
-        "propdef-list-style-image",
-        "propdef-counter-increment",
-        "propdef-counter-set",
-        "propdef-list-style",
-        "propdef-list-style-position",
-        "propdef-list-style-type",
-        "propdef-marker-side"
-      ],
-      "specShortname": "css-lists-3"
-    },
-    "https://drafts.csswg.org/css-logical-1/": {
-      "anchors": [
-        "propdef-block-size",
-        "propdef-inline-size",
-        "propdef-margin-block",
-        "propdef-margin-block-end",
-        "propdef-margin-block-start",
-        "propdef-margin-inline",
-        "propdef-margin-inline-end",
-        "propdef-margin-inline-start",
-        "propdef-max-block-size",
-        "propdef-max-inline-size",
-        "propdef-min-block-size",
-        "propdef-min-inline-size",
-        "propdef-padding-block",
-        "propdef-padding-block-end",
-        "propdef-padding-block-start",
-        "propdef-padding-inline",
-        "propdef-padding-inline-end",
-        "propdef-padding-inline-start"
-      ],
-      "specShortname": "css-logical-1"
-    },
-    "https://drafts.csswg.org/css-multicol-2/": {
-      "anchors": [
-        "propdef-column-span"
-      ],
-      "specShortname": "css-multicol-2"
-    },
-    "https://drafts.csswg.org/css-overflow-3/": {
-      "anchors": [
-        "propdef-overflow",
-        "propdef-overflow-x",
-        "propdef-overflow-y",
-        "propdef-scroll-behavior",
-        "propdef-scrollbar-gutter",
-        "propdef-text-overflow"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://drafts.csswg.org/css-overflow-4/": {
-      "anchors": [
-        "propdef-continue",
-        "propdef-max-lines"
-      ],
-      "specShortname": "css-overflow-4"
-    },
-    "https://drafts.csswg.org/css-page-3/": {
-      "anchors": [
-        "propdef-page"
-      ],
-      "specShortname": "css-page-3"
-    },
-    "https://drafts.csswg.org/css-page-floats-3/": {
-      "anchors": [
-        "propdef-float-defer"
-      ],
-      "specShortname": "css-page-floats-3"
-    },
-    "https://drafts.csswg.org/css-page-floats/": {
-      "specShortname": "css-page-floats-3"
-    },
-    "https://drafts.csswg.org/css-position-3/": {
-      "anchors": [
-        "valdef-top-auto",
-        "propdef-bottom",
-        "propdef-inset",
-        "propdef-inset-block",
-        "propdef-inset-block-end",
-        "propdef-inset-block-start",
-        "propdef-inset-inline",
-        "propdef-inset-inline-end",
-        "propdef-inset-inline-start",
-        "propdef-left",
-        "propdef-position",
-        "propdef-right",
-        "propdef-top"
-      ],
-      "specShortname": "css-position-3"
-    },
-    "https://drafts.csswg.org/css-regions-1/": {
-      "anchors": [
-        "propdef-region-fragment"
-      ],
-      "specShortname": "css-regions-1"
-    },
-    "https://drafts.csswg.org/css-regions/": {
-      "specShortname": "css-regions-1"
-    },
-    "https://drafts.csswg.org/css-rhythm-1/": {
-      "anchors": [
-        "propdef-block-step",
-        "propdef-block-step-align",
-        "propdef-block-step-insert",
-        "propdef-block-step-round",
-        "propdef-block-step-size",
-        "propdef-line-height-step"
-      ],
-      "specShortname": "css-rhythm-1"
-    },
-    "https://drafts.csswg.org/css-rhythm/": {
-      "specShortname": "css-rhythm-1"
-    },
-    "https://drafts.csswg.org/css-round-display-1/": {
-      "anchors": [
-        "propdef-border-boundary"
-      ],
-      "specShortname": "css-round-display-1"
-    },
-    "https://drafts.csswg.org/css-round-display/": {
-      "specShortname": "css-round-display-1"
-    },
-    "https://drafts.csswg.org/css-ruby-1/": {
-      "anchors": [
-        "propdef-ruby-align",
-        "propdef-ruby-merge",
-        "propdef-ruby-position"
-      ],
-      "specShortname": "css-ruby-1"
-    },
-    "https://drafts.csswg.org/css-scroll-anchoring-1/": {
-      "anchors": [
-        "propdef-overflow-anchor"
-      ],
-      "specShortname": "css-scroll-anchoring-1"
-    },
-    "https://drafts.csswg.org/css-scroll-anchoring/": {
-      "specShortname": "css-scroll-anchoring-1"
-    },
-    "https://drafts.csswg.org/css-scroll-snap-1/": {
-      "anchors": [
-        "propdef-scroll-margin",
-        "propdef-scroll-margin-block",
-        "propdef-scroll-margin-block-end",
-        "propdef-scroll-margin-block-start",
-        "propdef-scroll-margin-bottom",
-        "propdef-scroll-margin-inline",
-        "propdef-scroll-margin-inline-end",
-        "propdef-scroll-margin-inline-start",
-        "propdef-scroll-margin-left",
-        "propdef-scroll-margin-right",
-        "propdef-scroll-margin-top",
-        "propdef-scroll-padding",
-        "propdef-scroll-padding-block",
-        "propdef-scroll-padding-block-end",
-        "propdef-scroll-padding-block-start",
-        "propdef-scroll-padding-bottom",
-        "propdef-scroll-padding-inline",
-        "propdef-scroll-padding-inline-end",
-        "propdef-scroll-padding-inline-start",
-        "propdef-scroll-padding-left",
-        "propdef-scroll-padding-right",
-        "propdef-scroll-padding-top",
-        "propdef-scroll-snap-align",
-        "propdef-scroll-snap-stop",
-        "propdef-scroll-snap-type"
-      ],
-      "specShortname": "css-scroll-snap-1"
-    },
-    "https://drafts.csswg.org/css-shapes-1/": {
-      "anchors": [
-        "propdef-shape-margin"
-      ],
-      "specShortname": "css-shapes-1"
-    },
-    "https://drafts.csswg.org/css-shapes-2/": {
-      "anchors": [
-        "propdef-shape-inside",
-        "propdef-shape-padding"
-      ],
-      "specShortname": "css-shapes-2"
-    },
-    "https://drafts.csswg.org/css-shapes/": {
-      "specShortname": "css-shapes-1"
-    },
-    "https://drafts.csswg.org/css-size-adjust-1/": {
-      "anchors": [
-        "propdef-text-size-adjust"
-      ],
-      "specShortname": "css-size-adjust-1"
-    },
-    "https://drafts.csswg.org/css-sizing-3/": {
-      "anchors": [
-        "propdef-width",
-        "propdef-box-sizing",
-        "propdef-height",
-        "propdef-max-height",
-        "propdef-max-width",
-        "propdef-min-height",
-        "propdef-min-width"
-      ],
-      "specShortname": "css-sizing-3"
-    },
-    "https://drafts.csswg.org/css-speech-1/": {
-      "anchors": [
-        "propdef-cue",
-        "propdef-cue-after",
-        "propdef-cue-before",
-        "propdef-pause",
-        "propdef-pause-after",
-        "propdef-pause-before",
-        "propdef-rest",
-        "propdef-rest-after",
-        "propdef-rest-before",
-        "propdef-speak",
-        "propdef-speak-as",
-        "propdef-voice-balance",
-        "propdef-voice-duration",
-        "propdef-voice-family",
-        "propdef-voice-pitch",
-        "propdef-voice-range",
-        "propdef-voice-rate",
-        "propdef-voice-stress",
-        "propdef-voice-volume"
-      ],
-      "specShortname": "css-speech-1"
-    },
-    "https://drafts.csswg.org/css-syntax-3/": {
-      "anchors": [
-        "css-parse-something-according-to-a-css-grammar",
-        "component-value",
-        "tokenization",
-        "parse-a-component-value",
-        "typedef-number-token",
-        "typedef-percentage-token",
-        "typedef-dimension-token"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-syntax/": {
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-tables-3/": {
-      "anchors": [
-        "propdef-border-collapse",
-        "propdef-caption-side",
-        "propdef-empty-cells",
-        "propdef-table-layout"
-      ],
-      "specShortname": "css-tables-3"
-    },
-    "https://drafts.csswg.org/css-text-3/": {
-      "anchors": [
-        "propdef-text-align"
-      ],
-      "specShortname": "css-text-3"
-    },
-    "https://drafts.csswg.org/css-text-4/": {
-      "anchors": [
-        "propdef-letter-spacing",
-        "propdef-text-indent",
-        "propdef-text-transform",
-        "propdef-white-space",
-        "propdef-word-spacing"
-      ],
-      "specShortname": "css-text-4"
-    },
-    "https://drafts.csswg.org/css-text-decor-4/": {
-      "anchors": [
-        "propdef-text-decoration",
-        "propdef-text-decoration-skip",
-        "propdef-text-decoration-skip-ink",
-        "propdef-text-decoration-thickness",
-        "propdef-text-emphasis-skip",
-        "propdef-text-underline-offset"
-      ],
-      "specShortname": "css-text-decor-4"
-    },
-    "https://drafts.csswg.org/css-transforms-1/": {
-      "anchors": [
-        "typedef-transform-list",
-        "propdef-transform",
-        "typedef-transform-function",
-        "mathematical-description",
-        "funcdef-transform-skew",
-        "funcdef-transform-skewx",
-        "funcdef-transform-skewy",
-        "funcdef-transform-matrix",
-        "funcdef-transform-translate",
-        "funcdef-transform-translatex",
-        "funcdef-transform-translatey",
-        "funcdef-transform-rotate"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transforms-2/": {
-      "anchors": [
-        "valdef-perspective-func-none",
-        "funcdef-perspective",
-        "propdef-backface-visibility",
-        "propdef-perspective",
-        "propdef-perspective-origin",
-        "propdef-rotate",
-        "propdef-scale",
-        "propdef-transform-style",
-        "propdef-translate",
-        "funcdef-matrix3d",
-        "funcdef-translate3d",
-        "funcdef-translatez",
-        "funcdef-scale",
-        "funcdef-scalex",
-        "funcdef-scaley",
-        "funcdef-scale3d",
-        "funcdef-scalez",
-        "funcdef-rotate3d",
-        "funcdef-rotatex",
-        "funcdef-rotatey",
-        "funcdef-rotatez"
-      ],
-      "specShortname": "css-transforms-2"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transitions-1/": {
-      "anchors": [
-        "propdef-transition",
-        "propdef-transition-delay",
-        "propdef-transition-duration",
-        "propdef-transition-property",
-        "propdef-transition-timing-function"
-      ],
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-appearance",
-        "propdef-caret",
-        "propdef-caret-color",
-        "propdef-caret-shape",
-        "propdef-cursor",
-        "propdef-nav-down",
-        "propdef-nav-left",
-        "propdef-nav-right",
-        "propdef-nav-up",
-        "propdef-outline",
-        "propdef-outline-color",
-        "propdef-outline-offset",
-        "propdef-outline-style",
-        "propdef-outline-width",
-        "propdef-pointer-events",
-        "propdef-resize",
-        "propdef-user-select"
-      ],
-      "specShortname": "css-ui-4"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "typedef-ident",
-        "css-css-identifier",
-        "number-value",
-        "percentage-value",
-        "typedef-dimension",
-        "compatible-units",
-        "in",
-        "px",
-        "canonical-unit",
-        "math-function",
-        "length-value",
-        "angle-value",
-        "time-value",
-        "frequency-value",
-        "resolution-value",
-        "typedef-length-percentage",
-        "typedef-angle-percentage",
-        "typedef-time-percentage",
-        "funcdef-calc",
-        "funcdef-min",
-        "funcdef-max",
-        "relative-length",
-        "percentage",
-        "funcdef-url",
-        "identifier-value",
-        "em"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-variables-2/": {
-      "anchors": [
-        "custom-property",
-        "funcdef-var",
-        "typedef-custom-property-name"
-      ],
-      "specShortname": "css-variables-2"
-    },
-    "https://drafts.csswg.org/css-will-change-1/": {
-      "anchors": [
-        "propdef-will-change"
-      ],
-      "specShortname": "css-will-change-1"
-    },
-    "https://drafts.csswg.org/css-will-change/": {
-      "specShortname": "css-will-change-1"
-    },
-    "https://drafts.csswg.org/css-writing-modes-3/": {
-      "anchors": [
-        "propdef-direction",
-        "propdef-unicode-bidi"
-      ],
-      "specShortname": "css-writing-modes-3"
-    },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "propdef-glyph-orientation-vertical",
-        "propdef-text-combine-upright",
-        "propdef-text-orientation",
-        "propdef-writing-mode"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "propdef-clear",
-        "propdef-float",
-        "value-def-absolute-size",
-        "value-def-relative-size",
-        "propdef-line-height"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "css-declaration-block",
-        "cssstyledeclaration",
-        "cssstyledeclaration-declarations",
-        "dom-window-getcomputedstyle",
-        "concept-css-style-sheet-origin-clean-flag",
-        "resolved-value",
-        "cssstylerule",
-        "elementcssinlinestyle",
-        "namespacedef-css",
-        "serializing-css-values"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.fxtf.org/compositing-2/": {
-      "anchors": [
-        "propdef-background-blend-mode",
-        "propdef-isolation",
-        "propdef-mix-blend-mode"
-      ],
-      "specShortname": "compositing-2"
-    },
-    "https://drafts.fxtf.org/css-masking-1/": {
-      "anchors": [
-        "propdef-clip",
-        "propdef-clip-path",
-        "propdef-clip-rule",
-        "propdef-mask",
-        "propdef-mask-border",
-        "propdef-mask-border-mode",
-        "propdef-mask-border-outset",
-        "propdef-mask-border-repeat",
-        "propdef-mask-border-slice",
-        "propdef-mask-border-source",
-        "propdef-mask-border-width",
-        "propdef-mask-clip",
-        "propdef-mask-composite",
-        "propdef-mask-image",
-        "propdef-mask-mode",
-        "propdef-mask-origin",
-        "propdef-mask-position",
-        "propdef-mask-repeat",
-        "propdef-mask-size",
-        "propdef-mask-type"
-      ],
-      "specShortname": "css-masking-1"
-    },
-    "https://drafts.fxtf.org/fill-stroke-3/": {
-      "anchors": [
-        "propdef-fill-break",
-        "propdef-fill-color",
-        "propdef-fill-image",
-        "propdef-fill-origin",
-        "propdef-fill-position",
-        "propdef-fill-repeat",
-        "propdef-fill-size",
-        "propdef-stroke-align",
-        "propdef-stroke-break",
-        "propdef-stroke-color",
-        "propdef-stroke-dash-corner",
-        "propdef-stroke-dash-justify",
-        "propdef-stroke-image",
-        "propdef-stroke-origin",
-        "propdef-stroke-position",
-        "propdef-stroke-repeat",
-        "propdef-stroke-size"
-      ],
-      "specShortname": "fill-stroke-3"
-    },
-    "https://drafts.fxtf.org/fill-stroke/": {
-      "specShortname": "fill-stroke-3"
-    },
-    "https://drafts.fxtf.org/filter-effects-2/": {
-      "anchors": [
-        "propdef-backdrop-filter"
-      ],
-      "specShortname": "filter-effects-2"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
-      "anchors": [
-        "dommatrix",
-        "dom-dommatrixreadonly-is2d",
-        "dommatrixreadonly"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/motion-1/": {
-      "anchors": [
-        "propdef-offset",
-        "propdef-offset-anchor",
-        "propdef-offset-distance",
-        "propdef-offset-path",
-        "propdef-offset-position",
-        "propdef-offset-rotate"
-      ],
-      "specShortname": "motion-1"
-    },
-    "https://github.com/w3c/css-houdini-drafts/issues": {},
-    "https://github.com/w3c/css-houdini-drafts/issues/350": {
-      "anchors": [
-        "issuecomment-294690156"
-      ]
-    },
-    "https://github.com/w3c/css-houdini-drafts/issues/644": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "htmlelement",
-        "attr-style"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-style-element"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string",
-        "ascii-lowercase",
-        "list-iterate",
-        "list",
-        "ordered-map",
-        "map-iterate",
-        "list-item",
-        "map-exists",
-        "map-size",
-        "list-size",
-        "map-remove",
-        "map-set",
-        "list-append",
-        "list-prepend",
-        "map-entry",
-        "map-value",
-        "map-key",
-        "list-empty",
-        "code-point",
-        "list-remove",
-        "tuple",
-        "map-getting-the-values",
-        "list-is-empty",
-        "ascii-case-insensitive"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://svgwg.org/svg2-draft/": {
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/coords.html": {
-      "anchors": [
-        "VectorEffectProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/geometry.html": {
-      "anchors": [
-        "CxProperty",
-        "CyProperty",
-        "RProperty",
-        "RxProperty",
-        "RyProperty",
-        "XProperty",
-        "YProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/painting.html": {
-      "anchors": [
-        "ColorInterpolationProperty",
-        "FillProperty",
-        "FillOpacityProperty",
-        "FillRuleProperty",
-        "MarkerProperty",
-        "MarkerEndProperty",
-        "MarkerMidProperty",
-        "MarkerStartProperty",
-        "PaintOrderProperty",
-        "ShapeRenderingProperty",
-        "StrokeProperty",
-        "StrokeDasharrayProperty",
-        "StrokeDashoffsetProperty",
-        "StrokeLinecapProperty",
-        "StrokeLinejoinProperty",
-        "StrokeMiterlimitProperty",
-        "StrokeOpacityProperty",
-        "StrokeWidthProperty",
-        "TextRenderingProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/paths.html": {
-      "anchors": [
-        "DProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/pservers.html": {
-      "anchors": [
-        "StopColorProperty",
-        "StopOpacityProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/text.html": {
-      "anchors": [
-        "ShapesubtractProperty",
-        "TextAnchorProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-USVString",
-        "idl-sequence",
-        "dfn-throw",
-        "exceptiondef-typeerror",
-        "idl-undefined",
-        "idl-boolean",
-        "idl-unsigned-long",
-        "dfn-value-pairs-to-iterate-over",
-        "SameObject",
-        "dfn-supported-property-indices",
-        "dfn-determine-the-value-of-an-indexed-property",
-        "dfn-set-the-value-of-an-existing-indexed-property",
-        "dfn-set-the-value-of-a-new-indexed-property",
-        "exceptiondef-rangeerror",
-        "idl-DOMString",
-        "idl-double",
-        "idl-long",
-        "syntaxerror",
-        "dfn-indexed-property-getter",
-        "idl-observable-array",
-        "observable-array-attribute-set-an-indexed-value",
-        "observable-array-attribute-backing-list",
-        "observable-array-attribute-delete-an-indexed-value"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/TR/CSS21/aural.html": {
-      "anchors": [
-        "propdef-azimuth",
-        "propdef-elevation",
-        "propdef-pitch",
-        "propdef-pitch-range",
-        "propdef-play-during",
-        "propdef-richness",
-        "propdef-speak-header",
-        "propdef-speak-numeral",
-        "propdef-speak-punctuation",
-        "propdef-speech-rate",
-        "propdef-stress",
-        "propdef-volume"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/page.html": {
-      "anchors": [
-        "propdef-page-break-after",
-        "propdef-page-break-before",
-        "propdef-page-break-inside"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/tables.html": {
-      "anchors": [
-        "propdef-border-spacing"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "propdef-z-index"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/SVG2/painting.html": {
-      "anchors": [
-        "ColorRenderingProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/text.html": {
-      "anchors": [
-        "TextDecorationFillProperty",
-        "TextDecorationStrokeProperty"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/geometry-1/": {
-      "anchors": [
-        "dommatrixreadonly-stringification-behavior"
-      ],
-      "specShortname": "geometry-1"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSS/factory_functions_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSImageValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/CSSKeywordValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/CSSMathInvert": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/CSSMathMax": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/values": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/CSSMathMin": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/values": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/CSSMathNegate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/CSSMathProduct": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/values": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/CSSMathSum": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/values": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue/operator": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/CSSMatrixComponent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/matrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/add": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/div": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/equals": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/max": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/min": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/mul": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/parse_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/sub": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/to": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/toSum": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/CSSPerspective": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/CSSRotate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/angle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/z": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/CSSScale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/z": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/CSSSkew": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ax": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ay": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/CSSSkewX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/ax": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/CSSSkewY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/ay": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/styleMap": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parseAll_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parse_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/is2D": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toString": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/CSSTransformValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/is2D": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/toMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/CSSTranslate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/z": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/CSSUnitValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/unit": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/CSSUnparsedValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/CSSVariableReferenceValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/fallback": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/variable": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/computedStyleMap": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/append": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/clear": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/delete": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/set": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-properties-values-api-1/": {
+        "anchors": [
+          "css-style-value-reification"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "typedef-overflow-position",
+          "typedef-self-position",
+          "propdef-align-content",
+          "propdef-align-items",
+          "propdef-align-self",
+          "propdef-column-gap",
+          "propdef-gap",
+          "propdef-grid-column-gap",
+          "propdef-grid-gap",
+          "propdef-grid-row-gap",
+          "propdef-justify-content",
+          "propdef-justify-items",
+          "propdef-justify-self",
+          "propdef-place-content",
+          "propdef-place-items",
+          "propdef-place-self",
+          "propdef-row-gap"
+        ]
+      },
+      "https://drafts.csswg.org/css-align/": {},
+      "https://drafts.csswg.org/css-animations-1/": {
+        "anchors": [
+          "propdef-animation"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations-2/": {
+        "anchors": [
+          "propdef-animation-composition"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations/": {},
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background",
+          "propdef-background-attachment",
+          "propdef-background-clip",
+          "propdef-background-color",
+          "propdef-background-image",
+          "propdef-background-position",
+          "propdef-background-repeat",
+          "propdef-border",
+          "propdef-border-bottom",
+          "propdef-border-bottom-color",
+          "propdef-border-bottom-style",
+          "propdef-border-bottom-width",
+          "propdef-border-color",
+          "propdef-border-image",
+          "propdef-border-image-outset",
+          "propdef-border-image-repeat",
+          "propdef-border-image-slice",
+          "propdef-border-image-source",
+          "propdef-border-image-width",
+          "propdef-border-left",
+          "propdef-border-left-color",
+          "propdef-border-left-style",
+          "propdef-border-left-width",
+          "propdef-border-radius",
+          "propdef-border-right",
+          "propdef-border-right-color",
+          "propdef-border-right-style",
+          "propdef-border-right-width",
+          "propdef-border-style",
+          "propdef-border-top",
+          "propdef-border-top-color",
+          "propdef-border-top-style",
+          "propdef-border-top-width",
+          "propdef-border-width",
+          "border-image-slice-fill",
+          "valdef-border-image-repeat-stretch"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-border-block",
+          "propdef-border-block-color",
+          "propdef-border-block-end",
+          "propdef-border-block-end-color",
+          "propdef-border-block-end-style",
+          "propdef-border-block-end-width",
+          "propdef-border-block-start",
+          "propdef-border-block-start-color",
+          "propdef-border-block-start-style",
+          "propdef-border-block-start-width",
+          "propdef-border-block-style",
+          "propdef-border-block-width",
+          "propdef-border-inline",
+          "propdef-border-inline-color",
+          "propdef-border-inline-end",
+          "propdef-border-inline-end-color",
+          "propdef-border-inline-end-style",
+          "propdef-border-inline-end-width",
+          "propdef-border-inline-start",
+          "propdef-border-inline-start-color",
+          "propdef-border-inline-start-style",
+          "propdef-border-inline-start-width",
+          "propdef-border-inline-style",
+          "propdef-border-inline-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "propdef-margin",
+          "propdef-margin-bottom",
+          "propdef-margin-left",
+          "propdef-margin-right",
+          "propdef-margin-top",
+          "propdef-padding",
+          "propdef-padding-bottom",
+          "propdef-padding-left",
+          "propdef-padding-right",
+          "propdef-padding-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-3/": {
+        "anchors": [
+          "propdef-break-after",
+          "propdef-break-before",
+          "propdef-break-inside",
+          "propdef-orphans"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-4/": {
+        "anchors": [
+          "propdef-box-decoration-break",
+          "propdef-widows"
+        ]
+      },
+      "https://drafts.csswg.org/css-break/": {},
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "propdef-all",
+          "computed-value",
+          "shorthand-property"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "typedef-hex-color",
+          "typedef-named-color",
+          "propdef-color",
+          "valdef-color-currentcolor",
+          "funcdef-hsl",
+          "funcdef-hsla",
+          "propdef-opacity",
+          "funcdef-rgb",
+          "funcdef-rgba",
+          "valdef-color-transparent"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color",
+          "funcdef-color",
+          "funcdef-hwb",
+          "funcdef-lab",
+          "funcdef-lch",
+          "funcdef-oklab"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-adjust-1/": {
+        "anchors": [
+          "propdef-color-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-color/": {},
+      "https://drafts.csswg.org/css-contain-2/": {
+        "anchors": [
+          "propdef-contain"
+        ]
+      },
+      "https://drafts.csswg.org/css-content-3/": {
+        "anchors": [
+          "propdef-bookmark-label",
+          "propdef-bookmark-level",
+          "propdef-bookmark-state",
+          "propdef-content",
+          "propdef-quotes"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "propdef-display",
+          "propdef-order",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-flexbox-1/": {
+        "anchors": [
+          "propdef-flex",
+          "propdef-flex-basis",
+          "propdef-flex-direction",
+          "propdef-flex-flow",
+          "propdef-flex-grow",
+          "propdef-flex-shrink",
+          "propdef-flex-wrap"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font",
+          "propdef-font-family",
+          "propdef-font-language-override",
+          "propdef-font-optical-sizing",
+          "propdef-font-palette",
+          "propdef-font-size",
+          "propdef-font-stretch",
+          "propdef-font-style",
+          "propdef-font-synthesis",
+          "propdef-font-variant",
+          "propdef-font-variant-alternates",
+          "propdef-font-variant-emoji",
+          "propdef-font-variation-settings",
+          "propdef-font-weight"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "propdef-font-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-gcpm-4/": {
+        "anchors": [
+          "propdef-copy-into"
+        ]
+      },
+      "https://drafts.csswg.org/css-grid-2/": {
+        "anchors": [
+          "typedef-flex",
+          "propdef-grid",
+          "propdef-grid-area",
+          "propdef-grid-auto-columns",
+          "propdef-grid-auto-flow",
+          "propdef-grid-auto-rows",
+          "propdef-grid-column",
+          "propdef-grid-column-end",
+          "propdef-grid-column-start",
+          "propdef-grid-row",
+          "propdef-grid-row-end",
+          "propdef-grid-row-start",
+          "propdef-grid-template",
+          "propdef-grid-template-areas",
+          "propdef-grid-template-columns",
+          "propdef-grid-template-rows"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image",
+          "propdef-image-rendering"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {
+        "anchors": [
+          "funcdef-image",
+          "propdef-image-resolution",
+          "propdef-object-fit"
+        ]
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "propdef-alignment-baseline",
+          "propdef-baseline-shift",
+          "propdef-dominant-baseline",
+          "propdef-initial-letter",
+          "propdef-initial-letter-align",
+          "propdef-initial-letter-wrap",
+          "propdef-vertical-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-line-grid-1/": {
+        "anchors": [
+          "propdef-box-snap",
+          "propdef-line-grid",
+          "propdef-line-snap"
+        ]
+      },
+      "https://drafts.csswg.org/css-line-grid/": {},
+      "https://drafts.csswg.org/css-lists-3/": {
+        "anchors": [
+          "propdef-counter-increment",
+          "propdef-counter-reset",
+          "propdef-counter-set",
+          "propdef-list-style",
+          "propdef-list-style-image",
+          "propdef-list-style-position",
+          "propdef-list-style-type",
+          "propdef-marker-side"
+        ]
+      },
+      "https://drafts.csswg.org/css-logical-1/": {
+        "anchors": [
+          "propdef-block-size",
+          "propdef-inline-size",
+          "propdef-margin-block",
+          "propdef-margin-block-end",
+          "propdef-margin-block-start",
+          "propdef-margin-inline",
+          "propdef-margin-inline-end",
+          "propdef-margin-inline-start",
+          "propdef-max-block-size",
+          "propdef-max-inline-size",
+          "propdef-min-block-size",
+          "propdef-min-inline-size",
+          "propdef-padding-block",
+          "propdef-padding-block-end",
+          "propdef-padding-block-start",
+          "propdef-padding-inline",
+          "propdef-padding-inline-end",
+          "propdef-padding-inline-start"
+        ]
+      },
+      "https://drafts.csswg.org/css-multicol-2/": {
+        "anchors": [
+          "propdef-column-span"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow",
+          "propdef-overflow-x",
+          "propdef-overflow-y",
+          "propdef-scroll-behavior",
+          "propdef-scrollbar-gutter",
+          "propdef-text-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "anchors": [
+          "propdef-continue",
+          "propdef-max-lines"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {
+        "anchors": [
+          "propdef-page"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats-3/": {
+        "anchors": [
+          "propdef-float-defer"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats/": {},
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "valdef-top-auto",
+          "propdef-bottom",
+          "propdef-inset",
+          "propdef-inset-block",
+          "propdef-inset-block-end",
+          "propdef-inset-block-start",
+          "propdef-inset-inline",
+          "propdef-inset-inline-end",
+          "propdef-inset-inline-start",
+          "propdef-left",
+          "propdef-position",
+          "propdef-right",
+          "propdef-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-regions-1/": {
+        "anchors": [
+          "propdef-region-fragment"
+        ]
+      },
+      "https://drafts.csswg.org/css-regions/": {},
+      "https://drafts.csswg.org/css-rhythm-1/": {
+        "anchors": [
+          "propdef-block-step",
+          "propdef-block-step-align",
+          "propdef-block-step-insert",
+          "propdef-block-step-round",
+          "propdef-block-step-size",
+          "propdef-line-height-step"
+        ]
+      },
+      "https://drafts.csswg.org/css-rhythm/": {},
+      "https://drafts.csswg.org/css-round-display-1/": {
+        "anchors": [
+          "propdef-border-boundary"
+        ]
+      },
+      "https://drafts.csswg.org/css-round-display/": {},
+      "https://drafts.csswg.org/css-ruby-1/": {
+        "anchors": [
+          "propdef-ruby-align",
+          "propdef-ruby-merge",
+          "propdef-ruby-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-anchoring-1/": {
+        "anchors": [
+          "propdef-overflow-anchor"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-anchoring/": {},
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "propdef-scroll-margin",
+          "propdef-scroll-margin-block",
+          "propdef-scroll-margin-block-end",
+          "propdef-scroll-margin-block-start",
+          "propdef-scroll-margin-bottom",
+          "propdef-scroll-margin-inline",
+          "propdef-scroll-margin-inline-end",
+          "propdef-scroll-margin-inline-start",
+          "propdef-scroll-margin-left",
+          "propdef-scroll-margin-right",
+          "propdef-scroll-margin-top",
+          "propdef-scroll-padding",
+          "propdef-scroll-padding-block",
+          "propdef-scroll-padding-block-end",
+          "propdef-scroll-padding-block-start",
+          "propdef-scroll-padding-bottom",
+          "propdef-scroll-padding-inline",
+          "propdef-scroll-padding-inline-end",
+          "propdef-scroll-padding-inline-start",
+          "propdef-scroll-padding-left",
+          "propdef-scroll-padding-right",
+          "propdef-scroll-padding-top",
+          "propdef-scroll-snap-align",
+          "propdef-scroll-snap-stop",
+          "propdef-scroll-snap-type"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-1/": {
+        "anchors": [
+          "propdef-shape-margin"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-2/": {
+        "anchors": [
+          "propdef-shape-inside",
+          "propdef-shape-padding"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes/": {},
+      "https://drafts.csswg.org/css-size-adjust-1/": {
+        "anchors": [
+          "propdef-text-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "propdef-box-sizing",
+          "propdef-height",
+          "propdef-max-height",
+          "propdef-max-width",
+          "propdef-min-height",
+          "propdef-min-width",
+          "propdef-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-speech-1/": {
+        "anchors": [
+          "propdef-cue",
+          "propdef-cue-after",
+          "propdef-cue-before",
+          "propdef-pause",
+          "propdef-pause-after",
+          "propdef-pause-before",
+          "propdef-rest",
+          "propdef-rest-after",
+          "propdef-rest-before",
+          "propdef-speak",
+          "propdef-speak-as",
+          "propdef-voice-balance",
+          "propdef-voice-duration",
+          "propdef-voice-family",
+          "propdef-voice-pitch",
+          "propdef-voice-range",
+          "propdef-voice-rate",
+          "propdef-voice-stress",
+          "propdef-voice-volume"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "tokenization",
+          "typedef-dimension-token",
+          "typedef-number-token",
+          "typedef-percentage-token",
+          "component-value",
+          "css-parse-something-according-to-a-css-grammar",
+          "parse-a-component-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax/": {},
+      "https://drafts.csswg.org/css-tables-3/": {
+        "anchors": [
+          "propdef-border-collapse",
+          "propdef-caption-side",
+          "propdef-empty-cells",
+          "propdef-table-layout"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-3/": {
+        "anchors": [
+          "propdef-text-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-letter-spacing",
+          "propdef-text-indent",
+          "propdef-text-transform",
+          "propdef-white-space",
+          "propdef-word-spacing"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-decoration-skip",
+          "propdef-text-decoration-skip-ink",
+          "propdef-text-decoration-thickness",
+          "propdef-text-emphasis-skip",
+          "propdef-text-underline-offset"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "mathematical-description",
+          "typedef-transform-function",
+          "typedef-transform-list",
+          "funcdef-transform-matrix",
+          "funcdef-transform-rotate",
+          "funcdef-transform-skew",
+          "funcdef-transform-skewx",
+          "funcdef-transform-skewy",
+          "propdef-transform",
+          "funcdef-transform-translate",
+          "funcdef-transform-translatex",
+          "funcdef-transform-translatey"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "propdef-backface-visibility",
+          "funcdef-matrix3d",
+          "valdef-perspective-func-none",
+          "propdef-perspective",
+          "funcdef-perspective",
+          "propdef-perspective-origin",
+          "propdef-rotate",
+          "funcdef-rotate3d",
+          "funcdef-rotatex",
+          "funcdef-rotatey",
+          "funcdef-rotatez",
+          "propdef-scale",
+          "funcdef-scale",
+          "funcdef-scale3d",
+          "funcdef-scalex",
+          "funcdef-scaley",
+          "funcdef-scalez",
+          "propdef-transform-style",
+          "propdef-translate",
+          "funcdef-translate3d",
+          "funcdef-translatez"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-transitions-1/": {
+        "anchors": [
+          "propdef-transition",
+          "propdef-transition-delay",
+          "propdef-transition-duration",
+          "propdef-transition-property",
+          "propdef-transition-timing-function"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions/": {},
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-appearance",
+          "propdef-caret",
+          "propdef-caret-color",
+          "propdef-caret-shape",
+          "propdef-cursor",
+          "propdef-nav-down",
+          "propdef-nav-left",
+          "propdef-nav-right",
+          "propdef-nav-up",
+          "propdef-outline",
+          "propdef-outline-color",
+          "propdef-outline-offset",
+          "propdef-outline-style",
+          "propdef-outline-width",
+          "propdef-pointer-events",
+          "propdef-resize",
+          "propdef-user-select"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "typedef-angle-percentage",
+          "angle-value",
+          "identifier-value",
+          "typedef-dimension",
+          "frequency-value",
+          "typedef-ident",
+          "typedef-length-percentage",
+          "length-value",
+          "number-value",
+          "percentage-value",
+          "resolution-value",
+          "typedef-time-percentage",
+          "time-value",
+          "funcdef-calc",
+          "canonical-unit",
+          "compatible-units",
+          "em",
+          "css-css-identifier",
+          "in",
+          "math-function",
+          "funcdef-max",
+          "funcdef-min",
+          "percentage",
+          "px",
+          "relative-length",
+          "funcdef-url"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "typedef-custom-property-name",
+          "custom-property",
+          "funcdef-var"
+        ]
+      },
+      "https://drafts.csswg.org/css-will-change-1/": {
+        "anchors": [
+          "propdef-will-change"
+        ]
+      },
+      "https://drafts.csswg.org/css-will-change/": {},
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction",
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "propdef-glyph-orientation-vertical",
+          "propdef-text-combine-upright",
+          "propdef-text-orientation",
+          "propdef-writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "value-def-absolute-size",
+          "value-def-relative-size",
+          "propdef-clear",
+          "propdef-float",
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "serializing-css-values",
+          "namespacedef-css",
+          "cssstyledeclaration",
+          "cssstylerule",
+          "elementcssinlinestyle",
+          "css-declaration-block",
+          "cssstyledeclaration-declarations",
+          "dom-window-getcomputedstyle",
+          "concept-css-style-sheet-origin-clean-flag",
+          "resolved-value"
+        ]
+      },
+      "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.fxtf.org/compositing-2/": {
+        "anchors": [
+          "propdef-background-blend-mode",
+          "propdef-isolation",
+          "propdef-mix-blend-mode"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip",
+          "propdef-clip-path",
+          "propdef-clip-rule",
+          "propdef-mask",
+          "propdef-mask-border",
+          "propdef-mask-border-mode",
+          "propdef-mask-border-outset",
+          "propdef-mask-border-repeat",
+          "propdef-mask-border-slice",
+          "propdef-mask-border-source",
+          "propdef-mask-border-width",
+          "propdef-mask-clip",
+          "propdef-mask-composite",
+          "propdef-mask-image",
+          "propdef-mask-mode",
+          "propdef-mask-origin",
+          "propdef-mask-position",
+          "propdef-mask-repeat",
+          "propdef-mask-size",
+          "propdef-mask-type"
+        ]
+      },
+      "https://drafts.fxtf.org/fill-stroke-3/": {
+        "anchors": [
+          "propdef-fill-break",
+          "propdef-fill-color",
+          "propdef-fill-image",
+          "propdef-fill-origin",
+          "propdef-fill-position",
+          "propdef-fill-repeat",
+          "propdef-fill-size",
+          "propdef-stroke-align",
+          "propdef-stroke-break",
+          "propdef-stroke-color",
+          "propdef-stroke-dash-corner",
+          "propdef-stroke-dash-justify",
+          "propdef-stroke-image",
+          "propdef-stroke-origin",
+          "propdef-stroke-position",
+          "propdef-stroke-repeat",
+          "propdef-stroke-size"
+        ]
+      },
+      "https://drafts.fxtf.org/fill-stroke/": {},
+      "https://drafts.fxtf.org/filter-effects-2/": {
+        "anchors": [
+          "propdef-backdrop-filter"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "dommatrix",
+          "dommatrixreadonly",
+          "dom-dommatrixreadonly-is2d"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry/": {},
+      "https://drafts.fxtf.org/motion-1/": {
+        "anchors": [
+          "propdef-offset",
+          "propdef-offset-anchor",
+          "propdef-offset-distance",
+          "propdef-offset-path",
+          "propdef-offset-position",
+          "propdef-offset-rotate"
+        ]
+      },
+      "https://github.com/w3c/css-houdini-drafts/issues": {},
+      "https://github.com/w3c/css-houdini-drafts/issues/350": {
+        "anchors": [
+          "issuecomment-294690156"
+        ]
+      },
+      "https://github.com/w3c/css-houdini-drafts/issues/644": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement",
+          "attr-style"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-style-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "ascii-case-insensitive",
+          "ascii-lowercase",
+          "code-point",
+          "map-exists",
+          "list-empty",
+          "map-entry",
+          "list-iterate",
+          "map-iterate",
+          "list-is-empty",
+          "list-item",
+          "map-key",
+          "list",
+          "ordered-map",
+          "list-prepend",
+          "list-remove",
+          "map-remove",
+          "map-set",
+          "list-size",
+          "map-size",
+          "string",
+          "tuple",
+          "map-value",
+          "map-getting-the-values"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://svgwg.org/svg2-draft/": {},
+      "https://svgwg.org/svg2-draft/coords.html": {
+        "anchors": [
+          "VectorEffectProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/geometry.html": {
+        "anchors": [
+          "CxProperty",
+          "CyProperty",
+          "RProperty",
+          "RxProperty",
+          "RyProperty",
+          "XProperty",
+          "YProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/painting.html": {
+        "anchors": [
+          "ColorInterpolationProperty",
+          "FillProperty",
+          "FillOpacityProperty",
+          "FillRuleProperty",
+          "MarkerProperty",
+          "MarkerEndProperty",
+          "MarkerMidProperty",
+          "MarkerStartProperty",
+          "PaintOrderProperty",
+          "ShapeRenderingProperty",
+          "StrokeProperty",
+          "StrokeDasharrayProperty",
+          "StrokeDashoffsetProperty",
+          "StrokeLinecapProperty",
+          "StrokeLinejoinProperty",
+          "StrokeMiterlimitProperty",
+          "StrokeOpacityProperty",
+          "StrokeWidthProperty",
+          "TextRenderingProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/paths.html": {
+        "anchors": [
+          "DProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/pservers.html": {
+        "anchors": [
+          "StopColorProperty",
+          "StopOpacityProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/text.html": {
+        "anchors": [
+          "ShapesubtractProperty",
+          "TextAnchorProperty"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "idl-observable-array",
+          "exceptiondef-rangeerror",
+          "SameObject",
+          "syntaxerror",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "observable-array-attribute-backing-list",
+          "idl-boolean",
+          "observable-array-attribute-delete-an-indexed-value",
+          "dfn-determine-the-value-of-an-indexed-property",
+          "idl-double",
+          "dfn-indexed-property-getter",
+          "idl-long",
+          "idl-sequence",
+          "observable-array-attribute-set-an-indexed-value",
+          "dfn-set-the-value-of-a-new-indexed-property",
+          "dfn-set-the-value-of-an-existing-indexed-property",
+          "dfn-supported-property-indices",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "dfn-value-pairs-to-iterate-over"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/TR/CSS21/aural.html": {
+        "anchors": [
+          "propdef-azimuth",
+          "propdef-elevation",
+          "propdef-pitch",
+          "propdef-pitch-range",
+          "propdef-play-during",
+          "propdef-richness",
+          "propdef-speak-header",
+          "propdef-speak-numeral",
+          "propdef-speak-punctuation",
+          "propdef-speech-rate",
+          "propdef-stress",
+          "propdef-volume"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/page.html": {
+        "anchors": [
+          "propdef-page-break-after",
+          "propdef-page-break-before",
+          "propdef-page-break-inside"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/tables.html": {
+        "anchors": [
+          "propdef-border-spacing"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-z-index"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/painting.html": {
+        "anchors": [
+          "ColorRenderingProperty"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/text.html": {
+        "anchors": [
+          "TextDecorationFillProperty",
+          "TextDecorationStrokeProperty"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "dommatrixreadonly-stringification-behavior"
+        ]
+      }
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "propdef-align-content",
+          "propdef-align-items",
+          "typedef-self-position",
+          "typedef-overflow-position",
+          "propdef-align-self",
+          "propdef-column-gap",
+          "propdef-gap",
+          "propdef-grid-column-gap",
+          "propdef-grid-gap",
+          "propdef-grid-row-gap",
+          "propdef-justify-content",
+          "propdef-justify-items",
+          "propdef-justify-self",
+          "propdef-place-content",
+          "propdef-place-items",
+          "propdef-place-self",
+          "propdef-row-gap"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations-1/": {
+        "anchors": [
+          "propdef-animation"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations-2/": {
+        "anchors": [
+          "propdef-animation-composition"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-border-image-source",
+          "propdef-background",
+          "propdef-background-attachment",
+          "propdef-background-clip",
+          "propdef-background-color",
+          "propdef-background-position",
+          "propdef-background-repeat",
+          "propdef-border",
+          "propdef-border-top-color",
+          "propdef-border-top-style",
+          "propdef-border-top-width",
+          "propdef-border-top",
+          "propdef-border-bottom",
+          "propdef-border-bottom-color",
+          "propdef-border-bottom-style",
+          "propdef-border-bottom-width",
+          "propdef-border-color",
+          "propdef-border-left",
+          "propdef-border-left-color",
+          "propdef-border-left-style",
+          "propdef-border-left-width",
+          "propdef-border-radius",
+          "propdef-border-right",
+          "propdef-border-right-color",
+          "propdef-border-right-style",
+          "propdef-border-right-width",
+          "propdef-border-style",
+          "propdef-border-width",
+          "propdef-border-image",
+          "propdef-border-image-slice",
+          "border-image-slice-fill",
+          "propdef-border-image-width",
+          "propdef-border-image-outset",
+          "propdef-border-image-repeat",
+          "valdef-border-image-repeat-stretch"
+        ]
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-border-block",
+          "propdef-border-block-start",
+          "propdef-border-block-color",
+          "propdef-border-block-end",
+          "propdef-border-block-end-color",
+          "propdef-border-block-end-style",
+          "propdef-border-block-end-width",
+          "propdef-border-block-start-color",
+          "propdef-border-block-start-style",
+          "propdef-border-block-start-width",
+          "propdef-border-block-style",
+          "propdef-border-block-width",
+          "propdef-border-inline",
+          "propdef-border-inline-color",
+          "propdef-border-inline-end",
+          "propdef-border-inline-end-color",
+          "propdef-border-inline-end-style",
+          "propdef-border-inline-end-width",
+          "propdef-border-inline-start",
+          "propdef-border-inline-start-color",
+          "propdef-border-inline-start-style",
+          "propdef-border-inline-start-width",
+          "propdef-border-inline-style",
+          "propdef-border-inline-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "propdef-margin",
+          "propdef-margin-bottom",
+          "propdef-margin-top",
+          "propdef-margin-left",
+          "propdef-margin-right",
+          "propdef-padding",
+          "propdef-padding-bottom",
+          "propdef-padding-top",
+          "propdef-padding-left",
+          "propdef-padding-right"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-3/": {
+        "anchors": [
+          "propdef-break-after",
+          "propdef-break-before",
+          "propdef-break-inside",
+          "propdef-orphans"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-4/": {
+        "anchors": [
+          "propdef-box-decoration-break",
+          "propdef-widows"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "shorthand-property",
+          "computed-value",
+          "propdef-all"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-color",
+          "propdef-opacity",
+          "funcdef-rgb",
+          "funcdef-rgba",
+          "funcdef-hsl",
+          "funcdef-hsla",
+          "typedef-hex-color",
+          "typedef-named-color",
+          "valdef-color-transparent",
+          "valdef-color-currentcolor"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color",
+          "funcdef-hwb",
+          "funcdef-lab",
+          "funcdef-lch",
+          "funcdef-oklab",
+          "funcdef-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-adjust-1/": {
+        "anchors": [
+          "propdef-color-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-contain-2/": {
+        "anchors": [
+          "propdef-contain"
+        ]
+      },
+      "https://drafts.csswg.org/css-content-3/": {
+        "anchors": [
+          "propdef-bookmark-label",
+          "propdef-bookmark-level",
+          "propdef-bookmark-state",
+          "propdef-content",
+          "propdef-quotes"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "propdef-display",
+          "propdef-order",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-flexbox-1/": {
+        "anchors": [
+          "propdef-flex",
+          "propdef-flex-basis",
+          "propdef-flex-direction",
+          "propdef-flex-flow",
+          "propdef-flex-grow",
+          "propdef-flex-shrink",
+          "propdef-flex-wrap"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font",
+          "propdef-font-family",
+          "propdef-font-language-override",
+          "propdef-font-optical-sizing",
+          "propdef-font-palette",
+          "propdef-font-size",
+          "propdef-font-stretch",
+          "propdef-font-style",
+          "propdef-font-synthesis",
+          "propdef-font-variant",
+          "propdef-font-variant-alternates",
+          "propdef-font-variant-emoji",
+          "propdef-font-variation-settings",
+          "propdef-font-weight"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "propdef-font-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-gcpm-4/": {
+        "anchors": [
+          "propdef-copy-into"
+        ]
+      },
+      "https://drafts.csswg.org/css-grid-2/": {
+        "anchors": [
+          "typedef-flex",
+          "propdef-grid",
+          "propdef-grid-area",
+          "propdef-grid-auto-columns",
+          "propdef-grid-auto-flow",
+          "propdef-grid-auto-rows",
+          "propdef-grid-column",
+          "propdef-grid-column-end",
+          "propdef-grid-column-start",
+          "propdef-grid-row",
+          "propdef-grid-row-end",
+          "propdef-grid-row-start",
+          "propdef-grid-template",
+          "propdef-grid-template-areas",
+          "propdef-grid-template-columns",
+          "propdef-grid-template-rows"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image",
+          "propdef-image-rendering"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {
+        "anchors": [
+          "funcdef-image",
+          "propdef-image-resolution",
+          "propdef-object-fit"
+        ]
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "propdef-alignment-baseline",
+          "propdef-baseline-shift",
+          "propdef-dominant-baseline",
+          "propdef-initial-letter",
+          "propdef-initial-letter-align",
+          "propdef-initial-letter-wrap",
+          "propdef-vertical-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-line-grid-1/": {
+        "anchors": [
+          "propdef-box-snap",
+          "propdef-line-grid",
+          "propdef-line-snap"
+        ]
+      },
+      "https://drafts.csswg.org/css-lists-3/": {
+        "anchors": [
+          "propdef-counter-reset",
+          "propdef-list-style-image",
+          "propdef-counter-increment",
+          "propdef-counter-set",
+          "propdef-list-style",
+          "propdef-list-style-position",
+          "propdef-list-style-type",
+          "propdef-marker-side"
+        ]
+      },
+      "https://drafts.csswg.org/css-logical-1/": {
+        "anchors": [
+          "propdef-block-size",
+          "propdef-inline-size",
+          "propdef-margin-block",
+          "propdef-margin-block-end",
+          "propdef-margin-block-start",
+          "propdef-margin-inline",
+          "propdef-margin-inline-end",
+          "propdef-margin-inline-start",
+          "propdef-max-block-size",
+          "propdef-max-inline-size",
+          "propdef-min-block-size",
+          "propdef-min-inline-size",
+          "propdef-padding-block",
+          "propdef-padding-block-end",
+          "propdef-padding-block-start",
+          "propdef-padding-inline",
+          "propdef-padding-inline-end",
+          "propdef-padding-inline-start"
+        ]
+      },
+      "https://drafts.csswg.org/css-multicol-2/": {
+        "anchors": [
+          "propdef-column-span"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow",
+          "propdef-overflow-x",
+          "propdef-overflow-y",
+          "propdef-scroll-behavior",
+          "propdef-scrollbar-gutter",
+          "propdef-text-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "anchors": [
+          "propdef-continue",
+          "propdef-max-lines"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {
+        "anchors": [
+          "propdef-page"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats-3/": {
+        "anchors": [
+          "propdef-float-defer"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "valdef-top-auto",
+          "propdef-bottom",
+          "propdef-inset",
+          "propdef-inset-block",
+          "propdef-inset-block-end",
+          "propdef-inset-block-start",
+          "propdef-inset-inline",
+          "propdef-inset-inline-end",
+          "propdef-inset-inline-start",
+          "propdef-left",
+          "propdef-position",
+          "propdef-right",
+          "propdef-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-regions-1/": {
+        "anchors": [
+          "propdef-region-fragment"
+        ]
+      },
+      "https://drafts.csswg.org/css-rhythm-1/": {
+        "anchors": [
+          "propdef-block-step",
+          "propdef-block-step-align",
+          "propdef-block-step-insert",
+          "propdef-block-step-round",
+          "propdef-block-step-size",
+          "propdef-line-height-step"
+        ]
+      },
+      "https://drafts.csswg.org/css-round-display-1/": {
+        "anchors": [
+          "propdef-border-boundary"
+        ]
+      },
+      "https://drafts.csswg.org/css-ruby-1/": {
+        "anchors": [
+          "propdef-ruby-align",
+          "propdef-ruby-merge",
+          "propdef-ruby-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-anchoring-1/": {
+        "anchors": [
+          "propdef-overflow-anchor"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "propdef-scroll-margin",
+          "propdef-scroll-margin-block",
+          "propdef-scroll-margin-block-end",
+          "propdef-scroll-margin-block-start",
+          "propdef-scroll-margin-bottom",
+          "propdef-scroll-margin-inline",
+          "propdef-scroll-margin-inline-end",
+          "propdef-scroll-margin-inline-start",
+          "propdef-scroll-margin-left",
+          "propdef-scroll-margin-right",
+          "propdef-scroll-margin-top",
+          "propdef-scroll-padding",
+          "propdef-scroll-padding-block",
+          "propdef-scroll-padding-block-end",
+          "propdef-scroll-padding-block-start",
+          "propdef-scroll-padding-bottom",
+          "propdef-scroll-padding-inline",
+          "propdef-scroll-padding-inline-end",
+          "propdef-scroll-padding-inline-start",
+          "propdef-scroll-padding-left",
+          "propdef-scroll-padding-right",
+          "propdef-scroll-padding-top",
+          "propdef-scroll-snap-align",
+          "propdef-scroll-snap-stop",
+          "propdef-scroll-snap-type"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-1/": {
+        "anchors": [
+          "propdef-shape-margin"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-2/": {
+        "anchors": [
+          "propdef-shape-inside",
+          "propdef-shape-padding"
+        ]
+      },
+      "https://drafts.csswg.org/css-size-adjust-1/": {
+        "anchors": [
+          "propdef-text-size-adjust"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "propdef-width",
+          "propdef-box-sizing",
+          "propdef-height",
+          "propdef-max-height",
+          "propdef-max-width",
+          "propdef-min-height",
+          "propdef-min-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-speech-1/": {
+        "anchors": [
+          "propdef-cue",
+          "propdef-cue-after",
+          "propdef-cue-before",
+          "propdef-pause",
+          "propdef-pause-after",
+          "propdef-pause-before",
+          "propdef-rest",
+          "propdef-rest-after",
+          "propdef-rest-before",
+          "propdef-speak",
+          "propdef-speak-as",
+          "propdef-voice-balance",
+          "propdef-voice-duration",
+          "propdef-voice-family",
+          "propdef-voice-pitch",
+          "propdef-voice-range",
+          "propdef-voice-rate",
+          "propdef-voice-stress",
+          "propdef-voice-volume"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar",
+          "component-value",
+          "parse-a-component-value",
+          "typedef-number-token",
+          "typedef-percentage-token",
+          "typedef-dimension-token"
+        ]
+      },
+      "https://drafts.csswg.org/css-tables-3/": {
+        "anchors": [
+          "propdef-border-collapse",
+          "propdef-caption-side",
+          "propdef-empty-cells",
+          "propdef-table-layout"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-3/": {
+        "anchors": [
+          "propdef-text-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-letter-spacing",
+          "propdef-text-indent",
+          "propdef-text-transform",
+          "propdef-white-space",
+          "propdef-word-spacing"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-decoration-skip",
+          "propdef-text-decoration-skip-ink",
+          "propdef-text-decoration-thickness",
+          "propdef-text-emphasis-skip",
+          "propdef-text-underline-offset"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "typedef-transform-list",
+          "propdef-transform",
+          "typedef-transform-function",
+          "funcdef-transform-skew",
+          "funcdef-transform-skewx",
+          "funcdef-transform-skewy",
+          "funcdef-transform-matrix",
+          "funcdef-transform-translate",
+          "funcdef-transform-translatex",
+          "funcdef-transform-translatey",
+          "funcdef-transform-rotate"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "valdef-perspective-func-none",
+          "funcdef-perspective",
+          "propdef-backface-visibility",
+          "propdef-perspective",
+          "propdef-perspective-origin",
+          "propdef-rotate",
+          "propdef-scale",
+          "propdef-transform-style",
+          "propdef-translate",
+          "funcdef-matrix3d",
+          "funcdef-translate3d",
+          "funcdef-translatez",
+          "funcdef-scale",
+          "funcdef-scalex",
+          "funcdef-scaley",
+          "funcdef-scale3d",
+          "funcdef-scalez",
+          "funcdef-rotate3d",
+          "funcdef-rotatex",
+          "funcdef-rotatey",
+          "funcdef-rotatez"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions-1/": {
+        "anchors": [
+          "propdef-transition",
+          "propdef-transition-delay",
+          "propdef-transition-duration",
+          "propdef-transition-property",
+          "propdef-transition-timing-function"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-appearance",
+          "propdef-caret",
+          "propdef-caret-color",
+          "propdef-caret-shape",
+          "propdef-cursor",
+          "propdef-nav-down",
+          "propdef-nav-left",
+          "propdef-nav-right",
+          "propdef-nav-up",
+          "propdef-outline",
+          "propdef-outline-color",
+          "propdef-outline-offset",
+          "propdef-outline-style",
+          "propdef-outline-width",
+          "propdef-pointer-events",
+          "propdef-resize",
+          "propdef-user-select"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "typedef-ident",
+          "css-css-identifier",
+          "number-value",
+          "percentage-value",
+          "typedef-dimension",
+          "compatible-units",
+          "in",
+          "px",
+          "canonical-unit",
+          "math-function",
+          "length-value",
+          "angle-value",
+          "time-value",
+          "frequency-value",
+          "resolution-value",
+          "typedef-length-percentage",
+          "typedef-angle-percentage",
+          "typedef-time-percentage",
+          "funcdef-calc",
+          "funcdef-min",
+          "funcdef-max",
+          "relative-length",
+          "percentage",
+          "funcdef-url",
+          "identifier-value",
+          "em"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "custom-property",
+          "funcdef-var",
+          "typedef-custom-property-name"
+        ]
+      },
+      "https://drafts.csswg.org/css-will-change-1/": {
+        "anchors": [
+          "propdef-will-change"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction",
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "propdef-glyph-orientation-vertical",
+          "propdef-text-combine-upright",
+          "propdef-text-orientation",
+          "propdef-writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "propdef-clear",
+          "propdef-float",
+          "value-def-absolute-size",
+          "value-def-relative-size",
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "css-declaration-block",
+          "cssstyledeclaration",
+          "cssstyledeclaration-declarations",
+          "dom-window-getcomputedstyle",
+          "concept-css-style-sheet-origin-clean-flag",
+          "resolved-value",
+          "cssstylerule",
+          "elementcssinlinestyle",
+          "namespacedef-css"
+        ]
+      },
+      "https://drafts.fxtf.org/compositing-2/": {
+        "anchors": [
+          "propdef-background-blend-mode",
+          "propdef-isolation",
+          "propdef-mix-blend-mode"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip",
+          "propdef-clip-path",
+          "propdef-clip-rule",
+          "propdef-mask",
+          "propdef-mask-border",
+          "propdef-mask-border-mode",
+          "propdef-mask-border-outset",
+          "propdef-mask-border-repeat",
+          "propdef-mask-border-slice",
+          "propdef-mask-border-source",
+          "propdef-mask-border-width",
+          "propdef-mask-clip",
+          "propdef-mask-composite",
+          "propdef-mask-image",
+          "propdef-mask-mode",
+          "propdef-mask-origin",
+          "propdef-mask-position",
+          "propdef-mask-repeat",
+          "propdef-mask-size",
+          "propdef-mask-type"
+        ]
+      },
+      "https://drafts.fxtf.org/fill-stroke-3/": {
+        "anchors": [
+          "propdef-fill-break",
+          "propdef-fill-color",
+          "propdef-fill-image",
+          "propdef-fill-origin",
+          "propdef-fill-position",
+          "propdef-fill-repeat",
+          "propdef-fill-size",
+          "propdef-stroke-align",
+          "propdef-stroke-break",
+          "propdef-stroke-color",
+          "propdef-stroke-dash-corner",
+          "propdef-stroke-dash-justify",
+          "propdef-stroke-image",
+          "propdef-stroke-origin",
+          "propdef-stroke-position",
+          "propdef-stroke-repeat",
+          "propdef-stroke-size"
+        ]
+      },
+      "https://drafts.fxtf.org/filter-effects-2/": {
+        "anchors": [
+          "propdef-backdrop-filter"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "dommatrix",
+          "dom-dommatrixreadonly-is2d",
+          "dommatrixreadonly"
+        ]
+      },
+      "https://drafts.fxtf.org/motion-1/": {
+        "anchors": [
+          "propdef-offset",
+          "propdef-offset-anchor",
+          "propdef-offset-distance",
+          "propdef-offset-path",
+          "propdef-offset-position",
+          "propdef-offset-rotate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement",
+          "attr-style"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-style-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string",
+          "ascii-lowercase",
+          "list-iterate",
+          "list",
+          "ordered-map",
+          "map-iterate",
+          "list-item",
+          "map-exists",
+          "map-size",
+          "list-size",
+          "map-remove",
+          "map-set",
+          "list-append",
+          "list-prepend",
+          "map-entry",
+          "map-value",
+          "map-key",
+          "list-empty",
+          "code-point",
+          "list-remove",
+          "tuple",
+          "map-getting-the-values",
+          "list-is-empty",
+          "ascii-case-insensitive"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/coords.html": {
+        "anchors": [
+          "VectorEffectProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/geometry.html": {
+        "anchors": [
+          "CxProperty",
+          "CyProperty",
+          "RProperty",
+          "RxProperty",
+          "RyProperty",
+          "XProperty",
+          "YProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/painting.html": {
+        "anchors": [
+          "ColorInterpolationProperty",
+          "FillProperty",
+          "FillOpacityProperty",
+          "FillRuleProperty",
+          "MarkerProperty",
+          "MarkerEndProperty",
+          "MarkerMidProperty",
+          "MarkerStartProperty",
+          "PaintOrderProperty",
+          "ShapeRenderingProperty",
+          "StrokeProperty",
+          "StrokeDasharrayProperty",
+          "StrokeDashoffsetProperty",
+          "StrokeLinecapProperty",
+          "StrokeLinejoinProperty",
+          "StrokeMiterlimitProperty",
+          "StrokeOpacityProperty",
+          "StrokeWidthProperty",
+          "TextRenderingProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/paths.html": {
+        "anchors": [
+          "DProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/pservers.html": {
+        "anchors": [
+          "StopColorProperty",
+          "StopOpacityProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/text.html": {
+        "anchors": [
+          "ShapesubtractProperty",
+          "TextAnchorProperty"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-USVString",
+          "idl-sequence",
+          "dfn-throw",
+          "exceptiondef-typeerror",
+          "idl-undefined",
+          "idl-boolean",
+          "idl-unsigned-long",
+          "dfn-value-pairs-to-iterate-over",
+          "SameObject",
+          "dfn-supported-property-indices",
+          "dfn-determine-the-value-of-an-indexed-property",
+          "dfn-set-the-value-of-an-existing-indexed-property",
+          "dfn-set-the-value-of-a-new-indexed-property",
+          "exceptiondef-rangeerror",
+          "idl-DOMString",
+          "idl-double",
+          "idl-long",
+          "syntaxerror",
+          "dfn-indexed-property-getter",
+          "idl-observable-array",
+          "observable-array-attribute-set-an-indexed-value",
+          "observable-array-attribute-backing-list",
+          "observable-array-attribute-delete-an-indexed-value"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/aural.html": {
+        "anchors": [
+          "propdef-azimuth",
+          "propdef-elevation",
+          "propdef-pitch",
+          "propdef-pitch-range",
+          "propdef-play-during",
+          "propdef-richness",
+          "propdef-speak-header",
+          "propdef-speak-numeral",
+          "propdef-speak-punctuation",
+          "propdef-speech-rate",
+          "propdef-stress",
+          "propdef-volume"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/page.html": {
+        "anchors": [
+          "propdef-page-break-after",
+          "propdef-page-break-before",
+          "propdef-page-break-inside"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/tables.html": {
+        "anchors": [
+          "propdef-border-spacing"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-z-index"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/painting.html": {
+        "anchors": [
+          "ColorRenderingProperty"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/text.html": {
+        "anchors": [
+          "TextDecorationFillProperty",
+          "TextDecorationStrokeProperty"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "dommatrixreadonly-stringification-behavior"
+        ]
+      }
     }
   }
 }

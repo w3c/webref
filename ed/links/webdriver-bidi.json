@@ -4,621 +4,1144 @@
     "url": "https://w3c.github.io/webdriver-bidi/"
   },
   "links": {
-    "https://console.spec.whatwg.org/": {
-      "anchors": [
-        "formatting-specifiers",
-        "formatter",
-        "printer"
-      ],
-      "specShortname": "console"
+    "rawlinks": {
+      "https://console.spec.whatwg.org/": {
+        "anchors": [
+          "formatter",
+          "formatting-specifiers",
+          "printer"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "attr",
+          "document",
+          "element",
+          "htmlcollection",
+          "node",
+          "nodelist",
+          "shadowroot",
+          "concept-element-attribute",
+          "concept-tree-child",
+          "concept-document",
+          "ref-for-dom-document-documentelement",
+          "dom-xpathevaluatorbase-evaluate",
+          "shadowroot-mode",
+          "boundary-point-node",
+          "concept-node-document",
+          "concept-node",
+          "dom-xpathresult-ordered_node_snapshot_type",
+          "concept-document-origin",
+          "concept-attribute-qualified-name",
+          "concept-tree-root",
+          "concept-element-shadow-root",
+          "dom-xpathresult-snapshotitem",
+          "concept-document-url",
+          "concept-attribute-value"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-paint-api-1/": {
+        "anchors": [
+          "paintworkletglobalscope"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-3/": {
+        "anchors": [
+          "absolute-lengths"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "resizing-viewports",
+          "determine-the-device-pixel-ratio",
+          "element-get-the-bounding-box"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "anchors": [
+          "dom-window-devicepixelratio",
+          "layout-viewport",
+          "dom-element-scrollheight",
+          "dom-element-scrollwidth",
+          "visual-viewport",
+          "dom-visualviewport-pageleft",
+          "dom-visualviewport-pagetop"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "media-type"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "match-a-selector-against-a-tree",
+          "parse-a-selector",
+          "scoping-root"
+        ]
+      },
+      "https://drafts.csswg.org/selectors/": {},
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "domrectreadonly"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry/": {
+        "anchors": [
+          "rectangle-height-dimension",
+          "rectangle-width-dimension",
+          "rectangle-x-coordinate",
+          "rectangle-y-coordinate"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode",
+          "utf-8-decode-without-bom-or-fail",
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "connection-timing-info-alpn-negotiated-protocol",
+          "byte-sequence-as-a-body",
+          "concept-body",
+          "concept-request-body",
+          "concept-response-body",
+          "concept-response-cache-state",
+          "concept-request-client",
+          "connection-timing-info-connection-end-time",
+          "connection-timing-info-connection-start-time",
+          "connection-timing-info",
+          "cors-preflight-request",
+          "fetch-timing-info-decoded-body-size",
+          "connection-timing-info-domain-lookup-end-time",
+          "connection-timing-info-domain-lookup-start-time",
+          "fetch-timing-info-encoded-body-size",
+          "fetch-timing-info-end-time",
+          "fetch-timing-info",
+          "fetch-timing-info-final-connection-timing-info",
+          "fetch-timing-info-final-network-request-start-time",
+          "fetch-timing-info-final-network-response-start-time",
+          "concept-header",
+          "concept-header-list",
+          "concept-request-header-list",
+          "concept-response-header-list",
+          "request-initiator-type",
+          "concept-body-total-bytes",
+          "concept-request-method",
+          "concept-network-error",
+          "fetch-timing-info-post-redirect-start-time",
+          "concept-request-redirect-count",
+          "fetch-timing-info-redirect-end-time",
+          "fetch-timing-info-redirect-start-time",
+          "concept-request",
+          "concept-response",
+          "response-body-info",
+          "connection-timing-info-secure-connection-start-time",
+          "fetch-timing-info-start-time",
+          "concept-response-status",
+          "concept-response-status-message",
+          "concept-request-url",
+          "concept-response-url",
+          "concept-request-window"
+        ]
+      },
+      "https://github.com/w3c/webdriver-bidi/issues": {},
+      "https://github.com/w3c/webdriver-bidi/issues/170": {},
+      "https://github.com/w3c/webdriver-bidi/issues/508": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage//canvas.html": {
+        "anchors": [
+          "offscreencanvas-context-mode"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "creating-a-new-browsing-context",
+          "bcg-remove",
+          "same-origin-domain",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "getting-all-used-history-steps",
+          "history-handling-behavior",
+          "navigate",
+          "navigation-id",
+          "prompt-to-unload-a-document",
+          "session-history-entry",
+          "traverse-the-history-by-a-delta"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "concept-canvas-2d",
+          "2d-context-creation-algorithm",
+          "htmlcanvaselement",
+          "a-serialisation-of-the-bitmap-as-a-file",
+          "dom-canvas-height",
+          "dom-canvas-width"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-bc",
+          "active-document",
+          "nav-document",
+          "active-window",
+          "browsing-context",
+          "concept-document-bc",
+          "child-navigable",
+          "tn-current-session-history-step",
+          "focused-area-of-the-document",
+          "system-visibility-state",
+          "navigables",
+          "nav-parent",
+          "tn-session-history-traversal-queue",
+          "top-level-browsing-context",
+          "top-level-traversable",
+          "traversable-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "dom-innertext"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "concept-fe-disabled"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "session-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "run-the-animation-frame-callbacks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "htmlinputelement",
+          "file-upload-state-(type=file)",
+          "attr-input-multiple",
+          "concept-input-type-file-selected",
+          "attr-input-type",
+          "update-the-file-selection"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation-notification",
+          "focusing-steps",
+          "system-focus"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "windowproxy",
+          "concept-document-window",
+          "window-bc",
+          "dom-document-defaultview"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+        "anchors": [
+          "dom-alert",
+          "dom-confirm",
+          "dom-prompt"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "api-base-url",
+          "concept-script-base-url",
+          "clean-up-after-running-script",
+          "creating-a-classic-script",
+          "current-settings-object",
+          "default-classic-script-fetch-options",
+          "environment-settings-object",
+          "environment-settings-object's-realm",
+          "concept-environment-execution-ready-flag",
+          "concept-settings-object-global",
+          "concept-realm-global",
+          "concept-error-handled",
+          "concept-settings-object-origin",
+          "prepare-to-run-script",
+          "queue-a-task",
+          "queue-an-element-task",
+          "realm-execution-context",
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "relevant-settings-object",
+          "report-the-error",
+          "report-the-exception",
+          "responsible-event-loop",
+          "settings-object",
+          "concept-settings-object-time-origin",
+          "user-interaction-task-source",
+          "worker-event-loop-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "a-browsing-context-is-discarded",
+          "close-a-browsing-context",
+          "set-up-a-window-environment-settings-object",
+          "window-open-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dedicatedworkerglobalscope",
+          "sharedworkerglobalscope",
+          "workerglobalscope",
+          "concept-WorkerGlobalScope-owner-set",
+          "set-up-a-worker-environment-settings-object",
+          "shared-workers",
+          "terminate-a-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope",
+          "set-up-a-worklet-environment-settings-object",
+          "concept-document-worklet-global-scopes"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {
+        "anchors": [
+          "section-5.3"
+        ]
+      },
+      "https://httpwg.org/specs/rfc9110.html": {},
+      "https://httpwg.org/specs/rfc9112.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "set-append",
+          "ascii-alphanumeric",
+          "ascii-digit",
+          "ascii-lowercase",
+          "assert",
+          "byte-sequence",
+          "byte-case-insensitive",
+          "byte-lowercase",
+          "list-clone",
+          "map-clone",
+          "code-point",
+          "code-point-substring",
+          "code-unit-substring",
+          "string-concatenate",
+          "list-contain",
+          "map-exists",
+          "iteration-continue",
+          "list-empty",
+          "list-extend",
+          "list-iterate",
+          "forgiving-base64-decode",
+          "forgiving-base64-encode",
+          "map-getting-the-values",
+          "implementation-defined",
+          "set-intersection",
+          "string-is",
+          "struct-item",
+          "string-length",
+          "list",
+          "ordered-map",
+          "parse-a-json-string-to-an-infra-value",
+          "list-remove",
+          "map-remove",
+          "scalar-value-string",
+          "serialize-an-infra-value-to-json-bytes",
+          "ordered-set",
+          "map-set",
+          "list-size",
+          "map-size",
+          "map-sort-in-ascending-order",
+          "string-starts-with",
+          "struct",
+          "tuple",
+          "code-point-value"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "computed-mime-type",
+          "mime-type-essence"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-completion-record-specification-type",
+          "await",
+          "sec-call",
+          "sec-construct",
+          "sec-createarrayfromlist",
+          "sec-createarrayiterator",
+          "sec-createbuiltinfunction",
+          "sec-createlistfromarraylike",
+          "sec-createmapiterator",
+          "sec-createsetiterator",
+          "current-realm",
+          "sec-date-constructor",
+          "sec-date-time-string-format",
+          "sec-date.prototype.toisostring",
+          "sec-enumerableownpropertynames",
+          "sec-get",
+          "sec-getiterator",
+          "sec-object-internal-methods-and-internal-slots",
+          "sec-isarray",
+          "sec-iscallable",
+          "sec-ispromise",
+          "sec-isregexp",
+          "sec-iteratortolist",
+          "sec-map-iterable",
+          "sec-null-value",
+          "sec-object.fromentries",
+          "sec-primitive-value",
+          "sec-code-realms",
+          "sec-regexp-pattern-flags",
+          "running-execution-context",
+          "sec-runtime-semantics-scriptevaluation",
+          "sec-set-objects",
+          "sec-stringtobigint",
+          "sec-stringtonumber",
+          "sec-time-values-and-time-range",
+          "sec-tostring",
+          "sec-ecmascript-data-types-and-values",
+          "sec-undefined-value"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc6455": {
+        "anchors": [
+          "section-5.2",
+          "section-6.2",
+          "section-4.1",
+          "section-7.1.7",
+          "section-8.1",
+          "section-4.2.1",
+          "section-6.1",
+          "section-4.2",
+          "section-7.1.2",
+          "section-7.4",
+          "section-7.1.3",
+          "section-7.1.4",
+          "section-3"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "default-port",
+          "concept-url-host",
+          "is-special",
+          "concept-url-path",
+          "concept-url-port",
+          "concept-url-query",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-parser",
+          "url-path-serializer",
+          "concept-url-serializer"
+        ]
+      },
+      "https://urlpattern.spec.whatwg.org/": {},
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-get-time-origin-timestamp"
+        ]
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "anchors": [
+          "dfn-convert-fetch-timestamp"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-actions-options",
+          "dfn-active-session",
+          "dfn-additional-capability-deserialization-algorithm",
+          "dfn-additional-webdriver-capability",
+          "dfn-cookie-domain",
+          "dfn-cookie-expiry-time",
+          "dfn-cookie-http-only",
+          "dfn-cookie-name",
+          "dfn-cookie-path",
+          "dfn-cookie-same-site",
+          "dfn-cookie-secure-only",
+          "dfn-cookie-value",
+          "dfn-creating-a-cookie",
+          "dfn-create-a-session",
+          "dfn-dispatch-actions",
+          "dfn-dispatch-tick-actions",
+          "dfn-endpoint-node",
+          "dfn-errors",
+          "dfn-error-code",
+          "dfn-extract-an-action-sequence",
+          "dfn-get-a-node",
+          "dfn-get-element-origin",
+          "dfn-get-or-create-a-node-reference",
+          "dfn-get-the-input-state",
+          "dfn-get-a-property",
+          "dfn-http-session",
+          "dfn-input-cancel-list",
+          "dfn-intermediary-node",
+          "dfn-invalid-argument",
+          "dfn-invalid-selector",
+          "dfn-invalid-session-id",
+          "dfn-is-element-origin",
+          "dfn-local-ends",
+          "dfn-matched-capability-serialization-algorithm",
+          "dfn-no-such-alert",
+          "dfn-no-such-element",
+          "dfn-no-such-frame",
+          "dfn-parse-a-page-range",
+          "dfn-processing-capabilities",
+          "dfn-readiness-state",
+          "dfn-remote-ends",
+          "dfn-remote-end-steps",
+          "dfn-reset-the-input-state",
+          "dfn-sessions",
+          "dfn-session-id",
+          "dfn-session-not-created",
+          "dfn-set-a-property",
+          "dfn-success",
+          "dfn-table-for-cookie-conversion",
+          "dfn-try",
+          "dfn-unable-to-capture-screen",
+          "dfn-unknown-command",
+          "dfn-unknown-error",
+          "dfn-unsupported-operation",
+          "dfn-webdriver-new-session-algorithm",
+          "dfn-webdriver-active-flag",
+          "dfn-window-handle"
+        ]
+      },
+      "https://webaudio.github.io/web-audio-api/": {
+        "anchors": [
+          "AudioWorkletGlobalScope"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "syntaxerror",
+          "exceptiondef-typeerror",
+          "dfn-platform-object",
+          "this"
+        ]
+      },
+      "https://www.jsonrpc.org/specification": {},
+      "https://www.rfc-editor.org/rfc/rfc4122": {},
+      "https://www.rfc-editor.org/rfc/rfc4648": {},
+      "https://www.rfc-editor.org/rfc/rfc6455": {},
+      "https://www.rfc-editor.org/rfc/rfc8610": {},
+      "https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf": {
+        "anchors": [
+          "G34078",
+          "G34944"
+        ]
+      },
+      "https://www.unicode.org/versions/latest/": {},
+      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/intro.html": {
+        "anchors": [
+          "canvas"
+        ]
+      },
+      "https://www.w3.org/groups/wg/browser-tools-testing": {}
     },
-    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document",
-        "concept-document-url",
-        "document",
-        "ref-for-dom-document-documentelement",
-        "element",
-        "concept-node-document",
-        "concept-tree-root",
-        "dom-xpathevaluatorbase-evaluate",
-        "dom-xpathresult-ordered_node_snapshot_type",
-        "dom-xpathresult-snapshotitem",
-        "concept-tree-child",
-        "boundary-point-node",
-        "concept-document-origin",
-        "concept-node",
-        "node",
-        "nodelist",
-        "htmlcollection",
-        "attr",
-        "shadowroot",
-        "shadowroot-mode",
-        "concept-element-attribute",
-        "concept-attribute-qualified-name",
-        "concept-attribute-value",
-        "concept-element-shadow-root"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.css-houdini.org/css-paint-api-1/": {
-      "anchors": [
-        "paintworkletglobalscope"
-      ],
-      "specShortname": "css-paint-api-1"
-    },
-    "https://drafts.csswg.org/css-values-3/": {
-      "anchors": [
-        "absolute-lengths"
-      ],
-      "specShortname": "css-values-3"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "determine-the-device-pixel-ratio",
-        "element-get-the-bounding-box",
-        "resizing-viewports"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "anchors": [
-        "visual-viewport",
-        "dom-visualviewport-pageleft",
-        "dom-visualviewport-pagetop",
-        "dom-element-scrollheight",
-        "dom-element-scrollwidth",
-        "layout-viewport",
-        "dom-window-devicepixelratio"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/mediaqueries-5/": {
-      "anchors": [
-        "media-type"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://drafts.csswg.org/selectors-4/": {
-      "anchors": [
-        "parse-a-selector",
-        "match-a-selector-against-a-tree",
-        "scoping-root"
-      ],
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.csswg.org/selectors/": {
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
-      "anchors": [
-        "domrectreadonly"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "anchors": [
-        "rectangle-width-dimension",
-        "rectangle-height-dimension",
-        "rectangle-x-coordinate",
-        "rectangle-y-coordinate"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-encode",
-        "utf-8-decode",
-        "utf-8-decode-without-bom-or-fail"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-url",
-        "concept-response",
-        "concept-response-status",
-        "concept-response-status-message",
-        "concept-header-list",
-        "concept-response-header-list",
-        "concept-request-window",
-        "concept-request-redirect-count",
-        "concept-request-client",
-        "fetch-timing-info",
-        "fetch-timing-info-final-connection-timing-info",
-        "connection-timing-info",
-        "fetch-timing-info-start-time",
-        "fetch-timing-info-redirect-start-time",
-        "fetch-timing-info-redirect-end-time",
-        "fetch-timing-info-post-redirect-start-time",
-        "connection-timing-info-domain-lookup-start-time",
-        "connection-timing-info-domain-lookup-end-time",
-        "connection-timing-info-secure-connection-start-time",
-        "connection-timing-info-connection-start-time",
-        "connection-timing-info-connection-end-time",
-        "fetch-timing-info-final-network-request-start-time",
-        "fetch-timing-info-final-network-response-start-time",
-        "fetch-timing-info-end-time",
-        "concept-header",
-        "cors-preflight-request",
-        "request-initiator-type",
-        "concept-request-method",
-        "concept-request-body",
-        "concept-body",
-        "concept-body-total-bytes",
-        "concept-request-header-list",
-        "response-body-info",
-        "fetch-timing-info-decoded-body-size",
-        "connection-timing-info-alpn-negotiated-protocol",
-        "concept-response-url",
-        "concept-response-cache-state",
-        "fetch-timing-info-encoded-body-size",
-        "concept-network-error",
-        "concept-response-body",
-        "byte-sequence-as-a-body"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/webdriver-bidi/issues": {},
-    "https://github.com/w3c/webdriver-bidi/issues/170": {},
-    "https://github.com/w3c/webdriver-bidi/issues/508": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage//canvas.html": {
-      "anchors": [
-        "offscreencanvas-context-mode"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "creating-a-new-browsing-context",
-        "ascii-serialisation-of-an-origin",
-        "same-origin-domain",
-        "bcg-remove"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "session-history-entry",
-        "prompt-to-unload-a-document",
-        "navigation-id",
-        "navigate",
-        "history-handling-behavior",
-        "getting-all-used-history-steps",
-        "traverse-the-history-by-a-delta"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "htmlcanvaselement",
-        "dom-canvas-width",
-        "dom-canvas-height",
-        "2d-context-creation-algorithm",
-        "concept-canvas-2d",
-        "a-serialisation-of-the-bitmap-as-a-file"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unloading-document-cleanup-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "top-level-browsing-context",
-        "concept-document-bc",
-        "active-window",
-        "top-level-traversable",
-        "navigables",
-        "child-navigable",
-        "nav-parent",
-        "browsing-context",
-        "nav-document",
-        "active-document",
-        "nav-bc",
-        "traversable-navigable",
-        "system-visibility-state",
-        "focused-area-of-the-document",
-        "tn-session-history-traversal-queue",
-        "tn-current-session-history-step"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "dom-innertext"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
-      "anchors": [
-        "concept-fe-disabled"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "session-history"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
-      "anchors": [
-        "run-the-animation-frame-callbacks"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/input.html": {
-      "anchors": [
-        "htmlinputelement",
-        "attr-input-type",
-        "file-upload-state-(type=file)",
-        "attr-input-multiple",
-        "concept-input-type-file-selected",
-        "update-the-file-selection"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "system-focus",
-        "focusing-steps",
-        "activation-notification"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "concept-document-window",
-        "dom-document-defaultview",
-        "windowproxy",
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
-      "anchors": [
-        "dom-alert",
-        "dom-confirm",
-        "dom-prompt"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "settings-object",
-        "concept-relevant-global",
-        "concept-realm-global",
-        "environment-settings-object",
-        "realm-execution-context",
-        "concept-script-base-url",
-        "queue-a-task",
-        "concept-settings-object-global",
-        "concept-settings-object-time-origin",
-        "api-base-url",
-        "default-classic-script-fetch-options",
-        "report-the-exception",
-        "prepare-to-run-script",
-        "clean-up-after-running-script",
-        "relevant-settings-object",
-        "concept-settings-object-origin",
-        "creating-a-classic-script",
-        "concept-environment-execution-ready-flag",
-        "concept-relevant-realm",
-        "worker-event-loop-2",
-        "responsible-event-loop",
-        "environment-settings-object's-realm",
-        "current-settings-object",
-        "queue-an-element-task",
-        "user-interaction-task-source",
-        "report-the-error",
-        "concept-error-handled"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "close-a-browsing-context",
-        "window-open-steps",
-        "set-up-a-window-environment-settings-object",
-        "a-browsing-context-is-discarded"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "shared-workers",
-        "workerglobalscope",
-        "concept-WorkerGlobalScope-owner-set",
-        "dedicatedworkerglobalscope",
-        "sharedworkerglobalscope",
-        "set-up-a-worker-environment-settings-object",
-        "terminate-a-worker"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/worklets.html": {
-      "anchors": [
-        "workletglobalscope",
-        "set-up-a-worklet-environment-settings-object",
-        "concept-document-worklet-global-scopes"
-      ]
-    },
-    "https://httpwg.org/specs/rfc6265.html": {
-      "anchors": [
-        "section-5.3"
-      ],
-      "specShortname": "rfc6265"
-    },
-    "https://httpwg.org/specs/rfc9110.html": {
-      "specShortname": "rfc9110"
-    },
-    "https://httpwg.org/specs/rfc9112.html": {
-      "specShortname": "rfc9112"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-map",
-        "list",
-        "ordered-set",
-        "map-exists",
-        "list-contain",
-        "implementation-defined",
-        "set-append",
-        "assert",
-        "scalar-value-string",
-        "parse-a-json-string-to-an-infra-value",
-        "serialize-an-infra-value-to-json-bytes",
-        "map-size",
-        "list-iterate",
-        "list-remove",
-        "map-getting-the-values",
-        "list-empty",
-        "list-clone",
-        "map-sort-in-ascending-order",
-        "list-append",
-        "forgiving-base64-encode",
-        "list-size",
-        "code-point-substring",
-        "string-is",
-        "list-extend",
-        "struct",
-        "byte-lowercase",
-        "byte-case-insensitive",
-        "tuple",
-        "byte-sequence",
-        "forgiving-base64-decode",
-        "code-unit-substring",
-        "string-length",
-        "code-point",
-        "code-point-value",
-        "ascii-alphanumeric",
-        "ascii-lowercase",
-        "ascii-digit",
-        "string-starts-with",
-        "map-remove",
-        "struct-item",
-        "map-clone",
-        "string-concatenate",
-        "iteration-continue",
-        "map-set",
-        "set-intersection"
-      ],
-      "specShortname": "infra"
-    },
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "mime-type-essence",
-        "computed-mime-type"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-code-realms",
-        "sec-time-values-and-time-range",
-        "sec-undefined-value",
-        "sec-null-value",
-        "sec-completion-record-specification-type",
-        "sec-iscallable",
-        "sec-call",
-        "current-realm",
-        "sec-createbuiltinfunction",
-        "sec-createarrayfromlist",
-        "sec-date-time-string-format",
-        "sec-construct",
-        "sec-date-constructor",
-        "sec-map-iterable",
-        "sec-object.fromentries",
-        "sec-regexp-pattern-flags",
-        "sec-set-objects",
-        "sec-ecmascript-data-types-and-values",
-        "sec-tostring",
-        "sec-stringtonumber",
-        "sec-stringtobigint",
-        "sec-isarray",
-        "sec-isregexp",
-        "sec-get",
-        "sec-object-internal-methods-and-internal-slots",
-        "sec-date.prototype.toisostring",
-        "sec-createmapiterator",
-        "sec-createsetiterator",
-        "sec-ispromise",
-        "sec-enumerableownpropertynames",
-        "sec-createarrayiterator",
-        "sec-iteratortolist",
-        "sec-getiterator",
-        "sec-createlistfromarraylike",
-        "running-execution-context",
-        "sec-runtime-semantics-scriptevaluation",
-        "await",
-        "sec-primitive-value"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tools.ietf.org/html/rfc4648": {
-      "anchors": [
-        "section-4"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc6455": {
-      "anchors": [
-        "section-4.1",
-        "section-4.2",
-        "section-4.2.1",
-        "section-6.2",
-        "section-7.1.3",
-        "section-7.1.4",
-        "section-3",
-        "section-5.2",
-        "section-8.1",
-        "section-7.1.7",
-        "section-7.4",
-        "section-6.1",
-        "section-7.1.2"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-serializer",
-        "concept-url-parser",
-        "concept-url-scheme",
-        "is-special",
-        "concept-url-host",
-        "default-port",
-        "concept-url-port",
-        "url-path-serializer",
-        "concept-url-path",
-        "concept-url-query",
-        "concept-url"
-      ],
-      "specShortname": "url"
-    },
-    "https://urlpattern.spec.whatwg.org/": {
-      "specShortname": "urlpattern"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworkerglobalscope"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dfn-get-time-origin-timestamp"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/resource-timing/": {
-      "anchors": [
-        "dfn-convert-fetch-timestamp"
-      ],
-      "specShortname": "resource-timing"
-    },
-    "https://w3c.github.io/webdriver/": {
-      "anchors": [
-        "dfn-local-ends",
-        "dfn-remote-ends",
-        "dfn-sessions",
-        "dfn-active-session",
-        "dfn-remote-end-steps",
-        "dfn-error-code",
-        "dfn-success",
-        "dfn-errors",
-        "dfn-invalid-argument",
-        "dfn-session-id",
-        "dfn-intermediary-node",
-        "dfn-endpoint-node",
-        "dfn-invalid-session-id",
-        "dfn-unknown-command",
-        "dfn-webdriver-new-session-algorithm",
-        "dfn-get-a-property",
-        "dfn-set-a-property",
-        "dfn-http-session",
-        "dfn-webdriver-active-flag",
-        "dfn-try",
-        "dfn-additional-webdriver-capability",
-        "dfn-additional-capability-deserialization-algorithm",
-        "dfn-matched-capability-serialization-algorithm",
-        "dfn-readiness-state",
-        "dfn-session-not-created",
-        "dfn-processing-capabilities",
-        "dfn-create-a-session",
-        "dfn-window-handle",
-        "dfn-no-such-frame",
-        "dfn-unknown-error",
-        "dfn-unsupported-operation",
-        "dfn-no-such-element",
-        "dfn-unable-to-capture-screen",
-        "dfn-no-such-alert",
-        "dfn-invalid-selector",
-        "dfn-parse-a-page-range",
-        "dfn-get-a-node",
-        "dfn-get-or-create-a-node-reference",
-        "dfn-table-for-cookie-conversion",
-        "dfn-creating-a-cookie",
-        "dfn-cookie-name",
-        "dfn-cookie-value",
-        "dfn-cookie-domain",
-        "dfn-cookie-path",
-        "dfn-cookie-secure-only",
-        "dfn-cookie-http-only",
-        "dfn-cookie-expiry-time",
-        "dfn-cookie-same-site",
-        "dfn-get-the-input-state",
-        "dfn-actions-options",
-        "dfn-is-element-origin",
-        "dfn-get-element-origin",
-        "dfn-extract-an-action-sequence",
-        "dfn-dispatch-actions",
-        "dfn-input-cancel-list",
-        "dfn-dispatch-tick-actions",
-        "dfn-reset-the-input-state"
-      ],
-      "specShortname": "webdriver2"
-    },
-    "https://webaudio.github.io/web-audio-api/": {
-      "anchors": [
-        "AudioWorkletGlobalScope"
-      ],
-      "specShortname": "webaudio"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "syntaxerror",
-        "idl-DOMException",
-        "this",
-        "exceptiondef-typeerror",
-        "dfn-platform-object"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.jsonrpc.org/specification": {},
-    "https://www.rfc-editor.org/rfc/rfc4122": {},
-    "https://www.rfc-editor.org/rfc/rfc4648": {},
-    "https://www.rfc-editor.org/rfc/rfc6455": {},
-    "https://www.rfc-editor.org/rfc/rfc8610": {},
-    "https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf": {
-      "anchors": [
-        "G34078",
-        "G34944"
-      ]
-    },
-    "https://www.unicode.org/versions/latest/": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/intro.html": {
-      "anchors": [
-        "canvas"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/groups/wg/browser-tools-testing": {}
+    "autolinks": {
+      "https://console.spec.whatwg.org/": {
+        "anchors": [
+          "formatting-specifiers",
+          "formatter",
+          "printer"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "concept-document-url",
+          "document",
+          "ref-for-dom-document-documentelement",
+          "element",
+          "concept-node-document",
+          "concept-tree-root",
+          "dom-xpathevaluatorbase-evaluate",
+          "dom-xpathresult-ordered_node_snapshot_type",
+          "dom-xpathresult-snapshotitem",
+          "concept-tree-child",
+          "boundary-point-node",
+          "concept-document-origin",
+          "concept-node",
+          "node",
+          "nodelist",
+          "htmlcollection",
+          "attr",
+          "shadowroot",
+          "shadowroot-mode",
+          "concept-element-attribute",
+          "concept-attribute-qualified-name",
+          "concept-attribute-value",
+          "concept-element-shadow-root"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-paint-api-1/": {
+        "anchors": [
+          "paintworkletglobalscope"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-3/": {
+        "anchors": [
+          "absolute-lengths"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "determine-the-device-pixel-ratio",
+          "element-get-the-bounding-box"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "anchors": [
+          "visual-viewport",
+          "dom-visualviewport-pageleft",
+          "dom-visualviewport-pagetop",
+          "dom-element-scrollheight",
+          "dom-element-scrollwidth",
+          "layout-viewport",
+          "dom-window-devicepixelratio"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "media-type"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "parse-a-selector",
+          "match-a-selector-against-a-tree",
+          "scoping-root"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "domrectreadonly"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry/": {
+        "anchors": [
+          "rectangle-width-dimension",
+          "rectangle-height-dimension",
+          "rectangle-x-coordinate",
+          "rectangle-y-coordinate"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode",
+          "utf-8-decode",
+          "utf-8-decode-without-bom-or-fail"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-response",
+          "concept-response-status",
+          "concept-response-status-message",
+          "concept-header-list",
+          "concept-response-header-list",
+          "concept-request-window",
+          "concept-request-redirect-count",
+          "concept-request-client",
+          "fetch-timing-info",
+          "fetch-timing-info-final-connection-timing-info",
+          "connection-timing-info",
+          "fetch-timing-info-start-time",
+          "fetch-timing-info-redirect-start-time",
+          "fetch-timing-info-redirect-end-time",
+          "fetch-timing-info-post-redirect-start-time",
+          "connection-timing-info-domain-lookup-start-time",
+          "connection-timing-info-domain-lookup-end-time",
+          "connection-timing-info-secure-connection-start-time",
+          "connection-timing-info-connection-start-time",
+          "connection-timing-info-connection-end-time",
+          "fetch-timing-info-final-network-request-start-time",
+          "fetch-timing-info-final-network-response-start-time",
+          "fetch-timing-info-end-time",
+          "concept-header",
+          "cors-preflight-request",
+          "request-initiator-type",
+          "concept-request-method",
+          "concept-request-body",
+          "concept-body",
+          "concept-body-total-bytes",
+          "concept-request-header-list",
+          "response-body-info",
+          "fetch-timing-info-decoded-body-size",
+          "connection-timing-info-alpn-negotiated-protocol",
+          "concept-response-url",
+          "concept-response-cache-state",
+          "fetch-timing-info-encoded-body-size",
+          "concept-network-error",
+          "concept-response-body",
+          "byte-sequence-as-a-body"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage//canvas.html": {
+        "anchors": [
+          "offscreencanvas-context-mode"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "creating-a-new-browsing-context",
+          "ascii-serialisation-of-an-origin",
+          "same-origin-domain",
+          "bcg-remove"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "session-history-entry",
+          "prompt-to-unload-a-document",
+          "navigation-id",
+          "navigate",
+          "history-handling-behavior",
+          "getting-all-used-history-steps",
+          "traverse-the-history-by-a-delta"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "htmlcanvaselement",
+          "dom-canvas-width",
+          "dom-canvas-height",
+          "2d-context-creation-algorithm",
+          "concept-canvas-2d",
+          "a-serialisation-of-the-bitmap-as-a-file"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context",
+          "concept-document-bc",
+          "active-window",
+          "top-level-traversable",
+          "navigables",
+          "child-navigable",
+          "nav-parent",
+          "browsing-context",
+          "nav-document",
+          "active-document",
+          "nav-bc",
+          "traversable-navigable",
+          "system-visibility-state",
+          "focused-area-of-the-document",
+          "tn-session-history-traversal-queue",
+          "tn-current-session-history-step"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "dom-innertext"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "concept-fe-disabled"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "session-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "run-the-animation-frame-callbacks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "htmlinputelement",
+          "attr-input-type",
+          "file-upload-state-(type=file)",
+          "attr-input-multiple",
+          "concept-input-type-file-selected",
+          "update-the-file-selection"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "system-focus",
+          "focusing-steps",
+          "activation-notification"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window",
+          "dom-document-defaultview",
+          "windowproxy",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+        "anchors": [
+          "dom-alert",
+          "dom-confirm",
+          "dom-prompt"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "settings-object",
+          "concept-relevant-global",
+          "concept-realm-global",
+          "environment-settings-object",
+          "realm-execution-context",
+          "concept-script-base-url",
+          "queue-a-task",
+          "concept-settings-object-global",
+          "concept-settings-object-time-origin",
+          "api-base-url",
+          "default-classic-script-fetch-options",
+          "report-the-exception",
+          "prepare-to-run-script",
+          "clean-up-after-running-script",
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "creating-a-classic-script",
+          "concept-environment-execution-ready-flag",
+          "concept-relevant-realm",
+          "worker-event-loop-2",
+          "responsible-event-loop",
+          "environment-settings-object's-realm",
+          "current-settings-object",
+          "queue-an-element-task",
+          "user-interaction-task-source",
+          "report-the-error",
+          "concept-error-handled"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "close-a-browsing-context",
+          "window-open-steps",
+          "set-up-a-window-environment-settings-object",
+          "a-browsing-context-is-discarded"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "shared-workers",
+          "workerglobalscope",
+          "concept-WorkerGlobalScope-owner-set",
+          "dedicatedworkerglobalscope",
+          "sharedworkerglobalscope",
+          "set-up-a-worker-environment-settings-object",
+          "terminate-a-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope",
+          "set-up-a-worklet-environment-settings-object",
+          "concept-document-worklet-global-scopes"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {
+        "anchors": [
+          "section-5.3"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "list",
+          "ordered-set",
+          "map-exists",
+          "list-contain",
+          "implementation-defined",
+          "set-append",
+          "assert",
+          "scalar-value-string",
+          "parse-a-json-string-to-an-infra-value",
+          "serialize-an-infra-value-to-json-bytes",
+          "map-size",
+          "list-iterate",
+          "list-remove",
+          "map-getting-the-values",
+          "list-empty",
+          "list-clone",
+          "map-sort-in-ascending-order",
+          "list-append",
+          "forgiving-base64-encode",
+          "list-size",
+          "code-point-substring",
+          "string-is",
+          "list-extend",
+          "struct",
+          "byte-lowercase",
+          "byte-case-insensitive",
+          "tuple",
+          "byte-sequence",
+          "forgiving-base64-decode",
+          "code-unit-substring",
+          "string-length",
+          "code-point",
+          "code-point-value",
+          "ascii-alphanumeric",
+          "ascii-lowercase",
+          "ascii-digit",
+          "string-starts-with",
+          "map-remove",
+          "struct-item",
+          "map-clone",
+          "string-concatenate",
+          "iteration-continue",
+          "map-set",
+          "set-intersection"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type-essence",
+          "computed-mime-type"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-code-realms",
+          "sec-time-values-and-time-range",
+          "sec-undefined-value",
+          "sec-null-value",
+          "sec-completion-record-specification-type",
+          "sec-iscallable",
+          "sec-call",
+          "current-realm",
+          "sec-createbuiltinfunction",
+          "sec-createarrayfromlist",
+          "sec-date-time-string-format",
+          "sec-construct",
+          "sec-date-constructor",
+          "sec-map-iterable",
+          "sec-object.fromentries",
+          "sec-regexp-pattern-flags",
+          "sec-set-objects",
+          "sec-ecmascript-data-types-and-values",
+          "sec-tostring",
+          "sec-stringtonumber",
+          "sec-stringtobigint",
+          "sec-isarray",
+          "sec-isregexp",
+          "sec-get",
+          "sec-object-internal-methods-and-internal-slots",
+          "sec-date.prototype.toisostring",
+          "sec-createmapiterator",
+          "sec-createsetiterator",
+          "sec-ispromise",
+          "sec-enumerableownpropertynames",
+          "sec-createarrayiterator",
+          "sec-iteratortolist",
+          "sec-getiterator",
+          "sec-createlistfromarraylike",
+          "running-execution-context",
+          "sec-runtime-semantics-scriptevaluation",
+          "await",
+          "sec-primitive-value"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc6455": {
+        "anchors": [
+          "section-4.1",
+          "section-4.2",
+          "section-4.2.1",
+          "section-6.2",
+          "section-7.1.3",
+          "section-7.1.4",
+          "section-3",
+          "section-5.2",
+          "section-8.1",
+          "section-7.1.7",
+          "section-7.4",
+          "section-6.1",
+          "section-7.1.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-serializer",
+          "concept-url-parser",
+          "concept-url-scheme",
+          "is-special",
+          "concept-url-host",
+          "default-port",
+          "concept-url-port",
+          "url-path-serializer",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-get-time-origin-timestamp"
+        ]
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "anchors": [
+          "dfn-convert-fetch-timestamp"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-local-ends",
+          "dfn-remote-ends",
+          "dfn-sessions",
+          "dfn-active-session",
+          "dfn-remote-end-steps",
+          "dfn-error-code",
+          "dfn-success",
+          "dfn-errors",
+          "dfn-invalid-argument",
+          "dfn-session-id",
+          "dfn-intermediary-node",
+          "dfn-endpoint-node",
+          "dfn-invalid-session-id",
+          "dfn-unknown-command",
+          "dfn-webdriver-new-session-algorithm",
+          "dfn-get-a-property",
+          "dfn-set-a-property",
+          "dfn-http-session",
+          "dfn-webdriver-active-flag",
+          "dfn-try",
+          "dfn-additional-webdriver-capability",
+          "dfn-additional-capability-deserialization-algorithm",
+          "dfn-matched-capability-serialization-algorithm",
+          "dfn-readiness-state",
+          "dfn-session-not-created",
+          "dfn-processing-capabilities",
+          "dfn-create-a-session",
+          "dfn-window-handle",
+          "dfn-no-such-frame",
+          "dfn-unknown-error",
+          "dfn-unsupported-operation",
+          "dfn-no-such-element",
+          "dfn-unable-to-capture-screen",
+          "dfn-no-such-alert",
+          "dfn-invalid-selector",
+          "dfn-parse-a-page-range",
+          "dfn-get-a-node",
+          "dfn-get-or-create-a-node-reference",
+          "dfn-table-for-cookie-conversion",
+          "dfn-creating-a-cookie",
+          "dfn-cookie-name",
+          "dfn-cookie-value",
+          "dfn-cookie-domain",
+          "dfn-cookie-path",
+          "dfn-cookie-secure-only",
+          "dfn-cookie-http-only",
+          "dfn-cookie-expiry-time",
+          "dfn-cookie-same-site",
+          "dfn-get-the-input-state",
+          "dfn-actions-options",
+          "dfn-is-element-origin",
+          "dfn-get-element-origin",
+          "dfn-extract-an-action-sequence",
+          "dfn-dispatch-actions",
+          "dfn-input-cancel-list",
+          "dfn-dispatch-tick-actions",
+          "dfn-reset-the-input-state"
+        ]
+      },
+      "https://webaudio.github.io/web-audio-api/": {
+        "anchors": [
+          "AudioWorkletGlobalScope"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "syntaxerror",
+          "idl-DOMException",
+          "this",
+          "exceptiondef-typeerror",
+          "dfn-platform-object"
+        ]
+      },
+      "https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf": {
+        "anchors": [
+          "G34078",
+          "G34944"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/intro.html": {
+        "anchors": [
+          "canvas"
+        ]
+      }
+    }
   }
 }
