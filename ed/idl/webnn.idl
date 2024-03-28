@@ -64,11 +64,7 @@ enum MLOperandDataType {
 };
 
 dictionary MLOperandDescriptor {
-  // The operand type.
   required MLOperandDataType dataType;
-
-  // The dimensions field is empty for scalar operands,
-  // and non-empty for tensor operands.
   sequence<[EnforceRange] unsigned long> dimensions = [];
 };
 
