@@ -4,239 +4,380 @@
     "url": "https://www.w3.org/TR/css-paint-api-1/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/paintWorklet": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/devicePixelRatio": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/registerPaint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/image/paint()": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSS/paintWorklet": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/devicePixelRatio": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/registerPaint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/image/paint()": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document"
+        ]
+      },
+      "https://github.com/w3c/css-houdini-drafts/blob/master/css-paint-api/EXPLAINER.md": {},
+      "https://github.com/w3c/css-houdini-drafts/issues": {},
+      "https://github.com/w3c/css-houdini-drafts/issues/791": {},
+      "https://github.com/w3c/css-houdini-drafts/issues/819": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvascompositing",
+          "canvasdrawimage",
+          "canvasdrawpath",
+          "canvasfillstrokestyles",
+          "canvasimagedata",
+          "canvasimagesmoothing",
+          "canvasimagesource",
+          "canvaspath",
+          "canvaspathdrawingstyles",
+          "canvasrect",
+          "canvasrenderingcontext2d",
+          "canvasshadowstyles",
+          "canvasstate",
+          "canvastext",
+          "canvastextdrawingstyles",
+          "canvastransform",
+          "canvasuserinterface",
+          "dom-context-2d-drawimage",
+          "reset-the-rendering-context-to-its-default-state",
+          "concept-canvas-set-bitmap-dimensions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "worklets-idempotent",
+          "worklet",
+          "workletglobalscope",
+          "create-a-worklet-global-scope",
+          "concept-worklet-global-scopes",
+          "worklet-destination-type",
+          "worklet-global-scope-type"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "list-empty",
+          "map-exists",
+          "list-iterate",
+          "map-get",
+          "list",
+          "ordered-map",
+          "map-set",
+          "struct"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "Global",
+          "invalidmodificationerror",
+          "SameObject",
+          "VoidFunction",
+          "idl-boolean",
+          "dfn-callback-function",
+          "dfn-callback-this-value",
+          "web-idl-arguments-list-converting",
+          "idl-double",
+          "invoke-a-callback-function",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unrestricted-double"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border-image"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "computed-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "box"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "anchors": [
+          "object-sizing-examples",
+          "typedef-image",
+          "concrete-object-size",
+          "natural-dimensions",
+          "object-size-negotiation"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-4/": {
+        "anchors": [
+          "invalid-image"
+        ]
+      },
+      "https://www.w3.org/TR/css-properties-values-api-1/": {
+        "anchors": [
+          "consume-a-syntax-definition",
+          "syntax-definition"
+        ]
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "anchors": [
+          "typedef-declaration-value",
+          "function"
+        ]
+      },
+      "https://www.w3.org/TR/css-typed-om-1/": {
+        "anchors": [
+          "cssimagevalue",
+          "stylepropertymap",
+          "stylepropertymapreadonly"
+        ]
+      },
+      "https://www.w3.org/TR/css-ui-3/": {
+        "anchors": [
+          "propdef-cursor"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "comb-comma",
+          "typedef-ident",
+          "mult-opt"
+        ]
+      },
+      "https://www.w3.org/TR/css-variables-1/": {
+        "anchors": [
+          "custom-property"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "namespacedef-css",
+          "supported-css-property"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/TR/cssom-view/": {
+        "anchors": [
+          "dom-window-devicepixelratio"
+        ]
+      },
+      "https://www.w3.org/groups/wg/css": {}
     },
-    "https://github.com/w3c/css-houdini-drafts/blob/master/css-paint-api/EXPLAINER.md": {},
-    "https://github.com/w3c/css-houdini-drafts/issues": {},
-    "https://github.com/w3c/css-houdini-drafts/issues/791": {},
-    "https://github.com/w3c/css-houdini-drafts/issues/819": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "canvasstate",
-        "canvastransform",
-        "canvascompositing",
-        "canvasimagesmoothing",
-        "canvasfillstrokestyles",
-        "canvasshadowstyles",
-        "canvasrect",
-        "canvasdrawpath",
-        "canvasdrawimage",
-        "canvaspathdrawingstyles",
-        "canvaspath",
-        "canvasrenderingcontext2d",
-        "canvasimagedata",
-        "canvasuserinterface",
-        "canvastext",
-        "canvastextdrawingstyles",
-        "concept-canvas-set-bitmap-dimensions",
-        "reset-the-rendering-context-to-its-default-state",
-        "canvasimagesource",
-        "dom-context-2d-drawimage"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "queue-a-task"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/worklets.html": {
-      "anchors": [
-        "worklet",
-        "worklet-global-scope-type",
-        "worklet-destination-type",
-        "workletglobalscope",
-        "concept-worklet-global-scopes",
-        "create-a-worklet-global-scope",
-        "worklets-idempotent"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "struct",
-        "list",
-        "ordered-map",
-        "map-exists",
-        "list-empty",
-        "list-iterate",
-        "list-append",
-        "map-set",
-        "map-get"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-constructor",
-        "sec-native-error-types-used-in-this-standard-typeerror",
-        "sec-get-o-p",
-        "sec-isconstructor",
-        "sec-ecmascript-data-types-and-values",
-        "sec-construct"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SameObject",
-        "Global",
-        "Exposed",
-        "idl-undefined",
-        "idl-DOMString",
-        "VoidFunction",
-        "idl-unrestricted-double",
-        "idl-boolean",
-        "dfn-callback-function",
-        "dfn-throw",
-        "invalidmodificationerror",
-        "idl-DOMException",
-        "web-idl-arguments-list-converting",
-        "idl-double",
-        "invoke-a-callback-function",
-        "dfn-callback-this-value"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border-image"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://www.w3.org/TR/css-cascade-5/": {
-      "anchors": [
-        "computed-value"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://www.w3.org/TR/css-display-3/": {
-      "anchors": [
-        "box"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://www.w3.org/TR/css-images-3/": {
-      "anchors": [
-        "typedef-image",
-        "concrete-object-size",
-        "object-size-negotiation",
-        "natural-dimensions",
-        "object-sizing-examples"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://www.w3.org/TR/css-images-4/": {
-      "anchors": [
-        "invalid-image"
-      ],
-      "specShortname": "css-images-4"
-    },
-    "https://www.w3.org/TR/css-properties-values-api-1/": {
-      "anchors": [
-        "syntax-definition",
-        "consume-a-syntax-definition"
-      ],
-      "specShortname": "css-properties-values-api-1"
-    },
-    "https://www.w3.org/TR/css-syntax-3/": {
-      "anchors": [
-        "function",
-        "typedef-declaration-value"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://www.w3.org/TR/css-typed-om-1/": {
-      "anchors": [
-        "stylepropertymap",
-        "cssimagevalue",
-        "stylepropertymapreadonly"
-      ],
-      "specShortname": "css-typed-om-1"
-    },
-    "https://www.w3.org/TR/css-ui-3/": {
-      "anchors": [
-        "propdef-cursor"
-      ],
-      "specShortname": "css-ui-3"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "typedef-ident",
-        "comb-comma",
-        "mult-opt"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css-variables-1/": {
-      "anchors": [
-        "custom-property"
-      ],
-      "specShortname": "css-variables-1"
-    },
-    "https://www.w3.org/TR/cssom-1/": {
-      "anchors": [
-        "namespacedef-css",
-        "supported-css-property"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/cssom-view-1/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/TR/cssom-view/": {
-      "anchors": [
-        "dom-window-devicepixelratio"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/groups/wg/css": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvasstate",
+          "canvastransform",
+          "canvascompositing",
+          "canvasimagesmoothing",
+          "canvasfillstrokestyles",
+          "canvasshadowstyles",
+          "canvasrect",
+          "canvasdrawpath",
+          "canvasdrawimage",
+          "canvaspathdrawingstyles",
+          "canvaspath",
+          "canvasrenderingcontext2d",
+          "canvasimagedata",
+          "canvasuserinterface",
+          "canvastext",
+          "canvastextdrawingstyles",
+          "concept-canvas-set-bitmap-dimensions",
+          "reset-the-rendering-context-to-its-default-state",
+          "canvasimagesource",
+          "dom-context-2d-drawimage"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "worklet",
+          "worklet-global-scope-type",
+          "worklet-destination-type",
+          "workletglobalscope",
+          "concept-worklet-global-scopes",
+          "create-a-worklet-global-scope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "struct",
+          "list",
+          "ordered-map",
+          "map-exists",
+          "list-empty",
+          "list-iterate",
+          "list-append",
+          "map-set",
+          "map-get"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-constructor",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-get-o-p",
+          "sec-isconstructor",
+          "sec-ecmascript-data-types-and-values",
+          "sec-construct"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SameObject",
+          "Global",
+          "Exposed",
+          "idl-undefined",
+          "idl-DOMString",
+          "VoidFunction",
+          "idl-unrestricted-double",
+          "idl-boolean",
+          "dfn-callback-function",
+          "dfn-throw",
+          "invalidmodificationerror",
+          "idl-DOMException",
+          "web-idl-arguments-list-converting",
+          "idl-double",
+          "invoke-a-callback-function",
+          "dfn-callback-this-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border-image"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "computed-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "box"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "anchors": [
+          "typedef-image",
+          "concrete-object-size",
+          "object-size-negotiation",
+          "natural-dimensions"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-4/": {
+        "anchors": [
+          "invalid-image"
+        ]
+      },
+      "https://www.w3.org/TR/css-properties-values-api-1/": {
+        "anchors": [
+          "syntax-definition",
+          "consume-a-syntax-definition"
+        ]
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "anchors": [
+          "function",
+          "typedef-declaration-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-typed-om-1/": {
+        "anchors": [
+          "stylepropertymap",
+          "cssimagevalue",
+          "stylepropertymapreadonly"
+        ]
+      },
+      "https://www.w3.org/TR/css-ui-3/": {
+        "anchors": [
+          "propdef-cursor"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "typedef-ident",
+          "comb-comma",
+          "mult-opt"
+        ]
+      },
+      "https://www.w3.org/TR/css-variables-1/": {
+        "anchors": [
+          "custom-property"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "namespacedef-css",
+          "supported-css-property"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view/": {
+        "anchors": [
+          "dom-window-devicepixelratio"
+        ]
+      }
+    }
   }
 }

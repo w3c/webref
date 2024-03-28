@@ -4,350 +4,538 @@
     "url": "https://www.w3.org/TR/trusted-types/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toJSON": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toString": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toJSON": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toString": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toJSON": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toString": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/createPolicy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/defaultPolicy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyHTML": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyScript": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "element",
-        "concept-element-interface",
-        "concept-create-element",
-        "concept-child-text-content",
-        "dom-node-textcontent",
-        "concept-element-attributes-change-ext",
-        "concept-element-local-name",
-        "eventtarget",
-        "concept-attribute",
-        "other-applicable-specifications",
-        "concept-element",
-        "handle-attribute-changes",
-        "concept-attribute-local-name",
-        "concept-attribute-namespace",
-        "concept-node-append",
-        "concept-attribute-value",
-        "concept-element-attribute",
-        "concept-attribute-element",
-        "range",
-        "documentfragment"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toJSON": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toString": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toJSON": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toString": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toJSON": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toString": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/createPolicy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/defaultPolicy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyHTML": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyScript": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "documentfragment",
+          "element",
+          "eventtarget",
+          "range",
+          "concept-node-append",
+          "concept-attribute",
+          "concept-element-attributes-change-ext",
+          "concept-element-attribute",
+          "concept-child-text-content",
+          "concept-create-element",
+          "concept-attribute-element",
+          "concept-element-interface",
+          "handle-attribute-changes",
+          "concept-element-local-name",
+          "concept-attribute-namespace",
+          "other-applicable-specifications",
+          "dom-node-textcontent",
+          "concept-attribute-value"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Object-capability_model": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-client",
+          "local-scheme",
+          "concept-request",
+          "concept-request-url"
+        ]
+      },
+      "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
+      "https://github.com/tc39/ecma262/issues/938": {},
+      "https://github.com/w3c/svgwg/issues/196": {},
+      "https://github.com/whatwg/dom/issues/789": {},
+      "https://github.com/whatwg/dom/pull/809": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "this"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "already-started",
+          "parser-document",
+          "the-script-element",
+          "attr-script-async",
+          "script-force-async",
+          "prepare-the-script-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "integration-with-idl"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "dom-innertext"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmlembedelement",
+          "htmliframeelement",
+          "htmlobjectelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "html-fragment-serialisation-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "htmlscriptelement",
+          "htmltemplateelement",
+          "attr-script-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "windoworworkerglobalscope",
+          "current-global-object",
+          "concept-settings-object-global",
+          "concept-global-object-realm",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "sharedworker",
+          "worker",
+          "workerglobalscope",
+          "workeroptions"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "ascii-case-insensitive",
+          "ascii-lowercase",
+          "string-concatenate",
+          "list-contain",
+          "html-namespace",
+          "ordered-set"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-object.create",
+          "sec-method",
+          "realm"
+        ]
+      },
+      "https://tc39.es/proposal-dynamic-code-brand-checks/": {},
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-get-o-p",
+          "sec-tostring",
+          "current-realm"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc5234": {
+        "anchors": [
+          "appendix-B.1"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "concept-url-parser",
+          "concept-url-serializer"
+        ]
+      },
+      "https://w3c.github.io/DOM-Parsing/": {
+        "anchors": [
+          "dom-innerhtml",
+          "supportedtype",
+          "html-fragment-parsing-algorithm"
+        ]
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "anchors": [
+          "dfn-Blob"
+        ]
+      },
+      "https://w3c.github.io/editing/docs/execCommand/": {
+        "anchors": [
+          "the-inserthtml-command"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "should-block-inline",
+          "grammardef-required-ascii-whitespace"
+        ]
+      },
+      "https://w3c.github.io/webcomponents/spec/imports/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "es-DOMString",
+          "es-security",
+          "es-type-mapping",
+          "AllowShared",
+          "Clamp",
+          "idl-DOMString",
+          "EnforceRange",
+          "exceptiondef-evalerror",
+          "Exposed",
+          "Function",
+          "LegacyNullToEmptyString",
+          "NewObject",
+          "idl-promise",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "idl-any",
+          "dfn-attribute",
+          "idl-boolean",
+          "dfn-convert-ecmascript-to-idl-value",
+          "dfn-extended-attribute",
+          "dfn-identifier",
+          "dfn-idl-fragment",
+          "include",
+          "interface-mixin",
+          "idl-long",
+          "idl-object",
+          "dfn-operation",
+          "dfn-platform-object",
+          "dfn-read-only",
+          "dfn-regular-attribute",
+          "dfn-regular-operation",
+          "dfn-xattr-identifier",
+          "idl-undefined",
+          "dfn-variadic"
+        ]
+      },
+      "https://wicg.github.io/origin-policy/": {},
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "policy-delivery",
+          "create-violation-for-global",
+          "report-violation",
+          "can-compile-strings",
+          "security-inherit-csp",
+          "grammardef-report-sample",
+          "grammardef-unsafe-eval",
+          "content-security-policy-object",
+          "header-content-security-policy-report-only",
+          "global-object-csp-list",
+          "policy-directive-set",
+          "directives",
+          "policy-disposition",
+          "directive-inline-check",
+          "directive-name",
+          "object-src",
+          "directive-pre-navigation-check",
+          "violation-resource",
+          "violation-sample",
+          "script-src",
+          "source-expression",
+          "directive-value",
+          "violation"
+        ]
+      },
+      "https://www.w3.org/TR/DOM-Parsing/": {
+        "anchors": [
+          "widl-Element-innerHTML",
+          "widl-Element-outerHTML"
+        ]
+      },
+      "https://www.w3.org/TR/FileAPI/": {},
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/interact.html": {
+        "anchors": [
+          "EventAttributes"
+        ]
+      },
+      "https://www.w3.org/TR/html-design-principles/": {},
+      "https://www.w3.org/TR/html5/": {
+        "anchors": [
+          "timer-initialisation-steps",
+          "event-handler-content-attributes"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers-1/": {
+        "anchors": [
+          "dictdef-registrationoptions",
+          "serviceworkercontainer",
+          "serviceworkerregistration"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {},
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {}
     },
-    "https://en.wikipedia.org/wiki/Object-capability_model": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-url",
-        "concept-request-client",
-        "local-scheme"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
-    "https://github.com/tc39/ecma262/issues/938": {},
-    "https://github.com/w3c/svgwg/issues/196": {},
-    "https://github.com/whatwg/dom/issues/789": {},
-    "https://github.com/whatwg/dom/pull/809": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "this"
-      ]
-    },
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "prepare-the-script-element",
-        "already-started",
-        "parser-document",
-        "the-script-element",
-        "attr-script-async",
-        "script-force-async"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "integration-with-idl"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "reflect"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
-      "anchors": [
-        "cereactions"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "dom-innertext"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "htmliframeelement",
-        "htmlembedelement",
-        "htmlobjectelement",
-        "attr-embed-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/parsing.html": {
-      "anchors": [
-        "html-fragment-serialisation-algorithm"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "htmltemplateelement",
-        "htmlscriptelement",
-        "attr-script-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-global-object-realm",
-        "concept-relevant-global",
-        "concept-realm-global",
-        "current-global-object",
-        "windoworworkerglobalscope",
-        "concept-settings-object-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "concept-document-window",
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "worker",
-        "workeroptions",
-        "sharedworker",
-        "workerglobalscope"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-set",
-        "ascii-lowercase",
-        "html-namespace",
-        "string-concatenate",
-        "list-append",
-        "ascii-case-insensitive",
-        "list-contain"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "sec-object.create",
-        "sec-method",
-        "realm"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/proposal-dynamic-code-brand-checks/": {},
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-get-o-p",
-        "current-realm",
-        "sec-tostring"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc5234": {
-      "anchors": [
-        "appendix-B.1"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-scheme",
-        "concept-url-serializer",
-        "concept-url-parser"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/DOM-Parsing/": {
-      "anchors": [
-        "html-fragment-parsing-algorithm",
-        "dom-innerhtml",
-        "supportedtype"
-      ],
-      "specShortname": "DOM-Parsing"
-    },
-    "https://w3c.github.io/FileAPI/": {
-      "anchors": [
-        "dfn-Blob"
-      ],
-      "specShortname": "FileAPI"
-    },
-    "https://w3c.github.io/editing/docs/execCommand/": {
-      "anchors": [
-        "the-inserthtml-command"
-      ]
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "anchors": [
-        "should-block-inline",
-        "grammardef-required-ascii-whitespace"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://w3c.github.io/webcomponents/spec/imports/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString",
-        "idl-object",
-        "idl-USVString",
-        "idl-boolean",
-        "idl-any",
-        "dfn-attribute",
-        "interface-mixin",
-        "include",
-        "exceptiondef-typeerror",
-        "dfn-extended-attribute",
-        "dfn-xattr-identifier",
-        "dfn-identifier",
-        "dfn-regular-attribute",
-        "dfn-regular-operation",
-        "dfn-read-only",
-        "es-DOMString",
-        "dfn-idl-fragment",
-        "dfn-variadic",
-        "dfn-operation",
-        "AllowShared",
-        "Clamp",
-        "EnforceRange",
-        "LegacyNullToEmptyString",
-        "dfn-convert-ecmascript-to-idl-value",
-        "es-security",
-        "es-type-mapping",
-        "dfn-platform-object",
-        "idl-undefined",
-        "Function",
-        "idl-long",
-        "SecureContext",
-        "NewObject",
-        "idl-promise",
-        "exceptiondef-evalerror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/origin-policy/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "script-src",
-        "policy-delivery",
-        "header-content-security-policy-report-only",
-        "global-object-csp-list",
-        "content-security-policy-object",
-        "policy-directive-set",
-        "directives",
-        "directive-name",
-        "directive-value",
-        "directive-pre-navigation-check",
-        "directive-inline-check",
-        "create-violation-for-global",
-        "violation-resource",
-        "violation-sample",
-        "report-violation",
-        "policy-disposition",
-        "violation",
-        "can-compile-strings",
-        "source-expression",
-        "grammardef-unsafe-eval",
-        "grammardef-report-sample",
-        "security-inherit-csp",
-        "object-src"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/DOM-Parsing/": {
-      "anchors": [
-        "widl-Element-innerHTML",
-        "widl-Element-outerHTML"
-      ],
-      "specShortname": "DOM-Parsing"
-    },
-    "https://www.w3.org/TR/FileAPI/": {
-      "specShortname": "FileAPI"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/interact.html": {
-      "anchors": [
-        "EventAttributes",
-        "InterfaceSVGScriptElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/types.html": {
-      "anchors": [
-        "InterfaceSVGAnimatedString"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/html-design-principles/": {},
-    "https://www.w3.org/TR/html5/": {
-      "anchors": [
-        "timer-initialisation-steps",
-        "event-handler-content-attributes"
-      ]
-    },
-    "https://www.w3.org/TR/service-workers-1/": {
-      "anchors": [
-        "serviceworkercontainer",
-        "serviceworkerregistration",
-        "dictdef-registrationoptions"
-      ]
-    },
-    "https://www.w3.org/TR/service-workers/": {
-      "specShortname": "service-workers"
-    },
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "concept-element-interface",
+          "concept-create-element",
+          "concept-child-text-content",
+          "dom-node-textcontent",
+          "concept-element-attributes-change-ext",
+          "concept-element-local-name",
+          "eventtarget",
+          "concept-attribute",
+          "other-applicable-specifications",
+          "concept-element",
+          "handle-attribute-changes",
+          "concept-attribute-local-name",
+          "concept-attribute-namespace",
+          "concept-node-append",
+          "concept-attribute-value",
+          "concept-element-attribute",
+          "concept-attribute-element",
+          "range",
+          "documentfragment"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-request-client",
+          "local-scheme"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "this"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "prepare-the-script-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "dom-innertext"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement",
+          "htmlembedelement",
+          "htmlobjectelement",
+          "attr-embed-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "html-fragment-serialisation-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "htmltemplateelement",
+          "htmlscriptelement",
+          "attr-script-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-global-object-realm",
+          "concept-relevant-global",
+          "concept-realm-global",
+          "current-global-object",
+          "windoworworkerglobalscope",
+          "concept-settings-object-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker",
+          "workeroptions",
+          "sharedworker",
+          "workerglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-set",
+          "ascii-lowercase",
+          "html-namespace",
+          "string-concatenate",
+          "list-append",
+          "ascii-case-insensitive",
+          "list-contain"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-get-o-p",
+          "current-realm",
+          "sec-tostring"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "concept-url-serializer",
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/DOM-Parsing/": {
+        "anchors": [
+          "html-fragment-parsing-algorithm",
+          "dom-innerhtml",
+          "supportedtype"
+        ]
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "anchors": [
+          "dfn-Blob"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-DOMString",
+          "idl-object",
+          "idl-USVString",
+          "idl-boolean",
+          "idl-any",
+          "dfn-attribute",
+          "interface-mixin",
+          "include",
+          "exceptiondef-typeerror",
+          "dfn-extended-attribute",
+          "dfn-xattr-identifier",
+          "dfn-identifier",
+          "dfn-regular-attribute",
+          "dfn-regular-operation",
+          "dfn-read-only",
+          "dfn-idl-fragment",
+          "dfn-variadic",
+          "dfn-operation",
+          "AllowShared",
+          "Clamp",
+          "EnforceRange",
+          "LegacyNullToEmptyString",
+          "dfn-convert-ecmascript-to-idl-value",
+          "dfn-platform-object",
+          "idl-undefined",
+          "Function",
+          "idl-long",
+          "SecureContext",
+          "NewObject",
+          "idl-promise",
+          "exceptiondef-evalerror"
+        ]
+      },
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "script-src",
+          "header-content-security-policy-report-only",
+          "global-object-csp-list",
+          "content-security-policy-object",
+          "policy-directive-set",
+          "directives",
+          "directive-name",
+          "directive-value",
+          "directive-pre-navigation-check",
+          "directive-inline-check",
+          "violation-resource",
+          "violation-sample",
+          "policy-disposition",
+          "violation",
+          "source-expression",
+          "grammardef-unsafe-eval",
+          "grammardef-report-sample",
+          "object-src"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/interact.html": {
+        "anchors": [
+          "InterfaceSVGScriptElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/types.html": {
+        "anchors": [
+          "InterfaceSVGAnimatedString"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers-1/": {
+        "anchors": [
+          "serviceworkercontainer",
+          "serviceworkerregistration",
+          "dictdef-registrationoptions"
+        ]
+      }
+    }
   }
 }

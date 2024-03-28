@@ -4,160 +4,263 @@
     "url": "https://www.w3.org/TR/clear-site-data/"
   },
   "links": {
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-response",
-        "concept-response-url",
-        "concept-http-network-fetch",
-        "concept-response-header-list",
-        "extract-header-list-values",
-        "authentication-entry",
-        "proxy-authentication-entry",
-        "request-service-workers-mode"
-      ],
-      "specShortname": "fetch"
+    "rawlinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "authentication-entry",
+          "extract-header-list-values",
+          "concept-response-header-list",
+          "concept-http-network-fetch",
+          "proxy-authentication-entry",
+          "concept-response",
+          "request-service-workers-mode",
+          "concept-response-url"
+        ]
+      },
+      "https://github.com/w3c/webappsec-clear-site-data/issues/2": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "location",
+          "dom-location-reload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/offline.html": {
+        "anchors": [
+          "application-cache",
+          "application-cache-group"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "active-sandboxing-flag-set",
+          "concept-origin-host",
+          "parse-a-sandboxing-directive"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-settings-object-global",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webstorage.html": {
+        "anchors": [
+          "storage-2",
+          "dom-storage-clear",
+          "dom-localstorage",
+          "dom-sessionstorage"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "iteration-break",
+          "list-contain",
+          "iteration-continue"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://publicsuffix.org/": {},
+      "https://publicsuffix.org/list/": {},
+      "https://storage.spec.whatwg.org/": {},
+      "https://tools.ietf.org/html/draft-balfanz-tls-channelid": {},
+      "https://tools.ietf.org/html/draft-ietf-tokbind-protocol": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc3864": {},
+      "https://tools.ietf.org/html/rfc5234": {},
+      "https://tools.ietf.org/html/rfc6265": {
+        "anchors": [
+          "section-5.3",
+          "section-5.1.3"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc6454": {
+        "anchors": [
+          "section-3.2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc6919": {},
+      "https://tools.ietf.org/html/rfc7230": {
+        "anchors": [
+          "section-7",
+          "section-3.2.6"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7230https://tools.ietf.org/html/rfc7230": {
+        "anchors": [
+          "section-3.2.6"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7234": {
+        "anchors": [
+          "section-2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7235": {},
+      "https://tools.ietf.org/html/rfc7405": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-host",
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "anchors": [
+          "database",
+          "delete-a-database"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dfn-scope-url",
+          "dfn-service-worker-registration",
+          "dom-serviceworkerregistration-unregister"
+        ]
+      },
+      "https://wiki.mozilla.org/NPAPI:ClearSiteData": {},
+      "https://www.w3.org/2004/01/pp-impl/49309/status": {},
+      "https://www.w3.org/2011/webappsec/": {},
+      "https://www.w3.org/2017/Process-20170301/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/IndexedDB-2/": {},
+      "https://www.w3.org/TR/IndexedDB/": {},
+      "https://www.w3.org/TR/file-system-api/": {},
+      "https://www.w3.org/TR/mixed-content/": {
+        "anchors": [
+          "a-priori-authenticated-url"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers-1/": {},
+      "https://www.w3.org/TR/webdatabase/": {}
     },
-    "https://github.com/w3c/webappsec-clear-site-data/issues/2": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context",
-        "active-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "location",
-        "dom-location-reload"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/offline.html": {
-      "anchors": [
-        "application-cache",
-        "application-cache-group"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "parse-a-sandboxing-directive",
-        "active-sandboxing-flag-set",
-        "concept-origin-host"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "relevant-settings-object",
-        "concept-settings-object-origin",
-        "concept-settings-object-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webstorage.html": {
-      "anchors": [
-        "dom-localstorage",
-        "dom-sessionstorage",
-        "dom-storage-clear",
-        "storage-2"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "iteration-break",
-        "list-contain",
-        "iteration-continue",
-        "list-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://publicsuffix.org/": {},
-    "https://publicsuffix.org/list/": {},
-    "https://storage.spec.whatwg.org/": {
-      "specShortname": "storage"
-    },
-    "https://tools.ietf.org/html/draft-balfanz-tls-channelid": {},
-    "https://tools.ietf.org/html/draft-ietf-tokbind-protocol": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc3864": {},
-    "https://tools.ietf.org/html/rfc5234": {},
-    "https://tools.ietf.org/html/rfc6265": {
-      "anchors": [
-        "section-5.3",
-        "section-5.1.3"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc6454": {
-      "anchors": [
-        "section-3.2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc6919": {},
-    "https://tools.ietf.org/html/rfc7230": {
-      "anchors": [
-        "section-7",
-        "section-3.2.6"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7230https://tools.ietf.org/html/rfc7230": {
-      "anchors": [
-        "section-3.2.6"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7234": {
-      "anchors": [
-        "section-2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7235": {},
-    "https://tools.ietf.org/html/rfc7405": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin",
-        "concept-url-host"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/IndexedDB/": {
-      "anchors": [
-        "database",
-        "delete-a-database"
-      ],
-      "specShortname": "IndexedDB-3"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "dfn-service-worker-registration",
-        "dfn-scope-url",
-        "dom-serviceworkerregistration-unregister"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://wiki.mozilla.org/NPAPI:ClearSiteData": {},
-    "https://www.w3.org/2004/01/pp-impl/49309/status": {},
-    "https://www.w3.org/2011/webappsec/": {},
-    "https://www.w3.org/2017/Process-20170301/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/IndexedDB-2/": {},
-    "https://www.w3.org/TR/IndexedDB/": {
-      "specShortname": "IndexedDB-3"
-    },
-    "https://www.w3.org/TR/file-system-api/": {},
-    "https://www.w3.org/TR/mixed-content/": {
-      "anchors": [
-        "a-priori-authenticated-url"
-      ],
-      "specShortname": "mixed-content"
-    },
-    "https://www.w3.org/TR/service-workers-1/": {},
-    "https://www.w3.org/TR/webdatabase/": {}
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response",
+          "concept-response-url",
+          "concept-http-network-fetch",
+          "concept-response-header-list",
+          "extract-header-list-values",
+          "authentication-entry",
+          "proxy-authentication-entry",
+          "request-service-workers-mode"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "active-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "location",
+          "dom-location-reload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/offline.html": {
+        "anchors": [
+          "application-cache",
+          "application-cache-group"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "parse-a-sandboxing-directive",
+          "active-sandboxing-flag-set",
+          "concept-origin-host"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "concept-settings-object-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webstorage.html": {
+        "anchors": [
+          "dom-localstorage",
+          "dom-sessionstorage",
+          "dom-storage-clear",
+          "storage-2"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "iteration-break",
+          "list-contain",
+          "iteration-continue",
+          "list-append"
+        ]
+      },
+      "https://publicsuffix.org/list/": {},
+      "https://tools.ietf.org/html/rfc6265": {
+        "anchors": [
+          "section-5.3",
+          "section-5.1.3"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc6454": {
+        "anchors": [
+          "section-3.2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7230": {
+        "anchors": [
+          "section-7"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7230https://tools.ietf.org/html/rfc7230": {
+        "anchors": [
+          "section-3.2.6"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7234": {
+        "anchors": [
+          "section-2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url-host"
+        ]
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "anchors": [
+          "database",
+          "delete-a-database"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dfn-service-worker-registration",
+          "dfn-scope-url",
+          "dom-serviceworkerregistration-unregister"
+        ]
+      },
+      "https://www.w3.org/TR/mixed-content/": {
+        "anchors": [
+          "a-priori-authenticated-url"
+        ]
+      }
+    }
   }
 }

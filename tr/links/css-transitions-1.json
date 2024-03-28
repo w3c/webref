@@ -4,254 +4,351 @@
     "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   "links": {
-    "http://w3c.github.io/dom/": {
-      "anchors": [
-        "constructing-events"
-      ]
+    "rawlinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://drafts.csswg.org/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions/": {
+        "anchors": [
+          "animatable-properties"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "combining-values",
+          "interpolation"
+        ]
+      },
+      "https://drafts.csswg.org/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "cssomstring"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animating-properties",
+          "animation-type",
+          "combining-shadow-lists",
+          "discrete",
+          "not-animatable"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/commits/master/css-transitions-1/Overview.bs": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "Exposed",
+          "idl-double"
+        ]
+      },
+      "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.bs": {},
+      "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.src.html": {},
+      "https://hg.csswg.org/drafts/log/tip/css3-transitions/Overview.src.html": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "concept-event-dispatch",
+          "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "globaleventhandlers",
+          "event-handler-content-attributes",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "event-handlers"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
+      "https://www.w3.org/2018/Process-20180201/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/": {},
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/Style/CSS/members": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog": {},
+      "https://www.w3.org/TR/2013/WD-css3-transitions-20131119/": {
+        "anchors": [
+          "changes"
+        ]
+      },
+      "https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/": {
+        "anchors": [
+          "changes"
+        ]
+      },
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/colors.html": {
+        "anchors": [
+          "propdef-background-color"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visudet.html": {
+        "anchors": [
+          "propdef-width"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-left",
+          "propdef-top"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/WCAG20/": {
+        "anchors": [
+          "seizure"
+        ]
+      },
+      "https://www.w3.org/TR/css-animations-1/": {},
+      "https://www.w3.org/TR/css-backgrounds-3/": {},
+      "https://www.w3.org/TR/css-cascade-3/": {},
+      "https://www.w3.org/TR/css-cascade-4/": {
+        "anchors": [
+          "propdef-all",
+          "cascade",
+          "computed-value",
+          "valdef-all-inherit",
+          "valdef-all-initial"
+        ]
+      },
+      "https://www.w3.org/TR/css-color-3/": {},
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "typedef-timing-function",
+          "input-progress-value",
+          "output-progress-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-3/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "mult-comma",
+          "identifier-value",
+          "comb-one",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/css3-animations/": {
+        "anchors": [
+          "dom-animationevent-elapsedtime"
+        ]
+      },
+      "https://www.w3.org/TR/css3-background/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-box-shadow"
+        ]
+      },
+      "https://www.w3.org/TR/css3-color/": {
+        "anchors": [
+          "opacity"
+        ]
+      },
+      "https://www.w3.org/TR/css3-values/": {
+        "anchors": [
+          "time-value"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/smil-animation/": {},
+      "https://www.w3.org/TR/web-animations-1/": {}
     },
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "event",
-        "dictdef-eventinit"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://drafts.csswg.org/css-pseudo/": {
-      "anchors": [
-        "generated-content"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "anchors": [
-        "animatable-properties"
-      ],
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "interpolation",
-        "combining-values"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "cssomstring"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "animation-type",
-        "not-animatable",
-        "discrete",
-        "combining-shadow-lists",
-        "animating-properties"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://github.com/w3c/csswg-drafts/commits/master/css-transitions-1/Overview.bs": {},
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "Exposed",
-        "idl-double"
-      ]
-    },
-    "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.bs": {},
-    "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.src.html": {},
-    "https://hg.csswg.org/drafts/log/tip/css3-transitions/Overview.src.html": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "concept-event-dispatch",
-        "html-elements"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "event-handlers",
-        "event-handler-event-type",
-        "event-handler-content-attributes",
-        "event-handler-idl-attributes",
-        "globaleventhandlers",
-        "eventhandler"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2018/Process-20180201/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Style/": {},
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/Style/CSS/members": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog": {},
-    "https://www.w3.org/TR/2013/WD-css3-transitions-20131119/": {
-      "anchors": [
-        "changes"
-      ]
-    },
-    "https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/": {
-      "anchors": [
-        "changes"
-      ]
-    },
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension",
-        "vendor-prefix"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/": {},
-    "https://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/colors.html": {
-      "anchors": [
-        "propdef-background-color"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visudet.html": {
-      "anchors": [
-        "propdef-width"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "propdef-left",
-        "propdef-top"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/WCAG20/": {
-      "anchors": [
-        "seizure"
-      ]
-    },
-    "https://www.w3.org/TR/css-animations-1/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://www.w3.org/TR/css-cascade-3/": {
-      "specShortname": "css-cascade-3"
-    },
-    "https://www.w3.org/TR/css-cascade-4/": {
-      "anchors": [
-        "computed-value",
-        "valdef-all-inherit",
-        "valdef-all-initial",
-        "propdef-all",
-        "cascade"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-color-3/": {
-      "specShortname": "css-color-3"
-    },
-    "https://www.w3.org/TR/css-easing-1/": {
-      "anchors": [
-        "input-progress-value",
-        "output-progress-value",
-        "typedef-timing-function"
-      ],
-      "specShortname": "css-easing-1"
-    },
-    "https://www.w3.org/TR/css-transforms-1/": {
-      "anchors": [
-        "propdef-transform"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://www.w3.org/TR/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "comb-one",
-        "mult-comma",
-        "identifier-value",
-        "comb-any"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css3-animations/": {
-      "anchors": [
-        "dom-animationevent-elapsedtime"
-      ]
-    },
-    "https://www.w3.org/TR/css3-background/": {
-      "anchors": [
-        "propdef-background-image",
-        "propdef-box-shadow",
-        "shadow-inset"
-      ]
-    },
-    "https://www.w3.org/TR/css3-color/": {
-      "anchors": [
-        "opacity"
-      ]
-    },
-    "https://www.w3.org/TR/css3-values/": {
-      "anchors": [
-        "time-value"
-      ]
-    },
-    "https://www.w3.org/TR/cssom-1/": {
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/smil-animation/": {},
-    "https://www.w3.org/TR/web-animations-1/": {
-      "specShortname": "web-animations-1"
+    "autolinks": {
+      "http://w3c.github.io/dom/": {
+        "anchors": [
+          "constructing-events"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "interpolation"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "cssomstring"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animation-type",
+          "not-animatable",
+          "discrete",
+          "combining-shadow-lists"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "Exposed",
+          "idl-double"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "concept-event-dispatch",
+          "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-content-attributes",
+          "event-handler-idl-attributes",
+          "globaleventhandlers",
+          "eventhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "vendor-prefix"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/colors.html": {
+        "anchors": [
+          "propdef-background-color"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visudet.html": {
+        "anchors": [
+          "propdef-width"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-left",
+          "propdef-top"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-4/": {
+        "anchors": [
+          "computed-value",
+          "valdef-all-inherit",
+          "valdef-all-initial",
+          "propdef-all",
+          "cascade"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "input-progress-value",
+          "output-progress-value",
+          "typedef-timing-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "comb-one",
+          "mult-comma",
+          "identifier-value",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/css3-animations/": {
+        "anchors": [
+          "dom-animationevent-elapsedtime"
+        ]
+      },
+      "https://www.w3.org/TR/css3-background/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-box-shadow",
+          "shadow-inset"
+        ]
+      },
+      "https://www.w3.org/TR/css3-color/": {
+        "anchors": [
+          "opacity"
+        ]
+      },
+      "https://www.w3.org/TR/css3-values/": {
+        "anchors": [
+          "time-value"
+        ]
+      }
     }
   }
 }

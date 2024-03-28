@@ -4,290 +4,501 @@
     "url": "https://www.w3.org/TR/webcodecs/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "dom-node-ownerdocument",
-        "document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "eventtarget",
+          "dom-node-ownerdocument"
+        ]
+      },
+      "https://github.com/w3c/webcodecs/issues": {},
+      "https://github.com/w3c/webcodecs/issues/166": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvasdrawimage",
+          "canvasimagesource",
+          "htmlcanvaselement",
+          "offscreencanvas",
+          "check-the-usability-of-the-image-argument",
+          "dom-context-2d-drawimage",
+          "the-image-argument-is-not-origin-clean"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "htmlimageelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "colorspaceconversion",
+          "imagebitmap",
+          "imagebitmapoptions",
+          "concept-imagebitmap-bitmap-data",
+          "dom-imagebitmapoptions-colorspaceconversion",
+          "dom-colorspaceconversion-none"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "live",
+          "parallel-queue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "dom-document-hidden"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlmediaelement",
+          "htmlvideoelement",
+          "dom-media-network_empty",
+          "dom-navigator-canplaytype",
+          "current-playback-position",
+          "dom-media-networkstate",
+          "dom-media-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "transferable-objects",
+          "serializable-objects",
+          "serializable",
+          "structureddeserialize",
+          "structuredserialize",
+          "transferable",
+          "detached",
+          "deserialization-steps",
+          "serialization-steps",
+          "transfer-steps",
+          "transfer-receiving-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "event-loop",
+          "global-object",
+          "queue-a-task"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "concept-WorkerGlobalScope-owner-set"
+        ]
+      },
+      "https://httpwg.org/specs/rfc9110.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "byte-sequence",
+          "iteration-continue",
+          "queue-enqueue",
+          "map-exists",
+          "list-is-empty",
+          "list",
+          "ordered-map",
+          "queue",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "struct"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-media-wg/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type",
+          "valid-mime-type"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream",
+          "read-request-chunk-steps",
+          "read-request-close-steps",
+          "is-readable-stream-disturbed",
+          "read-request-error-steps",
+          "readablestream-get-a-reader",
+          "readablestream-locked",
+          "read-request"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-detacharraybuffer",
+          "current-realm"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-octet",
+          "idl-short",
+          "idl-long",
+          "idl-float",
+          "aborterror",
+          "AllowSharedBufferSource",
+          "idl-ArrayBuffer",
+          "BufferSource",
+          "idl-DOMException",
+          "idl-DOMString",
+          "datacloneerror",
+          "dataerror",
+          "Default",
+          "encodingerror",
+          "EnforceRange",
+          "Exposed",
+          "invalidstateerror",
+          "notreadableerror",
+          "notsupportederror",
+          "idl-promise",
+          "quotaexceedederror",
+          "exceptiondef-rangeerror",
+          "SecureContext",
+          "securityerror",
+          "exceptiondef-typeerror",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "buffersource-detached",
+          "idl-double",
+          "idl-long-long",
+          "idl-sequence",
+          "the-given-value",
+          "this",
+          "idl-undefined",
+          "idl-unrestricted-float",
+          "idl-unsigned-long",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://www.itu.int/rec/T-REC-H.273/en": {},
+      "https://www.rfc-editor.org/rfc/rfc6381": {},
+      "https://www.w3.org/2023/Process-20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/embedded.html": {
+        "anchors": [
+          "InterfaceSVGImageElement"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "anchors": [
+          "natural-dimensions",
+          "natural-height",
+          "natural-width"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "domrect",
+          "dictdef-domrectinit",
+          "domrectreadonly",
+          "dom-domrect-height",
+          "dom-domrectinit-height",
+          "dom-domrectreadonly-height",
+          "dom-domrect-width",
+          "dom-domrectinit-width",
+          "dom-domrectreadonly-width",
+          "dom-domrect-x",
+          "dom-domrectinit-x",
+          "dom-domrectreadonly-x",
+          "dom-domrect-y",
+          "dom-domrectinit-y",
+          "dom-domrectreadonly-y"
+        ]
+      },
+      "https://www.w3.org/TR/media-capabilities/": {
+        "anchors": [
+          "dom-mediacapabilities-decodinginfo",
+          "dom-mediacapabilitiesinfo-powerefficient"
+        ]
+      },
+      "https://www.w3.org/TR/media-source-2/": {
+        "anchors": [
+          "dom-mediasource-istypesupported"
+        ]
+      },
+      "https://www.w3.org/TR/mediastream-recording/": {
+        "anchors": [
+          "enumdef-bitratemode",
+          "dom-bitratemode-constant",
+          "dom-bitratemode-variable"
+        ]
+      },
+      "https://www.w3.org/TR/mst-content-hint/": {
+        "anchors": [
+          "video-content-hints"
+        ]
+      },
+      "https://www.w3.org/TR/webaudio/": {
+        "anchors": [
+          "audiobuffer",
+          "audioworklet"
+        ]
+      },
+      "https://www.w3.org/TR/webcodecs-codec-registry/": {},
+      "https://www.w3.org/TR/webrtc-svc/": {
+        "anchors": [
+          "scalabilitymodes*"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcrtpsender-getcapabilities",
+          "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
+        ]
+      },
+      "https://www.w3.org/groups/wg/media": {},
+      "https://www.w3.org/groups/wg/media/ipr": {}
     },
-    "https://github.com/w3c/webcodecs/issues": {},
-    "https://github.com/w3c/webcodecs/issues/166": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "canvasimagesource",
-        "canvasdrawimage",
-        "dom-context-2d-drawimage",
-        "check-the-usability-of-the-image-argument",
-        "the-image-argument-is-not-origin-clean",
-        "htmlcanvaselement",
-        "offscreencanvas"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "htmlimageelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
-      "anchors": [
-        "concept-imagebitmap-bitmap-data",
-        "imagebitmap",
-        "imagebitmapoptions",
-        "dom-imagebitmapoptions-colorspaceconversion",
-        "dom-colorspaceconversion-none",
-        "colorspaceconversion"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "parallel-queue",
-        "live"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "dom-document-hidden"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "dom-navigator-canplaytype",
-        "htmlvideoelement",
-        "dom-media-networkstate",
-        "dom-media-network_empty",
-        "current-playback-position",
-        "htmlmediaelement",
-        "dom-media-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "detached",
-        "serializable",
-        "serialization-steps",
-        "deserialization-steps",
-        "transferable-objects",
-        "serializable-objects",
-        "transferable",
-        "transfer-steps",
-        "transfer-receiving-steps",
-        "structuredserialize",
-        "structureddeserialize"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "queue-a-task",
-        "event-loop",
-        "eventhandler",
-        "event-handler-idl-attributes",
-        "event-handler-event-type",
-        "global-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "concept-WorkerGlobalScope-owner-set"
-      ]
-    },
-    "https://httpwg.org/specs/rfc9110.html": {
-      "specShortname": "rfc9110"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "queue",
-        "queue-enqueue",
-        "list",
-        "map-exists",
-        "iteration-continue",
-        "strip-leading-and-trailing-ascii-whitespace",
-        "struct",
-        "byte-sequence",
-        "ordered-map",
-        "list-is-empty"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-media-wg/": {},
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "mime-type",
-        "valid-mime-type"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://streams.spec.whatwg.org/": {
-      "anchors": [
-        "readablestream",
-        "readablestream-get-a-reader",
-        "read-request",
-        "read-request-chunk-steps",
-        "read-request-close-steps",
-        "read-request-error-steps",
-        "is-readable-stream-disturbed",
-        "readablestream-locked"
-      ],
-      "specShortname": "streams"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-detacharraybuffer",
-        "current-realm"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "SecureContext",
-        "idl-unsigned-long",
-        "idl-undefined",
-        "idl-promise",
-        "notsupportederror",
-        "exceptiondef-typeerror",
-        "invalidstateerror",
-        "dataerror",
-        "encodingerror",
-        "a-promise-rejected-with",
-        "idl-DOMException",
-        "aborterror",
-        "this",
-        "BufferSource",
-        "idl-boolean",
-        "idl-DOMString",
-        "EnforceRange",
-        "buffersource-detached",
-        "AllowSharedBufferSource",
-        "idl-unsigned-long-long",
-        "idl-double",
-        "idl-long-long",
-        "idl-sequence",
-        "idl-ArrayBuffer",
-        "datacloneerror",
-        "idl-float",
-        "exceptiondef-rangeerror",
-        "idl-octet",
-        "idl-short",
-        "idl-long",
-        "securityerror",
-        "Default",
-        "notreadableerror",
-        "idl-unrestricted-float",
-        "the-given-value",
-        "quotaexceedederror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.itu.int/rec/T-REC-H.273/en": {},
-    "https://www.rfc-editor.org/rfc/rfc6381": {},
-    "https://www.w3.org/2023/Process-20231103/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/embedded.html": {
-      "anchors": [
-        "InterfaceSVGImageElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/css-images-3/": {
-      "anchors": [
-        "natural-dimensions",
-        "natural-width",
-        "natural-height"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://www.w3.org/TR/geometry-1/": {
-      "anchors": [
-        "domrectreadonly",
-        "dictdef-domrectinit",
-        "dom-domrectinit-width",
-        "dom-domrectinit-height",
-        "dom-domrectreadonly-width",
-        "dom-domrectreadonly-height",
-        "dom-domrectreadonly-x",
-        "dom-domrectreadonly-y",
-        "dom-domrectinit-y",
-        "dom-domrectinit-x",
-        "domrect",
-        "dom-domrect-x",
-        "dom-domrect-y",
-        "dom-domrect-width",
-        "dom-domrect-height"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://www.w3.org/TR/media-capabilities/": {
-      "anchors": [
-        "dom-mediacapabilities-decodinginfo",
-        "dom-mediacapabilitiesinfo-powerefficient"
-      ],
-      "specShortname": "media-capabilities"
-    },
-    "https://www.w3.org/TR/media-source-2/": {
-      "anchors": [
-        "dom-mediasource-istypesupported"
-      ],
-      "specShortname": "media-source-2"
-    },
-    "https://www.w3.org/TR/mediastream-recording/": {
-      "anchors": [
-        "enumdef-bitratemode",
-        "dom-bitratemode-constant",
-        "dom-bitratemode-variable"
-      ],
-      "specShortname": "mediastream-recording"
-    },
-    "https://www.w3.org/TR/mst-content-hint/": {
-      "anchors": [
-        "video-content-hints"
-      ],
-      "specShortname": "mst-content-hint"
-    },
-    "https://www.w3.org/TR/webaudio/": {
-      "anchors": [
-        "audiobuffer",
-        "audioworklet"
-      ],
-      "specShortname": "webaudio"
-    },
-    "https://www.w3.org/TR/webcodecs-codec-registry/": {
-      "specShortname": "webcodecs-codec-registry"
-    },
-    "https://www.w3.org/TR/webrtc-svc/": {
-      "anchors": [
-        "scalabilitymodes*"
-      ],
-      "specShortname": "webrtc-svc"
-    },
-    "https://www.w3.org/TR/webrtc/": {
-      "anchors": [
-        "dom-rtcrtpsender-getcapabilities",
-        "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
-      ],
-      "specShortname": "webrtc"
-    },
-    "https://www.w3.org/groups/wg/media": {},
-    "https://www.w3.org/groups/wg/media/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "dom-node-ownerdocument",
+          "document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvasimagesource",
+          "canvasdrawimage",
+          "dom-context-2d-drawimage",
+          "check-the-usability-of-the-image-argument",
+          "the-image-argument-is-not-origin-clean",
+          "htmlcanvaselement",
+          "offscreencanvas"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "htmlimageelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "concept-imagebitmap-bitmap-data",
+          "imagebitmap",
+          "imagebitmapoptions",
+          "dom-imagebitmapoptions-colorspaceconversion",
+          "dom-colorspaceconversion-none",
+          "colorspaceconversion"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "parallel-queue",
+          "live"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "dom-document-hidden"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "dom-navigator-canplaytype",
+          "htmlvideoelement",
+          "dom-media-networkstate",
+          "dom-media-network_empty",
+          "current-playback-position",
+          "htmlmediaelement",
+          "dom-media-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "detached",
+          "serializable",
+          "serialization-steps",
+          "deserialization-steps",
+          "transferable",
+          "transfer-steps",
+          "transfer-receiving-steps",
+          "structuredserialize",
+          "structureddeserialize"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task",
+          "event-loop",
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handler-event-type",
+          "global-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "concept-WorkerGlobalScope-owner-set"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "queue",
+          "queue-enqueue",
+          "list",
+          "map-exists",
+          "iteration-continue",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "struct",
+          "byte-sequence",
+          "ordered-map",
+          "list-is-empty"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type",
+          "valid-mime-type"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream",
+          "readablestream-get-a-reader",
+          "read-request",
+          "read-request-chunk-steps",
+          "read-request-close-steps",
+          "read-request-error-steps",
+          "is-readable-stream-disturbed",
+          "readablestream-locked"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "current-realm"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "SecureContext",
+          "idl-unsigned-long",
+          "idl-undefined",
+          "idl-promise",
+          "notsupportederror",
+          "exceptiondef-typeerror",
+          "invalidstateerror",
+          "dataerror",
+          "encodingerror",
+          "a-promise-rejected-with",
+          "idl-DOMException",
+          "aborterror",
+          "this",
+          "BufferSource",
+          "idl-boolean",
+          "idl-DOMString",
+          "EnforceRange",
+          "buffersource-detached",
+          "AllowSharedBufferSource",
+          "idl-unsigned-long-long",
+          "idl-double",
+          "idl-long-long",
+          "idl-sequence",
+          "idl-ArrayBuffer",
+          "datacloneerror",
+          "idl-float",
+          "exceptiondef-rangeerror",
+          "securityerror",
+          "Default",
+          "notreadableerror",
+          "idl-long",
+          "idl-unrestricted-float",
+          "the-given-value",
+          "quotaexceedederror"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {},
+      "https://www.w3.org/TR/SVG2/embedded.html": {
+        "anchors": [
+          "InterfaceSVGImageElement"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "anchors": [
+          "natural-dimensions",
+          "natural-width",
+          "natural-height"
+        ]
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "domrectreadonly",
+          "dictdef-domrectinit",
+          "dom-domrectinit-width",
+          "dom-domrectinit-height",
+          "dom-domrectreadonly-width",
+          "dom-domrectreadonly-height",
+          "dom-domrectreadonly-x",
+          "dom-domrectreadonly-y",
+          "dom-domrectinit-y",
+          "dom-domrectinit-x",
+          "domrect",
+          "dom-domrect-x",
+          "dom-domrect-y",
+          "dom-domrect-width",
+          "dom-domrect-height"
+        ]
+      },
+      "https://www.w3.org/TR/media-capabilities/": {
+        "anchors": [
+          "dom-mediacapabilities-decodinginfo",
+          "dom-mediacapabilitiesinfo-powerefficient"
+        ]
+      },
+      "https://www.w3.org/TR/media-source-2/": {
+        "anchors": [
+          "dom-mediasource-istypesupported"
+        ]
+      },
+      "https://www.w3.org/TR/mediastream-recording/": {
+        "anchors": [
+          "enumdef-bitratemode",
+          "dom-bitratemode-constant",
+          "dom-bitratemode-variable"
+        ]
+      },
+      "https://www.w3.org/TR/mst-content-hint/": {
+        "anchors": [
+          "video-content-hints"
+        ]
+      },
+      "https://www.w3.org/TR/webaudio/": {
+        "anchors": [
+          "audiobuffer",
+          "audioworklet"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc-svc/": {
+        "anchors": [
+          "scalabilitymodes*"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcrtpsender-getcapabilities",
+          "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
+        ]
+      }
+    }
   }
 }

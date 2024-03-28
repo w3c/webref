@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-03-27T01:22:30.205Z",
+  "date": "2024-03-28T01:26:41.004Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -257,6 +257,7 @@
       "web-otp",
       "web-preferences-api",
       "web-smart-card",
+      "device-attributes",
       "managed-configuration",
       "webcrypto-secure-curves",
       "webhid",
@@ -638,9 +639,9 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 1
+    "errors": 0
   },
-  "crawler": "reffy-14.8.3",
+  "crawler": "reffy-15.0.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -686,7 +687,8 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "27 March 2024"
+      "date": "28 March 2024",
+      "links": "links/av1-spec.json"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -1554,17 +1556,13 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
-        },
-        {
           "name": "Cascading Style Sheets (CSS) Working Group",
           "url": "https://www.w3.org/Style/CSS/"
         }
       ],
       "release": {
         "url": "https://www.w3.org/TR/compositing-1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -2189,7 +2187,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-anchor-position-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -3031,8 +3029,7 @@
       "css": "css/css-cascade-6.json",
       "dfns": "dfns/css-cascade-6.json",
       "headings": "headings/css-cascade-6.json",
-      "ids": "ids/css-cascade-6.json",
-      "error": "Error: Loading https://www.w3.org/TR/css-cascade-6/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 37)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-cascade-6.json"
     },
     {
       "url": "https://www.w3.org/TR/css-color-3/",
@@ -5781,10 +5778,6 @@
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
           "url": "https://www.w3.org/Style/CSS/"
-        },
-        {
-          "name": "Technical Architecture Group",
-          "url": "https://www.w3.org/2001/tag/"
         }
       ],
       "release": {
@@ -7514,10 +7507,6 @@
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
           "url": "https://www.w3.org/Style/CSS/"
-        },
-        {
-          "name": "Technical Architecture Group",
-          "url": "https://www.w3.org/2001/tag/"
         }
       ],
       "release": {
@@ -7721,7 +7710,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-values-3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -13947,7 +13936,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf-canon/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Proposed Recommendation",
         "filename": "Overview.html"
       },
       "title": "RDF Dataset Canonicalization",
@@ -19039,11 +19028,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 23 Mar 2024 00:52:03 GMT"
+        "lastModified": "Wed, 27 Mar 2024 20:35:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 March 2024",
-      "revision": "c187604b0964efdfe5486a760ad28374c672e00e",
+      "date": "27 March 2024",
+      "revision": "51e3223777f90c05a0154491e1761d6658d13c8d",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -19166,11 +19155,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 25 Mar 2024 13:05:56 GMT"
+        "lastModified": "Wed, 27 Mar 2024 07:54:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 March 2024",
-      "revision": "2f32429f0b60cf466093a95a9c97146d16a83d8f",
+      "date": "27 March 2024",
+      "revision": "edc9e521fb14e428bc4057839f8087612cfbd981",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",

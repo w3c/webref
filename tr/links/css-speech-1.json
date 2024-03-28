@@ -4,245 +4,334 @@
     "url": "https://www.w3.org/TR/css-speech-1/"
   },
   "links": {
-    "http://idpf.org/epub/30": {},
-    "http://microformats.org/wiki/rel-pronunciation": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "valdef-media-speech",
-        "valdef-media-all",
-        "valdef-media-screen",
-        "value-def-uri"
-      ],
-      "specShortname": "CSS22"
+    "rawlinks": {
+      "http://idpf.org/epub/30": {},
+      "http://microformats.org/wiki/rel-pronunciation": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "value-def-uri",
+          "valdef-media-all",
+          "valdef-media-screen",
+          "valdef-media-speech"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/510": {},
+      "https://github.com/w3c/csswg-drafts/issues/511": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-span-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://speced.github.io/bikeshed/": {},
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2012/CR-css3-speech-20120320/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "property-defs"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/aural.html": {},
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "style-sheet"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/": {},
+      "https://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/CSS22/": {},
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border"
+        ]
+      },
+      "https://www.w3.org/TR/css-box-3/": {
+        "anchors": [
+          "box-model"
+        ]
+      },
+      "https://www.w3.org/TR/css-box-4/": {
+        "anchors": [
+          "propdef-margin",
+          "propdef-padding"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "valdef-all-inherit"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://www.w3.org/TR/css-content-3/": {
+        "anchors": [
+          "propdef-content"
+        ]
+      },
+      "https://www.w3.org/TR/css-counter-styles-3/": {
+        "anchors": [
+          "armenian",
+          "decimal",
+          "decimal-leading-zero",
+          "georgian",
+          "lower-alpha",
+          "lower-greek",
+          "lower-latin",
+          "lower-roman",
+          "upper-alpha",
+          "upper-latin",
+          "upper-roman"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-display",
+          "valdef-display-none",
+          "propdef-visibility",
+          "valdef-visibility-visible"
+        ]
+      },
+      "https://www.w3.org/TR/css-fonts-4/": {
+        "anchors": [
+          "family-name-value",
+          "propdef-font-family"
+        ]
+      },
+      "https://www.w3.org/TR/css-lists-3/": {
+        "anchors": [
+          "propdef-list-style-image",
+          "propdef-list-style-type"
+        ]
+      },
+      "https://www.w3.org/TR/css-position-3/": {
+        "anchors": [
+          "propdef-left",
+          "propdef-right"
+        ]
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "anchors": [
+          "selectordef-after",
+          "selectordef-before"
+        ]
+      },
+      "https://www.w3.org/TR/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "value-defs"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "comb-all",
+          "mult-zero-plus",
+          "comb-comma",
+          "frequency-value",
+          "integer-value",
+          "number-value",
+          "percentage-value",
+          "time-value",
+          "mult-opt",
+          "css-css-identifier",
+          "css-wide-keywords",
+          "dimension",
+          "number",
+          "percentage",
+          "comb-one",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "valdef-media-aural"
+        ]
+      },
+      "https://www.w3.org/TR/pronunciation-lexicon/": {},
+      "https://www.w3.org/TR/speech-synthesis11/": {
+        "anchors": [
+          "edef_prosody",
+          "edef_say-as",
+          "edef_break",
+          "edef_audio",
+          "edef_voice",
+          "edef_emphasis",
+          "edef_sub"
+        ]
+      },
+      "https://www.w3.org/TR/ssml-sayas/": {},
+      "https://www.w3.org/TR/xml11/": {},
+      "https://www.w3.org/Voice/": {},
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {}
     },
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/510": {},
-    "https://github.com/w3c/csswg-drafts/issues/511": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-span-element"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://speced.github.io/bikeshed/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2012/CR-css3-speech-20120320/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/about.html": {
-      "anchors": [
-        "property-defs"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/aural.html": {},
-    "https://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "style-sheet"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/": {
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS22/": {
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://www.w3.org/TR/css-box-3/": {
-      "anchors": [
-        "box-model"
-      ],
-      "specShortname": "css-box-3"
-    },
-    "https://www.w3.org/TR/css-box-4/": {
-      "anchors": [
-        "propdef-padding",
-        "propdef-margin"
-      ],
-      "specShortname": "css-box-4"
-    },
-    "https://www.w3.org/TR/css-cascade-5/": {
-      "anchors": [
-        "valdef-all-inherit"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://www.w3.org/TR/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "applies-to",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-content-3/": {
-      "anchors": [
-        "propdef-content"
-      ],
-      "specShortname": "css-content-3"
-    },
-    "https://www.w3.org/TR/css-counter-styles-3/": {
-      "anchors": [
-        "decimal",
-        "decimal-leading-zero",
-        "lower-roman",
-        "upper-roman",
-        "georgian",
-        "armenian",
-        "lower-latin",
-        "lower-alpha",
-        "upper-latin",
-        "upper-alpha",
-        "lower-greek"
-      ],
-      "specShortname": "css-counter-styles-3"
-    },
-    "https://www.w3.org/TR/css-display-3/": {
-      "anchors": [
-        "propdef-display",
-        "valdef-display-none",
-        "propdef-visibility",
-        "valdef-visibility-visible"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://www.w3.org/TR/css-fonts-4/": {
-      "anchors": [
-        "propdef-font-family",
-        "family-name-value"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://www.w3.org/TR/css-lists-3/": {
-      "anchors": [
-        "propdef-list-style-type",
-        "propdef-list-style-image"
-      ],
-      "specShortname": "css-lists-3"
-    },
-    "https://www.w3.org/TR/css-position-3/": {
-      "anchors": [
-        "propdef-left",
-        "propdef-right"
-      ],
-      "specShortname": "css-position-3"
-    },
-    "https://www.w3.org/TR/css-pseudo-4/": {
-      "anchors": [
-        "selectordef-before",
-        "selectordef-after"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://www.w3.org/TR/css-pseudo/": {
-      "anchors": [
-        "generated-content"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://www.w3.org/TR/css-values-3/": {
-      "anchors": [
-        "value-defs"
-      ],
-      "specShortname": "css-values-3"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "css-wide-keywords",
-        "comb-one",
-        "comb-any",
-        "dimension",
-        "number-value",
-        "number",
-        "time-value",
-        "mult-opt",
-        "comb-comma",
-        "mult-zero-plus",
-        "integer-value",
-        "css-css-identifier",
-        "percentage-value",
-        "percentage",
-        "frequency-value",
-        "comb-all"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/cssom/": {
-      "anchors": [
-        "serializing-css-values"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/mediaqueries-5/": {
-      "anchors": [
-        "valdef-media-aural"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://www.w3.org/TR/pronunciation-lexicon/": {},
-    "https://www.w3.org/TR/speech-synthesis11/": {
-      "anchors": [
-        "edef_prosody",
-        "edef_say-as",
-        "edef_break",
-        "edef_audio",
-        "edef_voice",
-        "edef_emphasis",
-        "edef_sub"
-      ]
-    },
-    "https://www.w3.org/TR/ssml-sayas/": {},
-    "https://www.w3.org/TR/xml11/": {},
-    "https://www.w3.org/Voice/": {},
-    "https://www.w3.org/groups/wg/css": {},
-    "https://www.w3.org/groups/wg/css/ipr": {}
+    "autolinks": {
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "valdef-media-speech",
+          "valdef-media-all",
+          "valdef-media-screen",
+          "value-def-uri"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-span-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string"
+        ]
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border"
+        ]
+      },
+      "https://www.w3.org/TR/css-box-4/": {
+        "anchors": [
+          "propdef-padding",
+          "propdef-margin"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "valdef-all-inherit"
+        ]
+      },
+      "https://www.w3.org/TR/css-content-3/": {
+        "anchors": [
+          "propdef-content"
+        ]
+      },
+      "https://www.w3.org/TR/css-counter-styles-3/": {
+        "anchors": [
+          "decimal",
+          "decimal-leading-zero",
+          "lower-roman",
+          "upper-roman",
+          "georgian",
+          "armenian",
+          "lower-latin",
+          "lower-alpha",
+          "upper-latin",
+          "upper-alpha",
+          "lower-greek"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-display",
+          "valdef-display-none",
+          "propdef-visibility",
+          "valdef-visibility-visible"
+        ]
+      },
+      "https://www.w3.org/TR/css-fonts-4/": {
+        "anchors": [
+          "propdef-font-family",
+          "family-name-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-lists-3/": {
+        "anchors": [
+          "propdef-list-style-type",
+          "propdef-list-style-image"
+        ]
+      },
+      "https://www.w3.org/TR/css-position-3/": {
+        "anchors": [
+          "propdef-left",
+          "propdef-right"
+        ]
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "anchors": [
+          "selectordef-before",
+          "selectordef-after"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "css-wide-keywords",
+          "comb-one",
+          "comb-any",
+          "dimension",
+          "number-value",
+          "number",
+          "time-value",
+          "mult-opt",
+          "comb-comma",
+          "mult-zero-plus",
+          "integer-value",
+          "css-css-identifier",
+          "percentage-value",
+          "percentage",
+          "frequency-value",
+          "comb-all"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "valdef-media-aural"
+        ]
+      }
+    }
   }
 }

@@ -4,96 +4,157 @@
     "url": "https://www.w3.org/TR/csp-embedded-enforcement/"
   },
   "links": {
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-reflect",
-        "document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-reflect"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-header-list-append",
+          "concept-response-policy-list",
+          "concept-request-header-list",
+          "concept-request",
+          "concept-response",
+          "concept-response-url"
+        ]
+      },
+      "https://github.com/w3c/html/issues/584": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "browsing-context-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "nested-browsing-context",
+          "browsing-context-nested-through",
+          "process-a-navigate-fetch",
+          "process-a-navigate-response"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "htmliframeelement",
+          "the-iframe-element"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc3864": {},
+      "https://tools.ietf.org/html/rfc5234": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "local-scheme",
+          "network-scheme",
+          "concept-url-origin",
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp": {
+        "anchors": [
+          "content-security-policy-header-field",
+          "directive",
+          "directive-set",
+          "disposition",
+          "frame-ancestors",
+          "name",
+          "policy",
+          "serialized-csp",
+          "grammardef-serialized-policy",
+          "value"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/49309/status": {},
+      "https://www.w3.org/2011/webappsec/": {},
+      "https://www.w3.org/2015/Process-20150901/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "parse-serialized-policy"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-3/": {
+        "anchors": [
+          "origin"
+        ]
+      }
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-header-list-append",
-        "concept-request-header-list",
-        "concept-request",
-        "concept-response",
-        "concept-response-url",
-        "concept-response-policy-list"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/html/issues/584": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "browsing-context-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context",
-        "process-a-navigate-response",
-        "process-a-navigate-fetch",
-        "nested-browsing-context",
-        "browsing-context-nested-through"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-iframe-element",
-        "htmliframeelement"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc3864": {},
-    "https://tools.ietf.org/html/rfc5234": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-scheme",
-        "local-scheme",
-        "concept-url-origin",
-        "network-scheme"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/webappsec-csp": {
-      "anchors": [
-        "content-security-policy-header-field",
-        "grammardef-serialized-policy",
-        "serialized-csp",
-        "policy",
-        "disposition",
-        "directive-set",
-        "directive",
-        "name",
-        "value",
-        "frame-ancestors"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/2004/01/pp-impl/49309/status": {},
-    "https://www.w3.org/2011/webappsec/": {},
-    "https://www.w3.org/2015/Process-20150901/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "parse-serialized-policy"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/css-cascade-3/": {
-      "anchors": [
-        "origin"
-      ],
-      "specShortname": "css-cascade-3"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-reflect",
+          "document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-header-list-append",
+          "concept-request-header-list",
+          "concept-request",
+          "concept-response",
+          "concept-response-url",
+          "concept-response-policy-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "browsing-context-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context",
+          "process-a-navigate-response",
+          "process-a-navigate-fetch",
+          "nested-browsing-context",
+          "browsing-context-nested-through"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-iframe-element",
+          "htmliframeelement"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "local-scheme",
+          "concept-url-origin",
+          "network-scheme"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp": {
+        "anchors": [
+          "content-security-policy-header-field",
+          "grammardef-serialized-policy",
+          "serialized-csp",
+          "policy",
+          "disposition",
+          "directive-set",
+          "directive",
+          "name",
+          "value",
+          "frame-ancestors"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-3/": {
+        "anchors": [
+          "origin"
+        ]
+      }
     }
   }
 }

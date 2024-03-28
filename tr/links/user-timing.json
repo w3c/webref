@@ -4,97 +4,113 @@
     "url": "https://www.w3.org/TR/user-timing/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "structuredserialize",
-        "structureddeserialize"
-      ]
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "structuredserialize",
+          "structureddeserialize"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm",
+          "concept-current-everything",
+          "current-global-object",
+          "concept-global-object-realm",
+          "global-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "dfn-throw",
+          "exceptiondef-typeerror",
+          "this",
+          "Exposed",
+          "idl-DOMString",
+          "dfn-read-only",
+          "syntaxerror",
+          "invalidaccesserror"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/hr-time-2/": {
+        "anchors": [
+          "dfn-performance",
+          "dom-domhighrestimestamp",
+          "dom-performance-now",
+          "idl-def-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/navigation-timing-2/": {
+        "anchors": [
+          "dom-performancenavigationtiming"
+        ]
+      },
+      "https://www.w3.org/TR/navigation-timing/": {
+        "anchors": [
+          "performancetiming"
+        ]
+      },
+      "https://www.w3.org/TR/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dfn-queue-a-performanceentry",
+          "dfn-performance-entry-buffer",
+          "dfn-performance-timeline",
+          "performance-timeline",
+          "supportedentrytypes-attribute"
+        ]
+      },
+      "https://www.w3.org/TR/user-timing-2/": {},
+      "https://www.w3.org/groups/wg/webperf": {},
+      "https://www.w3.org/groups/wg/webperf/ipr": {}
     },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-realm",
-        "concept-current-everything",
-        "current-global-object",
-        "concept-global-object-realm",
-        "global-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string-is",
-        "map-exists",
-        "user-agent"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-any",
-        "idl-DOMString",
-        "idl-undefined",
-        "dfn-throw",
-        "exceptiondef-typeerror",
-        "this",
-        "Exposed",
-        "dfn-read-only",
-        "syntaxerror",
-        "invalidaccesserror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20231103/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/hr-time-2/": {
-      "anchors": [
-        "dfn-performance",
-        "dom-domhighrestimestamp",
-        "dom-performance-now",
-        "idl-def-domhighrestimestamp"
-      ]
-    },
-    "https://www.w3.org/TR/navigation-timing-2/": {
-      "anchors": [
-        "dom-performancenavigationtiming"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
-    "https://www.w3.org/TR/navigation-timing/": {
-      "anchors": [
-        "performancetiming"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
-    "https://www.w3.org/TR/performance-timeline/": {
-      "anchors": [
-        "dom-performanceentry",
-        "dfn-queue-a-performanceentry",
-        "dfn-performance-entry-buffer",
-        "dfn-performance-timeline",
-        "performance-timeline",
-        "supportedentrytypes-attribute"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://www.w3.org/TR/user-timing-2/": {},
-    "https://www.w3.org/groups/wg/webperf": {},
-    "https://www.w3.org/groups/wg/webperf/ipr": {}
+    "autolinks": {
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string-is",
+          "map-exists"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-any",
+          "idl-DOMString",
+          "idl-undefined"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-2/": {
+        "anchors": [
+          "dfn-performance",
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry"
+        ]
+      }
+    }
   }
 }

@@ -4,157 +4,264 @@
     "url": "https://www.w3.org/TR/payment-method-manifest/"
   },
   "links": {
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8",
-        "utf-8-decode"
-      ],
-      "specShortname": "encoding"
+    "rawlinks": {
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8",
+          "utf-8-decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response-body",
+          "concept-request-client",
+          "concept-request-credentials-mode",
+          "extract-header-list-values",
+          "concept-fetch",
+          "concept-get-reader",
+          "concept-response-header-list",
+          "concept-request-method",
+          "concept-request-mode",
+          "concept-network-error",
+          "ok-status",
+          "process-response",
+          "process-response-end-of-body",
+          "concept-read-all-bytes-from-readablestream",
+          "concept-request-redirect-mode",
+          "concept-request",
+          "concept-response",
+          "concept-response-status",
+          "concept-request-url",
+          "concept-response-url"
+        ]
+      },
+      "https://github.com/w3c/payment-method-manifest/issues": {},
+      "https://github.com/w3c/payment-method-manifest/issues/11": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "set-append",
+          "ascii-case-insensitive",
+          "iteration-break",
+          "byte-sequence",
+          "iteration-continue",
+          "list-iterate",
+          "struct-item",
+          "javascript-string",
+          "list",
+          "ordered-map",
+          "ordered-set",
+          "parse-json-from-bytes",
+          "scalar-value-string",
+          "map-set",
+          "list-size",
+          "struct"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-createlistfromarraylike",
+          "sec-get-o-p",
+          "sec-isarray",
+          "sec-ecmascript-data-types-and-values",
+          "realm"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8288": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "absolute-url-string",
+          "concept-basic-url-parser",
+          "concept-url-fragment",
+          "concept-url-origin",
+          "concept-url-password",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-username"
+        ]
+      },
+      "https://w3c.github.io/manifest/": {},
+      "https://w3c.github.io/payment-handler/": {},
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "dfn-payment-method-identifiers",
+          "dfn-standardized-payment-method-identifiers",
+          "dfn-url-based-payment-method-identifiers",
+          "dfn-validate-a-url-based-payment-method-identifier"
+        ]
+      },
+      "https://w3c.github.io/payment-method-manifest/": {},
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dom-paymentrequest",
+          "dfn-paymentrequest-paymentrequest",
+          "dfn-serializedmethoddata",
+          "dfn-payment-apps",
+          "dfn-payment-method"
+        ]
+      },
+      "https://www.w3.org/2001/tag/doc/promises-guide": {},
+      "https://www.w3.org/2001/tag/doc/promises-guide/": {
+        "anchors": [
+          "upon-fulfillment",
+          "upon-rejection"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/83744/status": {},
+      "https://www.w3.org/2017/Process-20170301/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Payments/WG/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-processed-manifest",
+          "dfn-obtaining-the-manifest",
+          "dfn-processing-a-manifest",
+          "dfn-manifest-url",
+          "dfn-manifest"
+        ]
+      }
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-method",
-        "concept-request-url",
-        "concept-request-client",
-        "concept-request-mode",
-        "concept-request-credentials-mode",
-        "concept-request-redirect-mode",
-        "concept-fetch",
-        "process-response",
-        "concept-response",
-        "concept-network-error",
-        "concept-response-status",
-        "ok-status",
-        "extract-header-list-values",
-        "concept-response-header-list",
-        "concept-response-url",
-        "process-response-end-of-body",
-        "concept-response-body",
-        "concept-get-reader",
-        "concept-read-all-bytes-from-readablestream"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/payment-method-manifest/issues": {},
-    "https://github.com/w3c/payment-method-manifest/issues/11": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin",
-        "ascii-serialisation-of-an-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-settings-object",
-        "environment-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "struct-item",
-        "list-iterate",
-        "iteration-continue",
-        "list",
-        "javascript-string",
-        "ordered-map",
-        "byte-sequence",
-        "list-append",
-        "ascii-case-insensitive",
-        "iteration-break",
-        "map-set",
-        "struct",
-        "ordered-set",
-        "parse-json-from-bytes",
-        "list-size",
-        "set-append",
-        "scalar-value-string"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "realm",
-        "sec-ecmascript-data-types-and-values",
-        "sec-get-o-p",
-        "sec-isarray",
-        "sec-createlistfromarraylike"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc8288": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "absolute-url-string",
-        "concept-url",
-        "concept-url-scheme",
-        "concept-url-origin",
-        "concept-basic-url-parser",
-        "concept-url-username",
-        "concept-url-password",
-        "concept-url-path",
-        "concept-url-query",
-        "concept-url-fragment"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/manifest/": {
-      "specShortname": "appmanifest"
-    },
-    "https://w3c.github.io/payment-handler/": {
-      "specShortname": "payment-handler"
-    },
-    "https://w3c.github.io/payment-method-id/": {
-      "anchors": [
-        "dfn-payment-method-identifiers",
-        "dfn-url-based-payment-method-identifiers",
-        "dfn-standardized-payment-method-identifiers",
-        "dfn-validate-a-url-based-payment-method-identifier"
-      ],
-      "specShortname": "payment-method-id"
-    },
-    "https://w3c.github.io/payment-method-manifest/": {
-      "specShortname": "payment-method-manifest"
-    },
-    "https://w3c.github.io/payment-request/": {
-      "anchors": [
-        "dfn-payment-method",
-        "dfn-payment-apps",
-        "dfn-paymentrequest-paymentrequest",
-        "dom-paymentrequest",
-        "dfn-serializedmethoddata"
-      ],
-      "specShortname": "payment-request-1.1"
-    },
-    "https://www.w3.org/2001/tag/doc/promises-guide": {
-      "specShortname": "promises-guide"
-    },
-    "https://www.w3.org/2001/tag/doc/promises-guide/": {
-      "anchors": [
-        "upon-fulfillment",
-        "upon-rejection"
-      ]
-    },
-    "https://www.w3.org/2004/01/pp-impl/83744/status": {},
-    "https://www.w3.org/2017/Process-20170301/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Payments/WG/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/appmanifest/": {
-      "anchors": [
-        "dfn-manifest-url",
-        "dfn-manifest",
-        "dfn-processing-a-manifest",
-        "dfn-processed-manifest",
-        "dfn-obtaining-the-manifest"
-      ],
-      "specShortname": "appmanifest"
+    "autolinks": {
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8",
+          "utf-8-decode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-method",
+          "concept-request-url",
+          "concept-request-client",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-request-redirect-mode",
+          "concept-fetch",
+          "process-response",
+          "concept-response",
+          "concept-network-error",
+          "concept-response-status",
+          "ok-status",
+          "extract-header-list-values",
+          "concept-response-header-list",
+          "concept-response-url",
+          "process-response-end-of-body",
+          "concept-response-body",
+          "concept-get-reader",
+          "concept-read-all-bytes-from-readablestream"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "environment-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "struct-item",
+          "list-iterate",
+          "iteration-continue",
+          "list",
+          "javascript-string",
+          "ordered-map",
+          "byte-sequence",
+          "list-append",
+          "ascii-case-insensitive",
+          "iteration-break",
+          "map-set",
+          "struct",
+          "ordered-set",
+          "parse-json-from-bytes",
+          "list-size",
+          "set-append",
+          "scalar-value-string"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "realm",
+          "sec-ecmascript-data-types-and-values",
+          "sec-get-o-p",
+          "sec-isarray",
+          "sec-createlistfromarraylike"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "absolute-url-string",
+          "concept-url",
+          "concept-url-scheme",
+          "concept-url-origin",
+          "concept-basic-url-parser",
+          "concept-url-username",
+          "concept-url-password",
+          "concept-url-path",
+          "concept-url-query",
+          "concept-url-fragment"
+        ]
+      },
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "dfn-payment-method-identifiers",
+          "dfn-url-based-payment-method-identifiers",
+          "dfn-standardized-payment-method-identifiers",
+          "dfn-validate-a-url-based-payment-method-identifier"
+        ]
+      },
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dfn-payment-method",
+          "dfn-payment-apps",
+          "dfn-paymentrequest-paymentrequest",
+          "dom-paymentrequest",
+          "dfn-serializedmethoddata"
+        ]
+      },
+      "https://www.w3.org/2001/tag/doc/promises-guide/": {
+        "anchors": [
+          "upon-fulfillment",
+          "upon-rejection"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-manifest-url",
+          "dfn-manifest",
+          "dfn-processing-a-manifest",
+          "dfn-processed-manifest",
+          "dfn-obtaining-the-manifest"
+        ]
+      }
     }
   }
 }

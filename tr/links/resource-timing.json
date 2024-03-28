@@ -4,279 +4,285 @@
     "url": "https://www.w3.org/TR/resource-timing/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-event-fire"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-status",
+          "record-connection-timing-info",
+          "response-body-info",
+          "dom-requestmode-no-cors",
+          "concept-filtered-response-opaque",
+          "concept-tao-check",
+          "origin-header",
+          "http-new-header-syntax",
+          "tao-check"
+        ]
+      },
+      "https://github.com/w3c/resource-timing/issues/221": {},
+      "https://github.com/w3c/resource-timing/issues/222": {},
+      "https://github.com/w3c/resource-timing/issues/223": {},
+      "https://github.com/w3c/resource-timing/issues/238": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "concept-script",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "queue-a-task",
+          "global-object"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7230.html": {
+        "anchors": [
+          "section-7"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://tools.ietf.org/html/rfc2397": {},
+      "https://tools.ietf.org/html/rfc3864": {
+        "anchors": [
+          "section-4.2.2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7234": {
+        "anchors": [
+          "section-4.3.4"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dfn-performance-timeline-task-source"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "Default",
+          "default-tojson-operation",
+          "this",
+          "es-environment"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc2397": {},
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/": {},
+      "https://www.w3.org/2023/Process-20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/SVG11/struct.html": {
+        "anchors": [
+          "SVGElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/embedded.html": {
+        "anchors": [
+          "ImageElement"
+        ]
+      },
+      "https://www.w3.org/TR/beacon/": {},
+      "https://www.w3.org/TR/css-values-3/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "funcdef-url"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-2/": {},
+      "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/navigation-timing-2/": {
+        "anchors": [
+          "dom-PerformanceNavigationTiming-startTime"
+        ]
+      },
+      "https://www.w3.org/TR/performance-timeline/": {
+        "anchors": [
+          "performance-timeline",
+          "dom-performance",
+          "dfn-performance-entry-buffer",
+          "dfn-queue-a-performanceentry"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webperf": {},
+      "https://www.w3.org/groups/wg/webperf/ipr": {},
+      "https://xhr.spec.whatwg.org/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "http-scheme",
-        "concept-request",
-        "concept-request-client",
-        "fetch-timing-info",
-        "response-body-info",
-        "concept-status",
-        "navigation-request",
-        "dom-global-fetch",
-        "fetch-timing-info-final-service-worker-start-time",
-        "concept-http-fetch",
-        "fetch-timing-info-redirect-start-time",
-        "concept-http-redirect-fetch",
-        "fetch-timing-info-redirect-end-time",
-        "fetch-timing-info-post-redirect-start-time",
-        "fetch-timing-info-final-connection-timing-info",
-        "connection-timing-info-domain-lookup-start-time",
-        "record-connection-timing-info",
-        "connection-timing-info-domain-lookup-end-time",
-        "connection-timing-info-connection-start-time",
-        "connection-timing-info-connection-end-time",
-        "connection-timing-info-secure-connection-start-time",
-        "connection-timing-info-alpn-negotiated-protocol",
-        "fetch-timing-info-final-network-request-start-time",
-        "fetch-timing-info-first-interim-network-response-start-time",
-        "fetch-timing-info-final-network-response-start-time",
-        "fetch-timing-info-end-time",
-        "fetch-timing-info-encoded-body-size",
-        "fetch-timing-info-decoded-body-size",
-        "dom-requestmode-no-cors",
-        "concept-filtered-response-opaque",
-        "response-body-info-content-type",
-        "fetch-timing-info-render-blocking",
-        "concept-tao-check",
-        "create-an-opaque-timing-info",
-        "origin-header",
-        "http-new-header-syntax",
-        "tao-check",
-        "fetch-timing-info-start-time"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/resource-timing/issues/221": {},
-    "https://github.com/w3c/resource-timing/issues/222": {},
-    "https://github.com/w3c/resource-timing/issues/223": {},
-    "https://github.com/w3c/resource-timing/issues/238": {},
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "concept-script",
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element",
-        "attr-img-src",
-        "attr-img-srcset"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element",
-        "the-object-element",
-        "the-embed-element",
-        "attr-iframe-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/input.html": {
-      "anchors": [
-        "the-input-element",
-        "attr-input-type",
-        "attr-input-type-image-keyword"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "link-type-stylesheet",
-        "attr-hyperlink-download",
-        "ping"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "video",
-        "attr-video-poster",
-        "attr-media-src",
-        "audio",
-        "the-track-element",
-        "attr-track-src"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/obsolete.html": {
-      "anchors": [
-        "frame"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-link-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/server-sent-events.html": {
-      "anchors": [
-        "eventsource"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-a-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-settings-object-global",
-        "module-script",
-        "concept-relevant-global",
-        "eventhandler",
-        "queue-a-task",
-        "global-object",
-        "concept-global-object-realm"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "worker"
-      ]
-    },
-    "https://httpwg.org/specs/rfc7230.html": {
-      "anchors": [
-        "section-7"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "isomorphic-decode",
-        "string"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tools.ietf.org/html/rfc2397": {},
-    "https://tools.ietf.org/html/rfc3864": {
-      "anchors": [
-        "section-4.2.2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7234": {
-      "anchors": [
-        "section-4.3.4"
-      ]
-    },
-    "https://w3c.github.io/performance-timeline/": {
-      "anchors": [
-        "dfn-performance-timeline-task-source"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString",
-        "idl-ByteString",
-        "idl-unsigned-long-long",
-        "idl-unsigned-short",
-        "Default",
-        "idl-object",
-        "default-tojson-operation",
-        "this",
-        "es-environment",
-        "idl-undefined",
-        "idl-unsigned-long"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc2397": {
-      "specShortname": "rfc2397"
-    },
-    "https://www.rfc-editor.org/rfc/rfc5234": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/": {},
-    "https://www.w3.org/2023/Process-20231103/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/struct.html": {
-      "anchors": [
-        "SVGElement"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/embedded.html": {
-      "anchors": [
-        "ImageElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/beacon/": {
-      "anchors": [
-        "dom-navigator-sendbeacon"
-      ],
-      "specShortname": "beacon"
-    },
-    "https://www.w3.org/TR/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "funcdef-url"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/hr-time-2/": {},
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-relative-high-resolution-coarse-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/navigation-timing-2/": {
-      "anchors": [
-        "dom-PerformanceNavigationTiming-startTime"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
-    "https://www.w3.org/TR/performance-timeline/": {
-      "anchors": [
-        "performance-timeline",
-        "dom-performanceentry",
-        "dom-performanceobserver-supportedentrytypes",
-        "dom-performance",
-        "dfn-performance-entry-buffer",
-        "dfn-queue-a-performanceentry",
-        "dfn-initialize-a-performanceentry"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://www.w3.org/groups/wg/webperf": {},
-    "https://www.w3.org/groups/wg/webperf/ipr": {},
-    "https://xhr.spec.whatwg.org/": {
-      "anchors": [
-        "xmlhttprequest"
-      ],
-      "specShortname": "xhr"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "http-scheme",
+          "concept-request",
+          "concept-request-client",
+          "fetch-timing-info",
+          "response-body-info",
+          "navigation-request",
+          "dom-global-fetch",
+          "fetch-timing-info-final-service-worker-start-time",
+          "concept-http-fetch",
+          "fetch-timing-info-redirect-start-time",
+          "concept-http-redirect-fetch",
+          "fetch-timing-info-redirect-end-time",
+          "fetch-timing-info-post-redirect-start-time",
+          "fetch-timing-info-final-connection-timing-info",
+          "connection-timing-info-domain-lookup-start-time",
+          "connection-timing-info-domain-lookup-end-time",
+          "connection-timing-info-connection-start-time",
+          "connection-timing-info-connection-end-time",
+          "connection-timing-info-secure-connection-start-time",
+          "connection-timing-info-alpn-negotiated-protocol",
+          "fetch-timing-info-final-network-request-start-time",
+          "fetch-timing-info-first-interim-network-response-start-time",
+          "fetch-timing-info-final-network-response-start-time",
+          "fetch-timing-info-end-time",
+          "fetch-timing-info-encoded-body-size",
+          "fetch-timing-info-decoded-body-size",
+          "response-body-info-content-type",
+          "fetch-timing-info-render-blocking",
+          "create-an-opaque-timing-info",
+          "fetch-timing-info-start-time"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "attr-img-src",
+          "attr-img-srcset"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "the-object-element",
+          "the-embed-element",
+          "attr-iframe-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "the-input-element",
+          "attr-input-type",
+          "attr-input-type-image-keyword"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "link-type-stylesheet",
+          "attr-hyperlink-download",
+          "ping"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "video",
+          "attr-video-poster",
+          "attr-media-src",
+          "audio",
+          "the-track-element",
+          "attr-track-src"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/obsolete.html": {
+        "anchors": [
+          "frame"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-link-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/server-sent-events.html": {
+        "anchors": [
+          "eventsource"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-settings-object-global",
+          "module-script",
+          "eventhandler",
+          "concept-global-object-realm",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "isomorphic-decode",
+          "string"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "idl-ByteString",
+          "idl-unsigned-long-long",
+          "idl-unsigned-short",
+          "idl-object",
+          "idl-undefined",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/TR/beacon/": {
+        "anchors": [
+          "dom-navigator-sendbeacon"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-relative-high-resolution-coarse-time"
+        ]
+      },
+      "https://www.w3.org/TR/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dom-performanceobserver-supportedentrytypes",
+          "dfn-initialize-a-performanceentry"
+        ]
+      },
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest"
+        ]
+      }
     }
   }
 }

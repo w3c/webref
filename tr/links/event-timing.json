@@ -4,223 +4,364 @@
     "url": "https://www.w3.org/TR/event-timing/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/EventCounts": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Performance/eventCounts": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/cancelable": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/interactionId": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/processingEnd": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/processingStart": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/target": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/toJSON": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "dom-event-timestamp",
-        "dom-event-istrusted",
-        "dom-event-type",
-        "event",
-        "concept-event-dispatch",
-        "node",
-        "document",
-        "dom-event-cancelable",
-        "dom-event-target",
-        "retarget",
-        "concept-tree-root"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/EventCounts": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Performance/eventCounts": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/cancelable": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/interactionId": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/processingEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/processingStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/target": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEventTiming/toJSON": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "event",
+          "node",
+          "dom-event-cancelable",
+          "concept-event-dispatch",
+          "dom-event-istrusted",
+          "retarget",
+          "concept-tree-root",
+          "dom-event-target",
+          "dom-event-timestamp",
+          "dom-event-type"
+        ]
+      },
+      "https://github.com/WICG/event-timing/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "event-dnd-drag",
+          "event-dnd-dragend",
+          "event-dnd-dragenter",
+          "event-dnd-dragleave",
+          "event-dnd-dragover",
+          "event-dnd-dragstart",
+          "event-dnd-drop"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "update-the-rendering"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "map-clear",
+          "map-exists",
+          "map-getting-the-values",
+          "ordered-map",
+          "map-remove",
+          "ordered-set",
+          "map-set"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "idl-def-domhighrestimestamp",
+          "dom-performance",
+          "dfn-current-high-resolution-time",
+          "dom-performance-now"
+        ]
+      },
+      "https://w3c.github.io/paint-timing/": {
+        "anchors": [
+          "mark-paint-timing"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dom-performanceobserverinit-buffered",
+          "the-performanceentry-interface",
+          "the-performanceobserver-interface",
+          "performanceobserverinit-dictionary",
+          "dom-performanceentry-duration",
+          "dom-performanceentry-entrytype",
+          "dom-performanceentry-name",
+          "dfn-queue-a-performanceentry",
+          "dom-performanceentry-starttime",
+          "supportedentrytypes-attribute"
+        ]
+      },
+      "https://w3c.github.io/pointerevents/": {
+        "anchors": [
+          "the-gotpointercapture-event",
+          "the-lostpointercapture-event",
+          "the-pointercancel-event",
+          "the-pointerdown-event",
+          "the-pointerenter-event",
+          "the-pointerleave-event",
+          "the-pointermove-event",
+          "the-pointerout-event",
+          "the-pointerover-event",
+          "the-pointerrawupdate-event",
+          "the-pointerup-event"
+        ]
+      },
+      "https://w3c.github.io/timing-entrytypes-registry/": {
+        "anchors": [
+          "dfn-should-add-entry"
+        ]
+      },
+      "https://w3c.github.io/touch-events/": {
+        "anchors": [
+          "the-touchcancel-event",
+          "the-touchend-event",
+          "the-touchmove-event",
+          "the-touchstart-event"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "event-type-auxclick",
+          "event-type-beforeinput",
+          "event-type-click",
+          "event-type-compositionend",
+          "event-type-compositionstart",
+          "event-type-compositionupdate",
+          "event-type-contextmenu",
+          "event-type-dblclick",
+          "event-type-input",
+          "event-type-keydown",
+          "event-type-keypress",
+          "event-type-keyup",
+          "event-type-mousedown",
+          "event-type-mouseenter",
+          "event-type-mouseleave",
+          "event-type-mousemove",
+          "event-type-mouseout",
+          "event-type-mouseover",
+          "event-type-mouseup",
+          "event-type-wheel"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Default",
+          "Exposed",
+          "SameObject",
+          "idl-boolean",
+          "implements",
+          "idl-object",
+          "this",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://wicg.github.io/element-timing/": {
+        "anchors": [
+          "get-an-element"
+        ]
+      },
+      "https://www.nngroup.com/articles/response-times-3-important-limits/": {},
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/hr-time-2/": {},
+      "https://www.w3.org/TR/paint-timing/": {},
+      "https://www.w3.org/TR/performance-timeline/": {},
+      "https://www.w3.org/TR/pointerevents/": {},
+      "https://www.w3.org/TR/pointerevents3/": {
+        "anchors": [
+          "dom-pointerevent-pointerid"
+        ]
+      },
+      "https://www.w3.org/TR/touch-events/": {},
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "inputevent",
+          "dom-inputevent-iscomposing",
+          "dom-keyboardevent-iscomposing",
+          "dom-keyboardevent-keycode"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webperf": {},
+      "https://www.w3.org/groups/wg/webperf/ipr": {}
     },
-    "https://github.com/WICG/event-timing/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "event-dnd-dragstart",
-        "event-dnd-dragend",
-        "event-dnd-dragenter",
-        "event-dnd-dragleave",
-        "event-dnd-dragover",
-        "event-dnd-drop",
-        "event-dnd-drag"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window",
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "update-the-rendering",
-        "concept-relevant-realm"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-map",
-        "ordered-set",
-        "map-remove",
-        "map-getting-the-values",
-        "map-clear",
-        "map-exists",
-        "map-set"
-      ],
-      "specShortname": "infra"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dom-performance-now",
-        "idl-def-domhighrestimestamp",
-        "dom-performance",
-        "dfn-current-high-resolution-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/paint-timing/": {
-      "anchors": [
-        "mark-paint-timing"
-      ],
-      "specShortname": "paint-timing"
-    },
-    "https://w3c.github.io/performance-timeline/": {
-      "anchors": [
-        "dom-performanceentry-starttime",
-        "dom-performanceentry-duration",
-        "the-performanceobserver-interface",
-        "dom-performanceobserverinit-buffered",
-        "the-performanceentry-interface",
-        "supportedentrytypes-attribute",
-        "dom-performanceentry-name",
-        "dom-performanceentry-entrytype",
-        "performanceobserverinit-dictionary",
-        "dfn-queue-a-performanceentry"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://w3c.github.io/pointerevents/": {
-      "anchors": [
-        "the-pointerover-event",
-        "the-pointerenter-event",
-        "the-pointerdown-event",
-        "the-pointerup-event",
-        "the-pointercancel-event",
-        "the-pointerout-event",
-        "the-pointerleave-event",
-        "the-gotpointercapture-event",
-        "the-lostpointercapture-event",
-        "the-pointermove-event",
-        "the-pointerrawupdate-event"
-      ],
-      "specShortname": "pointerevents3"
-    },
-    "https://w3c.github.io/timing-entrytypes-registry/": {
-      "anchors": [
-        "dfn-should-add-entry"
-      ],
-      "specShortname": "timing-entrytypes-registry"
-    },
-    "https://w3c.github.io/touch-events/": {
-      "anchors": [
-        "the-touchstart-event",
-        "the-touchend-event",
-        "the-touchcancel-event",
-        "the-touchmove-event"
-      ],
-      "specShortname": "touch-events"
-    },
-    "https://w3c.github.io/uievents/": {
-      "anchors": [
-        "event-type-auxclick",
-        "event-type-click",
-        "event-type-contextmenu",
-        "event-type-dblclick",
-        "event-type-mousedown",
-        "event-type-mouseenter",
-        "event-type-mouseleave",
-        "event-type-mouseout",
-        "event-type-mouseover",
-        "event-type-mouseup",
-        "event-type-keydown",
-        "event-type-keypress",
-        "event-type-keyup",
-        "event-type-beforeinput",
-        "event-type-input",
-        "event-type-compositionstart",
-        "event-type-compositionupdate",
-        "event-type-compositionend",
-        "event-type-mousemove",
-        "event-type-wheel"
-      ],
-      "specShortname": "uievents"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-boolean",
-        "idl-unsigned-long-long",
-        "Default",
-        "idl-object",
-        "this",
-        "idl-DOMString",
-        "SameObject",
-        "implements"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/element-timing/": {
-      "anchors": [
-        "get-an-element"
-      ],
-      "specShortname": "element-timing"
-    },
-    "https://www.nngroup.com/articles/response-times-3-important-limits/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/hr-time-2/": {},
-    "https://www.w3.org/TR/paint-timing/": {
-      "specShortname": "paint-timing"
-    },
-    "https://www.w3.org/TR/performance-timeline/": {
-      "specShortname": "performance-timeline"
-    },
-    "https://www.w3.org/TR/pointerevents/": {
-      "specShortname": "pointerevents3"
-    },
-    "https://www.w3.org/TR/pointerevents3/": {
-      "anchors": [
-        "dom-pointerevent-pointerid"
-      ],
-      "specShortname": "pointerevents3"
-    },
-    "https://www.w3.org/TR/touch-events/": {
-      "specShortname": "touch-events"
-    },
-    "https://www.w3.org/TR/uievents/": {
-      "anchors": [
-        "dom-keyboardevent-iscomposing",
-        "dom-keyboardevent-keycode",
-        "inputevent",
-        "dom-inputevent-iscomposing"
-      ],
-      "specShortname": "uievents"
-    },
-    "https://www.w3.org/groups/wg/webperf": {},
-    "https://www.w3.org/groups/wg/webperf/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-event-timestamp",
+          "dom-event-istrusted",
+          "dom-event-type",
+          "event",
+          "concept-event-dispatch",
+          "node",
+          "document",
+          "dom-event-cancelable",
+          "dom-event-target",
+          "retarget",
+          "concept-tree-root"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "event-dnd-dragstart",
+          "event-dnd-dragend",
+          "event-dnd-dragenter",
+          "event-dnd-dragleave",
+          "event-dnd-dragover",
+          "event-dnd-drop",
+          "event-dnd-drag"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "update-the-rendering",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "ordered-set",
+          "map-remove",
+          "map-getting-the-values",
+          "map-clear",
+          "map-exists",
+          "map-set"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-performance-now",
+          "idl-def-domhighrestimestamp",
+          "dom-performance",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/paint-timing/": {
+        "anchors": [
+          "mark-paint-timing"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry-starttime",
+          "dom-performanceentry-duration",
+          "the-performanceobserver-interface",
+          "the-performanceentry-interface",
+          "supportedentrytypes-attribute",
+          "dom-performanceentry-name",
+          "dom-performanceentry-entrytype",
+          "performanceobserverinit-dictionary",
+          "dfn-queue-a-performanceentry"
+        ]
+      },
+      "https://w3c.github.io/pointerevents/": {
+        "anchors": [
+          "the-pointerover-event",
+          "the-pointerenter-event",
+          "the-pointerdown-event",
+          "the-pointerup-event",
+          "the-pointercancel-event",
+          "the-pointerout-event",
+          "the-pointerleave-event",
+          "the-gotpointercapture-event",
+          "the-lostpointercapture-event",
+          "the-pointermove-event",
+          "the-pointerrawupdate-event"
+        ]
+      },
+      "https://w3c.github.io/touch-events/": {
+        "anchors": [
+          "the-touchstart-event",
+          "the-touchend-event",
+          "the-touchcancel-event",
+          "the-touchmove-event"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "event-type-auxclick",
+          "event-type-click",
+          "event-type-contextmenu",
+          "event-type-dblclick",
+          "event-type-mousedown",
+          "event-type-mouseenter",
+          "event-type-mouseleave",
+          "event-type-mouseout",
+          "event-type-mouseover",
+          "event-type-mouseup",
+          "event-type-keydown",
+          "event-type-keypress",
+          "event-type-keyup",
+          "event-type-beforeinput",
+          "event-type-input",
+          "event-type-compositionstart",
+          "event-type-compositionupdate",
+          "event-type-compositionend",
+          "event-type-mousemove",
+          "event-type-wheel"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-boolean",
+          "idl-unsigned-long-long",
+          "Default",
+          "idl-object",
+          "this",
+          "idl-DOMString",
+          "SameObject",
+          "implements"
+        ]
+      },
+      "https://wicg.github.io/element-timing/": {
+        "anchors": [
+          "get-an-element"
+        ]
+      },
+      "https://www.w3.org/TR/pointerevents3/": {
+        "anchors": [
+          "dom-pointerevent-pointerid"
+        ]
+      },
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "dom-keyboardevent-iscomposing",
+          "dom-keyboardevent-keycode",
+          "inputevent",
+          "dom-inputevent-iscomposing"
+        ]
+      }
+    }
   }
 }

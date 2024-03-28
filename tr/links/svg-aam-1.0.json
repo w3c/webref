@@ -4,384 +4,328 @@
     "url": "https://www.w3.org/TR/svg-aam-1.0/"
   },
   "links": {
-    "http://accessibility.linuxfoundation.org/a11yspecs/ia2/docs/html/": {},
-    "http://www.rfc-editor.org/rfc/rfc2119.txt": {},
-    "http://www.w3.org/TR/2012/WD-css-masking-20121115/": {
-      "anchors": [
-        "ClipPathElement",
-        "MaskElement"
-      ]
+    "rawlinks": {
+      "http://accessibility.linuxfoundation.org/a11yspecs/ia2/docs/html/": {},
+      "http://www.rfc-editor.org/rfc/rfc2119.txt": {},
+      "https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility": {},
+      "https://developer.apple.com/documentation/appkit/nsaccessibility": {},
+      "https://developer.gnome.org/atk/2.10/": {},
+      "https://developer.gnome.org/atk/stable/": {},
+      "https://developer.gnome.org/atk/unstable/": {},
+      "https://developer.gnome.org/libatspi/2.10/": {},
+      "https://developer.gnome.org/libatspi/stable/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-shadow-tree",
+          "concept-documentfragment-host"
+        ]
+      },
+      "https://github.com/w3c/core-aam/issues/3": {},
+      "https://github.com/w3c/core-aam/issues/4": {},
+      "https://github.com/w3c/issues/2": {},
+      "https://github.com/w3c/issues/6": {},
+      "https://github.com/w3c/issues/7": {},
+      "https://github.com/w3c/issues/8": {},
+      "https://github.com/w3c/svg-aam/issues": {},
+      "https://github.com/w3c/svg-aam/issues/": {},
+      "https://github.com/w3c/svg-aam/issues/2": {},
+      "https://github.com/w3c/svg-aam/issues/6": {},
+      "https://github.com/w3c/svg-aam/issues/7": {},
+      "https://github.com/w3c/svg-aam/issues/8": {},
+      "https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+ARIA+WG+Input%22": {},
+      "https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22": {},
+      "https://lists.w3.org/Archives/Public/www-svg/": {},
+      "https://msdn.microsoft.com/en-us/library/dd373608%28v=VS.85%29.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx": {},
+      "https://msdn.microsoft.com/en-us/library/ms697707.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx": {},
+      "https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx": {},
+      "https://svgwg.org/specs/animations/": {
+        "anchors": [
+          "AnimateElement",
+          "AnimateMotionElement",
+          "AnimateTransformElement",
+          "DiscardElement",
+          "MPathElement",
+          "SetElement"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/interact.html": {
+        "anchors": [
+          "PointerEventsProperty",
+          "TermFocusable",
+          "Focus"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/linking.html": {
+        "anchors": [
+          "XLinkRefAttrs",
+          "LinksIntoSVG"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/render.html": {
+        "anchors": [
+          "VisibilityControl",
+          "TermRenderedElement"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://w3c.github.io/accname/": {
+        "anchors": [
+          "mapping_additional_nd_te",
+          "step2A",
+          "step2D",
+          "step2F",
+          "step2F.ii",
+          "step2H"
+        ]
+      },
+      "https://w3c.github.io/aria/": {
+        "anchors": [
+          "none",
+          "presentation",
+          "aria-hidden",
+          "childrenArePresentational",
+          "button",
+          "img",
+          "conflict_resolution_presentation_none",
+          "aria-label",
+          "aria-roledescription",
+          "aria-labelledby",
+          "aria-describedby",
+          "aria-activedescendant",
+          "aria-controls",
+          "aria-flowto",
+          "aria-owns"
+        ]
+      },
+      "https://w3c.github.io/core-aam/": {
+        "anchors": [
+          "keyboard-focus",
+          "mapping_general",
+          "exclude_elements2",
+          "statePropertyMappingGeneralRules",
+          "include_elements",
+          "mapping_role",
+          "mapping_conflicts",
+          "mapping_nodirect",
+          "mapping_role_table",
+          "role-map-link",
+          "role-map-application",
+          "role-map-group",
+          "role-map-document",
+          "role-map-img",
+          "mapping_state-property",
+          "mapping_additional_widget-value",
+          "mapping_additional_relations",
+          "mapping_additional_position",
+          "mapping_events_visibility",
+          "mapping_actions",
+          "mapping_events",
+          "document-handling"
+        ]
+      },
+      "https://w3c.github.io/graphics-aam/": {
+        "anchors": [
+          "mapping_role_table",
+          "role-map-graphics-symbol",
+          "role-map-graphics-document",
+          "role-map-graphics-object"
+        ]
+      },
+      "https://w3c.github.io/html-aam/": {
+        "anchors": [
+          "el-audio",
+          "el-canvas",
+          "el-iframe",
+          "el-source",
+          "el-p",
+          "el-track",
+          "el-video",
+          "html-attribute-state-and-property-mappings"
+        ]
+      },
+      "https://w3c.github.io/svg-aam/": {},
+      "https://wiki.linuxfoundation.org/accessibility/iaccessible2/start": {},
+      "https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2": {},
+      "https://www.w3.org/2004/01/pp-impl/19480/status": {},
+      "https://www.w3.org/2018/Process-20180201/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Graphics/SVG/WG/": {},
+      "https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2012/WD-css-masking-20121115/": {
+        "anchors": [
+          "ClipPathElement",
+          "MaskElement"
+        ]
+      },
+      "https://www.w3.org/TR/2012/WD-filter-effects-20121025/": {
+        "anchors": [
+          "feBlendElement",
+          "feColorMatrixElement",
+          "feComponentTransferElement",
+          "feCompositeElement",
+          "feConvolveMatrixElement",
+          "feDiffuseLightingElement",
+          "feDisplacementMapElement",
+          "feDistantLightElement",
+          "feDropShadowElement",
+          "feFloodElement",
+          "feFuncAElement",
+          "feFuncBElement",
+          "feFuncGElement",
+          "feFuncRElement",
+          "feGaussianBlurElement",
+          "feImageElement",
+          "feMergeElement",
+          "femergenode",
+          "femorphology",
+          "feoffset",
+          "fePointLightElement",
+          "fespecularlighting",
+          "feSpotLightElement",
+          "fetile",
+          "feturbulence",
+          "filter"
+        ]
+      },
+      "https://www.w3.org/TR/SVG/": {},
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/embedded.html": {
+        "anchors": [
+          "ForeignObjectElement",
+          "ImageElement",
+          "HTMLElements"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/interact.html": {
+        "anchors": [
+          "CursorElement",
+          "ScriptElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/linking.html": {
+        "anchors": [
+          "AElement",
+          "ViewElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/painting.html": {
+        "anchors": [
+          "MarkerElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/paths.html": {
+        "anchors": [
+          "PathElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/pservers.html": {
+        "anchors": [
+          "HatchElement",
+          "HatchpathElement",
+          "LinearGradientElement",
+          "MeshElement",
+          "MeshpatchElement",
+          "MeshrowElement",
+          "PatternElement",
+          "RadialGradientElement",
+          "SolidcolorElement",
+          "StopElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/render.html": {
+        "anchors": [
+          "TermNeverRenderedElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/shapes.html": {
+        "anchors": [
+          "CircleElement",
+          "EllipseElement",
+          "LineElement",
+          "PolygonElement",
+          "PolylineElement",
+          "RectElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/struct.html": {
+        "anchors": [
+          "TitleElement",
+          "DescElement",
+          "SVGElementTabindexAttribute",
+          "DefsElement",
+          "GElement",
+          "MetadataElement",
+          "SVGElement",
+          "SwitchElement",
+          "SymbolElement",
+          "UseElement",
+          "TermUseElementShadowTree",
+          "TermElementInstance"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/styling.html": {
+        "anchors": [
+          "StyleElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/text.html": {
+        "anchors": [
+          "TextElement",
+          "TextPathElement"
+        ]
+      },
+      "https://www.w3.org/TR/WCAG20/": {
+        "anchors": [
+          "keyboard-operation"
+        ]
+      },
+      "https://www.w3.org/TR/accname-1.1/": {},
+      "https://www.w3.org/TR/core-aam-1.1/": {},
+      "https://www.w3.org/TR/css-cascade-3/": {},
+      "https://www.w3.org/TR/graphics-aam-1.0/": {},
+      "https://www.w3.org/TR/graphics-aria-1.0/": {},
+      "https://www.w3.org/TR/html-aam-1.0/": {},
+      "https://www.w3.org/TR/html5/embedded-content-0.html": {
+        "anchors": [
+          "the-audio-element",
+          "the-iframe-element",
+          "the-source-element",
+          "the-track-element",
+          "the-video-element"
+        ]
+      },
+      "https://www.w3.org/TR/html5/scripting-1.html": {
+        "anchors": [
+          "the-canvas-element"
+        ]
+      },
+      "https://www.w3.org/TR/wai-aria-1.1/": {
+        "anchors": [
+          "aria-multiline",
+          "aria-activedescendant",
+          "aria-valuenow",
+          "aria-valuetext",
+          "statevsprop"
+        ]
+      },
+      "https://www.w3.org/TR/wai-aria-practices-1.1/": {},
+      "https://www.w3.org/TR/wai-aria/": {},
+      "https://www.w3.org/WAI/ARIA/": {},
+      "https://www.w3.org/WAI/PF/svg-a11y-tf/": {},
+      "https://www.w3.org/WAI/intro/aria.php": {}
     },
-    "http://www.w3.org/TR/2012/WD-filter-effects-20121025/": {
-      "anchors": [
-        "feBlendElement",
-        "feColorMatrixElement",
-        "feComponentTransferElement",
-        "feCompositeElement",
-        "feConvolveMatrixElement",
-        "feDiffuseLightingElement",
-        "feDisplacementMapElement",
-        "feDistantLightElement",
-        "feDropShadowElement",
-        "feFloodElement",
-        "feFuncAElement",
-        "feFuncBElement",
-        "feFuncGElement",
-        "feFuncRElement",
-        "feGaussianBlurElement",
-        "feImageElement",
-        "feMergeElement",
-        "femergenode",
-        "femorphology",
-        "feoffset",
-        "fePointLightElement",
-        "fespecularlighting",
-        "feSpotLightElement",
-        "fetile",
-        "feturbulence",
-        "filter"
-      ]
-    },
-    "http://www.w3.org/TR/SVG2/embedded.html": {
-      "anchors": [
-        "ForeignObjectElement",
-        "ImageElement",
-        "HTMLElements"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/interact.html": {
-      "anchors": [
-        "CursorElement",
-        "ScriptElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/linking.html": {
-      "anchors": [
-        "AElement",
-        "ViewElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/painting.html": {
-      "anchors": [
-        "MarkerElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/paths.html": {
-      "anchors": [
-        "PathElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/pservers.html": {
-      "anchors": [
-        "HatchElement",
-        "HatchpathElement",
-        "LinearGradientElement",
-        "MeshElement",
-        "MeshpatchElement",
-        "MeshrowElement",
-        "PatternElement",
-        "RadialGradientElement",
-        "SolidcolorElement",
-        "StopElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/shapes.html": {
-      "anchors": [
-        "CircleElement",
-        "EllipseElement",
-        "LineElement",
-        "PolygonElement",
-        "PolylineElement",
-        "RectElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/struct.html": {
-      "anchors": [
-        "TitleElement",
-        "DescElement",
-        "SVGElementTabindexAttribute",
-        "DefsElement",
-        "GElement",
-        "MetadataElement",
-        "SVGElement",
-        "SwitchElement",
-        "SymbolElement",
-        "UseElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/styling.html": {
-      "anchors": [
-        "StyleElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/SVG2/text.html": {
-      "anchors": [
-        "TextElement",
-        "TextPathElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "http://www.w3.org/TR/WCAG20/": {
-      "anchors": [
-        "keyboard-operation"
-      ]
-    },
-    "http://www.w3.org/TR/accname-1.1/": {},
-    "http://www.w3.org/TR/core-aam-1.1/": {},
-    "http://www.w3.org/TR/graphics-aam-1.0/": {
-      "specShortname": "graphics-aam-1.0"
-    },
-    "http://www.w3.org/TR/graphics-aria-1.0/": {
-      "specShortname": "graphics-aria-1.0"
-    },
-    "http://www.w3.org/TR/html5/embedded-content-0.html": {
-      "anchors": [
-        "the-audio-element",
-        "the-iframe-element",
-        "the-source-element",
-        "the-track-element",
-        "the-video-element"
-      ]
-    },
-    "http://www.w3.org/TR/html5/scripting-1.html": {
-      "anchors": [
-        "the-canvas-element"
-      ]
-    },
-    "http://www.w3.org/TR/wai-aria-1.1/": {
-      "anchors": [
-        "statevsprop"
-      ]
-    },
-    "http://www.w3.org/WAI/PF/svg-a11y-tf/": {},
-    "http://www.w3.org/WAI/intro/aria.php": {},
-    "https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility": {},
-    "https://developer.apple.com/documentation/appkit/nsaccessibility": {},
-    "https://developer.gnome.org/atk/2.10/": {},
-    "https://developer.gnome.org/atk/stable/": {},
-    "https://developer.gnome.org/atk/unstable/": {},
-    "https://developer.gnome.org/libatspi/2.10/": {},
-    "https://developer.gnome.org/libatspi/stable/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-shadow-tree",
-        "concept-documentfragment-host"
-      ],
-      "specShortname": "dom"
-    },
-    "https://github.com/w3c/core-aam/issues/3": {},
-    "https://github.com/w3c/core-aam/issues/4": {},
-    "https://github.com/w3c/issues/2": {},
-    "https://github.com/w3c/issues/6": {},
-    "https://github.com/w3c/issues/7": {},
-    "https://github.com/w3c/issues/8": {},
-    "https://github.com/w3c/svg-aam/issues": {},
-    "https://github.com/w3c/svg-aam/issues/": {},
-    "https://github.com/w3c/svg-aam/issues/2": {},
-    "https://github.com/w3c/svg-aam/issues/6": {},
-    "https://github.com/w3c/svg-aam/issues/7": {},
-    "https://github.com/w3c/svg-aam/issues/8": {},
-    "https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+ARIA+WG+Input%22": {},
-    "https://github.com/w3c/svg-aam/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Needs+Implementer+Input%22": {},
-    "https://lists.w3.org/Archives/Public/www-svg/": {},
-    "https://msdn.microsoft.com/en-us/library/dd373608%28v=VS.85%29.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx": {},
-    "https://msdn.microsoft.com/en-us/library/ms697707.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx": {},
-    "https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx": {},
-    "https://svgwg.org/specs/animations/": {
-      "anchors": [
-        "AnimateElement",
-        "AnimateMotionElement",
-        "AnimateTransformElement",
-        "DiscardElement",
-        "MPathElement",
-        "SetElement"
-      ],
-      "specShortname": "svg-animations"
-    },
-    "https://svgwg.org/svg2-draft/interact.html": {
-      "anchors": [
-        "PointerEventsProperty",
-        "TermFocusable",
-        "Focus"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/linking.html": {
-      "anchors": [
-        "XLinkRefAttrs",
-        "LinksIntoSVG"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/render.html": {
-      "anchors": [
-        "VisibilityControl",
-        "TermRenderedElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://w3c.github.io/accname/": {
-      "anchors": [
-        "mapping_additional_nd_te",
-        "step2A",
-        "step2D",
-        "step2F",
-        "step2F.ii",
-        "step2H"
-      ],
-      "specShortname": "accname-1.2"
-    },
-    "https://w3c.github.io/aria/": {
-      "anchors": [
-        "none",
-        "presentation",
-        "aria-hidden",
-        "childrenArePresentational",
-        "button",
-        "img",
-        "conflict_resolution_presentation_none",
-        "aria-label",
-        "aria-roledescription",
-        "aria-labelledby",
-        "aria-describedby",
-        "aria-activedescendant",
-        "aria-controls",
-        "aria-flowto",
-        "aria-owns"
-      ],
-      "specShortname": "wai-aria-1.2"
-    },
-    "https://w3c.github.io/core-aam/": {
-      "anchors": [
-        "keyboard-focus",
-        "mapping_general",
-        "exclude_elements2",
-        "statePropertyMappingGeneralRules",
-        "include_elements",
-        "mapping_role",
-        "mapping_conflicts",
-        "mapping_nodirect",
-        "mapping_role_table",
-        "role-map-link",
-        "role-map-application",
-        "role-map-group",
-        "role-map-document",
-        "role-map-img",
-        "mapping_state-property",
-        "mapping_additional_widget-value",
-        "mapping_additional_relations",
-        "mapping_additional_position",
-        "mapping_events_visibility",
-        "mapping_actions",
-        "mapping_events",
-        "document-handling"
-      ],
-      "specShortname": "core-aam-1.2"
-    },
-    "https://w3c.github.io/graphics-aam/": {
-      "anchors": [
-        "mapping_role_table",
-        "role-map-graphics-symbol",
-        "role-map-graphics-document",
-        "role-map-graphics-object"
-      ],
-      "specShortname": "graphics-aam-1.0"
-    },
-    "https://w3c.github.io/html-aam/": {
-      "anchors": [
-        "el-audio",
-        "el-canvas",
-        "el-iframe",
-        "el-source",
-        "el-p",
-        "el-track",
-        "el-video",
-        "html-attribute-state-and-property-mappings"
-      ],
-      "specShortname": "html-aam-1.0"
-    },
-    "https://w3c.github.io/svg-aam/": {
-      "specShortname": "svg-aam-1.0"
-    },
-    "https://wiki.linuxfoundation.org/accessibility/iaccessible2/start": {},
-    "https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2": {},
-    "https://www.w3.org/2004/01/pp-impl/19480/status": {},
-    "https://www.w3.org/2018/Process-20180201/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Graphics/SVG/WG/": {},
-    "https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/SVG/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/render.html": {
-      "anchors": [
-        "TermNeverRenderedElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/struct.html": {
-      "anchors": [
-        "TermUseElementShadowTree",
-        "TermElementInstance"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/WCAG20/": {},
-    "https://www.w3.org/TR/accname-1.1/": {},
-    "https://www.w3.org/TR/core-aam-1.1/": {},
-    "https://www.w3.org/TR/css-cascade-3/": {
-      "specShortname": "css-cascade-3"
-    },
-    "https://www.w3.org/TR/graphics-aam-1.0/": {
-      "specShortname": "graphics-aam-1.0"
-    },
-    "https://www.w3.org/TR/graphics-aria-1.0/": {
-      "specShortname": "graphics-aria-1.0"
-    },
-    "https://www.w3.org/TR/html-aam-1.0/": {
-      "specShortname": "html-aam-1.0"
-    },
-    "https://www.w3.org/TR/wai-aria-1.1/": {
-      "anchors": [
-        "aria-multiline",
-        "aria-activedescendant",
-        "aria-valuenow",
-        "aria-valuetext",
-        "statevsprop"
-      ]
-    },
-    "https://www.w3.org/TR/wai-aria-practices-1.1/": {},
-    "https://www.w3.org/TR/wai-aria/": {
-      "specShortname": "wai-aria-1.2"
-    },
-    "https://www.w3.org/WAI/ARIA/": {}
+    "autolinks": {}
   }
 }

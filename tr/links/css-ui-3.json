@@ -4,326 +4,435 @@
     "url": "https://www.w3.org/TR/css-ui-3/"
   },
   "links": {
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/ime-mode": {},
-    "https://drafts.csswg.org/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
+    "rawlinks": {
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/ime-mode": {},
+      "https://drafts.csswg.org/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "concrete-object-size",
+          "default-object-size",
+          "default-sizing-algorithm"
+        ]
+      },
+      "https://drafts.csswg.org/css-pseudo/": {
+        "anchors": [
+          "generated-content",
+          "CSSPseudoElement-interface"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions/": {
+        "anchors": [
+          "animatable-properties"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-3/implementation-report": {},
+      "https://drafts.csswg.org/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://drafts.csswg.org/css3-transitions/": {
+        "anchors": [
+          "animtype-length",
+          "animtype-color"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/ICO_%28file_format%29": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/web-platform-tests/wpt/commit/34c61eff5eab4ebe9ff271e46658f73f18858c4f": {},
+      "https://github.com/web-platform-tests/wpt/commit/92770f655298aa72b0c0ee9238377d6b04d2e3e6": {},
+      "https://github.com/web-platform-tests/wpt/commit/b749ca84fe5474adb4473c35a3da5788e5b6cfd7": {
+        "anchors": [
+          "diff-8667b2cb07cf6ee064b9f2a74e221e8f"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvas"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-picture-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "the-object-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "video"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "image-maps-2"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://test.csswg.org/harness/results/css-ui-3_dev/grouped/": {},
+      "https://test.csswg.org/harness/suite/css-ui-3_dev/": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://w3ctag.github.io/security-questionnaire/": {
+        "anchors": [
+          "questions"
+        ]
+      },
+      "https://www.unicode.org/reports/tr29/tr29-31.html": {},
+      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
+      "https://www.w3.org/2018/Process-20180201/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/Style/CSS/members": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2000/WD-css3-userint-20000216": {},
+      "https://www.w3.org/TR/2017/CR-css-ui-3-20170302/": {},
+      "https://www.w3.org/TR/2017/PR-css-ui-3-20171214/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/box.html": {
+        "anchors": [
+          "border-edge"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/intro.html": {
+        "anchors": [
+          "the-canvas"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/propidx.html": {
+        "anchors": [
+          "q24.0"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/ui.html": {
+        "anchors": [
+          "cursor-props",
+          "dynamic-outlines"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visudet.html": {
+        "anchors": [
+          "the-width-property",
+          "blockwidth",
+          "abs-non-replaced-width",
+          "min-max-widths",
+          "abs-non-replaced-height",
+          "min-max-heights"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visufx.html": {
+        "anchors": [
+          "propdef-overflow"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "inline-boxes",
+          "position-props"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/zindex.html": {},
+      "https://www.w3.org/TR/CSS21/box.html": {
+        "anchors": [
+          "propdef-border-bottom-width",
+          "propdef-border-left-width",
+          "propdef-border-right-width",
+          "propdef-border-style",
+          "propdef-border-top-width",
+          "propdef-border-width",
+          "content-height",
+          "content-width",
+          "propdef-margin-left",
+          "propdef-margin-top",
+          "propdef-padding-bottom",
+          "propdef-padding-left",
+          "propdef-padding-right",
+          "propdef-padding-top"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/colors.html": {
+        "anchors": [
+          "propdef-background-image"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visudet.html": {
+        "anchors": [
+          "propdef-height",
+          "propdef-max-height",
+          "propdef-max-width",
+          "propdef-min-height",
+          "propdef-min-width",
+          "propdef-width"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visufx.html": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://www.w3.org/TR/PNG/": {},
+      "https://www.w3.org/TR/REC-CSS1": {
+        "anchors": [
+          "anchor-pseudo-classes"
+        ]
+      },
+      "https://www.w3.org/TR/REC-CSS1/": {},
+      "https://www.w3.org/TR/SVG/interact.html": {
+        "anchors": [
+          "CursorElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/conform.html": {
+        "anchors": [
+          "secure-static-mode",
+          "secure-animated-mode"
+        ]
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {},
+      "https://www.w3.org/TR/css-cascade-4/": {},
+      "https://www.w3.org/TR/css-color-3/": {
+        "anchors": [
+          "currentColor"
+        ]
+      },
+      "https://www.w3.org/TR/css-color-3//": {
+        "anchors": [
+          "currentColor"
+        ]
+      },
+      "https://www.w3.org/TR/css-images-4/": {},
+      "https://www.w3.org/TR/css-pseudo-4/": {},
+      "https://www.w3.org/TR/css-style-attr/": {
+        "anchors": [
+          "style-attribute"
+        ]
+      },
+      "https://www.w3.org/TR/css-transitions-1/": {},
+      "https://www.w3.org/TR/css-values-3/": {},
+      "https://www.w3.org/TR/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction",
+          "end",
+          "physical-left"
+        ]
+      },
+      "https://www.w3.org/TR/css3-background/": {
+        "anchors": [
+          "the-border-width",
+          "the-border-style",
+          "the-border-radius",
+          "typedef-line-width",
+          "propdef-border-radius",
+          "valdef-line-style-none"
+        ]
+      },
+      "https://www.w3.org/TR/css3-color/": {
+        "anchors": [
+          "valuea-def-color",
+          "color0"
+        ]
+      },
+      "https://www.w3.org/TR/css3-images/": {
+        "anchors": [
+          "image-type"
+        ]
+      },
+      "https://www.w3.org/TR/css3-values/": {
+        "anchors": [
+          "mult-zero-plus",
+          "comb-comma",
+          "length-value",
+          "number-value",
+          "url-value",
+          "mult-opt",
+          "comb-one",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/svg2/struct.html": {
+        "anchors": [
+          "elementdef-svg"
+        ]
+      }
     },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "default-object-size",
-        "concrete-object-size",
-        "default-sizing-algorithm"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/css-pseudo/": {
-      "anchors": [
-        "generated-content",
-        "CSSPseudoElement-interface"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "anchors": [
-        "animatable-properties"
-      ],
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-ui-3/implementation-report": {},
-    "https://drafts.csswg.org/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css3-transitions/": {
-      "anchors": [
-        "animtype-length",
-        "animtype-color"
-      ]
-    },
-    "https://en.wikipedia.org/wiki/ICO_%28file_format%29": {},
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/web-platform-tests/wpt/commit/34c61eff5eab4ebe9ff271e46658f73f18858c4f": {},
-    "https://github.com/web-platform-tests/wpt/commit/92770f655298aa72b0c0ee9238377d6b04d2e3e6": {},
-    "https://github.com/web-platform-tests/wpt/commit/b749ca84fe5474adb4473c35a3da5788e5b6cfd7": {
-      "anchors": [
-        "diff-8667b2cb07cf6ee064b9f2a74e221e8f"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "canvas"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element",
-        "the-picture-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-object-element",
-        "the-iframe-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "video"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "image-maps-2"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://test.csswg.org/harness/results/css-ui-3_dev/grouped/": {},
-    "https://test.csswg.org/harness/suite/css-ui-3_dev/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://w3ctag.github.io/security-questionnaire/": {
-      "anchors": [
-        "questions"
-      ]
-    },
-    "https://www.unicode.org/reports/tr29/tr29-31.html": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2018/Process-20180201/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/Style/CSS/members": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2000/WD-css3-userint-20000216": {},
-    "https://www.w3.org/TR/2017/CR-css-ui-3-20170302/": {},
-    "https://www.w3.org/TR/2017/PR-css-ui-3-20171214/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension",
-        "vendor-prefix"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/": {},
-    "https://www.w3.org/TR/CSS2/box.html": {
-      "anchors": [
-        "border-edge"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/intro.html": {
-      "anchors": [
-        "the-canvas"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/propidx.html": {
-      "anchors": [
-        "q24.0"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/ui.html": {
-      "anchors": [
-        "cursor-props",
-        "dynamic-outlines"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/visudet.html": {
-      "anchors": [
-        "the-width-property",
-        "blockwidth",
-        "abs-non-replaced-width",
-        "min-max-widths",
-        "abs-non-replaced-height",
-        "min-max-heights"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/visufx.html": {
-      "anchors": [
-        "propdef-overflow"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/visuren.html": {
-      "anchors": [
-        "position-props",
-        "inline-boxes"
-      ]
-    },
-    "https://www.w3.org/TR/CSS2/zindex.html": {},
-    "https://www.w3.org/TR/CSS21/box.html": {
-      "anchors": [
-        "propdef-padding-left",
-        "propdef-padding-right",
-        "propdef-border-left-width",
-        "propdef-border-right-width",
-        "propdef-padding-top",
-        "propdef-padding-bottom",
-        "propdef-border-top-width",
-        "propdef-border-bottom-width",
-        "content-width",
-        "propdef-margin-left",
-        "content-height",
-        "propdef-margin-top",
-        "propdef-border-style",
-        "propdef-border-width"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/colors.html": {
-      "anchors": [
-        "propdef-background-image"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visudet.html": {
-      "anchors": [
-        "propdef-width",
-        "propdef-height",
-        "propdef-min-width",
-        "propdef-max-width",
-        "propdef-min-height",
-        "propdef-max-height"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visufx.html": {
-      "anchors": [
-        "propdef-visibility"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "propdef-display"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/PNG/": {},
-    "https://www.w3.org/TR/REC-CSS1": {
-      "anchors": [
-        "anchor-pseudo-classes"
-      ]
-    },
-    "https://www.w3.org/TR/REC-CSS1/": {},
-    "https://www.w3.org/TR/SVG/interact.html": {
-      "anchors": [
-        "CursorElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/conform.html": {
-      "anchors": [
-        "secure-static-mode",
-        "secure-animated-mode"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://www.w3.org/TR/css-cascade-4/": {
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-color-3/": {
-      "anchors": [
-        "currentColor"
-      ],
-      "specShortname": "css-color-3"
-    },
-    "https://www.w3.org/TR/css-color-3//": {
-      "anchors": [
-        "currentColor"
-      ]
-    },
-    "https://www.w3.org/TR/css-images-4/": {
-      "specShortname": "css-images-4"
-    },
-    "https://www.w3.org/TR/css-pseudo-4/": {
-      "specShortname": "css-pseudo-4"
-    },
-    "https://www.w3.org/TR/css-style-attr/": {
-      "anchors": [
-        "style-attribute"
-      ],
-      "specShortname": "css-style-attr"
-    },
-    "https://www.w3.org/TR/css-transitions-1/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://www.w3.org/TR/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://www.w3.org/TR/css-writing-modes-3/": {
-      "anchors": [
-        "end",
-        "propdef-direction",
-        "physical-left"
-      ],
-      "specShortname": "css-writing-modes-3"
-    },
-    "https://www.w3.org/TR/css3-background/": {
-      "anchors": [
-        "typedef-line-width",
-        "valdef-line-style-none",
-        "propdef-border-radius",
-        "the-border-width",
-        "the-border-style",
-        "the-border-radius"
-      ]
-    },
-    "https://www.w3.org/TR/css3-color/": {
-      "anchors": [
-        "valuea-def-color",
-        "color0"
-      ]
-    },
-    "https://www.w3.org/TR/css3-images/": {
-      "anchors": [
-        "image-type"
-      ]
-    },
-    "https://www.w3.org/TR/css3-values/": {
-      "anchors": [
-        "comb-one",
-        "comb-any",
-        "length-value",
-        "url-value",
-        "mult-opt",
-        "comb-comma",
-        "mult-zero-plus",
-        "number-value"
-      ]
-    },
-    "https://www.w3.org/TR/svg2/struct.html": {
-      "anchors": [
-        "elementdef-svg"
-      ]
+    "autolinks": {
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "default-object-size",
+          "concrete-object-size",
+          "default-sizing-algorithm"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "canvas"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-picture-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-object-element",
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "video"
+        ]
+      },
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "vendor-prefix"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/box.html": {
+        "anchors": [
+          "border-edge"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visudet.html": {
+        "anchors": [
+          "the-width-property"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visufx.html": {
+        "anchors": [
+          "propdef-overflow"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "position-props"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/box.html": {
+        "anchors": [
+          "propdef-padding-left",
+          "propdef-padding-right",
+          "propdef-border-left-width",
+          "propdef-border-right-width",
+          "propdef-padding-top",
+          "propdef-padding-bottom",
+          "propdef-border-top-width",
+          "propdef-border-bottom-width",
+          "content-width",
+          "propdef-margin-left",
+          "content-height",
+          "propdef-margin-top",
+          "propdef-border-style",
+          "propdef-border-width"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/colors.html": {
+        "anchors": [
+          "propdef-background-image"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visudet.html": {
+        "anchors": [
+          "propdef-width",
+          "propdef-height",
+          "propdef-min-width",
+          "propdef-max-width",
+          "propdef-min-height",
+          "propdef-max-height"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visufx.html": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://www.w3.org/TR/css-writing-modes-3/": {
+        "anchors": [
+          "end",
+          "propdef-direction",
+          "physical-left"
+        ]
+      },
+      "https://www.w3.org/TR/css3-background/": {
+        "anchors": [
+          "typedef-line-width",
+          "valdef-line-style-none",
+          "propdef-border-radius"
+        ]
+      },
+      "https://www.w3.org/TR/css3-color/": {
+        "anchors": [
+          "valuea-def-color",
+          "color0"
+        ]
+      },
+      "https://www.w3.org/TR/css3-images/": {
+        "anchors": [
+          "image-type"
+        ]
+      },
+      "https://www.w3.org/TR/css3-values/": {
+        "anchors": [
+          "comb-one",
+          "comb-any",
+          "length-value",
+          "url-value",
+          "mult-opt",
+          "comb-comma",
+          "mult-zero-plus",
+          "number-value"
+        ]
+      },
+      "https://www.w3.org/TR/svg2/struct.html": {
+        "anchors": [
+          "elementdef-svg"
+        ]
+      }
     }
   }
 }

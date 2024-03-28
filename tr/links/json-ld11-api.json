@@ -4,286 +4,385 @@
     "url": "https://www.w3.org/TR/json-ld11-api/"
   },
   "links": {
-    "http://irc.w3.org/": {},
-    "http://irc.w3.org/?channels=json-ld": {},
-    "http://standards.ieee.org/findstds/standard/754-2008.html": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "dom-node-textcontent"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://irc.w3.org/": {},
+      "http://irc.w3.org/?channels=json-ld": {},
+      "http://standards.ieee.org/findstds/standard/754-2008.html": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-node-textcontent"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Floating-point_arithmetic": {
+        "anchors": [
+          "Minimizing_the_effect_of_accuracy_problems"
+        ]
+      },
+      "https://github.com/w3c/json-ld-api/issues/": {},
+      "https://github.com/w3c/json-ld-api/issues/166": {},
+      "https://github.com/w3c/json-ld-api/issues/380": {},
+      "https://github.com/w3c/json-ld-api/issues/391": {},
+      "https://github.com/w3c/json-ld-api/issues/435": {},
+      "https://github.com/w3c/json-ld-api/issues/76": {},
+      "https://github.com/w3c/json-ld-api/issues/94": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22defer-future-version%22": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Aeditorial%22": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Awontfix%22": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22test%3Aneeds+tests%22": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22wr%3Apending%22": {},
+      "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22wr%3Aspec-updated-partial%22": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-record",
+          "idl-long",
+          "idl-double",
+          "idl-promise",
+          "Global",
+          "Exposed",
+          "idl-sequence",
+          "idl-USVString",
+          "idl-any",
+          "idl-void",
+          "dfn-iterable",
+          "dfn-value-pairs-to-iterate-over",
+          "dfn-value-iterator",
+          "dfn-dictionary"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-id-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "the-script-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "attr-link-type"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "document-base-url"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "boolean",
+          "ordered-map",
+          "map-entry",
+          "nulls",
+          "primitive-data-types",
+          "javascript-string"
+        ]
+      },
+      "https://json-ld.org/playground/": {
+        "anchors": [
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%0A%7D",
+          "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22website%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22website%22%3A%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%20%7D%0A%7D",
+          "startTab=tab-compacted&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%5B%0A%20%20%20%20%20%20%7B%20%22%40value%22%3A%20%22Markus%20Lanthaler%22%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%20%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%0A%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
+          "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D&context=%7B%7D",
+          "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-json-ld-wg/": {},
+      "https://semver.org/": {},
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-terms-and-definitions-number-value",
+          "sec-promise-objects"
+        ]
+      },
+      "https://tools.ietf.org/html/bcp14": {},
+      "https://tools.ietf.org/html/bcp47": {
+        "anchors": [
+          "section-2.2.9"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2045": {
+        "anchors": [
+          "section-5"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc3986": {
+        "anchors": [
+          "section-2.2",
+          "section-5.2",
+          "section-6.2.2",
+          "section-6.2.3",
+          "section-3.1",
+          "section-3.2",
+          "section-3.5",
+          "section-2.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc3987": {
+        "anchors": [
+          "section-2",
+          "section-1.3",
+          "section-6.5",
+          "section-2.2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc5234": {},
+      "https://tools.ietf.org/html/rfc6839": {},
+      "https://tools.ietf.org/html/rfc8174": {},
+      "https://tools.ietf.org/html/rfc8259": {
+        "anchors": [
+          "section-4",
+          "section-2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8288": {},
+      "https://w3c.github.io/json-ld-api/reports/": {},
+      "https://w3c.github.io/json-ld-api/tests/": {},
+      "https://webchat.freenode.net/?channels=json-ld": {},
+      "https://www.rfc-editor.org/rfc/rfc8785": {},
+      "https://www.w3.org/2001/tag/doc/promises-guide": {},
+      "https://www.w3.org/2004/01/pp-impl/107714/status": {},
+      "https://www.w3.org/2018/json-ld-wg/": {},
+      "https://www.w3.org/2018/jsonld-cg-reports/json-ld-api/": {},
+      "https://www.w3.org/2019/Process-20190301/": {
+        "anchors": [
+          "rec-rescind"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/DesignIssues/LinkedData.html": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2014/REC-json-ld-20140116/": {},
+      "https://www.w3.org/TR/2014/REC-json-ld-api-20140116/": {},
+      "https://www.w3.org/TR/cooluris/": {},
+      "https://www.w3.org/TR/json-ld11-framing/": {
+        "anchors": [
+          "dfn-frame",
+          "framing-algorithm",
+          "dfn-framing"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11/": {
+        "anchors": [
+          "sets-and-lists",
+          "dfn-active-context",
+          "dfn-base-direction",
+          "context-definitions",
+          "dfn-compact-iri",
+          "dfn-context",
+          "the-context",
+          "dfn-default-language",
+          "dfn-default-object",
+          "dfn-expanded-term-definition",
+          "expanded-term-definition",
+          "dfn-graph-object",
+          "dfn-simple-graph-object",
+          "graph-objects",
+          "dfn-id-map",
+          "id-maps",
+          "dfn-included-block",
+          "included-blocks",
+          "dfn-index-map",
+          "index-maps",
+          "dfn-json-literal",
+          "the-rdf-json-datatype",
+          "dfn-json-ld-document",
+          "json-ld-grammar",
+          "dfn-json-ld-value",
+          "dfn-keyword",
+          "syntax-tokens-and-keywords",
+          "keywords",
+          "dfn-language-map",
+          "language-maps",
+          "dfn-list-object",
+          "lists-and-sets",
+          "dfn-local-context",
+          "dfn-node-object",
+          "node-objects",
+          "dfn-prefix",
+          "dfn-processing-mode",
+          "dfn-scoped-context",
+          "dfn-type-scoped-context",
+          "dfn-property-scoped-context",
+          "dfn-set-object",
+          "dfn-term",
+          "terms",
+          "dfn-term-definition",
+          "dfn-simple-term-definition",
+          "dfn-type-map",
+          "type-maps",
+          "dfn-typed-value",
+          "dfn-value-object",
+          "value-objects",
+          "dfn-vocabulary-mapping",
+          "dfn-context-definition",
+          "data-model",
+          "flattened-document-form",
+          "iana-considerations",
+          "security",
+          "privacy",
+          "internationalization"
+        ]
+      },
+      "https://www.w3.org/TR/rdf-schema/": {
+        "anchors": [
+          "ch_collectionvocab"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-concepts/": {
+        "anchors": [
+          "dfn-base-iri",
+          "dfn-blank-node",
+          "dfn-blank-node-identifier",
+          "dfn-rdf-dataset",
+          "dfn-rdf-graph",
+          "dfn-datatype-iri",
+          "dfn-literal-value",
+          "dfn-default-graph",
+          "dfn-graph-name",
+          "dfn-language-tagged-string",
+          "dfn-language-tag",
+          "dfn-literal",
+          "dfn-named-graph",
+          "dfn-node",
+          "dfn-object",
+          "dfn-property",
+          "dfn-predicate",
+          "dfn-resource",
+          "dfn-subject",
+          "dfn-rdf-triple",
+          "dfn-lexical-form",
+          "dfn-generalized-rdf-dataset"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-mt/": {},
+      "https://www.w3.org/TR/turtle/": {
+        "anchors": [
+          "sec-grammar-grammar"
+        ]
+      },
+      "https://www.w3.org/TR/xmlschema11-2/": {
+        "anchors": [
+          "double",
+          "integer"
+        ]
+      },
+      "https://www.w3.org/community/json-ld/": {}
     },
-    "https://en.wikipedia.org/wiki/Floating-point_arithmetic": {
-      "anchors": [
-        "Minimizing_the_effect_of_accuracy_problems"
-      ]
-    },
-    "https://github.com/w3c/json-ld-api/issues/": {},
-    "https://github.com/w3c/json-ld-api/issues/166": {},
-    "https://github.com/w3c/json-ld-api/issues/380": {},
-    "https://github.com/w3c/json-ld-api/issues/391": {},
-    "https://github.com/w3c/json-ld-api/issues/435": {},
-    "https://github.com/w3c/json-ld-api/issues/76": {},
-    "https://github.com/w3c/json-ld-api/issues/94": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22defer-future-version%22": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Aeditorial%22": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Awontfix%22": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22test%3Aneeds+tests%22": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22wr%3Apending%22": {},
-    "https://github.com/w3c/json-ld-api/issues/?q=is%3Aissue+is%3Aopen+label%3A%22wr%3Aspec-updated-partial%22": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-record",
-        "idl-long",
-        "idl-double",
-        "idl-promise",
-        "Global",
-        "Exposed",
-        "idl-sequence",
-        "idl-USVString",
-        "idl-any",
-        "idl-void",
-        "dfn-iterable",
-        "dfn-value-pairs-to-iterate-over",
-        "dfn-value-iterator",
-        "dfn-dictionary"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-id-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "the-script-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "attr-link-type"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "document-base-url"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list",
-        "boolean",
-        "javascript-string",
-        "ordered-map",
-        "map-entry",
-        "nulls",
-        "primitive-data-types"
-      ],
-      "specShortname": "infra"
-    },
-    "https://json-ld.org/playground/": {
-      "anchors": [
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22homepage%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%0A%7D",
-        "startTab=tab-expand&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22website%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22website%22%3A%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%20%7D%0A%7D",
-        "startTab=tab-compacted&json-ld=%5B%0A%20%20%7B%0A%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%3A%20%5B%0A%20%20%20%20%20%20%7B%20%22%40value%22%3A%20%22Markus%20Lanthaler%22%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%3A%20%5B%0A%20%20%20%20%20%20%7B%20%22%40id%22%3A%20%22http%3A%2F%2Fwww.markus-lanthaler.com%2F%22%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%0A%5D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22homepage%22%3A%20%7B%0A%20%20%20%20%20%20%22%40id%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fhomepage%22%2C%0A%20%20%20%20%20%20%22%40type%22%3A%20%22%40id%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D",
-        "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D&context=%7B%7D",
-        "startTab=tab-flattened&json-ld=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D&context=%7B%0A%20%20%22%40context%22%3A%20%7B%0A%20%20%20%20%22name%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%22%2C%0A%20%20%20%20%22knows%22%3A%20%22http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fknows%22%0A%20%20%7D%2C%0A%20%20%22%40id%22%3A%20%22http%3A%2F%2Fme.markus-lanthaler.com%2F%22%2C%0A%20%20%22name%22%3A%20%22Markus%20Lanthaler%22%2C%0A%20%20%22knows%22%3A%20%5B%0A%20%20%20%20%7B%22name%22%3A%20%22Dave%20Longley%22%7D%0A%20%20%5D%0A%7D"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-json-ld-wg/": {},
-    "https://semver.org/": {},
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-terms-and-definitions-number-value",
-        "sec-promise-objects"
-      ]
-    },
-    "https://tools.ietf.org/html/bcp14": {},
-    "https://tools.ietf.org/html/bcp47": {
-      "anchors": [
-        "section-2.2.9"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2045": {
-      "anchors": [
-        "section-5"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc3986": {
-      "anchors": [
-        "section-2.2",
-        "section-5.2",
-        "section-6.2.2",
-        "section-6.2.3",
-        "section-3.1",
-        "section-3.2",
-        "section-3.5",
-        "section-2.1"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc3987": {
-      "anchors": [
-        "section-2",
-        "section-1.3",
-        "section-6.5",
-        "section-2.2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc5234": {},
-    "https://tools.ietf.org/html/rfc6839": {},
-    "https://tools.ietf.org/html/rfc8174": {},
-    "https://tools.ietf.org/html/rfc8259": {
-      "anchors": [
-        "section-4",
-        "section-2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc8288": {},
-    "https://w3c.github.io/json-ld-api/reports/": {},
-    "https://w3c.github.io/json-ld-api/tests/": {},
-    "https://webchat.freenode.net/?channels=json-ld": {},
-    "https://www.rfc-editor.org/rfc/rfc8785": {},
-    "https://www.w3.org/2001/tag/doc/promises-guide": {
-      "specShortname": "promises-guide"
-    },
-    "https://www.w3.org/2004/01/pp-impl/107714/status": {},
-    "https://www.w3.org/2018/json-ld-wg/": {},
-    "https://www.w3.org/2018/jsonld-cg-reports/json-ld-api/": {},
-    "https://www.w3.org/2019/Process-20190301/": {
-      "anchors": [
-        "rec-rescind"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/DesignIssues/LinkedData.html": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2014/REC-json-ld-20140116/": {},
-    "https://www.w3.org/TR/2014/REC-json-ld-api-20140116/": {},
-    "https://www.w3.org/TR/cooluris/": {},
-    "https://www.w3.org/TR/json-ld11-framing/": {
-      "anchors": [
-        "dfn-frame",
-        "framing-algorithm",
-        "dfn-framing"
-      ],
-      "specShortname": "json-ld11-framing"
-    },
-    "https://www.w3.org/TR/json-ld11/": {
-      "anchors": [
-        "sets-and-lists",
-        "dfn-json-ld-document",
-        "dfn-term",
-        "dfn-vocabulary-mapping",
-        "dfn-context",
-        "dfn-active-context",
-        "dfn-base-direction",
-        "context-definitions",
-        "dfn-compact-iri",
-        "dfn-prefix",
-        "the-context",
-        "dfn-default-language",
-        "dfn-default-object",
-        "dfn-expanded-term-definition",
-        "dfn-term-definition",
-        "dfn-keyword",
-        "expanded-term-definition",
-        "dfn-graph-object",
-        "dfn-node-object",
-        "dfn-simple-graph-object",
-        "graph-objects",
-        "dfn-id-map",
-        "id-maps",
-        "dfn-included-block",
-        "included-blocks",
-        "dfn-index-map",
-        "dfn-value-object",
-        "dfn-list-object",
-        "dfn-set-object",
-        "index-maps",
-        "dfn-json-literal",
-        "the-rdf-json-datatype",
-        "json-ld-grammar",
-        "dfn-json-ld-value",
-        "dfn-typed-value",
-        "syntax-tokens-and-keywords",
-        "keywords",
-        "dfn-language-map",
-        "language-maps",
-        "lists-and-sets",
-        "dfn-local-context",
-        "node-objects",
-        "dfn-processing-mode",
-        "dfn-scoped-context",
-        "dfn-embedded-context",
-        "dfn-type-scoped-context",
-        "dfn-property-scoped-context",
-        "terms",
-        "dfn-simple-term-definition",
-        "dfn-type-map",
-        "type-maps",
-        "value-objects",
-        "dfn-context-definition",
-        "data-model",
-        "flattened-document-form",
-        "iana-considerations",
-        "security",
-        "privacy",
-        "internationalization"
-      ],
-      "specShortname": "json-ld11"
-    },
-    "https://www.w3.org/TR/rdf-schema/": {
-      "anchors": [
-        "ch_collectionvocab"
-      ],
-      "specShortname": "rdf12-schema"
-    },
-    "https://www.w3.org/TR/rdf11-concepts/": {
-      "anchors": [
-        "dfn-object",
-        "dfn-base-iri",
-        "dfn-property",
-        "dfn-blank-node",
-        "dfn-node",
-        "dfn-rdf-graph",
-        "dfn-literal",
-        "dfn-blank-node-identifier",
-        "dfn-rdf-dataset",
-        "dfn-default-graph",
-        "dfn-named-graph",
-        "dfn-datatype-iri",
-        "dfn-literal-value",
-        "dfn-graph-name",
-        "dfn-language-tagged-string",
-        "dfn-language-tag",
-        "dfn-subject",
-        "dfn-rdf-triple",
-        "dfn-predicate",
-        "dfn-resource",
-        "dfn-generalized-rdf-dataset",
-        "dfn-lexical-form"
-      ]
-    },
-    "https://www.w3.org/TR/rdf11-mt/": {},
-    "https://www.w3.org/TR/turtle/": {
-      "anchors": [
-        "sec-grammar-grammar"
-      ]
-    },
-    "https://www.w3.org/TR/xmlschema11-2/": {
-      "anchors": [
-        "double",
-        "integer"
-      ]
-    },
-    "https://www.w3.org/community/json-ld/": {}
+    "autolinks": {
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "javascript-string",
+          "ordered-map",
+          "nulls",
+          "map-entry",
+          "boolean",
+          "primitive-data-types"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-terms-and-definitions-number-value"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2045": {
+        "anchors": [
+          "section-5"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc3987": {
+        "anchors": [
+          "section-2",
+          "section-1.3",
+          "section-6.5"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc8259": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11-framing/": {
+        "anchors": [
+          "dfn-frame"
+        ]
+      },
+      "https://www.w3.org/TR/json-ld11/": {
+        "anchors": [
+          "dfn-json-ld-document",
+          "dfn-term",
+          "dfn-vocabulary-mapping",
+          "dfn-context",
+          "dfn-base-direction",
+          "dfn-prefix",
+          "dfn-default-language",
+          "dfn-default-object",
+          "dfn-term-definition",
+          "dfn-keyword",
+          "dfn-graph-object",
+          "dfn-node-object",
+          "dfn-id-map",
+          "dfn-included-block",
+          "dfn-index-map",
+          "dfn-value-object",
+          "dfn-list-object",
+          "dfn-set-object",
+          "dfn-json-literal",
+          "dfn-json-ld-value",
+          "dfn-typed-value",
+          "dfn-language-map",
+          "dfn-compact-iri",
+          "dfn-processing-mode",
+          "dfn-scoped-context",
+          "dfn-expanded-term-definition",
+          "dfn-embedded-context",
+          "dfn-type-map",
+          "dfn-active-context",
+          "dfn-local-context",
+          "dfn-type-scoped-context",
+          "dfn-simple-graph-object",
+          "dfn-simple-term-definition"
+        ]
+      },
+      "https://www.w3.org/TR/rdf-schema/": {
+        "anchors": [
+          "ch_collectionvocab"
+        ]
+      },
+      "https://www.w3.org/TR/rdf11-concepts/": {
+        "anchors": [
+          "dfn-object",
+          "dfn-base-iri",
+          "dfn-property",
+          "dfn-node",
+          "dfn-rdf-graph",
+          "dfn-literal",
+          "dfn-blank-node",
+          "dfn-blank-node-identifier",
+          "dfn-rdf-dataset",
+          "dfn-default-graph",
+          "dfn-named-graph",
+          "dfn-datatype-iri",
+          "dfn-graph-name",
+          "dfn-language-tagged-string",
+          "dfn-language-tag",
+          "dfn-subject",
+          "dfn-rdf-triple",
+          "dfn-resource",
+          "dfn-predicate",
+          "dfn-generalized-rdf-dataset"
+        ]
+      }
+    }
   }
 }

@@ -4,226 +4,355 @@
     "url": "https://www.w3.org/TR/web-animations-2/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "element",
-        "event",
-        "dictdef-eventinit"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element",
+          "event",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animation",
+          "time-value",
+          "active-interval",
+          "active-time",
+          "active-after-boundary-time",
+          "animation-direction",
+          "animation-effect",
+          "apply-any-pending-playback-rate",
+          "associated-effect-end",
+          "before-active-boundary-time",
+          "current-finished-promise",
+          "current-iteration",
+          "current-ready-promise",
+          "directed-progress",
+          "effect-value",
+          "effective-playback-rate",
+          "end-delay",
+          "fill-mode",
+          "play-state-finished",
+          "play-state-idle",
+          "in-effect",
+          "iteration-count",
+          "iteration-duration",
+          "iteration-progress",
+          "iteration-start",
+          "keyframe-effect",
+          "not-animatable",
+          "overall-progress",
+          "pause-an-animation",
+          "pending-pause-task",
+          "pending-playback-rate",
+          "animation-play-state",
+          "playback-direction",
+          "ready",
+          "simple-iteration-progress",
+          "effect-target-target-element",
+          "target-property",
+          "timeline",
+          "transformed-progress",
+          "unresolved",
+          "update-an-animations-finished-state",
+          "update-animations-and-send-events",
+          "update-the-timing-properties-of-an-animation-effect"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/6861": {},
+      "https://github.com/w3ctag/spec-reviews/blob/master/2013/10/Web%20Animations.md": {
+        "anchors": [
+          "issue-play-method"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "perform-a-microtask-checkpoint",
+          "concept-relevant-realm"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "map-exists"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": {},
+      "https://lists.w3.org/Archives/Public/public-fx/2013JulSep/0076.html": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "invalidstateerror",
+          "a-new-promise",
+          "idl-double",
+          "resolve",
+          "idl-sequence",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unrestricted-double",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2dcontext/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/struct.html": {
+        "anchors": [
+          "__svg__SVGSVGElement__currentScale"
+        ]
+      },
+      "https://www.w3.org/TR/animation-timing/": {},
+      "https://www.w3.org/TR/css-animations-1/": {},
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "before-flag",
+          "linear-easing-function",
+          "easing-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "anchors": [
+          "csspseudoelement"
+        ]
+      },
+      "https://www.w3.org/TR/css-typed-om-1/": {
+        "anchors": [
+          "typedefdef-cssnumberish",
+          "cssnumericvalue"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "time-value",
+          "accumulation"
+        ]
+      },
+      "https://www.w3.org/TR/dom/": {
+        "anchors": [
+          "concept-tree-order",
+          "concept-tree-root",
+          "concept-tree-ancestor",
+          "concept-tree-descendant",
+          "concept-tree-inclusive-ancestor",
+          "concept-tree-inclusive-descendant",
+          "concept-tree-next-sibling",
+          "concept-tree-previous-sibling",
+          "concept-tree-first-child",
+          "concept-tree-last-child"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-1/": {
+        "anchors": [
+          "effect-composition",
+          "animation",
+          "dom-animation-animation",
+          "animationeffect",
+          "animationtimeline",
+          "dictdef-computedeffecttiming",
+          "dictdef-effecttiming",
+          "keyframeeffect",
+          "dictdef-keyframeeffectoptions",
+          "dictdef-optionaleffecttiming",
+          "animation-effect-active-phase",
+          "animation-effect-after-phase",
+          "animation-associated-effect",
+          "animation-effect-before-phase",
+          "dom-keyframeeffect-composite",
+          "animation-current-time",
+          "timeline-current-time",
+          "dom-effecttiming-direction",
+          "dom-effecttiming-easing",
+          "dom-effecttiming-fill",
+          "animation-hold-time",
+          "inactive-timeline",
+          "dom-effecttiming-iterationstart",
+          "dom-effecttiming-iterations",
+          "monotonically-increasing-timeline",
+          "dom-keyframeeffect-keyframeeffect-source-source",
+          "animation-start-time"
+        ]
+      },
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {}
     },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "animation-effect",
-        "iteration-duration",
-        "end-delay",
-        "timeline",
-        "animation-play-state",
-        "apply-any-pending-playback-rate",
-        "associated-effect-end",
-        "unresolved",
-        "play-state-finished",
-        "update-an-animations-finished-state",
-        "iteration-progress",
-        "keyframe-effect",
-        "time-value",
-        "animation",
-        "pending-pause-task",
-        "current-ready-promise",
-        "effective-playback-rate",
-        "pending-playback-rate",
-        "ready",
-        "current-finished-promise",
-        "pause-an-animation",
-        "active-interval",
-        "active-time",
-        "fill-mode",
-        "before-active-boundary-time",
-        "animation-direction",
-        "active-after-boundary-time",
-        "iteration-count",
-        "transformed-progress",
-        "iteration-start",
-        "overall-progress",
-        "simple-iteration-progress",
-        "directed-progress",
-        "playback-direction",
-        "not-animatable",
-        "effect-value",
-        "target-property",
-        "current-iteration",
-        "update-animations-and-send-events",
-        "in-effect",
-        "effect-target-target-element",
-        "update-the-timing-properties-of-an-animation-effect",
-        "play-state-idle"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/6861": {},
-    "https://github.com/w3ctag/spec-reviews/blob/master/2013/10/Web%20Animations.md": {
-      "anchors": [
-        "issue-play-method"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-realm",
-        "perform-a-microtask-checkpoint"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "map-exists"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": {},
-    "https://lists.w3.org/Archives/Public/public-fx/2013JulSep/0076.html": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "dfn-throw",
-        "resolve",
-        "invalidstateerror",
-        "idl-DOMException",
-        "a-new-promise",
-        "Exposed",
-        "idl-undefined",
-        "idl-double",
-        "idl-unrestricted-double",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-unsigned-long"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2dcontext/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/SVG11/struct.html": {
-      "anchors": [
-        "__svg__SVGSVGElement__currentScale"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/animation-timing/": {},
-    "https://www.w3.org/TR/css-animations-1/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://www.w3.org/TR/css-display-3/": {
-      "anchors": [
-        "propdef-visibility"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://www.w3.org/TR/css-easing-1/": {
-      "anchors": [
-        "easing-function",
-        "linear-easing-function",
-        "before-flag"
-      ],
-      "specShortname": "css-easing-1"
-    },
-    "https://www.w3.org/TR/css-pseudo-4/": {
-      "anchors": [
-        "csspseudoelement"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://www.w3.org/TR/css-typed-om-1/": {
-      "anchors": [
-        "typedefdef-cssnumberish",
-        "cssnumericvalue"
-      ],
-      "specShortname": "css-typed-om-1"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "time-value",
-        "accumulation"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/dom/": {
-      "anchors": [
-        "concept-tree-order",
-        "concept-tree-root",
-        "concept-tree-ancestor",
-        "concept-tree-descendant",
-        "concept-tree-inclusive-ancestor",
-        "concept-tree-inclusive-descendant",
-        "concept-tree-next-sibling",
-        "concept-tree-previous-sibling",
-        "concept-tree-first-child",
-        "concept-tree-last-child"
-      ]
-    },
-    "https://www.w3.org/TR/web-animations-1/": {
-      "anchors": [
-        "animation-current-time",
-        "monotonically-increasing-timeline",
-        "animation-start-time",
-        "animation-hold-time",
-        "animation-associated-effect",
-        "inactive-timeline",
-        "animation-effect-active-phase",
-        "animation-effect-before-phase",
-        "timeline-current-time",
-        "animation-effect-after-phase",
-        "effect-composition",
-        "animationtimeline",
-        "animation",
-        "animationeffect",
-        "dom-animation-animation",
-        "dictdef-effecttiming",
-        "dictdef-optionaleffecttiming",
-        "dom-effecttiming-fill",
-        "dom-effecttiming-iterationstart",
-        "dom-effecttiming-iterations",
-        "dom-effecttiming-direction",
-        "dom-effecttiming-easing",
-        "dictdef-computedeffecttiming",
-        "keyframeeffect",
-        "dictdef-keyframeeffectoptions",
-        "dom-keyframeeffect-composite",
-        "dom-keyframeeffect-keyframeeffect-source-source"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://www.w3.org/groups/wg/css": {},
-    "https://www.w3.org/groups/wg/css/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element",
+          "event",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animation-effect",
+          "iteration-duration",
+          "end-delay",
+          "timeline",
+          "animation-play-state",
+          "apply-any-pending-playback-rate",
+          "associated-effect-end",
+          "unresolved",
+          "play-state-finished",
+          "update-an-animations-finished-state",
+          "iteration-progress",
+          "keyframe-effect",
+          "time-value",
+          "animation",
+          "pending-pause-task",
+          "current-ready-promise",
+          "effective-playback-rate",
+          "pending-playback-rate",
+          "ready",
+          "current-finished-promise",
+          "pause-an-animation",
+          "active-interval",
+          "active-time",
+          "fill-mode",
+          "before-active-boundary-time",
+          "animation-direction",
+          "active-after-boundary-time",
+          "iteration-count",
+          "transformed-progress",
+          "iteration-start",
+          "overall-progress",
+          "simple-iteration-progress",
+          "directed-progress",
+          "playback-direction",
+          "not-animatable",
+          "effect-value",
+          "target-property",
+          "current-iteration",
+          "update-animations-and-send-events",
+          "in-effect",
+          "effect-target-target-element",
+          "update-the-timing-properties-of-an-animation-effect",
+          "play-state-idle"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm",
+          "perform-a-microtask-checkpoint"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "map-exists"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "dfn-throw",
+          "resolve",
+          "invalidstateerror",
+          "idl-DOMException",
+          "a-new-promise",
+          "Exposed",
+          "idl-undefined",
+          "idl-double",
+          "idl-unrestricted-double",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-visibility"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "easing-function",
+          "linear-easing-function",
+          "before-flag"
+        ]
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "anchors": [
+          "csspseudoelement"
+        ]
+      },
+      "https://www.w3.org/TR/css-typed-om-1/": {
+        "anchors": [
+          "typedefdef-cssnumberish",
+          "cssnumericvalue"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "time-value",
+          "accumulation"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-1/": {
+        "anchors": [
+          "animation-current-time",
+          "monotonically-increasing-timeline",
+          "animation-start-time",
+          "animation-hold-time",
+          "animation-associated-effect",
+          "inactive-timeline",
+          "animation-effect-active-phase",
+          "animation-effect-before-phase",
+          "timeline-current-time",
+          "animation-effect-after-phase",
+          "animationtimeline",
+          "animation",
+          "animationeffect",
+          "dom-animation-animation",
+          "dictdef-effecttiming",
+          "dictdef-optionaleffecttiming",
+          "dom-effecttiming-fill",
+          "dom-effecttiming-iterationstart",
+          "dom-effecttiming-iterations",
+          "dom-effecttiming-direction",
+          "dom-effecttiming-easing",
+          "dictdef-computedeffecttiming",
+          "keyframeeffect",
+          "dictdef-keyframeeffectoptions",
+          "dom-keyframeeffect-composite",
+          "dom-keyframeeffect-keyframeeffect-source-source"
+        ]
+      }
+    }
   }
 }

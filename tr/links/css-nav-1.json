@@ -4,269 +4,414 @@
     "url": "https://www.w3.org/TR/css-nav-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension",
-        "vendor-prefix"
-      ],
-      "specShortname": "CSS22"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element",
+          "event",
+          "eventtarget",
+          "node",
+          "canceled-flag",
+          "concept-document",
+          "document-element",
+          "boundary-point-node",
+          "concept-node-document",
+          "dom-event-preventdefault",
+          "dom-event-target"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://drafts.csswg.org/css-overscroll-behavior-1/": {
+        "anchors": [
+          "scroll-boundary"
+        ]
+      },
+      "https://drafts.csswg.org/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ]
+      },
+      "https://drafts.csswg.org/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://drafts.csswg.org/css2/box.html": {
+        "anchors": [
+          "x14"
+        ]
+      },
+      "https://drafts.csswg.org/css2/zindex.html": {
+        "anchors": [
+          "painting-order"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ]
+      },
+      "https://extensiblewebmanifesto.org/": {},
+      "https://github.com/WICG/inert": {},
+      "https://github.com/extensibleweb/manifesto": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/2322": {},
+      "https://github.com/w3c/csswg-drafts/issues/2323": {},
+      "https://github.com/w3c/csswg-drafts/issues/2324": {},
+      "https://github.com/w3c/csswg-drafts/issues/3387": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "browsing-context",
+          "browsing-context-container",
+          "nested-browsing-context",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-body-element-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "nodes-are-removed"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "currently-focused-area-of-a-top-level-browsing-context",
+          "dom-anchor",
+          "expressly-inert",
+          "dom-focus",
+          "focusable-area",
+          "focusing-steps",
+          "sequential-focus-navigation-order",
+          "sequential-focus-navigation-starting-point",
+          "attr-tabindex"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "being-rendered"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics-other.html": {
+        "anchors": [
+          "concept-element-disabled"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "list-empty",
+          "list-remove",
+          "ordered-set"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "event-target",
+          "keydown"
+        ]
+      },
+      "https://w3c.github.io/webappsec-feature-policy/": {
+        "anchors": [
+          "default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://wicg.github.io/spatial-navigation/tests/ux/list.html": {},
+      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
+      "https://www.w3.org/2019/Process-20190301/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/": {},
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2019/WD-css-nav-1-20190423/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/WICD/": {
+        "anchors": [
+          "focus-handling"
+        ]
+      },
+      "https://www.w3.org/TR/css-break-4/": {
+        "anchors": [
+          "box-fragment"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-4/": {
+        "anchors": [
+          "propdef-all"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "box",
+          "principal-box"
+        ]
+      },
+      "https://www.w3.org/TR/css-overflow-3/": {
+        "anchors": [
+          "valdef-overflow-hidden",
+          "propdef-overflow-x",
+          "propdef-overflow-y",
+          "scroll-container",
+          "scrollport"
+        ]
+      },
+      "https://www.w3.org/TR/css-position-3/": {},
+      "https://www.w3.org/TR/css-scroll-snap-1/": {
+        "anchors": [
+          "valdef-scroll-snap-type-mandatory",
+          "optimal-viewing-region"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "mult-one-plus",
+          "comb-one"
+        ]
+      },
+      "https://www.w3.org/TR/css3-positioning/": {
+        "anchors": [
+          "relative-position"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/TR/cssom-view/": {
+        "anchors": [
+          "scroll-an-element"
+        ]
+      },
+      "https://www.w3.org/TR/feature-policy-1/": {},
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "event-order",
+          "keyboardevent",
+          "uievent",
+          "dictdef-uieventinit",
+          "dom-keyboardevent-key"
+        ]
+      }
     },
-    "http://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ]
-    },
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "dom-event-preventdefault",
-        "canceled-flag",
-        "node",
-        "element",
-        "concept-document",
-        "eventtarget",
-        "event",
-        "dom-event-target",
-        "concept-node-document",
-        "boundary-point-node",
-        "document-element"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://drafts.csswg.org/css-overscroll-behavior-1/": {
-      "anchors": [
-        "scroll-boundary"
-      ]
-    },
-    "https://drafts.csswg.org/css-pseudo/": {
-      "anchors": [
-        "generated-content"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://drafts.csswg.org/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css2/box.html": {
-      "anchors": [
-        "x14"
-      ]
-    },
-    "https://drafts.csswg.org/css2/zindex.html": {
-      "anchors": [
-        "painting-order"
-      ]
-    },
-    "https://drafts.csswg.org/web-animations/": {
-      "anchors": [
-        "animation-type"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://extensiblewebmanifesto.org/": {},
-    "https://github.com/WICG/inert": {},
-    "https://github.com/extensibleweb/manifesto": {},
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/2322": {},
-    "https://github.com/w3c/csswg-drafts/issues/2323": {},
-    "https://github.com/w3c/csswg-drafts/issues/2324": {},
-    "https://github.com/w3c/csswg-drafts/issues/3387": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "active-document",
-        "top-level-browsing-context",
-        "browsing-context",
-        "nested-browsing-context",
-        "browsing-context-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-body-element-2"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "nodes-are-removed"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "dom-focus",
-        "focusable-area",
-        "sequential-focus-navigation-starting-point",
-        "focusing-steps",
-        "dom-anchor",
-        "currently-focused-area-of-a-top-level-browsing-context",
-        "expressly-inert",
-        "attr-tabindex",
-        "sequential-focus-navigation-order"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "being-rendered"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics-other.html": {
-      "anchors": [
-        "concept-element-disabled"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "assert",
-        "ordered-set",
-        "list-remove",
-        "list-empty"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://w3c.github.io/uievents/": {
-      "anchors": [
-        "keydown",
-        "event-target"
-      ],
-      "specShortname": "uievents"
-    },
-    "https://w3c.github.io/webappsec-feature-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "default-allowlist"
-      ]
-    },
-    "https://wicg.github.io/spatial-navigation/tests/ux/list.html": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2019/Process-20190301/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Style/CSS/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2019/WD-css-nav-1-20190423/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/": {},
-    "https://www.w3.org/TR/WICD/": {
-      "anchors": [
-        "focus-handling"
-      ]
-    },
-    "https://www.w3.org/TR/css-break-4/": {
-      "anchors": [
-        "box-fragment"
-      ],
-      "specShortname": "css-break-4"
-    },
-    "https://www.w3.org/TR/css-cascade-4/": {
-      "anchors": [
-        "propdef-all"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-display-3/": {
-      "anchors": [
-        "box",
-        "principal-box"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://www.w3.org/TR/css-overflow-3/": {
-      "anchors": [
-        "scrollport",
-        "scroll-container",
-        "propdef-overflow-y",
-        "valdef-overflow-hidden",
-        "propdef-overflow-x"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://www.w3.org/TR/css-position-3/": {
-      "specShortname": "css-position-3"
-    },
-    "https://www.w3.org/TR/css-scroll-snap-1/": {
-      "anchors": [
-        "optimal-viewing-region",
-        "valdef-scroll-snap-type-mandatory"
-      ],
-      "specShortname": "css-scroll-snap-1"
-    },
-    "https://www.w3.org/TR/css-transforms-1/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "mult-one-plus",
-        "comb-one"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css3-positioning/": {
-      "anchors": [
-        "relative-position"
-      ]
-    },
-    "https://www.w3.org/TR/cssom-view-1/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/TR/cssom-view/": {
-      "anchors": [
-        "scroll-an-element"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/TR/feature-policy-1/": {},
-    "https://www.w3.org/TR/uievents/": {
-      "anchors": [
-        "uievent",
-        "dictdef-uieventinit",
-        "event-order",
-        "keyboardevent",
-        "dom-keyboardevent-key"
-      ],
-      "specShortname": "uievents"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-event-preventdefault",
+          "canceled-flag",
+          "node",
+          "element",
+          "concept-document",
+          "eventtarget",
+          "event",
+          "dom-event-target",
+          "concept-node-document",
+          "boundary-point-node",
+          "document-element"
+        ]
+      },
+      "https://drafts.csswg.org/css-overscroll-behavior-1/": {
+        "anchors": [
+          "scroll-boundary"
+        ]
+      },
+      "https://drafts.csswg.org/css2/box.html": {
+        "anchors": [
+          "x14"
+        ]
+      },
+      "https://drafts.csswg.org/css2/zindex.html": {
+        "anchors": [
+          "painting-order"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "Exposed",
+          "idl-DOMString"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "top-level-browsing-context",
+          "browsing-context",
+          "nested-browsing-context",
+          "browsing-context-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-body-element-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "nodes-are-removed"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "dom-focus",
+          "focusable-area",
+          "sequential-focus-navigation-starting-point",
+          "focusing-steps",
+          "dom-anchor",
+          "currently-focused-area-of-a-top-level-browsing-context",
+          "expressly-inert",
+          "attr-tabindex",
+          "sequential-focus-navigation-order"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "being-rendered"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics-other.html": {
+        "anchors": [
+          "concept-element-disabled"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "ordered-set",
+          "list-remove",
+          "list-empty"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "keydown",
+          "event-target"
+        ]
+      },
+      "https://w3c.github.io/webappsec-feature-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "vendor-prefix"
+        ]
+      },
+      "https://www.w3.org/TR/css-break-4/": {
+        "anchors": [
+          "box-fragment"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-4/": {
+        "anchors": [
+          "propdef-all"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "box",
+          "principal-box"
+        ]
+      },
+      "https://www.w3.org/TR/css-overflow-3/": {
+        "anchors": [
+          "scrollport",
+          "scroll-container",
+          "propdef-overflow-y",
+          "valdef-overflow-hidden",
+          "propdef-overflow-x"
+        ]
+      },
+      "https://www.w3.org/TR/css-scroll-snap-1/": {
+        "anchors": [
+          "optimal-viewing-region",
+          "valdef-scroll-snap-type-mandatory"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "mult-one-plus",
+          "comb-one"
+        ]
+      },
+      "https://www.w3.org/TR/css3-positioning/": {
+        "anchors": [
+          "relative-position"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view/": {
+        "anchors": [
+          "scroll-an-element"
+        ]
+      },
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "uievent",
+          "dictdef-uieventinit",
+          "keyboardevent",
+          "dom-keyboardevent-key"
+        ]
+      }
     }
   }
 }

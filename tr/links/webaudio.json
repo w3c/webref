@@ -4,622 +4,753 @@
     "url": "https://www.w3.org/TR/webaudio/"
   },
   "links": {
-    "https://audiofingerprint.openwpm.com/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/AnalyserNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/frequencyBinCount": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatFrequencyData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/maxDecibels": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/minDecibels": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/smoothingTimeConstant": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/copyFromChannel": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/copyToChannel": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/duration": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/getChannelData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/numberOfChannels": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/sampleRate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/AudioBufferSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/buffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/detune": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loopEnd": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loopStart": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/playbackRate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/start": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/AudioContext": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/baseLatency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/close": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamDestination": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/getOutputTimestamp": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/outputLatency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/resume": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/latencyHint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/sampleRate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioDestinationNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioDestinationNode/maxChannelCount": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCount": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCountMode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelInterpretation": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/connect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/context": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/disconnect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/numberOfInputs": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/numberOfOutputs": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioNodeOptions": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelAndHoldAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/defaultValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/exponentialRampToValueAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/linearRampToValueAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/maxValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/minValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setTargetAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setValueAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setValueCurveAtTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/ended_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/onended": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/start": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/stop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope/registerProcessor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/AudioWorkletNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/onprocessorerror": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/parameters": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/port": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/AudioWorkletProcessor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/port": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/audioWorklet": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createAnalyser": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBiquadFilter": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBufferSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelMerger": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelSplitter": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConstantSource": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConvolver": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDelay": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDynamicsCompressor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createGain": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createIIRFilter": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createOscillator": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createStereoPanner": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createWaveShaper": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/currentTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/destination": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/listener": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/onstatechange": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/sampleRate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/BiquadFilterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/detune": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/frequency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/gain": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/getFrequencyResponse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode/ChannelMergerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ChannelSplitterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ChannelSplitterNode/ChannelSplitterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode/ConstantSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode/offset": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/ConvolverNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/buffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/normalize": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode/DelayNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode/delayTime": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/DynamicsCompressorNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/attack": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/knee": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/ratio": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/reduction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/release": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/threshold": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/GainNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/GainNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/gain": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/IIRFilterNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/getFrequencyResponse": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/mediaElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode/stream": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/mediaStream": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions/mediaStream": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions/mediaStreamTrack": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent/OfflineAudioCompletionEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent/renderedBuffer": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/OfflineAudioContext": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/complete_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/length": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/oncomplete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/resume": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/suspend": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/OscillatorNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/detune": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/frequency": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/setPeriodicWave": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/type": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/PannerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneInnerAngle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneOuterAngle": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneOuterGain": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/distanceModel": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/maxDistance": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/panningModel": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionZ": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/refDistance": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/rolloffFactor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave/PeriodicWave": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode/StereoPannerNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode/pan": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/WaveShaperNode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/curve": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/oversample": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "event",
-        "concept-event-fire",
-        "dictdef-eventinit"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://audiofingerprint.openwpm.com/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/AnalyserNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/frequencyBinCount": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatFrequencyData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/maxDecibels": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/minDecibels": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/smoothingTimeConstant": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/copyFromChannel": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/copyToChannel": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/duration": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/getChannelData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/numberOfChannels": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/sampleRate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/AudioBufferSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/buffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/detune": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loopEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/loopStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/playbackRate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/start": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/AudioContext": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/baseLatency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/close": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamDestination": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/getOutputTimestamp": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/outputLatency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/resume": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/latencyHint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/sampleRate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioDestinationNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioDestinationNode/maxChannelCount": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/forwardZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/positionZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCount": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCountMode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelInterpretation": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/connect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/context": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/disconnect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/numberOfInputs": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/numberOfOutputs": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioNodeOptions": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelAndHoldAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/defaultValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/exponentialRampToValueAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/linearRampToValueAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/maxValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/minValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setTargetAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setValueAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/setValueCurveAtTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/ended_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/onended": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/start": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/stop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope/registerProcessor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/AudioWorkletNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/onprocessorerror": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/parameters": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/port": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/AudioWorkletProcessor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/port": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/audioWorklet": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createAnalyser": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBiquadFilter": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBufferSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelMerger": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelSplitter": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConstantSource": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConvolver": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDelay": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDynamicsCompressor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createGain": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createIIRFilter": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createOscillator": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createStereoPanner": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createWaveShaper": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/currentTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/destination": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/listener": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/onstatechange": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/sampleRate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/BiquadFilterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/detune": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/frequency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/gain": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/getFrequencyResponse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode/ChannelMergerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ChannelSplitterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ChannelSplitterNode/ChannelSplitterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode/ConstantSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode/offset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/ConvolverNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/buffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/normalize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode/DelayNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode/delayTime": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/DynamicsCompressorNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/attack": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/knee": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/ratio": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/reduction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/release": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/threshold": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/GainNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/GainNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/gain": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/IIRFilterNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/getFrequencyResponse": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/mediaElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode/stream": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/mediaStream": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions/mediaStream": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions/mediaStreamTrack": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent/OfflineAudioCompletionEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioCompletionEvent/renderedBuffer": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/OfflineAudioContext": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/complete_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/length": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/oncomplete": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/resume": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/suspend": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/OscillatorNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/detune": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/frequency": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/setPeriodicWave": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/type": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/PannerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneInnerAngle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneOuterAngle": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/coneOuterGain": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/distanceModel": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/maxDistance": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/orientationZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/panningModel": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionZ": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/refDistance": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/rolloffFactor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave/PeriodicWave": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode/StereoPannerNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode/pan": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/WaveShaperNode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/curve": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode/oversample": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Aliasing": {},
+      "https://en.wikipedia.org/wiki/All-pass_filter": {
+        "anchors": [
+          "Digital_Implementation"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Band-pass_filter": {},
+      "https://en.wikipedia.org/wiki/Band-stop_filter": {},
+      "https://en.wikipedia.org/wiki/Cent_(music)": {},
+      "https://en.wikipedia.org/wiki/Group_delay": {},
+      "https://en.wikipedia.org/wiki/Head-related_transfer_function": {},
+      "https://en.wikipedia.org/wiki/High-pass_filter": {},
+      "https://en.wikipedia.org/wiki/Infinite_impulse_response": {},
+      "https://en.wikipedia.org/wiki/Low-pass_filter": {},
+      "https://en.wikipedia.org/wiki/Q_factor": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "fetching"
+        ]
+      },
+      "https://github.com/WebAudio/web-audio-api/issues/": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1303": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1457": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1471": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1481": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1563": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1719": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1741": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1743": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1745": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1746": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1753": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1758": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1762": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1770": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1772": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1777": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1788": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1790": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1797": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1802": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1805": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1822": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1841": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1851": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1852": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1855": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1857": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1866": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1879": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1880": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1882": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1893": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1894": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1896": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1897": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1899": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1900": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1901": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1902": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1903": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1904": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1905": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1906": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1925": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1932": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1935": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1943": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1945": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1946": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1947": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1963": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1966": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1969": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1970": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1971": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1972": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1976": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1984": {},
+      "https://github.com/WebAudio/web-audio-api/issues/1989": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2011": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2016": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2018": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2021": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2027": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2035": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2036": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2044": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2045": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2050": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2051": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2060": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2061": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2071": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2072": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2073": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2074": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2082": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2083": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2087": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2096": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2113": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2147": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2148": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2149": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2150": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2152": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2153": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2154": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2155": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2165": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2169": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2171": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2184": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2191": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2193": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2197": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2206": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2213": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2216": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2225": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2227": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2231": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2240": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2242": {},
+      "https://github.com/WebAudio/web-audio-api/issues/2252": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2201": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2210": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2219": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2250": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2253": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2256": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2266": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2273": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2277": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2286": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2298": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2301": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2304": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2306": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2307": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2308": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2310": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2311": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2312": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2317": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2318": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2328": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2331": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2333": {},
+      "https://github.com/WebAudio/web-audio-api/pull/2334": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "dfn-get-buffer-source-reference",
+          "es-to-sequence",
+          "dictionary-to-es",
+          "web-idl-arguments-list",
+          "web-idl-arguments-list-converting",
+          "idl-ArrayBuffer",
+          "idl-DOMException",
+          "idl-DOMString",
+          "datacloneerror",
+          "encodingerror",
+          "Exposed",
+          "idl-Float32Array",
+          "idl-frozen-array",
+          "Global",
+          "indexsizeerror",
+          "invalidaccesserror",
+          "invalidstateerror",
+          "notsupportederror",
+          "idl-promise",
+          "exceptiondef-rangeerror",
+          "SameObject",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "idl-Uint8Array",
+          "unknownerror",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "dfn-conforming-implementation",
+          "construct-a-callback-function",
+          "idl-double",
+          "idl-float",
+          "dfn-get-buffer-source-copy",
+          "idl-long",
+          "idl-object",
+          "idl-record",
+          "idl-sequence",
+          "this",
+          "idl-undefined",
+          "idl-unsigned-long",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "concept-current-everything",
+          "responsible-document",
+          "cors-cross-origin",
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "event",
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "sticky-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "media-element-event-task-source",
+          "queue-a-media-element-task",
+          "htmlmediaelement",
+          "audio",
+          "video"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "structureddeserialize",
+          "structuredserialize",
+          "structuredserializewithtransfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "ports-and-garbage-collection",
+          "messagechannel",
+          "messageport",
+          "dom-messageport-close",
+          "dom-messagechannel-port1",
+          "dom-messagechannel-port2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "the-errorevent-interface",
+          "task-queue",
+          "errorevent",
+          "clean-up-after-running-a-callback",
+          "clean-up-after-running-script",
+          "current-settings-object",
+          "perform-a-microtask-checkpoint",
+          "prepare-to-run-a-callback",
+          "prepare-to-run-script",
+          "queue-a-task",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "worklet",
+          "workletglobalscope",
+          "dom-worklet-addmodule",
+          "terminate-a-worklet-global-scope",
+          "worklet-destination-type",
+          "worklet-global-scope-type"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "map-exists",
+          "code-unit",
+          "struct-item",
+          "ordered-map",
+          "struct"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-audio/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "matching-an-audio-or-video-type-pattern"
+        ]
+      },
+      "https://murdoch.is/talks/eurobsdcon07hotornot.pdf": {},
+      "https://openal.org/": {},
+      "https://padenot.github.io/web-audio-perf/": {
+        "anchors": [
+          "latency"
+        ]
+      },
+      "https://pdfs.semanticscholar.org/cfd2/6a17234696593919df3f880a235d6ac5871d.pdf": {},
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-isconstructor",
+          "sec-get-o-p",
+          "sec-ecmascript-data-types-and-values",
+          "sec-setintegritylevel",
+          "sec-returnifabrupt-shorthands",
+          "sec-iscallable",
+          "sec-throwcompletion",
+          "sec-native-error-types-used-in-this-standard-typeerror"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-isdetachedbuffer",
+          "sec-detacharraybuffer",
+          "sec-createbytedatablock",
+          "sec-get-o-p",
+          "sec-completion-record-specification-type",
+          "sec-call",
+          "sec-toboolean",
+          "sec-data-blocks"
+        ]
+      },
+      "https://webaudio.github.io/web-audio-api/implementation-report.html": {},
+      "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
+      "https://www.w3.org/2004/01/pp-impl/46884/status": {},
+      "https://www.w3.org/2011/audio/": {},
+      "https://www.w3.org/2020/Process-20200915/": {
+        "anchors": [
+          "allow-new-features"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/": {},
+      "https://www.w3.org/TR/2dcontext/": {},
+      "https://www.w3.org/TR/WebIDL/": {
+        "anchors": [
+          "dfn-present"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "sec-privacy-security",
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-fromelement/": {
+        "anchors": [
+          "dom-htmlmediaelement-capturestream"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "media-track-supported-constraints",
+          "dom-mediadevices",
+          "dom-mediastream",
+          "dom-mediastreamtrack"
+        ]
+      },
+      "https://www.w3.org/TR/mediastream-recording/": {},
+      "https://www.w3.org/TR/security-privacy-questionnaire/": {
+        "anchors": [
+          "questions"
+        ]
+      },
+      "https://www.w3.org/TR/webaudio-usecases/": {},
+      "https://www.w3.org/TR/webrtc/": {},
+      "https://xhr.spec.whatwg.org/": {}
     },
-    "https://en.wikipedia.org/wiki/Aliasing": {},
-    "https://en.wikipedia.org/wiki/All-pass_filter": {
-      "anchors": [
-        "Digital_Implementation"
-      ]
-    },
-    "https://en.wikipedia.org/wiki/Band-pass_filter": {},
-    "https://en.wikipedia.org/wiki/Band-stop_filter": {},
-    "https://en.wikipedia.org/wiki/Cent_(music)": {},
-    "https://en.wikipedia.org/wiki/Group_delay": {},
-    "https://en.wikipedia.org/wiki/Head-related_transfer_function": {},
-    "https://en.wikipedia.org/wiki/High-pass_filter": {},
-    "https://en.wikipedia.org/wiki/Infinite_impulse_response": {},
-    "https://en.wikipedia.org/wiki/Low-pass_filter": {},
-    "https://en.wikipedia.org/wiki/Q_factor": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "fetching"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/WebAudio/web-audio-api/issues/": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1303": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1457": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1471": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1481": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1563": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1719": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1741": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1743": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1745": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1746": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1753": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1758": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1762": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1770": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1772": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1777": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1788": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1790": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1797": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1802": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1805": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1822": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1841": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1851": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1852": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1855": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1857": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1866": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1879": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1880": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1882": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1893": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1894": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1896": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1897": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1899": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1900": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1901": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1902": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1903": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1904": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1905": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1906": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1925": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1932": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1935": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1943": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1945": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1946": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1947": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1963": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1966": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1969": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1970": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1971": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1972": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1976": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1984": {},
-    "https://github.com/WebAudio/web-audio-api/issues/1989": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2011": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2016": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2018": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2021": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2027": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2035": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2036": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2044": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2045": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2050": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2051": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2060": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2061": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2071": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2072": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2073": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2074": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2082": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2083": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2087": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2096": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2113": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2147": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2148": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2149": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2150": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2152": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2153": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2154": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2155": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2165": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2169": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2171": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2184": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2191": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2193": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2197": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2206": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2213": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2216": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2225": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2227": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2231": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2240": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2242": {},
-    "https://github.com/WebAudio/web-audio-api/issues/2252": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2201": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2210": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2219": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2250": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2253": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2256": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2266": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2273": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2277": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2286": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2298": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2301": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2304": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2306": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2307": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2308": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2310": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2311": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2312": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2317": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2318": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2328": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2331": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2333": {},
-    "https://github.com/WebAudio/web-audio-api/pull/2334": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-undefined",
-        "idl-DOMException",
-        "Exposed",
-        "idl-float",
-        "idl-double",
-        "SameObject",
-        "SecureContext",
-        "idl-unsigned-long",
-        "idl-sequence",
-        "idl-promise",
-        "idl-ArrayBuffer",
-        "notsupportederror",
-        "indexsizeerror",
-        "invalidstateerror",
-        "this",
-        "a-promise-rejected-with",
-        "datacloneerror",
-        "encodingerror",
-        "idl-DOMString",
-        "idl-Float32Array",
-        "unknownerror",
-        "dfn-get-buffer-source-reference",
-        "dfn-get-buffer-source-copy",
-        "invalidaccesserror",
-        "exceptiondef-rangeerror",
-        "idl-Uint8Array",
-        "idl-boolean",
-        "dfn-conforming-implementation",
-        "idl-long",
-        "idl-object",
-        "Global",
-        "idl-unsigned-long-long",
-        "exceptiondef-typeerror",
-        "es-to-sequence",
-        "construct-a-callback-function",
-        "dictionary-to-es",
-        "idl-record",
-        "idl-frozen-array",
-        "web-idl-arguments-list",
-        "web-idl-arguments-list-converting"
-      ]
-    },
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "concept-current-everything",
-        "responsible-document",
-        "cors-cross-origin",
-        "unloading-document-cleanup-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "event",
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "sticky-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "audio",
-        "video",
-        "media-element-event-task-source",
-        "queue-a-media-element-task",
-        "htmlmediaelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "structureddeserialize",
-        "structuredserializewithtransfer",
-        "structuredserialize"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/web-messaging.html": {
-      "anchors": [
-        "messageport",
-        "messagechannel",
-        "dom-messagechannel-port1",
-        "dom-messagechannel-port2",
-        "dom-messageport-close",
-        "ports-and-garbage-collection"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "concept-relevant-global",
-        "queue-a-task",
-        "errorevent",
-        "the-errorevent-interface",
-        "task-queue",
-        "prepare-to-run-script",
-        "current-settings-object",
-        "prepare-to-run-a-callback",
-        "clean-up-after-running-a-callback",
-        "clean-up-after-running-script",
-        "perform-a-microtask-checkpoint"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/worklets.html": {
-      "anchors": [
-        "worklet",
-        "worklet-global-scope-type",
-        "worklet-destination-type",
-        "dom-worklet-addmodule",
-        "terminate-a-worklet-global-scope",
-        "workletglobalscope"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "map-exists",
-        "code-unit",
-        "struct",
-        "struct-item",
-        "ordered-map"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-audio/": {},
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "matching-an-audio-or-video-type-pattern"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://murdoch.is/talks/eurobsdcon07hotornot.pdf": {},
-    "https://openal.org/": {},
-    "https://padenot.github.io/web-audio-perf/": {
-      "anchors": [
-        "latency"
-      ]
-    },
-    "https://pdfs.semanticscholar.org/cfd2/6a17234696593919df3f880a235d6ac5871d.pdf": {},
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-isconstructor",
-        "sec-get-o-p",
-        "sec-ecmascript-data-types-and-values",
-        "sec-setintegritylevel",
-        "sec-returnifabrupt-shorthands",
-        "sec-iscallable",
-        "sec-throwcompletion",
-        "sec-native-error-types-used-in-this-standard-typeerror"
-      ]
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-isdetachedbuffer",
-        "sec-detacharraybuffer",
-        "sec-data-blocks",
-        "sec-createbytedatablock",
-        "sec-get-o-p",
-        "sec-completion-record-specification-type",
-        "sec-call",
-        "sec-toboolean"
-      ]
-    },
-    "https://webaudio.github.io/web-audio-api/implementation-report.html": {},
-    "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
-    "https://www.w3.org/2004/01/pp-impl/46884/status": {},
-    "https://www.w3.org/2011/audio/": {},
-    "https://www.w3.org/2020/Process-20200915/": {
-      "anchors": [
-        "allow-new-features"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/": {},
-    "https://www.w3.org/TR/2dcontext/": {},
-    "https://www.w3.org/TR/WebIDL/": {
-      "anchors": [
-        "dfn-present"
-      ]
-    },
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "sec-privacy-security"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/mediacapture-fromelement/": {
-      "anchors": [
-        "dom-htmlmediaelement-capturestream"
-      ],
-      "specShortname": "mediacapture-fromelement"
-    },
-    "https://www.w3.org/TR/mediacapture-streams/": {
-      "anchors": [
-        "dom-mediadevices-getusermedia",
-        "dom-mediastream",
-        "dom-mediastreamtrack",
-        "dom-mediadevices",
-        "media-track-supported-constraints"
-      ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/mediastream-recording/": {
-      "specShortname": "mediastream-recording"
-    },
-    "https://www.w3.org/TR/security-privacy-questionnaire/": {
-      "anchors": [
-        "questions"
-      ]
-    },
-    "https://www.w3.org/TR/webaudio-usecases/": {},
-    "https://www.w3.org/TR/webrtc/": {
-      "specShortname": "webrtc"
-    },
-    "https://xhr.spec.whatwg.org/": {
-      "specShortname": "xhr"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "event",
+          "concept-event-fire",
+          "dictdef-eventinit"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-undefined",
+          "idl-DOMException",
+          "Exposed",
+          "idl-float",
+          "idl-double",
+          "SameObject",
+          "SecureContext",
+          "idl-unsigned-long",
+          "idl-sequence",
+          "idl-promise",
+          "idl-ArrayBuffer",
+          "notsupportederror",
+          "indexsizeerror",
+          "invalidstateerror",
+          "this",
+          "a-promise-rejected-with",
+          "datacloneerror",
+          "encodingerror",
+          "idl-DOMString",
+          "idl-Float32Array",
+          "unknownerror",
+          "dfn-get-buffer-source-reference",
+          "dfn-get-buffer-source-copy",
+          "invalidaccesserror",
+          "exceptiondef-rangeerror",
+          "idl-Uint8Array",
+          "idl-boolean",
+          "dfn-conforming-implementation",
+          "idl-long",
+          "idl-object",
+          "Global",
+          "idl-unsigned-long-long",
+          "exceptiondef-typeerror",
+          "construct-a-callback-function",
+          "idl-record",
+          "idl-frozen-array"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "sticky-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "audio",
+          "video",
+          "htmlmediaelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "structureddeserialize",
+          "structuredserializewithtransfer",
+          "structuredserialize"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "messageport",
+          "messagechannel",
+          "dom-messagechannel-port1",
+          "dom-messagechannel-port2",
+          "dom-messageport-close"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "concept-relevant-global",
+          "queue-a-task",
+          "errorevent",
+          "prepare-to-run-script",
+          "current-settings-object",
+          "prepare-to-run-a-callback",
+          "clean-up-after-running-a-callback",
+          "clean-up-after-running-script",
+          "perform-a-microtask-checkpoint"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "worklet",
+          "worklet-global-scope-type",
+          "worklet-destination-type",
+          "dom-worklet-addmodule",
+          "terminate-a-worklet-global-scope",
+          "workletglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "code-unit",
+          "struct",
+          "struct-item",
+          "ordered-map"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-data-blocks"
+        ]
+      },
+      "https://www.w3.org/TR/WebIDL/": {
+        "anchors": [
+          "dfn-present"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dom-domhighrestimestamp"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dom-mediadevices-getusermedia",
+          "dom-mediastream",
+          "dom-mediastreamtrack",
+          "dom-mediadevices"
+        ]
+      }
     }
   }
 }

@@ -4,93 +4,148 @@
     "url": "https://www.w3.org/TR/fetch-metadata/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-destination",
-        "concept-request-url",
-        "concept-header-list-set-structured-header",
-        "concept-request-header-list",
-        "concept-request-mode",
-        "navigation-request",
-        "concept-request-url-list",
-        "concept-request-origin",
-        "request-user-activation",
-        "concept-request-current-url",
-        "forbidden-response-header-name"
-      ],
-      "specShortname": "fetch"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-current-url",
+          "concept-request-destination",
+          "forbidden-response-header-name",
+          "concept-request-header-list",
+          "concept-request-mode",
+          "navigation-request",
+          "concept-request-origin",
+          "concept-request",
+          "concept-header-list-set-structured-header",
+          "concept-request-url",
+          "concept-request-url-list",
+          "request-user-activation"
+        ]
+      },
+      "https://github.com/w3ctag/design-reviews/issues/280": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin",
+          "concept-site-same-site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigating-across-documents",
+          "create-navigation-params-by-fetching"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-picture-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "iteration-break",
+          "iteration-continue",
+          "implementation-defined"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
+        "anchors": [
+          "section-3.9",
+          "section-3.7"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://www.mnot.net/blog/2018/11/27/header_compression": {},
+      "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.rfc-editor.org/rfc/rfc9110": {},
+      "https://www.w3.org/2023/Process-20230612/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {}
     },
-    "https://github.com/w3ctag/design-reviews/issues/280": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin",
-        "concept-site-same-site"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "create-navigation-params-by-fetching",
-        "navigating-across-documents"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element",
-        "the-picture-element"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "iteration-continue",
-        "iteration-break",
-        "implementation-defined"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
-      "anchors": [
-        "section-3.7",
-        "section-3.9"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://www.mnot.net/blog/2018/11/27/header_compression": {},
-    "https://www.rfc-editor.org/rfc/rfc3864": {},
-    "https://www.rfc-editor.org/rfc/rfc9110": {},
-    "https://www.w3.org/2023/Process-20230612/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-url"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {}
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-destination",
+          "concept-request-url",
+          "concept-header-list-set-structured-header",
+          "concept-request-header-list",
+          "concept-request-mode",
+          "navigation-request",
+          "concept-request-url-list",
+          "concept-request-origin",
+          "request-user-activation",
+          "concept-request-current-url",
+          "forbidden-response-header-name"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin",
+          "concept-site-same-site"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "create-navigation-params-by-fetching"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-picture-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "iteration-continue",
+          "iteration-break",
+          "implementation-defined"
+        ]
+      },
+      "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
+        "anchors": [
+          "section-3.7",
+          "section-3.9"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
+        ]
+      }
+    }
   }
 }

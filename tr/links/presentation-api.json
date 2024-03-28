@@ -4,303 +4,421 @@
     "url": "https://www.w3.org/TR/presentation-api/"
   },
   "links": {
-    "http://w3c-test.org/presentation-api/": {},
-    "http://www.dial-multiscreen.org/dial-protocol-specification": {},
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "event",
-        "dictdef-eventinit",
-        "concept-event-create"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://w3c-test.org/presentation-api/": {},
+      "http://www.dial-multiscreen.org/dial-protocol-specification": {},
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-create",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
+      "https://github.com/w3c/html/issues/437": {},
+      "https://github.com/w3c/presentation-api/blob/gh-pages/uc-req.md": {
+        "anchors": [
+          "nf-req01-power-saving-friendly"
+        ]
+      },
+      "https://github.com/w3c/presentation-api/blob/main/uc-req.md": {},
+      "https://github.com/w3c/presentation-api/issues/295": {},
+      "https://github.com/w3c/presentation-api/issues/303": {},
+      "https://github.com/w3c/presentation-api/issues/315": {},
+      "https://github.com/w3c/presentation-api/issues/324": {},
+      "https://github.com/w3c/presentation-api/issues/325": {},
+      "https://github.com/w3c/presentation-api/issues/329": {},
+      "https://github.com/w3c/presentation-api/issues/334": {},
+      "https://github.com/w3c/presentation-api/issues/335": {},
+      "https://github.com/w3c/presentation-api/issues/336": {},
+      "https://github.com/w3c/presentation-api/issues/337": {},
+      "https://github.com/w3c/presentation-api/issues/339": {},
+      "https://github.com/w3c/presentation-api/issues/340": {},
+      "https://github.com/w3c/presentation-api/issues/341": {},
+      "https://github.com/w3c/presentation-api/issues/342": {},
+      "https://github.com/w3c/presentation-api/issues/343": {},
+      "https://github.com/w3c/presentation-api/issues/344": {},
+      "https://github.com/w3c/presentation-api/issues/345": {},
+      "https://github.com/w3c/presentation-api/issues/346": {},
+      "https://github.com/w3c/presentation-api/issues/359": {},
+      "https://github.com/w3c/presentation-api/issues/360": {},
+      "https://github.com/w3c/presentation-api/issues/361": {},
+      "https://github.com/w3c/presentation-api/issues/363": {},
+      "https://github.com/w3c/presentation-api/issues/365": {},
+      "https://github.com/w3c/presentation-api/issues/366": {},
+      "https://github.com/w3c/presentation-api/issues/367": {},
+      "https://github.com/w3c/presentation-api/issues/374": {},
+      "https://github.com/w3c/presentation-api/issues/379": {},
+      "https://github.com/w3c/presentation-api/issues/380": {},
+      "https://github.com/w3c/presentation-api/issues/381": {},
+      "https://github.com/w3c/presentation-api/issues/382": {},
+      "https://github.com/w3c/presentation-api/issues/383": {},
+      "https://github.com/w3c/presentation-api/issues/387": {},
+      "https://github.com/w3c/presentation-api/issues/388": {},
+      "https://github.com/w3c/presentation-api/issues/391": {},
+      "https://github.com/w3c/presentation-api/issues/392": {},
+      "https://github.com/w3c/presentation-api/issues/393": {},
+      "https://github.com/w3c/presentation-api/issues/394": {},
+      "https://github.com/w3c/presentation-api/issues/396": {},
+      "https://github.com/w3c/presentation-api/issues/397": {},
+      "https://github.com/w3c/presentation-api/issues/398": {},
+      "https://github.com/w3c/presentation-api/issues/406": {},
+      "https://github.com/w3c/presentation-api/issues/407": {},
+      "https://github.com/w3c/presentation-api/issues/414": {},
+      "https://github.com/w3c/presentation-api/issues/421": {},
+      "https://github.com/w3c/presentation-api/issues/423": {},
+      "https://github.com/w3c/presentation-api/issues/429": {},
+      "https://github.com/w3c/presentation-api/issues/431": {},
+      "https://github.com/w3c/presentation-api/issues/432": {},
+      "https://github.com/w3c/presentation-api/issues/433": {},
+      "https://github.com/w3c/presentation-api/issues/434": {},
+      "https://github.com/w3c/presentation-api/issues/438": {},
+      "https://github.com/w3c/presentation-api/issues/441": {},
+      "https://github.com/w3c/presentation-api/issues/442": {},
+      "https://github.com/w3c/presentation-api/issues/443": {},
+      "https://github.com/w3c/presentation-api/issues/447": {},
+      "https://github.com/w3c/presentation-api/issues/453": {},
+      "https://github.com/w3c/presentation-api/issues/454": {},
+      "https://github.com/w3c/presentation-api/issues/460": {},
+      "https://github.com/w3c/presentation-api/issues/461": {},
+      "https://github.com/w3c/presentation-api/issues/465": {},
+      "https://github.com/w3c/presentation-api/issues/469": {},
+      "https://github.com/w3c/presentation-api/issues/473": {},
+      "https://github.com/w3c/presentation-api/issues/482": {},
+      "https://github.com/w3c/presentation-api/issues/483": {},
+      "https://github.com/w3c/presentation-api/issues/486": {},
+      "https://github.com/w3c/presentation-api/pull/428": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "creating-a-new-browsing-context",
+          "allowed-to-navigate",
+          "sandboxed-presentation-browsing-context-flag",
+          "sandboxed-modals-flag",
+          "sandboxed-auxiliary-navigation-browsing-context-flag",
+          "sandboxed-top-level-navigation-without-user-activation-browsing-context-flag",
+          "active-sandboxing-flag-set"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate-fragid",
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/comms.html": {
+        "anchors": [
+          "messageevent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unload-a-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context",
+          "child-navigable",
+          "top-level-browsing-context",
+          "nav-window",
+          "descendant-navigables"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "session-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "dom-location-reload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "parse-a-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "task-source",
+          "current-settings-object",
+          "queue-a-task",
+          "event-handlers",
+          "event-handler-event-type",
+          "eventhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webstorage.html": {
+        "anchors": [
+          "dom-localstorage",
+          "dom-sessionstorage"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {
+        "anchors": [
+          "section-5.3"
+        ]
+      },
+      "https://nfc-forum.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-code-realms",
+          "sec-promise-resolve-functions",
+          "sec-rejectpromise"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "SameObject",
+          "Exposed",
+          "idl-sequence",
+          "idl-promise",
+          "idl-frozen-array",
+          "idl-ArrayBuffer",
+          "ArrayBufferView",
+          "idl-boolean",
+          "idl-DOMString",
+          "invalidaccesserror",
+          "invalidstateerror",
+          "notallowederror",
+          "notfounderror",
+          "notsupportederror",
+          "operationerror",
+          "securityerror",
+          "syntaxerror",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-USVString"
+        ]
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "anchors": [
+          "enumdef-binarytype"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc4122": {
+        "anchors": [
+          "section-1"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.rfc-editor.org/rfc/rfc9110": {
+        "anchors": [
+          "section-12.5.4",
+          "section-11"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20230612/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2017/CR-presentation-api-20170601/": {},
+      "https://www.w3.org/TR/FileAPI/": {
+        "anchors": [
+          "dfn-Blob"
+        ]
+      },
+      "https://www.w3.org/TR/IndexedDB/": {
+        "anchors": [
+          "database"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-permission-state",
+          "dfn-permission-descriptor-type"
+        ]
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "dfn-service-worker-registration",
+          "dfn-service-worker",
+          "cache",
+          "dfn-window-client",
+          "dfn-worker-client"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcdatachannel"
+        ]
+      },
+      "https://www.w3.org/community/webscreens/": {},
+      "https://www.w3.org/groups/wg/secondscreen": {},
+      "https://www.w3.org/groups/wg/secondscreen/ipr": {},
+      "https://www.w3.org/wiki/Second_Screen/Implementation_Status": {
+        "anchors": [
+          "Tests"
+        ]
+      }
     },
-    "https://github.com/w3c/html/issues/437": {},
-    "https://github.com/w3c/presentation-api/blob/gh-pages/uc-req.md": {
-      "anchors": [
-        "nf-req01-power-saving-friendly"
-      ]
-    },
-    "https://github.com/w3c/presentation-api/blob/main/uc-req.md": {},
-    "https://github.com/w3c/presentation-api/issues/295": {},
-    "https://github.com/w3c/presentation-api/issues/303": {},
-    "https://github.com/w3c/presentation-api/issues/315": {},
-    "https://github.com/w3c/presentation-api/issues/324": {},
-    "https://github.com/w3c/presentation-api/issues/325": {},
-    "https://github.com/w3c/presentation-api/issues/329": {},
-    "https://github.com/w3c/presentation-api/issues/334": {},
-    "https://github.com/w3c/presentation-api/issues/335": {},
-    "https://github.com/w3c/presentation-api/issues/336": {},
-    "https://github.com/w3c/presentation-api/issues/337": {},
-    "https://github.com/w3c/presentation-api/issues/339": {},
-    "https://github.com/w3c/presentation-api/issues/340": {},
-    "https://github.com/w3c/presentation-api/issues/341": {},
-    "https://github.com/w3c/presentation-api/issues/342": {},
-    "https://github.com/w3c/presentation-api/issues/343": {},
-    "https://github.com/w3c/presentation-api/issues/344": {},
-    "https://github.com/w3c/presentation-api/issues/345": {},
-    "https://github.com/w3c/presentation-api/issues/346": {},
-    "https://github.com/w3c/presentation-api/issues/359": {},
-    "https://github.com/w3c/presentation-api/issues/360": {},
-    "https://github.com/w3c/presentation-api/issues/361": {},
-    "https://github.com/w3c/presentation-api/issues/363": {},
-    "https://github.com/w3c/presentation-api/issues/365": {},
-    "https://github.com/w3c/presentation-api/issues/366": {},
-    "https://github.com/w3c/presentation-api/issues/367": {},
-    "https://github.com/w3c/presentation-api/issues/374": {},
-    "https://github.com/w3c/presentation-api/issues/379": {},
-    "https://github.com/w3c/presentation-api/issues/380": {},
-    "https://github.com/w3c/presentation-api/issues/381": {},
-    "https://github.com/w3c/presentation-api/issues/382": {},
-    "https://github.com/w3c/presentation-api/issues/383": {},
-    "https://github.com/w3c/presentation-api/issues/387": {},
-    "https://github.com/w3c/presentation-api/issues/388": {},
-    "https://github.com/w3c/presentation-api/issues/391": {},
-    "https://github.com/w3c/presentation-api/issues/392": {},
-    "https://github.com/w3c/presentation-api/issues/393": {},
-    "https://github.com/w3c/presentation-api/issues/394": {},
-    "https://github.com/w3c/presentation-api/issues/396": {},
-    "https://github.com/w3c/presentation-api/issues/397": {},
-    "https://github.com/w3c/presentation-api/issues/398": {},
-    "https://github.com/w3c/presentation-api/issues/406": {},
-    "https://github.com/w3c/presentation-api/issues/407": {},
-    "https://github.com/w3c/presentation-api/issues/414": {},
-    "https://github.com/w3c/presentation-api/issues/421": {},
-    "https://github.com/w3c/presentation-api/issues/423": {},
-    "https://github.com/w3c/presentation-api/issues/429": {},
-    "https://github.com/w3c/presentation-api/issues/431": {},
-    "https://github.com/w3c/presentation-api/issues/432": {},
-    "https://github.com/w3c/presentation-api/issues/433": {},
-    "https://github.com/w3c/presentation-api/issues/434": {},
-    "https://github.com/w3c/presentation-api/issues/438": {},
-    "https://github.com/w3c/presentation-api/issues/441": {},
-    "https://github.com/w3c/presentation-api/issues/442": {},
-    "https://github.com/w3c/presentation-api/issues/443": {},
-    "https://github.com/w3c/presentation-api/issues/447": {},
-    "https://github.com/w3c/presentation-api/issues/453": {},
-    "https://github.com/w3c/presentation-api/issues/454": {},
-    "https://github.com/w3c/presentation-api/issues/460": {},
-    "https://github.com/w3c/presentation-api/issues/461": {},
-    "https://github.com/w3c/presentation-api/issues/465": {},
-    "https://github.com/w3c/presentation-api/issues/469": {},
-    "https://github.com/w3c/presentation-api/issues/473": {},
-    "https://github.com/w3c/presentation-api/issues/482": {},
-    "https://github.com/w3c/presentation-api/issues/483": {},
-    "https://github.com/w3c/presentation-api/issues/486": {},
-    "https://github.com/w3c/presentation-api/pull/428": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "creating-a-new-browsing-context",
-        "allowed-to-navigate",
-        "active-sandboxing-flag-set",
-        "sandboxed-presentation-browsing-context-flag",
-        "sandboxed-modals-flag",
-        "sandboxed-auxiliary-navigation-browsing-context-flag",
-        "sandboxed-top-level-navigation-without-user-activation-browsing-context-flag"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "navigate-fragid",
-        "navigate"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/comms.html": {
-      "anchors": [
-        "messageevent"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unload-a-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "browsing-context",
-        "child-navigable",
-        "nav-window",
-        "top-level-browsing-context",
-        "descendant-navigables"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "session-history"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "dom-location-reload"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "parse-a-url"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "task-source",
-        "eventhandler",
-        "current-settings-object",
-        "queue-a-task",
-        "event-handlers",
-        "event-handler-event-type"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webstorage.html": {
-      "anchors": [
-        "dom-localstorage",
-        "dom-sessionstorage"
-      ]
-    },
-    "https://httpwg.org/specs/rfc6265.html": {
-      "anchors": [
-        "section-5.3"
-      ],
-      "specShortname": "rfc6265"
-    },
-    "https://nfc-forum.org/": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "sec-code-realms",
-        "sec-promise-resolve-functions",
-        "sec-rejectpromise"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url"
-      ],
-      "specShortname": "url"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-promise",
-        "SecureContext",
-        "SameObject",
-        "Exposed",
-        "idl-USVString",
-        "idl-sequence",
-        "securityerror",
-        "dfn-throw",
-        "notsupportederror",
-        "syntaxerror",
-        "invalidaccesserror",
-        "operationerror",
-        "notfounderror",
-        "notallowederror",
-        "idl-boolean",
-        "idl-DOMString",
-        "idl-undefined",
-        "idl-ArrayBuffer",
-        "ArrayBufferView",
-        "invalidstateerror",
-        "idl-frozen-array"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://websockets.spec.whatwg.org/": {
-      "anchors": [
-        "enumdef-binarytype"
-      ],
-      "specShortname": "websockets"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc4122": {
-      "anchors": [
-        "section-1"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.rfc-editor.org/rfc/rfc9110": {
-      "anchors": [
-        "section-12.5.4",
-        "section-11"
-      ]
-    },
-    "https://www.w3.org/2023/Process-20230612/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2017/CR-presentation-api-20170601/": {},
-    "https://www.w3.org/TR/FileAPI/": {
-      "anchors": [
-        "dfn-Blob"
-      ],
-      "specShortname": "FileAPI"
-    },
-    "https://www.w3.org/TR/IndexedDB/": {
-      "anchors": [
-        "database"
-      ],
-      "specShortname": "IndexedDB-3"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dfn-permission-state",
-        "dfn-permission-descriptor-type"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-url"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://www.w3.org/TR/service-workers/": {
-      "anchors": [
-        "dfn-service-worker-registration",
-        "cache",
-        "dfn-window-client",
-        "dfn-worker-client",
-        "dfn-service-worker"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://www.w3.org/TR/webrtc/": {
-      "anchors": [
-        "dom-rtcdatachannel"
-      ],
-      "specShortname": "webrtc"
-    },
-    "https://www.w3.org/community/webscreens/": {},
-    "https://www.w3.org/groups/wg/secondscreen": {},
-    "https://www.w3.org/groups/wg/secondscreen/ipr": {},
-    "https://www.w3.org/wiki/Second_Screen/Implementation_Status": {
-      "anchors": [
-        "Tests"
-      ]
+    "autolinks": {
+      "http://www.dial-multiscreen.org/dial-protocol-specification": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "event",
+          "dictdef-eventinit",
+          "concept-event-create"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-sandboxing-flag-set"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/comms.html": {
+        "anchors": [
+          "messageevent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-window",
+          "descendant-navigables"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "dom-location-reload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webstorage.html": {
+        "anchors": [
+          "dom-localstorage",
+          "dom-sessionstorage"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {
+        "anchors": [
+          "section-5.3"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "sec-code-realms",
+          "sec-rejectpromise",
+          "sec-promise-resolve-functions"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-promise",
+          "idl-USVString",
+          "securityerror",
+          "dfn-throw",
+          "notsupportederror",
+          "syntaxerror",
+          "invalidaccesserror",
+          "operationerror",
+          "notfounderror",
+          "notallowederror",
+          "idl-boolean",
+          "idl-DOMString",
+          "idl-undefined",
+          "idl-ArrayBuffer",
+          "ArrayBufferView",
+          "invalidstateerror"
+        ]
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "anchors": [
+          "enumdef-binarytype"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc4122": {
+        "anchors": [
+          "section-1"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc9110": {
+        "anchors": [
+          "section-11",
+          "section-12.5.4"
+        ]
+      },
+      "https://www.w3.org/TR/FileAPI/": {
+        "anchors": [
+          "dfn-Blob"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-permission-descriptor-type"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "cache",
+          "dfn-window-client",
+          "dfn-worker-client"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcdatachannel"
+        ]
+      }
     }
   }
 }

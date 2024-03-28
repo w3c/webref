@@ -4,140 +4,221 @@
     "url": "https://www.w3.org/TR/webxr-dom-overlays-1/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/beforexrselect_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/domOverlayState": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "dom-event-target",
-        "dom-event-preventdefault",
-        "concept-event-fire",
-        "element"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/beforexrselect_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/domOverlayState": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element",
+          "concept-event-fire",
+          "dom-event-preventdefault",
+          "dom-event-target"
+        ]
+      },
+      "https://drafts.fxtf.org/filter-effects-2/": {
+        "anchors": [
+          "backdrop-root"
+        ]
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent-level-style-sheet-defaults",
+          "dom-element-requestfullscreen",
+          "top-layer"
+        ]
+      },
+      "https://github.com/immersive-web/dom-overlays/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "dom-animationframeprovider-requestanimationframe"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "globaleventhandlers",
+          "queue-a-task",
+          "rendering-opportunity"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "topmost-event-target"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "notsupportederror"
+        ]
+      },
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Security/wiki/Clickjacking_Threats": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "directive-frame-src"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/SVG2/render.html": {
+        "anchors": [
+          "TermStackingContext"
+        ]
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "anchors": [
+          "pseudo-class"
+        ]
+      },
+      "https://www.w3.org/TR/uievents/": {},
+      "https://www.w3.org/TR/webxr/": {
+        "anchors": [
+          "limiting-header",
+          "xrinputsource",
+          "xrsession",
+          "xrsessionevent",
+          "dictdef-xrsessioninit",
+          "xrspace",
+          "xrviewport",
+          "xrwebgllayer",
+          "xrsession-add-input-source",
+          "auxiliary-action",
+          "capable-of-supporting",
+          "feature-descriptor",
+          "immersive-session",
+          "eventdef-xrsession-inputsourceschange",
+          "dom-xrsessioninit-optionalfeatures",
+          "populate-the-pose",
+          "primary-action",
+          "dom-xrsession-requestanimationframe",
+          "dom-xrsystem-requestsession",
+          "dom-xrsessioninit-requiredfeatures",
+          "eventdef-xrsession-select",
+          "eventdef-xrsession-selectend",
+          "eventdef-xrsession-selectstart",
+          "dom-xrinputsource-targetrayspace",
+          "transient-action",
+          "transient-input-sources"
+        ]
+      },
+      "https://www.w3.org/groups/wg/immersive-web": {},
+      "https://www.w3.org/groups/wg/immersive-web/ipr": {}
     },
-    "https://drafts.fxtf.org/filter-effects-2/": {
-      "anchors": [
-        "backdrop-root"
-      ],
-      "specShortname": "filter-effects-2"
-    },
-    "https://fullscreen.spec.whatwg.org/": {
-      "anchors": [
-        "user-agent-level-style-sheet-defaults",
-        "dom-element-requestfullscreen",
-        "top-layer"
-      ],
-      "specShortname": "fullscreen"
-    },
-    "https://github.com/immersive-web/dom-overlays/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "htmliframeelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
-      "anchors": [
-        "dom-animationframeprovider-requestanimationframe"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "globaleventhandlers",
-        "eventhandler",
-        "rendering-opportunity",
-        "queue-a-task"
-      ]
-    },
-    "https://w3c.github.io/uievents/": {
-      "anchors": [
-        "topmost-event-target"
-      ],
-      "specShortname": "uievents"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "notsupportederror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Security/wiki/Clickjacking_Threats": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "directive-frame-src"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/render.html": {
-      "anchors": [
-        "TermStackingContext"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/selectors-4/": {
-      "anchors": [
-        "pseudo-class"
-      ],
-      "specShortname": "selectors-4"
-    },
-    "https://www.w3.org/TR/uievents/": {
-      "specShortname": "uievents"
-    },
-    "https://www.w3.org/TR/webxr/": {
-      "anchors": [
-        "primary-action",
-        "xrsessionevent",
-        "eventdef-xrsession-selectstart",
-        "dom-xrinputsource-targetrayspace",
-        "eventdef-xrsession-selectend",
-        "eventdef-xrsession-select",
-        "xrwebgllayer",
-        "dictdef-xrsessioninit",
-        "xrsession",
-        "xrinputsource",
-        "feature-descriptor",
-        "dom-xrsessioninit-requiredfeatures",
-        "dom-xrsessioninit-optionalfeatures",
-        "immersive-session",
-        "capable-of-supporting",
-        "dom-xrsystem-requestsession",
-        "dom-xrsession-requestanimationframe",
-        "transient-input-sources",
-        "auxiliary-action",
-        "eventdef-xrsession-inputsourceschange",
-        "xrviewport",
-        "limiting-header",
-        "populate-the-pose",
-        "xrspace",
-        "transient-action",
-        "xrsession-add-input-source"
-      ],
-      "specShortname": "webxr"
-    },
-    "https://www.w3.org/groups/wg/immersive-web": {},
-    "https://www.w3.org/groups/wg/immersive-web/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-event-target",
+          "dom-event-preventdefault",
+          "concept-event-fire",
+          "element"
+        ]
+      },
+      "https://drafts.fxtf.org/filter-effects-2/": {
+        "anchors": [
+          "backdrop-root"
+        ]
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "anchors": [
+          "dom-element-requestfullscreen",
+          "top-layer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "htmliframeelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
+        "anchors": [
+          "dom-animationframeprovider-requestanimationframe"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "globaleventhandlers",
+          "eventhandler",
+          "rendering-opportunity",
+          "queue-a-task"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "topmost-event-target"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "notsupportederror"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/render.html": {
+        "anchors": [
+          "TermStackingContext"
+        ]
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "anchors": [
+          "pseudo-class"
+        ]
+      },
+      "https://www.w3.org/TR/webxr/": {
+        "anchors": [
+          "primary-action",
+          "xrsessionevent",
+          "eventdef-xrsession-selectstart",
+          "dom-xrinputsource-targetrayspace",
+          "eventdef-xrsession-selectend",
+          "eventdef-xrsession-select",
+          "xrwebgllayer",
+          "dictdef-xrsessioninit",
+          "xrsession",
+          "xrinputsource",
+          "feature-descriptor",
+          "dom-xrsessioninit-requiredfeatures",
+          "dom-xrsessioninit-optionalfeatures",
+          "immersive-session",
+          "capable-of-supporting",
+          "dom-xrsystem-requestsession",
+          "dom-xrsession-requestanimationframe",
+          "transient-input-sources",
+          "auxiliary-action",
+          "eventdef-xrsession-inputsourceschange",
+          "xrviewport",
+          "populate-the-pose",
+          "xrspace",
+          "transient-action",
+          "xrsession-add-input-source"
+        ]
+      }
+    }
   }
 }

@@ -4,468 +4,800 @@
     "url": "https://www.w3.org/TR/CSP3/"
   },
   "links": {
-    "http://diracdeltas.github.io/sniffly/": {},
-    "https://blog.innerht.ml/csp-2015/": {
-      "anchors": [
-        "danglingmarkupinjection"
-      ]
+    "rawlinks": {
+      "http://diracdeltas.github.io/sniffly/": {},
+      "https://blog.innerht.ml/csp-2015/": {
+        "anchors": [
+          "danglingmarkupinjection"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dl.acm.org/doi/10.1145/2976749.2978363": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "concept-element-attribute",
+          "dom-event-bubbles",
+          "dom-event-composed",
+          "connected",
+          "concept-event-fire",
+          "concept-document-origin",
+          "concept-shadow-including-root",
+          "dom-event-target"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-body",
+          "concept-request-client",
+          "concept-request-credentials-mode",
+          "concept-request-nonce-metadata",
+          "concept-request-current-url",
+          "concept-request-destination",
+          "extract-header-list-values",
+          "concept-fetch",
+          "concept-request-header-list",
+          "concept-response-header-list",
+          "http-scheme",
+          "concept-request-initiator",
+          "concept-request-integrity-metadata",
+          "is-local",
+          "request-keepalive-flag",
+          "local-scheme",
+          "concept-main-fetch",
+          "concept-request-method",
+          "concept-request-mode",
+          "concept-network-error",
+          "concept-request-origin",
+          "concept-request-parser-metadata",
+          "concept-request-policy-container",
+          "concept-request-redirect-count",
+          "concept-request-redirect-mode",
+          "concept-request",
+          "concept-response",
+          "request-destination-script-like",
+          "concept-request-url",
+          "concept-response-url",
+          "concept-request-window"
+        ]
+      },
+      "https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Minichallenge-3:-%22Sh*t,-it%27s-CSP!%22": {
+        "anchors": [
+          "107-bytes"
+        ]
+      },
+      "https://github.com/tc39/ecma262/issues/938": {},
+      "https://github.com/w3c/webappsec-csp/issues/212": {},
+      "https://github.com/w3c/webappsec-csp/issues/426": {},
+      "https://github.com/w3c/webappsec-csp/issues/98": {},
+      "https://github.com/whatwg/html/issues/3257": {},
+      "https://github.com/whatwg/html/issues/968": {},
+      "https://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "parser-inserted",
+          "attr-meta-http-equiv-content-security-policy",
+          "initialise-the-document-object",
+          "navigable",
+          "concept-origin",
+          "plugin",
+          "link-type-preconnect",
+          "link-type-prefetch",
+          "prepare-the-script-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-sandboxing-flag-set",
+          "ascii-serialisation-of-an-origin",
+          "policy-container-csp-list",
+          "csp-derived-sandboxing-flags",
+          "concept-origin-opaque",
+          "parse-a-sandboxing-directive",
+          "policy-container",
+          "sandboxed-origin-browsing-context-flag",
+          "sandboxed-scripts-browsing-context-flag",
+          "sandboxing-flag-set",
+          "concept-origin-scheme"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "attempt-to-populate-the-history-entry's-document",
+          "create-navigation-params-by-fetching"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "x-frame-options"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "child-navigable",
+          "nav-container-document",
+          "node-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-policy-container",
+          "dom-document-referrer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "an-iframe-srcdoc-document",
+          "attr-object-data",
+          "the-embed-element",
+          "the-iframe-element",
+          "the-object-element",
+          "attr-iframe-sandbox"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "concept-microsyntax-parse-error"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "ping"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window",
+          "dom-document-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/obsolete.html": {
+        "anchors": [
+          "frame"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "parse-error-duplicate-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-base-element",
+          "attr-meta-content",
+          "attr-base-href",
+          "attr-meta-http-equiv",
+          "the-link-element",
+          "meta",
+          "set-the-frozen-base-url",
+          "the-style-element",
+          "update-a-style-block"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+        "anchors": [
+          "dom-setinterval",
+          "dom-settimeout"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "attr-nonce"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "environment-settings-object",
+          "global-object",
+          "concept-settings-object-global",
+          "concept-realm-global",
+          "concept-settings-object-origin",
+          "concept-settings-object-policy-container",
+          "queue-a-task",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "sharedworker",
+          "worker",
+          "workerglobalscope",
+          "run-a-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope"
+        ]
+      },
+      "https://httpwg.org/specs/rfc8288.html": {},
+      "https://httpwg.org/specs/rfc9110.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "set-append",
+          "ascii-case-insensitive",
+          "ascii-digit",
+          "ascii-lowercase",
+          "ascii-string",
+          "ascii-whitespace",
+          "byte-sequence",
+          "collect-a-sequence-of-code-points",
+          "list-contain",
+          "iteration-continue",
+          "javascript-string-convert",
+          "string-ends-with",
+          "list-iterate",
+          "string-is",
+          "list-is-empty",
+          "isomorphic-decode",
+          "list",
+          "ordered-map",
+          "ordered-set",
+          "serialize-an-infra-value-to-json-bytes",
+          "list-size",
+          "split-on-ascii-whitespace",
+          "split-on-commas",
+          "string-starts-with",
+          "strictly-split",
+          "string",
+          "strip-leading-and-trailing-ascii-whitespace"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://lists.w3.org/Archives/Public/public-webappsec/2014Feb/0036.html": {},
+      "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": {},
+      "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
+      "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html": {},
+      "https://tc39.github.io/ecma262": {
+        "anchors": [
+          "sec-function-objects",
+          "sec-hostensurecancompilestrings",
+          "sec-eval-x",
+          "realm"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {},
+      "https://tools.ietf.org/html/rfc3986": {
+        "anchors": [
+          "section-3.3",
+          "section-3.1",
+          "section-4.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4",
+          "section-5"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc5234": {
+        "anchors": [
+          "appendix-B.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc9110": {
+        "anchors": [
+          "section-5.6.1",
+          "section-5.6.3",
+          "section-3.2",
+          "section-5.6.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "url",
+          "concept-base-url",
+          "default-port",
+          "concept-domain",
+          "concept-url-fragment",
+          "concept-host",
+          "dom-url-host",
+          "concept-url-origin",
+          "concept-url-password",
+          "concept-url-path",
+          "string-percent-decode",
+          "dom-url-port",
+          "concept-url-port",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-parser",
+          "concept-url-serializer",
+          "concept-url-username"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "report-type",
+          "visible-to-reportingobservers"
+        ]
+      },
+      "https://web.dev/strict-csp/": {},
+      "https://webassembly.github.io/content-security-policy/js-api/": {
+        "anchors": [
+          "host-ensure-can-compile-wasm-bytes"
+        ]
+      },
+      "https://webassembly.github.io/spec/js-api/": {
+        "anchors": [
+          "exceptiondef-compileerror",
+          "dom-webassembly-compile",
+          "dom-webassembly-instantiate",
+          "dom-module-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/web-api/": {
+        "anchors": [
+          "dom-webassembly-compilestreaming",
+          "dom-webassembly-instantiatestreaming"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Default",
+          "Exposed",
+          "idl-USVString",
+          "implements",
+          "idl-object",
+          "idl-unsigned-long",
+          "idl-unsigned-short"
+        ]
+      },
+      "https://websockets.spec.whatwg.org/": {},
+      "https://wicg.github.io/reporting/": {},
+      "https://www.contextis.com/media/downloads/Pixel_Perfect_Timing_Attacks_with_HTML5_Whitepaper.pdf": {},
+      "https://www.rfc-editor.org/rfc/rfc3492": {},
+      "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.rfc-editor.org/rfc/rfc3986": {},
+      "https://www.rfc-editor.org/rfc/rfc4648": {},
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.rfc-editor.org/rfc/rfc7762": {},
+      "https://www.w3.org/2023/Process-20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP2/": {},
+      "https://www.w3.org/TR/SRI/": {
+        "anchors": [
+          "parse-metadata"
+        ]
+      },
+      "https://www.w3.org/TR/UISecurity/": {},
+      "https://www.w3.org/TR/appmanifest/": {},
+      "https://www.w3.org/TR/beacon/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "at-ruledef-import"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "insert-a-css-rule",
+          "parse-a-css-declaration-block",
+          "parse-a-css-rule",
+          "parse-a-group-of-selectors"
+        ]
+      },
+      "https://www.w3.org/TR/eventsource/": {},
+      "https://www.w3.org/TR/html-design-principles/": {},
+      "https://www.w3.org/TR/mixed-content/": {},
+      "https://www.w3.org/TR/reporting-1/": {
+        "anchors": [
+          "reportbody",
+          "endpoint",
+          "generate-and-queue-a-report"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://www.w3.org/TR/upgrade-insecure-requests/": {},
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dfn-administratively-prohibited"
+        ]
+      },
+      "https://www.w3.org/TR/xslt-10/": {},
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {},
+      "https://xhr.spec.whatwg.org/": {}
     },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dl.acm.org/doi/10.1145/2976749.2978363": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "element",
-        "event",
-        "dictdef-eventinit",
-        "concept-shadow-including-root",
-        "connected",
-        "eventtarget",
-        "concept-event-fire",
-        "dom-event-bubbles",
-        "dom-event-composed",
-        "dom-event-target",
-        "concept-document-origin",
-        "concept-element-attribute"
-      ],
-      "specShortname": "dom"
-    },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-encode"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "http-scheme",
-        "local-scheme",
-        "concept-response",
-        "extract-header-list-values",
-        "concept-response-header-list",
-        "concept-response-url",
-        "concept-request",
-        "concept-request-client",
-        "concept-request-url",
-        "concept-request-current-url",
-        "concept-network-error",
-        "concept-main-fetch",
-        "concept-request-policy-container",
-        "concept-request-nonce-metadata",
-        "concept-request-parser-metadata",
-        "concept-request-method",
-        "concept-request-origin",
-        "concept-request-window",
-        "concept-request-destination",
-        "concept-request-initiator",
-        "concept-request-credentials-mode",
-        "request-keepalive-flag",
-        "concept-request-header-list",
-        "concept-request-body",
-        "concept-request-redirect-mode",
-        "concept-request-mode",
-        "concept-fetch",
-        "request-destination-script-like",
-        "is-local",
-        "concept-request-integrity-metadata",
-        "concept-request-redirect-count"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Minichallenge-3:-%22Sh*t,-it%27s-CSP!%22": {
-      "anchors": [
-        "107-bytes"
-      ]
-    },
-    "https://github.com/tc39/ecma262/issues/938": {},
-    "https://github.com/w3c/webappsec-csp/issues/212": {},
-    "https://github.com/w3c/webappsec-csp/issues/426": {},
-    "https://github.com/w3c/webappsec-csp/issues/98": {},
-    "https://github.com/whatwg/html/issues/3257": {},
-    "https://github.com/whatwg/html/issues/968": {},
-    "https://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html": {},
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "parser-inserted",
-        "concept-origin",
-        "navigable",
-        "attr-meta-http-equiv-content-security-policy",
-        "initialise-the-document-object",
-        "prepare-the-script-element",
-        "link-type-prefetch",
-        "link-type-preconnect",
-        "plugin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-origin-opaque",
-        "policy-container-csp-list",
-        "policy-container",
-        "csp-derived-sandboxing-flags",
-        "active-sandboxing-flag-set",
-        "sandboxing-flag-set",
-        "parse-a-sandboxing-directive",
-        "sandboxed-scripts-browsing-context-flag",
-        "sandboxed-origin-browsing-context-flag",
-        "ascii-serialisation-of-an-origin",
-        "concept-origin-scheme"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "create-navigation-params-by-fetching",
-        "attempt-to-populate-the-history-entry's-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "x-frame-options"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "child-navigable",
-        "nav-container-document",
-        "node-navigable"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "dom-document-referrer",
-        "concept-document-policy-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element",
-        "the-object-element",
-        "attr-object-data",
-        "the-embed-element",
-        "an-iframe-srcdoc-document",
-        "attr-iframe-sandbox"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/images.html": {
-      "anchors": [
-        "concept-microsyntax-parse-error"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "ping"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "dom-document-2",
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/obsolete.html": {
-      "anchors": [
-        "frame"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/parsing.html": {
-      "anchors": [
-        "parse-error-duplicate-attribute"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "meta",
-        "attr-meta-http-equiv",
-        "the-link-element",
-        "attr-meta-content",
-        "update-a-style-block",
-        "the-base-element",
-        "set-the-frozen-base-url",
-        "attr-base-href",
-        "the-style-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-a-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
-      "anchors": [
-        "dom-settimeout",
-        "dom-setinterval"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "attr-nonce"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object",
-        "concept-settings-object-origin",
-        "global-object",
-        "concept-settings-object-global",
-        "concept-settings-object-policy-container",
-        "current-settings-object",
-        "concept-realm-global",
-        "queue-a-task",
-        "relevant-settings-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "worker",
-        "workerglobalscope",
-        "run-a-worker",
-        "sharedworker"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/worklets.html": {
-      "anchors": [
-        "workletglobalscope"
-      ]
-    },
-    "https://httpwg.org/specs/rfc8288.html": {
-      "specShortname": "rfc8288"
-    },
-    "https://httpwg.org/specs/rfc9110.html": {
-      "specShortname": "rfc9110"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ascii-whitespace",
-        "ordered-set",
-        "list",
-        "list-contain",
-        "ascii-string",
-        "string",
-        "list-iterate",
-        "strictly-split",
-        "strip-leading-and-trailing-ascii-whitespace",
-        "iteration-continue",
-        "collect-a-sequence-of-code-points",
-        "ascii-lowercase",
-        "split-on-ascii-whitespace",
-        "set-append",
-        "byte-sequence",
-        "isomorphic-decode",
-        "split-on-commas",
-        "list-append",
-        "list-is-empty",
-        "ascii-case-insensitive",
-        "ordered-map",
-        "serialize-an-infra-value-to-json-bytes",
-        "string-is",
-        "list-size",
-        "string-starts-with",
-        "string-ends-with",
-        "ascii-digit",
-        "javascript-string-convert"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://lists.w3.org/Archives/Public/public-webappsec/2014Feb/0036.html": {},
-    "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": {},
-    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
-    "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html": {},
-    "https://tc39.github.io/ecma262": {
-      "anchors": [
-        "sec-eval-x",
-        "sec-hostensurecancompilestrings",
-        "realm",
-        "sec-function-objects"
-      ]
-    },
-    "https://tc39.github.io/ecma262/": {},
-    "https://tools.ietf.org/html/rfc3986": {
-      "anchors": [
-        "section-3.1",
-        "section-3.3",
-        "section-4.1"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc4648": {
-      "anchors": [
-        "section-4",
-        "section-5"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc5234": {
-      "anchors": [
-        "appendix-B.1"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc9110": {
-      "anchors": [
-        "section-5.6.1",
-        "section-5.6.3",
-        "section-3.2",
-        "section-5.6.2"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin",
-        "url",
-        "concept-url-scheme",
-        "concept-url",
-        "concept-url-fragment",
-        "concept-url-username",
-        "concept-url-password",
-        "concept-url-serializer",
-        "concept-url-parser",
-        "concept-base-url",
-        "dom-url-host",
-        "concept-url-path",
-        "dom-url-port",
-        "default-port",
-        "concept-host",
-        "concept-domain",
-        "concept-url-port",
-        "string-percent-decode"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/reporting/": {
-      "anchors": [
-        "report-type",
-        "visible-to-reportingobservers"
-      ],
-      "specShortname": "reporting-1"
-    },
-    "https://web.dev/strict-csp/": {},
-    "https://webassembly.github.io/content-security-policy/js-api/": {
-      "anchors": [
-        "host-ensure-can-compile-wasm-bytes"
-      ],
-      "specShortname": "wasm-js-api-2-fork-content-security-policy"
-    },
-    "https://webassembly.github.io/spec/js-api/": {
-      "anchors": [
-        "exceptiondef-compileerror",
-        "dom-module-module",
-        "dom-webassembly-compile",
-        "dom-webassembly-instantiate"
-      ],
-      "specShortname": "wasm-js-api-2"
-    },
-    "https://webassembly.github.io/spec/web-api/": {
-      "anchors": [
-        "dom-webassembly-compilestreaming",
-        "dom-webassembly-instantiatestreaming"
-      ],
-      "specShortname": "wasm-web-api-2"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "Default",
-        "idl-object",
-        "idl-USVString",
-        "idl-DOMString",
-        "idl-unsigned-short",
-        "idl-unsigned-long",
-        "implements"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://websockets.spec.whatwg.org/": {
-      "specShortname": "websockets"
-    },
-    "https://wicg.github.io/reporting/": {},
-    "https://www.contextis.com/media/downloads/Pixel_Perfect_Timing_Attacks_with_HTML5_Whitepaper.pdf": {},
-    "https://www.rfc-editor.org/rfc/rfc3492": {},
-    "https://www.rfc-editor.org/rfc/rfc3864": {},
-    "https://www.rfc-editor.org/rfc/rfc3986": {},
-    "https://www.rfc-editor.org/rfc/rfc4648": {},
-    "https://www.rfc-editor.org/rfc/rfc5234": {},
-    "https://www.rfc-editor.org/rfc/rfc7762": {},
-    "https://www.w3.org/2023/Process-20231103/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP2/": {},
-    "https://www.w3.org/TR/SRI/": {
-      "anchors": [
-        "parse-metadata"
-      ],
-      "specShortname": "SRI"
-    },
-    "https://www.w3.org/TR/UISecurity/": {},
-    "https://www.w3.org/TR/appmanifest/": {
-      "specShortname": "appmanifest"
-    },
-    "https://www.w3.org/TR/beacon/": {
-      "specShortname": "beacon"
-    },
-    "https://www.w3.org/TR/css-cascade-5/": {
-      "anchors": [
-        "at-ruledef-import"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://www.w3.org/TR/cssom-1/": {
-      "anchors": [
-        "insert-a-css-rule",
-        "parse-a-css-rule",
-        "parse-a-css-declaration-block",
-        "parse-a-group-of-selectors"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/eventsource/": {},
-    "https://www.w3.org/TR/html-design-principles/": {},
-    "https://www.w3.org/TR/mixed-content/": {
-      "specShortname": "mixed-content"
-    },
-    "https://www.w3.org/TR/reporting-1/": {
-      "anchors": [
-        "reportbody",
-        "generate-and-queue-a-report",
-        "endpoint"
-      ],
-      "specShortname": "reporting-1"
-    },
-    "https://www.w3.org/TR/service-workers/": {
-      "anchors": [
-        "serviceworker"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://www.w3.org/TR/upgrade-insecure-requests/": {
-      "specShortname": "upgrade-insecure-requests"
-    },
-    "https://www.w3.org/TR/webrtc/": {
-      "anchors": [
-        "dfn-administratively-prohibited"
-      ],
-      "specShortname": "webrtc"
-    },
-    "https://www.w3.org/TR/xslt-10/": {},
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {},
-    "https://xhr.spec.whatwg.org/": {
-      "specShortname": "xhr"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "event",
+          "dictdef-eventinit",
+          "concept-shadow-including-root",
+          "connected",
+          "eventtarget",
+          "concept-event-fire",
+          "dom-event-bubbles",
+          "dom-event-composed",
+          "dom-event-target",
+          "concept-document-origin",
+          "concept-element-attribute"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "http-scheme",
+          "local-scheme",
+          "concept-response",
+          "extract-header-list-values",
+          "concept-response-header-list",
+          "concept-response-url",
+          "concept-request",
+          "concept-request-client",
+          "concept-request-url",
+          "concept-request-current-url",
+          "concept-network-error",
+          "concept-main-fetch",
+          "concept-request-policy-container",
+          "concept-request-nonce-metadata",
+          "concept-request-parser-metadata",
+          "concept-request-method",
+          "concept-request-origin",
+          "concept-request-window",
+          "concept-request-destination",
+          "concept-request-initiator",
+          "concept-request-credentials-mode",
+          "request-keepalive-flag",
+          "concept-request-header-list",
+          "concept-request-body",
+          "concept-request-redirect-mode",
+          "concept-request-mode",
+          "concept-fetch",
+          "request-destination-script-like",
+          "is-local",
+          "concept-request-integrity-metadata",
+          "concept-request-redirect-count"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "parser-inserted",
+          "concept-origin",
+          "navigable",
+          "attr-meta-http-equiv-content-security-policy",
+          "initialise-the-document-object",
+          "prepare-the-script-element",
+          "link-type-prefetch",
+          "link-type-preconnect",
+          "plugin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin-opaque",
+          "policy-container-csp-list",
+          "policy-container",
+          "csp-derived-sandboxing-flags",
+          "active-sandboxing-flag-set",
+          "sandboxing-flag-set",
+          "parse-a-sandboxing-directive",
+          "sandboxed-scripts-browsing-context-flag",
+          "sandboxed-origin-browsing-context-flag",
+          "ascii-serialisation-of-an-origin",
+          "concept-origin-scheme"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "create-navigation-params-by-fetching",
+          "attempt-to-populate-the-history-entry's-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "x-frame-options"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "child-navigable",
+          "nav-container-document",
+          "node-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "dom-document-referrer",
+          "concept-document-policy-container"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element",
+          "the-object-element",
+          "attr-object-data",
+          "the-embed-element",
+          "an-iframe-srcdoc-document",
+          "attr-iframe-sandbox"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "concept-microsyntax-parse-error"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "ping"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "dom-document-2",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/obsolete.html": {
+        "anchors": [
+          "frame"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "parse-error-duplicate-attribute"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "meta",
+          "attr-meta-http-equiv",
+          "the-link-element",
+          "attr-meta-content",
+          "update-a-style-block",
+          "the-base-element",
+          "set-the-frozen-base-url",
+          "attr-base-href",
+          "the-style-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+        "anchors": [
+          "dom-settimeout",
+          "dom-setinterval"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "attr-nonce"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "global-object",
+          "concept-settings-object-global",
+          "concept-settings-object-policy-container",
+          "current-settings-object",
+          "concept-realm-global",
+          "queue-a-task",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker",
+          "workerglobalscope",
+          "run-a-worker",
+          "sharedworker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-whitespace",
+          "ordered-set",
+          "list",
+          "list-contain",
+          "ascii-string",
+          "string",
+          "list-iterate",
+          "strictly-split",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "iteration-continue",
+          "collect-a-sequence-of-code-points",
+          "ascii-lowercase",
+          "split-on-ascii-whitespace",
+          "set-append",
+          "byte-sequence",
+          "isomorphic-decode",
+          "split-on-commas",
+          "list-append",
+          "list-is-empty",
+          "ascii-case-insensitive",
+          "ordered-map",
+          "serialize-an-infra-value-to-json-bytes",
+          "string-is",
+          "list-size",
+          "string-starts-with",
+          "string-ends-with",
+          "ascii-digit",
+          "javascript-string-convert"
+        ]
+      },
+      "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
+      "https://tc39.github.io/ecma262": {
+        "anchors": [
+          "sec-eval-x",
+          "sec-hostensurecancompilestrings",
+          "realm",
+          "sec-function-objects"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc3986": {
+        "anchors": [
+          "section-3.1",
+          "section-3.3",
+          "section-4.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4",
+          "section-5"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc5234": {
+        "anchors": [
+          "appendix-B.1"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc9110": {
+        "anchors": [
+          "section-5.6.3",
+          "section-3.2",
+          "section-5.6.2"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "url",
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-fragment",
+          "concept-url-username",
+          "concept-url-password",
+          "concept-url-serializer",
+          "concept-url-parser",
+          "concept-base-url",
+          "dom-url-host",
+          "concept-url-path",
+          "dom-url-port",
+          "default-port",
+          "concept-host",
+          "concept-domain",
+          "concept-url-port",
+          "string-percent-decode"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "report-type",
+          "visible-to-reportingobservers"
+        ]
+      },
+      "https://webassembly.github.io/content-security-policy/js-api/": {
+        "anchors": [
+          "host-ensure-can-compile-wasm-bytes"
+        ]
+      },
+      "https://webassembly.github.io/spec/js-api/": {
+        "anchors": [
+          "exceptiondef-compileerror",
+          "dom-module-module",
+          "dom-webassembly-compile",
+          "dom-webassembly-instantiate"
+        ]
+      },
+      "https://webassembly.github.io/spec/web-api/": {
+        "anchors": [
+          "dom-webassembly-compilestreaming",
+          "dom-webassembly-instantiatestreaming"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "Default",
+          "idl-object",
+          "idl-USVString",
+          "idl-DOMString",
+          "idl-unsigned-short",
+          "idl-unsigned-long",
+          "implements"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "at-ruledef-import"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "insert-a-css-rule",
+          "parse-a-css-rule",
+          "parse-a-css-declaration-block",
+          "parse-a-group-of-selectors"
+        ]
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "anchors": [
+          "reportbody",
+          "generate-and-queue-a-report",
+          "endpoint"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dfn-administratively-prohibited"
+        ]
+      }
     }
   }
 }

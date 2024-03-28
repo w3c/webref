@@ -4,307 +4,466 @@
     "url": "https://www.w3.org/TR/css-animations-2/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-tree-order",
-        "event-target"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event-target",
+          "concept-tree-order"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats-3/": {
+        "anchors": [
+          "valdef-clear-both"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/6429": {},
+      "https://github.com/w3c/csswg-drafts/issues/6530": {},
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed"
+        ]
+      },
+      "https://wicg.github.io/scroll-animations/": {},
+      "https://www.w3.org/2021/Process-20211102/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2023/WD-css-animations-2-20230302/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/": {},
+      "https://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/syndata.html": {
+        "anchors": [
+          "x14"
+        ]
+      },
+      "https://www.w3.org/TR/css-animations-1/": {
+        "anchors": [
+          "keyframes",
+          "animation-name",
+          "typedef-keyframe-selector",
+          "typedef-keyframes-name",
+          "typedef-single-animation-direction",
+          "typedef-single-animation-fill-mode",
+          "typedef-single-animation-iteration-count",
+          "typedef-single-animation-play-state",
+          "at-ruledef-keyframes",
+          "animationevent",
+          "propdef-animation",
+          "propdef-animation-delay",
+          "propdef-animation-direction",
+          "propdef-animation-fill-mode",
+          "propdef-animation-iteration-count",
+          "propdef-animation-name",
+          "propdef-animation-play-state",
+          "propdef-animation-timing-function",
+          "eventdef-globaleventhandlers-animationcancel",
+          "eventdef-globaleventhandlers-animationend",
+          "eventdef-globaleventhandlers-animationiteration",
+          "eventdef-globaleventhandlers-animationstart",
+          "valdef-animation-fill-mode-backwards",
+          "dom-animationevent-elapsedtime",
+          "valdef-animation-fill-mode-forwards",
+          "valdef-animation-fill-mode-none",
+          "valdef-animation-name-none",
+          "valdef-animation-play-state-paused",
+          "valdef-animation-play-state-running"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-4/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "computed-value",
+          "declared-value",
+          "initial-value",
+          "longhand",
+          "shorthand-property",
+          "specified-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-6/": {
+        "anchors": [
+          "cascade",
+          "origin"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-display",
+          "valdef-display-none"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "typedef-easing-function",
+          "easing-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-logical-1/": {
+        "anchors": [
+          "logical-property-group"
+        ]
+      },
+      "https://www.w3.org/TR/css-masking-1/": {
+        "anchors": [
+          "valdef-mask-composite-add"
+        ]
+      },
+      "https://www.w3.org/TR/css-page-floats-3/": {},
+      "https://www.w3.org/TR/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "anchors": [
+          "propdef-scale"
+        ]
+      },
+      "https://www.w3.org/TR/css-transitions-1/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "linked-properties",
+          "mult-comma",
+          "identifier-value",
+          "percentage-value",
+          "time-value",
+          "coordinated-value-list",
+          "coordinating-list-base-property",
+          "coordinating-list-property",
+          "css-css-identifier",
+          "comb-one",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
+      "https://www.w3.org/TR/css-writing-modes-4/": {
+        "anchors": [
+          "writing-mode"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "cssomstring"
+        ]
+      },
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ]
+      },
+      "https://www.w3.org/TR/scroll-animations-1/": {
+        "anchors": [
+          "finite-attachment",
+          "timeline-scope",
+          "scroll-notation",
+          "view-notation",
+          "typedef-timeline-range-name",
+          "propdef-animation-range",
+          "scroll-progress-timelines",
+          "funcdef-scroll",
+          "scroll-driven-animations",
+          "view-progress-timelines",
+          "funcdef-view"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-1/": {
+        "anchors": [
+          "calculating-computed-keyframes",
+          "the-effect-value-of-a-keyframe-animation-effect",
+          "animation-effect-phases-and-states",
+          "animation",
+          "animationeffect",
+          "documenttimeline",
+          "keyframeeffect",
+          "active-duration",
+          "animation-effect-active-phase",
+          "active-time",
+          "animation-effect-after-phase",
+          "concept-animation",
+          "animation-class",
+          "animation-effect",
+          "animation-frame",
+          "animation-playback-events",
+          "animation-associated-effect",
+          "associated-effect-end",
+          "animation-effect-before-phase",
+          "composite-operation",
+          "current-iteration",
+          "animation-current-time",
+          "default-document-timeline",
+          "dom-animation-effect",
+          "fill-mode",
+          "dom-keyframeeffect-getkeyframes",
+          "global-animation-list",
+          "animation-effect-idle-phase",
+          "idle-play-state",
+          "iteration-count",
+          "iteration-duration",
+          "iteration-start",
+          "keyframe",
+          "pause-an-animation",
+          "dom-animation-pause",
+          "paused-play-state",
+          "pending-pause-task",
+          "pending-play-task",
+          "play-an-animation",
+          "play-state",
+          "dom-animation-play",
+          "dom-animation-playstate",
+          "playback-direction",
+          "dom-animation-reverse",
+          "dom-keyframeeffect-setkeyframes",
+          "start-delay",
+          "target-element",
+          "timeline",
+          "dom-animationeffect-updatetiming-timing-timing",
+          "unresolved",
+          "dom-animationeffect-updatetiming"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-2/": {
+        "anchors": [
+          "dom-animatable-getanimations",
+          "dom-animation-starttime"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ]
+      },
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {}
     },
-    "https://drafts.csswg.org/css-page-floats-3/": {
-      "anchors": [
-        "valdef-clear-both"
-      ],
-      "specShortname": "css-page-floats-3"
-    },
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/6429": {},
-    "https://github.com/w3c/csswg-drafts/issues/6530": {},
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/scroll-animations/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/CSS/Test/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2023/WD-css-animations-2-20230302/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS21/": {
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/syndata.html": {
-      "anchors": [
-        "x14"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/css-animations-1/": {
-      "anchors": [
-        "at-ruledef-keyframes",
-        "propdef-animation-timing-function",
-        "propdef-animation-delay",
-        "propdef-animation-play-state",
-        "propdef-animation-name",
-        "keyframes",
-        "typedef-keyframes-name",
-        "valdef-animation-name-none",
-        "typedef-keyframe-selector",
-        "propdef-animation",
-        "propdef-animation-iteration-count",
-        "propdef-animation-fill-mode",
-        "valdef-animation-fill-mode-backwards",
-        "propdef-animation-direction",
-        "valdef-animation-fill-mode-forwards",
-        "valdef-animation-fill-mode-none",
-        "valdef-animation-play-state-running",
-        "valdef-animation-play-state-paused",
-        "animation-name",
-        "typedef-single-animation-iteration-count",
-        "typedef-single-animation-direction",
-        "typedef-single-animation-fill-mode",
-        "typedef-single-animation-play-state",
-        "dom-animationevent-elapsedtime",
-        "eventdef-globaleventhandlers-animationstart",
-        "eventdef-globaleventhandlers-animationend",
-        "eventdef-globaleventhandlers-animationiteration",
-        "eventdef-globaleventhandlers-animationcancel",
-        "animationevent"
-      ],
-      "specShortname": "css-animations-1"
-    },
-    "https://www.w3.org/TR/css-cascade-4/": {
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-cascade-5/": {
-      "anchors": [
-        "computed-value",
-        "specified-value",
-        "shorthand-property",
-        "longhand",
-        "declared-value",
-        "initial-value"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://www.w3.org/TR/css-cascade-6/": {
-      "anchors": [
-        "origin",
-        "cascade"
-      ],
-      "specShortname": "css-cascade-6"
-    },
-    "https://www.w3.org/TR/css-cascade/": {
-      "anchors": [
-        "initial-values",
-        "applies-to",
-        "inherited-property",
-        "computed"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://www.w3.org/TR/css-display-3/": {
-      "anchors": [
-        "propdef-display",
-        "valdef-display-none"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://www.w3.org/TR/css-easing-1/": {
-      "anchors": [
-        "easing-function",
-        "typedef-easing-function"
-      ],
-      "specShortname": "css-easing-1"
-    },
-    "https://www.w3.org/TR/css-logical-1/": {
-      "anchors": [
-        "logical-property-group"
-      ],
-      "specShortname": "css-logical-1"
-    },
-    "https://www.w3.org/TR/css-masking-1/": {
-      "anchors": [
-        "valdef-mask-composite-add"
-      ],
-      "specShortname": "css-masking-1"
-    },
-    "https://www.w3.org/TR/css-page-floats-3/": {
-      "specShortname": "css-page-floats-3"
-    },
-    "https://www.w3.org/TR/css-pseudo/": {
-      "anchors": [
-        "generated-content"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://www.w3.org/TR/css-transforms-2/": {
-      "anchors": [
-        "propdef-scale"
-      ],
-      "specShortname": "css-transforms-2"
-    },
-    "https://www.w3.org/TR/css-transitions-1/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://www.w3.org/TR/css-values-4/": {
-      "anchors": [
-        "coordinated-value-list",
-        "percentage-value",
-        "coordinating-list-property",
-        "coordinating-list-base-property",
-        "linked-properties",
-        "comb-one",
-        "time-value",
-        "mult-comma",
-        "css-css-identifier",
-        "identifier-value",
-        "comb-any"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css-values/": {
-      "anchors": [
-        "value-defs",
-        "percentages"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://www.w3.org/TR/css-writing-modes-4/": {
-      "anchors": [
-        "writing-mode"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://www.w3.org/TR/cssom-1/": {
-      "anchors": [
-        "cssomstring"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/cssom/": {
-      "anchors": [
-        "serializing-css-values"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/scroll-animations-1/": {
-      "anchors": [
-        "typedef-timeline-range-name",
-        "scroll-driven-animations",
-        "propdef-animation-range",
-        "finite-attachment",
-        "funcdef-scroll",
-        "funcdef-view",
-        "scroll-progress-timelines",
-        "view-progress-timelines",
-        "timeline-scope",
-        "scroll-notation",
-        "view-notation"
-      ],
-      "specShortname": "scroll-animations-1"
-    },
-    "https://www.w3.org/TR/web-animations-1/": {
-      "anchors": [
-        "dom-keyframeeffect-setkeyframes",
-        "keyframeeffect",
-        "dom-animationeffect-updatetiming",
-        "dom-animationeffect-updatetiming-timing-timing",
-        "dom-animation-play",
-        "dom-animation-pause",
-        "dom-animation-reverse",
-        "play-state",
-        "paused-play-state",
-        "dom-animation-effect",
-        "animationeffect",
-        "target-element",
-        "animation-associated-effect",
-        "concept-animation",
-        "animation-class",
-        "global-animation-list",
-        "idle-play-state",
-        "keyframe",
-        "dom-keyframeeffect-getkeyframes",
-        "iteration-count",
-        "calculating-computed-keyframes",
-        "the-effect-value-of-a-keyframe-animation-effect",
-        "iteration-duration",
-        "animation-effect",
-        "playback-direction",
-        "play-an-animation",
-        "pause-an-animation",
-        "start-delay",
-        "fill-mode",
-        "composite-operation",
-        "timeline",
-        "documenttimeline",
-        "default-document-timeline",
-        "animation-playback-events",
-        "animation-effect-phases-and-states",
-        "animation-effect-before-phase",
-        "animation-effect-idle-phase",
-        "animation-current-time",
-        "unresolved",
-        "animation-effect-after-phase",
-        "active-duration",
-        "current-iteration",
-        "iteration-start",
-        "associated-effect-end",
-        "animation-frame",
-        "pending-play-task",
-        "pending-pause-task",
-        "animation-effect-active-phase",
-        "active-time",
-        "animation",
-        "dom-animation-playstate"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://www.w3.org/TR/web-animations-2/": {
-      "anchors": [
-        "dom-animation-starttime",
-        "dom-animatable-getanimations"
-      ],
-      "specShortname": "web-animations-2"
-    },
-    "https://www.w3.org/TR/web-animations/": {
-      "anchors": [
-        "animation-type"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://www.w3.org/groups/wg/css": {},
-    "https://www.w3.org/groups/wg/css/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-tree-order",
+          "event-target"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats-3/": {
+        "anchors": [
+          "valdef-clear-both"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/syndata.html": {
+        "anchors": [
+          "x14"
+        ]
+      },
+      "https://www.w3.org/TR/css-animations-1/": {
+        "anchors": [
+          "at-ruledef-keyframes",
+          "propdef-animation-timing-function",
+          "propdef-animation-delay",
+          "propdef-animation-play-state",
+          "propdef-animation-name",
+          "typedef-keyframes-name",
+          "valdef-animation-name-none",
+          "typedef-keyframe-selector",
+          "propdef-animation",
+          "propdef-animation-iteration-count",
+          "propdef-animation-fill-mode",
+          "valdef-animation-fill-mode-backwards",
+          "propdef-animation-direction",
+          "valdef-animation-fill-mode-forwards",
+          "valdef-animation-fill-mode-none",
+          "valdef-animation-play-state-running",
+          "valdef-animation-play-state-paused",
+          "typedef-single-animation-iteration-count",
+          "typedef-single-animation-direction",
+          "typedef-single-animation-fill-mode",
+          "typedef-single-animation-play-state",
+          "dom-animationevent-elapsedtime",
+          "eventdef-globaleventhandlers-animationstart",
+          "eventdef-globaleventhandlers-animationend",
+          "eventdef-globaleventhandlers-animationiteration",
+          "eventdef-globaleventhandlers-animationcancel",
+          "animationevent"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "anchors": [
+          "computed-value",
+          "specified-value",
+          "shorthand-property",
+          "longhand",
+          "declared-value",
+          "initial-value"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-6/": {
+        "anchors": [
+          "origin",
+          "cascade"
+        ]
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "anchors": [
+          "propdef-display",
+          "valdef-display-none"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-1/": {
+        "anchors": [
+          "easing-function",
+          "typedef-easing-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-logical-1/": {
+        "anchors": [
+          "logical-property-group"
+        ]
+      },
+      "https://www.w3.org/TR/css-masking-1/": {
+        "anchors": [
+          "valdef-mask-composite-add"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "anchors": [
+          "propdef-scale"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "coordinated-value-list",
+          "percentage-value",
+          "coordinating-list-property",
+          "coordinating-list-base-property",
+          "comb-one",
+          "time-value",
+          "mult-comma",
+          "css-css-identifier",
+          "identifier-value",
+          "comb-any"
+        ]
+      },
+      "https://www.w3.org/TR/css-writing-modes-4/": {
+        "anchors": [
+          "writing-mode"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "anchors": [
+          "cssomstring"
+        ]
+      },
+      "https://www.w3.org/TR/scroll-animations-1/": {
+        "anchors": [
+          "typedef-timeline-range-name",
+          "scroll-driven-animations",
+          "propdef-animation-range",
+          "funcdef-scroll",
+          "funcdef-view",
+          "scroll-progress-timelines",
+          "view-progress-timelines"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-1/": {
+        "anchors": [
+          "dom-keyframeeffect-setkeyframes",
+          "keyframeeffect",
+          "dom-animationeffect-updatetiming",
+          "dom-animationeffect-updatetiming-timing-timing",
+          "dom-animation-play",
+          "dom-animation-pause",
+          "dom-animation-reverse",
+          "play-state",
+          "paused-play-state",
+          "dom-animation-effect",
+          "animationeffect",
+          "target-element",
+          "animation-associated-effect",
+          "concept-animation",
+          "animation-class",
+          "global-animation-list",
+          "idle-play-state",
+          "keyframe",
+          "dom-keyframeeffect-getkeyframes",
+          "iteration-count",
+          "iteration-duration",
+          "animation-effect",
+          "playback-direction",
+          "play-an-animation",
+          "pause-an-animation",
+          "start-delay",
+          "fill-mode",
+          "composite-operation",
+          "timeline",
+          "documenttimeline",
+          "default-document-timeline",
+          "animation-playback-events",
+          "animation-effect-before-phase",
+          "animation-effect-idle-phase",
+          "animation-current-time",
+          "unresolved",
+          "animation-effect-after-phase",
+          "active-duration",
+          "current-iteration",
+          "iteration-start",
+          "associated-effect-end",
+          "animation-frame",
+          "pending-play-task",
+          "pending-pause-task",
+          "animation-effect-active-phase",
+          "active-time",
+          "animation",
+          "dom-animation-playstate"
+        ]
+      },
+      "https://www.w3.org/TR/web-animations-2/": {
+        "anchors": [
+          "dom-animation-starttime",
+          "dom-animatable-getanimations"
+        ]
+      }
+    }
   }
 }

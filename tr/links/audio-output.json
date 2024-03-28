@@ -4,128 +4,151 @@
     "url": "https://www.w3.org/TR/audio-output/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "allowed-to-play",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "concept-relevant-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "idl-promise",
+          "reject"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20230612/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "event-mediadevices-devicechange",
+          "device-exposure-decision-non-camera-microphone",
+          "def-mediadeviceinfo-groupId"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/webaudio/": {
+        "anchors": [
+          "allowed-to-start"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webrtc": {},
+      "https://www.w3.org/groups/wg/webrtc/ipr": {}
     },
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "allowed-to-play",
-        "concept-relevant-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-permissions-policy"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "htmlmediaelement",
-        "dom-media-paused"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-settings-object",
-        "concept-relevant-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SecureContext",
-        "idl-DOMString",
-        "idl-promise",
-        "idl-undefined",
-        "idl-DOMException",
-        "notallowederror",
-        "notfounderror",
-        "aborterror",
-        "this",
-        "reject",
-        "dom-domexception-name",
-        "invalidstateerror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20230612/": {
-      "anchors": [
-        "recs-and-notes"
-      ]
-    },
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/mediacapture-streams/": {
-      "anchors": [
-        "dom-mediadeviceinfo-deviceid",
-        "dom-mediadeviceinfo",
-        "dom-mediadevices-enumeratedevices",
-        "event-mediadevices-devicechange",
-        "dom-mediadevices",
-        "creating-a-device-info-object",
-        "dom-mediadevices-getusermedia",
-        "dom-mediadeviceinfo-groupid",
-        "device-exposure-decision-non-camera-microphone",
-        "dom-mediadeviceinfo-kind",
-        "idl-def-MediaDeviceKind.audiooutput",
-        "def-mediadeviceinfo-groupId"
-      ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dom-permissiondescriptor",
-        "dfn-name",
-        "dfn-permission-state",
-        "dom-permissionstate-denied",
-        "dfn-prompt-the-user-to-choose",
-        "dfn-powerful-feature",
-        "dfn-permission-descriptor-type",
-        "dom-permissionstate-granted"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/webaudio/": {
-      "anchors": [
-        "allowed-to-start",
-        "AudioContext"
-      ],
-      "specShortname": "webaudio"
-    },
-    "https://www.w3.org/groups/wg/webrtc": {},
-    "https://www.w3.org/groups/wg/webrtc/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlmediaelement",
+          "dom-media-paused"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "idl-undefined",
+          "idl-DOMException",
+          "notallowederror",
+          "notfounderror",
+          "aborterror",
+          "this",
+          "dom-domexception-name",
+          "invalidstateerror"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dom-mediadeviceinfo-deviceid",
+          "dom-mediadeviceinfo",
+          "dom-mediadevices-enumeratedevices",
+          "event-mediadevices-devicechange",
+          "dom-mediadevices",
+          "creating-a-device-info-object",
+          "dom-mediadevices-getusermedia",
+          "dom-mediadeviceinfo-groupid",
+          "dom-mediadeviceinfo-kind",
+          "idl-def-MediaDeviceKind.audiooutput"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dom-permissiondescriptor",
+          "dfn-name",
+          "dfn-permission-state",
+          "dom-permissionstate-denied",
+          "dfn-prompt-the-user-to-choose",
+          "dfn-powerful-feature",
+          "dfn-permission-descriptor-type",
+          "dom-permissionstate-granted"
+        ]
+      },
+      "https://www.w3.org/TR/webaudio/": {
+        "anchors": [
+          "AudioContext"
+        ]
+      }
+    }
   }
 }
