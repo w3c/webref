@@ -434,8 +434,8 @@ dictionary RTCIceParameters {
 };
 
 dictionary RTCIceCandidatePair {
-  RTCIceCandidate local;
-  RTCIceCandidate remote;
+  required RTCIceCandidate local;
+  required RTCIceCandidate remote;
 };
 
 enum RTCIceGathererState {
