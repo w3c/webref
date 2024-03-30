@@ -843,48 +843,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gamepadmappingtype-standard",
-      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadmappingtype-standard",
-      "linkingText": [
-        "standard"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GamepadMappingType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gamepadmappingtype-enum",
-        "href": "https://www.w3.org/TR/gamepad/#gamepadmappingtype-enum",
-        "title": "GamepadMappingType enum",
-        "number": "5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gamepadmappingtype-xr-standard",
-      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadmappingtype-xr-standard",
-      "linkingText": [
-        "xr-standard"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GamepadMappingType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gamepadmappingtype-enum",
-        "href": "https://www.w3.org/TR/gamepad/#gamepadmappingtype-enum",
-        "title": "GamepadMappingType enum",
-        "number": "5"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-gamepadmappingtype-the-empty-string",
       "href": "https://www.w3.org/TR/gamepad/#dom-gamepadmappingtype-the-empty-string",
       "linkingText": [
@@ -907,15 +865,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-standard",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-standard",
+      "id": "dom-gamepadmappingtype-standard",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadmappingtype-standard",
       "linkingText": [
-        "\"standard\""
+        "standard"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "enum-value",
+      "for": [
+        "GamepadMappingType"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "gamepadmappingtype-enum",
@@ -926,15 +886,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-xr-standard",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-xr-standard",
+      "id": "dom-gamepadmappingtype-xr-standard",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadmappingtype-xr-standard",
       "linkingText": [
-        "\"xr-standard\""
+        "xr-standard"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "enum-value",
+      "for": [
+        "GamepadMappingType"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "gamepadmappingtype-enum",
@@ -1275,13 +1237,13 @@
         "title": "GamepadHapticEffectType enum",
         "number": "8"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dfn-dual-rumble-effect-type",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-dual-rumble-effect-type",
+      "id": "dfn-valid-dual-rumble-effect",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-valid-dual-rumble-effect",
       "linkingText": [
-        "\"dual-rumble\" effect type"
+        "valid dual-rumble effect"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1294,13 +1256,34 @@
         "title": "GamepadHapticEffectType enum",
         "number": "8"
       },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gamepadhapticeffecttype-trigger-rumble",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticeffecttype-trigger-rumble",
+      "linkingText": [
+        "trigger-rumble"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadHapticEffectType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticeffecttype-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticeffecttype-enum",
+        "title": "GamepadHapticEffectType enum",
+        "number": "8"
+      },
       "definedIn": "dt"
     },
     {
-      "id": "dfn-valid-dual-rumble-effect",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-valid-dual-rumble-effect",
+      "id": "dfn-valid-trigger-rumble-effect",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-valid-trigger-rumble-effect",
       "linkingText": [
-        "valid dual-rumble effect"
+        "valid trigger-rumble effect"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1353,7 +1336,7 @@
         "title": "GamepadEffectParameters Dictionary",
         "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gamepadeffectparameters-startdelay",
@@ -1374,7 +1357,7 @@
         "title": "GamepadEffectParameters Dictionary",
         "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gamepadeffectparameters-strongmagnitude",
@@ -1395,7 +1378,7 @@
         "title": "GamepadEffectParameters Dictionary",
         "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gamepadeffectparameters-weakmagnitude",
@@ -1416,18 +1399,20 @@
         "title": "GamepadEffectParameters Dictionary",
         "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dfn-duration",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-duration",
+      "id": "dom-gamepadeffectparameters-lefttrigger",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-lefttrigger",
       "linkingText": [
-        "duration"
+        "leftTrigger"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
@@ -1438,53 +1423,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-startdelay",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-startdelay",
+      "id": "dom-gamepadeffectparameters-righttrigger",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-righttrigger",
       "linkingText": [
-        "startDelay"
+        "rightTrigger"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gamepadeffectparameters-dictionary",
-        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-strongmagnitude",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-strongmagnitude",
-      "linkingText": [
-        "strongMagnitude"
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gamepadeffectparameters-dictionary",
-        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
-        "title": "GamepadEffectParameters Dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-weakmagnitude",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-weakmagnitude",
-      "linkingText": [
-        "weakMagnitude"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "gamepadeffectparameters-dictionary",
@@ -1739,9 +1688,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-canonical-index",
-      "href": "https://www.w3.org/TR/gamepad/#dfn-canonical-index",
+      "id": "dfn-canonical-indices",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-canonical-indices",
       "linkingText": [
+        "canonical indices",
         "canonical index"
       ],
       "localLinkingText": [],
