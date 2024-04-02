@@ -15,6 +15,7 @@
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "margin",
       "styleDeclaration": [
         "margin-top",
         "marginTop"
@@ -31,6 +32,7 @@
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "margin",
       "styleDeclaration": [
         "margin-right",
         "marginRight"
@@ -47,6 +49,7 @@
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "margin",
       "styleDeclaration": [
         "margin-bottom",
         "marginBottom"
@@ -63,6 +66,7 @@
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "margin",
       "styleDeclaration": [
         "margin-left",
         "marginLeft"
@@ -104,28 +108,28 @@
         },
         {
           "name": "block-start",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-block-start",
           "type": "value",
           "value": "block-start"
         },
         {
           "name": "inline-start",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-inline-start",
           "type": "value",
           "value": "inline-start"
         },
         {
           "name": "inline-end",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-inline-end",
           "type": "value",
           "value": "inline-end"
         },
         {
           "name": "block-end",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-block-end",
           "type": "value",
           "value": "block-end"
@@ -161,6 +165,7 @@
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "padding",
       "styleDeclaration": [
         "padding-top",
         "paddingTop"
@@ -177,6 +182,7 @@
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "padding",
       "styleDeclaration": [
         "padding-right",
         "paddingRight"
@@ -193,6 +199,7 @@
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "padding",
       "styleDeclaration": [
         "padding-bottom",
         "paddingBottom"
@@ -209,6 +216,7 @@
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "logicalPropertyGroup": "padding",
       "styleDeclaration": [
         "padding-left",
         "paddingLeft"
@@ -234,28 +242,142 @@
   "selectors": [],
   "values": [
     {
+      "name": "<box>",
+      "prose": "The following <box> CSS keywords are defined for use in properties (such as transform-box and background-clip) that need to refer to various box edges:",
+      "href": "https://www.w3.org/TR/css-box-4/#typedef-box",
+      "type": "type",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "margin-box",
+          "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
+          "type": "value",
+          "value": "margin-box"
+        },
+        {
+          "name": "fill-box",
+          "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
+          "name": "view-box",
+          "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
+          "type": "value",
+          "value": "view-box"
+        }
+      ]
+    },
+    {
       "name": "<visual-box>",
       "href": "https://www.w3.org/TR/css-box-4/#typedef-visual-box",
       "type": "type",
-      "value": "content-box | padding-box | border-box"
+      "value": "content-box | padding-box | border-box",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
+          "type": "value",
+          "value": "border-box"
+        }
+      ]
     },
     {
       "name": "<layout-box>",
       "href": "https://www.w3.org/TR/css-box-4/#typedef-layout-box",
       "type": "type",
-      "value": "content-box | padding-box | border-box | margin-box"
+      "value": "<visual-box> | margin-box",
+      "values": [
+        {
+          "name": "margin-box",
+          "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
+          "type": "value",
+          "value": "margin-box"
+        }
+      ]
     },
     {
       "name": "<paint-box>",
       "href": "https://www.w3.org/TR/css-box-4/#typedef-paint-box",
       "type": "type",
-      "value": "content-box | padding-box | border-box | fill-box | stroke-box"
+      "value": "<visual-box> | fill-box | stroke-box",
+      "values": [
+        {
+          "name": "fill-box",
+          "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
+          "type": "value",
+          "value": "stroke-box"
+        }
+      ]
     },
     {
       "name": "<coord-box>",
       "href": "https://www.w3.org/TR/css-box-4/#typedef-coord-box",
       "type": "type",
-      "value": "content-box | padding-box | border-box | fill-box | stroke-box | view-box"
+      "value": "<paint-box> | view-box",
+      "values": [
+        {
+          "name": "view-box",
+          "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
+          "type": "value",
+          "value": "view-box"
+        }
+      ]
     }
   ],
   "warnings": [
@@ -266,15 +388,6 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
       "type": "value",
       "value": "content-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "content-box",
-      "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
-      "type": "value",
-      "value": "content-box",
       "for": "<shape-box>"
     },
     {
@@ -293,15 +406,6 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
       "type": "value",
       "value": "padding-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "padding-box",
-      "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
-      "type": "value",
-      "value": "padding-box",
       "for": "<shape-box>"
     },
     {
@@ -320,15 +424,6 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
       "type": "value",
       "value": "border-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "border-box",
-      "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
-      "type": "value",
-      "value": "border-box",
       "for": "<shape-box>"
     },
     {
@@ -347,15 +442,6 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
       "type": "value",
       "value": "margin-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "margin-box",
-      "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
-      "type": "value",
-      "value": "margin-box",
       "for": "<shape-box>"
     },
     {
@@ -374,24 +460,6 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
       "type": "value",
       "value": "fill-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fill-box",
-      "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
-      "type": "value",
-      "value": "fill-box",
-      "for": "<shape-box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fill-box",
-      "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
-      "type": "value",
-      "value": "fill-box",
       "for": "<geometry-box>"
     },
     {
@@ -401,43 +469,7 @@
       "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
       "type": "value",
       "value": "stroke-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "stroke-box",
-      "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
-      "type": "value",
-      "value": "stroke-box",
-      "for": "<shape-box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "stroke-box",
-      "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
-      "type": "value",
-      "value": "stroke-box",
       "for": "<geometry-box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
-      "type": "value",
-      "value": "view-box",
-      "for": "<box>"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
-      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
-      "type": "value",
-      "value": "view-box",
-      "for": "<shape-box>"
     },
     {
       "msg": "Dangling value",
