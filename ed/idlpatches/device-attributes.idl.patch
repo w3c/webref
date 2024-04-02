@@ -1,0 +1,29 @@
+From eb82acaba57e3c80e211b970f9a11d29364495cf Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 2 Apr 2024 15:08:16 +0200
+Subject: [PATCH] Define `NavigatorManagedData` as a partial interface
+
+Pending https://github.com/WICG/WebApiDevice/pull/24
+---
+ ed/idl/device-attributes.idl | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/ed/idl/device-attributes.idl b/ed/idl/device-attributes.idl
+index 54c0c2622..cf62523ad 100644
+--- a/ed/idl/device-attributes.idl
++++ b/ed/idl/device-attributes.idl
+@@ -3,10 +3,7 @@
+ // (https://github.com/w3c/webref)
+ // Source: Device Attributes API (https://wicg.github.io/WebApiDevice/device_attributes/)
+ 
+-[
+-  SecureContext,
+-  Exposed=Window
+-] interface NavigatorManagedData : EventTarget {
++partial interface NavigatorManagedData {
+   // Device Attributes API.
+   Promise<DOMString> getAnnotatedAssetId();
+   Promise<DOMString> getAnnotatedLocation();
+-- 
+2.37.1.windows.1
+
