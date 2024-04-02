@@ -4,161 +4,264 @@
     "url": "https://w3c.github.io/webappsec-mixed-content/"
   },
   "links": {
-    "http://tools.ietf.org/html/rfc6919": {
-      "anchors": [
-        "section-3"
-      ]
+    "rawlinks": {
+      "http://tools.ietf.org/html/rfc6919": {
+        "anchors": [
+          "section-3"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-node-document",
+          "concept-document-origin",
+          "concept-document-url"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-border-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "main-fetch",
+          "concept-request-client",
+          "concept-request-destination",
+          "concept-request-initiator",
+          "navigation-request",
+          "concept-request",
+          "concept-response",
+          "concept-request-url",
+          "concept-response-url",
+          "concept-response-url-list"
+        ]
+      },
+      "https://github.com/w3c/webappsec": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "ancestor-navigables",
+          "concept-document-bc",
+          "doc-container-document",
+          "navigable",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-source-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "attr-fs-action"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/forms.html": {
+        "anchors": [
+          "the-form-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "use-srcset-or-picture"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "plugin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "downloading-hyperlinks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "audio",
+          "video"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "dom-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-global",
+          "concept-settings-object-origin",
+          "relevant-settings-object",
+          "concept-environment-target-browsing-context"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-iterate"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-host",
+          "ip-address",
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-origin",
+          "potentially-trustworthy-url"
+        ]
+      },
+      "https://w3c.github.io/webappsec-upgrade-insecure-requests/": {},
+      "https://www.rfc-editor.org/rfc/rfc6919": {},
+      "https://www.w3.org/2021/Process-20211102/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/2008/REC-xml-20081126/": {
+        "anchors": [
+          "sec-mixed-content"
+        ]
+      },
+      "https://www.w3.org/TR/wsc-ui/": {
+        "anchors": [
+          "securepage"
+        ]
+      },
+      "https://www.w3.org/TR/xml/": {},
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {},
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest"
+        ]
+      }
     },
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "concept-document-origin",
-        "concept-document-url",
-        "concept-node-document"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-background-image",
-        "propdef-border-image"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request",
-        "concept-request-url",
-        "concept-response",
-        "concept-response-url",
-        "concept-request-initiator",
-        "concept-request-destination",
-        "navigation-request",
-        "concept-request-client",
-        "main-fetch",
-        "concept-response-url-list"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/webappsec": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "concept-document-bc",
-        "doc-container-document",
-        "top-level-browsing-context",
-        "navigable",
-        "ancestor-navigables",
-        "nav-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "the-img-element",
-        "the-source-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
-      "anchors": [
-        "attr-fs-action"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/forms.html": {
-      "anchors": [
-        "the-form-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/images.html": {
-      "anchors": [
-        "use-srcset-or-picture"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "plugin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "downloading-hyperlinks"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "video",
-        "audio"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "dom-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object",
-        "concept-settings-object-origin",
-        "concept-settings-object-global",
-        "concept-environment-target-browsing-context",
-        "relevant-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list-iterate"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-host",
-        "ip-address",
-        "concept-url-scheme"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/webappsec-secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-url",
-        "potentially-trustworthy-origin"
-      ],
-      "specShortname": "secure-contexts"
-    },
-    "https://w3c.github.io/webappsec-upgrade-insecure-requests/": {
-      "specShortname": "upgrade-insecure-requests"
-    },
-    "https://www.rfc-editor.org/rfc/rfc6919": {},
-    "https://www.w3.org/2021/Process-20211102/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/2008/REC-xml-20081126/": {
-      "anchors": [
-        "sec-mixed-content"
-      ]
-    },
-    "https://www.w3.org/TR/wsc-ui/": {
-      "anchors": [
-        "securepage"
-      ]
-    },
-    "https://www.w3.org/TR/xml/": {},
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {},
-    "https://xhr.spec.whatwg.org/": {
-      "anchors": [
-        "xmlhttprequest"
-      ],
-      "specShortname": "xhr"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-document-origin",
+          "concept-document-url",
+          "concept-node-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-border-image"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-response",
+          "concept-response-url",
+          "concept-request-initiator",
+          "concept-request-destination",
+          "navigation-request",
+          "concept-request-client",
+          "concept-response-url-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "concept-document-bc",
+          "doc-container-document",
+          "top-level-browsing-context",
+          "navigable",
+          "ancestor-navigables",
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element",
+          "the-source-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
+        "anchors": [
+          "attr-fs-action"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/forms.html": {
+        "anchors": [
+          "the-form-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "use-srcset-or-picture"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "plugin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "downloading-hyperlinks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "video",
+          "audio"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "dom-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "concept-settings-object-global",
+          "concept-environment-target-browsing-context",
+          "relevant-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-iterate"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-host",
+          "ip-address",
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url",
+          "potentially-trustworthy-origin"
+        ]
+      },
+      "https://xhr.spec.whatwg.org/": {
+        "anchors": [
+          "xmlhttprequest"
+        ]
+      }
     }
   }
 }

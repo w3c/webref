@@ -4,145 +4,241 @@
     "url": "https://w3c.github.io/screen-orientation/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "eventtarget",
-        "concept-document",
-        "concept-event-fire"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "document",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
+      "https://fullscreen.spec.whatwg.org/": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "sandboxed-orientation-lock-browsing-context-flag"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "browsing-context",
+          "concept-document-bc",
+          "descendant-navigables",
+          "fully-active",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "dom-manipulation-task-source",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "eventhandler",
+          "queue-a-global-task",
+          "queue-a-task",
+          "concept-relevant-global",
+          "user-interaction-task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "list-iterate",
+          "ordered-set",
+          "user-agent"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SameObject",
+          "Exposed",
+          "idl-promise",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "aborterror",
+          "idl-DOMException",
+          "idl-DOMString",
+          "dfn-exception",
+          "invalidstateerror",
+          "notsupportederror",
+          "reject",
+          "resolve",
+          "securityerror",
+          "this",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unsigned-short"
+        ]
+      },
+      "https://wpt.live/screen-orientation/hidden_document.html": {},
+      "https://wpt.live/screen-orientation/lock-basic.html": {},
+      "https://wpt.live/screen-orientation/lock-sandboxed-iframe.html": {},
+      "https://wpt.live/screen-orientation/non-fully-active.html": {},
+      "https://wpt.live/screen-orientation/onchange-event.html": {},
+      "https://wpt.live/screen-orientation/orientation-locking.html": {},
+      "https://wpt.live/screen-orientation/orientation-reading.html": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/WCAG21/": {
+        "anchors": [
+          "orientation",
+          "dfn-essential"
+        ]
+      },
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-installed-web-application",
+          "dfn-orientation"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {
+        "anchors": [
+          "screen"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "display-mode"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webapps": {},
+      "https://www.w3.org/groups/wg/webapps/ipr": {}
     },
-    "https://fullscreen.spec.whatwg.org/": {
-      "specShortname": "fullscreen"
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "sandboxed-orientation-lock-browsing-context-flag"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unloading-document-cleanup-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "browsing-context",
-        "concept-document-bc",
-        "fully-active",
-        "top-level-browsing-context",
-        "nav-document",
-        "descendant-navigables"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "visibility-state"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "concept-relevant-global",
-        "event-handler-idl-attributes",
-        "event-handlers",
-        "event-handler-event-type",
-        "queue-a-global-task",
-        "dom-manipulation-task-source",
-        "queue-a-task",
-        "user-interaction-task-source"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "user-agent",
-        "assert",
-        "ordered-set",
-        "list-iterate"
-      ],
-      "specShortname": "infra"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-promise",
-        "SameObject",
-        "Exposed",
-        "idl-undefined",
-        "idl-unsigned-short",
-        "this",
-        "dfn-exception",
-        "dfn-throw",
-        "a-promise-rejected-with",
-        "notsupportederror",
-        "idl-DOMException",
-        "aborterror",
-        "a-new-promise",
-        "invalidstateerror",
-        "securityerror",
-        "idl-DOMString",
-        "reject",
-        "resolve"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wpt.live/screen-orientation/hidden_document.html": {},
-    "https://wpt.live/screen-orientation/lock-basic.html": {},
-    "https://wpt.live/screen-orientation/lock-sandboxed-iframe.html": {},
-    "https://wpt.live/screen-orientation/non-fully-active.html": {},
-    "https://wpt.live/screen-orientation/onchange-event.html": {},
-    "https://wpt.live/screen-orientation/orientation-locking.html": {},
-    "https://wpt.live/screen-orientation/orientation-reading.html": {},
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/WCAG21/": {
-      "anchors": [
-        "orientation",
-        "dfn-essential"
-      ]
-    },
-    "https://www.w3.org/TR/appmanifest/": {
-      "anchors": [
-        "dfn-installed-web-application",
-        "dfn-orientation"
-      ],
-      "specShortname": "appmanifest"
-    },
-    "https://www.w3.org/TR/cssom-view-1/": {
-      "anchors": [
-        "screen"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/TR/mediaqueries-5/": {
-      "anchors": [
-        "display-mode"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://www.w3.org/groups/wg/webapps": {},
-    "https://www.w3.org/groups/wg/webapps/ipr": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "eventtarget",
+          "concept-document",
+          "concept-event-fire"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "sandboxed-orientation-lock-browsing-context-flag"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "unloading-document-cleanup-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context",
+          "concept-document-bc",
+          "fully-active",
+          "top-level-browsing-context",
+          "nav-document",
+          "descendant-navigables"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "concept-relevant-global",
+          "event-handler-idl-attributes",
+          "event-handlers",
+          "event-handler-event-type",
+          "queue-a-global-task",
+          "dom-manipulation-task-source",
+          "queue-a-task",
+          "user-interaction-task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent",
+          "assert",
+          "ordered-set",
+          "list-iterate"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-promise",
+          "idl-undefined",
+          "idl-unsigned-short",
+          "this",
+          "dfn-exception",
+          "dfn-throw",
+          "a-promise-rejected-with",
+          "notsupportederror",
+          "idl-DOMException",
+          "aborterror",
+          "a-new-promise",
+          "invalidstateerror",
+          "securityerror",
+          "idl-DOMString",
+          "reject",
+          "resolve"
+        ]
+      },
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-installed-web-application",
+          "dfn-orientation"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {
+        "anchors": [
+          "screen"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "display-mode"
+        ]
+      }
+    }
   }
 }

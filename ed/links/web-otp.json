@@ -4,117 +4,196 @@
     "url": "https://wicg.github.io/web-otp/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-documentfragment-host",
-        "abortsignal-aborted-flag",
-        "document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "abortsignal-aborted-flag",
+          "concept-documentfragment-host"
+        ]
+      },
+      "https://en.wikipedia.org/wiki/Clickjacking": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "credentials"
+        ]
+      },
+      "https://github.com/tabatkins/bikeshed": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "aborterror",
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "notallowederror",
+          "idl-promise",
+          "SecureContext",
+          "securityerror",
+          "dfn-interface-object",
+          "idl-sequence"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "documents",
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "attr-iframe-allow",
+          "allowed-to-use",
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin-domain",
+          "concept-origin-effective-domain",
+          "concept-origin-opaque"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "empty-host",
+          "concept-ipv4",
+          "concept-ipv6",
+          "opaque-host"
+        ]
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "credential",
+          "dictdef-credentialrequestoptions",
+          "credentialscontainer",
+          "abstract-opdef-request-a-credential",
+          "collectfromcredentialstore-origin-options-sameoriginwithancestors",
+          "dom-credential-type-slot",
+          "dom-credentialscontainer-get",
+          "dom-credential-id",
+          "same-origin-with-its-ancestors",
+          "dom-credentialrequestoptions-signal",
+          "user-mediated"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://wicg.github.io/sms-one-time-codes/": {
+        "anchors": [
+          "origin-bound-one-time-code-message"
+        ]
+      },
+      "https://www.w3.org/2001/tag/doc/promises-guide": {
+        "anchors": [
+          "errors"
+        ]
+      },
+      "https://www.w3.org/TR/credential-management-1/": {},
+      "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://en.wikipedia.org/wiki/Clickjacking": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "credentials"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/tabatkins/bikeshed": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "dfn-interface-object",
-        "Exposed",
-        "SecureContext",
-        "idl-DOMString",
-        "idl-promise",
-        "idl-DOMException",
-        "notallowederror",
-        "securityerror",
-        "aborterror",
-        "idl-sequence"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-permissions-policy",
-        "documents"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use",
-        "the-iframe-element",
-        "attr-iframe-allow"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin-opaque",
-        "concept-origin-effective-domain",
-        "concept-origin-domain"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "relevant-settings-object",
-        "concept-settings-object-origin",
-        "environment-settings-object"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-ipv4",
-        "concept-ipv6",
-        "opaque-host",
-        "empty-host"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/webappsec-credential-management/": {
-      "anchors": [
-        "dom-credentialscontainer-get",
-        "credential",
-        "abstract-opdef-request-a-credential",
-        "user-mediated",
-        "collectfromcredentialstore-origin-options-sameoriginwithancestors",
-        "dom-credential-id",
-        "dom-credential-type-slot",
-        "credentialscontainer",
-        "dictdef-credentialrequestoptions",
-        "same-origin-with-its-ancestors",
-        "dom-credentialrequestoptions-signal"
-      ],
-      "specShortname": "credential-management-1"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://wicg.github.io/sms-one-time-codes/": {
-      "anchors": [
-        "origin-bound-one-time-code-message"
-      ],
-      "specShortname": "sms-one-time-codes"
-    },
-    "https://www.w3.org/2001/tag/doc/promises-guide": {
-      "anchors": [
-        "errors"
-      ],
-      "specShortname": "promises-guide"
-    },
-    "https://www.w3.org/TR/credential-management-1/": {
-      "specShortname": "credential-management-1"
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-documentfragment-host",
+          "abortsignal-aborted-flag",
+          "document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "credentials"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "dfn-interface-object",
+          "Exposed",
+          "SecureContext",
+          "idl-DOMString",
+          "idl-promise",
+          "idl-DOMException",
+          "notallowederror",
+          "securityerror",
+          "aborterror",
+          "idl-sequence"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use",
+          "the-iframe-element",
+          "attr-iframe-allow"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin-opaque",
+          "concept-origin-effective-domain",
+          "concept-origin-domain"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "environment-settings-object"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-ipv4",
+          "concept-ipv6",
+          "opaque-host",
+          "empty-host"
+        ]
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "dom-credentialscontainer-get",
+          "credential",
+          "abstract-opdef-request-a-credential",
+          "user-mediated",
+          "collectfromcredentialstore-origin-options-sameoriginwithancestors",
+          "dom-credential-id",
+          "dom-credential-type-slot",
+          "credentialscontainer",
+          "dictdef-credentialrequestoptions",
+          "same-origin-with-its-ancestors",
+          "dom-credentialrequestoptions-signal"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "default-allowlist"
+        ]
+      },
+      "https://wicg.github.io/sms-one-time-codes/": {
+        "anchors": [
+          "origin-bound-one-time-code-message"
+        ]
+      }
+    }
   }
 }

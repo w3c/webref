@@ -200,6 +200,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "webnn-feature",
+      "href": "https://webmachinelearning.github.io/webnn/#webnn-feature",
+      "linkingText": [
+        "webnn-feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-integration",
+        "href": "https://webmachinelearning.github.io/webnn/#permissions-policy-integration",
+        "title": "Permissions Policy Integration",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "navigatorml",
       "href": "https://webmachinelearning.github.io/webnn/#navigatorml",
       "linkingText": [
@@ -239,43 +258,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-mldevicetype",
-      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mldevicetype",
-      "linkingText": [
-        "MLDeviceType"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-ml",
-        "href": "https://webmachinelearning.github.io/webnn/#api-ml",
-        "title": "ML interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "enumdef-mlpowerpreference",
-      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpowerpreference",
-      "linkingText": [
-        "MLPowerPreference"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-mlcontextoptions",
       "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextoptions",
       "linkingText": [
@@ -287,49 +269,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontextoptions-devicetype",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-devicetype",
-      "linkingText": [
-        "deviceType"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLContextOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontextoptions-powerpreference",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-powerpreference",
-      "linkingText": [
-        "powerPreference"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLContextOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-ml",
+        "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+        "title": "ML interface",
+        "number": "7.2"
       },
       "definedIn": "pre"
     },
@@ -393,93 +336,36 @@
       "definedIn": "pre"
     },
     {
-      "id": "webnn-feature",
-      "href": "https://webmachinelearning.github.io/webnn/#webnn-feature",
+      "id": "dom-mlcontextoptions-devicetype",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-devicetype",
       "linkingText": [
-        "webnn-feature"
+        "deviceType"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "MLContextOptions"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "permissions-policy-integration",
-        "href": "https://webmachinelearning.github.io/webnn/#permissions-policy-integration",
-        "title": "Permissions Policy Integration",
+        "id": "api-mlcontextoptions",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlcontextoptions",
+        "title": "MLContextOptions",
         "number": "7.2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "context-type",
-      "href": "https://webmachinelearning.github.io/webnn/#context-type",
+      "id": "enumdef-mldevicetype",
+      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mldevicetype",
       "linkingText": [
-        "context type"
+        "MLDeviceType"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum",
       "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "api-ml-createcontext",
-        "href": "https://webmachinelearning.github.io/webnn/#api-ml-createcontext",
-        "title": "createContext()",
-        "number": "7.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "context-type-default",
-      "href": "https://webmachinelearning.github.io/webnn/#context-type-default",
-      "linkingText": [
-        "default"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "context type"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "context-type-webgpu",
-      "href": "https://webmachinelearning.github.io/webnn/#context-type-webgpu",
-      "linkingText": [
-        "webgpu"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "context type"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "device-type",
-      "href": "https://webmachinelearning.github.io/webnn/#device-type",
-      "linkingText": [
-        "device type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -531,15 +417,35 @@
       "definedIn": "dt"
     },
     {
-      "id": "power-preference",
-      "href": "https://webmachinelearning.github.io/webnn/#power-preference",
+      "id": "dom-mlcontextoptions-powerpreference",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-powerpreference",
       "linkingText": [
-        "power preference"
+        "powerPreference"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dict-member",
+      "for": [
+        "MLContextOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-mlpowerpreference",
+      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpowerpreference",
+      "linkingText": [
+        "MLPowerPreference"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -623,9 +529,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-ml-createcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#api-ml-createcontext",
+        "title": "createContext()",
+        "number": "7.2.2"
       },
       "definedIn": "prose"
     },
@@ -644,9 +551,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-ml-createcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#api-ml-createcontext",
+        "title": "createContext()",
+        "number": "7.2.2"
       },
       "definedIn": "prose"
     },
@@ -664,9 +572,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-ml-createcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#api-ml-createcontext",
+        "title": "createContext()",
+        "number": "7.2.2"
       },
       "definedIn": "prose"
     },
@@ -698,46 +607,6 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcomputeresult-inputs",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-inputs",
-      "linkingText": [
-        "inputs"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLComputeResult"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcomputeresult-outputs",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-outputs",
-      "linkingText": [
-        "outputs"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLComputeResult"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -875,6 +744,104 @@
       "type": "attribute",
       "for": [
         "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "context-type",
+      "href": "https://webmachinelearning.github.io/webnn/#context-type",
+      "linkingText": [
+        "context type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "context-type-default",
+      "href": "https://webmachinelearning.github.io/webnn/#context-type-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "context type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "context-type-webgpu",
+      "href": "https://webmachinelearning.github.io/webnn/#context-type-webgpu",
+      "linkingText": [
+        "webgpu"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "context type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcomputeresult-inputs",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-inputs",
+      "linkingText": [
+        "inputs"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLComputeResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcomputeresult-outputs",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlcomputeresult-outputs",
+      "linkingText": [
+        "outputs"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLComputeResult"
       ],
       "access": "public",
       "informative": false,
@@ -1353,7 +1320,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#title",
         "title": "Web Neural Network API"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-mloperanddescriptor-dimensions",
@@ -1373,7 +1340,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#title",
         "title": "Web Neural Network API"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "mloperanddescriptor-byte-length",
@@ -2674,46 +2641,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlclampoptions-minvalue",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-minvalue",
-      "linkingText": [
-        "minValue"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLClampOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlclampoptions-maxvalue",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-maxvalue",
-      "linkingText": [
-        "maxValue"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLClampOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-mlgraphbuilder-clamp-input-options-input",
       "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp-input-options-input",
       "linkingText": [
@@ -2775,6 +2702,46 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlclampoptions-minvalue",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-minvalue",
+      "linkingText": [
+        "minValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLClampOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlclampoptions-maxvalue",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlclampoptions-maxvalue",
+      "linkingText": [
+        "maxValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLClampOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "check-clamp-options",
@@ -5150,26 +5117,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mleluoptions-alpha",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mleluoptions-alpha",
-      "linkingText": [
-        "alpha"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLEluOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-mlgraphbuilder-elu-input-options-input",
       "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-input-options-input",
       "linkingText": [
@@ -5231,6 +5178,26 @@
         "title": "Web Neural Network API"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-mleluoptions-alpha",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mleluoptions-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLEluOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://webmachinelearning.github.io/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-mlgraphbuilder-elu",

@@ -26,7 +26,7 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,
-                             optional MLBatchNormalizationOptions options = {});
+                               optional MLBatchNormalizationOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -47,7 +47,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand conv2d(MLOperand input, MLOperand filter, optional MLConv2dOptions options = {});
+  MLOperand conv2d(MLOperand input,
+                   MLOperand filter,
+                   optional MLConv2dOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -107,7 +109,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand gather(MLOperand input, MLOperand indices, optional MLGatherOptions options = {});
+  MLOperand gather(MLOperand input,
+                   MLOperand indices,
+                   optional MLGatherOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -150,12 +154,13 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand instanceNormalization(MLOperand input,
-                                optional MLInstanceNormalizationOptions options = {});
+                                  optional MLInstanceNormalizationOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand layerNormalization(MLOperand input, optional MLLayerNormalizationOptions options = {});
+  MLOperand layerNormalization(MLOperand input,
+                               optional MLLayerNormalizationOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -279,9 +284,10 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  sequence<MLOperand> split(MLOperand input,
-                          ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,
-                          optional MLSplitOptions options = {});
+  sequence<MLOperand> split(
+      MLOperand input,
+      ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,
+      optional MLSplitOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

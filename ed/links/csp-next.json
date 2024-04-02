@@ -4,245 +4,417 @@
     "url": "https://wicg.github.io/csp-next/scripting-policy.html"
   },
   "links": {
-    "http://www.w3.org/TR/SRI/": {
-      "anchors": [
-        "parse-metadata"
-      ],
-      "specShortname": "SRI"
+    "rawlinks": {
+      "http://www.w3.org/TR/SRI/": {
+        "anchors": [
+          "parse-metadata"
+        ]
+      },
+      "https://ai.google/research/pubs/pub45542": {},
+      "https://csp.withgoogle.com/docs/strict-csp.html": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "concept-element-attributes-change-ext",
+          "concept-element",
+          "concept-node-document"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-client",
+          "concept-header-list-get",
+          "concept-response-header-list",
+          "concept-request-integrity-metadata",
+          "local-scheme",
+          "concept-main-fetch",
+          "concept-request",
+          "concept-response",
+          "concept-response-url"
+        ]
+      },
+      "https://github.com/tc39/ecma262/issues/938": {},
+      "https://github.com/w3c/webappsec": {},
+      "https://github.com/w3c/webappsec-subresource-integrity/issues/44": {},
+      "https://github.com/whatwg/html/issues/4926": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMString",
+          "Default",
+          "exceptiondef-evalerror",
+          "Exposed",
+          "SecureContext",
+          "idl-USVString",
+          "idl-object",
+          "dfn-throw",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "concept-plugin-secure"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "initialise-the-document-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-embed-element",
+          "the-object-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "same-origin",
+          "sandboxed-plugins-browsing-context-flag"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "htmlscriptelement",
+          "attr-script-integrity",
+          "prepare-a-script",
+          "script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-base-element",
+          "set-the-frozen-base-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "cryptographicnonce",
+          "dom-noncedelement-nonce"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "event-handler-content-attributes",
+          "concept-realm-global",
+          "hostensurecancompilestrings(callerrealm,-calleerealm)",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dedicatedworkerglobalscope",
+          "sharedworker",
+          "sharedworkerglobalscope",
+          "worker",
+          "workerglobalscope",
+          "concept-WorkerGlobalScope-owner-set",
+          "run-a-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "byte-lowercase",
+          "list-contain",
+          "iteration-continue",
+          "javascript-string-convert",
+          "struct-item",
+          "list-iterate",
+          "list",
+          "pair",
+          "string"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+      "https://mikewest.github.io/artur-yes/": {},
+      "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
+      "https://svgwg.org/svg2-draft/interact.html": {
+        "anchors": [
+          "InterfaceSVGScriptElement"
+        ]
+      },
+      "https://tc39.github.io/ecma262": {
+        "anchors": [
+          "sec-hostensurecancompilestrings",
+          "realm"
+        ]
+      },
+      "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
+        "anchors": [
+          "section-3.2",
+          "section-3.1",
+          "section-4.2",
+          "section-3.7"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc3864": {},
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url-scheme",
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "reportbody",
+          "reportingobserver",
+          "report-body",
+          "report-type",
+          "windoworworkerglobalscope-reports",
+          "visible-to-reportingobservers"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "content-security-policy",
+          "can-compile-strings"
+        ]
+      },
+      "https://w3c.github.io/webappsec-trusted-types/dist/spec/": {
+        "anchors": [
+          "trustedscript"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/49309/status": {},
+      "https://www.w3.org/2011/webappsec/": {},
+      "https://www.w3.org/2020/Process-20200915/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "external-hash",
+          "strict-dynamic-usage"
+        ]
+      },
+      "https://www.w3.org/TR/SRI/": {},
+      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/reporting-1/": {},
+      "https://www.w3.org/TR/service-workers-1/": {}
     },
-    "https://ai.google/research/pubs/pub45542": {},
-    "https://csp.withgoogle.com/docs/strict-csp.html": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "element",
-        "concept-node-document",
-        "concept-element",
-        "concept-element-attributes-change-ext"
-      ],
-      "specShortname": "dom"
-    },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-encode"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "local-scheme",
-        "concept-main-fetch",
-        "concept-request-integrity-metadata",
-        "concept-response",
-        "concept-response-header-list",
-        "concept-header-list-get",
-        "concept-request",
-        "concept-response-url",
-        "concept-request-client"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/tc39/ecma262/issues/938": {},
-    "https://github.com/w3c/webappsec": {},
-    "https://github.com/w3c/webappsec-subresource-integrity/issues/44": {},
-    "https://github.com/whatwg/html/issues/4926": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-DOMString",
-        "dfn-throw",
-        "exceptiondef-evalerror",
-        "Exposed",
-        "SecureContext",
-        "Default",
-        "idl-object",
-        "idl-USVString",
-        "idl-unsigned-long"
-      ]
-    },
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "concept-plugin-secure"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "initialise-the-document-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-embed-element",
-        "the-object-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "same-origin",
-        "sandboxed-plugins-browsing-context-flag"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script",
-        "prepare-a-script",
-        "attr-script-integrity",
-        "htmlscriptelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-base-element",
-        "set-the-frozen-base-url"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "dom-noncedelement-nonce",
-        "cryptographicnonce"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "hostensurecancompilestrings(callerrealm,-calleerealm)",
-        "environment-settings-object",
-        "global-object",
-        "relevant-settings-object",
-        "event-handler-content-attributes",
-        "concept-realm-global",
-        "concept-settings-object-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "workerglobalscope",
-        "worker",
-        "sharedworker",
-        "dedicatedworkerglobalscope",
-        "sharedworkerglobalscope",
-        "concept-WorkerGlobalScope-owner-set",
-        "run-a-worker"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/worklets.html": {
-      "anchors": [
-        "workletglobalscope"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string",
-        "list",
-        "pair",
-        "struct-item",
-        "list-iterate",
-        "byte-lowercase",
-        "iteration-continue",
-        "list-contain",
-        "list-item",
-        "javascript-string-convert"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://mikewest.github.io/artur-yes/": {},
-    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
-    "https://svgwg.org/svg2-draft/interact.html": {
-      "anchors": [
-        "InterfaceSVGScriptElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://tc39.github.io/ecma262": {
-      "anchors": [
-        "sec-hostensurecancompilestrings",
-        "realm"
-      ]
-    },
-    "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
-      "anchors": [
-        "section-3.2",
-        "section-3.7",
-        "section-3.1",
-        "section-4.2"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc3864": {},
-    "https://tools.ietf.org/html/rfc4648": {
-      "anchors": [
-        "section-4"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-scheme",
-        "concept-url",
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworker"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/reporting/": {
-      "anchors": [
-        "reportingobserver",
-        "windoworworkerglobalscope-reports",
-        "report-type",
-        "visible-to-reportingobservers",
-        "report-body",
-        "reportbody"
-      ],
-      "specShortname": "reporting-1"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "anchors": [
-        "content-security-policy",
-        "can-compile-strings"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": {
-      "anchors": [
-        "trustedscript"
-      ]
-    },
-    "https://www.w3.org/2004/01/pp-impl/49309/status": {},
-    "https://www.w3.org/2011/webappsec/": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "external-hash",
-        "strict-dynamic-usage"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/SRI/": {
-      "specShortname": "SRI"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/reporting-1/": {
-      "specShortname": "reporting-1"
-    },
-    "https://www.w3.org/TR/service-workers-1/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "element",
+          "concept-node-document",
+          "concept-element",
+          "concept-element-attributes-change-ext"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "local-scheme",
+          "concept-main-fetch",
+          "concept-request-integrity-metadata",
+          "concept-response",
+          "concept-response-header-list",
+          "concept-header-list-get",
+          "concept-request",
+          "concept-response-url",
+          "concept-request-client"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMString",
+          "dfn-throw",
+          "exceptiondef-evalerror",
+          "Exposed",
+          "SecureContext",
+          "Default",
+          "idl-object",
+          "idl-USVString",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "concept-plugin-secure"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "initialise-the-document-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-embed-element",
+          "the-object-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "same-origin",
+          "sandboxed-plugins-browsing-context-flag"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "script",
+          "prepare-a-script",
+          "attr-script-integrity",
+          "htmlscriptelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-base-element",
+          "set-the-frozen-base-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "dom-noncedelement-nonce",
+          "cryptographicnonce"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "hostensurecancompilestrings(callerrealm,-calleerealm)",
+          "environment-settings-object",
+          "global-object",
+          "relevant-settings-object",
+          "event-handler-content-attributes",
+          "concept-realm-global",
+          "concept-settings-object-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workerglobalscope",
+          "worker",
+          "sharedworker",
+          "dedicatedworkerglobalscope",
+          "sharedworkerglobalscope",
+          "concept-WorkerGlobalScope-owner-set",
+          "run-a-worker"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/worklets.html": {
+        "anchors": [
+          "workletglobalscope"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string",
+          "list",
+          "pair",
+          "struct-item",
+          "list-iterate",
+          "byte-lowercase",
+          "iteration-continue",
+          "list-contain",
+          "list-item",
+          "javascript-string-convert"
+        ]
+      },
+      "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
+      "https://svgwg.org/svg2-draft/interact.html": {
+        "anchors": [
+          "InterfaceSVGScriptElement"
+        ]
+      },
+      "https://tc39.github.io/ecma262": {
+        "anchors": [
+          "sec-hostensurecancompilestrings",
+          "realm"
+        ]
+      },
+      "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {
+        "anchors": [
+          "section-3.2",
+          "section-3.7",
+          "section-3.1",
+          "section-4.2"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc4648": {
+        "anchors": [
+          "section-4"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "concept-url",
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://w3c.github.io/reporting/": {
+        "anchors": [
+          "reportingobserver",
+          "windoworworkerglobalscope-reports",
+          "report-type",
+          "visible-to-reportingobservers",
+          "report-body",
+          "reportbody"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "content-security-policy",
+          "can-compile-strings"
+        ]
+      },
+      "https://w3c.github.io/webappsec-trusted-types/dist/spec/": {
+        "anchors": [
+          "trustedscript"
+        ]
+      }
+    }
   }
 }

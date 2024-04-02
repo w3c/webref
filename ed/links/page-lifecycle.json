@@ -4,169 +4,292 @@
     "url": "https://wicg.github.io/page-lifecycle/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://docs.google.com/document/d/1QJpuBTdllLVflMJSov0tlFX3e3yfSfd_-al2IBavbQM/edit": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "concept-document",
-        "concept-event-fire",
-        "concept-shadow-including-descendant",
-        "concept-shadow-including-tree-order"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://docs.google.com/document/d/1QJpuBTdllLVflMJSov0tlFX3e3yfSfd_-al2IBavbQM/edit": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-document",
+          "concept-event-fire",
+          "concept-shadow-including-descendant",
+          "concept-shadow-including-tree-order"
+        ]
+      },
+      "https://drafts.css-houdini.org/worklets": {
+        "anchors": [
+          "workletglobalscope-owner-document"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {},
+      "https://github.com/whatwg/html/issues/3378": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "concept-document-bc",
+          "browsing-context-container",
+          "fully-active",
+          "list-of-the-descendant-browsing-contexts",
+          "nested-browsing-context",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "unloading-documents",
+          "history-traversal",
+          "initialise-the-document-object",
+          "dom-pagetransitionevent-persisted",
+          "traverse-the-history",
+          "unload-a-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "current-document-readiness"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use",
+          "iframe-load-event-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlmediaelement",
+          "media-element",
+          "internal-pause-steps",
+          "internal-play-steps",
+          "dom-media-paused"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "being-rendered"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "posting-messages",
+          "posted-message-task-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "definitions-3",
+          "event-loop-processing-model",
+          "eventhandler",
+          "dedicated-worker-agent",
+          "environment-settings-object",
+          "event-handler-idl-attributes",
+          "concept-settings-object-global",
+          "concept-task",
+          "update-the-rendering",
+          "worklet-agent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "a-browsing-context-is-discarded",
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dedicatedworkerglobalscope",
+          "concept-WorkerGlobalScope-owner-set"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "list-iterate",
+          "list"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-forward-progress",
+          "sec-code-realms"
+        ]
+      },
+      "https://w3c.github.io/IntersectionObserver/": {
+        "anchors": [
+          "calculate-intersection-rect-algo"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "client-interface",
+          "clients-matchall",
+          "dom-clients-openwindow",
+          "algorithms",
+          "create-client-algorithm",
+          "create-windowclient-algorithm",
+          "client",
+          "dfn-service-worker-client"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "this"
+        ]
+      },
+      "https://webkit.org/blog/427/webkit-page-cache-i-the-basics/": {},
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "viewport"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility-2/": {
+        "anchors": [
+          "visibility-states-and-the-visibilitystate-enum"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://drafts.css-houdini.org/worklets": {
-      "anchors": [
-        "workletglobalscope-owner-document"
-      ]
-    },
-    "https://drafts.csswg.org/css2/": {
-      "specShortname": "CSS22"
-    },
-    "https://github.com/whatwg/html/issues/3378": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-document-bc",
-        "nested-browsing-context",
-        "browsing-context-container",
-        "fully-active",
-        "top-level-browsing-context",
-        "list-of-the-descendant-browsing-contexts",
-        "browsing-context",
-        "active-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "unloading-documents",
-        "history-traversal",
-        "unload-a-document",
-        "dom-pagetransitionevent-persisted",
-        "traverse-the-history",
-        "initialise-the-document-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "current-document-readiness"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "iframe-load-event-steps",
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "htmlmediaelement",
-        "media-element",
-        "dom-media-paused",
-        "internal-pause-steps",
-        "internal-play-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "being-rendered"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/web-messaging.html": {
-      "anchors": [
-        "posting-messages",
-        "posted-message-task-source"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "event-handler-idl-attributes",
-        "worklet-agent",
-        "concept-realm-global",
-        "dedicated-worker-agent",
-        "definitions-3",
-        "concept-task",
-        "event-loop-processing-model",
-        "update-the-rendering",
-        "environment-settings-object",
-        "concept-settings-object-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "a-browsing-context-is-discarded",
-        "window-bc"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "dedicatedworkerglobalscope",
-        "concept-WorkerGlobalScope-owner-set"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list",
-        "list-iterate",
-        "list-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-code-realms",
-        "sec-forward-progress"
-      ]
-    },
-    "https://w3c.github.io/IntersectionObserver/": {
-      "anchors": [
-        "calculate-intersection-rect-algo"
-      ],
-      "specShortname": "intersection-observer"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "client-interface",
-        "client",
-        "clients-matchall",
-        "create-windowclient-algorithm",
-        "create-client-algorithm",
-        "dom-clients-openwindow",
-        "dfn-service-worker-client",
-        "algorithms"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-boolean",
-        "this"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://webkit.org/blog/427/webkit-page-cache-i-the-basics/": {},
-    "https://www.w3.org/TR/CSS2/visuren.html": {
-      "anchors": [
-        "viewport"
-      ]
-    },
-    "https://www.w3.org/TR/page-visibility-2/": {
-      "anchors": [
-        "visibility-states-and-the-visibilitystate-enum"
-      ]
-    },
-    "https://www.w3.org/TR/page-visibility/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "concept-document",
+          "concept-event-fire",
+          "concept-shadow-including-descendant",
+          "concept-shadow-including-tree-order"
+        ]
+      },
+      "https://drafts.css-houdini.org/worklets": {
+        "anchors": [
+          "workletglobalscope-owner-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-document-bc",
+          "nested-browsing-context",
+          "browsing-context-container",
+          "fully-active",
+          "top-level-browsing-context",
+          "list-of-the-descendant-browsing-contexts",
+          "browsing-context",
+          "active-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "unload-a-document",
+          "dom-pagetransitionevent-persisted",
+          "traverse-the-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "current-document-readiness"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "iframe-load-event-steps",
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "htmlmediaelement",
+          "media-element",
+          "dom-media-paused",
+          "internal-pause-steps",
+          "internal-play-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "being-rendered"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "posted-message-task-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "worklet-agent",
+          "concept-realm-global",
+          "dedicated-worker-agent",
+          "concept-task",
+          "update-the-rendering",
+          "environment-settings-object",
+          "concept-settings-object-global"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "window-bc"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "dedicatedworkerglobalscope",
+          "concept-WorkerGlobalScope-owner-set"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "list-iterate",
+          "list-append"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-code-realms",
+          "sec-forward-progress"
+        ]
+      },
+      "https://w3c.github.io/IntersectionObserver/": {
+        "anchors": [
+          "calculate-intersection-rect-algo"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "client",
+          "create-windowclient-algorithm",
+          "create-client-algorithm",
+          "dfn-service-worker-client"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "this"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "viewport"
+        ]
+      }
+    }
   }
 }

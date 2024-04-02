@@ -4,141 +4,256 @@
     "url": "https://wicg.github.io/soft-navigations/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document",
-        "eventtarget",
-        "concept-node-equals",
-        "concept-element",
-        "concept-event-dispatch",
-        "dom-event-istrusted",
-        "boundary-point-node",
-        "concept-node-insert",
-        "concept-node-document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-document",
+          "concept-element",
+          "concept-node-equals",
+          "concept-event-dispatch",
+          "dom-event-istrusted",
+          "boundary-point-node",
+          "concept-node-document",
+          "concept-node-insert"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "header-list-contains"
+        ]
+      },
+      "https://github.com/kyraseevers/Partitioning-visited-links-history": {},
+      "https://html.spec.whatwg.org/C": {
+        "anchors": [
+          "tn-append-session-history-sync-nav-steps",
+          "tn-append-session-history-traversal-steps",
+          "apply-the-history-step",
+          "execute-the-script-element",
+          "hostcalljobcallback",
+          "hostmakejobcallback",
+          "message-port-post-message-steps",
+          "navigate-fragid",
+          "prepare-the-script-element",
+          "she-url",
+          "timer-initialisation-steps",
+          "top-level-traversable",
+          "update-document-for-history-step-application"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "traversable-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "clean-up-after-running-a-callback",
+          "event-loop",
+          "concept-agent-event-loop",
+          "global-object",
+          "queue-a-task",
+          "concept-global-object-realm",
+          "relevant-agent",
+          "concept-relevant-global",
+          "concept-script",
+          "concept-task"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "set-append",
+          "map-exists",
+          "implementation-defined",
+          "struct-item",
+          "ordered-map",
+          "stack-peek",
+          "ordered-set",
+          "map-set",
+          "stack",
+          "string",
+          "struct"
+        ]
+      },
+      "https://w3c.github.io/event-timing/": {
+        "anchors": [
+          "has-dispatched-input-event"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time",
+          "dfn-duration"
+        ]
+      },
+      "https://w3c.github.io/largest-contentful-paint/": {
+        "anchors": [
+          "has-dispatched-scroll-event",
+          "potentially-add-a-largestcontentfulpaint-entry"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dom-performanceentry-duration",
+          "dom-performanceentry-entrytype",
+          "dom-performanceentry-name",
+          "dfn-performance-entry-buffer",
+          "dfn-queue-a-performanceentry",
+          "dom-performanceentry-starttime"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "call-a-user-objects-operation",
+          "dfn-callback-function",
+          "invoke-a-callback-function"
+        ]
+      },
+      "https://www.w3.org/TR/css-view-transitions-1/": {
+        "anchors": [
+          "dom-document-startviewtransition"
+        ]
+      },
+      "https://www.w3.org/TR/paint-timing/": {
+        "anchors": [
+          "previously-reported-paints"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "header-list-contains"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/kyraseevers/Partitioning-visited-links-history": {},
-    "https://html.spec.whatwg.org/C": {
-      "anchors": [
-        "top-level-traversable",
-        "update-document-for-history-step-application",
-        "she-url",
-        "prepare-the-script-element",
-        "execute-the-script-element",
-        "timer-initialisation-steps",
-        "hostmakejobcallback",
-        "hostcalljobcallback",
-        "message-port-post-message-steps",
-        "tn-append-session-history-traversal-steps",
-        "tn-append-session-history-sync-nav-steps",
-        "apply-the-history-step",
-        "navigate-fragid"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "traversable-navigable"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "global-object",
-        "concept-global-object-realm",
-        "concept-task",
-        "relevant-agent",
-        "concept-agent-event-loop",
-        "event-loop",
-        "concept-script",
-        "queue-a-task",
-        "clean-up-after-running-a-callback"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string",
-        "ordered-set",
-        "ordered-map",
-        "struct",
-        "struct-item",
-        "map-exists",
-        "set-append",
-        "map-set",
-        "implementation-defined",
-        "stack-peek",
-        "stack"
-      ],
-      "specShortname": "infra"
-    },
-    "https://w3c.github.io/event-timing/": {
-      "anchors": [
-        "has-dispatched-input-event"
-      ],
-      "specShortname": "event-timing"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-current-high-resolution-time",
-        "dfn-duration"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/largest-contentful-paint/": {
-      "anchors": [
-        "has-dispatched-scroll-event",
-        "potentially-add-a-largestcontentfulpaint-entry"
-      ],
-      "specShortname": "largest-contentful-paint"
-    },
-    "https://w3c.github.io/performance-timeline/": {
-      "anchors": [
-        "dom-performanceentry",
-        "dom-performanceentry-name",
-        "dom-performanceentry-entrytype",
-        "dom-performanceentry-starttime",
-        "dom-performanceentry-duration",
-        "dfn-queue-a-performanceentry",
-        "dfn-performance-entry-buffer"
-      ],
-      "specShortname": "performance-timeline"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "dfn-callback-function",
-        "invoke-a-callback-function",
-        "call-a-user-objects-operation"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/TR/css-view-transitions-1/": {
-      "anchors": [
-        "dom-document-startviewtransition"
-      ],
-      "specShortname": "css-view-transitions-1"
-    },
-    "https://www.w3.org/TR/paint-timing/": {
-      "anchors": [
-        "previously-reported-paints"
-      ],
-      "specShortname": "paint-timing"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "eventtarget",
+          "concept-node-equals",
+          "concept-element",
+          "concept-event-dispatch",
+          "dom-event-istrusted",
+          "boundary-point-node",
+          "concept-node-insert",
+          "concept-node-document"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "header-list-contains"
+        ]
+      },
+      "https://html.spec.whatwg.org/C": {
+        "anchors": [
+          "top-level-traversable",
+          "update-document-for-history-step-application",
+          "she-url",
+          "prepare-the-script-element",
+          "execute-the-script-element",
+          "timer-initialisation-steps",
+          "hostmakejobcallback",
+          "hostcalljobcallback",
+          "message-port-post-message-steps",
+          "tn-append-session-history-traversal-steps",
+          "tn-append-session-history-sync-nav-steps",
+          "apply-the-history-step",
+          "navigate-fragid"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "traversable-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "global-object",
+          "concept-global-object-realm",
+          "concept-task",
+          "relevant-agent",
+          "concept-agent-event-loop",
+          "event-loop",
+          "concept-script",
+          "queue-a-task",
+          "clean-up-after-running-a-callback"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string",
+          "ordered-set",
+          "ordered-map",
+          "struct",
+          "struct-item",
+          "map-exists",
+          "set-append",
+          "map-set",
+          "implementation-defined",
+          "stack-peek",
+          "stack"
+        ]
+      },
+      "https://w3c.github.io/event-timing/": {
+        "anchors": [
+          "has-dispatched-input-event"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time",
+          "dfn-duration"
+        ]
+      },
+      "https://w3c.github.io/largest-contentful-paint/": {
+        "anchors": [
+          "has-dispatched-scroll-event",
+          "potentially-add-a-largestcontentfulpaint-entry"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dom-performanceentry-name",
+          "dom-performanceentry-entrytype",
+          "dom-performanceentry-starttime",
+          "dom-performanceentry-duration",
+          "dfn-queue-a-performanceentry",
+          "dfn-performance-entry-buffer"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "dfn-callback-function",
+          "invoke-a-callback-function",
+          "call-a-user-objects-operation"
+        ]
+      },
+      "https://www.w3.org/TR/css-view-transitions-1/": {
+        "anchors": [
+          "dom-document-startviewtransition"
+        ]
+      },
+      "https://www.w3.org/TR/paint-timing/": {
+        "anchors": [
+          "previously-reported-paints"
+        ]
+      }
+    }
   }
 }

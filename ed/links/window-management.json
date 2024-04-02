@@ -4,216 +4,334 @@
     "url": "https://w3c.github.io/window-management/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "concept-document"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-document",
+          "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "px"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "viewport"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "page-zoom",
+          "web-exposed-screen-information",
+          "the-screen-interface",
+          "screen",
+          "dom-window-devicepixelratio",
+          "dom-window-moveby",
+          "dom-window-moveto",
+          "dom-window-resizeby",
+          "dom-window-resizeto",
+          "dom-window-screen",
+          "dom-window-screenleft",
+          "dom-window-screentop",
+          "dom-window-screenx",
+          "dom-window-screeny",
+          "web-exposed-available-screen-area",
+          "web-exposed-screen-area"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://en.wikipedia.org/wiki/Extended_Display_Identification_Data": {},
+      "https://fullscreen.spec.whatwg.org/": {
+        "anchors": [
+          "dictdef-fullscreenoptions",
+          "dom-element-requestfullscreen"
+        ]
+      },
+      "https://github.com/asankah/ephemeral-fingerprinting": {},
+      "https://github.com/speced/bikeshed": {},
+      "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md": {
+        "anchors": [
+          "experimental-features",
+          "proposed-features"
+        ]
+      },
+      "https://github.com/w3c/window-management/blob/main/EXPLAINER.md": {
+        "anchors": [
+          "privacy--security"
+        ]
+      },
+      "https://github.com/w3c/window-management/blob/main/EXPLAINER_initiating_multi_screen_experiences.md": {
+        "anchors": [
+          "security-considerations"
+        ]
+      },
+      "https://github.com/w3c/window-management/blob/main/security_and_privacy.md": {},
+      "https://github.com/w3c/window-management/blob/main/security_and_privacy_initiating_multi_screen_experiences.md": {},
+      "https://github.com/w3c/window-management/issues": {},
+      "https://github.com/w3c/window-management/issues/114": {},
+      "https://github.com/w3c/window-management/issues/80": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "last-activation-timestamp",
+          "transient-activation-duration"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "user-activation-gated-apis",
+          "consume-user-activation",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window",
+          "dom-open"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "queue-a-global-task",
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "list",
+          "list-sort-in-ascending-order"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://w3c.github.io/fingerprinting-guidance/": {},
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-default-powerful-feature",
+          "dom-permissionstate-denied",
+          "dfn-name",
+          "dfn-request-permission-to-use"
+        ]
+      },
+      "https://w3c.github.io/screen-orientation/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://w3ctag.github.io/design-principles/": {
+        "anchors": [
+          "device-enumeration"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "idl-frozen-array",
+          "notallowederror",
+          "idl-promise",
+          "SecureContext",
+          "a-new-promise",
+          "idl-boolean",
+          "idl-float",
+          "idl-long",
+          "reject",
+          "resolve",
+          "this"
+        ]
+      },
+      "https://webscreens.github.io/form-factors/": {},
+      "https://www.w3.org/2004/01/pp-impl/74168/status": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/TR/fingerprinting-guidance/": {
+        "anchors": [
+          "dfn-active-fingerprinting"
+        ]
+      },
+      "https://www.w3.org/community/webscreens/": {},
+      "https://www.w3.org/groups/wg/secondscreen": {}
     },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "px"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "viewport"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "screen",
-        "dom-window-moveto",
-        "dom-window-devicepixelratio",
-        "page-zoom",
-        "web-exposed-screen-area",
-        "web-exposed-screen-information",
-        "web-exposed-available-screen-area",
-        "dom-window-screen",
-        "the-screen-interface",
-        "dom-window-screenx",
-        "dom-window-screenleft",
-        "dom-window-screeny",
-        "dom-window-screentop",
-        "dom-window-moveby",
-        "dom-window-resizeto",
-        "dom-window-resizeby"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://en.wikipedia.org/wiki/Extended_Display_Identification_Data": {},
-    "https://fullscreen.spec.whatwg.org/": {
-      "anchors": [
-        "dictdef-fullscreenoptions",
-        "dom-element-requestfullscreen"
-      ],
-      "specShortname": "fullscreen"
-    },
-    "https://github.com/asankah/ephemeral-fingerprinting": {},
-    "https://github.com/speced/bikeshed": {},
-    "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md": {
-      "anchors": [
-        "experimental-features",
-        "proposed-features"
-      ]
-    },
-    "https://github.com/w3c/window-management/blob/main/EXPLAINER.md": {
-      "anchors": [
-        "privacy--security"
-      ]
-    },
-    "https://github.com/w3c/window-management/blob/main/EXPLAINER_initiating_multi_screen_experiences.md": {
-      "anchors": [
-        "security-considerations"
-      ]
-    },
-    "https://github.com/w3c/window-management/blob/main/security_and_privacy.md": {},
-    "https://github.com/w3c/window-management/blob/main/security_and_privacy_initiating_multi_screen_experiences.md": {},
-    "https://github.com/w3c/window-management/issues": {},
-    "https://github.com/w3c/window-management/issues/114": {},
-    "https://github.com/w3c/window-management/issues/80": {},
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "last-activation-timestamp",
-        "transient-activation-duration"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "top-level-browsing-context",
-        "nav-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "allowed-to-use"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "user-activation-gated-apis",
-        "consume-user-activation",
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "dom-open",
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "concept-relevant-global",
-        "event-handler-idl-attributes",
-        "event-handler-event-type",
-        "queue-a-global-task"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list",
-        "list-append",
-        "list-sort-in-ascending-order"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-object-internal-methods-and-internal-slots"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://w3c.github.io/fingerprinting-guidance/": {
-      "specShortname": "fingerprinting-guidance"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-current-high-resolution-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dom-permissionstate-denied",
-        "dfn-default-powerful-feature",
-        "dfn-name"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/screen-orientation/": {
-      "specShortname": "screen-orientation"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://w3ctag.github.io/design-principles/": {
-      "anchors": [
-        "device-enumeration"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SecureContext",
-        "idl-boolean",
-        "this",
-        "idl-promise",
-        "a-new-promise",
-        "reject",
-        "notallowederror",
-        "idl-DOMException",
-        "resolve",
-        "Exposed",
-        "idl-frozen-array",
-        "idl-long",
-        "idl-float",
-        "idl-DOMString"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://webscreens.github.io/form-factors/": {},
-    "https://www.w3.org/2004/01/pp-impl/74168/status": {},
-    "https://www.w3.org/2023/Process-20230612/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/cssom-view-1/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://www.w3.org/TR/fingerprinting-guidance/": {
-      "anchors": [
-        "dfn-active-fingerprinting"
-      ],
-      "specShortname": "fingerprinting-guidance"
-    },
-    "https://www.w3.org/community/webscreens/": {},
-    "https://www.w3.org/groups/wg/secondscreen": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "concept-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "px"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "screen",
+          "dom-window-moveto",
+          "dom-window-devicepixelratio",
+          "web-exposed-screen-area",
+          "web-exposed-available-screen-area",
+          "dom-window-screen",
+          "dom-window-screenx",
+          "dom-window-screenleft",
+          "dom-window-screeny",
+          "dom-window-screentop",
+          "dom-window-moveby",
+          "dom-window-resizeto",
+          "dom-window-resizeby"
+        ]
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "anchors": [
+          "dictdef-fullscreenoptions",
+          "dom-element-requestfullscreen"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "last-activation-timestamp",
+          "transient-activation-duration"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context",
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "consume-user-activation",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "dom-open",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "concept-relevant-global",
+          "event-handler-idl-attributes",
+          "event-handler-event-type",
+          "queue-a-global-task"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "list-append",
+          "list-sort-in-ascending-order"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-request-permission-to-use",
+          "dom-permissionstate-denied",
+          "dfn-default-powerful-feature",
+          "dfn-name"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "idl-boolean",
+          "this",
+          "idl-promise",
+          "a-new-promise",
+          "reject",
+          "notallowederror",
+          "idl-DOMException",
+          "resolve",
+          "Exposed",
+          "idl-frozen-array",
+          "idl-long",
+          "idl-float",
+          "idl-DOMString"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {},
+      "https://www.w3.org/TR/fingerprinting-guidance/": {
+        "anchors": [
+          "dfn-active-fingerprinting"
+        ]
+      }
+    }
   }
 }

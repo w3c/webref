@@ -568,7 +568,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is empty for scalar operands,\n  // and non-empty for tensor operands.\n  sequence<[EnforceRange] unsigned long> dimensions = [];\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  required MLOperandDataType dataType;\n  sequence<[EnforceRange] unsigned long> dimensions = [];\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
@@ -3652,7 +3652,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                             optional MLBatchNormalizationOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                               optional MLBatchNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3975,7 +3975,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand conv2d(MLOperand input, MLOperand filter, optional MLConv2dOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand conv2d(MLOperand input,\n                   MLOperand filter,\n                   optional MLConv2dOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5380,7 +5380,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input, MLOperand indices, optional MLGatherOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input,\n                   MLOperand indices,\n                   optional MLGatherOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5969,7 +5969,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n                                optional MLInstanceNormalizationOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n                                  optional MLInstanceNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6030,7 +6030,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand layerNormalization(MLOperand input, optional MLLayerNormalizationOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand layerNormalization(MLOperand input,\n                               optional MLLayerNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8089,7 +8089,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(\n      MLOperand input,\n      ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n      optional MLSplitOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,

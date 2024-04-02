@@ -4,228 +4,407 @@
     "url": "https://webassembly.github.io/threads/js-api/"
   },
   "links": {
-    "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-decode-without-bom-or-fail"
-      ],
-      "specShortname": "encoding"
+    "rawlinks": {
+      "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode-without-bom-or-fail"
+        ]
+      },
+      "https://github.com/WebAssembly/spec/issues": {},
+      "https://github.com/WebAssembly/spec/issues/879": {},
+      "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "BufferSource",
+          "idl-DOMString",
+          "EnforceRange",
+          "LegacyNamespace",
+          "idl-promise",
+          "idl-USVString",
+          "idl-any",
+          "dfn-associated-realm",
+          "idl-boolean",
+          "create-a-namespace-object",
+          "dfn-get-buffer-source-copy",
+          "implements",
+          "dfn-namespace-object",
+          "new",
+          "idl-object",
+          "idl-sequence",
+          "dfn-throw",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "clean-up-after-running-a-callback",
+          "clean-up-after-running-script",
+          "incumbent-settings-object",
+          "prepare-to-run-a-callback",
+          "prepare-to-run-script",
+          "queue-a-task",
+          "task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "map-exists",
+          "list-is-empty",
+          "map-iterate",
+          "list",
+          "ordered-map",
+          "map-set",
+          "list-size"
+        ]
+      },
+      "https://tc39.es/proposal-resizablearraybuffer/": {
+        "anchors": [
+          "sec-hostgrowsharedarraybuffer",
+          "sec-hostresizearraybuffer",
+          "sec-isfixedarraybuffer"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-returnifabrupt-shorthands",
+          "sec-arraybuffer-objects",
+          "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-sharedarraybuffer-objects",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-built-in-function-objects",
+          "current-realm",
+          "sec-nativeerror-object-structure",
+          "sec-samevalue",
+          "sec-ecmascript-data-types-and-values",
+          "%E2%84%A4",
+          "%F0%9D%94%BD"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://webassembly.github.io/spec/core/": {},
+      "https://webassembly.github.io/spec/core/appendix/embedding.html": {
+        "anchors": [
+          "embed-error",
+          "embed-func-alloc",
+          "embed-func-invoke",
+          "embed-func-type",
+          "embed-global-alloc",
+          "embed-global-read",
+          "embed-global-type",
+          "embed-global-write",
+          "embed-instance-export",
+          "embed-mem-alloc",
+          "embed-mem-grow",
+          "embed-mem-size",
+          "embed-mem-type",
+          "embed-module-decode",
+          "embed-module-exports",
+          "embed-module-imports",
+          "embed-module-instantiate",
+          "embed-module-validate",
+          "embed-store-init",
+          "embed-table-alloc",
+          "embed-table-grow",
+          "embed-table-read",
+          "embed-table-size",
+          "embed-table-type",
+          "embed-table-write"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/binary/modules.html": {
+        "anchors": [
+          "custom-section",
+          "binary-customsec",
+          "binary-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/conventions.html": {
+        "anchors": [
+          "exec-notation-textual"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/instructions.html": {
+        "anchors": [
+          "exec-memory-grow"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/numerics.html": {
+        "anchors": [
+          "aux-signed"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/runtime.html": {
+        "anchors": [
+          "addresses",
+          "syntax-externaddr",
+          "syntax-externval",
+          "values",
+          "syntax-funcaddr",
+          "syntax-globaladdr",
+          "global-instances",
+          "syntax-hostfunc",
+          "syntax-moduleinst",
+          "syntax-memaddr",
+          "memory-instances",
+          "syntax-frame",
+          "page-size",
+          "syntax-store",
+          "syntax-tableaddr",
+          "table-instances"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/conventions.html": {
+        "anchors": [
+          "grammar-notation"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/modules.html": {
+        "anchors": [
+          "syntax-import",
+          "syntax-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/types.html": {
+        "anchors": [
+          "syntax-mut",
+          "syntax-reftype",
+          "syntax-numtype",
+          "external-types",
+          "syntax-tabletype",
+          "vector-types"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/values.html": {
+        "anchors": [
+          "syntax-float"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/modules.html": {
+        "anchors": [
+          "valid-module"
+        ]
+      },
+      "https://webassembly.github.io/spec/web-api/index.html": {},
+      "https://www.w3.org/2001/tag/doc/promises-guide": {},
+      "https://www.w3.org/2001/tag/doc/promises-guide/": {
+        "anchors": [
+          "a-new-promise",
+          "reject-promise",
+          "upon-fulfillment",
+          "upon-rejection"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/101196/status": {},
+      "https://www.w3.org/2020/Process-20200915/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/wasm-core/": {},
+      "https://www.w3.org/TR/wasm-js-api/": {},
+      "https://www.w3.org/TR/wasm-web-api/": {},
+      "https://www.w3.org/wasm/": {}
     },
-    "https://github.com/WebAssembly/spec/issues": {},
-    "https://github.com/WebAssembly/spec/issues/879": {},
-    "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-boolean",
-        "BufferSource",
-        "idl-promise",
-        "idl-object",
-        "dfn-get-buffer-source-copy",
-        "implements",
-        "new",
-        "idl-USVString",
-        "LegacyNamespace",
-        "idl-sequence",
-        "idl-DOMString",
-        "EnforceRange",
-        "idl-unsigned-long",
-        "idl-any",
-        "dfn-throw",
-        "dfn-associated-realm",
-        "dfn-namespace-object",
-        "create-a-namespace-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "task-source",
-        "queue-a-task",
-        "incumbent-settings-object",
-        "prepare-to-run-script",
-        "prepare-to-run-a-callback",
-        "clean-up-after-running-a-callback",
-        "clean-up-after-running-script"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list",
-        "ordered-map",
-        "list-is-empty",
-        "list-iterate",
-        "list-append",
-        "map-exists",
-        "map-set",
-        "map-iterate",
-        "list-size"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/proposal-resizablearraybuffer/": {
-      "anchors": [
-        "sec-isfixedarraybuffer",
-        "sec-hostresizearraybuffer",
-        "sec-hostgrowsharedarraybuffer"
-      ]
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-native-error-types-used-in-this-standard-typeerror",
-        "sec-returnifabrupt-shorthands",
-        "sec-ecmascript-data-types-and-values",
-        "sec-arraybuffer-objects",
-        "sec-sharedarraybuffer-objects",
-        "sec-native-error-types-used-in-this-standard-rangeerror",
-        "sec-samevalue",
-        "sec-built-in-function-objects",
-        "current-realm",
-        "%E2%84%A4",
-        "%F0%9D%94%BD",
-        "sec-nativeerror-object-structure"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://webassembly.github.io/spec/core/": {},
-    "https://webassembly.github.io/spec/core/appendix/embedding.html": {
-      "anchors": [
-        "embed-store-init",
-        "embed-module-decode",
-        "embed-error",
-        "embed-module-validate",
-        "embed-module-imports",
-        "embed-global-alloc",
-        "embed-module-exports",
-        "embed-instance-export",
-        "embed-module-instantiate",
-        "embed-mem-type",
-        "embed-mem-alloc",
-        "embed-mem-size",
-        "embed-mem-grow",
-        "embed-table-alloc",
-        "embed-table-size",
-        "embed-table-type",
-        "embed-table-grow",
-        "embed-table-read",
-        "embed-table-write",
-        "embed-global-type",
-        "embed-global-read",
-        "embed-global-write",
-        "embed-func-type",
-        "embed-func-invoke",
-        "embed-func-alloc"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/binary/modules.html": {
-      "anchors": [
-        "custom-section",
-        "binary-module",
-        "binary-customsec"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/exec/conventions.html": {
-      "anchors": [
-        "exec-notation-textual"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/exec/instructions.html": {
-      "anchors": [
-        "exec-memory-grow"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/exec/numerics.html": {
-      "anchors": [
-        "aux-signed"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/exec/runtime.html": {
-      "anchors": [
-        "syntax-store",
-        "memory-instances",
-        "addresses",
-        "syntax-memaddr",
-        "syntax-tableaddr",
-        "syntax-funcaddr",
-        "syntax-globaladdr",
-        "syntax-externaddr",
-        "syntax-externval",
-        "values",
-        "syntax-frame",
-        "syntax-moduleinst",
-        "page-size",
-        "table-instances",
-        "global-instances",
-        "syntax-hostfunc"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/syntax/conventions.html": {
-      "anchors": [
-        "grammar-notation"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/syntax/modules.html": {
-      "anchors": [
-        "syntax-module",
-        "syntax-import"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/syntax/types.html": {
-      "anchors": [
-        "external-types",
-        "syntax-numtype",
-        "vector-types",
-        "syntax-mut",
-        "syntax-reftype",
-        "syntax-tabletype"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/syntax/values.html": {
-      "anchors": [
-        "syntax-float"
-      ]
-    },
-    "https://webassembly.github.io/spec/core/valid/modules.html": {
-      "anchors": [
-        "valid-module"
-      ]
-    },
-    "https://webassembly.github.io/spec/web-api/index.html": {
-      "specShortname": "wasm-web-api-2"
-    },
-    "https://www.w3.org/2001/tag/doc/promises-guide": {
-      "specShortname": "promises-guide"
-    },
-    "https://www.w3.org/2001/tag/doc/promises-guide/": {
-      "anchors": [
-        "a-new-promise",
-        "reject-promise",
-        "upon-fulfillment",
-        "upon-rejection"
-      ]
-    },
-    "https://www.w3.org/2004/01/pp-impl/101196/status": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/wasm-core/": {
-      "specShortname": "wasm-core-2"
-    },
-    "https://www.w3.org/TR/wasm-js-api/": {
-      "specShortname": "wasm-js-api-2"
-    },
-    "https://www.w3.org/TR/wasm-web-api/": {
-      "specShortname": "wasm-web-api-2"
-    },
-    "https://www.w3.org/wasm/": {}
+    "autolinks": {
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode-without-bom-or-fail"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-boolean",
+          "BufferSource",
+          "idl-promise",
+          "idl-object",
+          "dfn-get-buffer-source-copy",
+          "implements",
+          "new",
+          "idl-USVString",
+          "LegacyNamespace",
+          "idl-sequence",
+          "idl-DOMString",
+          "EnforceRange",
+          "idl-unsigned-long",
+          "idl-any",
+          "dfn-throw",
+          "dfn-associated-realm",
+          "dfn-namespace-object",
+          "create-a-namespace-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "task-source",
+          "queue-a-task",
+          "incumbent-settings-object",
+          "prepare-to-run-script",
+          "prepare-to-run-a-callback",
+          "clean-up-after-running-a-callback",
+          "clean-up-after-running-script"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "ordered-map",
+          "list-is-empty",
+          "list-iterate",
+          "list-append",
+          "map-exists",
+          "map-set",
+          "map-iterate",
+          "list-size"
+        ]
+      },
+      "https://tc39.es/proposal-resizablearraybuffer/": {
+        "anchors": [
+          "sec-isfixedarraybuffer",
+          "sec-hostresizearraybuffer",
+          "sec-hostgrowsharedarraybuffer"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-returnifabrupt-shorthands",
+          "sec-ecmascript-data-types-and-values",
+          "sec-arraybuffer-objects",
+          "sec-sharedarraybuffer-objects",
+          "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-samevalue",
+          "sec-built-in-function-objects",
+          "current-realm",
+          "%E2%84%A4",
+          "%F0%9D%94%BD",
+          "sec-nativeerror-object-structure"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/appendix/embedding.html": {
+        "anchors": [
+          "embed-store-init",
+          "embed-module-decode",
+          "embed-error",
+          "embed-module-validate",
+          "embed-module-imports",
+          "embed-global-alloc",
+          "embed-module-exports",
+          "embed-instance-export",
+          "embed-module-instantiate",
+          "embed-mem-type",
+          "embed-mem-alloc",
+          "embed-mem-size",
+          "embed-mem-grow",
+          "embed-table-alloc",
+          "embed-table-size",
+          "embed-table-type",
+          "embed-table-grow",
+          "embed-table-read",
+          "embed-table-write",
+          "embed-global-type",
+          "embed-global-read",
+          "embed-global-write",
+          "embed-func-type",
+          "embed-func-invoke",
+          "embed-func-alloc"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/binary/modules.html": {
+        "anchors": [
+          "custom-section",
+          "binary-module",
+          "binary-customsec"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/conventions.html": {
+        "anchors": [
+          "exec-notation-textual"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/instructions.html": {
+        "anchors": [
+          "exec-memory-grow"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/numerics.html": {
+        "anchors": [
+          "aux-signed"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/exec/runtime.html": {
+        "anchors": [
+          "syntax-store",
+          "memory-instances",
+          "addresses",
+          "syntax-memaddr",
+          "syntax-tableaddr",
+          "syntax-funcaddr",
+          "syntax-globaladdr",
+          "syntax-externaddr",
+          "syntax-externval",
+          "values",
+          "syntax-frame",
+          "syntax-moduleinst",
+          "page-size",
+          "table-instances",
+          "global-instances",
+          "syntax-hostfunc"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/conventions.html": {
+        "anchors": [
+          "grammar-notation"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/modules.html": {
+        "anchors": [
+          "syntax-module",
+          "syntax-import"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/types.html": {
+        "anchors": [
+          "external-types",
+          "syntax-numtype",
+          "vector-types",
+          "syntax-mut",
+          "syntax-reftype",
+          "syntax-tabletype"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/syntax/values.html": {
+        "anchors": [
+          "syntax-float"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/modules.html": {
+        "anchors": [
+          "valid-module"
+        ]
+      },
+      "https://www.w3.org/2001/tag/doc/promises-guide/": {
+        "anchors": [
+          "a-new-promise",
+          "reject-promise",
+          "upon-fulfillment",
+          "upon-rejection"
+        ]
+      }
+    }
   }
 }

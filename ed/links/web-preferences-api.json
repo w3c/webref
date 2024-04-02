@@ -4,128 +4,195 @@
     "url": "https://wicg.github.io/web-preferences-api/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget",
-        "concept-event-fire",
-        "concept-event-listener"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-listener",
+          "concept-event-fire"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "cascade-origin-ua"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-adjust-1/": {
+        "anchors": [
+          "preferred",
+          "used-color-scheme"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "extensions-to-the-window-interface"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "mf-user-preferences",
+          "prefers-color-scheme",
+          "prefers-contrast",
+          "prefers-reduced-motion",
+          "prefers-reduced-transparency",
+          "prefers-reduced-data"
+        ]
+      },
+      "https://github.com/WICG/web-preferences-api/issues/23": {},
+      "https://github.com/lukewarlow/web-preferences-api/issues/8": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string",
+          "user-agent"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "idl-frozen-array",
+          "notallowederror",
+          "idl-promise",
+          "SameObject",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "idl-undefined"
+        ]
+      },
+      "https://wicg.github.io/savedata/": {
+        "anchors": [
+          "save-data-request-header-field",
+          "savedata-attribute"
+        ]
+      },
+      "https://wicg.github.io/user-preference-media-features-headers/": {
+        "anchors": [
+          "sec-ch-prefers-color-scheme",
+          "sec-ch-prefers-contrast",
+          "sec-ch-prefers-reduced-motion",
+          "sec-ch-prefers-reduced-transparency"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "cascade-origin-ua"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-color-adjust-1/": {
-      "anchors": [
-        "preferred",
-        "used-color-scheme"
-      ],
-      "specShortname": "css-color-adjust-1"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "extensions-to-the-window-interface"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/mediaqueries-5/": {
-      "anchors": [
-        "mf-user-preferences",
-        "prefers-color-scheme",
-        "prefers-contrast",
-        "prefers-reduced-motion",
-        "prefers-reduced-transparency",
-        "prefers-reduced-data"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://github.com/WICG/web-preferences-api/issues/23": {},
-    "https://github.com/lukewarlow/web-preferences-api/issues/8": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-origin",
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window",
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "eventhandler",
-        "event-handler-idl-attributes",
-        "event-handlers",
-        "event-handler-event-type",
-        "concept-relevant-global"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "user-agent",
-        "string"
-      ],
-      "specShortname": "infra"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "SecureContext",
-        "SameObject",
-        "idl-sequence",
-        "idl-DOMString",
-        "idl-frozen-array",
-        "idl-undefined",
-        "idl-promise",
-        "this",
-        "a-new-promise",
-        "a-promise-rejected-with",
-        "notallowederror",
-        "idl-DOMException",
-        "resolve",
-        "reject",
-        "exceptiondef-typeerror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/savedata/": {
-      "anchors": [
-        "save-data-request-header-field",
-        "savedata-attribute"
-      ],
-      "specShortname": "savedata"
-    },
-    "https://wicg.github.io/user-preference-media-features-headers/": {
-      "anchors": [
-        "sec-ch-prefers-color-scheme",
-        "sec-ch-prefers-contrast",
-        "sec-ch-prefers-reduced-motion",
-        "sec-ch-prefers-reduced-transparency"
-      ],
-      "specShortname": "user-preference-media-features-headers"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget",
+          "concept-event-fire",
+          "concept-event-listener"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "cascade-origin-ua"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-adjust-1/": {
+        "anchors": [
+          "used-color-scheme"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handlers",
+          "event-handler-event-type",
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent",
+          "string"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "SecureContext",
+          "SameObject",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-frozen-array",
+          "idl-undefined",
+          "idl-promise",
+          "this",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "idl-DOMException",
+          "resolve",
+          "reject",
+          "exceptiondef-typeerror"
+        ]
+      }
+    }
   }
 }

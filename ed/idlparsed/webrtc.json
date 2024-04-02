@@ -4613,7 +4613,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters"
       },
       "RTCIceCandidatePair": {
-        "fragment": "dictionary RTCIceCandidatePair {\n  RTCIceCandidate local;\n  RTCIceCandidate remote;\n};",
+        "fragment": "dictionary RTCIceCandidatePair {\n  required RTCIceCandidate local;\n  required RTCIceCandidate remote;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidatePair",
         "inheritance": null,
@@ -4631,7 +4631,7 @@
               "idlType": "RTCIceCandidate"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-local"
           },
           {
@@ -4647,7 +4647,7 @@
               "idlType": "RTCIceCandidate"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-remote"
           }
         ],

@@ -4,101 +4,109 @@
     "url": "https://w3c.github.io/mediacapture-automation/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://w3c.github.io/mediacapture-main/": {
+        "anchors": [
+          "dfn-source"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dfn-source",
+          "dfn-device-change-notification-steps"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-request-permission-to-use",
+          "dfn-prompt-the-user-to-choose",
+          "set-permission-command"
+        ]
+      },
+      "https://www.w3.org/TR/screen-capture/": {},
+      "https://www.w3.org/TR/webdriver2/": {
+        "anchors": [
+          "dfn-extension-commands",
+          "dfn-remote-end-steps",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-current-browsing-context",
+          "dfn-no-longer-open",
+          "dfn-no-such-window",
+          "dfn-handle-any-user-prompts",
+          "dfn-success",
+          "dfn-url-variables",
+          "dfn-getting-properties"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webrtc": {},
+      "https://www.w3.org/groups/wg/webrtc/ipr": {}
     },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "user-agent"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://w3c.github.io/mediacapture-main/": {
-      "anchors": [
-        "dfn-source"
-      ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "dfn-convert-ecmascript-to-idl-value",
-        "idl-DOMString",
-        "idl-double",
-        "idl-unsigned-long"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/mediacapture-streams/": {
-      "anchors": [
-        "dom-mediadevices",
-        "dom-mediadevices-getusermedia",
-        "dom-mediadevices-enumeratedevices",
-        "dfn-source",
-        "dom-mediadeviceinfo-label",
-        "dom-mediatracksupportedconstraints-deviceid",
-        "dom-mediatracksupportedconstraints-groupid",
-        "dom-mediastreamtrack",
-        "dom-mediastreamtrack-kind",
-        "dom-mediatracksupportedconstraints-framerate",
-        "dom-mediatracksupportedconstraints-facingmode",
-        "dom-mediatracksupportedconstraints-samplerate",
-        "dfn-device-change-notification-steps"
-      ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dfn-permission-state",
-        "dom-permissionstate-prompt",
-        "dfn-prompt-the-user-to-choose",
-        "set-permission-command"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/screen-capture/": {
-      "anchors": [
-        "dom-mediadevices-getdisplaymedia"
-      ],
-      "specShortname": "screen-capture"
-    },
-    "https://www.w3.org/TR/webdriver2/": {
-      "anchors": [
-        "dfn-extension-commands",
-        "dfn-extension-command-uri-template",
-        "dfn-remote-end-steps",
-        "dfn-error",
-        "dfn-error-code",
-        "dfn-invalid-argument",
-        "dfn-current-browsing-context",
-        "dfn-no-longer-open",
-        "dfn-no-such-window",
-        "dfn-handle-any-user-prompts",
-        "dfn-success",
-        "dfn-url-variables",
-        "dfn-getting-properties"
-      ],
-      "specShortname": "webdriver2"
-    },
-    "https://www.w3.org/groups/wg/webrtc": {},
-    "https://www.w3.org/groups/wg/webrtc/ipr": {}
+    "autolinks": {
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "dfn-convert-ecmascript-to-idl-value",
+          "idl-DOMString",
+          "idl-double",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dom-mediadevices",
+          "dom-mediadevices-getusermedia",
+          "dom-mediadevices-enumeratedevices",
+          "dom-mediadeviceinfo-label",
+          "dom-mediatracksupportedconstraints-deviceid",
+          "dom-mediatracksupportedconstraints-groupid",
+          "dom-mediastreamtrack",
+          "dom-mediastreamtrack-kind",
+          "dom-mediatracksupportedconstraints-framerate",
+          "dom-mediatracksupportedconstraints-facingmode",
+          "dom-mediatracksupportedconstraints-samplerate"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dfn-permission-state",
+          "dom-permissionstate-prompt"
+        ]
+      },
+      "https://www.w3.org/TR/screen-capture/": {
+        "anchors": [
+          "dom-mediadevices-getdisplaymedia"
+        ]
+      },
+      "https://www.w3.org/TR/webdriver2/": {
+        "anchors": [
+          "dfn-extension-command-uri-template",
+          "dfn-error"
+        ]
+      }
+    }
   }
 }

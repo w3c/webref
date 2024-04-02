@@ -4,175 +4,317 @@
     "url": "https://wicg.github.io/content-index/spec/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/add": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/delete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/getAll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndexEvent": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "context-object"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/add": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/delete": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndex/getAll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/ContentIndexEvent": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "context-object"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-client",
+          "concept-request-credentials-mode",
+          "concept-request-destination",
+          "concept-fetch",
+          "concept-request-mode",
+          "concept-network-error",
+          "concept-request",
+          "concept-response",
+          "concept-request-url"
+        ]
+      },
+      "https://github.com/wicg/content-index/issues/15": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "idl-promise",
+          "SameObject",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-new-promise",
+          "reject",
+          "idl-sequence",
+          "dfn-throw",
+          "idl-undefined"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "concept-location-ancestor-origins-list",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "location"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "enqueue-the-following-steps",
+          "in-parallel",
+          "parallel-queue",
+          "starting-a-new-parallel-queue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "has-focus-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "api-base-url",
+          "concept-environment-creation-url",
+          "environment-settings-object",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "concept-agent-event-loop",
+          "concept-settings-object-origin",
+          "queue-a-task",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "responsible-event-loop",
+          "user-interaction-task-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "list-contain",
+          "map-exists",
+          "map-iterate",
+          "list",
+          "ordered-map",
+          "map-remove",
+          "map-set",
+          "string"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url",
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "extendableevent",
+          "dictdef-extendableeventinit",
+          "fetchevent",
+          "serviceworker",
+          "serviceworkerglobalscope",
+          "serviceworkerregistration",
+          "dfn-active-worker",
+          "fire-functional-event",
+          "dfn-service-worker-global-object",
+          "match-service-worker-registration",
+          "dfn-scope-url",
+          "dfn-service-worker",
+          "dfn-service-worker-registration",
+          "dfn-set-of-extended-events"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource",
+          "image-resource",
+          "processing-an-imageresource-from-an-api",
+          "dfn-src"
+        ]
+      },
+      "https://www.w3.org/TR/image-resource/": {},
+      "https://www.w3.org/TR/page-visibility/": {
+        "anchors": [
+          "dom-document-visibilitystate"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers-1/": {},
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "create-windowclient-algorithm"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-response",
-        "concept-fetch",
-        "concept-request",
-        "concept-request-url",
-        "concept-request-client",
-        "concept-request-destination",
-        "concept-request-mode",
-        "concept-request-credentials-mode",
-        "concept-network-error"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/wicg/content-index/issues/15": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "dfn-throw",
-        "SameObject",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-USVString",
-        "Exposed",
-        "idl-promise",
-        "idl-undefined",
-        "a-new-promise",
-        "reject",
-        "exceptiondef-typeerror"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "top-level-browsing-context",
-        "active-document",
-        "concept-location-ancestor-origins-list"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "navigate"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "location"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "parallel-queue",
-        "starting-a-new-parallel-queue",
-        "enqueue-the-following-steps",
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "has-focus-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "queue-a-task",
-        "environment-settings-object",
-        "responsible-event-loop",
-        "user-interaction-task-source",
-        "concept-relevant-global",
-        "concept-agent-event-loop",
-        "concept-environment-creation-url",
-        "concept-settings-object-origin",
-        "eventhandler",
-        "event-handlers",
-        "event-handler-event-type",
-        "event-handler-idl-attributes",
-        "relevant-settings-object",
-        "api-base-url"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-map",
-        "list",
-        "map-exists",
-        "map-remove",
-        "string",
-        "list-contain",
-        "list-iterate",
-        "list-append",
-        "map-set",
-        "map-iterate"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-origin",
-        "concept-url-parser"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "dfn-service-worker",
-        "dfn-service-worker-registration",
-        "dfn-scope-url",
-        "dfn-active-worker",
-        "dfn-service-worker-global-object",
-        "fire-functional-event",
-        "serviceworkerglobalscope",
-        "serviceworker",
-        "serviceworkerregistration",
-        "match-service-worker-registration",
-        "dfn-set-of-extended-events",
-        "fetchevent",
-        "dictdef-extendableeventinit",
-        "extendableevent"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/image-resource/": {
-      "anchors": [
-        "dom-imageresource",
-        "image-resource",
-        "processing-an-imageresource-from-an-api",
-        "dfn-src"
-      ],
-      "specShortname": "image-resource"
-    },
-    "https://www.w3.org/TR/image-resource/": {
-      "specShortname": "image-resource"
-    },
-    "https://www.w3.org/TR/page-visibility/": {
-      "anchors": [
-        "dom-document-visibilitystate"
-      ]
-    },
-    "https://www.w3.org/TR/service-workers-1/": {},
-    "https://www.w3.org/TR/service-workers/": {
-      "anchors": [
-        "create-windowclient-algorithm"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "context-object"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-response",
+          "concept-fetch",
+          "concept-request",
+          "concept-request-url",
+          "concept-request-client",
+          "concept-request-destination",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-network-error"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "dfn-throw",
+          "SameObject",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-USVString",
+          "Exposed",
+          "idl-promise",
+          "idl-undefined",
+          "a-new-promise",
+          "reject",
+          "exceptiondef-typeerror"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "top-level-browsing-context",
+          "active-document",
+          "concept-location-ancestor-origins-list"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "location"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "parallel-queue",
+          "starting-a-new-parallel-queue",
+          "enqueue-the-following-steps",
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "has-focus-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task",
+          "environment-settings-object",
+          "responsible-event-loop",
+          "user-interaction-task-source",
+          "concept-relevant-global",
+          "concept-agent-event-loop",
+          "concept-environment-creation-url",
+          "concept-settings-object-origin",
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "relevant-settings-object",
+          "api-base-url"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "list",
+          "map-exists",
+          "map-remove",
+          "string",
+          "list-contain",
+          "list-iterate",
+          "list-append",
+          "map-set",
+          "map-iterate"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-origin",
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dfn-service-worker",
+          "dfn-service-worker-registration",
+          "dfn-scope-url",
+          "dfn-active-worker",
+          "dfn-service-worker-global-object",
+          "fire-functional-event",
+          "serviceworkerglobalscope",
+          "serviceworker",
+          "serviceworkerregistration",
+          "match-service-worker-registration",
+          "dfn-set-of-extended-events",
+          "fetchevent",
+          "dictdef-extendableeventinit",
+          "extendableevent"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource",
+          "image-resource",
+          "processing-an-imageresource-from-an-api",
+          "dfn-src"
+        ]
+      },
+      "https://www.w3.org/TR/page-visibility/": {
+        "anchors": [
+          "dom-document-visibilitystate"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "create-windowclient-algorithm"
+        ]
+      }
+    }
   }
 }

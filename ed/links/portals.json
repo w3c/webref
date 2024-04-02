@@ -4,419 +4,640 @@
     "url": "https://wicg.github.io/portals/"
   },
   "links": {
-    "http://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-agents",
-        "sec-promise-objects"
-      ]
+    "rawlinks": {
+      "http://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-agents",
+          "sec-promise-objects"
+        ]
+      },
+      "http://wpt.live/portals/about-blank-cannot-host.html": {},
+      "http://wpt.live/portals/csp/frame-ancestors.sub.html": {},
+      "http://wpt.live/portals/csp/frame-src.sub.html": {},
+      "http://wpt.live/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
+      "http://wpt.live/portals/history/history-manipulation-inside-portal.html": {},
+      "http://wpt.live/portals/htmlportalelement-event-handler-content-attributes.html": {},
+      "http://wpt.live/portals/no-portal-in-sandboxed-popup.html": {},
+      "http://wpt.live/portals/portal-activate-data.html": {},
+      "http://wpt.live/portals/portal-activate-default.html": {},
+      "http://wpt.live/portals/portal-activate-event-constructor.html": {},
+      "http://wpt.live/portals/portal-activate-event.html": {},
+      "http://wpt.live/portals/portal-non-http-navigation.html": {},
+      "http://wpt.live/portals/portal-onload-event.html": {},
+      "http://wpt.live/portals/portals-activate-empty-browsing-context.html": {},
+      "http://wpt.live/portals/portals-activate-inside-iframe.html": {},
+      "http://wpt.live/portals/portals-activate-inside-portal.html": {},
+      "http://wpt.live/portals/portals-activate-network-error.html": {},
+      "http://wpt.live/portals/portals-activate-no-browsing-context.html": {},
+      "http://wpt.live/portals/portals-activate-resolution.html": {},
+      "http://wpt.live/portals/portals-activate-twice.html": {},
+      "http://wpt.live/portals/portals-activate-while-unloading.html": {},
+      "http://wpt.live/portals/portals-adopt-predecessor.html": {},
+      "http://wpt.live/portals/portals-api.html": {},
+      "http://wpt.live/portals/portals-close-window.html": {},
+      "http://wpt.live/portals/portals-cross-origin-load.sub.html": {},
+      "http://wpt.live/portals/portals-focus.sub.html": {},
+      "http://wpt.live/portals/portals-host-exposure.sub.html": {},
+      "http://wpt.live/portals/portals-host-hidden-after-activation.html": {},
+      "http://wpt.live/portals/portals-host-null.html": {},
+      "http://wpt.live/portals/portals-host-post-message.sub.html": {},
+      "http://wpt.live/portals/portals-navigate-after-adoption.html": {},
+      "http://wpt.live/portals/portals-nested.html": {},
+      "http://wpt.live/portals/portals-no-frame-crash.html": {},
+      "http://wpt.live/portals/portals-post-message.sub.html": {},
+      "http://wpt.live/portals/portals-referrer-inherit-header.html": {},
+      "http://wpt.live/portals/portals-referrer-inherit-meta.html": {},
+      "http://wpt.live/portals/portals-referrer.html": {},
+      "http://wpt.live/portals/portals-rendering.html": {},
+      "http://wpt.live/portals/portals-repeated-activate.html": {},
+      "http://wpt.live/portals/portals-set-src-after-activate.html": {},
+      "http://wpt.live/portals/predecessor-fires-unload.html": {},
+      "http://wpt.live/portals/xfo/portals-xfo-deny.sub.html": {},
+      "http://wpt.live/portals/xfo/portals-xfo-sameorigin.html": {},
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "eventtarget-activation-behavior",
+          "concept-node-adopt-ext",
+          "concept-create-element",
+          "concept-event-create",
+          "concept-event-dispatch",
+          "concept-event-constructor-ext",
+          "concept-event-fire",
+          "concept-node-document",
+          "concept-document-origin",
+          "dom-event-type",
+          "concept-document-url"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request-current-url",
+          "http-scheme",
+          "concept-request-referrer-policy",
+          "concept-request",
+          "concept-request-reserved-client",
+          "concept-response",
+          "concept-response-status",
+          "concept-request-url"
+        ]
+      },
+      "https://github.com/WICG/portals": {
+        "anchors": [
+          "readme"
+        ]
+      },
+      "https://github.com/WICG/portals/issues/207": {},
+      "https://github.com/WICG/portals/issues/225": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/about-blank-cannot-host.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-ancestors.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-src.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/history/history-manipulation-inside-portal.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/htmlportalelement-event-handler-content-attributes.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/no-portal-in-sandboxed-popup.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-data.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-default.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-event-constructor.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-event.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-non-http-navigation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-onload-event.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-empty-browsing-context.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-inside-iframe.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-inside-portal.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-network-error.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-no-browsing-context.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-resolution.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-twice.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-while-unloading.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-adopt-predecessor.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-api.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-close-window.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-cross-origin-load.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-focus.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-exposure.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-hidden-after-activation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-null.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-post-message.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-navigate-after-adoption.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-nested.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-no-frame-crash.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-post-message.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer-inherit-header.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer-inherit-meta.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-rendering.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-repeated-activate.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-set-src-after-activate.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/predecessor-fires-unload.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-deny.sub.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-sameorigin.html": {},
+      "https://github.com/whatwg/html/issues/4521": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "invalidstateerror",
+          "NewObject",
+          "idl-promise",
+          "idl-USVString",
+          "idl-any",
+          "dfn-frozen-array-type",
+          "reject",
+          "this",
+          "idl-undefined"
+        ]
+      },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "windows",
+          "embedded-content",
+          "events-2"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document",
+          "active-window",
+          "auxiliary-browsing-context",
+          "browsing-context-group",
+          "child-browsing-context",
+          "creating-a-new-top-level-browsing-context",
+          "nested-browsing-context",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate",
+          "process-a-navigate-response",
+          "process-a-navigate-url-scheme",
+          "prompt-to-unload-a-document",
+          "navigation-params-request",
+          "navigation-params-reserved-environment"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "limited-to-only-known-values",
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/comms.html": {
+        "anchors": [
+          "messageevent",
+          "dom-messageevent-data",
+          "dom-messageevent-ports",
+          "dom-messageevent-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlconstructor",
+          "htmlelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "session-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-load",
+          "event-unload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "becomes-browsing-context-connected",
+          "becomes-browsing-context-disconnected",
+          "browsing-context-connected",
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "allowed-to-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "active-sandboxing-flag-set",
+          "same-origin",
+          "same-origin-domain",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "completely-loaded"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "structureddeserializewithtransfer",
+          "structuredserializewithtransfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "parse-a-url",
+          "referrer-policy-attribute",
+          "resulting-url-record",
+          "valid-non-empty-url-potentially-surrounded-by-spaces"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "messageport",
+          "postmessageoptions",
+          "dom-postmessageoptions-transfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "windoweventhandlers",
+          "environment-discarding-steps",
+          "event-handlers",
+          "event-handler-content-attributes",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "concept-agent-event-loop",
+          "concept-settings-object-origin",
+          "queue-a-global-task",
+          "queue-an-element-task",
+          "concept-global-object-realm",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "concept-environment-target-browsing-context",
+          "task-source"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window",
+          "windowproxy",
+          "concept-document-window",
+          "window-bc",
+          "close-a-browsing-context",
+          "a-browsing-context-is-discarded",
+          "script-closable"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "boolean",
+          "html-namespace"
+        ]
+      },
+      "https://tc39.es/ecma262/": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme",
+          "concept-url"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "header-content-security-policy",
+          "directive-post-request-check",
+          "directive-pre-request-check",
+          "sandbox",
+          "grammardef-serialized-source-list",
+          "source-lists",
+          "directive-value"
+        ]
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "anchors": [
+          "referrer-policy"
+        ]
+      },
+      "https://wpt.fyi/results/portals/about-blank-cannot-host.html": {},
+      "https://wpt.fyi/results/portals/csp/frame-ancestors.sub.html": {},
+      "https://wpt.fyi/results/portals/csp/frame-src.sub.html": {},
+      "https://wpt.fyi/results/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
+      "https://wpt.fyi/results/portals/history/history-manipulation-inside-portal.html": {},
+      "https://wpt.fyi/results/portals/htmlportalelement-event-handler-content-attributes.html": {},
+      "https://wpt.fyi/results/portals/no-portal-in-sandboxed-popup.html": {},
+      "https://wpt.fyi/results/portals/portal-activate-data.html": {},
+      "https://wpt.fyi/results/portals/portal-activate-default.html": {},
+      "https://wpt.fyi/results/portals/portal-activate-event-constructor.html": {},
+      "https://wpt.fyi/results/portals/portal-activate-event.html": {},
+      "https://wpt.fyi/results/portals/portal-non-http-navigation.html": {},
+      "https://wpt.fyi/results/portals/portal-onload-event.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-empty-browsing-context.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-inside-iframe.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-inside-portal.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-network-error.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-no-browsing-context.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-resolution.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-twice.html": {},
+      "https://wpt.fyi/results/portals/portals-activate-while-unloading.html": {},
+      "https://wpt.fyi/results/portals/portals-adopt-predecessor.html": {},
+      "https://wpt.fyi/results/portals/portals-api.html": {},
+      "https://wpt.fyi/results/portals/portals-close-window.html": {},
+      "https://wpt.fyi/results/portals/portals-cross-origin-load.sub.html": {},
+      "https://wpt.fyi/results/portals/portals-focus.sub.html": {},
+      "https://wpt.fyi/results/portals/portals-host-exposure.sub.html": {},
+      "https://wpt.fyi/results/portals/portals-host-hidden-after-activation.html": {},
+      "https://wpt.fyi/results/portals/portals-host-null.html": {},
+      "https://wpt.fyi/results/portals/portals-host-post-message.sub.html": {},
+      "https://wpt.fyi/results/portals/portals-navigate-after-adoption.html": {},
+      "https://wpt.fyi/results/portals/portals-nested.html": {},
+      "https://wpt.fyi/results/portals/portals-no-frame-crash.html": {},
+      "https://wpt.fyi/results/portals/portals-post-message.sub.html": {},
+      "https://wpt.fyi/results/portals/portals-referrer-inherit-header.html": {},
+      "https://wpt.fyi/results/portals/portals-referrer-inherit-meta.html": {},
+      "https://wpt.fyi/results/portals/portals-referrer.html": {},
+      "https://wpt.fyi/results/portals/portals-rendering.html": {},
+      "https://wpt.fyi/results/portals/portals-repeated-activate.html": {},
+      "https://wpt.fyi/results/portals/portals-set-src-after-activate.html": {},
+      "https://wpt.fyi/results/portals/predecessor-fires-unload.html": {},
+      "https://wpt.fyi/results/portals/xfo/portals-xfo-deny.sub.html": {},
+      "https://wpt.fyi/results/portals/xfo/portals-xfo-sameorigin.html": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "directives-fetch",
+          "effective-directive-for-a-request",
+          "should-directive-execute",
+          "match-request-to-source-list",
+          "match-response-to-source-list",
+          "directive-default-src",
+          "directive-fallback-list"
+        ]
+      },
+      "https://www.w3.org/TR/fetch-metadata/": {
+        "anchors": [
+          "abstract-opdef-set-mode"
+        ]
+      },
+      "https://www.w3.org/TR/referrer-policy/": {},
+      "https://www.w3.org/TR/service-workers-1/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "http://wpt.live/portals/about-blank-cannot-host.html": {},
-    "http://wpt.live/portals/csp/frame-ancestors.sub.html": {},
-    "http://wpt.live/portals/csp/frame-src.sub.html": {},
-    "http://wpt.live/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
-    "http://wpt.live/portals/history/history-manipulation-inside-portal.html": {},
-    "http://wpt.live/portals/htmlportalelement-event-handler-content-attributes.html": {},
-    "http://wpt.live/portals/no-portal-in-sandboxed-popup.html": {},
-    "http://wpt.live/portals/portal-activate-data.html": {},
-    "http://wpt.live/portals/portal-activate-default.html": {},
-    "http://wpt.live/portals/portal-activate-event-constructor.html": {},
-    "http://wpt.live/portals/portal-activate-event.html": {},
-    "http://wpt.live/portals/portal-non-http-navigation.html": {},
-    "http://wpt.live/portals/portal-onload-event.html": {},
-    "http://wpt.live/portals/portals-activate-empty-browsing-context.html": {},
-    "http://wpt.live/portals/portals-activate-inside-iframe.html": {},
-    "http://wpt.live/portals/portals-activate-inside-portal.html": {},
-    "http://wpt.live/portals/portals-activate-network-error.html": {},
-    "http://wpt.live/portals/portals-activate-no-browsing-context.html": {},
-    "http://wpt.live/portals/portals-activate-resolution.html": {},
-    "http://wpt.live/portals/portals-activate-twice.html": {},
-    "http://wpt.live/portals/portals-activate-while-unloading.html": {},
-    "http://wpt.live/portals/portals-adopt-predecessor.html": {},
-    "http://wpt.live/portals/portals-api.html": {},
-    "http://wpt.live/portals/portals-close-window.html": {},
-    "http://wpt.live/portals/portals-cross-origin-load.sub.html": {},
-    "http://wpt.live/portals/portals-focus.sub.html": {},
-    "http://wpt.live/portals/portals-host-exposure.sub.html": {},
-    "http://wpt.live/portals/portals-host-hidden-after-activation.html": {},
-    "http://wpt.live/portals/portals-host-null.html": {},
-    "http://wpt.live/portals/portals-host-post-message.sub.html": {},
-    "http://wpt.live/portals/portals-navigate-after-adoption.html": {},
-    "http://wpt.live/portals/portals-nested.html": {},
-    "http://wpt.live/portals/portals-no-frame-crash.html": {},
-    "http://wpt.live/portals/portals-post-message.sub.html": {},
-    "http://wpt.live/portals/portals-referrer-inherit-header.html": {},
-    "http://wpt.live/portals/portals-referrer-inherit-meta.html": {},
-    "http://wpt.live/portals/portals-referrer.html": {},
-    "http://wpt.live/portals/portals-rendering.html": {},
-    "http://wpt.live/portals/portals-repeated-activate.html": {},
-    "http://wpt.live/portals/portals-set-src-after-activate.html": {},
-    "http://wpt.live/portals/predecessor-fires-unload.html": {},
-    "http://wpt.live/portals/xfo/portals-xfo-deny.sub.html": {},
-    "http://wpt.live/portals/xfo/portals-xfo-sameorigin.html": {},
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-node-document",
-        "document",
-        "concept-document-origin",
-        "concept-event-create",
-        "dom-event-type",
-        "concept-event-dispatch",
-        "concept-create-element",
-        "concept-event-fire",
-        "concept-document-url",
-        "concept-node-adopt-ext",
-        "eventtarget-activation-behavior",
-        "eventtarget",
-        "event",
-        "dictdef-eventinit",
-        "concept-event-constructor-ext"
-      ],
-      "specShortname": "dom"
-    },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "http-scheme",
-        "concept-request",
-        "concept-request-url",
-        "concept-request-referrer-policy",
-        "concept-request-current-url",
-        "concept-response-status",
-        "concept-response",
-        "concept-request-reserved-client"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/WICG/portals": {
-      "anchors": [
-        "readme"
-      ]
-    },
-    "https://github.com/WICG/portals/issues/207": {},
-    "https://github.com/WICG/portals/issues/225": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/about-blank-cannot-host.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-ancestors.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-src.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/history/history-manipulation-inside-portal.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/htmlportalelement-event-handler-content-attributes.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/no-portal-in-sandboxed-popup.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-data.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-default.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-event-constructor.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-activate-event.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-non-http-navigation.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-onload-event.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-empty-browsing-context.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-inside-iframe.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-inside-portal.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-network-error.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-no-browsing-context.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-resolution.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-twice.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-activate-while-unloading.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-adopt-predecessor.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-api.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-close-window.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-cross-origin-load.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-focus.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-exposure.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-hidden-after-activation.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-null.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-host-post-message.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-navigate-after-adoption.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-nested.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-no-frame-crash.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-post-message.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer-inherit-header.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer-inherit-meta.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-referrer.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-rendering.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-repeated-activate.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-set-src-after-activate.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/predecessor-fires-unload.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-deny.sub.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-sameorigin.html": {},
-    "https://github.com/whatwg/html/issues/4521": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "reject",
-        "invalidstateerror",
-        "idl-DOMException",
-        "Exposed",
-        "idl-USVString",
-        "idl-DOMString",
-        "NewObject",
-        "idl-promise",
-        "idl-undefined",
-        "idl-any",
-        "this",
-        "dfn-frozen-array-type"
-      ]
-    },
-    "https://html.spec.whatwg.org/": {
-      "anchors": [
-        "windows",
-        "embedded-content",
-        "events-2"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "top-level-browsing-context",
-        "browsing-context",
-        "nested-browsing-context",
-        "active-window",
-        "active-document",
-        "browsing-context-group",
-        "concept-document-bc",
-        "child-browsing-context",
-        "auxiliary-browsing-context",
-        "creating-a-new-top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "unload-a-document",
-        "prompt-to-unload-a-document",
-        "navigate",
-        "process-a-navigate-response",
-        "navigation-params-request",
-        "navigation-params-reserved-environment",
-        "process-a-navigate-url-scheme"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "reflect",
-        "limited-to-only-known-values"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/comms.html": {
-      "anchors": [
-        "messageevent",
-        "dom-messageevent-origin",
-        "dom-messageevent-source",
-        "dom-messageevent-data",
-        "dom-messageevent-ports"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
-      "anchors": [
-        "cereactions"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "htmlelement",
-        "htmlconstructor"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "session-history"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/indices.html": {
-      "anchors": [
-        "event-unload",
-        "event-load"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "browsing-context-connected",
-        "in-parallel",
-        "becomes-browsing-context-connected",
-        "becomes-browsing-context-disconnected"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "allowed-to-download"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin",
-        "same-origin",
-        "same-origin-domain",
-        "ascii-serialisation-of-an-origin",
-        "active-sandboxing-flag-set"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/parsing.html": {
-      "anchors": [
-        "completely-loaded"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "structureddeserializewithtransfer",
-        "structuredserializewithtransfer"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-      "anchors": [
-        "valid-non-empty-url-potentially-surrounded-by-spaces",
-        "referrer-policy-attribute",
-        "parse-a-url",
-        "resulting-url-record"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/web-messaging.html": {
-      "anchors": [
-        "postmessageoptions",
-        "dom-postmessageoptions-transfer",
-        "messageport"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "task-source",
-        "queue-a-global-task",
-        "concept-global-object-realm",
-        "concept-agent-event-loop",
-        "eventhandler",
-        "relevant-settings-object",
-        "concept-settings-object-origin",
-        "event-handler-content-attributes",
-        "concept-relevant-global",
-        "event-loop",
-        "queue-an-element-task",
-        "environment-settings-object's-realm",
-        "event-handlers",
-        "event-handler-idl-attributes",
-        "event-handler-event-type",
-        "windoweventhandlers",
-        "environment-discarding-steps",
-        "concept-environment-target-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "close-a-browsing-context",
-        "windowproxy",
-        "a-browsing-context-is-discarded",
-        "concept-document-window",
-        "window",
-        "window-bc",
-        "script-closable"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "assert",
-        "html-namespace",
-        "boolean"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url",
-        "concept-url-scheme"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworker"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "anchors": [
-        "sandbox",
-        "grammardef-serialized-source-list",
-        "header-content-security-policy",
-        "source-lists",
-        "directive-pre-request-check",
-        "directive-value",
-        "directive-post-request-check"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://w3c.github.io/webappsec-referrer-policy/": {
-      "anchors": [
-        "referrer-policy"
-      ],
-      "specShortname": "referrer-policy"
-    },
-    "https://wpt.fyi/results/portals/about-blank-cannot-host.html": {},
-    "https://wpt.fyi/results/portals/csp/frame-ancestors.sub.html": {},
-    "https://wpt.fyi/results/portals/csp/frame-src.sub.html": {},
-    "https://wpt.fyi/results/portals/history/history-manipulation-inside-portal-with-subframes.html": {},
-    "https://wpt.fyi/results/portals/history/history-manipulation-inside-portal.html": {},
-    "https://wpt.fyi/results/portals/htmlportalelement-event-handler-content-attributes.html": {},
-    "https://wpt.fyi/results/portals/no-portal-in-sandboxed-popup.html": {},
-    "https://wpt.fyi/results/portals/portal-activate-data.html": {},
-    "https://wpt.fyi/results/portals/portal-activate-default.html": {},
-    "https://wpt.fyi/results/portals/portal-activate-event-constructor.html": {},
-    "https://wpt.fyi/results/portals/portal-activate-event.html": {},
-    "https://wpt.fyi/results/portals/portal-non-http-navigation.html": {},
-    "https://wpt.fyi/results/portals/portal-onload-event.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-empty-browsing-context.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-inside-iframe.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-inside-portal.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-network-error.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-no-browsing-context.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-resolution.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-twice.html": {},
-    "https://wpt.fyi/results/portals/portals-activate-while-unloading.html": {},
-    "https://wpt.fyi/results/portals/portals-adopt-predecessor.html": {},
-    "https://wpt.fyi/results/portals/portals-api.html": {},
-    "https://wpt.fyi/results/portals/portals-close-window.html": {},
-    "https://wpt.fyi/results/portals/portals-cross-origin-load.sub.html": {},
-    "https://wpt.fyi/results/portals/portals-focus.sub.html": {},
-    "https://wpt.fyi/results/portals/portals-host-exposure.sub.html": {},
-    "https://wpt.fyi/results/portals/portals-host-hidden-after-activation.html": {},
-    "https://wpt.fyi/results/portals/portals-host-null.html": {},
-    "https://wpt.fyi/results/portals/portals-host-post-message.sub.html": {},
-    "https://wpt.fyi/results/portals/portals-navigate-after-adoption.html": {},
-    "https://wpt.fyi/results/portals/portals-nested.html": {},
-    "https://wpt.fyi/results/portals/portals-no-frame-crash.html": {},
-    "https://wpt.fyi/results/portals/portals-post-message.sub.html": {},
-    "https://wpt.fyi/results/portals/portals-referrer-inherit-header.html": {},
-    "https://wpt.fyi/results/portals/portals-referrer-inherit-meta.html": {},
-    "https://wpt.fyi/results/portals/portals-referrer.html": {},
-    "https://wpt.fyi/results/portals/portals-rendering.html": {},
-    "https://wpt.fyi/results/portals/portals-repeated-activate.html": {},
-    "https://wpt.fyi/results/portals/portals-set-src-after-activate.html": {},
-    "https://wpt.fyi/results/portals/predecessor-fires-unload.html": {},
-    "https://wpt.fyi/results/portals/xfo/portals-xfo-deny.sub.html": {},
-    "https://wpt.fyi/results/portals/xfo/portals-xfo-sameorigin.html": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "directives-fetch",
-        "effective-directive-for-a-request",
-        "should-directive-execute",
-        "match-request-to-source-list",
-        "match-response-to-source-list",
-        "directive-default-src",
-        "directive-fallback-list"
-      ],
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/fetch-metadata/": {
-      "anchors": [
-        "abstract-opdef-set-mode"
-      ],
-      "specShortname": "fetch-metadata"
-    },
-    "https://www.w3.org/TR/referrer-policy/": {
-      "specShortname": "referrer-policy"
-    },
-    "https://www.w3.org/TR/service-workers-1/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "http://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-agents",
+          "sec-promise-objects"
+        ]
+      },
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-node-document",
+          "document",
+          "concept-document-origin",
+          "concept-event-create",
+          "dom-event-type",
+          "concept-event-dispatch",
+          "concept-create-element",
+          "concept-event-fire",
+          "concept-document-url",
+          "concept-node-adopt-ext",
+          "eventtarget-activation-behavior",
+          "eventtarget",
+          "event",
+          "dictdef-eventinit",
+          "concept-event-constructor-ext"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "http-scheme",
+          "concept-request",
+          "concept-request-url",
+          "concept-request-referrer-policy",
+          "concept-request-current-url",
+          "concept-response-status",
+          "concept-response",
+          "concept-request-reserved-client"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "reject",
+          "invalidstateerror",
+          "idl-DOMException",
+          "Exposed",
+          "idl-USVString",
+          "idl-DOMString",
+          "NewObject",
+          "idl-promise",
+          "idl-undefined",
+          "idl-any",
+          "this",
+          "dfn-frozen-array-type"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "top-level-browsing-context",
+          "browsing-context",
+          "nested-browsing-context",
+          "active-window",
+          "active-document",
+          "browsing-context-group",
+          "concept-document-bc",
+          "child-browsing-context",
+          "auxiliary-browsing-context",
+          "creating-a-new-top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "unload-a-document",
+          "prompt-to-unload-a-document",
+          "navigate",
+          "process-a-navigate-response",
+          "navigation-params-request",
+          "navigation-params-reserved-environment",
+          "process-a-navigate-url-scheme"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect",
+          "limited-to-only-known-values"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/comms.html": {
+        "anchors": [
+          "messageevent",
+          "dom-messageevent-origin",
+          "dom-messageevent-source",
+          "dom-messageevent-data",
+          "dom-messageevent-ports"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement",
+          "htmlconstructor"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/history.html": {
+        "anchors": [
+          "session-history"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-unload",
+          "event-load"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "browsing-context-connected",
+          "in-parallel",
+          "becomes-browsing-context-connected",
+          "becomes-browsing-context-disconnected"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/links.html": {
+        "anchors": [
+          "allowed-to-download"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/origin.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin",
+          "same-origin-domain",
+          "ascii-serialisation-of-an-origin",
+          "active-sandboxing-flag-set"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "completely-loaded"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "structureddeserializewithtransfer",
+          "structuredserializewithtransfer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "valid-non-empty-url-potentially-surrounded-by-spaces",
+          "referrer-policy-attribute",
+          "parse-a-url",
+          "resulting-url-record"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+        "anchors": [
+          "postmessageoptions",
+          "dom-postmessageoptions-transfer",
+          "messageport"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "task-source",
+          "queue-a-global-task",
+          "concept-global-object-realm",
+          "concept-agent-event-loop",
+          "eventhandler",
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "event-handler-content-attributes",
+          "concept-relevant-global",
+          "event-loop",
+          "queue-an-element-task",
+          "environment-settings-object's-realm",
+          "event-handlers",
+          "event-handler-idl-attributes",
+          "event-handler-event-type",
+          "windoweventhandlers",
+          "environment-discarding-steps",
+          "concept-environment-target-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "close-a-browsing-context",
+          "windowproxy",
+          "a-browsing-context-is-discarded",
+          "concept-document-window",
+          "window",
+          "window-bc",
+          "script-closable"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "html-namespace",
+          "boolean"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url",
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworker"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "sandbox",
+          "grammardef-serialized-source-list",
+          "header-content-security-policy",
+          "source-lists",
+          "directive-pre-request-check",
+          "directive-value",
+          "directive-post-request-check"
+        ]
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "anchors": [
+          "referrer-policy"
+        ]
+      }
+    }
   }
 }

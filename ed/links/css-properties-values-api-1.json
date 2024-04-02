@@ -4,313 +4,472 @@
     "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSS/registerProperty_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/inherits": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/initialValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/syntax": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/@property": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/inherits": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/initial-value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/syntax": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-layout-api-1/": {},
+      "https://drafts.css-houdini.org/css-paint-api-1/": {},
+      "https://drafts.css-houdini.org/css-typed-om-1/": {
+        "anchors": [
+          "cssstylevalue",
+          "dom-cssstylevalue-associatedproperty-slot",
+          "custom-property-name-string",
+          "reify-a-transform-function",
+          "reify-a-transform-list",
+          "reify-a-list-of-component-values",
+          "reify-a-numeric-value",
+          "reify-an-identifier",
+          "reify-as-a-cssstylevalue"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations/": {},
+      "https://drafts.csswg.org/css-cascade-4/": {
+        "anchors": [
+          "defaulting-keywords"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "computed-value",
+          "valdef-all-inherit",
+          "initial-value",
+          "valdef-all-revert",
+          "specified-value",
+          "valdef-all-unset"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-6/": {
+        "anchors": [
+          "cascade"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "valdef-color-black",
+          "valdef-color-blue",
+          "propdef-color",
+          "valdef-color-red"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-color/": {},
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-supports"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {
+        "anchors": [
+          "computed-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "shadow-names",
+          "selectordef-host"
+        ]
+      },
+      "https://drafts.csswg.org/css-scoping/": {},
+      "https://drafts.csswg.org/css-shadow-parts-1/": {
+        "anchors": [
+          "selectordef-part"
+        ]
+      },
+      "https://drafts.csswg.org/css-shadow-parts/": {},
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "tokenization",
+          "would-start-an-identifier",
+          "consume-name",
+          "typedef-declaration-list",
+          "typedef-declaration-value",
+          "typedef-dimension-token",
+          "consume-an-ident-sequence",
+          "current-input-code-point",
+          "ident-code-point",
+          "ident-start-code-point",
+          "input-stream",
+          "next-input-code-point",
+          "css-parse-something-according-to-a-css-grammar",
+          "reconsume-the-current-input-code-point",
+          "check-if-three-code-points-would-start-an-ident-sequence",
+          "whitespace"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax/": {},
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "typedef-transform-function",
+          "typedef-transform-list",
+          "propdef-transform"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-transitions/": {},
+      "https://drafts.csswg.org/css-values-3/": {
+        "anchors": [
+          "value-defs"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "angle-value",
+          "identifier-value",
+          "integer-value",
+          "typedef-length-percentage",
+          "length-value",
+          "number-value",
+          "percentage-value",
+          "resolution-value",
+          "string-value",
+          "time-value",
+          "url-value",
+          "mult-opt",
+          "funcdef-calc",
+          "canonical-unit",
+          "cap",
+          "ch",
+          "css-wide-keywords",
+          "dimension",
+          "em",
+          "ex",
+          "ic",
+          "css-css-identifier",
+          "interpolation",
+          "lh",
+          "math-function",
+          "rem",
+          "rlh",
+          "comb-one"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "typedef-custom-property-name",
+          "custom-property",
+          "guaranteed-invalid-value",
+          "invalid-at-computed-value-time",
+          "funcdef-var"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables/": {},
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "namespacedef-css",
+          "cssomstring",
+          "cssrule",
+          "serialize-a-css-value",
+          "serialize-a-string",
+          "serialize-an-identifier"
+        ]
+      },
+      "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "by-computed-value"
+        ]
+      },
+      "https://github.com/w3c/css-houdini-drafts/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "set-append",
+          "ascii-case-insensitive",
+          "boolean",
+          "code-point",
+          "list-contain",
+          "map-exists",
+          "string-length",
+          "list",
+          "string",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "struct"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "invalidmodificationerror",
+          "syntaxerror",
+          "idl-boolean",
+          "dfn-throw",
+          "idl-undefined"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/TR/css-scoping-1/": {
+        "anchors": [
+          "host-element0"
+        ]
+      }
     },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/registerProperty_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/inherits": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/initialValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPropertyRule/syntax": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/@property": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/inherits": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/initial-value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/@property/syntax": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.css-houdini.org/css-layout-api-1/": {
-      "specShortname": "css-layout-api-1"
-    },
-    "https://drafts.css-houdini.org/css-paint-api-1/": {
-      "specShortname": "css-paint-api-1"
-    },
-    "https://drafts.css-houdini.org/css-typed-om-1/": {
-      "anchors": [
-        "custom-property-name-string",
-        "cssstylevalue",
-        "reify-a-list-of-component-values",
-        "reify-a-numeric-value",
-        "reify-a-transform-function",
-        "reify-a-transform-list",
-        "reify-an-identifier",
-        "reify-as-a-cssstylevalue",
-        "dom-cssstylevalue-associatedproperty-slot"
-      ],
-      "specShortname": "css-typed-om-1"
-    },
-    "https://drafts.csswg.org/css-animations/": {
-      "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-cascade-4/": {
-      "anchors": [
-        "defaulting-keywords"
-      ],
-      "specShortname": "css-cascade-4"
-    },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "specified-value",
-        "valdef-all-inherit",
-        "valdef-all-revert",
-        "computed-value",
-        "valdef-all-unset",
-        "initial-value"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-cascade-6/": {
-      "anchors": [
-        "cascade"
-      ],
-      "specShortname": "css-cascade-6"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "propdef-color",
-        "valdef-color-black",
-        "valdef-color-red",
-        "valdef-color-blue"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-color-5/": {
-      "anchors": [
-        "typedef-color"
-      ],
-      "specShortname": "css-color-5"
-    },
-    "https://drafts.csswg.org/css-color/": {
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-conditional-3/": {
-      "anchors": [
-        "at-ruledef-supports"
-      ],
-      "specShortname": "css-conditional-3"
-    },
-    "https://drafts.csswg.org/css-fonts-4/": {
-      "anchors": [
-        "propdef-font-size"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "typedef-image"
-      ],
-      "specShortname": "css-images-3"
-    },
-    "https://drafts.csswg.org/css-images-4/": {
-      "anchors": [
-        "computed-image"
-      ],
-      "specShortname": "css-images-4"
-    },
-    "https://drafts.csswg.org/css-scoping-1/": {
-      "anchors": [
-        "shadow-names",
-        "selectordef-host"
-      ],
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-scoping/": {
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-shadow-parts-1/": {
-      "anchors": [
-        "selectordef-part"
-      ],
-      "specShortname": "css-shadow-parts-1"
-    },
-    "https://drafts.csswg.org/css-shadow-parts/": {
-      "specShortname": "css-shadow-parts-1"
-    },
-    "https://drafts.csswg.org/css-syntax-3/": {
-      "anchors": [
-        "css-parse-something-according-to-a-css-grammar",
-        "tokenization",
-        "typedef-dimension-token",
-        "typedef-declaration-list",
-        "typedef-declaration-value",
-        "would-start-an-identifier",
-        "consume-name",
-        "ident-code-point",
-        "input-stream",
-        "whitespace",
-        "next-input-code-point",
-        "ident-start-code-point",
-        "check-if-three-code-points-would-start-an-ident-sequence",
-        "reconsume-the-current-input-code-point",
-        "consume-an-ident-sequence",
-        "current-input-code-point"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-syntax/": {
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-transforms-1/": {
-      "anchors": [
-        "propdef-transform",
-        "typedef-transform-function",
-        "typedef-transform-list"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-values-3/": {
-      "anchors": [
-        "value-defs"
-      ],
-      "specShortname": "css-values-3"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "css-wide-keywords",
-        "dimension",
-        "canonical-unit",
-        "math-function",
-        "interpolation",
-        "length-value",
-        "typedef-length-percentage",
-        "em",
-        "ex",
-        "cap",
-        "ch",
-        "ic",
-        "lh",
-        "rem",
-        "rlh",
-        "string-value",
-        "comb-one",
-        "mult-opt",
-        "number-value",
-        "percentage-value",
-        "funcdef-calc",
-        "url-value",
-        "integer-value",
-        "angle-value",
-        "time-value",
-        "resolution-value",
-        "identifier-value",
-        "css-css-identifier"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-variables-2/": {
-      "anchors": [
-        "custom-property",
-        "funcdef-var",
-        "guaranteed-invalid-value",
-        "invalid-at-computed-value-time",
-        "typedef-custom-property-name"
-      ],
-      "specShortname": "css-variables-2"
-    },
-    "https://drafts.csswg.org/css-variables/": {
-      "specShortname": "css-variables-1"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "propdef-line-height"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "serialize-a-css-value",
-        "namespacedef-css",
-        "cssrule",
-        "cssomstring",
-        "serialize-an-identifier",
-        "serialize-a-string"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "by-computed-value"
-      ],
-      "specShortname": "web-animations-1"
-    },
-    "https://github.com/w3c/css-houdini-drafts/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-global-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "map-exists",
-        "struct",
-        "boolean",
-        "string",
-        "list-contain",
-        "set-append",
-        "ascii-case-insensitive",
-        "code-point",
-        "strip-leading-and-trailing-ascii-whitespace",
-        "string-length",
-        "list",
-        "list-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-houdini-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-DOMString",
-        "idl-boolean",
-        "idl-undefined",
-        "dfn-throw",
-        "syntaxerror",
-        "invalidmodificationerror",
-        "Exposed"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/TR/css-scoping-1/": {
-      "anchors": [
-        "host-element0"
-      ],
-      "specShortname": "css-scoping-1"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-typed-om-1/": {
+        "anchors": [
+          "custom-property-name-string",
+          "cssstylevalue",
+          "reify-a-list-of-component-values",
+          "reify-a-numeric-value",
+          "reify-a-transform-function",
+          "reify-a-transform-list",
+          "reify-an-identifier",
+          "reify-as-a-cssstylevalue",
+          "dom-cssstylevalue-associatedproperty-slot"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "specified-value",
+          "valdef-all-inherit",
+          "valdef-all-revert",
+          "computed-value",
+          "valdef-all-unset",
+          "initial-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-6/": {
+        "anchors": [
+          "cascade"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-color",
+          "valdef-color-black",
+          "valdef-color-red",
+          "valdef-color-blue"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-supports"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-4/": {
+        "anchors": [
+          "computed-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "selectordef-host"
+        ]
+      },
+      "https://drafts.csswg.org/css-shadow-parts-1/": {
+        "anchors": [
+          "selectordef-part"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar",
+          "typedef-dimension-token",
+          "typedef-declaration-list",
+          "typedef-declaration-value",
+          "ident-code-point",
+          "input-stream",
+          "whitespace",
+          "next-input-code-point",
+          "ident-start-code-point",
+          "check-if-three-code-points-would-start-an-ident-sequence",
+          "reconsume-the-current-input-code-point",
+          "consume-an-ident-sequence",
+          "current-input-code-point"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform",
+          "typedef-transform-function",
+          "typedef-transform-list"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "css-wide-keywords",
+          "dimension",
+          "canonical-unit",
+          "math-function",
+          "interpolation",
+          "length-value",
+          "typedef-length-percentage",
+          "em",
+          "ex",
+          "cap",
+          "ch",
+          "ic",
+          "lh",
+          "rem",
+          "rlh",
+          "string-value",
+          "comb-one",
+          "mult-opt",
+          "number-value",
+          "percentage-value",
+          "funcdef-calc",
+          "url-value",
+          "integer-value",
+          "angle-value",
+          "time-value",
+          "resolution-value",
+          "identifier-value",
+          "css-css-identifier"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "custom-property",
+          "funcdef-var",
+          "guaranteed-invalid-value",
+          "invalid-at-computed-value-time",
+          "typedef-custom-property-name"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "serialize-a-css-value",
+          "namespacedef-css",
+          "cssrule",
+          "cssomstring",
+          "serialize-an-identifier",
+          "serialize-a-string"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "by-computed-value"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "map-exists",
+          "struct",
+          "boolean",
+          "string",
+          "list-contain",
+          "set-append",
+          "ascii-case-insensitive",
+          "code-point",
+          "strip-leading-and-trailing-ascii-whitespace",
+          "string-length",
+          "list",
+          "list-append"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "idl-boolean",
+          "idl-undefined",
+          "dfn-throw",
+          "syntaxerror",
+          "invalidmodificationerror",
+          "Exposed"
+        ]
+      },
+      "https://www.w3.org/TR/css-scoping-1/": {
+        "anchors": [
+          "host-element0"
+        ]
+      }
     }
   }
 }

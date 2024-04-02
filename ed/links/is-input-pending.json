@@ -4,71 +4,82 @@
     "url": "https://wicg.github.io/is-input-pending/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-event-dispatch",
-        "concept-event",
-        "dom-event-istrusted"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-event-istrusted",
+          "concept-event-dispatch"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "task-queue",
+          "event-loop",
+          "eventtarget",
+          "browsing-context",
+          "dragevent"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-task"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "surrounding-agent"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/TR/html5/": {
+        "anchors": [
+          "the-navigator-object"
+        ]
+      },
+      "https://www.w3.org/TR/pointerevents3/": {
+        "anchors": [
+          "the-pointermove-event",
+          "the-pointerrawupdate-event"
+        ]
+      },
+      "https://www.w3.org/TR/touch-events/": {
+        "anchors": [
+          "the-touchmove-event",
+          "touchevent-interface"
+        ]
+      },
+      "https://www.w3.org/TR/uievents/": {
+        "anchors": [
+          "event-type-mousemove",
+          "event-type-wheel",
+          "idl-uievent"
+        ]
+      }
     },
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "task-queue",
-        "event-loop",
-        "eventtarget",
-        "browsing-context",
-        "dragevent"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "user-interaction-task-source",
-        "concept-task"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "surrounding-agent"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-boolean",
-        "Exposed"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/TR/html5/": {
-      "anchors": [
-        "the-navigator-object"
-      ]
-    },
-    "https://www.w3.org/TR/pointerevents3/": {
-      "anchors": [
-        "the-pointermove-event",
-        "the-pointerrawupdate-event"
-      ],
-      "specShortname": "pointerevents3"
-    },
-    "https://www.w3.org/TR/touch-events/": {
-      "anchors": [
-        "the-touchmove-event",
-        "touchevent-interface"
-      ],
-      "specShortname": "touch-events"
-    },
-    "https://www.w3.org/TR/uievents/": {
-      "anchors": [
-        "event-type-mousemove",
-        "event-type-wheel",
-        "idl-uievent"
-      ],
-      "specShortname": "uievents"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-dispatch",
+          "concept-event"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "user-interaction-task-source"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean"
+        ]
+      }
     }
   }
 }

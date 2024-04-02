@@ -4,398 +4,664 @@
     "url": "https://w3c.github.io/webvtt/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-texttracks/": {},
-    "http://www.w3.org/AudioVideo/TT/": {},
-    "http://www.w3.org/TR/media-accessibility-reqs/": {},
-    "http://www.w3.org/community/": {},
-    "http://www.w3.org/community/texttracks/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "documentfragment",
-        "document",
-        "text",
-        "dom-characterdata-data",
-        "processinginstruction",
-        "dom-processinginstruction-target",
-        "dom-element-namespaceuri",
-        "dom-node-ownerdocument"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-texttracks/": {},
+      "http://www.w3.org/AudioVideo/TT/": {},
+      "http://www.w3.org/TR/media-accessibility-reqs/": {},
+      "http://www.w3.org/community/": {},
+      "http://www.w3.org/community/texttracks/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "documentfragment",
+          "processinginstruction",
+          "text",
+          "dom-characterdata-data",
+          "dom-element-namespaceuri",
+          "dom-node-ownerdocument",
+          "dom-processinginstruction-target"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "valdef-self-position-flex-end",
+          "propdef-justify-content"
+        ]
+      },
+      "https://drafts.csswg.org/css-align/": {},
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background",
+          "propdef-background-color",
+          "propdef-background-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "at-ruledef-import"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-6/": {
+        "anchors": [
+          "cascade"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-3/": {},
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-color",
+          "valdef-color-green",
+          "propdef-opacity"
+        ]
+      },
+      "https://drafts.csswg.org/css-color/": {},
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "valdef-display-inline",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-display/": {},
+      "https://drafts.csswg.org/css-flexbox-1/": {
+        "anchors": [
+          "propdef-flex-flow",
+          "valdef-display-inline-flex"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "valdef-font-weight-bold",
+          "propdef-font",
+          "valdef-font-style-italic"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "valdef-overflow-hidden",
+          "propdef-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "valdef-position-absolute",
+          "propdef-left",
+          "propdef-position",
+          "valdef-position-relative",
+          "propdef-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-ruby-1/": {
+        "anchors": [
+          "valdef-display-ruby",
+          "valdef-display-ruby-base",
+          "propdef-ruby-position",
+          "valdef-display-ruby-text"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "valdef-width-auto",
+          "propdef-height",
+          "propdef-max-height",
+          "propdef-min-height",
+          "propdef-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "parse-a-stylesheet"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax/": {},
+      "https://drafts.csswg.org/css-text-3/": {
+        "anchors": [
+          "propdef-text-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "valdef-text-wrap-balance",
+          "valdef-overflow-wrap-break-word",
+          "valdef-text-align-center",
+          "valdef-text-align-end",
+          "valdef-text-align-left",
+          "propdef-overflow-wrap",
+          "valdef-white-space-pre-line",
+          "valdef-text-align-right",
+          "valdef-text-align-start",
+          "propdef-text-wrap",
+          "propdef-white-space"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-shadow"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions-1/": {
+        "anchors": [
+          "propdef-transition-duration",
+          "propdef-transition-property"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions/": {},
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-outline"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-3/": {},
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "vh",
+          "vw"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "valdef-writing-mode-horizontal-tb",
+          "valdef-unicode-bidi-plaintext",
+          "propdef-text-combine-upright",
+          "propdef-writing-mode"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "selectordef-lang",
+          "propdef-line-height",
+          "valdef-text-decoration-underline"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "concept-css-style-sheet-alternate-flag",
+          "create-a-css-style-sheet",
+          "concept-css-style-sheet-css-rules",
+          "css-style-sheet",
+          "dom-window-getcomputedstyle",
+          "concept-css-style-sheet-location",
+          "concept-css-style-sheet-media",
+          "concept-css-style-sheet-origin-clean-flag",
+          "concept-css-style-sheet-owner-css-rule",
+          "concept-css-style-sheet-owner-node",
+          "concept-css-style-sheet-parent-css-style-sheet",
+          "concept-css-style-sheet-title"
+        ]
+      },
+      "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.csswg.org/selectors-3/": {
+        "anchors": [
+          "sel-after",
+          "sel-before"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "attribute-selector",
+          "class-selector",
+          "id-selector",
+          "originating-element",
+          "type-selector"
+        ]
+      },
+      "https://drafts.csswg.org/selectors/": {},
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode"
+        ]
+      },
+      "https://github.com/w3c/webvtt/issues/new": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "rules-for-parsing-floating-point-number-values"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "attr-lang",
+          "attr-title",
+          "classes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "current-playback-position",
+          "expose-a-user-interface-to-the-user",
+          "honor-user-preferences-for-automatic-text-track-selection",
+          "list-of-text-tracks",
+          "media-element",
+          "rules-for-extracting-the-chapter-title",
+          "rules-for-updating-the-text-track-rendering",
+          "text-track",
+          "text-track-cue",
+          "text-track-cue-active-flag",
+          "text-track-cue-display-state",
+          "text-track-cue-end-time",
+          "text-track-cue-identifier",
+          "text-track-cue-order",
+          "text-track-cue-pause-on-exit-flag",
+          "text-track-cue-start-time",
+          "text-track-kind",
+          "text-track-list-of-cues",
+          "text-track-mode",
+          "text-track-showing",
+          "unbounded-text-track-cue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "ascii-digits",
+          "case-sensitive",
+          "skip-whitespace",
+          "split-a-string-on-spaces",
+          "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "texttrackcue",
+          "dom-texttrack-addcue",
+          "audio",
+          "attr-track-srclang",
+          "the-track-element",
+          "video"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "presentational-hints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-style-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/syntax.html": {
+        "anchors": [
+          "additional-allowed-character",
+          "syntax-charref",
+          "consume-a-character-reference"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-b-element",
+          "the-i-element",
+          "the-rt-element",
+          "the-ruby-element",
+          "the-span-element",
+          "the-u-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "entry-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-whitespace",
+          "collect-a-sequence-of-code-points",
+          "html-namespace"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-native-error-types-used-in-this-standard-typeerror"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "indexsizeerror",
+          "idl-boolean",
+          "idl-double",
+          "idl-unrestricted-double",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc3629": {},
+      "https://www.rfc-editor.org/rfc/rfc5646": {},
+      "https://www.unicode.org/reports/tr9/tr9-46.html": {},
+      "https://www.w3.org/International/questions/qa-escapes": {},
+      "https://www.w3.org/TR/WCAG20/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {}
     },
-    "https://drafts.csswg.org/css-align-3/": {
-      "anchors": [
-        "propdef-justify-content",
-        "valdef-self-position-flex-end"
-      ],
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-align/": {
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-background-color",
-        "propdef-background",
-        "propdef-background-image"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-cascade-5/": {
-      "anchors": [
-        "at-ruledef-import"
-      ],
-      "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-cascade-6/": {
-      "anchors": [
-        "cascade"
-      ],
-      "specShortname": "css-cascade-6"
-    },
-    "https://drafts.csswg.org/css-color-3/": {
-      "specShortname": "css-color-3"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "propdef-color",
-        "valdef-color-green",
-        "propdef-opacity"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-color/": {
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-display-3/": {
-      "anchors": [
-        "propdef-display"
-      ],
-      "specShortname": "css-display-3"
-    },
-    "https://drafts.csswg.org/css-display-4/": {
-      "anchors": [
-        "valdef-display-inline",
-        "propdef-visibility"
-      ],
-      "specShortname": "css-display-4"
-    },
-    "https://drafts.csswg.org/css-display/": {
-      "specShortname": "css-display-3"
-    },
-    "https://drafts.csswg.org/css-flexbox-1/": {
-      "anchors": [
-        "valdef-display-inline-flex",
-        "propdef-flex-flow"
-      ],
-      "specShortname": "css-flexbox-1"
-    },
-    "https://drafts.csswg.org/css-fonts-4/": {
-      "anchors": [
-        "propdef-font",
-        "valdef-font-style-italic",
-        "valdef-font-weight-bold"
-      ],
-      "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-overflow-3/": {
-      "anchors": [
-        "propdef-overflow",
-        "valdef-overflow-hidden"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://drafts.csswg.org/css-position-3/": {
-      "anchors": [
-        "propdef-position",
-        "valdef-position-absolute",
-        "propdef-top",
-        "propdef-left",
-        "valdef-position-relative"
-      ],
-      "specShortname": "css-position-3"
-    },
-    "https://drafts.csswg.org/css-ruby-1/": {
-      "anchors": [
-        "valdef-display-ruby-base",
-        "valdef-display-ruby",
-        "valdef-display-ruby-text",
-        "propdef-ruby-position"
-      ],
-      "specShortname": "css-ruby-1"
-    },
-    "https://drafts.csswg.org/css-sizing-3/": {
-      "anchors": [
-        "valdef-width-auto",
-        "propdef-width",
-        "propdef-height",
-        "propdef-min-height",
-        "propdef-max-height"
-      ],
-      "specShortname": "css-sizing-3"
-    },
-    "https://drafts.csswg.org/css-syntax-3/": {
-      "anchors": [
-        "parse-a-stylesheet"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-syntax/": {
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-text-3/": {
-      "anchors": [
-        "propdef-text-align"
-      ],
-      "specShortname": "css-text-3"
-    },
-    "https://drafts.csswg.org/css-text-4/": {
-      "anchors": [
-        "propdef-overflow-wrap",
-        "valdef-overflow-wrap-break-word",
-        "propdef-text-wrap",
-        "valdef-text-wrap-balance",
-        "valdef-text-align-start",
-        "valdef-text-align-center",
-        "valdef-text-align-end",
-        "valdef-text-align-left",
-        "valdef-text-align-right",
-        "propdef-white-space",
-        "valdef-white-space-pre-line"
-      ],
-      "specShortname": "css-text-4"
-    },
-    "https://drafts.csswg.org/css-text-decor-4/": {
-      "anchors": [
-        "propdef-text-decoration",
-        "propdef-text-shadow"
-      ],
-      "specShortname": "css-text-decor-4"
-    },
-    "https://drafts.csswg.org/css-transitions-1/": {
-      "anchors": [
-        "propdef-transition-property",
-        "propdef-transition-duration"
-      ],
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-transitions/": {
-      "specShortname": "css-transitions-1"
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-outline"
-      ],
-      "specShortname": "css-ui-4"
-    },
-    "https://drafts.csswg.org/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "vw",
-        "vh"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-writing-modes-3/": {
-      "anchors": [
-        "propdef-unicode-bidi"
-      ],
-      "specShortname": "css-writing-modes-3"
-    },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "valdef-unicode-bidi-plaintext",
-        "propdef-writing-mode",
-        "valdef-writing-mode-horizontal-tb",
-        "propdef-text-combine-upright"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "valdef-text-decoration-underline",
-        "selectordef-lang",
-        "propdef-line-height"
-      ],
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "css-style-sheet",
-        "create-a-css-style-sheet",
-        "concept-css-style-sheet-location",
-        "concept-css-style-sheet-parent-css-style-sheet",
-        "concept-css-style-sheet-owner-node",
-        "concept-css-style-sheet-owner-css-rule",
-        "concept-css-style-sheet-media",
-        "concept-css-style-sheet-title",
-        "concept-css-style-sheet-alternate-flag",
-        "concept-css-style-sheet-origin-clean-flag",
-        "concept-css-style-sheet-css-rules",
-        "dom-window-getcomputedstyle"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/selectors-3/": {
-      "anchors": [
-        "sel-before",
-        "sel-after"
-      ],
-      "specShortname": "selectors-3"
-    },
-    "https://drafts.csswg.org/selectors-4/": {
-      "anchors": [
-        "originating-element",
-        "id-selector",
-        "type-selector",
-        "class-selector",
-        "attribute-selector"
-      ],
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.csswg.org/selectors/": {
-      "specShortname": "selectors-4"
-    },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "utf-8-decode"
-      ],
-      "specShortname": "encoding"
-    },
-    "https://github.com/w3c/webvtt/issues/new": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
-      "anchors": [
-        "rules-for-parsing-floating-point-number-values"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "attr-title",
-        "attr-lang",
-        "classes"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "text-track-kind",
-        "text-track",
-        "text-track-cue",
-        "text-track-list-of-cues",
-        "list-of-text-tracks",
-        "media-element",
-        "text-track-mode",
-        "text-track-showing",
-        "rules-for-updating-the-text-track-rendering",
-        "text-track-cue-active-flag",
-        "text-track-cue-display-state",
-        "current-playback-position",
-        "text-track-cue-identifier",
-        "text-track-cue-pause-on-exit-flag",
-        "text-track-cue-start-time",
-        "text-track-cue-end-time",
-        "expose-a-user-interface-to-the-user",
-        "text-track-cue-order",
-        "unbounded-text-track-cue",
-        "rules-for-extracting-the-chapter-title",
-        "honor-user-preferences-for-automatic-text-track-selection"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "ascii-digits",
-        "split-a-string-on-spaces",
-        "case-sensitive",
-        "skip-whitespace",
-        "html-elements"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "video",
-        "audio",
-        "the-track-element",
-        "attr-track-srclang",
-        "texttrackcue",
-        "dom-texttrack-addcue"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "presentational-hints"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-style-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/syntax.html": {
-      "anchors": [
-        "syntax-charref",
-        "additional-allowed-character",
-        "consume-a-character-reference"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
-      "anchors": [
-        "the-span-element",
-        "the-i-element",
-        "the-b-element",
-        "the-u-element",
-        "the-ruby-element",
-        "the-rt-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "entry-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ascii-whitespace",
-        "collect-a-sequence-of-code-points",
-        "html-namespace"
-      ],
-      "specShortname": "infra"
-    },
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "mime-type"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-native-error-types-used-in-this-standard-typeerror"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-double",
-        "Exposed",
-        "idl-unrestricted-double",
-        "idl-DOMString",
-        "idl-boolean",
-        "indexsizeerror",
-        "idl-unsigned-long"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc3629": {},
-    "https://www.rfc-editor.org/rfc/rfc5646": {},
-    "https://www.unicode.org/reports/tr9/tr9-46.html": {},
-    "https://www.w3.org/International/questions/qa-escapes": {},
-    "https://www.w3.org/TR/WCAG20/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "documentfragment",
+          "document",
+          "text",
+          "dom-characterdata-data",
+          "processinginstruction",
+          "dom-processinginstruction-target",
+          "dom-element-namespaceuri",
+          "dom-node-ownerdocument"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "propdef-justify-content",
+          "valdef-self-position-flex-end"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-color",
+          "propdef-background",
+          "propdef-background-image"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "at-ruledef-import"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-6/": {
+        "anchors": [
+          "cascade"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-color",
+          "valdef-color-green",
+          "propdef-opacity"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "propdef-display"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "valdef-display-inline",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-flexbox-1/": {
+        "anchors": [
+          "valdef-display-inline-flex",
+          "propdef-flex-flow"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font",
+          "valdef-font-style-italic",
+          "valdef-font-weight-bold"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow",
+          "valdef-overflow-hidden"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-position",
+          "valdef-position-absolute",
+          "propdef-top",
+          "propdef-left",
+          "valdef-position-relative"
+        ]
+      },
+      "https://drafts.csswg.org/css-ruby-1/": {
+        "anchors": [
+          "valdef-display-ruby-base",
+          "valdef-display-ruby",
+          "valdef-display-ruby-text",
+          "propdef-ruby-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "valdef-width-auto",
+          "propdef-width",
+          "propdef-height",
+          "propdef-min-height",
+          "propdef-max-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "parse-a-stylesheet"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-3/": {
+        "anchors": [
+          "propdef-text-align"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-overflow-wrap",
+          "valdef-overflow-wrap-break-word",
+          "propdef-text-wrap",
+          "valdef-text-wrap-balance",
+          "valdef-text-align-start",
+          "valdef-text-align-center",
+          "valdef-text-align-end",
+          "valdef-text-align-left",
+          "valdef-text-align-right",
+          "propdef-white-space",
+          "valdef-white-space-pre-line"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-decor-4/": {
+        "anchors": [
+          "propdef-text-decoration",
+          "propdef-text-shadow"
+        ]
+      },
+      "https://drafts.csswg.org/css-transitions-1/": {
+        "anchors": [
+          "propdef-transition-property",
+          "propdef-transition-duration"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-outline"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "vw",
+          "vh"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-unicode-bidi"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "valdef-unicode-bidi-plaintext",
+          "propdef-writing-mode",
+          "valdef-writing-mode-horizontal-tb",
+          "propdef-text-combine-upright"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "valdef-text-decoration-underline",
+          "selectordef-lang",
+          "propdef-line-height"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "css-style-sheet",
+          "create-a-css-style-sheet",
+          "concept-css-style-sheet-location",
+          "concept-css-style-sheet-parent-css-style-sheet",
+          "concept-css-style-sheet-owner-node",
+          "concept-css-style-sheet-owner-css-rule",
+          "concept-css-style-sheet-media",
+          "concept-css-style-sheet-title",
+          "concept-css-style-sheet-alternate-flag",
+          "concept-css-style-sheet-origin-clean-flag",
+          "concept-css-style-sheet-css-rules",
+          "dom-window-getcomputedstyle"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-3/": {
+        "anchors": [
+          "sel-before",
+          "sel-after"
+        ]
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "originating-element",
+          "id-selector",
+          "type-selector",
+          "class-selector",
+          "attribute-selector"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-decode"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "rules-for-parsing-floating-point-number-values"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "attr-title",
+          "attr-lang",
+          "classes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "text-track-kind",
+          "text-track",
+          "text-track-cue",
+          "text-track-list-of-cues",
+          "list-of-text-tracks",
+          "media-element",
+          "text-track-mode",
+          "text-track-showing",
+          "rules-for-updating-the-text-track-rendering",
+          "text-track-cue-active-flag",
+          "text-track-cue-display-state",
+          "current-playback-position",
+          "text-track-cue-identifier",
+          "text-track-cue-pause-on-exit-flag",
+          "text-track-cue-start-time",
+          "text-track-cue-end-time",
+          "expose-a-user-interface-to-the-user",
+          "text-track-cue-order",
+          "unbounded-text-track-cue",
+          "rules-for-extracting-the-chapter-title",
+          "honor-user-preferences-for-automatic-text-track-selection"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "ascii-digits",
+          "split-a-string-on-spaces",
+          "case-sensitive",
+          "skip-whitespace",
+          "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "video",
+          "audio",
+          "the-track-element",
+          "attr-track-srclang",
+          "texttrackcue",
+          "dom-texttrack-addcue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "presentational-hints"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-style-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/syntax.html": {
+        "anchors": [
+          "syntax-charref",
+          "additional-allowed-character",
+          "consume-a-character-reference"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-span-element",
+          "the-i-element",
+          "the-b-element",
+          "the-u-element",
+          "the-ruby-element",
+          "the-rt-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "entry-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-whitespace",
+          "collect-a-sequence-of-code-points",
+          "html-namespace"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-double",
+          "Exposed",
+          "idl-unrestricted-double",
+          "idl-DOMString",
+          "idl-boolean",
+          "indexsizeerror",
+          "idl-unsigned-long"
+        ]
+      }
+    }
   }
 }

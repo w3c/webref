@@ -4,246 +4,420 @@
     "url": "https://wicg.github.io/background-fetch/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-event-fire",
-        "eventtarget",
-        "event",
-        "dom-event-istrusted",
-        "concept-document-url"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "eventtarget",
+          "concept-event-fire",
+          "dom-event-istrusted",
+          "concept-document-url"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "headers",
+          "request",
+          "requestinfo",
+          "response",
+          "concept-aborted-network-error",
+          "concept-request-add-range-header",
+          "concept-response-body",
+          "concept-request-client",
+          "concept-header-list-combine",
+          "header-list-contains",
+          "concept-request-credentials-mode",
+          "concept-header-list-delete",
+          "concept-request-destination",
+          "concept-fetch",
+          "concept-header",
+          "concept-response-header-list",
+          "response-headers",
+          "concept-request-method",
+          "concept-request-mode",
+          "concept-header-name",
+          "concept-network-error",
+          "ok-status",
+          "concept-request-request",
+          "concept-response-response",
+          "request-service-workers-mode",
+          "concept-response-status",
+          "concept-body-stream",
+          "concept-fetch-terminate",
+          "concept-request-url",
+          "concept-header-value"
+        ]
+      },
+      "https://github.com/w3c/ServiceWorker/pull/1348": {},
+      "https://github.com/w3c/manifest/pull/710": {},
+      "https://github.com/whatwg/fetch/issues/536": {
+        "anchors": [
+          "issuecomment-330184276"
+        ]
+      },
+      "https://github.com/whatwg/infra/issues/189": {},
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "aborterror",
+          "idl-ArrayBuffer",
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "invalidstateerror",
+          "notallowederror",
+          "idl-promise",
+          "quotaexceedederror",
+          "exceptiondef-typeerror",
+          "idl-Uint8Array",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "dfn-perform-steps-once-promise-is-settled",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "idl-undefined",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "enqueue-the-following-steps",
+          "in-parallel",
+          "parallel-queue",
+          "starting-a-new-parallel-queue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "environment-settings-object",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "concept-agent-event-loop",
+          "networking-task-source",
+          "concept-settings-object-origin",
+          "queue-a-task",
+          "concept-relevant-realm",
+          "relevant-settings-object",
+          "responsible-event-loop",
+          "task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "abort-when",
+          "list-append",
+          "byte-sequence",
+          "byte-case-insensitive",
+          "iteration-continue",
+          "list-empty",
+          "map-exists",
+          "list-iterate",
+          "map-getting-the-keys",
+          "if-aborted",
+          "byte-sequence-length",
+          "list",
+          "ordered-map",
+          "list-size"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "usage-and-quota"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream-cancel",
+          "readablestream-close",
+          "readablestream-enqueue",
+          "readablestream-error",
+          "readablestream-errored",
+          "readablestream-readable"
+        ]
+      },
+      "https://tc39.es/ecma262/": {},
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "realm"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc7233": {
+        "anchors": [
+          "section-3.1"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dictdef-cachequeryoptions",
+          "extendableevent",
+          "dictdef-extendableeventinit",
+          "serviceworker",
+          "serviceworkerglobalscope",
+          "serviceworkerregistration",
+          "extendableevent-active",
+          "dfn-active-worker",
+          "fire-functional-event",
+          "match-service-worker-registration",
+          "request-matches-cached-item",
+          "dfn-scope-url",
+          "dfn-service-worker",
+          "dfn-service-worker-registration",
+          "dom-extendableevent-waituntil"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource",
+          "image-resource",
+          "processing-an-imageresource-from-an-api",
+          "dfn-src"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dictdef-permissiondescriptor",
+          "dom-permissiondescriptor-name",
+          "new-information-about-the-users-intent",
+          "permission-state"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-current-top-level-browsing-context",
+          "dfn-extension-command",
+          "dfn-extension-command-uri-template",
+          "dfn-no-longer-open",
+          "dfn-no-such-window",
+          "dfn-remote-end-steps",
+          "dfn-url-variables",
+          "dfn-errors",
+          "dfn-error-code",
+          "dfn-success"
+        ]
+      },
+      "https://www.w3.org/TR/image-resource/": {},
+      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/service-workers-1/": {
+        "anchors": [
+          "service-worker-lifetime"
+        ]
+      },
+      "https://www.w3.org/TR/webdriver1/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "concept-request",
-        "concept-request-url",
-        "concept-request-client",
-        "request-service-workers-mode",
-        "concept-request-destination",
-        "concept-request-mode",
-        "concept-request-credentials-mode",
-        "concept-request-method",
-        "concept-response",
-        "concept-request-add-range-header",
-        "concept-request-body",
-        "concept-network-error",
-        "concept-aborted-network-error",
-        "concept-response-status",
-        "concept-fetch-terminate",
-        "concept-response-body",
-        "concept-body-stream",
-        "ok-status",
-        "concept-response-header-list",
-        "header-list-contains",
-        "concept-header-list-combine",
-        "concept-header-value",
-        "concept-header",
-        "concept-header-name",
-        "request",
-        "concept-request-request",
-        "request-headers",
-        "headers",
-        "concept-request-header-list",
-        "concept-header-list-delete",
-        "concept-body",
-        "response",
-        "concept-response-response",
-        "response-headers",
-        "requestinfo"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/ServiceWorker/pull/1348": {},
-    "https://github.com/w3c/manifest/pull/710": {},
-    "https://github.com/whatwg/fetch/issues/536": {
-      "anchors": [
-        "issuecomment-330184276"
-      ]
-    },
-    "https://github.com/whatwg/infra/issues/189": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "a-new-promise",
-        "idl-Uint8Array",
-        "idl-ArrayBuffer",
-        "aborterror",
-        "idl-DOMException",
-        "exceptiondef-typeerror",
-        "resolve",
-        "reject",
-        "Exposed",
-        "idl-promise",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-unsigned-long-long",
-        "a-promise-rejected-with",
-        "notallowederror",
-        "quotaexceedederror",
-        "idl-boolean",
-        "dfn-perform-steps-once-promise-is-settled",
-        "invalidstateerror",
-        "idl-undefined"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "active-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "parallel-queue",
-        "starting-a-new-parallel-queue",
-        "in-parallel",
-        "enqueue-the-following-steps"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-realm",
-        "task-source",
-        "concept-agent-event-loop",
-        "relevant-settings-object",
-        "responsible-event-loop",
-        "queue-a-task",
-        "environment-settings-object",
-        "concept-settings-object-origin",
-        "networking-task-source",
-        "eventhandler",
-        "event-handlers",
-        "event-handler-event-type",
-        "event-handler-idl-attributes"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ordered-map",
-        "list",
-        "list-iterate",
-        "byte-sequence-length",
-        "byte-sequence",
-        "list-size",
-        "abort-when",
-        "if-aborted",
-        "map-exists",
-        "byte-case-insensitive",
-        "list-append",
-        "list-empty",
-        "iteration-continue",
-        "map-getting-the-keys"
-      ],
-      "specShortname": "infra"
-    },
-    "https://storage.spec.whatwg.org/": {
-      "anchors": [
-        "usage-and-quota"
-      ],
-      "specShortname": "storage"
-    },
-    "https://streams.spec.whatwg.org/": {
-      "anchors": [
-        "readablestream-cancel",
-        "readablestream-errored",
-        "readablestream-enqueue",
-        "readablestream-close",
-        "readablestream-error",
-        "readablestream-readable"
-      ],
-      "specShortname": "streams"
-    },
-    "https://tc39.es/ecma262/": {},
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "realm"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc7230": {
-      "anchors": [
-        "section-7"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7233": {
-      "anchors": [
-        "section-3.1"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "dfn-service-worker",
-        "dom-extendableevent-waituntil",
-        "dfn-service-worker-registration",
-        "dfn-scope-url",
-        "fire-functional-event",
-        "extendableevent-active",
-        "serviceworkerglobalscope",
-        "serviceworker",
-        "serviceworkerregistration",
-        "dfn-active-worker",
-        "dictdef-cachequeryoptions",
-        "request-matches-cached-item",
-        "extendableevent",
-        "dictdef-extendableeventinit",
-        "match-service-worker-registration"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/image-resource/": {
-      "anchors": [
-        "dom-imageresource",
-        "image-resource",
-        "processing-an-imageresource-from-an-api",
-        "dfn-src"
-      ],
-      "specShortname": "image-resource"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "permission-state",
-        "dictdef-permissiondescriptor",
-        "dom-permissiondescriptor-name",
-        "new-information-about-the-users-intent"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/webdriver/": {
-      "anchors": [
-        "dfn-extension-command",
-        "dfn-extension-command-uri-template",
-        "dfn-remote-end-steps",
-        "dfn-current-top-level-browsing-context",
-        "dfn-no-longer-open",
-        "dfn-errors",
-        "dfn-error-code",
-        "dfn-no-such-window",
-        "dfn-url-variables",
-        "dfn-success"
-      ],
-      "specShortname": "webdriver2"
-    },
-    "https://www.w3.org/TR/image-resource/": {
-      "specShortname": "image-resource"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "specShortname": "permissions"
-    },
-    "https://www.w3.org/TR/service-workers-1/": {
-      "anchors": [
-        "service-worker-lifetime"
-      ]
-    },
-    "https://www.w3.org/TR/webdriver1/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire",
+          "eventtarget",
+          "event",
+          "dom-event-istrusted",
+          "concept-document-url"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-request",
+          "concept-request-url",
+          "concept-request-client",
+          "request-service-workers-mode",
+          "concept-request-destination",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-request-method",
+          "concept-response",
+          "concept-request-add-range-header",
+          "concept-request-body",
+          "concept-network-error",
+          "concept-aborted-network-error",
+          "concept-response-status",
+          "concept-fetch-terminate",
+          "concept-response-body",
+          "concept-body-stream",
+          "ok-status",
+          "concept-response-header-list",
+          "header-list-contains",
+          "concept-header-list-combine",
+          "concept-header-value",
+          "concept-header",
+          "concept-header-name",
+          "request",
+          "concept-request-request",
+          "request-headers",
+          "headers",
+          "concept-request-header-list",
+          "concept-header-list-delete",
+          "concept-body",
+          "response",
+          "concept-response-response",
+          "response-headers",
+          "requestinfo"
+        ]
+      },
+      "https://heycam.github.io/webidl/": {
+        "anchors": [
+          "a-new-promise",
+          "idl-Uint8Array",
+          "idl-ArrayBuffer",
+          "aborterror",
+          "idl-DOMException",
+          "exceptiondef-typeerror",
+          "resolve",
+          "reject",
+          "Exposed",
+          "idl-promise",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-unsigned-long-long",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "quotaexceedederror",
+          "idl-boolean",
+          "dfn-perform-steps-once-promise-is-settled",
+          "invalidstateerror",
+          "idl-undefined"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "active-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "parallel-queue",
+          "starting-a-new-parallel-queue",
+          "in-parallel",
+          "enqueue-the-following-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm",
+          "task-source",
+          "concept-agent-event-loop",
+          "relevant-settings-object",
+          "responsible-event-loop",
+          "queue-a-task",
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "networking-task-source",
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ordered-map",
+          "list",
+          "list-iterate",
+          "byte-sequence-length",
+          "byte-sequence",
+          "list-size",
+          "abort-when",
+          "if-aborted",
+          "map-exists",
+          "byte-case-insensitive",
+          "list-append",
+          "list-empty",
+          "iteration-continue",
+          "map-getting-the-keys"
+        ]
+      },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream-cancel",
+          "readablestream-errored",
+          "readablestream-enqueue",
+          "readablestream-close",
+          "readablestream-error",
+          "readablestream-readable"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "realm"
+        ]
+      },
+      "https://tools.ietf.org/html/rfc7230": {
+        "anchors": [
+          "section-7"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "dfn-service-worker",
+          "dom-extendableevent-waituntil",
+          "dfn-service-worker-registration",
+          "dfn-scope-url",
+          "fire-functional-event",
+          "extendableevent-active",
+          "serviceworkerglobalscope",
+          "serviceworker",
+          "serviceworkerregistration",
+          "dfn-active-worker",
+          "dictdef-cachequeryoptions",
+          "request-matches-cached-item",
+          "extendableevent",
+          "dictdef-extendableeventinit",
+          "match-service-worker-registration"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource",
+          "image-resource",
+          "processing-an-imageresource-from-an-api",
+          "dfn-src"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "permission-state",
+          "dictdef-permissiondescriptor",
+          "dom-permissiondescriptor-name",
+          "new-information-about-the-users-intent"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-extension-command",
+          "dfn-extension-command-uri-template",
+          "dfn-remote-end-steps",
+          "dfn-current-top-level-browsing-context",
+          "dfn-no-longer-open",
+          "dfn-errors",
+          "dfn-error-code",
+          "dfn-no-such-window",
+          "dfn-url-variables",
+          "dfn-success"
+        ]
+      }
+    }
   }
 }

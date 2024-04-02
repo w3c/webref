@@ -4,139 +4,245 @@
     "url": "https://wicg.github.io/storage-buckets/"
   },
   "links": {
-    "http://www.w3.org/community/": {},
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://fs.spec.whatwg.org/": {
-      "anchors": [
-        "filesystemdirectoryhandle",
-        "dom-storagemanager-getdirectory",
-        "sandboxed-filesystem"
-      ],
-      "specShortname": "fs"
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://fs.spec.whatwg.org/": {
+        "anchors": [
+          "sandboxed-filesystem",
+          "filesystemdirectoryhandle",
+          "dom-storagemanager-getdirectory"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "enqueue-the-following-steps",
+          "in-parallel",
+          "starting-a-new-parallel-queue"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "concept-settings-object-origin",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workernavigator"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append",
+          "ascii-digit",
+          "ascii-lower-alpha",
+          "code-point",
+          "string-code-point-length",
+          "code-unit-substring-by-positions",
+          "implementation-defined",
+          "map-key",
+          "list",
+          "string-starts-with",
+          "tuple"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "buckets",
+          "dictdef-storageestimate",
+          "bucket-map",
+          "bucket-mode",
+          "obtain-a-local-storage-bottle-map",
+          "obtain-a-local-storage-shelf",
+          "queue-a-storage-task",
+          "dom-storageestimate-quota",
+          "storage-bottle",
+          "storage-bottle-map",
+          "storage-bucket",
+          "storage-quota",
+          "storage-shelf",
+          "dom-storageestimate-usage"
+        ]
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "anchors": [
+          "idbfactory"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "cachestorage",
+          "dfn-relevant-name-to-cache-map"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-eso-current-wall-time",
+          "dfn-moment",
+          "dfn-unix-epoch",
+          "dfn-wall-clock"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-getting-the-current-permission-state",
+          "dom-permissionstate-granted",
+          "dfn-request-permission-to-use"
+        ]
+      },
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "anchors": [
+          "header",
+          "parsing",
+          "clear-response"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "invalidcharactererror",
+          "invalidstateerror",
+          "idl-promise",
+          "SameObject",
+          "SecureContext",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "this",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
     },
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "starting-a-new-parallel-queue",
-        "enqueue-the-following-steps",
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "environment-settings-object",
-        "relevant-settings-object",
-        "concept-settings-object-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "workernavigator"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "code-point",
-        "ascii-lower-alpha",
-        "ascii-digit",
-        "string-code-point-length",
-        "map-key",
-        "list",
-        "list-append",
-        "implementation-defined",
-        "string-starts-with",
-        "code-unit-substring-by-positions",
-        "tuple"
-      ],
-      "specShortname": "infra"
-    },
-    "https://storage.spec.whatwg.org/": {
-      "anchors": [
-        "obtain-a-local-storage-shelf",
-        "queue-a-storage-task",
-        "storage-bucket",
-        "bucket-map",
-        "bucket-mode",
-        "dictdef-storageestimate",
-        "buckets",
-        "storage-bottle",
-        "storage-quota",
-        "dom-storageestimate-usage",
-        "dom-storageestimate-quota",
-        "storage-shelf",
-        "obtain-a-local-storage-bottle-map",
-        "storage-bottle-map"
-      ],
-      "specShortname": "storage"
-    },
-    "https://w3c.github.io/IndexedDB/": {
-      "anchors": [
-        "idbfactory"
-      ],
-      "specShortname": "IndexedDB-3"
-    },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "cachestorage",
-        "dfn-relevant-name-to-cache-map"
-      ],
-      "specShortname": "service-workers"
-    },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-unix-epoch",
-        "dfn-eso-current-wall-time",
-        "dfn-moment",
-        "dfn-wall-clock"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dom-permissionstate-granted",
-        "dfn-getting-the-current-permission-state"
-      ],
-      "specShortname": "permissions"
-    },
-    "https://w3c.github.io/webappsec-clear-site-data/": {
-      "anchors": [
-        "header",
-        "parsing",
-        "clear-response"
-      ],
-      "specShortname": "clear-site-data"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "SecureContext",
-        "SameObject",
-        "this",
-        "Exposed",
-        "idl-promise",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-undefined",
-        "idl-boolean",
-        "idl-unsigned-long-long",
-        "a-promise-rejected-with",
-        "exceptiondef-typeerror",
-        "a-new-promise",
-        "reject",
-        "resolve",
-        "invalidcharactererror",
-        "invalidstateerror",
-        "dfn-throw"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "autolinks": {
+      "https://fs.spec.whatwg.org/": {
+        "anchors": [
+          "filesystemdirectoryhandle",
+          "dom-storagemanager-getdirectory"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "starting-a-new-parallel-queue",
+          "enqueue-the-following-steps",
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "environment-settings-object",
+          "relevant-settings-object",
+          "concept-settings-object-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "workernavigator"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "code-point",
+          "ascii-lower-alpha",
+          "ascii-digit",
+          "string-code-point-length",
+          "map-key",
+          "list",
+          "list-append",
+          "implementation-defined",
+          "string-starts-with",
+          "code-unit-substring-by-positions",
+          "tuple"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "obtain-a-local-storage-shelf",
+          "queue-a-storage-task",
+          "storage-bucket",
+          "bucket-map",
+          "bucket-mode",
+          "dictdef-storageestimate",
+          "storage-bottle",
+          "storage-quota",
+          "dom-storageestimate-usage",
+          "dom-storageestimate-quota",
+          "storage-shelf",
+          "obtain-a-local-storage-bottle-map",
+          "storage-bottle-map"
+        ]
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "anchors": [
+          "idbfactory"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "cachestorage",
+          "dfn-relevant-name-to-cache-map"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dfn-unix-epoch",
+          "dfn-eso-current-wall-time",
+          "dfn-moment",
+          "dfn-wall-clock"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-request-permission-to-use",
+          "dom-permissionstate-granted",
+          "dfn-getting-the-current-permission-state"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "SecureContext",
+          "SameObject",
+          "this",
+          "Exposed",
+          "idl-promise",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-undefined",
+          "idl-boolean",
+          "idl-unsigned-long-long",
+          "a-promise-rejected-with",
+          "exceptiondef-typeerror",
+          "a-new-promise",
+          "reject",
+          "resolve",
+          "invalidcharactererror",
+          "invalidstateerror",
+          "dfn-throw"
+        ]
+      }
+    }
   }
 }

@@ -4,371 +4,563 @@
     "url": "https://w3c.github.io/IndexedDB/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/advance": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/continue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/continuePrimaryKey": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/delete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/direction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/primaryKey": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/request": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/source": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/update": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursorWithValue": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursorWithValue/value": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/createObjectStore": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/deleteObjectStore": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/objectStoreNames": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/version": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/versionchange_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/cmp": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/databases": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/open": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/count": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/get": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getKey": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/keyPath": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/multiEntry": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/objectStore": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/openCursor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/openKeyCursor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/unique": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/bound_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/includes": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lower": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lowerBound_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lowerOpen": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/only_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upper": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upperBound_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upperOpen": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/autoIncrement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/clear": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/count": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/createIndex": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/delete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/deleteIndex": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/get": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getAll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getAllKeys": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getKey": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/index": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/indexNames": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/keyPath": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/name": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openKeyCursor": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/transaction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/blocked_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/upgradeneeded_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/readyState": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/result": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/source": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/success_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/transaction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/commit": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/complete_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/db": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/durability": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/mode": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStore": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStoreNames": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/IDBVersionChangeEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/newVersion": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/oldVersion": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/indexedDB": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "document",
-        "get-the-parent",
-        "concept-event",
-        "concept-event-dispatch",
-        "eventtarget",
-        "event",
-        "dictdef-eventinit",
-        "constructing-events",
-        "concept-event-create",
-        "dom-event-type",
-        "dom-event-bubbles",
-        "dom-event-cancelable",
-        "concept-event-fire",
-        "canceled-flag",
-        "dom-event-preventdefault"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/advance": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/continue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/continuePrimaryKey": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/delete": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/direction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/primaryKey": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/request": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/source": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/update": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursorWithValue": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursorWithValue/value": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/createObjectStore": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/deleteObjectStore": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/objectStoreNames": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/version": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/versionchange_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/cmp": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/databases": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/open": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/count": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/get": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getKey": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/keyPath": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/multiEntry": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/objectStore": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/openCursor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/openKeyCursor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/unique": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/bound_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/includes": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lower": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lowerBound_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/lowerOpen": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/only_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upper": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upperBound_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBKeyRange/upperOpen": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/autoIncrement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/clear": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/count": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/createIndex": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/delete": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/deleteIndex": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/get": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getAll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getAllKeys": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/getKey": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/index": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/indexNames": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/keyPath": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/name": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openKeyCursor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/transaction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/blocked_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/upgradeneeded_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/readyState": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/result": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/source": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/success_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/transaction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/commit": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/complete_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/db": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/durability": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/mode": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStore": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStoreNames": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/IDBVersionChangeEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/newVersion": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/oldVersion": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/indexedDB": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "constructing-events",
+          "document",
+          "event",
+          "dictdef-eventinit",
+          "eventtarget",
+          "dom-event-bubbles",
+          "dom-event-cancelable",
+          "canceled-flag",
+          "concept-event-create",
+          "concept-event-dispatch",
+          "concept-event",
+          "concept-event-fire",
+          "get-the-parent",
+          "dom-event-preventdefault",
+          "dom-event-type"
+        ]
+      },
+      "https://github.com/tabatkins/bikeshed": {},
+      "https://github.com/w3c/IndexedDB/": {},
+      "https://github.com/w3c/IndexedDB/issues": {},
+      "https://github.com/w3c/IndexedDB/issues/215": {},
+      "https://github.com/w3c/IndexedDB/issues/234": {},
+      "https://github.com/w3c/IndexedDB/issues/253": {},
+      "https://github.com/w3c/IndexedDB/issues/255": {},
+      "https://github.com/w3c/IndexedDB/issues/294": {},
+      "https://github.com/w3c/IndexedDB/issues/309": {},
+      "https://github.com/w3c/IndexedDB/issues/31": {},
+      "https://github.com/w3c/IndexedDB/issues/327": {},
+      "https://github.com/w3c/IndexedDB/issues/346": {},
+      "https://github.com/w3c/IndexedDB/issues/408": {},
+      "https://github.com/w3c/IndexedDB/issues/50": {},
+      "https://github.com/w3c/IndexedDB/pull/232": {},
+      "https://github.com/w3c/IndexedDB/pull/238": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "dom-document-domain",
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "imagedata"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "domstringlist"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "structureddeserialize",
+          "structuredserializeforstorage",
+          "serializable-objects"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "task-queue",
+          "eventhandler",
+          "windoworworkerglobalscope",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "event-loop",
+          "queue-a-task",
+          "relevant-settings-object"
+        ]
+      },
+      "https://httpwg.org/specs/rfc6265.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "byte-sequence-length",
+          "list-append",
+          "set-append",
+          "assert",
+          "byte",
+          "byte-less-than",
+          "byte-sequence",
+          "code-unit-less-than",
+          "list-contain",
+          "list-iterate",
+          "list-item",
+          "list",
+          "ordered-set",
+          "list-size",
+          "list-sort-in-ascending-order",
+          "strictly-split",
+          "string"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-webapps/": {},
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "obtain-a-storage-key",
+          "storage-bucket",
+          "storage-key"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+        "anchors": [
+          "sec-createdataproperty",
+          "sec-get-o-p",
+          "sec-hasownproperty",
+          "sec-tolength",
+          "sec-tostring"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-completion-record-specification-type"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "realm",
+          "current-realm"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-object-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/indexed-collections.html": {
+        "anchors": [
+          "sec-array-objects",
+          "sec-array.prototype.sort"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+        "anchors": [
+          "sec-date-objects",
+          "sec-number-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
+        "anchors": [
+          "array-exotic-object"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/text-processing.html": {
+        "anchors": [
+          "sec-regexp-regular-expression-objects",
+          "sec-string-objects"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-algorithm-conventions",
+          "prod-IdentifierName",
+          "sec-returnifabrupt",
+          "sec-ecmascript-data-types-and-values"
+        ]
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "anchors": [
+          "dfn-Blob",
+          "dfn-file",
+          "dfn-lastModified",
+          "dfn-name",
+          "dfn-size",
+          "dfn-type"
+        ]
+      },
+      "https://w3c.github.io/charmod-norm/": {},
+      "https://w3c.github.io/webstorage/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-short",
+          "aborterror",
+          "idl-ArrayBuffer",
+          "constrainterror",
+          "idl-DOMException",
+          "idl-DOMString",
+          "datacloneerror",
+          "dataerror",
+          "EnforceRange",
+          "Exposed",
+          "invalidaccesserror",
+          "invalidstateerror",
+          "NewObject",
+          "notfounderror",
+          "idl-promise",
+          "quotaexceedederror",
+          "readonlyerror",
+          "SameObject",
+          "securityerror",
+          "syntaxerror",
+          "transactioninactiveerror",
+          "exceptiondef-typeerror",
+          "idl-Uint8Array",
+          "unknownerror",
+          "versionerror",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "idl-any",
+          "idl-boolean",
+          "dfn-buffer-source-type",
+          "idl-byte",
+          "dfn-create-exception",
+          "dfn-get-buffer-source-copy",
+          "idl-record",
+          "reject",
+          "resolve",
+          "idl-sequence",
+          "the-given-value",
+          "this",
+          "dfn-throw",
+          "idl-undefined",
+          "idl-unrestricted-double",
+          "idl-unsigned-long",
+          "idl-unsigned-long-long"
+        ]
+      },
+      "https://www.w3.org/2004/01/pp-impl/114929/status": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2015/REC-IndexedDB-20150108/": {
+        "anchors": [
+          "revision-history"
+        ]
+      },
+      "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/": {},
+      "https://www.w3.org/TR/IndexedDB-2/": {
+        "anchors": [
+          "revision-history"
+        ]
+      },
+      "https://www.w3.org/groups/wg/webapps": {}
     },
-    "https://github.com/tabatkins/bikeshed": {},
-    "https://github.com/w3c/IndexedDB/": {},
-    "https://github.com/w3c/IndexedDB/issues": {},
-    "https://github.com/w3c/IndexedDB/issues/215": {},
-    "https://github.com/w3c/IndexedDB/issues/234": {},
-    "https://github.com/w3c/IndexedDB/issues/253": {},
-    "https://github.com/w3c/IndexedDB/issues/255": {},
-    "https://github.com/w3c/IndexedDB/issues/294": {},
-    "https://github.com/w3c/IndexedDB/issues/309": {},
-    "https://github.com/w3c/IndexedDB/issues/31": {},
-    "https://github.com/w3c/IndexedDB/issues/327": {},
-    "https://github.com/w3c/IndexedDB/issues/346": {},
-    "https://github.com/w3c/IndexedDB/issues/408": {},
-    "https://github.com/w3c/IndexedDB/issues/50": {},
-    "https://github.com/w3c/IndexedDB/pull/232": {},
-    "https://github.com/w3c/IndexedDB/pull/238": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "dom-document-domain",
-        "concept-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/canvas.html": {
-      "anchors": [
-        "imagedata"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
-      "anchors": [
-        "domstringlist"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "serializable-objects",
-        "structuredserializeforstorage",
-        "structureddeserialize"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "event-loop",
-        "queue-a-task",
-        "task-queue",
-        "event-handler-idl-attributes",
-        "eventhandler",
-        "event-handler-event-type",
-        "windoworworkerglobalscope",
-        "relevant-settings-object"
-      ]
-    },
-    "https://httpwg.org/specs/rfc6265.html": {
-      "specShortname": "rfc6265"
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string",
-        "list",
-        "list-sort-in-ascending-order",
-        "code-unit-less-than",
-        "byte-sequence",
-        "list-item",
-        "assert",
-        "byte-less-than",
-        "list-size",
-        "byte",
-        "ordered-set",
-        "list-iterate",
-        "list-append",
-        "strictly-split",
-        "byte-sequence-length",
-        "list-contain",
-        "set-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-webapps/": {},
-    "https://storage.spec.whatwg.org/": {
-      "anchors": [
-        "storage-key",
-        "storage-bucket",
-        "obtain-a-storage-key"
-      ],
-      "specShortname": "storage"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/abstract-operations.html": {
-      "anchors": [
-        "sec-tostring",
-        "sec-createdataproperty",
-        "sec-tolength",
-        "sec-get-o-p",
-        "sec-hasownproperty"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
-      "anchors": [
-        "sec-completion-record-specification-type"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
-      "anchors": [
-        "realm",
-        "current-realm"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
-      "anchors": [
-        "sec-object-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/indexed-collections.html": {
-      "anchors": [
-        "sec-array.prototype.sort",
-        "sec-array-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
-      "anchors": [
-        "sec-date-objects",
-        "sec-number-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
-      "anchors": [
-        "array-exotic-object"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/text-processing.html": {
-      "anchors": [
-        "sec-string-objects",
-        "sec-regexp-regular-expression-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "prod-IdentifierName",
-        "sec-algorithm-conventions",
-        "sec-ecmascript-data-types-and-values",
-        "sec-returnifabrupt"
-      ]
-    },
-    "https://w3c.github.io/FileAPI/": {
-      "anchors": [
-        "dfn-file",
-        "dfn-Blob",
-        "dfn-size",
-        "dfn-type",
-        "dfn-name",
-        "dfn-lastModified"
-      ],
-      "specShortname": "FileAPI"
-    },
-    "https://w3c.github.io/charmod-norm/": {},
-    "https://w3c.github.io/webstorage/": {},
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-DOMString",
-        "idl-record",
-        "idl-unrestricted-double",
-        "idl-ArrayBuffer",
-        "idl-Uint8Array",
-        "idl-byte",
-        "dfn-throw",
-        "dataerror",
-        "idl-DOMException",
-        "constrainterror",
-        "aborterror",
-        "datacloneerror",
-        "invalidaccesserror",
-        "invalidstateerror",
-        "notfounderror",
-        "quotaexceedederror",
-        "syntaxerror",
-        "readonlyerror",
-        "transactioninactiveerror",
-        "unknownerror",
-        "versionerror",
-        "Exposed",
-        "idl-any",
-        "this",
-        "idl-unsigned-long-long",
-        "SameObject",
-        "NewObject",
-        "EnforceRange",
-        "idl-promise",
-        "idl-sequence",
-        "idl-short",
-        "exceptiondef-typeerror",
-        "securityerror",
-        "a-promise-rejected-with",
-        "a-new-promise",
-        "reject",
-        "resolve",
-        "idl-undefined",
-        "idl-boolean",
-        "idl-unsigned-long",
-        "the-given-value",
-        "dfn-create-exception",
-        "dfn-buffer-source-type",
-        "dfn-get-buffer-source-copy"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2004/01/pp-impl/114929/status": {},
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2015/REC-IndexedDB-20150108/": {
-      "anchors": [
-        "revision-history"
-      ]
-    },
-    "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/": {},
-    "https://www.w3.org/TR/IndexedDB-2/": {
-      "anchors": [
-        "revision-history"
-      ]
-    },
-    "https://www.w3.org/groups/wg/webapps": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document",
+          "get-the-parent",
+          "concept-event",
+          "concept-event-dispatch",
+          "eventtarget",
+          "event",
+          "dictdef-eventinit",
+          "concept-event-create",
+          "dom-event-type",
+          "dom-event-bubbles",
+          "dom-event-cancelable",
+          "concept-event-fire",
+          "canceled-flag",
+          "dom-event-preventdefault"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "dom-document-domain",
+          "concept-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/canvas.html": {
+        "anchors": [
+          "imagedata"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "domstringlist"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable-objects",
+          "structuredserializeforstorage",
+          "structureddeserialize"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "event-loop",
+          "queue-a-task",
+          "task-queue",
+          "event-handler-idl-attributes",
+          "eventhandler",
+          "event-handler-event-type",
+          "windoworworkerglobalscope",
+          "relevant-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string",
+          "list",
+          "list-sort-in-ascending-order",
+          "code-unit-less-than",
+          "byte-sequence",
+          "list-item",
+          "assert",
+          "byte-less-than",
+          "list-size",
+          "byte",
+          "ordered-set",
+          "list-iterate",
+          "list-append",
+          "strictly-split",
+          "byte-sequence-length",
+          "list-contain",
+          "set-append"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "storage-key",
+          "storage-bucket",
+          "obtain-a-storage-key"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+        "anchors": [
+          "sec-tostring",
+          "sec-createdataproperty",
+          "sec-tolength",
+          "sec-get-o-p",
+          "sec-hasownproperty"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-completion-record-specification-type"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "realm",
+          "current-realm"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-object-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/indexed-collections.html": {
+        "anchors": [
+          "sec-array.prototype.sort",
+          "sec-array-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+        "anchors": [
+          "sec-date-objects",
+          "sec-number-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
+        "anchors": [
+          "array-exotic-object"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/text-processing.html": {
+        "anchors": [
+          "sec-string-objects",
+          "sec-regexp-regular-expression-objects"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "prod-IdentifierName",
+          "sec-algorithm-conventions",
+          "sec-ecmascript-data-types-and-values",
+          "sec-returnifabrupt"
+        ]
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "anchors": [
+          "dfn-file",
+          "dfn-Blob",
+          "dfn-size",
+          "dfn-type",
+          "dfn-name",
+          "dfn-lastModified"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "idl-record",
+          "idl-unrestricted-double",
+          "idl-ArrayBuffer",
+          "idl-Uint8Array",
+          "idl-byte",
+          "dfn-throw",
+          "dataerror",
+          "idl-DOMException",
+          "constrainterror",
+          "aborterror",
+          "datacloneerror",
+          "invalidaccesserror",
+          "invalidstateerror",
+          "notfounderror",
+          "quotaexceedederror",
+          "syntaxerror",
+          "readonlyerror",
+          "transactioninactiveerror",
+          "unknownerror",
+          "versionerror",
+          "Exposed",
+          "idl-any",
+          "this",
+          "idl-unsigned-long-long",
+          "SameObject",
+          "NewObject",
+          "EnforceRange",
+          "idl-promise",
+          "idl-sequence",
+          "idl-short",
+          "exceptiondef-typeerror",
+          "securityerror",
+          "a-promise-rejected-with",
+          "a-new-promise",
+          "reject",
+          "resolve",
+          "idl-undefined",
+          "idl-boolean",
+          "idl-unsigned-long",
+          "the-given-value",
+          "dfn-create-exception",
+          "dfn-buffer-source-type",
+          "dfn-get-buffer-source-copy"
+        ]
+      }
+    }
   }
 }

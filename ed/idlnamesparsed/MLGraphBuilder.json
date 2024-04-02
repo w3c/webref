@@ -22,7 +22,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                             optional MLBatchNormalizationOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                               optional MLBatchNormalizationOptions options = {});\n};"
     },
     {
       "spec": {
@@ -50,7 +50,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand conv2d(MLOperand input, MLOperand filter, optional MLConv2dOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand conv2d(MLOperand input,\n                   MLOperand filter,\n                   optional MLConv2dOptions options = {});\n};"
     },
     {
       "spec": {
@@ -99,7 +99,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input, MLOperand indices, optional MLGatherOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input,\n                   MLOperand indices,\n                   optional MLGatherOptions options = {});\n};"
     },
     {
       "spec": {
@@ -141,14 +141,14 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n                                optional MLInstanceNormalizationOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n                                  optional MLInstanceNormalizationOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand layerNormalization(MLOperand input, optional MLLayerNormalizationOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand layerNormalization(MLOperand input,\n                               optional MLLayerNormalizationOptions options = {});\n};"
     },
     {
       "spec": {
@@ -274,7 +274,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(\n      MLOperand input,\n      ([EnforceRange] unsigned long or sequence<[EnforceRange] unsigned long>) splits,\n      optional MLSplitOptions options = {});\n};"
     },
     {
       "spec": {

@@ -9,7 +9,15 @@
     "fragment": "[\n  SecureContext,\n  Exposed=Window\n] interface NavigatorManagedData : EventTarget {\n  // Managed Configuration API.\n  Promise<record<DOMString, object>> getManagedConfiguration(sequence<DOMString> keys);\n  attribute EventHandler onmanagedconfigurationchange;\n};",
     "href": "https://wicg.github.io/WebApiDevice/managed_config/#navigatormanageddata"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Device Attributes API",
+        "url": "https://wicg.github.io/WebApiDevice/device_attributes/"
+      },
+      "fragment": "partial interface NavigatorManagedData {\n  // Device Attributes API.\n  Promise<DOMString> getAnnotatedAssetId();\n  Promise<DOMString> getAnnotatedLocation();\n  Promise<DOMString> getDirectoryId();\n  Promise<DOMString> getHostname();\n  Promise<DOMString> getSerialNumber();\n};"
+    }
+  ],
   "inheritance": {
     "name": "EventTarget",
     "type": "interface",

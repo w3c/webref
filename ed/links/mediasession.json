@@ -4,164 +4,291 @@
     "url": "https://w3c.github.io/mediasession/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://dom.spec.whatwg.org/": {
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-internal-response",
+          "concept-response",
+          "concept-response-type"
+        ]
+      },
+      "https://github.com/w3c/mediasession/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "unordered-set-of-unique-space-separated-tokens"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active",
+          "top-level-browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation-notification",
+          "transient-activation",
+          "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "media-element",
+          "concept-media-muted",
+          "potentially-playing"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-link-element",
+          "dom-link-sizes"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "entry-settings-object",
+          "queue-a-task",
+          "concept-relevant-global",
+          "user-interaction-task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-case-insensitive",
+          "string-is"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-media-wg/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-object.freeze"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "Exposed",
+          "idl-frozen-array",
+          "invalidstateerror",
+          "notallowederror",
+          "idl-promise",
+          "SameObject",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "dfn-create-frozen-array",
+          "dfn-dictionary-member",
+          "idl-double",
+          "idl-sequence",
+          "this",
+          "idl-undefined",
+          "idl-unrestricted-double"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "mediastreamtrack",
+          "track-muted",
+          "set-track-muted"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://www.w3.org/groups/wg/media": {},
+      "https://www.w3.org/groups/wg/media/ipr": {}
     },
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-fetch",
-        "concept-response",
-        "concept-internal-response",
-        "concept-response-type"
-      ],
-      "specShortname": "fetch"
-    },
-    "https://github.com/w3c/mediasession/issues": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
-      "anchors": [
-        "unordered-set-of-unique-space-separated-tokens"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "top-level-browsing-context",
-        "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-permissions-policy"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "activation-notification",
-        "visibility-state",
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/media.html": {
-      "anchors": [
-        "potentially-playing",
-        "concept-media-muted",
-        "media-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "dom-link-sizes",
-        "the-link-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/system-state.html": {
-      "anchors": [
-        "navigator"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "queue-a-task",
-        "user-interaction-task-source",
-        "concept-relevant-global",
-        "entry-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string-is",
-        "ascii-case-insensitive"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-media-wg/": {},
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "mime-type"
-      ],
-      "specShortname": "mimesniff"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-object.freeze"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "concept-url-parser"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/image-resource/": {
-      "anchors": [
-        "dom-imageresource"
-      ],
-      "specShortname": "image-resource"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "SameObject",
-        "idl-undefined",
-        "idl-promise",
-        "idl-boolean",
-        "exceptiondef-typeerror",
-        "this",
-        "a-promise-rejected-with",
-        "invalidstateerror",
-        "notallowederror",
-        "idl-DOMString",
-        "idl-frozen-array",
-        "idl-sequence",
-        "dfn-create-frozen-array",
-        "idl-USVString",
-        "dfn-dictionary-member",
-        "idl-unrestricted-double",
-        "idl-double"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
-    },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/mediacapture-streams/": {
-      "anchors": [
-        "track-muted",
-        "set-track-muted",
-        "mediastreamtrack"
-      ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "anchors": [
-        "policy-controlled-feature",
-        "policy-controlled-feature-default-allowlist"
-      ],
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/groups/wg/media": {},
-    "https://www.w3.org/groups/wg/media/ipr": {}
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-fetch",
+          "concept-response",
+          "concept-internal-response",
+          "concept-response-type"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "unordered-set-of-unique-space-separated-tokens"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "top-level-browsing-context",
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation-notification",
+          "visibility-state",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "potentially-playing",
+          "concept-media-muted",
+          "media-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "dom-link-sizes",
+          "the-link-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "queue-a-task",
+          "user-interaction-task-source",
+          "concept-relevant-global",
+          "entry-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string-is",
+          "ascii-case-insensitive"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "mime-type"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-object.freeze"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dom-imageresource"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "SameObject",
+          "idl-undefined",
+          "idl-promise",
+          "idl-boolean",
+          "exceptiondef-typeerror",
+          "this",
+          "a-promise-rejected-with",
+          "invalidstateerror",
+          "notallowederror",
+          "idl-DOMString",
+          "idl-frozen-array",
+          "idl-sequence",
+          "dfn-create-frozen-array",
+          "idl-USVString",
+          "dfn-dictionary-member",
+          "idl-unrestricted-double",
+          "idl-double"
+        ]
+      },
+      "https://www.w3.org/Consortium/Patent-Policy/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "track-muted",
+          "set-track-muted",
+          "mediastreamtrack"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      }
+    }
   }
 }

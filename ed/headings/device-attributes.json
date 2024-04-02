@@ -1,0 +1,238 @@
+{
+  "spec": {
+    "title": "Device Attributes API",
+    "url": "https://wicg.github.io/WebApiDevice/device_attributes/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#title",
+      "level": 1,
+      "title": "Device Attributes API"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#profile-and-date",
+      "level": 2,
+      "title": "Draft Community Group Report, 18 July 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "model",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#model",
+      "level": 2,
+      "title": "Model",
+      "number": "2"
+    },
+    {
+      "id": "managed-devices",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#managed-devices",
+      "level": 3,
+      "title": "Managed devices",
+      "number": "2.1"
+    },
+    {
+      "id": "managed-web-applications",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#managed-web-applications",
+      "level": 3,
+      "title": "Managed web applications",
+      "number": "2.2"
+    },
+    {
+      "id": "permission-control",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#permission-control",
+      "level": 3,
+      "title": "Permission control",
+      "number": "2.3"
+    },
+    {
+      "id": "device-attributes",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#device-attributes",
+      "level": 3,
+      "title": "Device attributes",
+      "number": "2.4"
+    },
+    {
+      "id": "annotated-asset-id-section",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#annotated-asset-id-section",
+      "level": 4,
+      "title": "Annotated Asset ID",
+      "number": "2.4.1"
+    },
+    {
+      "id": "annotated-location-section",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#annotated-location-section",
+      "level": 4,
+      "title": "Annotated Location",
+      "number": "2.4.2"
+    },
+    {
+      "id": "directory-id-section",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#directory-id-section",
+      "level": 4,
+      "title": "Directory ID",
+      "number": "2.4.3"
+    },
+    {
+      "id": "hostname-section",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#hostname-section",
+      "level": 4,
+      "title": "Hostname",
+      "number": "2.4.4"
+    },
+    {
+      "id": "serial-number-section",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#serial-number-section",
+      "level": 4,
+      "title": "Serial Number",
+      "number": "2.4.5"
+    },
+    {
+      "id": "navigatormanageddata-interface",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#navigatormanageddata-interface",
+      "level": 2,
+      "title": "NavigatorManagedData interface",
+      "number": "3"
+    },
+    {
+      "id": "getAnnotatedAssetId-method",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#getAnnotatedAssetId-method",
+      "level": 3,
+      "title": "getAnnotatedAssetId() method",
+      "number": "3.1"
+    },
+    {
+      "id": "getAnnotatedLocation-method",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#getAnnotatedLocation-method",
+      "level": 3,
+      "title": "getAnnotatedLocation() method",
+      "number": "3.2"
+    },
+    {
+      "id": "getDirectoryId-method",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#getDirectoryId-method",
+      "level": 3,
+      "title": "getDirectoryId() method",
+      "number": "3.3"
+    },
+    {
+      "id": "getHostname-method",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#getHostname-method",
+      "level": 3,
+      "title": "getHostname() method",
+      "number": "3.4"
+    },
+    {
+      "id": "getSerialNumber-method",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#getSerialNumber-method",
+      "level": 3,
+      "title": "getSerialNumber() method",
+      "number": "3.5"
+    },
+    {
+      "id": "code-example",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#code-example",
+      "level": 2,
+      "title": "Code example",
+      "number": "4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "5"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

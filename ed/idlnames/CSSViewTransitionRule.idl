@@ -2,5 +2,5 @@
 [Exposed=Window]
 interface CSSViewTransitionRule : CSSRule {
   readonly attribute ViewTransitionNavigation navigation;
-  readonly attribute CSSViewTransitionTypeSet types;
+  readonly attribute FrozenArray<CSSOMString> types;
 };

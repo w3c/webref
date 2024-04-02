@@ -4,509 +4,476 @@
     "url": "https://drafts.csswg.org/cssom-view-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://caniuse.com/": {
+        "anchors": [
+          "feat=matchmedia",
+          "feat=devicepixelratio",
+          "feat=element-from-point",
+          "feat=document-scrollingelement",
+          "feat=element-scroll-methods",
+          "feat=getboundingclientrect",
+          "feat=scrollintoview"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/CaretPosition": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/caretPositionFromPoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/elementFromPoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/elementsFromPoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollend_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollingElement": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/getClientRects": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollBy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/change_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/matches": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/media": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/matches": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/media": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Range": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Range/getBoundingClientRect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Range/getClientRects": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/availHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/availWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/colorDepth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/height": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/pixelDepth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Screen/width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/height": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/offsetLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/offsetTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/pageLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/pageTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/resize_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scroll_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveBy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/outerHeight": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/outerWidth": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/pageXOffset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeBy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeTo": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/screen": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenLeft": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenTop": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Window/visualViewport": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "overflow-scroll-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-align/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-4/": {},
+      "https://drafts.csswg.org/css-break-4/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
+      "https://drafts.csswg.org/css-contain-2/": {},
+      "https://drafts.csswg.org/css-contain-3/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
+      "https://drafts.csswg.org/css-pseudo-4/": {},
+      "https://drafts.csswg.org/css-scoping/": {},
+      "https://drafts.csswg.org/css-scroll-snap-1/": {},
+      "https://drafts.csswg.org/css-scroll-snap-2/": {},
+      "https://drafts.csswg.org/css-text-3/": {},
+      "https://drafts.csswg.org/css-text-4/": {},
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-ui-4/": {},
+      "https://drafts.csswg.org/css-values-3/": {},
+      "https://drafts.csswg.org/css-values-4/": {},
+      "https://drafts.csswg.org/css-viewport/": {},
+      "https://drafts.csswg.org/css-writing-modes-4/": {},
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {},
+      "https://drafts.fxtf.org/geometry/": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/4727": {},
+      "https://github.com/w3c/csswg-drafts/issues/new": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://svgwg.org/svg2-draft/": {},
+      "https://w3c.github.io/uievents/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://wicg.github.io/overscroll-scrollend-events/": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/SVG11/": {}
     },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://caniuse.com/": {
-      "anchors": [
-        "feat=matchmedia",
-        "feat=devicepixelratio",
-        "feat=element-from-point",
-        "feat=document-scrollingelement",
-        "feat=element-scroll-methods",
-        "feat=getboundingclientrect",
-        "feat=scrollintoview"
-      ]
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/CaretPosition": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/caretPositionFromPoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/elementFromPoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/elementsFromPoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollend_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollingElement": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/getClientRects": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollBy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/change_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/matches": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/media": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/matches": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent/media": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Range": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Range/getBoundingClientRect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Range/getClientRects": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/availHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/availWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/colorDepth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/height": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/pixelDepth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Screen/width": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/height": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/offsetLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/offsetTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/pageLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/pageTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/resize_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scroll_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/width": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveBy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/outerHeight": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/outerWidth": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/pageXOffset": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeBy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeTo": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/screen": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenLeft": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenTop": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/screenY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/visualViewport": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "parent-element",
-        "document",
-        "concept-event-fire",
-        "dom-event-istrusted",
-        "eventtarget",
-        "callbackdef-eventlistener",
-        "add-an-event-listener",
-        "concept-event-listener",
-        "event-listener-type",
-        "event-listener-callback",
-        "eventtarget-event-listener-list",
-        "event-listener-capture",
-        "remove-an-event-listener",
-        "dom-eventtarget-addeventlistener",
-        "dom-eventtarget-removeeventlistener",
-        "event",
-        "dictdef-eventinit",
-        "element",
-        "range",
-        "concept-range-start-node",
-        "concept-range-start-offset",
-        "concept-document-quirks",
-        "node",
-        "concept-node-document",
-        "concept-element",
-        "concept-range",
-        "concept-closed-shadow-hidden",
-        "text",
-        "dispatch-flag",
-        "concept-document"
-      ],
-      "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-align-3/": {
-      "anchors": [
-        "content-distribution-properties",
-        "overflow-scroll-position"
-      ],
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-align/": {
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border-top-width",
-        "propdef-border-left-width"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-backgrounds/": {
-      "specShortname": "css-backgrounds-3"
-    },
-    "https://drafts.csswg.org/css-box-4/": {
-      "anchors": [
-        "margin-edge",
-        "padding-edge",
-        "border-edge",
-        "border-box"
-      ],
-      "specShortname": "css-box-4"
-    },
-    "https://drafts.csswg.org/css-break-4/": {
-      "anchors": [
-        "box-fragment"
-      ],
-      "specShortname": "css-break-4"
-    },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "propdef-opacity"
-      ],
-      "specShortname": "css-color-4"
-    },
-    "https://drafts.csswg.org/css-contain-2/": {
-      "anchors": [
-        "skips-its-contents"
-      ],
-      "specShortname": "css-contain-2"
-    },
-    "https://drafts.csswg.org/css-contain-3/": {
-      "anchors": [
-        "propdef-content-visibility"
-      ],
-      "specShortname": "css-contain-3"
-    },
-    "https://drafts.csswg.org/css-display-4/": {
-      "anchors": [
-        "box",
-        "initial-containing-block",
-        "propdef-display",
-        "valdef-display-table-column",
-        "valdef-display-table-column-group",
-        "root-element",
-        "valdef-display-table",
-        "valdef-display-inline-table",
-        "anonymous",
-        "block-box",
-        "box-tree",
-        "invisible",
-        "principal-box",
-        "inline-level-box",
-        "block-level"
-      ],
-      "specShortname": "css-display-4"
-    },
-    "https://drafts.csswg.org/css-overflow-3/": {
-      "anchors": [
-        "propdef-overflow-x",
-        "propdef-overflow-y",
-        "valdef-overflow-visible",
-        "valdef-overflow-clip",
-        "propdef-overflow",
-        "valdef-overflow-auto",
-        "propdef-scroll-behavior",
-        "valdef-scroll-behavior-smooth",
-        "classic-scrollbars",
-        "valdef-scroll-behavior-auto"
-      ],
-      "specShortname": "css-overflow-3"
-    },
-    "https://drafts.csswg.org/css-position-3/": {
-      "anchors": [
-        "propdef-position",
-        "valdef-position-fixed",
-        "valdef-position-static"
-      ],
-      "specShortname": "css-position-3"
-    },
-    "https://drafts.csswg.org/css-pseudo-4/": {
-      "anchors": [
-        "csspseudoelement"
-      ],
-      "specShortname": "css-pseudo-4"
-    },
-    "https://drafts.csswg.org/css-scoping-1/": {
-      "anchors": [
-        "flat-tree"
-      ],
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-scoping/": {
-      "specShortname": "css-scoping-1"
-    },
-    "https://drafts.csswg.org/css-scroll-snap-1/": {
-      "anchors": [
-        "scroll-snap-container"
-      ],
-      "specShortname": "css-scroll-snap-1"
-    },
-    "https://drafts.csswg.org/css-scroll-snap-2/": {
-      "anchors": [
-        "document-update-snapchanging-targets",
-        "eventual-snap-target",
-        "dispatch-pending-snapchanging-events",
-        "dispatch-pending-snapchanged-events",
-        "document-update-snapchanged-targets"
-      ],
-      "specShortname": "css-scroll-snap-2"
-    },
-    "https://drafts.csswg.org/css-text-3/": {
-      "specShortname": "css-text-3"
-    },
-    "https://drafts.csswg.org/css-text-4/": {
-      "anchors": [
-        "typographic-character-unit"
-      ],
-      "specShortname": "css-text-4"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-pointer-events"
-      ],
-      "specShortname": "css-ui-4"
-    },
-    "https://drafts.csswg.org/css-values-3/": {
-      "specShortname": "css-values-3"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "reference-pixel",
-        "px"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/css-viewport-1/": {
-      "anchors": [
-        "scaled",
-        "unscaled",
-        "propdef-zoom"
-      ],
-      "specShortname": "css-viewport-1"
-    },
-    "https://drafts.csswg.org/css-viewport/": {
-      "specShortname": "css-viewport-1"
-    },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "block-end",
-        "inline-end",
-        "block-flow-direction",
-        "inline-base-direction"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
-    "https://drafts.csswg.org/css2/": {
-      "specShortname": "CSS22"
-    },
-    "https://drafts.csswg.org/cssom-1/": {
-      "anchors": [
-        "cssomstring",
-        "parse-a-media-query-list",
-        "serialize-a-media-query-list"
-      ],
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom/": {
-      "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/mediaqueries-5/": {
-      "anchors": [
-        "descdef-media-color"
-      ],
-      "specShortname": "mediaqueries-5"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
-      "anchors": [
-        "domrect",
-        "domrectlist",
-        "dom-domrect-x",
-        "dom-domrect-y",
-        "dom-domrect-width",
-        "dom-domrect-height",
-        "domquad",
-        "dictdef-domquadinit",
-        "domrectreadonly",
-        "dompoint",
-        "dictdef-dompointinit"
-      ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
-    },
-    "https://github.com/w3c/csswg-drafts/issues": {},
-    "https://github.com/w3c/csswg-drafts/issues/4727": {},
-    "https://github.com/w3c/csswg-drafts/issues/new": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "same-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
-      "anchors": [
-        "rules-for-parsing-integers"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-      "anchors": [
-        "fully-active",
-        "auxiliary-browsing-context",
-        "nav-document"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "the-body-element-2",
-        "htmlelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
-      "anchors": [
-        "htmlimageelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "live",
-        "html-elements"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window",
-        "window",
-        "windowproxy",
-        "window-bc",
-        "dom-open",
-        "dom-document-defaultview"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/sections.html": {
-      "anchors": [
-        "the-body-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "event-loop",
-        "eventhandler",
-        "event-handlers",
-        "event-handler-event-type",
-        "event-handler-idl-attributes"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "string-is",
-        "ordered-map",
-        "map-exists",
-        "list-contain"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
-    "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://svgwg.org/svg2-draft/": {
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/shapes.html": {
-      "anchors": [
-        "elementdef-rect"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://w3c.github.io/uievents/": {
-      "anchors": [
-        "mouseevent",
-        "dictdef-mouseeventinit"
-      ],
-      "specShortname": "uievents"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-unrestricted-double",
-        "NewObject",
-        "SameObject",
-        "Replaceable",
-        "idl-undefined",
-        "idl-long",
-        "idl-double",
-        "this",
-        "dfn-convert-ecmascript-to-idl-value",
-        "Exposed",
-        "idl-boolean",
-        "idl-unsigned-long",
-        "idl-sequence"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wicg.github.io/overscroll-scrollend-events/": {
-      "specShortname": "overscroll-scrollend-events"
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/TR/CSS/": {
-      "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS21/intro.html": {
-      "anchors": [
-        "canvas"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
-        "x1"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "parent-element",
+          "document",
+          "concept-event-fire",
+          "dom-event-istrusted",
+          "eventtarget",
+          "callbackdef-eventlistener",
+          "add-an-event-listener",
+          "concept-event-listener",
+          "event-listener-type",
+          "event-listener-callback",
+          "eventtarget-event-listener-list",
+          "event-listener-capture",
+          "remove-an-event-listener",
+          "dom-eventtarget-addeventlistener",
+          "dom-eventtarget-removeeventlistener",
+          "event",
+          "dictdef-eventinit",
+          "element",
+          "range",
+          "concept-range-start-node",
+          "concept-range-start-offset",
+          "concept-document-quirks",
+          "node",
+          "concept-node-document",
+          "concept-element",
+          "concept-range",
+          "concept-closed-shadow-hidden",
+          "text",
+          "dispatch-flag",
+          "concept-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "content-distribution-properties"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border-top-width",
+          "propdef-border-left-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "margin-edge",
+          "padding-edge",
+          "border-edge",
+          "border-box"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-4/": {
+        "anchors": [
+          "box-fragment"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-opacity"
+        ]
+      },
+      "https://drafts.csswg.org/css-contain-2/": {
+        "anchors": [
+          "skips-its-contents"
+        ]
+      },
+      "https://drafts.csswg.org/css-contain-3/": {
+        "anchors": [
+          "propdef-content-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "box",
+          "initial-containing-block",
+          "propdef-display",
+          "valdef-display-table-column",
+          "valdef-display-table-column-group",
+          "root-element",
+          "valdef-display-table",
+          "valdef-display-inline-table",
+          "anonymous",
+          "block-box",
+          "box-tree",
+          "invisible",
+          "principal-box",
+          "inline-level-box",
+          "block-level"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow-x",
+          "propdef-overflow-y",
+          "valdef-overflow-visible",
+          "valdef-overflow-clip",
+          "propdef-overflow",
+          "valdef-overflow-auto",
+          "propdef-scroll-behavior",
+          "valdef-scroll-behavior-smooth",
+          "classic-scrollbars",
+          "valdef-scroll-behavior-auto"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-position",
+          "valdef-position-fixed",
+          "valdef-position-static"
+        ]
+      },
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "anchors": [
+          "csspseudoelement"
+        ]
+      },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "flat-tree"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "scroll-snap-container"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-snap-2/": {
+        "anchors": [
+          "document-update-snapchanging-targets",
+          "eventual-snap-target",
+          "dispatch-pending-snapchanging-events",
+          "dispatch-pending-snapchanged-events",
+          "document-update-snapchanged-targets"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "typographic-character-unit"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-pointer-events"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "reference-pixel",
+          "px"
+        ]
+      },
+      "https://drafts.csswg.org/css-viewport-1/": {
+        "anchors": [
+          "scaled",
+          "unscaled",
+          "propdef-zoom"
+        ]
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "block-end",
+          "inline-end",
+          "block-flow-direction",
+          "inline-base-direction"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "cssomstring",
+          "parse-a-media-query-list",
+          "serialize-a-media-query-list"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "descdef-media-color"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "domrect",
+          "domrectlist",
+          "dom-domrect-x",
+          "dom-domrect-y",
+          "dom-domrect-width",
+          "dom-domrect-height",
+          "domquad",
+          "dictdef-domquadinit",
+          "domrectreadonly",
+          "dompoint",
+          "dictdef-dompointinit"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "rules-for-parsing-integers"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "fully-active",
+          "auxiliary-browsing-context",
+          "nav-document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "the-body-element-2",
+          "htmlelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "htmlimageelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "live",
+          "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window",
+          "windowproxy",
+          "window-bc",
+          "dom-open",
+          "dom-document-defaultview"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/sections.html": {
+        "anchors": [
+          "the-body-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "event-loop",
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "string-is",
+          "ordered-map",
+          "map-exists",
+          "list-contain"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/shapes.html": {
+        "anchors": [
+          "elementdef-rect"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "mouseevent",
+          "dictdef-mouseeventinit"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-unrestricted-double",
+          "NewObject",
+          "SameObject",
+          "Replaceable",
+          "idl-undefined",
+          "idl-long",
+          "idl-double",
+          "this",
+          "dfn-convert-ecmascript-to-idl-value",
+          "Exposed",
+          "idl-boolean",
+          "idl-unsigned-long",
+          "idl-sequence"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/intro.html": {
+        "anchors": [
+          "canvas"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/visuren.html": {
+        "anchors": [
+          "x1"
+        ]
+      }
     }
   }
 }

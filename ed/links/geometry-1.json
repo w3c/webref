@@ -4,201 +4,273 @@
     "url": "https://drafts.fxtf.org/geometry-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://lists.w3.org/Archives/Public/public-fx/": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/TR/CSS/": {
-      "anchors": [
-        "future-proofing",
-        "unstable",
-        "proprietary-extension"
-      ],
-      "specShortname": "CSS22"
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://lists.w3.org/Archives/Public/public-fx/": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://caniuse.com/": {
+        "anchors": [
+          "feat=dommatrix"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix/DOMMatrix": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/DOMMatrixReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/flipX": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/translate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/DOMPoint": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/fromPoint_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/w": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/z": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/DOMPointReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/fromPoint_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/toJSON": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/w": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/z": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect/DOMRect": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/bottom": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/fromRect_static": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/height": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/left": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/right": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/top": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/x": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/y": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/SVGRect": {},
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar"
+        ]
+      },
+      "https://drafts.csswg.org/css-syntax/": {
+        "anchors": [
+          "priv-sec"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "transform-primitives",
+          "mathematical-description",
+          "TranslateDefined",
+          "ScaleDefined",
+          "RotateDefined",
+          "SkewXDefined",
+          "SkewYDefined",
+          "typedef-transform-list",
+          "funcdef-transform-matrix",
+          "propdef-transform"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "typedef-transform-function",
+          "funcdef-matrix3d"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "length-value",
+          "absolute-length",
+          "valdef-calc-infinity",
+          "valdef-calc-nan"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "dom-element-getboundingclientrect"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://github.com/w3c/fxtf-drafts/issues": {},
+      "https://github.com/w3c/fxtf-drafts/issues/new": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "deserialization-steps",
+          "serializable-objects",
+          "serialization-steps",
+          "sub-deserialization",
+          "sub-serialization"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-algorithm-conventions",
+          "sec-samevaluezero",
+          "sec-tostring"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Default",
+          "Exposed",
+          "idl-Float32Array",
+          "idl-Float64Array",
+          "indexsizeerror",
+          "invalidstateerror",
+          "LegacyWindowAlias",
+          "NewObject",
+          "SameObject",
+          "syntaxerror",
+          "exceptiondef-typeerror",
+          "idl-boolean",
+          "idl-object",
+          "idl-sequence",
+          "idl-unrestricted-double",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/Style/": {},
+      "https://www.w3.org/TR/2014/CR-geometry-1-20141125/": {},
+      "https://www.w3.org/TR/2014/WD-geometry-1-20140522/": {},
+      "https://www.w3.org/TR/2014/WD-geometry-1-20140626/": {},
+      "https://www.w3.org/TR/2014/WD-geometry-1-20140918/": {},
+      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {}
     },
-    "http://www.w3.org/TR/CSS21/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://caniuse.com/": {
-      "anchors": [
-        "feat=dommatrix"
-      ]
-    },
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix/DOMMatrix": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/DOMMatrixReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/flipX": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/translate": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/DOMPoint": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/fromPoint_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/w": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/z": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/DOMPointReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/fromPoint_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/toJSON": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/w": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/z": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect/DOMRect": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/bottom": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/fromRect_static": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/height": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/left": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/right": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/top": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/width": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/x": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/y": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGRect": {},
-    "https://drafts.csswg.org/css-syntax-3/": {
-      "anchors": [
-        "css-parse-something-according-to-a-css-grammar"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-syntax/": {
-      "anchors": [
-        "priv-sec"
-      ],
-      "specShortname": "css-syntax-3"
-    },
-    "https://drafts.csswg.org/css-transforms-1/": {
-      "anchors": [
-        "propdef-transform",
-        "typedef-transform-list",
-        "transform-primitives",
-        "mathematical-description",
-        "funcdef-transform-matrix",
-        "TranslateDefined",
-        "ScaleDefined",
-        "RotateDefined",
-        "SkewXDefined",
-        "SkewYDefined"
-      ],
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-transforms-2/": {
-      "anchors": [
-        "typedef-transform-function",
-        "funcdef-matrix3d"
-      ],
-      "specShortname": "css-transforms-2"
-    },
-    "https://drafts.csswg.org/css-transforms/": {
-      "specShortname": "css-transforms-1"
-    },
-    "https://drafts.csswg.org/css-values-4/": {
-      "anchors": [
-        "valdef-calc-nan",
-        "length-value",
-        "absolute-length",
-        "valdef-calc-infinity"
-      ],
-      "specShortname": "css-values-4"
-    },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "dom-element-getboundingclientrect"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://github.com/w3c/fxtf-drafts/issues": {},
-    "https://github.com/w3c/fxtf-drafts/issues/new": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/structured-data.html": {
-      "anchors": [
-        "serializable",
-        "serializable-objects",
-        "serialization-steps",
-        "deserialization-steps",
-        "sub-serialization",
-        "sub-deserialization"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "current-global-object"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "worker"
-      ]
-    },
-    "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-samevaluezero",
-        "sec-algorithm-conventions",
-        "sec-tostring"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-unrestricted-double",
-        "NewObject",
-        "Default",
-        "idl-object",
-        "LegacyWindowAlias",
-        "idl-unsigned-long",
-        "SameObject",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-Float32Array",
-        "idl-Float64Array",
-        "idl-boolean",
-        "exceptiondef-typeerror",
-        "syntaxerror",
-        "idl-DOMException",
-        "invalidstateerror",
-        "indexsizeerror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.w3.org/2023/Process-20231103/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/Style/": {},
-    "https://www.w3.org/TR/2014/CR-geometry-1-20141125/": {},
-    "https://www.w3.org/TR/2014/WD-geometry-1-20140522/": {},
-    "https://www.w3.org/TR/2014/WD-geometry-1-20140626/": {},
-    "https://www.w3.org/TR/2014/WD-geometry-1-20140918/": {},
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/groups/wg/css": {},
-    "https://www.w3.org/groups/wg/css/ipr": {}
+    "autolinks": {
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform",
+          "typedef-transform-list",
+          "funcdef-transform-matrix"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "typedef-transform-function",
+          "funcdef-matrix3d"
+        ]
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "valdef-calc-nan",
+          "length-value",
+          "absolute-length",
+          "valdef-calc-infinity"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "dom-element-getboundingclientrect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "serializable",
+          "serializable-objects",
+          "serialization-steps",
+          "deserialization-steps",
+          "sub-serialization",
+          "sub-deserialization"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-samevaluezero",
+          "sec-algorithm-conventions",
+          "sec-tostring"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-unrestricted-double",
+          "NewObject",
+          "Default",
+          "idl-object",
+          "LegacyWindowAlias",
+          "idl-unsigned-long",
+          "SameObject",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-Float32Array",
+          "idl-Float64Array",
+          "idl-boolean",
+          "exceptiondef-typeerror",
+          "syntaxerror",
+          "idl-DOMException",
+          "invalidstateerror",
+          "indexsizeerror"
+        ]
+      }
+    }
   }
 }

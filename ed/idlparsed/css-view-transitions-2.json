@@ -8,7 +8,6 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSViewTransitionTypeSet",
           "CSSViewTransitionRule",
           "ViewTransitionTypeSet",
           "ViewTransition"
@@ -35,46 +34,8 @@
         "extAttrs": [],
         "href": "https://drafts.csswg.org/css-view-transitions-2/#enumdef-viewtransitionnavigation"
       },
-      "CSSViewTransitionTypeSet": {
-        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionTypeSet {\n  readonly setlike<CSSOMString>;\n};",
-        "type": "interface",
-        "name": "CSSViewTransitionTypeSet",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "setlike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "CSSOMString"
-              }
-            ],
-            "arguments": [],
-            "extAttrs": [],
-            "readonly": true,
-            "async": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitiontypeset"
-      },
       "CSSViewTransitionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  readonly attribute CSSViewTransitionTypeSet types;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  readonly attribute FrozenArray<CSSOMString> types;\n};",
         "type": "interface",
         "name": "CSSViewTransitionRule",
         "inheritance": "CSSRule",
@@ -101,10 +62,19 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CSSViewTransitionTypeSet"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -358,7 +328,6 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSViewTransitionTypeSet",
         "CSSViewTransitionRule",
         "ViewTransitionTypeSet",
         "ViewTransition"
@@ -366,13 +335,10 @@
     },
     "dependencies": {
       "CSSRule": [],
-      "CSSViewTransitionTypeSet": [
-        "CSSOMString"
-      ],
       "CSSViewTransitionRule": [
         "CSSRule",
         "ViewTransitionNavigation",
-        "CSSViewTransitionTypeSet"
+        "CSSOMString"
       ],
       "ViewTransitionTypeSet": [],
       "ViewTransition": [

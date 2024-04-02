@@ -4,116 +4,139 @@
     "url": "https://wicg.github.io/js-self-profiling/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "eventtarget"
-      ],
-      "specShortname": "dom"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/bcp14": {},
+      "https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://github.com/WICG/js-self-profiling/issues/": {},
+      "https://github.com/WICG/js-self-profiling/issues/33": {},
+      "https://github.com/devtools-html/perf.html/blob/master/docs-developer/gecko-profile-format.md": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "agent",
+          "realm",
+          "execution-context-stack",
+          "sec-execution-contexts",
+          "sec-function-instances",
+          "sec-function-instances-name",
+          "surrounding-agent",
+          "current-realm"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/document-policy.html": {
+        "anchors": [
+          "algo-get-policy-value",
+          "configuration-point",
+          "configuration-point-type",
+          "configuration-point-default-value"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-promise",
+          "idl-sequence"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc2119": {},
+      "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/TR/hr-time-2/": {
+        "anchors": [
+          "dfn-time-origin",
+          "dfn-current-high-resolution-time",
+          "sec-domhighrestimestamp",
+          "clock-resolution"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/html5/": {
+        "anchors": [
+          "muted-errors",
+          "concept-script",
+          "concept-script-base-url",
+          "document",
+          "current",
+          "cors-same-origin"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/TR/webdriver1/": {
+        "anchors": [
+          "dfn-extension-command",
+          "dfn-remote-end-steps",
+          "dfn-current-browsing-context",
+          "dfn-success"
+        ]
+      },
+      "https://www.w3.org/community/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/groups/cg/wicg": {}
     },
-    "https://github.com/WICG/js-self-profiling/issues/": {},
-    "https://github.com/WICG/js-self-profiling/issues/33": {},
-    "https://github.com/devtools-html/perf.html/blob/master/docs-developer/gecko-profile-format.md": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "classic-script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/workers.html": {
-      "anchors": [
-        "worker"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "implementation-defined",
-        "list"
-      ],
-      "specShortname": "infra"
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "anchors": [
-        "agent",
-        "realm",
-        "execution-context-stack",
-        "sec-execution-contexts",
-        "sec-function-instances",
-        "sec-function-instances-name",
-        "surrounding-agent",
-        "current-realm"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://w3c.github.io/webappsec-permissions-policy/document-policy.html": {
-      "anchors": [
-        "algo-get-policy-value",
-        "configuration-point",
-        "configuration-point-type",
-        "configuration-point-default-value"
-      ]
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-boolean",
-        "idl-promise",
-        "a-promise-rejected-with",
-        "a-new-promise",
-        "idl-DOMString",
-        "idl-sequence",
-        "idl-unsigned-long-long",
-        "idl-unsigned-long"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://www.rfc-editor.org/rfc/rfc2119": {},
-    "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.w3.org/TR/hr-time-2/": {
-      "anchors": [
-        "dfn-time-origin",
-        "dfn-current-high-resolution-time",
-        "sec-domhighrestimestamp",
-        "clock-resolution"
-      ]
-    },
-    "https://www.w3.org/TR/hr-time-3/": {
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/html5/": {
-      "anchors": [
-        "concept-script",
-        "muted-errors",
-        "concept-script-base-url",
-        "document",
-        "current",
-        "cors-same-origin"
-      ]
-    },
-    "https://www.w3.org/TR/permissions-policy-1/": {
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/webdriver1/": {
-      "anchors": [
-        "dfn-extension-command",
-        "dfn-remote-end-steps",
-        "dfn-current-browsing-context",
-        "dfn-success"
-      ]
-    },
-    "https://www.w3.org/community/": {},
-    "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/groups/cg/wicg": {}
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "eventtarget"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "classic-script"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "implementation-defined",
+          "list"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "anchors": [
+          "agent",
+          "execution-context-stack",
+          "realm"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "a-promise-rejected-with",
+          "a-new-promise",
+          "idl-DOMString",
+          "idl-unsigned-long-long",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-2/": {
+        "anchors": [
+          "dfn-time-origin",
+          "sec-domhighrestimestamp",
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://www.w3.org/TR/html5/": {
+        "anchors": [
+          "concept-script",
+          "muted-errors",
+          "cors-same-origin"
+        ]
+      }
+    }
   }
 }

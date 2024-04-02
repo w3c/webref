@@ -4,291 +4,455 @@
     "url": "https://w3c.github.io/secure-payment-confirmation/"
   },
   "links": {
-    "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://fetch.spec.whatwg.org/": {
-      "anchors": [
-        "concept-request"
-      ],
-      "specShortname": "fetch"
+    "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request"
+        ]
+      },
+      "https://github.com/w3c/secure-payment-confirmation/issues": {},
+      "https://github.com/w3c/webauthn/issues/1293": {},
+      "https://github.com/w3c/webauthn/issues/1545": {},
+      "https://github.com/w3c/webauthn/issues/1656": {},
+      "https://github.com/w3c/webauthn/issues/1667": {},
+      "https://github.com/w3c/webauthn/pull/1801": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-accepted.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-optout.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-rejected.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment.https.html": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "consume-user-activation",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-settings-object",
+          "concept-relevant-global",
+          "relevant-settings-object",
+          "concept-environment-top-level-origin"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append"
+        ]
+      },
+      "https://lists.w3.org/Archives/Public/public-payments-wg/": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/structured-data.html": {
+        "anchors": [
+          "sec-json-object"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url-scheme",
+          "concept-url-parser",
+          "valid-domain"
+        ]
+      },
+      "https://w3c.github.io/i18n-glossary/": {
+        "anchors": [
+          "dfn-bidi-isolation",
+          "dfn-language-negotiation",
+          "dfn-language-priority-list"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dfn-fetching-an-image-resource",
+          "dom-imageresource-src"
+        ]
+      },
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "registry",
+          "dfn-standardized-payment-method-identifier"
+        ]
+      },
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dfn-payment-method",
+          "dfn-additional-data-type",
+          "dfn-payment",
+          "accessibility-considerations",
+          "dfn-details",
+          "dfn-steps-to-check-if-a-payment-can-be-made",
+          "dfn-steps-to-respond-to-a-payment-request",
+          "dfn-steps-to-validate-payment-method-data",
+          "dom-paymentcurrencyamount",
+          "dom-paymentrequest",
+          "dom-paymentrequest-canmakepayment",
+          "dom-paymentrequest-constructor",
+          "dom-paymentcurrencyamount-currency",
+          "dfn-payment-handler",
+          "dom-paymentrequest-show",
+          "dom-paymentdetailsinit-total",
+          "dom-paymentcurrencyamount-value"
+        ]
+      },
+      "https://w3c.github.io/secure-payment-confirmation/": {},
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "dom-credentialscontainer-create",
+          "dom-credentialscontainer-get",
+          "dom-credential-id",
+          "abstract-opdef-request-a-credential"
+        ]
+      },
+      "https://w3c.github.io/webauthn/": {
+        "anchors": [
+          "sctn-getAssertion",
+          "sctn-createCredential",
+          "sctn-permissions-policy",
+          "sctn-verifying-assertion",
+          "sctn-automation",
+          "sctn-security-considerations",
+          "sctn-privacy-considerations",
+          "sctn-assertion-privacy",
+          "sctn-accessiblility-considerations",
+          "authentication-ceremony",
+          "authentication-extension",
+          "client-extension",
+          "credential-id",
+          "discoverable-credential",
+          "extension-identifier",
+          "public-key-credential",
+          "registration-extension",
+          "relying-party",
+          "relying-party-identifier",
+          "dom-publickeycredentialcreationoptions-user",
+          "webauthn-extensions",
+          "dictdef-authenticationextensionsclientinputs",
+          "dictdef-collectedclientdata",
+          "publickeycredential",
+          "dictdef-publickeycredentialdescriptor",
+          "dictdef-publickeycredentialrequestoptions",
+          "dom-publickeycredential-create-slot",
+          "dom-publickeycredential-discoverfromexternalsource-slot",
+          "dom-publickeycredentialrequestoptions-allowcredentials",
+          "dom-authenticatorselectioncriteria-authenticatorattachment",
+          "dom-publickeycredentialcreationoptions-authenticatorselection",
+          "dom-collectedclientdata-challenge",
+          "dom-publickeycredentialrequestoptions-challenge",
+          "dom-publickeycredentialuserentity-displayname",
+          "dom-publickeycredentialrequestoptions-extensions",
+          "dom-publickeycredentialdescriptor-id",
+          "dom-authenticatortransport-internal",
+          "dom-publickeycredentialentity-name",
+          "dom-collectedclientdata-origin",
+          "dom-authenticatorattachment-platform",
+          "dom-residentkeyrequirement-preferred",
+          "dom-publickeycredentialtype-public-key",
+          "dom-credentialrequestoptions-publickey",
+          "dom-residentkeyrequirement-required",
+          "dom-userverificationrequirement-required",
+          "dom-authenticatorselectioncriteria-residentkey",
+          "dom-publickeycredentialrequestoptions-rpid",
+          "dom-publickeycredentialrequestoptions-timeout",
+          "dom-publickeycredentialdescriptor-transports",
+          "dom-collectedclientdata-type",
+          "dom-publickeycredentialdescriptor-type",
+          "dom-authenticatorselectioncriteria-userverification",
+          "dom-publickeycredentialrequestoptions-userverification"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "security",
+          "dfn-extension-commands",
+          "dfn-getting-properties",
+          "dfn-invalid-argument",
+          "dfn-remote-end-steps",
+          "dfn-success",
+          "dfn-undefined",
+          "dfn-error",
+          "dfn-error-code"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "BufferSource",
+          "idl-DOMException",
+          "notallowederror",
+          "optouterror",
+          "idl-promise",
+          "exceptiondef-rangeerror",
+          "securityerror",
+          "exceptiondef-typeerror",
+          "idl-USVString",
+          "a-promise-rejected-with",
+          "idl-boolean",
+          "idl-sequence",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-accepted.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-optout.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/authentication-rejected.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/constructor.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
+      "https://wpt.fyi/results/secure-payment-confirmation/enrollment.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-accepted.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-optout.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/authentication-rejected.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/constructor.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
+      "https://wpt.live/secure-payment-confirmation/enrollment.https.html": {},
+      "https://www.rfc-editor.org/rfc/rfc2397": {},
+      "https://www.rfc-editor.org/rfc/rfc4647": {},
+      "https://www.rfc-editor.org/rfc/rfc5646": {},
+      "https://www.rfc-editor.org/rfc/rfc8809": {},
+      "https://www.rfc-editor.org/rfc/rfc8809.html": {},
+      "https://www.w3.org/2023/05/03-webauthn-minutes": {
+        "anchors": [
+          "t01"
+        ]
+      },
+      "https://www.w3.org/2023/Process-20230612/": {},
+      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/International/questions/qa-bidi-unicode-controls": {},
+      "https://www.w3.org/Payments/WG/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/i18n-glossary/": {
+        "anchors": [
+          "dfn-locale"
+        ]
+      },
+      "https://www.w3.org/TR/international-specs/": {
+        "anchors": [
+          "inline_changes"
+        ]
+      },
+      "https://www.w3.org/groups/wg/payments": {},
+      "https://www.w3.org/groups/wg/payments/ipr": {}
     },
-    "https://github.com/w3c/secure-payment-confirmation/issues": {},
-    "https://github.com/w3c/webauthn/issues/1293": {},
-    "https://github.com/w3c/webauthn/issues/1545": {},
-    "https://github.com/w3c/webauthn/issues/1656": {},
-    "https://github.com/w3c/webauthn/issues/1667": {},
-    "https://github.com/w3c/webauthn/pull/1801": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-accepted.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-optout.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment.https.html": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "concept-origin",
-        "ascii-serialisation-of-an-origin"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-      "anchors": [
-        "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation",
-        "consume-user-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webappapis.html": {
-      "anchors": [
-        "concept-relevant-global",
-        "concept-environment-top-level-origin",
-        "relevant-settings-object",
-        "current-settings-object"
-      ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "list-append"
-      ],
-      "specShortname": "infra"
-    },
-    "https://lists.w3.org/Archives/Public/public-payments-wg/": {},
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/structured-data.html": {
-      "anchors": [
-        "sec-json-object"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-object-internal-methods-and-internal-slots"
-      ]
-    },
-    "https://url.spec.whatwg.org/": {
-      "anchors": [
-        "valid-domain",
-        "concept-url-parser",
-        "concept-url-scheme",
-        "concept-url-origin"
-      ],
-      "specShortname": "url"
-    },
-    "https://w3c.github.io/i18n-glossary/": {
-      "anchors": [
-        "dfn-language-priority-list",
-        "dfn-language-negotiation",
-        "dfn-bidi-isolation"
-      ],
-      "specShortname": "i18n-glossary"
-    },
-    "https://w3c.github.io/image-resource/": {
-      "anchors": [
-        "dfn-fetching-an-image-resource",
-        "dom-imageresource-src"
-      ],
-      "specShortname": "image-resource"
-    },
-    "https://w3c.github.io/payment-method-id/": {
-      "anchors": [
-        "dfn-standardized-payment-method-identifier",
-        "registry"
-      ],
-      "specShortname": "payment-method-id"
-    },
-    "https://w3c.github.io/payment-request/": {
-      "anchors": [
-        "dfn-payment-method",
-        "dom-paymentrequest",
-        "dfn-payment",
-        "dfn-payment-handler",
-        "dom-paymentrequest-constructor",
-        "dom-paymentrequest-show",
-        "dfn-additional-data-type",
-        "dom-paymentrequest-canmakepayment",
-        "dfn-steps-to-validate-payment-method-data",
-        "dfn-steps-to-check-if-a-payment-can-be-made",
-        "dom-paymentcurrencyamount-currency",
-        "dom-paymentcurrencyamount-value",
-        "dfn-steps-to-respond-to-a-payment-request",
-        "dfn-details",
-        "dom-paymentdetailsinit-total",
-        "dom-paymentcurrencyamount",
-        "accessibility-considerations"
-      ],
-      "specShortname": "payment-request-1.1"
-    },
-    "https://w3c.github.io/secure-payment-confirmation/": {
-      "specShortname": "secure-payment-confirmation"
-    },
-    "https://w3c.github.io/webappsec-credential-management/": {
-      "anchors": [
-        "dom-credentialscontainer-create",
-        "abstract-opdef-request-a-credential",
-        "dom-credentialscontainer-get",
-        "dom-credential-id"
-      ],
-      "specShortname": "credential-management-1"
-    },
-    "https://w3c.github.io/webauthn/": {
-      "anchors": [
-        "relying-party",
-        "webauthn-extensions",
-        "dom-publickeycredentialrequestoptions-challenge",
-        "dictdef-collectedclientdata",
-        "public-key-credential",
-        "relying-party-identifier",
-        "credential-id",
-        "sctn-getAssertion",
-        "discoverable-credential",
-        "dom-publickeycredentialentity-name",
-        "dom-publickeycredentialuserentity-displayname",
-        "dom-publickeycredentialcreationoptions-user",
-        "authentication-ceremony",
-        "dictdef-authenticationextensionsclientinputs",
-        "sctn-createCredential",
-        "dictdef-publickeycredentialrequestoptions",
-        "dom-publickeycredentialrequestoptions-timeout",
-        "dom-publickeycredentialrequestoptions-rpid",
-        "dom-publickeycredentialrequestoptions-userverification",
-        "dom-userverificationrequirement-required",
-        "dom-publickeycredentialrequestoptions-extensions",
-        "dictdef-publickeycredentialdescriptor",
-        "dom-publickeycredentialdescriptor-type",
-        "dom-publickeycredentialtype-public-key",
-        "dom-publickeycredentialdescriptor-id",
-        "dom-publickeycredentialdescriptor-transports",
-        "dom-authenticatortransport-internal",
-        "dom-publickeycredentialrequestoptions-allowcredentials",
-        "dom-credentialrequestoptions-publickey",
-        "client-extension",
-        "registration-extension",
-        "authentication-extension",
-        "dom-publickeycredentialcreationoptions-authenticatorselection",
-        "dom-authenticatorselectioncriteria-authenticatorattachment",
-        "dom-authenticatorattachment-platform",
-        "dom-authenticatorselectioncriteria-residentkey",
-        "dom-residentkeyrequirement-required",
-        "dom-residentkeyrequirement-preferred",
-        "dom-authenticatorselectioncriteria-userverification",
-        "dom-publickeycredential-discoverfromexternalsource-slot",
-        "dom-collectedclientdata-type",
-        "sctn-permissions-policy",
-        "dom-publickeycredential-create-slot",
-        "publickeycredential",
-        "sctn-verifying-assertion",
-        "dom-collectedclientdata-challenge",
-        "dom-collectedclientdata-origin",
-        "sctn-automation",
-        "sctn-security-considerations",
-        "sctn-privacy-considerations",
-        "sctn-assertion-privacy",
-        "sctn-accessiblility-considerations",
-        "extension-identifier"
-      ],
-      "specShortname": "webauthn-3"
-    },
-    "https://w3c.github.io/webdriver/": {
-      "anchors": [
-        "security",
-        "dfn-extension-commands",
-        "dfn-remote-end-steps",
-        "dfn-error",
-        "dfn-error-code",
-        "dfn-invalid-argument",
-        "dfn-getting-properties",
-        "dfn-undefined",
-        "dfn-success"
-      ],
-      "specShortname": "webdriver2"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "exceptiondef-rangeerror",
-        "a-promise-rejected-with",
-        "securityerror",
-        "idl-DOMException",
-        "BufferSource",
-        "idl-USVString",
-        "idl-sequence",
-        "idl-unsigned-long",
-        "idl-boolean",
-        "idl-promise",
-        "exceptiondef-typeerror",
-        "notallowederror",
-        "optouterror"
-      ],
-      "specShortname": "webidl"
-    },
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-accepted.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-optout.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/constructor.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/enrollment.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-accepted.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-cannot-bypass-spc.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-cross-origin.sub.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-optout.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/constructor.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/enrollment.https.html": {},
-    "https://www.rfc-editor.org/rfc/rfc2397": {
-      "specShortname": "rfc2397"
-    },
-    "https://www.rfc-editor.org/rfc/rfc4647": {},
-    "https://www.rfc-editor.org/rfc/rfc5646": {},
-    "https://www.rfc-editor.org/rfc/rfc8809": {},
-    "https://www.rfc-editor.org/rfc/rfc8809.html": {},
-    "https://www.w3.org/2023/05/03-webauthn-minutes": {
-      "anchors": [
-        "t01"
-      ]
-    },
-    "https://www.w3.org/2023/Process-20230612/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
-      "anchors": [
-        "def-essential",
-        "sec-Disclosure"
-      ]
-    },
-    "https://www.w3.org/International/questions/qa-bidi-unicode-controls": {},
-    "https://www.w3.org/Payments/WG/": {},
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/i18n-glossary/": {
-      "anchors": [
-        "dfn-locale"
-      ],
-      "specShortname": "i18n-glossary"
-    },
-    "https://www.w3.org/TR/international-specs/": {
-      "anchors": [
-        "inline_changes"
-      ]
-    },
-    "https://www.w3.org/groups/wg/payments": {},
-    "https://www.w3.org/groups/wg/payments/ipr": {}
+    "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request"
+        ]
+      },
+      "https://github.com/w3c/webauthn/issues/1545": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "ascii-serialisation-of-an-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation",
+          "consume-user-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "concept-environment-top-level-origin",
+          "relevant-settings-object",
+          "current-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-append"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "valid-domain",
+          "concept-url-parser",
+          "concept-url-scheme",
+          "concept-url-origin"
+        ]
+      },
+      "https://w3c.github.io/i18n-glossary/": {
+        "anchors": [
+          "dfn-language-priority-list",
+          "dfn-language-negotiation",
+          "dfn-bidi-isolation"
+        ]
+      },
+      "https://w3c.github.io/image-resource/": {
+        "anchors": [
+          "dfn-fetching-an-image-resource",
+          "dom-imageresource-src"
+        ]
+      },
+      "https://w3c.github.io/payment-method-id/": {
+        "anchors": [
+          "dfn-standardized-payment-method-identifier",
+          "registry"
+        ]
+      },
+      "https://w3c.github.io/payment-request/": {
+        "anchors": [
+          "dfn-payment-method",
+          "dom-paymentrequest",
+          "dfn-payment",
+          "dfn-payment-handler",
+          "dom-paymentrequest-constructor",
+          "dom-paymentrequest-show",
+          "dfn-additional-data-type",
+          "dom-paymentrequest-canmakepayment",
+          "dfn-steps-to-validate-payment-method-data",
+          "dfn-steps-to-check-if-a-payment-can-be-made",
+          "dom-paymentcurrencyamount-currency",
+          "dom-paymentcurrencyamount-value",
+          "dfn-steps-to-respond-to-a-payment-request",
+          "dfn-details",
+          "dom-paymentdetailsinit-total",
+          "dom-paymentcurrencyamount",
+          "accessibility-considerations"
+        ]
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "dom-credentialscontainer-create",
+          "abstract-opdef-request-a-credential",
+          "dom-credentialscontainer-get",
+          "dom-credential-id"
+        ]
+      },
+      "https://w3c.github.io/webauthn/": {
+        "anchors": [
+          "relying-party",
+          "webauthn-extensions",
+          "dom-publickeycredentialrequestoptions-challenge",
+          "dictdef-collectedclientdata",
+          "public-key-credential",
+          "relying-party-identifier",
+          "credential-id",
+          "discoverable-credential",
+          "dom-publickeycredentialentity-name",
+          "dom-publickeycredentialuserentity-displayname",
+          "dom-publickeycredentialcreationoptions-user",
+          "authentication-ceremony",
+          "dictdef-authenticationextensionsclientinputs",
+          "dictdef-publickeycredentialrequestoptions",
+          "dom-publickeycredentialrequestoptions-timeout",
+          "dom-publickeycredentialrequestoptions-rpid",
+          "dom-publickeycredentialrequestoptions-userverification",
+          "dom-userverificationrequirement-required",
+          "dom-publickeycredentialrequestoptions-extensions",
+          "dictdef-publickeycredentialdescriptor",
+          "dom-publickeycredentialdescriptor-type",
+          "dom-publickeycredentialtype-public-key",
+          "dom-publickeycredentialdescriptor-id",
+          "dom-publickeycredentialdescriptor-transports",
+          "dom-authenticatortransport-internal",
+          "dom-publickeycredentialrequestoptions-allowcredentials",
+          "dom-credentialrequestoptions-publickey",
+          "client-extension",
+          "registration-extension",
+          "authentication-extension",
+          "dom-publickeycredentialcreationoptions-authenticatorselection",
+          "dom-authenticatorselectioncriteria-authenticatorattachment",
+          "dom-authenticatorattachment-platform",
+          "dom-authenticatorselectioncriteria-residentkey",
+          "dom-residentkeyrequirement-required",
+          "dom-residentkeyrequirement-preferred",
+          "dom-authenticatorselectioncriteria-userverification",
+          "dom-publickeycredential-discoverfromexternalsource-slot",
+          "dom-collectedclientdata-type",
+          "dom-publickeycredential-create-slot",
+          "publickeycredential",
+          "dom-collectedclientdata-challenge",
+          "dom-collectedclientdata-origin",
+          "extension-identifier"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-extension-commands",
+          "dfn-remote-end-steps",
+          "dfn-error",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-getting-properties",
+          "dfn-undefined",
+          "dfn-success"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "exceptiondef-rangeerror",
+          "a-promise-rejected-with",
+          "securityerror",
+          "idl-DOMException",
+          "BufferSource",
+          "idl-USVString",
+          "idl-sequence",
+          "idl-unsigned-long",
+          "idl-boolean",
+          "idl-promise",
+          "exceptiondef-typeerror",
+          "notallowederror",
+          "optouterror"
+        ]
+      },
+      "https://www.w3.org/TR/i18n-glossary/": {
+        "anchors": [
+          "dfn-locale"
+        ]
+      }
+    }
   }
 }

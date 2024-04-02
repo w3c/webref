@@ -445,7 +445,7 @@
         "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticsresult"
       },
       "GamepadHapticEffectType": {
-        "fragment": "enum GamepadHapticEffectType {\n  \"dual-rumble\"\n};",
+        "fragment": "enum GamepadHapticEffectType {\n  \"dual-rumble\",\n  \"trigger-rumble\"\n};",
         "type": "enum",
         "name": "GamepadHapticEffectType",
         "values": [
@@ -453,13 +453,18 @@
             "type": "enum-value",
             "value": "dual-rumble",
             "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype-dual-rumble"
+          },
+          {
+            "type": "enum-value",
+            "value": "trigger-rumble",
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype-trigger-rumble"
           }
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype"
       },
       "GamepadEffectParameters": {
-        "fragment": "dictionary GamepadEffectParameters {\n    unsigned long long duration = 0;\n    unsigned long long startDelay = 0;\n    double strongMagnitude = 0.0;\n    double weakMagnitude = 0.0;\n};",
+        "fragment": "dictionary GamepadEffectParameters {\n    unsigned long long duration = 0;\n    unsigned long long startDelay = 0;\n    double strongMagnitude = 0.0;\n    double weakMagnitude = 0.0;\n    double leftTrigger = 0.0;\n    double rightTrigger = 0.0;\n};",
         "type": "dictionary",
         "name": "GamepadEffectParameters",
         "inheritance": null,
@@ -539,6 +544,44 @@
             },
             "required": false,
             "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-weakmagnitude"
+          },
+          {
+            "type": "field",
+            "name": "leftTrigger",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-lefttrigger"
+          },
+          {
+            "type": "field",
+            "name": "rightTrigger",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters-righttrigger"
           }
         ],
         "extAttrs": [],
