@@ -142,10 +142,12 @@
           "imagedata",
           "htmlcanvaselement",
           "offscreencanvas",
+          "dom-imagedata-width",
+          "dom-imagedata-height",
+          "canvasrenderingcontext2d",
           "dom-canvas-width",
           "dom-canvas-height",
-          "dom-offscreencanvas-width",
-          "dom-offscreencanvas-height",
+          "imagebitmaprenderingcontext",
           "dom-canvas-getcontext",
           "dom-offscreencanvas-getcontext",
           "dom-offscreencanvas-transfertoimagebitmap",
@@ -154,13 +156,17 @@
           "dom-context-2d-drawimage",
           "dom-canvas-todataurl",
           "dom-canvas-toblob",
-          "dom-canvas-transfercontroltooffscreen"
+          "dom-canvas-transfercontroltooffscreen",
+          "dom-offscreencanvas-width",
+          "dom-offscreencanvas-height"
         ]
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
           "the-img-element",
-          "htmlimageelement"
+          "htmlimageelement",
+          "dom-img-naturalwidth",
+          "dom-img-naturalheight"
         ]
       },
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
@@ -319,8 +325,10 @@
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
           "WEBGLCONTEXTATTRIBUTES",
-          "WEBGLRENDERINGCONTEXT",
+          "WEBGLRENDERINGCONTEXTBASE",
           "DOM-WebGLRenderingContext-drawingBufferColorSpace",
+          "DOM-WebGLRenderingContext-drawingBufferWidth",
+          "DOM-WebGLRenderingContext-drawingBufferHeight",
           "THE_DRAWING_BUFFER"
         ]
       },
