@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  ArrayBuffer toFixedLengthBuffer();\n  ArrayBuffer toResizableBuffer();\n  readonly attribute ArrayBuffer buffer;\n};",
     "href": "https://webassembly.github.io/spec/js-api/#memory"
   },
   "extended": [],

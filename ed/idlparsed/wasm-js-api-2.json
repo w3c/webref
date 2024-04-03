@@ -741,7 +741,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor"
       },
       "Memory": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  ArrayBuffer toFixedLengthBuffer();\n  ArrayBuffer toResizableBuffer();\n  readonly attribute ArrayBuffer buffer;\n};",
         "type": "interface",
         "name": "Memory",
         "inheritance": null,
@@ -808,6 +808,38 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webassembly.github.io/spec/js-api/#dom-memory-grow"
+          },
+          {
+            "type": "operation",
+            "name": "toFixedLengthBuffer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memory-tofixedlengthbuffer"
+          },
+          {
+            "type": "operation",
+            "name": "toResizableBuffer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memory-toresizablebuffer"
           },
           {
             "type": "attribute",
