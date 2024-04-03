@@ -1334,10 +1334,29 @@
       "definedIn": "pre"
     },
     {
-      "id": "create-a-memory-buffer",
-      "href": "https://webassembly.github.io/spec/js-api/#create-a-memory-buffer",
+      "id": "create-a-fixed-length-memory-buffer",
+      "href": "https://webassembly.github.io/spec/js-api/#create-a-fixed-length-memory-buffer",
       "linkingText": [
-        "create a memory buffer"
+        "create a fixed length memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/spec/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-resizable-memory-buffer",
+      "href": "https://webassembly.github.io/spec/js-api/#create-a-resizable-memory-buffer",
+      "linkingText": [
+        "create a resizable memory buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1413,10 +1432,29 @@
       "definedIn": "prose"
     },
     {
-      "id": "reset-the-memory-buffer",
-      "href": "https://webassembly.github.io/spec/js-api/#reset-the-memory-buffer",
+      "id": "refresh-the-memory-buffer",
+      "href": "https://webassembly.github.io/spec/js-api/#refresh-the-memory-buffer",
       "linkingText": [
-        "reset the Memory buffer"
+        "refresh the Memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/spec/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grow-the-memory-buffer",
+      "href": "https://webassembly.github.io/spec/js-api/#grow-the-memory-buffer",
+      "linkingText": [
+        "grow the memory buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1443,6 +1481,67 @@
         "Memory"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/spec/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-tofixedlengthbuffer",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-memory-tofixedlengthbuffer",
+      "linkingText": [
+        "toFixedLengthBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/spec/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-toresizablebuffer",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-memory-toresizablebuffer",
+      "linkingText": [
+        "toResizableBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/spec/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-operation-hostresizearraybuffer",
+      "href": "https://webassembly.github.io/spec/js-api/#abstract-operation-hostresizearraybuffer",
+      "linkingText": [
+        "abstract operation HostResizeArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "memories",
