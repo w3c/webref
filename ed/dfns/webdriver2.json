@@ -1626,25 +1626,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-unhandled-prompt-behavior",
-      "href": "https://w3c.github.io/webdriver/#dfn-unhandled-prompt-behavior",
-      "linkingText": [
-        "Unhandled prompt behavior"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capabilities",
-        "href": "https://w3c.github.io/webdriver/#capabilities",
-        "title": "Capabilities",
-        "number": "7"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dfn-proxy-configuration",
       "href": "https://w3c.github.io/webdriver/#dfn-proxy-configuration",
       "linkingText": [
@@ -6854,10 +6835,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-table-of-simple-dialogs",
-      "href": "https://w3c.github.io/webdriver/#dfn-table-of-simple-dialogs",
+      "id": "dfn-get-the-active-user-prompt",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-the-active-user-prompt",
       "linkingText": [
-        "table of simple dialogs"
+        "get the active user prompt"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6870,60 +6851,6 @@
         "title": "16. User prompts"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-alert",
-      "href": "https://w3c.github.io/webdriver/#dfn-alert",
-      "linkingText": [
-        "Alert"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-confirm",
-      "href": "https://w3c.github.io/webdriver/#dfn-confirm",
-      "linkingText": [
-        "Confirm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-prompt",
-      "href": "https://w3c.github.io/webdriver/#dfn-prompt",
-      "linkingText": [
-        "Prompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dfn-current-user-prompt",
@@ -6996,17 +6923,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-known-prompt-handling-approaches-table",
-      "href": "https://w3c.github.io/webdriver/#dfn-known-prompt-handling-approaches-table",
+      "id": "dfn-prompt-handler-configuration",
+      "href": "https://w3c.github.io/webdriver/#dfn-prompt-handler-configuration",
       "linkingText": [
-        "known prompt handling approaches table"
+        "prompt handler configuration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7014,17 +6942,60 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-dismiss-state",
-      "href": "https://w3c.github.io/webdriver/#dfn-dismiss-state",
+      "id": "dfn-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-handler",
       "linkingText": [
-        "Dismiss state"
+        "handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prompt handler configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-notify",
+      "href": "https://w3c.github.io/webdriver/#dfn-notify",
+      "linkingText": [
+        "notify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prompt handler configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-serialize-a-prompt-handler-configuration",
+      "href": "https://w3c.github.io/webdriver/#dfn-serialize-a-prompt-handler-configuration",
+      "linkingText": [
+        "serialize a prompt handler configuration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7032,17 +7003,56 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-known-prompt-handlers",
+      "href": "https://w3c.github.io/webdriver/#dfn-known-prompt-handlers",
+      "linkingText": [
+        "known prompt handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-handler-key",
+      "href": "https://w3c.github.io/webdriver/#dfn-handler-key",
+      "linkingText": [
+        "Handler key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "dfn-accept-state",
-      "href": "https://w3c.github.io/webdriver/#dfn-accept-state",
+      "id": "dfn-valid-prompt-types",
+      "href": "https://w3c.github.io/webdriver/#dfn-valid-prompt-types",
       "linkingText": [
-        "Accept state"
+        "valid prompt types"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7050,65 +7060,12 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-dismiss-and-notify-state",
-      "href": "https://w3c.github.io/webdriver/#dfn-dismiss-and-notify-state",
-      "linkingText": [
-        "Dismiss and notify state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-accept-and-notify-state",
-      "href": "https://w3c.github.io/webdriver/#dfn-accept-and-notify-state",
-      "linkingText": [
-        "Accept and notify state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-ignore-state",
-      "href": "https://w3c.github.io/webdriver/#dfn-ignore-state",
-      "linkingText": [
-        "Ignore state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
-      },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-deserialize-as-an-unhandled-prompt-behavior",
@@ -7122,9 +7079,67 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-check-user-prompt-handler-matches",
+      "href": "https://w3c.github.io/webdriver/#dfn-check-user-prompt-handler-matches",
+      "linkingText": [
+        "check user prompt handler matches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-update-the-user-prompt-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-update-the-user-prompt-handler",
+      "linkingText": [
+        "update the user prompt handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-serialize-the-user-prompt-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-serialize-the-user-prompt-handler",
+      "linkingText": [
+        "serialize the user prompt handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
@@ -7140,9 +7155,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-the-prompt-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-the-prompt-handler",
+      "linkingText": [
+        "get the prompt handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
@@ -7158,9 +7193,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "user-prompts",
-        "href": "https://w3c.github.io/webdriver/#user-prompts",
-        "title": "16. User prompts"
+        "id": "user-prompt-handler",
+        "href": "https://w3c.github.io/webdriver/#user-prompt-handler",
+        "title": "User Prompt Handler",
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
@@ -7179,7 +7215,7 @@
         "id": "dismiss-alert",
         "href": "https://w3c.github.io/webdriver/#dismiss-alert",
         "title": "Dismiss Alert",
-        "number": "16.1"
+        "number": "16.2"
       },
       "definedIn": "heading"
     },
@@ -7198,7 +7234,7 @@
         "id": "accept-alert",
         "href": "https://w3c.github.io/webdriver/#accept-alert",
         "title": "Accept Alert",
-        "number": "16.2"
+        "number": "16.3"
       },
       "definedIn": "heading"
     },
@@ -7217,7 +7253,7 @@
         "id": "get-alert-text",
         "href": "https://w3c.github.io/webdriver/#get-alert-text",
         "title": "Get Alert Text",
-        "number": "16.3"
+        "number": "16.4"
       },
       "definedIn": "heading"
     },
@@ -7236,7 +7272,7 @@
         "id": "send-alert-text",
         "href": "https://w3c.github.io/webdriver/#send-alert-text",
         "title": "Send Alert Text",
-        "number": "16.4"
+        "number": "16.5"
       },
       "definedIn": "heading"
     },
