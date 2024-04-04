@@ -5457,6 +5457,65 @@
           "partial": true
         },
         {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input);\n  MLActivation gelu();\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "gelu",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gelu"
+            },
+            {
+              "type": "operation",
+              "name": "gelu",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLActivation"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://webmachinelearning.github.io/webnn/#gelu-noargs"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand gemm(MLOperand a, MLOperand b, optional MLGemmOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",

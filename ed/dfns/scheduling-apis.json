@@ -400,27 +400,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "scheduler-task-older-than",
-      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-older-than",
-      "linkingText": [
-        "older than"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "scheduler task"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sec-scheduling-tasks-definitions",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
-        "title": "Definitions",
-        "number": "2.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "scheduler-task-sources",
       "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-sources",
       "linkingText": [
@@ -520,11 +499,31 @@
       "definedIn": "dt"
     },
     {
+      "id": "scheduler-task-older-than",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-older-than",
+      "linkingText": [
+        "older than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduler task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-processing-model",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-processing-model",
+        "title": "Processing Model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "create-a-scheduler-task-queue",
       "href": "https://wicg.github.io/scheduling-apis/#create-a-scheduler-task-queue",
       "linkingText": [
-        "create a scheduler task queue",
-        "creating a scheduler task queue"
+        "create a scheduler task queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -532,10 +531,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-scheduling-tasks-definitions",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
-        "title": "Definitions",
-        "number": "2.3"
+        "id": "sec-scheduling-tasks-processing-model",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-processing-model",
+        "title": "Processing Model",
+        "number": "2.4"
       },
       "definedIn": "prose"
     },
@@ -553,10 +552,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-scheduling-tasks-definitions",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
-        "title": "Definitions",
-        "number": "2.3"
+        "id": "sec-scheduling-tasks-processing-model",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-processing-model",
+        "title": "Processing Model",
+        "number": "2.4"
       },
       "definedIn": "prose"
     },
@@ -564,8 +563,7 @@
       "id": "queue-a-scheduler-task",
       "href": "https://wicg.github.io/scheduling-apis/#queue-a-scheduler-task",
       "linkingText": [
-        "queue a scheduler task",
-        "queuing a scheduler task"
+        "queue a scheduler task"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -605,8 +603,7 @@
       "id": "schedule-a-posttask-task",
       "href": "https://wicg.github.io/scheduling-apis/#schedule-a-posttask-task",
       "linkingText": [
-        "schedule a postTask task",
-        "scheduling a postTask task"
+        "schedule a postTask task"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -625,8 +622,7 @@
       "id": "select-the-scheduler-task-queue",
       "href": "https://wicg.github.io/scheduling-apis/#select-the-scheduler-task-queue",
       "linkingText": [
-        "select the scheduler task queue",
-        "selecting the scheduler task queue"
+        "select the scheduler task queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -684,8 +680,7 @@
       "id": "get-the-runnable-task-queues",
       "href": "https://wicg.github.io/scheduling-apis/#get-the-runnable-task-queues",
       "linkingText": [
-        "get the runnable task queues",
-        "getting the runnable task queues"
+        "get the runnable task queues"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1307,17 +1302,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "tasksignal-add-a-priority-change-algorithm",
-      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-add-a-priority-change-algorithm",
+      "id": "dom-tasksignal-any",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any",
       "linkingText": [
-        "add a priority change algorithm"
+        "any(signals, init)",
+        "any(signals)"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
         "TaskSignal"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-task-signal",
@@ -1350,18 +1346,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-tasksignal-any",
-      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any",
+      "id": "tasksignal-add-a-priority-change-algorithm",
+      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-add-a-priority-change-algorithm",
       "linkingText": [
-        "any(signals, init)",
-        "any(signals)"
+        "add a priority change algorithm"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "dfn",
       "for": [
         "TaskSignal"
       ],
-      "access": "public",
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-signal",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-signal",
+        "title": "The TaskSignal Interface",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-dependent-task-signal",
+      "href": "https://wicg.github.io/scheduling-apis/#create-a-dependent-task-signal",
+      "linkingText": [
+        "create a dependent task signal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-task-signal",

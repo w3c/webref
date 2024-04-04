@@ -106,6 +106,13 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input);\n  MLActivation gelu();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand gemm(MLOperand a, MLOperand b, optional MLGemmOptions options = {});\n};"
     },
     {
