@@ -15690,7 +15690,7 @@
         "href": "https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement"
       },
       "HTMLTemplateElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute boolean shadowRootClonable;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute boolean shadowRootClonable;\n  [CEReactions] attribute boolean shadowRootSerializable;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -15770,6 +15770,28 @@
           {
             "type": "attribute",
             "name": "shadowRootClonable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootSerializable",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -32047,6 +32069,64 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
       },
+      "GetHTMLOptions": {
+        "fragment": "dictionary GetHTMLOptions {\n  boolean serializableShadowRoots = false;\n  sequence<ShadowRoot> shadowRoots = [];\n};",
+        "type": "dictionary",
+        "name": "GetHTMLOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "serializableShadowRoots",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-gethtmloptions-serializableshadowroots"
+          },
+          {
+            "type": "field",
+            "name": "shadowRoots",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ShadowRoot"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-gethtmloptions-shadowroots"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#gethtmloptions"
+      },
       "DOMParser": {
         "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString(HTMLString string, DOMParserSupportedType type);\n};",
         "type": "interface",
@@ -40204,7 +40284,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -40248,6 +40328,41 @@
               ],
               "special": "",
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe"
+            },
+            {
+              "type": "operation",
+              "name": "getHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GetHTMLOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-gethtml"
             }
           ],
           "extAttrs": [],
@@ -40256,7 +40371,7 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
@@ -40300,6 +40415,41 @@
               ],
               "special": "",
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe"
+            },
+            {
+              "type": "operation",
+              "name": "getHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GetHTMLOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-gethtml"
             }
           ],
           "extAttrs": [],
@@ -43657,16 +43807,21 @@
         "OnErrorEventHandler",
         "EventHandler"
       ],
+      "Element": [
+        "HTMLString",
+        "GetHTMLOptions"
+      ],
+      "ShadowRoot": [
+        "HTMLString",
+        "GetHTMLOptions"
+      ],
+      "GetHTMLOptions": [
+        "ShadowRoot"
+      ],
       "DOMParser": [
         "Document",
         "HTMLString",
         "DOMParserSupportedType"
-      ],
-      "Element": [
-        "HTMLString"
-      ],
-      "ShadowRoot": [
-        "HTMLString"
       ],
       "NavigatorID": [],
       "NavigatorLanguage": [],

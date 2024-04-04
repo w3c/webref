@@ -5546,7 +5546,7 @@
         "href": "https://dom.spec.whatwg.org/#documentfragment"
       },
       "ShadowRoot": {
-        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute boolean serializable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
         "type": "interface",
         "name": "ShadowRoot",
         "inheritance": "DocumentFragment",
@@ -5614,6 +5614,22 @@
             "special": "",
             "readonly": true,
             "href": "https://dom.spec.whatwg.org/#dom-shadowroot-clonable"
+          },
+          {
+            "type": "attribute",
+            "name": "serializable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://dom.spec.whatwg.org/#dom-shadowroot-serializable"
           },
           {
             "type": "attribute",
@@ -6971,7 +6987,7 @@
         "href": "https://dom.spec.whatwg.org/#element"
       },
       "ShadowRootInit": {
-        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n};",
+        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n  boolean serializable = false;\n};",
         "type": "dictionary",
         "name": "ShadowRootInit",
         "inheritance": null,
@@ -7048,6 +7064,25 @@
             },
             "required": false,
             "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-clonable"
+          },
+          {
+            "type": "field",
+            "name": "serializable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://dom.spec.whatwg.org/#dom-shadowrootinit-serializable"
           }
         ],
         "extAttrs": [],

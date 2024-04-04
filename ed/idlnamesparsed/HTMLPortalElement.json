@@ -117,7 +117,7 @@
             "title": "HTML Standard",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n};"
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};"
         },
         {
           "spec": {
@@ -131,7 +131,7 @@
             "title": "HTML Sanitizer API",
             "url": "https://wicg.github.io/sanitizer-api/"
           },
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};"
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};"
         },
         {
           "spec": {

@@ -429,7 +429,7 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -456,7 +456,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -557,7 +557,7 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
@@ -584,7 +584,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -685,7 +685,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n  static Document parseHTMLUnsafe__TO_BE_MERGED(DOMString html, optional SanitizerConfig config = {});\n  static Document parseHTML(DOMString html, optional SanitizerConfig config = {});\n};",
+          "fragment": "partial interface Document {\n  static Document parseHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});\n  static Document parseHTML(DOMString html, optional SanitizerConfig config = {});\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -712,7 +712,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -802,13 +802,16 @@
     "exposed": {},
     "dependencies": {
       "Element": [
+        "HTMLString",
         "SanitizerConfig"
       ],
       "ShadowRoot": [
+        "HTMLString",
         "SanitizerConfig"
       ],
       "Document": [
         "Document",
+        "HTMLString",
         "SanitizerConfig"
       ],
       "SanitizerElementNamespace": [],
@@ -825,6 +828,7 @@
     },
     "externalDependencies": [
       "Element",
+      "HTMLString",
       "ShadowRoot",
       "Document"
     ],
