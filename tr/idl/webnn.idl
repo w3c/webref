@@ -245,6 +245,11 @@ partial interface MLGraphBuilder {
                    optional MLGatherOptions options = {});
 };
 
+partial interface MLGraphBuilder {
+  MLOperand gelu(MLOperand input);
+  MLActivation gelu();
+};
+
 dictionary MLGemmOptions {
   MLOperand c;
   float alpha = 1.0;
