@@ -1,9 +1,9 @@
 // Source: Compute Pressure Level 1 (https://www.w3.org/TR/compute-pressure/)
 [Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]
 interface PressureObserver {
-  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});
+  constructor(PressureUpdateCallback callback);
 
-  Promise<undefined> observe(PressureSource source);
+  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});
   undefined unobserve(PressureSource source);
   undefined disconnect();
   sequence<PressureRecord> takeRecords();

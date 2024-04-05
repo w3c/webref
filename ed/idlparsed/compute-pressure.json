@@ -136,7 +136,7 @@
         "href": "https://w3c.github.io/compute-pressure/#dom-pressureupdatecallback"
       },
       "PressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  Promise<undefined> observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback);\n\n  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n};",
         "type": "interface",
         "name": "PressureObserver",
         "inheritance": null,
@@ -158,24 +158,6 @@
                 },
                 "default": null,
                 "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PressureObserverOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
                 "variadic": false
               }
             ],
@@ -217,6 +199,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PressureObserverOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -526,8 +526,8 @@
     "dependencies": {
       "PressureObserver": [
         "PressureUpdateCallback",
-        "PressureObserverOptions",
         "PressureSource",
+        "PressureObserverOptions",
         "PressureRecord"
       ],
       "PressureRecord": [
