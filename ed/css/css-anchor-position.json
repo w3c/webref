@@ -192,6 +192,52 @@
       ]
     },
     {
+      "name": "position-visibility",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
+      "value": "always | anchors-valid || anchors-visible || no-overflow",
+      "initial": "anchors-visible",
+      "appliesTo": "absolutely-positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "always",
+          "prose": "This property has no effect. (The element is displayed without regard for its anchors or its overflowing status.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-always",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "anchors-valid",
+          "prose": "If any of the element’s required anchor references do not resolve to a target anchor element, the element is strongly hidden. Does misused anchor() count, like border-width: anchor(--foo)? I assume no, so we’ll need to split out the concept of invalid usage from a valid usage that fails to find an anchor. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
+          "type": "value",
+          "value": "anchors-valid"
+        },
+        {
+          "name": "anchors-visible",
+          "prose": "If the element does not have a default anchor element, or it has a default anchor element but the anchor element is clipped by scrolling, this element is strongly hidden. Since only the default anchor element triggers scroll-compensation, it’s really the only one that makes sense to condition this on. Right?",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
+          "type": "value",
+          "value": "anchors-visible"
+        },
+        {
+          "name": "no-overflow",
+          "prose": "If the element overflows its inset-modified containing block, even after applying position-try, then the element is strongly hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-no-overflow",
+          "type": "value",
+          "value": "no-overflow"
+        }
+      ],
+      "styleDeclaration": [
+        "position-visibility",
+        "positionVisibility"
+      ]
+    },
+    {
       "name": "position-try-options",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-options",
       "value": "none | [ [<dashed-ident> || <try-tactic>] | inset-area( <'inset-area'> ) ]#",
