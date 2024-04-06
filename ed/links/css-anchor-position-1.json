@@ -29,12 +29,14 @@
       "https://drafts.csswg.org/css-break-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-cascade-6/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-contain-2/": {},
       "https://drafts.csswg.org/css-contain-3/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-logical-1/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-overflow-4/": {},
       "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-shadow-parts/": {},
@@ -48,6 +50,7 @@
       "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/resize-observer/": {},
       "https://drafts.csswg.org/selectors/": {},
+      "https://drafts.fxtf.org/css-masking-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/8180": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -143,13 +146,19 @@
           "origin"
         ]
       },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-opacity"
+        ]
+      },
       "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
           "containment",
           "style-containment",
           "layout-containment",
           "skips-its-contents",
-          "relevant-to-the-user"
+          "relevant-to-the-user",
+          "paint-containment"
         ]
       },
       "https://drafts.csswg.org/css-contain-3/": {
@@ -186,7 +195,12 @@
           "scroll-container",
           "scroll-offset",
           "ink-overflow-rectangle",
-          "scrollport"
+          "propdef-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "anchors": [
+          "overflow-clip-edge"
         ]
       },
       "https://drafts.csswg.org/css-position-3/": {
@@ -280,6 +294,13 @@
         "anchors": [
           "originating-element",
           "pseudo-element"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip",
+          "propdef-clip-path",
+          "propdef-mask"
         ]
       },
       "https://html.spec.whatwg.org/multipage/grouping-content.html": {
