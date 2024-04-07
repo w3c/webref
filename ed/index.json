@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-07T00:45:45.484Z",
+  "date": "2024-04-07T12:37:08.685Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -647,7 +647,7 @@
   },
   "stats": {
     "crawled": 617,
-    "errors": 1
+    "errors": 5
   },
   "crawler": "reffy-15.0.1",
   "results": [
@@ -1241,9 +1241,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 04 Apr 2024 00:42:48 GMT"
+        "lastModified": "Sun, 07 Apr 2024 00:45:50 GMT"
       },
-      "date": "4 April 2024",
+      "date": "7 April 2024",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -7850,9 +7850,9 @@
       ],
       "crawled": "https://tc39.es/proposal-source-phase-imports/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Jan 2024 20:10:42 GMT"
+        "lastModified": "Sun, 07 Apr 2024 04:50:26 GMT"
       },
-      "date": "22 January 2024",
+      "date": "7 April 2024",
       "links": "links/tc39-source-phase-imports.json",
       "dfns": "dfns/tc39-source-phase-imports.json",
       "headings": "headings/tc39-source-phase-imports.json",
@@ -8412,7 +8412,8 @@
       "idl": "idl/media-playback-quality.idl",
       "dfns": "dfns/media-playback-quality.json",
       "headings": "headings/media-playback-quality.json",
-      "ids": "ids/media-playback-quality.json"
+      "ids": "ids/media-playback-quality.json",
+      "error": "Error: Loading https://w3c.github.io/media-playback-quality/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 147)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://w3c.github.io/mediacapture-automation/",
@@ -12767,7 +12768,8 @@
       "idl": "idl/savedata.idl",
       "dfns": "dfns/savedata.json",
       "headings": "headings/savedata.json",
-      "ids": "ids/savedata.json"
+      "ids": "ids/savedata.json",
+      "error": "Error: Loading https://wicg.github.io/savedata/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 230)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://wicg.github.io/scheduling-apis/",
@@ -27620,7 +27622,8 @@
       "links": "links/mse-byte-stream-format-registry.json",
       "refs": "refs/mse-byte-stream-format-registry.json",
       "headings": "headings/mse-byte-stream-format-registry.json",
-      "ids": "ids/mse-byte-stream-format-registry.json"
+      "ids": "ids/mse-byte-stream-format-registry.json",
+      "error": "Error: Loading https://w3c.github.io/mse-byte-stream-format-registry/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 476)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
@@ -35028,7 +35031,8 @@
       "idl": "idl/webxr-gamepads-module.idl",
       "dfns": "dfns/webxr-gamepads-module-1.json",
       "headings": "headings/webxr-gamepads-module-1.json",
-      "ids": "ids/webxr-gamepads-module-1.json"
+      "ids": "ids/webxr-gamepads-module-1.json",
+      "error": "Error: Loading https://immersive-web.github.io/webxr-gamepads-module/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 597)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/webxr-hand-input-1/",
