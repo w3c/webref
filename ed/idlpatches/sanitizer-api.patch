@@ -1,0 +1,36 @@
+From 66de486314a69f8f7f3f5d0052b492765d1dd8a3 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 9 Apr 2024 16:07:11 +0200
+Subject: [PATCH] Remove the __TO_BE_MERGED methods from sanitizer-api.idl
+
+How to remove them from the spec is not entirly clear:
+https://github.com/WICG/sanitizer-api/issues/216
+---
+ ed/idl/sanitizer-api.idl | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/ed/idl/sanitizer-api.idl b/ed/idl/sanitizer-api.idl
+index 83ccd3d1e..2a3cea909 100644
+--- a/ed/idl/sanitizer-api.idl
++++ b/ed/idl/sanitizer-api.idl
+@@ -4,17 +4,14 @@
+ // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
+ 
+ partial interface Element {
+-  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
+   [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});
+ };
+ 
+ partial interface ShadowRoot {
+-  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
+   [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});
+ };
+ 
+ partial interface Document {
+-  static Document parseHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
+   static Document parseHTML(DOMString html, optional SanitizerConfig config = {});
+ };
+ 
+-- 
+2.44.0.478.gd926399ef9-goog
+
