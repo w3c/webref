@@ -46,5 +46,5 @@ partial interface Range {
 
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
 partial interface Range {
-  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);
+  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);
 };

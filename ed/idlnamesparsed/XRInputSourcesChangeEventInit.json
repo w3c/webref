@@ -6,7 +6,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required FrozenArray<XRInputSource> added;\n  required FrozenArray<XRInputSource> removed;\n\n};",
+    "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required sequence<XRInputSource> added;\n  required sequence<XRInputSource> removed;\n\n};",
     "href": "https://immersive-web.github.io/webxr/#dictdef-xrinputsourceschangeeventinit"
   },
   "extended": [],

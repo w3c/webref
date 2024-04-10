@@ -38,13 +38,6 @@
       },
       {
         "spec": {
-          "title": "HTML Sanitizer API",
-          "url": "https://wicg.github.io/sanitizer-api/"
-        },
-        "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});\n  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});\n};"
-      },
-      {
-        "spec": {
           "title": "DOM Parsing and Serialization",
           "url": "https://www.w3.org/TR/DOM-Parsing/"
         },
@@ -207,7 +200,7 @@
             "title": "DOM Parsing and Serialization",
             "url": "https://www.w3.org/TR/DOM-Parsing/"
           },
-          "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;\n};",
+          "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
           "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml"
         },
         "extended": [],

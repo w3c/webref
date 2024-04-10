@@ -74,7 +74,7 @@
         "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer"
       },
       "InnerHTML": {
-        "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;\n};",
+        "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
         "type": "interface mixin",
         "name": "InnerHTML",
         "inheritance": null,
@@ -95,7 +95,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "HTMLString"
             },
             "extAttrs": [
               {
@@ -125,7 +125,7 @@
           "includes": "InnerHTML"
         },
         {
-          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -146,7 +146,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "DOMString"
+                "idlType": "HTMLString"
               },
               "extAttrs": [
                 {
@@ -198,7 +198,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -232,7 +232,7 @@
       ],
       "Range": [
         {
-          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);\n};",
+          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);\n};",
           "type": "interface",
           "name": "Range",
           "inheritance": null,
@@ -259,7 +259,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMString"
+                    "idlType": "HTMLString"
                   },
                   "default": null,
                   "optional": false,
@@ -299,19 +299,24 @@
       "XMLSerializer": [
         "Node"
       ],
-      "InnerHTML": [],
+      "InnerHTML": [
+        "HTMLString"
+      ],
       "Element": [
-        "InnerHTML"
+        "InnerHTML",
+        "HTMLString"
       ],
       "ShadowRoot": [
         "InnerHTML"
       ],
       "Range": [
-        "DocumentFragment"
+        "DocumentFragment",
+        "HTMLString"
       ]
     },
     "externalDependencies": [
       "Node",
+      "HTMLString",
       "Element",
       "Range",
       "DocumentFragment"

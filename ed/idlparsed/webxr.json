@@ -3134,7 +3134,7 @@
         "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent"
       },
       "XRInputSourcesChangeEventInit": {
-        "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required FrozenArray<XRInputSource> added;\n  required FrozenArray<XRInputSource> removed;\n\n};",
+        "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required sequence<XRInputSource> added;\n  required sequence<XRInputSource> removed;\n\n};",
         "type": "dictionary",
         "name": "XRInputSourcesChangeEventInit",
         "inheritance": "EventInit",
@@ -3162,7 +3162,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -3187,7 +3187,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
