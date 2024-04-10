@@ -10,17 +10,17 @@ interface XMLSerializer {
 };
 
 interface mixin InnerHTML {
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
 };
 
 Element includes InnerHTML;
 ShadowRoot includes InnerHTML;
 
 partial interface Element {
-  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;
-  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
+  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);
 };
 
 partial interface Range {
-  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);
+  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);
 };

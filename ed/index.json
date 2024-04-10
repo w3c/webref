@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-10T12:41:22.030Z",
+  "date": "2024-04-10T18:58:17.645Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -162,6 +162,7 @@
       "sparql12-concepts",
       "web-nfc",
       "web-share-target",
+      "passkey-endpoints",
       "webdriver-bidi",
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
@@ -646,10 +647,10 @@
     ]
   },
   "stats": {
-    "crawled": 617,
-    "errors": 4
+    "crawled": 618,
+    "errors": 0
   },
-  "crawler": "reffy-15.0.1",
+  "crawler": "reffy-15.0.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -819,7 +820,7 @@
       "organization": "Alliance for Open Media",
       "nightly": {
         "url": "https://aomediacodec.github.io/av1-isobmff/",
-        "status": "Working Group Approved Draft",
+        "status": "Draft Deliverable",
         "alternateUrls": [],
         "repository": "https://github.com/AOMediaCodec/av1-isobmff",
         "sourcePath": "index.bs",
@@ -1258,7 +1259,7 @@
         "currentSpecification": "webp",
         "title": "WebP Image Format",
         "shortTitle": "WebP Image Format",
-        "nightlyUrl": "https://www.ietf.org/archive/id/draft-zern-webp-14.html"
+        "nightlyUrl": "https://www.ietf.org/archive/id/draft-zern-webp-15.html"
       },
       "organization": "IETF",
       "groups": [
@@ -1268,10 +1269,10 @@
         }
       ],
       "nightly": {
-        "url": "https://www.ietf.org/archive/id/draft-zern-webp-14.html",
+        "url": "https://www.ietf.org/archive/id/draft-zern-webp-15.html",
         "status": "Editor's Draft",
         "alternateUrls": [],
-        "filename": "draft-zern-webp-14.html"
+        "filename": "draft-zern-webp-15.html"
       },
       "title": "WebP Image Format",
       "source": "ietf",
@@ -1282,13 +1283,13 @@
       "standing": "good",
       "versions": [
         "https://datatracker.ietf.org/doc/html/draft-zern-webp/",
-        "https://www.ietf.org/archive/id/draft-zern-webp-14.html"
+        "https://www.ietf.org/archive/id/draft-zern-webp-15.html"
       ],
-      "crawled": "https://www.ietf.org/archive/id/draft-zern-webp-14.html",
+      "crawled": "https://www.ietf.org/archive/id/draft-zern-webp-15.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Mar 2024 17:21:37 GMT"
+        "lastModified": "Thu, 04 Apr 2024 19:08:00 GMT"
       },
-      "date": "18 March 2024",
+      "date": "4 April 2024",
       "links": "links/webp.json",
       "refs": "refs/webp.json",
       "headings": "headings/webp.json",
@@ -7308,9 +7309,9 @@
       ],
       "crawled": "https://tc39.es/proposal-explicit-resource-management/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 25 Mar 2024 18:40:39 GMT"
+        "lastModified": "Wed, 10 Apr 2024 18:17:33 GMT"
       },
-      "date": "25 March 2024",
+      "date": "10 April 2024",
       "links": "links/tc39-explicit-resource-management.json",
       "headings": "headings/tc39-explicit-resource-management.json",
       "ids": "ids/tc39-explicit-resource-management.json"
@@ -7896,9 +7897,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 17:53:27 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:48:51 GMT"
       },
-      "date": "3 April 2024",
+      "date": "10 April 2024",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -8412,8 +8413,7 @@
       "idl": "idl/media-playback-quality.idl",
       "dfns": "dfns/media-playback-quality.json",
       "headings": "headings/media-playback-quality.json",
-      "ids": "ids/media-playback-quality.json",
-      "error": "Error: Loading https://w3c.github.io/media-playback-quality/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 147)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/media-playback-quality.json"
     },
     {
       "url": "https://w3c.github.io/mediacapture-automation/",
@@ -8811,6 +8811,54 @@
       "ids": "ids/web-share-target.json"
     },
     {
+      "url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
+      "seriesComposition": "full",
+      "shortname": "passkey-endpoints",
+      "series": {
+        "shortname": "passkey-endpoints",
+        "currentSpecification": "passkey-endpoints",
+        "title": "A Well-Known URL for Passkey Endpoints",
+        "shortTitle": "A Well-Known URL for Passkey Endpoints",
+        "nightlyUrl": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
+        "status": "Editor's Draft",
+        "sourcePath": "passkey-endpoints.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webappsec-passkey-endpoints",
+        "filename": "passkey-endpoints.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
+        }
+      ],
+      "title": "A Well-Known URL for Passkey Endpoints",
+      "source": "spec",
+      "shortTitle": "A Well-Known URL for Passkey Endpoints",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html"
+      ],
+      "crawled": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 29 Nov 2023 20:52:23 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "29 November 2023",
+      "revision": "2e926f6e58f821aca4b87892d5a88ab9e9e2d7c8",
+      "links": "links/passkey-endpoints.json",
+      "refs": "refs/passkey-endpoints.json",
+      "headings": "headings/passkey-endpoints.json",
+      "ids": "ids/passkey-endpoints.json"
+    },
+    {
       "url": "https://w3c.github.io/webdriver-bidi/",
       "seriesComposition": "full",
       "shortname": "webdriver-bidi",
@@ -8956,11 +9004,11 @@
       ],
       "crawled": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 16:57:09 GMT"
+        "lastModified": "Wed, 10 Apr 2024 13:27:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 April 2024",
-      "revision": "82b031a3d59a371c06d50914a9532d56375107f5",
+      "date": "10 April 2024",
+      "revision": "02e9b85f387c0479711fcd7f9674ad042099c9b2",
       "links": "links/wasm-core-2-fork-branch-hinting.json",
       "refs": "refs/wasm-core-2-fork-branch-hinting.json",
       "headings": "headings/wasm-core-2-fork-branch-hinting.json",
@@ -12702,11 +12750,11 @@
       ],
       "crawled": "https://wicg.github.io/sanitizer-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 04 Apr 2024 09:47:09 GMT"
+        "lastModified": "Wed, 10 Apr 2024 12:52:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 April 2024",
-      "revision": "a63f6222fefdc38ab66d873059ef8fb4c0e8ccc3",
+      "date": "10 April 2024",
+      "revision": "fc4ac0bf3ad33953a17ad199a90a4c3be2224164",
       "links": "links/sanitizer-api.json",
       "refs": "refs/sanitizer-api.json",
       "idl": "idl/sanitizer-api.idl",
@@ -12768,8 +12816,7 @@
       "idl": "idl/savedata.idl",
       "dfns": "dfns/savedata.json",
       "headings": "headings/savedata.json",
-      "ids": "ids/savedata.json",
-      "error": "Error: Loading https://wicg.github.io/savedata/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 230)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/savedata.json"
     },
     {
       "url": "https://wicg.github.io/scheduling-apis/",
@@ -14265,9 +14312,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 22:13:03 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:45:44 GMT"
       },
-      "date": "8 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -14310,9 +14357,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 05:33:19 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:51:43 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -14500,9 +14547,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 21:31:48 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:42:46 GMT"
       },
-      "date": "8 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -14545,9 +14592,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 20:44:39 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:00:14 GMT"
       },
-      "date": "8 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -14590,9 +14637,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 02:42:34 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:47:44 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -14635,9 +14682,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:40:15 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:45:55 GMT"
       },
-      "date": "8 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -14680,9 +14727,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 02:19:45 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:54:48 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -14725,9 +14772,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 03:06:12 GMT"
+        "lastModified": "Wed, 10 Apr 2024 15:58:42 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -14970,9 +15017,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7932",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 22:06:05 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:00:24 GMT"
       },
-      "date": "8 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc7932.json",
       "ids": "ids/rfc7932.json"
     },
@@ -15215,9 +15262,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 05 Apr 2024 12:37:38 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:43:16 GMT"
       },
-      "date": "5 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -15262,9 +15309,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 00:45:36 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:14:27 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -15562,9 +15609,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Apr 2024 06:32:28 GMT"
+        "lastModified": "Wed, 10 Apr 2024 16:38:12 GMT"
       },
-      "date": "9 April 2024",
+      "date": "10 April 2024",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -23049,7 +23096,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-view-transitions-1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23946,10 +23993,10 @@
       ],
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 02 May 2021 07:08:17 GMT"
+        "lastModified": "Wed, 10 Apr 2024 13:34:02 GMT"
       },
       "generator": "respec",
-      "date": "02 May 2021",
+      "date": "10 April 2024",
       "links": "links/DOM-Parsing.json",
       "refs": "refs/DOM-Parsing.json",
       "idl": "idl/DOM-Parsing.idl",
@@ -27622,8 +27669,7 @@
       "links": "links/mse-byte-stream-format-registry.json",
       "refs": "refs/mse-byte-stream-format-registry.json",
       "headings": "headings/mse-byte-stream-format-registry.json",
-      "ids": "ids/mse-byte-stream-format-registry.json",
-      "error": "Error: Loading https://w3c.github.io/mse-byte-stream-format-registry/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 476)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-registry.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
@@ -29341,7 +29387,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-semantics/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jan 2024 17:36:46 GMT"
+        "lastModified": "Thu, 25 Jan 2024 17:36:45 GMT"
       },
       "generator": "respec",
       "date": "25 January 2024",
@@ -32516,8 +32562,7 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json",
-      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 556)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
+      "ids": "ids/wai-aria-1.3.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
@@ -32581,11 +32626,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 15:19:20 GMT"
+        "lastModified": "Wed, 10 Apr 2024 14:49:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 April 2024",
-      "revision": "bc76fd79cfe61033d7f4ad4a7e8fc4f996dc5ba8",
+      "date": "10 April 2024",
+      "revision": "9e9db5cf474a517594ebfbb612f49a0b7bb61677",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
       "headings": "headings/wasm-core-2.json",
@@ -32650,11 +32695,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 15:19:20 GMT"
+        "lastModified": "Wed, 10 Apr 2024 14:49:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 April 2024",
-      "revision": "bc76fd79cfe61033d7f4ad4a7e8fc4f996dc5ba8",
+      "date": "10 April 2024",
+      "revision": "9e9db5cf474a517594ebfbb612f49a0b7bb61677",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -32714,11 +32759,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 15:19:20 GMT"
+        "lastModified": "Wed, 10 Apr 2024 14:49:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 April 2024",
-      "revision": "bc76fd79cfe61033d7f4ad4a7e8fc4f996dc5ba8",
+      "date": "10 April 2024",
+      "revision": "9e9db5cf474a517594ebfbb612f49a0b7bb61677",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -35280,11 +35325,11 @@
       ],
       "crawled": "https://immersive-web.github.io/webxr/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Feb 2024 02:46:35 GMT"
+        "lastModified": "Wed, 10 Apr 2024 17:00:25 GMT"
       },
       "generator": "bikeshed",
       "date": "31 March 2022",
-      "revision": "25be7686b06ab15fd55e1d864458e721634e9bb2",
+      "revision": "7d851ba20d965dacafe32168f008da3371c0c6e9",
       "links": "links/webxr.json",
       "refs": "refs/webxr.json",
       "events": "events/webxr.json",

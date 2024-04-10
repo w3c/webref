@@ -3,21 +3,6 @@
 // (https://github.com/w3c/webref)
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
 
-partial interface Element {
-  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
-  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});
-};
-
-partial interface ShadowRoot {
-  [CEReactions] undefined setHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
-  [CEReactions] undefined setHTML(DOMString html, optional SanitizerConfig config = {});
-};
-
-partial interface Document {
-  static Document parseHTMLUnsafe__TO_BE_MERGED(HTMLString html, optional SanitizerConfig config = {});
-  static Document parseHTML(DOMString html, optional SanitizerConfig config = {});
-};
-
 dictionary SanitizerElementNamespace {
   required DOMString name;
   DOMString? _namespace = "http://www.w3.org/1999/xhtml";
