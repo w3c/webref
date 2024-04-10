@@ -34,6 +34,7 @@
       "https://drafts.csswg.org/css-contain-3/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
+      "https://drafts.csswg.org/css-env-1/": {},
       "https://drafts.csswg.org/css-logical-1/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-overflow-4/": {},
@@ -45,6 +46,7 @@
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-transforms/": {},
       "https://drafts.csswg.org/css-values-4/": {},
+      "https://drafts.csswg.org/css-variables-2/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom/": {},
@@ -110,7 +112,9 @@
           "propdef-justify-self",
           "propdef-justify-items",
           "propdef-align-items",
-          "valdef-self-position-center"
+          "valdef-self-position-center",
+          "typedef-self-position",
+          "typedef-baseline-position"
         ]
       },
       "https://drafts.csswg.org/css-backgrounds-3/": {
@@ -120,6 +124,9 @@
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
+          "propdef-margin-top",
+          "propdef-margin-left",
+          "propdef-margin-bottom",
           "margin-properties",
           "margin-box"
         ]
@@ -182,6 +189,11 @@
           "propdef-visibility"
         ]
       },
+      "https://drafts.csswg.org/css-env-1/": {
+        "anchors": [
+          "funcdef-env"
+        ]
+      },
       "https://drafts.csswg.org/css-logical-1/": {
         "anchors": [
           "inset-properties",
@@ -230,7 +242,8 @@
           "propdef-max-height",
           "available",
           "sizing-property",
-          "propdef-width"
+          "propdef-width",
+          "propdef-height"
         ]
       },
       "https://drafts.csswg.org/css-sizing-4/": {
@@ -262,6 +275,11 @@
           "percentage-value",
           "math-function",
           "computed-length"
+        ]
+      },
+      "https://drafts.csswg.org/css-variables-2/": {
+        "anchors": [
+          "substitute-a-var"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
