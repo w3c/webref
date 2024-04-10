@@ -13,7 +13,8 @@
       "functions": {
         "Window": [
           "Navigator",
-          "MediaSession"
+          "MediaSession",
+          "ChapterInformation"
         ]
       }
     },
@@ -381,7 +382,7 @@
         "href": "https://w3c.github.io/mediasession/#mediasession"
       },
       "MediaMetadata": {
-        "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n  [SameObject] readonly attribute FrozenArray<ChapterInformation> chapterInfo;\n};",
         "type": "interface",
         "name": "MediaMetadata",
         "inheritance": null,
@@ -483,6 +484,38 @@
             "special": "",
             "readonly": false,
             "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artwork"
+          },
+          {
+            "type": "attribute",
+            "name": "chapterInfo",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ChapterInformation"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadata-chapterinfo"
           }
         ],
         "extAttrs": [
@@ -500,7 +533,7 @@
         "href": "https://w3c.github.io/mediasession/#mediametadata"
       },
       "MediaMetadataInit": {
-        "fragment": "dictionary MediaMetadataInit {\n  DOMString title = \"\";\n  DOMString artist = \"\";\n  DOMString album = \"\";\n  sequence<MediaImage> artwork = [];\n};",
+        "fragment": "dictionary MediaMetadataInit {\n  DOMString title = \"\";\n  DOMString artist = \"\";\n  DOMString album = \"\";\n  sequence<MediaImage> artwork = [];\n  sequence<ChapterInformationInit> chapterInfo = [];\n};",
         "type": "dictionary",
         "name": "MediaMetadataInit",
         "inheritance": null,
@@ -589,11 +622,201 @@
             },
             "required": false,
             "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-artwork"
+          },
+          {
+            "type": "field",
+            "name": "chapterInfo",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ChapterInformationInit"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-chapterinfo"
           }
         ],
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/mediasession/#dictdef-mediametadatainit"
+      },
+      "ChapterInformation": {
+        "fragment": "[Exposed=Window]\ninterface ChapterInformation {\n  readonly attribute DOMString title;\n  readonly attribute double startTime;\n  [SameObject] readonly attribute FrozenArray<MediaImage> artwork;\n};",
+        "type": "interface",
+        "name": "ChapterInformation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "title",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformation-title"
+          },
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformation-starttime"
+          },
+          {
+            "type": "attribute",
+            "name": "artwork",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaImage"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformation-artwork"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#chapterinformation"
+      },
+      "ChapterInformationInit": {
+        "fragment": "dictionary ChapterInformationInit {\n  DOMString title = \"\";\n  double startTime = 0;\n  sequence<MediaImage> artwork = [];\n};",
+        "type": "dictionary",
+        "name": "ChapterInformationInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "title",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformationinit-title"
+          },
+          {
+            "type": "field",
+            "name": "startTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformationinit-starttime"
+          },
+          {
+            "type": "field",
+            "name": "artwork",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaImage"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-chapterinformationinit-artwork"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/mediasession/#dictdef-chapterinformationinit"
       },
       "MediaImage": {
         "fragment": "dictionary MediaImage {\n  required USVString src;\n  DOMString sizes = \"\";\n  DOMString type = \"\";\n};",
@@ -896,7 +1119,8 @@
       "Window": [
         "Navigator",
         "MediaSession",
-        "MediaMetadata"
+        "MediaMetadata",
+        "ChapterInformation"
       ]
     },
     "dependencies": {
@@ -912,9 +1136,17 @@
       ],
       "MediaMetadata": [
         "MediaMetadataInit",
-        "MediaImage"
+        "MediaImage",
+        "ChapterInformation"
       ],
       "MediaMetadataInit": [
+        "MediaImage",
+        "ChapterInformationInit"
+      ],
+      "ChapterInformation": [
+        "MediaImage"
+      ],
+      "ChapterInformationInit": [
         "MediaImage"
       ],
       "MediaImage": [],

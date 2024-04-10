@@ -6,7 +6,7 @@
       "title": "Accelerated Shape Detection in Images",
       "url": "https://wicg.github.io/shape-detection-api/"
     },
-    "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required FrozenArray<Landmark>? landmarks;\n};",
+    "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required sequence<Landmark>? landmarks;\n};",
     "href": "https://wicg.github.io/shape-detection-api/#dictdef-detectedface"
   },
   "extended": [],

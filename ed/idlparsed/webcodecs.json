@@ -4325,7 +4325,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-videoframeinit"
       },
       "VideoFrameBufferInit": {
-        "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n\n  sequence<ArrayBuffer> transfer = [];\n};",
+        "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n\n  sequence<ArrayBuffer> transfer = [];\n\n  VideoFrameMetadata metadata;\n};",
         "type": "dictionary",
         "name": "VideoFrameBufferInit",
         "inheritance": null,
@@ -4568,6 +4568,22 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-transfer"
+          },
+          {
+            "type": "field",
+            "name": "metadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrameMetadata"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-metadata"
           }
         ],
         "extAttrs": [],
@@ -6087,7 +6103,8 @@
         "PlaneLayout",
         "DOMRectInit",
         "VideoColorSpaceInit",
-        "ArrayBuffer"
+        "ArrayBuffer",
+        "VideoFrameMetadata"
       ],
       "VideoFrameMetadata": [],
       "VideoFrameCopyToOptions": [

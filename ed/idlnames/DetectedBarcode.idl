@@ -3,5 +3,5 @@ dictionary DetectedBarcode {
   required DOMRectReadOnly boundingBox;
   required DOMString rawValue;
   required BarcodeFormat format;
-  required FrozenArray<Point2D> cornerPoints;
+  required sequence<Point2D> cornerPoints;
 };

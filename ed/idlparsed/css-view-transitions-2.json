@@ -35,7 +35,7 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#enumdef-viewtransitionnavigation"
       },
       "CSSViewTransitionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  readonly attribute FrozenArray<CSSOMString> types;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
         "type": "interface",
         "name": "CSSViewTransitionRule",
         "inheritance": "CSSRule",
@@ -76,7 +76,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-types"

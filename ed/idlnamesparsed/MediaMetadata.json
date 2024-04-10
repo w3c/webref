@@ -6,7 +6,7 @@
       "title": "Media Session",
       "url": "https://www.w3.org/TR/mediasession/"
     },
-    "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n};",
+    "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n  [SameObject] readonly attribute FrozenArray<ChapterInformation> chapterInfo;\n};",
     "href": "https://w3c.github.io/mediasession/#mediametadata"
   },
   "extended": [],

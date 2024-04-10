@@ -172,7 +172,7 @@
         "href": "https://wicg.github.io/shape-detection-api/#dictdef-facedetectoroptions"
       },
       "DetectedFace": {
-        "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required FrozenArray<Landmark>? landmarks;\n};",
+        "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required sequence<Landmark>? landmarks;\n};",
         "type": "dictionary",
         "name": "DetectedFace",
         "inheritance": null,
@@ -200,7 +200,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": true,
               "union": false,
               "idlType": [
@@ -224,7 +224,7 @@
         "href": "https://wicg.github.io/shape-detection-api/#dictdef-detectedface"
       },
       "Landmark": {
-        "fragment": "dictionary Landmark {\n  required FrozenArray<Point2D> locations;\n  LandmarkType type;\n};",
+        "fragment": "dictionary Landmark {\n  required sequence<Point2D> locations;\n  LandmarkType type;\n};",
         "type": "dictionary",
         "name": "Landmark",
         "inheritance": null,
@@ -236,7 +236,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -480,7 +480,7 @@
         "href": "https://wicg.github.io/shape-detection-api/#dictdef-barcodedetectoroptions"
       },
       "DetectedBarcode": {
-        "fragment": "dictionary DetectedBarcode {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required BarcodeFormat format;\n  required FrozenArray<Point2D> cornerPoints;\n};",
+        "fragment": "dictionary DetectedBarcode {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required BarcodeFormat format;\n  required sequence<Point2D> cornerPoints;\n};",
         "type": "dictionary",
         "name": "DetectedBarcode",
         "inheritance": null,
@@ -540,7 +540,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [

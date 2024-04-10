@@ -1,0 +1,7 @@
+// Source: Media Session (https://www.w3.org/TR/mediasession/)
+[Exposed=Window]
+interface ChapterInformation {
+  readonly attribute DOMString title;
+  readonly attribute double startTime;
+  [SameObject] readonly attribute FrozenArray<MediaImage> artwork;
+};

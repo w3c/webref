@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "ArrayBufferView": {
-        "fragment": "typedef (Int8Array or Int16Array or Int32Array or\n         Uint8Array or Uint16Array or Uint32Array or Uint8ClampedArray or\n         BigInt64Array or BigUint64Array or\n         Float32Array or Float64Array or DataView) ArrayBufferView;",
+        "fragment": "typedef (Int8Array or Int16Array or Int32Array or\n         Uint8Array or Uint16Array or Uint32Array or Uint8ClampedArray or\n         BigInt64Array or BigUint64Array or\n         Float16Array or Float32Array or Float64Array or DataView) ArrayBufferView;",
         "type": "typedef",
         "name": "ArrayBufferView",
         "idlType": {
@@ -95,6 +95,14 @@
               "nullable": false,
               "union": false,
               "idlType": "BigUint64Array"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float16Array"
             },
             {
               "type": "typedef-type",
@@ -844,6 +852,7 @@
       "Uint8ClampedArray",
       "BigInt64Array",
       "BigUint64Array",
+      "Float16Array",
       "Float32Array",
       "Float64Array",
       "DataView",
