@@ -3710,7 +3710,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsetparameteroptions"
       },
       "RTCRtpReceiver": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n  attribute DOMHighResTimeStamp? jitterBufferTarget;\n};",
         "type": "interface",
         "name": "RTCRtpReceiver",
         "inheritance": null,
@@ -3870,6 +3870,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/webrtc-pc/#widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport"
+          },
+          {
+            "type": "attribute",
+            "name": "jitterBufferTarget",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-jitterbuffertarget"
           }
         ],
         "extAttrs": [
@@ -7267,7 +7283,8 @@
         "RTCRtpReceiveParameters",
         "RTCRtpContributingSource",
         "RTCRtpSynchronizationSource",
-        "RTCStatsReport"
+        "RTCStatsReport",
+        "DOMHighResTimeStamp"
       ],
       "RTCRtpContributingSource": [
         "DOMHighResTimeStamp"

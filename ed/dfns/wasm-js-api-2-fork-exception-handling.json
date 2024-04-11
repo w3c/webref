@@ -157,6 +157,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "exception-object-cache",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#exception-object-cache",
+      "linkingText": [
+        "Exception object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-webassemblyinstantiatedsource",
       "href": "https://webassembly.github.io/exception-handling/js-api/#dictdef-webassemblyinstantiatedsource",
       "linkingText": [
@@ -2626,44 +2645,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "tag_alloc",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#tag_alloc",
-      "linkingText": [
-        "tag_alloc"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "tags",
-        "href": "https://webassembly.github.io/exception-handling/js-api/#tags",
-        "title": "Tags",
-        "number": "4.7"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "tag_parameters",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#tag_parameters",
-      "linkingText": [
-        "tag_parameters"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "tags",
-        "href": "https://webassembly.github.io/exception-handling/js-api/#tags",
-        "title": "Tags",
-        "number": "4.7"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dictdef-tagtype",
       "href": "https://webassembly.github.io/exception-handling/js-api/#dictdef-tagtype",
       "linkingText": [
@@ -2957,36 +2938,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-exception-getarg-exceptiontag-index-exceptiontag",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-getarg-exceptiontag-index-exceptiontag",
-      "linkingText": [
-        "exceptionTag"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Exception/getArg(exceptionTag, index)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "runtime-exceptions",
-        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
-        "title": "Runtime exceptions",
-        "number": "4.7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-exception-getarg-exceptiontag-index-index",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-getarg-exceptiontag-index-index",
+      "id": "dom-exception-getarg-index-index",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-getarg-index-index",
       "linkingText": [
         "index"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Exception/getArg(exceptionTag, index)"
+        "Exception/getArg(index)"
       ],
       "access": "public",
       "informative": false,
@@ -3018,6 +2978,25 @@
         "number": "4.7.2"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "initialize-an-exception-object",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#initialize-an-exception-object",
+      "linkingText": [
+        "initialize an Exception object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runtime-exceptions",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
+        "title": "Runtime exceptions",
+        "number": "4.7.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "create-an-exception-object",
@@ -3066,7 +3045,7 @@
       "id": "dom-exception-getarg",
       "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-getarg",
       "linkingText": [
-        "getArg(exceptionTag, index)"
+        "getArg(index)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3145,16 +3124,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "webassembly-throw",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#webassembly-throw",
+      "id": "get-the-javascript-exception-tag",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#get-the-javascript-exception-tag",
       "linkingText": [
-        "throw"
+        "get the JavaScript exception tag"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "WebAssembly"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
