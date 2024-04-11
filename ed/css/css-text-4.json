@@ -1297,11 +1297,11 @@
           "value": "normal"
         },
         {
-          "name": "trim-auto",
+          "name": "trim-both",
           "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-auto",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-both",
           "type": "value",
-          "value": "trim-auto"
+          "value": "trim-both"
         },
         {
           "name": "space-first",
@@ -1326,7 +1326,7 @@
         },
         {
           "name": "auto",
-          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-auto.",
+          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-both.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-auto",
           "type": "value",
           "value": "auto"
@@ -1496,7 +1496,7 @@
       "name": "<spacing-trim>",
       "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
       "type": "type",
-      "value": "space-all | normal | trim-auto | trim-start | space-first | trim-all"
+      "value": "space-all | normal | space-first | trim-start | trim-both | trim-all"
     }
   ]
 }
