@@ -149,7 +149,11 @@
           "embed-global-write",
           "embed-func-type",
           "embed-func-invoke",
-          "embed-func-alloc"
+          "embed-exn-read",
+          "embed-exn-alloc",
+          "embed-func-alloc",
+          "embed-tag-alloc",
+          "embed-tag-type"
         ]
       },
       "https://webassembly.github.io/exception-handling/core/binary/modules.html": {
@@ -166,7 +170,8 @@
       },
       "https://webassembly.github.io/exception-handling/core/exec/instructions.html": {
         "anchors": [
-          "exec-memory-grow"
+          "exec-memory-grow",
+          "exec-throw-ref"
         ]
       },
       "https://webassembly.github.io/exception-handling/core/exec/numerics.html": {
@@ -185,6 +190,7 @@
           "syntax-globaladdr",
           "syntax-externaddr",
           "syntax-tagaddr",
+          "syntax-exnaddr",
           "syntax-externval",
           "values",
           "syntax-frame",
@@ -253,6 +259,7 @@
           "idl-unsigned-long",
           "idl-any",
           "idl-undefined",
+          "dfn-throw",
           "dfn-associated-realm",
           "Exposed",
           "dfn-namespace-object"

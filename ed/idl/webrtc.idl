@@ -368,6 +368,7 @@ interface RTCRtpReceiver {
   sequence<RTCRtpContributingSource> getContributingSources();
   sequence<RTCRtpSynchronizationSource> getSynchronizationSources();
   Promise<RTCStatsReport> getStats();
+  attribute DOMHighResTimeStamp? jitterBufferTarget;
 };
 
 dictionary RTCRtpContributingSource {
