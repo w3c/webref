@@ -3,6 +3,17 @@
 // (https://github.com/w3c/webref)
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
 
+dictionary SetHTMLOptions {
+  (Sanitizer or SanitizerConfig) sanitizer = {};
+};
+
+[Exposed=Window,Worker]
+interface Sanitizer {
+  constructor(optional SanitizerConfig config = {});
+  SanitizerConfig get();
+  SanitizerConfig getUnsafe();
+};
+
 dictionary SanitizerElementNamespace {
   required DOMString name;
   DOMString? _namespace = "http://www.w3.org/1999/xhtml";
