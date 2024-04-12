@@ -146,7 +146,44 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-display-mode",
           "for": "@media",
           "value": "fullscreen | standalone | minimal-ui | browser | picture-in-picture",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "fullscreen",
+              "prose": "The browsing context is displayed with browser UI elements hidden and takes up the entirety of the available display area. The fullscreen context may have been caused by the fullscreen display mode in the application manifest, by the requestFullscreen() method of the Fullscreen API, or through some other means (such as the user manually activating fullscreen mode using the user agent’s built-in controls). Corresponds to the fullscreen display mode.",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-fullscreen",
+              "type": "value",
+              "value": "fullscreen"
+            },
+            {
+              "name": "standalone",
+              "prose": "The standalone display mode is in use. Only applicable in an application context.",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-standalone",
+              "type": "value",
+              "value": "standalone"
+            },
+            {
+              "name": "minimal-ui",
+              "prose": "The minimal-ui display mode is in use. Only applicable in an application context.",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-minimal-ui",
+              "type": "value",
+              "value": "minimal-ui"
+            },
+            {
+              "name": "browser",
+              "prose": "The browsing context is displayed using the platform-specific convention for opening hyperlinks in the user agent (e.g., in a browser tab or web browser window with controls such as an address bar). This should be used for non-application contexts where no other display mode is appropriate. Corresponds to the browser display mode.",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-browser",
+              "type": "value",
+              "value": "browser"
+            },
+            {
+              "name": "picture-in-picture",
+              "prose": "This mode allows users to continue consuming media while they interact with other sites or applications on their device. The browsing context is displayed in a floating and always-on-top window. A user agent may include other platform specific UI elements, such as \"back-to-tab\" and \"site information\" buttons or whatever is customary on the platform and user agent.",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+              "type": "value",
+              "value": "picture-in-picture"
+            }
+          ]
         },
         {
           "name": "resolution",
