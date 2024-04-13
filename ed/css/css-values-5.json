@@ -270,13 +270,6 @@
           "value": "string"
         },
         {
-          "name": "url",
-          "prose": "The substitution value is a CSS <url> value, whose url is the literal value of the attribute. (No CSS parsing or \"cleanup\" of the value is performed.) No value triggers fallback.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-url",
-          "type": "value",
-          "value": "url"
-        },
-        {
           "name": "ident",
           "prose": "The substitution value is a CSS <custom-ident>, whose value is the literal value of the attribute, with leading and trailing ASCII whitespace stripped. (No CSS parsing of the value is performed.) If the attribute value, after trimming, is the empty string, there is instead no substitution value. If the <custom-ident>’s value is a CSS-wide keyword or default, there is instead no substitution value.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-ident",
@@ -358,7 +351,7 @@
       "name": "<attr-type>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-type",
       "type": "type",
-      "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
+      "value": "string | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
     },
     {
       "name": "<dimension-unit>",
