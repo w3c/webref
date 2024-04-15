@@ -2296,11 +2296,15 @@ WorkerGlobalScope includes WindowOrWorkerGlobalScope;
 partial interface Element {
   [CEReactions] undefined setHTMLUnsafe(HTMLString html);
   DOMString getHTML(optional GetHTMLOptions options = {});
+
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
 };
 
 partial interface ShadowRoot {
   [CEReactions] undefined setHTMLUnsafe(HTMLString html);
   DOMString getHTML(optional GetHTMLOptions options = {});
+
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
 };
 
 dictionary GetHTMLOptions {
