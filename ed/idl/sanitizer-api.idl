@@ -7,7 +7,7 @@ dictionary SetHTMLOptions {
   (Sanitizer or SanitizerConfig) sanitizer = {};
 };
 
-[Exposed=Window,Worker]
+[Exposed=(Window,Worker)]
 interface Sanitizer {
   constructor(optional SanitizerConfig config = {});
   SanitizerConfig get();
