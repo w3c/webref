@@ -190,9 +190,210 @@
         "align-items",
         "alignItems"
       ]
+    },
+    {
+      "name": "position-visibility",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
+      "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
+      "initial": "anchors-visible",
+      "appliesTo": "absolutely-positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "always",
+          "prose": "This property has no effect. (The element is displayed without regard for its anchors or its overflowing status.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-always",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "anchors-valid",
+          "prose": "If any of the element’s required anchor references do not resolve to a target anchor element, the element is strongly hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
+          "type": "value",
+          "value": "anchors-valid"
+        },
+        {
+          "name": "anchors-visible",
+          "prose": "If the element has a default anchor element but the anchor element is clipped by intervening elements, this element is also strongly hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
+          "type": "value",
+          "value": "anchors-visible"
+        },
+        {
+          "name": "no-overflow",
+          "prose": "If the element overflows its inset-modified containing block, even after applying position-try, then the element is strongly hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-no-overflow",
+          "type": "value",
+          "value": "no-overflow"
+        }
+      ],
+      "styleDeclaration": [
+        "position-visibility",
+        "positionVisibility"
+      ]
+    },
+    {
+      "name": "position-try-options",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-options",
+      "value": "none | [ [<dashed-ident> || <try-tactic>] | inset-area( <'inset-area'> ) ]#",
+      "initial": "none",
+      "appliesTo": "absolutely-positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The property has no effect; the element’s position options list is empty.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<dashed-ident>",
+          "prose": "If there is a @position-try rule with the given name, its associated position option is added to the position options list. Otherwise, this value has no effect.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident",
+          "type": "value",
+          "value": "<dashed-ident>"
+        },
+        {
+          "name": "<try-tactic>",
+          "value": "flip-block || flip-inline || flip-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-try-tactic",
+          "type": "value"
+        },
+        {
+          "name": "<try-tactic>",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-options-try-tactic",
+          "type": "type",
+          "value": "flip-block || flip-inline || flip-start"
+        },
+        {
+          "name": "flip-block",
+          "prose": "swaps the values in the block axis (between, for example, margin-block-start and margin-block-end), essentially mirroring across an inline-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-block",
+          "type": "value",
+          "value": "flip-block"
+        },
+        {
+          "name": "flip-inline",
+          "prose": "swaps the values in the inline axis, essentially mirroring across a block-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-inline",
+          "type": "value",
+          "value": "flip-inline"
+        },
+        {
+          "name": "flip-start",
+          "prose": "swaps the values of the start properties with each other, and the end properties with each other (between, for example, margin-block-start and margin-inline-start), essentially mirroring across a diagonal drawn from the start-start corner to the end-end corner.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-start",
+          "type": "value",
+          "value": "flip-start"
+        },
+        {
+          "name": "<dashed-ident> || <try-tactic>",
+          "prose": "Combines the effects of the previous two options: if there is a @position-try rule with the given name, then applies its position option to the element’s base style, transforms it according to the specified <try-tactic>, and then adds the result to the element’s position options list. Otherwise, does nothing.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident--try-tactic",
+          "type": "value",
+          "value": "<dashed-ident> || <try-tactic>"
+        },
+        {
+          "name": "inset-area()",
+          "value": "inset-area()",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-inset-area-inset-area",
+          "type": "value"
+        }
+      ],
+      "styleDeclaration": [
+        "position-try-options",
+        "positionTryOptions"
+      ]
+    },
+    {
+      "name": "position-try-order",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-order",
+      "value": "normal | <try-size>",
+      "initial": "normal",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Try the position options in the order specified by position-try-options.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "most-width",
+          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-width",
+          "type": "value",
+          "value": "most-width"
+        },
+        {
+          "name": "most-height",
+          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-height",
+          "type": "value",
+          "value": "most-height"
+        },
+        {
+          "name": "most-block-size",
+          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-block-size",
+          "type": "value",
+          "value": "most-block-size"
+        },
+        {
+          "name": "most-inline-size",
+          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-inline-size",
+          "type": "value",
+          "value": "most-inline-size"
+        }
+      ],
+      "styleDeclaration": [
+        "position-try-order",
+        "positionTryOrder"
+      ]
+    },
+    {
+      "name": "position-try",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try",
+      "value": "<'position-try-order'>? <'position-try-options'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "position-try",
+        "positionTry"
+      ]
     }
   ],
-  "atrules": [],
+  "atrules": [
+    {
+      "name": "@position-try",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-options,",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
+      "descriptors": [],
+      "value": "@position-try <dashed-ident> { <declaration-list> }"
+    }
+  ],
   "selectors": [],
   "values": [
     {
@@ -587,6 +788,69 @@
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side",
       "type": "type",
       "value": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+    },
+    {
+      "name": "anchor-size()",
+      "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>. It is only valid to be used in the sizing properties.",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size",
+      "type": "function",
+      "value": "anchor-size( <anchor-element>? <anchor-size>, <length-percentage>? )",
+      "values": [
+        {
+          "name": "width",
+          "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-width",
+          "type": "value",
+          "value": "width"
+        },
+        {
+          "name": "height",
+          "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-height",
+          "type": "value",
+          "value": "height"
+        },
+        {
+          "name": "block",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-block",
+          "type": "value",
+          "value": "block"
+        },
+        {
+          "name": "inline",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-inline",
+          "type": "value",
+          "value": "inline"
+        },
+        {
+          "name": "self-block",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-block",
+          "type": "value",
+          "value": "self-block"
+        },
+        {
+          "name": "self-inline",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-inline",
+          "type": "value",
+          "value": "self-inline"
+        }
+      ]
+    },
+    {
+      "name": "<anchor-size>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size",
+      "type": "type",
+      "value": "width | height | block | inline | self-block | self-inline"
+    },
+    {
+      "name": "<try-size>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size",
+      "type": "type",
+      "value": "most-width | most-height | most-block-size | most-inline-size"
     }
   ]
 }
