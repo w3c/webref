@@ -6,20 +6,18 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "dom-responsetype-default",
           "concept-fetch",
-          "concept-internal-response",
           "concept-response",
           "concept-response-type"
         ]
       },
       "https://github.com/w3c/mediasession/issues": {},
-      "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
-          "browsing-context"
+          "link"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -29,6 +27,8 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "browsing-context",
+          "concept-document-bc",
           "fully-active",
           "top-level-browsing-context"
         ]
@@ -59,13 +59,14 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "concept-document-window"
+          "concept-document-window",
+          "window-bc"
         ]
       },
       "https://html.spec.whatwg.org/multipage/semantics.html": {
         "anchors": [
-          "the-link-element",
-          "dom-link-sizes"
+          "dom-link-sizes",
+          "attr-link-sizes"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -83,8 +84,7 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "ascii-case-insensitive",
-          "string-is"
+          "ascii-case-insensitive"
         ]
       },
       "https://lists.w3.org/Archives/Public/public-media-wg/": {},
@@ -93,7 +93,8 @@
           "mime-type"
         ]
       },
-      "https://tc39.es/ecma262/": {
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-object.freeze"
         ]
@@ -142,15 +143,9 @@
           "dom-imageresource"
         ]
       },
-      "https://www.w3.org/TR/mediacapture-streams/": {
-        "anchors": [
-          "mediastreamtrack",
-          "track-muted",
-          "set-track-muted"
-        ]
-      },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
+          "default-allowlist",
           "policy-controlled-feature-default-allowlist",
           "policy-controlled-feature"
         ]
@@ -163,13 +158,13 @@
         "anchors": [
           "concept-fetch",
           "concept-response",
-          "concept-internal-response",
-          "concept-response-type"
+          "concept-response-type",
+          "dom-responsetype-default"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
-          "browsing-context"
+          "link"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -179,6 +174,8 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "browsing-context",
+          "concept-document-bc",
           "top-level-browsing-context",
           "fully-active"
         ]
@@ -209,13 +206,14 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
+          "window-bc",
           "concept-document-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/semantics.html": {
         "anchors": [
-          "dom-link-sizes",
-          "the-link-element"
+          "attr-link-sizes",
+          "dom-link-sizes"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -233,7 +231,6 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "string-is",
           "ascii-case-insensitive"
         ]
       },
@@ -242,7 +239,7 @@
           "mime-type"
         ]
       },
-      "https://tc39.es/ecma262/": {
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-object.freeze"
         ]
@@ -280,17 +277,11 @@
           "dom-imageresource"
         ]
       },
-      "https://www.w3.org/TR/mediacapture-streams/": {
-        "anchors": [
-          "track-muted",
-          "set-track-muted",
-          "mediastreamtrack"
-        ]
-      },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
-          "policy-controlled-feature-default-allowlist"
+          "policy-controlled-feature-default-allowlist",
+          "default-allowlist"
         ]
       }
     }
