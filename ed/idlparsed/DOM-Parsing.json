@@ -72,58 +72,10 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer"
-      },
-      "InnerHTML": {
-        "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
-        "type": "interface mixin",
-        "name": "InnerHTML",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "innerHTML",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "LegacyNullToEmptyString",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "HTMLString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml"
       }
     },
     "idlExtendedNames": {
       "Element": [
-        {
-          "fragment": "Element includes InnerHTML;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Element",
-          "includes": "InnerHTML"
-        },
         {
           "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};",
           "type": "interface",
@@ -221,15 +173,6 @@
           "partial": true
         }
       ],
-      "ShadowRoot": [
-        {
-          "fragment": "ShadowRoot includes InnerHTML;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "ShadowRoot",
-          "includes": "InnerHTML"
-        }
-      ],
       "Range": [
         {
           "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);\n};",
@@ -299,15 +242,8 @@
       "XMLSerializer": [
         "Node"
       ],
-      "InnerHTML": [
-        "HTMLString"
-      ],
       "Element": [
-        "InnerHTML",
         "HTMLString"
-      ],
-      "ShadowRoot": [
-        "InnerHTML"
       ],
       "Range": [
         "DocumentFragment",
@@ -316,8 +252,8 @@
     },
     "externalDependencies": [
       "Node",
-      "HTMLString",
       "Element",
+      "HTMLString",
       "Range",
       "DocumentFragment"
     ],

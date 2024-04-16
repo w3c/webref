@@ -158,7 +158,7 @@
               "title": "HTML Standard",
               "url": "https://html.spec.whatwg.org/multipage/"
             },
-            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};"
+            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};"
           },
           {
             "spec": {
@@ -215,13 +215,6 @@
               "url": "https://www.w3.org/TR/cssom-view-1/"
             },
             "fragment": "// like Range\nElement includes GeometryUtils;"
-          },
-          {
-            "spec": {
-              "title": "DOM Parsing and Serialization",
-              "url": "https://www.w3.org/TR/DOM-Parsing/"
-            },
-            "fragment": "Element includes InnerHTML;"
           },
           {
             "spec": {
@@ -374,21 +367,6 @@
               },
               "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
               "href": "https://drafts.csswg.org/cssom-view-1/#geometryutils"
-            },
-            "extended": [],
-            "inheritance": null,
-            "includes": []
-          },
-          {
-            "name": "InnerHTML",
-            "type": "interface mixin",
-            "defined": {
-              "spec": {
-                "title": "DOM Parsing and Serialization",
-                "url": "https://www.w3.org/TR/DOM-Parsing/"
-              },
-              "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
-              "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml"
             },
             "extended": [],
             "inheritance": null,

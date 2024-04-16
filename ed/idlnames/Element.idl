@@ -69,6 +69,8 @@ partial interface Element {
 partial interface Element {
   [CEReactions] undefined setHTMLUnsafe(HTMLString html);
   DOMString getHTML(optional GetHTMLOptions options = {});
+
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
 };
 
 // Source: Element Timing API (https://wicg.github.io/element-timing/)
@@ -129,9 +131,6 @@ partial interface Element {
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 // like Range
 Element includes GeometryUtils;
-
-// Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
-Element includes InnerHTML;
 
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
 partial interface Element {

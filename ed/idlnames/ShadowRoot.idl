@@ -17,7 +17,6 @@ ShadowRoot includes DocumentOrShadowRoot;
 partial interface ShadowRoot {
   [CEReactions] undefined setHTMLUnsafe(HTMLString html);
   DOMString getHTML(optional GetHTMLOptions options = {});
-};
 
-// Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
-ShadowRoot includes InnerHTML;
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
+};

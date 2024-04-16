@@ -40284,7 +40284,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -40363,6 +40363,36 @@
               "extAttrs": [],
               "special": "",
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-gethtml"
+            },
+            {
+              "type": "attribute",
+              "name": "innerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HTMLString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml"
             }
           ],
           "extAttrs": [],
@@ -40371,7 +40401,7 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
@@ -40450,6 +40480,36 @@
               "extAttrs": [],
               "special": "",
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-gethtml"
+            },
+            {
+              "type": "attribute",
+              "name": "innerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HTMLString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-innerhtml"
             }
           ],
           "extAttrs": [],

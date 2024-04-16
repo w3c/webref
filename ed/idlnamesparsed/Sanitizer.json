@@ -1,0 +1,15 @@
+{
+  "name": "Sanitizer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Sanitizer API",
+      "url": "https://wicg.github.io/sanitizer-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n  SanitizerConfig get();\n  SanitizerConfig getUnsafe();\n};",
+    "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

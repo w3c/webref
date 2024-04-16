@@ -178,7 +178,7 @@
         "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedscripturl"
       },
       "TrustedTypePolicyFactory": {
-        "fragment": "[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
+        "fragment": "[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString? elementNs = \"\",\n        optional DOMString? attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString? elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
         "type": "interface",
         "name": "TrustedTypePolicyFactory",
         "inheritance": null,
@@ -417,7 +417,7 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "DOMString"
                 },
@@ -436,7 +436,7 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "DOMString"
                 },
@@ -504,7 +504,7 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "DOMString"
                 },

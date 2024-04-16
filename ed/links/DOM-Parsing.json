@@ -8,7 +8,6 @@
       "http://w3c-test.org/domparsing/": {},
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "concept-documentfragment-host",
           "parent-element",
           "shadowroot"
         ]
@@ -22,6 +21,13 @@
           "LegacyNullToEmptyString"
         ]
       },
+      "https://html.spec.whatwg.org/dynamic-markup-insertion.html": {
+        "anchors": [
+          "fragment-parsing-algorithm-steps",
+          "fragment-serializing-algorithm-steps",
+          "dom-element-innerhtml"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
         "anchors": [
@@ -30,7 +36,10 @@
       },
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
         "anchors": [
-          "domparser"
+          "domparser",
+          "the-innerhtml-property",
+          "fragment-parsing-algorithm-steps",
+          "fragment-serializing-algorithm-steps"
         ]
       },
       "https://tc39.es/ecma262/multipage/": {},
@@ -78,7 +87,6 @@
           "concept-node-append",
           "concept-node-insert",
           "concept-node-replace",
-          "concept-node-replace-all",
           "concept-tree-order",
           "concept-range-start-node",
           "concept-document-url",
@@ -120,15 +128,9 @@
       "https://www.w3.org/TR/html5/single-page.html": {
         "anchors": [
           "active-document",
-          "concept-frag-parse-context",
-          "html-fragment-parsing-algorithm",
-          "html-fragment-serialization-algorithm",
           "html-parser",
           "parsing-xhtml-documents",
-          "xml-fragment-parsing-algorithm",
-          "xml-fragment-serialization-algorithm",
           "xml-parser",
-          "scripting-flag",
           "location",
           "meta",
           "the-noscript-element",
@@ -154,11 +156,6 @@
       "https://www.w3.org/groups/wg/webapps/ipr": {}
     },
     "autolinks": {
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "shadowroot"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",

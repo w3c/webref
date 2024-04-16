@@ -34,14 +34,7 @@
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n};"
-      },
-      {
-        "spec": {
-          "title": "DOM Parsing and Serialization",
-          "url": "https://www.w3.org/TR/DOM-Parsing/"
-        },
-        "fragment": "ShadowRoot includes InnerHTML;"
+        "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};"
       }
     ],
     "inheritance": {
@@ -189,21 +182,6 @@
             "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};"
           }
         ],
-        "inheritance": null,
-        "includes": []
-      },
-      {
-        "name": "InnerHTML",
-        "type": "interface mixin",
-        "defined": {
-          "spec": {
-            "title": "DOM Parsing and Serialization",
-            "url": "https://www.w3.org/TR/DOM-Parsing/"
-          },
-          "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
-          "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml"
-        },
-        "extended": [],
         "inheritance": null,
         "includes": []
       }

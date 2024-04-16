@@ -5,10 +5,148 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "Sanitizer"
+        ],
+        "Worker": [
+          "Sanitizer"
+        ]
+      },
       "functions": {}
     },
     "idlNames": {
+      "SetHTMLOptions": {
+        "fragment": "dictionary SetHTMLOptions {\n  (Sanitizer or SanitizerConfig) sanitizer = {};\n};",
+        "type": "dictionary",
+        "name": "SetHTMLOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Sanitizer"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                }
+              ]
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmloptions-sanitizer"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions"
+      },
+      "Sanitizer": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n  SanitizerConfig get();\n  SanitizerConfig getUnsafe();\n};",
+        "type": "interface",
+        "name": "Sanitizer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizer"
+          },
+          {
+            "type": "operation",
+            "name": "get",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerConfig"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-get"
+          },
+          {
+            "type": "operation",
+            "name": "getUnsafe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerConfig"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getunsafe"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
+      },
       "SanitizerElementNamespace": {
         "fragment": "dictionary SanitizerElementNamespace {\n  required DOMString name;\n  DOMString? _namespace = \"http://www.w3.org/1999/xhtml\";\n};",
         "type": "dictionary",
@@ -428,8 +566,22 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "Sanitizer"
+      ],
+      "Worker": [
+        "Sanitizer"
+      ]
+    },
     "dependencies": {
+      "SetHTMLOptions": [
+        "Sanitizer",
+        "SanitizerConfig"
+      ],
+      "Sanitizer": [
+        "SanitizerConfig"
+      ],
       "SanitizerElementNamespace": [],
       "SanitizerElementNamespaceWithAttributes": [
         "SanitizerElementNamespace",
