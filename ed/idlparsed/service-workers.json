@@ -2254,7 +2254,7 @@
         "href": "https://w3c.github.io/ServiceWorker/#dictdef-routerrule"
       },
       "RouterCondition": {
-        "fragment": "dictionary RouterCondition {\n  URLPatternCompatible urlPattern;\n  ByteString requestMethod;\n  RequestMode requestMode;\n  RequestDestination requestDestination;\n  RunningStatus runningStatus;\n\n  sequence<RouterCondition> _or;\n};",
+        "fragment": "dictionary RouterCondition {\n  URLPatternCompatible urlPattern;\n  ByteString requestMethod;\n  RequestMode requestMode;\n  RequestDestination requestDestination;\n  RunningStatus runningStatus;\n\n  sequence<RouterCondition> _or;\n  RouterCondition not;\n};",
         "type": "dictionary",
         "name": "RouterCondition",
         "inheritance": null,
@@ -2363,6 +2363,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-or"
+          },
+          {
+            "type": "field",
+            "name": "not",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RouterCondition"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/ServiceWorker/#dom-routercondition-not"
           }
         ],
         "extAttrs": [],

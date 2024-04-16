@@ -50,7 +50,7 @@
         "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions"
       },
       "IdentityRequestProvider": {
-        "fragment": "dictionary IdentityRequestProvider {\n  required DOMString protocol;\n  required DOMString request;\n};",
+        "fragment": "dictionary IdentityRequestProvider {\n  required DOMString protocol;\n  required object request;\n};",
         "type": "dictionary",
         "name": "IdentityRequestProvider",
         "inheritance": null,
@@ -81,7 +81,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "object"
             },
             "default": null,
             "required": true,
