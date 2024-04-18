@@ -10,7 +10,6 @@ interface XMLSerializer {
 };
 
 partial interface Element {
-  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
   [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);
 };
 

@@ -71,6 +71,7 @@ partial interface Element {
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
 };
 
 // Source: Element Timing API (https://wicg.github.io/element-timing/)
@@ -134,7 +135,6 @@ Element includes GeometryUtils;
 
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
 partial interface Element {
-  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
   [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);
 };
 

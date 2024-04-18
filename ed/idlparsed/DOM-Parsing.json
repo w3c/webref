@@ -77,41 +77,11 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
           "members": [
-            {
-              "type": "attribute",
-              "name": "outerHTML",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "LegacyNullToEmptyString",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "HTMLString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false,
-              "href": "https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml"
-            },
             {
               "type": "operation",
               "name": "insertAdjacentHTML",

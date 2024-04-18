@@ -22559,26 +22559,11 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas"
       },
       "OffscreenCanvasRenderingContext2D": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface OffscreenCanvasRenderingContext2D {\n  undefined commit();\n  readonly attribute OffscreenCanvas canvas;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface OffscreenCanvasRenderingContext2D {\n  readonly attribute OffscreenCanvas canvas;\n};",
         "type": "interface",
         "name": "OffscreenCanvasRenderingContext2D",
         "inheritance": null,
         "members": [
-          {
-            "type": "operation",
-            "name": "commit",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
           {
             "type": "attribute",
             "name": "canvas",
@@ -40284,7 +40269,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -40393,6 +40378,36 @@
               "special": "",
               "readonly": false,
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml"
+            },
+            {
+              "type": "attribute",
+              "name": "outerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HTMLString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-outerhtml"
             }
           ],
           "extAttrs": [],

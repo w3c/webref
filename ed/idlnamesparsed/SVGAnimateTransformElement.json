@@ -121,7 +121,7 @@
               "title": "HTML Standard",
               "url": "https://html.spec.whatwg.org/multipage/"
             },
-            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};"
+            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n};"
           },
           {
             "spec": {
@@ -184,7 +184,7 @@
               "title": "DOM Parsing and Serialization",
               "url": "https://www.w3.org/TR/DOM-Parsing/"
             },
-            "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};"
+            "fragment": "partial interface Element {\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};"
           },
           {
             "spec": {

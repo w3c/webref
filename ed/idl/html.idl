@@ -1580,7 +1580,6 @@ interface OffscreenCanvas : EventTarget {
 
 [Exposed=(Window,Worker)]
 interface OffscreenCanvasRenderingContext2D {
-  undefined commit();
   readonly attribute OffscreenCanvas canvas;
 };
 
@@ -2298,6 +2297,7 @@ partial interface Element {
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
+  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
 };
 
 partial interface ShadowRoot {
