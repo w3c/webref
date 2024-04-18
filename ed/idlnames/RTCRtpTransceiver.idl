@@ -7,5 +7,5 @@ interface RTCRtpTransceiver {
   attribute RTCRtpTransceiverDirection direction;
   readonly attribute RTCRtpTransceiverDirection? currentDirection;
   undefined stop();
-  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);
+  undefined setCodecPreferences(sequence<RTCRtpCodec> codecs);
 };

@@ -242,7 +242,7 @@
               "title": "DOM Standard",
               "url": "https://dom.spec.whatwg.org/"
             },
-            "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
+            "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or TrustedScript or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
             "href": "https://dom.spec.whatwg.org/#parentnode"
           },
           "extended": [],
@@ -272,7 +272,7 @@
               "title": "DOM Standard",
               "url": "https://dom.spec.whatwg.org/"
             },
-            "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
+            "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
             "href": "https://dom.spec.whatwg.org/#childnode"
           },
           "extended": [],

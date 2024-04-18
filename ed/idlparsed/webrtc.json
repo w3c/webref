@@ -3988,7 +3988,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsynchronizationsource"
       },
       "RTCRtpTransceiver": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodec> codecs);\n};",
         "type": "interface",
         "name": "RTCRtpTransceiver",
         "inheritance": null,
@@ -4132,7 +4132,7 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "RTCRtpCodecCapability"
+                      "idlType": "RTCRtpCodec"
                     }
                   ]
                 },
@@ -7296,7 +7296,7 @@
         "RTCRtpSender",
         "RTCRtpReceiver",
         "RTCRtpTransceiverDirection",
-        "RTCRtpCodecCapability"
+        "RTCRtpCodec"
       ],
       "RTCDtlsTransport": [
         "EventTarget",
