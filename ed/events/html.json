@@ -569,6 +569,7 @@
       },
       "type": "cancel",
       "targets": [
+        "CloseWatcher",
         "HTMLElement"
       ],
       "interface": "Event",
@@ -608,7 +609,9 @@
       },
       "type": "close",
       "targets": [
-        "HTMLElement"
+        "CloseWatcher",
+        "HTMLElement",
+        "MessagePort"
       ],
       "interface": "Event"
     },
