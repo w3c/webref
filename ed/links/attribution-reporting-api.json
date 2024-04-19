@@ -66,6 +66,7 @@
           "default-allowlist"
         ]
       },
+      "https://w3c.github.io/webappsec-referrer-policy/": {},
       "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webdriver/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -119,6 +120,7 @@
           "concept-request-method",
           "concept-request-url",
           "request-keepalive-flag",
+          "concept-request-referrer-policy",
           "process-response",
           "header-value",
           "concept-response-url",
@@ -197,7 +199,8 @@
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
           "htmlimageelement",
-          "the-img-element"
+          "the-img-element",
+          "attr-img-referrerpolicy"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -236,6 +239,7 @@
         "anchors": [
           "htmlscriptelement",
           "script",
+          "attr-script-referrerpolicy",
           "prepare-the-script-element",
           "attr-script-fetchpriority"
         ]
@@ -374,6 +378,11 @@
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "anchors": [
+          "referrer-policy"
         ]
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {

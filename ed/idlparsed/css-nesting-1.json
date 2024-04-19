@@ -1,0 +1,89 @@
+{
+  "spec": {
+    "title": "CSS Nesting Module",
+    "url": "https://drafts.csswg.org/css-nesting-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSNestRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSNestRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSNestRule : CSSGroupingRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
+        "type": "interface",
+        "name": "CSSNestRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleProperties"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "PutForwards",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "cssText"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-nesting-1/#dom-cssnestrule-style"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-nesting-1/#cssnestrule"
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSNestRule"
+      ]
+    },
+    "dependencies": {
+      "CSSNestRule": [
+        "CSSGroupingRule",
+        "CSSStyleProperties"
+      ]
+    },
+    "externalDependencies": [
+      "CSSGroupingRule",
+      "CSSStyleProperties"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,11 +1,13 @@
 // Source: Shared Storage API (https://wicg.github.io/shared-storage/)
 [Exposed=(Window)]
 interface WindowSharedStorage : SharedStorage {
-  Promise<any> run(DOMString name,
-                   optional SharedStorageRunOperationMethodOptions options = {});
   Promise<SharedStorageResponse> selectURL(DOMString name,
                                FrozenArray<SharedStorageUrlWithMetadata> urls,
                                optional SharedStorageRunOperationMethodOptions options = {});
+  Promise<any> run(DOMString name,
+                   optional SharedStorageRunOperationMethodOptions options = {});
+
+  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional WorkletOptions options = {});
 
   readonly attribute SharedStorageWorklet worklet;
 };

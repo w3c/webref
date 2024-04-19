@@ -2,7 +2,7 @@
 [Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]
 interface SharedStorageWorkletGlobalScope : WorkletGlobalScope {
   undefined register(DOMString name,
-                     SharedStorageOperationConstructor operationCtor);
+                     Function operationCtor);
 
   readonly attribute WorkletSharedStorage sharedStorage;
 };
