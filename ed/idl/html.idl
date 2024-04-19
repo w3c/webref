@@ -2298,6 +2298,7 @@ partial interface Element {
 
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
+  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);
 };
 
 partial interface ShadowRoot {
