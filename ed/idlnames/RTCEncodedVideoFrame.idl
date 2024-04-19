@@ -3,6 +3,7 @@
 // re-use or extend the equivalent defined in WebCodecs.
 [Exposed=(Window,DedicatedWorker), Serializable]
 interface RTCEncodedVideoFrame {
+    constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});
     readonly attribute RTCEncodedVideoFrameType type;
     attribute ArrayBuffer data;
     RTCEncodedVideoFrameMetadata getMetadata();

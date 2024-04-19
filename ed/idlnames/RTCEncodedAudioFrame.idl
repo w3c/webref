@@ -1,6 +1,7 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 [Exposed=(Window,DedicatedWorker), Serializable]
 interface RTCEncodedAudioFrame {
+    constructor(RTCEncodedAudioFrame originalFrame, optional RTCEncodedAudioFrameOptions options = {});
     attribute ArrayBuffer data;
     RTCEncodedAudioFrameMetadata getMetadata();
 };

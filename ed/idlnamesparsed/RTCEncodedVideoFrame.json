@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
+    "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe"
   },
   "extended": [],

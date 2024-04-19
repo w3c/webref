@@ -9,22 +9,20 @@
         "Window": [
           "SFrameTransform",
           "SFrameTransformErrorEvent",
+          "RTCEncodedVideoFrame",
+          "RTCEncodedAudioFrame",
           "RTCRtpScriptTransform"
         ],
         "DedicatedWorker": [
           "SFrameTransform",
           "SFrameTransformErrorEvent",
+          "RTCEncodedVideoFrame",
+          "RTCEncodedAudioFrame",
           "KeyFrameRequestEvent"
         ]
       },
       "functions": {
-        "Window": [
-          "RTCEncodedVideoFrame",
-          "RTCEncodedAudioFrame"
-        ],
         "DedicatedWorker": [
-          "RTCEncodedVideoFrame",
-          "RTCEncodedAudioFrame",
           "RTCTransformEvent",
           "RTCRtpScriptTransformer"
         ]
@@ -736,12 +734,80 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata"
       },
+      "RTCEncodedVideoFrameOptions": {
+        "fragment": "dictionary RTCEncodedVideoFrameOptions {\n    RTCEncodedVideoFrameMetadata metadata;\n};",
+        "type": "dictionary",
+        "name": "RTCEncodedVideoFrameOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "metadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCEncodedVideoFrameMetadata"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframeoptions-metadata"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframeoptions"
+      },
       "RTCEncodedVideoFrame": {
-        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
+        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedVideoFrame",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "originalFrame",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedVideoFrame"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedVideoFrameOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-rtcencodedvideoframe"
+          },
           {
             "type": "attribute",
             "name": "type",
@@ -934,12 +1000,80 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedaudioframemetadata"
       },
+      "RTCEncodedAudioFrameOptions": {
+        "fragment": "dictionary RTCEncodedAudioFrameOptions {\n    RTCEncodedAudioFrameMetadata metadata;\n};",
+        "type": "dictionary",
+        "name": "RTCEncodedAudioFrameOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "metadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCEncodedAudioFrameMetadata"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframeoptions-metadata"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedaudioframeoptions"
+      },
       "RTCEncodedAudioFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    constructor(RTCEncodedAudioFrame originalFrame, optional RTCEncodedAudioFrameOptions options = {});\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedAudioFrame",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "originalFrame",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedAudioFrame"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedAudioFrameOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-rtcencodedaudioframe"
+          },
           {
             "type": "attribute",
             "name": "data",
@@ -1556,13 +1690,23 @@
         "CryptoKeyID"
       ],
       "RTCEncodedVideoFrameMetadata": [],
+      "RTCEncodedVideoFrameOptions": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
       "RTCEncodedVideoFrame": [
+        "RTCEncodedVideoFrame",
+        "RTCEncodedVideoFrameOptions",
         "RTCEncodedVideoFrameType",
         "ArrayBuffer",
         "RTCEncodedVideoFrameMetadata"
       ],
       "RTCEncodedAudioFrameMetadata": [],
+      "RTCEncodedAudioFrameOptions": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
       "RTCEncodedAudioFrame": [
+        "RTCEncodedAudioFrame",
+        "RTCEncodedAudioFrameOptions",
         "ArrayBuffer",
         "RTCEncodedAudioFrameMetadata"
       ],

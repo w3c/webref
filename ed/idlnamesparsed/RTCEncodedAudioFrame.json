@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    constructor(RTCEncodedAudioFrame originalFrame, optional RTCEncodedAudioFrameOptions options = {});\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe"
   },
   "extended": [],
