@@ -81,9 +81,9 @@ const patches = {
       pattern: { type: /^(cut|clipboardchange|paste|copy)$/ },
       matched: 4,
       change: {
-	interface: "ClipboardEvent",
+        interface: "ClipboardEvent",
         targets: ["GlobalEventHandlers"],
-	bubbles: true
+        bubbles: true
       }
     }
   ],
@@ -183,15 +183,36 @@ const patches = {
       matched: 7,
       change: { interface: 'DragEvent', bubbles: true }
     },
+    // The "HTMLElement" base interface receives most HTML events in theory,
+    // but some of the events only fire on specific HTML elements in practice.
+    // The following updates refine the target interfaces of these events.
+    // (This is not a temporary fix: "HTMLElement" is the correct target
+    // interface from a spec perspective, that's where the event handlers are
+    // defined)
+    // Also, the "cancel" event bubbles on input elements but not on other
+    // target interfaces, so we need to duplicate the entry in the extract.
     {
       pattern: { type: "cancel"},
       matched: 1,
-      change: { targets: ["HTMLDialogElement", "HTMLInputElement"] }
+      change: { targets: ["HTMLInputElement"] }
+    },
+    {
+      add: {
+        type: "cancel",
+        interface: "Event",
+        bubbles: false,
+        targets: ["CloseWatcher", "HTMLDialogElement"],
+        href: "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
+        src: {
+          format: "summary table",
+          href: "https://html.spec.whatwg.org/multipage/indices.html#event-cancel"
+        }
+      }
     },
     {
       pattern: { type: "close"},
       matched: 1,
-      change: { targets: ["HTMLDialogElement"   ] }
+      change: { targets: ["CloseWatcher", "HTMLDialogElement", "MessagePort"] }
     },
     {
       pattern: { type: "change", targets: "HTMLElement"},
