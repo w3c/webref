@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-19T12:38:21.249Z",
+  "date": "2024-04-19T18:44:51.705Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -130,6 +130,7 @@
       "tc39-arraybuffer-transfer",
       "tc39-async-explicit-resource-management",
       "tc39-decorators",
+      "tc39-dynamic-code-brand-checks",
       "tc39-explicit-resource-management",
       "tc39-float16array",
       "tc39-import-attributes",
@@ -647,10 +648,10 @@
     ]
   },
   "stats": {
-    "crawled": 618,
-    "errors": 1
+    "crawled": 619,
+    "errors": 20
   },
-  "crawler": "reffy-15.0.2",
+  "crawler": "reffy-15.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1412,7 +1413,8 @@
       "links": "links/css-typed-om-2.json",
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
-      "ids": "ids/css-typed-om-2.json"
+      "ids": "ids/css-typed-om-2.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 14)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1462,7 +1464,8 @@
       "idl": "idl/font-metrics-api.idl",
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
-      "ids": "ids/font-metrics-api-1.json"
+      "ids": "ids/font-metrics-api-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2878,7 +2881,8 @@
       "css": "css/compositing.json",
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
-      "ids": "ids/compositing-2.json"
+      "ids": "ids/compositing-2.json",
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 39)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -2936,7 +2940,8 @@
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json"
+      "ids": "ids/filter-effects-2.json",
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runNextTicks (node:internal/process/task_queues:64:3)\n    at process.processImmediate (node:internal/timers:449:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 40)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at runNextTicks (node:internal/process/task_queues:64:3)\n      at process.processImmediate (node:internal/timers:449:9)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -4366,9 +4371,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl"
     },
@@ -4416,9 +4421,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl"
     },
@@ -4466,9 +4471,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl"
     },
@@ -4516,9 +4521,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl"
     },
@@ -4566,9 +4571,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl"
     },
@@ -4616,9 +4621,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl"
     },
@@ -4666,9 +4671,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl"
     },
@@ -4716,9 +4721,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl"
     },
@@ -4766,9 +4771,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl"
     },
@@ -4816,9 +4821,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl"
     },
@@ -4866,9 +4871,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl"
     },
@@ -4916,9 +4921,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl"
     },
@@ -4966,9 +4971,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl"
     },
@@ -5016,9 +5021,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl"
     },
@@ -5066,9 +5071,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl"
     },
@@ -5116,9 +5121,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl"
     },
@@ -5166,9 +5171,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl"
     },
@@ -5216,9 +5221,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl"
     },
@@ -5266,9 +5271,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl"
     },
@@ -5316,9 +5321,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl"
     },
@@ -5366,9 +5371,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl"
     },
@@ -5416,9 +5421,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl"
     },
@@ -5466,9 +5471,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl"
     },
@@ -5516,9 +5521,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl"
     },
@@ -5566,9 +5571,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl"
     },
@@ -5616,9 +5621,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl"
     },
@@ -5666,9 +5671,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_clip_cull_distance.json",
       "idl": "idl/WEBGL_clip_cull_distance.idl"
     },
@@ -5716,9 +5721,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl"
     },
@@ -5766,9 +5771,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl"
     },
@@ -5816,9 +5821,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl"
     },
@@ -5866,9 +5871,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl"
     },
@@ -5916,9 +5921,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl"
     },
@@ -5966,9 +5971,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl"
     },
@@ -6016,9 +6021,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl"
     },
@@ -6066,9 +6071,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl"
     },
@@ -6116,9 +6121,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl"
     },
@@ -6166,9 +6171,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl"
     },
@@ -6216,9 +6221,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl"
     },
@@ -6266,9 +6271,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -6316,9 +6321,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl"
     },
@@ -6366,9 +6371,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -6416,9 +6421,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:30 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl"
     },
@@ -6466,9 +6471,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 17:06:31 GMT"
+        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/WEBGL_provoking_vertex.json",
       "idl": "idl/WEBGL_provoking_vertex.idl"
     },
@@ -7272,6 +7277,51 @@
       "ids": "ids/tc39-decorators.json"
     },
     {
+      "url": "https://tc39.es/proposal-dynamic-code-brand-checks/",
+      "seriesComposition": "full",
+      "shortname": "tc39-dynamic-code-brand-checks",
+      "series": {
+        "shortname": "tc39-dynamic-code-brand-checks",
+        "currentSpecification": "tc39-dynamic-code-brand-checks",
+        "title": "Dynamic Code Brand Checks",
+        "shortTitle": "Dynamic Code Brand Checks",
+        "nightlyUrl": "https://tc39.es/proposal-dynamic-code-brand-checks/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-dynamic-code-brand-checks/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-dynamic-code-brand-checks",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Dynamic Code Brand Checks",
+      "source": "spec",
+      "shortTitle": "Dynamic Code Brand Checks",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-dynamic-code-brand-checks/"
+      ],
+      "crawled": "https://tc39.es/proposal-dynamic-code-brand-checks/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 17 Apr 2024 10:24:33 GMT"
+      },
+      "date": "17 April 2024",
+      "links": "links/tc39-dynamic-code-brand-checks.json",
+      "headings": "headings/tc39-dynamic-code-brand-checks.json",
+      "ids": "ids/tc39-dynamic-code-brand-checks.json"
+    },
+    {
       "url": "https://tc39.es/proposal-explicit-resource-management/",
       "seriesComposition": "full",
       "shortname": "tc39-explicit-resource-management",
@@ -7805,9 +7855,9 @@
       ],
       "crawled": "https://tc39.es/proposal-shadowrealm/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Feb 2024 17:58:34 GMT"
+        "lastModified": "Fri, 19 Apr 2024 17:21:00 GMT"
       },
-      "date": "16 February 2024",
+      "date": "19 April 2024",
       "links": "links/tc39-shadowrealm.json",
       "dfns": "dfns/tc39-shadowrealm.json",
       "headings": "headings/tc39-shadowrealm.json",
@@ -8098,11 +8148,11 @@
       ],
       "crawled": "https://urlpattern.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Mar 2024 13:47:01 GMT"
+        "lastModified": "Fri, 19 Apr 2024 14:42:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 March 2024",
-      "revision": "39214eaa719a2ae41dc0733775d61fa7539aea7e",
+      "date": "19 April 2024",
+      "revision": "d13ebead18003059a83ca4a25240e5cafc066c4c",
       "links": "links/urlpattern.json",
       "refs": "refs/urlpattern.json",
       "idl": "idl/urlpattern.idl",
@@ -8262,7 +8312,8 @@
       "idl": "idl/gamepad-extensions.idl",
       "dfns": "dfns/gamepad-extensions.json",
       "headings": "headings/gamepad-extensions.json",
-      "ids": "ids/gamepad-extensions.json"
+      "ids": "ids/gamepad-extensions.json",
+      "error": "Error: Respec generation took too long\nisReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):20:27)\nisReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:27)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\nasync isReady (pptr:evaluate;processSpecification%20(%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A605%3A20):30:21)\n    at isReady (evaluate at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:605:20), <anonymous>:29:26)\n    at #evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/ExecutionContext.js:222:56)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/ExecutionContext.js:117:16)\n    at async IsolatedWorld.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/IsolatedWorld.js:124:16)\n    at async CdpFrame.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:342:20)\n    at async CdpPage.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:828:20)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:605:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 145)"
     },
     {
       "url": "https://w3c.github.io/long-animation-frames/",
@@ -8302,7 +8353,7 @@
       ],
       "crawled": "https://w3c.github.io/long-animation-frames/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Apr 2024 14:21:51 GMT"
+        "lastModified": "Tue, 16 Apr 2024 14:21:50 GMT"
       },
       "generator": "bikeshed",
       "date": "16 April 2024",
@@ -8601,7 +8652,7 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 13:20:21 GMT"
+        "lastModified": "Fri, 19 Apr 2024 15:37:57 GMT"
       },
       "generator": "respec",
       "date": "21 September 2023",
@@ -9107,7 +9158,7 @@
       ],
       "crawled": "https://webassembly.github.io/exception-handling/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 18:21:42 GMT"
+        "lastModified": "Thu, 11 Apr 2024 18:21:41 GMT"
       },
       "generator": "bikeshed",
       "date": "11 April 2024",
@@ -14070,11 +14121,11 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Feb 2024 12:27:45 GMT"
+        "lastModified": "Fri, 19 Apr 2024 12:50:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 February 2024",
-      "revision": "50c7664efe1e3647f58d83a32593705d164aa1ce",
+      "date": "19 April 2024",
+      "revision": "225cd5b94ef64492b9425cfa915864d5086a7303",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "events": "events/webpackage.json",
@@ -14312,9 +14363,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 19:39:58 GMT"
+        "lastModified": "Thu, 18 Apr 2024 20:36:58 GMT"
       },
-      "date": "11 April 2024",
+      "date": "18 April 2024",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -14637,9 +14688,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 20:05:39 GMT"
+        "lastModified": "Thu, 18 Apr 2024 21:54:16 GMT"
       },
-      "date": "11 April 2024",
+      "date": "18 April 2024",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -14727,9 +14778,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 06:32:11 GMT"
+        "lastModified": "Thu, 18 Apr 2024 21:37:24 GMT"
       },
-      "date": "19 April 2024",
+      "date": "18 April 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -14772,9 +14823,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 20:05:31 GMT"
+        "lastModified": "Thu, 18 Apr 2024 20:33:10 GMT"
       },
-      "date": "11 April 2024",
+      "date": "18 April 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -15262,9 +15313,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 21:53:21 GMT"
+        "lastModified": "Thu, 18 Apr 2024 21:13:54 GMT"
       },
-      "date": "11 April 2024",
+      "date": "18 April 2024",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -15609,9 +15660,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 21:58:29 GMT"
+        "lastModified": "Fri, 19 Apr 2024 07:52:23 GMT"
       },
-      "date": "11 April 2024",
+      "date": "19 April 2024",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -15970,7 +16021,7 @@
       ],
       "crawled": "https://w3c.github.io/accname/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 11:29:39 GMT"
+        "lastModified": "Wed, 03 Apr 2024 11:29:38 GMT"
       },
       "generator": "respec",
       "date": "03 April 2024",
@@ -16766,7 +16817,8 @@
       "refs": "refs/compositing-1.json",
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
-      "ids": "ids/compositing-1.json"
+      "ids": "ids/compositing-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 309)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -17452,7 +17504,8 @@
       "idl": "idl/css-animation-worklet.idl",
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
-      "ids": "ids/css-animation-worklet-1.json"
+      "ids": "ids/css-animation-worklet-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 320)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -19950,7 +20003,8 @@
       "css": "css/css-layout-api.json",
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
-      "ids": "ids/css-layout-api-1.json"
+      "ids": "ids/css-layout-api-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 357)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -20211,7 +20265,8 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json"
+      "ids": "ids/css-masking-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 361)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -20866,7 +20921,8 @@
       "css": "css/css-paint-api.json",
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
-      "ids": "ids/css-paint-api-1.json"
+      "ids": "ids/css-paint-api-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 371)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -20998,7 +21054,8 @@
       "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
-      "ids": "ids/css-properties-values-api-1.json"
+      "ids": "ids/css-properties-values-api-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 373)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -21992,7 +22049,8 @@
       "refs": "refs/css-style-attr.json",
       "dfns": "dfns/css-style-attr.json",
       "headings": "headings/css-style-attr.json",
-      "ids": "ids/css-style-attr.json"
+      "ids": "ids/css-style-attr.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-style-attr/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 388)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 388)\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-syntax-3/",
@@ -22734,7 +22792,8 @@
       "idl": "idl/css-typed-om.idl",
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
-      "ids": "ids/css-typed-om-1.json"
+      "ids": "ids/css-typed-om-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 399)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -23204,7 +23263,8 @@
       "css": "css/css-viewport.json",
       "dfns": "dfns/css-viewport-1.json",
       "headings": "headings/css-viewport-1.json",
-      "ids": "ids/css-viewport-1.json"
+      "ids": "ids/css-viewport-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-viewport-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -24602,7 +24662,8 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json"
+      "ids": "ids/fill-stroke-3.json",
+      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 427)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -24668,7 +24729,8 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json"
+      "ids": "ids/filter-effects-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 428)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -25040,7 +25102,8 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json"
+      "ids": "ids/geometry-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 434)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -27451,7 +27514,8 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json"
+      "ids": "ids/motion-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 474)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -28035,6 +28099,10 @@
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
+        },
+        {
+          "name": "Web Applications Working Group",
+          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -30085,6 +30153,10 @@
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
+        },
+        {
+          "name": "Web Applications Working Group",
+          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -30449,7 +30521,8 @@
       "refs": "refs/selectors-3.json",
       "dfns": "dfns/selectors-3.json",
       "headings": "headings/selectors-3.json",
-      "ids": "ids/selectors-3.json"
+      "ids": "ids/selectors-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/selectors-3/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 524)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 524)\n}"
     },
     {
       "url": "https://www.w3.org/TR/selectors-4/",
@@ -31671,7 +31744,8 @@
       "dfns": "dfns/SVG2.json",
       "elements": "elements/SVG2.json",
       "headings": "headings/SVG2.json",
-      "ids": "ids/SVG2.json"
+      "ids": "ids/SVG2.json",
+      "error": "Error: Loading https://svgwg.org/svg2-draft/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 543)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 543)\n}"
     },
     {
       "url": "https://www.w3.org/TR/test-methodology/",
@@ -32306,7 +32380,7 @@
       ],
       "crawled": "https://w3c.github.io/vc-data-model/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Apr 2024 14:50:54 GMT"
+        "lastModified": "Tue, 16 Apr 2024 14:50:53 GMT"
       },
       "generator": "respec",
       "date": "16 April 2024",
@@ -32563,8 +32637,7 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json",
-      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 557)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
+      "ids": "ids/wai-aria-1.3.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
