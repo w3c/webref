@@ -433,6 +433,7 @@
         "GlobalEventHandlers",
         "Text"
       ],
+      "cancelable": true,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -447,6 +448,7 @@
         "GlobalEventHandlers",
         "Text"
       ],
+      "cancelable": true,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -460,6 +462,7 @@
       "targets": [
         "GlobalEventHandlers"
       ],
+      "cancelable": true,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -473,6 +476,7 @@
       "targets": [
         "GlobalEventHandlers"
       ],
+      "cancelable": false,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -486,6 +490,7 @@
       "targets": [
         "GlobalEventHandlers"
       ],
+      "cancelable": true,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -499,6 +504,7 @@
       "targets": [
         "GlobalEventHandlers"
       ],
+      "cancelable": true,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -513,6 +519,7 @@
         "GlobalEventHandlers",
         "Text"
       ],
+      "cancelable": false,
       "interface": "DragEvent",
       "bubbles": true
     },
@@ -575,7 +582,8 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "ToggleEvent"
+      "interface": "ToggleEvent",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload",
@@ -587,7 +595,8 @@
       "targets": [
         "Window"
       ],
-      "interface": "BeforeUnloadEvent"
+      "interface": "BeforeUnloadEvent",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-blur",
@@ -614,7 +623,8 @@
         "HTMLInputElement"
       ],
       "interface": "Event",
-      "bubbles": true
+      "bubbles": true,
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-change",
@@ -678,7 +688,8 @@
         "HTMLCanvasElement",
         "OffscreenCanvas"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
@@ -733,7 +744,8 @@
         "SharedWorker",
         "AbstractWorker"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-focus",
@@ -800,7 +812,8 @@
         "HTMLSelectElement",
         "HTMLTextAreaElement"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-languagechange",
@@ -1048,7 +1061,8 @@
         "HTMLFormElement"
       ],
       "interface": "Event",
-      "bubbles": true
+      "bubbles": true,
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
@@ -1087,7 +1101,8 @@
         "HTMLFormElement"
       ],
       "interface": "SubmitEvent",
-      "bubbles": true
+      "bubbles": true,
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
@@ -1112,7 +1127,8 @@
         "Window",
         "WorkerGlobalScope"
       ],
-      "interface": "PromiseRejectionEvent"
+      "interface": "PromiseRejectionEvent",
+      "cancelable": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unload",

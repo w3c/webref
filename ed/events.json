@@ -76,6 +76,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "Event"
   },
   {
@@ -245,7 +246,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationcancel"
+    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationcancel",
+    "cancelable": false
   },
   {
     "type": "animationend",
@@ -282,7 +284,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationend"
+    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationend",
+    "cancelable": false
   },
   {
     "type": "animationiteration",
@@ -319,7 +322,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationiteration"
+    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationiteration",
+    "cancelable": false
   },
   {
     "type": "animationstart",
@@ -356,7 +360,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationstart"
+    "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationstart",
+    "cancelable": false
   },
   {
     "src": {
@@ -429,6 +434,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -516,6 +522,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "InputEvent"
   },
   {
@@ -526,6 +533,7 @@
     "href": "https://wicg.github.io/manifest-incubations/#installation-prompts",
     "type": "beforeinstallprompt",
     "interface": "BeforeInstallPromptEvent",
+    "cancelable": true,
     "targets": [
       {
         "target": "Window"
@@ -574,7 +582,8 @@
         "bubbles": false
       }
     ],
-    "interface": "ToggleEvent"
+    "interface": "ToggleEvent",
+    "cancelable": true
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload",
@@ -588,7 +597,8 @@
         "target": "Window"
       }
     ],
-    "interface": "BeforeUnloadEvent"
+    "interface": "BeforeUnloadEvent",
+    "cancelable": true
   },
   {
     "src": {
@@ -626,7 +636,8 @@
         ]
       }
     ],
-    "interface": "XRSessionEvent"
+    "interface": "XRSessionEvent",
+    "cancelable": true
   },
   {
     "type": "begin",
@@ -685,6 +696,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -767,7 +779,8 @@
         ]
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "src": {
@@ -844,7 +857,8 @@
         "target": "CaptureController"
       }
     ],
-    "interface": "CapturedMouseEvent"
+    "interface": "CapturedMouseEvent",
+    "cancelable": false
   },
   {
     "src": {
@@ -1123,7 +1137,8 @@
         "target": "Notification"
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "href": "https://w3c.github.io/uievents/#click",
@@ -1143,6 +1158,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent",
     "extendedIn": [
       {
@@ -1272,7 +1288,8 @@
         "target": "PresentationConnection"
       }
     ],
-    "interface": "PresentationConnectionCloseEvent"
+    "interface": "PresentationConnectionCloseEvent",
+    "cancelable": false
   },
   {
     "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-closing",
@@ -1338,6 +1355,7 @@
         "target": "EditContext"
       }
     ],
+    "cancelable": false,
     "interface": "CompositionEvent",
     "extendedIn": [
       {
@@ -1367,6 +1385,7 @@
         "target": "EditContext"
       }
     ],
+    "cancelable": true,
     "interface": "CompositionEvent",
     "extendedIn": [
       {
@@ -1393,6 +1412,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "CompositionEvent"
   },
   {
@@ -1495,7 +1515,8 @@
         "target": "RemotePlayback"
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "src": {
@@ -1512,7 +1533,8 @@
         "target": "PresentationConnectionList"
       }
     ],
-    "interface": "PresentationConnectionAvailableEvent"
+    "interface": "PresentationConnectionAvailableEvent",
+    "cancelable": false
   },
   {
     "href": "https://w3c.github.io/webrtc-pc/#event-connectionstatechange",
@@ -1573,7 +1595,8 @@
         "bubbles": false
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "href": "https://w3c.github.io/uievents/#contextmenu",
@@ -1593,6 +1616,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -1809,6 +1833,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MouseEvent"
   },
   {
@@ -2035,6 +2060,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "UIEvent"
   },
   {
@@ -2055,6 +2081,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2093,6 +2120,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2131,6 +2159,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -2151,6 +2180,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -2216,6 +2246,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2251,6 +2282,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2316,6 +2348,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2351,6 +2384,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2389,6 +2423,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "MutationEvent"
   },
   {
@@ -2436,6 +2471,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "DragEvent"
   },
   {
@@ -2483,6 +2519,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "DragEvent"
   },
   {
@@ -2521,6 +2558,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "DragEvent"
   },
   {
@@ -2559,6 +2597,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "DragEvent"
   },
   {
@@ -2597,6 +2636,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "DragEvent"
   },
   {
@@ -2644,6 +2684,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "DragEvent"
   },
   {
@@ -2682,6 +2723,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "DragEvent"
   },
   {
@@ -2940,6 +2982,7 @@
       }
     ],
     "interface": "Event",
+    "cancelable": true,
     "extendedIn": [
       {
         "spec": "webpackage",
@@ -3023,7 +3066,8 @@
         ]
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "href": "https://w3c.github.io/media-source/#dfn-error",
@@ -3055,6 +3099,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "Event"
   },
   {
@@ -3251,6 +3296,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -3271,6 +3317,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -3291,6 +3338,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "FocusEvent"
   },
   {
@@ -3512,6 +3560,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent"
   },
   {
@@ -3630,6 +3679,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "InputEvent",
     "extendedIn": [
       {
@@ -3705,7 +3755,8 @@
         "bubbles": false
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "href": "https://w3c.github.io/webrtc-identity/#event-isolationchange",
@@ -3739,6 +3790,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "KeyboardEvent"
   },
   {
@@ -3753,7 +3805,8 @@
         "target": "RTCRtpScriptTransformer"
       }
     ],
-    "interface": "KeyFrameRequestEvent"
+    "interface": "KeyFrameRequestEvent",
+    "cancelable": true
   },
   {
     "href": "https://w3c.github.io/uievents/#keypress",
@@ -3773,6 +3826,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "KeyboardEvent"
   },
   {
@@ -3807,6 +3861,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "KeyboardEvent"
   },
   {
@@ -3931,6 +3986,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "Event"
   },
   {
@@ -4137,6 +4193,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent"
   },
   {
@@ -4423,6 +4480,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "MouseEvent"
   },
   {
@@ -4438,6 +4496,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "MouseEvent"
   },
   {
@@ -4453,6 +4512,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "MouseEvent"
   },
   {
@@ -4473,6 +4533,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "MouseEvent"
   },
   {
@@ -4493,6 +4554,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "MouseEvent"
   },
   {
@@ -4513,6 +4575,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "MouseEvent"
   },
   {
@@ -4533,6 +4596,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "MouseEvent"
   },
   {
@@ -4552,6 +4616,7 @@
   {
     "type": "navbeforefocus",
     "interface": "NavigationEvent",
+    "cancelable": true,
     "src": {
       "format": "css definition table"
     },
@@ -4612,6 +4677,7 @@
   {
     "type": "navnotarget",
     "interface": "NavigationEvent",
+    "cancelable": true,
     "src": {
       "format": "css definition table"
     },
@@ -5036,6 +5102,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent",
     "extendedIn": [
       {
@@ -5080,6 +5147,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -5110,6 +5178,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent"
   },
   {
@@ -5140,6 +5209,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent"
   },
   {
@@ -5206,6 +5276,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -5244,6 +5315,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -5282,6 +5354,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -5320,6 +5393,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "PointerEvent"
   },
   {
@@ -5358,6 +5432,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "PointerEvent"
   },
   {
@@ -5757,7 +5832,8 @@
         ]
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "src": {
@@ -6056,6 +6132,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "Event"
   },
   {
@@ -6128,7 +6205,8 @@
         "bubbles": false
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": false
   },
   {
     "src": {
@@ -6166,7 +6244,8 @@
         ]
       }
     ],
-    "interface": "Event"
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "src": {
@@ -6651,7 +6730,8 @@
         ]
       }
     ],
-    "interface": "SubmitEvent"
+    "interface": "SubmitEvent",
+    "cancelable": true
   },
   {
     "src": {
@@ -6761,6 +6841,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "TextEvent"
   },
   {
@@ -6853,6 +6934,7 @@
         ]
       }
     ],
+    "cancelable": false,
     "interface": "TouchEvent"
   },
   {
@@ -6873,6 +6955,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "TouchEvent"
   },
   {
@@ -6893,6 +6976,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "TouchEvent"
   },
   {
@@ -6913,6 +6997,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "TouchEvent"
   },
   {
@@ -6964,7 +7049,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-transitions-1/#transitioncancel"
+    "href": "https://drafts.csswg.org/css-transitions-1/#transitioncancel",
+    "cancelable": false
   },
   {
     "type": "transitionend",
@@ -7001,7 +7087,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-transitions-1/#transitionend"
+    "href": "https://drafts.csswg.org/css-transitions-1/#transitionend",
+    "cancelable": false
   },
   {
     "type": "transitionrun",
@@ -7038,7 +7125,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-transitions-1/#transitionrun"
+    "href": "https://drafts.csswg.org/css-transitions-1/#transitionrun",
+    "cancelable": false
   },
   {
     "type": "transitionstart",
@@ -7075,7 +7163,8 @@
     "src": {
       "format": "IDL eventHandler"
     },
-    "href": "https://drafts.csswg.org/css-transitions-1/#transitionstart"
+    "href": "https://drafts.csswg.org/css-transitions-1/#transitionstart",
+    "cancelable": false
   },
   {
     "src": {
@@ -7106,7 +7195,8 @@
         "target": "WorkerGlobalScope"
       }
     ],
-    "interface": "PromiseRejectionEvent"
+    "interface": "PromiseRejectionEvent",
+    "cancelable": true
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unload",
@@ -7142,6 +7232,7 @@
         "bubbles": false
       }
     ],
+    "cancelable": false,
     "interface": "Event"
   },
   {
@@ -7408,6 +7499,7 @@
         ]
       }
     ],
+    "cancelable": true,
     "interface": "WheelEvent"
   }
 ]
