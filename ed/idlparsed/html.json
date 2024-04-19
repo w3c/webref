@@ -40269,7 +40269,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -40408,6 +40408,62 @@
               "special": "",
               "readonly": false,
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-outerhtml"
+            },
+            {
+              "type": "operation",
+              "name": "insertAdjacentHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "position",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "string",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "HTMLString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-insertadjacenthtml"
             }
           ],
           "extAttrs": [],

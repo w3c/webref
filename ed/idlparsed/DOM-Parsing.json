@@ -75,74 +75,6 @@
       }
     },
     "idlExtendedNames": {
-      "Element": [
-        {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);\n};",
-          "type": "interface",
-          "name": "Element",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "insertAdjacentHTML",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "position",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "text",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "HTMLString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "href": "https://w3c.github.io/DOM-Parsing/#dom-element-insertadjacenthtml"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "Range": [
         {
           "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);\n};",
@@ -212,9 +144,6 @@
       "XMLSerializer": [
         "Node"
       ],
-      "Element": [
-        "HTMLString"
-      ],
       "Range": [
         "DocumentFragment",
         "HTMLString"
@@ -222,10 +151,9 @@
     },
     "externalDependencies": [
       "Node",
-      "Element",
-      "HTMLString",
       "Range",
-      "DocumentFragment"
+      "DocumentFragment",
+      "HTMLString"
     ],
     "hasObsoleteIdl": false
   }

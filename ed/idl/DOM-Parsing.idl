@@ -9,10 +9,6 @@ interface XMLSerializer {
   DOMString serializeToString(Node root);
 };
 
-partial interface Element {
-  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);
-};
-
 partial interface Range {
   [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);
 };

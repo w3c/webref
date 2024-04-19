@@ -72,6 +72,7 @@ partial interface Element {
 
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
   [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
+  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);
 };
 
 // Source: Element Timing API (https://wicg.github.io/element-timing/)
@@ -132,11 +133,6 @@ partial interface Element {
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 // like Range
 Element includes GeometryUtils;
-
-// Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
-partial interface Element {
-  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString text);
-};
 
 // Source: Pointer Events (https://www.w3.org/TR/pointerevents3/)
 partial interface Element {
