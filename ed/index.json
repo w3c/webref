@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-19T18:44:51.705Z",
+  "date": "2024-04-20T00:46:10.797Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 20
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -2931,17 +2931,16 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Mar 2024 00:56:02 GMT"
+        "lastModified": "Fri, 19 Apr 2024 23:58:37 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 March 2024",
+      "date": "11 March 2024",
       "links": "links/filter-effects-2.json",
       "refs": "refs/filter-effects-2.json",
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runNextTicks (node:internal/process/task_queues:64:3)\n    at process.processImmediate (node:internal/timers:449:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 40)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at runNextTicks (node:internal/process/task_queues:64:3)\n      at process.processImmediate (node:internal/timers:449:9)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "ids": "ids/filter-effects-2.json"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -3513,10 +3512,10 @@
       ],
       "crawled": "https://immersive-web.github.io/model-element/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Jun 2023 12:56:26 GMT"
+        "lastModified": "Fri, 19 Apr 2024 23:10:52 GMT"
       },
       "generator": "respec",
-      "date": "05 June 2023",
+      "date": "19 April 2024",
       "links": "links/model-element.json",
       "refs": "refs/model-element.json",
       "idl": "idl/model-element.idl",
@@ -4371,9 +4370,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl"
     },
@@ -4421,9 +4420,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl"
     },
@@ -4471,9 +4470,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl"
     },
@@ -4521,9 +4520,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl"
     },
@@ -4571,9 +4570,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl"
     },
@@ -4621,9 +4620,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl"
     },
@@ -4671,9 +4670,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl"
     },
@@ -4721,9 +4720,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl"
     },
@@ -4771,9 +4770,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl"
     },
@@ -4821,9 +4820,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl"
     },
@@ -4871,9 +4870,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl"
     },
@@ -4921,9 +4920,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl"
     },
@@ -4971,9 +4970,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:40 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl"
     },
@@ -5021,9 +5020,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl"
     },
@@ -5071,9 +5070,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl"
     },
@@ -5121,9 +5120,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl"
     },
@@ -5171,9 +5170,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl"
     },
@@ -5221,9 +5220,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl"
     },
@@ -5271,9 +5270,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl"
     },
@@ -5321,9 +5320,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl"
     },
@@ -5371,9 +5370,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl"
     },
@@ -5421,9 +5420,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl"
     },
@@ -5471,9 +5470,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl"
     },
@@ -5521,9 +5520,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl"
     },
@@ -5571,9 +5570,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl"
     },
@@ -5621,9 +5620,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl"
     },
@@ -5671,9 +5670,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_clip_cull_distance.json",
       "idl": "idl/WEBGL_clip_cull_distance.idl"
     },
@@ -5721,9 +5720,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl"
     },
@@ -5771,9 +5770,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl"
     },
@@ -5821,9 +5820,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl"
     },
@@ -5871,9 +5870,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl"
     },
@@ -5921,9 +5920,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl"
     },
@@ -5971,9 +5970,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl"
     },
@@ -6021,9 +6020,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl"
     },
@@ -6071,9 +6070,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:37 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl"
     },
@@ -6121,9 +6120,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl"
     },
@@ -6171,9 +6170,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl"
     },
@@ -6221,9 +6220,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl"
     },
@@ -6271,9 +6270,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -6321,9 +6320,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl"
     },
@@ -6371,9 +6370,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -6421,9 +6420,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl"
     },
@@ -6471,9 +6470,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 18:31:41 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:38 GMT"
       },
-      "date": "19 April 2024",
+      "date": "20 April 2024",
       "links": "links/WEBGL_provoking_vertex.json",
       "idl": "idl/WEBGL_provoking_vertex.idl"
     },
@@ -6522,9 +6521,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/specs/latest/1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Feb 2024 19:31:55 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:17:36 GMT"
       },
-      "date": "22 February 2024",
+      "date": "20 April 2024",
       "links": "links/webgl1.json",
       "refs": "refs/webgl1.json",
       "idl": "idl/webgl1.idl",
@@ -8353,7 +8352,7 @@
       ],
       "crawled": "https://w3c.github.io/long-animation-frames/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Apr 2024 14:21:50 GMT"
+        "lastModified": "Tue, 16 Apr 2024 14:21:51 GMT"
       },
       "generator": "bikeshed",
       "date": "16 April 2024",
@@ -9158,7 +9157,7 @@
       ],
       "crawled": "https://webassembly.github.io/exception-handling/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Apr 2024 18:21:41 GMT"
+        "lastModified": "Thu, 11 Apr 2024 18:21:42 GMT"
       },
       "generator": "bikeshed",
       "date": "11 April 2024",
@@ -11155,11 +11154,11 @@
       ],
       "crawled": "https://wicg.github.io/fenced-frame/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Apr 2024 13:46:13 GMT"
+        "lastModified": "Fri, 19 Apr 2024 22:01:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "16 April 2024",
-      "revision": "72faa40181bd227988d2e3ca6521808205d36a12",
+      "date": "19 April 2024",
+      "revision": "e5a4cdf18185c29710d342873452e3659b522c35",
       "links": "links/fenced-frame.json",
       "refs": "refs/fenced-frame.json",
       "idl": "idl/fenced-frame.idl",
@@ -16021,7 +16020,7 @@
       ],
       "crawled": "https://w3c.github.io/accname/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Apr 2024 11:29:38 GMT"
+        "lastModified": "Wed, 03 Apr 2024 11:29:39 GMT"
       },
       "generator": "respec",
       "date": "03 April 2024",
@@ -21044,18 +21043,17 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 4 Apr 2024 18:28:24 GMT"
+        "lastModified": "Sat, 20 Apr 2024 00:16:41 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 August 2023",
+      "date": "4 April 2024",
       "links": "links/css-properties-values-api-1.json",
       "refs": "refs/css-properties-values-api-1.json",
       "idl": "idl/css-properties-values-api.idl",
       "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
-      "ids": "ids/css-properties-values-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 373)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "ids": "ids/css-properties-values-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -24653,7 +24651,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Mar 2024 00:56:02 GMT"
+        "lastModified": "Fri, 19 Apr 2024 23:58:35 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -24662,8 +24660,7 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json",
-      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 427)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "ids": "ids/fill-stroke-3.json"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -32637,7 +32634,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 558)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
@@ -33280,11 +33278,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-aac-codec-registration.json",
       "refs": "refs/webcodecs-aac-codec-registration.json",
       "idl": "idl/webcodecs-aac-codec-registration.idl",
@@ -33337,11 +33335,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-alaw-codec-registration.json",
       "refs": "refs/webcodecs-alaw-codec-registration.json",
       "headings": "headings/webcodecs-alaw-codec-registration.json",
@@ -33392,11 +33390,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-av1-codec-registration.json",
       "refs": "refs/webcodecs-av1-codec-registration.json",
       "idl": "idl/webcodecs-av1-codec-registration.idl",
@@ -33449,11 +33447,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-avc-codec-registration.json",
       "refs": "refs/webcodecs-avc-codec-registration.json",
       "idl": "idl/webcodecs-avc-codec-registration.idl",
@@ -33506,11 +33504,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/codec_registry.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-codec-registry.json",
       "refs": "refs/webcodecs-codec-registry.json",
       "headings": "headings/webcodecs-codec-registry.json",
@@ -33561,11 +33559,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-flac-codec-registration.json",
       "refs": "refs/webcodecs-flac-codec-registration.json",
       "idl": "idl/webcodecs-flac-codec-registration.idl",
@@ -33618,11 +33616,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-hevc-codec-registration.json",
       "refs": "refs/webcodecs-hevc-codec-registration.json",
       "idl": "idl/webcodecs-hevc-codec-registration.idl",
@@ -33675,11 +33673,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-mp3-codec-registration.json",
       "refs": "refs/webcodecs-mp3-codec-registration.json",
       "headings": "headings/webcodecs-mp3-codec-registration.json",
@@ -33730,11 +33728,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-opus-codec-registration.json",
       "refs": "refs/webcodecs-opus-codec-registration.json",
       "idl": "idl/webcodecs-opus-codec-registration.idl",
@@ -33787,11 +33785,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-pcm-codec-registration.json",
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
@@ -33842,11 +33840,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-ulaw-codec-registration.json",
       "refs": "refs/webcodecs-ulaw-codec-registration.json",
       "headings": "headings/webcodecs-ulaw-codec-registration.json",
@@ -33897,11 +33895,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-vorbis-codec-registration.json",
       "refs": "refs/webcodecs-vorbis-codec-registration.json",
       "headings": "headings/webcodecs-vorbis-codec-registration.json",
@@ -33952,11 +33950,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vp8_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-vp8-codec-registration.json",
       "refs": "refs/webcodecs-vp8-codec-registration.json",
       "headings": "headings/webcodecs-vp8-codec-registration.json",
@@ -34007,11 +34005,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs-vp9-codec-registration.json",
       "refs": "refs/webcodecs-vp9-codec-registration.json",
       "idl": "idl/webcodecs-vp9-codec-registration.idl",
@@ -34070,11 +34068,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Apr 2024 23:34:08 GMT"
+        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 April 2024",
-      "revision": "871ccb3e6ae334542f89e7ecbb0765899277a27f",
+      "date": "19 April 2024",
+      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "events": "events/webcodecs.json",
