@@ -1,6 +1,6 @@
-From 9c0cb70f7eef8ba7276393ee06a05a4cd643b082 Mon Sep 17 00:00:00 2001
+From c72b6be06992722d6ea75c9f0a161ef873f7b6fd Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Wed, 31 Jan 2024 10:09:58 +0100
+Date: Mon, 22 Apr 2024 07:39:29 +0200
 Subject: [PATCH] Patch not-yet-up-to-date fill-stroke spec properties
 
 The "<'background'> with modifications" value for the `fill` and `stroke`
@@ -17,7 +17,7 @@ https://github.com/w3c/csswg-drafts/issues/3057
  1 file changed, 3 insertions(+), 35 deletions(-)
 
 diff --git a/ed/css/fill-stroke.json b/ed/css/fill-stroke.json
-index e2a059e70..3aeb1452d 100644
+index f92b290ff..1a9c601fa 100644
 --- a/ed/css/fill-stroke.json
 +++ b/ed/css/fill-stroke.json
 @@ -200,22 +200,6 @@
@@ -34,8 +34,8 @@ index e2a059e70..3aeb1452d 100644
 -      "percentages": "N/A",
 -      "computedValue": "See individual properties",
 -      "canonicalOrder": "per grammar",
+-      "animationType": "See individual properties",
 -      "media": "visual",
--      "animatable": "See individual properties",
 -      "styleDeclaration": [
 -        "fill"
 -      ]
@@ -84,8 +84,8 @@ index e2a059e70..3aeb1452d 100644
 -      "percentages": "N/A",
 -      "computedValue": "See individual properties",
 -      "canonicalOrder": "per grammar",
+-      "animationType": "See individual properties",
 -      "media": "visual",
--      "animatable": "See individual properties",
 -      "styleDeclaration": [
 -        "stroke"
 -      ]
@@ -94,5 +94,5 @@ index e2a059e70..3aeb1452d 100644
        "name": "stroke-opacity",
        "href": "https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-opacity",
 -- 
-2.42.0.windows.2
+2.37.1.windows.1
 
