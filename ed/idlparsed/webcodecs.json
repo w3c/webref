@@ -4601,7 +4601,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-videoframemetadata"
       },
       "VideoFrameCopyToOptions": {
-        "fragment": "dictionary VideoFrameCopyToOptions {\n  DOMRectInit rect;\n  sequence<PlaneLayout> layout;\n};",
+        "fragment": "dictionary VideoFrameCopyToOptions {\n  DOMRectInit rect;\n  sequence<PlaneLayout> layout;\n  VideoPixelFormat format;\n  PredefinedColorSpace colorSpace;\n};",
         "type": "dictionary",
         "name": "VideoFrameCopyToOptions",
         "inheritance": null,
@@ -4646,6 +4646,38 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-layout"
+          },
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoPixelFormat"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-format"
+          },
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PredefinedColorSpace"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframecopytooptions-colorspace"
           }
         ],
         "extAttrs": [],
@@ -6109,7 +6141,9 @@
       "VideoFrameMetadata": [],
       "VideoFrameCopyToOptions": [
         "DOMRectInit",
-        "PlaneLayout"
+        "PlaneLayout",
+        "VideoPixelFormat",
+        "PredefinedColorSpace"
       ],
       "PlaneLayout": [],
       "VideoColorSpace": [
@@ -6154,6 +6188,7 @@
       "CanvasImageSource",
       "DOMRectReadOnly",
       "DOMRectInit",
+      "PredefinedColorSpace",
       "ReadableStream",
       "ColorSpaceConversion"
     ],

@@ -433,11 +433,27 @@
         "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLContextAttributes"
       },
       "WebGLObject": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLObject {\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLObject {\n    attribute USVString label;\n};",
         "type": "interface",
         "name": "WebGLObject",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "label",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
