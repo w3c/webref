@@ -5702,11 +5702,20 @@
       "format": "fire an event phrasing",
       "href": "https://immersive-web.github.io/layers/#ref-for-concept-event-fire"
     },
-    "href": "https://immersive-web.github.io/layers/#eventdef-xrlayer-redraw",
+    "href": "https://immersive-web.github.io/layers/#eventdef-xrquadlayer-redraw",
     "type": "redraw",
     "targets": [
       {
-        "target": "XRLayer"
+        "target": "XRQuadLayer"
+      },
+      {
+        "target": "XRCylinderLayer"
+      },
+      {
+        "target": "XREquirectLayer"
+      },
+      {
+        "target": "XRCubeLayer"
       }
     ],
     "interface": "XRLayerEvent"
