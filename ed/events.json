@@ -761,15 +761,6 @@
     "type": "cancel",
     "targets": [
       {
-        "target": "HTMLDialogElement",
-        "bubbles": true,
-        "bubblingPath": [
-          "Node",
-          "Document",
-          "Window"
-        ]
-      },
-      {
         "target": "HTMLInputElement",
         "bubbles": true,
         "bubblingPath": [
@@ -781,6 +772,24 @@
     ],
     "interface": "Event",
     "cancelable": true
+  },
+  {
+    "type": "cancel",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "CloseWatcher"
+      },
+      {
+        "target": "HTMLDialogElement",
+        "bubbles": false
+      }
+    ],
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel"
+    }
   },
   {
     "src": {
@@ -1227,6 +1236,12 @@
     },
     "type": "close",
     "targets": [
+      {
+        "target": "CloseWatcher"
+      },
+      {
+        "target": "MessagePort"
+      },
       {
         "target": "HTMLDialogElement",
         "bubbles": false

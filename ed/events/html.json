@@ -619,7 +619,6 @@
       },
       "type": "cancel",
       "targets": [
-        "HTMLDialogElement",
         "HTMLInputElement"
       ],
       "interface": "Event",
@@ -661,7 +660,9 @@
       },
       "type": "close",
       "targets": [
-        "HTMLDialogElement"
+        "CloseWatcher",
+        "HTMLDialogElement",
+        "MessagePort"
       ],
       "interface": "Event"
     },
@@ -1153,6 +1154,20 @@
         "Document"
       ],
       "interface": "Event"
+    },
+    {
+      "type": "cancel",
+      "interface": "Event",
+      "bubbles": false,
+      "targets": [
+        "CloseWatcher",
+        "HTMLDialogElement"
+      ],
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
+      "src": {
+        "format": "summary table",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel"
+      }
     }
   ]
 }
