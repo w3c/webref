@@ -61,13 +61,18 @@
       },
       "https://drafts.csswg.org/cssom-view/": {
         "anchors": [
-          "dom-window-devicepixelratio",
+          "evaluate-media-queries-and-report-changes",
           "layout-viewport",
           "dom-element-scrollheight",
           "dom-element-scrollwidth",
           "visual-viewport",
           "dom-visualviewport-pageleft",
           "dom-visualviewport-pagetop"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-4/": {
+        "anchors": [
+          "resolution"
         ]
       },
       "https://drafts.csswg.org/mediaqueries-5/": {
@@ -152,7 +157,11 @@
       "https://github.com/w3c/webdriver-bidi/issues": {},
       "https://github.com/w3c/webdriver-bidi/issues/170": {},
       "https://github.com/w3c/webdriver-bidi/issues/508": {},
-      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "descendant-navigables"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage//canvas.html": {
         "anchors": [
           "offscreencanvas-context-mode"
@@ -204,6 +213,7 @@
           "tn-current-session-history-step",
           "focused-area-of-the-document",
           "system-visibility-state",
+          "window-navigable",
           "navigables",
           "nav-parent",
           "tn-session-history-traversal-queue",
@@ -230,6 +240,11 @@
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
         "anchors": [
           "run-the-animation-frame-callbacks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "select-an-image-source-from-a-source-set"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -658,7 +673,12 @@
           "dom-element-scrollheight",
           "dom-element-scrollwidth",
           "layout-viewport",
-          "dom-window-devicepixelratio"
+          "evaluate-media-queries-and-report-changes"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-4/": {
+        "anchors": [
+          "resolution"
         ]
       },
       "https://drafts.csswg.org/mediaqueries-5/": {
@@ -739,6 +759,11 @@
           "byte-sequence-as-a-body"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/": {
+        "anchors": [
+          "descendant-navigables"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage//canvas.html": {
         "anchors": [
           "offscreencanvas-context-mode"
@@ -795,7 +820,8 @@
           "system-visibility-state",
           "focused-area-of-the-document",
           "tn-session-history-traversal-queue",
-          "tn-current-session-history-step"
+          "tn-current-session-history-step",
+          "window-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -816,6 +842,11 @@
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
         "anchors": [
           "run-the-animation-frame-callbacks"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/images.html": {
+        "anchors": [
+          "select-an-image-source-from-a-source-set"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -945,6 +976,8 @@
           "string-is",
           "list-extend",
           "iteration-break",
+          "map-set",
+          "map-remove",
           "struct",
           "byte-lowercase",
           "byte-case-insensitive",
@@ -959,12 +992,10 @@
           "ascii-lowercase",
           "ascii-digit",
           "string-starts-with",
-          "map-remove",
           "struct-item",
           "map-clone",
           "string-concatenate",
           "iteration-continue",
-          "map-set",
           "set-intersection"
         ]
       },
