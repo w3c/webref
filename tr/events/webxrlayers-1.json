@@ -9,10 +9,13 @@
         "format": "fire an event phrasing",
         "href": "https://www.w3.org/TR/webxrlayers-1/#ref-for-concept-event-fire"
       },
-      "href": "https://www.w3.org/TR/webxrlayers-1/#eventdef-xrlayer-redraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#eventdef-xrquadlayer-redraw",
       "type": "redraw",
       "targets": [
-        "XRLayer"
+        "XRQuadLayer",
+        "XRCylinderLayer",
+        "XREquirectLayer",
+        "XRCubeLayer"
       ],
       "interface": "XRLayerEvent"
     }
