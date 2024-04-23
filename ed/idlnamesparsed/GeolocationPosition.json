@@ -6,7 +6,7 @@
       "title": "Geolocation API",
       "url": "https://www.w3.org/TR/geolocation/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n  [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition"
   },
   "extended": [],

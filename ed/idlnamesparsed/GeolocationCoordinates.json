@@ -6,7 +6,7 @@
       "title": "Geolocation API",
       "url": "https://www.w3.org/TR/geolocation/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n  [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates"
   },
   "extended": [],

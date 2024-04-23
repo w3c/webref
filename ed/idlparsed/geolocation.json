@@ -357,7 +357,7 @@
         "href": "https://w3c.github.io/geolocation-api/#dom-positionoptions"
       },
       "GeolocationPosition": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "GeolocationPosition",
         "inheritance": null,
@@ -393,6 +393,28 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition-timestamp"
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -416,7 +438,7 @@
         "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition"
       },
       "GeolocationCoordinates": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "GeolocationCoordinates",
         "inheritance": null,
@@ -532,6 +554,28 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-speed"
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
           }
         ],
         "extAttrs": [
