@@ -126,12 +126,14 @@
           "attr",
           "document",
           "element",
-          "eventtarget",
           "concept-child-text-content",
           "concept-element-interface",
+          "get-text-content",
           "concept-attribute-local-name",
           "concept-attribute-namespace",
           "concept-node-document",
+          "set-text-content",
+          "string-replace-all",
           "dom-node-textcontent"
         ]
       },
@@ -145,6 +147,8 @@
         ]
       },
       "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
+      "https://github.com/w3c/ServiceWorker/pull/1709": {},
+      "https://github.com/w3c/editing/pull/460": {},
       "https://github.com/w3c/webappsec": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/DOMParser-parseFromString-regression.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/DOMParser-parseFromString.html": {},
@@ -237,6 +241,8 @@
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-tojson.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/tt-block-eval.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/worker-constructor.https.html": {},
+      "https://github.com/whatwg/dom/pull/1258": {},
+      "https://github.com/whatwg/dom/pull/1268": {},
       "https://github.com/whatwg/webidl/pull/1392": {},
       "https://html.spec.whatwg.org/": {
         "anchors": [
@@ -245,7 +251,10 @@
           "the-script-element",
           "attr-script-async",
           "script-force-async",
-          "prepare-the-script-element"
+          "get-the-text-steps",
+          "prepare-the-script-element",
+          "set-the-inner-text-steps",
+          "attr-script-src"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
@@ -268,6 +277,7 @@
         "anchors": [
           "dom-element-innerhtml",
           "dom-shadowroot-innerhtml",
+          "dom-element-outerhtml",
           "dom-domparser-parsefromstring"
         ]
       },
@@ -355,27 +365,9 @@
           "concept-url-serializer"
         ]
       },
-      "https://w3c.github.io/DOM-Parsing/": {
-        "anchors": [
-          "dom-range-createcontextualfragment",
-          "dom-element-outerhtml"
-        ]
-      },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
-      },
-      "https://w3c.github.io/ServiceWorker/": {
-        "anchors": [
-          "dictdef-registrationoptions",
-          "serviceworkercontainer",
-          "serviceworkerregistration"
-        ]
-      },
-      "https://w3c.github.io/editing/docs/execCommand/": {
-        "anchors": [
-          "the-inserthtml-command"
         ]
       },
       "https://w3c.github.io/trusted-types/dist/spec/": {},
@@ -414,9 +406,6 @@
           "Exposed",
           "Function",
           "LegacyNullToEmptyString",
-          "NewObject",
-          "idl-promise",
-          "SecureContext",
           "idl-USVString",
           "idl-any",
           "dfn-attribute",
@@ -556,7 +545,9 @@
           "concept-attribute-local-name",
           "concept-node-document",
           "dom-node-textcontent",
-          "eventtarget"
+          "set-text-content",
+          "get-text-content",
+          "string-replace-all"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -569,6 +560,9 @@
       },
       "https://html.spec.whatwg.org/": {
         "anchors": [
+          "set-the-inner-text-steps",
+          "get-the-text-steps",
+          "attr-script-src",
           "prepare-the-script-element"
         ]
       },
@@ -591,6 +585,7 @@
         "anchors": [
           "dom-element-innerhtml",
           "dom-shadowroot-innerhtml",
+          "dom-element-outerhtml",
           "dom-domparser-parsefromstring"
         ]
       },
@@ -648,22 +643,9 @@
           "concept-url-parser"
         ]
       },
-      "https://w3c.github.io/DOM-Parsing/": {
-        "anchors": [
-          "dom-element-outerhtml",
-          "dom-range-createcontextualfragment"
-        ]
-      },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
-      },
-      "https://w3c.github.io/ServiceWorker/": {
-        "anchors": [
-          "serviceworkercontainer",
-          "serviceworkerregistration",
-          "dictdef-registrationoptions"
         ]
       },
       "https://w3c.github.io/webappsec-csp/": {
@@ -702,9 +684,6 @@
           "Function",
           "idl-long",
           "dfn-identifier",
-          "SecureContext",
-          "NewObject",
-          "idl-promise",
           "exceptiondef-evalerror"
         ]
       },
