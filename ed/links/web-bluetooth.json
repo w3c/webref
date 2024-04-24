@@ -189,11 +189,18 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "abort-when",
+          "list-append",
           "ascii-lower-hex-digit",
+          "map-exists",
           "map-iterate",
           "if-aborted",
+          "list",
+          "ordered-map",
+          "map-remove",
+          "ordered-set",
           "strictly-split",
-          "string"
+          "string",
+          "tuple"
         ]
       },
       "https://tc39.es/ecma262/multipage/": {},
@@ -252,6 +259,23 @@
           "policy-controlled-feature"
         ]
       },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "browsing-context-id",
+          "emit-an-event",
+          "set-of-sessions-for-which-an-event-is-enabled"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-errors",
+          "dfn-local-ends",
+          "dfn-error-code",
+          "dfn-remote-end-steps",
+          "dfn-success",
+          "dfn-try"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "aborterror",
@@ -277,7 +301,7 @@
           "idl-any",
           "idl-boolean",
           "idl-byte",
-          "dfn-convert-idl-to-ecmascript-value",
+          "dfn-convert-idl-to-javascript-value",
           "dfn-maplike",
           "dfn-perform-steps-once-promise-is-settled",
           "reject",
@@ -417,12 +441,19 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "map-remove",
           "abort-when",
           "if-aborted",
           "map-iterate",
           "string",
           "strictly-split",
-          "ascii-lower-hex-digit"
+          "ascii-lower-hex-digit",
+          "tuple",
+          "ordered-set",
+          "ordered-map",
+          "map-exists",
+          "list",
+          "list-append"
         ]
       },
       "https://tc39.es/ecma262/multipage/text-processing.html": {
@@ -479,6 +510,23 @@
           "policy-controlled-feature-default-allowlist"
         ]
       },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "browsing-context-id",
+          "set-of-sessions-for-which-an-event-is-enabled",
+          "emit-an-event"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-errors",
+          "dfn-error-code",
+          "dfn-success",
+          "dfn-remote-end-steps",
+          "dfn-try",
+          "dfn-local-ends"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "BufferSource",
@@ -497,7 +545,7 @@
           "securityerror",
           "resolve",
           "notfounderror",
-          "dfn-convert-idl-to-ecmascript-value",
+          "dfn-convert-idl-to-javascript-value",
           "idl-DOMException",
           "idl-frozen-array",
           "idl-any",
