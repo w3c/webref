@@ -12,17 +12,17 @@
   "extended": [
     {
       "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString string);\n};"
+    },
+    {
+      "spec": {
         "title": "CSSOM View Module",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
       "fragment": "partial interface Range {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n};"
-    },
-    {
-      "spec": {
-        "title": "DOM Parsing and Serialization",
-        "url": "https://www.w3.org/TR/DOM-Parsing/"
-      },
-      "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);\n};"
     }
   ],
   "inheritance": {

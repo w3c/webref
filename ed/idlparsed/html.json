@@ -40587,6 +40587,64 @@
           "partial": true
         }
       ],
+      "Range": [
+        {
+          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString string);\n};",
+          "type": "interface",
+          "name": "Range",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createContextualFragment",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DocumentFragment"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "string",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "HTMLString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-range-createcontextualfragment"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "NavigatorID": [
         {
           "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};",
@@ -43954,6 +44012,10 @@
         "HTMLString",
         "DOMParserSupportedType"
       ],
+      "Range": [
+        "DocumentFragment",
+        "HTMLString"
+      ],
       "NavigatorID": [],
       "NavigatorLanguage": [],
       "NavigatorOnLine": [],
@@ -44141,6 +44203,7 @@
       "ViewTransition",
       "Function",
       "VoidFunction",
+      "Range",
       "ServiceWorker",
       "ScriptURLString",
       "RequestCredentials"

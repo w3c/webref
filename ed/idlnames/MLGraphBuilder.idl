@@ -278,8 +278,8 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand softplus(MLOperand input, optional MLSoftplusOptions options = {});
-  MLActivation softplus(optional MLSoftplusOptions options = {});
+  MLOperand softplus(MLOperand input);
+  MLActivation softplus();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

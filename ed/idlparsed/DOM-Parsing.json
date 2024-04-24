@@ -74,66 +74,7 @@
         "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer"
       }
     },
-    "idlExtendedNames": {
-      "Range": [
-        {
-          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);\n};",
-          "type": "interface",
-          "name": "Range",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "createContextualFragment",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DocumentFragment"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "fragment",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "HTMLString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                },
-                {
-                  "type": "extended-attribute",
-                  "name": "NewObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "href": "https://w3c.github.io/DOM-Parsing/#dom-range-createcontextualfragment"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
@@ -143,17 +84,10 @@
     "dependencies": {
       "XMLSerializer": [
         "Node"
-      ],
-      "Range": [
-        "DocumentFragment",
-        "HTMLString"
       ]
     },
     "externalDependencies": [
-      "Node",
-      "Range",
-      "DocumentFragment",
-      "HTMLString"
+      "Node"
     ],
     "hasObsoleteIdl": false
   }

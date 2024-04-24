@@ -3352,36 +3352,6 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlresample2doptions"
       },
-      "MLSoftplusOptions": {
-        "fragment": "dictionary MLSoftplusOptions {\n  float steepness = 1;\n};",
-        "type": "dictionary",
-        "name": "MLSoftplusOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "steepness",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
-            },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsoftplusoptions-steepness"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsoftplusoptions"
-      },
       "MLSplitOptions": {
         "fragment": "dictionary MLSplitOptions {\n  [EnforceRange] unsigned long axis = 0;\n};",
         "type": "dictionary",
@@ -7993,7 +7963,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input, optional MLSoftplusOptions options = {});\n  MLActivation softplus(optional MLSoftplusOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input);\n  MLActivation softplus();\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8025,24 +7995,6 @@
                   "default": null,
                   "optional": false,
                   "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLSoftplusOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
                 }
               ],
               "extAttrs": [],
@@ -8060,29 +8012,10 @@
                 "union": false,
                 "idlType": "MLActivation"
               },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLSoftplusOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
+              "arguments": [],
               "extAttrs": [],
               "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus-options"
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus"
             }
           ],
           "extAttrs": [],
@@ -8615,7 +8548,6 @@
         "MLPool2dOptions",
         "MLReduceOptions",
         "MLResample2dOptions",
-        "MLSoftplusOptions",
         "MLSplitOptions",
         "MLTransposeOptions",
         "MLTriangularOptions"
@@ -8686,7 +8618,6 @@
       "MLResample2dOptions": [
         "MLInterpolationMode"
       ],
-      "MLSoftplusOptions": [],
       "MLSplitOptions": [],
       "MLTransposeOptions": [],
       "MLTriangularOptions": []
