@@ -7904,7 +7904,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input);\n  MLActivation softmax();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input, unsigned long axis);\n  MLActivation softmax(unsigned long axis);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7936,6 +7936,22 @@
                   "default": null,
                   "optional": false,
                   "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "axis",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
                 }
               ],
               "extAttrs": [],
@@ -7953,10 +7969,27 @@
                 "union": false,
                 "idlType": "MLActivation"
               },
-              "arguments": [],
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "axis",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
               "extAttrs": [],
               "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#softmax-noargs"
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax-axis"
             }
           ],
           "extAttrs": [],
