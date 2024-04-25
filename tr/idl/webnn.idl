@@ -519,13 +519,9 @@ partial interface MLGraphBuilder {
   MLActivation softmax();
 };
 
-dictionary MLSoftplusOptions {
-  float steepness = 1;
-};
-
 partial interface MLGraphBuilder {
-  MLOperand softplus(MLOperand input, optional MLSoftplusOptions options = {});
-  MLActivation softplus(optional MLSoftplusOptions options = {});
+  MLOperand softplus(MLOperand input);
+  MLActivation softplus();
 };
 
 partial interface MLGraphBuilder {
