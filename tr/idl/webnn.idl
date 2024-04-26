@@ -515,8 +515,8 @@ partial interface MLGraphBuilder {
 };
 
 partial interface MLGraphBuilder {
-  MLOperand softmax(MLOperand input);
-  MLActivation softmax();
+  MLOperand softmax(MLOperand input, unsigned long axis);
+  MLActivation softmax(unsigned long axis);
 };
 
 partial interface MLGraphBuilder {

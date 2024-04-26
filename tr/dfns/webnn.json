@@ -1722,6 +1722,46 @@
       "definedIn": "dt"
     },
     {
+      "id": "mlactivation-validation-steps",
+      "href": "https://www.w3.org/TR/webnn/#mlactivation-validation-steps",
+      "linkingText": [
+        "validation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLActivation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mlactivation-default-activation-validation-steps",
+      "href": "https://www.w3.org/TR/webnn/#mlactivation-default-activation-validation-steps",
+      "linkingText": [
+        "default activation validation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLActivation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "create-an-mlactivation",
       "href": "https://www.w3.org/TR/webnn/#create-an-mlactivation",
       "linkingText": [
@@ -10117,15 +10157,57 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-softmax-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-input",
+      "id": "dom-mlgraphbuilder-softmax-input-axis-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/softmax(input)"
+        "MLGraphBuilder/softmax(input, axis)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softmax-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
+        "title": "softmax",
+        "number": "7.8.40"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softmax-input-axis-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-axis",
+      "linkingText": [
+        "axis"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/softmax(input, axis)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softmax-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
+        "title": "softmax",
+        "number": "7.8.40"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softmax-axis-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-axis-axis",
+      "linkingText": [
+        "axis"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/softmax(axis)"
       ],
       "access": "public",
       "informative": false,
@@ -10141,7 +10223,7 @@
       "id": "dom-mlgraphbuilder-softmax",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax",
       "linkingText": [
-        "softmax(input)"
+        "softmax(input, axis)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -10151,18 +10233,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlgraphbuilder-softmax-input",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-input",
-        "title": "softmax(input)",
+        "id": "api-mlgraphbuilder-softmax-input-axis",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-input-axis",
+        "title": "softmax(input, axis)",
         "number": "7.8.40.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "softmax-noargs",
-      "href": "https://www.w3.org/TR/webnn/#softmax-noargs",
+      "id": "dom-mlgraphbuilder-softmax-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-axis",
       "linkingText": [
-        "softmax()"
+        "softmax(axis)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -10172,9 +10254,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlgraphbuilder-softmax",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax",
-        "title": "softmax()",
+        "id": "api-mlgraphbuilder-softmax-axis",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-axis",
+        "title": "softmax(axis)",
         "number": "7.8.40.2"
       },
       "definedIn": "prose"

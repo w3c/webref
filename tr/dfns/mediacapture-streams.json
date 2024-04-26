@@ -1035,6 +1035,91 @@
       "definedIn": "prose"
     },
     {
+      "id": "track-muted",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#track-muted",
+      "linkingText": [
+        "Muted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-flow",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
+        "title": "Media Flow",
+        "number": "4.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-track-muted",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#set-track-muted",
+      "linkingText": [
+        "set a track's muted state"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-flow",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
+        "title": "Media Flow",
+        "number": "4.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-enabled",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#track-enabled",
+      "linkingText": [
+        "track enabled state",
+        "enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-flow",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
+        "title": "Media Flow",
+        "number": "4.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-muted-0",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-muted-0",
+      "linkingText": [
+        "muted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "life-cycle",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#life-cycle",
+        "title": "Life-cycle",
+        "number": "4.3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "track-ended",
       "href": "https://www.w3.org/TR/mediacapture-streams/#track-ended",
       "linkingText": [
@@ -1043,7 +1128,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "track"
+        "MediaStreamTrack"
       ],
       "access": "public",
       "informative": false,
@@ -1051,7 +1136,7 @@
         "id": "life-cycle",
         "href": "https://www.w3.org/TR/mediacapture-streams/#life-cycle",
         "title": "Life-cycle",
-        "number": "4.3.1.1"
+        "number": "4.3.1.2"
       },
       "definedIn": "prose"
     },
@@ -1071,7 +1156,7 @@
         "id": "life-cycle",
         "href": "https://www.w3.org/TR/mediacapture-streams/#life-cycle",
         "title": "Life-cycle",
-        "number": "4.3.1.1"
+        "number": "4.3.1.2"
       },
       "definedIn": "prose"
     },
@@ -1090,64 +1175,6 @@
         "id": "life-cycle",
         "href": "https://www.w3.org/TR/mediacapture-streams/#life-cycle",
         "title": "Life-cycle",
-        "number": "4.3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "track-muted",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#track-muted",
-      "linkingText": [
-        "Muted"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-flow",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
-        "title": "Media Flow",
-        "number": "4.3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "set-track-muted",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#set-track-muted",
-      "linkingText": [
-        "set a track's muted state"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-flow",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
-        "title": "Media Flow",
-        "number": "4.3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "track-enabled",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#track-enabled",
-      "linkingText": [
-        "track enabled state",
-        "enabled"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-flow",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#media-flow",
-        "title": "Media Flow",
         "number": "4.3.1.2"
       },
       "definedIn": "prose"
@@ -4456,6 +4483,129 @@
         "id": "methods-3",
         "href": "https://www.w3.org/TR/mediacapture-streams/#methods-3",
         "title": "Methods"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-devicechangeevent",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-devicechangeevent",
+      "linkingText": [
+        "DeviceChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "devicechangeevent",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#devicechangeevent",
+        "title": "DeviceChangeEvent",
+        "number": "9.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-devicechangeevent-constructor",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-devicechangeevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "DeviceChangeEvent.constructor",
+        "DeviceChangeEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "DeviceChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constructors-2",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#constructors-2",
+        "title": "Constructors"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-devicechangeevent-devices",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-devicechangeevent-devices",
+      "linkingText": [
+        "devices"
+      ],
+      "localLinkingText": [
+        "DeviceChangeEvent.devices"
+      ],
+      "type": "attribute",
+      "for": [
+        "DeviceChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-6",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#attributes-6",
+        "title": "Attributes"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-devicechangeeventinit-streams",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-devicechangeeventinit-streams",
+      "linkingText": [
+        "streams"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DeviceChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "devicechangeevent",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#devicechangeevent",
+        "title": "DeviceChangeEvent",
+        "number": "9.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-devicechangeeventinit",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-devicechangeeventinit",
+      "linkingText": [
+        "DeviceChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-devicechangeeventinit-members",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#dictionary-devicechangeeventinit-members",
+        "title": "Dictionary DeviceChangeEventInit Members"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-devices",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-devices",
+      "linkingText": [
+        "devices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-devicechangeeventinit-members",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#dictionary-devicechangeeventinit-members",
+        "title": "Dictionary DeviceChangeEventInit Members"
       },
       "definedIn": "dt"
     },
