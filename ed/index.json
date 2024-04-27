@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-26T18:32:22.548Z",
+  "date": "2024-04-27T00:46:12.726Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 12
+    "errors": 17
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -11154,11 +11154,11 @@
       ],
       "crawled": "https://wicg.github.io/fenced-frame/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 22:01:36 GMT"
+        "lastModified": "Fri, 26 Apr 2024 21:41:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "e5a4cdf18185c29710d342873452e3659b522c35",
+      "date": "26 April 2024",
+      "revision": "90c42a1a5b8ea64a01f9245e9d81920433307351",
       "links": "links/fenced-frame.json",
       "refs": "refs/fenced-frame.json",
       "idl": "idl/fenced-frame.idl",
@@ -13492,11 +13492,11 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Apr 2024 13:54:48 GMT"
+        "lastModified": "Fri, 26 Apr 2024 19:40:26 GMT"
       },
       "generator": "bikeshed",
       "date": "26 April 2024",
-      "revision": "7dbb2d26b2a7cb7abef6138421e4fe3bd8000dad",
+      "revision": "83e5f6d258cff7cd0e93e98c5a15f053bd010548",
       "links": "links/turtledove.json",
       "refs": "refs/turtledove.json",
       "idl": "idl/turtledove.idl",
@@ -14732,7 +14732,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Apr 2024 00:10:40 GMT"
+        "lastModified": "Fri, 26 Apr 2024 18:32:06 GMT"
       },
       "date": "26 April 2024",
       "links": "links/rfc7239.json",
@@ -15312,7 +15312,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Apr 2024 10:46:08 GMT"
+        "lastModified": "Fri, 26 Apr 2024 18:32:08 GMT"
       },
       "date": "26 April 2024",
       "links": "links/rfc8878.json",
@@ -15659,7 +15659,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Apr 2024 08:02:52 GMT"
+        "lastModified": "Fri, 26 Apr 2024 18:32:09 GMT"
       },
       "date": "26 April 2024",
       "links": "links/rfc9163.json",
@@ -15764,7 +15764,8 @@
       "links": "links/promises-guide.json",
       "refs": "refs/promises-guide.json",
       "headings": "headings/promises-guide.json",
-      "ids": "ids/promises-guide.json"
+      "ids": "ids/promises-guide.json",
+      "error": "Error: Loading https://www.w3.org/2001/tag/doc/promises-guide triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 291)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/Consortium/Patent-Policy/",
@@ -15903,7 +15904,8 @@
         "lastModified": "Tue, 17 Jan 1995 22:26:07 GMT"
       },
       "date": "17 January 1995",
-      "links": "links/GIF.json"
+      "links": "links/GIF.json",
+      "error": "Error: Loading https://www.w3.org/Graphics/GIF/spec-gif89a.txt triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 294)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -23251,7 +23253,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Apr 2024 18:16:15 GMT"
+        "lastModified": "Fri, 26 Apr 2024 22:07:06 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2024",
@@ -23571,7 +23573,8 @@
       "refs": "refs/CSS2.json",
       "dfns": "dfns/CSS2.json",
       "headings": "headings/CSS2.json",
-      "ids": "ids/CSS2.json"
+      "ids": "ids/CSS2.json",
+      "error": "Error: Loading https://www.w3.org/TR/CSS21/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 410)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/CSS22/",
@@ -23934,7 +23937,8 @@
       "idl": "idl/device-memory.idl",
       "dfns": "dfns/device-memory-1.json",
       "headings": "headings/device-memory-1.json",
-      "ids": "ids/device-memory-1.json"
+      "ids": "ids/device-memory-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/device-memory/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 415)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/device-posture/",
@@ -24289,10 +24293,10 @@
       ],
       "crawled": "https://w3c.github.io/encrypted-media/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Mar 2024 17:28:34 GMT"
+        "lastModified": "Fri, 26 Apr 2024 19:50:54 GMT"
       },
       "generator": "respec",
-      "date": "20 March 2024",
+      "date": "26 April 2024",
       "links": "links/encrypted-media.json",
       "refs": "refs/encrypted-media.json",
       "events": "events/encrypted-media.json",
@@ -25625,11 +25629,11 @@
       ],
       "crawled": "https://w3c.github.io/IFT/Overview.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Apr 2024 23:46:53 GMT"
+        "lastModified": "Fri, 26 Apr 2024 19:05:48 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 April 2024",
-      "revision": "69cf458b8bffd7b7ce99387d751d1df954bcbcab",
+      "date": "26 April 2024",
+      "revision": "f3f6d9599c6053298ae0ded6f8976d9e125c2e30",
       "links": "links/IFT.json",
       "refs": "refs/IFT.json",
       "dfns": "dfns/IFT.json",
@@ -27891,7 +27895,8 @@
       "links": "links/n-quads.json",
       "refs": "refs/n-quads.json",
       "headings": "headings/n-quads.json",
-      "ids": "ids/n-quads.json"
+      "ids": "ids/n-quads.json",
+      "error": "Error: Loading https://www.w3.org/TR/n-quads/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 481)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -34378,11 +34383,11 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Apr 2024 02:44:14 GMT"
+        "lastModified": "Fri, 26 Apr 2024 23:45:42 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 April 2024",
-      "revision": "d57e4ef323e0e48504859dfc32681d6fbfb6decd",
+      "date": "26 April 2024",
+      "revision": "b5677b63181e312238304d7cdb9130b164b4e694",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
