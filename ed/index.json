@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-29T00:45:28.257Z",
+  "date": "2024-04-29T06:33:09.228Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 17
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -11910,10 +11910,10 @@
       ],
       "crawled": "https://wicg.github.io/manifest-incubations/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Mar 2024 05:17:32 GMT"
+        "lastModified": "Mon, 29 Apr 2024 02:12:06 GMT"
       },
       "generator": "respec",
-      "date": "27 March 2024",
+      "date": "29 April 2024",
       "links": "links/manifest-incubations.json",
       "refs": "refs/manifest-incubations.json",
       "events": "events/manifest-incubations.json",
@@ -29813,7 +29813,8 @@
       "idl": "idl/reporting.idl",
       "dfns": "dfns/reporting-1.json",
       "headings": "headings/reporting-1.json",
-      "ids": "ids/reporting-1.json"
+      "ids": "ids/reporting-1.json",
+      "error": "Error: Loading https://w3c.github.io/reporting/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 513)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/requestidlecallback/",
