@@ -317,27 +317,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "scheduler-next-enqueue-order",
-      "href": "https://wicg.github.io/scheduling-apis/#scheduler-next-enqueue-order",
-      "linkingText": [
-        "next enqueue order"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Scheduler"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sec-scheduler",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
-        "title": "The Scheduler Interface",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-scheduler-posttask",
       "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-posttask",
       "linkingText": [
@@ -499,6 +478,130 @@
       "definedIn": "dt"
     },
     {
+      "id": "scheduler-task-queue-removal-steps",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-removal-steps",
+      "linkingText": [
+        "removal steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduler task queue"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "task-handle",
+      "href": "https://wicg.github.io/scheduling-apis/#task-handle",
+      "linkingText": [
+        "task handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-handle-task",
+      "href": "https://wicg.github.io/scheduling-apis/#task-handle-task",
+      "linkingText": [
+        "task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "task-handle-queue",
+      "href": "https://wicg.github.io/scheduling-apis/#task-handle-queue",
+      "linkingText": [
+        "queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "task-handle-abort-steps",
+      "href": "https://wicg.github.io/scheduling-apis/#task-handle-abort-steps",
+      "linkingText": [
+        "abort steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "task-handle-task-complete-steps",
+      "href": "https://wicg.github.io/scheduling-apis/#task-handle-task-complete-steps",
+      "linkingText": [
+        "task complete steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "scheduler-task-older-than",
       "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-older-than",
       "linkingText": [
@@ -524,6 +627,25 @@
       "href": "https://wicg.github.io/scheduling-apis/#create-a-scheduler-task-queue",
       "linkingText": [
         "create a scheduler task queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-processing-model",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-processing-model",
+        "title": "Processing Model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-task-handle",
+      "href": "https://wicg.github.io/scheduling-apis/#create-a-task-handle",
+      "linkingText": [
+        "create a task handle"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -583,6 +705,27 @@
       "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-remove",
       "linkingText": [
         "remove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduler task queue"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-queuing-scheduler-tasks",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-queuing-scheduler-tasks",
+        "title": "Queueing and Removing Scheduler Tasks",
+        "number": "2.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scheduler-task-queue-empty",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-empty",
+      "linkingText": [
+        "empty"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -696,10 +839,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "selecting-the-task-queue-of-the-next-scheduler-task",
-      "href": "https://wicg.github.io/scheduling-apis/#selecting-the-task-queue-of-the-next-scheduler-task",
+      "id": "select-the-next-scheduler-task-queue-from-all-schedulers",
+      "href": "https://wicg.github.io/scheduling-apis/#select-the-next-scheduler-task-queue-from-all-schedulers",
       "linkingText": [
-        "selecting the task queue of the next scheduler task"
+        "select the next scheduler task queue from all schedulers"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1445,6 +1588,27 @@
         "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-windoworworkerglobalscope",
         "title": "WindowOrWorkerGlobalScope",
         "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-loop-next-enqueue-order",
+      "href": "https://wicg.github.io/scheduling-apis/#event-loop-next-enqueue-order",
+      "linkingText": [
+        "next enqueue order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event loop"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-patches-html-event-loop-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-event-loop-definitions",
+        "title": "Event loop: definitions",
+        "number": "4.1.2"
       },
       "definedIn": "prose"
     }

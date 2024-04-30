@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-04-29T18:32:30.346Z",
+  "date": "2024-04-30T00:45:33.324Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 17
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -9992,10 +9992,10 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Apr 2024 16:30:14 GMT"
+        "lastModified": "Mon, 29 Apr 2024 20:50:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 April 2024",
+      "date": "29 April 2024",
       "links": "links/attribution-reporting-api.json",
       "refs": "refs/attribution-reporting-api.json",
       "idl": "idl/attribution-reporting-api.idl",
@@ -12912,11 +12912,11 @@
       ],
       "crawled": "https://wicg.github.io/scheduling-apis/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Apr 2024 17:44:57 GMT"
+        "lastModified": "Mon, 29 Apr 2024 21:46:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 April 2024",
-      "revision": "921f8170ec41fb105fbd9bf3b591ec403beb2365",
+      "date": "29 April 2024",
+      "revision": "11268d8e69d248245d31f52dddb7cc82b4d8e37e",
       "links": "links/scheduling-apis.json",
       "refs": "refs/scheduling-apis.json",
       "events": "events/scheduling-apis.json",
@@ -25629,11 +25629,11 @@
       ],
       "crawled": "https://w3c.github.io/IFT/Overview.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Apr 2024 19:05:48 GMT"
+        "lastModified": "Mon, 29 Apr 2024 20:04:05 GMT"
       },
       "generator": "bikeshed",
       "date": "26 April 2024",
-      "revision": "f3f6d9599c6053298ae0ded6f8976d9e125c2e30",
+      "revision": "0230aa3505b2277beff13ee7dbf0970e02e4dbb7",
       "links": "links/IFT.json",
       "refs": "refs/IFT.json",
       "dfns": "dfns/IFT.json",
@@ -32634,7 +32634,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 558)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: [Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'] {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
