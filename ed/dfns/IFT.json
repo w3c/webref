@@ -5,6 +5,25 @@
   },
   "dfns": [
     {
+      "id": "incremental-font",
+      "href": "https://w3c.github.io/IFT/Overview.html#incremental-font",
+      "linkingText": [
+        "incremental font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview",
+        "href": "https://w3c.github.io/IFT/Overview.html#overview",
+        "title": "Overview",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "font-subset",
       "href": "https://w3c.github.io/IFT/Overview.html#font-subset",
       "linkingText": [
@@ -16,8 +35,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "font-subset-info",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-subset-info",
+        "id": "font-subset-dfn",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-subset-dfn",
         "title": "Font Subset",
         "number": "3.1"
       },
@@ -35,18 +54,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "font-subset-info",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-subset-info",
+        "id": "font-subset-dfn",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-subset-dfn",
         "title": "Font Subset",
         "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "incremental-font",
-      "href": "https://w3c.github.io/IFT/Overview.html#incremental-font",
+      "id": "font-patch",
+      "href": "https://w3c.github.io/IFT/Overview.html#font-patch",
       "linkingText": [
-        "incremental font"
+        "font patch"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -54,10 +73,67 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "font-format-extensions",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-format-extensions",
-        "title": "Extensions to the Font Format",
-        "number": "4"
+        "id": "font-patch-definitions",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
+        "title": "Font Patch",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "patch-format",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-format",
+      "linkingText": [
+        "patch format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-patch-definitions",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
+        "title": "Font Patch",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "patch-application-algorithm",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-application-algorithm",
+      "linkingText": [
+        "patch application algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-patch-definitions",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
+        "title": "Font Patch",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "patch-map",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-map",
+      "linkingText": [
+        "patch map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-map-dfn",
+        "href": "https://w3c.github.io/IFT/Overview.html#patch-map-dfn",
+        "title": "Patch Map",
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -73,10 +149,162 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "patch-map",
-        "href": "https://w3c.github.io/IFT/Overview.html#patch-map",
-        "title": "Patch Map Table",
+        "id": "patch-map-dfn",
+        "href": "https://w3c.github.io/IFT/Overview.html#patch-map-dfn",
+        "title": "Patch Map",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "full-invalidation",
+      "href": "https://w3c.github.io/IFT/Overview.html#full-invalidation",
+      "linkingText": [
+        "Full Invalidation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-patch-invalidations",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
+        "title": "Patch Invalidations",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "partial-invalidation",
+      "href": "https://w3c.github.io/IFT/Overview.html#partial-invalidation",
+      "linkingText": [
+        "Partial Invalidation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-patch-invalidations",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
+        "title": "Patch Invalidations",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "no-invalidation",
+      "href": "https://w3c.github.io/IFT/Overview.html#no-invalidation",
+      "linkingText": [
+        "No Invalidation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-patch-invalidations",
+        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
+        "title": "Patch Invalidations",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-extend-an-incremental-font-subset",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-extend-an-incremental-font-subset",
+      "linkingText": [
+        "Extend an Incremental Font Subset"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extend-font-subset",
+        "href": "https://w3c.github.io/IFT/Overview.html#extend-font-subset",
+        "title": "Incremental Font Extension Algorithm",
         "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-check-entry-intersection",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-check-entry-intersection",
+      "linkingText": [
+        "Check entry intersection"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extend-font-subset",
+        "href": "https://w3c.github.io/IFT/Overview.html#extend-font-subset",
+        "title": "Incremental Font Extension Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-load-patch-file",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-load-patch-file",
+      "linkingText": [
+        "Load patch file"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extend-font-subset",
+        "href": "https://w3c.github.io/IFT/Overview.html#extend-font-subset",
+        "title": "Incremental Font Extension Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-handle-errors",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-handle-errors",
+      "linkingText": [
+        "Handle errors"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extend-font-subset",
+        "href": "https://w3c.github.io/IFT/Overview.html#extend-font-subset",
+        "title": "Incremental Font Extension Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-fully-expand-a-font-subset",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-fully-expand-a-font-subset",
+      "linkingText": [
+        "Fully Expand a Font Subset"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fully-expanding-a-font",
+        "href": "https://w3c.github.io/IFT/Overview.html#fully-expanding-a-font",
+        "title": "Fully Expanding a Font",
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -95,7 +323,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -116,7 +344,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -137,7 +365,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -158,7 +386,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -179,7 +407,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -200,7 +428,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -221,7 +449,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -242,7 +470,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -261,7 +489,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -282,7 +510,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -303,7 +531,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -322,7 +550,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -343,7 +571,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -364,7 +592,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -383,7 +611,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -404,7 +632,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -425,7 +653,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -446,7 +674,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -465,7 +693,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -486,7 +714,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -507,7 +735,7 @@
         "id": "patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-1",
         "title": "Patch Map Table: Format 1",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "table"
     },
@@ -526,7 +754,7 @@
         "id": "interpreting-patch-map-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#interpreting-patch-map-format-1",
         "title": "Interpreting Format 1",
-        "number": "4.2.1.1"
+        "number": "5.2.1.1"
       },
       "definedIn": "prose"
     },
@@ -545,7 +773,7 @@
         "id": "remove-entries-format-1",
         "href": "https://w3c.github.io/IFT/Overview.html#remove-entries-format-1",
         "title": "Remove Entries from Format 1",
-        "number": "4.2.1.2"
+        "number": "5.2.1.2"
       },
       "definedIn": "prose"
     },
@@ -564,7 +792,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "prose"
     },
@@ -585,7 +813,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -606,7 +834,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -627,7 +855,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -648,7 +876,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -669,7 +897,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -690,7 +918,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -711,7 +939,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -730,7 +958,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "prose"
     },
@@ -751,7 +979,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -770,7 +998,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "prose"
     },
@@ -791,7 +1019,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -812,7 +1040,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -833,7 +1061,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -854,7 +1082,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -875,7 +1103,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -896,7 +1124,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -917,7 +1145,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -938,7 +1166,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -959,7 +1187,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -980,7 +1208,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1001,7 +1229,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1022,7 +1250,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1041,7 +1269,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "prose"
     },
@@ -1062,7 +1290,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1083,7 +1311,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1104,7 +1332,7 @@
         "id": "patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#patch-map-format-2",
         "title": "Patch Map Table: Format 2",
-        "number": "4.2.2"
+        "number": "5.2.2"
       },
       "definedIn": "table"
     },
@@ -1123,7 +1351,7 @@
         "id": "interpreting-patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#interpreting-patch-map-format-2",
         "title": "Interpreting Format 2",
-        "number": "4.2.2.1"
+        "number": "5.2.2.1"
       },
       "definedIn": "prose"
     },
@@ -1142,7 +1370,7 @@
         "id": "interpreting-patch-map-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#interpreting-patch-map-format-2",
         "title": "Interpreting Format 2",
-        "number": "4.2.2.1"
+        "number": "5.2.2.1"
       },
       "definedIn": "prose"
     },
@@ -1161,7 +1389,7 @@
         "id": "remove-entries-format-2",
         "href": "https://w3c.github.io/IFT/Overview.html#remove-entries-format-2",
         "title": "Remove Entries from Format 2",
-        "number": "4.2.2.2"
+        "number": "5.2.2.2"
       },
       "definedIn": "prose"
     },
@@ -1180,7 +1408,7 @@
         "id": "sparse-bit-set-decoding",
         "href": "https://w3c.github.io/IFT/Overview.html#sparse-bit-set-decoding",
         "title": "Sparse Bit Set",
-        "number": "4.2.2.3"
+        "number": "5.2.2.3"
       },
       "definedIn": "prose"
     },
@@ -1199,7 +1427,7 @@
         "id": "sparse-bit-set-decoding",
         "href": "https://w3c.github.io/IFT/Overview.html#sparse-bit-set-decoding",
         "title": "Sparse Bit Set",
-        "number": "4.2.2.3"
+        "number": "5.2.2.3"
       },
       "definedIn": "prose"
     },
@@ -1218,121 +1446,7 @@
         "id": "sparse-bit-set-decoding",
         "href": "https://w3c.github.io/IFT/Overview.html#sparse-bit-set-decoding",
         "title": "Sparse Bit Set",
-        "number": "4.2.2.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "font-patch",
-      "href": "https://w3c.github.io/IFT/Overview.html#font-patch",
-      "linkingText": [
-        "font patch"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-definitions",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
-        "title": "Definitions",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "patch-format",
-      "href": "https://w3c.github.io/IFT/Overview.html#patch-format",
-      "linkingText": [
-        "patch format"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-definitions",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
-        "title": "Definitions",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "patch-application-algorithm",
-      "href": "https://w3c.github.io/IFT/Overview.html#patch-application-algorithm",
-      "linkingText": [
-        "patch application algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-definitions",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-definitions",
-        "title": "Definitions",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "full-invalidation",
-      "href": "https://w3c.github.io/IFT/Overview.html#full-invalidation",
-      "linkingText": [
-        "Full Invalidation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-invalidations",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
-        "title": "Patch Invalidations",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "partial-invalidation",
-      "href": "https://w3c.github.io/IFT/Overview.html#partial-invalidation",
-      "linkingText": [
-        "Partial Invalidation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-invalidations",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
-        "title": "Patch Invalidations",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "no-invalidation",
-      "href": "https://w3c.github.io/IFT/Overview.html#no-invalidation",
-      "linkingText": [
-        "No Invalidation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-patch-invalidations",
-        "href": "https://w3c.github.io/IFT/Overview.html#font-patch-invalidations",
-        "title": "Patch Invalidations",
-        "number": "5.2"
+        "number": "5.2.2.3"
       },
       "definedIn": "prose"
     },
@@ -1351,7 +1465,7 @@
         "id": "brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#brotli",
         "title": "Brotli Patch",
-        "number": "5.4"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -1372,7 +1486,7 @@
         "id": "brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#brotli",
         "title": "Brotli Patch",
-        "number": "5.4"
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1393,7 +1507,7 @@
         "id": "brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#brotli",
         "title": "Brotli Patch",
-        "number": "5.4"
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1414,7 +1528,7 @@
         "id": "brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#brotli",
         "title": "Brotli Patch",
-        "number": "5.4"
+        "number": "6.2"
       },
       "definedIn": "table"
     },
@@ -1433,7 +1547,7 @@
         "id": "apply-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#apply-brotli",
         "title": "Applying Brotli Patches",
-        "number": "5.4.1"
+        "number": "6.2.1"
       },
       "definedIn": "prose"
     },
@@ -1452,7 +1566,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -1473,7 +1587,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1494,7 +1608,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1515,7 +1629,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1534,7 +1648,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -1555,7 +1669,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1576,7 +1690,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1597,7 +1711,7 @@
         "id": "per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#per-table-brotli",
         "title": "Per Table Brotli",
-        "number": "5.5"
+        "number": "6.3"
       },
       "definedIn": "table"
     },
@@ -1616,7 +1730,7 @@
         "id": "apply-per-table-brotli",
         "href": "https://w3c.github.io/IFT/Overview.html#apply-per-table-brotli",
         "title": "Applying Per Table Brotli Patches",
-        "number": "5.5.1"
+        "number": "6.3.1"
       },
       "definedIn": "prose"
     },
@@ -1635,7 +1749,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
@@ -1656,7 +1770,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1677,7 +1791,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1698,7 +1812,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1719,7 +1833,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1738,7 +1852,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
@@ -1759,7 +1873,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1780,7 +1894,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1801,7 +1915,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1822,7 +1936,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1843,7 +1957,7 @@
         "id": "glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#glyph-keyed",
         "title": "Glyph Keyed",
-        "number": "5.6"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1862,102 +1976,7 @@
         "id": "apply-glyph-keyed",
         "href": "https://w3c.github.io/IFT/Overview.html#apply-glyph-keyed",
         "title": "Applying Glyph Keyed Patches",
-        "number": "5.6.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-extend-a-font-subset",
-      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-extend-a-font-subset",
-      "linkingText": [
-        "Extend a Font Subset"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extending-font-subset",
-        "href": "https://w3c.github.io/IFT/Overview.html#extending-font-subset",
-        "title": "Extending a Font Subset",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-check-entry-intersection",
-      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-check-entry-intersection",
-      "linkingText": [
-        "Check entry intersection"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extending-font-subset",
-        "href": "https://w3c.github.io/IFT/Overview.html#extending-font-subset",
-        "title": "Extending a Font Subset",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-load-patch-file",
-      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-load-patch-file",
-      "linkingText": [
-        "Load patch file"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extending-font-subset",
-        "href": "https://w3c.github.io/IFT/Overview.html#extending-font-subset",
-        "title": "Extending a Font Subset",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-handle-errors",
-      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-handle-errors",
-      "linkingText": [
-        "Handle errors"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extending-font-subset",
-        "href": "https://w3c.github.io/IFT/Overview.html#extending-font-subset",
-        "title": "Extending a Font Subset",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-fully-expand-a-font-subset",
-      "href": "https://w3c.github.io/IFT/Overview.html#abstract-opdef-fully-expand-a-font-subset",
-      "linkingText": [
-        "Fully Expand a Font Subset"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fully-expanding-a-font",
-        "href": "https://w3c.github.io/IFT/Overview.html#fully-expanding-a-font",
-        "title": "Fully Expanding a Font",
-        "number": "6.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     }

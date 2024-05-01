@@ -7,15 +7,9 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "concept-origin"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "browsing-context",
-          "top-level-browsing-context"
+          "nav-top"
         ]
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
@@ -33,6 +27,22 @@
           "in-parallel"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "valid-e-mail-address"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "consume-user-activation",
+          "transient-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window-navigable"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
         "anchors": [
           "navigator"
@@ -40,8 +50,10 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "concept-agent-event-loop",
+          "event-loop",
+          "concept-settings-object-origin",
           "queue-a-task",
+          "concept-relevant-global",
           "concept-relevant-realm",
           "relevant-settings-object",
           "responsible-event-loop",
@@ -62,6 +74,7 @@
       },
       "https://lists.w3.org/Archives/Public/public-device-apis/": {},
       "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/contacts.html": {},
+      "https://lists.w3.org/Archives/Public/public-webapps/": {},
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "image-mime-type"
@@ -90,6 +103,7 @@
           "a-promise-rejected-with",
           "idl-boolean",
           "idl-object",
+          "reject",
           "idl-sequence",
           "this"
         ]
@@ -109,18 +123,13 @@
       "https://www.w3.org/TR/2015/NOTE-contacts-manager-api-20150602/": {},
       "https://www.w3.org/groups/wg/das": {},
       "https://www.w3.org/groups/wg/das/ipr": {},
+      "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {}
     },
     "autolinks": {
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "concept-origin"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "top-level-browsing-context",
-          "browsing-context"
+          "nav-top"
         ]
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
@@ -138,6 +147,22 @@
           "in-parallel"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "valid-e-mail-address"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation",
+          "consume-user-activation"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window-navigable"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
         "anchors": [
           "navigator"
@@ -148,10 +173,12 @@
           "secure-context",
           "concept-relevant-realm",
           "task-source",
-          "concept-agent-event-loop",
+          "event-loop",
           "relevant-settings-object",
           "responsible-event-loop",
-          "queue-a-task"
+          "queue-a-task",
+          "concept-relevant-global",
+          "concept-settings-object-origin"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -194,7 +221,8 @@
           "invalidstateerror",
           "idl-DOMException",
           "securityerror",
-          "exceptiondef-typeerror"
+          "exceptiondef-typeerror",
+          "reject"
         ]
       }
     }
