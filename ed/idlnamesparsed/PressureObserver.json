@@ -6,7 +6,7 @@
       "title": "Compute Pressure Level 1",
       "url": "https://www.w3.org/TR/compute-pressure/"
     },
-    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback);\n\n  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n};",
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback);\n\n  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> knownSources;\n};",
     "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver"
   },
   "extended": [],

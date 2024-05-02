@@ -67,10 +67,10 @@ partial interface HTMLMediaElement {
 
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 [Exposed=Window] partial interface HTMLMediaElement {
-    [SecureContext] readonly        attribute MediaKeys?   mediaKeys;
-                                    attribute EventHandler onencrypted;
-                                    attribute EventHandler onwaitingforkey;
-    [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);
+  [SecureContext] readonly        attribute MediaKeys?   mediaKeys;
+                                  attribute EventHandler onencrypted;
+                                  attribute EventHandler onwaitingforkey;
+  [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);
 };
 
 // Source: Media Capture from DOM Elements (https://www.w3.org/TR/mediacapture-fromelement/)

@@ -218,7 +218,9 @@ partial interface Navigator {
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 [Exposed=Window]
 partial interface Navigator {
-    [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);
+  [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (
+      DOMString keySystem,
+      sequence<MediaKeySystemConfiguration> supportedConfigurations);
 };
 
 // Source: EPUB Reading Systems 3.3 (https://www.w3.org/TR/epub-rs-33/)

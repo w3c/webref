@@ -93,7 +93,7 @@
         "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider"
       },
       "DigitalCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  [SameObject] readonly attribute Uint8Array data;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  readonly attribute any data;\n};",
         "type": "interface",
         "name": "DigitalCredential",
         "inheritance": "Credential",
@@ -123,16 +123,9 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Uint8Array"
+              "idlType": "any"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-data"
@@ -248,16 +241,14 @@
       ],
       "IdentityRequestProvider": [],
       "DigitalCredential": [
-        "Credential",
-        "Uint8Array"
+        "Credential"
       ]
     },
     "externalDependencies": [
       "Navigator",
       "CredentialsContainer",
       "CredentialRequestOptions",
-      "Credential",
-      "Uint8Array"
+      "Credential"
     ],
     "hasObsoleteIdl": false
   }

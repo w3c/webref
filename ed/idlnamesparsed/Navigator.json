@@ -309,7 +309,7 @@
         "title": "Encrypted Media Extensions",
         "url": "https://www.w3.org/TR/encrypted-media/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};"
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (\n      DOMString keySystem,\n      sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};"
     },
     {
       "spec": {

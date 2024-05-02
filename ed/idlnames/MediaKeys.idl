@@ -1,6 +1,6 @@
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 [Exposed=Window, SecureContext] interface MediaKeys {
-    MediaKeySession  createSession (optional MediaKeySessionType sessionType = "temporary");
+    MediaKeySession createSession (optional MediaKeySessionType sessionType = "temporary");
     Promise<MediaKeyStatus> getStatusForPolicy (optional MediaKeysPolicy policy = {});
     Promise<boolean> setServerCertificate (BufferSource serverCertificate);
 };

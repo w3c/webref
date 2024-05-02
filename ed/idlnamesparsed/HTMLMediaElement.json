@@ -22,7 +22,7 @@
         "title": "Encrypted Media Extensions",
         "url": "https://www.w3.org/TR/encrypted-media/"
       },
-      "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n    [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                    attribute EventHandler onencrypted;\n                                    attribute EventHandler onwaitingforkey;\n    [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};"
+      "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n  [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                  attribute EventHandler onencrypted;\n                                  attribute EventHandler onwaitingforkey;\n  [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};"
     },
     {
       "spec": {

@@ -136,7 +136,7 @@
         "href": "https://w3c.github.io/compute-pressure/#dom-pressureupdatecallback"
       },
       "PressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback);\n\n  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback);\n\n  Promise<undefined> observe(PressureSource source, optional PressureObserverOptions options = {});\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> knownSources;\n};",
         "type": "interface",
         "name": "PressureObserver",
         "inheritance": null,
@@ -300,7 +300,7 @@
           },
           {
             "type": "attribute",
-            "name": "supportedSources",
+            "name": "knownSources",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -328,7 +328,7 @@
             ],
             "special": "static",
             "readonly": true,
-            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-supportedsources"
+            "href": "https://w3c.github.io/compute-pressure/#dom-pressureobserver-knownsources"
           }
         ],
         "extAttrs": [

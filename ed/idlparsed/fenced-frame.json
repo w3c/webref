@@ -396,7 +396,7 @@
         "href": "https://wicg.github.io/fenced-frame/#enumdef-fencereportingdestination"
       },
       "FenceEvent": {
-        "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n\n  // When setting event data to be used later in an automatic beacon, the\n  // following properties are used:\n  boolean once = false;\n  boolean crossOriginExposed = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
+        "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n\n  // Determines if this data can be sent in a reportEvent() beacon or automatic\n  // beacon that originates from a document that is cross-origin to the mapped\n  // URL of the fenced frame config that loaded this frame tree.\n  // Note that automatic beacon data can only be set from documents that are\n  // same-origin to the fenced frame config’s mapped URL, so this effectively\n  // opts in the data to being used in a cross-origin subframe.\n  boolean crossOriginExposed = false;\n\n  // When setting event data to be used later in an automatic beacon, the\n  // following properties are used:\n  boolean once = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
         "type": "dictionary",
         "name": "FenceEvent",
         "inheritance": null,
@@ -460,25 +460,6 @@
           },
           {
             "type": "field",
-            "name": "once",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-once"
-          },
-          {
-            "type": "field",
             "name": "crossOriginExposed",
             "extAttrs": [],
             "idlType": {
@@ -495,6 +476,25 @@
             },
             "required": false,
             "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-crossoriginexposed"
+          },
+          {
+            "type": "field",
+            "name": "once",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://wicg.github.io/fenced-frame/#dom-fenceevent-once"
           },
           {
             "type": "field",

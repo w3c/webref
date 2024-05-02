@@ -24,7 +24,7 @@
     },
     "idlNames": {
       "MediaKeysRequirement": {
-        "fragment": "enum MediaKeysRequirement {\n    \"required\",\n    \"optional\",\n    \"not-allowed\"\n};",
+        "fragment": "enum MediaKeysRequirement {\n  \"required\",\n  \"optional\",\n  \"not-allowed\"\n};",
         "type": "enum",
         "name": "MediaKeysRequirement",
         "values": [
@@ -48,7 +48,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement"
       },
       "MediaKeySystemConfiguration": {
-        "fragment": "dictionary MediaKeySystemConfiguration {\n             DOMString                               label = \"\";\n             sequence<DOMString>                     initDataTypes = [];\n             sequence<MediaKeySystemMediaCapability> audioCapabilities = [];\n             sequence<MediaKeySystemMediaCapability> videoCapabilities = [];\n             MediaKeysRequirement                    distinctiveIdentifier = \"optional\";\n             MediaKeysRequirement                    persistentState = \"optional\";\n             sequence<DOMString>                     sessionTypes;\n};",
+        "fragment": "dictionary MediaKeySystemConfiguration {\n  DOMString                               label = \"\";\n  sequence<DOMString>                     initDataTypes = [];\n  sequence<MediaKeySystemMediaCapability> audioCapabilities = [];\n  sequence<MediaKeySystemMediaCapability> videoCapabilities = [];\n  MediaKeysRequirement                    distinctiveIdentifier = \"optional\";\n  MediaKeysRequirement                    persistentState = \"optional\";\n  sequence<DOMString>                     sessionTypes;\n};",
         "type": "dictionary",
         "name": "MediaKeySystemConfiguration",
         "inheritance": null,
@@ -225,7 +225,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration"
       },
       "MediaKeySystemMediaCapability": {
-        "fragment": "dictionary MediaKeySystemMediaCapability {\n   DOMString contentType = \"\";\n   DOMString? encryptionScheme = null;\n   DOMString robustness = \"\";\n};",
+        "fragment": "dictionary MediaKeySystemMediaCapability {\n  DOMString contentType = \"\";\n  DOMString? encryptionScheme = null;\n  DOMString robustness = \"\";\n};",
         "type": "dictionary",
         "name": "MediaKeySystemMediaCapability",
         "inheritance": null,
@@ -292,7 +292,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability"
       },
       "MediaKeySystemAccess": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySystemAccess {\n    readonly        attribute DOMString keySystem;\n    MediaKeySystemConfiguration getConfiguration ();\n    Promise<MediaKeys>          createMediaKeys ();\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySystemAccess {\n  readonly attribute DOMString keySystem;\n  MediaKeySystemConfiguration  getConfiguration ();\n  Promise<MediaKeys>           createMediaKeys ();\n};",
         "type": "interface",
         "name": "MediaKeySystemAccess",
         "inheritance": null,
@@ -376,7 +376,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess"
       },
       "MediaKeySessionType": {
-        "fragment": "enum MediaKeySessionType {\n    \"temporary\",\n    \"persistent-license\"\n};",
+        "fragment": "enum MediaKeySessionType {\n  \"temporary\",\n  \"persistent-license\"\n};",
         "type": "enum",
         "name": "MediaKeySessionType",
         "values": [
@@ -395,7 +395,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype"
       },
       "MediaKeys": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeys {\n    MediaKeySession  createSession (optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<MediaKeyStatus> getStatusForPolicy (optional MediaKeysPolicy policy = {});\n    Promise<boolean> setServerCertificate (BufferSource serverCertificate);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeys {\n    MediaKeySession createSession (optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<MediaKeyStatus> getStatusForPolicy (optional MediaKeysPolicy policy = {});\n    Promise<boolean> setServerCertificate (BufferSource serverCertificate);\n};",
         "type": "interface",
         "name": "MediaKeys",
         "inheritance": null,
@@ -625,7 +625,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion"
       },
       "MediaKeySessionClosedReason": {
-        "fragment": "enum MediaKeySessionClosedReason {\n    \"internal-error\",\n    \"closed-by-application\",\n    \"release-acknowledged\",\n    \"hardware-context-reset\",\n    \"resource-evicted\"\n};",
+        "fragment": "enum MediaKeySessionClosedReason {\n  \"internal-error\",\n  \"closed-by-application\",\n  \"release-acknowledged\",\n  \"hardware-context-reset\",\n  \"resource-evicted\"\n};",
         "type": "enum",
         "name": "MediaKeySessionClosedReason",
         "values": [
@@ -659,7 +659,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessionclosedreason"
       },
       "MediaKeySession": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n    readonly        attribute DOMString                            sessionId;\n    readonly        attribute unrestricted double                  expiration;\n    readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n    readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                    attribute EventHandler                         onkeystatuseschange;\n                    attribute EventHandler                         onmessage;\n    Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n    Promise<boolean> load (DOMString sessionId);\n    Promise<undefined>    update (BufferSource response);\n    Promise<undefined>    close ();\n    Promise<undefined>    remove ();\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n  readonly        attribute DOMString                            sessionId;\n  readonly        attribute unrestricted double                  expiration;\n  readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n  readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                  attribute EventHandler                         onkeystatuseschange;\n                  attribute EventHandler                         onmessage;\n  Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n  Promise<boolean> load (DOMString sessionId);\n  Promise<undefined>    update (BufferSource response);\n  Promise<undefined>    close ();\n  Promise<undefined>    remove ();\n};",
         "type": "interface",
         "name": "MediaKeySession",
         "inheritance": "EventTarget",
@@ -983,7 +983,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession"
       },
       "MediaKeyStatusMap": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeyStatusMap {\n    iterable<BufferSource,MediaKeyStatus>;\n    readonly        attribute unsigned long size;\n    boolean has (BufferSource keyId);\n    (MediaKeyStatus or undefined)     get (BufferSource keyId);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeyStatusMap {\n  iterable<BufferSource,MediaKeyStatus>;\n  readonly attribute unsigned long size;\n  boolean has (BufferSource keyId);\n  (MediaKeyStatus or undefined) get (BufferSource keyId);\n};",
         "type": "interface",
         "name": "MediaKeyStatusMap",
         "inheritance": null,
@@ -1134,7 +1134,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap"
       },
       "MediaKeyStatus": {
-        "fragment": "enum MediaKeyStatus {\n    \"usable\",\n    \"expired\",\n    \"released\",\n    \"output-restricted\",\n    \"output-downscaled\",\n    \"usable-in-future\",\n    \"status-pending\",\n    \"internal-error\"\n};",
+        "fragment": "enum MediaKeyStatus {\n  \"usable\",\n  \"expired\",\n  \"released\",\n  \"output-restricted\",\n  \"output-downscaled\",\n  \"usable-in-future\",\n  \"status-pending\",\n  \"internal-error\"\n};",
         "type": "enum",
         "name": "MediaKeyStatus",
         "values": [
@@ -1183,7 +1183,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus"
       },
       "MediaKeyMessageType": {
-        "fragment": "enum MediaKeyMessageType {\n    \"license-request\",\n    \"license-renewal\",\n    \"license-release\",\n    \"individualization-request\"\n};",
+        "fragment": "enum MediaKeyMessageType {\n  \"license-request\",\n  \"license-renewal\",\n  \"license-release\",\n  \"individualization-request\"\n};",
         "type": "enum",
         "name": "MediaKeyMessageType",
         "values": [
@@ -1212,7 +1212,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype"
       },
       "MediaKeyMessageEvent": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface MediaKeyMessageEvent : Event {\n    constructor(DOMString type, MediaKeyMessageEventInit eventInitDict);\n    readonly        attribute MediaKeyMessageType messageType;\n    readonly        attribute ArrayBuffer         message;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface MediaKeyMessageEvent : Event {\n  constructor(DOMString type, MediaKeyMessageEventInit eventInitDict);\n  readonly attribute MediaKeyMessageType messageType;\n  readonly attribute ArrayBuffer         message;\n};",
         "type": "interface",
         "name": "MediaKeyMessageEvent",
         "inheritance": "Event",
@@ -1310,7 +1310,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent"
       },
       "MediaKeyMessageEventInit": {
-        "fragment": "dictionary MediaKeyMessageEventInit : EventInit {\n             required MediaKeyMessageType messageType;\n             required ArrayBuffer         message;\n};",
+        "fragment": "dictionary MediaKeyMessageEventInit : EventInit {\n  required MediaKeyMessageType messageType;\n  required ArrayBuffer         message;\n};",
         "type": "dictionary",
         "name": "MediaKeyMessageEventInit",
         "inheritance": "EventInit",
@@ -1447,7 +1447,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent"
       },
       "MediaEncryptedEventInit": {
-        "fragment": "dictionary MediaEncryptedEventInit : EventInit {\n             DOMString    initDataType = \"\";\n             ArrayBuffer? initData = null;\n};",
+        "fragment": "dictionary MediaEncryptedEventInit : EventInit {\n  DOMString    initDataType = \"\";\n  ArrayBuffer? initData = null;\n};",
         "type": "dictionary",
         "name": "MediaEncryptedEventInit",
         "inheritance": "EventInit",
@@ -1498,7 +1498,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};",
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (\n      DOMString keySystem,\n      sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -1594,7 +1594,7 @@
       ],
       "HTMLMediaElement": [
         {
-          "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n    [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                    attribute EventHandler onencrypted;\n                                    attribute EventHandler onwaitingforkey;\n    [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};",
+          "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n  [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                  attribute EventHandler onencrypted;\n                                  attribute EventHandler onwaitingforkey;\n  [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};",
           "type": "interface",
           "name": "HTMLMediaElement",
           "inheritance": null,
