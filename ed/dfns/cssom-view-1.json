@@ -2391,14 +2391,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-caretpositionfrompoint-x-y-x",
-      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint-x-y-x",
+      "id": "dom-document-caretpositionfrompoint-x-y-shadowroots-x",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint-x-y-shadowroots-x",
       "linkingText": [
         "x"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Document/caretPositionFromPoint(x, y, ...shadowRoots)",
         "Document/caretPositionFromPoint(x, y)"
       ],
       "access": "public",
@@ -2412,14 +2413,37 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-caretpositionfrompoint-x-y-y",
-      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint-x-y-y",
+      "id": "dom-document-caretpositionfrompoint-x-y-shadowroots-y",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint-x-y-shadowroots-y",
       "linkingText": [
         "y"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Document/caretPositionFromPoint(x, y, ...shadowRoots)",
+        "Document/caretPositionFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-document-interface",
+        "href": "https://drafts.csswg.org/cssom-view-1/#extensions-to-the-document-interface",
+        "title": "Extensions to the Document Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-caretpositionfrompoint-x-y-shadowroots-shadowroots",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint-x-y-shadowroots-shadowroots",
+      "linkingText": [
+        "shadowRoots"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/caretPositionFromPoint(x, y, ...shadowRoots)",
         "Document/caretPositionFromPoint(x, y)"
       ],
       "access": "public",
@@ -2478,6 +2502,7 @@
       "id": "dom-document-caretpositionfrompoint",
       "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint",
       "linkingText": [
+        "caretPositionFromPoint(x, y, ...shadowRoots)",
         "caretPositionFromPoint(x, y)"
       ],
       "localLinkingText": [],
@@ -2666,6 +2691,25 @@
       ],
       "access": "public",
       "informative": false,
+      "heading": {
+        "id": "the-caretposition-interface",
+        "href": "https://drafts.csswg.org/cssom-view-1/#the-caretposition-interface",
+        "title": "The CaretPosition Interface",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "caret-position①",
+      "href": "https://drafts.csswg.org/cssom-view-1/#caret-position%E2%91%A0",
+      "linkingText": [
+        "caret position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
       "heading": {
         "id": "the-caretposition-interface",
         "href": "https://drafts.csswg.org/cssom-view-1/#the-caretposition-interface",

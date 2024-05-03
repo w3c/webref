@@ -141,7 +141,7 @@
         "title": "CSSOM View Module",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
-      "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y);\n  readonly attribute Element? scrollingElement;\n};"
+      "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y, ShadowRoot... shadowRoots);\n  readonly attribute Element? scrollingElement;\n};"
     },
     {
       "spec": {
