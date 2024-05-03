@@ -15,11 +15,6 @@ dictionary VideoEncoderConfig {
   DOMString contentHint;
 };
 
-// Source: AV1 WebCodecs Registration (https://www.w3.org/TR/webcodecs-av1-codec-registration/)
-partial dictionary VideoEncoderConfig {
-  AV1EncoderConfig av1;
-};
-
 // Source: AVC (H.264) WebCodecs Registration (https://www.w3.org/TR/webcodecs-avc-codec-registration/)
 partial dictionary VideoEncoderConfig {
   AvcEncoderConfig avc;

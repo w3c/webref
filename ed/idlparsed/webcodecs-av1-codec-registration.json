@@ -9,36 +9,6 @@
       "functions": {}
     },
     "idlNames": {
-      "AV1EncoderConfig": {
-        "fragment": "dictionary AV1EncoderConfig {\n  boolean forceScreenContentTools = false;\n};",
-        "type": "dictionary",
-        "name": "AV1EncoderConfig",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "forceScreenContentTools",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html#dom-av1encoderconfig-forcescreencontenttools"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html#dictdef-av1encoderconfig"
-      },
       "VideoEncoderEncodeOptionsForAv1": {
         "fragment": "dictionary VideoEncoderEncodeOptionsForAv1 {\n  unsigned short? quantizer;\n};",
         "type": "dictionary",
@@ -68,34 +38,6 @@
       }
     },
     "idlExtendedNames": {
-      "VideoEncoderConfig": [
-        {
-          "fragment": "partial dictionary VideoEncoderConfig {\n  AV1EncoderConfig av1;\n};",
-          "type": "dictionary",
-          "name": "VideoEncoderConfig",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "av1",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AV1EncoderConfig"
-              },
-              "default": null,
-              "required": false,
-              "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html#dom-videoencoderconfig-av1"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "VideoEncoderEncodeOptions": [
         {
           "fragment": "partial dictionary VideoEncoderEncodeOptions {\n  VideoEncoderEncodeOptionsForAv1 av1;\n};",
@@ -128,17 +70,12 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "VideoEncoderConfig": [
-        "AV1EncoderConfig"
-      ],
-      "AV1EncoderConfig": [],
       "VideoEncoderEncodeOptions": [
         "VideoEncoderEncodeOptionsForAv1"
       ],
       "VideoEncoderEncodeOptionsForAv1": []
     },
     "externalDependencies": [
-      "VideoEncoderConfig",
       "VideoEncoderEncodeOptions"
     ],
     "hasObsoleteIdl": false
