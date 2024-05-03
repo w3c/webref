@@ -181,12 +181,12 @@ interface InputDeviceInfo : MediaDeviceInfo {
 
 [Exposed=Window]
 interface DeviceChangeEvent : Event {
-  constructor(DOMString type, DeviceChangeEventInit eventInitDict);
+  constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});
   [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;
 };
 
 dictionary DeviceChangeEventInit : EventInit {
-  sequence<MediaStream> streams = [];
+  sequence<MediaDeviceInfo> devices = [];
 };
 
 partial interface MediaDevices {

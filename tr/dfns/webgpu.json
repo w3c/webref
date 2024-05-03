@@ -81,6 +81,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "webgpu-object",
+      "href": "https://www.w3.org/TR/webgpu/#webgpu-object",
+      "linkingText": [
+        "WebGPU object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "webgpu-interface",
       "href": "https://www.w3.org/TR/webgpu/#webgpu-interface",
       "linkingText": [
@@ -92,9 +111,47 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpuobjectbase",
+      "href": "https://www.w3.org/TR/webgpu/#gpuobjectbase",
+      "linkingText": [
+        "GPUObjectBase"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "internal-object",
+      "href": "https://www.w3.org/TR/webgpu/#internal-object",
+      "linkingText": [
+        "internal object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
       "definedIn": "prose"
@@ -111,9 +168,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
       "definedIn": "dt"
@@ -130,31 +187,31 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "gpuobjectbase",
-      "href": "https://www.w3.org/TR/webgpu/#gpuobjectbase",
+      "id": "device-timeline-property",
+      "href": "https://www.w3.org/TR/webgpu/#device-timeline-property",
       "linkingText": [
-        "GPUObjectBase"
+        "device timeline property"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "abstract-opdef-create-a-new-webgpu-object",
@@ -168,52 +225,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-create-a-new-webgpu-object-with-internals",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-create-a-new-webgpu-object-with-internals",
-      "linkingText": [
-        "create a new WebGPU object with internals"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-gpuobjectbase-internals-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-internals-slot",
-      "linkingText": [
-        "[[internals]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUObjectBase"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
-        "number": "3.1.2"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-gpuobjectbase-device-slot",
@@ -229,9 +246,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
       },
       "definedIn": "dt"
@@ -250,48 +267,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "webgpu-interfaces",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
-        "title": "WebGPU Interfaces",
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
         "number": "3.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "internal-object",
-      "href": "https://www.w3.org/TR/webgpu/#internal-object",
-      "linkingText": [
-        "internal object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webgpu-internal-objects",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
-        "title": "Internal Objects",
-        "number": "3.1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "device-timeline-slot",
-      "href": "https://www.w3.org/TR/webgpu/#device-timeline-slot",
-      "linkingText": [
-        "device timeline slot"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webgpu-internal-objects",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
-        "title": "Internal Objects",
-        "number": "3.1.3"
       },
       "definedIn": "dt"
     },
@@ -310,7 +289,7 @@
         "id": "object-descriptors",
         "href": "https://www.w3.org/TR/webgpu/#object-descriptors",
         "title": "Object Descriptors",
-        "number": "3.1.4"
+        "number": "3.1.3"
       },
       "definedIn": "prose"
     },
@@ -329,7 +308,7 @@
         "id": "object-descriptors",
         "href": "https://www.w3.org/TR/webgpu/#object-descriptors",
         "title": "Object Descriptors",
-        "number": "3.1.4"
+        "number": "3.1.3"
       },
       "definedIn": "pre"
     },
@@ -350,7 +329,7 @@
         "id": "object-descriptors",
         "href": "https://www.w3.org/TR/webgpu/#object-descriptors",
         "title": "Object Descriptors",
-        "number": "3.1.4"
+        "number": "3.1.3"
       },
       "definedIn": "dt"
     },
@@ -3864,27 +3843,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpubuffer-internals-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-internals-slot",
-      "linkingText": [
-        "[[internals]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpubuffer",
-        "href": "https://www.w3.org/TR/webgpu/#gpubuffer",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpubuffer-mapstate",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-mapstate",
       "linkingText": [
@@ -4152,36 +4110,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "buffer-internals",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-internals",
+      "id": "dom-gpubuffer-internal-state-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-internal-state-slot",
       "linkingText": [
-        "buffer internals"
+        "[[internal state]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gpubuffer",
-        "href": "https://www.w3.org/TR/webgpu/#gpubuffer",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "buffer-internals-state",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state",
-      "linkingText": [
-        "state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
-        "buffer internals"
+        "GPUBuffer"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "gpubuffer",
@@ -4192,15 +4131,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-internals-state-available",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-available",
+      "id": "gpubuffer-internal-state-available",
+      "href": "https://www.w3.org/TR/webgpu/#gpubuffer-internal-state-available",
       "linkingText": [
         "available"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer internals/state"
+        "GPUBuffer/[[internal state]]"
       ],
       "access": "private",
       "informative": false,
@@ -4213,15 +4152,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-internals-state-unavailable",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-unavailable",
+      "id": "gpubuffer-internal-state-unavailable",
+      "href": "https://www.w3.org/TR/webgpu/#gpubuffer-internal-state-unavailable",
       "linkingText": [
         "unavailable"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer internals/state"
+        "GPUBuffer/[[internal state]]"
       ],
       "access": "private",
       "informative": false,
@@ -4234,15 +4173,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-internals-state-destroyed",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-destroyed",
+      "id": "gpubuffer-internal-state-destroyed",
+      "href": "https://www.w3.org/TR/webgpu/#gpubuffer-internal-state-destroyed",
       "linkingText": [
         "destroyed"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer internals/state"
+        "GPUBuffer/[[internal state]]"
       ],
       "access": "private",
       "informative": false,

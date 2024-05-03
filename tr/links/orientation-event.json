@@ -41,7 +41,13 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/deviceorientation_event": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/deviceorientationabsolute_event": {},
       "https://doi.org/10.1109/SP.2019.00072": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "event",
+          "dictdef-eventinit",
+          "concept-event-fire"
+        ]
+      },
       "https://en.wikipedia.org/wiki/Euler_angles": {},
       "https://en.wikipedia.org/wiki/G-force": {},
       "https://en.wikipedia.org/wiki/Gimbal_Lock": {},
@@ -51,7 +57,69 @@
       "https://github.com/w3c/deviceorientation/issues/85": {},
       "https://github.com/w3c/deviceorientation/issues/87": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "nav-document",
+          "nav-window",
+          "child-navigable",
+          "navigable",
+          "top-level-traversable",
+          "nav-top"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "transient-activation",
+          "visibility-state"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window",
+          "window-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "relevant-settings-object",
+          "eventhandler",
+          "current-global-object",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
+          "queue-a-global-task",
+          "concept-global-object-realm",
+          "concept-relevant-global",
+          "concept-relevant-realm",
+          "secure-context",
+          "concept-task",
+          "task-source"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "iteration-break",
+          "map-exists",
+          "map-entry",
+          "list-iterate",
+          "implementation-defined",
+          "map-key",
+          "ordered-map",
+          "map-set",
+          "map-value"
+        ]
+      },
       "https://learn.microsoft.com/en-us/uwp/api/windows.devices.sensors.sensorreadingtype": {
         "anchors": [
           "remarks"
@@ -60,7 +128,44 @@
       "https://lists.w3.org/Archives/Public/public-device-apis/": {},
       "https://lists.w3.org/Archives/Public/public-webapps/": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-object-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+        "anchors": [
+          "sec-number-objects"
+        ]
+      },
+      "https://w3c.github.io/sensors/": {
+        "anchors": [
+          "virtual-sensor-can-provide-readings-flag",
+          "virtual-sensor-mapping"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-getting-properties"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMException",
+          "idl-DOMString",
+          "Exposed",
+          "notallowederror",
+          "idl-promise",
+          "SecureContext",
+          "a-new-promise",
+          "idl-boolean",
+          "idl-double",
+          "new",
+          "reject",
+          "resolve",
+          "this"
+        ]
+      },
       "https://wpt.fyi/results/orientation-event/idlharness.https.window.html": {},
       "https://wpt.fyi/results/orientation-event/motion/requestPermission.https.window.html": {},
       "https://wpt.fyi/results/orientation-event/orientation/requestPermission.https.window.html": {},
@@ -75,11 +180,19 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/Consortium/Process/": {},
+      "https://www.w3.org/Consortium/Process/": {
+        "anchors": [
+          "at-risk"
+        ]
+      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2016/CR-orientation-event-20160818/": {},
       "https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/": {},
-      "https://www.w3.org/TR/accelerometer/": {},
+      "https://www.w3.org/TR/accelerometer/": {
+        "anchors": [
+          "device-coordinate-system"
+        ]
+      },
       "https://www.w3.org/TR/css-transforms-2/": {
         "anchors": [
           "transform-rendering"
@@ -87,10 +200,21 @@
       },
       "https://www.w3.org/TR/generic-sensor/": {
         "anchors": [
-          "automation"
+          "automation",
+          "parse-xyz-reading",
+          "per-type-virtual-sensor-metadata",
+          "virtual-sensor-metadata-reading-parsing-algorithm",
+          "sensor-reading",
+          "virtual-sensor-metadata",
+          "virtual-sensor-type"
         ]
       },
-      "https://www.w3.org/TR/geometry-1/": {},
+      "https://www.w3.org/TR/geometry-1/": {
+        "anchors": [
+          "dom-dommatrixreadonly-rotate",
+          "dom-dommatrix-rotateself"
+        ]
+      },
       "https://www.w3.org/TR/gyroscope/": {},
       "https://www.w3.org/TR/motion-sensors/": {
         "anchors": [
@@ -98,11 +222,37 @@
           "linear-acceleration-sensor"
         ]
       },
-      "https://www.w3.org/TR/orientation-sensor/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/orientation-sensor/": {
+        "anchors": [
+          "earths-reference-coordinate-system"
+        ]
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "anchors": [
+          "policy-controlled-feature-default-allowlist",
+          "policy-controlled-feature"
+        ]
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "anchors": [
+          "dom-permissionstate",
+          "dfn-default-powerful-feature",
+          "dom-permissionstate-denied",
+          "dfn-express-permission",
+          "dfn-getting-the-current-permission-state",
+          "dom-permissionstate-granted",
+          "dfn-permission-state",
+          "dfn-powerful-feature",
+          "dom-permissionstate-prompt",
+          "dfn-request-permission-to-use"
+        ]
+      },
       "https://www.w3.org/TR/screen-orientation/": {},
-      "https://www.w3.org/TR/webdriver2/": {},
+      "https://www.w3.org/TR/webdriver2/": {
+        "anchors": [
+          "dfn-extension-commands"
+        ]
+      },
       "https://www.w3.org/groups/wg/das": {},
       "https://www.w3.org/groups/wg/das/ipr": {},
       "https://www.w3.org/groups/wg/webapps": {},
