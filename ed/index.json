@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-03T06:32:51.775Z",
+  "date": "2024-05-03T12:40:59.332Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 17
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -3405,9 +3405,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 May 2024 09:37:24 GMT"
+        "lastModified": "Fri, 03 May 2024 12:27:31 GMT"
       },
-      "date": "2 May 2024",
+      "date": "3 May 2024",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -7946,9 +7946,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 May 2024 15:24:22 GMT"
+        "lastModified": "Fri, 03 May 2024 07:43:44 GMT"
       },
-      "date": "2 May 2024",
+      "date": "3 May 2024",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -23262,7 +23262,8 @@
       "css": "css/css-viewport.json",
       "dfns": "dfns/css-viewport-1.json",
       "headings": "headings/css-viewport-1.json",
-      "ids": "ids/css-viewport-1.json"
+      "ids": "ids/css-viewport-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-viewport-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -32560,11 +32561,11 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 May 2024 21:18:58 GMT"
+        "lastModified": "Fri, 03 May 2024 07:05:16 GMT"
       },
       "generator": "respec",
-      "date": "02 May 2024",
-      "revision": "4db9a66bb8a080d10c8d42b030dfdd475b114088",
+      "date": "03 May 2024",
+      "revision": "97f4517b6eff9301769bfd3f6f10a403fe958067",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
       "dfns": "dfns/wai-aria-1.2.json",
@@ -32624,11 +32625,11 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 May 2024 21:18:58 GMT"
+        "lastModified": "Fri, 03 May 2024 07:05:16 GMT"
       },
       "generator": "respec",
-      "date": "02 May 2024",
-      "revision": "4db9a66bb8a080d10c8d42b030dfdd475b114088",
+      "date": "03 May 2024",
+      "revision": "97f4517b6eff9301769bfd3f6f10a403fe958067",
       "links": "links/wai-aria-1.3.json",
       "refs": "refs/wai-aria-1.3.json",
       "idl": "idl/wai-aria.idl",
@@ -33277,11 +33278,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-aac-codec-registration.json",
       "refs": "refs/webcodecs-aac-codec-registration.json",
       "idl": "idl/webcodecs-aac-codec-registration.idl",
@@ -33334,11 +33335,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-alaw-codec-registration.json",
       "refs": "refs/webcodecs-alaw-codec-registration.json",
       "headings": "headings/webcodecs-alaw-codec-registration.json",
@@ -33389,11 +33390,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-av1-codec-registration.json",
       "refs": "refs/webcodecs-av1-codec-registration.json",
       "idl": "idl/webcodecs-av1-codec-registration.idl",
@@ -33446,11 +33447,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-avc-codec-registration.json",
       "refs": "refs/webcodecs-avc-codec-registration.json",
       "idl": "idl/webcodecs-avc-codec-registration.idl",
@@ -33503,11 +33504,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/codec_registry.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-codec-registry.json",
       "refs": "refs/webcodecs-codec-registry.json",
       "headings": "headings/webcodecs-codec-registry.json",
@@ -33558,11 +33559,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-flac-codec-registration.json",
       "refs": "refs/webcodecs-flac-codec-registration.json",
       "idl": "idl/webcodecs-flac-codec-registration.idl",
@@ -33615,11 +33616,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-hevc-codec-registration.json",
       "refs": "refs/webcodecs-hevc-codec-registration.json",
       "idl": "idl/webcodecs-hevc-codec-registration.idl",
@@ -33672,11 +33673,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-mp3-codec-registration.json",
       "refs": "refs/webcodecs-mp3-codec-registration.json",
       "headings": "headings/webcodecs-mp3-codec-registration.json",
@@ -33727,11 +33728,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-opus-codec-registration.json",
       "refs": "refs/webcodecs-opus-codec-registration.json",
       "idl": "idl/webcodecs-opus-codec-registration.idl",
@@ -33784,11 +33785,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-pcm-codec-registration.json",
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
@@ -33839,11 +33840,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-ulaw-codec-registration.json",
       "refs": "refs/webcodecs-ulaw-codec-registration.json",
       "headings": "headings/webcodecs-ulaw-codec-registration.json",
@@ -33894,11 +33895,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-vorbis-codec-registration.json",
       "refs": "refs/webcodecs-vorbis-codec-registration.json",
       "headings": "headings/webcodecs-vorbis-codec-registration.json",
@@ -33949,11 +33950,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vp8_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-vp8-codec-registration.json",
       "refs": "refs/webcodecs-vp8-codec-registration.json",
       "headings": "headings/webcodecs-vp8-codec-registration.json",
@@ -34004,11 +34005,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs-vp9-codec-registration.json",
       "refs": "refs/webcodecs-vp9-codec-registration.json",
       "idl": "idl/webcodecs-vp9-codec-registration.idl",
@@ -34067,11 +34068,11 @@
       ],
       "crawled": "https://w3c.github.io/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Apr 2024 19:12:50 GMT"
+        "lastModified": "Fri, 03 May 2024 08:36:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2024",
-      "revision": "48523cdf22cd8dd871213d0bb0276d3346158c54",
+      "date": "3 May 2024",
+      "revision": "dcbf0ce371b75868a6ff9b562335341bb9ea484d",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "events": "events/webcodecs.json",
@@ -34194,11 +34195,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Apr 2024 16:55:34 GMT"
+        "lastModified": "Fri, 03 May 2024 09:00:04 GMT"
       },
       "generator": "respec",
-      "date": "16 April 2024",
-      "revision": "98140eacf446d22030c9eaf65d67fb9dcb212a12",
+      "date": "03 May 2024",
+      "revision": "d43acbbf3e65150803d9b14696ff7e9e321968f6",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
