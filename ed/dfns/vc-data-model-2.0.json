@@ -423,7 +423,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "The assurance that a <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> from a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a> and\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. It is expected\nthat <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifiers</a> will trust certain <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a> for certain claims and\napply their own rules to determine which claims in which <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credentials</a>\nare suitable for use by their systems."
+      "htmlProse": "The assurance that a <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> from a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a> and\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">Verifiers</a>\ntrust certain <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a> for certain claims and apply their own rules to\ndetermine which claims in which <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credentials</a> are suitable for use by their\nsystems."
     },
     {
       "id": "dfn-verifiable-credential",
@@ -789,6 +789,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dfn-securing-mechanism",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-securing-mechanism",
+      "linkingText": [
+        "securing mechanism",
+        "securing mechanisms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "securing-mechanisms",
+        "href": "https://w3c.github.io/vc-data-model/#securing-mechanisms",
+        "title": "Securing Mechanisms",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-enveloping-proof",
       "href": "https://w3c.github.io/vc-data-model/#dfn-enveloping-proof",
       "linkingText": [
@@ -838,10 +858,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "presentations-0",
-        "href": "https://w3c.github.io/vc-data-model/#presentations-0",
-        "title": "Presentations",
-        "number": "4.11"
+        "id": "verifiable-presentations",
+        "href": "https://w3c.github.io/vc-data-model/#verifiable-presentations",
+        "title": "Verifiable Presentations",
+        "number": "4.12"
       },
       "definedIn": "prose"
     },
@@ -975,7 +995,7 @@
         "id": "bearer-credentials",
         "href": "https://w3c.github.io/vc-data-model/#bearer-credentials",
         "title": "Bearer Credentials",
-        "number": "8.11"
+        "number": "8.10"
       },
       "definedIn": "prose"
     }
