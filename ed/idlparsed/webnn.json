@@ -1100,7 +1100,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlargminmaxoptions"
       },
       "MLBatchNormalizationOptions": {
-        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  float epsilon = 1e-5;\n};",
         "type": "dictionary",
         "name": "MLBatchNormalizationOptions",
         "inheritance": null,
@@ -1181,22 +1181,6 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-epsilon"
-          },
-          {
-            "type": "field",
-            "name": "activation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLActivation"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationoptions-activation"
           }
         ],
         "extAttrs": [],
@@ -1276,7 +1260,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconv2dfilteroperandlayout"
       },
       "MLConv2dOptions": {
-        "fragment": "dictionary MLConv2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConv2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n};",
         "type": "dictionary",
         "name": "MLConv2dOptions",
         "inheritance": null,
@@ -1456,22 +1440,6 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-bias"
-          },
-          {
-            "type": "field",
-            "name": "activation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLActivation"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-activation"
           }
         ],
         "extAttrs": [],
@@ -1503,7 +1471,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlconvtranspose2dfilteroperandlayout"
       },
       "MLConvTranspose2dOptions": {
-        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  sequence<[EnforceRange] unsigned long> outputPadding;\n  sequence<[EnforceRange] unsigned long> outputSizes;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  sequence<[EnforceRange] unsigned long> outputPadding;\n  sequence<[EnforceRange] unsigned long> outputSizes;\n  [EnforceRange] unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n};",
         "type": "dictionary",
         "name": "MLConvTranspose2dOptions",
         "inheritance": null,
@@ -1747,22 +1715,6 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-bias"
-          },
-          {
-            "type": "field",
-            "name": "activation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLActivation"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-activation"
           }
         ],
         "extAttrs": [],
@@ -8587,21 +8539,18 @@
       ],
       "MLArgMinMaxOptions": [],
       "MLBatchNormalizationOptions": [
-        "MLOperand",
-        "MLActivation"
+        "MLOperand"
       ],
       "MLClampOptions": [],
       "MLConv2dOptions": [
         "MLInputOperandLayout",
         "MLConv2dFilterOperandLayout",
-        "MLOperand",
-        "MLActivation"
+        "MLOperand"
       ],
       "MLConvTranspose2dOptions": [
         "MLInputOperandLayout",
         "MLConvTranspose2dFilterOperandLayout",
-        "MLOperand",
-        "MLActivation"
+        "MLOperand"
       ],
       "MLEluOptions": [],
       "MLGatherOptions": [],
