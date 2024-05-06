@@ -423,7 +423,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "The assurance that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> from a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. It is expected\nthat <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> will trust certain <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> for certain claims and\napply their own rules to determine which claims in which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a>\nare suitable for use by their systems."
+      "htmlProse": "The assurance that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> from a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">Verifiers</a>\ntrust certain <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> for certain claims and apply their own rules to\ndetermine which claims in which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a> are suitable for use by their\nsystems."
     },
     {
       "id": "dfn-verifiable-credential",
@@ -789,6 +789,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dfn-securing-mechanism",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-securing-mechanism",
+      "linkingText": [
+        "securing mechanism",
+        "securing mechanisms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "securing-mechanisms",
+        "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanisms",
+        "title": "Securing Mechanisms",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-enveloping-proof",
       "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-enveloping-proof",
       "linkingText": [
@@ -838,108 +858,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "presentations-0",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#presentations-0",
-        "title": "Presentations",
-        "number": "4.11"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-issue",
-      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-issue",
-      "linkingText": [
-        "issue",
-        "issues"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "lifecycle-details",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
-        "title": "Lifecycle Details",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-transfers",
-      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-transfers",
-      "linkingText": [
-        "transfers",
-        "transfer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "lifecycle-details",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
-        "title": "Lifecycle Details",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-present",
-      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-present",
-      "linkingText": [
-        "present",
-        "presents"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "lifecycle-details",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
-        "title": "Lifecycle Details",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-revoke",
-      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-revoke",
-      "linkingText": [
-        "revoke"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "lifecycle-details",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
-        "title": "Lifecycle Details",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-delete",
-      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-delete",
-      "linkingText": [
-        "delete"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "lifecycle-details",
-        "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
-        "title": "Lifecycle Details",
-        "number": "5.1"
+        "id": "verifiable-presentations",
+        "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-presentations",
+        "title": "Verifiable Presentations",
+        "number": "4.12"
       },
       "definedIn": "prose"
     },
@@ -958,7 +880,7 @@
         "id": "evidence",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#evidence",
         "title": "Evidence",
-        "number": "5.7"
+        "number": "5.6"
       },
       "definedIn": "dt"
     },
@@ -977,7 +899,7 @@
         "id": "verifiable-credential-graphs",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-credential-graphs",
         "title": "Verifiable Credential Graphs",
-        "number": "5.12"
+        "number": "5.11"
       },
       "definedIn": "prose"
     },
@@ -996,7 +918,7 @@
         "id": "verifiable-credential-graphs",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-credential-graphs",
         "title": "Verifiable Credential Graphs",
-        "number": "5.12"
+        "number": "5.11"
       },
       "definedIn": "prose"
     },
@@ -1073,7 +995,7 @@
         "id": "bearer-credentials",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#bearer-credentials",
         "title": "Bearer Credentials",
-        "number": "8.11"
+        "number": "8.10"
       },
       "definedIn": "prose"
     }
