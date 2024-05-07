@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-07T00:51:26.711Z",
+  "date": "2024-05-07T06:35:42.820Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -29,7 +29,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 21
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -2646,11 +2646,11 @@
       ],
       "crawled": "https://fullscreen.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Jan 2024 10:43:02 GMT"
+        "lastModified": "Tue, 07 May 2024 02:23:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 January 2024",
-      "revision": "4cafed12d80d951a6cfdae8d51ab42eb5271b3f4",
+      "date": "7 May 2024",
+      "revision": "7af6ea39ba1426ec852392cadc1335f45c8f48f0",
       "links": "links/fullscreen.json",
       "refs": "refs/fullscreen.json",
       "events": "events/fullscreen.json",
@@ -21598,15 +21598,14 @@
       ],
       "crawled": "https://drafts.csswg.org/css-style-attr/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 06 May 2024 18:12:26 GMT"
+        "lastModified": "Mon, 06 May 2024 21:43:56 GMT"
       },
       "date": "10 April 2015",
       "links": "links/css-style-attr.json",
       "refs": "refs/css-style-attr.json",
       "dfns": "dfns/css-style-attr.json",
       "headings": "headings/css-style-attr.json",
-      "ids": "ids/css-style-attr.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-style-attr/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 388)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 388)\n}"
+      "ids": "ids/css-style-attr.json"
     },
     {
       "url": "https://www.w3.org/TR/css-syntax-3/",
@@ -22814,7 +22813,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 3 May 2024 14:46:26 GMT"
+        "lastModified": "Mon, 6 May 2024 20:24:14 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2024",
@@ -22823,8 +22822,7 @@
       "css": "css/css-viewport.json",
       "dfns": "dfns/css-viewport-1.json",
       "headings": "headings/css-viewport-1.json",
-      "ids": "ids/css-viewport-1.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-viewport-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-viewport-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -27718,7 +27716,7 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "title": "DeviceOrientation Event Specification",
+      "title": "Device Orientation and Motion",
       "source": "w3c",
       "shortTitle": "DeviceOrientation Event",
       "categories": [
@@ -27737,11 +27735,11 @@
       ],
       "crawled": "https://w3c.github.io/deviceorientation/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 04 May 2024 02:14:26 GMT"
+        "lastModified": "Tue, 07 May 2024 04:12:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 May 2024",
-      "revision": "831284ecd20b9eedc66f87857349c178ae22ed48",
+      "date": "7 May 2024",
+      "revision": "21d1db5c262d365a653ce036ce646c71d3af5634",
       "links": "links/orientation-event.json",
       "refs": "refs/orientation-event.json",
       "events": "events/orientation-event.json",
@@ -30140,15 +30138,14 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 06 May 2024 18:12:26 GMT"
+        "lastModified": "Mon, 06 May 2024 21:43:56 GMT"
       },
       "date": "30 January 2018",
       "links": "links/selectors-3.json",
       "refs": "refs/selectors-3.json",
       "dfns": "dfns/selectors-3.json",
       "headings": "headings/selectors-3.json",
-      "ids": "ids/selectors-3.json",
-      "error": "Error: Loading https://drafts.csswg.org/selectors-3/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 524)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 524)\n}"
+      "ids": "ids/selectors-3.json"
     },
     {
       "url": "https://www.w3.org/TR/selectors-4/",
@@ -34043,11 +34040,11 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 05 May 2024 01:03:49 GMT"
+        "lastModified": "Tue, 07 May 2024 05:27:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 May 2024",
-      "revision": "266eae104899608819491f9b5bd1db0a29d3582c",
+      "date": "7 May 2024",
+      "revision": "b369a88aa09e4b4c941ff7c3a88240cccf0fdad3",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",

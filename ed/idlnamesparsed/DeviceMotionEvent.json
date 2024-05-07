@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "DeviceOrientation Event Specification",
+      "title": "Device Orientation and Motion",
       "url": "https://www.w3.org/TR/orientation-event/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
