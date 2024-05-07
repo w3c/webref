@@ -1349,6 +1349,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-auctionadconfig-perbuyermultibidlimits",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyermultibidlimits",
+      "linkingText": [
+        "perBuyerMultiBidLimits"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-auctionadconfig-perbuyergrouplimits",
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyergrouplimits",
       "linkingText": [
@@ -1791,10 +1812,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "generate-a-bid",
-      "href": "https://wicg.github.io/turtledove/#generate-a-bid",
+      "id": "generate-potentially-multiple-bids",
+      "href": "https://wicg.github.io/turtledove/#generate-potentially-multiple-bids",
       "linkingText": [
-        "generate a bid"
+        "generate potentially multiple bids"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2342,10 +2363,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "register-a-bid-for-fordebuggingonly-reports",
-      "href": "https://wicg.github.io/turtledove/#register-a-bid-for-fordebuggingonly-reports",
+      "id": "register-bids-for-fordebuggingonly-reports",
+      "href": "https://wicg.github.io/turtledove/#register-bids-for-fordebuggingonly-reports",
       "linkingText": [
-        "register a bid for forDebuggingOnly reports"
+        "register bids for forDebuggingOnly reports"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3531,15 +3552,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid-generatebidoutput-generatebidoutput",
-      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid-generatebidoutput-generatebidoutput",
+      "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid-oneormanybids-oneormanybids",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid-oneormanybids-oneormanybids",
       "linkingText": [
-        "generateBidOutput"
+        "oneOrManyBids"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope/setBid(generateBidOutput)",
+        "InterestGroupBiddingScriptRunnerGlobalScope/setBid(oneOrManyBids)",
         "InterestGroupBiddingScriptRunnerGlobalScope/setBid()"
       ],
       "access": "public",
@@ -3887,10 +3908,52 @@
       "definedIn": "pre"
     },
     {
-      "id": "interestgroupbiddingscriptrunnerglobalscope-bid",
-      "href": "https://wicg.github.io/turtledove/#interestgroupbiddingscriptrunnerglobalscope-bid",
+      "id": "dom-generatebidoutput-targetnumadcomponents",
+      "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-targetnumadcomponents",
       "linkingText": [
-        "bid"
+        "targetNumAdComponents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateBidOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidding-global-scope",
+        "href": "https://wicg.github.io/turtledove/#bidding-global-scope",
+        "title": "InterestGroupBiddingScriptRunnerGlobalScope",
+        "number": "8.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-generatebidoutput-nummandatoryadcomponents",
+      "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-nummandatoryadcomponents",
+      "linkingText": [
+        "numMandatoryAdComponents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateBidOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidding-global-scope",
+        "href": "https://wicg.github.io/turtledove/#bidding-global-scope",
+        "title": "InterestGroupBiddingScriptRunnerGlobalScope",
+        "number": "8.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "interestgroupbiddingscriptrunnerglobalscope-bids",
+      "href": "https://wicg.github.io/turtledove/#interestgroupbiddingscriptrunnerglobalscope-bids",
+      "linkingText": [
+        "bids"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4034,6 +4097,46 @@
       "definedIn": "dt"
     },
     {
+      "id": "interestgroupbiddingscriptrunnerglobalscope-multi-bid-limit",
+      "href": "https://wicg.github.io/turtledove/#interestgroupbiddingscriptrunnerglobalscope-multi-bid-limit",
+      "linkingText": [
+        "multi-bid limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterestGroupBiddingScriptRunnerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidding-global-scope",
+        "href": "https://wicg.github.io/turtledove/#bidding-global-scope",
+        "title": "InterestGroupBiddingScriptRunnerGlobalScope",
+        "number": "8.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "convert-one-or-many-generatebidoutputs-to-a-list-of-generated-bids",
+      "href": "https://wicg.github.io/turtledove/#convert-one-or-many-generatebidoutputs-to-a-list-of-generated-bids",
+      "linkingText": [
+        "convert one or many GenerateBidOutputs to a list of generated bids"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidding-global-scope",
+        "href": "https://wicg.github.io/turtledove/#bidding-global-scope",
+        "title": "InterestGroupBiddingScriptRunnerGlobalScope",
+        "number": "8.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "convert-generatebidoutput-to-generated-bid",
       "href": "https://wicg.github.io/turtledove/#convert-generatebidoutput-to-generated-bid",
       "linkingText": [
@@ -4113,7 +4216,7 @@
       "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
       "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
       "linkingText": [
-        "setBid(generateBidOutput)",
+        "setBid(oneOrManyBids)",
         "setBid()"
       ],
       "localLinkingText": [],
@@ -5100,6 +5203,26 @@
       "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-adcomponentslimit",
       "linkingText": [
         "adComponentsLimit"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BiddingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "structures",
+        "href": "https://wicg.github.io/turtledove/#structures",
+        "title": "14. Structures"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-biddingbrowsersignals-multibidlimit",
+      "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-multibidlimit",
+      "linkingText": [
+        "multiBidLimit"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -7676,6 +7799,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "auction-config-per-buyer-multi-bid-limits",
+      "href": "https://wicg.github.io/turtledove/#auction-config-per-buyer-multi-bid-limits",
+      "linkingText": [
+        "per buyer multi-bid limits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-all-buyers-multi-bid-limit",
+      "href": "https://wicg.github.io/turtledove/#auction-config-all-buyers-multi-bid-limit",
+      "linkingText": [
+        "all buyers multi-bid limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "auction-config-direct-from-seller-signals-header-ad-slot",
       "href": "https://wicg.github.io/turtledove/#auction-config-direct-from-seller-signals-header-ad-slot",
       "linkingText": [
@@ -7800,6 +7965,25 @@
       "href": "https://wicg.github.io/turtledove/#look-up-per-buyer-currency",
       "linkingText": [
         "look up per-buyer currency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "look-up-per-buyer-multi-bid-limit",
+      "href": "https://wicg.github.io/turtledove/#look-up-per-buyer-multi-bid-limit",
+      "linkingText": [
+        "look up per-buyer multi-bid limit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8187,6 +8371,105 @@
       "definedIn": "dt"
     },
     {
+      "id": "generated-bid-target-number-of-ad-components",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-target-number-of-ad-components",
+      "linkingText": [
+        "target number of ad components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "generated-bid-number-of-mandatory-ad-components",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-number-of-mandatory-ad-components",
+      "linkingText": [
+        "number of mandatory ad components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "apply-any-component-ads-target-to-a-bid",
+      "href": "https://wicg.github.io/turtledove/#apply-any-component-ads-target-to-a-bid",
+      "linkingText": [
+        "apply any component ads target to a bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "try-to-reach-component-ads-target-considering-k-anonymity",
+      "href": "https://wicg.github.io/turtledove/#try-to-reach-component-ads-target-considering-k-anonymity",
+      "linkingText": [
+        "try to reach component ads target considering k-anonymity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "adjust-bid-list-based-on-k-anonymity",
+      "href": "https://wicg.github.io/turtledove/#adjust-bid-list-based-on-k-anonymity",
+      "linkingText": [
+        "adjust bid list based on k-anonymity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "14.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "bid-debug-reporting-info",
       "href": "https://wicg.github.io/turtledove/#bid-debug-reporting-info",
       "linkingText": [
@@ -8206,10 +8489,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "bid-debug-reporting-info-id",
-      "href": "https://wicg.github.io/turtledove/#bid-debug-reporting-info-id",
+      "id": "bid-debug-reporting-info-ids",
+      "href": "https://wicg.github.io/turtledove/#bid-debug-reporting-info-ids",
       "linkingText": [
-        "id"
+        "ids"
       ],
       "localLinkingText": [],
       "type": "dfn",

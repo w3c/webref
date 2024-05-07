@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n  boolean setBid(optional GenerateBidOutput generateBidOutput = {});\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
+    "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n  boolean setBid(optional (GenerateBidOutput or sequence<GenerateBidOutput>) oneOrManyBids = []);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
     "href": "https://wicg.github.io/turtledove/#interestgroupbiddingscriptrunnerglobalscope"
   },
   "extended": [],

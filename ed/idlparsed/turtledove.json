@@ -614,7 +614,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupkey"
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1056,6 +1056,39 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyercurrencies"
+          },
+          {
+            "type": "field",
+            "name": "perBuyerMultiBidLimits",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned short"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyermultibidlimits"
           },
           {
             "type": "field",
@@ -1542,7 +1575,7 @@
         "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope"
       },
       "InterestGroupBiddingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n  boolean setBid(optional GenerateBidOutput generateBidOutput = {});\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
+        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {\n  boolean setBid(optional (GenerateBidOutput or sequence<GenerateBidOutput>) oneOrManyBids = []);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
         "type": "interface",
         "name": "InterestGroupBiddingScriptRunnerGlobalScope",
         "inheritance": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",
@@ -1561,18 +1594,45 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "generateBidOutput",
+                "name": "oneOrManyBids",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "GenerateBidOutput"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "GenerateBidOutput"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": "argument-type",
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GenerateBidOutput"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 "default": {
-                  "type": "dictionary"
+                  "type": "sequence",
+                  "value": []
                 },
                 "optional": true,
                 "variadic": false
@@ -1755,7 +1815,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-adrender"
       },
       "GenerateBidOutput": {
-        "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+        "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n  unsigned long targetNumAdComponents;\n  unsigned long numMandatoryAdComponents = 0;\n};",
         "type": "dictionary",
         "name": "GenerateBidOutput",
         "inheritance": null,
@@ -1936,6 +1996,41 @@
             },
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-allowcomponentauction"
+          },
+          {
+            "type": "field",
+            "name": "targetNumAdComponents",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-targetnumadcomponents"
+          },
+          {
+            "type": "field",
+            "name": "numMandatoryAdComponents",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-nummandatoryadcomponents"
           }
         ],
         "extAttrs": [],
@@ -2251,7 +2346,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-previouswin"
       },
       "BiddingBrowserSignals": {
-        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
         "type": "dictionary",
         "name": "BiddingBrowserSignals",
         "inheritance": null,
@@ -2351,6 +2446,22 @@
             "default": null,
             "required": true,
             "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-adcomponentslimit"
+          },
+          {
+            "type": "field",
+            "name": "multiBidLimit",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-multibidlimit"
           },
           {
             "type": "field",

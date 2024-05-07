@@ -8,4 +8,6 @@ dictionary GenerateBidOutput {
   double adCost;
   unrestricted double modelingSignals;
   boolean allowComponentAuction = false;
+  unsigned long targetNumAdComponents;
+  unsigned long numMandatoryAdComponents = 0;
 };

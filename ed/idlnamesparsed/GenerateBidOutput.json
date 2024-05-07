@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+    "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n  unsigned long targetNumAdComponents;\n  unsigned long numMandatoryAdComponents = 0;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-generatebidoutput"
   },
   "extended": [],
