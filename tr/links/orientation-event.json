@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "DeviceOrientation Event Specification",
+    "title": "Device Orientation and Motion",
     "url": "https://www.w3.org/TR/orientation-event/"
   },
   "links": {
@@ -45,6 +45,7 @@
         "anchors": [
           "event",
           "dictdef-eventinit",
+          "concept-event-dispatch",
           "concept-event-fire"
         ]
       },
@@ -109,6 +110,7 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "set-append",
           "iteration-break",
           "map-exists",
           "map-entry",
@@ -216,10 +218,21 @@
         ]
       },
       "https://www.w3.org/TR/gyroscope/": {},
+      "https://www.w3.org/TR/magnetometer/": {
+        "anchors": [
+          "magnetometer-feature"
+        ]
+      },
       "https://www.w3.org/TR/motion-sensors/": {
         "anchors": [
           "accelerometer",
           "linear-acceleration-sensor"
+        ]
+      },
+      "https://www.w3.org/TR/orientation-event/": {
+        "anchors": [
+          "accelerometer-feature",
+          "gyroscope-feature"
         ]
       },
       "https://www.w3.org/TR/orientation-sensor/": {
@@ -237,11 +250,12 @@
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
           "dom-permissionstate",
-          "dfn-default-powerful-feature",
           "dom-permissionstate-denied",
           "dfn-express-permission",
           "dfn-getting-the-current-permission-state",
           "dom-permissionstate-granted",
+          "dfn-granted",
+          "dfn-permission",
           "dfn-permission-state",
           "dfn-powerful-feature",
           "dom-permissionstate-prompt",
@@ -262,6 +276,7 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "concept-event-dispatch",
           "event",
           "dictdef-eventinit",
           "concept-event-fire"
@@ -320,6 +335,7 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "implementation-defined",
+          "set-append",
           "list-iterate",
           "iteration-break",
           "map-exists",
@@ -394,6 +410,17 @@
           "dom-dommatrixreadonly-rotate"
         ]
       },
+      "https://www.w3.org/TR/magnetometer/": {
+        "anchors": [
+          "magnetometer-feature"
+        ]
+      },
+      "https://www.w3.org/TR/orientation-event/": {
+        "anchors": [
+          "accelerometer-feature",
+          "gyroscope-feature"
+        ]
+      },
       "https://www.w3.org/TR/orientation-sensor/": {
         "anchors": [
           "earths-reference-coordinate-system"
@@ -408,8 +435,9 @@
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
-          "dfn-default-powerful-feature",
           "dfn-powerful-feature",
+          "dfn-permission",
+          "dfn-granted",
           "dom-permissionstate",
           "dfn-permission-state",
           "dom-permissionstate-prompt",
