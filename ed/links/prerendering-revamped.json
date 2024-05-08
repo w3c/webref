@@ -68,6 +68,7 @@
       "https://wicg.github.io/file-system-access/": {},
       "https://wicg.github.io/idle-detection/": {},
       "https://wicg.github.io/keyboard-lock/": {},
+      "https://wicg.github.io/nav-speculation/no-vary-search.html": {},
       "https://wicg.github.io/serial/": {},
       "https://wicg.github.io/speech-api/": {},
       "https://wicg.github.io/webhid/": {},
@@ -82,6 +83,7 @@
           "concept-node",
           "concept-node-document",
           "concept-document-origin",
+          "concept-document-url",
           "concept-event-fire",
           "concept-document"
         ]
@@ -117,6 +119,7 @@
         "anchors": [
           "navigate",
           "navigation-referrer-policy",
+          "url-and-history-update-steps",
           "history-handling-behavior",
           "navigation-id",
           "ongoing-navigation",
@@ -132,8 +135,7 @@
           "attempt-to-populate-the-history-entry's-document",
           "navigation-params-request",
           "navigation-params-response",
-          "hand-off-to-external-software",
-          "url-and-history-update-steps"
+          "hand-off-to-external-software"
         ]
       },
       "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
@@ -208,6 +210,10 @@
         "anchors": [
           "window",
           "concept-document-window",
+          "can-have-its-url-rewritten",
+          "window-navigation-api",
+          "fire-a-push/replace/reload-navigate-event",
+          "dom-navigationtype-replace",
           "window-navigable",
           "script-closable",
           "dom-open"
@@ -265,20 +271,25 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "ordered-map",
           "list",
+          "struct",
+          "struct-item",
           "list-item",
           "user-agent",
           "assert",
-          "map-exists",
-          "map-remove",
-          "list-size",
-          "list-remove",
           "list-iterate",
+          "list-append",
+          "list-remove",
+          "list-size",
           "map-iterate",
           "map-set",
+          "iteration-continue",
+          "iteration-break",
+          "list-is-empty",
           "list-contain",
           "list-empty",
+          "ordered-map",
+          "map-exists",
           "implementation-defined"
         ]
       },
@@ -546,6 +557,11 @@
       "https://wicg.github.io/keyboard-lock/": {
         "anchors": [
           "dom-keyboard-lock"
+        ]
+      },
+      "https://wicg.github.io/nav-speculation/no-vary-search.html": {
+        "anchors": [
+          "http-headerdef-no-vary-search"
         ]
       },
       "https://wicg.github.io/serial/": {
