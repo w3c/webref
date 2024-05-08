@@ -45,6 +45,7 @@
         "anchors": [
           "event",
           "dictdef-eventinit",
+          "concept-event-dispatch",
           "concept-event-fire"
         ]
       },
@@ -121,6 +122,7 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "set-append",
           "iteration-break",
           "map-exists",
           "map-entry",
@@ -155,6 +157,13 @@
           "device-coordinate-system"
         ]
       },
+      "https://w3c.github.io/deviceorientation/": {
+        "anchors": [
+          "accelerometer-feature",
+          "gyroscope-feature",
+          "magnetometer-feature"
+        ]
+      },
       "https://w3c.github.io/gyroscope/": {},
       "https://w3c.github.io/motion-sensors/": {
         "anchors": [
@@ -170,11 +179,12 @@
       "https://w3c.github.io/permissions/": {
         "anchors": [
           "dom-permissionstate",
-          "dfn-default-powerful-feature",
           "dom-permissionstate-denied",
           "dfn-express-permission",
           "dfn-getting-the-current-permission-state",
           "dom-permissionstate-granted",
+          "dfn-granted",
+          "dfn-permission",
           "dfn-permission-state",
           "dfn-powerful-feature",
           "dom-permissionstate-prompt",
@@ -250,6 +260,7 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "concept-event-dispatch",
           "event",
           "dictdef-eventinit",
           "concept-event-fire"
@@ -314,6 +325,7 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "implementation-defined",
+          "set-append",
           "list-iterate",
           "iteration-break",
           "map-exists",
@@ -339,6 +351,13 @@
           "device-coordinate-system"
         ]
       },
+      "https://w3c.github.io/deviceorientation/": {
+        "anchors": [
+          "accelerometer-feature",
+          "gyroscope-feature",
+          "magnetometer-feature"
+        ]
+      },
       "https://w3c.github.io/orientation-sensor/": {
         "anchors": [
           "earths-reference-coordinate-system"
@@ -346,8 +365,9 @@
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
-          "dfn-default-powerful-feature",
           "dfn-powerful-feature",
+          "dfn-permission",
+          "dfn-granted",
           "dom-permissionstate",
           "dfn-permission-state",
           "dom-permissionstate-prompt",
