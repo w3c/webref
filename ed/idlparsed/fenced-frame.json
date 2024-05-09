@@ -7,12 +7,12 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "HTMLFencedFrameElement"
+          "HTMLFencedFrameElement",
+          "FencedFrameConfig"
         ]
       },
       "functions": {
         "Window": [
-          "FencedFrameConfig",
           "Fence"
         ]
       }
@@ -206,11 +206,34 @@
         "href": "https://wicg.github.io/fenced-frame/#typedefdef-fencedframeconfigurl"
       },
       "FencedFrameConfig": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface FencedFrameConfig {\n  constructor(USVString url);\n\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
         "type": "interface",
         "name": "FencedFrameConfig",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://wicg.github.io/fenced-frame/#dom-fencedframeconfig-fencedframeconfig"
+          },
           {
             "type": "attribute",
             "name": "containerWidth",
