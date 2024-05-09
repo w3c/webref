@@ -20,6 +20,8 @@ typedef USVString FencedFrameConfigURL;
 
 [Exposed=Window, Serializable]
 interface FencedFrameConfig {
+  constructor(USVString url);
+
   readonly attribute FencedFrameConfigSize? containerWidth;
   readonly attribute FencedFrameConfigSize? containerHeight;
   readonly attribute FencedFrameConfigSize? contentWidth;
