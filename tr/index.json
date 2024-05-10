@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-09T01:25:22.870Z",
+  "date": "2024-05-10T01:25:28.375Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 0
+    "errors": 3
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "9 May 2024",
+      "date": "10 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -11918,11 +11918,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 14 Apr 2024 23:22:04 GMT"
+        "lastModified": "Thu, 09 May 2024 08:04:19 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 April 2024",
-      "revision": "52acdd4071479aa25aaedd5cae14a817a450a79b",
+      "date": "9 May 2024",
+      "revision": "96d6c04113cb900dd22c30f112d17f7d66786d6f",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
       "idl": "idl/mediasession.idl",
@@ -12787,7 +12787,8 @@
       "refs": "refs/network-error-logging.json",
       "dfns": "dfns/network-error-logging.json",
       "headings": "headings/network-error-logging.json",
-      "ids": "ids/network-error-logging.json"
+      "ids": "ids/network-error-logging.json",
+      "error": "Error: Loading https://www.w3.org/TR/network-error-logging/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 189)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/openscreenprotocol/",
@@ -12843,7 +12844,8 @@
       "refs": "refs/openscreenprotocol.json",
       "dfns": "dfns/openscreenprotocol.json",
       "headings": "headings/openscreenprotocol.json",
-      "ids": "ids/openscreenprotocol.json"
+      "ids": "ids/openscreenprotocol.json",
+      "error": "Error: Loading https://www.w3.org/TR/openscreenprotocol/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 190)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/orientation-event/",
@@ -12911,7 +12913,8 @@
       "idl": "idl/orientation-event.idl",
       "dfns": "dfns/orientation-event.json",
       "headings": "headings/orientation-event.json",
-      "ids": "ids/orientation-event.json"
+      "ids": "ids/orientation-event.json",
+      "error": "Error: Loading https://www.w3.org/TR/orientation-event/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 191)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -19171,11 +19174,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 May 2024 05:27:31 GMT"
+        "lastModified": "Thu, 09 May 2024 20:50:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 May 2024",
-      "revision": "b369a88aa09e4b4c941ff7c3a88240cccf0fdad3",
+      "date": "9 May 2024",
+      "revision": "103647c75217b80cf8a3a60192c78e42536fc783",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -19486,11 +19489,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-svc/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 May 2024 01:21:04 GMT"
+        "lastModified": "Thu, 09 May 2024 15:21:13 GMT"
       },
       "generator": "respec",
-      "date": "08 May 2024",
-      "revision": "dea79516ca7d83d8e5de9b6b73b421965ad0336f",
+      "date": "09 May 2024",
+      "revision": "93da0ec92c8ea49372fde4156c0f02f6624d409a",
       "links": "links/webrtc-svc.json",
       "refs": "refs/webrtc-svc.json",
       "idl": "idl/webrtc-svc.idl",
