@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-10T00:50:44.627Z",
+  "date": "2024-05-10T06:37:43.239Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -29,7 +29,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 20
+    "errors": 18
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -2792,9 +2792,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 May 2024 02:23:34 GMT"
+        "lastModified": "Fri, 10 May 2024 01:55:17 GMT"
       },
-      "date": "9 May 2024",
+      "date": "10 May 2024",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -21598,15 +21598,14 @@
       ],
       "crawled": "https://drafts.csswg.org/css-style-attr/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 May 2024 08:59:29 GMT"
+        "lastModified": "Thu, 09 May 2024 20:35:47 GMT"
       },
       "date": "10 April 2015",
       "links": "links/css-style-attr.json",
       "refs": "refs/css-style-attr.json",
       "dfns": "dfns/css-style-attr.json",
       "headings": "headings/css-style-attr.json",
-      "ids": "ids/css-style-attr.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-style-attr/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 388)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:59:34)\n      at Deferred.create (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)\n      at new LifecycleWatcher (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:65:60)\n      at CdpFrame.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:136:29)\n      at CdpFrame.<anonymous> (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:98:27)\n      at CdpPage.goto (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:590:43)\n      at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:546:35)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 388)\n}"
+      "ids": "ids/css-style-attr.json"
     },
     {
       "url": "https://www.w3.org/TR/css-syntax-3/",
@@ -22814,7 +22813,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 9 May 2024 17:45:13 GMT"
+        "lastModified": "Thu, 9 May 2024 20:30:33 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2024",
@@ -22823,8 +22822,7 @@
       "css": "css/css-viewport.json",
       "dfns": "dfns/css-viewport-1.json",
       "headings": "headings/css-viewport-1.json",
-      "ids": "ids/css-viewport-1.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-viewport-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-viewport-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -24602,11 +24600,11 @@
       ],
       "crawled": "https://w3c.github.io/geolocation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 May 2024 07:07:47 GMT"
+        "lastModified": "Fri, 10 May 2024 05:24:10 GMT"
       },
       "generator": "respec",
-      "date": "07 May 2024",
-      "revision": "933f9e5da311c5f429d7b089cfa61589b13c21aa",
+      "date": "10 May 2024",
+      "revision": "561c0ef9161c0c185d2f4dacad0e3b42537ac5a8",
       "links": "links/geolocation.json",
       "refs": "refs/geolocation.json",
       "idl": "idl/geolocation.idl",
