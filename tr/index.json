@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-10T01:25:28.375Z",
+  "date": "2024-05-11T01:24:45.293Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 3
+    "errors": 6
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "10 May 2024",
+      "date": "11 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -3642,7 +3642,8 @@
       "css": "css/css-contain.json",
       "dfns": "dfns/css-contain-2.json",
       "headings": "headings/css-contain-2.json",
-      "ids": "ids/css-contain-2.json"
+      "ids": "ids/css-contain-2.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-contain-2/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 46)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-contain-3/",
@@ -12902,19 +12903,18 @@
       ],
       "crawled": "https://www.w3.org/TR/orientation-event/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 May 2024 04:08:07 GMT"
+        "lastModified": "Thu, 09 May 2024 15:04:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 May 2024",
-      "revision": "76dc60da7e30202195bb9ba107a90616797fd765",
+      "date": "9 May 2024",
+      "revision": "a8bb8fb5904d1ca47b034c00c13b81b240106451",
       "links": "links/orientation-event.json",
       "refs": "refs/orientation-event.json",
       "events": "events/orientation-event.json",
       "idl": "idl/orientation-event.idl",
       "dfns": "dfns/orientation-event.json",
       "headings": "headings/orientation-event.json",
-      "ids": "ids/orientation-event.json",
-      "error": "Error: Loading https://www.w3.org/TR/orientation-event/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 191)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/orientation-event.json"
     },
     {
       "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -14078,7 +14078,8 @@
       "refs": "refs/rdf12-n-quads.json",
       "dfns": "dfns/rdf12-n-quads.json",
       "headings": "headings/rdf12-n-quads.json",
-      "ids": "ids/rdf12-n-quads.json"
+      "ids": "ids/rdf12-n-quads.json",
+      "error": "Error: Loading https://www.w3.org/TR/rdf12-n-quads/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 210)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-n-triples/",
@@ -14133,7 +14134,8 @@
       "refs": "refs/rdf12-n-triples.json",
       "dfns": "dfns/rdf12-n-triples.json",
       "headings": "headings/rdf12-n-triples.json",
-      "ids": "ids/rdf12-n-triples.json"
+      "ids": "ids/rdf12-n-triples.json",
+      "error": "Error: Loading https://www.w3.org/TR/rdf12-n-triples/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 211)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-schema/",
@@ -14187,7 +14189,8 @@
       "links": "links/rdf12-schema.json",
       "refs": "refs/rdf12-schema.json",
       "headings": "headings/rdf12-schema.json",
-      "ids": "ids/rdf12-schema.json"
+      "ids": "ids/rdf12-schema.json",
+      "error": "Error: Loading https://www.w3.org/TR/rdf12-schema/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 212)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-semantics/",
@@ -19174,11 +19177,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 May 2024 20:50:31 GMT"
+        "lastModified": "Fri, 10 May 2024 09:14:09 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 May 2024",
-      "revision": "103647c75217b80cf8a3a60192c78e42536fc783",
+      "date": "10 May 2024",
+      "revision": "587af73858cb9e16e26742c61bcbc7a2a30013c7",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20253,11 +20256,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webxrlayers-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Apr 2024 16:22:28 GMT"
+        "lastModified": "Fri, 10 May 2024 14:49:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 April 2024",
-      "revision": "64a37a4eea3a6e0659ef912598042585a90cdbf3",
+      "date": "10 May 2024",
+      "revision": "3f49f0195e1efcdfcd44177f1b92c6577cd0d065",
       "links": "links/webxrlayers-1.json",
       "refs": "refs/webxrlayers-1.json",
       "events": "events/webxrlayers-1.json",
