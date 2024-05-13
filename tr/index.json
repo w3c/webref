@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-12T01:27:58.644Z",
+  "date": "2024-05-13T01:26:23.593Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 11
+    "errors": 13
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "12 May 2024",
+      "date": "13 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -12977,7 +12977,8 @@
       "idl": "idl/orientation-sensor.idl",
       "dfns": "dfns/orientation-sensor.json",
       "headings": "headings/orientation-sensor.json",
-      "ids": "ids/orientation-sensor.json"
+      "ids": "ids/orientation-sensor.json",
+      "error": "Error: Loading https://www.w3.org/TR/orientation-sensor/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 192)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/paint-timing/",
@@ -13103,7 +13104,8 @@
       "idl": "idl/payment-handler.idl",
       "dfns": "dfns/payment-handler.json",
       "headings": "headings/payment-handler.json",
-      "ids": "ids/payment-handler.json"
+      "ids": "ids/payment-handler.json",
+      "error": "Error: Loading https://www.w3.org/TR/payment-handler/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 194)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/payment-method-id/",
