@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Digital Credentials",
-    "url": "https://wicg.github.io/digital-identities/"
+    "url": "https://wicg.github.io/digital-credentials"
   },
   "idlparsed": {
     "jsNames": {
@@ -42,12 +42,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions-providers"
+            "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialrequestoptions-providers"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions"
+        "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialrequestoptions"
       },
       "IdentityRequestProvider": {
         "fragment": "dictionary IdentityRequestProvider {\n  required DOMString protocol;\n  required object request;\n};",
@@ -69,7 +69,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-protocol"
+            "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-protocol"
           },
           {
             "type": "field",
@@ -85,12 +85,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-request"
+            "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-request"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider"
+        "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider"
       },
       "DigitalCredential": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  readonly attribute any data;\n};",
@@ -112,7 +112,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-protocol"
+            "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential-protocol"
           },
           {
             "type": "attribute",
@@ -128,7 +128,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-data"
+            "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential-data"
           }
         ],
         "extAttrs": [
@@ -149,7 +149,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential"
+        "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential"
       }
     },
     "idlExtendedNames": {
@@ -187,7 +187,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://wicg.github.io/digital-identities/#dom-navigator-identity"
+              "href": "https://wicg.github.io/digital-credentials#dom-navigator-identity"
             }
           ],
           "extAttrs": [],
@@ -215,7 +215,7 @@
               },
               "default": null,
               "required": false,
-              "href": "https://wicg.github.io/digital-identities/#dom-credentialrequestoptions-digital"
+              "href": "https://wicg.github.io/digital-credentials#dom-credentialrequestoptions-digital"
             }
           ],
           "extAttrs": [],

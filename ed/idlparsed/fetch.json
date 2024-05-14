@@ -474,7 +474,7 @@
         "href": "https://fetch.spec.whatwg.org/#bodyinit"
       },
       "Body": {
-        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<Uint8Array> bytes();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
         "type": "interface mixin",
         "name": "Body",
         "inheritance": null,
@@ -574,6 +574,38 @@
             ],
             "special": "",
             "href": "https://fetch.spec.whatwg.org/#dom-body-blob"
+          },
+          {
+            "type": "operation",
+            "name": "bytes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Uint8Array"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-bytes"
           },
           {
             "type": "operation",
@@ -2160,6 +2192,7 @@
         "ReadableStream",
         "ArrayBuffer",
         "Blob",
+        "Uint8Array",
         "FormData"
       ],
       "Request": [
@@ -2213,6 +2246,7 @@
       "URLSearchParams",
       "ReadableStream",
       "ArrayBuffer",
+      "Uint8Array",
       "ReferrerPolicy",
       "AbortSignal",
       "WindowOrWorkerGlobalScope"

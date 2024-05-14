@@ -1,12 +1,12 @@
 {
   "spec": {
     "title": "Digital Credentials",
-    "url": "https://wicg.github.io/digital-identities/"
+    "url": "https://wicg.github.io/digital-credentials"
   },
   "dfns": [
     {
       "id": "dfn-credential-type-examples",
-      "href": "https://wicg.github.io/digital-identities/#dfn-credential-type-examples",
+      "href": "https://wicg.github.io/digital-credentials#dfn-credential-type-examples",
       "linkingText": [
         "credential type examples",
         "Examples of these types"
@@ -18,7 +18,7 @@
       "informative": false,
       "heading": {
         "id": "introduction",
-        "href": "https://wicg.github.io/digital-identities/#introduction",
+        "href": "https://wicg.github.io/digital-credentials#introduction",
         "title": "Introduction",
         "number": "1"
       },
@@ -26,7 +26,7 @@
     },
     {
       "id": "dfn-digital-credential",
-      "href": "https://wicg.github.io/digital-identities/#dfn-digital-credential",
+      "href": "https://wicg.github.io/digital-credentials#dfn-digital-credential",
       "linkingText": [
         "Digital credential"
       ],
@@ -37,7 +37,7 @@
       "informative": false,
       "heading": {
         "id": "model",
-        "href": "https://wicg.github.io/digital-identities/#model",
+        "href": "https://wicg.github.io/digital-credentials#model",
         "title": "Model",
         "number": "2"
       },
@@ -46,7 +46,7 @@
     },
     {
       "id": "dfn-exchange-protocol",
-      "href": "https://wicg.github.io/digital-identities/#dfn-exchange-protocol",
+      "href": "https://wicg.github.io/digital-credentials#dfn-exchange-protocol",
       "linkingText": [
         "Exchange protocol"
       ],
@@ -59,16 +59,16 @@
       "informative": false,
       "heading": {
         "id": "model",
-        "href": "https://wicg.github.io/digital-identities/#model",
+        "href": "https://wicg.github.io/digital-credentials#model",
         "title": "Model",
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A protocol used for exchanging a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a> between a\n        <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a> and a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>. See section <a href=\"https://wicg.github.io/digital-identities/#protocol-registry\"><bdi>9. </bdi>\n      Registry of protocols for requesting digital credential</a>."
+      "htmlProse": "A protocol used for exchanging a <a href=\"https://wicg.github.io/digital-credentials#dfn-digital-credential\">digital credential</a> between a\n        <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a> and a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>. See section <a href=\"https://wicg.github.io/digital-credentials#protocol-registry\"><bdi>9. </bdi>\n      Registry of protocols for requesting digital credential</a>."
     },
     {
       "id": "dfn-presentation-response",
-      "href": "https://wicg.github.io/digital-identities/#dfn-presentation-response",
+      "href": "https://wicg.github.io/digital-credentials#dfn-presentation-response",
       "linkingText": [
         "Presentation response"
       ],
@@ -79,16 +79,16 @@
       "informative": false,
       "heading": {
         "id": "model",
-        "href": "https://wicg.github.io/digital-identities/#model",
+        "href": "https://wicg.github.io/digital-credentials#model",
         "title": "Model",
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A format that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder's</a> software, such as a digital wallet,\n        uses, via an <a href=\"https://wicg.github.io/digital-identities/#dfn-exchange-protocol\">exchange protocol</a>, to respond to a\n        <a href=\"https://wicg.github.io/digital-identities/#dfn-query\">query</a> by a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>."
+      "htmlProse": "A format that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder's</a> software, such as a digital wallet,\n        uses, via an <a href=\"https://wicg.github.io/digital-credentials#dfn-exchange-protocol\">exchange protocol</a>, to respond to a\n        <a href=\"https://wicg.github.io/digital-credentials#dfn-query\">query</a> by a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>."
     },
     {
       "id": "dfn-query",
-      "href": "https://wicg.github.io/digital-identities/#dfn-query",
+      "href": "https://wicg.github.io/digital-credentials#dfn-query",
       "linkingText": [
         "query"
       ],
@@ -101,16 +101,16 @@
       "informative": false,
       "heading": {
         "id": "model",
-        "href": "https://wicg.github.io/digital-identities/#model",
+        "href": "https://wicg.github.io/digital-credentials#model",
         "title": "Model",
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A format that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> software or a <a href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> uses, via an\n        <a href=\"https://wicg.github.io/digital-identities/#dfn-exchange-protocol\">exchange protocol</a>, to request a <a href=\"https://wicg.github.io/digital-identities/#dfn-digital-credential\">digital credential</a> from a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a>."
+      "htmlProse": "A format that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> software or a <a href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> uses, via an\n        <a href=\"https://wicg.github.io/digital-credentials#dfn-exchange-protocol\">exchange protocol</a>, to request a <a href=\"https://wicg.github.io/digital-credentials#dfn-digital-credential\">digital credential</a> from a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a>."
     },
     {
       "id": "dom-navigator-identity",
-      "href": "https://wicg.github.io/digital-identities/#dom-navigator-identity",
+      "href": "https://wicg.github.io/digital-credentials#dom-navigator-identity",
       "linkingText": [
         "identity"
       ],
@@ -125,7 +125,7 @@
       "informative": false,
       "heading": {
         "id": "the-identity-attribute",
-        "href": "https://wicg.github.io/digital-identities/#the-identity-attribute",
+        "href": "https://wicg.github.io/digital-credentials#the-identity-attribute",
         "title": "The identity attribute",
         "number": "4.1"
       },
@@ -133,7 +133,7 @@
     },
     {
       "id": "dom-credentialrequestoptions-digital",
-      "href": "https://wicg.github.io/digital-identities/#dom-credentialrequestoptions-digital",
+      "href": "https://wicg.github.io/digital-credentials#dom-credentialrequestoptions-digital",
       "linkingText": [
         "digital"
       ],
@@ -146,7 +146,7 @@
       "informative": false,
       "heading": {
         "id": "the-digital-member",
-        "href": "https://wicg.github.io/digital-identities/#the-digital-member",
+        "href": "https://wicg.github.io/digital-credentials#the-digital-member",
         "title": "The digital member",
         "number": "5.1"
       },
@@ -154,7 +154,7 @@
     },
     {
       "id": "dom-digitalcredentialrequestoptions",
-      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions",
+      "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialrequestoptions",
       "linkingText": [
         "DigitalCredentialRequestOptions"
       ],
@@ -165,7 +165,7 @@
       "informative": false,
       "heading": {
         "id": "the-digitalcredentialrequestoptions-dictionary",
-        "href": "https://wicg.github.io/digital-identities/#the-digitalcredentialrequestoptions-dictionary",
+        "href": "https://wicg.github.io/digital-credentials#the-digitalcredentialrequestoptions-dictionary",
         "title": "The DigitalCredentialRequestOptions dictionary",
         "number": "6"
       },
@@ -173,7 +173,7 @@
     },
     {
       "id": "dom-digitalcredentialrequestoptions-providers",
-      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredentialrequestoptions-providers",
+      "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialrequestoptions-providers",
       "linkingText": [
         "providers"
       ],
@@ -186,7 +186,7 @@
       "informative": false,
       "heading": {
         "id": "the-providers-member",
-        "href": "https://wicg.github.io/digital-identities/#the-providers-member",
+        "href": "https://wicg.github.io/digital-credentials#the-providers-member",
         "title": "The providers member",
         "number": "6.1"
       },
@@ -194,7 +194,7 @@
     },
     {
       "id": "dom-identityrequestprovider",
-      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider",
+      "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider",
       "linkingText": [
         "IdentityRequestProvider"
       ],
@@ -205,7 +205,7 @@
       "informative": false,
       "heading": {
         "id": "the-identityrequestprovider-dictionary",
-        "href": "https://wicg.github.io/digital-identities/#the-identityrequestprovider-dictionary",
+        "href": "https://wicg.github.io/digital-credentials#the-identityrequestprovider-dictionary",
         "title": "The IdentityRequestProvider dictionary",
         "number": "7"
       },
@@ -213,7 +213,7 @@
     },
     {
       "id": "dom-identityrequestprovider-protocol",
-      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-protocol",
+      "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-protocol",
       "linkingText": [
         "protocol"
       ],
@@ -226,7 +226,7 @@
       "informative": false,
       "heading": {
         "id": "the-protocol-member",
-        "href": "https://wicg.github.io/digital-identities/#the-protocol-member",
+        "href": "https://wicg.github.io/digital-credentials#the-protocol-member",
         "title": "The protocol member",
         "number": "7.1"
       },
@@ -234,7 +234,7 @@
     },
     {
       "id": "dom-identityrequestprovider-request",
-      "href": "https://wicg.github.io/digital-identities/#dom-identityrequestprovider-request",
+      "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-request",
       "linkingText": [
         "request"
       ],
@@ -247,7 +247,7 @@
       "informative": false,
       "heading": {
         "id": "the-request-member",
-        "href": "https://wicg.github.io/digital-identities/#the-request-member",
+        "href": "https://wicg.github.io/digital-credentials#the-request-member",
         "title": "The request member",
         "number": "7.2"
       },
@@ -255,7 +255,7 @@
     },
     {
       "id": "dom-digitalcredential",
-      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential",
+      "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential",
       "linkingText": [
         "DigitalCredential"
       ],
@@ -266,7 +266,7 @@
       "informative": false,
       "heading": {
         "id": "the-digitalcredential-interface",
-        "href": "https://wicg.github.io/digital-identities/#the-digitalcredential-interface",
+        "href": "https://wicg.github.io/digital-credentials#the-digitalcredential-interface",
         "title": "The DigitalCredential interface",
         "number": "8"
       },
@@ -274,7 +274,7 @@
     },
     {
       "id": "dom-digitalcredential-protocol",
-      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-protocol",
+      "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential-protocol",
       "linkingText": [
         "protocol"
       ],
@@ -289,7 +289,7 @@
       "informative": false,
       "heading": {
         "id": "the-protocol-member-0",
-        "href": "https://wicg.github.io/digital-identities/#the-protocol-member-0",
+        "href": "https://wicg.github.io/digital-credentials#the-protocol-member-0",
         "title": "The protocol member",
         "number": "8.1"
       },
@@ -297,7 +297,7 @@
     },
     {
       "id": "dom-digitalcredential-data",
-      "href": "https://wicg.github.io/digital-identities/#dom-digitalcredential-data",
+      "href": "https://wicg.github.io/digital-credentials#dom-digitalcredential-data",
       "linkingText": [
         "data"
       ],
@@ -312,7 +312,7 @@
       "informative": false,
       "heading": {
         "id": "the-data-member",
-        "href": "https://wicg.github.io/digital-identities/#the-data-member",
+        "href": "https://wicg.github.io/digital-credentials#the-data-member",
         "title": "The data member",
         "number": "8.2"
       },
