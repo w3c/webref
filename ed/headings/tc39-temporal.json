@@ -1482,18 +1482,25 @@
       "number": "5.5.11"
     },
     {
+      "id": "sec-temporal-differenceplaindatetimewithrounding",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-differenceplaindatetimewithrounding",
+      "title": "DifferencePlainDateTimeWithRounding ( plainDate1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, roundingIncrement, smallestUnit, roundingMode, resolvedOptions )",
+      "level": 3,
+      "number": "5.5.12"
+    },
+    {
       "id": "sec-temporal-differencetemporalplaindatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencetemporalplaindatetime",
       "title": "DifferenceTemporalPlainDateTime ( operation, dateTime, other, options )",
       "level": 3,
-      "number": "5.5.12"
+      "number": "5.5.13"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromplaindatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoorsubtractdurationfromplaindatetime",
       "title": "AddDurationToOrSubtractDurationFromPlainDateTime ( operation, dateTime, temporalDurationLike, options )",
       "level": 3,
-      "number": "5.5.13"
+      "number": "5.5.14"
     },
     {
       "id": "sec-temporal-zoneddatetime-objects",
@@ -2014,9 +2021,9 @@
       "number": "6.5.7"
     },
     {
-      "id": "sec-temporal-normalizedtimedurationtodays",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationtodays",
-      "title": "NormalizedTimeDurationToDays ( norm, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
+      "id": "sec-temporal-differencezoneddatetimewithrounding",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencezoneddatetimewithrounding",
+      "title": "DifferenceZonedDateTimeWithRounding ( ns1, ns2, calendarRec, timeZoneRec, precalculatedPlainDateTime, resolvedOptions, largestUnit, roundingIncrement, smallestUnit, roundingMode )",
       "level": 3,
       "number": "6.5.8"
     },
@@ -2525,81 +2532,88 @@
       "number": "7.5.35"
     },
     {
-      "id": "sec-temporal-balancetimedurationrelative",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative",
-      "title": "BalanceTimeDurationRelative ( days, norm, largestUnit, zonedRelativeTo, timeZoneRec, precalculatedPlainDateTime )",
-      "level": 3,
-      "number": "7.5.36"
-    },
-    {
       "id": "sec-temporal-unbalancedatedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedatedurationrelative",
-      "title": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
+      "title": "UnbalanceDateDurationRelative ( years, months, weeks, days, plainRelativeTo, calendarRec )",
       "level": 3,
-      "number": "7.5.37"
-    },
-    {
-      "id": "sec-temporal-balancedatedurationrelative",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancedatedurationrelative",
-      "title": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, smallestUnit, plainRelativeTo, calendarRec )",
-      "level": 3,
-      "number": "7.5.38"
+      "number": "7.5.36"
     },
     {
       "id": "sec-temporal-addduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addduration",
       "title": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, calendarRec, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
-      "number": "7.5.39"
+      "number": "7.5.37"
     },
     {
       "id": "sec-temporal-daysuntil",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-daysuntil",
       "title": "DaysUntil ( earlier, later )",
       "level": 3,
+      "number": "7.5.38"
+    },
+    {
+      "id": "sec-temporal-roundtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundtimeduration",
+      "title": "RoundTimeDuration ( days, norm, increment, unit, roundingMode )",
+      "level": 3,
+      "number": "7.5.39"
+    },
+    {
+      "id": "sec-temporal-duration-nudge-result-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-duration-nudge-result-records",
+      "title": "Duration Nudge Result Records",
+      "level": 3,
       "number": "7.5.40"
     },
     {
-      "id": "sec-temporal-moverelativedate",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativedate",
-      "title": "MoveRelativeDate ( calendarRec, relativeTo, duration )",
+      "id": "sec-temporal-nudgetocalendarunit",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetocalendarunit",
+      "title": "NudgeToCalendarUnit ( sign, duration, destEpochNs, dateTime, calendarRec, timeZoneRec, increment, unit, roundingMode )",
       "level": 3,
       "number": "7.5.41"
     },
     {
-      "id": "sec-temporal-moverelativezoneddatetime",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime",
-      "title": "MoveRelativeZonedDateTime ( zonedDateTime, calendarRec, timeZoneRec, years, months, weeks, days, precalculatedPlainDateTime )",
+      "id": "sec-temporal-nudgetozonedtime",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetozonedtime",
+      "title": "NudgeToZonedTime ( sign, duration, dateTime, calendarRec, timeZoneRec, increment, unit, roundingMode )",
       "level": 3,
       "number": "7.5.42"
     },
     {
-      "id": "sec-temporal-roundduration",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration",
-      "title": "RoundDuration ( years, months, weeks, days, norm, increment, unit, roundingMode [ , plainRelativeTo [ , calendarRec [ , zonedRelativeTo [ , timeZoneRec [ , precalculatedPlainDateTime ] ] ] ] ] )",
+      "id": "sec-temporal-nudgetodayortime",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetodayortime",
+      "title": "NudgeToDayOrTime ( duration, destEpochNs, largestUnit, increment, smallestUnit, roundingMode )",
       "level": 3,
       "number": "7.5.43"
     },
     {
-      "id": "sec-temporal-adjustroundeddurationdays",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays",
-      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, norm, increment, unit, roundingMode, zonedRelativeTo, calendarRec, timeZoneRec, precalculatedPlainDateTime )",
+      "id": "sec-temporal-bubblerelativeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-bubblerelativeduration",
+      "title": "BubbleRelativeDuration ( sign, duration, nudgedEpochNs, dateTime, calendarRec, timeZoneRec, largestUnit, smallestUnit )",
       "level": 3,
       "number": "7.5.44"
+    },
+    {
+      "id": "sec-temporal-roundrelativeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundrelativeduration",
+      "title": "RoundRelativeDuration ( duration, destEpochNs, dateTime, calendarRec, timeZoneRec, largestUnit, increment, smallestUnit, roundingMode )",
+      "level": 3,
+      "number": "7.5.45"
     },
     {
       "id": "sec-temporal-temporaldurationtostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldurationtostring",
       "title": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, normSeconds, precision )",
       "level": 3,
-      "number": "7.5.45"
+      "number": "7.5.46"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoorsubtractdurationfromduration",
       "title": "AddDurationToOrSubtractDurationFromDuration ( operation, duration, other, options )",
       "level": 3,
-      "number": "7.5.46"
+      "number": "7.5.47"
     },
     {
       "id": "sec-temporal-instant-objects",
