@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-13T01:26:23.593Z",
+  "date": "2024-05-14T01:25:42.369Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 13
+    "errors": 16
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "13 May 2024",
+      "date": "14 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -11919,11 +11919,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 May 2024 08:04:19 GMT"
+        "lastModified": "Mon, 13 May 2024 10:01:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 May 2024",
-      "revision": "96d6c04113cb900dd22c30f112d17f7d66786d6f",
+      "date": "13 May 2024",
+      "revision": "6879d5257a2bf91757008858d0d8e9103b7d6c56",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
       "idl": "idl/mediasession.idl",
@@ -14474,7 +14474,8 @@
       "idl": "idl/referrer-policy.idl",
       "dfns": "dfns/referrer-policy.json",
       "headings": "headings/referrer-policy.json",
-      "ids": "ids/referrer-policy.json"
+      "ids": "ids/referrer-policy.json",
+      "error": "Error: Loading https://www.w3.org/TR/referrer-policy/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 217)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/remote-playback/",
@@ -14538,7 +14539,8 @@
       "idl": "idl/remote-playback.idl",
       "dfns": "dfns/remote-playback.json",
       "headings": "headings/remote-playback.json",
-      "ids": "ids/remote-playback.json"
+      "ids": "ids/remote-playback.json",
+      "error": "Error: Loading https://www.w3.org/TR/remote-playback/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 218)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/reporting-1/",
@@ -14731,7 +14733,8 @@
       "idl": "idl/resize-observer.idl",
       "dfns": "dfns/resize-observer-1.json",
       "headings": "headings/resize-observer-1.json",
-      "ids": "ids/resize-observer-1.json"
+      "ids": "ids/resize-observer-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/resize-observer-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 221)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/resource-timing/",
@@ -17178,11 +17181,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 May 2024 23:17:54 GMT"
+        "lastModified": "Mon, 13 May 2024 16:01:56 GMT"
       },
       "generator": "respec",
-      "date": "07 May 2024",
-      "revision": "0e6d623d15fb6a3ffadf1249580b5ba55d7894e4",
+      "date": "13 May 2024",
+      "revision": "f3700e40713ad63d9a242297b129f4598e3ecd4e",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
       "dfns": "dfns/vc-data-model-2.0.json",
@@ -19055,11 +19058,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 May 2024 17:45:56 GMT"
+        "lastModified": "Tue, 14 May 2024 01:20:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 May 2024",
-      "revision": "371dd4bf3ed7599e998521a42671a27c9fc4113c",
+      "date": "14 May 2024",
+      "revision": "983817c3dae8a0a081d88d601d86328a14105d0f",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
