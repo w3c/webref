@@ -78,8 +78,8 @@
     {
       "name": "position-anchor",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-anchor",
-      "value": "<anchor-element>",
-      "initial": "implicit",
+      "value": "auto | <anchor-element>",
+      "initial": "auto",
       "appliesTo": "absolutely positioned elements",
       "inherited": "no",
       "percentages": "n/a",
@@ -685,13 +685,6 @@
           "value": "<dashed-ident>"
         },
         {
-          "name": "implicit",
-          "prose": "Selects the implicit anchor element defined for the element, if possible.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-implicit",
-          "type": "value",
-          "value": "implicit"
-        },
-        {
           "name": "inside",
           "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-inside",
@@ -781,7 +774,7 @@
       "name": "<anchor-element>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-element",
       "type": "type",
-      "value": "<dashed-ident> | implicit"
+      "value": "<dashed-ident>"
     },
     {
       "name": "<anchor-side>",

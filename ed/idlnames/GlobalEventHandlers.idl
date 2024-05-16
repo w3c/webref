@@ -77,6 +77,12 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onwheel;
 };
 
+// Source: CSS Scroll Snap Module Level 2 (https://drafts.csswg.org/css-scroll-snap-2/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onsnapchanged;
+  attribute EventHandler onsnapchanging;
+};
+
 // Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onanimationstart;

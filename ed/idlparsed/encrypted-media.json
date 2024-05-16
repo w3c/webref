@@ -544,7 +544,7 @@
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys"
       },
       "MediaKeysPolicy": {
-        "fragment": "dictionary MediaKeysPolicy {\n    HDCPVersion minHdcpVersion;\n};",
+        "fragment": "dictionary MediaKeysPolicy {\n    DOMString minHdcpVersion;\n};",
         "type": "dictionary",
         "name": "MediaKeysPolicy",
         "inheritance": null,
@@ -559,7 +559,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "HDCPVersion"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false,
@@ -569,60 +569,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/encrypted-media/#dom-mediakeyspolicy"
-      },
-      "HDCPVersion": {
-        "fragment": "enum HDCPVersion {\n    \"1.0\",\n    \"1.1\",\n    \"1.2\",\n    \"1.3\",\n    \"1.4\",\n    \"2.0\",\n    \"2.1\",\n    \"2.2\",\n    \"2.3\",\n};",
-        "type": "enum",
-        "name": "HDCPVersion",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "1.0",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.0"
-          },
-          {
-            "type": "enum-value",
-            "value": "1.1",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.1"
-          },
-          {
-            "type": "enum-value",
-            "value": "1.2",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.2"
-          },
-          {
-            "type": "enum-value",
-            "value": "1.3",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.3"
-          },
-          {
-            "type": "enum-value",
-            "value": "1.4",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-1.4"
-          },
-          {
-            "type": "enum-value",
-            "value": "2.0",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.0"
-          },
-          {
-            "type": "enum-value",
-            "value": "2.1",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.1"
-          },
-          {
-            "type": "enum-value",
-            "value": "2.2",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.2"
-          },
-          {
-            "type": "enum-value",
-            "value": "2.3",
-            "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion-2.3"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/encrypted-media/#dom-hdcpversion"
       },
       "MediaKeySessionClosedReason": {
         "fragment": "enum MediaKeySessionClosedReason {\n  \"internal-error\",\n  \"closed-by-application\",\n  \"release-acknowledged\",\n  \"hardware-context-reset\",\n  \"resource-evicted\"\n};",
@@ -1753,9 +1699,7 @@
         "MediaKeysPolicy",
         "BufferSource"
       ],
-      "MediaKeysPolicy": [
-        "HDCPVersion"
-      ],
+      "MediaKeysPolicy": [],
       "MediaKeySession": [
         "EventTarget",
         "MediaKeySessionClosedReason",

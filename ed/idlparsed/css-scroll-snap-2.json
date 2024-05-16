@@ -151,7 +151,52 @@
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapevent"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "GlobalEventHandlers": [
+        {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onsnapchanged;\n  attribute EventHandler onsnapchanging;\n};",
+          "type": "interface mixin",
+          "name": "GlobalEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onsnapchanged",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-globaleventhandlers-onsnapchanged"
+            },
+            {
+              "type": "attribute",
+              "name": "onsnapchanging",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-globaleventhandlers-onsnapchanging"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -167,12 +212,17 @@
         "Event",
         "SnapEventInit",
         "Node"
+      ],
+      "GlobalEventHandlers": [
+        "EventHandler"
       ]
     },
     "externalDependencies": [
       "EventInit",
       "Node",
-      "Event"
+      "Event",
+      "GlobalEventHandlers",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }
