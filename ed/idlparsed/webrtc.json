@@ -1610,7 +1610,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsdptype"
       },
       "RTCSessionDescription": {
-        "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] RTCSessionDescriptionInit toJSON();\n};",
         "type": "interface",
         "name": "RTCSessionDescription",
         "inheritance": null,
@@ -1679,7 +1679,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "object"
+              "idlType": "RTCSessionDescriptionInit"
             },
             "arguments": [],
             "extAttrs": [

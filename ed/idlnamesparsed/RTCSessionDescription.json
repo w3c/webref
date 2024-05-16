@@ -6,7 +6,7 @@
       "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
+    "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] RTCSessionDescriptionInit toJSON();\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription"
   },
   "extended": [],
