@@ -189,18 +189,24 @@ const patches = {
     // (This is not a temporary fix: "HTMLElement" is the correct target
     // interface from a spec perspective, that's where the event handlers are
     // defined)
-    // Also, the "cancel" event bubbles on input elements but not on other
-    // target interfaces, so we need to duplicate the entry in the extract.
+    // Also, the "cancel" event bubbles but is not cancelable on input elements
+    // while it is (potentially) cancelable but does not bubble on other target
+    // interfaces, so we need to duplicate the entry in the extract.
     {
       pattern: { type: "cancel"},
       matched: 1,
-      change: { targets: ["HTMLInputElement"] }
+      change: {
+        bubbles: true,
+        cancelable: false,
+        targets: ["HTMLInputElement"]
+      }
     },
     {
       add: {
         type: "cancel",
         interface: "Event",
         bubbles: false,
+        cancelable: true,
         targets: ["CloseWatcher", "HTMLDialogElement"],
         href: "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
         src: {
