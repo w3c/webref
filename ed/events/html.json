@@ -622,7 +622,8 @@
         "HTMLInputElement"
       ],
       "interface": "Event",
-      "bubbles": true
+      "bubbles": true,
+      "cancelable": false
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-change",
@@ -1158,6 +1159,7 @@
       "type": "cancel",
       "interface": "Event",
       "bubbles": false,
+      "cancelable": true,
       "targets": [
         "CloseWatcher",
         "HTMLDialogElement"
