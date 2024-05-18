@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-17T01:26:09.491Z",
+  "date": "2024-05-18T01:25:22.319Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 23
+    "errors": 26
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "17 May 2024",
+      "date": "18 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -932,11 +932,11 @@
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 May 2024 01:04:57 GMT"
+        "lastModified": "Fri, 17 May 2024 17:19:28 GMT"
       },
       "generator": "respec",
       "date": "17 May 2024",
-      "revision": "9e72c0a4255543fac6a9ec8675ed0829c186ef64",
+      "revision": "4b974325363530f564ab1811a5f583ce1bf981f0",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
       "dfns": "dfns/appmanifest.json",
@@ -13355,7 +13355,8 @@
       "idl": "idl/performance-timeline.idl",
       "dfns": "dfns/performance-timeline.json",
       "headings": "headings/performance-timeline.json",
-      "ids": "ids/performance-timeline.json"
+      "ids": "ids/performance-timeline.json",
+      "error": "Error: Loading https://www.w3.org/TR/performance-timeline/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 198)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/permissions-policy-1/",
@@ -13419,7 +13420,8 @@
       "idl": "idl/permissions-policy.idl",
       "dfns": "dfns/permissions-policy-1.json",
       "headings": "headings/permissions-policy-1.json",
-      "ids": "ids/permissions-policy-1.json"
+      "ids": "ids/permissions-policy-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/permissions-policy-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 199)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/permissions/",
@@ -13547,7 +13549,8 @@
       "idl": "idl/picture-in-picture.idl",
       "dfns": "dfns/picture-in-picture.json",
       "headings": "headings/picture-in-picture.json",
-      "ids": "ids/picture-in-picture.json"
+      "ids": "ids/picture-in-picture.json",
+      "error": "Error: Loading https://www.w3.org/TR/picture-in-picture/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 201)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/pointerevents3/",
@@ -19066,11 +19069,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 May 2024 16:28:54 GMT"
+        "lastModified": "Sat, 18 May 2024 01:23:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "16 May 2024",
-      "revision": "05dd7e8d4d51dbe2d7e688053f83adbc1cef5fd1",
+      "date": "18 May 2024",
+      "revision": "0ff9ac55b4745537b20bb4cc832027b5aa874d74",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
