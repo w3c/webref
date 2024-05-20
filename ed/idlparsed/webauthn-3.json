@@ -2442,7 +2442,7 @@
         "href": "https://w3c.github.io/webauthn/#enumdef-userverificationrequirement"
       },
       "ClientCapability": {
-        "fragment": "enum ClientCapability {\n    \"conditionalCreate\",\n    \"conditionalMediation\",\n    \"hybridTransport\",\n    \"passkeyPlatformAuthenticator\",\n    \"userVerifyingPlatformAuthenticator\",\n};",
+        "fragment": "enum ClientCapability {\n    \"conditionalCreate\",\n    \"conditionalGet\",\n    \"hybridTransport\",\n    \"passkeyPlatformAuthenticator\",\n    \"userVerifyingPlatformAuthenticator\",\n};",
         "type": "enum",
         "name": "ClientCapability",
         "values": [
@@ -2453,8 +2453,8 @@
           },
           {
             "type": "enum-value",
-            "value": "conditionalMediation",
-            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalmediation"
+            "value": "conditionalGet",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalget"
           },
           {
             "type": "enum-value",
