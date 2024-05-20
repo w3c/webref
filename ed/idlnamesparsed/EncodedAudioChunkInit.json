@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required BufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
+    "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required AllowSharedBufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-encodedaudiochunkinit"
   },
   "extended": [],

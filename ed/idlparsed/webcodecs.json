@@ -2750,7 +2750,7 @@
         "href": "https://w3c.github.io/webcodecs/#encodedaudiochunk"
       },
       "EncodedAudioChunkInit": {
-        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required BufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
+        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required AllowSharedBufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
         "type": "dictionary",
         "name": "EncodedAudioChunkInit",
         "inheritance": null,
@@ -2827,7 +2827,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             "default": null,
             "required": true,
@@ -6084,7 +6084,7 @@
       ],
       "EncodedAudioChunkInit": [
         "EncodedAudioChunkType",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "ArrayBuffer"
       ],
       "EncodedVideoChunk": [
