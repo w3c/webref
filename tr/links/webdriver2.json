@@ -7,6 +7,7 @@
     "rawlinks": {
       "http://www.rocketpoweredjetpants.com/": {},
       "http://www.theautomatedtester.co.uk/": {},
+      "https://datatracker.ietf.org/doc/html/rfc1928": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/webdriver": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo": {},
       "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/CloseWindow": {},
@@ -38,6 +39,7 @@
           "dom-element-getelementsbytagname",
           "dom-element-hasattribute",
           "htmlcollection",
+          "concept-tree-inclusive-ancestor",
           "concept-tree-inclusive-descendant",
           "dom-event-istrusted",
           "concept-node-document",
@@ -72,14 +74,10 @@
       },
       "https://drafts.csswg.org/cssom-view/": {
         "anchors": [
-          "dom-document-elementfrompoint",
           "dom-document-elementsfrompoint",
           "dom-window-innerheight",
           "dom-window-innerwidth",
           "dom-window-moveto",
-          "dom-htmlelement-offsetleft",
-          "dom-htmlelement-offsetparent",
-          "dom-htmlelement-offsettop",
           "dom-window-outerheight",
           "dom-window-outerwidth",
           "dom-window-screenx",
@@ -115,6 +113,7 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request-body",
+          "default-user-agent-value",
           "concept-header",
           "concept-header-name",
           "concept-header-value",
@@ -129,11 +128,9 @@
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
-          "fullscreen-element",
           "fullscreen-an-element",
           "fullscreen-is-supported",
-          "fully-exit-fullscreen",
-          "unfullscreen-a-document"
+          "fully-exit-fullscreen"
         ]
       },
       "https://github.com/SeleniumHQ/selenium/blob/a6b161a159c3d581b130f03a2e6e35f577f38dec/javascript/atoms/dom.js": {
@@ -145,7 +142,6 @@
       "https://heycam.github.io/webidl/": {
         "anchors": [
           "dfn-DOMException",
-          "idl-sequence",
           "dfn-supported-property-indices",
           "syntaxerror",
           "this"
@@ -199,6 +195,7 @@
           "concept-fv-valid",
           "concept-option-selectedness",
           "simple-dialogs",
+          "steps-to-fire-beforeunload",
           "suffering-from-bad-input",
           "traverse-the-history-by-a-delta",
           "unfocusing-steps",
@@ -228,7 +225,6 @@
           "week-state-(type=week)",
           "attr-input-checked",
           "attr-input-multiple",
-          "event-beforeunload",
           "event-domcontentloaded",
           "event-input"
         ]
@@ -236,7 +232,9 @@
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
-          "canvas"
+          "canvas",
+          "attr-canvas-height",
+          "attr-canvas-width"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
@@ -268,11 +266,11 @@
       },
       "https://html.spec.whatwg.org/multipage/form-elements.html": {
         "anchors": [
-          "the-datalist-element",
-          "the-optgroup-element",
           "the-option-element",
-          "the-output-element",
+          "the-optgroup-element",
           "the-select-element",
+          "the-datalist-element",
+          "the-output-element",
           "the-textarea-element"
         ]
       },
@@ -336,6 +334,8 @@
           "prepare-to-run-a-callback",
           "clean-up-after-running-a-callback",
           "clean-up-after-running-script",
+          "relevant-agent",
+          "pause",
           "relevant-settings-object"
         ]
       },
@@ -354,15 +354,22 @@
         "anchors": [
           "ordered-map",
           "queue",
+          "struct",
           "ordered-set",
+          "convert-an-infra-value-to-a-json-compatible-javascript-value",
+          "convert-a-json-derived-javascript-value-to-an-infra-value",
+          "abort-when",
           "ascii-lowercase",
-          "map-exists",
           "list-contain",
+          "map-exists",
           "iteration-continue",
           "map-entry",
           "map-getting-the-values",
+          "if-aborted",
+          "struct-item",
           "string-length",
-          "struct",
+          "map-set",
+          "map-size",
           "iteration-while"
         ]
       },
@@ -428,8 +435,6 @@
           "concept-domain",
           "concept-host",
           "include-credentials",
-          "concept-ipv4",
-          "concept-ipv6",
           "is-special",
           "syntax-url-path-absolute",
           "concept-url-path",
@@ -442,7 +447,6 @@
         "anchors": [
           "dfn-fragment-serializing-algorithm",
           "dom-innerhtml-innerhtml",
-          "dom-element-outerhtml",
           "dom-xmlserializer-serializetostring"
         ]
       },
@@ -470,14 +474,7 @@
           "keyup",
           "activation-trigger",
           "event-type-click",
-          "keyboardevent",
-          "events-keyboard-event-order",
-          "event-type-keydown",
-          "event-type-keypress",
-          "event-type-keyup",
           "event-type-mousedown",
-          "mouseevent",
-          "events-mouseevent-event-order",
           "event-type-mousemove",
           "event-type-mouseover",
           "event-type-mouseup"
@@ -486,6 +483,11 @@
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "should-block-navigation-response"
+        ]
+      },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "bidi-session"
         ]
       },
       "https://web.archive.org/web/20070602031929/http://wp.netscape.com/eng/mozilla/2.0/relnotes/demo/proxy-live.html": {},
@@ -505,7 +507,6 @@
           "sec-10.2.3",
           "sec-4.3.30",
           "sec-15.1.2.2",
-          "sec-15.1.2.3",
           "sec-8.6.2",
           "sec-13.2.1",
           "sec-8.12.1",
@@ -534,7 +535,6 @@
       "https://www.erranderr.com/": {},
       "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml": {},
       "https://www.rfc-editor.org/rfc/rfc1928": {},
-      "https://www.rfc-editor.org/rfc/rfc1929": {},
       "https://www.rfc-editor.org/rfc/rfc2397": {},
       "https://www.rfc-editor.org/rfc/rfc3514": {},
       "https://www.rfc-editor.org/rfc/rfc4122": {},
@@ -593,11 +593,6 @@
           "dfn-filelist"
         ]
       },
-      "https://www.w3.org/TR/REC-xml-names/": {
-        "anchors": [
-          "ns-using"
-        ]
-      },
       "https://www.w3.org/TR/accname-1.1/": {
         "anchors": [
           "dfn-accessible-name",
@@ -638,11 +633,6 @@
         ]
       },
       "https://www.w3.org/TR/pointerevents/": {},
-      "https://www.w3.org/TR/uievents-code/": {
-        "anchors": [
-          "code-value-tables"
-        ]
-      },
       "https://www.w3.org/TR/uievents-key/": {
         "anchors": [
           "keys-modifier"
@@ -654,7 +644,6 @@
         ]
       },
       "https://www.w3.org/TR/wai-aria-1.2/": {},
-      "https://www.w3.org/TR/xml-names/": {},
       "https://www.w3.org/TR/xpath-10/": {},
       "https://www.w3.org/groups/wg/browser-tools-testing": {},
       "https://www.w3.org/groups/wg/browser-tools-testing/ipr": {}
@@ -665,6 +654,7 @@
           "concept-event-fire",
           "element",
           "concept-node-document",
+          "concept-tree-inclusive-ancestor",
           "concept-tree-inclusive-descendant",
           "concept-tree-descendant",
           "shadowroot",
@@ -687,7 +677,9 @@
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
-          "canvas"
+          "canvas",
+          "attr-canvas-width",
+          "attr-canvas-height"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
@@ -768,11 +760,16 @@
           "map-entry",
           "ascii-lowercase",
           "ordered-set",
+          "struct-item",
           "list-contain",
+          "abort-when",
+          "if-aborted",
           "string-length",
           "struct",
           "queue",
-          "map-getting-the-values"
+          "map-getting-the-values",
+          "map-set",
+          "map-size"
         ]
       },
       "https://www.w3.org/TR/FileAPI/": {
