@@ -275,6 +275,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpuobjectbase-valid-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-valid-slot",
+      "linkingText": [
+        "[[valid]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUObjectBase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-objects",
+        "href": "https://gpuweb.github.io/gpuweb/#webgpu-objects",
+        "title": "WebGPU Objects",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "object-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#object-descriptor",
       "linkingText": [
@@ -334,44 +355,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "valid",
-      "href": "https://gpuweb.github.io/gpuweb/#valid",
-      "linkingText": [
-        "valid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "invalidity",
-        "href": "https://gpuweb.github.io/gpuweb/#invalidity",
-        "title": "Invalid Internal Objects & Contagious Invalidity",
-        "number": "3.2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "invalid",
-      "href": "https://gpuweb.github.io/gpuweb/#invalid",
-      "linkingText": [
-        "invalid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "invalidity",
-        "href": "https://gpuweb.github.io/gpuweb/#invalidity",
-        "title": "Invalid Internal Objects & Contagious Invalidity",
-        "number": "3.2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "contagious-invalidity",
       "href": "https://gpuweb.github.io/gpuweb/#contagious-invalidity",
       "linkingText": [
@@ -391,10 +374,70 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-valid",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid",
+      "linkingText": [
+        "valid"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "invalidity",
+        "href": "https://gpuweb.github.io/gpuweb/#invalidity",
+        "title": "Invalid Internal Objects & Contagious Invalidity",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-invalid",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-invalid",
+      "linkingText": [
+        "invalid"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "invalidity",
+        "href": "https://gpuweb.github.io/gpuweb/#invalidity",
+        "title": "Invalid Internal Objects & Contagious Invalidity",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-valid-to-use-with",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-use-with",
       "linkingText": [
         "valid to use with"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "invalidity",
+        "href": "https://gpuweb.github.io/gpuweb/#invalidity",
+        "title": "Invalid Internal Objects & Contagious Invalidity",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-invalidate",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-invalidate",
+      "linkingText": [
+        "invalidate",
+        "Invalidate",
+        "invalidated",
+        "invalidates"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -992,6 +1035,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-adapter-expired-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-adapter-expired-slot",
+      "linkingText": [
+        "[[expired]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://gpuweb.github.io/gpuweb/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-adapter-features-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-adapter-features-slot",
       "linkingText": [
@@ -1053,6 +1117,46 @@
         "number": "3.5.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-expired",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://gpuweb.github.io/gpuweb/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-expire",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-expire",
+      "linkingText": [
+        "expire",
+        "Expire",
+        "expires"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://gpuweb.github.io/gpuweb/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "device",
@@ -3209,27 +3313,6 @@
         "number": "4.2"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "adapter-expire",
-      "href": "https://gpuweb.github.io/gpuweb/#adapter-expire",
-      "linkingText": [
-        "expire"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "adapter"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gpu-interface",
-        "href": "https://gpuweb.github.io/gpuweb/#gpu-interface",
-        "title": "GPU",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "max-bindings-per-shader-stage",
