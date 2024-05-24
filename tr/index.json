@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-23T01:25:58.247Z",
+  "date": "2024-05-24T01:26:08.657Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 35
+    "errors": 36
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "23 May 2024",
+      "date": "24 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -1228,10 +1228,11 @@
       ],
       "crawled": "https://www.w3.org/TR/battery-status/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 03 Feb 2022 07:16:12 GMT"
+        "lastModified": "Thu, 23 May 2024 17:55:01 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2022",
+      "date": "23 May 2024",
+      "revision": "dd0f919e3cd4a585d23145f88e3607c68f0d2303",
       "links": "links/battery-status.json",
       "refs": "refs/battery-status.json",
       "events": "events/battery-status.json",
@@ -1838,11 +1839,11 @@
       ],
       "crawled": "https://www.w3.org/TR/credential-management-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 May 2024 07:47:48 GMT"
+        "lastModified": "Thu, 23 May 2024 07:25:13 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 May 2024",
-      "revision": "674c63c1476da67ee6f4bba1db0ad9b78a1b99b2",
+      "date": "23 May 2024",
+      "revision": "bf8086a0a5c4de15ad7721ec96f4a4fe5eca512f",
       "links": "links/credential-management-1.json",
       "refs": "refs/credential-management-1.json",
       "idl": "idl/credential-management.idl",
@@ -14263,7 +14264,8 @@
       "refs": "refs/rdf12-semantics.json",
       "dfns": "dfns/rdf12-semantics.json",
       "headings": "headings/rdf12-semantics.json",
-      "ids": "ids/rdf12-semantics.json"
+      "ids": "ids/rdf12-semantics.json",
+      "error": "Error: Loading https://www.w3.org/TR/rdf12-semantics/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 213)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-trig/",
@@ -19205,11 +19207,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 May 2024 15:44:58 GMT"
+        "lastModified": "Thu, 23 May 2024 04:02:58 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 May 2024",
-      "revision": "5e7d8cd8561bc23ad3e9312df0699c344d4173f9",
+      "date": "23 May 2024",
+      "revision": "960ae89238912543f5a49673d3fb63fcc8318449",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20343,11 +20345,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 May 2024 01:33:13 GMT"
+        "lastModified": "Thu, 23 May 2024 17:28:34 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 May 2024",
-      "revision": "266238c81486499bc98f2b2bfbb6cceb963940fb",
+      "date": "23 May 2024",
+      "revision": "4fa953bf85651599cd18b368a81778cc287d4fd2",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

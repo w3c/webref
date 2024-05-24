@@ -14,21 +14,15 @@
       },
       "https://github.com/w3c/battery/pull/51": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "active-document",
-          "browsing-context"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "allowed-to-use"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/origin.html": {
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "concept-origin",
-          "same-origin-domain"
+          "concept-document-window",
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -40,20 +34,13 @@
         "anchors": [
           "task-source",
           "concept-task",
-          "eventhandler",
           "event-handlers",
           "event-handler-event-type",
           "current-global-object",
-          "current-settings-object",
+          "eventhandler",
           "queue-a-global-task",
           "concept-relevant-global",
           "concept-relevant-realm"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
-        "anchors": [
-          "window",
-          "concept-document-window"
         ]
       },
       "https://tc39.es/ecma262/multipage/": {
@@ -66,21 +53,21 @@
           "SecureContext",
           "idl-promise",
           "Exposed",
-          "idl-boolean",
-          "idl-unrestricted-double",
-          "idl-double",
           "a-new-promise",
+          "idl-boolean",
           "idl-DOMException",
+          "idl-double",
           "new",
           "notallowederror",
           "reject",
           "resolve",
-          "this"
+          "this",
+          "idl-unrestricted-double"
         ]
       },
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/2021/Process-20211102/": {
+      "https://www.w3.org/2023/Process-20231103/": {
         "anchors": [
           "recs-and-notes"
         ]
@@ -96,7 +83,8 @@
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
-          "default-allowlist"
+          "default-allowlist-self",
+          "policy-controlled-feature-default-allowlist"
         ]
       },
       "https://www.w3.org/groups/wg/das": {},
@@ -105,13 +93,8 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "eventtarget",
           "concept-event-fire"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "browsing-context",
-          "active-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -119,10 +102,10 @@
           "allowed-to-use"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/origin.html": {
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "concept-origin",
-          "same-origin-domain"
+          "concept-document-window",
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -134,15 +117,9 @@
         "anchors": [
           "concept-relevant-realm",
           "concept-relevant-global",
-          "current-settings-object",
+          "eventhandler",
           "current-global-object",
           "queue-a-global-task"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
-        "anchors": [
-          "concept-document-window",
-          "window"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -154,12 +131,17 @@
           "notallowederror",
           "idl-DOMException",
           "new",
-          "resolve"
+          "resolve",
+          "idl-boolean",
+          "idl-unrestricted-double",
+          "idl-double"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
-          "policy-controlled-feature"
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist",
+          "default-allowlist-self"
         ]
       }
     }
