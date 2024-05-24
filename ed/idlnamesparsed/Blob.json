@@ -6,7 +6,7 @@
       "title": "File API",
       "url": "https://www.w3.org/TR/FileAPI/"
     },
-    "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface Blob {\n  constructor(optional sequence<BlobPart> blobParts,\n              optional BlobPropertyBag options = {});\n\n  readonly attribute unsigned long long size;\n  readonly attribute DOMString type;\n\n  // slice Blob into byte-ranged chunks\n  Blob slice(optional [Clamp] long long start,\n            optional [Clamp] long long end,\n            optional DOMString contentType);\n\n  // read from the Blob.\n  [NewObject] ReadableStream stream();\n  [NewObject] Promise<USVString> text();\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n};",
+    "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface Blob {\n  constructor(optional sequence<BlobPart> blobParts,\n              optional BlobPropertyBag options = {});\n\n  readonly attribute unsigned long long size;\n  readonly attribute DOMString type;\n\n  // slice Blob into byte-ranged chunks\n  Blob slice(optional [Clamp] long long start,\n            optional [Clamp] long long end,\n            optional DOMString contentType);\n\n  // read from the Blob.\n  [NewObject] ReadableStream stream();\n  [NewObject] Promise<USVString> text();\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Uint8Array> bytes();\n};",
     "href": "https://w3c.github.io/FileAPI/#dfn-Blob"
   },
   "extended": [],
