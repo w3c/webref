@@ -1261,6 +1261,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "least-relation",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#least-relation",
+      "linkingText": [
+        "least Relation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-set-and-relation-specification-type",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-set-and-relation-specification-type",
+        "title": "The Set and Relation Specification Types",
+        "number": "6.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "sec-set-and-relation-specification-type",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-set-and-relation-specification-type",
       "linkingText": [
@@ -5336,11 +5357,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "sec-createrealm",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createrealm",
+      "id": "sec-initializehostdefinedrealm",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
       "linkingText": [
-        "CreateRealm",
-        "CreateRealm()"
+        "InitializeHostDefinedRealm",
+        "InitializeHostDefinedRealm()"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5348,9 +5369,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-createrealm",
-        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createrealm",
-        "title": "CreateRealm ( )",
+        "id": "sec-initializehostdefinedrealm",
+        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
+        "title": "InitializeHostDefinedRealm ( )",
         "number": "9.3.1"
       },
       "definedIn": "heading"
@@ -5376,26 +5397,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "sec-setrealmglobalobject",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setrealmglobalobject",
-      "linkingText": [
-        "SetRealmGlobalObject",
-        "SetRealmGlobalObject(realmRec, globalObj, thisValue)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-setrealmglobalobject",
-        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setrealmglobalobject",
-        "title": "SetRealmGlobalObject ( realmRec, globalObj, thisValue )",
-        "number": "9.3.3"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "sec-setdefaultglobalbindings",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setdefaultglobalbindings",
       "linkingText": [
@@ -5411,7 +5412,7 @@
         "id": "sec-setdefaultglobalbindings",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setdefaultglobalbindings",
         "title": "SetDefaultGlobalBindings ( realmRec )",
-        "number": "9.3.4"
+        "number": "9.3.3"
       },
       "definedIn": "heading"
     },
@@ -6020,26 +6021,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "sec-initializehostdefinedrealm",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
-      "linkingText": [
-        "InitializeHostDefinedRealm",
-        "InitializeHostDefinedRealm()"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-initializehostdefinedrealm",
-        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
-        "title": "InitializeHostDefinedRealm ( )",
-        "number": "9.6"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "agent",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#agent",
       "linkingText": [
@@ -6057,7 +6038,7 @@
         "id": "sec-agents",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
         "title": "Agents",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -6079,7 +6060,7 @@
         "id": "sec-agents",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
         "title": "Agents",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -6101,7 +6082,7 @@
         "id": "sec-agents",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
         "title": "Agents",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -6123,7 +6104,7 @@
         "id": "sec-agents",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
         "title": "Agents",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -6145,7 +6126,7 @@
         "id": "sec-agents",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
         "title": "Agents",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -6165,7 +6146,7 @@
         "id": "sec-agentsignifier",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agentsignifier",
         "title": "AgentSignifier ( )",
-        "number": "9.7.1"
+        "number": "9.6.1"
       },
       "definedIn": "heading"
     },
@@ -6185,7 +6166,7 @@
         "id": "sec-agentcansuspend",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agentcansuspend",
         "title": "AgentCanSuspend ( )",
-        "number": "9.7.2"
+        "number": "9.6.2"
       },
       "definedIn": "heading"
     },
@@ -6207,7 +6188,7 @@
         "id": "sec-agent-clusters",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agent-clusters",
         "title": "Agent Clusters",
-        "number": "9.8"
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -6228,7 +6209,7 @@
         "id": "sec-liveness",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-liveness",
         "title": "Liveness",
-        "number": "9.10.2"
+        "number": "9.9.2"
       },
       "definedIn": "prose"
     },
@@ -6249,7 +6230,7 @@
         "id": "sec-liveness",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-liveness",
         "title": "Liveness",
-        "number": "9.10.2"
+        "number": "9.9.2"
       },
       "definedIn": "prose"
     },
@@ -6269,7 +6250,7 @@
         "id": "sec-host-cleanup-finalization-registry",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-host-cleanup-finalization-registry",
         "title": "HostEnqueueFinalizationRegistryCleanupJob ( finalizationRegistry )",
-        "number": "9.10.4.1"
+        "number": "9.9.4.1"
       },
       "definedIn": "heading"
     },
@@ -6289,7 +6270,7 @@
         "id": "sec-clear-kept-objects",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-clear-kept-objects",
         "title": "ClearKeptObjects ( )",
-        "number": "9.11"
+        "number": "9.10"
       },
       "definedIn": "heading"
     },
@@ -6309,7 +6290,7 @@
         "id": "sec-addtokeptobjects",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-addtokeptobjects",
         "title": "AddToKeptObjects ( value )",
-        "number": "9.12"
+        "number": "9.11"
       },
       "definedIn": "heading"
     },
@@ -6329,7 +6310,7 @@
         "id": "sec-cleanup-finalization-registry",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-cleanup-finalization-registry",
         "title": "CleanupFinalizationRegistry ( finalizationRegistry )",
-        "number": "9.13"
+        "number": "9.12"
       },
       "definedIn": "heading"
     },
@@ -6349,7 +6330,7 @@
         "id": "sec-canbeheldweakly",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-canbeheldweakly",
         "title": "CanBeHeldWeakly ( v )",
-        "number": "9.14"
+        "number": "9.13"
       },
       "definedIn": "heading"
     },
@@ -26557,6 +26538,174 @@
         "number": "29.5.5"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "sec-agent-order",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-agent-order",
+      "linkingText": [
+        "is-agent-order-before"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-agent-order",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-agent-order",
+        "title": "is-agent-order-before",
+        "number": "29.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-reads-from",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-reads-from",
+      "linkingText": [
+        "reads-from"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-reads-from",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-reads-from",
+        "title": "reads-from",
+        "number": "29.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-host-synchronizes-with",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-host-synchronizes-with",
+      "linkingText": [
+        "host-synchronizes-with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-host-synchronizes-with",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-host-synchronizes-with",
+        "title": "host-synchronizes-with",
+        "number": "29.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-synchronizes-with",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-synchronizes-with",
+      "linkingText": [
+        "synchronizes-with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-synchronizes-with",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-synchronizes-with",
+        "title": "synchronizes-with",
+        "number": "29.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-happens-before",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-happens-before",
+      "linkingText": [
+        "happens-before"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-happens-before",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-happens-before",
+        "title": "happens-before",
+        "number": "29.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-memory-order",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-memory-order",
+      "linkingText": [
+        "is-memory-order-before"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-memory-order",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-memory-order",
+        "title": "Sequentially Consistent Atomics",
+        "number": "29.7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-data-races",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-data-races",
+      "linkingText": [
+        "data race"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-data-races",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-data-races",
+        "title": "Data Races",
+        "number": "29.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-data-race-freedom",
+      "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-data-race-freedom",
+      "linkingText": [
+        "data race free"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-data-race-freedom",
+        "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-data-race-freedom",
+        "title": "Data Race Freedom",
+        "number": "29.10"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "sec-shared-memory-guidelines",

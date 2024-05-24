@@ -2658,9 +2658,9 @@
       "number": "9.3"
     },
     {
-      "id": "sec-createrealm",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createrealm",
-      "title": "CreateRealm ( )",
+      "id": "sec-initializehostdefinedrealm",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
+      "title": "InitializeHostDefinedRealm ( )",
       "level": 3,
       "number": "9.3.1"
     },
@@ -2672,18 +2672,11 @@
       "number": "9.3.2"
     },
     {
-      "id": "sec-setrealmglobalobject",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setrealmglobalobject",
-      "title": "SetRealmGlobalObject ( realmRec, globalObj, thisValue )",
-      "level": 3,
-      "number": "9.3.3"
-    },
-    {
       "id": "sec-setdefaultglobalbindings",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setdefaultglobalbindings",
       "title": "SetDefaultGlobalBindings ( realmRec )",
       "level": 3,
-      "number": "9.3.4"
+      "number": "9.3.3"
     },
     {
       "id": "sec-execution-contexts",
@@ -2784,116 +2777,109 @@
       "number": "9.5.6"
     },
     {
-      "id": "sec-initializehostdefinedrealm",
-      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-initializehostdefinedrealm",
-      "title": "InitializeHostDefinedRealm ( )",
-      "level": 2,
-      "number": "9.6"
-    },
-    {
       "id": "sec-agents",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agents",
       "title": "Agents",
       "level": 2,
-      "number": "9.7"
+      "number": "9.6"
     },
     {
       "id": "sec-agentsignifier",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agentsignifier",
       "title": "AgentSignifier ( )",
       "level": 3,
-      "number": "9.7.1"
+      "number": "9.6.1"
     },
     {
       "id": "sec-agentcansuspend",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agentcansuspend",
       "title": "AgentCanSuspend ( )",
       "level": 3,
-      "number": "9.7.2"
+      "number": "9.6.2"
     },
     {
       "id": "sec-agent-clusters",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agent-clusters",
       "title": "Agent Clusters",
       "level": 2,
-      "number": "9.8"
+      "number": "9.7"
     },
     {
       "id": "sec-forward-progress",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-forward-progress",
       "title": "Forward Progress",
       "level": 2,
-      "number": "9.9"
+      "number": "9.8"
     },
     {
       "id": "sec-weakref-processing-model",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-weakref-processing-model",
       "title": "Processing Model of WeakRef and FinalizationRegistry Targets",
       "level": 2,
-      "number": "9.10"
+      "number": "9.9"
     },
     {
       "id": "sec-weakref-invariants",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-weakref-invariants",
       "title": "Objectives",
       "level": 3,
-      "number": "9.10.1"
+      "number": "9.9.1"
     },
     {
       "id": "sec-liveness",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-liveness",
       "title": "Liveness",
       "level": 3,
-      "number": "9.10.2"
+      "number": "9.9.2"
     },
     {
       "id": "sec-weakref-execution",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-weakref-execution",
       "title": "Execution",
       "level": 3,
-      "number": "9.10.3"
+      "number": "9.9.3"
     },
     {
       "id": "sec-weakref-host-hooks",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-weakref-host-hooks",
       "title": "Host Hooks",
       "level": 3,
-      "number": "9.10.4"
+      "number": "9.9.4"
     },
     {
       "id": "sec-host-cleanup-finalization-registry",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-host-cleanup-finalization-registry",
       "title": "HostEnqueueFinalizationRegistryCleanupJob ( finalizationRegistry )",
       "level": 4,
-      "number": "9.10.4.1"
+      "number": "9.9.4.1"
     },
     {
       "id": "sec-clear-kept-objects",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-clear-kept-objects",
       "title": "ClearKeptObjects ( )",
       "level": 2,
-      "number": "9.11"
+      "number": "9.10"
     },
     {
       "id": "sec-addtokeptobjects",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-addtokeptobjects",
       "title": "AddToKeptObjects ( value )",
       "level": 2,
-      "number": "9.12"
+      "number": "9.11"
     },
     {
       "id": "sec-cleanup-finalization-registry",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-cleanup-finalization-registry",
       "title": "CleanupFinalizationRegistry ( finalizationRegistry )",
       "level": 2,
-      "number": "9.13"
+      "number": "9.12"
     },
     {
       "id": "sec-canbeheldweakly",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-canbeheldweakly",
       "title": "CanBeHeldWeakly ( v )",
       "level": 2,
-      "number": "9.14"
+      "number": "9.13"
     },
     {
       "id": "sec-ordinary-and-exotic-objects-behaviours",
@@ -14413,7 +14399,7 @@
     {
       "id": "sec-agent-order",
       "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-agent-order",
-      "title": "agent-order",
+      "title": "is-agent-order-before",
       "level": 3,
       "number": "29.6.1"
     },
