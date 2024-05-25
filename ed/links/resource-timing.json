@@ -64,7 +64,6 @@
         "anchors": [
           "Exposed",
           "Default",
-          "default-tojson-operation",
           "this",
           "es-environment"
         ]
@@ -101,17 +100,19 @@
           "funcdef-url"
         ]
       },
-      "https://www.w3.org/TR/hr-time-2/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dom-performance"
+        ]
+      },
       "https://www.w3.org/TR/navigation-timing-2/": {
         "anchors": [
-          "dom-PerformanceNavigationTiming-startTime"
+          "performanceentry"
         ]
       },
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
           "performance-timeline",
-          "dom-performance",
           "dfn-performance-entry-buffer",
           "dfn-queue-a-performanceentry"
         ]
@@ -252,6 +253,7 @@
           "idl-unsigned-long-long",
           "idl-unsigned-short",
           "idl-object",
+          "default-tojson-steps",
           "idl-undefined",
           "idl-unsigned-long"
         ]
