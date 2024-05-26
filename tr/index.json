@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-25T01:25:31.676Z",
+  "date": "2024-05-26T01:27:53.486Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 36
+    "errors": 37
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "25 May 2024",
+      "date": "26 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -14884,7 +14884,8 @@
       "idl": "idl/screen-capture.idl",
       "dfns": "dfns/screen-capture.json",
       "headings": "headings/screen-capture.json",
-      "ids": "ids/screen-capture.json"
+      "ids": "ids/screen-capture.json",
+      "error": "Error: Loading https://www.w3.org/TR/screen-capture/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 223)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/screen-orientation/",
