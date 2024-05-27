@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-26T01:27:53.486Z",
+  "date": "2024-05-27T01:27:08.011Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 37
+    "errors": 40
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "26 May 2024",
+      "date": "27 May 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -15147,7 +15147,8 @@
       "refs": "refs/secure-contexts.json",
       "dfns": "dfns/secure-contexts.json",
       "headings": "headings/secure-contexts.json",
-      "ids": "ids/secure-contexts.json"
+      "ids": "ids/secure-contexts.json",
+      "error": "Error: Loading https://www.w3.org/TR/secure-contexts/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 227)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/secure-payment-confirmation/",
@@ -15274,7 +15275,8 @@
       "idl": "idl/selection-api.idl",
       "dfns": "dfns/selection-api.json",
       "headings": "headings/selection-api.json",
-      "ids": "ids/selection-api.json"
+      "ids": "ids/selection-api.json",
+      "error": "Error: Loading https://www.w3.org/TR/selection-api/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 229)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/selectors-3/",
@@ -15338,7 +15340,8 @@
       "refs": "refs/selectors-3.json",
       "dfns": "dfns/selectors-3.json",
       "headings": "headings/selectors-3.json",
-      "ids": "ids/selectors-3.json"
+      "ids": "ids/selectors-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/selectors-3/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 230)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/selectors-4/",
