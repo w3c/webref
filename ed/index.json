@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-05-28T06:35:53.796Z",
+  "date": "2024-05-28T12:41:45.428Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 51
+    "errors": 48
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -10274,7 +10274,7 @@
       "dfns": "dfns/compression.json",
       "headings": "headings/compression.json",
       "ids": "ids/compression.json",
-      "error": "Error: Loading https://wicg.github.io/compression/ triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 183)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "error": "TypeError: Cannot read properties of null (reading 'status')\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:550:25)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 183)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://wicg.github.io/content-index/spec/",
@@ -18042,7 +18042,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 May 2024 12:03:39 GMT"
+        "lastModified": "Mon, 27 May 2024 12:03:40 GMT"
       },
       "generator": "bikeshed",
       "date": "30 January 2024",
@@ -18051,8 +18051,7 @@
       "refs": "refs/css-cascade-3.json",
       "dfns": "dfns/css-cascade-3.json",
       "headings": "headings/css-cascade-3.json",
-      "ids": "ids/css-cascade-3.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-cascade-3/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 328)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-cascade-3.json"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -19141,7 +19140,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-display-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 May 2024 12:03:39 GMT"
+        "lastModified": "Mon, 27 May 2024 12:03:40 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2023",
@@ -19150,8 +19149,7 @@
       "refs": "refs/css-display-3.json",
       "dfns": "dfns/css-display-3.json",
       "headings": "headings/css-display-3.json",
-      "ids": "ids/css-display-3.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-display-3/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 344)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-display-3.json"
     },
     {
       "url": "https://www.w3.org/TR/css-easing-1/",
@@ -20218,7 +20216,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-logical-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 May 2024 12:03:39 GMT"
+        "lastModified": "Mon, 27 May 2024 12:03:40 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -20228,8 +20226,7 @@
       "css": "css/css-logical.json",
       "dfns": "dfns/css-logical-1.json",
       "headings": "headings/css-logical-1.json",
-      "ids": "ids/css-logical-1.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-logical-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 360)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-logical-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-masking-1/",
@@ -22609,7 +22606,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 May 2024 12:03:39 GMT"
+        "lastModified": "Mon, 27 May 2024 12:03:40 GMT"
       },
       "generator": "bikeshed",
       "date": "3 April 2024",
@@ -26988,7 +26985,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 May 2024 12:03:39 GMT"
+        "lastModified": "Mon, 27 May 2024 12:03:40 GMT"
       },
       "date": "14 May 2024",
       "links": "links/mediaqueries-3.json",
