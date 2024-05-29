@@ -21,11 +21,6 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLDepthInformation": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLDepthInformation/texture": {},
       "https://github.com/immersive-web/depth-sensing/issues": {},
-      "https://immersive-web.github.io/layers/": {
-        "anchors": [
-          "xrwebglbinding"
-        ]
-      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list-contain"
@@ -51,8 +46,8 @@
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
           "5.1",
-          "5.9",
-          "5.14"
+          "5.14",
+          "5.9"
         ]
       },
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
@@ -60,12 +55,12 @@
           "3.7"
         ]
       },
-      "https://www.w3.org/2021/Process-20211102/": {
+      "https://www.w3.org/2023/Process-20231103/": {
         "anchors": [
           "recs-and-notes"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+      "https://www.w3.org/Consortium/Patent-Policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
@@ -76,10 +71,12 @@
       "https://www.w3.org/TR/webxr-ar-module-1/": {},
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
+          "dom-xreye-right",
           "callbackdef-xrframerequestcallback",
           "xrrigidtransform",
           "dictdef-xrsessioninit",
           "xrview",
+          "dom-xrview-eye",
           "dom-xrsessioninit-optionalfeatures",
           "dom-xrsystem-requestsession",
           "dom-xrsessioninit-requiredfeatures",
@@ -102,18 +99,17 @@
       "https://www.w3.org/TR/webxrlayers-1/": {
         "anchors": [
           "opaque-texture",
-          "xrwebglbinding-session"
+          "xrwebglbinding-session",
+          "dom-xrtexturetype-texture",
+          "dom-xrtexturetype-texture-array",
+          "enumdef-xrtexturetype",
+          "xrwebglbinding"
         ]
       },
       "https://www.w3.org/groups/wg/immersive-web": {},
       "https://www.w3.org/groups/wg/immersive-web/ipr": {}
     },
     "autolinks": {
-      "https://immersive-web.github.io/layers/": {
-        "anchors": [
-          "xrwebglbinding"
-        ]
-      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list-contain"
@@ -148,7 +144,6 @@
           "3.7"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {},
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "xrsession-interface",
@@ -171,13 +166,19 @@
           "xr-device-list-of-enabled-features",
           "xrsession-mode",
           "xrframe-time",
-          "callbackdef-xrframerequestcallback"
+          "callbackdef-xrframerequestcallback",
+          "dom-xrview-eye",
+          "dom-xreye-right"
         ]
       },
       "https://www.w3.org/TR/webxrlayers-1/": {
         "anchors": [
+          "enumdef-xrtexturetype",
           "opaque-texture",
-          "xrwebglbinding-session"
+          "xrwebglbinding",
+          "xrwebglbinding-session",
+          "dom-xrtexturetype-texture-array",
+          "dom-xrtexturetype-texture"
         ]
       }
     }
