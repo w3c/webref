@@ -18,7 +18,7 @@
       "heading": {
         "id": "sec-task-priorities",
         "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
-        "title": "Task Priorities",
+        "title": "Task and Continuation Priorities",
         "number": "2.1"
       },
       "definedIn": "pre"
@@ -40,7 +40,7 @@
       "heading": {
         "id": "sec-task-priorities",
         "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
-        "title": "Task Priorities",
+        "title": "Task and Continuation Priorities",
         "number": "2.1"
       },
       "definedIn": "prose"
@@ -62,7 +62,7 @@
       "heading": {
         "id": "sec-task-priorities",
         "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
-        "title": "Task Priorities",
+        "title": "Task and Continuation Priorities",
         "number": "2.1"
       },
       "definedIn": "prose"
@@ -84,31 +84,113 @@
       "heading": {
         "id": "sec-task-priorities",
         "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
-        "title": "Task Priorities",
+        "title": "Task and Continuation Priorities",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "taskpriority-less-than",
-      "href": "https://wicg.github.io/scheduling-apis/#taskpriority-less-than",
+      "id": "enumdef-continuationpriority",
+      "href": "https://wicg.github.io/scheduling-apis/#enumdef-continuationpriority",
       "linkingText": [
-        "less than"
+        "ContinuationPriority"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TaskPriority"
-      ],
-      "access": "private",
+      "type": "enum",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-task-priorities",
         "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
-        "title": "Task Priorities",
+        "title": "Task and Continuation Priorities",
         "number": "2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-continuationpriority-user-blocking",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-user-blocking",
+      "linkingText": [
+        "\"user-blocking\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContinuationPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-priorities",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
+        "title": "Task and Continuation Priorities",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-continuationpriority-user-visible",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-user-visible",
+      "linkingText": [
+        "\"user-visible\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContinuationPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-priorities",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
+        "title": "Task and Continuation Priorities",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-continuationpriority-background",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-background",
+      "linkingText": [
+        "\"background\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContinuationPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-priorities",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
+        "title": "Task and Continuation Priorities",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-continuationpriority-inherit",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-inherit",
+      "linkingText": [
+        "\"inherit\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContinuationPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-priorities",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-priorities",
+        "title": "Task and Continuation Priorities",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dictdef-schedulerposttaskoptions",
@@ -181,6 +263,107 @@
       "type": "dict-member",
       "for": [
         "SchedulerPostTaskOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-schedulersignalinherit",
+      "href": "https://wicg.github.io/scheduling-apis/#enumdef-schedulersignalinherit",
+      "linkingText": [
+        "SchedulerSignalInherit"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-schedulersignalinherit-inherit",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit",
+      "linkingText": [
+        "\"inherit\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SchedulerSignalInherit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-scheduleryieldoptions",
+      "href": "https://wicg.github.io/scheduling-apis/#dictdef-scheduleryieldoptions",
+      "linkingText": [
+        "SchedulerYieldOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scheduleryieldoptions-signal",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-scheduleryieldoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SchedulerYieldOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scheduleryieldoptions-priority",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-scheduleryieldoptions-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SchedulerYieldOptions"
       ],
       "access": "public",
       "informative": false,
@@ -275,6 +458,28 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-scheduler-yield-options-options",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-yield-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Scheduler/yield(options)",
+        "Scheduler/yield()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "scheduler-static-priority-task-queue-map",
       "href": "https://wicg.github.io/scheduling-apis/#scheduler-static-priority-task-queue-map",
       "linkingText": [
@@ -322,6 +527,28 @@
       "linkingText": [
         "postTask(callback, options)",
         "postTask(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Scheduler"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler",
+        "title": "The Scheduler Interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-scheduler-yield",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-yield",
+      "linkingText": [
+        "yield(options)",
+        "yield()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -457,6 +684,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "scheduler-task-queue-is-continuation",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-is-continuation",
+      "linkingText": [
+        "is continuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduler task queue"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "scheduler-task-queue-tasks",
       "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-tasks",
       "linkingText": [
@@ -487,6 +735,67 @@
       "type": "dfn",
       "for": [
         "scheduler task queue"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "scheduling-state",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduling-state",
+      "linkingText": [
+        "scheduling state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scheduling-state-abort-source",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduling-state-abort-source",
+      "linkingText": [
+        "abort source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduling state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-definitions",
+        "title": "Definitions",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "scheduling-state-priority-source",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduling-state-priority-source",
+      "linkingText": [
+        "priority source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduling state"
       ],
       "access": "private",
       "informative": false,
@@ -682,6 +991,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "scheduler-task-queue-effective-priority",
+      "href": "https://wicg.github.io/scheduling-apis/#scheduler-task-queue-effective-priority",
+      "linkingText": [
+        "effective priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "scheduler task queue"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduling-tasks-processing-model",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduling-tasks-processing-model",
+        "title": "Processing Model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "queue-a-scheduler-task",
       "href": "https://wicg.github.io/scheduling-apis/#queue-a-scheduler-task",
       "linkingText": [
@@ -754,9 +1084,47 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-scheduler-alg-scheduling-tasks",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks",
-        "title": "Scheduling Tasks",
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
+        "number": "2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "schedule-a-yield-continuation",
+      "href": "https://wicg.github.io/scheduling-apis/#schedule-a-yield-continuation",
+      "linkingText": [
+        "schedule a yield continuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
+        "number": "2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-scheduling-state-from-options",
+      "href": "https://wicg.github.io/scheduling-apis/#compute-the-scheduling-state-from-options",
+      "linkingText": [
+        "compute the scheduling state from options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
         "number": "2.4.2"
       },
       "definedIn": "prose"
@@ -773,18 +1141,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-scheduler-alg-scheduling-tasks",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks",
-        "title": "Scheduling Tasks",
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
         "number": "2.4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "schedule-a-task-to-invoke-a-callback",
-      "href": "https://wicg.github.io/scheduling-apis/#schedule-a-task-to-invoke-a-callback",
+      "id": "schedule-a-task-to-invoke-an-algorithm",
+      "href": "https://wicg.github.io/scheduling-apis/#schedule-a-task-to-invoke-an-algorithm",
       "linkingText": [
-        "schedule a task to invoke a callback"
+        "schedule a task to invoke an algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -792,9 +1160,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-scheduler-alg-scheduling-tasks",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks",
-        "title": "Scheduling Tasks",
+        "id": "sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-scheduler-alg-scheduling-tasks-and-continuations",
+        "title": "Scheduling Tasks and Continuations",
         "number": "2.4.2"
       },
       "definedIn": "prose"
@@ -1550,6 +1918,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "create-a-fixed-priority-unabortable-task-signal",
+      "href": "https://wicg.github.io/scheduling-apis/#create-a-fixed-priority-unabortable-task-signal",
+      "linkingText": [
+        "create a fixed priority unabortable task signal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-signal",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-signal",
+        "title": "The TaskSignal Interface",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "windoworworkerglobalscope-scheduler",
       "href": "https://wicg.github.io/scheduling-apis/#windoworworkerglobalscope-scheduler",
       "linkingText": [
@@ -1596,6 +1983,27 @@
       "href": "https://wicg.github.io/scheduling-apis/#event-loop-next-enqueue-order",
       "linkingText": [
         "next enqueue order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event loop"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-patches-html-event-loop-definitions",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-event-loop-definitions",
+        "title": "Event loop: definitions",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-loop-current-scheduling-state",
+      "href": "https://wicg.github.io/scheduling-apis/#event-loop-current-scheduling-state",
+      "linkingText": [
+        "current scheduling state"
       ],
       "localLinkingText": [],
       "type": "dfn",

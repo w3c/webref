@@ -398,6 +398,13 @@
       "value": "calc-size( <calc-size-basis>, <calc-sum>? )",
       "values": [
         {
+          "name": "percentage",
+          "prose": "The percentage basis keyword indicates a basis size of 100%.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-percentage",
+          "type": "value",
+          "value": "percentage"
+        },
+        {
           "name": "size",
           "prose": "Within the calc-size calculation, if the calc-size basis is not any, the keyword size is allowed. This keyword is a <length>, and resolves at used value time.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
@@ -417,7 +424,7 @@
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
       "type": "type",
-      "value": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]"
+      "value": "[ <intrinsic-size-keyword> | percentage | <calc-size()> | any | <calc-sum> ]"
     },
     {
       "name": "<intrinsic-size-keyword>",

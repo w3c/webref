@@ -27,12 +27,18 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "definitions-3",
-          "event-loop-processing-model"
+          "event-loop-processing-model",
+          "hostmakejobcallback",
+          "hostcalljobcallback"
         ]
       },
       "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://w3c.github.io/requestidlecallback/": {},
+      "https://w3c.github.io/requestidlecallback/": {
+        "anchors": [
+          "invoke-idle-callbacks-algorithm"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {},
       "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
@@ -80,6 +86,7 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "event-loop",
           "concept-task",
           "task-source",
           "concept-task-runnable",
@@ -87,16 +94,18 @@
           "concept-task-source",
           "concept-task-document",
           "script-evaluation-environment-settings-object-set",
-          "concept-relevant-global",
           "relevant-agent",
           "concept-agent-event-loop",
-          "event-loop",
+          "concept-relevant-global",
           "eventhandler",
           "event-handler-idl-attributes",
           "event-handlers",
           "event-handler-event-type",
           "windoworworkerglobalscope",
-          "task-queue"
+          "task-queue",
+          "environment-settings-object's-realm",
+          "realm's-agent",
+          "concept-relevant-realm"
         ]
       },
       "https://html.spec.whatwg.org/multipage/window-object.html": {
@@ -129,6 +138,11 @@
           "current-realm"
         ]
       },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "realm"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "EnforceRange",
@@ -136,13 +150,13 @@
           "idl-any",
           "Exposed",
           "idl-promise",
+          "idl-undefined",
           "this",
           "reject",
           "a-new-promise",
-          "implements",
           "invoke-a-callback-function",
+          "implements",
           "idl-DOMString",
-          "idl-undefined",
           "NewObject",
           "idl-sequence",
           "dfn-throw",
