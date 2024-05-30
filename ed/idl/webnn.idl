@@ -200,7 +200,7 @@ partial interface MLGraphBuilder {
   MLOperand greaterOrEqual(MLOperand a, MLOperand b);
   MLOperand lesser(MLOperand a, MLOperand b);
   MLOperand lesserOrEqual(MLOperand a, MLOperand b);
-  MLOperand not(MLOperand a);
+  MLOperand logicalNot(MLOperand a);
 };
 
 partial interface MLGraphBuilder {
