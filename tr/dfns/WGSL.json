@@ -1886,6 +1886,27 @@
       "definedIn": "table"
     },
     {
+      "id": "extension-clip_distances",
+      "href": "https://www.w3.org/TR/WGSL/#extension-clip_distances",
+      "linkingText": [
+        "clip_distances"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable-extensions-sec",
+        "href": "https://www.w3.org/TR/WGSL/#enable-extensions-sec",
+        "title": "Enable Extensions",
+        "number": "4.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "language-extension",
       "href": "https://www.w3.org/TR/WGSL/#language-extension",
       "linkingText": [
@@ -9821,6 +9842,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "built-in-values-clip_distances",
+      "href": "https://www.w3.org/TR/WGSL/#built-in-values-clip_distances",
+      "linkingText": [
+        "clip_distances"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "clip-distances-builtin-value",
+        "href": "https://www.w3.org/TR/WGSL/#clip-distances-builtin-value",
+        "title": "clip_distances",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "built-in-values-frag_depth",
       "href": "https://www.w3.org/TR/WGSL/#built-in-values-frag_depth",
       "linkingText": [
@@ -9837,7 +9879,7 @@
         "id": "frag-depth-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#frag-depth-builtin-value",
         "title": "frag_depth",
-        "number": "12.3.1.1.1"
+        "number": "12.3.1.1.2"
       },
       "definedIn": "table"
     },
@@ -9858,7 +9900,7 @@
         "id": "front-facing-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#front-facing-builtin-value",
         "title": "front_facing",
-        "number": "12.3.1.1.2"
+        "number": "12.3.1.1.3"
       },
       "definedIn": "table"
     },
@@ -9879,7 +9921,7 @@
         "id": "global-invocation-id-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#global-invocation-id-builtin-value",
         "title": "global_invocation_id",
-        "number": "12.3.1.1.3"
+        "number": "12.3.1.1.4"
       },
       "definedIn": "table"
     },
@@ -9900,7 +9942,7 @@
         "id": "instance-index-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#instance-index-builtin-value",
         "title": "instance_index",
-        "number": "12.3.1.1.4"
+        "number": "12.3.1.1.5"
       },
       "definedIn": "table"
     },
@@ -9921,7 +9963,7 @@
         "id": "local-invocation-id-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#local-invocation-id-builtin-value",
         "title": "local_invocation_id",
-        "number": "12.3.1.1.5"
+        "number": "12.3.1.1.6"
       },
       "definedIn": "table"
     },
@@ -9942,7 +9984,7 @@
         "id": "local-invocation-index-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#local-invocation-index-builtin-value",
         "title": "local_invocation_index",
-        "number": "12.3.1.1.6"
+        "number": "12.3.1.1.7"
       },
       "definedIn": "table"
     },
@@ -9963,7 +10005,7 @@
         "id": "num-workgroups-index-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#num-workgroups-index-builtin-value",
         "title": "num_workgroups",
-        "number": "12.3.1.1.7"
+        "number": "12.3.1.1.8"
       },
       "definedIn": "table"
     },
@@ -9984,7 +10026,7 @@
         "id": "position-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#position-builtin-value",
         "title": "position",
-        "number": "12.3.1.1.8"
+        "number": "12.3.1.1.9"
       },
       "definedIn": "table"
     },
@@ -10005,7 +10047,7 @@
         "id": "sample-index-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#sample-index-builtin-value",
         "title": "sample_index",
-        "number": "12.3.1.1.9"
+        "number": "12.3.1.1.10"
       },
       "definedIn": "table"
     },
@@ -10026,7 +10068,7 @@
         "id": "sample-mask-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#sample-mask-builtin-value",
         "title": "sample_mask",
-        "number": "12.3.1.1.10"
+        "number": "12.3.1.1.11"
       },
       "definedIn": "table"
     },
@@ -10047,7 +10089,7 @@
         "id": "vertex-index-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#vertex-index-builtin-value",
         "title": "vertex_index",
-        "number": "12.3.1.1.11"
+        "number": "12.3.1.1.12"
       },
       "definedIn": "table"
     },
@@ -10068,7 +10110,7 @@
         "id": "workgroup-id-builtin-value",
         "href": "https://www.w3.org/TR/WGSL/#workgroup-id-builtin-value",
         "title": "workgroup_id",
-        "number": "12.3.1.1.12"
+        "number": "12.3.1.1.13"
       },
       "definedIn": "table"
     },
