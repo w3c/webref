@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-01T06:35:47.878Z",
+  "date": "2024-06-01T12:43:26.399Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 22
+    "errors": 27
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -1414,7 +1414,7 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 14)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 14)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1465,7 +1465,7 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -1516,7 +1516,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -2033,7 +2033,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-forms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "11 October 2017",
@@ -2940,7 +2940,8 @@
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json"
+      "ids": "ids/filter-effects-2.json",
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 40)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -17370,7 +17371,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "31 May 2024",
@@ -17505,7 +17506,7 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 320)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 320)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -18171,7 +18172,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -19929,7 +19930,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -20004,7 +20005,7 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 357)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 357)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -20515,7 +20516,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "17 May 2024",
@@ -20922,7 +20923,7 @@
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 371)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 371)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -21055,7 +21056,7 @@
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 373)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 373)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -21572,7 +21573,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "11 April 2024",
@@ -22647,7 +22648,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "10 December 2023",
@@ -22792,7 +22793,7 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 399)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12618:11\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    cause: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:7760:28)\n        at node:internal/deps/undici/undici:7716:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:7748:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 399)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -23388,7 +23389,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -24663,7 +24664,8 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json"
+      "ids": "ids/fill-stroke-3.json",
+      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 427)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -24729,7 +24731,8 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json"
+      "ids": "ids/filter-effects-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 428)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -25101,7 +25104,8 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json"
+      "ids": "ids/geometry-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 434)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -27512,7 +27516,8 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json"
+      "ids": "ids/motion-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 474)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -29934,7 +29939,7 @@
       ],
       "crawled": "https://drafts.csswg.org/resize-observer-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 19:04:00 GMT"
+        "lastModified": "Fri, 31 May 2024 19:04:01 GMT"
       },
       "generator": "bikeshed",
       "date": "27 January 2023",
