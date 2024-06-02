@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-01T01:27:59.561Z",
+  "date": "2024-06-02T01:27:58.440Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -641,7 +641,7 @@
   },
   "stats": {
     "crawled": 315,
-    "errors": 43
+    "errors": 44
   },
   "crawler": "reffy-15.2.0",
   "results": [
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "1 June 2024",
+      "date": "2 June 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -12341,7 +12341,8 @@
       "refs": "refs/mse-byte-stream-format-isobmff.json",
       "dfns": "dfns/mse-byte-stream-format-isobmff.json",
       "headings": "headings/mse-byte-stream-format-isobmff.json",
-      "ids": "ids/mse-byte-stream-format-isobmff.json"
+      "ids": "ids/mse-byte-stream-format-isobmff.json",
+      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-isobmff/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 181)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
@@ -17211,11 +17212,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 13 May 2024 16:01:56 GMT"
+        "lastModified": "Sat, 01 Jun 2024 21:13:43 GMT"
       },
       "generator": "respec",
-      "date": "13 May 2024",
-      "revision": "f3700e40713ad63d9a242297b129f4598e3ecd4e",
+      "date": "01 June 2024",
+      "revision": "a3cdff14777bb499e9f87fc54c282fce741e77e7",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
       "dfns": "dfns/vc-data-model-2.0.json",
@@ -19215,11 +19216,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 May 2024 15:53:10 GMT"
+        "lastModified": "Sat, 01 Jun 2024 02:25:59 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 May 2024",
-      "revision": "0f7911d18ec99f95e0d68c7e52f80a46ffd46ca8",
+      "date": "1 June 2024",
+      "revision": "932b603eea9d1c8cbbd1d1192f21e7d79df3ad73",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
