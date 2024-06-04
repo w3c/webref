@@ -1,0 +1,203 @@
+{
+  "spec": {
+    "title": "Extending Storage Access API (SAA) to non-cookie storage",
+    "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#title",
+      "level": 1,
+      "title": "Extending Storage Access API (SAA) to non-cookie storage"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 2 May 2024"
+    },
+    {
+      "id": "abstract",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "extending-saa-to-non-cookie-storage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#extending-saa-to-non-cookie-storage",
+      "level": 2,
+      "title": "Extending SAA to non-cookie storage",
+      "number": "2"
+    },
+    {
+      "id": "document-changes",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+      "level": 3,
+      "title": "Changes to Document",
+      "number": "2.1"
+    },
+    {
+      "id": "request-storage-access-changes",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#request-storage-access-changes",
+      "level": 3,
+      "title": "Changes to requestStorageAccess()",
+      "number": "2.2"
+    },
+    {
+      "id": "storage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#storage",
+      "level": 3,
+      "title": "Changes to various client-side storage mechanisms",
+      "number": "2.3"
+    },
+    {
+      "id": "dom-storage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storage",
+      "level": 4,
+      "title": "Web storage",
+      "number": "2.3.1"
+    },
+    {
+      "id": "indexed-db",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#indexed-db",
+      "level": 4,
+      "title": "Indexed Database API",
+      "number": "2.3.2"
+    },
+    {
+      "id": "web-locks",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#web-locks",
+      "level": 4,
+      "title": "Web Locks API",
+      "number": "2.3.3"
+    },
+    {
+      "id": "cache-storage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#cache-storage",
+      "level": 4,
+      "title": "Cache Storage",
+      "number": "2.3.4"
+    },
+    {
+      "id": "file-system",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#file-system",
+      "level": 4,
+      "title": "File System",
+      "number": "2.3.5"
+    },
+    {
+      "id": "storage-manager",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#storage-manager",
+      "level": 4,
+      "title": "Storage Manager",
+      "number": "2.3.6"
+    },
+    {
+      "id": "file-api",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#file-api",
+      "level": 4,
+      "title": "File API",
+      "number": "2.3.7"
+    },
+    {
+      "id": "broadcast-channel",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#broadcast-channel",
+      "level": 4,
+      "title": "Broadcast Channel",
+      "number": "2.3.8"
+    },
+    {
+      "id": "shared-worker",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+      "level": 4,
+      "title": "Shared Workers",
+      "number": "2.3.9"
+    },
+    {
+      "id": "privacy",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#privacy",
+      "level": 2,
+      "title": "Security & Privacy considerations",
+      "number": "3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

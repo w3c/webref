@@ -1,0 +1,883 @@
+{
+  "spec": {
+    "title": "Extending Storage Access API (SAA) to non-cookie storage",
+    "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-storageaccesstypes",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes",
+      "linkingText": [
+        "StorageAccessTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-all",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-cookies",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-cookies",
+      "linkingText": [
+        "cookies"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-sessionstorage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-sessionstorage",
+      "linkingText": [
+        "sessionStorage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-localstorage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-localstorage",
+      "linkingText": [
+        "localStorage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-indexeddb",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-indexeddb",
+      "linkingText": [
+        "indexedDB"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-locks",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-locks",
+      "linkingText": [
+        "locks"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-caches",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-caches",
+      "linkingText": [
+        "caches"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-getdirectory",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-getdirectory",
+      "linkingText": [
+        "getDirectory"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-estimate",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-estimate",
+      "linkingText": [
+        "estimate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-createobjecturl",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-createobjecturl",
+      "linkingText": [
+        "createObjectURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-revokeobjecturl",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-revokeobjecturl",
+      "linkingText": [
+        "revokeObjectURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-broadcastchannel",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-broadcastchannel",
+      "linkingText": [
+        "BroadcastChannel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesstypes-sharedworker",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-sharedworker",
+      "linkingText": [
+        "SharedWorker"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageAccessTypes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "storageaccesshandle",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle",
+      "linkingText": [
+        "StorageAccessHandle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesshandle-createobjecturl-obj-obj",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-createobjecturl-obj-obj",
+      "linkingText": [
+        "obj"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageAccessHandle/createObjectURL(obj)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesshandle-revokeobjecturl-url-url",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-revokeobjecturl-url-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageAccessHandle/revokeObjectURL(url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesshandle-broadcastchannel-name-name",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-broadcastchannel-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageAccessHandle/BroadcastChannel(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesshandle-sharedworker-scripturl-options-scripturl",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sharedworker-scripturl-options-scripturl",
+      "linkingText": [
+        "scriptURL"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageAccessHandle/SharedWorker(scriptURL, options)",
+        "StorageAccessHandle/SharedWorker(scriptURL)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageaccesshandle-sharedworker-scripturl-options-options",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sharedworker-scripturl-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageAccessHandle/SharedWorker(scriptURL, options)",
+        "StorageAccessHandle/SharedWorker(scriptURL)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-requeststorageaccess-types-types",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess-types-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/requestStorageAccess(types)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "storageaccesshandle-types",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-hasunpartitionedcookieaccess",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-document-hasunpartitionedcookieaccess",
+      "linkingText": [
+        "hasUnpartitionedCookieAccess()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-requeststorageaccess",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-document-requeststorageaccess",
+      "linkingText": [
+        "requestStorageAccess(types)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#document-changes",
+        "title": "Changes to Document",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-storage-access",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#request-storage-access",
+      "linkingText": [
+        "request storage access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-storage-access-changes",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#request-storage-access-changes",
+        "title": "Changes to requestStorageAccess()",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-sessionstorage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sessionstorage",
+      "linkingText": [
+        "sessionStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-storage",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storage",
+        "title": "Web storage",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-localstorage",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-localstorage",
+      "linkingText": [
+        "localStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-storage",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storage",
+        "title": "Web storage",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-indexeddb",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-indexeddb",
+      "linkingText": [
+        "indexedDB"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "indexed-db",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#indexed-db",
+        "title": "Indexed Database API",
+        "number": "2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-locks",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-locks",
+      "linkingText": [
+        "locks"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-locks",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#web-locks",
+        "title": "Web Locks API",
+        "number": "2.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-caches",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-caches",
+      "linkingText": [
+        "caches"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cache-storage",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#cache-storage",
+        "title": "Cache Storage",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-getdirectory",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-getdirectory",
+      "linkingText": [
+        "getDirectory()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "file-system",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#file-system",
+        "title": "File System",
+        "number": "2.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-estimate",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-estimate",
+      "linkingText": [
+        "estimate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-manager",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#storage-manager",
+        "title": "Storage Manager",
+        "number": "2.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-createobjecturl",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-createobjecturl",
+      "linkingText": [
+        "createObjectURL(obj)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "file-api",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#file-api",
+        "title": "File API",
+        "number": "2.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-revokeobjecturl",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-revokeobjecturl",
+      "linkingText": [
+        "revokeObjectURL(url)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "file-api",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#file-api",
+        "title": "File API",
+        "number": "2.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-broadcastchannel",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-broadcastchannel",
+      "linkingText": [
+        "BroadcastChannel(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "broadcast-channel",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#broadcast-channel",
+        "title": "Broadcast Channel",
+        "number": "2.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-samesitecookiestype",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#enumdef-samesitecookiestype",
+      "linkingText": [
+        "SameSiteCookiesType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-samesitecookiestype-all",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-samesitecookiestype-all",
+      "linkingText": [
+        "\"all\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SameSiteCookiesType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-samesitecookiestype-none",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-samesitecookiestype-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SameSiteCookiesType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-sharedworkeroptions",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dictdef-sharedworkeroptions",
+      "linkingText": [
+        "SharedWorkerOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedworkeroptions-samesitecookies",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies",
+      "linkingText": [
+        "sameSiteCookies"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedWorkerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "sharedworkerglobalscope-samesitecookies",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#sharedworkerglobalscope-samesitecookies",
+      "linkingText": [
+        "sameSiteCookies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storageaccesshandle-sharedworker",
+      "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sharedworker",
+      "linkingText": [
+        "SharedWorker(scriptURL, options)",
+        "SharedWorker(scriptURL)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-worker",
+        "href": "https://privacycg.github.io/saa-non-cookie-storage/#shared-worker",
+        "title": "Shared Workers",
+        "number": "2.3.9"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
