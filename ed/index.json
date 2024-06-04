@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-04T12:57:42.570Z",
+  "date": "2024-06-04T18:35:49.978Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -649,7 +649,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 115
+    "errors": 114
   },
   "crawler": "reffy-15.2.1",
   "results": [
@@ -7044,9 +7044,9 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 03 Jun 2024 18:53:47 GMT"
+        "lastModified": "Tue, 04 Jun 2024 17:15:00 GMT"
       },
-      "date": "3 June 2024",
+      "date": "4 June 2024",
       "links": "links/ecma-402.json",
       "refs": "refs/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
@@ -10040,10 +10040,10 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 03 Jun 2024 13:03:03 GMT"
+        "lastModified": "Tue, 04 Jun 2024 15:17:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 June 2024",
+      "date": "4 June 2024",
       "links": "links/attribution-reporting-api.json",
       "refs": "refs/attribution-reporting-api.json",
       "idl": "idl/attribution-reporting-api.idl",
@@ -11098,11 +11098,11 @@
       ],
       "crawled": "https://wicg.github.io/fenced-frame/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 May 2024 12:07:53 GMT"
+        "lastModified": "Tue, 04 Jun 2024 14:06:37 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 May 2024",
-      "revision": "e67a4f985c8173373be4d50491a1638b13f53845",
+      "date": "4 June 2024",
+      "revision": "cd9d57c5b9a79bc181c3ec4c23ebe1c598bee154",
       "links": "links/fenced-frame.json",
       "refs": "refs/fenced-frame.json",
       "idl": "idl/fenced-frame.idl",
@@ -23268,7 +23268,20 @@
         "https://www.w3.org/TR/css-view-transitions-2/",
         "https://drafts.csswg.org/css-view-transitions-2/"
       ],
-      "error": "Error: Loading https://drafts.csswg.org/css-view-transitions-2/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:494:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 405)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:488:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1117:18)\n        at internalConnectMultiple (node:net:1185:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1711:5)\n        at listOnTimeout (node:internal/timers:575:11)\n        at process.processTimers (node:internal/timers:514:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
+      "crawled": "https://drafts.csswg.org/css-view-transitions-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Jun 2024 18:14:18 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 May 2024",
+      "revision": "3a7db3e637ee1c2ddeb91134872ea9872ec46cce",
+      "links": "links/css-view-transitions-2.json",
+      "refs": "refs/css-view-transitions-2.json",
+      "idl": "idl/css-view-transitions-2.idl",
+      "css": "css/css-view-transitions-2.json",
+      "dfns": "dfns/css-view-transitions-2.json",
+      "headings": "headings/css-view-transitions-2.json",
+      "ids": "ids/css-view-transitions-2.json"
     },
     {
       "url": "https://www.w3.org/TR/css-viewport-1/",
@@ -23283,6 +23296,16 @@
         "nightlyUrl": "https://drafts.csswg.org/css-viewport/"
       },
       "seriesVersion": "1",
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-viewport/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-viewport/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-viewport/Overview.bs",
+        "filename": "index.html"
+      },
       "formerNames": [
         "css-viewport"
       ],
@@ -23296,17 +23319,6 @@
       "release": {
         "url": "https://www.w3.org/TR/css-viewport-1/",
         "status": "First Public Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-viewport-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-viewport-1/",
-          "https://w3c.github.io/csswg-drafts/css-viewport/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-viewport/Overview.bs",
         "filename": "Overview.html"
       },
       "title": "CSS Viewport Module Level 1",
@@ -23324,21 +23336,21 @@
       },
       "versions": [
         "https://www.w3.org/TR/css-viewport-1/",
-        "https://drafts.csswg.org/css-viewport-1/"
+        "https://drafts.csswg.org/css-viewport/"
       ],
-      "crawled": "https://drafts.csswg.org/css-viewport-1/",
+      "crawled": "https://drafts.csswg.org/css-viewport/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 3 Jun 2024 18:09:02 GMT"
+        "lastModified": "Mon, 03 Jun 2024 18:14:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 January 2024",
+      "date": "3 June 2024",
+      "revision": "3a7db3e637ee1c2ddeb91134872ea9872ec46cce",
       "links": "links/css-viewport-1.json",
       "refs": "refs/css-viewport-1.json",
       "css": "css/css-viewport.json",
       "dfns": "dfns/css-viewport-1.json",
       "headings": "headings/css-viewport-1.json",
-      "ids": "ids/css-viewport-1.json",
-      "error": "Error: Loading https://drafts.csswg.org/css-viewport/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:494:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:488:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1117:18)\n        at internalConnectMultiple (node:net:1185:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1711:5)\n        at listOnTimeout (node:internal/timers:575:11)\n        at process.processTimers (node:internal/timers:514:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
+      "ids": "ids/css-viewport-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -25109,11 +25121,11 @@
       ],
       "crawled": "https://w3c.github.io/geolocation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 04 Jun 2024 02:27:29 GMT"
+        "lastModified": "Tue, 04 Jun 2024 13:36:40 GMT"
       },
       "generator": "respec",
       "date": "04 June 2024",
-      "revision": "c2fdd742bd86489fdb426ea46306b31fd35ea747",
+      "revision": "b358dada8494840877057a71fe39e179a409a99e",
       "links": "links/geolocation.json",
       "refs": "refs/geolocation.json",
       "idl": "idl/geolocation.idl",
@@ -25713,11 +25725,11 @@
       ],
       "crawled": "https://w3c.github.io/IFT/Overview.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 May 2024 17:23:35 GMT"
+        "lastModified": "Tue, 04 Jun 2024 16:53:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 May 2024",
-      "revision": "e569cbfee82c022f97e5930d9072ce57a667edce",
+      "date": "4 June 2024",
+      "revision": "023a8d58f4211912688181c9aa0773307cfccf38",
       "links": "links/IFT.json",
       "refs": "refs/IFT.json",
       "dfns": "dfns/IFT.json",
@@ -32231,7 +32243,7 @@
       ],
       "crawled": "https://w3c.github.io/uievents/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 21 Feb 2024 19:08:49 GMT"
+        "lastModified": "Wed, 21 Feb 2024 19:08:50 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2024",
@@ -32723,7 +32735,8 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json"
+      "ids": "ids/wai-aria-1.3.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:494:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    ... 2 lines matching cause stack trace ...\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n  [cause]: Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'\n      at async open (node:internal/fs/promises:636:25)\n      at async Object.readFile (node:internal/fs/promises:1246:14)\n      at async readFromCache (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:393:16)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:488:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n      at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n      at async Promise.all (index 558)\n      at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21) {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/tmp/reffy-cache/w3c.github.io!aria.headers'\n  }\n}"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
@@ -34913,11 +34926,11 @@
       ],
       "crawled": "https://w3c.github.io/webtransport/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 May 2024 23:10:37 GMT"
+        "lastModified": "Tue, 04 Jun 2024 14:55:23 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 May 2024",
-      "revision": "95b76668a1a39bd9c97c7298c9f4ab082f93a3cf",
+      "date": "4 June 2024",
+      "revision": "55eb1637feb6caa338e43271ded53cea581a8ff0",
       "links": "links/webtransport.json",
       "refs": "refs/webtransport.json",
       "idl": "idl/webtransport.idl",

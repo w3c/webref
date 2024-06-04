@@ -1,12 +1,12 @@
 {
   "spec": {
     "title": "CSS Viewport Module Level 1",
-    "url": "https://drafts.csswg.org/css-viewport-1/"
+    "url": "https://drafts.csswg.org/css-viewport/"
   },
   "properties": [
     {
       "name": "zoom",
-      "href": "https://drafts.csswg.org/css-viewport-1/#propdef-zoom",
+      "href": "https://drafts.csswg.org/css-viewport/#propdef-zoom",
       "value": "<number [0,∞]> || <percentage [0,∞]>",
       "initial": "1",
       "appliesTo": "all <length> property values of all elements",
@@ -20,14 +20,14 @@
         {
           "name": "<number>",
           "prose": "Positive floating point number indicating a zoom factor. Numbers smaller than 1.0 indicate a \"zoom out\" or minification effect, while numbers greater than 1.0 indicate a \"zoom in\" or magnification effect. A 0 value is treated as if it was 1.",
-          "href": "https://drafts.csswg.org/css-viewport-1/#valdef-zoom-number",
+          "href": "https://drafts.csswg.org/css-viewport/#valdef-zoom-number",
           "type": "value",
           "value": "<number>"
         },
         {
           "name": "<percentage>",
           "prose": "Positive floating point number, followed by a percentage character (\"%\") which indicates a zoom factor multiplied by 100. A 0 percentage is treated as if it was 100%.",
-          "href": "https://drafts.csswg.org/css-viewport-1/#valdef-zoom-percentage",
+          "href": "https://drafts.csswg.org/css-viewport/#valdef-zoom-percentage",
           "type": "value",
           "value": "<percentage>"
         }
