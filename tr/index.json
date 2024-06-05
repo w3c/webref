@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-04T01:27:10.598Z",
+  "date": "2024-06-05T01:30:33.250Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -15,6 +15,7 @@
       "av1-rtp-spec",
       "av1-spec",
       "compat",
+      "compression",
       "console",
       "partitioned-cookies",
       "client-hint-reliability",
@@ -45,7 +46,6 @@
       "css-size-adjust-1",
       "css-values-5",
       "css-variables-2",
-      "css-view-transitions-2",
       "compositing-2",
       "filter-effects-2",
       "encoding",
@@ -69,6 +69,7 @@
       "nav-tracking-mitigations",
       "private-click-measurement",
       "requestStorageAccessFor",
+      "saa-non-cookie-storage",
       "storage-access",
       "quirks",
       "glTF",
@@ -190,13 +191,11 @@
       "background-sync",
       "capability-delegation",
       "client-hints-infrastructure",
-      "compression",
       "content-index",
       "cookie-store",
       "crash-reporting",
       "csp-next",
       "css-parser-api",
-      "custom-state-pseudo-class",
       "datacue",
       "deprecation-reporting",
       "digital-goods",
@@ -413,6 +412,7 @@
       "css-values-4",
       "css-variables-1",
       "css-view-transitions-1",
+      "css-view-transitions-2",
       "css-viewport-1",
       "css-will-change-1",
       "css-writing-modes-3",
@@ -640,10 +640,10 @@
     ]
   },
   "stats": {
-    "crawled": 315,
-    "errors": 46
+    "crawled": 316,
+    "errors": 0
   },
-  "crawler": "reffy-15.2.0",
+  "crawler": "reffy-15.2.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -689,7 +689,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "4 June 2024",
+      "date": "5 June 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -1651,11 +1651,11 @@
       ],
       "crawled": "https://www.w3.org/TR/compute-pressure/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 May 2024 14:14:58 GMT"
+        "lastModified": "Tue, 04 Jun 2024 10:43:52 GMT"
       },
       "generator": "respec",
-      "date": "01 May 2024",
-      "revision": "e6022a2f06ef2c1ca09b2985d3aeafe4fddd9ab2",
+      "date": "04 June 2024",
+      "revision": "bb6a3d772f9b18e7030243f4d2094d89430a1f96",
       "links": "links/compute-pressure.json",
       "refs": "refs/compute-pressure.json",
       "idl": "idl/compute-pressure.idl",
@@ -3643,8 +3643,7 @@
       "css": "css/css-contain.json",
       "dfns": "dfns/css-contain-2.json",
       "headings": "headings/css-contain-2.json",
-      "ids": "ids/css-contain-2.json",
-      "error": "Error: Loading https://www.w3.org/TR/css-contain-2/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 46)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/css-contain-2.json"
     },
     {
       "url": "https://www.w3.org/TR/css-contain-3/",
@@ -7960,6 +7959,68 @@
       "ids": "ids/css-view-transitions-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-view-transitions-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-view-transitions-2",
+      "series": {
+        "shortname": "css-view-transitions",
+        "currentSpecification": "css-view-transitions-1",
+        "title": "CSS View Transitions Module",
+        "shortTitle": "CSS View Transitions",
+        "releaseUrl": "https://www.w3.org/TR/css-view-transitions/",
+        "nightlyUrl": "https://drafts.csswg.org/css-view-transitions/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-view-transitions-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-view-transitions-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-view-transitions-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-view-transitions-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-view-transitions-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS View Transitions Module Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS View Transitions 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-view-transitions-2/",
+        "https://drafts.csswg.org/css-view-transitions-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-view-transitions-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 14 May 2024 20:39:49 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "16 May 2024",
+      "revision": "f0de23017382a3a5100164410e2b4b48a871076f",
+      "links": "links/css-view-transitions-2.json",
+      "refs": "refs/css-view-transitions-2.json",
+      "idl": "idl/css-view-transitions-2.idl",
+      "css": "css/css-view-transitions-2.json",
+      "dfns": "dfns/css-view-transitions-2.json",
+      "headings": "headings/css-view-transitions-2.json",
+      "ids": "ids/css-view-transitions-2.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-viewport-1/",
       "seriesComposition": "full",
       "shortname": "css-viewport-1",
@@ -7972,6 +8033,16 @@
         "nightlyUrl": "https://drafts.csswg.org/css-viewport/"
       },
       "seriesVersion": "1",
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-viewport/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-viewport/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-viewport/Overview.bs",
+        "filename": "index.html"
+      },
       "formerNames": [
         "css-viewport"
       ],
@@ -7985,17 +8056,6 @@
       "release": {
         "url": "https://www.w3.org/TR/css-viewport-1/",
         "status": "First Public Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-viewport-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-viewport-1/",
-          "https://w3c.github.io/csswg-drafts/css-viewport/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-viewport/Overview.bs",
         "filename": "Overview.html"
       },
       "title": "CSS Viewport Module Level 1",
@@ -8013,7 +8073,7 @@
       },
       "versions": [
         "https://www.w3.org/TR/css-viewport-1/",
-        "https://drafts.csswg.org/css-viewport-1/"
+        "https://drafts.csswg.org/css-viewport/"
       ],
       "crawled": "https://www.w3.org/TR/css-viewport-1/",
       "crawlCacheInfo": {
@@ -11300,8 +11360,7 @@
       "idl": "idl/media-capabilities.idl",
       "dfns": "dfns/media-capabilities.json",
       "headings": "headings/media-capabilities.json",
-      "ids": "ids/media-capabilities.json",
-      "error": "Error: Loading https://www.w3.org/TR/media-capabilities/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 164)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/media-capabilities.json"
     },
     {
       "url": "https://www.w3.org/TR/media-source-2/",
@@ -11429,8 +11488,7 @@
       "idl": "idl/mediacapture-fromelement.idl",
       "dfns": "dfns/mediacapture-fromelement.json",
       "headings": "headings/mediacapture-fromelement.json",
-      "ids": "ids/mediacapture-fromelement.json",
-      "error": "Error: Loading https://www.w3.org/TR/mediacapture-fromelement/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 166)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mediacapture-fromelement.json"
     },
     {
       "url": "https://www.w3.org/TR/mediacapture-region/",
@@ -11486,8 +11544,7 @@
       "idl": "idl/mediacapture-region.idl",
       "dfns": "dfns/mediacapture-region.json",
       "headings": "headings/mediacapture-region.json",
-      "ids": "ids/mediacapture-region.json",
-      "error": "Error: Loading https://www.w3.org/TR/mediacapture-region/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 167)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mediacapture-region.json"
     },
     {
       "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -11803,8 +11860,7 @@
       "css": "css/mediaqueries.json",
       "dfns": "dfns/mediaqueries-4.json",
       "headings": "headings/mediaqueries-4.json",
-      "ids": "ids/mediaqueries-4.json",
-      "error": "Error: Loading https://www.w3.org/TR/mediaqueries-4/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 172)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mediaqueries-4.json"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-5/",
@@ -11998,8 +12054,7 @@
       "idl": "idl/mediastream-recording.idl",
       "dfns": "dfns/mediastream-recording.json",
       "headings": "headings/mediastream-recording.json",
-      "ids": "ids/mediastream-recording.json",
-      "error": "Error: Loading https://www.w3.org/TR/mediastream-recording/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 175)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mediastream-recording.json"
     },
     {
       "url": "https://www.w3.org/TR/miniapp-lifecycle/",
@@ -12052,8 +12107,7 @@
       "refs": "refs/miniapp-lifecycle.json",
       "dfns": "dfns/miniapp-lifecycle.json",
       "headings": "headings/miniapp-lifecycle.json",
-      "ids": "ids/miniapp-lifecycle.json",
-      "error": "Error: Loading https://www.w3.org/TR/miniapp-lifecycle/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 176)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/miniapp-lifecycle.json"
     },
     {
       "url": "https://www.w3.org/TR/miniapp-manifest/",
@@ -12106,8 +12160,7 @@
       "refs": "refs/miniapp-manifest.json",
       "dfns": "dfns/miniapp-manifest.json",
       "headings": "headings/miniapp-manifest.json",
-      "ids": "ids/miniapp-manifest.json",
-      "error": "Error: Loading https://www.w3.org/TR/miniapp-manifest/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 177)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/miniapp-manifest.json"
     },
     {
       "url": "https://www.w3.org/TR/miniapp-packaging/",
@@ -12341,8 +12394,7 @@
       "refs": "refs/mse-byte-stream-format-isobmff.json",
       "dfns": "dfns/mse-byte-stream-format-isobmff.json",
       "headings": "headings/mse-byte-stream-format-isobmff.json",
-      "ids": "ids/mse-byte-stream-format-isobmff.json",
-      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-isobmff/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 181)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-isobmff.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
@@ -12397,8 +12449,7 @@
       "refs": "refs/mse-byte-stream-format-mp2t.json",
       "dfns": "dfns/mse-byte-stream-format-mp2t.json",
       "headings": "headings/mse-byte-stream-format-mp2t.json",
-      "ids": "ids/mse-byte-stream-format-mp2t.json",
-      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-mp2t/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 182)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-mp2t.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
@@ -12453,8 +12504,7 @@
       "refs": "refs/mse-byte-stream-format-mpeg-audio.json",
       "dfns": "dfns/mse-byte-stream-format-mpeg-audio.json",
       "headings": "headings/mse-byte-stream-format-mpeg-audio.json",
-      "ids": "ids/mse-byte-stream-format-mpeg-audio.json",
-      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 183)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-mpeg-audio.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
@@ -12508,8 +12558,7 @@
       "links": "links/mse-byte-stream-format-registry.json",
       "refs": "refs/mse-byte-stream-format-registry.json",
       "headings": "headings/mse-byte-stream-format-registry.json",
-      "ids": "ids/mse-byte-stream-format-registry.json",
-      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-registry/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 184)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-registry.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
@@ -12563,8 +12612,7 @@
       "links": "links/mse-byte-stream-format-webm.json",
       "refs": "refs/mse-byte-stream-format-webm.json",
       "headings": "headings/mse-byte-stream-format-webm.json",
-      "ids": "ids/mse-byte-stream-format-webm.json",
-      "error": "Error: Loading https://www.w3.org/TR/mse-byte-stream-format-webm/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 185)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mse-byte-stream-format-webm.json"
     },
     {
       "url": "https://www.w3.org/TR/mst-content-hint/",
@@ -12626,8 +12674,7 @@
       "idl": "idl/mst-content-hint.idl",
       "dfns": "dfns/mst-content-hint.json",
       "headings": "headings/mst-content-hint.json",
-      "ids": "ids/mst-content-hint.json",
-      "error": "Error: Loading https://www.w3.org/TR/mst-content-hint/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 186)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/mst-content-hint.json"
     },
     {
       "url": "https://www.w3.org/TR/n-quads/",
@@ -12676,8 +12723,7 @@
       "links": "links/n-quads.json",
       "refs": "refs/n-quads.json",
       "headings": "headings/n-quads.json",
-      "ids": "ids/n-quads.json",
-      "error": "Error: Loading https://www.w3.org/TR/n-quads/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 187)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/n-quads.json"
     },
     {
       "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -12742,8 +12788,7 @@
       "idl": "idl/navigation-timing.idl",
       "dfns": "dfns/navigation-timing-2.json",
       "headings": "headings/navigation-timing-2.json",
-      "ids": "ids/navigation-timing-2.json",
-      "error": "Error: Loading https://www.w3.org/TR/navigation-timing-2/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 188)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/navigation-timing-2.json"
     },
     {
       "url": "https://www.w3.org/TR/network-error-logging/",
@@ -12804,8 +12849,7 @@
       "refs": "refs/network-error-logging.json",
       "dfns": "dfns/network-error-logging.json",
       "headings": "headings/network-error-logging.json",
-      "ids": "ids/network-error-logging.json",
-      "error": "Error: Loading https://www.w3.org/TR/network-error-logging/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 189)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/network-error-logging.json"
     },
     {
       "url": "https://www.w3.org/TR/openscreenprotocol/",
@@ -12869,9 +12913,9 @@
       "shortname": "orientation-event",
       "series": {
         "shortname": "orientation-event",
+        "title": "Device Orientation and Motion",
         "currentSpecification": "orientation-event",
-        "title": "DeviceOrientation Event",
-        "shortTitle": "DeviceOrientation Event",
+        "shortTitle": "Device Orientation and Motion",
         "releaseUrl": "https://www.w3.org/TR/orientation-event/",
         "nightlyUrl": "https://w3c.github.io/deviceorientation/"
       },
@@ -12901,7 +12945,7 @@
       },
       "title": "Device Orientation and Motion",
       "source": "w3c",
-      "shortTitle": "DeviceOrientation Event",
+      "shortTitle": "Device Orientation and Motion",
       "categories": [
         "browser"
       ],
@@ -12992,8 +13036,7 @@
       "idl": "idl/orientation-sensor.idl",
       "dfns": "dfns/orientation-sensor.json",
       "headings": "headings/orientation-sensor.json",
-      "ids": "ids/orientation-sensor.json",
-      "error": "Error: Loading https://www.w3.org/TR/orientation-sensor/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 192)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/orientation-sensor.json"
     },
     {
       "url": "https://www.w3.org/TR/paint-timing/",
@@ -13119,8 +13162,7 @@
       "idl": "idl/payment-handler.idl",
       "dfns": "dfns/payment-handler.json",
       "headings": "headings/payment-handler.json",
-      "ids": "ids/payment-handler.json",
-      "error": "Error: Loading https://www.w3.org/TR/payment-handler/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 194)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/payment-handler.json"
     },
     {
       "url": "https://www.w3.org/TR/payment-method-id/",
@@ -13365,8 +13407,7 @@
       "idl": "idl/performance-timeline.idl",
       "dfns": "dfns/performance-timeline.json",
       "headings": "headings/performance-timeline.json",
-      "ids": "ids/performance-timeline.json",
-      "error": "Error: Loading https://www.w3.org/TR/performance-timeline/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 198)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/performance-timeline.json"
     },
     {
       "url": "https://www.w3.org/TR/permissions-policy-1/",
@@ -13430,8 +13471,7 @@
       "idl": "idl/permissions-policy.idl",
       "dfns": "dfns/permissions-policy-1.json",
       "headings": "headings/permissions-policy-1.json",
-      "ids": "ids/permissions-policy-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/permissions-policy-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 199)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/permissions-policy-1.json"
     },
     {
       "url": "https://www.w3.org/TR/permissions/",
@@ -13559,8 +13599,7 @@
       "idl": "idl/picture-in-picture.idl",
       "dfns": "dfns/picture-in-picture.json",
       "headings": "headings/picture-in-picture.json",
-      "ids": "ids/picture-in-picture.json",
-      "error": "Error: Loading https://www.w3.org/TR/picture-in-picture/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 201)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/picture-in-picture.json"
     },
     {
       "url": "https://www.w3.org/TR/pointerevents3/",
@@ -13871,8 +13910,7 @@
       "refs": "refs/pub-manifest.json",
       "dfns": "dfns/pub-manifest.json",
       "headings": "headings/pub-manifest.json",
-      "ids": "ids/pub-manifest.json",
-      "error": "Error: Loading https://www.w3.org/TR/pub-manifest/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 206)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/pub-manifest.json"
     },
     {
       "url": "https://www.w3.org/TR/push-api/",
@@ -13968,7 +14006,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf-canon/",
-        "status": "Proposed Recommendation",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "RDF Dataset Canonicalization",
@@ -13989,8 +14027,7 @@
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",
       "headings": "headings/rdf-canon.json",
-      "ids": "ids/rdf-canon.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf-canon/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 208)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf-canon.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-concepts/",
@@ -14045,8 +14082,7 @@
       "refs": "refs/rdf12-concepts.json",
       "dfns": "dfns/rdf12-concepts.json",
       "headings": "headings/rdf12-concepts.json",
-      "ids": "ids/rdf12-concepts.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-concepts/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 209)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-concepts.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-n-quads/",
@@ -14101,8 +14137,7 @@
       "refs": "refs/rdf12-n-quads.json",
       "dfns": "dfns/rdf12-n-quads.json",
       "headings": "headings/rdf12-n-quads.json",
-      "ids": "ids/rdf12-n-quads.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-n-quads/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 210)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-n-quads.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-n-triples/",
@@ -14157,8 +14192,7 @@
       "refs": "refs/rdf12-n-triples.json",
       "dfns": "dfns/rdf12-n-triples.json",
       "headings": "headings/rdf12-n-triples.json",
-      "ids": "ids/rdf12-n-triples.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-n-triples/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 211)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-n-triples.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-schema/",
@@ -14212,8 +14246,7 @@
       "links": "links/rdf12-schema.json",
       "refs": "refs/rdf12-schema.json",
       "headings": "headings/rdf12-schema.json",
-      "ids": "ids/rdf12-schema.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-schema/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 212)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-schema.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-semantics/",
@@ -14268,8 +14301,7 @@
       "refs": "refs/rdf12-semantics.json",
       "dfns": "dfns/rdf12-semantics.json",
       "headings": "headings/rdf12-semantics.json",
-      "ids": "ids/rdf12-semantics.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-semantics/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 213)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-semantics.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-trig/",
@@ -14324,8 +14356,7 @@
       "refs": "refs/rdf12-trig.json",
       "dfns": "dfns/rdf12-trig.json",
       "headings": "headings/rdf12-trig.json",
-      "ids": "ids/rdf12-trig.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-trig/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 214)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-trig.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-turtle/",
@@ -14380,8 +14411,7 @@
       "refs": "refs/rdf12-turtle.json",
       "dfns": "dfns/rdf12-turtle.json",
       "headings": "headings/rdf12-turtle.json",
-      "ids": "ids/rdf12-turtle.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-turtle/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 215)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-turtle.json"
     },
     {
       "url": "https://www.w3.org/TR/rdf12-xml/",
@@ -14436,8 +14466,7 @@
       "refs": "refs/rdf12-xml.json",
       "dfns": "dfns/rdf12-xml.json",
       "headings": "headings/rdf12-xml.json",
-      "ids": "ids/rdf12-xml.json",
-      "error": "Error: Loading https://www.w3.org/TR/rdf12-xml/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 216)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/rdf12-xml.json"
     },
     {
       "url": "https://www.w3.org/TR/referrer-policy/",
@@ -14499,8 +14528,7 @@
       "idl": "idl/referrer-policy.idl",
       "dfns": "dfns/referrer-policy.json",
       "headings": "headings/referrer-policy.json",
-      "ids": "ids/referrer-policy.json",
-      "error": "Error: Loading https://www.w3.org/TR/referrer-policy/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 217)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/referrer-policy.json"
     },
     {
       "url": "https://www.w3.org/TR/remote-playback/",
@@ -14564,8 +14592,7 @@
       "idl": "idl/remote-playback.idl",
       "dfns": "dfns/remote-playback.json",
       "headings": "headings/remote-playback.json",
-      "ids": "ids/remote-playback.json",
-      "error": "Error: Loading https://www.w3.org/TR/remote-playback/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 218)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/remote-playback.json"
     },
     {
       "url": "https://www.w3.org/TR/reporting-1/",
@@ -14629,8 +14656,7 @@
       "idl": "idl/reporting.idl",
       "dfns": "dfns/reporting-1.json",
       "headings": "headings/reporting-1.json",
-      "ids": "ids/reporting-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/reporting-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 219)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/reporting-1.json"
     },
     {
       "url": "https://www.w3.org/TR/requestidlecallback/",
@@ -14692,8 +14718,7 @@
       "idl": "idl/requestidlecallback.idl",
       "dfns": "dfns/requestidlecallback.json",
       "headings": "headings/requestidlecallback.json",
-      "ids": "ids/requestidlecallback.json",
-      "error": "Error: Loading https://www.w3.org/TR/requestidlecallback/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 220)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/requestidlecallback.json"
     },
     {
       "url": "https://www.w3.org/TR/resize-observer-1/",
@@ -14760,8 +14785,7 @@
       "idl": "idl/resize-observer.idl",
       "dfns": "dfns/resize-observer-1.json",
       "headings": "headings/resize-observer-1.json",
-      "ids": "ids/resize-observer-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/resize-observer-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 221)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/resize-observer-1.json"
     },
     {
       "url": "https://www.w3.org/TR/resource-timing/",
@@ -14825,8 +14849,7 @@
       "idl": "idl/resource-timing.idl",
       "dfns": "dfns/resource-timing.json",
       "headings": "headings/resource-timing.json",
-      "ids": "ids/resource-timing.json",
-      "error": "Error: Loading https://www.w3.org/TR/resource-timing/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 222)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/resource-timing.json"
     },
     {
       "url": "https://www.w3.org/TR/screen-capture/",
@@ -14890,8 +14913,7 @@
       "idl": "idl/screen-capture.idl",
       "dfns": "dfns/screen-capture.json",
       "headings": "headings/screen-capture.json",
-      "ids": "ids/screen-capture.json",
-      "error": "Error: Loading https://www.w3.org/TR/screen-capture/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 223)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/screen-capture.json"
     },
     {
       "url": "https://www.w3.org/TR/screen-orientation/",
@@ -14954,8 +14976,7 @@
       "idl": "idl/screen-orientation.idl",
       "dfns": "dfns/screen-orientation.json",
       "headings": "headings/screen-orientation.json",
-      "ids": "ids/screen-orientation.json",
-      "error": "Error: Loading https://www.w3.org/TR/screen-orientation/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 224)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/screen-orientation.json"
     },
     {
       "url": "https://www.w3.org/TR/screen-wake-lock/",
@@ -15153,8 +15174,7 @@
       "refs": "refs/secure-contexts.json",
       "dfns": "dfns/secure-contexts.json",
       "headings": "headings/secure-contexts.json",
-      "ids": "ids/secure-contexts.json",
-      "error": "Error: Loading https://www.w3.org/TR/secure-contexts/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 227)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/secure-contexts.json"
     },
     {
       "url": "https://www.w3.org/TR/secure-payment-confirmation/",
@@ -15217,8 +15237,7 @@
       "idl": "idl/secure-payment-confirmation.idl",
       "dfns": "dfns/secure-payment-confirmation.json",
       "headings": "headings/secure-payment-confirmation.json",
-      "ids": "ids/secure-payment-confirmation.json",
-      "error": "Error: Loading https://www.w3.org/TR/secure-payment-confirmation/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 228)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/secure-payment-confirmation.json"
     },
     {
       "url": "https://www.w3.org/TR/selection-api/",
@@ -15281,8 +15300,7 @@
       "idl": "idl/selection-api.idl",
       "dfns": "dfns/selection-api.json",
       "headings": "headings/selection-api.json",
-      "ids": "ids/selection-api.json",
-      "error": "Error: Loading https://www.w3.org/TR/selection-api/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 229)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/selection-api.json"
     },
     {
       "url": "https://www.w3.org/TR/selectors-3/",
@@ -15346,8 +15364,7 @@
       "refs": "refs/selectors-3.json",
       "dfns": "dfns/selectors-3.json",
       "headings": "headings/selectors-3.json",
-      "ids": "ids/selectors-3.json",
-      "error": "Error: Loading https://www.w3.org/TR/selectors-3/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 230)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/selectors-3.json"
     },
     {
       "url": "https://www.w3.org/TR/selectors-4/",
@@ -16097,6 +16114,11 @@
         "nightlyUrl": "https://w3c.github.io/webappsec-subresource-integrity/"
       },
       "shortTitle": "SRI",
+      "release": {
+        "url": "https://www.w3.org/TR/SRI/",
+        "status": "Recommendation",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -16104,11 +16126,6 @@
           "url": "https://www.w3.org/groups/wg/webappsec/"
         }
       ],
-      "release": {
-        "url": "https://www.w3.org/TR/SRI/",
-        "status": "Recommendation",
-        "filename": "index.html"
-      },
       "nightly": {
         "url": "https://w3c.github.io/webappsec-subresource-integrity/",
         "status": "Editor's Draft",
@@ -16764,6 +16781,11 @@
         "releaseUrl": "https://www.w3.org/TR/trusted-types/",
         "nightlyUrl": "https://w3c.github.io/trusted-types/dist/spec/"
       },
+      "release": {
+        "url": "https://www.w3.org/TR/trusted-types/",
+        "status": "First Public Working Draft",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -16771,11 +16793,6 @@
           "url": "https://www.w3.org/groups/wg/webappsec/"
         }
       ],
-      "release": {
-        "url": "https://www.w3.org/TR/trusted-types/",
-        "status": "First Public Working Draft",
-        "filename": "index.html"
-      },
       "nightly": {
         "url": "https://w3c.github.io/trusted-types/dist/spec/",
         "status": "Editor's Draft",
@@ -17159,11 +17176,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-integrity/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 28 Apr 2024 15:14:41 GMT"
+        "lastModified": "Wed, 05 Jun 2024 00:15:20 GMT"
       },
       "generator": "respec",
-      "date": "28 April 2024",
-      "revision": "7de1987c360d48321de1e60b1cd2e5560f8d1ea3",
+      "date": "05 June 2024",
+      "revision": "f9150a6cfb1d1c23dc4f1eead2b88edfd94d213d",
       "links": "links/vc-data-integrity.json",
       "refs": "refs/vc-data-integrity.json",
       "dfns": "dfns/vc-data-integrity.json",
@@ -19091,11 +19108,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 31 May 2024 17:07:02 GMT"
+        "lastModified": "Tue, 04 Jun 2024 03:38:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 May 2024",
-      "revision": "064562f2adb8633266aba7b1d7f4ad70a9077085",
+      "date": "4 June 2024",
+      "revision": "b468f37a13b428a676990fe156dc66dd952aedd4",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -19218,11 +19235,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 01 Jun 2024 02:25:59 GMT"
+        "lastModified": "Tue, 04 Jun 2024 04:40:35 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 June 2024",
-      "revision": "932b603eea9d1c8cbbd1d1192f21e7d79df3ad73",
+      "date": "4 June 2024",
+      "revision": "91e24076992e9db35c244d89e14f9f4dd149160e",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -19606,8 +19623,7 @@
       "idl": "idl/webrtc.idl",
       "dfns": "dfns/webrtc.json",
       "headings": "headings/webrtc.json",
-      "ids": "ids/webrtc.json",
-      "error": "Error: Loading https://www.w3.org/TR/webrtc/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 299)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/webrtc.json"
     },
     {
       "url": "https://www.w3.org/TR/webtransport/",
@@ -20112,8 +20128,7 @@
       "idl": "idl/webxr-hit-test.idl",
       "dfns": "dfns/webxr-hit-test-1.json",
       "headings": "headings/webxr-hit-test-1.json",
-      "ids": "ids/webxr-hit-test-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/webxr-hit-test-1/ triggered HTTP status 429\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:98:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:22)\n    at async Promise.all (index 307)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:375:21)"
+      "ids": "ids/webxr-hit-test-1.json"
     },
     {
       "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/",

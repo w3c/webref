@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 2",
+    "url": "https://www.w3.org/TR/css-view-transitions-2/"
+  },
+  "properties": [
+    {
+      "name": "view-transition-class",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#propdef-view-transition-class",
+      "value": "none | <custom-ident>+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No class would apply to the named view transition pseudo-elements generated for this element.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-class-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<custom-ident>+",
+          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with another <custom-ident>.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>+"
+        }
+      ],
+      "styleDeclaration": [
+        "view-transition-class",
+        "viewTransitionClass"
+      ]
+    }
+  ],
+  "atrules": [
+    {
+      "name": "@view-transition",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#at-view-transition-rule",
+      "descriptors": [
+        {
+          "name": "navigation",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-navigation",
+          "for": "@view-transition",
+          "value": "auto | none",
+          "initial": "none",
+          "values": [
+            {
+              "name": "none",
+              "prose": "There will be no transition.",
+              "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-navigation-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "auto",
+              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whose NavigationType is traverse, or push or replace, with user navigation involvement not equal to \"browser UI\".",
+              "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-navigation-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "name": "types",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-types",
+          "for": "@view-transition",
+          "value": "none | <custom-ident>+",
+          "initial": "none"
+        }
+      ],
+      "value": "@view-transition { <declaration-list> }"
+    }
+  ],
+  "selectors": [
+    {
+      "name": ":active-view-transition",
+      "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition.",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#active-view-transition-pseudo"
+    },
+    {
+      "name": ":active-view-transition-type()",
+      "prose": "The :active-view-transition-type() pseudo-class applies to the root element of the document, if it has a matching active view transition. It has the following syntax definition:",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#active-view-transition-type-pseudo"
+    }
+  ],
+  "values": [
+    {
+      "name": "<pt-name-and-class-selector>",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#typedef-pt-name-and-class-selector",
+      "type": "type",
+      "value": "<pt-name-selector> <pt-class-selector>? | <pt-class-selector>"
+    },
+    {
+      "name": "<pt-class-selector>",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#typedef-pt-class-selector",
+      "type": "type",
+      "value": "['.' <custom-ident>]+"
+    }
+  ]
+}

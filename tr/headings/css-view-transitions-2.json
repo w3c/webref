@@ -1,0 +1,441 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 2",
+    "url": "https://www.w3.org/TR/css-view-transitions-2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#title",
+      "level": 1,
+      "title": "CSS View Transitions Module Level 2"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "cross-document-view-transitions",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-document-view-transitions",
+      "level": 2,
+      "title": "Cross-document view transitions",
+      "number": "2"
+    },
+    {
+      "id": "cross-doc-overview",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "2.1"
+    },
+    {
+      "id": "activating-cross-document-view-transition",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#activating-cross-document-view-transition",
+      "level": 4,
+      "title": "Activation",
+      "number": "2.1.1"
+    },
+    {
+      "id": "waiting-for-stable-state",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#waiting-for-stable-state",
+      "level": 4,
+      "title": "Waiting for the new state to stabilize",
+      "number": "2.1.2"
+    },
+    {
+      "id": "customizing-cross-document-view-transitions",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#customizing-cross-document-view-transitions",
+      "level": 4,
+      "title": "Customization",
+      "number": "2.1.3"
+    },
+    {
+      "id": "old-doc-event",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#old-doc-event",
+      "level": 5,
+      "title": "Handling the view transition in the old document",
+      "number": "2.1.3.1"
+    },
+    {
+      "id": "new-doc-event",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#new-doc-event",
+      "level": 5,
+      "title": "Handling the view transition in the new document",
+      "number": "2.1.3.2"
+    },
+    {
+      "id": "lifecycle",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#lifecycle",
+      "level": 4,
+      "title": "Lifecycle",
+      "number": "2.1.4"
+    },
+    {
+      "id": "cross-doc-examples",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "2.2"
+    },
+    {
+      "id": "cross-doc-opt-in",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-opt-in",
+      "level": 3,
+      "title": "Opting in to cross-document view transitions",
+      "number": "2.3"
+    },
+    {
+      "id": "view-transition-rule",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-rule",
+      "level": 4,
+      "title": "The @view-transition rule",
+      "number": "2.3.1"
+    },
+    {
+      "id": "view-transition-navigation-descriptor",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-navigation-descriptor",
+      "level": 4,
+      "title": "The navigation descriptor",
+      "number": "2.3.2"
+    },
+    {
+      "id": "cssom",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cssom",
+      "level": 4,
+      "title": "Accessing the @view-transition rule using CSSOM",
+      "number": "2.3.3"
+    },
+    {
+      "id": "selective-vt",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#selective-vt",
+      "level": 2,
+      "title": "Selective view transitions",
+      "number": "3"
+    },
+    {
+      "id": "selective-vt-overview",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#selective-vt-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "3.1"
+    },
+    {
+      "id": "active-view-transition-pseudo-examples",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#active-view-transition-pseudo-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "3.2"
+    },
+    {
+      "id": "pseudo-classes-for-selective-vt",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#pseudo-classes-for-selective-vt",
+      "level": 3,
+      "title": "Selecting based on the active view transition",
+      "number": "3.3"
+    },
+    {
+      "id": "the-active-view-transition-pseudo",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#the-active-view-transition-pseudo",
+      "level": 4,
+      "title": "The :active-view-transition pseudo-class",
+      "number": "3.3.1"
+    },
+    {
+      "id": "the-active-view-transition-type-pseudo",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#the-active-view-transition-type-pseudo",
+      "level": 4,
+      "title": "The :active-view-transition-type() pseudo-class",
+      "number": "3.3.2"
+    },
+    {
+      "id": "view-transitions-extension-types",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#view-transitions-extension-types",
+      "level": 3,
+      "title": "Changing the types of an ongoing view transition",
+      "number": "3.4"
+    },
+    {
+      "id": "types-cross-doc",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#types-cross-doc",
+      "level": 3,
+      "title": "Activating the transition type for cross-document view transitions",
+      "number": "3.5"
+    },
+    {
+      "id": "shared-style-with-vt-classes",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#shared-style-with-vt-classes",
+      "level": 2,
+      "title": "Sharing styles between view transition pseudo-elements",
+      "number": "4"
+    },
+    {
+      "id": "shared-style-overview",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#shared-style-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "4.1"
+    },
+    {
+      "id": "vt-class-example",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#vt-class-example",
+      "level": 3,
+      "title": "Examples",
+      "number": "4.2"
+    },
+    {
+      "id": "view-transition-class-prop",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-class-prop",
+      "level": 3,
+      "title": "The view-transition-class property",
+      "number": "4.3"
+    },
+    {
+      "id": "pseudo-element-class-additions",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#pseudo-element-class-additions",
+      "level": 3,
+      "title": "Additions to named view transition pseudo-elements",
+      "number": "4.4"
+    },
+    {
+      "id": "extend-document-types",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#extend-document-types",
+      "level": 2,
+      "title": "Extending document.startViewTransition()",
+      "number": "5"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "6"
+    },
+    {
+      "id": "cross-doc-data-structures",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-data-structures",
+      "level": 3,
+      "title": "Data structures",
+      "number": "6.1"
+    },
+    {
+      "id": "cross-doc-data-structure-document",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-data-structure-document",
+      "level": 4,
+      "title": "Additions to Document",
+      "number": "6.1.1"
+    },
+    {
+      "id": "cross-doc-data-structure-vt",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-data-structure-vt",
+      "level": 4,
+      "title": "Additions to ViewTransition",
+      "number": "6.1.2"
+    },
+    {
+      "id": "cross-doc-data-structure-serialization",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-data-structure-serialization",
+      "level": 4,
+      "title": "Serializable view transition params",
+      "number": "6.1.3"
+    },
+    {
+      "id": "capture-classes-data-structure",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#capture-classes-data-structure",
+      "level": 4,
+      "title": "Captured elements extension",
+      "number": "6.1.4"
+    },
+    {
+      "id": "vt-rule-algo",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#vt-rule-algo",
+      "level": 3,
+      "title": "Resolving the @view-transition rule",
+      "number": "6.2"
+    },
+    {
+      "id": "setup-old-document-vt",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#setup-old-document-vt",
+      "level": 3,
+      "title": "Setting up the view transition in the old Document",
+      "number": "6.3"
+    },
+    {
+      "id": "check-eligibility",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#check-eligibility",
+      "level": 4,
+      "title": "Check eligibility for outbound cross-document view transition",
+      "number": "6.3.1"
+    },
+    {
+      "id": "setup-outbound-transition",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#setup-outbound-transition",
+      "level": 4,
+      "title": "Setup the outbound transition when ready to swap pages",
+      "number": "6.3.2"
+    },
+    {
+      "id": "update-opt-in",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#update-opt-in",
+      "level": 4,
+      "title": "Update the opt-in flag to reflect the current state",
+      "number": "6.3.3"
+    },
+    {
+      "id": "proceed-if-skipped",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#proceed-if-skipped",
+      "level": 4,
+      "title": "Proceed with navigation if view transition is skipped",
+      "number": "6.3.4"
+    },
+    {
+      "id": "cross-doc-after-capture",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#cross-doc-after-capture",
+      "level": 4,
+      "title": "Proceed with cross-document view transition after capturing the old state",
+      "number": "6.3.5"
+    },
+    {
+      "id": "access-view-transition-in-new-doc",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#access-view-transition-in-new-doc",
+      "level": 3,
+      "title": "Activating the view transition in the new Document",
+      "number": "6.4"
+    },
+    {
+      "id": "vt-class-algorithms",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#vt-class-algorithms",
+      "level": 3,
+      "title": "Capturing the view-transition-class",
+      "number": "6.5"
+    },
+    {
+      "id": "priv",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#priv",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "sec",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#sec",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "view-transition-descriptor-table",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#view-transition-descriptor-table",
+      "level": 3,
+      "title": "@view-transition Descriptors"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
