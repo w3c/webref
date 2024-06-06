@@ -1,0 +1,25 @@
+From 9831f1b7133d65dcf0e8b31a97ee23cbb6a9a5de Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Thu, 6 Jun 2024 10:50:01 +0200
+Subject: [PATCH] Remove invalid overloaded requestStorageAccess
+
+See https://github.com/privacycg/saa-non-cookie-storage/issues/30
+---
+ ed/idl/saa-non-cookie-storage.idl | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ed/idl/saa-non-cookie-storage.idl b/ed/idl/saa-non-cookie-storage.idl
+index 45330025c..6cc0a7887 100644
+--- a/ed/idl/saa-non-cookie-storage.idl
++++ b/ed/idl/saa-non-cookie-storage.idl
+@@ -36,7 +36,6 @@ interface StorageAccessHandle {
+ 
+ partial interface Document {
+   Promise<boolean> hasUnpartitionedCookieAccess();
+-  Promise<StorageAccessHandle> requestStorageAccess(StorageAccessTypes types);
+ };
+ 
+ enum SameSiteCookiesType { "all", "none" };
+-- 
+2.34.1
+
