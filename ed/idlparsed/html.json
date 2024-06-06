@@ -31383,7 +31383,7 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers"
       },
       "TimerHandler": {
-        "fragment": "typedef (DOMString or Function) TimerHandler;",
+        "fragment": "typedef (DOMString or Function or TrustedScript) TimerHandler;",
         "type": "typedef",
         "name": "TimerHandler",
         "idlType": {
@@ -31408,6 +31408,14 @@
               "nullable": false,
               "union": false,
               "idlType": "Function"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TrustedScript"
             }
           ]
         },
@@ -37862,7 +37870,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe(HTMLString html);\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write(HTMLString... text);\n  [CEReactions] undefined writeln(HTMLString... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
+          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe(HTMLString html);\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write((TrustedHTML or DOMString)... text);\n  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -38481,8 +38489,25 @@
                     "extAttrs": [],
                     "generic": "",
                     "nullable": false,
-                    "union": false,
-                    "idlType": "HTMLString"
+                    "union": true,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "TrustedHTML"
+                      },
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "DOMString"
+                      }
+                    ]
                   },
                   "default": null,
                   "optional": false,
@@ -38520,8 +38545,25 @@
                     "extAttrs": [],
                     "generic": "",
                     "nullable": false,
-                    "union": false,
-                    "idlType": "HTMLString"
+                    "union": true,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "TrustedHTML"
+                      },
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "DOMString"
+                      }
+                    ]
                   },
                   "default": null,
                   "optional": false,
@@ -43239,6 +43281,7 @@
         "NodeList",
         "HTMLOrSVGScriptElement",
         "WindowProxy",
+        "TrustedHTML",
         "DocumentVisibilityState",
         "EventHandler",
         "GlobalEventHandlers",
@@ -44171,6 +44214,7 @@
       "Document",
       "HTMLString",
       "WindowProxy",
+      "TrustedHTML",
       "DocumentOrShadowRoot",
       "DOMTokenList",
       "MediaStream",
@@ -44202,6 +44246,7 @@
       "MouseEventInit",
       "ViewTransition",
       "Function",
+      "TrustedScript",
       "VoidFunction",
       "Range",
       "ServiceWorker",

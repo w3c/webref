@@ -1,156 +1,148 @@
 {
   "spec": {
-    "title": "Compression Streams",
-    "url": "https://wicg.github.io/compression/"
+    "title": "Compression Standard",
+    "url": "https://compression.spec.whatwg.org/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://wicg.github.io/compression/#title",
+      "href": "https://compression.spec.whatwg.org/#title",
       "level": 1,
-      "title": "Compression Streams"
+      "title": "Compression"
     },
     {
       "id": "abstract",
-      "href": "https://wicg.github.io/compression/#abstract",
+      "href": "https://compression.spec.whatwg.org/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://wicg.github.io/compression/#status",
-      "level": 2,
-      "title": "Status of this document"
-    },
-    {
       "id": "toc",
-      "href": "https://wicg.github.io/compression/#toc",
+      "href": "https://compression.spec.whatwg.org/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
-      "href": "https://wicg.github.io/compression/#introduction",
+      "href": "https://compression.spec.whatwg.org/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
-      "id": "conformance",
-      "href": "https://wicg.github.io/compression/#conformance",
+      "id": "infrastructure",
+      "href": "https://compression.spec.whatwg.org/#infrastructure",
       "level": 2,
-      "title": "Conformance",
+      "title": "Infrastructure",
       "number": "2"
     },
     {
-      "id": "terminology",
-      "href": "https://wicg.github.io/compression/#terminology",
+      "id": "supported-formats",
+      "href": "https://compression.spec.whatwg.org/#supported-formats",
       "level": 2,
-      "title": "Terminology",
+      "title": "Supported formats",
       "number": "3"
     },
     {
-      "id": "supported-formats",
-      "href": "https://wicg.github.io/compression/#supported-formats",
+      "id": "compression-stream",
+      "href": "https://compression.spec.whatwg.org/#compression-stream",
       "level": 2,
-      "title": "Supported formats",
+      "title": "Interface CompressionStream",
       "number": "4"
     },
     {
-      "id": "compression-stream",
-      "href": "https://wicg.github.io/compression/#compression-stream",
+      "id": "decompression-stream",
+      "href": "https://compression.spec.whatwg.org/#decompression-stream",
       "level": 2,
-      "title": "Interface CompressionStream",
+      "title": "Interface DecompressionStream",
       "number": "5"
     },
     {
-      "id": "decompression-stream",
-      "href": "https://wicg.github.io/compression/#decompression-stream",
+      "id": "privacy-security",
+      "href": "https://compression.spec.whatwg.org/#privacy-security",
       "level": 2,
-      "title": "Interface DecompressionStream",
+      "title": "Privacy and security considerations",
       "number": "6"
     },
     {
-      "id": "privacy-security",
-      "href": "https://wicg.github.io/compression/#privacy-security",
+      "id": "examples",
+      "href": "https://compression.spec.whatwg.org/#examples",
       "level": 2,
-      "title": "Privacy and Security Considerations",
+      "title": "Examples",
       "number": "7"
     },
     {
-      "id": "examples",
-      "href": "https://wicg.github.io/compression/#examples",
-      "level": 2,
-      "title": "Examples",
-      "number": "8"
-    },
-    {
       "id": "example-gzip-compress-stream",
-      "href": "https://wicg.github.io/compression/#example-gzip-compress-stream",
+      "href": "https://compression.spec.whatwg.org/#example-gzip-compress-stream",
       "level": 3,
       "title": "Gzip-compress a stream",
-      "number": "8.1"
+      "number": "7.1"
     },
     {
       "id": "example-deflate-compress",
-      "href": "https://wicg.github.io/compression/#example-deflate-compress",
+      "href": "https://compression.spec.whatwg.org/#example-deflate-compress",
       "level": 3,
       "title": "Deflate-compress an ArrayBuffer to a Uint8Array",
-      "number": "8.2"
+      "number": "7.2"
     },
     {
       "id": "example-gzip-decompress",
-      "href": "https://wicg.github.io/compression/#example-gzip-decompress",
+      "href": "https://compression.spec.whatwg.org/#example-gzip-decompress",
       "level": 3,
       "title": "Gzip-decompress a Blob to Blob",
-      "number": "8.3"
+      "number": "7.3"
     },
     {
       "id": "acknowledgments",
-      "href": "https://wicg.github.io/compression/#acknowledgments",
+      "href": "https://compression.spec.whatwg.org/#acknowledgments",
       "level": 2,
-      "title": "Acknowledgments",
-      "number": "9"
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "ipr",
+      "href": "https://compression.spec.whatwg.org/#ipr",
+      "level": 2,
+      "title": "Intellectual property rights"
     },
     {
       "id": "index",
-      "href": "https://wicg.github.io/compression/#index",
+      "href": "https://compression.spec.whatwg.org/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://wicg.github.io/compression/#index-defined-here",
+      "href": "https://compression.spec.whatwg.org/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://wicg.github.io/compression/#index-defined-elsewhere",
+      "href": "https://compression.spec.whatwg.org/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://wicg.github.io/compression/#references",
+      "href": "https://compression.spec.whatwg.org/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://wicg.github.io/compression/#normative",
+      "href": "https://compression.spec.whatwg.org/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://wicg.github.io/compression/#informative",
+      "href": "https://compression.spec.whatwg.org/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "href": "https://wicg.github.io/compression/#idl-index",
+      "href": "https://compression.spec.whatwg.org/#idl-index",
       "level": 2,
       "title": "IDL Index"
     }

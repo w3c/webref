@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "MediaStreamTrackProcessor": {
-        "fragment": "[Exposed=DedicatedWorker]\ninterface MediaStreamTrackProcessor {\n    constructor(MediaStreamTrackProcessorInit init);\n    attribute ReadableStream readable;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface MediaStreamTrackProcessor {\n    constructor(MediaStreamTrackProcessorInit init);\n    readonly attribute ReadableStream readable;\n};",
         "type": "interface",
         "name": "MediaStreamTrackProcessor",
         "inheritance": null,
@@ -56,7 +56,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false,
+            "readonly": true,
             "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable"
           }
         ],

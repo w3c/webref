@@ -6,12 +6,6 @@
   "links": {
     "rawlinks": {
       "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
-      "http://www.w3.org/Consortium/Patent-Policy-20170801/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "http://www.w3.org/TR/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRCPUDepthInformation": {},
@@ -31,15 +25,19 @@
       "https://github.com/immersive-web/depth-sensing/issues": {},
       "https://immersive-web.github.io/layers/": {
         "anchors": [
+          "enumdef-xrtexturetype",
           "xrwebglbinding"
         ]
       },
+      "https://immersive-web.github.io/webxr-ar-module/": {},
       "https://immersive-web.github.io/webxr/": {
         "anchors": [
+          "dom-xreye-right",
           "callbackdef-xrframerequestcallback",
           "xrrigidtransform",
           "dictdef-xrsessioninit",
           "xrview",
+          "dom-xrview-eye",
           "dom-xrsessioninit-optionalfeatures",
           "dom-xrsystem-requestsession",
           "dom-xrsessioninit-requiredfeatures",
@@ -71,8 +69,8 @@
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
           "5.1",
-          "5.9",
-          "5.14"
+          "5.14",
+          "5.9"
         ]
       },
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {
@@ -80,9 +78,14 @@
           "3.7"
         ]
       },
-      "https://www.w3.org/2021/Process-20211102/": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
       "https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/": {},
-      "https://www.w3.org/TR/webxr-ar-module-1/": {},
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "xrframe-interface",
@@ -103,7 +106,9 @@
       "https://www.w3.org/TR/webxrlayers-1/": {
         "anchors": [
           "opaque-texture",
-          "xrwebglbinding-session"
+          "xrwebglbinding-session",
+          "dom-xrtexturetype-texture",
+          "dom-xrtexturetype-texture-array"
         ]
       },
       "https://www.w3.org/groups/wg/immersive-web": {},
@@ -112,6 +117,7 @@
     "autolinks": {
       "https://immersive-web.github.io/layers/": {
         "anchors": [
+          "enumdef-xrtexturetype",
           "xrwebglbinding"
         ]
       },
@@ -124,7 +130,9 @@
           "xrrigidtransform",
           "xrview",
           "dom-xrframe-session",
-          "callbackdef-xrframerequestcallback"
+          "callbackdef-xrframerequestcallback",
+          "dom-xrview-eye",
+          "dom-xreye-right"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -181,7 +189,9 @@
       "https://www.w3.org/TR/webxrlayers-1/": {
         "anchors": [
           "opaque-texture",
-          "xrwebglbinding-session"
+          "xrwebglbinding-session",
+          "dom-xrtexturetype-texture-array",
+          "dom-xrtexturetype-texture"
         ]
       }
     }

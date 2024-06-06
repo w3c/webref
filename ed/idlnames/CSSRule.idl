@@ -17,11 +17,6 @@ interface CSSRule {
   const unsigned short NAMESPACE_RULE = 10;
 };
 
-// Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
-partial interface CSSRule {
-  const unsigned short VIEW_TRANSITION_RULE = 15;
-};
-
 // Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface CSSRule {
     const unsigned short KEYFRAMES_RULE = 7;
@@ -40,4 +35,9 @@ partial interface CSSRule {
 
 // Source: CSS Fonts Module Level 4 (https://www.w3.org/TR/css-fonts-4/)
 partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;
+};
+
+// Source: CSS View Transitions Module Level 2 (https://www.w3.org/TR/css-view-transitions-2/)
+partial interface CSSRule {
+  const unsigned short VIEW_TRANSITION_RULE = 15;
 };

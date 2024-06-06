@@ -1,0 +1,15 @@
+{
+  "name": "StorageAccessHandle",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Extending Storage Access API (SAA) to non-cookie storage",
+      "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface StorageAccessHandle {\n  readonly attribute Storage sessionStorage;\n  readonly attribute Storage localStorage;\n  readonly attribute IDBFactory indexedDB;\n  readonly attribute LockManager locks;\n  readonly attribute CacheStorage caches;\n  Promise<FileSystemDirectoryHandle> getDirectory();\n  Promise<StorageEstimate> estimate();\n  DOMString createObjectURL((Blob or MediaSource) obj);\n  undefined revokeObjectURL(DOMString url);\n  BroadcastChannel BroadcastChannel(DOMString name);\n  SharedWorker SharedWorker(USVString scriptURL, optional (DOMString or SharedWorkerOptions) options = {});\n};",
+    "href": "https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

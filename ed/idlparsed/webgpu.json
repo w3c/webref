@@ -1117,7 +1117,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpupowerpreference"
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo info;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -1167,6 +1167,29 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-limits"
+          },
+          {
+            "type": "attribute",
+            "name": "info",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUAdapterInfo"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-info"
           },
           {
             "type": "attribute",
@@ -1227,31 +1250,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice"
-          },
-          {
-            "type": "operation",
-            "name": "requestAdapterInfo",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUAdapterInfo"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestadapterinfo"
           }
         ],
         "extAttrs": [
@@ -1374,7 +1372,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor"
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"clip-distances\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1432,6 +1430,11 @@
             "type": "enum-value",
             "value": "float32-filterable",
             "href": "https://gpuweb.github.io/gpuweb/#float32-filterable"
+          },
+          {
+            "type": "enum-value",
+            "value": "clip-distances",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-clip-distances"
           }
         ],
         "extAttrs": [],
@@ -13400,9 +13403,9 @@
       "GPUAdapter": [
         "GPUSupportedFeatures",
         "GPUSupportedLimits",
+        "GPUAdapterInfo",
         "GPUDevice",
-        "GPUDeviceDescriptor",
-        "GPUAdapterInfo"
+        "GPUDeviceDescriptor"
       ],
       "GPUDeviceDescriptor": [
         "GPUObjectDescriptorBase",

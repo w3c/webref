@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, double value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
   },
   "extended": [
@@ -71,7 +71,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a, MLOperand b);\n  MLOperand greater(MLOperand a, MLOperand b);\n  MLOperand greaterOrEqual(MLOperand a, MLOperand b);\n  MLOperand lesser(MLOperand a, MLOperand b);\n  MLOperand lesserOrEqual(MLOperand a, MLOperand b);\n  MLOperand not(MLOperand a);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a, MLOperand b);\n  MLOperand greater(MLOperand a, MLOperand b);\n  MLOperand greaterOrEqual(MLOperand a, MLOperand b);\n  MLOperand lesser(MLOperand a, MLOperand b);\n  MLOperand lesserOrEqual(MLOperand a, MLOperand b);\n  MLOperand logicalNot(MLOperand a);\n};"
     },
     {
       "spec": {

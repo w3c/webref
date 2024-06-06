@@ -6,7 +6,7 @@
       "title": "Media Session",
       "url": "https://www.w3.org/TR/mediasession/"
     },
-    "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  Promise<undefined> setMicrophoneActive(boolean active);\n\n  Promise<undefined> setCameraActive(boolean active);\n};",
+    "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  Promise<undefined> setMicrophoneActive(boolean active);\n\n  Promise<undefined> setCameraActive(boolean active);\n\n  Promise<undefined> setScreenshareActive(boolean active);\n};",
     "href": "https://w3c.github.io/mediasession/#mediasession"
   },
   "extended": [],

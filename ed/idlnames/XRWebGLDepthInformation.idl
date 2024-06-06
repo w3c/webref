@@ -2,4 +2,7 @@
 [Exposed=Window]
 interface XRWebGLDepthInformation : XRDepthInformation {
   [SameObject] readonly attribute WebGLTexture texture;
+
+  readonly attribute XRTextureType textureType;
+  readonly attribute unsigned long? imageIndex;
 };

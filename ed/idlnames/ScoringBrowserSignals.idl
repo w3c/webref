@@ -6,6 +6,7 @@ dictionary ScoringBrowserSignals {
   required unsigned long biddingDurationMsec;
   required DOMString bidCurrency;
 
+  record<DOMString, DOMString> renderSize;
   unsigned long dataVersion;
   sequence<USVString> adComponents;
   boolean forDebuggingOnlyInCooldownOrLockout = false;

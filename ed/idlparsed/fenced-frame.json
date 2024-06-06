@@ -692,7 +692,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n};",
+          "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n  sequence<USVString> adAuctionComponents(unsigned short numAdComponents);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -771,6 +771,48 @@
               "extAttrs": [],
               "special": "",
               "href": "https://wicg.github.io/fenced-frame/#dom-navigator-deprecatedreplaceinurn"
+            },
+            {
+              "type": "operation",
+              "name": "adAuctionComponents",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "numAdComponents",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned short"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://wicg.github.io/fenced-frame/#dom-navigator-adauctioncomponents"
             }
           ],
           "extAttrs": [],

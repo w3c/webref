@@ -1,0 +1,29 @@
+{
+  "name": "SharedWorkerOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Extending Storage Access API (SAA) to non-cookie storage",
+      "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+    },
+    "fragment": "dictionary SharedWorkerOptions : WorkerOptions {\n  SameSiteCookiesType sameSiteCookies;\n};",
+    "href": "https://privacycg.github.io/saa-non-cookie-storage/#dictdef-sharedworkeroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkerOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "dictionary WorkerOptions {\n  WorkerType type = \"classic\";\n  RequestCredentials credentials = \"same-origin\"; // credentials is only used if type is \"module\"\n  DOMString name = \"\";\n};",
+      "href": "https://html.spec.whatwg.org/multipage/workers.html#workeroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

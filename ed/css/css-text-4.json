@@ -7,7 +7,7 @@
     {
       "name": "text-transform",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-text-transform",
-      "value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana",
+      "value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana | math-auto",
       "initial": "none",
       "appliesTo": "text",
       "inherited": "yes",
@@ -57,6 +57,13 @@
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-transform-full-size-kana",
           "type": "value",
           "value": "full-size-kana"
+        },
+        {
+          "name": "math-auto",
+          "prose": "See MathML Core § 4.2 New text-transform value.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-transform-math-auto",
+          "type": "value",
+          "value": "math-auto"
         }
       ],
       "styleDeclaration": [
@@ -472,7 +479,7 @@
         },
         {
           "name": "balance",
-          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This should avoid changing—​and in the case of 5 or fewer lines must not change—​the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). Groups of lines separated by a forced line break are processed separately. The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
+          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This should avoid changing—​and in the case of 5 or fewer lines must not change—​the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). Groups of lines separated by a forced line break are processed separately. If the element is affected by line-clamp, the clamping effect is applied first, then the remaining lines are balanced. The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance",
           "type": "value",
           "value": "balance"

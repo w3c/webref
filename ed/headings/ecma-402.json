@@ -236,9 +236,9 @@
       "number": "6.9"
     },
     {
-      "id": "sec-availablecanonicalcalendars",
-      "href": "https://tc39.es/ecma402/#sec-availablecanonicalcalendars",
-      "title": "AvailableCanonicalCalendars ( )",
+      "id": "sec-availablecalendars",
+      "href": "https://tc39.es/ecma402/#sec-availablecalendars",
+      "title": "AvailableCalendars ( )",
       "level": 3,
       "number": "6.9.1"
     },
@@ -397,95 +397,102 @@
       "number": "9.2.1"
     },
     {
+      "id": "sec-canonicalizeuvalue",
+      "href": "https://tc39.es/ecma402/#sec-canonicalizeuvalue",
+      "title": "CanonicalizeUValue ( ukey, uvalue )",
+      "level": 3,
+      "number": "9.2.2"
+    },
+    {
       "id": "sec-lookupmatchinglocalebyprefix",
       "href": "https://tc39.es/ecma402/#sec-lookupmatchinglocalebyprefix",
       "title": "LookupMatchingLocaleByPrefix ( availableLocales, requestedLocales )",
       "level": 3,
-      "number": "9.2.2"
+      "number": "9.2.3"
     },
     {
       "id": "sec-lookupmatchinglocalebybestfit",
       "href": "https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit",
       "title": "LookupMatchingLocaleByBestFit ( availableLocales, requestedLocales )",
       "level": 3,
-      "number": "9.2.3"
+      "number": "9.2.4"
     },
     {
       "id": "sec-unicode-extension-components",
       "href": "https://tc39.es/ecma402/#sec-unicode-extension-components",
       "title": "UnicodeExtensionComponents ( extension )",
       "level": 3,
-      "number": "9.2.4"
+      "number": "9.2.5"
     },
     {
       "id": "sec-insert-unicode-extension-and-canonicalize",
       "href": "https://tc39.es/ecma402/#sec-insert-unicode-extension-and-canonicalize",
-      "title": "InsertUnicodeExtensionAndCanonicalize ( locale, extension )",
+      "title": "InsertUnicodeExtensionAndCanonicalize ( locale, attributes, keywords )",
       "level": 3,
-      "number": "9.2.5"
+      "number": "9.2.6"
     },
     {
       "id": "sec-resolvelocale",
       "href": "https://tc39.es/ecma402/#sec-resolvelocale",
       "title": "ResolveLocale ( availableLocales, requestedLocales, options, relevantExtensionKeys, localeData )",
       "level": 3,
-      "number": "9.2.6"
+      "number": "9.2.7"
     },
     {
       "id": "sec-filterlocales",
       "href": "https://tc39.es/ecma402/#sec-filterlocales",
       "title": "FilterLocales ( availableLocales, requestedLocales, options )",
       "level": 3,
-      "number": "9.2.7"
+      "number": "9.2.8"
     },
     {
       "id": "sec-getoptionsobject",
       "href": "https://tc39.es/ecma402/#sec-getoptionsobject",
       "title": "GetOptionsObject ( options )",
       "level": 3,
-      "number": "9.2.8"
+      "number": "9.2.9"
     },
     {
       "id": "sec-coerceoptionstoobject",
       "href": "https://tc39.es/ecma402/#sec-coerceoptionstoobject",
       "title": "CoerceOptionsToObject ( options )",
       "level": 3,
-      "number": "9.2.9"
+      "number": "9.2.10"
     },
     {
       "id": "sec-getoption",
       "href": "https://tc39.es/ecma402/#sec-getoption",
       "title": "GetOption ( options, property, type, values, default )",
       "level": 3,
-      "number": "9.2.10"
+      "number": "9.2.11"
     },
     {
       "id": "sec-getbooleanorstringnumberformatoption",
       "href": "https://tc39.es/ecma402/#sec-getbooleanorstringnumberformatoption",
       "title": "GetBooleanOrStringNumberFormatOption ( options, property, stringValues, fallback )",
       "level": 3,
-      "number": "9.2.11"
+      "number": "9.2.12"
     },
     {
       "id": "sec-defaultnumberoption",
       "href": "https://tc39.es/ecma402/#sec-defaultnumberoption",
       "title": "DefaultNumberOption ( value, minimum, maximum, fallback )",
       "level": 3,
-      "number": "9.2.12"
+      "number": "9.2.13"
     },
     {
       "id": "sec-getnumberoption",
       "href": "https://tc39.es/ecma402/#sec-getnumberoption",
       "title": "GetNumberOption ( options, property, minimum, maximum, fallback )",
       "level": 3,
-      "number": "9.2.13"
+      "number": "9.2.14"
     },
     {
       "id": "sec-partitionpattern",
       "href": "https://tc39.es/ecma402/#sec-partitionpattern",
       "title": "PartitionPattern ( pattern )",
       "level": 3,
-      "number": "9.2.14"
+      "number": "9.2.15"
     },
     {
       "id": "collator-objects",
@@ -1174,16 +1181,16 @@
       "number": "14.1.1"
     },
     {
-      "id": "sec-apply-options-to-tag",
-      "href": "https://tc39.es/ecma402/#sec-apply-options-to-tag",
-      "title": "ApplyOptionsToTag ( tag, options )",
+      "id": "sec-updatelanguageid",
+      "href": "https://tc39.es/ecma402/#sec-updatelanguageid",
+      "title": "UpdateLanguageId ( tag, options )",
       "level": 3,
       "number": "14.1.2"
     },
     {
-      "id": "sec-apply-unicode-extension-to-tag",
-      "href": "https://tc39.es/ecma402/#sec-apply-unicode-extension-to-tag",
-      "title": "ApplyUnicodeExtensionToTag ( tag, options, relevantExtensionKeys )",
+      "id": "sec-makelocalerecord",
+      "href": "https://tc39.es/ecma402/#sec-makelocalerecord",
+      "title": "MakeLocaleRecord ( tag, options, relevantExtensionKeys )",
       "level": 3,
       "number": "14.1.3"
     },

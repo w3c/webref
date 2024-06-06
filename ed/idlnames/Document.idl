@@ -59,12 +59,6 @@ partial interface Document {
     FontMetrics measureText(DOMString text, StylePropertyMapReadOnly styleMap);
 };
 
-// Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
-partial interface Document {
-
-  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
-};
-
 // Source: Fullscreen API Standard (https://fullscreen.spec.whatwg.org/)
 partial interface Document {
   [LegacyLenientSetter] readonly attribute boolean fullscreenEnabled;
@@ -108,8 +102,8 @@ partial interface Document {
   [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored
   WindowProxy? open(USVString url, DOMString name, DOMString features);
   [CEReactions] undefined close();
-  [CEReactions] undefined write(HTMLString... text);
-  [CEReactions] undefined writeln(HTMLString... text);
+  [CEReactions] undefined write((TrustedHTML or DOMString)... text);
+  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);
 
   // user interaction
   readonly attribute WindowProxy? defaultView;
@@ -157,6 +151,11 @@ partial interface Document {
   Promise<undefined> requestStorageAccessFor(USVString requestedOrigin);
 };
 
+// Source: Extending Storage Access API (SAA) to non-cookie storage (https://privacycg.github.io/saa-non-cookie-storage/)
+partial interface Document {
+  Promise<boolean> hasUnpartitionedCookieAccess();
+};
+
 // Source: The Storage Access API (https://privacycg.github.io/storage-access/)
 partial interface Document {
   Promise<boolean> hasStorageAccess();
@@ -197,11 +196,17 @@ partial interface Document {
   readonly attribute NamedFlowMap namedFlows;
 };
 
+// Source: CSS View Transitions Module Level 2 (https://www.w3.org/TR/css-view-transitions-2/)
+partial interface Document {
+
+  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
+};
+
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 partial interface Document {
   Element? elementFromPoint(double x, double y);
   sequence<Element> elementsFromPoint(double x, double y);
-  CaretPosition? caretPositionFromPoint(double x, double y, ShadowRoot... shadowRoots);
+  CaretPosition? caretPositionFromPoint(double x, double y, optional CaretPositionFromPointOptions options = {});
   readonly attribute Element? scrollingElement;
 };
 

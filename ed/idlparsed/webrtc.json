@@ -27,6 +27,7 @@
           "RTCRtpTransceiver",
           "RTCDtlsTransport",
           "RTCIceTransport",
+          "RTCIceCandidatePair",
           "RTCSctpTransport",
           "RTCDataChannel",
           "RTCDTMFSender",
@@ -4629,45 +4630,69 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters"
       },
       "RTCIceCandidatePair": {
-        "fragment": "dictionary RTCIceCandidatePair {\n  required RTCIceCandidate local;\n  required RTCIceCandidate remote;\n};",
-        "type": "dictionary",
+        "fragment": "[Exposed=Window]\ninterface RTCIceCandidatePair {\n  [SameObject] readonly attribute RTCIceCandidate local;\n  [SameObject] readonly attribute RTCIceCandidate remote;\n};",
+        "type": "interface",
         "name": "RTCIceCandidatePair",
         "inheritance": null,
         "members": [
           {
-            "type": "field",
+            "type": "attribute",
             "name": "local",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "RTCIceCandidate"
             },
-            "default": null,
-            "required": true,
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
             "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-local"
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "remote",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "RTCIceCandidate"
             },
-            "default": null,
-            "required": true,
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
             "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair-remote"
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false,
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair"
       },
@@ -7133,6 +7158,7 @@
         "RTCRtpTransceiver",
         "RTCDtlsTransport",
         "RTCIceTransport",
+        "RTCIceCandidatePair",
         "RTCTrackEvent",
         "RTCSctpTransport",
         "RTCDataChannel",

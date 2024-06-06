@@ -35,7 +35,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#enumdef-xrdepthusage"
       },
       "XRDepthDataFormat": {
-        "fragment": "enum XRDepthDataFormat {\n  \"luminance-alpha\",\n  \"float32\"\n};",
+        "fragment": "enum XRDepthDataFormat {\n  \"luminance-alpha\",\n  \"float32\",\n  \"unsigned-short\",\n};",
         "type": "enum",
         "name": "XRDepthDataFormat",
         "values": [
@@ -48,6 +48,11 @@
             "type": "enum-value",
             "value": "float32",
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthdataformat-float32"
+          },
+          {
+            "type": "enum-value",
+            "value": "unsigned-short",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthdataformat-unsigned-short"
           }
         ],
         "extAttrs": [],
@@ -306,7 +311,7 @@
         "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation"
       },
       "XRWebGLDepthInformation": {
-        "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
+        "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n\n  readonly attribute XRTextureType textureType;\n  readonly attribute unsigned long? imageIndex;\n};",
         "type": "interface",
         "name": "XRWebGLDepthInformation",
         "inheritance": "XRDepthInformation",
@@ -333,6 +338,38 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texture"
+          },
+          {
+            "type": "attribute",
+            "name": "textureType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRTextureType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texturetype"
+          },
+          {
+            "type": "attribute",
+            "name": "imageIndex",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-imageindex"
           }
         ],
         "extAttrs": [
@@ -547,7 +584,8 @@
       ],
       "XRWebGLDepthInformation": [
         "XRDepthInformation",
-        "WebGLTexture"
+        "WebGLTexture",
+        "XRTextureType"
       ],
       "XRWebGLBinding": [
         "XRWebGLDepthInformation",
@@ -562,6 +600,7 @@
       "XRFrame",
       "XRView",
       "WebGLTexture",
+      "XRTextureType",
       "XRWebGLBinding"
     ],
     "hasObsoleteIdl": false

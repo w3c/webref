@@ -44,7 +44,7 @@
         "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionplaybackstate"
       },
       "MediaSessionAction": {
-        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\",\n  \"enterpictureinpicture\"\n};",
+        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"togglescreenshare\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\",\n  \"enterpictureinpicture\"\n};",
         "type": "enum",
         "name": "MediaSessionAction",
         "values": [
@@ -105,6 +105,11 @@
           },
           {
             "type": "enum-value",
+            "value": "togglescreenshare",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-togglescreenshare"
+          },
+          {
+            "type": "enum-value",
             "value": "hangup",
             "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-hangup"
           },
@@ -161,7 +166,7 @@
         "href": "https://w3c.github.io/mediasession/#callbackdef-mediasessionactionhandler"
       },
       "MediaSession": {
-        "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  Promise<undefined> setMicrophoneActive(boolean active);\n\n  Promise<undefined> setCameraActive(boolean active);\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  Promise<undefined> setMicrophoneActive(boolean active);\n\n  Promise<undefined> setCameraActive(boolean active);\n\n  Promise<undefined> setScreenshareActive(boolean active);\n};",
         "type": "interface",
         "name": "MediaSession",
         "inheritance": null,
@@ -365,6 +370,48 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/mediasession/#dom-mediasession-setcameraactive"
+          },
+          {
+            "type": "operation",
+            "name": "setScreenshareActive",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "active",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasession-setscreenshareactive"
           }
         ],
         "extAttrs": [

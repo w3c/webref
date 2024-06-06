@@ -1,12 +1,12 @@
 {
   "name": "RTCIceCandidatePair",
-  "type": "dictionary",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "dictionary RTCIceCandidatePair {\n  required RTCIceCandidate local;\n  required RTCIceCandidate remote;\n};",
+    "fragment": "[Exposed=Window]\ninterface RTCIceCandidatePair {\n  [SameObject] readonly attribute RTCIceCandidate local;\n  [SameObject] readonly attribute RTCIceCandidate remote;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair"
   },
   "extended": [],

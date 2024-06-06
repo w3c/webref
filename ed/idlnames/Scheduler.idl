@@ -3,4 +3,5 @@
 interface Scheduler {
   Promise<any> postTask(SchedulerPostTaskCallback callback,
                         optional SchedulerPostTaskOptions options = {});
+  Promise<undefined> yield(optional SchedulerYieldOptions options = {});
 };

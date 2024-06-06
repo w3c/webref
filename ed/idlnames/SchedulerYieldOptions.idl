@@ -1,0 +1,5 @@
+// Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
+dictionary SchedulerYieldOptions {
+  (AbortSignal or SchedulerSignalInherit) signal;
+  ContinuationPriority priority;
+};

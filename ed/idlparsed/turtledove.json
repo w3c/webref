@@ -2346,7 +2346,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-previouswin"
       },
       "BiddingBrowserSignals": {
-        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  record<DOMString, DOMString> requestedSize;\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
         "type": "dictionary",
         "name": "BiddingBrowserSignals",
         "inheritance": null,
@@ -2465,6 +2465,39 @@
           },
           {
             "type": "field",
+            "name": "requestedSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-biddingbrowsersignals-requestedsize"
+          },
+          {
+            "type": "field",
             "name": "topLevelSeller",
             "extAttrs": [],
             "idlType": {
@@ -2561,7 +2594,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-biddingbrowsersignals"
       },
       "ScoringBrowserSignals": {
-        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+        "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  record<DOMString, DOMString> renderSize;\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
         "type": "dictionary",
         "name": "ScoringBrowserSignals",
         "inheritance": null,
@@ -2645,6 +2678,39 @@
             "default": null,
             "required": true,
             "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-bidcurrency"
+          },
+          {
+            "type": "field",
+            "name": "renderSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-scoringbrowsersignals-rendersize"
           },
           {
             "type": "field",

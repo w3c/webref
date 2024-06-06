@@ -61,6 +61,7 @@ partial interface Navigator {
 partial interface Navigator {
   Promise<undefined> deprecatedReplaceInURN(
     UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);
+  sequence<USVString> adAuctionComponents(unsigned short numAdComponents);
 };
 
 // Source: Get Installed Related Apps API (https://wicg.github.io/get-installed-related-apps/spec/)

@@ -512,6 +512,45 @@
         "partial": false,
         "href": "https://drafts.csswg.org/cssom-view-1/#screen"
       },
+      "CaretPositionFromPointOptions": {
+        "fragment": "dictionary CaretPositionFromPointOptions {\n  sequence<ShadowRoot> shadowRoots = [];\n};",
+        "type": "dictionary",
+        "name": "CaretPositionFromPointOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "shadowRoots",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ShadowRoot"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/cssom-view-1/#dom-caretpositionfrompointoptions-shadowroots"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/cssom-view-1/#dictdef-caretpositionfrompointoptions"
+      },
       "CaretPosition": {
         "fragment": "[Exposed=Window]\ninterface CaretPosition {\n  readonly attribute Node offsetNode;\n  readonly attribute unsigned long offset;\n  [NewObject] DOMRect? getClientRect();\n};",
         "type": "interface",
@@ -2242,7 +2281,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y, ShadowRoot... shadowRoots);\n  readonly attribute Element? scrollingElement;\n};",
+          "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y, optional CaretPositionFromPointOptions options = {});\n  readonly attribute Element? scrollingElement;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -2400,7 +2439,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "shadowRoots",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -2408,11 +2447,13 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "ShadowRoot"
+                    "idlType": "CaretPositionFromPointOptions"
                   },
-                  "default": null,
-                  "optional": false,
-                  "variadic": true
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
                 }
               ],
               "extAttrs": [],
@@ -3345,8 +3386,11 @@
       "Document": [
         "Element",
         "CaretPosition",
-        "ShadowRoot",
+        "CaretPositionFromPointOptions",
         "GeometryUtils"
+      ],
+      "CaretPositionFromPointOptions": [
+        "ShadowRoot"
       ],
       "CaretPosition": [
         "Node",

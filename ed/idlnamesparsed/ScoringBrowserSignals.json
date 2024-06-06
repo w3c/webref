@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+    "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  record<DOMString, DOMString> renderSize;\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-scoringbrowsersignals"
   },
   "extended": [],

@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "CSS View Transitions Module Level 2",
-      "url": "https://drafts.csswg.org/css-view-transitions-2/"
+      "url": "https://www.w3.org/TR/css-view-transitions-2/"
     },
     "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
     "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule"
@@ -22,13 +22,6 @@
       "href": "https://drafts.csswg.org/cssom-1/#cssrule"
     },
     "extended": [
-      {
-        "spec": {
-          "title": "CSS View Transitions Module Level 2",
-          "url": "https://drafts.csswg.org/css-view-transitions-2/"
-        },
-        "fragment": "partial interface CSSRule {\n  const unsigned short VIEW_TRANSITION_RULE = 15;\n};"
-      },
       {
         "spec": {
           "title": "CSS Animations Level 1",
@@ -56,6 +49,13 @@
           "url": "https://www.w3.org/TR/css-fonts-4/"
         },
         "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://www.w3.org/TR/css-view-transitions-2/"
+        },
+        "fragment": "partial interface CSSRule {\n  const unsigned short VIEW_TRANSITION_RULE = 15;\n};"
       }
     ],
     "inheritance": null,

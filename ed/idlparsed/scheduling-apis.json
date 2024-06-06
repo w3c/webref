@@ -51,6 +51,35 @@
         "extAttrs": [],
         "href": "https://wicg.github.io/scheduling-apis/#enumdef-taskpriority"
       },
+      "ContinuationPriority": {
+        "fragment": "enum ContinuationPriority {\n  \"user-blocking\",\n  \"user-visible\",\n  \"background\",\n  \"inherit\"\n};",
+        "type": "enum",
+        "name": "ContinuationPriority",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "user-blocking",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-user-blocking"
+          },
+          {
+            "type": "enum-value",
+            "value": "user-visible",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-user-visible"
+          },
+          {
+            "type": "enum-value",
+            "value": "background",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-background"
+          },
+          {
+            "type": "enum-value",
+            "value": "inherit",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-continuationpriority-inherit"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://wicg.github.io/scheduling-apis/#enumdef-continuationpriority"
+      },
       "SchedulerPostTaskOptions": {
         "fragment": "dictionary SchedulerPostTaskOptions {\n  AbortSignal signal;\n  TaskPriority priority;\n  [EnforceRange] unsigned long long delay = 0;\n};",
         "type": "dictionary",
@@ -120,6 +149,80 @@
         "partial": false,
         "href": "https://wicg.github.io/scheduling-apis/#dictdef-schedulerposttaskoptions"
       },
+      "SchedulerSignalInherit": {
+        "fragment": "enum SchedulerSignalInherit {\n  \"inherit\"\n};",
+        "type": "enum",
+        "name": "SchedulerSignalInherit",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "inherit",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://wicg.github.io/scheduling-apis/#enumdef-schedulersignalinherit"
+      },
+      "SchedulerYieldOptions": {
+        "fragment": "dictionary SchedulerYieldOptions {\n  (AbortSignal or SchedulerSignalInherit) signal;\n  ContinuationPriority priority;\n};",
+        "type": "dictionary",
+        "name": "SchedulerYieldOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AbortSignal"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SchedulerSignalInherit"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-scheduleryieldoptions-signal"
+          },
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ContinuationPriority"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/scheduling-apis/#dom-scheduleryieldoptions-priority"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/scheduling-apis/#dictdef-scheduleryieldoptions"
+      },
       "SchedulerPostTaskCallback": {
         "fragment": "callback SchedulerPostTaskCallback = any ();",
         "type": "callback",
@@ -137,7 +240,7 @@
         "href": "https://wicg.github.io/scheduling-apis/#callbackdef-schedulerposttaskcallback"
       },
       "Scheduler": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface Scheduler {\n  Promise<any> postTask(SchedulerPostTaskCallback callback,\n                        optional SchedulerPostTaskOptions options = {});\n};",
+        "fragment": "[Exposed=(Window, Worker)]\ninterface Scheduler {\n  Promise<any> postTask(SchedulerPostTaskCallback callback,\n                        optional SchedulerPostTaskOptions options = {});\n  Promise<undefined> yield(optional SchedulerYieldOptions options = {});\n};",
         "type": "interface",
         "name": "Scheduler",
         "inheritance": null,
@@ -201,6 +304,50 @@
             "extAttrs": [],
             "special": "",
             "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-posttask"
+          },
+          {
+            "type": "operation",
+            "name": "yield",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SchedulerYieldOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/scheduling-apis/#dom-scheduler-yield"
           }
         ],
         "extAttrs": [
@@ -682,9 +829,15 @@
         "AbortSignal",
         "TaskPriority"
       ],
+      "SchedulerYieldOptions": [
+        "AbortSignal",
+        "SchedulerSignalInherit",
+        "ContinuationPriority"
+      ],
       "Scheduler": [
         "SchedulerPostTaskCallback",
-        "SchedulerPostTaskOptions"
+        "SchedulerPostTaskOptions",
+        "SchedulerYieldOptions"
       ],
       "TaskPriorityChangeEvent": [
         "Event",

@@ -106,7 +106,7 @@
         "title": "Fenced Frame",
         "url": "https://wicg.github.io/fenced-frame/"
       },
-      "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n};"
+      "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n  sequence<USVString> adAuctionComponents(unsigned short numAdComponents);\n};"
     },
     {
       "spec": {

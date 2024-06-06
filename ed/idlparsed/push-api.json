@@ -637,7 +637,7 @@
         "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname"
       },
       "PushMessageData": {
-        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushMessageData {\n  ArrayBuffer arrayBuffer();\n  Blob blob();\n  any json();\n  USVString text();\n};",
+        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushMessageData {\n  ArrayBuffer arrayBuffer();\n  Blob blob();\n  Uint8Array bytes();\n  any json();\n  USVString text();\n};",
         "type": "interface",
         "name": "PushMessageData",
         "inheritance": null,
@@ -673,6 +673,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-blob"
+          },
+          {
+            "type": "operation",
+            "name": "bytes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8Array"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-bytes"
           },
           {
             "type": "operation",
@@ -1164,7 +1180,8 @@
       ],
       "PushMessageData": [
         "ArrayBuffer",
-        "Blob"
+        "Blob",
+        "Uint8Array"
       ],
       "ServiceWorkerGlobalScope": [
         "EventHandler"
@@ -1196,6 +1213,7 @@
       "BufferSource",
       "EpochTimeStamp",
       "Blob",
+      "Uint8Array",
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ExtendableEvent",

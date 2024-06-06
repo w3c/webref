@@ -3,6 +3,7 @@
 interface PushMessageData {
   ArrayBuffer arrayBuffer();
   Blob blob();
+  Uint8Array bytes();
   any json();
   USVString text();
 };
