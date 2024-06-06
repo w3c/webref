@@ -6,6 +6,11 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
+      "https://developers.google.com/privacy-sandbox/relevance/protected-audience-api/feature-status": {
+        "anchors": [
+          "fenced_frames"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
@@ -160,7 +165,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-embedder-opt-in.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-subframe-opt-in.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-cross-origin-urn-iframe.https.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-cross-origin.https.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-cross-origin.sub.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-destination-url.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-sub-fencedframe.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event.https.html": {},
@@ -389,6 +394,7 @@
           "concept-document-window",
           "window-bc",
           "dom-history-length",
+          "window-navigable",
           "dom-opener"
         ]
       },
@@ -640,7 +646,7 @@
       "https://wpt.fyi/results/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-embedder-opt-in.https.html": {},
       "https://wpt.fyi/results/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-subframe-opt-in.https.html": {},
       "https://wpt.fyi/results/fenced-frame/fence-report-event-cross-origin-urn-iframe.https.html": {},
-      "https://wpt.fyi/results/fenced-frame/fence-report-event-cross-origin.https.html": {},
+      "https://wpt.fyi/results/fenced-frame/fence-report-event-cross-origin.sub.https.html": {},
       "https://wpt.fyi/results/fenced-frame/fence-report-event-destination-url.https.html": {},
       "https://wpt.fyi/results/fenced-frame/fence-report-event-sub-fencedframe.https.html": {},
       "https://wpt.fyi/results/fenced-frame/fence-report-event.https.html": {},
@@ -714,7 +720,7 @@
       "https://wpt.live/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-embedder-opt-in.https.html": {},
       "https://wpt.live/fenced-frame/fence-report-event-cross-origin-urn-iframe-no-subframe-opt-in.https.html": {},
       "https://wpt.live/fenced-frame/fence-report-event-cross-origin-urn-iframe.https.html": {},
-      "https://wpt.live/fenced-frame/fence-report-event-cross-origin.https.html": {},
+      "https://wpt.live/fenced-frame/fence-report-event-cross-origin.sub.https.html": {},
       "https://wpt.live/fenced-frame/fence-report-event-destination-url.https.html": {},
       "https://wpt.live/fenced-frame/fence-report-event-sub-fencedframe.https.html": {},
       "https://wpt.live/fenced-frame/fence-report-event.https.html": {},
@@ -887,8 +893,8 @@
           "browsing-context-group",
           "browsing-context",
           "content-navigable",
-          "node-navigable",
           "nav-traversable",
+          "node-navigable",
           "creating-a-new-browsing-context",
           "document-base-url",
           "nav-document",
@@ -999,8 +1005,9 @@
         "anchors": [
           "history-3",
           "dom-history-length",
-          "concept-document-window",
+          "window-navigable",
           "window-bc",
+          "concept-document-window",
           "dom-opener",
           "window"
         ]
@@ -1154,13 +1161,13 @@
           "idl-DOMException",
           "idl-promise",
           "idl-record",
+          "idl-boolean",
           "idl-sequence",
           "idl-unsigned-short",
           "dfn-throw",
           "exceptiondef-typeerror",
           "a-new-promise",
-          "resolve",
-          "idl-boolean"
+          "resolve"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {

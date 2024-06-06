@@ -692,7 +692,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n  sequence<USVString> adAuctionComponents(unsigned short numAdComponents);\n};",
+          "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n  Promise<USVString> deprecatedURNtoURL(\n    UrnOrConfig urnOrConfig, optional boolean send_reports = false);\n  sequence<USVString> adAuctionComponents(unsigned short numAdComponents);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -771,6 +771,67 @@
               "extAttrs": [],
               "special": "",
               "href": "https://wicg.github.io/fenced-frame/#dom-navigator-deprecatedreplaceinurn"
+            },
+            {
+              "type": "operation",
+              "name": "deprecatedURNtoURL",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "urnOrConfig",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "UrnOrConfig"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "send_reports",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://wicg.github.io/fenced-frame/#dom-navigator-deprecatedurntourl"
             },
             {
               "type": "operation",
