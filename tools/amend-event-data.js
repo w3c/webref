@@ -412,6 +412,13 @@ const patches = {
       change: { interface: "Event" }
     }
   ],
+  'xhr': [
+    {
+      pattern: { targets: 'XMLHttpRequestEventTarget' },
+      matched: 7,
+      change: { targets: ['XMLHttpRequest', 'XMLHttpRequestUpload'] }
+    }
+  ],
   'webaudio': [
     {
       pattern: { type: 'update' },
