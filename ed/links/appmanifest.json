@@ -30,11 +30,11 @@
       "https://en.wikipedia.org/wiki/Geotargeting": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "http-origin",
           "cors-protocol",
           "cors-request",
           "concept-request-credentials-mode",
-          "concept-fetch"
+          "concept-fetch",
+          "http-origin"
         ]
       },
       "https://fullscreen.spec.whatwg.org/": {},
@@ -274,8 +274,8 @@
       "https://www.w3.org/TR/manifest-app-info/": {},
       "https://www.w3.org/TR/mediaqueries-5/": {
         "anchors": [
-          "descdef-media-prefers-color-scheme",
-          "descdef-media-display-mode"
+          "descdef-media-display-mode",
+          "descdef-media-prefers-color-scheme"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
@@ -309,6 +309,7 @@
         "anchors": [
           "concept-fetch",
           "cors-request",
+          "http-origin",
           "concept-request-credentials-mode",
           "cors-protocol"
         ]
@@ -405,6 +406,12 @@
         "anchors": [
           "dfn-image-resource",
           "dfn-process-an-image-resource-from-json"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "descdef-media-prefers-color-scheme",
+          "descdef-media-display-mode"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
