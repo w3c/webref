@@ -37,7 +37,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand clamp(MLOperand input, optional MLClampOptions options = {});
-  MLActivation clamp(optional MLClampOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -273,7 +272,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand softmax(MLOperand input, unsigned long axis);
-  MLActivation softmax(unsigned long axis);
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

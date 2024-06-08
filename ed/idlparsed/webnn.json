@@ -3723,7 +3723,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand clamp(MLOperand input, optional MLClampOptions options = {});\n  MLActivation clamp(optional MLClampOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand clamp(MLOperand input, optional MLClampOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3778,41 +3778,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp"
-            },
-            {
-              "type": "operation",
-              "name": "clamp",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLClampOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp-options"
             }
           ],
           "extAttrs": [],
@@ -7853,7 +7818,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input, unsigned long axis);\n  MLActivation softmax(unsigned long axis);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input, unsigned long axis);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7906,39 +7871,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax"
-            },
-            {
-              "type": "operation",
-              "name": "softmax",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "axis",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "unsigned long"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax-axis"
             }
           ],
           "extAttrs": [],
@@ -8511,10 +8443,10 @@
         "MLArgMinMaxOptions",
         "MLBatchNormalizationOptions",
         "MLClampOptions",
-        "MLActivation",
         "MLConv2dOptions",
         "MLConvTranspose2dOptions",
         "MLEluOptions",
+        "MLActivation",
         "MLGatherOptions",
         "MLGemmOptions",
         "MLGruOptions",
