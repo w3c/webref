@@ -3590,7 +3590,7 @@
           "partial": true
         },
         {
-          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n  readonly attribute boolean deprecatedRunAdAuctionEnforcesKAnonymity;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -3653,6 +3653,22 @@
               "extAttrs": [],
               "special": "",
               "href": "https://wicg.github.io/turtledove/#dom-navigator-runadauction"
+            },
+            {
+              "type": "attribute",
+              "name": "deprecatedRunAdAuctionEnforcesKAnonymity",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-deprecatedrunadauctionenforceskanonymity"
             }
           ],
           "extAttrs": [

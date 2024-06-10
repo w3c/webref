@@ -123,6 +123,7 @@ partial interface Navigator {
 [SecureContext]
 partial interface Navigator {
   Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);
+  readonly attribute boolean deprecatedRunAdAuctionEnforcesKAnonymity;
 };
 
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
