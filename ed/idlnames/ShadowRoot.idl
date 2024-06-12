@@ -15,8 +15,8 @@ ShadowRoot includes DocumentOrShadowRoot;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface ShadowRoot {
-  [CEReactions] undefined setHTMLUnsafe(HTMLString html);
+  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);
   DOMString getHTML(optional GetHTMLOptions options = {});
 
-  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
+  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
 };

@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLIFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute HTMLString srcdoc;\n  [CEReactions] attribute DOMString name;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n  [CEReactions] attribute boolean allowFullscreen;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString loading;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLIFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute (TrustedHTML or DOMString) srcdoc;\n  [CEReactions] attribute DOMString name;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n  [CEReactions] attribute boolean allowFullscreen;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString loading;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
     "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement"
   },
   "extended": [
@@ -167,7 +167,7 @@
             "title": "HTML Standard",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);\n};"
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
         },
         {
           "spec": {

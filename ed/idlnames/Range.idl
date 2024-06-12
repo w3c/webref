@@ -40,7 +40,7 @@ interface Range : AbstractRange {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Range {
-  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString string);
+  [CEReactions, NewObject] DocumentFragment createContextualFragment((TrustedHTML or DOMString) string);
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)

@@ -4,7 +4,7 @@ interface HTMLIFrameElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions] attribute USVString src;
-  [CEReactions] attribute HTMLString srcdoc;
+  [CEReactions] attribute (TrustedHTML or DOMString) srcdoc;
   [CEReactions] attribute DOMString name;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;
   [CEReactions] attribute DOMString allow;

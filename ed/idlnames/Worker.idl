@@ -1,7 +1,7 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [Exposed=(Window,DedicatedWorker,SharedWorker)]
 interface Worker : EventTarget {
-  constructor(ScriptURLString scriptURL, optional WorkerOptions options = {});
+  constructor((TrustedScriptURL or USVString) scriptURL, optional WorkerOptions options = {});
 
   undefined terminate();
 

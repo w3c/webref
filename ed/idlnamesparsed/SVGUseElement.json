@@ -131,7 +131,7 @@
               "title": "HTML Standard",
               "url": "https://html.spec.whatwg.org/multipage/"
             },
-            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);\n};"
+            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
           },
           {
             "spec": {

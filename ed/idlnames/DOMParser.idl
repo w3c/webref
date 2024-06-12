@@ -3,5 +3,5 @@
 interface DOMParser {
   constructor();
 
-  [NewObject] Document parseFromString(HTMLString string, DOMParserSupportedType type);
+  [NewObject] Document parseFromString((TrustedHTML or DOMString) string, DOMParserSupportedType type);
 };

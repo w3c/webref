@@ -67,12 +67,12 @@ partial interface Element {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Element {
-  [CEReactions] undefined setHTMLUnsafe(HTMLString html);
+  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);
   DOMString getHTML(optional GetHTMLOptions options = {});
 
-  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;
-  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString outerHTML;
-  [CEReactions] undefined insertAdjacentHTML(DOMString position, HTMLString string);
+  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
+  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;
+  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);
 };
 
 // Source: Element Timing API (https://wicg.github.io/element-timing/)

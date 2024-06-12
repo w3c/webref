@@ -22,7 +22,7 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(HTMLString html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute [LegacyNullToEmptyString] HTMLString innerHTML;\n};"
+      "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n};"
     }
   ],
   "inheritance": {

@@ -73,7 +73,7 @@ partial interface Document {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [LegacyOverrideBuiltIns]
 partial interface Document {
-  static Document parseHTMLUnsafe(HTMLString html);
+  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html);
 
   // resource metadata management
   [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;

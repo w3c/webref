@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString(HTMLString string, DOMParserSupportedType type);\n};",
+    "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString((TrustedHTML or DOMString) string, DOMParserSupportedType type);\n};",
     "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparser"
   },
   "extended": [],
