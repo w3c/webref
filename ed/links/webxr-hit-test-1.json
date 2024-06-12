@@ -6,17 +6,12 @@
   "links": {
     "rawlinks": {
       "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
-      "http://www.w3.org/Consortium/Patent-Policy-20170801/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "http://www.w3.org/TR/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResults": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResultsForTransientInput": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestResult/getPose": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource/cancel": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRRay": {},
@@ -35,12 +30,17 @@
         "anchors": [
           "dictdef-dompointinit",
           "dompointreadonly",
+          "dom-dompointinit-w",
           "dom-dompointreadonly-w",
+          "dom-dompointinit-x",
           "dom-dompointreadonly-x",
+          "dom-dompointinit-y",
           "dom-dompointreadonly-y",
+          "dom-dompointinit-z",
           "dom-dompointreadonly-z"
         ]
       },
+      "https://drafts.fxtf.org/geometry/": {},
       "https://github.com/immersive-web/hit-test/issues": {},
       "https://github.com/immersive-web/webxr-ar-module/": {},
       "https://immersive-web.github.io/webxr/": {
@@ -83,12 +83,18 @@
           "idl-double",
           "reject",
           "resolve",
+          "idl-sequence",
           "idl-undefined"
         ]
       },
-      "https://www.w3.org/2021/Process-20211102/": {},
+      "https://www.w3.org/2023/Process-20231103/": {},
+      "https://www.w3.org/Consortium/Patent-Policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
       "https://www.w3.org/TR/2021/WD-webxr-hit-test-1-20210831/": {},
-      "https://www.w3.org/TR/geometry-1/": {},
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "xrframe-interface",
@@ -97,7 +103,6 @@
           "xrframe-active",
           "capable-of-supporting",
           "xrspace-effective-origin",
-          "ended",
           "feature-descriptor",
           "feature-policy",
           "identity-transform",
@@ -106,12 +111,15 @@
           "list-of-active-xr-input-sources",
           "xrsession-list-of-enabled-features",
           "xrsession-list-of-frame-updates",
+          "matrix",
           "dom-xrrigidtransform-matrix",
           "xrspace-native-origin",
           "normalize",
           "xrspace-origin-offset",
           "populate-the-pose",
+          "dom-xrframe-session",
           "xrspace-session",
+          "xr-device",
           "xrsession-xr-device"
         ]
       },
@@ -156,13 +164,14 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-frozen-array",
+          "idl-sequence",
           "idl-DOMString",
           "SecureContext",
           "Exposed",
           "idl-undefined",
           "invalidstateerror",
           "SameObject",
+          "idl-frozen-array",
           "idl-promise",
           "a-new-promise",
           "reject",
@@ -195,7 +204,6 @@
           "xrspace-session",
           "populate-the-pose",
           "xrsession-list-of-enabled-features",
-          "ended",
           "xrsession-list-of-frame-updates",
           "list-of-active-xr-input-sources",
           "matrix",
