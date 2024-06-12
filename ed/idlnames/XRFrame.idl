@@ -42,8 +42,8 @@ partial interface XRFrame {
 
 // Source: WebXR Hit Test Module (https://www.w3.org/TR/webxr-hit-test-1/)
 partial interface XRFrame {
-  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);
-  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);
+  sequence<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);
+  sequence<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);
 };
 
 // Source: WebXR Lighting Estimation API Level 1 (https://www.w3.org/TR/webxr-lighting-estimation-1/)

@@ -57,7 +57,7 @@
         "title": "WebXR Hit Test Module",
         "url": "https://www.w3.org/TR/webxr-hit-test-1/"
       },
-      "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};"
+      "fragment": "partial interface XRFrame {\n  sequence<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  sequence<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};"
     },
     {
       "spec": {

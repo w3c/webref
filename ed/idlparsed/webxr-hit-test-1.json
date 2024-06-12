@@ -45,7 +45,7 @@
         "href": "https://immersive-web.github.io/hit-test/#enumdef-xrhittesttrackabletype"
       },
       "XRHitTestOptionsInit": {
-        "fragment": "dictionary XRHitTestOptionsInit {\n  required XRSpace space;\n  FrozenArray<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
+        "fragment": "dictionary XRHitTestOptionsInit {\n  required XRSpace space;\n  sequence<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
         "type": "dictionary",
         "name": "XRHitTestOptionsInit",
         "inheritance": null,
@@ -73,7 +73,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -113,7 +113,7 @@
         "href": "https://immersive-web.github.io/hit-test/#dictdef-xrhittestoptionsinit"
       },
       "XRTransientInputHitTestOptionsInit": {
-        "fragment": "dictionary XRTransientInputHitTestOptionsInit {\n  required DOMString profile;\n  FrozenArray<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
+        "fragment": "dictionary XRTransientInputHitTestOptionsInit {\n  required DOMString profile;\n  sequence<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
         "type": "dictionary",
         "name": "XRTransientInputHitTestOptionsInit",
         "inheritance": null,
@@ -141,7 +141,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -750,7 +750,7 @@
       ],
       "XRFrame": [
         {
-          "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};",
+          "fragment": "partial interface XRFrame {\n  sequence<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  sequence<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,
@@ -761,7 +761,7 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "FrozenArray",
+                "generic": "sequence",
                 "nullable": false,
                 "union": false,
                 "idlType": [
@@ -803,7 +803,7 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "FrozenArray",
+                "generic": "sequence",
                 "nullable": false,
                 "union": false,
                 "idlType": [

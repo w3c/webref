@@ -6,7 +6,7 @@
       "title": "WebXR Hit Test Module",
       "url": "https://www.w3.org/TR/webxr-hit-test-1/"
     },
-    "fragment": "dictionary XRHitTestOptionsInit {\n  required XRSpace space;\n  FrozenArray<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
+    "fragment": "dictionary XRHitTestOptionsInit {\n  required XRSpace space;\n  sequence<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
     "href": "https://immersive-web.github.io/hit-test/#dictdef-xrhittestoptionsinit"
   },
   "extended": [],
