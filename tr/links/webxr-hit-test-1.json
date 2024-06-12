@@ -9,6 +9,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResults": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResultsForTransientInput": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestResult": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestResult/getPose": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource/cancel": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRRay": {},
@@ -55,15 +56,16 @@
           "idl-double",
           "reject",
           "resolve",
+          "idl-sequence",
           "idl-undefined"
         ]
       },
-      "https://www.w3.org/2021/Process-20211102/": {
+      "https://www.w3.org/2023/Process-20231103/": {
         "anchors": [
           "recs-and-notes"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+      "https://www.w3.org/Consortium/Patent-Policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
@@ -75,9 +77,13 @@
         "anchors": [
           "dictdef-dompointinit",
           "dompointreadonly",
+          "dom-dompointinit-w",
           "dom-dompointreadonly-w",
+          "dom-dompointinit-x",
           "dom-dompointreadonly-x",
+          "dom-dompointinit-y",
           "dom-dompointreadonly-y",
+          "dom-dompointinit-z",
           "dom-dompointreadonly-z"
         ]
       },
@@ -95,7 +101,6 @@
           "xrframe-active",
           "capable-of-supporting",
           "xrspace-effective-origin",
-          "ended",
           "feature-descriptor",
           "feature-policy",
           "identity-transform",
@@ -104,12 +109,14 @@
           "list-of-active-xr-input-sources",
           "xrsession-list-of-enabled-features",
           "xrsession-list-of-frame-updates",
+          "matrix",
           "dom-xrrigidtransform-matrix",
           "xrspace-native-origin",
           "normalize",
           "xrspace-origin-offset",
           "populate-the-pose",
           "xrspace-session",
+          "xr-device",
           "xrsession-xr-device"
         ]
       },
@@ -130,13 +137,14 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-frozen-array",
+          "idl-sequence",
           "idl-DOMString",
           "SecureContext",
           "Exposed",
           "idl-undefined",
           "invalidstateerror",
           "SameObject",
+          "idl-frozen-array",
           "idl-promise",
           "a-new-promise",
           "reject",
@@ -149,7 +157,6 @@
           "exceptiondef-typeerror"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {},
       "https://www.w3.org/TR/geometry-1/": {
         "anchors": [
           "dictdef-dompointinit",
@@ -187,7 +194,6 @@
           "xrspace-session",
           "populate-the-pose",
           "xrsession-list-of-enabled-features",
-          "ended",
           "xrsession-list-of-frame-updates",
           "list-of-active-xr-input-sources",
           "dom-xrinputsource-profiles",
