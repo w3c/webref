@@ -53,8 +53,8 @@
       ]
     },
     {
-      "name": "reading-order-items",
-      "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-order-items",
+      "name": "reading-flow",
+      "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-flow",
       "value": "normal | flex-visual | flex-flow | grid-rows | grid-columns | grid-order",
       "initial": "normal",
       "appliesTo": "flex and grid containers",
@@ -67,49 +67,49 @@
         {
           "name": "normal",
           "prose": "Follow the order of elements in the DOM.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-normal",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-normal",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "flex-visual",
-          "prose": "Only takes effect on flex containers. Follows the visual reading order of flex items, taking the writing mode into account. Therefore, a document in English, with a flex-direction of row-reverse and reading-order-items of 'flex visual' would have a reading order of left to right.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-flex-visual",
+          "prose": "Only takes effect on flex containers. Follows the visual reading order of flex items, taking the writing mode into account. Therefore, a document in English, with a flex-direction of row-reverse and reading-flow of 'flex visual' would have a reading order of left to right.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-flex-visual",
           "type": "value",
           "value": "flex-visual"
         },
         {
           "name": "flex-flow",
           "prose": "Only takes effect on flex containers. Follows the flex-flow direction.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-flex-flow",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-flex-flow",
           "type": "value",
           "value": "flex-flow"
         },
         {
           "name": "grid-rows",
           "prose": "Only takes effect on grid containers. Follows the visual order of grid items by row, taking the writing mode into account.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-rows",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-grid-rows",
           "type": "value",
           "value": "grid-rows"
         },
         {
           "name": "grid-columns",
           "prose": "Only takes effect on grid containers. Follows the visual order of grid items by column, taking the writing mode into account.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-columns",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-grid-columns",
           "type": "value",
           "value": "grid-columns"
         },
         {
           "name": "grid-order",
           "prose": "Follows the order-modified document order. Therefore, as normal unless the order property has been used to change the order of items.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-order",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-flow-grid-order",
           "type": "value",
           "value": "grid-order"
         }
       ],
       "styleDeclaration": [
-        "reading-order-items",
-        "readingOrderItems"
+        "reading-flow",
+        "readingFlow"
       ]
     },
     {
