@@ -3603,7 +3603,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodecparameters"
       },
       "RTCRtpCapabilities": {
-        "fragment": "dictionary RTCRtpCapabilities {\n  required sequence<RTCRtpCodecCapability> codecs;\n  required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;\n};",
+        "fragment": "dictionary RTCRtpCapabilities {\n  required sequence<RTCRtpCodec> codecs;\n  required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;\n};",
         "type": "dictionary",
         "name": "RTCRtpCapabilities",
         "inheritance": null,
@@ -3625,7 +3625,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "RTCRtpCodecCapability"
+                  "idlType": "RTCRtpCodec"
                 }
               ]
             },
@@ -3662,16 +3662,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities"
-      },
-      "RTCRtpCodecCapability": {
-        "fragment": "dictionary RTCRtpCodecCapability : RTCRtpCodec {\n};",
-        "type": "dictionary",
-        "name": "RTCRtpCodecCapability",
-        "inheritance": "RTCRtpCodec",
-        "members": [],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability"
       },
       "RTCRtpHeaderExtensionCapability": {
         "fragment": "dictionary RTCRtpHeaderExtensionCapability {\n  required DOMString uri;\n};",
@@ -7294,11 +7284,8 @@
         "RTCRtpCodec"
       ],
       "RTCRtpCapabilities": [
-        "RTCRtpCodecCapability",
+        "RTCRtpCodec",
         "RTCRtpHeaderExtensionCapability"
-      ],
-      "RTCRtpCodecCapability": [
-        "RTCRtpCodec"
       ],
       "RTCRtpHeaderExtensionCapability": [],
       "RTCSetParameterOptions": [],
