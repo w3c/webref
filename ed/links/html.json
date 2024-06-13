@@ -2500,7 +2500,6 @@
           "sec-hostenqueuepromisejob",
           "sec-hostenqueuetimeoutjob",
           "sec-hostensurecanaddprivateelement",
-          "sec-hostensurecancompilestrings",
           "sec-hostmakejobcallback",
           "sec-host-promise-rejection-tracker",
           "sec-initializehostdefinedrealm",
@@ -2558,6 +2557,12 @@
         ]
       },
       "https://tc39.es/ecma402/": {},
+      "https://tc39.es/proposal-dynamic-code-brand-checks/": {
+        "anchors": [
+          "sec-hostensurecancompilestrings",
+          "sec-hostgetcodeforeval"
+        ]
+      },
       "https://tc39.es/proposal-error-stacks/": {},
       "https://tc39.es/proposal-import-attributes/": {
         "anchors": [
@@ -3201,6 +3206,7 @@
           "trustedhtml",
           "trustedhtml-data",
           "trusted-script",
+          "trustedscript-data",
           "trustedscripturl",
           "get-trusted-type-compliant-string-algorithm"
         ]

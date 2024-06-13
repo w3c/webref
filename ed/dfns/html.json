@@ -77236,8 +77236,8 @@
       "definedIn": "heading"
     },
     {
-      "id": "hostensurecancompilestrings(realm)",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm)",
+      "id": "hostensurecancompilestrings(realm,-parameterstrings,-bodystring,-codestring,-compilationtype,-parameterargs,-bodyarg)",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)",
       "linkingText": [
         "HostEnsureCanCompileStrings"
       ],
@@ -77247,10 +77247,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "hostensurecancompilestrings(realm)",
-        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm)",
-        "title": "HostEnsureCanCompileStrings(realm)",
+        "id": "hostensurecancompilestrings(realm,-parameterstrings,-bodystring,-codestring,-compilationtype,-parameterargs,-bodyarg)",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(realm%2C-parameterstrings%2C-bodystring%2C-codestring%2C-compilationtype%2C-parameterargs%2C-bodyarg)",
+        "title": "HostEnsureCanCompileStrings(realm, parameterStrings, bodyString, codeString, compilationType, parameterArgs, bodyArg)",
         "number": "8.1.6.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "hostgetcodeforeval(argument)",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetcodeforeval(argument)",
+      "linkingText": [
+        "HostGetCodeForEval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hostgetcodeforeval(argument)",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetcodeforeval(argument)",
+        "title": "HostGetCodeForEval(argument)",
+        "number": "8.1.6.3"
       },
       "definedIn": "heading"
     },
@@ -77269,7 +77288,7 @@
         "id": "the-hostpromiserejectiontracker-implementation",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#the-hostpromiserejectiontracker-implementation",
         "title": "HostPromiseRejectionTracker(promise, operation)",
-        "number": "8.1.6.3"
+        "number": "8.1.6.4"
       },
       "definedIn": "heading"
     },
@@ -77288,7 +77307,7 @@
         "id": "hostcalljobcallback",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostcalljobcallback",
         "title": "HostCallJobCallback(callback, V, argumentsList)",
-        "number": "8.1.6.4.1"
+        "number": "8.1.6.5.1"
       },
       "definedIn": "heading"
     },
@@ -77307,7 +77326,7 @@
         "id": "hostenqueuefinalizationregistrycleanupjob",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuefinalizationregistrycleanupjob",
         "title": "HostEnqueueFinalizationRegistryCleanupJob(finalizationRegistry)",
-        "number": "8.1.6.4.2"
+        "number": "8.1.6.5.2"
       },
       "definedIn": "heading"
     },
@@ -77326,7 +77345,7 @@
         "id": "hostenqueuefinalizationregistrycleanupjob",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuefinalizationregistrycleanupjob",
         "title": "HostEnqueueFinalizationRegistryCleanupJob(finalizationRegistry)",
-        "number": "8.1.6.4.2"
+        "number": "8.1.6.5.2"
       },
       "definedIn": "prose"
     },
@@ -77345,7 +77364,7 @@
         "id": "hostenqueuegenericjob",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuegenericjob",
         "title": "HostEnqueueGenericJob(job, realm)",
-        "number": "8.1.6.4.3"
+        "number": "8.1.6.5.3"
       },
       "definedIn": "heading"
     },
@@ -77364,7 +77383,7 @@
         "id": "hostenqueuepromisejob",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuepromisejob",
         "title": "HostEnqueuePromiseJob(job, realm)",
-        "number": "8.1.6.4.4"
+        "number": "8.1.6.5.4"
       },
       "definedIn": "heading"
     },
@@ -77383,7 +77402,7 @@
         "id": "hostenqueuetimeoutjob",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostenqueuetimeoutjob",
         "title": "HostEnqueueTimeoutJob(job, realm, milliseconds)",
-        "number": "8.1.6.4.5"
+        "number": "8.1.6.5.5"
       },
       "definedIn": "heading"
     },
@@ -77402,7 +77421,7 @@
         "id": "hostmakejobcallback",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostmakejobcallback",
         "title": "HostMakeJobCallback(callable)",
-        "number": "8.1.6.4.6"
+        "number": "8.1.6.5.6"
       },
       "definedIn": "heading"
     },
@@ -77421,7 +77440,7 @@
         "id": "integration-with-the-javascript-module-system",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system",
         "title": "Module-related host hooks",
-        "number": "8.1.6.5"
+        "number": "8.1.6.6"
       },
       "definedIn": "prose"
     },
@@ -77440,7 +77459,7 @@
         "id": "hostgetimportmetaproperties",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties",
         "title": "HostGetImportMetaProperties(moduleRecord)",
-        "number": "8.1.6.5.1"
+        "number": "8.1.6.6.1"
       },
       "definedIn": "heading"
     },
@@ -77459,7 +77478,7 @@
         "id": "hostgetimportmetaproperties",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties",
         "title": "HostGetImportMetaProperties(moduleRecord)",
-        "number": "8.1.6.5.1"
+        "number": "8.1.6.6.1"
       },
       "definedIn": "prose"
     },
@@ -77478,7 +77497,7 @@
         "id": "hostgetimportmetaproperties",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties",
         "title": "HostGetImportMetaProperties(moduleRecord)",
-        "number": "8.1.6.5.1"
+        "number": "8.1.6.6.1"
       },
       "definedIn": "prose"
     },
@@ -77497,7 +77516,7 @@
         "id": "hostgetsupportedimportattributes",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostgetsupportedimportattributes",
         "title": "HostGetSupportedImportAttributes()",
-        "number": "8.1.6.5.2"
+        "number": "8.1.6.6.2"
       },
       "definedIn": "heading"
     },
@@ -77516,7 +77535,7 @@
         "id": "hostloadimportedmodule",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#hostloadimportedmodule",
         "title": "HostLoadImportedModule(referrer, moduleRequest, loadState, payload)",
-        "number": "8.1.6.5.3"
+        "number": "8.1.6.6.3"
       },
       "definedIn": "heading"
     },
