@@ -177,46 +177,60 @@
       "number": "5.1.1.2"
     },
     {
+      "id": "uievent-algorithms",
+      "href": "https://w3c.github.io/uievents/#uievent-algorithms",
+      "level": 4,
+      "title": "UIEvent Algorithms",
+      "number": "5.1.2"
+    },
+    {
+      "id": "initialize-a-uievent-id",
+      "href": "https://w3c.github.io/uievents/#initialize-a-uievent-id",
+      "level": 5,
+      "title": "initialize a UIEvent",
+      "number": "5.1.2.1"
+    },
+    {
       "id": "events-uievent-types",
       "href": "https://w3c.github.io/uievents/#events-uievent-types",
       "level": 4,
-      "title": "UI Event Types",
-      "number": "5.1.2"
+      "title": "UIEvent Types",
+      "number": "5.1.3"
     },
     {
       "id": "event-type-load",
       "href": "https://w3c.github.io/uievents/#event-type-load",
       "level": 5,
       "title": "load",
-      "number": "5.1.2.1"
+      "number": "5.1.3.1"
     },
     {
       "id": "event-type-unload",
       "href": "https://w3c.github.io/uievents/#event-type-unload",
       "level": 5,
       "title": "unload",
-      "number": "5.1.2.2"
+      "number": "5.1.3.2"
     },
     {
       "id": "event-type-abort",
       "href": "https://w3c.github.io/uievents/#event-type-abort",
       "level": 5,
       "title": "abort",
-      "number": "5.1.2.3"
+      "number": "5.1.3.3"
     },
     {
       "id": "event-type-error",
       "href": "https://w3c.github.io/uievents/#event-type-error",
       "level": 5,
       "title": "error",
-      "number": "5.1.2.4"
+      "number": "5.1.3.4"
     },
     {
       "id": "event-type-select",
       "href": "https://w3c.github.io/uievents/#event-type-select",
       "level": 5,
       "title": "select",
-      "number": "5.1.2.5"
+      "number": "5.1.3.5"
     },
     {
       "id": "events-focusevent",
@@ -331,95 +345,228 @@
       "number": "5.3.2"
     },
     {
+      "id": "mouseevent-algorithms",
+      "href": "https://w3c.github.io/uievents/#mouseevent-algorithms",
+      "level": 4,
+      "title": "MouseEvent Algorithms",
+      "number": "5.3.3"
+    },
+    {
+      "id": "mouseevent-native-requirements",
+      "href": "https://w3c.github.io/uievents/#mouseevent-native-requirements",
+      "level": 5,
+      "title": "Native OS Requirements",
+      "number": "5.3.3.1"
+    },
+    {
+      "id": "mouseevent-global-state",
+      "href": "https://w3c.github.io/uievents/#mouseevent-global-state",
+      "level": 5,
+      "title": "Global State for MouseEvent",
+      "number": "5.3.3.2"
+    },
+    {
+      "id": "mouseevent-global-ua",
+      "href": "https://w3c.github.io/uievents/#mouseevent-global-ua",
+      "level": 6,
+      "title": "User Agent-Level State",
+      "number": "5.3.3.2.1"
+    },
+    {
+      "id": "mouseevent-global-window",
+      "href": "https://w3c.github.io/uievents/#mouseevent-global-window",
+      "level": 6,
+      "title": "Window-Level State",
+      "number": "5.3.3.2.2"
+    },
+    {
+      "id": "mouseevent-internal-state",
+      "href": "https://w3c.github.io/uievents/#mouseevent-internal-state",
+      "level": 5,
+      "title": "Internal State for MouseEvent",
+      "number": "5.3.3.3"
+    },
+    {
+      "id": "initialize-a-mouseevent-id",
+      "href": "https://w3c.github.io/uievents/#initialize-a-mouseevent-id",
+      "level": 5,
+      "title": "initialize a MouseEvent",
+      "number": "5.3.3.4"
+    },
+    {
+      "id": "set-mouse-event-modifiers-id",
+      "href": "https://w3c.github.io/uievents/#set-mouse-event-modifiers-id",
+      "level": 5,
+      "title": "set mouse event modifiers",
+      "number": "5.3.3.5"
+    },
+    {
+      "id": "create-a-cancelable-mouseevent-id",
+      "href": "https://w3c.github.io/uievents/#create-a-cancelable-mouseevent-id",
+      "level": 5,
+      "title": "create a cancelable MouseEvent",
+      "number": "5.3.3.6"
+    },
+    {
+      "id": "create-a-non-cancelable-mouseevent-id",
+      "href": "https://w3c.github.io/uievents/#create-a-non-cancelable-mouseevent-id",
+      "level": 5,
+      "title": "create a non-cancelable MouseEvent",
+      "number": "5.3.3.7"
+    },
+    {
+      "id": "calculate-mouseevent-button-attribute-id",
+      "href": "https://w3c.github.io/uievents/#calculate-mouseevent-button-attribute-id",
+      "level": 5,
+      "title": "calculate MouseEvent button attribute",
+      "number": "5.3.3.8"
+    },
+    {
+      "id": "set-mouseevent-attributes-from-native-id",
+      "href": "https://w3c.github.io/uievents/#set-mouseevent-attributes-from-native-id",
+      "level": 5,
+      "title": "set MouseEvent attributes from native",
+      "number": "5.3.3.9"
+    },
+    {
+      "id": "handle-native-mouse-down-id",
+      "href": "https://w3c.github.io/uievents/#handle-native-mouse-down-id",
+      "level": 5,
+      "title": "handle native mouse down",
+      "number": "5.3.3.10"
+    },
+    {
+      "id": "handle-native-mouse-up-id",
+      "href": "https://w3c.github.io/uievents/#handle-native-mouse-up-id",
+      "level": 5,
+      "title": "handle native mouse up",
+      "number": "5.3.3.11"
+    },
+    {
+      "id": "handle-native-mouse-click-id",
+      "href": "https://w3c.github.io/uievents/#handle-native-mouse-click-id",
+      "level": 5,
+      "title": "handle native mouse click",
+      "number": "5.3.3.12"
+    },
+    {
+      "id": "send-click-event-id",
+      "href": "https://w3c.github.io/uievents/#send-click-event-id",
+      "level": 5,
+      "title": "send click event",
+      "number": "5.3.3.13"
+    },
+    {
+      "id": "handle-native-mouse-double-click-id",
+      "href": "https://w3c.github.io/uievents/#handle-native-mouse-double-click-id",
+      "level": 5,
+      "title": "handle native mouse double click",
+      "number": "5.3.3.14"
+    },
+    {
+      "id": "handle-native-mouse-move-id",
+      "href": "https://w3c.github.io/uievents/#handle-native-mouse-move-id",
+      "level": 5,
+      "title": "handle native mouse move",
+      "number": "5.3.3.15"
+    },
+    {
+      "id": "maybe-show-context-menu-id",
+      "href": "https://w3c.github.io/uievents/#maybe-show-context-menu-id",
+      "level": 5,
+      "title": "maybe show context menu",
+      "number": "5.3.3.16"
+    },
+    {
       "id": "events-mouseevent-event-order",
       "href": "https://w3c.github.io/uievents/#events-mouseevent-event-order",
       "level": 4,
       "title": "Mouse Event Order",
-      "number": "5.3.3"
+      "number": "5.3.4"
     },
     {
       "id": "events-mouse-types",
       "href": "https://w3c.github.io/uievents/#events-mouse-types",
       "level": 4,
       "title": "Mouse Event Types",
-      "number": "5.3.4"
+      "number": "5.3.5"
     },
     {
       "id": "event-type-auxclick",
       "href": "https://w3c.github.io/uievents/#event-type-auxclick",
       "level": 5,
       "title": "auxclick",
-      "number": "5.3.4.1"
+      "number": "5.3.5.1"
     },
     {
       "id": "event-type-click",
       "href": "https://w3c.github.io/uievents/#event-type-click",
       "level": 5,
       "title": "click",
-      "number": "5.3.4.2"
+      "number": "5.3.5.2"
     },
     {
       "id": "event-type-contextmenu",
       "href": "https://w3c.github.io/uievents/#event-type-contextmenu",
       "level": 5,
       "title": "contextmenu",
-      "number": "5.3.4.3"
+      "number": "5.3.5.3"
     },
     {
       "id": "event-type-dblclick",
       "href": "https://w3c.github.io/uievents/#event-type-dblclick",
       "level": 5,
       "title": "dblclick",
-      "number": "5.3.4.4"
+      "number": "5.3.5.4"
     },
     {
       "id": "event-type-mousedown",
       "href": "https://w3c.github.io/uievents/#event-type-mousedown",
       "level": 5,
       "title": "mousedown",
-      "number": "5.3.4.5"
+      "number": "5.3.5.5"
     },
     {
       "id": "event-type-mouseenter",
       "href": "https://w3c.github.io/uievents/#event-type-mouseenter",
       "level": 5,
       "title": "mouseenter",
-      "number": "5.3.4.6"
+      "number": "5.3.5.6"
     },
     {
       "id": "event-type-mouseleave",
       "href": "https://w3c.github.io/uievents/#event-type-mouseleave",
       "level": 5,
       "title": "mouseleave",
-      "number": "5.3.4.7"
+      "number": "5.3.5.7"
     },
     {
       "id": "event-type-mousemove",
       "href": "https://w3c.github.io/uievents/#event-type-mousemove",
       "level": 5,
       "title": "mousemove",
-      "number": "5.3.4.8"
+      "number": "5.3.5.8"
     },
     {
       "id": "event-type-mouseout",
       "href": "https://w3c.github.io/uievents/#event-type-mouseout",
       "level": 5,
       "title": "mouseout",
-      "number": "5.3.4.9"
+      "number": "5.3.5.9"
     },
     {
       "id": "event-type-mouseover",
       "href": "https://w3c.github.io/uievents/#event-type-mouseover",
       "level": 5,
       "title": "mouseover",
-      "number": "5.3.4.10"
+      "number": "5.3.5.10"
     },
     {
       "id": "event-type-mouseup",
       "href": "https://w3c.github.io/uievents/#event-type-mouseup",
       "level": 5,
       "title": "mouseup",
-      "number": "5.3.4.11"
+      "number": "5.3.5.11"
     },
     {
       "id": "events-wheelevents",
@@ -562,32 +709,53 @@
       "number": "5.6.2"
     },
     {
+      "id": "keyboardevent-algorithms",
+      "href": "https://w3c.github.io/uievents/#keyboardevent-algorithms",
+      "level": 4,
+      "title": "KeyboardEvent Algorithms",
+      "number": "5.6.3"
+    },
+    {
+      "id": "keyboardevent-global-state",
+      "href": "https://w3c.github.io/uievents/#keyboardevent-global-state",
+      "level": 5,
+      "title": "Global State for KeyboardEvent",
+      "number": "5.6.3.1"
+    },
+    {
+      "id": "keyboardevent-global-ua",
+      "href": "https://w3c.github.io/uievents/#keyboardevent-global-ua",
+      "level": 6,
+      "title": "User Agent-Level State",
+      "number": "5.6.3.1.1"
+    },
+    {
       "id": "events-keyboard-event-order",
       "href": "https://w3c.github.io/uievents/#events-keyboard-event-order",
       "level": 4,
       "title": "Keyboard Event Order",
-      "number": "5.6.3"
+      "number": "5.6.4"
     },
     {
       "id": "events-keyboard-types",
       "href": "https://w3c.github.io/uievents/#events-keyboard-types",
       "level": 4,
       "title": "Keyboard Event Types",
-      "number": "5.6.4"
+      "number": "5.6.5"
     },
     {
       "id": "event-type-keydown",
       "href": "https://w3c.github.io/uievents/#event-type-keydown",
       "level": 5,
       "title": "keydown",
-      "number": "5.6.4.1"
+      "number": "5.6.5.1"
     },
     {
       "id": "event-type-keyup",
       "href": "https://w3c.github.io/uievents/#event-type-keyup",
       "level": 5,
       "title": "keyup",
-      "number": "5.6.4.2"
+      "number": "5.6.5.2"
     },
     {
       "id": "events-compositionevents",
@@ -779,405 +947,544 @@
       "number": "6.3.4"
     },
     {
+      "id": "external-algorithms",
+      "href": "https://w3c.github.io/uievents/#external-algorithms",
+      "level": 2,
+      "title": "External Algorithms",
+      "number": "7"
+    },
+    {
+      "id": "external-dom-algorithms",
+      "href": "https://w3c.github.io/uievents/#external-dom-algorithms",
+      "level": 3,
+      "title": "Core DOM Algorithms",
+      "number": "7.1"
+    },
+    {
+      "id": "hit-test-id",
+      "href": "https://w3c.github.io/uievents/#hit-test-id",
+      "level": 4,
+      "title": "hit test",
+      "number": "7.1.1"
+    },
+    {
+      "id": "calculate-dom-path-id",
+      "href": "https://w3c.github.io/uievents/#calculate-dom-path-id",
+      "level": 4,
+      "title": "calculate DOM path",
+      "number": "7.1.2"
+    },
+    {
+      "id": "external-pointerlock-algorithms",
+      "href": "https://w3c.github.io/uievents/#external-pointerlock-algorithms",
+      "level": 3,
+      "title": "PointerLock Algorithms",
+      "number": "7.2"
+    },
+    {
+      "id": "pointer-lock-global-state",
+      "href": "https://w3c.github.io/uievents/#pointer-lock-global-state",
+      "level": 4,
+      "title": "Global State for PointerLock",
+      "number": "7.2.1"
+    },
+    {
+      "id": "pointer-lock-global-window",
+      "href": "https://w3c.github.io/uievents/#pointer-lock-global-window",
+      "level": 5,
+      "title": "Window-Level State",
+      "number": "7.2.1.1"
+    },
+    {
+      "id": "initialize-pointerlock-attributes-for-mouseevent-id",
+      "href": "https://w3c.github.io/uievents/#initialize-pointerlock-attributes-for-mouseevent-id",
+      "level": 4,
+      "title": "initialize PointerLock attributes for MouseEvent",
+      "number": "7.2.2"
+    },
+    {
+      "id": "set-pointerlock-attributes-for-mousemove-id",
+      "href": "https://w3c.github.io/uievents/#set-pointerlock-attributes-for-mousemove-id",
+      "level": 4,
+      "title": "set PointerLock attributes for mousemove",
+      "number": "7.2.3"
+    },
+    {
+      "id": "external-pointerevent-algorithms",
+      "href": "https://w3c.github.io/uievents/#external-pointerevent-algorithms",
+      "level": 3,
+      "title": "PointerEvent Algorithms",
+      "number": "7.3"
+    },
+    {
+      "id": "initialize-a-pointerevent-id",
+      "href": "https://w3c.github.io/uievents/#initialize-a-pointerevent-id",
+      "level": 4,
+      "title": "initialize a PointerEvent",
+      "number": "7.3.1"
+    },
+    {
+      "id": "create-a-pointerevent-id",
+      "href": "https://w3c.github.io/uievents/#create-a-pointerevent-id",
+      "level": 4,
+      "title": "create a PointerEvent",
+      "number": "7.3.2"
+    },
+    {
+      "id": "create-pointerevent-from-mouseevent-id",
+      "href": "https://w3c.github.io/uievents/#create-pointerevent-from-mouseevent-id",
+      "level": 4,
+      "title": "create PointerEvent from MouseEvent",
+      "number": "7.3.3"
+    },
+    {
+      "id": "maybe-send-pointerout-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerout-event-id",
+      "level": 4,
+      "title": "maybe send pointerout event",
+      "number": "7.3.4"
+    },
+    {
+      "id": "maybe-send-pointerleave-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerleave-event-id",
+      "level": 4,
+      "title": "maybe send pointerleave event",
+      "number": "7.3.5"
+    },
+    {
+      "id": "maybe-send-pointerover-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerover-event-id",
+      "level": 4,
+      "title": "maybe send pointerover event",
+      "number": "7.3.6"
+    },
+    {
+      "id": "maybe-send-pointerenter-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerenter-event-id",
+      "level": 4,
+      "title": "maybe send pointerenter event",
+      "number": "7.3.7"
+    },
+    {
+      "id": "maybe-send-pointermove-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointermove-event-id",
+      "level": 4,
+      "title": "maybe send pointermove event",
+      "number": "7.3.8"
+    },
+    {
+      "id": "maybe-send-pointerdown-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerdown-event-id",
+      "level": 4,
+      "title": "maybe send pointerdown event",
+      "number": "7.3.9"
+    },
+    {
+      "id": "maybe-send-pointerup-event-id",
+      "href": "https://w3c.github.io/uievents/#maybe-send-pointerup-event-id",
+      "level": 4,
+      "title": "maybe send pointerup event",
+      "number": "7.3.10"
+    },
+    {
       "id": "legacy-event-initializers",
       "href": "https://w3c.github.io/uievents/#legacy-event-initializers",
       "level": 2,
       "title": "Legacy Event Initializers",
-      "number": "7"
+      "number": "8"
     },
     {
       "id": "legacy-event-initializer-interfaces",
       "href": "https://w3c.github.io/uievents/#legacy-event-initializer-interfaces",
       "level": 3,
       "title": "Legacy Event Initializer Interfaces",
-      "number": "7.1"
+      "number": "8.1"
     },
     {
       "id": "idl-interface-UIEvent-initializers",
       "href": "https://w3c.github.io/uievents/#idl-interface-UIEvent-initializers",
       "level": 4,
       "title": "Initializers for interface UIEvent",
-      "number": "7.1.1"
+      "number": "8.1.1"
     },
     {
       "id": "idl-interface-MouseEvent-initializers",
       "href": "https://w3c.github.io/uievents/#idl-interface-MouseEvent-initializers",
       "level": 4,
       "title": "Initializers for interface MouseEvent",
-      "number": "7.1.2"
+      "number": "8.1.2"
     },
     {
       "id": "idl-interface-KeyboardEvent-initializers",
       "href": "https://w3c.github.io/uievents/#idl-interface-KeyboardEvent-initializers",
       "level": 4,
       "title": "Initializers for interface KeyboardEvent",
-      "number": "7.1.3"
+      "number": "8.1.3"
     },
     {
       "id": "idl-interface-CompositionEvent-initializers",
       "href": "https://w3c.github.io/uievents/#idl-interface-CompositionEvent-initializers",
       "level": 4,
       "title": "Initializers for interface CompositionEvent",
-      "number": "7.1.4"
+      "number": "8.1.4"
     },
     {
       "id": "legacy-key-attributes",
       "href": "https://w3c.github.io/uievents/#legacy-key-attributes",
       "level": 2,
       "title": "Legacy Key & Mouse Event Attributes",
-      "number": "8"
+      "number": "9"
     },
     {
       "id": "legacy-UIEvent",
       "href": "https://w3c.github.io/uievents/#legacy-UIEvent",
       "level": 3,
       "title": "Legacy UIEvent supplemental interface",
-      "number": "8.1"
+      "number": "9.1"
     },
     {
       "id": "legacy-interface-UIEvent",
       "href": "https://w3c.github.io/uievents/#legacy-interface-UIEvent",
       "level": 4,
       "title": "Interface UIEvent (supplemental)",
-      "number": "8.1.1"
+      "number": "9.1.1"
     },
     {
       "id": "legacy-dictionary-UIEventInit",
       "href": "https://w3c.github.io/uievents/#legacy-dictionary-UIEventInit",
       "level": 4,
       "title": "Interface UIEventInit (supplemental)",
-      "number": "8.1.2"
+      "number": "9.1.2"
     },
     {
       "id": "legacy-KeyboardEvent",
       "href": "https://w3c.github.io/uievents/#legacy-KeyboardEvent",
       "level": 3,
       "title": "Legacy KeyboardEvent supplemental interface",
-      "number": "8.2"
+      "number": "9.2"
     },
     {
       "id": "legacy-interface-KeyboardEvent",
       "href": "https://w3c.github.io/uievents/#legacy-interface-KeyboardEvent",
       "level": 4,
       "title": "Interface KeyboardEvent (supplemental)",
-      "number": "8.2.1"
+      "number": "9.2.1"
     },
     {
       "id": "legacy-dictionary-KeyboardEventInit",
       "href": "https://w3c.github.io/uievents/#legacy-dictionary-KeyboardEventInit",
       "level": 4,
       "title": "Interface KeyboardEventInit (supplemental)",
-      "number": "8.2.2"
+      "number": "9.2.2"
     },
     {
       "id": "legacy-key-models",
       "href": "https://w3c.github.io/uievents/#legacy-key-models",
       "level": 3,
       "title": "Legacy key models",
-      "number": "8.3"
+      "number": "9.3"
     },
     {
       "id": "determine-keydown-keyup-keyCode",
       "href": "https://w3c.github.io/uievents/#determine-keydown-keyup-keyCode",
       "level": 4,
       "title": "How to determine keyCode for keydown and keyup events",
-      "number": "8.3.1"
+      "number": "9.3.1"
     },
     {
       "id": "determine-keypress-keyCode",
       "href": "https://w3c.github.io/uievents/#determine-keypress-keyCode",
       "level": 4,
       "title": "How to determine keyCode for keypress events",
-      "number": "8.3.2"
+      "number": "9.3.2"
     },
     {
       "id": "fixed-virtual-key-codes",
       "href": "https://w3c.github.io/uievents/#fixed-virtual-key-codes",
       "level": 4,
       "title": "Fixed virtual key codes",
-      "number": "8.3.3"
+      "number": "9.3.3"
     },
     {
       "id": "optionally-fixed-virtual-key-codes",
       "href": "https://w3c.github.io/uievents/#optionally-fixed-virtual-key-codes",
       "level": 4,
       "title": "Optionally fixed virtual key codes",
-      "number": "8.3.4"
+      "number": "9.3.4"
     },
     {
       "id": "legacy-event-types",
       "href": "https://w3c.github.io/uievents/#legacy-event-types",
       "level": 2,
-      "title": "Legacy Event Types",
-      "number": "9"
+      "title": "10. Legacy Event Types"
     },
     {
       "id": "legacy-uievent-events",
       "href": "https://w3c.github.io/uievents/#legacy-uievent-events",
       "level": 3,
       "title": "Legacy UIEvent events",
-      "number": "9.1"
+      "number": "10.1"
     },
     {
       "id": "legacy-uievent-event-types",
       "href": "https://w3c.github.io/uievents/#legacy-uievent-event-types",
       "level": 4,
       "title": "Legacy UIEvent event types",
-      "number": "9.1.1"
+      "number": "10.1.1"
     },
     {
       "id": "event-type-DOMActivate",
       "href": "https://w3c.github.io/uievents/#event-type-DOMActivate",
       "level": 5,
       "title": "DOMActivate",
-      "number": "9.1.1.1"
+      "number": "10.1.1.1"
     },
     {
       "id": "legacy-uievent-event-order",
       "href": "https://w3c.github.io/uievents/#legacy-uievent-event-order",
       "level": 4,
       "title": "Activation event order",
-      "number": "9.1.2"
+      "number": "10.1.2"
     },
     {
       "id": "legacy-focusevent-events",
       "href": "https://w3c.github.io/uievents/#legacy-focusevent-events",
       "level": 3,
       "title": "Legacy FocusEvent events",
-      "number": "9.2"
+      "number": "10.2"
     },
     {
       "id": "legacy-focusevent-event-types",
       "href": "https://w3c.github.io/uievents/#legacy-focusevent-event-types",
       "level": 4,
       "title": "Legacy FocusEvent event types",
-      "number": "9.2.1"
+      "number": "10.2.1"
     },
     {
       "id": "event-type-DOMFocusIn",
       "href": "https://w3c.github.io/uievents/#event-type-DOMFocusIn",
       "level": 5,
       "title": "DOMFocusIn",
-      "number": "9.2.1.1"
+      "number": "10.2.1.1"
     },
     {
       "id": "event-type-DOMFocusOut",
       "href": "https://w3c.github.io/uievents/#event-type-DOMFocusOut",
       "level": 5,
       "title": "DOMFocusOut",
-      "number": "9.2.1.2"
+      "number": "10.2.1.2"
     },
     {
       "id": "legacy-focusevent-event-order",
       "href": "https://w3c.github.io/uievents/#legacy-focusevent-event-order",
       "level": 4,
       "title": "Legacy FocusEvent event order",
-      "number": "9.2.2"
+      "number": "10.2.2"
     },
     {
       "id": "legacy-keyboardevent-events",
       "href": "https://w3c.github.io/uievents/#legacy-keyboardevent-events",
       "level": 3,
       "title": "Legacy KeyboardEvent events",
-      "number": "9.3"
+      "number": "10.3"
     },
     {
       "id": "legacy-keyboardevent-event-types",
       "href": "https://w3c.github.io/uievents/#legacy-keyboardevent-event-types",
       "level": 4,
       "title": "Legacy KeyboardEvent event types",
-      "number": "9.3.1"
+      "number": "10.3.1"
     },
     {
       "id": "event-type-keypress",
       "href": "https://w3c.github.io/uievents/#event-type-keypress",
       "level": 5,
       "title": "keypress",
-      "number": "9.3.1.1"
+      "number": "10.3.1.1"
     },
     {
       "id": "keypress-event-order",
       "href": "https://w3c.github.io/uievents/#keypress-event-order",
       "level": 4,
       "title": "keypress event order",
-      "number": "9.3.2"
+      "number": "10.3.2"
     },
     {
       "id": "legacy-textevent-events",
       "href": "https://w3c.github.io/uievents/#legacy-textevent-events",
       "level": 3,
       "title": "Legacy TextEvent events",
-      "number": "9.4"
+      "number": "10.4"
     },
     {
       "id": "legacy-mutationevent-events",
       "href": "https://w3c.github.io/uievents/#legacy-mutationevent-events",
       "level": 3,
       "title": "Legacy MutationEvent events",
-      "number": "9.5"
+      "number": "10.5"
     },
     {
       "id": "interface-mutationevent",
       "href": "https://w3c.github.io/uievents/#interface-mutationevent",
       "level": 4,
       "title": "Interface MutationEvent",
-      "number": "9.5.1"
+      "number": "10.5.1"
     },
     {
       "id": "legacy-mutationevent-event-types",
       "href": "https://w3c.github.io/uievents/#legacy-mutationevent-event-types",
       "level": 4,
       "title": "Legacy MutationEvent event types",
-      "number": "9.5.2"
+      "number": "10.5.2"
     },
     {
       "id": "event-type-DOMAttrModified",
       "href": "https://w3c.github.io/uievents/#event-type-DOMAttrModified",
       "level": 5,
       "title": "DOMAttrModified",
-      "number": "9.5.2.1"
+      "number": "10.5.2.1"
     },
     {
       "id": "event-type-DOMCharacterDataModified",
       "href": "https://w3c.github.io/uievents/#event-type-DOMCharacterDataModified",
       "level": 5,
       "title": "DOMCharacterDataModified",
-      "number": "9.5.2.2"
+      "number": "10.5.2.2"
     },
     {
       "id": "event-type-DOMNodeInserted",
       "href": "https://w3c.github.io/uievents/#event-type-DOMNodeInserted",
       "level": 5,
       "title": "DOMNodeInserted",
-      "number": "9.5.2.3"
+      "number": "10.5.2.3"
     },
     {
       "id": "event-type-DOMNodeInsertedIntoDocument",
       "href": "https://w3c.github.io/uievents/#event-type-DOMNodeInsertedIntoDocument",
       "level": 5,
       "title": "DOMNodeInsertedIntoDocument",
-      "number": "9.5.2.4"
+      "number": "10.5.2.4"
     },
     {
       "id": "event-type-DOMNodeRemoved",
       "href": "https://w3c.github.io/uievents/#event-type-DOMNodeRemoved",
       "level": 5,
       "title": "DOMNodeRemoved",
-      "number": "9.5.2.5"
+      "number": "10.5.2.5"
     },
     {
       "id": "event-type-DOMNodeRemovedFromDocument",
       "href": "https://w3c.github.io/uievents/#event-type-DOMNodeRemovedFromDocument",
       "level": 5,
       "title": "DOMNodeRemovedFromDocument",
-      "number": "9.5.2.6"
+      "number": "10.5.2.6"
     },
     {
       "id": "event-type-DOMSubtreeModified",
       "href": "https://w3c.github.io/uievents/#event-type-DOMSubtreeModified",
       "level": 5,
       "title": "DOMSubtreeModified",
-      "number": "9.5.2.7"
+      "number": "10.5.2.7"
     },
     {
       "id": "extending-events",
       "href": "https://w3c.github.io/uievents/#extending-events",
       "level": 2,
-      "title": "10. Extending Events"
+      "title": "11. Extending Events"
     },
     {
       "id": "extending-events-intro",
       "href": "https://w3c.github.io/uievents/#extending-events-intro",
       "level": 3,
       "title": "Introduction",
-      "number": "10.1"
+      "number": "11.1"
     },
     {
       "id": "extending-events-Custom_Events",
       "href": "https://w3c.github.io/uievents/#extending-events-Custom_Events",
       "level": 3,
       "title": "Custom Events",
-      "number": "10.2"
+      "number": "11.2"
     },
     {
       "id": "extending-events-Impl_Extensions",
       "href": "https://w3c.github.io/uievents/#extending-events-Impl_Extensions",
       "level": 3,
       "title": "Implementation-Specific Extensions",
-      "number": "10.3"
+      "number": "11.3"
     },
     {
       "id": "extending-events-prefixes",
       "href": "https://w3c.github.io/uievents/#extending-events-prefixes",
       "level": 4,
       "title": "Known Implementation-Specific Prefixes",
-      "number": "10.3.1"
+      "number": "11.3.1"
     },
     {
       "id": "security-considerations",
       "href": "https://w3c.github.io/uievents/#security-considerations",
       "level": 2,
-      "title": "11. Security Considerations"
+      "title": "12. Security Considerations"
     },
     {
       "id": "changes-from-earlier-versions",
       "href": "https://w3c.github.io/uievents/#changes-from-earlier-versions",
       "level": 2,
-      "title": "12. Changes"
+      "title": "13. Changes"
     },
     {
       "id": "changes-DOMEvents2to3Changes",
       "href": "https://w3c.github.io/uievents/#changes-DOMEvents2to3Changes",
       "level": 3,
       "title": "Changes between DOM Level 2 Events and UI Events",
-      "number": "12.1"
+      "number": "13.1"
     },
     {
       "id": "changes-DOMEvents2to3Changes-flow",
       "href": "https://w3c.github.io/uievents/#changes-DOMEvents2to3Changes-flow",
       "level": 4,
       "title": "Changes to DOM Level 2 event flow",
-      "number": "12.1.1"
+      "number": "13.1.1"
     },
     {
       "id": "changes-DOMEvents2to3Changes-event-types",
       "href": "https://w3c.github.io/uievents/#changes-DOMEvents2to3Changes-event-types",
       "level": 4,
       "title": "Changes to DOM Level 2 event types",
-      "number": "12.1.2"
+      "number": "13.1.2"
     },
     {
       "id": "changes-DOMLevel2to3Changes",
       "href": "https://w3c.github.io/uievents/#changes-DOMLevel2to3Changes",
       "level": 4,
       "title": "Changes to DOM Level 2 Events interfaces",
-      "number": "12.1.3"
+      "number": "13.1.3"
     },
     {
       "id": "changes-DOMLevel3Addons",
       "href": "https://w3c.github.io/uievents/#changes-DOMLevel3Addons",
       "level": 4,
       "title": "New Interfaces",
-      "number": "12.1.4"
+      "number": "13.1.4"
     },
     {
       "id": "changes-drafts",
       "href": "https://w3c.github.io/uievents/#changes-drafts",
       "level": 3,
       "title": "Changes between different drafts of UI Events",
-      "number": "12.2"
+      "number": "13.2"
     },
     {
       "id": "acknowledgements-contributors",
       "href": "https://w3c.github.io/uievents/#acknowledgements-contributors",
       "level": 2,
-      "title": "13. Acknowledgements"
+      "title": "14. Acknowledgements"
     },
     {
       "id": "glossary",
       "href": "https://w3c.github.io/uievents/#glossary",
       "level": 2,
-      "title": "14. Glossary"
+      "title": "15. Glossary"
     },
     {
       "id": "w3c-conformance",
