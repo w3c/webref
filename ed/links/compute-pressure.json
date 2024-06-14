@@ -54,7 +54,10 @@
           "browsing-context",
           "child-navigable",
           "fully-active",
-          "top-level-browsing-context"
+          "node-navigable",
+          "top-level-browsing-context",
+          "top-level-traversable",
+          "bc-traversable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -78,6 +81,7 @@
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "concept-document-window",
+          "window-navigable",
           "window"
         ]
       },
@@ -96,17 +100,19 @@
         "anchors": [
           "active-needed-worker",
           "dom-workerglobalscope-closing",
+          "dedicatedworkerglobalscope",
           "concept-WorkerGlobalScope-owner-set",
           "workerglobalscope"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "set-append",
           "list-append",
+          "set-append",
           "assert",
           "map-clear",
           "list-clone",
+          "list-contain",
           "map-exists",
           "iteration-continue",
           "list-empty",
@@ -222,6 +228,21 @@
           "data-minimization"
         ]
       },
+      "https://www.w3.org/TR/webdriver2/": {
+        "anchors": [
+          "dfn-getting-properties",
+          "dfn-current-browsing-context",
+          "dfn-getting-the-property-with-default",
+          "dfn-unsupported-operation",
+          "dfn-error",
+          "dfn-error-code",
+          "dfn-extension-command-uri-template",
+          "dfn-extension-commands",
+          "dfn-invalid-argument",
+          "dfn-remote-end-steps",
+          "dfn-success"
+        ]
+      },
       "https://www.w3.org/groups/wg/das": {},
       "https://www.w3.org/groups/wg/das/ipr": {}
     },
@@ -256,7 +277,10 @@
           "fully-active",
           "browsing-context",
           "top-level-browsing-context",
-          "child-navigable"
+          "top-level-traversable",
+          "node-navigable",
+          "child-navigable",
+          "bc-traversable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -278,7 +302,8 @@
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "window",
-          "concept-document-window"
+          "concept-document-window",
+          "window-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -296,6 +321,7 @@
         "anchors": [
           "workerglobalscope",
           "concept-WorkerGlobalScope-owner-set",
+          "dedicatedworkerglobalscope",
           "dom-workerglobalscope-closing"
         ]
       },
@@ -314,18 +340,19 @@
           "list-append",
           "list-remove",
           "map-exists",
+          "set-append",
           "list-empty",
           "map-remove",
           "map-clear",
           "map-iterate",
           "list-clone",
           "ordered-set",
-          "set-append",
           "set-union",
           "iteration-continue",
           "assert",
           "list-size",
-          "list-item"
+          "list-item",
+          "list-contain"
         ]
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
@@ -382,6 +409,17 @@
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/webdriver2/": {
+        "anchors": [
+          "dfn-extension-commands",
+          "dfn-extension-command-uri-template",
+          "dfn-remote-end-steps",
+          "dfn-error",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-success"
         ]
       }
     }
