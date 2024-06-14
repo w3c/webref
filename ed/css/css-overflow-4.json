@@ -357,7 +357,7 @@
       "values": [
         {
           "name": "-webkit-discard",
-          "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the computed value of the display property on the parent is -webkit-box or -webkit-inline-box and the computed value of the -webkit-box-orient property on the parent is vertical.",
+          "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the value of the display property is -webkit-box or -webkit-inline-box and the value of the -webkit-box-orient property is vertical.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue--webkit-discard",
           "type": "value",
           "value": "-webkit-discard"
@@ -371,7 +371,7 @@
         },
         {
           "name": "discard",
-          "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
+          "prose": "The box must establish an independent formatting context and becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-discard",
           "type": "value",
           "value": "discard"
