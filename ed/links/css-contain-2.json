@@ -845,8 +845,15 @@
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom-view/": {},
       "https://drafts.csswg.org/resize-observer/": {},
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animating-visibility"
+        ]
+      },
       "https://drafts.fxtf.org/filter-effects-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10433": {},
+      "https://github.com/w3c/csswg-drafts/issues/8627": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-animation-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-body-bg-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-body-bg-002.html": {},
@@ -2431,10 +2438,10 @@
       "https://drafts.csswg.org/css-break-3/": {
         "anchors": [
           "monolithic",
+          "fragmentation",
           "fragmentation-container",
           "fragmentation-context",
           "fragmented-flow",
-          "fragmentation",
           "forced-break"
         ]
       },
@@ -2463,11 +2470,12 @@
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "initial-containing-block",
           "principal-box",
+          "initial-containing-block",
           "replaced-element",
           "inner-display-type",
           "valdef-display-table",
+          "formatting-context",
           "establish-an-independent-formatting-context",
           "valdef-display-table-cell",
           "propdef-visibility",
@@ -2547,7 +2555,9 @@
           "fit-content-size",
           "propdef-width",
           "propdef-height",
-          "sizing-property"
+          "sizing-property",
+          "min-content",
+          "propdef-min-width"
         ]
       },
       "https://drafts.csswg.org/css-sizing-4/": {
@@ -2592,8 +2602,12 @@
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
         "anchors": [
+          "inline-size",
           "propdef-writing-mode",
-          "propdef-text-orientation"
+          "propdef-text-orientation",
+          "inline-axis",
+          "block-axis",
+          "block-size"
         ]
       },
       "https://drafts.csswg.org/cssom-view-1/": {
@@ -2605,6 +2619,12 @@
       "https://drafts.csswg.org/resize-observer-1/": {
         "anchors": [
           "resizeobserver"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-1/": {
+        "anchors": [
+          "animation-type",
+          "discrete"
         ]
       },
       "https://drafts.fxtf.org/filter-effects-1/": {

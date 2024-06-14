@@ -104,15 +104,17 @@
         "anchors": [
           "set-append",
           "list-append",
+          "assert",
           "map-clear",
           "list-clone",
+          "map-exists",
           "iteration-continue",
           "list-empty",
-          "map-exists",
           "list-iterate",
           "map-iterate",
           "implementation-defined",
           "list-item",
+          "struct-item",
           "map-key",
           "list",
           "ordered-map",
@@ -121,6 +123,7 @@
           "map-remove",
           "ordered-set",
           "list-size",
+          "struct",
           "tuple",
           "set-union",
           "map-value"
@@ -192,7 +195,6 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dfn-moment",
           "dom-domhighrestimestamp",
           "dfn-relative-high-resolution-time",
           "monotonic-clock-unsafe-current-time",
@@ -300,15 +302,18 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "implementation-defined",
+          "struct",
+          "struct-item",
+          "ordered-map",
           "list",
           "tuple",
           "queue",
-          "ordered-map",
           "map-key",
           "map-value",
           "list-iterate",
           "list-append",
           "list-remove",
+          "map-exists",
           "list-empty",
           "map-remove",
           "map-clear",
@@ -318,7 +323,7 @@
           "set-append",
           "set-union",
           "iteration-continue",
-          "map-exists",
+          "assert",
           "list-size",
           "list-item"
         ]
@@ -362,10 +367,9 @@
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dom-domhighrestimestamp",
           "dfn-unsafe-shared-current-time",
           "monotonic-clock-unsafe-current-time",
-          "dfn-moment",
+          "dom-domhighrestimestamp",
           "dfn-relative-high-resolution-time"
         ]
       },
