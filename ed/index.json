@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-14T01:02:21.260Z",
+  "date": "2024-06-14T06:51:09.630Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -29,7 +29,7 @@
   },
   "stats": {
     "crawled": 619,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-16.0.1",
   "results": [
@@ -1766,7 +1766,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "5 October 2021",
@@ -17380,7 +17380,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-break-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -18672,7 +18672,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "1 December 2023",
@@ -19417,7 +19417,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -21336,7 +21336,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "29 February 2024",
@@ -22811,7 +22811,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 13:20:17 GMT"
+        "lastModified": "Thu, 13 Jun 2024 13:20:18 GMT"
       },
       "generator": "bikeshed",
       "date": "3 June 2024",
@@ -24597,10 +24597,10 @@
       ],
       "crawled": "https://w3c.github.io/geolocation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 10:17:37 GMT"
+        "lastModified": "Fri, 14 Jun 2024 05:27:35 GMT"
       },
       "generator": "respec",
-      "date": "13 June 2024",
+      "date": "14 June 2024",
       "revision": "1aeed00b8d33f159ea642a21c5a6dfe2e4088ef9",
       "links": "links/geolocation.json",
       "refs": "refs/geolocation.json",
@@ -27492,7 +27492,8 @@
       "links": "links/n-quads.json",
       "refs": "refs/n-quads.json",
       "headings": "headings/n-quads.json",
-      "ids": "ids/n-quads.json"
+      "ids": "ids/n-quads.json",
+      "error": "Error: Loading https://www.w3.org/TR/n-quads/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:489:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:100:22)\n    at async processSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:342:22)\n    at async ThrottledQueue.runThrottled (/home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 481)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:358:21)"
     },
     {
       "url": "https://www.w3.org/TR/navigation-timing-2/",
