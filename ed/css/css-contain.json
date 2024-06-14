@@ -7,7 +7,7 @@
     {
       "name": "contain",
       "href": "https://drafts.csswg.org/css-contain-2/#propdef-contain",
-      "value": "none | strict | content | [ size || layout || style || paint ]",
+      "value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
       "initial": "none",
       "appliesTo": "See below",
       "inherited": "no",
@@ -45,6 +45,13 @@
           "value": "size"
         },
         {
+          "name": "inline-size",
+          "prose": "This value turns on inline-size containment for the element. This prevents the inline-size of its principal box from directly depending on its contents.",
+          "href": "https://drafts.csswg.org/css-contain-2/#valdef-contain-inline-size",
+          "type": "value",
+          "value": "inline-size"
+        },
+        {
           "name": "layout",
           "prose": "This value turns on layout containment for the element. This ensures that the containment box is totally opaque for layout purposes; nothing outside can affect its internal layout, and vice versa.",
           "href": "https://drafts.csswg.org/css-contain-2/#valdef-contain-layout",
@@ -80,7 +87,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
+      "animationType": "see § 4.1 Animating and Interpolating content-visibility",
       "values": [
         {
           "name": "visible",

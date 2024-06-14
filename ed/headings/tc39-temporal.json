@@ -1428,7 +1428,7 @@
     {
       "id": "sec-temporal-differenceplaindatetimewithrounding",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differenceplaindatetimewithrounding",
-      "title": "DifferencePlainDateTimeWithRounding ( plainDate1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, roundingIncrement, smallestUnit, roundingMode, resolvedOptions )",
+      "title": "DifferencePlainDateTimeWithRounding ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, roundingIncrement, smallestUnit, roundingMode, resolvedOptions )",
       "level": 3,
       "number": "5.5.12"
     },
@@ -4611,144 +4611,158 @@
       "number": "13.32.3"
     },
     {
+      "id": "sec-temporal-iso-string-time-zone-parse-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-iso-string-time-zone-parse-records",
+      "title": "ISO String Time Zone Parse Records",
+      "level": 2,
+      "number": "13.33"
+    },
+    {
+      "id": "sec-temporal-iso-date-time-parse-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-iso-date-time-parse-records",
+      "title": "ISO Date-Time Parse Records",
+      "level": 2,
+      "number": "13.34"
+    },
+    {
       "id": "sec-temporal-parseisodatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parseisodatetime",
       "title": "ParseISODateTime ( isoString )",
       "level": 2,
-      "number": "13.33"
+      "number": "13.35"
     },
     {
       "id": "sec-temporal-parsetemporalinstantstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalinstantstring",
       "title": "ParseTemporalInstantString ( isoString )",
       "level": 2,
-      "number": "13.34"
+      "number": "13.36"
     },
     {
       "id": "sec-temporal-parsetemporalzoneddatetimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalzoneddatetimestring",
       "title": "ParseTemporalZonedDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.35"
+      "number": "13.37"
     },
     {
       "id": "sec-temporal-parsetemporalcalendarstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalcalendarstring",
-      "title": "ParseTemporalCalendarString ( isoString )",
+      "title": "ParseTemporalCalendarString ( string )",
       "level": 2,
-      "number": "13.36"
-    },
-    {
-      "id": "sec-temporal-parsetemporaldatestring",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatestring",
-      "title": "ParseTemporalDateString ( isoString )",
-      "level": 2,
-      "number": "13.37"
+      "number": "13.38"
     },
     {
       "id": "sec-temporal-parsetemporaldatetimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatetimestring",
       "title": "ParseTemporalDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.38"
+      "number": "13.39"
     },
     {
       "id": "sec-temporal-parsetemporaldurationstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldurationstring",
       "title": "ParseTemporalDurationString ( isoString )",
       "level": 2,
-      "number": "13.39"
+      "number": "13.40"
+    },
+    {
+      "id": "sec-temporal-iso-month-day-parse-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-iso-month-day-parse-records",
+      "title": "ISO Month-Day Parse Records",
+      "level": 2,
+      "number": "13.41"
     },
     {
       "id": "sec-temporal-parsetemporalmonthdaystring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalmonthdaystring",
       "title": "ParseTemporalMonthDayString ( isoString )",
       "level": 2,
-      "number": "13.40"
+      "number": "13.42"
     },
     {
       "id": "sec-temporal-parsetemporalrelativetostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalrelativetostring",
       "title": "ParseTemporalRelativeToString ( isoString )",
       "level": 2,
-      "number": "13.41"
+      "number": "13.43"
     },
     {
       "id": "sec-temporal-parsetemporaltimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimestring",
       "title": "ParseTemporalTimeString ( isoString )",
       "level": 2,
-      "number": "13.42"
+      "number": "13.44"
     },
     {
       "id": "sec-temporal-parsetemporaltimezonestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimezonestring",
       "title": "ParseTemporalTimeZoneString ( timeZoneString )",
       "level": 2,
-      "number": "13.43"
+      "number": "13.45"
     },
     {
       "id": "sec-temporal-parsetemporalyearmonthstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalyearmonthstring",
       "title": "ParseTemporalYearMonthString ( isoString )",
       "level": 2,
-      "number": "13.44"
+      "number": "13.46"
     },
     {
       "id": "sec-topositiveintegerwithtruncation",
       "href": "https://tc39.es/proposal-temporal/#sec-topositiveintegerwithtruncation",
       "title": "ToPositiveIntegerWithTruncation ( argument )",
       "level": 2,
-      "number": "13.45"
+      "number": "13.47"
     },
     {
       "id": "sec-tointegerwithtruncation",
       "href": "https://tc39.es/proposal-temporal/#sec-tointegerwithtruncation",
       "title": "ToIntegerWithTruncation ( argument )",
       "level": 2,
-      "number": "13.46"
+      "number": "13.48"
     },
     {
       "id": "sec-tointegerifintegral",
       "href": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral",
       "title": "ToIntegerIfIntegral ( argument )",
       "level": 2,
-      "number": "13.47"
+      "number": "13.49"
     },
     {
       "id": "sec-temporal-preparetemporalfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparetemporalfields",
       "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields [ , extraFieldDescriptors [ , duplicateBehaviour ] ] )",
       "level": 2,
-      "number": "13.48"
+      "number": "13.50"
     },
     {
       "id": "sec-temporal-calendar-field-descriptor-record",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-field-descriptor-record",
       "title": "Calendar Field Descriptor Record",
       "level": 3,
-      "number": "13.48.1"
+      "number": "13.50.1"
     },
     {
       "id": "sec-temporal-preparecalendarfieldsandfieldnames",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparecalendarfieldsandfieldnames",
       "title": "PrepareCalendarFieldsAndFieldNames ( calendarRec, fields, calendarFieldNames [ , nonCalendarFieldNames [ , requiredFieldNames ] ] )",
       "level": 2,
-      "number": "13.49"
+      "number": "13.51"
     },
     {
       "id": "sec-temporal-preparecalendarfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparecalendarfields",
       "title": "PrepareCalendarFields ( calendarRec, fields, calendarFieldNames, nonCalendarFieldNames, requiredFieldNames )",
       "level": 2,
-      "number": "13.50"
+      "number": "13.52"
     },
     {
       "id": "sec-temporal-getdifferencesettings",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings",
       "title": "GetDifferenceSettings ( operation, options, unitGroup, disallowedUnits, fallbackSmallestUnit, smallestLargestDefaultUnit )",
       "level": 2,
-      "number": "13.51"
+      "number": "13.53"
     },
     {
       "id": "sec-temporal-legacy-date-objects",

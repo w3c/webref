@@ -5,22 +5,6 @@
   },
   "properties": [
     {
-      "name": "contain",
-      "value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
-      "values": [
-        {
-          "name": "inline-size",
-          "prose": "This value turns on inline-size containment for the element. This prevents the inline-size of its principal box from directly depending on its contents.",
-          "href": "https://drafts.csswg.org/css-contain-3/#valdef-contain-inline-size",
-          "type": "value",
-          "value": "inline-size"
-        }
-      ],
-      "styleDeclaration": [
-        "contain"
-      ]
-    },
-    {
       "name": "container-type",
       "href": "https://drafts.csswg.org/css-contain-3/#propdef-container-type",
       "value": "normal | size | inline-size",
@@ -104,22 +88,6 @@
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "container"
-      ]
-    },
-    {
-      "name": "content-visibility",
-      "href": "https://drafts.csswg.org/css-contain-3/#propdef-content-visibility",
-      "value": "visible | auto | hidden",
-      "initial": "visible",
-      "appliesTo": "elements for which size containment can apply",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "see § 8.1 Animating and Interpolating content-visibility",
-      "styleDeclaration": [
-        "content-visibility",
-        "contentVisibility"
       ]
     }
   ],
