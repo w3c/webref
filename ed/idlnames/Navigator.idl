@@ -129,6 +129,12 @@ partial interface Navigator {
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
+  boolean canLoadAdAuctionFencedFrame();
+};
+
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[SecureContext]
+partial interface Navigator {
   Promise<DOMString> createAuctionNonce();
 };
 

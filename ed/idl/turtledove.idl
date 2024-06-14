@@ -102,6 +102,11 @@ dictionary AuctionAdConfig {
 
 [SecureContext]
 partial interface Navigator {
+  boolean canLoadAdAuctionFencedFrame();
+};
+
+[SecureContext]
+partial interface Navigator {
   Promise<DOMString> createAuctionNonce();
 };
 

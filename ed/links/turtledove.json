@@ -21,6 +21,7 @@
       "https://github.com/WICG/turtledove/issues/1021": {},
       "https://github.com/WICG/turtledove/issues/1144": {},
       "https://github.com/WICG/turtledove/issues/1150": {},
+      "https://github.com/WICG/turtledove/issues/1206": {},
       "https://github.com/WICG/turtledove/issues/522": {},
       "https://github.com/WICG/turtledove/issues/632": {},
       "https://github.com/WICG/turtledove/issues/667": {},
@@ -48,6 +49,7 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/webappsec-csp/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/attribution-reporting-api/": {},
@@ -156,6 +158,9 @@
           "same-origin",
           "concept-origin-host",
           "ascii-serialisation-of-an-origin",
+          "policy-container-csp-list",
+          "active-sandboxing-flag-set",
+          "sandboxing-flag-set",
           "concept-origin-port"
         ]
       },
@@ -229,6 +234,7 @@
           "dom-manipulation-task-source",
           "concept-environment-top-level-origin",
           "global-object",
+          "concept-settings-object-policy-container",
           "module-script",
           "classic-script",
           "concept-script",
@@ -305,6 +311,7 @@
           "parse-json-bytes-to-an-infra-value",
           "string-concatenate",
           "parse-a-json-string-to-an-infra-value",
+          "set-intersection",
           "ascii-encode",
           "string-position-variable",
           "strip-leading-and-trailing-ascii-whitespace",
@@ -403,6 +410,18 @@
           "dfn-duration",
           "dfn-current-monotonic-time",
           "dfn-duration-from"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "policy-directive-set",
+          "directive-name",
+          "directive-value"
+        ]
+      },
+      "https://w3c.github.io/webappsec-cspee/": {
+        "anchors": [
+          "browsing-context-required-csp"
         ]
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
@@ -517,8 +536,8 @@
           "dom-fencereportingdestination-buyer",
           "dom-fencereportingdestination-seller",
           "dom-fencereportingdestination-component-seller",
-          "fencedframetype-automatic-beacon-event-type",
-          "elementdef-fencedframe"
+          "elementdef-fencedframe",
+          "fencedframetype-automatic-beacon-event-type"
         ]
       },
       "https://wicg.github.io/shared-storage": {

@@ -3682,6 +3682,39 @@
           "partial": true
         },
         {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  boolean canLoadAdAuctionFencedFrame();\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "canLoadAdAuctionFencedFrame",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-canloadadauctionfencedframe"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
           "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<DOMString> createAuctionNonce();\n};",
           "type": "interface",
           "name": "Navigator",
