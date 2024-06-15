@@ -30,6 +30,7 @@
       "https://earth-info.nga.mil/index.php?dir=wgs84&action=wgs84": {},
       "https://github.com/w3c/geolocation-api/commit/09b48e6": {},
       "https://github.com/w3c/geolocation-api/commit/0c378d9": {},
+      "https://github.com/w3c/geolocation-api/commit/22ed7a4": {},
       "https://github.com/w3c/geolocation-api/commit/2a116d7": {},
       "https://github.com/w3c/geolocation-api/commit/2c0c516": {},
       "https://github.com/w3c/geolocation-api/commit/41d7945": {},
@@ -37,6 +38,7 @@
       "https://github.com/w3c/geolocation-api/commit/7082b4e": {},
       "https://github.com/w3c/geolocation-api/commit/74b1dd0": {},
       "https://github.com/w3c/geolocation-api/commit/a1531cb": {},
+      "https://github.com/w3c/geolocation-api/commit/a30d713": {},
       "https://github.com/w3c/geolocation-api/commit/c2fdd74": {},
       "https://github.com/w3c/geolocation-api/commit/de05002": {},
       "https://github.com/w3c/geolocation-api/commit/f4605e5": {},
@@ -50,6 +52,7 @@
       "https://github.com/w3c/geolocation-api/pull/133": {},
       "https://github.com/w3c/geolocation-api/pull/144": {},
       "https://github.com/w3c/geolocation-api/pull/157": {},
+      "https://github.com/w3c/geolocation-api/pull/162": {},
       "https://github.com/w3c/geolocation-api/pull/87": {},
       "https://github.com/w3c/geolocation-api/pull/90": {},
       "https://github.com/w3c/geolocation-api/pull/97": {},
@@ -113,9 +116,11 @@
           "assert",
           "list-append",
           "list-contain",
+          "map-iterate",
           "implementation-defined",
           "list-item",
           "list",
+          "ordered-map",
           "list-remove"
         ]
       },
@@ -162,6 +167,7 @@
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
+          "default-allowlist-self",
           "policy-controlled-feature-default-allowlist",
           "policy-controlled-feature"
         ]
@@ -248,7 +254,9 @@
           "implementation-defined",
           "list-append",
           "list-remove",
-          "list-contain"
+          "list-contain",
+          "ordered-map",
+          "map-iterate"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -258,10 +266,10 @@
           "idl-unsigned-long",
           "this",
           "invoke-a-callback-function",
+          "idl-double",
           "idl-unsigned-short",
           "idl-boolean",
           "idl-object",
-          "idl-double",
           "idl-DOMString"
         ]
       },
@@ -273,7 +281,8 @@
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature-default-allowlist",
-          "policy-controlled-feature"
+          "policy-controlled-feature",
+          "default-allowlist-self"
         ]
       },
       "https://www.w3.org/TR/permissions/": {
