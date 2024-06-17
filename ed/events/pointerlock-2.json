@@ -5,24 +5,28 @@
   },
   "events": [
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/pointerlock/#exit-pointer-lock"
+      },
+      "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockchange",
       "type": "pointerlockchange",
       "targets": [
         "Document"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockchange"
+      "interface": "Event"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/pointerlock/#requestPointerLock"
+      },
+      "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockerror",
       "type": "pointerlockerror",
       "targets": [
         "Document"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockerror"
+      "interface": "Event"
     }
   ]
 }
