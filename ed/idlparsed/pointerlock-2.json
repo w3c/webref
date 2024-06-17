@@ -8,11 +8,42 @@
       "constructors": {},
       "functions": {}
     },
-    "idlNames": {},
+    "idlNames": {
+      "PointerLockOptions": {
+        "fragment": "dictionary PointerLockOptions {\n  boolean unadjustedMovement = false;\n};",
+        "type": "dictionary",
+        "name": "PointerLockOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "unadjustedMovement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/pointerlock/#dom-pointerlockoptions-unadjustedmovement"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/pointerlock/#dom-pointerlockoptions"
+      }
+    },
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};",
+          "fragment": "partial interface Element {\n  Promise<undefined> requestPointerLock(optional PointerLockOptions options = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -23,12 +54,40 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
-              "arguments": [],
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PointerLockOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
               "extAttrs": [],
               "special": "",
               "href": "https://w3c.github.io/pointerlock/#dom-element-requestpointerlock"
@@ -100,7 +159,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
-          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element ? pointerLockElement;\n};",
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? pointerLockElement;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,
@@ -224,7 +283,10 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "Element": [],
+      "PointerLockOptions": [],
+      "Element": [
+        "PointerLockOptions"
+      ],
       "Document": [
         "EventHandler"
       ],

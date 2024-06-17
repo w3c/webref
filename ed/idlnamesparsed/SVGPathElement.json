@@ -205,7 +205,7 @@
                 "title": "Pointer Lock 2.0",
                 "url": "https://www.w3.org/TR/pointerlock-2/"
               },
-              "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
+              "fragment": "partial interface Element {\n  Promise<undefined> requestPointerLock(optional PointerLockOptions options = {});\n};"
             },
             {
               "spec": {

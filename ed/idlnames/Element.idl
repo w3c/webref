@@ -143,7 +143,7 @@ partial interface Element {
 
 // Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
 partial interface Element {
-  undefined requestPointerLock();
+  Promise<undefined> requestPointerLock(optional PointerLockOptions options = {});
 };
 
 // Source: Accessible Rich Internet Applications (WAI-ARIA) 1.3 (https://www.w3.org/TR/wai-aria-1.3/)
