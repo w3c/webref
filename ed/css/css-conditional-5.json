@@ -3,7 +3,94 @@
     "title": "CSS Conditional Rules Module Level 5",
     "url": "https://drafts.csswg.org/css-conditional-5/"
   },
-  "properties": [],
+  "properties": [
+    {
+      "name": "container-type",
+      "href": "https://drafts.csswg.org/css-conditional-5/#propdef-container-type",
+      "value": "normal | size | inline-size",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "size",
+          "prose": "Establishes a query container for container size queries on both the inline and block axis. Applies layout containment, style containment, and size containment to the principal box.",
+          "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-type-size",
+          "type": "value",
+          "value": "size"
+        },
+        {
+          "name": "inline-size",
+          "prose": "Establishes a query container for container size queries on the container’s own inline axis. Applies layout containment, style containment, and inline-size containment to the principal box.",
+          "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-type-inline-size",
+          "type": "value",
+          "value": "inline-size"
+        },
+        {
+          "name": "normal",
+          "prose": "The element is not a query container for any container size queries, but remains a query container for container style queries.",
+          "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-type-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "container-type",
+        "containerType"
+      ]
+    },
+    {
+      "name": "container-name",
+      "href": "https://drafts.csswg.org/css-conditional-5/#propdef-container-name",
+      "value": "none | <custom-ident>+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none, or an ordered list of identifiers",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The query container has no query container name.",
+          "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-name-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<custom-ident>",
+          "prose": "Specifies a query container name as an identifier. The keywords none, and, not, and or are excluded from this <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-name-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>"
+        }
+      ],
+      "styleDeclaration": [
+        "container-name",
+        "containerName"
+      ]
+    },
+    {
+      "name": "container",
+      "href": "https://drafts.csswg.org/css-conditional-5/#propdef-container",
+      "value": "<'container-name'> [ / <'container-type'> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "container"
+      ]
+    }
+  ],
   "atrules": [
     {
       "name": "@when",
@@ -18,6 +105,72 @@
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-else",
       "descriptors": [],
       "value": "@else <boolean-condition>? { <rule-list> }"
+    },
+    {
+      "name": "@container",
+      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the <block-contents> block of an @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-container",
+      "descriptors": [
+        {
+          "name": "width",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-width",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "height",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-height",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "inline-size",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-inline-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "block-size",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-block-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "aspect-ratio",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-aspect-ratio",
+          "for": "@container",
+          "value": "<ratio>",
+          "type": "range"
+        },
+        {
+          "name": "orientation",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-orientation",
+          "for": "@container",
+          "value": "portrait | landscape",
+          "type": "discrete",
+          "values": [
+            {
+              "name": "portrait",
+              "prose": "The orientation container feature is portrait when the value of the height container feature is greater than or equal to the value of the width container feature.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-orientation-portrait",
+              "type": "value",
+              "value": "portrait"
+            },
+            {
+              "name": "landscape",
+              "prose": "Otherwise orientation is landscape.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-orientation-landscape",
+              "type": "value",
+              "value": "landscape"
+            }
+          ]
+        }
+      ],
+      "value": "@container <container-condition># { <block-contents> }"
     }
   ],
   "selectors": [],
@@ -51,6 +204,54 @@
       "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports",
       "type": "function",
       "value": "supports( <declaration> )"
+    },
+    {
+      "name": "<container-condition>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-condition",
+      "type": "type",
+      "value": "[ <container-name> ]? <container-query>"
+    },
+    {
+      "name": "<container-name>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-name",
+      "type": "type",
+      "value": "<custom-ident>"
+    },
+    {
+      "name": "<container-query>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-query",
+      "type": "type",
+      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
+    },
+    {
+      "name": "<query-in-parens>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-query-in-parens",
+      "type": "type",
+      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
+    },
+    {
+      "name": "<style-query>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-query",
+      "type": "type",
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>"
+    },
+    {
+      "name": "<style-in-parens>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-in-parens",
+      "type": "type",
+      "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
+    },
+    {
+      "name": "<size-feature>",
+      "prose": "A container size query allows querying the size of the query container’s principal box. It is a boolean combination of individual size features (<size-feature>) that each query a single, specific dimensional feature of the query container. The syntax of a <size-feature> is the same as for a media feature: a feature name, a comparator, and a value. [mediaqueries-5] The boolean syntax and logic combining size features into a size query is the same as for CSS feature queries. (See @supports. [css-conditional-3])",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-size-feature",
+      "type": "type"
+    },
+    {
+      "name": "<style-feature>",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration [CSS-SYNTAX-3], a supported CSS property, or a <custom-property-name>.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature",
+      "type": "type"
     }
   ]
 }
