@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Geolocation API",
+      "title": "Geolocation",
       "url": "https://www.w3.org/TR/geolocation/"
     },
     "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  long watchPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  undefined clearWatch (long watchId);\n};",
