@@ -1,0 +1,31 @@
+From b3e42f40bb10bf2ffd86e897b645dead8cd824c1 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 19 Jun 2024 10:42:16 +0200
+Subject: [PATCH] Drop duplicate dfn of `<general-enclosed>`
+
+Now defined in CSS Values 4, where it will probably remain:
+https://github.com/w3c/csswg-drafts/issues/10465
+---
+ ed/css/mediaqueries-5.json | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/ed/css/mediaqueries-5.json b/ed/css/mediaqueries-5.json
+index ea46e135f..3f2b2dae9 100644
+--- a/ed/css/mediaqueries-5.json
++++ b/ed/css/mediaqueries-5.json
+@@ -899,12 +899,6 @@
+       "type": "type",
+       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+     },
+-    {
+-      "name": "<general-enclosed>",
+-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+-      "type": "type",
+-      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+-    },
+     {
+       "name": "<mq-boolean>",
+       "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
+-- 
+2.42.0.windows.2
+
