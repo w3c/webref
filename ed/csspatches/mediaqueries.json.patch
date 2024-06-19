@@ -1,0 +1,31 @@
+From 1faf81b493ae184a4324993fbc7d61de63cde441 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 19 Jun 2024 10:38:22 +0200
+Subject: [PATCH] Drop duplicate dfn of `<general-enclosed>`
+
+Now defined in CSS Values 4, where it will probably remain:
+https://github.com/w3c/csswg-drafts/issues/10465
+---
+ ed/css/mediaqueries.json | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/ed/css/mediaqueries.json b/ed/css/mediaqueries.json
+index 2b76f8623..90e2f450f 100644
+--- a/ed/css/mediaqueries.json
++++ b/ed/css/mediaqueries.json
+@@ -524,12 +524,6 @@
+       "type": "type",
+       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+     },
+-    {
+-      "name": "<general-enclosed>",
+-      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed",
+-      "type": "type",
+-      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+-    },
+     {
+       "name": "<mq-boolean>",
+       "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean",
+-- 
+2.42.0.windows.2
+
