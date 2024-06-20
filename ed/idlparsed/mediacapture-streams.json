@@ -668,7 +668,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrackstate"
       },
       "MediaTrackSupportedConstraints": {
-        "fragment": "dictionary MediaTrackSupportedConstraints {\n  boolean width = true;\n  boolean height = true;\n  boolean aspectRatio = true;\n  boolean frameRate = true;\n  boolean facingMode = true;\n  boolean resizeMode = true;\n  boolean sampleRate = true;\n  boolean sampleSize = true;\n  boolean echoCancellation = true;\n  boolean autoGainControl = true;\n  boolean noiseSuppression = true;\n  boolean latency = true;\n  boolean channelCount = true;\n  boolean deviceId = true;\n  boolean groupId = true;\n};",
+        "fragment": "dictionary MediaTrackSupportedConstraints {\n  boolean width = true;\n  boolean height = true;\n  boolean aspectRatio = true;\n  boolean frameRate = true;\n  boolean facingMode = true;\n  boolean resizeMode = true;\n  boolean sampleRate = true;\n  boolean sampleSize = true;\n  boolean echoCancellation = true;\n  boolean autoGainControl = true;\n  boolean noiseSuppression = true;\n  boolean latency = true;\n  boolean channelCount = true;\n  boolean deviceId = true;\n  boolean groupId = true;\n  boolean backgroundBlur = true;\n};",
         "type": "dictionary",
         "name": "MediaTrackSupportedConstraints",
         "inheritance": null,
@@ -957,6 +957,25 @@
             },
             "required": false,
             "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksupportedconstraints-groupid"
+          },
+          {
+            "type": "field",
+            "name": "backgroundBlur",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksupportedconstraints-backgroundblur"
           }
         ],
         "extAttrs": [],
@@ -964,7 +983,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksupportedconstraints"
       },
       "MediaTrackCapabilities": {
-        "fragment": "dictionary MediaTrackCapabilities {\n  ULongRange width;\n  ULongRange height;\n  DoubleRange aspectRatio;\n  DoubleRange frameRate;\n  sequence<DOMString> facingMode;\n  sequence<DOMString> resizeMode;\n  ULongRange sampleRate;\n  ULongRange sampleSize;\n  sequence<boolean> echoCancellation;\n  sequence<boolean> autoGainControl;\n  sequence<boolean> noiseSuppression;\n  DoubleRange latency;\n  ULongRange channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n};",
+        "fragment": "dictionary MediaTrackCapabilities {\n  ULongRange width;\n  ULongRange height;\n  DoubleRange aspectRatio;\n  DoubleRange frameRate;\n  sequence<DOMString> facingMode;\n  sequence<DOMString> resizeMode;\n  ULongRange sampleRate;\n  ULongRange sampleSize;\n  sequence<boolean> echoCancellation;\n  sequence<boolean> autoGainControl;\n  sequence<boolean> noiseSuppression;\n  DoubleRange latency;\n  ULongRange channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  sequence<boolean> backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackCapabilities",
         "inheritance": null,
@@ -1253,6 +1272,31 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackcapabilities-groupid"
+          },
+          {
+            "type": "field",
+            "name": "backgroundBlur",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackcapabilities-backgroundblur"
           }
         ],
         "extAttrs": [],
@@ -1296,7 +1340,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraints"
       },
       "MediaTrackConstraintSet": {
-        "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBoolean echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n};",
+        "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBoolean echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n  ConstrainBoolean backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackConstraintSet",
         "inheritance": null,
@@ -1540,6 +1584,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-groupid"
+          },
+          {
+            "type": "field",
+            "name": "backgroundBlur",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ConstrainBoolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-backgroundblur"
           }
         ],
         "extAttrs": [],
@@ -1547,7 +1607,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset"
       },
       "MediaTrackSettings": {
-        "fragment": "dictionary MediaTrackSettings {\n  unsigned long width;\n  unsigned long height;\n  double aspectRatio;\n  double frameRate;\n  DOMString facingMode;\n  DOMString resizeMode;\n  unsigned long sampleRate;\n  unsigned long sampleSize;\n  boolean echoCancellation;\n  boolean autoGainControl;\n  boolean noiseSuppression;\n  double latency;\n  unsigned long channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n};",
+        "fragment": "dictionary MediaTrackSettings {\n  unsigned long width;\n  unsigned long height;\n  double aspectRatio;\n  double frameRate;\n  DOMString facingMode;\n  DOMString resizeMode;\n  unsigned long sampleRate;\n  unsigned long sampleSize;\n  boolean echoCancellation;\n  boolean autoGainControl;\n  boolean noiseSuppression;\n  double latency;\n  unsigned long channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n  boolean backgroundBlur;\n};",
         "type": "dictionary",
         "name": "MediaTrackSettings",
         "inheritance": null,
@@ -1791,6 +1851,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksettings-groupid"
+          },
+          {
+            "type": "field",
+            "name": "backgroundBlur",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksettings-backgroundblur"
           }
         ],
         "extAttrs": [],
@@ -2293,7 +2369,7 @@
         "href": "https://w3c.github.io/mediacapture-main/#dom-inputdeviceinfo"
       },
       "DeviceChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface DeviceChangeEvent : Event {\n  constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;\n};",
+        "fragment": "[Exposed=Window]\ninterface DeviceChangeEvent : Event {\n  constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> userInsertedDevices;\n};",
         "type": "interface",
         "name": "DeviceChangeEvent",
         "inheritance": "Event",
@@ -2370,6 +2446,38 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/mediacapture-main/#dom-devicechangeevent-devices"
+          },
+          {
+            "type": "attribute",
+            "name": "userInsertedDevices",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaDeviceInfo"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-main/#dom-devicechangeevent-userinserteddevices"
           }
         ],
         "extAttrs": [

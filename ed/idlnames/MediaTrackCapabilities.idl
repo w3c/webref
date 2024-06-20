@@ -15,6 +15,7 @@ dictionary MediaTrackCapabilities {
   ULongRange channelCount;
   DOMString deviceId;
   DOMString groupId;
+  sequence<boolean> backgroundBlur;
 };
 
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)

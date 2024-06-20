@@ -6,7 +6,7 @@
       "title": "Media Capture and Streams",
       "url": "https://www.w3.org/TR/mediacapture-streams/"
     },
-    "fragment": "[Exposed=Window]\ninterface DeviceChangeEvent : Event {\n  constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;\n};",
+    "fragment": "[Exposed=Window]\ninterface DeviceChangeEvent : Event {\n  constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;\n  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> userInsertedDevices;\n};",
     "href": "https://w3c.github.io/mediacapture-main/#dom-devicechangeevent"
   },
   "extended": [],

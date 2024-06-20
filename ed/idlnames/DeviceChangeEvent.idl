@@ -3,4 +3,5 @@
 interface DeviceChangeEvent : Event {
   constructor(DOMString type, optional DeviceChangeEventInit eventInitDict = {});
   [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> devices;
+  [SameObject] readonly attribute FrozenArray<MediaDeviceInfo> userInsertedDevices;
 };
