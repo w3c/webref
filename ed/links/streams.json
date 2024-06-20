@@ -6,6 +6,7 @@
   "links": {
     "rawlinks": {
       "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
+      "https://compression.spec.whatwg.org/": {},
       "https://creativecommons.org/licenses/by/4.0/": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy": {},
@@ -122,10 +123,14 @@
       "https://w3c.github.io/ServiceWorker/": {},
       "https://webassembly.github.io/spec/js-api/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {},
-      "https://wicg.github.io/compression/": {}
+      "https://websockets.spec.whatwg.org/": {}
     },
     "autolinks": {
+      "https://compression.spec.whatwg.org/": {
+        "anchors": [
+          "compressionstream"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "abortsignal",
@@ -219,9 +224,7 @@
         "anchors": [
           "sec-typedarray-objects",
           "sec-algorithm-conventions-abstract-operations",
-          "sec-completion-record-specification-type",
           "sec-object-internal-methods-and-internal-slots",
-          "sec-ecmascript-language-types-number-type",
           "sec-arraybuffer-objects",
           "sec-iterable-interface",
           "sec-asynciterable-interface",
@@ -230,33 +233,65 @@
           "sec-native-error-types-used-in-this-standard-typeerror",
           "current-realm",
           "sec-dataview-objects",
-          "sec-isdetachedbuffer",
           "table-49",
-          "sec-dataview-constructor",
+          "sec-ecmascript-data-types-and-values",
+          "sec-isinteger",
+          "sec-code-realms",
+          "sec-sharedarraybuffer-objects",
+          "sec-array.prototype.map"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+        "anchors": [
           "sec-construct",
-          "sec-arraybuffer-constructor",
           "sec-getiterator",
           "sec-iteratornext",
-          "sec-ecmascript-data-types-and-values",
           "sec-iteratorcomplete",
           "sec-iteratorvalue",
           "sec-getmethod",
           "sec-call",
           "sec-createarrayfromlist",
-          "sec-clonearraybuffer",
-          "sec-copydatablockbytes",
-          "sec-isinteger",
           "sec-getv",
-          "sec-createbuiltinfunction",
-          "sec-code-realms",
-          "sec-ordinaryobjectcreate",
           "sec-createdataproperty",
-          "sec-properties-of-the-object-prototype-object",
           "sec-get-o-p",
-          "sec-samevalue",
-          "sec-detacharraybuffer",
-          "sec-sharedarraybuffer-objects",
-          "sec-array.prototype.map"
+          "sec-samevalue"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-completion-record-specification-type",
+          "sec-ecmascript-language-types-number-type",
+          "sec-copydatablockbytes"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-properties-of-the-object-prototype-object"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/indexed-collections.html": {
+        "anchors": [
+          "sec-typedarray-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+        "anchors": [
+          "sec-number-objects"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
+        "anchors": [
+          "sec-createbuiltinfunction",
+          "sec-ordinaryobjectcreate"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/structured-data.html": {
+        "anchors": [
+          "sec-isdetachedbuffer",
+          "sec-dataview-constructor",
+          "sec-arraybuffer-constructor",
+          "sec-clonearraybuffer",
+          "sec-detacharraybuffer"
         ]
       },
       "https://w3c.github.io/ServiceWorker/": {
@@ -323,11 +358,6 @@
         "anchors": [
           "websocket",
           "dom-websocket-bufferedamount"
-        ]
-      },
-      "https://wicg.github.io/compression/": {
-        "anchors": [
-          "compressionstream"
         ]
       }
     }
