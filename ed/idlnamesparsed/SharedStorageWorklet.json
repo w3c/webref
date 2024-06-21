@@ -6,7 +6,7 @@
       "title": "Shared Storage API",
       "url": "https://wicg.github.io/shared-storage/"
     },
-    "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               FrozenArray<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
+    "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
     "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet"
   },
   "extended": [],

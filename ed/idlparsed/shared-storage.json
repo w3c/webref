@@ -53,7 +53,7 @@
         "href": "https://wicg.github.io/shared-storage/#typedefdef-sharedstorageresponse"
       },
       "SharedStorageWorklet": {
-        "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               FrozenArray<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
+        "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
         "type": "interface",
         "name": "SharedStorageWorklet",
         "inheritance": "Worklet",
@@ -102,7 +102,7 @@
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
-                  "generic": "FrozenArray",
+                  "generic": "sequence",
                   "nullable": false,
                   "union": false,
                   "idlType": [
@@ -687,7 +687,7 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
       "WindowSharedStorage": {
-        "fragment": "[Exposed=(Window)]\ninterface WindowSharedStorage : SharedStorage {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               FrozenArray<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional WorkletOptions options = {});\n\n  readonly attribute SharedStorageWorklet worklet;\n};",
+        "fragment": "[Exposed=(Window)]\ninterface WindowSharedStorage : SharedStorage {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional WorkletOptions options = {});\n\n  readonly attribute SharedStorageWorklet worklet;\n};",
         "type": "interface",
         "name": "WindowSharedStorage",
         "inheritance": "SharedStorage",
@@ -736,7 +736,7 @@
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
-                  "generic": "FrozenArray",
+                  "generic": "sequence",
                   "nullable": false,
                   "union": false,
                   "idlType": [

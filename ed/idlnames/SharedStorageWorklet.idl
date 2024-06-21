@@ -2,7 +2,7 @@
 [Exposed=(Window)]
 interface SharedStorageWorklet : Worklet {
   Promise<SharedStorageResponse> selectURL(DOMString name,
-                               FrozenArray<SharedStorageUrlWithMetadata> urls,
+                               sequence<SharedStorageUrlWithMetadata> urls,
                                optional SharedStorageRunOperationMethodOptions options = {});
   Promise<any> run(DOMString name,
                    optional SharedStorageRunOperationMethodOptions options = {});
