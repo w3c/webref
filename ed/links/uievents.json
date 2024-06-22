@@ -5,11 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "http://dev.w3.org/html5/spec/single-page.html": {
-        "anchors": [
-          "windowproxy"
-        ]
-      },
       "http://www.w3.org/People/Schepers/spec-conventions.html": {},
       "http://www.w3.org/TR/CSS2/selector.html": {
         "anchors": [
@@ -49,7 +44,6 @@
       "http://www.w3.org/TR/uievents-key/": {
         "anchors": [
           "key-ArrowDown",
-          "key-Enter",
           "keys-modifier",
           "key-Shift",
           "key-Control",
@@ -62,6 +56,7 @@
           "key-Home",
           "key-PageDown",
           "key-PageUp",
+          "key-Enter",
           "key-AltGraph",
           "key-Dead",
           "key-Convert",
@@ -177,6 +172,7 @@
           "concept-event-create"
         ]
       },
+      "https://drafts.csswg.org/css-color-3/": {},
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom-view/": {},
       "https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html": {},
@@ -190,6 +186,7 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webapps/": {},
       "https://w3c.github.io/input-events/": {},
       "https://w3c.github.io/pointerevents/": {
@@ -207,15 +204,7 @@
       "https://www.unicode.org/reports/tr15/tr15-54.html": {},
       "https://www.unicode.org/versions/latest/": {},
       "https://www.w3.org/2004/01/pp-impl/114929/status": {},
-      "https://www.w3.org/2023/Process-20231103/": {},
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/2014/WD-uievents-20140612/": {},
       "https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/": {},
       "https://www.w3.org/TR/DOM-Level-3-Core/": {},
       "https://www.w3.org/TR/html401/": {},
@@ -223,21 +212,22 @@
       "https://www.w3.org/TR/xml-names11/": {},
       "https://www.w3.org/TR/xml/": {},
       "https://www.w3.org/groups/wg/webapps": {},
-      "https://www.w3.org/html/wg/drafts/html/master/": {}
+      "https://www.w3.org/html/wg/drafts/html/master/": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "concept-event",
+          "concept-event-listener",
+          "concept-event-dispatch",
           "eventtarget",
-          "dom-eventtarget-dispatchevent",
-          "dom-event-bubbles",
-          "dom-event-stoppropagation",
-          "dom-event-preventdefault",
-          "dom-event-cancelable",
-          "dom-event-defaultprevented",
-          "dom-document-createevent",
-          "dom-event-initevent",
-          "dom-event-istrusted",
           "event",
           "dom-event-none",
           "dom-event-capturing_phase",
@@ -247,25 +237,41 @@
           "dom-event-target",
           "dom-event-currenttarget",
           "dom-event-eventphase",
+          "dom-event-bubbles",
+          "dom-event-cancelable",
           "dom-event-composed",
           "dom-event-timestamp",
+          "dom-event-defaultprevented",
+          "dom-event-istrusted",
+          "dom-event-stoppropagation",
           "dom-event-stopimmediatepropagation",
+          "dom-event-preventdefault",
+          "dom-event-initevent",
           "customevent",
           "dom-customevent-initcustomevent",
           "dom-customevent-detail",
           "dom-eventtarget-addeventlistener",
           "dom-eventtarget-removeeventlistener",
+          "dom-eventtarget-dispatchevent",
           "callbackdef-eventlistener",
           "dom-eventlistener-handleevent",
           "document",
+          "dom-document-createevent",
           "event-target",
+          "eventtarget-activation-behavior",
           "dictdef-eventinit",
           "concept-event-initialize",
           "concept-node-document",
           "concept-tree-ancestor",
           "element",
           "concept-event-create",
-          "node"
+          "node",
+          "concept-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-3/": {
+        "anchors": [
+          "window"
         ]
       },
       "https://drafts.csswg.org/css-position-3/": {
@@ -309,6 +315,11 @@
         "anchors": [
           "window",
           "windowproxy"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent"
         ]
       },
       "https://w3c.github.io/pointerlock/": {
