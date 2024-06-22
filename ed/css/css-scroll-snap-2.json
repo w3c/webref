@@ -60,25 +60,25 @@
     {
       "name": "scroll-start-target",
       "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target",
-      "value": "[ none | auto ]{1,2}",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
+      "value": "[ none | auto ]",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
       "computedValue": "see individual properties",
-      "animationType": "see individual properties",
+      "animationType": "none",
       "canonicalOrder": "per grammar",
       "values": [
         {
           "name": "none",
-          "prose": "Element is not a scroll-start-target.",
+          "prose": "The element is not an initial scroll target.",
           "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
-          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
+          "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
           "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
           "type": "value",
           "value": "auto"
@@ -304,138 +304,6 @@
         "scroll-start-block",
         "scrollStartBlock"
       ]
-    },
-    {
-      "name": "scroll-start-target-block",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-block",
-      "value": "auto | none",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "either of the keywords \"none\" or \"auto\"",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "logicalPropertyGroup": "scroll-start-target",
-      "values": [
-        {
-          "name": "none",
-          "prose": "Element is not a scroll-start-target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "auto",
-          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
-      "styleDeclaration": [
-        "scroll-start-target-block",
-        "scrollStartTargetBlock"
-      ]
-    },
-    {
-      "name": "scroll-start-target-inline",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-inline",
-      "value": "auto | none",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "either of the keywords \"none\" or \"auto\"",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "logicalPropertyGroup": "scroll-start-target",
-      "values": [
-        {
-          "name": "none",
-          "prose": "Element is not a scroll-start-target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "auto",
-          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
-      "styleDeclaration": [
-        "scroll-start-target-inline",
-        "scrollStartTargetInline"
-      ]
-    },
-    {
-      "name": "scroll-start-target-x",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-x",
-      "value": "none | auto",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "either of the keywords \"none\" or \"auto\"",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "logicalPropertyGroup": "scroll-start-target",
-      "values": [
-        {
-          "name": "none",
-          "prose": "Element is not a scroll-start-target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "auto",
-          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
-      "styleDeclaration": [
-        "scroll-start-target-x",
-        "scrollStartTargetX"
-      ]
-    },
-    {
-      "name": "scroll-start-target-y",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-y",
-      "value": "none | auto",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "either of the keywords \"none\" or \"auto\"",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "logicalPropertyGroup": "scroll-start-target",
-      "values": [
-        {
-          "name": "none",
-          "prose": "Element is not a scroll-start-target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "auto",
-          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-          "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
-      "styleDeclaration": [
-        "scroll-start-target-y",
-        "scrollStartTargetY"
-      ]
     }
   ],
   "atrules": [],
@@ -466,5 +334,79 @@
       "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped-block"
     }
   ],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "none",
+      "prose": "The element is not an initial scroll target.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
+      "type": "value",
+      "value": "none",
+      "for": "scroll-start-target-block"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "none",
+      "prose": "The element is not an initial scroll target.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
+      "type": "value",
+      "value": "none",
+      "for": "scroll-start-target-inline"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "none",
+      "prose": "The element is not an initial scroll target.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
+      "type": "value",
+      "value": "none",
+      "for": "scroll-start-target-x"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "none",
+      "prose": "The element is not an initial scroll target.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-none",
+      "type": "value",
+      "value": "none",
+      "for": "scroll-start-target-y"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "scroll-start-target-block"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "scroll-start-target-inline"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "scroll-start-target-x"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The element is potentially an initial scroll target for its nearest scroll container ancestor.",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-start-target-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "scroll-start-target-y"
+    }
+  ]
 }

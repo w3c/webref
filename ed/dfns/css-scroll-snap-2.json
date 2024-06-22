@@ -124,6 +124,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "initial-scroll-target",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#initial-scroll-target",
+      "linkingText": [
+        "Initial scroll target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initial-scroll-target",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#initial-scroll-target",
+        "title": "Initial scroll target",
+        "number": "3.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "propdef-scroll-start-target",
       "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target",
       "linkingText": [
@@ -135,10 +154,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-start-target",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target",
-        "title": "The scroll-start-target property",
-        "number": "3.2"
+        "id": "scroll-start-target-shorthand",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-shorthand",
+        "title": "The scroll-start-target shorthand",
+        "number": "3.2.2"
       },
       "definedIn": "table"
     },
@@ -152,18 +171,18 @@
       "type": "value",
       "for": [
         "scroll-start-target",
-        "scroll-start-target-x",
-        "scroll-start-target-y",
         "scroll-start-target-block",
-        "scroll-start-target-inline"
+        "scroll-start-target-inline",
+        "scroll-start-target-x",
+        "scroll-start-target-y"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-start-target",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target",
-        "title": "The scroll-start-target property",
-        "number": "3.2"
+        "id": "scroll-start-target-shorthand",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-shorthand",
+        "title": "The scroll-start-target shorthand",
+        "number": "3.2.2"
       },
       "definedIn": "dt"
     },
@@ -177,18 +196,18 @@
       "type": "value",
       "for": [
         "scroll-start-target",
-        "scroll-start-target-x",
-        "scroll-start-target-y",
         "scroll-start-target-block",
-        "scroll-start-target-inline"
+        "scroll-start-target-inline",
+        "scroll-start-target-x",
+        "scroll-start-target-y"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-start-target",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target",
-        "title": "The scroll-start-target property",
-        "number": "3.2"
+        "id": "scroll-start-target-shorthand",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-shorthand",
+        "title": "The scroll-start-target shorthand",
+        "number": "3.2.2"
       },
       "definedIn": "dt"
     },
@@ -288,44 +307,63 @@
       "definedIn": "dt"
     },
     {
-      "id": "eventdef-scrollsnapchange-scrollsnapchange",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#eventdef-scrollsnapchange-scrollsnapchange",
+      "id": "snap-target",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#snap-target",
+      "linkingText": [
+        "snap target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapTarget",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapTarget",
+        "title": "Snap Targets",
+        "number": "5.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-snapevent-scrollsnapchange",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange",
       "linkingText": [
         "scrollsnapchange"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "scrollsnapchange"
+        "SnapEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrollsnapchange-and-scrollsnapchanging",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging",
-        "title": "scrollsnapchange and scrollsnapchanging",
-        "number": "5.1"
+        "id": "snapTarget",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapTarget",
+        "title": "Snap Targets",
+        "number": "5.1.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-scrollsnapchanging-scrollsnapchanging",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#eventdef-scrollsnapchanging-scrollsnapchanging",
+      "id": "eventdef-snapevent-scrollsnapchanging",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchanging",
       "linkingText": [
         "scrollsnapchanging"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "scrollsnapchanging"
+        "SnapEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrollsnapchange-and-scrollsnapchanging",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging",
-        "title": "scrollsnapchange and scrollsnapchanging",
-        "number": "5.1"
+        "id": "snapTarget",
+        "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapTarget",
+        "title": "Snap Targets",
+        "number": "5.1.1"
       },
       "definedIn": "table"
     },
@@ -346,7 +384,7 @@
         "id": "scrollsnapchange",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
         "title": "scrollsnapchange",
-        "number": "5.1.1"
+        "number": "5.1.2"
       },
       "definedIn": "prose"
     },
@@ -365,7 +403,7 @@
         "id": "scrollsnapchange",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
         "title": "scrollsnapchange",
-        "number": "5.1.1"
+        "number": "5.1.2"
       },
       "definedIn": "prose"
     },
@@ -384,7 +422,7 @@
         "id": "scrollsnapchange",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
         "title": "scrollsnapchange",
-        "number": "5.1.1"
+        "number": "5.1.2"
       },
       "definedIn": "prose"
     },
@@ -405,26 +443,28 @@
         "id": "scrollsnapchange",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
         "title": "scrollsnapchange",
-        "number": "5.1.1"
+        "number": "5.1.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dispatch-pending-scrollsnapchange-events",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dispatch-pending-scrollsnapchange-events",
+      "id": "document-dispatch-pending-scrollsnapchange-events",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchange-events",
       "linkingText": [
         "dispatch pending scrollsnapchange events"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scrollsnapchange",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
         "title": "scrollsnapchange",
-        "number": "5.1.1"
+        "number": "5.1.2"
       },
       "definedIn": "prose"
     },
@@ -437,13 +477,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
@@ -464,15 +504,15 @@
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "scrollsnapchangingtargetblock",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangingtargetblock",
+      "id": "scrollsnapchanging-block-axis-target",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target",
       "linkingText": [
-        "scrollsnapchangingTargetBlock"
+        "scrollsnapchanging block-axis target"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -483,15 +523,15 @@
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "scrollsnapchangingtargetinline",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangingtargetinline",
+      "id": "scrollsnapchanging-inline-axis-target",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target",
       "linkingText": [
-        "scrollsnapchangingTargetInline"
+        "scrollsnapchanging inline-axis target"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -502,7 +542,7 @@
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
@@ -523,26 +563,28 @@
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dispatch-pending-scrollsnapchanging-events",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dispatch-pending-scrollsnapchanging-events",
+      "id": "document-dispatch-pending-scrollsnapchanging-events",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchanging-events",
       "linkingText": [
         "dispatch pending scrollsnapchanging events"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scrollsnapchanging",
         "href": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
         "title": "scrollsnapchanging",
-        "number": "5.1.2"
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
@@ -813,82 +855,10 @@
       "definedIn": "table"
     },
     {
-      "id": "propdef-scroll-start-target-block",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-block",
+      "id": "dom-document-onscrollsnapchange",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-document-onscrollsnapchange",
       "linkingText": [
-        "scroll-start-target-block"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll-start-target-longhands-logical",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-longhands-logical",
-        "title": "Flow-relative Longhands for scroll-start-target"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "propdef-scroll-start-target-inline",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-inline",
-      "linkingText": [
-        "scroll-start-target-inline"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll-start-target-longhands-logical",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-longhands-logical",
-        "title": "Flow-relative Longhands for scroll-start-target"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "propdef-scroll-start-target-x",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-x",
-      "linkingText": [
-        "scroll-start-target-x"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll-start-target-longhands-physical",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-longhands-physical",
-        "title": "Physical Longhands for scroll-start-target"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "propdef-scroll-start-target-y",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-start-target-y",
-      "linkingText": [
-        "scroll-start-target-y"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll-start-target-longhands-physical",
-        "href": "https://drafts.csswg.org/css-scroll-snap-2/#scroll-start-target-longhands-physical",
-        "title": "Physical Longhands for scroll-start-target"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-document-onsnapchanged",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-document-onsnapchanged",
-      "linkingText": [
-        "onsnapchanged"
+        "onscrollsnapchange"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -907,10 +877,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-document-onsnapchanging",
-      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-document-onsnapchanging",
+      "id": "dom-document-onscrollsnapchanging",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#dom-document-onscrollsnapchanging",
       "linkingText": [
-        "onsnapchanging"
+        "onscrollsnapchanging"
       ],
       "localLinkingText": [],
       "type": "attribute",

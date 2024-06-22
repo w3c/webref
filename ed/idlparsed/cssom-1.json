@@ -1399,7 +1399,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#cssgroupingrule"
       },
       "CSSPageDescriptors": {
-        "fragment": "[Exposed=Window]\ninterface CSSPageDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString margin;\n  attribute [LegacyNullToEmptyString] CSSOMString marginTop;\n  attribute [LegacyNullToEmptyString] CSSOMString marginRight;\n  attribute [LegacyNullToEmptyString] CSSOMString marginBottom;\n  attribute [LegacyNullToEmptyString] CSSOMString marginLeft;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-top;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-right;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-bottom;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-left;\n  attribute [LegacyNullToEmptyString] CSSOMString size;\n  attribute [LegacyNullToEmptyString] CSSOMString marks;\n  attribute [LegacyNullToEmptyString] CSSOMString bleed;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSPageDescriptors : CSSStyleDeclaration {\n  attribute [LegacyNullToEmptyString] CSSOMString margin;\n  attribute [LegacyNullToEmptyString] CSSOMString marginTop;\n  attribute [LegacyNullToEmptyString] CSSOMString marginRight;\n  attribute [LegacyNullToEmptyString] CSSOMString marginBottom;\n  attribute [LegacyNullToEmptyString] CSSOMString marginLeft;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-top;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-right;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-bottom;\n  attribute [LegacyNullToEmptyString] CSSOMString margin-left;\n  attribute [LegacyNullToEmptyString] CSSOMString size;\n  attribute [LegacyNullToEmptyString] CSSOMString orientation;\n  attribute [LegacyNullToEmptyString] CSSOMString marks;\n  attribute [LegacyNullToEmptyString] CSSOMString bleed;\n};",
         "type": "interface",
         "name": "CSSPageDescriptors",
         "inheritance": "CSSStyleDeclaration",
@@ -1633,6 +1633,29 @@
             "special": "",
             "readonly": false,
             "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-size"
+          },
+          {
+            "type": "attribute",
+            "name": "orientation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/cssom-1/#dom-csspagedescriptors-orientation"
           },
           {
             "type": "attribute",
