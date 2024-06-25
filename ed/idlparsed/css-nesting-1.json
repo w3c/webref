@@ -8,16 +8,16 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSNestRule"
+          "CSSNestedDeclarations"
         ]
       }
     },
     "idlNames": {
-      "CSSNestRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSNestRule : CSSGroupingRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
+      "CSSNestedDeclarations": {
+        "fragment": "[Exposed=Window]\ninterface CSSNestedDeclarations : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
         "type": "interface",
-        "name": "CSSNestRule",
-        "inheritance": "CSSGroupingRule",
+        "name": "CSSNestedDeclarations",
+        "inheritance": "CSSRule",
         "members": [
           {
             "type": "attribute",
@@ -49,7 +49,7 @@
             ],
             "special": "",
             "readonly": true,
-            "href": "https://drafts.csswg.org/css-nesting-1/#dom-cssnestrule-style"
+            "href": "https://drafts.csswg.org/css-nesting-1/#dom-cssnesteddeclarations-style"
           }
         ],
         "extAttrs": [
@@ -64,24 +64,24 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-nesting-1/#cssnestrule"
+        "href": "https://drafts.csswg.org/css-nesting-1/#cssnesteddeclarations"
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSNestRule"
+        "CSSNestedDeclarations"
       ]
     },
     "dependencies": {
-      "CSSNestRule": [
-        "CSSGroupingRule",
+      "CSSNestedDeclarations": [
+        "CSSRule",
         "CSSStyleProperties"
       ]
     },
     "externalDependencies": [
-      "CSSGroupingRule",
+      "CSSRule",
       "CSSStyleProperties"
     ],
     "hasObsoleteIdl": false

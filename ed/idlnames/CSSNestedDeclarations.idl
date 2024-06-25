@@ -1,5 +1,5 @@
 // Source: CSS Nesting Module (https://www.w3.org/TR/css-nesting-1/)
 [Exposed=Window]
-interface CSSNestRule : CSSGroupingRule {
+interface CSSNestedDeclarations : CSSRule {
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;
 };
