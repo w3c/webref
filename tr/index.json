@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-25T01:33:16.564Z",
+  "date": "2024-06-26T01:47:01.243Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -39,6 +39,7 @@
       "css-images-5",
       "css-link-params-1",
       "css-multicol-2",
+      "css-overflow-5",
       "css-page-4",
       "css-position-4",
       "css-scroll-snap-2",
@@ -141,6 +142,7 @@
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
+      "tc39-promise-try",
       "tc39-promise-with-resolvers",
       "tc39-regexp-modifiers",
       "tc39-set-methods",
@@ -210,6 +212,7 @@
       "file-system-access",
       "first-party-sets",
       "get-installed-related-apps",
+      "handwriting-recognition",
       "idle-detection",
       "ink-enhancement",
       "input-device-capabilities",
@@ -296,6 +299,7 @@
       "rfc9113",
       "rfc9114",
       "rfc9163",
+      "rfc9218",
       "rfc9530",
       "promises-guide",
       "w3c-patent-policy",
@@ -643,7 +647,7 @@
     "crawled": 316,
     "errors": 0
   },
-  "crawler": "reffy-16.0.2",
+  "crawler": "reffy-16.0.4",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -689,7 +693,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "25 June 2024",
+      "date": "26 June 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -1382,7 +1386,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/change-password-url/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -3564,11 +3568,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-contain-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 21 Oct 2022 19:17:44 GMT"
+        "lastModified": "Fri, 21 Jun 2024 13:45:40 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 October 2022",
-      "revision": "38d701b9a048dcd6d5d8b452b8014bde67cb05e7",
+      "date": "25 June 2024",
+      "revision": "c940f1f95a3dec945d7a4562046b2892e9b931dc",
       "links": "links/css-contain-1.json",
       "refs": "refs/css-contain-1.json",
       "dfns": "dfns/css-contain-1.json",
@@ -5385,6 +5389,7 @@
       },
       "seriesVersion": "4",
       "seriesPrevious": "css-overflow-3",
+      "seriesNext": "css-overflow-5",
       "organization": "W3C",
       "groups": [
         {
@@ -8421,7 +8426,6 @@
           "https://w3c.github.io/csswg-drafts/css2/"
         ],
         "repository": "https://github.com/w3c/csswg-drafts",
-        "pages": [],
         "filename": "index.html"
       },
       "seriesPrevious": "CSS2",
@@ -8908,7 +8912,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -8968,7 +8972,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9804,16 +9808,20 @@
       "series": {
         "shortname": "geolocation",
         "currentSpecification": "geolocation",
-        "title": "Geolocation API",
-        "shortTitle": "Geolocation API",
+        "title": "Geolocation",
+        "shortTitle": "Geolocation",
         "releaseUrl": "https://www.w3.org/TR/geolocation/",
-        "nightlyUrl": "https://w3c.github.io/geolocation-api/"
+        "nightlyUrl": "https://w3c.github.io/geolocation/"
       },
       "organization": "W3C",
       "groups": [
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
+        },
+        {
+          "name": "Web Applications Working Group",
+          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -9822,29 +9830,23 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/geolocation-api/",
+        "url": "https://w3c.github.io/geolocation/",
         "status": "Editor's Draft",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/geolocation-api",
+        "repository": "https://github.com/w3c/geolocation",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Geolocation",
       "source": "w3c",
-      "shortTitle": "Geolocation API",
+      "shortTitle": "Geolocation",
       "categories": [
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "geolocation-API"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/geolocation/",
-        "https://w3c.github.io/geolocation-api/"
+        "https://w3c.github.io/geolocation/"
       ],
       "crawled": "https://www.w3.org/TR/geolocation/",
       "crawlCacheInfo": {
@@ -16787,7 +16789,7 @@
       },
       "release": {
         "url": "https://www.w3.org/TR/trusted-types/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "index.html"
       },
       "organization": "W3C",
@@ -19239,11 +19241,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Jun 2024 01:43:48 GMT"
+        "lastModified": "Wed, 26 Jun 2024 01:45:42 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 June 2024",
-      "revision": "5c64074c544e8a6853a760fa258790f7b13e0bdc",
+      "date": "26 June 2024",
+      "revision": "f7ceef99db8c727946a04634f2c2ef8f811cf260",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20376,11 +20378,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Jun 2024 23:56:29 GMT"
+        "lastModified": "Tue, 25 Jun 2024 18:49:14 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2024",
-      "revision": "daaf4ed76b8fb780c4f609ddc25fe271dfcb4702",
+      "date": "25 June 2024",
+      "revision": "b1cc2ac7dc0aee36a76ad8d9cd0fc35f0979ef4d",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
