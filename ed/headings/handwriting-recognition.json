@@ -1,0 +1,278 @@
+{
+  "spec": {
+    "title": "Handwriting Recognition API",
+    "url": "https://wicg.github.io/handwriting-recognition/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/handwriting-recognition/#title",
+      "level": 1,
+      "title": "Handwriting Recognition API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/handwriting-recognition/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/handwriting-recognition/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/handwriting-recognition/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/handwriting-recognition/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "introduction-handwriting",
+      "href": "https://wicg.github.io/handwriting-recognition/#introduction-handwriting",
+      "level": 2,
+      "title": "Definitions",
+      "number": "2"
+    },
+    {
+      "id": "api-query",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-query",
+      "level": 2,
+      "title": "Feature Query",
+      "number": "3"
+    },
+    {
+      "id": "api-query-handwriting-recognizer",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-query-handwriting-recognizer",
+      "level": 3,
+      "title": "queryHandwritingRecognizer(constraint)",
+      "number": "3.1"
+    },
+    {
+      "id": "api-handwriting-model-constraint",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-handwriting-model-constraint",
+      "level": 3,
+      "title": "HandwritingModelConstraint attributes",
+      "number": "3.2"
+    },
+    {
+      "id": "api-handwriting-recognizer-query-result",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-handwriting-recognizer-query-result",
+      "level": 3,
+      "title": "HandwritingRecognizerQueryResult attributes",
+      "number": "3.3"
+    },
+    {
+      "id": "api-handwriting-hints-query-result",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-handwriting-hints-query-result",
+      "level": 4,
+      "title": "HandwritingHintsQueryResult attributes",
+      "number": "3.3.1"
+    },
+    {
+      "id": "create-a-handwriting-recognizer",
+      "href": "https://wicg.github.io/handwriting-recognition/#create-a-handwriting-recognizer",
+      "level": 2,
+      "title": "Create a handwriting recognizer",
+      "number": "4"
+    },
+    {
+      "id": "api-create-handwriting-recognizer",
+      "href": "https://wicg.github.io/handwriting-recognition/#api-create-handwriting-recognizer",
+      "level": 3,
+      "title": "createHandwritingRecognizer(constraint) method",
+      "number": "4.1"
+    },
+    {
+      "id": "using-a-recognizer",
+      "href": "https://wicg.github.io/handwriting-recognition/#using-a-recognizer",
+      "level": 2,
+      "title": "Use a recognizer",
+      "number": "5"
+    },
+    {
+      "id": "handwriting-recognizer-object",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-recognizer-object",
+      "level": 3,
+      "title": "HandwritingRecognizer object",
+      "number": "5.1"
+    },
+    {
+      "id": "handwriting-recognizer-create-drawing",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-recognizer-create-drawing",
+      "level": 3,
+      "title": "startDrawing(hints)",
+      "number": "5.2"
+    },
+    {
+      "id": "handwriting-recognizer-finish",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-recognizer-finish",
+      "level": 3,
+      "title": "finish()",
+      "number": "5.3"
+    },
+    {
+      "id": "handwriting-drawing",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing",
+      "level": 2,
+      "title": "Build a HandwritingDrawing",
+      "number": "6"
+    },
+    {
+      "id": "handwriting-stroke",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-stroke",
+      "level": 3,
+      "title": "HandwritingStroke",
+      "number": "6.1"
+    },
+    {
+      "id": "handwriting-stroke-constructor",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-stroke-constructor",
+      "level": 4,
+      "title": "HandwritingStroke()",
+      "number": "6.1.1"
+    },
+    {
+      "id": "handwriting-stroke-add-point",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-stroke-add-point",
+      "level": 4,
+      "title": "addPoint(point)",
+      "number": "6.1.2"
+    },
+    {
+      "id": "handwriting-stroke-get-points",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-stroke-get-points",
+      "level": 4,
+      "title": "getPoints()",
+      "number": "6.1.3"
+    },
+    {
+      "id": "handwriting-stroke-clear",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-stroke-clear",
+      "level": 4,
+      "title": "clear()",
+      "number": "6.1.4"
+    },
+    {
+      "id": "handwriting-drawing-stroke-methods",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-stroke-methods",
+      "level": 3,
+      "title": "HandwritingDrawing",
+      "number": "6.2"
+    },
+    {
+      "id": "handwriting-drawing-add-stroke",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-add-stroke",
+      "level": 4,
+      "title": "addStroke(stroke)",
+      "number": "6.2.1"
+    },
+    {
+      "id": "handwriting-drawing-remove-stroke",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-remove-stroke",
+      "level": 4,
+      "title": "removeStroke(stroke)",
+      "number": "6.2.2"
+    },
+    {
+      "id": "handwriting-drawing-get-strokes",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-get-strokes",
+      "level": 4,
+      "title": "getStrokes()",
+      "number": "6.2.3"
+    },
+    {
+      "id": "handwriting-drawing-clear",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-clear",
+      "level": 4,
+      "title": "clear()",
+      "number": "6.2.4"
+    },
+    {
+      "id": "get-predictions-of-a-drawing",
+      "href": "https://wicg.github.io/handwriting-recognition/#get-predictions-of-a-drawing",
+      "level": 2,
+      "title": "Get predictions of a HandwritingDrawing",
+      "number": "7"
+    },
+    {
+      "id": "handwriting-drawing-get-prediction",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-get-prediction",
+      "level": 3,
+      "title": "getPrediction()",
+      "number": "7.1"
+    },
+    {
+      "id": "handwriting-prediction",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-prediction",
+      "level": 3,
+      "title": "HandwritingPrediction attributes",
+      "number": "7.2"
+    },
+    {
+      "id": "handwriting-segment",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-segment",
+      "level": 4,
+      "title": "HandwritingSegment attributes",
+      "number": "7.2.1"
+    },
+    {
+      "id": "handwriting-drawing-segment",
+      "href": "https://wicg.github.io/handwriting-recognition/#handwriting-drawing-segment",
+      "level": 4,
+      "title": "HandwritingDrawingSegment attributes",
+      "number": "7.2.2"
+    },
+    {
+      "id": "privacy consideration",
+      "href": "https://wicg.github.io/handwriting-recognition/#privacy%20consideration",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/handwriting-recognition/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/handwriting-recognition/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/handwriting-recognition/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/handwriting-recognition/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/handwriting-recognition/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/handwriting-recognition/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

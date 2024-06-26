@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-25T18:44:10.095Z",
+  "date": "2024-06-26T00:59:45.206Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -38,6 +38,7 @@
       "css-images-5",
       "css-link-params-1",
       "css-multicol-2",
+      "css-overflow-5",
       "css-page-4",
       "css-position-4",
       "css-scroll-snap-2",
@@ -140,6 +141,7 @@
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
+      "tc39-promise-try",
       "tc39-promise-with-resolvers",
       "tc39-regexp-modifiers",
       "tc39-set-methods",
@@ -209,6 +211,7 @@
       "file-system-access",
       "first-party-sets",
       "get-installed-related-apps",
+      "handwriting-recognition",
       "idle-detection",
       "ink-enhancement",
       "input-device-capabilities",
@@ -295,6 +298,7 @@
       "rfc9113",
       "rfc9114",
       "rfc9163",
+      "rfc9218",
       "rfc9530",
       "promises-guide",
       "w3c-patent-policy",
@@ -648,10 +652,10 @@
     ]
   },
   "stats": {
-    "crawled": 619,
+    "crawled": 623,
     "errors": 0
   },
-  "crawler": "reffy-16.0.2",
+  "crawler": "reffy-16.0.4",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1061,9 +1065,9 @@
       "series": {
         "shortname": "compression",
         "currentSpecification": "compression",
-        "title": "Compression Streams",
-        "shortTitle": "Compression Streams",
-        "nightlyUrl": "https://wicg.github.io/compression/"
+        "title": "Compression Standard",
+        "shortTitle": "Compression",
+        "nightlyUrl": "https://compression.spec.whatwg.org/"
       },
       "organization": "WHATWG",
       "groups": [
@@ -1073,29 +1077,22 @@
         }
       ],
       "nightly": {
-        "url": "https://wicg.github.io/compression/",
-        "status": "Draft Community Group Report",
+        "url": "https://compression.spec.whatwg.org/",
+        "status": "Living Standard",
         "alternateUrls": [],
-        "repository": "https://github.com/WICG/compression",
+        "repository": "https://github.com/whatwg/compression",
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Compression Standard",
       "source": "specref",
-      "shortTitle": "Compression Streams",
+      "shortTitle": "Compression",
       "categories": [
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "compression"
-        ]
-      },
       "versions": [
-        "https://compression.spec.whatwg.org/",
-        "https://wicg.github.io/compression/"
+        "https://compression.spec.whatwg.org/"
       ],
       "crawled": "https://compression.spec.whatwg.org/",
       "crawlCacheInfo": {
@@ -2395,6 +2392,67 @@
       "dfns": "dfns/css-multicol-2.json",
       "headings": "headings/css-multicol-2.json",
       "ids": "ids/css-multicol-2.json"
+    },
+    {
+      "url": "https://drafts.csswg.org/css-overflow-5/",
+      "seriesComposition": "full",
+      "shortname": "css-overflow-5",
+      "series": {
+        "shortname": "css-overflow",
+        "currentSpecification": "css-overflow-3",
+        "title": "CSS Overflow",
+        "shortTitle": "CSS Overflow",
+        "releaseUrl": "https://www.w3.org/TR/css-overflow/",
+        "nightlyUrl": "https://drafts.csswg.org/css-overflow/"
+      },
+      "seriesVersion": "5",
+      "seriesPrevious": "css-overflow-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-overflow-5/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-overflow-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-overflow-5/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Overflow Module Level 5",
+      "source": "spec",
+      "shortTitle": "CSS Overflow 5",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overflow"
+        ]
+      },
+      "versions": [
+        "https://drafts.csswg.org/css-overflow-5/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-overflow-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 25 Jun 2024 16:04:57 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 June 2024",
+      "revision": "e4ba2807d3c1a76cff46cd47ca5a1f9cdfc6e96b",
+      "links": "links/css-overflow-5.json",
+      "refs": "refs/css-overflow-5.json",
+      "css": "css/css-overflow.json",
+      "dfns": "dfns/css-overflow-5.json",
+      "headings": "headings/css-overflow-5.json",
+      "ids": "ids/css-overflow-5.json"
     },
     {
       "url": "https://drafts.csswg.org/css-page-4/",
@@ -7730,6 +7788,51 @@
       "ids": "ids/tc39-json-parse-with-source.json"
     },
     {
+      "url": "https://tc39.es/proposal-promise-try/",
+      "seriesComposition": "full",
+      "shortname": "tc39-promise-try",
+      "series": {
+        "shortname": "tc39-promise-try",
+        "currentSpecification": "tc39-promise-try",
+        "title": "Promise.try",
+        "shortTitle": "Promise.try",
+        "nightlyUrl": "https://tc39.es/proposal-promise-try/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-promise-try/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-promise-try",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Promise.try",
+      "source": "spec",
+      "shortTitle": "Promise.try",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-promise-try/"
+      ],
+      "crawled": "https://tc39.es/proposal-promise-try/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 02 Jun 2024 17:49:06 GMT"
+      },
+      "date": "2 June 2024",
+      "links": "links/tc39-promise-try.json",
+      "headings": "headings/tc39-promise-try.json",
+      "ids": "ids/tc39-promise-try.json"
+    },
+    {
       "url": "https://tc39.es/proposal-promise-with-resolvers/",
       "seriesComposition": "full",
       "shortname": "tc39-promise-with-resolvers",
@@ -7857,9 +7960,9 @@
       ],
       "crawled": "https://tc39.es/proposal-set-methods/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 12 May 2024 19:32:07 GMT"
+        "lastModified": "Tue, 25 Jun 2024 19:21:53 GMT"
       },
-      "date": "12 May 2024",
+      "date": "25 June 2024",
       "links": "links/tc39-set-methods.json",
       "headings": "headings/tc39-set-methods.json",
       "ids": "ids/tc39-set-methods.json"
@@ -8040,11 +8143,11 @@
       ],
       "crawled": "https://tc39.es/source-map",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Jun 2024 09:59:20 GMT"
+        "lastModified": "Tue, 25 Jun 2024 15:51:35 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 June 2024",
-      "revision": "47b859a2ed6bcd5b60d044654151945096e0c41b",
+      "date": "25 June 2024",
+      "revision": "7b28d726f26b411bdb3572ccff050c1e3604ee9d",
       "links": "links/sourcemap.json",
       "refs": "refs/sourcemap.json",
       "dfns": "dfns/sourcemap.json",
@@ -10729,10 +10832,10 @@
       ],
       "crawled": "https://wicg.github.io/digital-credentials",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 21 Jun 2024 17:44:56 GMT"
+        "lastModified": "Sat, 22 Jun 2024 16:21:30 GMT"
       },
       "generator": "respec",
-      "date": "21 June 2024",
+      "date": "22 June 2024",
       "links": "links/digital-identities.json",
       "refs": "refs/digital-identities.json",
       "idl": "idl/digital-identities.idl",
@@ -10796,7 +10899,7 @@
       "series": {
         "shortname": "document-picture-in-picture",
         "currentSpecification": "document-picture-in-picture",
-        "title": "Document Picture-in-Picture Specification",
+        "title": "Document Picture-in-Picture",
         "shortTitle": "Document Picture-in-Picture",
         "nightlyUrl": "https://wicg.github.io/document-picture-in-picture/"
       },
@@ -10816,7 +10919,7 @@
         "filename": "index.html"
       },
       "title": "Document Picture-in-Picture Specification",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "Document Picture-in-Picture",
       "categories": [
         "browser"
@@ -11270,6 +11373,55 @@
       "dfns": "dfns/get-installed-related-apps.json",
       "headings": "headings/get-installed-related-apps.json",
       "ids": "ids/get-installed-related-apps.json"
+    },
+    {
+      "url": "https://wicg.github.io/handwriting-recognition/",
+      "seriesComposition": "full",
+      "shortname": "handwriting-recognition",
+      "series": {
+        "shortname": "handwriting-recognition",
+        "currentSpecification": "handwriting-recognition",
+        "title": "Handwriting Recognition API",
+        "shortTitle": "Handwriting Recognition API",
+        "nightlyUrl": "https://wicg.github.io/handwriting-recognition/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/handwriting-recognition/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/handwriting-recognition",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Handwriting Recognition API",
+      "source": "spec",
+      "shortTitle": "Handwriting Recognition API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/handwriting-recognition/"
+      ],
+      "crawled": "https://wicg.github.io/handwriting-recognition/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 24 Jun 2024 14:23:10 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "24 June 2024",
+      "links": "links/handwriting-recognition.json",
+      "refs": "refs/handwriting-recognition.json",
+      "idl": "idl/handwriting-recognition.idl",
+      "dfns": "dfns/handwriting-recognition.json",
+      "headings": "headings/handwriting-recognition.json",
+      "ids": "ids/handwriting-recognition.json"
     },
     {
       "url": "https://wicg.github.io/idle-detection/",
@@ -14675,9 +14827,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Jun 2024 12:40:28 GMT"
+        "lastModified": "Wed, 26 Jun 2024 00:46:26 GMT"
       },
-      "date": "25 June 2024",
+      "date": "26 June 2024",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -15010,9 +15162,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7932",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Jun 2024 02:47:34 GMT"
+        "lastModified": "Wed, 26 Jun 2024 00:05:42 GMT"
       },
-      "date": "25 June 2024",
+      "date": "26 June 2024",
       "links": "links/rfc7932.json",
       "ids": "ids/rfc7932.json"
     },
@@ -15602,13 +15754,63 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Jun 2024 12:40:31 GMT"
+        "lastModified": "Wed, 26 Jun 2024 00:47:27 GMT"
       },
-      "date": "25 June 2024",
+      "date": "26 June 2024",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
       "ids": "ids/rfc9163.json"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9218",
+      "seriesComposition": "full",
+      "shortname": "rfc9218",
+      "series": {
+        "shortname": "rfc9218",
+        "currentSpecification": "rfc9218",
+        "title": "Extensible Prioritization Scheme for HTTP",
+        "shortTitle": "Extensible Prioritization Scheme for HTTP",
+        "nightlyUrl": "https://httpwg.org/specs/rfc9218.html"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://httpwg.org/specs/rfc9218.html",
+        "status": "Proposed Standard",
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9218",
+          "https://tools.ietf.org/html/rfc9218"
+        ],
+        "repository": "https://github.com/httpwg/httpwg.github.io",
+        "sourcePath": "specs/rfc9218.xml",
+        "filename": "rfc9218.html"
+      },
+      "title": "RFC 9218 - Extensible Prioritization Scheme for HTTP",
+      "source": "ietf",
+      "shortTitle": "Extensible Prioritization Scheme for HTTP",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc9218",
+        "https://httpwg.org/specs/rfc9218.html"
+      ],
+      "crawled": "https://httpwg.org/specs/rfc9218.html",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 May 2024 19:16:09 GMT"
+      },
+      "date": "30 May 2024",
+      "links": "links/rfc9218.json",
+      "refs": "refs/rfc9218.json",
+      "headings": "headings/rfc9218.json",
+      "ids": "ids/rfc9218.json"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc9530",
@@ -16535,7 +16737,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/change-password-url/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -20528,7 +20730,6 @@
       "revision": "e4ba2807d3c1a76cff46cd47ca5a1f9cdfc6e96b",
       "links": "links/css-overflow-3.json",
       "refs": "refs/css-overflow-3.json",
-      "css": "css/css-overflow.json",
       "dfns": "dfns/css-overflow-3.json",
       "headings": "headings/css-overflow-3.json",
       "ids": "ids/css-overflow-3.json"
@@ -20547,6 +20748,7 @@
       },
       "seriesVersion": "4",
       "seriesPrevious": "css-overflow-3",
+      "seriesNext": "css-overflow-5",
       "organization": "W3C",
       "groups": [
         {
@@ -23592,7 +23794,6 @@
           "https://w3c.github.io/csswg-drafts/css2/"
         ],
         "repository": "https://github.com/w3c/csswg-drafts",
-        "pages": [],
         "filename": "index.html"
       },
       "seriesPrevious": "CSS2",
@@ -24082,7 +24283,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aam-1.1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24142,7 +24343,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dpub-aria-1.1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24976,16 +25177,20 @@
       "series": {
         "shortname": "geolocation",
         "currentSpecification": "geolocation",
-        "title": "Geolocation API",
-        "shortTitle": "Geolocation API",
+        "title": "Geolocation",
+        "shortTitle": "Geolocation",
         "releaseUrl": "https://www.w3.org/TR/geolocation/",
-        "nightlyUrl": "https://w3c.github.io/geolocation-api/"
+        "nightlyUrl": "https://w3c.github.io/geolocation/"
       },
       "organization": "W3C",
       "groups": [
         {
           "name": "Devices and Sensors Working Group",
           "url": "https://www.w3.org/das/"
+        },
+        {
+          "name": "Web Applications Working Group",
+          "url": "https://www.w3.org/groups/wg/webapps/"
         }
       ],
       "release": {
@@ -24994,29 +25199,23 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/geolocation-api/",
+        "url": "https://w3c.github.io/geolocation/",
         "status": "Editor's Draft",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/geolocation-api",
+        "repository": "https://github.com/w3c/geolocation",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Geolocation",
       "source": "w3c",
-      "shortTitle": "Geolocation API",
+      "shortTitle": "Geolocation",
       "categories": [
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "geolocation-API"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/geolocation/",
-        "https://w3c.github.io/geolocation-api/"
+        "https://w3c.github.io/geolocation/"
       ],
       "crawled": "https://w3c.github.io/geolocation/",
       "crawlCacheInfo": {
@@ -31922,7 +32121,7 @@
       },
       "release": {
         "url": "https://www.w3.org/TR/trusted-types/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "index.html"
       },
       "organization": "W3C",
@@ -34247,10 +34446,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Jun 2024 23:56:38 GMT"
+        "lastModified": "Tue, 25 Jun 2024 19:00:16 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2024",
+      "date": "25 June 2024",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -35510,10 +35709,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Jun 2024 23:56:38 GMT"
+        "lastModified": "Tue, 25 Jun 2024 19:00:16 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2024",
+      "date": "25 June 2024",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

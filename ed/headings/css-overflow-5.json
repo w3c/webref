@@ -1,0 +1,244 @@
+{
+  "spec": {
+    "title": "CSS Overflow Module Level 5",
+    "url": "https://drafts.csswg.org/css-overflow-5/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-overflow-5/#title",
+      "level": 1,
+      "title": "CSS Overflow Module Level 5"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-overflow-5/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-overflow-5/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-overflow-5/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-overflow-5/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scroll-marker-group",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-marker-group",
+      "level": 3,
+      "title": "Overflow Controls: the scroll-marker-group property and pseudo-elements",
+      "number": "1.1"
+    },
+    {
+      "id": "scroll-marker-group-pseudo",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-marker-group-pseudo",
+      "level": 4,
+      "title": "The ::scroll-marker-group pseudo-element",
+      "number": "1.1.1"
+    },
+    {
+      "id": "scroll-marker-pseudo",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-marker-pseudo",
+      "level": 4,
+      "title": "The ::scroll-marker pseudo-element",
+      "number": "1.1.2"
+    },
+    {
+      "id": "fragmentation",
+      "href": "https://drafts.csswg.org/css-overflow-5/#fragmentation",
+      "level": 2,
+      "title": "Redirection of Overflow",
+      "number": "A"
+    },
+    {
+      "id": "channelling-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-5/#channelling-overflow",
+      "level": 3,
+      "title": "Channeling Overflow: the continue property"
+    },
+    {
+      "id": "paginated-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-5/#paginated-overflow",
+      "level": 3,
+      "title": "Paginated overflow"
+    },
+    {
+      "id": "fragment-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-5/#fragment-overflow",
+      "level": 3,
+      "title": "Fragmented Overflow"
+    },
+    {
+      "id": "fragment-styling",
+      "href": "https://drafts.csswg.org/css-overflow-5/#fragment-styling",
+      "level": 3,
+      "title": "Fragment styling"
+    },
+    {
+      "id": "fragment-pseudo-element",
+      "href": "https://drafts.csswg.org/css-overflow-5/#fragment-pseudo-element",
+      "level": 4,
+      "title": "The ::nth-fragment() pseudo-element"
+    },
+    {
+      "id": "style-of-fragments",
+      "href": "https://drafts.csswg.org/css-overflow-5/#style-of-fragments",
+      "level": 4,
+      "title": "Styling of fragments"
+    },
+    {
+      "id": "style-in-fragments",
+      "href": "https://drafts.csswg.org/css-overflow-5/#style-in-fragments",
+      "level": 4,
+      "title": "Styling inside fragments"
+    },
+    {
+      "id": "scroll-navigation",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-navigation",
+      "level": 2,
+      "title": "Scroll navigation controls",
+      "number": "B"
+    },
+    {
+      "id": "scroll-target",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-target",
+      "level": 3,
+      "title": "scrolltarget attribute"
+    },
+    {
+      "id": "scroll-container-scroll",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-container-scroll",
+      "level": 4,
+      "title": "Scroll tracking"
+    },
+    {
+      "id": "scroll-target-focus",
+      "href": "https://drafts.csswg.org/css-overflow-5/#scroll-target-focus",
+      "level": 4,
+      "title": "Focus behavior"
+    },
+    {
+      "id": "privclass=nonum",
+      "href": "https://drafts.csswg.org/css-overflow-5/#privclass%3Dnonum",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "C"
+    },
+    {
+      "id": "sec",
+      "href": "https://drafts.csswg.org/css-overflow-5/#sec",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "D"
+    },
+    {
+      "id": "changes-l4",
+      "href": "https://drafts.csswg.org/css-overflow-5/#changes-l4",
+      "level": 3,
+      "title": "Changes Since Level 4"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-overflow-5/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-overflow-5/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-overflow-5/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-overflow-5/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-overflow-5/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-overflow-5/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-overflow-5/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-overflow-5/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-overflow-5/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-overflow-5/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
