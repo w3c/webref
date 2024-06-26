@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-06-26T06:40:29.092Z",
+  "date": "2024-06-26T12:46:43.924Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -653,7 +653,7 @@
   },
   "stats": {
     "crawled": 623,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-16.0.4",
   "results": [
@@ -13702,7 +13702,8 @@
       "refs": "refs/user-preference-media-features-headers.json",
       "dfns": "dfns/user-preference-media-features-headers.json",
       "headings": "headings/user-preference-media-features-headers.json",
-      "ids": "ids/user-preference-media-features-headers.json"
+      "ids": "ids/user-preference-media-features-headers.json",
+      "error": "Error: Loading https://wicg.github.io/user-preference-media-features-headers/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:489:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:349:22)\n    at async ThrottledQueue.runThrottled (/home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 248)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:370:21)"
     },
     {
       "url": "https://wicg.github.io/video-rvfc/",
@@ -14872,9 +14873,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Jun 2024 06:34:20 GMT"
+        "lastModified": "Wed, 26 Jun 2024 06:35:01 GMT"
       },
-      "date": "19 June 2024",
+      "date": "26 June 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -14917,9 +14918,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Jun 2024 05:20:49 GMT"
+        "lastModified": "Wed, 26 Jun 2024 08:08:30 GMT"
       },
-      "date": "19 June 2024",
+      "date": "26 June 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
