@@ -17,11 +17,6 @@
       "https://webassembly.github.io/spec/core/": {},
       "https://webassembly.github.io/spec/web-api/index.html": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://www.w3.org/2023/Process-20231103/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
       "https://www.w3.org/Consortium/Patent-Policy/": {
         "anchors": [
           "def-essential",
@@ -33,7 +28,13 @@
       "https://www.w3.org/TR/wasm-js-api/": {},
       "https://www.w3.org/TR/wasm-web-api/": {},
       "https://www.w3.org/groups/wg/wasm/": {},
-      "https://www.w3.org/groups/wg/wasm/ipr": {}
+      "https://www.w3.org/groups/wg/wasm/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {},
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://encoding.spec.whatwg.org/": {
@@ -72,6 +73,7 @@
           "list-append",
           "map-exists",
           "map-set",
+          "map-iterate",
           "list-size"
         ]
       },
@@ -117,6 +119,12 @@
           "sec-numerictorawbytes"
         ]
       },
+      "https://tc39.es/proposal-resizablearraybuffer/": {
+        "anchors": [
+          "sec-isfixedarraybuffer",
+          "sec-hostresizearraybuffer"
+        ]
+      },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
           "sec-native-error-types-used-in-this-standard-typeerror",
@@ -124,6 +132,7 @@
           "sec-ecmascript-data-types-and-values",
           "sec-arraybuffer-objects",
           "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-samevalue",
           "sec-built-in-function-objects",
           "current-realm",
           "%E2%84%A4",
@@ -145,6 +154,7 @@
           "embed-mem-alloc",
           "embed-mem-size",
           "embed-mem-grow",
+          "embed-mem-type",
           "embed-table-alloc",
           "embed-table-size",
           "embed-table-type",
@@ -195,6 +205,7 @@
           "values",
           "syntax-frame",
           "syntax-moduleinst",
+          "page-size",
           "table-instances",
           "global-instances",
           "syntax-hostfunc"

@@ -37,6 +37,7 @@
       "https://www.w3.org/TR/CSP2/": {},
       "https://www.w3.org/TR/CSP3/": {},
       "https://www.w3.org/TR/html5/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {},
       "https://www.w3.org/TR/permissions/": {},
       "https://www.w3.org/TR/reporting-1/": {},
       "https://www.w3.org/groups/wg/webappsec": {},
@@ -87,10 +88,10 @@
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
+          "same-origin",
           "same-origin-domain",
           "concept-origin-opaque",
           "ascii-serialisation-of-an-origin",
-          "same-origin",
           "sandboxed-origin-browsing-context-flag"
         ]
       },
@@ -113,10 +114,10 @@
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
-          "attr-iframe-sandbox",
-          "the-iframe-element",
-          "attr-iframe-allowfullscreen",
           "attr-iframe-allow",
+          "the-iframe-element",
+          "attr-iframe-sandbox",
+          "attr-iframe-allowfullscreen",
           "attr-iframe-src",
           "htmliframeelement",
           "attr-iframe-srcdoc"
@@ -180,6 +181,8 @@
           "idl-DOMString",
           "idl-sequence",
           "SameObject",
+          "Default",
+          "idl-object",
           "idl-long"
         ]
       },
@@ -189,6 +192,11 @@
           "match-url-to-source-expression",
           "grammardef-scheme-source",
           "grammardef-host-source"
+        ]
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dom-mediadevices-getusermedia"
         ]
       },
       "https://www.w3.org/TR/permissions/": {

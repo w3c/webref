@@ -23058,6 +23058,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-gpucanvastonemapping",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucanvastonemapping",
+      "linkingText": [
+        "GPUCanvasToneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucanvastonemapping-mode",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvastonemapping-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUCanvasToneMapping"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-gpucanvasconfiguration",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucanvasconfiguration",
       "linkingText": [
@@ -23182,6 +23222,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpucanvasconfiguration-tonemapping",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping",
+      "linkingText": [
+        "toneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUCanvasConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpucanvasconfiguration-alphamode",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-alphamode",
       "linkingText": [
@@ -23241,6 +23302,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "gpucanvastonemappingmode",
+      "href": "https://www.w3.org/TR/webgpu/#gpucanvastonemappingmode",
+      "linkingText": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://www.w3.org/TR/webgpu/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpucanvastonemappingmode-standard",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvastonemappingmode-standard",
+      "linkingText": [
+        "\"standard\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://www.w3.org/TR/webgpu/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpucanvastonemappingmode-extended",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvastonemappingmode-extended",
+      "linkingText": [
+        "\"extended\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://www.w3.org/TR/webgpu/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "gpucanvasalphamode",
       "href": "https://www.w3.org/TR/webgpu/#gpucanvasalphamode",
       "linkingText": [
@@ -23255,7 +23377,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://www.w3.org/TR/webgpu/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "heading"
     },
@@ -23276,7 +23398,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://www.w3.org/TR/webgpu/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "dt"
     },
@@ -23297,7 +23419,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://www.w3.org/TR/webgpu/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "dt"
     },
@@ -24191,6 +24313,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "abstract-opdef-compute",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-compute",
+      "linkingText": [
+        "compute"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "computing-operations",
+        "href": "https://www.w3.org/TR/webgpu/#computing-operations",
+        "title": "Computing",
+        "number": "23.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-render",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-render",
       "linkingText": [
@@ -24205,7 +24346,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "23.3"
+        "number": "23.2"
       },
       "definedIn": "prose"
     },
@@ -24224,7 +24365,7 @@
         "id": "index-resolution",
         "href": "https://www.w3.org/TR/webgpu/#index-resolution",
         "title": "Index Resolution",
-        "number": "23.3.1"
+        "number": "23.2.1"
       },
       "definedIn": "prose"
     },
@@ -24243,7 +24384,7 @@
         "id": "index-resolution",
         "href": "https://www.w3.org/TR/webgpu/#index-resolution",
         "title": "Index Resolution",
-        "number": "23.3.1"
+        "number": "23.2.1"
       },
       "definedIn": "prose"
     },
@@ -24262,7 +24403,7 @@
         "id": "vertex-processing",
         "href": "https://www.w3.org/TR/webgpu/#vertex-processing",
         "title": "Vertex Processing",
-        "number": "23.3.2"
+        "number": "23.2.2"
       },
       "definedIn": "prose"
     },
@@ -24281,7 +24422,7 @@
         "id": "primitive-assembly",
         "href": "https://www.w3.org/TR/webgpu/#primitive-assembly",
         "title": "Primitive Assembly",
-        "number": "23.3.3"
+        "number": "23.2.3"
       },
       "definedIn": "prose"
     },
@@ -24300,7 +24441,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24319,7 +24460,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24338,7 +24479,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24357,7 +24498,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24376,7 +24517,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24395,7 +24536,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24414,7 +24555,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24435,7 +24576,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24456,7 +24597,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24475,7 +24616,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24496,7 +24637,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24517,7 +24658,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24538,7 +24679,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24559,7 +24700,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24580,7 +24721,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24601,7 +24742,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24622,7 +24763,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24641,7 +24782,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24660,7 +24801,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24679,7 +24820,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24698,7 +24839,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24717,7 +24858,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24738,7 +24879,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24759,7 +24900,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24780,7 +24921,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24801,7 +24942,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24820,7 +24961,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24839,7 +24980,7 @@
         "id": "alpha-to-coverage",
         "href": "https://www.w3.org/TR/webgpu/#alpha-to-coverage",
         "title": "Alpha to Coverage",
-        "number": "23.3.9"
+        "number": "23.2.9"
       },
       "definedIn": "prose"
     },
@@ -24858,7 +24999,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },
@@ -24877,7 +25018,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },
@@ -24896,7 +25037,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },
