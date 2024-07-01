@@ -1,0 +1,29 @@
+From ebdfc1ef8fa52af7b2005f000df53c1b3d26a866 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 1 Jul 2024 10:50:36 +0200
+Subject: [PATCH] Drop RaisesException extended attribute
+
+https://github.com/WICG/handwriting-recognition/pull/31
+---
+ ed/idl/handwriting-recognition.idl | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/ed/idl/handwriting-recognition.idl b/ed/idl/handwriting-recognition.idl
+index 3bd67769d..2bac6b5d9 100644
+--- a/ed/idl/handwriting-recognition.idl
++++ b/ed/idl/handwriting-recognition.idl
+@@ -42,10 +42,9 @@ partial interface Navigator {
+ 
+ [Exposed=Window, SecureContext]
+ interface HandwritingRecognizer {
+-  [RaisesException]
+   HandwritingDrawing startDrawing(optional HandwritingHints hints = {});
+ 
+-  [RaisesException] undefined finish();
++  undefined finish();
+ };
+ 
+ dictionary HandwritingHints {
+-- 
+2.42.0.windows.2
+
