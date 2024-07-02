@@ -31,6 +31,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
       "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/mediacapture-main/": {},
       "https://w3c.github.io/permissions/": {},
       "https://w3c.github.io/reporting/": {},
       "https://w3c.github.io/webappsec-csp/": {},
@@ -82,10 +83,10 @@
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
+          "same-origin",
           "same-origin-domain",
           "concept-origin-opaque",
           "ascii-serialisation-of-an-origin",
-          "same-origin",
           "sandboxed-origin-browsing-context-flag"
         ]
       },
@@ -108,10 +109,10 @@
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
-          "attr-iframe-sandbox",
-          "the-iframe-element",
-          "attr-iframe-allowfullscreen",
           "attr-iframe-allow",
+          "the-iframe-element",
+          "attr-iframe-sandbox",
+          "attr-iframe-allowfullscreen",
           "attr-iframe-src",
           "htmliframeelement",
           "attr-iframe-srcdoc"
@@ -162,6 +163,11 @@
           "concept-url-parser"
         ]
       },
+      "https://w3c.github.io/mediacapture-main/": {
+        "anchors": [
+          "dom-mediadevices-getusermedia"
+        ]
+      },
       "https://w3c.github.io/permissions/": {
         "anchors": [
           "dfn-powerful-feature"
@@ -192,6 +198,8 @@
           "idl-DOMString",
           "idl-sequence",
           "SameObject",
+          "Default",
+          "idl-object",
           "idl-long"
         ]
       }

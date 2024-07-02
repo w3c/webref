@@ -11599,8 +11599,57 @@
         "extAttrs": [],
         "href": "https://gpuweb.github.io/gpuweb/#gpucanvasalphamode"
       },
+      "GPUCanvasToneMappingMode": {
+        "fragment": "enum GPUCanvasToneMappingMode {\n    \"standard\",\n    \"extended\",\n};",
+        "type": "enum",
+        "name": "GPUCanvasToneMappingMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "standard",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemappingmode-standard"
+          },
+          {
+            "type": "enum-value",
+            "value": "extended",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemappingmode-extended"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://gpuweb.github.io/gpuweb/#gpucanvastonemappingmode"
+      },
+      "GPUCanvasToneMapping": {
+        "fragment": "dictionary GPUCanvasToneMapping {\n  GPUCanvasToneMappingMode mode = \"standard\";\n};",
+        "type": "dictionary",
+        "name": "GPUCanvasToneMapping",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasToneMappingMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "standard"
+            },
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemapping-mode"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvastonemapping"
+      },
       "GPUCanvasConfiguration": {
-        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    PredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    PredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasToneMapping toneMapping = {};\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUCanvasConfiguration",
         "inheritance": null,
@@ -11702,6 +11751,24 @@
             },
             "required": false,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-colorspace"
+          },
+          {
+            "type": "field",
+            "name": "toneMapping",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasToneMapping"
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-tonemapping"
           },
           {
             "type": "field",
@@ -13884,11 +13951,15 @@
         "GPUCanvasConfiguration",
         "GPUTexture"
       ],
+      "GPUCanvasToneMapping": [
+        "GPUCanvasToneMappingMode"
+      ],
       "GPUCanvasConfiguration": [
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
         "PredefinedColorSpace",
+        "GPUCanvasToneMapping",
         "GPUCanvasAlphaMode"
       ],
       "GPUDeviceLostInfo": [

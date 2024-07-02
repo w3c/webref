@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    PredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
+    "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    PredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasToneMapping toneMapping = {};\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvasconfiguration"
   },
   "extended": [],

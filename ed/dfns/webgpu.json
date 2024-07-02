@@ -9313,6 +9313,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "levels-of-detail",
+      "href": "https://gpuweb.github.io/gpuweb/#levels-of-detail",
+      "linkingText": [
+        "levels of detail",
+        "lod"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "GPUSamplerDescriptor",
+        "href": "https://gpuweb.github.io/gpuweb/#GPUSamplerDescriptor",
+        "title": "GPUSamplerDescriptor",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-gpuaddressmode",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuaddressmode",
       "linkingText": [
@@ -23058,6 +23078,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-gpucanvastonemapping",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvastonemapping",
+      "linkingText": [
+        "GPUCanvasToneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucanvastonemapping-mode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemapping-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUCanvasToneMapping"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-gpucanvasconfiguration",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvasconfiguration",
       "linkingText": [
@@ -23182,6 +23242,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpucanvasconfiguration-tonemapping",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-tonemapping",
+      "linkingText": [
+        "toneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUCanvasConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "21.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpucanvasconfiguration-alphamode",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-alphamode",
       "linkingText": [
@@ -23241,6 +23322,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "gpucanvastonemappingmode",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucanvastonemappingmode",
+      "linkingText": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpucanvastonemappingmode-standard",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemappingmode-standard",
+      "linkingText": [
+        "\"standard\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpucanvastonemappingmode-extended",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvastonemappingmode-extended",
+      "linkingText": [
+        "\"extended\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasToneMappingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpucanvastonemappingmode",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucanvastonemappingmode",
+        "title": "GPUCanvasToneMappingMode",
+        "number": "21.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "gpucanvasalphamode",
       "href": "https://gpuweb.github.io/gpuweb/#gpucanvasalphamode",
       "linkingText": [
@@ -23255,7 +23397,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://gpuweb.github.io/gpuweb/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "heading"
     },
@@ -23276,7 +23418,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://gpuweb.github.io/gpuweb/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "dt"
     },
@@ -23297,7 +23439,7 @@
         "id": "gpucanvasalphamode",
         "href": "https://gpuweb.github.io/gpuweb/#gpucanvasalphamode",
         "title": "GPUCanvasAlphaMode",
-        "number": "21.5"
+        "number": "21.6"
       },
       "definedIn": "dt"
     },
@@ -24191,6 +24333,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "abstract-opdef-compute",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-compute",
+      "linkingText": [
+        "compute"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "computing-operations",
+        "href": "https://gpuweb.github.io/gpuweb/#computing-operations",
+        "title": "Computing",
+        "number": "23.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-render",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-render",
       "linkingText": [
@@ -24205,7 +24366,7 @@
         "id": "rendering-operations",
         "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
         "title": "Rendering",
-        "number": "23.3"
+        "number": "23.2"
       },
       "definedIn": "prose"
     },
@@ -24224,7 +24385,7 @@
         "id": "index-resolution",
         "href": "https://gpuweb.github.io/gpuweb/#index-resolution",
         "title": "Index Resolution",
-        "number": "23.3.1"
+        "number": "23.2.1"
       },
       "definedIn": "prose"
     },
@@ -24243,7 +24404,7 @@
         "id": "index-resolution",
         "href": "https://gpuweb.github.io/gpuweb/#index-resolution",
         "title": "Index Resolution",
-        "number": "23.3.1"
+        "number": "23.2.1"
       },
       "definedIn": "prose"
     },
@@ -24262,7 +24423,7 @@
         "id": "vertex-processing",
         "href": "https://gpuweb.github.io/gpuweb/#vertex-processing",
         "title": "Vertex Processing",
-        "number": "23.3.2"
+        "number": "23.2.2"
       },
       "definedIn": "prose"
     },
@@ -24281,7 +24442,7 @@
         "id": "primitive-assembly",
         "href": "https://gpuweb.github.io/gpuweb/#primitive-assembly",
         "title": "Primitive Assembly",
-        "number": "23.3.3"
+        "number": "23.2.3"
       },
       "definedIn": "prose"
     },
@@ -24300,7 +24461,7 @@
         "id": "primitive-clipping",
         "href": "https://gpuweb.github.io/gpuweb/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24319,7 +24480,7 @@
         "id": "primitive-clipping",
         "href": "https://gpuweb.github.io/gpuweb/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24338,7 +24499,7 @@
         "id": "primitive-clipping",
         "href": "https://gpuweb.github.io/gpuweb/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24357,7 +24518,7 @@
         "id": "primitive-clipping",
         "href": "https://gpuweb.github.io/gpuweb/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "23.3.4"
+        "number": "23.2.4"
       },
       "definedIn": "prose"
     },
@@ -24376,7 +24537,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24395,7 +24556,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24414,7 +24575,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24435,7 +24596,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24456,7 +24617,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24475,7 +24636,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24496,7 +24657,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24517,7 +24678,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24538,7 +24699,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24559,7 +24720,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24580,7 +24741,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24601,7 +24762,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24622,7 +24783,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "dt"
     },
@@ -24641,7 +24802,7 @@
         "id": "rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#rasterization",
         "title": "Rasterization",
-        "number": "23.3.5"
+        "number": "23.2.5"
       },
       "definedIn": "prose"
     },
@@ -24660,7 +24821,7 @@
         "id": "polygon-rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24679,7 +24840,7 @@
         "id": "polygon-rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24698,7 +24859,7 @@
         "id": "polygon-rasterization",
         "href": "https://gpuweb.github.io/gpuweb/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "23.3.5.4"
+        "number": "23.2.5.4"
       },
       "definedIn": "prose"
     },
@@ -24717,7 +24878,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24738,7 +24899,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24759,7 +24920,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24780,7 +24941,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24801,7 +24962,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24820,7 +24981,7 @@
         "id": "fragment-processing",
         "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "23.3.6"
+        "number": "23.2.6"
       },
       "definedIn": "prose"
     },
@@ -24839,7 +25000,7 @@
         "id": "alpha-to-coverage",
         "href": "https://gpuweb.github.io/gpuweb/#alpha-to-coverage",
         "title": "Alpha to Coverage",
-        "number": "23.3.9"
+        "number": "23.2.9"
       },
       "definedIn": "prose"
     },
@@ -24858,7 +25019,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },
@@ -24877,7 +25038,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },
@@ -24896,7 +25057,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "23.3.11"
+        "number": "23.2.11"
       },
       "definedIn": "prose"
     },

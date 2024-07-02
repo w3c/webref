@@ -1,0 +1,9 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+dictionary HandwritingPoint {
+  required double x;
+  required double y;
+
+  // Optional. Number of milliseconds since a reference time point for a
+  // drawing.
+  DOMHighResTimeStamp t;
+};

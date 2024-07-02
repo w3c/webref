@@ -1,0 +1,15 @@
+{
+  "name": "HandwritingStroke",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Handwriting Recognition API",
+      "url": "https://wicg.github.io/handwriting-recognition/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface HandwritingStroke {\n  constructor();\n  undefined addPoint(HandwritingPoint point);\n  sequence<HandwritingPoint> getPoints();\n  undefined clear();\n};",
+    "href": "https://wicg.github.io/handwriting-recognition/#handwritingstroke"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

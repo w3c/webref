@@ -2825,54 +2825,6 @@
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargebloboutputs"
       },
-      "UvmEntry": {
-        "fragment": "typedef sequence<unsigned long> UvmEntry;",
-        "type": "typedef",
-        "name": "UvmEntry",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            }
-          ]
-        },
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentry"
-      },
-      "UvmEntries": {
-        "fragment": "typedef sequence<UvmEntry> UvmEntries;",
-        "type": "typedef",
-        "name": "UvmEntries",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "UvmEntry"
-            }
-          ]
-        },
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentries"
-      },
       "AuthenticationExtensionsSupplementalPubKeysInputs": {
         "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysInputs {\n    required sequence<DOMString> scopes;\n    DOMString attestation = \"indirect\";\n    sequence<DOMString> attestationFormats = [];\n};",
         "type": "dictionary",
@@ -3340,32 +3292,6 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientInputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "uvm",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": null,
-              "required": false,
-              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-uvm"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
           "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsSupplementalPubKeysInputs supplementalPubKeys;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
@@ -3524,32 +3450,6 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  UvmEntries uvm;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientOutputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "uvm",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "UvmEntries"
-              },
-              "default": null,
-              "required": false,
-              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-uvm"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
           "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsSupplementalPubKeysOutputs supplementalPubKeys;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
@@ -3690,7 +3590,6 @@
         "CredentialPropertiesOutput",
         "AuthenticationExtensionsPRFOutputs",
         "AuthenticationExtensionsLargeBlobOutputs",
-        "UvmEntries",
         "AuthenticationExtensionsSupplementalPubKeysOutputs"
       ],
       "CollectedClientData": [],

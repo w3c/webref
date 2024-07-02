@@ -6,6 +6,8 @@ interface IntersectionObserver {
   readonly attribute DOMString rootMargin;
   readonly attribute DOMString scrollMargin;
   readonly attribute FrozenArray<double> thresholds;
+  readonly attribute long delay;
+  readonly attribute boolean trackVisibility;
   undefined observe(Element target);
   undefined unobserve(Element target);
   undefined disconnect();

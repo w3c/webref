@@ -1,0 +1,7 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+dictionary HandwritingHintsQueryResult {
+  sequence<HandwritingRecognitionType> recognitionType;
+  sequence<HandwritingInputType> inputType;
+  boolean textContext;
+  boolean alternatives;
+};

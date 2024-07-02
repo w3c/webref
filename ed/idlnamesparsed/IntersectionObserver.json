@@ -6,7 +6,7 @@
       "title": "Intersection Observer",
       "url": "https://www.w3.org/TR/intersection-observer/"
     },
-    "fragment": "[Exposed=Window]\ninterface IntersectionObserver {\n  constructor(IntersectionObserverCallback callback, optional IntersectionObserverInit options = {});\n  readonly attribute (Element or Document)? root;\n  readonly attribute DOMString rootMargin;\n  readonly attribute DOMString scrollMargin;\n  readonly attribute FrozenArray<double> thresholds;\n  undefined observe(Element target);\n  undefined unobserve(Element target);\n  undefined disconnect();\n  sequence<IntersectionObserverEntry> takeRecords();\n};",
+    "fragment": "[Exposed=Window]\ninterface IntersectionObserver {\n  constructor(IntersectionObserverCallback callback, optional IntersectionObserverInit options = {});\n  readonly attribute (Element or Document)? root;\n  readonly attribute DOMString rootMargin;\n  readonly attribute DOMString scrollMargin;\n  readonly attribute FrozenArray<double> thresholds;\n  readonly attribute long delay;\n  readonly attribute boolean trackVisibility;\n  undefined observe(Element target);\n  undefined unobserve(Element target);\n  undefined disconnect();\n  sequence<IntersectionObserverEntry> takeRecords();\n};",
     "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserver"
   },
   "extended": [],

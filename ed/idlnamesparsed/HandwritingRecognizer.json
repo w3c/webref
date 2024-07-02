@@ -1,0 +1,15 @@
+{
+  "name": "HandwritingRecognizer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Handwriting Recognition API",
+      "url": "https://wicg.github.io/handwriting-recognition/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface HandwritingRecognizer {\n  HandwritingDrawing startDrawing(optional HandwritingHints hints = {});\n\n  undefined finish();\n};",
+    "href": "https://wicg.github.io/handwriting-recognition/#handwritingrecognizer"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

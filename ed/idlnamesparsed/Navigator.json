@@ -117,6 +117,20 @@
     },
     {
       "spec": {
+        "title": "Handwriting Recognition API",
+        "url": "https://wicg.github.io/handwriting-recognition/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<HandwritingRecognizerQueryResult?>\n      queryHandwritingRecognizer(HandwritingModelConstraint constraint);\n};"
+    },
+    {
+      "spec": {
+        "title": "Handwriting Recognition API",
+        "url": "https://wicg.github.io/handwriting-recognition/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<HandwritingRecognizer>\n      createHandwritingRecognizer(HandwritingModelConstraint constraint);\n};"
+    },
+    {
+      "spec": {
         "title": "Ink API",
         "url": "https://wicg.github.io/ink-enhancement/"
       },

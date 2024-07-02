@@ -7,6 +7,7 @@ interface IntersectionObserverEntry {
   readonly attribute DOMRectReadOnly boundingClientRect;
   readonly attribute DOMRectReadOnly intersectionRect;
   readonly attribute boolean isIntersecting;
+  readonly attribute boolean isVisible;
   readonly attribute double intersectionRatio;
   readonly attribute Element target;
 };

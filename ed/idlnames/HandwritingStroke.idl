@@ -1,0 +1,8 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+[SecureContext, Exposed=Window]
+interface HandwritingStroke {
+  constructor();
+  undefined addPoint(HandwritingPoint point);
+  sequence<HandwritingPoint> getPoints();
+  undefined clear();
+};

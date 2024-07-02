@@ -6,7 +6,7 @@
       "title": "Intersection Observer",
       "url": "https://www.w3.org/TR/intersection-observer/"
     },
-    "fragment": "[Exposed=Window]\ninterface IntersectionObserverEntry {\n  constructor(IntersectionObserverEntryInit intersectionObserverEntryInit);\n  readonly attribute DOMHighResTimeStamp time;\n  readonly attribute DOMRectReadOnly? rootBounds;\n  readonly attribute DOMRectReadOnly boundingClientRect;\n  readonly attribute DOMRectReadOnly intersectionRect;\n  readonly attribute boolean isIntersecting;\n  readonly attribute double intersectionRatio;\n  readonly attribute Element target;\n};",
+    "fragment": "[Exposed=Window]\ninterface IntersectionObserverEntry {\n  constructor(IntersectionObserverEntryInit intersectionObserverEntryInit);\n  readonly attribute DOMHighResTimeStamp time;\n  readonly attribute DOMRectReadOnly? rootBounds;\n  readonly attribute DOMRectReadOnly boundingClientRect;\n  readonly attribute DOMRectReadOnly intersectionRect;\n  readonly attribute boolean isIntersecting;\n  readonly attribute boolean isVisible;\n  readonly attribute double intersectionRatio;\n  readonly attribute Element target;\n};",
     "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserverentry"
   },
   "extended": [],

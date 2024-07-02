@@ -1,0 +1,7 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+[Exposed=Window, SecureContext]
+interface HandwritingRecognizer {
+  HandwritingDrawing startDrawing(optional HandwritingHints hints = {});
+
+  undefined finish();
+};

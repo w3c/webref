@@ -1,0 +1,10 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+[Exposed=Window, SecureContext]
+interface HandwritingDrawing {
+  undefined addStroke(HandwritingStroke stroke);
+  undefined removeStroke(HandwritingStroke stroke);
+  undefined clear();
+  sequence<HandwritingStroke> getStrokes();
+
+  Promise<sequence<HandwritingPrediction>> getPrediction();
+};

@@ -1,0 +1,236 @@
+{
+  "spec": {
+    "title": "RFC 9218 - Extensible Prioritization Scheme for HTTP",
+    "url": "https://httpwg.org/specs/rfc9218.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc9218.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc9218.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "notational-conventions",
+      "href": "https://httpwg.org/specs/rfc9218.html#notational-conventions",
+      "level": 3,
+      "title": "Notational Conventions",
+      "number": "1.1"
+    },
+    {
+      "id": "motivation",
+      "href": "https://httpwg.org/specs/rfc9218.html#motivation",
+      "level": 2,
+      "title": "Motivation for Replacing RFC 7540 Stream Priorities",
+      "number": "2"
+    },
+    {
+      "id": "disabling",
+      "href": "https://httpwg.org/specs/rfc9218.html#disabling",
+      "level": 3,
+      "title": "Disabling RFC 7540 Stream Priorities",
+      "number": "2.1"
+    },
+    {
+      "id": "advice-when-using-extensible-priorities-as-the-alternative",
+      "href": "https://httpwg.org/specs/rfc9218.html#advice-when-using-extensible-priorities-as-the-alternative",
+      "level": 4,
+      "title": "Advice when Using Extensible Priorities as the Alternative",
+      "number": "2.1.1"
+    },
+    {
+      "id": "applicability-of-the-extensible-priority-scheme",
+      "href": "https://httpwg.org/specs/rfc9218.html#applicability-of-the-extensible-priority-scheme",
+      "level": 2,
+      "title": "Applicability of the Extensible Priority Scheme",
+      "number": "3"
+    },
+    {
+      "id": "parameters",
+      "href": "https://httpwg.org/specs/rfc9218.html#parameters",
+      "level": 2,
+      "title": "Priority Parameters",
+      "number": "4"
+    },
+    {
+      "id": "urgency",
+      "href": "https://httpwg.org/specs/rfc9218.html#urgency",
+      "level": 3,
+      "title": "Urgency",
+      "number": "4.1"
+    },
+    {
+      "id": "incremental",
+      "href": "https://httpwg.org/specs/rfc9218.html#incremental",
+      "level": 3,
+      "title": "Incremental",
+      "number": "4.2"
+    },
+    {
+      "id": "new-parameters",
+      "href": "https://httpwg.org/specs/rfc9218.html#new-parameters",
+      "level": 3,
+      "title": "Defining New Priority Parameters",
+      "number": "4.3"
+    },
+    {
+      "id": "register",
+      "href": "https://httpwg.org/specs/rfc9218.html#register",
+      "level": 4,
+      "title": "Registration",
+      "number": "4.3.1"
+    },
+    {
+      "id": "header-field",
+      "href": "https://httpwg.org/specs/rfc9218.html#header-field",
+      "level": 2,
+      "title": "The Priority HTTP Header Field",
+      "number": "5"
+    },
+    {
+      "id": "reprioritization",
+      "href": "https://httpwg.org/specs/rfc9218.html#reprioritization",
+      "level": 2,
+      "title": "Reprioritization",
+      "number": "6"
+    },
+    {
+      "id": "frame",
+      "href": "https://httpwg.org/specs/rfc9218.html#frame",
+      "level": 2,
+      "title": "The PRIORITY_UPDATE Frame",
+      "number": "7"
+    },
+    {
+      "id": "h2-update-frame",
+      "href": "https://httpwg.org/specs/rfc9218.html#h2-update-frame",
+      "level": 3,
+      "title": "HTTP/2 PRIORITY_UPDATE Frame",
+      "number": "7.1"
+    },
+    {
+      "id": "h3-update-frame",
+      "href": "https://httpwg.org/specs/rfc9218.html#h3-update-frame",
+      "level": 3,
+      "title": "HTTP/3 PRIORITY_UPDATE Frame",
+      "number": "7.2"
+    },
+    {
+      "id": "merging",
+      "href": "https://httpwg.org/specs/rfc9218.html#merging",
+      "level": 2,
+      "title": "Merging Client- and Server-Driven Priority Parameters",
+      "number": "8"
+    },
+    {
+      "id": "client-scheduling",
+      "href": "https://httpwg.org/specs/rfc9218.html#client-scheduling",
+      "level": 2,
+      "title": "Client Scheduling",
+      "number": "9"
+    },
+    {
+      "id": "server-scheduling",
+      "href": "https://httpwg.org/specs/rfc9218.html#server-scheduling",
+      "level": 2,
+      "title": "10. Server Scheduling"
+    },
+    {
+      "id": "intermediaries-with-multiple-backend-connections",
+      "href": "https://httpwg.org/specs/rfc9218.html#intermediaries-with-multiple-backend-connections",
+      "level": 3,
+      "title": "Intermediaries with Multiple Backend Connections",
+      "number": "10.1"
+    },
+    {
+      "id": "connect-scheduling",
+      "href": "https://httpwg.org/specs/rfc9218.html#connect-scheduling",
+      "level": 2,
+      "title": "11. Scheduling and the CONNECT Method"
+    },
+    {
+      "id": "retransmission-scheduling",
+      "href": "https://httpwg.org/specs/rfc9218.html#retransmission-scheduling",
+      "level": 2,
+      "title": "12. Retransmission Scheduling"
+    },
+    {
+      "id": "fairness",
+      "href": "https://httpwg.org/specs/rfc9218.html#fairness",
+      "level": 2,
+      "title": "13. Fairness"
+    },
+    {
+      "id": "coalescing",
+      "href": "https://httpwg.org/specs/rfc9218.html#coalescing",
+      "level": 3,
+      "title": "Coalescing Intermediaries",
+      "number": "13.1"
+    },
+    {
+      "id": "h1-backends",
+      "href": "https://httpwg.org/specs/rfc9218.html#h1-backends",
+      "level": 3,
+      "title": "HTTP/1.x Back Ends",
+      "number": "13.2"
+    },
+    {
+      "id": "intentional-unfairness",
+      "href": "https://httpwg.org/specs/rfc9218.html#intentional-unfairness",
+      "level": 3,
+      "title": "Intentional Introduction of Unfairness",
+      "number": "13.3"
+    },
+    {
+      "id": "header-field-rationale",
+      "href": "https://httpwg.org/specs/rfc9218.html#header-field-rationale",
+      "level": 2,
+      "title": "14. Why Use an End-to-End Header Field?"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://httpwg.org/specs/rfc9218.html#security-considerations",
+      "level": 2,
+      "title": "15. Security Considerations"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://httpwg.org/specs/rfc9218.html#iana-considerations",
+      "level": 2,
+      "title": "16. IANA Considerations"
+    },
+    {
+      "id": "rfc.section.17",
+      "href": "https://httpwg.org/specs/rfc9218.html#rfc.section.17",
+      "level": 2,
+      "title": "17. References"
+    },
+    {
+      "id": "rfc.section.17.1",
+      "href": "https://httpwg.org/specs/rfc9218.html#rfc.section.17.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "17.1"
+    },
+    {
+      "id": "rfc.section.17.2",
+      "href": "https://httpwg.org/specs/rfc9218.html#rfc.section.17.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "17.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://httpwg.org/specs/rfc9218.html#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    }
+  ]
+}

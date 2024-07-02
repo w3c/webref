@@ -1,6 +1,7 @@
 // Source: Permissions Policy (https://www.w3.org/TR/permissions-policy-1/)
 [Exposed=Window]
 interface PermissionsPolicyViolationReportBody : ReportBody {
+  [Default] object toJSON();
   readonly attribute DOMString featureId;
   readonly attribute DOMString? sourceFile;
   readonly attribute long? lineNumber;

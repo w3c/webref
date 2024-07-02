@@ -1,0 +1,5 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+dictionary HandwritingPrediction {
+  required DOMString text;
+  sequence<HandwritingSegment> segmentationResult;
+};

@@ -1,0 +1,7 @@
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+dictionary HandwritingSegment {
+  required DOMString grapheme;
+  required unsigned long beginIndex;
+  required unsigned long endIndex;
+  required sequence<HandwritingDrawingSegment> drawingSegments;
+};

@@ -72,6 +72,20 @@ partial interface Navigator {
   [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();
 };
 
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+[SecureContext]
+partial interface Navigator {
+  Promise<HandwritingRecognizerQueryResult?>
+      queryHandwritingRecognizer(HandwritingModelConstraint constraint);
+};
+
+// Source: Handwriting Recognition API (https://wicg.github.io/handwriting-recognition/)
+[SecureContext]
+partial interface Navigator {
+  Promise<HandwritingRecognizer>
+      createHandwritingRecognizer(HandwritingModelConstraint constraint);
+};
+
 // Source: Ink API (https://wicg.github.io/ink-enhancement/)
 [Exposed=Window]
 partial interface Navigator {

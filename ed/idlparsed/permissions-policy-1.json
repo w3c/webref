@@ -177,11 +177,34 @@
         "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy"
       },
       "PermissionsPolicyViolationReportBody": {
-        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n};",
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n};",
         "type": "interface",
         "name": "PermissionsPolicyViolationReportBody",
         "inheritance": "ReportBody",
         "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicyviolationreportbody-tojson"
+          },
           {
             "type": "attribute",
             "name": "featureId",
