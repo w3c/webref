@@ -238,8 +238,8 @@
       ]
     },
     {
-      "name": "position-try-options",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-options",
+      "name": "position-try-fallbacks",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-fallbacks",
       "value": "none | [ [<dashed-ident> || <try-tactic>] | <'inset-area'> ]#",
       "initial": "none",
       "appliesTo": "absolutely-positioned elements",
@@ -252,68 +252,68 @@
         {
           "name": "none",
           "prose": "The property has no effect; the element’s position options list is empty.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-none",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<dashed-ident>",
           "prose": "If there is a @position-try rule with the given name, its associated position option is added to the position options list. Otherwise, this value has no effect.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
         },
         {
           "name": "<try-tactic>",
           "value": "flip-block || flip-inline || flip-start",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-try-tactic",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-try-tactic",
           "type": "value"
         },
         {
           "name": "<try-tactic>",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-options-try-tactic",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
           "type": "type",
           "value": "flip-block || flip-inline || flip-start"
         },
         {
           "name": "flip-block",
           "prose": "swaps the values in the block axis (between, for example, margin-block-start and margin-block-end), essentially mirroring across an inline-axis line.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-block",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-block",
           "type": "value",
           "value": "flip-block"
         },
         {
           "name": "flip-inline",
           "prose": "swaps the values in the inline axis, essentially mirroring across a block-axis line.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-inline",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-inline",
           "type": "value",
           "value": "flip-inline"
         },
         {
           "name": "flip-start",
           "prose": "swaps the values of the start properties with each other, and the end properties with each other (between, for example, margin-block-start and margin-inline-start), essentially mirroring across a diagonal drawn from the start-start corner to the end-end corner.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-start",
           "type": "value",
           "value": "flip-start"
         },
         {
           "name": "<dashed-ident> || <try-tactic>",
           "prose": "Combines the effects of the previous two options: if there is a @position-try rule with the given name, then applies its position option to the element’s base style, transforms it according to the specified <try-tactic>, and then adds the result to the element’s position options list. Otherwise, does nothing.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident--try-tactic",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-dashed-ident--try-tactic",
           "type": "value",
           "value": "<dashed-ident> || <try-tactic>"
         },
         {
           "name": "<'inset-area'>",
           "prose": "Automatically creates a position option composed solely of an inset-area property with the given value.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-inset-area",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-inset-area",
           "type": "value",
           "value": "<'inset-area'>"
         }
       ],
       "styleDeclaration": [
-        "position-try-options",
-        "positionTryOptions"
+        "position-try-fallbacks",
+        "positionTryFallbacks"
       ]
     },
     {
@@ -330,7 +330,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Try the position options in the order specified by position-try-options.",
+          "prose": "Try the position options in the order specified by position-try-fallbacks.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-normal",
           "type": "value",
           "value": "normal"
@@ -372,7 +372,7 @@
     {
       "name": "position-try",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try",
-      "value": "<'position-try-order'>? <'position-try-options'>",
+      "value": "<'position-try-order'>? <'position-try-fallbacks'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -389,7 +389,7 @@
   "atrules": [
     {
       "name": "@position-try",
-      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-options,",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-fallbacks,",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
       "descriptors": [],
       "value": "@position-try <dashed-ident> { <declaration-list> }"
