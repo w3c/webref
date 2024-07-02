@@ -29,6 +29,7 @@ describe(`The curated view of CSS extracts`, () => {
   before(async () => {
     const all = await css.listAll({ folder: curatedFolder });
     const baseProperties = {};
+    const basePropertiesInDeltaSpecs = {};
     const extendedProperties = {};
     const selectors = {};
     const valuespaces = {};
@@ -50,6 +51,12 @@ describe(`The curated view of CSS extracts`, () => {
                 baseProperties[name] = [];
               }
               baseProperties[name].push({ spec: data.spec, dfn: desc });
+            }
+            else if ((type === 'property') && (spec.seriesComposition === 'delta') && !desc.newValues) {
+              if (!basePropertiesInDeltaSpecs[name]) {
+                basePropertiesInDeltaSpecs[name] = [];
+              }
+              basePropertiesInDeltaSpecs[name].push({ spec: data.spec, dfn: desc });
             }
             else if ((type === 'extended property') && desc[value]) {
               if (!extendedProperties[name]) {
@@ -154,7 +161,7 @@ describe(`The curated view of CSS extracts`, () => {
     describe(`Looking at extended CSS properties, the curated view`, () => {
       for (const [name, dfns] of Object.entries(extendedProperties)) {
         it(`contains a base definition for the "${name}" property`, () => {
-          assert(baseProperties[name], 'no base definition found');
+          assert(baseProperties[name] || basePropertiesInDeltaSpecs[name], 'no base definition found');
         });
       }
     });
