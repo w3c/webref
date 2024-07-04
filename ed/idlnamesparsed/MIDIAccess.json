@@ -6,7 +6,7 @@
       "title": "Web MIDI API",
       "url": "https://www.w3.org/TR/webmidi/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface MIDIAccess: EventTarget {\n  readonly attribute MIDIInputMap inputs;\n  readonly attribute MIDIOutputMap outputs;\n  attribute EventHandler onstatechange;\n  readonly attribute boolean sysexEnabled;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker), Transferable] interface MIDIAccess: EventTarget {\n  readonly attribute MIDIInputMap inputs;\n  readonly attribute MIDIOutputMap outputs;\n  attribute EventHandler onstatechange;\n  readonly attribute boolean sysexEnabled;\n};",
     "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess"
   },
   "extended": [],

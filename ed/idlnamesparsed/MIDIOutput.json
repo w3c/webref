@@ -6,7 +6,7 @@
       "title": "Web MIDI API",
       "url": "https://www.w3.org/TR/webmidi/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface MIDIOutput : MIDIPort {\n  undefined send(sequence<octet> data, optional DOMHighResTimeStamp timestamp = 0);\n  undefined clear();\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker)] interface MIDIOutput : MIDIPort {\n  undefined send(sequence<octet> data, optional DOMHighResTimeStamp timestamp = 0);\n  undefined clear();\n};",
     "href": "https://webaudio.github.io/web-midi-api/#dom-midioutput"
   },
   "extended": [],
@@ -18,7 +18,7 @@
         "title": "Web MIDI API",
         "url": "https://www.w3.org/TR/webmidi/"
       },
-      "fragment": "[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? manufacturer;\n  readonly attribute DOMString? name;\n  readonly attribute MIDIPortType type;\n  readonly attribute DOMString? version;\n  readonly attribute MIDIPortDeviceState state;\n  readonly attribute MIDIPortConnectionState connection;\n  attribute EventHandler onstatechange;\n  Promise <MIDIPort> open();\n  Promise <MIDIPort> close();\n};",
+      "fragment": "[SecureContext, Exposed=(Window,Worker)] interface MIDIPort: EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? manufacturer;\n  readonly attribute DOMString? name;\n  readonly attribute MIDIPortType type;\n  readonly attribute DOMString? version;\n  readonly attribute MIDIPortDeviceState state;\n  readonly attribute MIDIPortConnectionState connection;\n  attribute EventHandler onstatechange;\n  Promise <MIDIPort> open();\n  Promise <MIDIPort> close();\n};",
       "href": "https://webaudio.github.io/web-midi-api/#dom-midiport"
     },
     "extended": [],

@@ -6,7 +6,7 @@
       "title": "Web MIDI API",
       "url": "https://www.w3.org/TR/webmidi/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIMessageEvent : Event {\n  constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});\n  readonly attribute Uint8Array? data;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface MIDIMessageEvent : Event {\n  constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});\n  readonly attribute Uint8Array? data;\n};",
     "href": "https://webaudio.github.io/web-midi-api/#dom-midimessageevent"
   },
   "extended": [],

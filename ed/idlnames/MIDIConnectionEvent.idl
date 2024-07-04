@@ -1,5 +1,5 @@
 // Source: Web MIDI API (https://www.w3.org/TR/webmidi/)
-[SecureContext, Exposed=Window]
+[SecureContext, Exposed=(Window,Worker)]
 interface MIDIConnectionEvent : Event {
   constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict = {});
   readonly attribute MIDIPort? port;
