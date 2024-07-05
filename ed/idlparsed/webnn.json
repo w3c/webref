@@ -289,7 +289,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#ml"
       },
       "MLNamedArrayBufferViews": {
-        "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;",
+        "fragment": "typedef record<USVString, ArrayBufferView> MLNamedArrayBufferViews;",
         "type": "typedef",
         "name": "MLNamedArrayBufferViews",
         "idlType": {
@@ -305,7 +305,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             {
               "type": "typedef-type",
@@ -709,6 +709,38 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#mloperand"
       },
+      "MLNumber": {
+        "fragment": "typedef (bigint or unrestricted double) MLNumber;",
+        "type": "typedef",
+        "name": "MLNumber",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bigint"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnumber"
+      },
       "MLActivation": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {};",
         "type": "interface",
@@ -743,7 +775,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlactivation"
       },
       "MLNamedOperands": {
-        "fragment": "typedef record<DOMString, MLOperand> MLNamedOperands;",
+        "fragment": "typedef record<USVString, MLOperand> MLNamedOperands;",
         "type": "typedef",
         "name": "MLNamedOperands",
         "idlType": {
@@ -759,7 +791,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             {
               "type": "typedef-type",
@@ -775,7 +807,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, double value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -825,7 +857,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "USVString"
                 },
                 "default": null,
                 "optional": false,
@@ -939,7 +971,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "double"
+                  "idlType": "MLNumber"
                 },
                 "default": null,
                 "optional": false,
@@ -1102,7 +1134,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlargminmaxoptions"
       },
       "MLBatchNormalizationOptions": {
-        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  float epsilon = 1e-5;\n};",
+        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  double epsilon = 1e-5;\n};",
         "type": "dictionary",
         "name": "MLBatchNormalizationOptions",
         "inheritance": null,
@@ -1175,7 +1207,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -1190,7 +1222,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationoptions"
       },
       "MLClampOptions": {
-        "fragment": "dictionary MLClampOptions {\n  float minValue;\n  float maxValue;\n};",
+        "fragment": "dictionary MLClampOptions {\n  MLNumber minValue;\n  MLNumber maxValue;\n};",
         "type": "dictionary",
         "name": "MLClampOptions",
         "inheritance": null,
@@ -1205,7 +1237,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "MLNumber"
             },
             "default": null,
             "required": false,
@@ -1221,7 +1253,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "MLNumber"
             },
             "default": null,
             "required": false,
@@ -1724,7 +1756,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
       },
       "MLEluOptions": {
-        "fragment": "dictionary MLEluOptions {\n  float alpha = 1;\n};",
+        "fragment": "dictionary MLEluOptions {\n  double alpha = 1;\n};",
         "type": "dictionary",
         "name": "MLEluOptions",
         "inheritance": null,
@@ -1739,7 +1771,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -1791,7 +1823,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgatheroptions"
       },
       "MLGemmOptions": {
-        "fragment": "dictionary MLGemmOptions {\n  MLOperand c;\n  float alpha = 1.0;\n  float beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
+        "fragment": "dictionary MLGemmOptions {\n  MLOperand c;\n  double alpha = 1.0;\n  double beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
         "type": "dictionary",
         "name": "MLGemmOptions",
         "inheritance": null,
@@ -1822,7 +1854,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -1841,7 +1873,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2203,7 +2235,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrucelloptions"
       },
       "MLHardSigmoidOptions": {
-        "fragment": "dictionary MLHardSigmoidOptions {\n  float alpha = 0.2;\n  float beta = 0.5;\n};",
+        "fragment": "dictionary MLHardSigmoidOptions {\n  double alpha = 0.2;\n  double beta = 0.5;\n};",
         "type": "dictionary",
         "name": "MLHardSigmoidOptions",
         "inheritance": null,
@@ -2218,7 +2250,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2237,7 +2269,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2252,7 +2284,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlhardsigmoidoptions"
       },
       "MLInstanceNormalizationOptions": {
-        "fragment": "dictionary MLInstanceNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  float epsilon = 1e-5;\n  MLInputOperandLayout layout = \"nchw\";\n};",
+        "fragment": "dictionary MLInstanceNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  double epsilon = 1e-5;\n  MLInputOperandLayout layout = \"nchw\";\n};",
         "type": "dictionary",
         "name": "MLInstanceNormalizationOptions",
         "inheritance": null,
@@ -2299,7 +2331,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2333,7 +2365,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlinstancenormalizationoptions"
       },
       "MLLayerNormalizationOptions": {
-        "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<[EnforceRange] unsigned long> axes;\n  float epsilon = 1e-5;\n};",
+        "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<[EnforceRange] unsigned long> axes;\n  double epsilon = 1e-5;\n};",
         "type": "dictionary",
         "name": "MLLayerNormalizationOptions",
         "inheritance": null,
@@ -2412,7 +2444,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2427,7 +2459,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllayernormalizationoptions"
       },
       "MLLeakyReluOptions": {
-        "fragment": "dictionary MLLeakyReluOptions {\n  float alpha = 0.01;\n};",
+        "fragment": "dictionary MLLeakyReluOptions {\n  double alpha = 0.01;\n};",
         "type": "dictionary",
         "name": "MLLeakyReluOptions",
         "inheritance": null,
@@ -2442,7 +2474,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2457,7 +2489,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlleakyreluoptions"
       },
       "MLLinearOptions": {
-        "fragment": "dictionary MLLinearOptions {\n  float alpha = 1;\n  float beta = 0;\n};",
+        "fragment": "dictionary MLLinearOptions {\n  double alpha = 1;\n  double beta = 0;\n};",
         "type": "dictionary",
         "name": "MLLinearOptions",
         "inheritance": null,
@@ -2472,7 +2504,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2491,7 +2523,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "double"
             },
             "default": {
               "type": "number",
@@ -2830,7 +2862,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpaddingmode"
       },
       "MLPadOptions": {
-        "fragment": "dictionary MLPadOptions {\n  MLPaddingMode mode = \"constant\";\n  float value = 0;\n};",
+        "fragment": "dictionary MLPadOptions {\n  MLPaddingMode mode = \"constant\";\n  MLNumber value = 0;\n};",
         "type": "dictionary",
         "name": "MLPadOptions",
         "inheritance": null,
@@ -2864,7 +2896,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "float"
+              "idlType": "MLNumber"
             },
             "default": {
               "type": "number",
@@ -8443,6 +8475,7 @@
         "MLOperandDescriptor",
         "ArrayBufferView",
         "MLOperandDataType",
+        "MLNumber",
         "MLGraph",
         "MLNamedOperands",
         "MLArgMinMaxOptions",
@@ -8475,7 +8508,9 @@
       "MLBatchNormalizationOptions": [
         "MLOperand"
       ],
-      "MLClampOptions": [],
+      "MLClampOptions": [
+        "MLNumber"
+      ],
       "MLConv2dOptions": [
         "MLInputOperandLayout",
         "MLConv2dFilterOperandLayout",
@@ -8524,7 +8559,8 @@
         "MLActivation"
       ],
       "MLPadOptions": [
-        "MLPaddingMode"
+        "MLPaddingMode",
+        "MLNumber"
       ],
       "MLPool2dOptions": [
         "MLInputOperandLayout",

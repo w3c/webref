@@ -3,5 +3,5 @@ dictionary MLLayerNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
   sequence<[EnforceRange] unsigned long> axes;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
 };

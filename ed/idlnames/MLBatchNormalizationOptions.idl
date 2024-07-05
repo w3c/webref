@@ -3,5 +3,5 @@ dictionary MLBatchNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
   [EnforceRange] unsigned long axis = 1;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
 };

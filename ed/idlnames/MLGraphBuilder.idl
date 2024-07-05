@@ -5,13 +5,13 @@ interface MLGraphBuilder {
   constructor(MLContext context);
 
   // Create an operand for a graph input.
-  MLOperand input(DOMString name, MLOperandDescriptor descriptor);
+  MLOperand input(USVString name, MLOperandDescriptor descriptor);
 
   // Create an operand for a graph constant.
   MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);
 
   // Create a scalar operand from the specified number of the specified type.
-  MLOperand constant(MLOperandDataType type, double value);
+  MLOperand constant(MLOperandDataType type, MLNumber value);
 
   // Compile the graph up to the specified output operands asynchronously.
   Promise<MLGraph> build(MLNamedOperands outputs);

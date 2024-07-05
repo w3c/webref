@@ -2,6 +2,6 @@
 dictionary MLInstanceNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
   MLInputOperandLayout layout = "nchw";
 };
