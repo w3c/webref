@@ -32,7 +32,7 @@ interface ML {
   Promise<MLContext> createContext(GPUDevice gpuDevice);
 };
 
-typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;
+typedef record<USVString, ArrayBufferView> MLNamedArrayBufferViews;
 
 dictionary MLComputeResult {
   MLNamedArrayBufferViews inputs;
@@ -75,10 +75,12 @@ interface MLOperand {
   sequence<unsigned long> shape();
 };
 
+typedef (bigint or unrestricted double) MLNumber;
+
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLActivation {};
 
-typedef record<DOMString, MLOperand> MLNamedOperands;
+typedef record<USVString, MLOperand> MLNamedOperands;
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLGraphBuilder {
@@ -86,13 +88,13 @@ interface MLGraphBuilder {
   constructor(MLContext context);
 
   // Create an operand for a graph input.
-  MLOperand input(DOMString name, MLOperandDescriptor descriptor);
+  MLOperand input(USVString name, MLOperandDescriptor descriptor);
 
   // Create an operand for a graph constant.
   MLOperand constant(MLOperandDescriptor descriptor, ArrayBufferView bufferView);
 
   // Create a scalar operand from the specified number of the specified type.
-  MLOperand constant(MLOperandDataType type, double value);
+  MLOperand constant(MLOperandDataType type, MLNumber value);
 
   // Compile the graph up to the specified output operands asynchronously.
   Promise<MLGraph> build(MLNamedOperands outputs);
@@ -113,7 +115,7 @@ dictionary MLBatchNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
   [EnforceRange] unsigned long axis = 1;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
 };
 
 partial interface MLGraphBuilder {
@@ -126,8 +128,8 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLClampOptions {
-  float minValue;
-  float maxValue;
+  MLNumber minValue;
+  MLNumber maxValue;
 };
 
 partial interface MLGraphBuilder {
@@ -220,7 +222,7 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLEluOptions {
-  float alpha = 1;
+  double alpha = 1;
 };
 
 partial interface MLGraphBuilder {
@@ -249,8 +251,8 @@ partial interface MLGraphBuilder {
 
 dictionary MLGemmOptions {
   MLOperand c;
-  float alpha = 1.0;
-  float beta = 1.0;
+  double alpha = 1.0;
+  double beta = 1.0;
   boolean aTranspose = false;
   boolean bTranspose = false;
 };
@@ -308,8 +310,8 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLHardSigmoidOptions {
-  float alpha = 0.2;
-  float beta = 0.5;
+  double alpha = 0.2;
+  double beta = 0.5;
 };
 
 partial interface MLGraphBuilder {
@@ -325,7 +327,7 @@ partial interface MLGraphBuilder {
 dictionary MLInstanceNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
   MLInputOperandLayout layout = "nchw";
 };
 
@@ -338,7 +340,7 @@ dictionary MLLayerNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
   sequence<[EnforceRange] unsigned long> axes;
-  float epsilon = 1e-5;
+  double epsilon = 1e-5;
 };
 
 partial interface MLGraphBuilder {
@@ -347,7 +349,7 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLLeakyReluOptions {
-  float alpha = 0.01;
+  double alpha = 0.01;
 };
 
 partial interface MLGraphBuilder {
@@ -356,8 +358,8 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLLinearOptions {
-  float alpha = 1;
-  float beta = 0;
+  double alpha = 1;
+  double beta = 0;
 };
 
 partial interface MLGraphBuilder {
@@ -422,7 +424,7 @@ enum MLPaddingMode {
 
 dictionary MLPadOptions {
   MLPaddingMode mode = "constant";
-  float value = 0;
+  MLNumber value = 0;
 };
 
 partial interface MLGraphBuilder {
