@@ -5,34 +5,37 @@
   },
   "events": [
     {
-      "type": "statechange",
-      "targets": [
-        "MIDIAccess"
-      ],
       "src": {
-        "format": "IDL eventHandler",
-        "href": "https://www.w3.org/TR/webmidi/#respecDocument"
-      }
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface"
+      },
+      "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+      "type": "statechange",
+      "interface": "MIDIConnectionEvent"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface"
+      },
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-onstatechange",
       "type": "statechange",
       "targets": [
         "MIDIPort"
       ],
-      "src": {
-        "format": "IDL eventHandler",
-        "href": "https://www.w3.org/TR/webmidi/#respecDocument"
-      }
+      "interface": "MIDIConnectionEvent"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webmidi/#midiinput-interface"
+      },
+      "href": "https://www.w3.org/TR/webmidi/#midiinput-interface",
       "type": "midimessage",
+      "interface": "MIDIMessageEvent",
       "targets": [
         "MIDIInput"
-      ],
-      "src": {
-        "format": "IDL eventHandler",
-        "href": "https://www.w3.org/TR/webmidi/#respecDocument"
-      }
+      ]
     }
   ]
 }

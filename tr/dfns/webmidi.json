@@ -5,25 +5,6 @@
   },
   "dfns": [
     {
-      "id": "dfn-user-agent",
-      "href": "https://www.w3.org/TR/webmidi/#dfn-user-agent",
-      "linkingText": [
-        "user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/webmidi/#conformance",
-        "title": "Conformance",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "WebAudio",
       "href": "https://www.w3.org/TR/webmidi/#WebAudio",
       "linkingText": [
@@ -32,45 +13,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webmidi/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-event",
-      "href": "https://www.w3.org/TR/webmidi/#dfn-event",
-      "linkingText": [
-        "Event"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webmidi/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-domerror",
-      "href": "https://www.w3.org/TR/webmidi/#dfn-domerror",
-      "linkingText": [
-        "DOMError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -89,7 +32,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -108,7 +51,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -127,7 +70,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -146,7 +89,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -165,7 +108,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -184,7 +127,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -195,15 +138,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-midi-system-real-time-message",
-      "href": "https://www.w3.org/TR/webmidi/#dfn-midi-system-real-time-message",
+      "id": "dfn-system-real-time",
+      "href": "https://www.w3.org/TR/webmidi/#dfn-system-real-time",
       "linkingText": [
-        "MIDI System Real-Time message"
+        "System Real Time"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -217,12 +160,12 @@
       "id": "dfn-system-exclusive",
       "href": "https://www.w3.org/TR/webmidi/#dfn-system-exclusive",
       "linkingText": [
-        "system exclusive"
+        "System Exclusive"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -233,23 +176,108 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigator-requestmidiaccess",
-      "href": "https://www.w3.org/TR/webmidi/#dom-navigator-requestmidiaccess",
+      "id": "dom-midipermissiondescriptor",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midipermissiondescriptor",
       "linkingText": [
-        "requestMIDIAccess"
+        "MidiPermissionDescriptor"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "methods",
-        "href": "https://www.w3.org/TR/webmidi/#methods",
-        "title": "Methods",
-        "number": "4.1.1"
+        "id": "permissions-integration",
+        "href": "https://www.w3.org/TR/webmidi/#permissions-integration",
+        "title": "Permissions Integration",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-midipermissiondescriptor-sysex",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midipermissiondescriptor-sysex",
+      "linkingText": [
+        "sysex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MidiPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration",
+        "href": "https://www.w3.org/TR/webmidi/#permissions-integration",
+        "title": "Permissions Integration",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-midi-0",
+      "href": "https://www.w3.org/TR/webmidi/#dfn-midi-0",
+      "linkingText": [
+        "\"midi\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-integration",
+        "href": "https://www.w3.org/TR/webmidi/#permissions-policy-integration",
+        "title": "Permissions Policy Integration",
+        "number": "4.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://www.w3.org/TR/webmidi/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://www.w3.org/TR/webmidi/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-navigator-requestmidiaccess",
+      "href": "https://www.w3.org/TR/webmidi/#dom-navigator-requestmidiaccess",
+      "linkingText": [
+        "requestMIDIAccess()",
+        "requestMIDIAccess(options)"
+      ],
+      "localLinkingText": [
+        "Navigator.requestMIDIAccess",
+        "Navigator.requestMIDIAccess()",
+        "requestMIDIAccess"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://www.w3.org/TR/webmidi/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-algorithm-to-request-midi-access",
@@ -260,15 +288,498 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://www.w3.org/TR/webmidi/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-midioptions",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioptions",
+      "linkingText": [
+        "MIDIOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "methods",
-        "href": "https://www.w3.org/TR/webmidi/#methods",
-        "title": "Methods",
-        "number": "4.1.1"
+        "id": "midioptions-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midioptions-dictionary",
+        "title": "MIDIOptions Dictionary",
+        "number": "4.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midioptions-sysex",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioptions-sysex",
+      "linkingText": [
+        "sysex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioptions-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midioptions-dictionary",
+        "title": "MIDIOptions Dictionary",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midioptions-software",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioptions-software",
+      "linkingText": [
+        "software"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioptions-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midioptions-dictionary",
+        "title": "MIDIOptions Dictionary",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiinputmap",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiinputmap",
+      "linkingText": [
+        "MIDIInputMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiinputmap-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiinputmap-interface",
+        "title": "MIDIInputMap Interface",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midioutputmap",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioutputmap",
+      "linkingText": [
+        "MIDIOutputMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioutputmap-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midioutputmap-interface",
+        "title": "MIDIOutputMap Interface",
+        "number": "5.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiaccess",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiaccess",
+      "linkingText": [
+        "MIDIAccess"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiaccess-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+        "title": "MIDIAccess Interface",
+        "number": "5.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiaccess-inputs",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiaccess-inputs",
+      "linkingText": [
+        "inputs"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.inputs"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiaccess-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+        "title": "MIDIAccess Interface",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiaccess-outputs",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiaccess-outputs",
+      "linkingText": [
+        "outputs"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.outputs"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiaccess-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+        "title": "MIDIAccess Interface",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiaccess-onstatechange",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiaccess-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.onstatechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiaccess-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+        "title": "MIDIAccess Interface",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiaccess-sysexenabled",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiaccess-sysexenabled",
+      "linkingText": [
+        "sysexEnabled"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.sysexEnabled"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiaccess-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiaccess-interface",
+        "title": "MIDIAccess Interface",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport",
+      "linkingText": [
+        "MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiport-id",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [
+        "MIDIPort.id"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-manufacturer",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-manufacturer",
+      "linkingText": [
+        "manufacturer"
+      ],
+      "localLinkingText": [
+        "MIDIPort.manufacturer"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-name",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [
+        "MIDIPort.name"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-type",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "MIDIPort.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-version",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [
+        "MIDIPort.version"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-state",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [
+        "MIDIPort.state"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-connection",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [
+        "MIDIPort.connection"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-onstatechange",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [
+        "MIDIPort.onstatechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiport-open",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-open",
+      "linkingText": [
+        "open()"
+      ],
+      "localLinkingText": [
+        "MIDIPort.open",
+        "MIDIPort.open()",
+        "open"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-open-the-port",
+      "href": "https://www.w3.org/TR/webmidi/#dfn-open-the-port",
+      "linkingText": [
+        "open the port",
+        "algorithm to open a MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-midiport-close",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiport-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [
+        "MIDIPort.close",
+        "MIDIPort.close()",
+        "close"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-algorithm-to-close-a-midiport",
@@ -279,34 +790,550 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "methods-1",
-        "href": "https://www.w3.org/TR/webmidi/#methods-1",
-        "title": "Methods",
-        "number": "6.2"
+        "id": "midiport-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiport-interface",
+        "title": "MIDIPort Interface",
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-algorithm-to-open-a-midiport",
-      "href": "https://www.w3.org/TR/webmidi/#dfn-algorithm-to-open-a-midiport",
+      "id": "dom-midiinput",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiinput",
       "linkingText": [
-        "algorithm to open a MIDIPort"
+        "MIDIInput"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "methods-1",
-        "href": "https://www.w3.org/TR/webmidi/#methods-1",
-        "title": "Methods",
-        "number": "6.2"
+        "id": "midiinput-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiinput-interface",
+        "title": "MIDIInput Interface",
+        "number": "5.4.1"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiinput-onmidimessage",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiinput-onmidimessage",
+      "linkingText": [
+        "onmidimessage"
+      ],
+      "localLinkingText": [
+        "MIDIInput.onmidimessage"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIInput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiinput-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiinput-interface",
+        "title": "MIDIInput Interface",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midioutput",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioutput",
+      "linkingText": [
+        "MIDIOutput"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioutput-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midioutput-interface",
+        "title": "MIDIOutput Interface",
+        "number": "5.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midioutput-send",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioutput-send",
+      "linkingText": [
+        "send()",
+        "send(data)",
+        "send(data, timestamp)"
+      ],
+      "localLinkingText": [
+        "MIDIOutput.send",
+        "MIDIOutput.send()",
+        "send"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioutput-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midioutput-interface",
+        "title": "MIDIOutput Interface",
+        "number": "5.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midioutput-clear",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midioutput-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [
+        "MIDIOutput.clear",
+        "MIDIOutput.clear()",
+        "clear"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midioutput-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midioutput-interface",
+        "title": "MIDIOutput Interface",
+        "number": "5.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiporttype",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiporttype",
+      "linkingText": [
+        "MIDIPortType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiporttype-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiporttype-enum",
+        "title": "MIDIPortType Enum",
+        "number": "5.4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiporttype-input",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiporttype-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiporttype-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiporttype-enum",
+        "title": "MIDIPortType Enum",
+        "number": "5.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiporttype-output",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiporttype-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiporttype-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiporttype-enum",
+        "title": "MIDIPortType Enum",
+        "number": "5.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiportdevicestate",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportdevicestate",
+      "linkingText": [
+        "MIDIPortDeviceState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportdevicestate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportdevicestate-enum",
+        "title": "MIDIPortDeviceState Enum",
+        "number": "5.4.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiportdevicestate-disconnected",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportdevicestate-disconnected",
+      "linkingText": [
+        "disconnected"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortDeviceState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportdevicestate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportdevicestate-enum",
+        "title": "MIDIPortDeviceState Enum",
+        "number": "5.4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiportdevicestate-connected",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportdevicestate-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortDeviceState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportdevicestate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportdevicestate-enum",
+        "title": "MIDIPortDeviceState Enum",
+        "number": "5.4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiportconnectionstate",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportconnectionstate",
+      "linkingText": [
+        "MIDIPortConnectionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportconnectionstate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportconnectionstate-enum",
+        "title": "MIDIPortConnectionState Enum",
+        "number": "5.4.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiportconnectionstate-open",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportconnectionstate-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportconnectionstate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportconnectionstate-enum",
+        "title": "MIDIPortConnectionState Enum",
+        "number": "5.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiportconnectionstate-closed",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportconnectionstate-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportconnectionstate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportconnectionstate-enum",
+        "title": "MIDIPortConnectionState Enum",
+        "number": "5.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiportconnectionstate-pending",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiportconnectionstate-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiportconnectionstate-enum",
+        "href": "https://www.w3.org/TR/webmidi/#midiportconnectionstate-enum",
+        "title": "MIDIPortConnectionState Enum",
+        "number": "5.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midimessageevent",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midimessageevent",
+      "linkingText": [
+        "MIDIMessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midimessageevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midimessageevent-interface",
+        "title": "MIDIMessageEvent Interface",
+        "number": "5.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midimessageevent-constructor",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midimessageevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "MIDIMessageEvent.constructor",
+        "MIDIMessageEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "MIDIMessageEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midimessageevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midimessageevent-interface",
+        "title": "MIDIMessageEvent Interface",
+        "number": "5.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-midimessageevent-data",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midimessageevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [
+        "MIDIMessageEvent.data"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIMessageEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midimessageevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midimessageevent-interface",
+        "title": "MIDIMessageEvent Interface",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midimessageeventinit",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midimessageeventinit",
+      "linkingText": [
+        "MIDIMessageEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midimessageeventinit-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midimessageeventinit-dictionary",
+        "title": "MIDIMessageEventInit Dictionary",
+        "number": "5.5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midimessageeventinit-data",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midimessageeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midimessageeventinit-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midimessageeventinit-dictionary",
+        "title": "MIDIMessageEventInit Dictionary",
+        "number": "5.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiconnectionevent",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiconnectionevent",
+      "linkingText": [
+        "MIDIConnectionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiconnectionevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiconnectionevent-interface",
+        "title": "MIDIConnectionEvent Interface",
+        "number": "5.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiconnectionevent-constructor",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiconnectionevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "MIDIConnectionEvent.constructor",
+        "MIDIConnectionEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "MIDIConnectionEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiconnectionevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiconnectionevent-interface",
+        "title": "MIDIConnectionEvent Interface",
+        "number": "5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-midiconnectionevent-port",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiconnectionevent-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [
+        "MIDIConnectionEvent.port"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIConnectionEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiconnectionevent-interface",
+        "href": "https://www.w3.org/TR/webmidi/#midiconnectionevent-interface",
+        "title": "MIDIConnectionEvent Interface",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-midiconnectioneventinit",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiconnectioneventinit",
+      "linkingText": [
+        "MIDIConnectionEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiconnectioneventinit-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midiconnectioneventinit-dictionary",
+        "title": "MIDIConnectionEventInit Dictionary",
+        "number": "5.6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-midiconnectioneventinit-port",
+      "href": "https://www.w3.org/TR/webmidi/#dom-midiconnectioneventinit-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIConnectionEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "midiconnectioneventinit-dictionary",
+        "href": "https://www.w3.org/TR/webmidi/#midiconnectioneventinit-dictionary",
+        "title": "MIDIConnectionEventInit Dictionary",
+        "number": "5.6.1"
+      },
+      "definedIn": "dt"
     }
   ]
 }
