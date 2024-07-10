@@ -176,82 +176,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-document",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-json-document",
-      "linkingText": [
-        "JSON document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
-        "title": "Conformance",
-        "number": "1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-conforming-controller-document",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-controller-document",
-      "linkingText": [
-        "conforming controller document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
-        "title": "Conformance",
-        "number": "1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-conforming-verification-method",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-verification-method",
-      "linkingText": [
-        "conforming verification method"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
-        "title": "Conformance",
-        "number": "1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-conforming-document",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-document",
-      "linkingText": [
-        "conforming document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
-        "title": "Conformance",
-        "number": "1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-conforming-cryptographic-suite-specification",
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-cryptographic-suite-specification",
       "linkingText": [
@@ -415,29 +339,6 @@
       "htmlProse": "A set of attributes that represent a digital proof and the parameters required\nto verify it."
     },
     {
-      "id": "dfn-decentralized-identifiers",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-decentralized-identifiers",
-      "linkingText": [
-        "decentralized identifiers",
-        "DID",
-        "DIDs",
-        "decentralized identifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "A globally unique persistent identifier that does not require a centralized\nregistration authority and is often generated and/or registered\ncryptographically. The generic format of a is defined in [<cite><a href=\"https://www.w3.org/TR/vc-data-integrity/#bib-did-core\" title=\"Decentralized Identifiers (DIDs) v1.0\">DID-CORE</a></cite>]."
-    },
-    {
       "id": "dfn-domain",
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-domain",
       "linkingText": [
@@ -538,27 +439,6 @@
       "htmlProse": "Cryptographic material that can be used to verify digital proofs created with a\ncorresponding <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-private-key\">private key</a>."
     },
     {
-      "id": "dfn-resources",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-resources",
-      "linkingText": [
-        "resources",
-        "resource"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "As defined by [<cite><a href=\"https://www.w3.org/TR/vc-data-integrity/#bib-rfc3986\" title=\"Uniform Resource Identifier (URI): Generic Syntax\">RFC3986</a></cite>]: \"...the term 'resource' is used in a general sense\nfor whatever might be identified by a URI.\" Similarly, any resource might serve\nas a <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-subjects\">subject</a> identified by a <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-decentralized-identifiers\">DID</a>."
-    },
-    {
       "id": "dfn-subjects",
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-subjects",
       "linkingText": [
@@ -598,26 +478,6 @@
       },
       "definedIn": "dt",
       "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic public key can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic private key.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
-    },
-    {
-      "id": "dfn-verification-relationship",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verification-relationship",
-      "linkingText": [
-        "verification relationship"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "<p>\nAn expression of the relationship between the <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-subjects\">subject</a> and a\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-verification-method\">verification method</a>. An example of a verification relationship is\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#authentication\"><bdi>2.3.2.1 </bdi>Authentication</a>.\n            </p>"
     },
     {
       "id": "dfn-verifier",
@@ -794,194 +654,61 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-verificationmethod",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verificationmethod",
+      "id": "dfn-proof-graph",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-graph",
       "linkingText": [
-        "verificationMethod"
+        "proof graph"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "verification-methods",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#verification-methods",
-        "title": "Verification Methods",
-        "number": "2.3.1"
+        "id": "proof-graphs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proof-graphs",
+        "title": "Proof Graphs",
+        "number": "2.1.3"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "dfn-revoked",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-revoked",
+      "id": "dfn-named-graph",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-named-graph",
       "linkingText": [
-        "revoked"
+        "named graph"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "verification-methods",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#verification-methods",
-        "title": "Verification Methods",
-        "number": "2.3.1"
+        "id": "proof-graphs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proof-graphs",
+        "title": "Proof Graphs",
+        "number": "2.1.3"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "dfn-publickeymultibase",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-publickeymultibase",
+      "id": "dfn-proofgraph",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proofgraph",
       "linkingText": [
-        "publicKeyMultibase"
+        "ProofGraph"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "multikey",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#multikey",
-        "title": "Multikey",
-        "number": "2.3.1.2"
+        "id": "proof-graphs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proof-graphs",
+        "title": "Proof Graphs",
+        "number": "2.1.3"
       },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-secretkeymultibase",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secretkeymultibase",
-      "linkingText": [
-        "secretKeyMultibase"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "multikey",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#multikey",
-        "title": "Multikey",
-        "number": "2.3.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-publickeyjwk",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-publickeyjwk",
-      "linkingText": [
-        "publicKeyJwk"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "jsonwebkey",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#jsonwebkey",
-        "title": "JsonWebKey",
-        "number": "2.3.1.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-secretkeyjwk",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secretkeyjwk",
-      "linkingText": [
-        "secretKeyJwk"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "jsonwebkey",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#jsonwebkey",
-        "title": "JsonWebKey",
-        "number": "2.3.1.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "defn-assertionMethod",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-assertionMethod",
-      "linkingText": [
-        "assertionMethod"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "assertion",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#assertion",
-        "title": "Assertion",
-        "number": "2.3.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "defn-keyAgreement",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-keyAgreement",
-      "linkingText": [
-        "keyAgreement"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "key-agreement",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#key-agreement",
-        "title": "Key Agreement",
-        "number": "2.3.2.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "defn-capabilityInvocation",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-capabilityInvocation",
-      "linkingText": [
-        "capabilityInvocation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capability-invocation",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#capability-invocation",
-        "title": "Capability Invocation",
-        "number": "2.3.2.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "defn-capabilityDelegation",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-capabilityDelegation",
-      "linkingText": [
-        "capabilityDelegation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capability-delegation",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#capability-delegation",
-        "title": "Capability Delegation",
-        "number": "2.3.2.5"
-      },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
       "id": "dfn-digestmultibase",
@@ -998,7 +725,7 @@
         "id": "resource-integrity",
         "href": "https://www.w3.org/TR/vc-data-integrity/#resource-integrity",
         "title": "Resource Integrity",
-        "number": "2.6"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -1192,7 +919,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -1213,7 +940,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -1234,7 +961,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -1255,7 +982,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -1276,7 +1003,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -1297,7 +1024,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.5"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },

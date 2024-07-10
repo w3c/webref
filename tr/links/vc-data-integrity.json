@@ -8,11 +8,6 @@
       "https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/": {},
       "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://datatracker.ietf.org/doc/html/draft-ietf-ohai-ohttp": {},
-      "https://datatracker.ietf.org/doc/html/rfc7517": {
-        "anchors": [
-          "section-8.1.1"
-        ]
-      },
       "https://en.wikipedia.org/wiki/Binary-to-text_encoding": {},
       "https://en.wikipedia.org/wiki/Canonicalization": {},
       "https://en.wikipedia.org/wiki/Cryptographic_hash_function": {
@@ -34,10 +29,8 @@
       "https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF": {},
       "https://mimesniff.spec.whatwg.org/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
-      "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c-ccg.github.io/did-method-key/": {},
-      "https://w3c-ccg.github.io/lds-ed25519-2020/": {},
       "https://w3c-ccg.github.io/zcap-spec/": {},
       "https://w3c.github.io/vc-data-integrity/implementations/": {},
       "https://w3c.github.io/vc-specs-dir/": {
@@ -47,13 +40,8 @@
       },
       "https://w3id.org/security": {},
       "https://www.ecma-international.org/publications-and-standards/standards/ecma-6/": {},
-      "https://www.iana.org/assignments/jose": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
-      "https://www.rfc-editor.org/rfc/rfc3986": {},
-      "https://www.rfc-editor.org/rfc/rfc6234": {},
-      "https://www.rfc-editor.org/rfc/rfc7517": {},
       "https://www.rfc-editor.org/rfc/rfc7519": {},
-      "https://www.rfc-editor.org/rfc/rfc7638": {},
       "https://www.rfc-editor.org/rfc/rfc7696": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.rfc-editor.org/rfc/rfc8259": {
@@ -69,6 +57,16 @@
       "https://www.w3.org/TR/VC-DATA-MODEL-2.0": {
         "anchors": [
           "PARSING_ERROR"
+        ]
+      },
+      "https://www.w3.org/TR/controller-document/": {
+        "anchors": [
+          "multibase-0",
+          "multibase",
+          "multihash",
+          "dfn-revoked",
+          "defn-vm-expires",
+          "retrieve-verification-method"
         ]
       },
       "https://www.w3.org/TR/did-core/": {},
@@ -96,8 +94,9 @@
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "representing-time",
-          "dfn-verifiable-credential",
+          "base-context",
           "issuer",
+          "dfn-verifiable-credential",
           "dfn-holders",
           "dfn-verifiable-presentation",
           "issuer-0",
@@ -105,20 +104,25 @@
           "defn-validFrom",
           "defn-validUntil",
           "validation",
-          "base-context",
           "vocabularies",
           "dfn-problemdetails",
           "security-considerations",
           "privacy-considerations"
         ]
       },
-      "https://www.w3.org/TR/vc-di-ecdsa/": {},
-      "https://www.w3.org/TR/vc-di-eddsa/": {
+      "https://www.w3.org/TR/vc-di-ecdsa/": {
         "anchors": [
-          "the-ed25519signature2020-suite"
+          "ecdsa-jcs-2019",
+          "ecdsa-rdfc-2019"
         ]
       },
-      "https://www.w3.org/TR/vc-jose-cose/": {},
+      "https://www.w3.org/TR/vc-di-eddsa/": {
+        "anchors": [
+          "the-ed25519signature2020-suite",
+          "eddsa-jcs-2022",
+          "eddsa-rdfc-2022"
+        ]
+      },
       "https://www.w3.org/TR/xmlschema11-2/": {},
       "https://www.w3.org/groups/wg/vc": {},
       "https://www.w3.org/groups/wg/vc/ipr": {},
@@ -138,13 +142,13 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "byte-sequence",
-          "ordered-set",
           "ordered-map",
-          "string",
           "struct",
           "struct-item",
           "boolean",
           "map-key",
+          "string",
+          "ordered-set",
           "list",
           "parse-json-bytes-to-an-infra-value",
           "map-exists"

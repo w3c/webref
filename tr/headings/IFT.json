@@ -36,24 +36,24 @@
       "number": "1"
     },
     {
-      "id": "patch-subset",
-      "href": "https://www.w3.org/TR/IFT/#patch-subset",
-      "level": 3,
-      "title": "Patch Subset",
-      "number": "1.1"
-    },
-    {
-      "id": "range-request",
-      "href": "https://www.w3.org/TR/IFT/#range-request",
-      "level": 3,
-      "title": "Range Request",
-      "number": "1.2"
-    },
-    {
       "id": "evaluation-report",
       "href": "https://www.w3.org/TR/IFT/#evaluation-report",
       "level": 3,
       "title": "Technical Motivation: Evaluation Report",
+      "number": "1.1"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/IFT/#overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "making-incremental-fonts",
+      "href": "https://www.w3.org/TR/IFT/#making-incremental-fonts",
+      "level": 3,
+      "title": "Creating an Incremental Font",
       "number": "1.3"
     },
     {
@@ -71,13 +71,6 @@
       "number": "1.4.1"
     },
     {
-      "id": "patchsubset-vs-rangerequest",
-      "href": "https://www.w3.org/TR/IFT/#patchsubset-vs-rangerequest",
-      "level": 4,
-      "title": "Deciding between Patch Subset and Range Request",
-      "number": "1.4.2"
-    },
-    {
       "id": "opt-in",
       "href": "https://www.w3.org/TR/IFT/#opt-in",
       "level": 2,
@@ -85,249 +78,221 @@
       "number": "2"
     },
     {
-      "id": "method-selection",
-      "href": "https://www.w3.org/TR/IFT/#method-selection",
-      "level": 2,
-      "title": "IFT Method Selection",
-      "number": "3"
-    },
-    {
-      "id": "method-negotiation",
-      "href": "https://www.w3.org/TR/IFT/#method-negotiation",
-      "level": 3,
-      "title": "IFT Method Negotiation",
-      "number": "3.1"
-    },
-    {
-      "id": "fallback",
-      "href": "https://www.w3.org/TR/IFT/#fallback",
-      "level": 3,
-      "title": "IFT Method Fallback",
-      "number": "3.2"
-    },
-    {
       "id": "offline-usage",
       "href": "https://www.w3.org/TR/IFT/#offline-usage",
       "level": 3,
       "title": "Offline Usage",
-      "number": "3.3"
+      "number": "2.1"
     },
     {
-      "id": "patch-incxfer",
-      "href": "https://www.w3.org/TR/IFT/#patch-incxfer",
+      "id": "definitions",
+      "href": "https://www.w3.org/TR/IFT/#definitions",
       "level": 2,
-      "title": "Patch Based Incremental Transfer",
-      "number": "4"
+      "title": "Definitions",
+      "number": "3"
     },
     {
-      "id": "font-subset-info",
-      "href": "https://www.w3.org/TR/IFT/#font-subset-info",
+      "id": "font-subset-dfn",
+      "href": "https://www.w3.org/TR/IFT/#font-subset-dfn",
       "level": 3,
       "title": "Font Subset",
-      "number": "4.1"
+      "number": "3.1"
+    },
+    {
+      "id": "font-patch-definitions",
+      "href": "https://www.w3.org/TR/IFT/#font-patch-definitions",
+      "level": 3,
+      "title": "Font Patch",
+      "number": "3.2"
+    },
+    {
+      "id": "patch-map-dfn",
+      "href": "https://www.w3.org/TR/IFT/#patch-map-dfn",
+      "level": 3,
+      "title": "Patch Map",
+      "number": "3.3"
     },
     {
       "id": "data-types",
       "href": "https://www.w3.org/TR/IFT/#data-types",
       "level": 3,
-      "title": "Data Types",
+      "title": "Explanation of Data Types",
+      "number": "3.4"
+    },
+    {
+      "id": "extending-font-subset",
+      "href": "https://www.w3.org/TR/IFT/#extending-font-subset",
+      "level": 2,
+      "title": "Extending a Font Subset",
+      "number": "4"
+    },
+    {
+      "id": "font-patch-invalidations",
+      "href": "https://www.w3.org/TR/IFT/#font-patch-invalidations",
+      "level": 3,
+      "title": "Patch Invalidations",
+      "number": "4.1"
+    },
+    {
+      "id": "extend-font-subset",
+      "href": "https://www.w3.org/TR/IFT/#extend-font-subset",
+      "level": 3,
+      "title": "Incremental Font Extension Algorithm",
       "number": "4.2"
+    },
+    {
+      "id": "fully-expanding-a-font",
+      "href": "https://www.w3.org/TR/IFT/#fully-expanding-a-font",
+      "level": 3,
+      "title": "Fully Expanding a Font",
+      "number": "4.3"
+    },
+    {
+      "id": "font-format-extensions",
+      "href": "https://www.w3.org/TR/IFT/#font-format-extensions",
+      "level": 2,
+      "title": "Extensions to the Font Format",
+      "number": "5"
+    },
+    {
+      "id": "ift-and-woff2",
+      "href": "https://www.w3.org/TR/IFT/#ift-and-woff2",
+      "level": 3,
+      "title": "Incremental Font Transfer and WOFF2",
+      "number": "5.1"
+    },
+    {
+      "id": "patch-map-table",
+      "href": "https://www.w3.org/TR/IFT/#patch-map-table",
+      "level": 3,
+      "title": "Patch Map Table",
+      "number": "5.2"
+    },
+    {
+      "id": "patch-map-format-1",
+      "href": "https://www.w3.org/TR/IFT/#patch-map-format-1",
+      "level": 4,
+      "title": "Patch Map Table: Format 1",
+      "number": "5.2.1"
+    },
+    {
+      "id": "interpreting-patch-map-format-1",
+      "href": "https://www.w3.org/TR/IFT/#interpreting-patch-map-format-1",
+      "level": 5,
+      "title": "Interpreting Format 1",
+      "number": "5.2.1.1"
+    },
+    {
+      "id": "remove-entries-format-1",
+      "href": "https://www.w3.org/TR/IFT/#remove-entries-format-1",
+      "level": 5,
+      "title": "Remove Entries from Format 1",
+      "number": "5.2.1.2"
+    },
+    {
+      "id": "patch-map-format-2",
+      "href": "https://www.w3.org/TR/IFT/#patch-map-format-2",
+      "level": 4,
+      "title": "Patch Map Table: Format 2",
+      "number": "5.2.2"
+    },
+    {
+      "id": "interpreting-patch-map-format-2",
+      "href": "https://www.w3.org/TR/IFT/#interpreting-patch-map-format-2",
+      "level": 5,
+      "title": "Interpreting Format 2",
+      "number": "5.2.2.1"
+    },
+    {
+      "id": "remove-entries-format-2",
+      "href": "https://www.w3.org/TR/IFT/#remove-entries-format-2",
+      "level": 5,
+      "title": "Remove Entries from Format 2",
+      "number": "5.2.2.2"
+    },
+    {
+      "id": "sparse-bit-set-decoding",
+      "href": "https://www.w3.org/TR/IFT/#sparse-bit-set-decoding",
+      "level": 5,
+      "title": "Sparse Bit Set",
+      "number": "5.2.2.3"
+    },
+    {
+      "id": "uri-templates",
+      "href": "https://www.w3.org/TR/IFT/#uri-templates",
+      "level": 4,
+      "title": "URI Templates",
+      "number": "5.2.3"
+    },
+    {
+      "id": "font-patch-formats",
+      "href": "https://www.w3.org/TR/IFT/#font-patch-formats",
+      "level": 2,
+      "title": "Font Patch Formats",
+      "number": "6"
+    },
+    {
+      "id": "font-patch-formats-summary",
+      "href": "https://www.w3.org/TR/IFT/#font-patch-formats-summary",
+      "level": 3,
+      "title": "Formats Summary",
+      "number": "6.1"
+    },
+    {
+      "id": "brotli",
+      "href": "https://www.w3.org/TR/IFT/#brotli",
+      "level": 3,
+      "title": "Brotli Patch",
+      "number": "6.2"
+    },
+    {
+      "id": "apply-brotli",
+      "href": "https://www.w3.org/TR/IFT/#apply-brotli",
+      "level": 4,
+      "title": "Applying Brotli Patches",
+      "number": "6.2.1"
+    },
+    {
+      "id": "per-table-brotli",
+      "href": "https://www.w3.org/TR/IFT/#per-table-brotli",
+      "level": 3,
+      "title": "Per Table Brotli",
+      "number": "6.3"
+    },
+    {
+      "id": "apply-per-table-brotli",
+      "href": "https://www.w3.org/TR/IFT/#apply-per-table-brotli",
+      "level": 4,
+      "title": "Applying Per Table Brotli Patches",
+      "number": "6.3.1"
+    },
+    {
+      "id": "glyph-keyed",
+      "href": "https://www.w3.org/TR/IFT/#glyph-keyed",
+      "level": 3,
+      "title": "Glyph Keyed",
+      "number": "6.4"
+    },
+    {
+      "id": "apply-glyph-keyed",
+      "href": "https://www.w3.org/TR/IFT/#apply-glyph-keyed",
+      "level": 4,
+      "title": "Applying Glyph Keyed Patches",
+      "number": "6.4.1"
     },
     {
       "id": "encoding",
       "href": "https://www.w3.org/TR/IFT/#encoding",
-      "level": 4,
-      "title": "Encoding",
-      "number": "4.2.1"
-    },
-    {
-      "id": "primitives",
-      "href": "https://www.w3.org/TR/IFT/#primitives",
-      "level": 4,
-      "title": "Primitives",
-      "number": "4.2.2"
-    },
-    {
-      "id": "sparsebitset-object",
-      "href": "https://www.w3.org/TR/IFT/#sparsebitset-object",
-      "level": 4,
-      "title": "SparseBitSet",
-      "number": "4.2.3"
-    },
-    {
-      "id": "integerlist-object",
-      "href": "https://www.w3.org/TR/IFT/#integerlist-object",
-      "level": 4,
-      "title": "IntegerList",
-      "number": "4.2.4"
-    },
-    {
-      "id": "integerlist-deltas",
-      "href": "https://www.w3.org/TR/IFT/#integerlist-deltas",
-      "level": 5,
-      "title": "Delta Encoding",
-      "number": "4.2.4.1"
-    },
-    {
-      "id": "integerlist-zigzag",
-      "href": "https://www.w3.org/TR/IFT/#integerlist-zigzag",
-      "level": 5,
-      "title": "Zig-Zag Encoding",
-      "number": "4.2.4.2"
-    },
-    {
-      "id": "integerlist-uintbase128",
-      "href": "https://www.w3.org/TR/IFT/#integerlist-uintbase128",
-      "level": 5,
-      "title": "UIntBase128 Encoding",
-      "number": "4.2.4.3"
-    },
-    {
-      "id": "sortedintegerlist-object",
-      "href": "https://www.w3.org/TR/IFT/#sortedintegerlist-object",
-      "level": 4,
-      "title": "SortedIntegerList",
-      "number": "4.2.5"
-    },
-    {
-      "id": "rangelist-object",
-      "href": "https://www.w3.org/TR/IFT/#rangelist-object",
-      "level": 4,
-      "title": "RangeList",
-      "number": "4.2.6"
-    },
-    {
-      "id": "featuretagset-object",
-      "href": "https://www.w3.org/TR/IFT/#featuretagset-object",
-      "level": 4,
-      "title": "FeatureTagSet",
-      "number": "4.2.7"
-    },
-    {
-      "id": "AxisSpace",
-      "href": "https://www.w3.org/TR/IFT/#AxisSpace",
-      "level": 4,
-      "title": "AxisSpace",
-      "number": "4.2.8"
-    },
-    {
-      "id": "objects",
-      "href": "https://www.w3.org/TR/IFT/#objects",
-      "level": 4,
-      "title": "Objects",
-      "number": "4.2.9"
-    },
-    {
-      "id": "schemas",
-      "href": "https://www.w3.org/TR/IFT/#schemas",
-      "level": 3,
-      "title": "Object Schemas",
-      "number": "4.3"
-    },
-    {
-      "id": "CompressedSet",
-      "href": "https://www.w3.org/TR/IFT/#CompressedSet",
-      "level": 4,
-      "title": "CompressedSet",
-      "number": "4.3.1"
-    },
-    {
-      "id": "AxisInterval",
-      "href": "https://www.w3.org/TR/IFT/#AxisInterval",
-      "level": 4,
-      "title": "AxisInterval",
-      "number": "4.3.2"
-    },
-    {
-      "id": "PatchRequest",
-      "href": "https://www.w3.org/TR/IFT/#PatchRequest",
-      "level": 4,
-      "title": "PatchRequest",
-      "number": "4.3.3"
-    },
-    {
-      "id": "ClientState",
-      "href": "https://www.w3.org/TR/IFT/#ClientState",
-      "level": 4,
-      "title": "ClientState",
-      "number": "4.3.4"
-    },
-    {
-      "id": "client",
-      "href": "https://www.w3.org/TR/IFT/#client",
-      "level": 3,
-      "title": "Client",
-      "number": "4.4"
-    },
-    {
-      "id": "extend-subset",
-      "href": "https://www.w3.org/TR/IFT/#extend-subset",
-      "level": 4,
-      "title": "Extending the Font Subset",
-      "number": "4.4.1"
-    },
-    {
-      "id": "handling-patch-response",
-      "href": "https://www.w3.org/TR/IFT/#handling-patch-response",
-      "level": 4,
-      "title": "Handling Server Response",
-      "number": "4.4.2"
-    },
-    {
-      "id": "load-a-font",
-      "href": "https://www.w3.org/TR/IFT/#load-a-font",
-      "level": 4,
-      "title": "Load a Font in a User Agent with a HTTP Cache",
-      "number": "4.4.3"
-    },
-    {
-      "id": "handling-patch-request",
-      "href": "https://www.w3.org/TR/IFT/#handling-patch-request",
-      "level": 3,
-      "title": "Server: Responding to a PatchRequest",
-      "number": "4.5"
-    },
-    {
-      "id": "range-request-support",
-      "href": "https://www.w3.org/TR/IFT/#range-request-support",
-      "level": 4,
-      "title": "Range Request Support",
-      "number": "4.5.1"
-    },
-    {
-      "id": "computing-checksums",
-      "href": "https://www.w3.org/TR/IFT/#computing-checksums",
-      "level": 3,
-      "title": "Computing Checksums",
-      "number": "4.6"
-    },
-    {
-      "id": "codepoint-reordering",
-      "href": "https://www.w3.org/TR/IFT/#codepoint-reordering",
-      "level": 3,
-      "title": "Codepoint Reordering",
-      "number": "4.7"
-    },
-    {
-      "id": "reordering-checksum",
-      "href": "https://www.w3.org/TR/IFT/#reordering-checksum",
-      "level": 4,
-      "title": "Codepoint Reordering Checksum",
-      "number": "4.7.1"
-    },
-    {
-      "id": "patch-encodings",
-      "href": "https://www.w3.org/TR/IFT/#patch-encodings",
-      "level": 3,
-      "title": "Patch Encodings",
-      "number": "4.8"
-    },
-    {
-      "id": "range-request-incxfer",
-      "href": "https://www.w3.org/TR/IFT/#range-request-incxfer",
       "level": 2,
-      "title": "Range Request Incremental Transfer",
-      "number": "5"
+      "title": "Encoding",
+      "number": "7"
+    },
+    {
+      "id": "encoding-considerations",
+      "href": "https://www.w3.org/TR/IFT/#encoding-considerations",
+      "level": 3,
+      "title": "Encoding Considerations",
+      "number": "7.1"
     },
     {
       "id": "priv",
@@ -340,12 +305,6 @@
       "href": "https://www.w3.org/TR/IFT/#content-inference-from-character-set",
       "level": 3,
       "title": "Content inference from character set"
-    },
-    {
-      "id": "checksum-and-possible-fingerprinting",
-      "href": "https://www.w3.org/TR/IFT/#checksum-and-possible-fingerprinting",
-      "level": 3,
-      "title": "Checksums and possible fingerprinting"
     },
     {
       "id": "per-origin",
@@ -364,13 +323,6 @@
       "href": "https://www.w3.org/TR/IFT/#changes",
       "level": 2,
       "title": "Changes"
-    },
-    {
-      "id": "feature-tag-list",
-      "href": "https://www.w3.org/TR/IFT/#feature-tag-list",
-      "level": 2,
-      "title": "Default Feature Tags and Encoding IDs",
-      "number": "A"
     },
     {
       "id": "w3c-conformance",
@@ -401,12 +353,6 @@
       "href": "https://www.w3.org/TR/IFT/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
-    },
-    {
-      "id": "index-defined-elsewhere",
-      "href": "https://www.w3.org/TR/IFT/#index-defined-elsewhere",
-      "level": 3,
-      "title": "Terms defined by reference"
     },
     {
       "id": "references",
