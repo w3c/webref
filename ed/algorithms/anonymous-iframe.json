@@ -1,0 +1,238 @@
+{
+  "spec": {
+    "title": "Iframe credentialless",
+    "url": "https://wicg.github.io/anonymous-iframe/"
+  },
+  "algorithms": [
+    {
+      "html": "Deploying <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep②\">COEP</a> is difficult for some developers, because of third party\niframes. Here is the typical scenario:",
+      "rationale": "end",
+      "steps": [
+        {
+          "html": "<p>End users needs performant websites.</p>"
+        },
+        {
+          "html": "<p>Some developers get performant websites, by using\n multithreading/<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-sharedarraybuffer-objects\" id=\"ref-for-sec-sharedarraybuffer-objects\">SharedArrayBuffer</a></code> in their top-level document.</p>"
+        },
+        {
+          "html": "<p>To mitigate <a data-link-type=\"biblio\" href=\"https://wicg.github.io/anonymous-iframe/#biblio-spectre\" title=\"Spectre Attacks: Exploiting Speculative Execution\">[Spectre]</a> attacks, browsers vendors like Chrome, Firefox and\n Safari gate <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-sharedarraybuffer-objects\" id=\"ref-for-sec-sharedarraybuffer-objects①\">SharedArrayBuffer</a></code> usage behind the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-concept-settings-object-cross-origin-isolated-capability\">crossOriginIsolated</a> capability. This requires deploying both <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep③\">COEP</a> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#cross-origin-opener-policies\" id=\"ref-for-cross-origin-opener-policies②\">COOP</a></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep④\">COEP</a> requirement is recursive: third party iframes are required to\n deploy <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep⑤\">COEP</a> in order to be embeddable inside a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep⑥\">COEP</a> parent.</p>"
+        },
+        {
+          "html": "<p>Waiting for third party to deploy <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#coep\" id=\"ref-for-coep⑦\">COEP</a> is painful for developers. This\n is often out of their control most of the time.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>credentialless</var> be the result of determining the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#initial-window-credentialless\" id=\"ref-for-initial-window-credentialless\">initial window credentialless</a> flag, given <var>browsingContext</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>credentialless</var> be the result of computing the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#navigation-credentialless\" id=\"ref-for-navigation-credentialless\">navigation’s credentialless flag</a>, given <var>browsingContext</var>.</p>\n     <p></p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#entry-global-object\" id=\"ref-for-entry-global-object\">entry global object</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/anonymous-iframe/#dom-window-credentialless\" id=\"ref-for-dom-window-credentialless⑤\">credentialless</a></code> flag is true, then set <var>noopener</var> to true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initial-window-credentialless",
+      "href": "https://wicg.github.io/anonymous-iframe/#initial-window-credentialless",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"initial-window-credentialless\" id=\"initial-window-credentialless\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initial window\n  credentialless flag</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing\n  context</a> <var>browsing context</var>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>embedder</var> be <var>browsing context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#bc-container\" id=\"ref-for-bc-container\">container</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>embedder</var> is not an element, return false.</p>"
+        },
+        {
+          "html": "<p>Otherwise, set <var>parentWindow</var> be the <var>embedder</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node\n   document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Return the union of:</p>\n      <ul class=\"brief\">\n       <li>\n        <p><var>parentWindow</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/anonymous-iframe/#dom-window-credentialless\" id=\"ref-for-dom-window-credentialless⑧\">credentialless</a></code></p>\n       </li><li>\n        <p><var>embedder</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#the-iframe-element\" id=\"ref-for-the-iframe-element②\">iframe</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#attr-iframe-credentialless\" id=\"ref-for-attr-iframe-credentialless②\">credentialless</a></p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "To <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#check-a-navigation-response's-adherence-to-its-embedder-policy\" id=\"ref-for-check-a-navigation-response's-adherence-to-its-embedder-policy①\">check a navigation response’s adherence to its embedder policy</a> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc①\">browsing context</a> <var>target</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-embedder-policy\" id=\"ref-for-policy-container-embedder-policy\">embedder policy</a> <var>responsePolicy</var>, <span class=\"customHighlight\">and a boolean <var>credentialless</var></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>target</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#child-browsing-context\" id=\"ref-for-child-browsing-context\">child browsing context</a>, then\n   return true.</p>"
+        },
+        {
+          "html": "<p>Let <var>parentPolicy</var> be <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#bc-container-document\" id=\"ref-for-bc-container-document\">container document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#policy-container-embedder-policy\" id=\"ref-for-policy-container-embedder-policy①\">embedder policy</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parentPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-report-only-value\" id=\"ref-for-embedder-policy-report-only-value\">report-only value</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#compatible-with-cross-origin-isolation\" id=\"ref-for-compatible-with-cross-origin-isolation\">compatible\n   with cross-origin isolation</a> and <var>responsePolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-value\" id=\"ref-for-embedder-policy-value\">value</a> is not, <span class=\"customHighlight\">and <var>credentialless</var> is false</span>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#queue-a-cross-origin-embedder-policy-inheritance-violation\" id=\"ref-for-queue-a-cross-origin-embedder-policy-inheritance-violation\">queue a cross-origin embedder policy inheritance violation</a> with <var>response</var>, \"<code data-lt=\"\">navigation</code>\", <var>parentPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-report-only-reporting-endpoint\" id=\"ref-for-embedder-policy-report-only-reporting-endpoint\">report only reporting\n   endpoint</a>, \"<code data-lt=\"\">reporting</code>\", and <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#bc-container-document\" id=\"ref-for-bc-container-document①\">container document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings\n   object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parentPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-value\" id=\"ref-for-embedder-policy-value①\">value</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#compatible-with-cross-origin-isolation\" id=\"ref-for-compatible-with-cross-origin-isolation①\">compatible with cross-origin isolation</a> or <var>responsePolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-value\" id=\"ref-for-embedder-policy-value②\">value</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#compatible-with-cross-origin-isolation\" id=\"ref-for-compatible-with-cross-origin-isolation②\">compatible with cross-origin isolation</a>, <span class=\"customHighlight\">or <var>credentialless</var> is true, </span>then return\n   true.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#queue-a-cross-origin-embedder-policy-inheritance-violation\" id=\"ref-for-queue-a-cross-origin-embedder-policy-inheritance-violation①\">Queue a cross-origin embedder policy inheritance violation</a> with <var>response</var>, \"<code data-lt=\"\">navigation</code>\", <var>parentPolicy</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#embedder-policy-reporting-endpoint\" id=\"ref-for-embedder-policy-reporting-endpoint\">reporting endpoint</a>, \"<code data-lt=\"\">enforce</code>\", and <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#bc-container-document\" id=\"ref-for-bc-container-document②\">container document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings\n   object</a>.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>credentialless</var> is true, let <var>partitionNonce</var> be <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#page-credentialless-nonce\" id=\"ref-for-page-credentialless-nonce①\">page\n  credentialless nonce</a>, null otherwise.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url①\">creation\nURL</a> to <var>creationURL</var>, <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-creation-url\" id=\"ref-for-concept-environment-top-level-creation-url①\">top-level creation URL</a> to <var>topLevelCreationURL</var>, <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a> to <var>topLevelOrigin</var>, <span class=\"customHighlight\">and <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce②\">partition nonce</a> to <var>partitionNonce</var>.</span></p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce③\">partition nonce</a> to <var>outside settings</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce④\">partition nonce</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-environment-id\" id=\"ref-for-concept-environment-id①\">id</a> to a new\n unique opaque string, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url②\">creation URL</a> to <var>inheritedAPIBaseURL</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-creation-url\" id=\"ref-for-concept-environment-top-level-creation-url②\">top-level creation URL</a> to null, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level\n origin</a> to <var>outsideSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin③\">top-level origin</a>, <span class=\"customHighlight\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce⑤\">partition nonce</a> to <var>outsideSettings</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce⑥\">partition\n nonce</a></span>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-target-browsing-context\" id=\"ref-for-concept-environment-target-browsing-context①\">target browsing context</a> to null,\n and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-environment-active-service-worker\" id=\"ref-for-concept-environment-active-service-worker\">active service\n worker</a> to null.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#determine-the-network-partition-key\" id=\"ref-for-determine-the-network-partition-key\">determine the network\n  partition key, given an </a><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment⑤\">environment</a> <var>environment</var>,\n  run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>topLevelOrigin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>topLevelOrigin</var> is null, then set <var>topLevelOrigin</var> to <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-creation-url\" id=\"ref-for-concept-environment-top-level-creation-url③\">top-level creation URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>. </p>"
+        },
+        {
+          "html": "<p>Assert: <var>topLevelOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#concept-origin\" id=\"ref-for-concept-origin①\">origin</a>. </p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a>,\n   given <var>topLevelOrigin</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>secondKey</var> be null or an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> value. </p>\n      <p class=\"XXX\">The second key is intentionally a little vague as the finer points are still\n   evolving. See <a href=\"https://github.com/whatwg/fetch/issues/1035\">issue #1035</a>. </p>"
+        },
+        {
+          "html": "<p class=\"customHighlight\">Let <var>nonce</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce⑦\">partition nonce</a></p>"
+        },
+        {
+          "html": "<p>Return (<var>topLevelSite</var>, <var>secondKey</var>, <var class=\"customHighlight\">nonce</var>). </p>"
+        }
+      ]
+    },
+    {
+      "html": "Below is the algorithm that browsers can use to parse cookie lines. This\nalgorithm could be added to <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-07#section-5.3\">section 5.3 of\nRFC6265bis</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let \"partition-key\" be null.</p>"
+        },
+        {
+          "html": "If <span class=\"customHighlight\">If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment⑧\">environment</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce⑨\">partition nonce</a> is defined</span> or an attribute-name\n case-insensitively matches the string <code>\"Partitioned\"</code>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>site</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment⑨\">environment</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin⑤\">top-level origin</a>’s <a href=\"https://html.spec.whatwg.org/#sites\">site</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>site</var> is in a <a href=\"https://github.com/privacycg/first-party-sets\">First-Party\n  Set</a>, then set <var>site</var> be\n  the concatenation of \"https://\" and the \"owner domain\" of the site’s set.</p>"
+            },
+            {
+              "html": "<p><span class=\"customHighlight\">Let <var>nonce</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment①⓪\">environment</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce①⓪\">partition nonce</a>.</span></p>"
+            },
+            {
+              "html": "<p><span class=\"customHighlight\">Set <var>partition-key</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> (<var>site</var>, <var>nonce</var>)</span></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Append an attribute to the cookie-attribute-list with an attribute-name of\n \"PartitionKey\" and an attribute-value of <var>partition-key</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Below is the algorithm for storing <code>Partitioned</code> cookies. These steps could be\nadded to <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-07#section-5.4\">section 5.4 of\nRFC6265bis</a> after the user agent processes the cookie’s __Host- prefix.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the cookie-attribute-list contains an attribute with an attribute-name of\n \"PartitionKey\", and attribute-value is null <span class=\"customHighlight\"> or\n a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> (<var>site</var>, <var>nonce</var>), with a non-null <var>nonce</var></span>, then\n skip the following steps and insert the cookie into the cookie store.</p>"
+        },
+        {
+          "html": "<p>If the cookie-name does not start with a case-sensitive match for the string\n \"__Host-\", then abort the following steps and ignore the cookie entirely.</p>"
+        },
+        {
+          "html": "<p>If the cookie line also contains the [<code>SameParty</code> attribute](https://github.com/cfredric/sameparty) (the exact semantics of how\n the <code>SameParty</code> attribute is loaded into the cookie-attribute-list is TBD)\n then abort the following steps and ignore the cookie entirely.</p>"
+        },
+        {
+          "html": "<p>Set the cookie’s partition-key to the attribute-value of the element in the\n attribute-list whose attribute-name is \"PartitionKey\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each cookie in the cookie-list do the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>environment</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment①①\">environment</a> that initiated the request.</p>"
+        },
+        {
+          "html": "<p>If the cookie’s partition-key is null, <span class=\"customHighlight\">and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment①②\">environment</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce①①\">partition nonce</a> is null</span>, skip the\n following parts of this step.</p>"
+        },
+        {
+          "html": "<p>Let <var>request-top-site</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C/#environment\" id=\"ref-for-environment①③\">environment</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin⑥\">top-level\n origin</a>’s <a href=\"https://html.spec.whatwg.org/#sites\">site</a>.</p>"
+        },
+        {
+          "html": "<p><span class=\"customHighlight\">Let <var>request-partition-nonce</var> be the <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/anonymous-iframe/#environment-partition-nonce\" id=\"ref-for-environment-partition-nonce①②\">partition nonce</a>.</span></p>"
+        },
+        {
+          "html": "<p>If <var>request-top-site</var> is in a <a href=\"https://github.com/privacycg/first-party-sets\">First-Party\n Set</a>, then set <var>request-top-site</var> be the concatenation of \"https://\" and the \"owner domain\"\n of the <var>request-top-site</var>’s set.</p>"
+        },
+        {
+          "html": "<p>Let <var>request-partition-key</var> be the tuple (<var>request-top-site</var>, <var>request-partition-nonce</var>).</p>"
+        },
+        {
+          "html": "<p>If the cookie’s partition-key is not an exact match of <var>request-partition-key</var>, then remove that cookie from the cookie-list.</p>"
+        }
+      ]
+    }
+  ]
+}

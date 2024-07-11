@@ -1,0 +1,227 @@
+{
+  "spec": {
+    "title": "CSS Counter Styles Level 3",
+    "url": "https://drafts.csswg.org/css-counter-styles-3/"
+  },
+  "algorithms": [
+    {
+      "name": "generate a counter",
+      "href": "https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"generate a counter|generate a counter representation\" id=\"generate-a-counter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a counter representation</dfn> using a particular counter style for a particular counter value,\n\tfollow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the counter style is unknown,\n\t\t\texit this algorithm and instead <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter\" id=\"ref-for-generate-a-counter\">generate a counter representation</a> using the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-counter-styles-3/#decimal\" id=\"ref-for-decimal\">decimal</a> style and the same counter value."
+        },
+        {
+          "html": "If the counter value is outside the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-range\" id=\"ref-for-descdef-counter-style-range\">range</a> of the counter style,\n\t\t\texit this algorithm and instead <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter\" id=\"ref-for-generate-a-counter①\">generate a counter representation</a> using the counter style’s fallback style and the same counter value."
+        },
+        {
+          "html": "Using the counter value and the counter algorithm for the counter style,\n\t\t\tgenerate an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initial-representation-for-the-counter-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initial representation for the counter value</dfn>.\n\t\t\tIf the counter value is negative\n\t\t\tand the counter style <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#use-a-negative-sign\" id=\"ref-for-use-a-negative-sign\">uses a negative sign</a>,\n\t\t\tinstead generate an initial representation using the absolute value of the counter value."
+        },
+        {
+          "html": "Prepend symbols to the representation as specified in the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-pad\" id=\"ref-for-descdef-counter-style-pad\">pad</a> descriptor."
+        },
+        {
+          "html": "If the counter value is negative\n\t\t\tand the counter style <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#use-a-negative-sign\" id=\"ref-for-use-a-negative-sign①\">uses a negative sign</a>,\n\t\t\twrap the representation in the counter style’s negative sign\n\t\t\tas specified in the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-negative\" id=\"ref-for-descdef-counter-style-negative\">negative</a> descriptor."
+        },
+        {
+          "html": "Return the representation."
+        }
+      ]
+    },
+    {
+      "html": "Let <var>N</var> be the length of the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#counter-symbol\" id=\"ref-for-counter-symbol①③\">counter symbols</a>, <var>value</var> initially be the counter value, <var>S</var> initially be the empty string,\n\tand <var>symbol(n)</var> be the nth <span id=\"ref-for-counter-symbol①④\">counter symbol</span> in the list of <span id=\"ref-for-counter-symbol①⑤\">counter symbols</span> (0-indexed).",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let the <var>chosen symbol</var> be <code class=\"inline\">symbol( (<var>value</var> - 1) mod <var>N</var>)</code>."
+        },
+        {
+          "html": "Let the <var>representation length</var> be <code class=\"inline\">ceil( <var>value</var> / <var>N</var> )</code>."
+        },
+        {
+          "html": "Append the <var>chosen symbol</var> to <var>S</var> a number of times equal to the <var>representation length</var>."
+        }
+      ]
+    },
+    {
+      "html": "While <var>value</var> is not equal to 0:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <var>value</var> to <code><var>value</var> - 1</code>."
+        },
+        {
+          "html": "Prepend <var>symbol( <var>value</var> mod <var>N</var> )</var> to <var>S</var>."
+        },
+        {
+          "html": "Set <var>value</var> to <code>floor( <var>value</var> / <var>N</var> )</code>."
+        }
+      ]
+    },
+    {
+      "html": "Let <var>N</var> be the length of the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#counter-symbol\" id=\"ref-for-counter-symbol②⑨\">counter symbols</a>, <var>value</var> initially be the counter value, <var>S</var> initially be the empty string,\n\tand <var>symbol(n)</var> be the nth <span id=\"ref-for-counter-symbol③⓪\">counter symbol</span> in the list of <span id=\"ref-for-counter-symbol③①\">counter symbols</span> (0-indexed).",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>value</var> is 0, append <code>symbol(0)</code> to <var>S</var> and return <var>S</var>."
+        },
+        {
+          "html": "While <var>value</var> is not equal to 0:",
+          "rationale": "prepend",
+          "steps": [
+            {
+              "html": "Prepend <var>symbol( <var>value</var> mod <var>N</var> )</var> to <var>S</var>."
+            },
+            {
+              "html": "Set <var>value</var> to <code>floor( <var>value</var> / <var>N</var> )</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>S</var>."
+        }
+      ]
+    },
+    {
+      "name": "additive representation",
+      "html": "To construct the representation:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>value</var> initially be the counter value, <var>S</var> initially be the empty string,\nand <var>symbol list</var> initially be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#additive-tuple\" id=\"ref-for-additive-tuple①\">additive tuples</a>.</p>"
+        },
+        {
+          "html": "If <var>value</var> is zero:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>symbol list</var> contains a tuple with a weight of zero,\nappend that tuple’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#counter-symbol\" id=\"ref-for-counter-symbol③②\">counter symbol</a> to <var>S</var> and return <var>S</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, the given counter value cannot be represented by this counter style,\nand must instead be represented by the fallback counter style.</p>"
+            }
+          ]
+        },
+        {
+          "html": "For each <var>tuple</var> in <var>symbol list</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>symbol</var> and <var>weight</var> be <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#counter-symbol\" id=\"ref-for-counter-symbol③③\">counter symbol</a> and weight, respectively.</p>"
+            },
+            {
+              "html": "<p>If <var>weight</var> is zero, or <var>weight</var> is greater than <var>value</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>reps</var> be <code>floor( <var>value</var> / <var>weight</var> )</code>.</p>"
+            },
+            {
+              "html": "<p>Append <var>symbol</var> to <var>S</var> <var>reps</var> times.</p>"
+            },
+            {
+              "html": "<p>Decrement <var>value</var> by <code><var>weight</var> * <var>reps</var></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is zero, return <var>S</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Assertion: <var>value</var> is still non-zero.</p>\n      <p>The given counter value cannot be represented by this counter style,\nand must instead be represented by the fallback counter style.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The Chinese longhand styles are defined by almost identical algorithms\n\t(specified as a single algorithm here, with the differences called out when relevant),\n\tbut use different sets of characters,\n\tas specified by the table following the algorithm.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the counter value is 0, the representation is the character for 0\n\t\tspecified for the given counter style.  Skip the rest of this algorithm."
+        },
+        {
+          "html": "Initially represent the counter value as a decimal number.  For each\n\t\tdigit that is not 0, append the appropriate digit marker to the digit.\n\t\tThe ones digit has no marker."
+        },
+        {
+          "html": "For the informal styles, if the counter value is between ten and\n\t\tnineteen, remove the tens digit (leave the digit marker)."
+        },
+        {
+          "html": "Drop any trailing zeros and collapse any remaining zeros into a single\n\t\tzero digit."
+        },
+        {
+          "html": "Replace the digits 0-9 with the appropriate character for the given\n\t\tcounter style.  Return the resultant string as the representation of the\n\t\tcounter value."
+        }
+      ]
+    },
+    {
+      "name": "<counter-style-name>/ethiopic-numeric",
+      "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-ethiopic-numeric",
+      "html": "The <dfn class=\"dfn-paneled css has-dfn-panel\" data-dfn-for=\"<counter-style-name>\" data-dfn-type=\"value\" data-export=\"\" id=\"valdef-counter-style-name-ethiopic-numeric\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ethiopic-numeric</dfn> counter style is defined for all positive non-zero numbers.\n\tThe following algorithm converts decimal digits to ethiopic numbers:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the number is 1,\n\t\t\treturn \"፩\" (U+1369)."
+        },
+        {
+          "html": "Split the number into groups of two digits,\n\t\t\tstarting with the least significant decimal digit."
+        },
+        {
+          "html": "Index each group sequentially,\n\t\t\tstarting from the least significant as group number zero."
+        },
+        {
+          "html": "If the group has the value zero,\n\t\t\tor if the group is the most significant one and has the value 1,\n\t\t\tor if the group has an odd index (as given in the previous step) and has the value 1,\n\t\t\tthen remove the digits\n\t\t\t(but leave the group, so it still has a separator appended below)."
+        },
+        {
+          "html": "For each remaining digit,\n\t\t\tsubstitute the relevant ethiopic character from the list below. \n     <div class=\"overlarge\"><table class=\"data\">\n      <thead>\n       <tr>\n        <th colspan=\"3\">Tens \n        </th><th colspan=\"3\">Units \n       </th></tr><tr>\n        <th>Values \n        </th><th colspan=\"2\">Codepoints \n        </th><th>Values \n        </th><th colspan=\"2\">Codepoints \n      </th></tr></thead><tbody>\n       <tr>\n        <td>10 \n        </td><td>፲ \n        </td><td>U+1372 \n        </td><td>1 \n        </td><td>፩ \n        </td><td>U+1369 \n       </td></tr><tr>\n        <td>20 \n        </td><td>፳ \n        </td><td>U+1373 \n        </td><td>2 \n        </td><td>፪ \n        </td><td>U+136A \n       </td></tr><tr>\n        <td>30 \n        </td><td>፴ \n        </td><td>U+1374 \n        </td><td>3 \n        </td><td>፫ \n        </td><td>U+136B \n       </td></tr><tr>\n        <td>40 \n        </td><td>፵ \n        </td><td>U+1375 \n        </td><td>4 \n        </td><td>፬ \n        </td><td>U+136C \n       </td></tr><tr>\n        <td>50 \n        </td><td>፶ \n        </td><td>U+1376 \n        </td><td>5 \n        </td><td>፭ \n        </td><td>U+136D \n       </td></tr><tr>\n        <td>60 \n        </td><td>፷ \n        </td><td>U+1377 \n        </td><td>6 \n        </td><td>፮ \n        </td><td>U+136E \n       </td></tr><tr>\n        <td>70 \n        </td><td>፸ \n        </td><td>U+1378 \n        </td><td>7 \n        </td><td>፯ \n        </td><td>U+136F \n       </td></tr><tr>\n        <td>80 \n        </td><td>፹ \n        </td><td>U+1379 \n        </td><td>8 \n        </td><td>፰ \n        </td><td>U+1370 \n       </td></tr><tr>\n        <td>90 \n        </td><td>፺ \n        </td><td>U+137A \n        </td><td>9 \n        </td><td>፱ \n        </td><td>U+1371 \n     </td></tr></tbody></table></div>"
+        },
+        {
+          "html": "For each group with an odd index (as given in the second step),\n\t\t\texcept groups which originally had a value of zero,\n\t\t\tappend ፻ U+137B."
+        },
+        {
+          "html": "For each group with an even index (as given in the second step),\n\t\t\texcept the group with index 0,\n\t\t\tappend ፼ U+137C."
+        },
+        {
+          "html": "Concatenate the groups into one string,\n\t\t\tand return it."
+        }
+      ]
+    },
+    {
+      "name": "CSSCounterStyleRule/name",
+      "href": "https://drafts.csswg.org/css-counter-styles-3/#dom-csscounterstylerule-name",
+      "html": "On setting the <var>name</var> attribute, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the value is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match\nfor \"none\"\nor one of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#non-overridable-counter-style-names\" id=\"ref-for-non-overridable-counter-style-names①\">non-overridable counter-style names</a>,\ndo nothing and return.</p>"
+        },
+        {
+          "html": "<p>If the value is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive③\">ASCII case-insensitive</a> match\nfor any of the predefined <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-counter-styles-3/#counter-style\" id=\"ref-for-counter-style⑥\">counter styles</a>,\nlowercase it.</p>"
+        },
+        {
+          "html": "<p>Replace the associated rule’s name with an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-3/#css-css-identifier\" id=\"ref-for-css-css-identifier\">identifier</a> equal to the value.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CSSCounterStyleRule/fallback",
+      "href": "https://drafts.csswg.org/css-counter-styles-3/#dom-csscounterstylerule-fallback",
+      "html": "On setting, run the following steps:",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parse</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#the-given-value\" id=\"ref-for-the-given-value\">the given value</a> as the descriptor associated with the attribute.</p>"
+        },
+        {
+          "html": "<p>If the result is invalid according to the given descriptor’s grammar,\nor would cause the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style\" id=\"ref-for-at-ruledef-counter-style④②\">@counter-style</a> rule to become invalid,\ndo nothing and abort these steps.\n(For example, some systems require the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-symbols\" id=\"ref-for-descdef-counter-style-symbols①⑦\">symbols</a> descriptor to contain two values.)</p>"
+        },
+        {
+          "html": "<p>If the attribute being set is <a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-counter-styles-3/#dom-csscounterstylerule-system\" id=\"ref-for-dom-csscounterstylerule-system①\">system</a>,\nand the new value would change the algorithm used,\ndo nothing and abort these steps. </p>"
+        },
+        {
+          "html": "<p>Set the descriptor to the value.</p>"
+        }
+      ]
+    }
+  ]
+}

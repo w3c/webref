@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "title": "WebOTP API",
+    "url": "https://wicg.github.io/web-otp/"
+  },
+  "algorithms": [
+    {
+      "html": "When this method is invoked, the user agent MUST execute the following algorithm:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <code><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-otp/#dom-credentialrequestoptions-otp\" id=\"ref-for-dom-credentialrequestoptions-otp②\">otp</a></code></code> is <a data-link-type=\"dfn\">present</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>options</var> be the value of <code><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-otp/#dom-credentialrequestoptions-otp\" id=\"ref-for-dom-credentialrequestoptions-otp③\">otp</a></code></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>callerOrigin</var> be <code class=\"idl\"><a data-link-type=\"idl\">origin</a></code>.\nIf <var>callerOrigin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> whose name is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\", and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>Let <var>effectiveDomain</var> be the <var>callerOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain\">effective domain</a>.\nIf <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-effective-domain\" id=\"ref-for-concept-origin-effective-domain①\">effective domain</a> is not a <a data-link-type=\"dfn\">valid domain</a>, then return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> whose name is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>If the <code><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-credential-management/#dom-credentialrequestoptions-signal\" id=\"ref-for-dom-credentialrequestoptions-signal\">signal</a></code></code> is <a data-link-type=\"dfn\">present</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted-flag\" id=\"ref-for-abortsignal-aborted-flag\">aborted flag</a> is set to <code>true</code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> whose name is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code>\"\nand terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>TODO(goto): figure out how to connect the dots here with the transport algorithms.</p>"
+        }
+      ]
+    }
+  ]
+}

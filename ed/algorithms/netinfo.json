@@ -1,0 +1,88 @@
+{
+  "spec": {
+    "title": "Network Information API",
+    "url": "https://wicg.github.io/netinfo/"
+  },
+  "algorithms": [
+    {
+      "name": "steps to update the connection values",
+      "href": "https://wicg.github.io/netinfo/#dfn-steps-to-update-the-connection-values",
+      "html": "When the properties of the <a href=\"https://wicg.github.io/netinfo/#dfn-underlying-connection-technology\" class=\"internalDFN\" data-link-type=\"dfn\">underlying connection technology</a> change, due to a switch to a different <a href=\"https://wicg.github.io/netinfo/#dfn-connection-type\" class=\"internalDFN\" data-link-type=\"dfn\">connection type</a> or <a href=\"https://wicg.github.io/netinfo/#dfn-effective-connection-type\" class=\"internalDFN\" data-link-type=\"dfn\">effective connection type</a>, change in <a href=\"https://wicg.github.io/netinfo/#dfn-upper-bound-on-the-downlink-speed-of-the-first-network-hop\" class=\"internalDFN\" data-link-type=\"dfn\">upper bound on the downlink speed of the first network hop</a>, or change in effective <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-downlink\" class=\"internalDFN\" data-link-type=\"idl\"><code>downlink</code></a> or <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-rtt\" class=\"internalDFN\" data-link-type=\"idl\"><code>rtt</code></a> estimates, the user agent <em class=\"rfc2119\" title=\"MUST\">MUST</em> run the <dfn data-dfn-type=\"dfn\" id=\"dfn-steps-to-update-the-connection-values\">steps to update the connection values</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>new-type</var> be the <a href=\"https://wicg.github.io/netinfo/#dfn-connection-type\" class=\"internalDFN\" data-link-type=\"dfn\">connection type</a> that represents the <a href=\"https://wicg.github.io/netinfo/#dfn-underlying-connection-technology\" class=\"internalDFN\" data-link-type=\"dfn\">underlying connection technology</a>."
+        },
+        {
+          "html": "Let <var>new-effective-type</var> be the <a href=\"https://wicg.github.io/netinfo/#dfn-effective-connection-type\" class=\"internalDFN\" data-link-type=\"dfn\">effective connection type</a> determined by current <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-downlink\" class=\"internalDFN\" data-link-type=\"idl\"><code>downlink</code></a> and <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-rtt\" class=\"internalDFN\" data-link-type=\"idl\"><code>rtt</code></a> values."
+        },
+        {
+          "html": "Let <var>new-downlink</var> be the result of:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "Rounding <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-downlink\" class=\"internalDFN\" data-link-type=\"idl\"><code>downlink</code></a> value to nearest multiple of 25 kilobits per second."
+            },
+            {
+              "html": "If the resulting value is 10% greater or smaller than the value of <code>connection.downlink</code>, then set <var>new-dowlink</var> to resulting value. Otherwise, set <var>new-downlink</var> to the value of <code>connection.downlink</code>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>new-rtt</var> be the result of:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "Rounding <a href=\"https://wicg.github.io/netinfo/#dom-networkinformation-rtt\" class=\"internalDFN\" data-link-type=\"idl\"><code>rtt</code></a> value to nearest multiple of 25 milliseconds."
+            },
+            {
+              "html": "If the resulting value is 10% greater or smaller than the value of <code>connection.rtt</code>, then set <var>new-rtt</var> to resulting value. Otherwise, set <var>new-rtt</var> to the value of <code>connection.rtt</code>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>new-type</var> is \"none\", set <var>max-value</var> to <code>0</code>."
+        },
+        {
+          "html": "if <var>new-type</var> is \"unknown\", set <var>max-value</var> to <code>+Infinity</code>."
+        },
+        {
+          "html": "If <var>new-type</var> is \"mixed\", set <var>max-value</var> to an applicable value for the interface configuration used to service new network requests - e.g. if multiple interfaces may be used, sum their <a href=\"https://wicg.github.io/netinfo/#dfn-downlinkmax-for-an-available-interface\" class=\"internalDFN\" data-link-type=\"dfn\">downlinkMax for an available interface</a> values."
+        },
+        {
+          "html": "Otherwise, set <var>max-value</var> to <a href=\"https://wicg.github.io/netinfo/#dfn-downlinkmax-for-an-available-interface\" class=\"internalDFN\" data-link-type=\"dfn\">downlinkMax for an available interface</a>."
+        },
+        {
+          "html": "If <var>max-value</var> is not equal to the value of <code>connection.downlinkMax</code>, or if <var>new-type</var> is not equal to the value of <code>connection.type</code>, or if <var>new-downlink</var> is not equal to the value of <code>connection.downlink</code>, or if <var>new-rtt</var> is not equal to the value of <code>connection.rtt</code>:",
+          "rationale": "fire an event",
+          "steps": [
+            {
+              "html": "Using the <a data-cite=\"!HTML#networking-task-source\" href=\"https://html.spec.whatwg.org/multipage/#networking-task-source\">networking task source</a>, <a data-cite=\"!HTML#queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/#queue-a-task\">queue a task</a> to perform the following:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <code>connection.downlinkMax</code> to <var>max-value</var>."
+                },
+                {
+                  "html": "Set <code>connection.type</code> to <var>new-type</var>."
+                },
+                {
+                  "html": "set <code>connection.effectiveType</code> to <var>new-effective-type</var>."
+                },
+                {
+                  "html": "Set <code>connection.downlink</code> to <var>new-downlink</var>."
+                },
+                {
+                  "html": "Set <code>connection.rtt</code> to <var>new-rtt</var>."
+                },
+                {
+                  "html": "<a data-cite=\"!DOM#concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <code>change</code> at the <code>NetworkInformation</code> object."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

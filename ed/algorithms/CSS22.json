@@ -1,0 +1,538 @@
+{
+  "spec": {
+    "title": "CSS 2",
+    "url": "https://drafts.csswg.org/css2/"
+  },
+  "algorithms": [
+    {
+      "html": "In general, the following points must be observed by a user agent\nclaiming conformance to this specification:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "It must recognize one or more of the CSS&nbsp;2 <a href=\"https://drafts.csswg.org/css2/#media\">media types</a>."
+        },
+        {
+          "html": "For each source document, it must attempt to retrieve all\nassociated style sheets that are appropriate for the recognized media\ntypes. If it cannot retrieve all associated style sheets (for instance,\nbecause of network errors), it must display the document using those\nit can retrieve."
+        },
+        {
+          "html": "It must parse the style sheets according to this specification.\nIn particular, it must recognize all at-rules, blocks, declarations,\nand selectors (see the <a href=\"https://drafts.csswg.org/css2/#app-grammar\">grammar of CSS&nbsp;2</a>).\nIf a user agent encounters a property that applies for a supported\nmedia type, the user agent must parse the value according to the property\ndefinition. This means that the user agent must accept all valid\nvalues and must <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#ignore%E2%91%A0\" id=\"ref-for-ignore①\">ignore</a> declarations with\ninvalid values. User\nagents must <span id=\"ref-for-ignore①①\">ignore</span> rules that apply to unsupported <a href=\"https://drafts.csswg.org/css2/#media\">media\ntypes</a>."
+        },
+        {
+          "html": "For each element in a <a href=\"https://drafts.csswg.org/css2/#doctree\" id=\"ref-for-doctree①\">document tree</a>, it\nmust assign a value for every property according to the\nproperty’s definition and the rules of <a href=\"https://drafts.csswg.org/css2/#assigning\">cascading and inheritance</a>."
+        },
+        {
+          "html": "If the source document comes with alternate style sheet sets (such as\nwith the \"alternate\" keyword in HTML 4 <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css2/#biblio-html401\" title=\"HTML 4.01 Specification\">[HTML401]</a>), the UA must\nallow the user to select which style sheet set the UA should apply."
+        },
+        {
+          "html": "The UA must allow the user to turn off the influence of author style sheets."
+        }
+      ]
+    },
+    {
+      "html": "User agents must first assign a specified value to each property based\non the following mechanisms (in order of precedence):",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://drafts.csswg.org/css2/#cascade\">cascade</a> results in a value, use it.\nExcept that, if the value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-all-inherit\" id=\"ref-for-valdef-all-inherit②\">inherit</a>, the specified value is defined\nin <a href=\"https://drafts.csswg.org/css2/#value-def-inherit\">§ 6.2.1 The inherit\nvalue</a> below."
+        },
+        {
+          "html": "Otherwise, if the property is <a href=\"https://drafts.csswg.org/css2/#inheritance\">inherited</a> and the element is not the root of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#doctree\" id=\"ref-for-doctree①⓪\">document tree</a>, use the computed value of the parent element."
+        },
+        {
+          "html": "Otherwise use the property’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initial-value①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initial value</dfn>. The initial value of each property is indicated in the property’s definition."
+        }
+      ]
+    },
+    {
+      "html": "To find the value for an element/property combination, user agents\nmust apply the following sorting order:",
+      "rationale": "find",
+      "steps": [
+        {
+          "html": "Find all declarations that apply to the element and property in\n      question, for the target <a href=\"https://drafts.csswg.org/css2/#media\">media type</a>.\n      Declarations apply if the associated selector <a href=\"https://drafts.csswg.org/css2/#selector\">matches</a> the element in question and the\n      target medium matches the media list on all @media rules\n      containing the declaration and on all links on the path through\n      which the style sheet was reached."
+        },
+        {
+          "html": "Sort  according to importance (normal or important)\nand origin (author, user, or user agent). In ascending order of\nprecedence:",
+          "ignored": [
+            "user agent declarations user normal declarations author normal declarations author important declarations user important declarations"
+          ]
+        },
+        {
+          "html": "Sort rules with the same importance and origin by <a href=\"https://drafts.csswg.org/css2/#specificity\">specificity</a> of selector: more specific\n      selectors will override more general ones.  Pseudo-elements and\n      pseudo-classes are counted as normal elements and classes,\n      respectively."
+        },
+        {
+          "html": "Finally, sort by order specified: if two declarations have the\n    same weight, origin and specificity, the latter specified wins.\n    Declarations in imported style sheets are considered to be before any\n    declarations in the style sheet itself."
+        }
+      ]
+    },
+    {
+      "name": "float rules",
+      "href": "https://drafts.csswg.org/css2/#float-rules",
+      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"float rules\" data-noexport=\"\" id=\"float-rules\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Here are the precise rules</dfn> that\ngovern the behavior of floats:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The left <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge\">outer edge</a> of a\nleft-floating box may not be to the left of the left edge of its <a href=\"https://drafts.csswg.org/css2/#containing-block\">containing block</a>. An\nanalogous rule holds for right-floating elements."
+        },
+        {
+          "html": "If the current box is left-floating, and there are any left-floating\nboxes generated by elements earlier in the source document,\nthen for each such earlier box, either the left <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge①\">outer edge</a> of the current box must be\nto the right of the right <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge②\">outer edge</a> of the earlier box, or its top must be lower than the bottom of the\nearlier box. Analogous rules hold for right-floating boxes."
+        },
+        {
+          "html": "The right <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge③\">outer edge</a> of a\nleft-floating box may not be to the right of the left <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge④\">outer edge</a> of any right-floating\nbox that is next to it. Analogous rules hold for\nright-floating elements."
+        },
+        {
+          "html": "A floating box’s <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge⑤\">outer top</a> may not be higher than the top of its <a href=\"https://drafts.csswg.org/css2/#containing-block\">containing block</a>.\nWhen the float occurs between two collapsing margins, the\nfloat is positioned as if it had an otherwise empty <a href=\"https://drafts.csswg.org/css2/#anonymous-block-level\">anonymous block parent</a> taking part in\nthe flow. The position of such a parent is defined by <a href=\"https://drafts.csswg.org/css2/#collapsed-through\">the rules</a> in the section on margin\ncollapsing."
+        },
+        {
+          "html": "The <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge⑥\">outer top</a> of a floating box\nmay not be higher than the outer top of any <a href=\"https://drafts.csswg.org/css2/#block-boxes\">block</a> or <a href=\"https://drafts.csswg.org/css2/#floats\">floated</a> box generated by an element\nearlier in the source document."
+        },
+        {
+          "html": "The <a href=\"https://drafts.csswg.org/css2/#outer-edge\" id=\"ref-for-outer-edge⑦\">outer top</a> of an element’s\nfloating box may not be higher than the top of any <a href=\"https://drafts.csswg.org/css2/#line-box\" id=\"ref-for-line-box\">line-box</a> containing a box\ngenerated by an element earlier in the source document."
+        },
+        {
+          "html": "A left-floating box that has another left-floating box to its left\nmay not have its right outer edge to the right of its containing\nblock’s right edge. (Loosely: a left float may not stick out at the\nright edge, unless it is already as far to the left as possible.) An\nanalogous rule holds for right-floating elements."
+        },
+        {
+          "html": "A floating box must be placed as high as possible."
+        },
+        {
+          "html": "A left-floating box must be put as far to the left as\npossible, a right-floating box as far to the right as possible. A\nhigher position is preferred over one that is further to the\nleft/right."
+        }
+      ]
+    },
+    {
+      "html": "The three properties that affect box generation and layout — <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-display\" id=\"ref-for-propdef-display①①\">display</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-position\" id=\"ref-for-propdef-position⑤\">position</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-float\" id=\"ref-for-propdef-float⑦\">float</a> — interact as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-display\" id=\"ref-for-propdef-display①②\">display</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-display-none\" id=\"ref-for-valdef-display-none②\">none</a>, then <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-position\" id=\"ref-for-propdef-position⑥\">position</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-float\" id=\"ref-for-propdef-float⑧\">float</a> do not apply.\nIn this case, the element generates no box."
+        },
+        {
+          "html": "Otherwise, if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-position\" id=\"ref-for-propdef-position⑦\">position</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-absolute\" id=\"ref-for-valdef-position-absolute③\">absolute</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-fixed\" id=\"ref-for-valdef-position-fixed②\">fixed</a>, the box is absolutely positioned,\nthe computed\nvalue of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-float\" id=\"ref-for-propdef-float⑨\">float</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-float-none\" id=\"ref-for-valdef-float-none③\">none</a>,\nand display is set according to the table below.\nThe position of the box will be determined by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-top\" id=\"ref-for-propdef-top①①\">top</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-right\" id=\"ref-for-propdef-right①④\">right</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-bottom\" id=\"ref-for-propdef-bottom⑨\">bottom</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-left\" id=\"ref-for-propdef-left①⑤\">left</a> properties and the box’s\ncontaining block."
+        },
+        {
+          "html": "Otherwise, if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-float\" id=\"ref-for-propdef-float①⓪\">float</a> has a value other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-float-none\" id=\"ref-for-valdef-float-none④\">none</a>, the box is\nfloated and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-display\" id=\"ref-for-propdef-display①③\">display</a> is set according to the table below."
+        },
+        {
+          "html": "Otherwise, if the element is the root element, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-display\" id=\"ref-for-propdef-display①④\">display</a> is set according to the table below, except that it is\nundefined in CSS&nbsp;2 whether a specified value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-list-item\" id=\"ref-for-value-def-list-item②\">list-item</a> becomes a computed value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-block\" id=\"ref-for-value-def-block①\">block</a> or <span class=\"css\" id=\"ref-for-value-def-list-item③\">list-item</span>."
+        },
+        {
+          "html": "Otherwise, the remaining <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-display\" id=\"ref-for-propdef-display①⑤\">display</a> property values apply\nas specified."
+        }
+      ]
+    },
+    {
+      "name": "containing block",
+      "href": "https://drafts.csswg.org/css2/#containing-block%E2%91%A0",
+      "html": "The position and size of an element’s box(es) are sometimes\ncalculated relative to a certain rectangle, called the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"containing block\" data-noexport=\"\" id=\"containing-block①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">containing\nblock</dfn> of the element. The containing block of an element\nis defined as follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "The containing block in which the <a href=\"https://drafts.csswg.org/css2/#root\" id=\"ref-for-root①\">root\nelement</a> lives is a rectangle called the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initial-containing-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initial containing block</dfn>. For continuous\nmedia, it has the dimensions of the <a href=\"https://drafts.csswg.org/css2/#viewport\">viewport</a> and is anchored at the\ncanvas origin; it is the <a href=\"https://drafts.csswg.org/css2/#page-area\" id=\"ref-for-page-area\">page area</a> for paged media. The <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-direction\" id=\"ref-for-propdef-direction①③\">direction</a> property of the initial\ncontaining block is the same as for the root element."
+        },
+        {
+          "html": "For other elements, if the element’s position is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-relative\" id=\"ref-for-valdef-position-relative①\">relative</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-static\" id=\"ref-for-valdef-position-static②\">static</a>,\nthe containing block is formed by the content edge of the nearest <a href=\"https://drafts.csswg.org/css2/#block-boxes\">block container</a> ancestor box."
+        },
+        {
+          "html": "If the element has 'position: fixed', the containing block is\nestablished by the <a href=\"https://drafts.csswg.org/css2/#viewport\">viewport</a> in the case of continuous media or the page area in the case of paged media."
+        },
+        {
+          "html": "If the element has 'position: absolute', the containing block is\nestablished by the nearest ancestor with a <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-position\" id=\"ref-for-propdef-position⑨\">position</a> of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-absolute\" id=\"ref-for-valdef-position-absolute④\">absolute</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-relative\" id=\"ref-for-valdef-position-relative②\">relative</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-position-fixed\" id=\"ref-for-valdef-position-fixed③\">fixed</a>, in the following way:",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "In the case that the ancestor is an inline element, the containing\nblock is the bounding box around the padding boxes of the first and\nthe last inline boxes\ngenerated for that element. In CSS&nbsp;2, if the inline\nelement is split\nacross multiple lines, the containing block is undefined."
+            },
+            {
+              "html": "Otherwise, the containing block\nis formed by the <a href=\"https://drafts.csswg.org/css2/#padding-edge\" id=\"ref-for-padding-edge\">padding edge</a> of\nthe ancestor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In this case, <a href=\"https://drafts.csswg.org/css2/#abs-non-replaced-width\">section 10.3.7</a> applies up through and including the constraint equation, but the rest\nof <a href=\"https://drafts.csswg.org/css2/#abs-non-replaced-width\">section 10.3.7</a> is replaced by\nthe following rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width③⑦\">width</a> is\ndetermined as for <a href=\"https://drafts.csswg.org/css2/#inline-replaced-width\">inline replaced\nelements</a>.\nIf <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-left\" id=\"ref-for-propdef-margin-left②⓪\">margin-left</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-right\" id=\"ref-for-propdef-margin-right②⓪\">margin-right</a> is specified as <span class=\"css\">auto</span> its used value is determined by the rules below."
+        },
+        {
+          "html": "If both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-left\" id=\"ref-for-propdef-left③⑤\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-right\" id=\"ref-for-propdef-right③④\">right</a> have the value <span class=\"css\">auto</span>, then if\nthe <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-direction\" id=\"ref-for-propdef-direction②①\">direction</a> property of the element establishing the\nstatic-position containing block is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr⑧\">ltr</a>, set <span class=\"property\" id=\"ref-for-propdef-left③⑥\">left</span> to\nthe static position; else if <span class=\"property\" id=\"ref-for-propdef-direction②②\">direction</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl⑥\">rtl</a>, set <span class=\"property\" id=\"ref-for-propdef-right③⑤\">right</span> to the static position."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-left\" id=\"ref-for-propdef-left③⑦\">left</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-right\" id=\"ref-for-propdef-right③⑥\">right</a> are <span class=\"css\">auto</span>, replace any <span class=\"css\">auto</span> on <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-left\" id=\"ref-for-propdef-margin-left②①\">margin-left</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-right\" id=\"ref-for-propdef-margin-right②①\">margin-right</a> with <span class=\"css\">0</span>."
+        },
+        {
+          "html": "If at this point both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-left\" id=\"ref-for-propdef-margin-left②②\">margin-left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-right\" id=\"ref-for-propdef-margin-right②②\">margin-right</a> are still <span class=\"css\">auto</span>,\nsolve the equation under the extra constraint that the two margins\nmust get equal values, unless this would make them negative, in which\ncase when the direction of the containing block is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr⑨\">ltr</a> (<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl⑦\">rtl</a>), set <span class=\"property\" id=\"ref-for-propdef-margin-left②③\">margin-left</span> (<span class=\"property\" id=\"ref-for-propdef-margin-right②③\">margin-right</span>) to zero and solve\nfor <span class=\"property\" id=\"ref-for-propdef-margin-right②④\">margin-right</span> (<span class=\"property\" id=\"ref-for-propdef-margin-left②④\">margin-left</span>)."
+        },
+        {
+          "html": "If at this point there is an <span class=\"css\">auto</span> left, solve the equation\nfor that value."
+        },
+        {
+          "html": "If at this point the values are over-constrained, ignore the value\nfor either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-left\" id=\"ref-for-propdef-left③⑧\">left</a> (in case the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-direction\" id=\"ref-for-propdef-direction②③\">direction</a> property of the\ncontaining block is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl⑧\">rtl</a>) or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-right\" id=\"ref-for-propdef-right③⑦\">right</a> (in case <span class=\"property\" id=\"ref-for-propdef-direction②④\">direction</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr①⓪\">ltr</a>) and solve for\nthat value."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm describes how the two properties influence\nthe <a href=\"https://drafts.csswg.org/css2/#computed-value\" id=\"ref-for-computed-value④\">used value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width③⑨\">width</a> property:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The tentative used width is calculated (without <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-min-width\" id=\"ref-for-propdef-min-width④\">min-width</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-max-width\" id=\"ref-for-propdef-max-width⑤\">max-width</a>) following the rules\nunder <a href=\"https://drafts.csswg.org/css2/#Computing_widths_and_margins\">\"Calculating widths and\nmargins\"</a> above."
+        },
+        {
+          "html": "If the tentative used width is greater than <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-max-width\" id=\"ref-for-propdef-max-width⑥\">max-width</a>, the rules <a href=\"https://drafts.csswg.org/css2/#Computing_widths_and_margins\">above</a> are applied again, but\nthis time using the computed value of <span class=\"property\" id=\"ref-for-propdef-max-width⑦\">max-width</span> as the computed value\nfor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width④⓪\">width</a>."
+        },
+        {
+          "html": "If the resulting width is smaller than <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-min-width\" id=\"ref-for-propdef-min-width⑤\">min-width</a>, the rules <a href=\"https://drafts.csswg.org/css2/#Computing_widths_and_margins\">above</a> are applied again, but\nthis time using the value of <span class=\"property\" id=\"ref-for-propdef-min-width⑥\">min-width</span> as the computed value\nfor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width④①\">width</a>."
+        }
+      ]
+    },
+    {
+      "html": "This situation is similar to the previous one, except that the\nelement has an <a href=\"https://drafts.csswg.org/css2/#intrinsic\" id=\"ref-for-intrinsic①\">intrinsic</a> height. The\nsequence of substitutions is now:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The used value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-height\" id=\"ref-for-propdef-height③②\">height</a> is determined as for <a href=\"https://drafts.csswg.org/css2/#inline-replaced-height\">inline replaced elements</a>.\nIf <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-top\" id=\"ref-for-propdef-margin-top①⑤\">margin-top</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom①⑤\">margin-bottom</a> is specified as <span class=\"css\">auto</span> its used\nvalue is determined by the rules below."
+        },
+        {
+          "html": "If both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-top\" id=\"ref-for-propdef-top②⑧\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-bottom\" id=\"ref-for-propdef-bottom②④\">bottom</a> have the value <span class=\"css\">auto</span>, replace <span class=\"property\" id=\"ref-for-propdef-top②⑨\">top</span> with the element’s <a href=\"https://drafts.csswg.org/css2/#static-position\">static position</a>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-bottom\" id=\"ref-for-propdef-bottom②⑤\">bottom</a> is <span class=\"css\">auto</span>,\nreplace any <span class=\"css\">auto</span> on <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-top\" id=\"ref-for-propdef-margin-top①⑥\">margin-top</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom①⑥\">margin-bottom</a> with <span class=\"css\">0</span>."
+        },
+        {
+          "html": "If at this point both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-top\" id=\"ref-for-propdef-margin-top①⑦\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom①⑦\">margin-bottom</a> are still <span class=\"css\">auto</span>, solve the equation under the extra constraint that the two\nmargins must get equal values."
+        },
+        {
+          "html": "If at this point there is only one <span class=\"css\">auto</span> left, solve the equation\nfor that value."
+        },
+        {
+          "html": "If at this point the values are over-constrained, ignore the value\nfor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-bottom\" id=\"ref-for-propdef-bottom②⑥\">bottom</a> and solve for that\nvalue."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm describes how the two properties influence\nthe <a href=\"https://drafts.csswg.org/css2/#computed-value\" id=\"ref-for-computed-value⑤\">used value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-height\" id=\"ref-for-propdef-height③④\">height</a> property:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The tentative used height is calculated (without <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-min-height\" id=\"ref-for-propdef-min-height⑨\">min-height</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-max-height\" id=\"ref-for-propdef-max-height⑦\">max-height</a>) following the rules\nunder <a href=\"https://drafts.csswg.org/css2/#Computing_heights_and_margins\">\"Calculating heights and\nmargins\"</a> above."
+        },
+        {
+          "html": "If this tentative height is greater than <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-max-height\" id=\"ref-for-propdef-max-height⑧\">max-height</a>, the rules <a href=\"https://drafts.csswg.org/css2/#Computing_heights_and_margins\">above</a> are applied again, but\nthis time using the value of <span class=\"property\" id=\"ref-for-propdef-max-height⑨\">max-height</span> as the computed value\nfor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-height\" id=\"ref-for-propdef-height③⑤\">height</a>."
+        },
+        {
+          "html": "If the resulting height is smaller than <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-min-height\" id=\"ref-for-propdef-min-height①⓪\">min-height</a>, the rules <a href=\"https://drafts.csswg.org/css2/#Computing_heights_and_margins\">above</a> are applied again, but\nthis time using the value of <span class=\"property\" id=\"ref-for-propdef-min-height①①\">min-height</span> as the computed value\nfor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-height\" id=\"ref-for-propdef-height③⑥\">height</a>."
+        }
+      ]
+    },
+    {
+      "html": "The size of the image is calculated from the following rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the image has a intrinsic width and height, the used width and\nheight are the intrinsic width and height."
+        },
+        {
+          "html": "Otherwise, if the image has an intrinsic ratio and either an\nintrinsic width or an intrinsic height, the used width/height is the\nsame as the provided intrinsic width/height, and the used value of the\nmissing dimension is calculated from the provided dimension and the\nratio."
+        },
+        {
+          "html": "Otherwise, if the image has an intrinsic ratio, the used width is\n1em and the used height is calculated from this width and the\nintrinsic ratio. If this would produce a height larger than 1em, then\nthe used height is instead set to 1em and the used width is calculated\nfrom this height and the intrinsic ratio."
+        },
+        {
+          "html": "Otherwise, the image’s used width is its intrinsic width if it has\none, or else 1em. The image’s used height is its intrinsic height if\nit has one, or else 1em."
+        }
+      ]
+    },
+    {
+      "html": "Because there is no accepted, universal taxonomy of font\nproperties, matching of properties to font faces must be done\ncarefully. The properties are matched in a well-defined order to\ninsure that the results of this matching process are as consistent as\npossible across UAs (assuming that the same library of font faces is\npresented to each of them).",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The user agent makes (or accesses) a database of relevant CSS&nbsp;2\nproperties of all the fonts of which the UA is aware.\nIf there are two fonts with exactly the same properties, the user\nagent selects one of them."
+        },
+        {
+          "html": "At a given element and for each character in that element, the UA\nassembles the font properties applicable to that element. Using the\ncomplete set of properties, the UA uses the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-font-family\" id=\"ref-for-propdef-font-family③\">font-family</a> property to\nchoose a tentative font family. The remaining properties are tested\nagainst the family according to the matching criteria described with\neach property. If there are matches for all the remaining properties,\nthen that is the matching font face for the given element or character."
+        },
+        {
+          "html": "If there is no matching font face within the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-font-family\" id=\"ref-for-propdef-font-family④\">font-family</a> being\nprocessed by step 2, and if there is a next alternative <span class=\"property\" id=\"ref-for-propdef-font-family⑤\">font-family</span> in the font set, then repeat step 2 with the next alternative <span class=\"property\" id=\"ref-for-propdef-font-family⑥\">font-family</span>."
+        },
+        {
+          "html": "If there is a matching font face, but it does not contain a glyph\nfor the current character, and if there is a next alternative <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-font-family\" id=\"ref-for-propdef-font-family⑦\">font-family</a> in the font sets, then repeat step 2 with the next\nalternative <span class=\"property\" id=\"ref-for-propdef-font-family⑧\">font-family</span>."
+        },
+        {
+          "html": "If there is no font within the family selected in 2, then use a\n   UA-dependent default <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-font-family\" id=\"ref-for-propdef-font-family⑨\">font-family</a> and repeat step 2, using the best\n   match that can be obtained within the default font. If a particular\n   character cannot be displayed using this font, then the UA may use other\n   means to determine a suitable font for that character. The UA should map\n   each character for which it has no suitable font to a visible symbol\n   chosen by the UA, preferably a \"missing character\" glyph from one of the\n   font faces available to the UA."
+        }
+      ]
+    },
+    {
+      "html": "For each inline element (including anonymous inline elements), the\nfollowing steps are performed, treating bidi formatting characters as if\nthey were not there:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Each tab (U+0009), carriage return (U+000D), or space (U+0020)\ncharacter surrounding a linefeed (U+000A) character is removed if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space⑦\">white-space</a> is set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-normal\" id=\"ref-for-valdef-white-space-normal①\">normal</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-nowrap\" id=\"ref-for-valdef-white-space-nowrap\">nowrap</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-line\" id=\"ref-for-valdef-white-space-pre-line\">pre-line</a>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space⑧\">white-space</a> is set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre\" id=\"ref-for-valdef-white-space-pre②\">pre</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-wrap\" id=\"ref-for-valdef-white-space-pre-wrap①\">pre-wrap</a>, any sequence of\n     spaces (U+0020) unbroken by an element boundary is treated as a\n     sequence of non-breaking spaces. However, for <span class=\"css\" id=\"ref-for-valdef-white-space-pre-wrap②\">pre-wrap</span>, a line breaking\n     opportunity exists at the end of the sequence."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space⑨\">white-space</a> is set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-normal\" id=\"ref-for-valdef-white-space-normal②\">normal</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-nowrap\" id=\"ref-for-valdef-white-space-nowrap①\">nowrap</a>, linefeed\n     characters are transformed for rendering purpose into one of the\n     following characters: a space character, a zero width space\n     character (U+200B), or no character (i.e., not rendered),\n     according to UA-specific algorithms based on the content script."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space①⓪\">white-space</a> is set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-normal\" id=\"ref-for-valdef-white-space-normal③\">normal</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-nowrap\" id=\"ref-for-valdef-white-space-nowrap②\">nowrap</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-line\" id=\"ref-for-valdef-white-space-pre-line①\">pre-line</a>,",
+          "ignored": [
+            "every tab (U+0009) is converted to a space (U+0020) any space (U+0020) following another space (U+0020) — even a space before the inline, if that space also has white-space set to normal, nowrap or pre-line — is removed."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "As each line is laid out,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a space (U+0020) at the beginning of a line has <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space①③\">white-space</a> set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-normal\" id=\"ref-for-valdef-white-space-normal⑤\">normal</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-nowrap\" id=\"ref-for-valdef-white-space-nowrap④\">nowrap</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-line\" id=\"ref-for-valdef-white-space-pre-line③\">pre-line</a>, it is removed."
+        },
+        {
+          "html": "All tabs (U+0009) are rendered as a horizontal shift that lines\n     up the start edge of the next glyph with the next tab stop. Tab\n     stops occur at points that are multiples of 8 times the width of\n     a space (U+0020) rendered in the block’s font from the block’s\n     starting content edge."
+        },
+        {
+          "html": "If a space (U+0020) at the end of a line has <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space①④\">white-space</a> set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-normal\" id=\"ref-for-valdef-white-space-normal⑥\">normal</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-nowrap\" id=\"ref-for-valdef-white-space-nowrap⑤\">nowrap</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-line\" id=\"ref-for-valdef-white-space-pre-line④\">pre-line</a>, it is also removed."
+        },
+        {
+          "html": "If spaces (U+0020) or tabs (U+0009) at the end of a line have <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-white-space\" id=\"ref-for-propdef-white-space①⑤\">white-space</a> set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-white-space-pre-wrap\" id=\"ref-for-valdef-white-space-pre-wrap③\">pre-wrap</a>, UAs may visually collapse them."
+        }
+      ]
+    },
+    {
+      "html": "The following steps are performed in three stages.",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "Remove irrelevant boxes:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "All child boxes of a <span class=\"css\">table-column</span> parent are treated as if\n          they had 'display: none'."
+            },
+            {
+              "html": "If a child <var>C</var> of a <span class=\"css\">table-column-group</span> parent is\n          not a <span class=\"css\">table-column</span> box, then it is treated as if it had\n          'display: none'."
+            },
+            {
+              "html": "If a child <var>C</var> of a tabular container <var>P</var> is an anonymous inline box that contains only white space,\n          and its immediately preceding and following siblings, if\n          any, are proper table descendants of <var>P</var> and are\n          either <span class=\"css\">table-caption</span> or internal table boxes, then it is\n          treated as if it had 'display: none'. A box <var>D</var> is\n          a proper table descendant of <var>A</var> if <var>D</var> can be a descendant of <var>A</var> without causing the\n          generation of any intervening <span class=\"css\">table</span> or <span class=\"css\">inline-table</span> boxes."
+            },
+            {
+              "html": "If a box <var>B</var> is an anonymous inline containing only\n          white space, and is between two immediate siblings each of\n          which is either an internal table box or a <span class=\"css\">table-caption</span> box then <var>B</var> is treated as if it had 'display:\n          none'."
+            }
+          ]
+        },
+        {
+          "html": "Generate missing child wrappers:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If a child <var>C</var> of a <span class=\"css\">table</span> or <span class=\"css\">inline-table</span> box\n          is not a proper table child, then generate an anonymous <span class=\"css\">table-row</span> box around <var>C</var> and all consecutive\n          siblings of <var>C</var> that are not proper table children."
+            },
+            {
+              "html": "If a child <var>C</var> of a row group box is not a <span class=\"css\">table-row</span> box, then generate an anonymous <span class=\"css\">table-row</span> box\n          around <var>C</var> and all consecutive siblings\n          of <var>C</var> that are not <span class=\"css\">table-row</span> boxes."
+            },
+            {
+              "html": "If a child <var>C</var> of a <span class=\"css\">table-row</span> box is not a <span class=\"css\">table-cell</span>, then generate an anonymous <span class=\"css\">table-cell</span> box\n          around <var>C</var> and all consecutive siblings\n          of <var>C</var> that are not <span class=\"css\">table-cell</span> boxes."
+            }
+          ]
+        },
+        {
+          "html": "Generate missing parents:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <span class=\"css\">table-cell</span> box <var>C</var> in a sequence of\n           consecutive internal table and <span class=\"css\">table-caption</span> siblings,\n           if <var>C</var>’s parent is not a <span class=\"css\">table-row</span> then generate\n           an anonymous <span class=\"css\">table-row</span> box around <var>C</var> and all\n           consecutive siblings of <var>C</var> that are <span class=\"css\">table-cell</span> boxes."
+            },
+            {
+              "html": "For each proper table child <var>C</var> in a sequence of\n           consecutive proper table children, if <var>C</var> is\n           misparented then generate an anonymous <span class=\"css\">table</span> or <span class=\"css\">inline-table</span> box <var>T</var> around <var>C</var> and all\n           consecutive siblings of <var>C</var> that are proper table\n           children. (If C’s parent is an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-inline\" id=\"ref-for-value-def-inline④\">inline</a> box,\n           then <var>T</var> must be an <span class=\"css\">inline-table</span> box; otherwise\n           it must be a <span class=\"css\">table</span> box.) \n       <ul>\n        <li>A <span class=\"css\">table-row</span> is misparented if its parent is neither\n               a row group box nor a <span class=\"css\">table</span> or <span class=\"css\">inline-table</span> box. \n        </li><li>A <span class=\"css\">table-column</span> box is misparented if its parent is\n               neither a <span class=\"css\">table-column-group</span> box nor a <span class=\"css\">table</span> or <span class=\"css\">inline-table</span> box. \n        </li><li>A row group box, <span class=\"css\">table-column-group</span> box, or <span class=\"css\">table-caption</span> box is misparented if its parent is\n               neither a <span class=\"css\">table</span> box nor an <span class=\"css\">inline-table</span> box. \n       </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In the fixed table layout algorithm, the width of each column is\ndetermined as follows:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "A column element with a value other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-width-auto\" id=\"ref-for-valdef-width-auto①①\">auto</a> for the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width⑤③\">width</a> property sets the width for\n  that column."
+        },
+        {
+          "html": "Otherwise, a cell in the first row with a value other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-width-auto\" id=\"ref-for-valdef-width-auto①②\">auto</a> for the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-width\" id=\"ref-for-propdef-width⑤④\">width</a> property\n  determines the width for that column. If the cell spans more than\n  one column, the width is divided over the columns."
+        },
+        {
+          "html": "Any remaining columns equally divide the remaining horizontal\n  table space (minus borders or cell spacing)."
+        }
+      ]
+    },
+    {
+      "html": "To avoid ambiguous situations, the alignment of cells proceeds in\nthe following order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "First the cells that are aligned on their baseline are\n  positioned. This will establish the baseline of the row. Next the\n  cells with 'vertical-align: top' are positioned."
+        },
+        {
+          "html": "The row now has a top, possibly a baseline, and a provisional\n  height, which is the distance from the top to the lowest bottom of\n  the cells positioned so far. (See conditions on the cell padding\n  below.)"
+        },
+        {
+          "html": "If any of the remaining cells, those aligned at the bottom or\n  the middle, have a height that is larger than the current height of\n  the row, the height of the row will be increased to the maximum of\n  those cells, by lowering the bottom."
+        },
+        {
+          "html": "Finally the remaining cells are positioned."
+        }
+      ]
+    },
+    {
+      "html": "The following rules determine which border style \"wins\" in case of\na conflict:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Borders with the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-border-style\" id=\"ref-for-propdef-border-style③\">border-style</a> of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-hidden\" id=\"ref-for-value-def-hidden②\">hidden</a> take\n  precedence over all other conflicting borders. Any border with this\n  value suppresses all borders at this location."
+        },
+        {
+          "html": "Borders with a style of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-bo-none\" id=\"ref-for-value-def-bo-none③\">none</a> have the lowest priority. Only if\n  the border properties of all the elements meeting at this edge are <span class=\"css\" id=\"ref-for-value-def-bo-none④\">none</span> will the border be omitted (but note that <span class=\"css\" id=\"ref-for-value-def-bo-none⑤\">none</span> is the\n  default value for the border style.)"
+        },
+        {
+          "html": "If none of the styles are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-hidden\" id=\"ref-for-value-def-hidden③\">hidden</a> and at least one of them is\n  not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-bo-none\" id=\"ref-for-value-def-bo-none⑥\">none</a>, then narrow borders are discarded in favor of wider\n  ones. If several have the same <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-border-width\" id=\"ref-for-propdef-border-width⑦\">border-width</a> then styles are\n  preferred in this order: <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-double\" id=\"ref-for-value-def-double\">double</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-solid\" id=\"ref-for-value-def-solid\">solid</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-dashed\" id=\"ref-for-value-def-dashed\">dashed</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-dotted\" id=\"ref-for-value-def-dotted\">dotted</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-ridge\" id=\"ref-for-value-def-ridge\">ridge</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-outset\" id=\"ref-for-value-def-outset\">outset</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-groove\" id=\"ref-for-value-def-groove\">groove</a>, and the lowest: <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#value-def-inset\" id=\"ref-for-value-def-inset\">inset</a>."
+        },
+        {
+          "html": "If border styles differ only in color, then a style set on a\n  cell wins over one on a row, which wins over a row group, column,\n  column group and, lastly, table. When two elements of the same type\n  conflict, then the one further to the left (if the table’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-direction\" id=\"ref-for-propdef-direction③②\">direction</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr①④\">ltr</a>; right, if it is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl①②\">rtl</a>) and further to the top\n  wins."
+        }
+      ]
+    },
+    {
+      "html": "The painting order for the descendants of an element generating\n    a stacking context (see the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css2/#propdef-z-index\" id=\"ref-for-propdef-z-index⑤\">z-index</a> property) is:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element is a root element: </p>",
+          "ignored": [
+            "background color of element over the entire canvas. background image of element, over the entire canvas, anchored at the origin that would be used if it was painted for the root element."
+          ]
+        },
+        {
+          "html": "<p>If the element is a block, list-item, or other block\n\tequivalent: </p>\n     \n     <p>Otherwise, if the element is a block level table: </p>",
+          "ignored": [
+            "background color of element unless it is the root element. background image of element unless it is the root element. border of element.",
+            "table backgrounds (color then image) unless it is the root element. column group backgrounds (color then image). column backgrounds (color then image). row group backgrounds (color then image). row backgrounds (color then image). cell backgrounds (color then image). all table borders (in tree order for separated borders)."
+          ]
+        },
+        {
+          "html": "<p>Stacking contexts formed by positioned descendants with\n\tnegative z-indices (excluding 0) in z-index order (most\n\tnegative first) then tree order. </p>"
+        },
+        {
+          "html": "<p>For all its in-flow, non-positioned, block-level\n\tdescendants in tree order: If the element is a block,\n\tlist-item, or other block equivalent: </p>\n     \n     <p>Otherwise, the element is a table: </p>",
+          "ignored": [
+            "background color of element. background image of element. border of element.",
+            "table backgrounds (color then image). column group backgrounds (color then image). column backgrounds (color then image). row group backgrounds (color then image). row backgrounds (color then image). cell backgrounds (color then image). all table borders (in tree order for separated borders)."
+          ]
+        },
+        {
+          "html": "<p>All non-positioned floating descendants, in tree order. For\n\teach one of these, treat the element as if it created a new\n\tstacking context, but any positioned descendants and\n\tdescendants which actually create a new stacking context\n\tshould be considered part of the parent stacking context, not\n\tthis new one. </p>"
+        },
+        {
+          "html": "If the element is an inline element that generates a\n\tstacking context, then:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each line box that the element is in:",
+              "rationale": "jump",
+              "steps": [
+                {
+                  "html": "Jump to <a href=\"https://drafts.csswg.org/css2/#each-box\">7.2.1</a> for the\n\t      box(es) of the element in that line box (in tree order)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise: first for the element, then for all its in-flow,\n\tnon-positioned, block-level descendants in tree order:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the element is a block-level replaced element, then:\n\t    the replaced content, atomically. </p>"
+            },
+            {
+              "html": "Otherwise, for each line box of that element:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "For each box that is a child of that element, in\n\t\tthat line box, in tree order:",
+                  "rationale": "for",
+                  "steps": [
+                    {
+                      "html": "<p>background color of element. </p>"
+                    },
+                    {
+                      "html": "<p>background image of element. </p>"
+                    },
+                    {
+                      "html": "<p>border of element. </p>"
+                    },
+                    {
+                      "html": "For inline elements:",
+                      "rationale": "for",
+                      "steps": [
+                        {
+                          "html": "For all the element’s in-flow,\n\t\t\tnon-positioned, inline-level children that are\n\t\t\tin this line box, and all runs of text inside\n\t\t\tthe element that is on this line box, in tree\n\t\t\torder:",
+                          "rationale": "if",
+                          "steps": [
+                            {
+                              "html": "<p>If this is a run of text, then: </p>",
+                              "ignored": [
+                                "any underlining affecting the text of the element, in tree order of the elements applying the underlining (such that the deepest element’s underlining, if any, is painted topmost and the root element’s underlining, if any, is drawn bottommost). any overlining affecting the text of the element, in tree order of the elements applying the overlining (such that the deepest element’s overlining, if any, is painted topmost and the root element’s overlining, if any, is drawn bottommost). the text. any line-through affecting the text of the element, in tree order of the elements applying the line-through (such that the deepest element’s line-through, if any, is painted topmost and the root element’s line-through, if any, is drawn bottommost)."
+                              ]
+                            },
+                            {
+                              "html": "<p>Otherwise, jump to <a href=\"https://drafts.csswg.org/css2/#each-box\">7.2.1</a> for that\n\t\t\t    element. </p>"
+                            }
+                          ]
+                        }
+                      ],
+                      "additional": [
+                        {
+                          "html": "For inline-block and inline-table elements:",
+                          "rationale": "for",
+                          "steps": [
+                            {
+                              "html": "For each one of these, treat the element as\n\t\t      if it created a new stacking context, but any\n\t\t      positioned descendants and descendants which\n\t\t      actually create a new stacking context should be\n\t\t      considered part of the parent stacking context,\n\t\t      not this new one."
+                            }
+                          ]
+                        }
+                      ],
+                      "ignored": [
+                        "the replaced content, atomically."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Optionally, the outline of the element (see <a href=\"https://drafts.csswg.org/css2/#outlines\">10 below</a>). </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Optionally, if the element is block-level, the outline\n\t    of the element (see <a href=\"https://drafts.csswg.org/css2/#outlines\">10 below</a>). </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>All positioned descendants with 'z-index: auto' or\n\t'z-index: 0', in tree order. For those with 'z-index: auto',\n\ttreat the element as if it created a new stacking context, but\n\tany positioned descendants and descendants which actually\n\tcreate a new stacking context should be considered part of the\n\tparent stacking context, not this new one. For those with\n\t'z-index: 0', treat the stacking context generated atomically. </p>"
+        },
+        {
+          "html": "<p>Stacking contexts formed by positioned descendants with\n\tz-indices greater than or equal to 1 in z-index order\n\t(smallest first) then tree order. </p>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css2/#outlines\"></a> \n     <p>Finally, implementations that do not draw outlines in steps\n\tabove must draw outlines from this stacking context at this\n\tstage. (It is recommended to draw outlines in this step and\n\tnot in the steps above.) </p>"
+        }
+      ]
+    }
+  ]
+}

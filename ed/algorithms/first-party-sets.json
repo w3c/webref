@@ -1,0 +1,360 @@
+{
+  "spec": {
+    "title": "User Agent Interaction with Related Website Sets",
+    "url": "https://wicg.github.io/first-party-sets/"
+  },
+  "algorithms": [
+    {
+      "name": "build the list of related website sets",
+      "href": "https://wicg.github.io/first-party-sets/#build-the-list-of-related-website-sets",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"build-the-list-of-related-website-sets\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build the list of related website sets</dfn> from a JSON <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>bytes</var>, the user agent should run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>json</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value\" id=\"ref-for-parse-json-bytes-to-an-infra-value\">parsing JSON bytes to an infra value</a> with <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>json</var> is a parsing exception, or if <var>json</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">ordered map</a>, or if <var>json</var>[“sets”] does not exist, return and optionally retry fetching the list, or perform other error recovery tasks.</p>"
+        },
+        {
+          "html": "For each <var>entry</var> of <var>json</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>set</var> be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set\" id=\"ref-for-related-website-set\">related website set</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>entry</var>[“primary”] does not exist, continue.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "build the list of related website sets",
+      "href": "https://wicg.github.io/first-party-sets/#build-the-list-of-related-website-sets",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"build-the-list-of-related-website-sets\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build the list of related website sets</dfn> from a JSON <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>bytes</var>, the user agent should run the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-primary\" id=\"ref-for-related-website-set-primary\">primary</a> to <var>entry</var>[“primary”].</p>"
+        },
+        {
+          "html": "<p>Let <var>ccTLDs</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-an-equivalence-map\" id=\"ref-for-parse-an-equivalence-map\">parsing an equivalence map</a> from <var>entry</var>[“ccTLDs”]. If <var>ccTLDs</var> is failure, continue.</p>"
+        },
+        {
+          "html": "<p>Set <var>set</var>’s ccTLDs to <var>ccTLDs</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serviceSites</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-a-subset\" id=\"ref-for-parse-a-subset\">parsing a subset</a> from <var>entry</var>[“serviceSites”]. If the result is failure, continue.</p>"
+        },
+        {
+          "html": "<p>Set <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-servicesites\" id=\"ref-for-related-website-set-servicesites\">serviceSites</a> to <var>serviceSites</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>associatedSites</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-a-subset\" id=\"ref-for-parse-a-subset①\">parsing a subset</a> from <var>entry</var>[“associatedSites”]. If the result is failure, continue.</p>"
+        },
+        {
+          "html": "<p>Set <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-associatedsites\" id=\"ref-for-related-website-set-associatedsites\">associatedSites</a> to <var>associatedSites</var>.</p>"
+        },
+        {
+          "html": "<p>Add <var>set</var> to the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#list-of-related-website-sets\" id=\"ref-for-list-of-related-website-sets\">list of related website sets</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse and validate a site",
+      "href": "https://wicg.github.io/first-party-sets/#parse-and-validate-a-site",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-and-validate-a-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse and validate a site</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>input</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser\">basic URL parsing</a> <var>input</var>. If the result is failure, return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not \"<code>https</code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>site</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>site</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a subset",
+      "href": "https://wicg.github.io/first-party-sets/#parse-a-subset",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-subset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a subset</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> <var>input</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
+        },
+        {
+          "html": "For each <var>item</var> of <var>input</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>site</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-and-validate-a-site\" id=\"ref-for-parse-and-validate-a-site\">parsing and validating a site</a> from <var>item</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>site</var> is failure, return failure.</p>"
+            },
+            {
+              "html": "<p>Add <var>site</var> to <var>list</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse an equivalence map",
+      "href": "https://wicg.github.io/first-party-sets/#parse-an-equivalence-map",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-equivalence-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an equivalence map</dfn> from an ordered map <var>input</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be an empty <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#equivalence-map\" id=\"ref-for-equivalence-map①\">equivalence map</a>.</p>"
+        },
+        {
+          "html": "For each <var>key</var> → <var>value</var> of <var>input</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>keySite</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-and-validate-a-site\" id=\"ref-for-parse-and-validate-a-site①\">parsing and validating a site</a> from <var>key</var>. If the result is failure, return failure.</p>"
+            },
+            {
+              "html": "<p>Let <var>equivalents</var> be an empty list.</p>"
+            },
+            {
+              "html": "For each <var>equivalent</var> in <var>value</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>equivalentSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#parse-and-validate-a-site\" id=\"ref-for-parse-and-validate-a-site②\">parsing and validating a site</a> from <var>equivalent</var>. If the result is failure, return failure.</p>"
+                },
+                {
+                  "html": "<p>Add <var>equivalentSite</var> to <var>equivalents</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>map</var>[<var>keySite</var>] to <var>equivalents</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>map</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine the member type",
+      "href": "https://wicg.github.io/first-party-sets/#determine-the-member-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"determine-the-member-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the member type</dfn> of a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site⑦\">site</a> <var>site</var> in a given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set\" id=\"ref-for-related-website-set②\">related website set</a> <var>set</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>site</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#equivalent-to\" id=\"ref-for-equivalent-to\">equivalent to</a> <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-primary\" id=\"ref-for-related-website-set-primary①\">primary</a> given <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-cctlds\" id=\"ref-for-related-website-set-cctlds\">ccTLDs</a>, return “primary”.</p>"
+        },
+        {
+          "html": "For each <var>associatedSite</var> of <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-associatedsites\" id=\"ref-for-related-website-set-associatedsites①\">associatedSites</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>site</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#equivalent-to\" id=\"ref-for-equivalent-to①\">equivalent to</a> <var>associatedSite</var> given <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-cctlds\" id=\"ref-for-related-website-set-cctlds①\">ccTLDs</a>, return “associated”.</p>"
+            }
+          ]
+        },
+        {
+          "html": "For each <var>serviceSite</var> of <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-servicesites\" id=\"ref-for-related-website-set-servicesites①\">serviceSites</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>site</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#equivalent-to\" id=\"ref-for-equivalent-to②\">equivalent to</a> <var>serviceSite</var> given <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-cctlds\" id=\"ref-for-related-website-set-cctlds②\">ccTLDs</a>, return “service”.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return “none”.</p>"
+        }
+      ]
+    },
+    {
+      "name": "find a related website set",
+      "href": "https://wicg.github.io/first-party-sets/#find-a-related-website-set",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"find-a-related-website-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a related website set</dfn> for a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site⑧\">site</a> <var>site</var>, run the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>set</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#list-of-related-website-sets\" id=\"ref-for-list-of-related-website-sets②\">list of related website sets</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#determine-the-member-type\" id=\"ref-for-determine-the-member-type\">member type</a> of <var>site</var> in <var>set</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> is not “none”, return <var>set</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "eligible for same-party membership when embedded within",
+      "href": "https://wicg.github.io/first-party-sets/#eligible-for-same-party-membership-when-embedded-within",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site⑨\">site</a> <var>embeddedSite</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"eligible-for-same-party-membership-when-embedded-within\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">eligible for same-party membership when embedded within</dfn> a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①⓪\">site</a> <var>topLevelSite</var>, if the following steps return true:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>set</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#find-a-related-website-set\" id=\"ref-for-find-a-related-website-set\">finding a related website set</a> for <var>topLevelSite</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>set</var> is null, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelType</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#determine-the-member-type\" id=\"ref-for-determine-the-member-type①\">member type</a> of <var>topLevelSite</var> in <var>set</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>topLevelType</var> is “associated” and the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#determine-eligibility-for-an-associated-site\" id=\"ref-for-determine-eligibility-for-an-associated-site①\">determining eligibility for an associated site</a> given <var>topLevelSite</var> and <var>set</var> is false, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>topLevelType</var> is “service”, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#determine-the-member-type\" id=\"ref-for-determine-the-member-type②\">member type</a> of <var>embeddedSite</var> in <var>set</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is “none”, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is “associated”, return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#determine-eligibility-for-an-associated-site\" id=\"ref-for-determine-eligibility-for-an-associated-site②\">determining eligibility for an associated site</a> given <var>embeddedSite</var> and <var>set</var>.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine eligibility for an associated site",
+      "href": "https://wicg.github.io/first-party-sets/#determine-eligibility-for-an-associated-site",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-eligibility-for-an-associated-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine eligibility for an associated site</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①①\">site</a> <var>site</var> and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set\" id=\"ref-for-related-website-set④\">related website set</a> <var>set</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-associatedsites\" id=\"ref-for-related-website-set-associatedsites②\">associatedSites</a> does not contain <var>site</var>, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>index</var> be the index of <var>site</var> in <var>set</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set-associatedsites\" id=\"ref-for-related-website-set-associatedsites③\">associatedSites</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>index</var> is greater than or equal to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#limit-for-associated-sites\" id=\"ref-for-limit-for-associated-sites\">limit for associated sites</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "is same-party with its top-level embedder",
+      "href": "https://wicg.github.io/first-party-sets/#is-same-party-with-its-top-level-embedder",
+      "html": "A given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"is-same-party-with-its-top-level-embedder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is same-party with its top-level embedder</dfn>, if the following steps return true:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site①\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Return whether <var>embeddedSite</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#eligible-for-same-party-membership-when-embedded-within\" id=\"ref-for-eligible-for-same-party-membership-when-embedded-within\">eligible for same-party membership when embedded within</a> <var>topLevelSite</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "are same-party in an embedding context",
+      "href": "https://wicg.github.io/first-party-sets/#are-same-party-in-an-embedding-context",
+      "html": "A given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>settings</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"are-same-party-in-an-embedding-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">are same-party in an embedding context</dfn>, if the following steps return true:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site③\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site④\">obtaining a site</a> from <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>Return whether <var>embeddedSite</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#eligible-for-same-party-membership-when-embedded-within\" id=\"ref-for-eligible-for-same-party-membership-when-embedded-within①\">eligible for same-party membership when embedded within</a> <var>topLevelSite</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/storage-access/#dom-document-requeststorageaccess\" id=\"ref-for-dom-document-requeststorageaccess\">requestStorageAccess()</a></code> to insert the following steps before step 13.5 (i.e. before <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">requesting permission to use</a>):",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>settings</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#is-same-party-with-its-top-level-embedder\" id=\"ref-for-is-same-party-with-its-top-level-embedder\">is same-party with its top-level embedder</a>, the user agent may run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted\">granted</a> and abort the remaining steps.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/requestStorageAccessFor/#dom-document-requeststorageaccessfor\" id=\"ref-for-dom-document-requeststorageaccessfor\">requestStorageAccessFor(requestedOrigin)</a></code> to insert the following steps before step 13.8 (i.e. before <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use①\">requesting permission to use</a>):",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>settings</var> and <var>requestedOrigin</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#are-same-party-in-an-embedding-context\" id=\"ref-for-are-same-party-in-an-embedding-context\">are same-party in an embedding context</a>, the user agent may <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source\">permissions task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var> and abort the remaining steps.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①②\">site</a> <var>site</var> leaves a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#related-website-set\" id=\"ref-for-related-website-set⑤\">related website set</a> as the result of building a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/first-party-sets/#list-of-related-website-sets\" id=\"ref-for-list-of-related-website-sets③\">list of related website sets</a>, user agents must ensure that it does not retain any access to data or shared identifiers held by other sites in the related website set by running the following steps:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p>Assert that <var>site</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>domain</var> be site’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a>.</p>"
+        },
+        {
+          "html": "For each <var>origin</var> known to the user agent whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host①\">host</a>'s <a data-link-type=\"dfn\" href=\"https://publicsuffix.org/list/#\" id=\"ref-for-something\">registered domain</a> is <var>domain</var>:",
+          "rationale": "clear",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cache-for-origin\" id=\"ref-for-abstract-opdef-clear-cache-for-origin\">Clear cache for origin</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cookies-for-origin\" id=\"ref-for-abstract-opdef-clear-cookies-for-origin\">Clear cookies for origin</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-dom-accessible-storage-for-origin\" id=\"ref-for-abstract-opdef-clear-dom-accessible-storage-for-origin\">Clear DOM-accessible storage for origin</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>descriptor</var> be a newly-created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor\">PermissionDescriptor</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name\">name</a></code> initialized to “storage-access”.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-remove-a-permission-store-entry\" id=\"ref-for-dfn-remove-a-permission-store-entry\">Remove all permission store entries</a> for <var>descriptor</var>, where key[0] is <var>site</var> or key[1] is <var>origin</var>.</p>"
+            },
+            {
+              "html": "<p>Run additional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> steps to ensure that any web-accessible storage is removed from <var>origin</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

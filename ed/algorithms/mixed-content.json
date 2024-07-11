@@ -1,0 +1,83 @@
+{
+  "spec": {
+    "title": "Mixed Content",
+    "url": "https://w3c.github.io/webappsec-mixed-content/"
+  },
+  "algorithms": [
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">Request</a> <var>request</var>, this algorithm will rewrite\n    its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a> if the request is deemed to be upgradeable mixed content,\n    via the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If one or more of the following conditions is met, return without modifying <var>request</var>:",
+          "ignored": [
+            "request’s URL is a potentially trustworthy URL. request’s URL’s host is an IP address. § 4.3 Does settings prohibit mixed security contexts? returns \"Does Not Restrict Mixed Security Contents\" when applied to request’s client. request’s destination is not \"image\", \"audio\", or \"video\". request’s destination is \"image\" and request’s initiator is \"imageset\"."
+          ]
+        },
+        {
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url④\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is <code>http</code>,\n        set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url⑤\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> to <code>https</code>, and return."
+        }
+      ]
+    },
+    {
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> (<var>settings</var>):",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin\">potentially trustworthy origin</a>, then return\n  \"<code>Prohibits Mixed Security Contexts</code>\".</p>"
+        },
+        {
+          "html": "If <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window\" id=\"ref-for-dom-window\">window</a></code>, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>document</var> to <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>'s <a data-link-type=\"dfn\">associated Document</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a> <var>navigable</var> in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#ancestor-navigables\" id=\"ref-for-ancestor-navigables\">ancestor navigables</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin①\">potentially trustworthy origin</a>,\n  then return \"<code>Prohibits Mixed Security Contexts</code>\".</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Does Not Restrict Mixed Security Contexts</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">Request</a> <var>request</var>, a user agent determines\n    whether the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">Request</a> <var>request</var> should proceed or not via the\n    following algorithm:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <strong>allowed</strong> if one or more of the following\n        conditions are met:",
+          "ignored": [
+            "§ 4.3 Does settings prohibit mixed security contexts? returns \"Does Not Restrict Mixed Security Contexts\" when applied to request’s client. request’s URL is a potentially trustworthy URL. The user agent has been instructed to allow mixed content, as described in § 7.2 User Controls). request’s destination is \"document\", and request’s target browsing context has no parent browsing context."
+          ]
+        },
+        {
+          "html": "Return <strong>blocked</strong>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <var>response</var>, the user agent determines what response should be\n    returned via the following algorithm:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <strong>allowed</strong> if one or more of the following\n        conditions are met:",
+          "ignored": [
+            "§ 4.3 Does settings prohibit mixed security contexts? returns Does Not Restrict Mixed Content when applied to request’s client. response’s url is a potentially trustworthy URL. The user agent has been instructed to allow mixed content, as described in § 7.2 User Controls). request’s destination is \"document\", and request’s target browsing context has no parent browsing context."
+          ]
+        },
+        {
+          "html": "Return <strong>blocked</strong>."
+        }
+      ]
+    }
+  ]
+}

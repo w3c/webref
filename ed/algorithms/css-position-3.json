@@ -1,0 +1,232 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-position-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block③\">containing block</a> of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-static\" id=\"ref-for-valdef-position-static②\">static</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-relative\" id=\"ref-for-valdef-position-relative①\">relative</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-sticky\" id=\"ref-for-valdef-position-sticky\">sticky</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box\">box</a> is as defined by its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#formatting-context\" id=\"ref-for-formatting-context②\">formatting context</a>.\n\tFor <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-fixed\" id=\"ref-for-valdef-position-fixed②\">fixed</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-absolute\" id=\"ref-for-valdef-position-absolute②\">absolute</a> boxes,\n\tit is defined as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the box has position: absolute:",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block④\">containing block</a> is established\n\t\t\tby the nearest ancestor box that establishes an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block\" id=\"ref-for-absolute-positioning-containing-block①\">absolute positioning containing block</a>,\n\t\t\tin the following way:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If the ancestor is not an inline box,",
+                      "html": "the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block⑤\">containing block</a> is formed by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#padding-edge\" id=\"ref-for-padding-edge\">padding edge</a> of the ancestor,\n\t\t\t\t\tunless otherwise specified\n\t\t\t\t\t(for example, see <a href=\"https://drafts.csswg.org/css-grid-1/#abspos-items\"><cite>CSS Grid Layout 1</cite> § 9.1 With a Grid Container as Containing Block</a>)."
+                    },
+                    {
+                      "case": "If the ancestor is an inline box, using the writing mode of that box,",
+                      "html": "the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block⑥\">containing block</a> is formed by forming a rectangle from\n\t\t\t\t\tthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#css-start\" id=\"ref-for-css-start\">start</a>-most <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#content-edge\" id=\"ref-for-content-edge\">content edges</a> (in both axes) of the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#box-fragment\" id=\"ref-for-box-fragment\">box fragment</a> of the ancestor,\n\t\t\t\t\tand the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#css-end\" id=\"ref-for-css-end\">end</a>-most <span id=\"ref-for-content-edge①\">content edges</span> of the <span id=\"ref-for-css-end①\">end</span>-most <span id=\"ref-for-box-fragment①\">box fragment</span>(s) of the ancestor in each axis.\n\t\t\t\t\tIf there are multiple fragments on the same line\n\t\t\t\t\t(e.g. due to <a href=\"https://drafts.csswg.org/css-writing-modes-3/#bidi-box-model\">bidi reordering</a>),\n\t\t\t\t\ttake the <span id=\"ref-for-css-start①\">start</span>-most fragment\n\t\t\t\t\tas the first fragment."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "case": "If the box has position: fixed:",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block⑧\">containing block</a> is established\n\t\t\tby the nearest ancestor box that establishes an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fixed-positioning-containing-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fixed positioning containing block</dfn>,\n\t\t\twith the bounds of the <span id=\"ref-for-containing-block⑨\">containing block</span> determined identically to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block\" id=\"ref-for-absolute-positioning-containing-block④\">absolute positioning containing block</a>. \n     \n     <p>If no ancestor establishes one,\n\t\t\tthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block\" id=\"ref-for-fixed-positioning-containing-block②\">fixed positioning containing block</a> is:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#continuous-media\" id=\"ref-for-continuous-media①\">continuous media</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a> (whose size matches the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#dynamic-viewport-size\" id=\"ref-for-dynamic-viewport-size\">dynamic viewport size</a>);\nas a result, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#fixed-position\" id=\"ref-for-fixed-position②\">fixed</a> boxes do not move when the document is scrolled.</p>\n       \n      </li><li data-md=\"\">\n       <p>in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#paged-media\" id=\"ref-for-paged-media①\">paged media</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-3/#page-area\" id=\"ref-for-page-area②\">page area</a> of each page; <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#fixed-position\" id=\"ref-for-fixed-position③\">fixed positioned</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box①\">boxes</a> are thus replicated on every page.\n(They are fixed with respect to the page box only,\nand are not affected by being seen through a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1③\">viewport</a>;\nas in the case of print preview, for example.)</p>\n     </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Some features can additionally change the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block①⓪\">containing block</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-position\" id=\"ref-for-absolute-position④\">absolutely positioned</a> boxes.\nThese are applied in the following order,\nwith earlier steps modifying the containing block\nthat later steps see:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block①①\">containing block</a> is generated by a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-2/#grid-container\" id=\"ref-for-grid-container\">grid container</a>,\nthe <a data-link-type=\"dfn\">grid positioning properties</a> on the positioned element\nchange the <span id=\"ref-for-containing-block①②\">containing block</span> to the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-2/#grid-area\" id=\"ref-for-grid-area\">grid area</a> of that <span id=\"ref-for-grid-container①\">grid container</span>.\nSee <a href=\"https://drafts.csswg.org/css-grid-1/#abspos-items\"><cite>CSS Grid Layout 1</cite> § 9.1 With a Grid Container as Containing Block</a>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area\" id=\"ref-for-propdef-inset-area\">inset-area</a> has an effect on the positioned element,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block①③\">containing block</a> is the specified area of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#inset-area-grid\" id=\"ref-for-inset-area-grid\">inset-area grid</a>.\nSee <a href=\"https://drafts.csswg.org/css-anchor-position-1/#inset-area\"><cite>CSS Anchor Positioning</cite> § 3.1 The inset-area Property</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If only one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-properties\" id=\"ref-for-inset-properties①⑤\">inset property</a> in a given axis is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto⑨\">auto</a>,\n\tit is set to zero.\n\tIf both <span id=\"ref-for-inset-properties①⑥\">inset properties</span> in a given axis are <span class=\"css\" id=\"ref-for-valdef-top-auto①⓪\">auto</span>, then,\n\tdepending on the box’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-align-3/#self-alignment-properties\" id=\"ref-for-self-alignment-properties\">self-alignment property</a> in the relevant axis:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "for self-start alignment or its equivalent",
+              "html": "Set its start-edge <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-properties\" id=\"ref-for-inset-properties①⑦\">inset property</a> to the static position,\n\t\t\tand its end-edge <span id=\"ref-for-inset-properties①⑧\">inset property</span> to zero."
+            },
+            {
+              "case": "for self-end alignment or its equivalent",
+              "html": "Set its end-edge <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-properties\" id=\"ref-for-inset-properties①⑨\">inset property</a> to the static position,\n\t\t\tand its start-edge <span id=\"ref-for-inset-properties②⓪\">inset property</span> to zero."
+            },
+            {
+              "case": "for center alignment",
+              "html": "Let <var>start distance</var> be the distance from\n\t\t\tthe center of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#static-position-rectangle\" id=\"ref-for-static-position-rectangle\">static-position rectangle</a> to the start edge of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block②②\">containing block</a>,\n\t\t\tand <var>end distance</var> be the distance from\n\t\t\tthe center of its <span id=\"ref-for-static-position-rectangle①\">static-position rectangle</span> to the end edge of its <span id=\"ref-for-containing-block②③\">containing block</span>.\n\t\t\tIf <var>start distance</var> is less than or equal to <var>end distance</var>,\n\t\t\tthen set the start-edge <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-properties\" id=\"ref-for-inset-properties②①\">inset property</a> to zero,\n\t\t\tand set the end-edge <span id=\"ref-for-inset-properties②②\">inset property</span> to\n\t\t\t(<var>containing block size</var> - 2 × |<var>start distance</var>|);\n\t\t\totherwise,\n\t\t\tset the end-edge <span id=\"ref-for-inset-properties②③\">inset property</span> to zero\n\t\t\tand the start-edge <span id=\"ref-for-inset-properties②④\">inset property</span> to\n\t\t\t(<var>containing block size</var> - 2 × |<var>end distance</var>|)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "absolute positioning layout",
+      "href": "https://drafts.csswg.org/css-position-3/#absolute-positioning-layout",
+      "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-position\" id=\"ref-for-absolute-position①⓪\">Absolute positioning</a> not only takes a box <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#out-of-flow\" id=\"ref-for-out-of-flow②\">out of flow</a>,\n\tbut also lays it out in its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block③①\">containing block</a> (after the final size of the <span id=\"ref-for-containing-block③②\">containing block</span> has been determined)\n\taccording to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"absolute positioning layout | absolute positioning layout model\" id=\"absolute-positioning-layout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">absolute positioning layout model</dfn>:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "First, its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-modified-containing-block\" id=\"ref-for-inset-modified-containing-block②\">inset-modified containing block</a> is calculated,\n\t\t\tdefining its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available\">available space</a>.\n\t\t\t(See <a href=\"https://drafts.csswg.org/css-position-3/#abspos-insets\">§ 3.5 Absolute (and Fixed) Positioning</a>.)\n\t\t\tBecause an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-position\" id=\"ref-for-absolute-position①①\">absolutely positioned box</a> can have no effect on the size of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block③③\">containing block</a>,\n\t\t\tits <span id=\"ref-for-available①\">available space</span> is always <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#definite\" id=\"ref-for-definite\">definite</a>."
+        },
+        {
+          "html": "Next, its width and height are resolved against this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#definite\" id=\"ref-for-definite①\">definite</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available②\">available space</a>,\n\t\t\tas its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#preferred-size\" id=\"ref-for-preferred-size\">preferred size</a> capped by its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#max-width\" id=\"ref-for-max-width\">maximum size</a> (if any), floored by its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#min-width\" id=\"ref-for-min-width\">minimum size</a>.\n\t\t\tSee <a href=\"https://drafts.csswg.org/css-position-3/#abspos-auto-size\">§ 4.1 Automatic Sizes of Absolutely-Positioned Boxes</a>.\n\t\t\tPercentages, however,\n\t\t\tare resolved against the original <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block③④\">containing block</a> size."
+        },
+        {
+          "html": "Then, the value of any <span class=\"css\">auto</span> margins are calculated,\n\t\t\tsee <a href=\"https://drafts.csswg.org/css-position-3/#abspos-margins\">§ 4.2 Auto Margins of Absolutely-Positioned Boxes</a>."
+        },
+        {
+          "html": "Lastly, its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#margin-box\" id=\"ref-for-margin-box③\">margin box</a> is aligned within the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-modified-containing-block\" id=\"ref-for-inset-modified-containing-block③\">inset-modified containing block</a> as defined by its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-align-3/#self-alignment-properties\" id=\"ref-for-self-alignment-properties②\">self-alignment properties</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size\">automatic size</a> of an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-position\" id=\"ref-for-absolute-position①②\">absolutely positioned box</a> is resolved against its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-modified-containing-block\" id=\"ref-for-inset-modified-containing-block④\">inset-modified containing block</a> as follows\n\t(treating <span class=\"css\">auto</span> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#margin\" id=\"ref-for-margin②\">margins</a> as zero):",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If its self-alignment property in the relevant axis is stretch",
+              "html": "<p>Its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size①\">automatic size</a> is its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#stretch-fit-size\" id=\"ref-for-stretch-fit-size\">stretch-fit size</a>.</p>"
+            },
+            {
+              "case": "Or if it is normal and the box is non-replaced, not a table wrapper box, and has no auto inset in the relevant axis",
+              "html": "<p>Its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size①\">automatic size</a> is its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#stretch-fit-size\" id=\"ref-for-stretch-fit-size\">stretch-fit size</a>.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "<p>Its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size②\">automatic size</a> is its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#fit-content-size\" id=\"ref-for-fit-content-size\">fit-content size</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Otherwise,\n\tset <span class=\"css\">auto</span> values for <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left⑥\">margin-left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right⑥\">margin-right</a> to <span class=\"css\">0</span>,\n\tand pick one of the following six rules that apply.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left⑨\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width②\">width</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto①⑧\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right⑨\">right</a> is not <span class=\"css\" id=\"ref-for-valdef-top-auto①⑨\">auto</span>,\n\t\tthen the width is shrink-to-fit.\n\t\tThen solve for <span class=\"property\" id=\"ref-for-propdef-left①⓪\">left</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left①①\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right①⓪\">right</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②⓪\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width③\">width</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto\">auto</a>,\n\t\tthen if the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-3/#propdef-direction\" id=\"ref-for-propdef-direction③\">direction</a> property of\n\t\tthe element establishing the static-position <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block③⑧\">containing block</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr③\">ltr</a> set <span class=\"property\" id=\"ref-for-propdef-left①②\">left</span> to the static-position,\n\t\totherwise set <span class=\"property\" id=\"ref-for-propdef-right①①\">right</span> to the static-position.\n\t\tThen solve for <span class=\"property\" id=\"ref-for-propdef-left①③\">left</span> (if <span class=\"property\" id=\"ref-for-propdef-direction④\">direction</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl②\">rtl</a>)\n\t\tor <span class=\"property\" id=\"ref-for-propdef-right①②\">right</span> (if <span class=\"property\" id=\"ref-for-propdef-direction⑤\">direction</span> is <span class=\"css\" id=\"ref-for-valdef-direction-ltr④\">ltr</span>)."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width④\">width</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right①③\">right</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto①\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left①④\">left</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②①\">auto</a>,\n\t\tthen the width is shrink-to-fit.\n\t\tThen solve for <span class=\"property\" id=\"ref-for-propdef-right①④\">right</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left①⑤\">left</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②②\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width⑤\">width</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right①⑤\">right</a> are not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto②\">auto</a>,\n\t\tthen solve for <span class=\"property\" id=\"ref-for-propdef-left①⑥\">left</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width⑥\">width</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto③\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left①⑦\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right①⑥\">right</a> are not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②③\">auto</a>,\n\t\tthen solve for <span class=\"property\" id=\"ref-for-propdef-width⑦\">width</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right①⑦\">right</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②④\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left①⑧\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width⑧\">width</a> are not <span class=\"css\" id=\"ref-for-valdef-top-auto②⑤\">auto</span>,\n\t\tthen solve for <span class=\"property\" id=\"ref-for-propdef-right①⑧\">right</span>."
+        }
+      ]
+    },
+    {
+      "html": "After establishing the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width②①\">width</a>,\n\tin order to position the replaced element,\n\tapply the following rules as appropriate.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left②⓪\">left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right②①\">right</a> have the value <span class=\"css\">auto</span>,\n\t\tand if the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-3/#propdef-direction\" id=\"ref-for-propdef-direction⑥\">direction</a> property of\n\t\tthe element establishing the static-position <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block④⓪\">containing block</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr⑤\">ltr</a>,\n\t\tset <span class=\"property\" id=\"ref-for-propdef-left②①\">left</span> to the static position and solve for <span class=\"property\" id=\"ref-for-propdef-right②②\">right</span>;\n\t\telse if <span class=\"property\" id=\"ref-for-propdef-direction⑦\">direction</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl③\">rtl</a>,\n\t\tset <span class=\"property\" id=\"ref-for-propdef-right②③\">right</span> to the static position and solve for <span class=\"property\" id=\"ref-for-propdef-left②②\">left</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left②③\">left</a> is <span class=\"css\">auto</span> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right②④\">right</a> is not <span class=\"css\">auto</span>,\n\t\treplace any <span class=\"css\">auto</span> on <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left⑧\">margin-left</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right⑧\">margin-right</a> with <span class=\"css\">0</span>,\n\t\tthen solve for <span class=\"property\" id=\"ref-for-propdef-left②④\">left</span>."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right②⑤\">right</a> is <span class=\"css\">auto</span> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left②⑤\">left</a> is not <span class=\"css\">auto</span>,\n\t\treplace any <span class=\"css\">auto</span> on <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left⑨\">margin-left</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right⑨\">margin-right</a> with <span class=\"css\">0</span>,\n\t\tthen solve for <span class=\"property\" id=\"ref-for-propdef-right②⑥\">right</span>."
+        },
+        {
+          "html": "If at this point both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left①⓪\">margin-left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right①⓪\">margin-right</a> are still <span class=\"css\">auto</span>,\n\t\tsolve the equation under the extra constraint\n\t\tthat the two margins must get equal values,\n\t\tunless this would make them negative,\n\t\tin which case when the direction of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block④①\">containing block</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr⑥\">ltr</a> (<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl④\">rtl</a>),\n\t\tset <span class=\"property\" id=\"ref-for-propdef-margin-left①①\">margin-left</span> (<span class=\"property\" id=\"ref-for-propdef-margin-right①①\">margin-right</span>) to <span class=\"css\">0</span> and solve for <span class=\"property\" id=\"ref-for-propdef-margin-right①②\">margin-right</span> (<span class=\"property\" id=\"ref-for-propdef-margin-left①②\">margin-left</span>)."
+        },
+        {
+          "html": "If at this point there is an <span class=\"css\">auto</span> remaining,\n\t\tsolve the equation for that value."
+        },
+        {
+          "html": "If at this point the values are over-constrained,\n\t\tignore the value for either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-left\" id=\"ref-for-propdef-left②⑥\">left</a> (in case the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-3/#propdef-direction\" id=\"ref-for-propdef-direction⑧\">direction</a> property of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block④②\">containing block</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-rtl\" id=\"ref-for-valdef-direction-rtl⑤\">rtl</a>)\n\t\tor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-right\" id=\"ref-for-propdef-right②⑦\">right</a> (in case <span class=\"property\" id=\"ref-for-propdef-direction⑨\">direction</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-writing-modes-4/#valdef-direction-ltr\" id=\"ref-for-valdef-direction-ltr⑦\">ltr</a>)\n\t\tand solve for that value."
+        }
+      ]
+    },
+    {
+      "html": "Otherwise,\n\tset <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto③②\">auto</a> values for <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top④\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom④\">margin-bottom</a> to <span class=\"css\">0</span>,\n\tand pick one of the following six rules that apply.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top①②\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑥\">height</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto③③\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom⑧\">bottom</a> is not <span class=\"css\" id=\"ref-for-valdef-top-auto③④\">auto</span>,\nthen the height is based on the <a href=\"https://www.w3.org/TR/CSS2/visudet.html#root-height\">Auto heights for block formatting context roots</a>,\nand solve for <span class=\"property\" id=\"ref-for-propdef-top①③\">top</span>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top①④\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom⑨\">bottom</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto③⑤\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑦\">height</a> is not <span class=\"css\" id=\"ref-for-valdef-top-auto③⑥\">auto</span>,\nthen set <span class=\"property\" id=\"ref-for-propdef-top①⑤\">top</span> to the static position,\nthen solve for <span class=\"property\" id=\"ref-for-propdef-bottom①⓪\">bottom</span>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑧\">height</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①①\">bottom</a> are <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto③⑦\">auto</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top①⑥\">top</a> is not <span class=\"css\" id=\"ref-for-valdef-top-auto③⑧\">auto</span>,\nthen the height is based on the <a href=\"https://www.w3.org/TR/CSS2/visudet.html#root-height\">Auto heights for block formatting context roots</a>,\nand solve for <span class=\"property\" id=\"ref-for-propdef-bottom①②\">bottom</span>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top①⑦\">top</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto③⑨\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑨\">height</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①③\">bottom</a> are not <span class=\"css\" id=\"ref-for-valdef-top-auto④⓪\">auto</span>,\nthen solve for <span class=\"property\" id=\"ref-for-propdef-top①⑧\">top</span>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height①⓪\">height</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto④①\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top①⑨\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①④\">bottom</a> are not <span class=\"css\" id=\"ref-for-valdef-top-auto④②\">auto</span>,\nthen solve for <span class=\"property\" id=\"ref-for-propdef-height①①\">height</span>.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①⑤\">bottom</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto④③\">auto</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top②⓪\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height①②\">height</a> are not <span class=\"css\" id=\"ref-for-valdef-top-auto④④\">auto</span>,\nthen solve for <span class=\"property\" id=\"ref-for-propdef-bottom①⑥\">bottom</span>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "After establishing the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height②①\">height</a>,\n\tin order to position the replaced element,\n\tapply the following rules as appropriate.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-top\" id=\"ref-for-propdef-top②①\">top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①⑦\">bottom</a> have the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto④⑨\">auto</a>,\nreplace <span class=\"property\" id=\"ref-for-propdef-top②②\">top</span> with the element’s static position.</p>"
+        },
+        {
+          "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①⑧\">bottom</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto⑤⓪\">auto</a>,\nreplace any <span class=\"css\" id=\"ref-for-valdef-top-auto⑤①\">auto</span> on <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top⑤\">margin-top</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom⑤\">margin-bottom</a> with <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>If at this point both <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top⑥\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom⑥\">margin-bottom</a> are still <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto⑤②\">auto</a>,\nsolve the equation under the extra constraint\nthat the two margins must get equal values.</p>"
+        },
+        {
+          "html": "<p>If at this point there is only one <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto⑤③\">auto</a> remaining,\nsolve the equation for that value.</p>"
+        },
+        {
+          "html": "<p>If at this point the values are over-constrained,\nignore the value for <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-bottom\" id=\"ref-for-propdef-bottom①⑨\">bottom</a> and solve for that value.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If its self-alignment property in the relevant axis is stretch",
+              "html": "<p>Its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size⑨\">automatic size</a> is its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#stretch-fit-size\" id=\"ref-for-stretch-fit-size①\">stretch-fit size</a>.</p>"
+            },
+            {
+              "case": "Or if it is normal and the box is non-replaced and has no auto inset in the relevant axis",
+              "html": "<p>Its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#automatic-size\" id=\"ref-for-automatic-size⑨\">automatic size</a> is its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#stretch-fit-size\" id=\"ref-for-stretch-fit-size①\">stretch-fit size</a>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

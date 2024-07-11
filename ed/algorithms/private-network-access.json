@@ -1,0 +1,360 @@
+{
+  "spec": {
+    "title": "Private Network Access",
+    "url": "https://wicg.github.io/private-network-access/"
+  },
+  "algorithms": [
+    {
+      "name": "determine the IP address space",
+      "href": "https://wicg.github.io/private-network-access/#determine-the-ip-address-space",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"determine-the-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the IP address space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of an IP address <var>address</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>address</var> belongs to the <code>::ffff:0:0/96</code> \"IPv4-mapped Address\"\n  address block, then replace <var>address</var> with its embedded IPv4 address.</p>"
+        },
+        {
+          "html": "For each <var>row</var> in the <a href=\"https://wicg.github.io/private-network-access/#non-public-ip-address-blocks\">Non-public IP address blocks\"</a> table:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>address</var> belongs to <var>row</var>’s address block, return <var>row</var>’s\n   address space.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑤\">public</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization\">initialization</a> algorithm is as follows. Given\n  an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> (<var>context</var>), a <code>Response</code> (<var>response</var>), and\n  a <code>policy</code> (<var>policy</var>):",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①\">IP address space</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑧\">public</a> if <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> is \"<code>enforce</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "What follows is a sketch of a potential solution:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection\">Connection</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"connection\" data-dfn-type=\"dfn\" data-export=\"\" id=\"connection-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP address space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> property, initially\n  null. This applies to WebSocket connections too.</p>"
+        },
+        {
+          "html": "A new step is added to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain①\">obtain a connection</a> algorithm immediately\n  before appending <var>connection</var> to the user agent’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-pool\" id=\"ref-for-concept-connection-pool\">connection pool</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space\">IP address space</a> to\n  the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#determine-the-ip-address-space\" id=\"ref-for-determine-the-ip-address-space\">determine the IP address space</a> algorithm\n  on the IP address of <var>connection</var>’s remote endpoint.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request②\">Request</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"target IP address space\" id=\"request-target-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">target IP\n  address space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> property, initially null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">Response</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"response\" data-dfn-type=\"dfn\" data-export=\"\" id=\"response-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP address space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> property, whose value is\n  an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space\" id=\"ref-for-ip-address-space①①\">IP address space</a>, initially null.</p>"
+        },
+        {
+          "html": "Define a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"private-network-access-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Private Network Access check</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm.\n  Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request③\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection①\">connection</a> <var>connection</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①\">origin</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin③\">potentially trustworthy\n  origin</a> and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②\">current URL</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin②\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin③\">origin</a>, then return\n  null.</p>"
+            },
+            {
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container①\">policy container</a> is null, then return null.</p>"
+            },
+            {
+              "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①\">target IP address space</a> is not null, then:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space②\">target IP address space</a> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public①⓪\">public</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space①\">IP address space</a> is not equal to\n  then <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space③\">target IP address space</a>, then return\n  a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
+                },
+                {
+                  "html": "<p>Return null.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space②\">IP address space</a> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-less-public\" id=\"ref-for-ip-address-space-less-public①\">less public</a> than <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑤\">policy\n  container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space②\">IP address space</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>error</var> be a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①\">network error</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context③\">secure context</a> (including if it is null), then return <var>error</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>error</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space①\">IP address space</a> property to <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space③\">IP address space</a>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>error</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return null.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <a data-link-type=\"abstract-op\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch③\">fetch</a> algorithm is amended to add the following step immediately\n  after <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a> is set:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space④\">target IP address space</a> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public①①\">public</a>, then return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error②\">network error</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <a data-link-type=\"abstract-op\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-fetch\" id=\"ref-for-concept-http-network-fetch①\">HTTP-network fetch</a> algorithm is amended to add 3 new steps right\n  after checking that the newly-obtained <var>connection</var> is not\n  failure:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space②\">IP address space</a> to <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space④\">IP address space</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>privateNetworkAccessCheckResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#private-network-access-check\" id=\"ref-for-private-network-access-check\">Private Network Access check</a> for <var>fetchParams</var>’ <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request④\">request</a> and <var>connection</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>privateNetworkAccessCheckResult</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error③\">network error</a>, return <var>privateNetworkAccessCheckResult</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Define a new algorithm to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-preflight-mode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the preflight mode</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request⑤\">request</a> <var>request</var> and a boolean <var>makeCORSPreflight</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "Then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space⑤\">target IP address space</a> is not\n  null, then return \"cors+pna\".</p>"
+                },
+                {
+                  "html": "<p>Otherwise, return \"cors\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space⑥\">target IP address space</a> is not null, then\n  return \"pna\".</p>"
+            },
+            {
+              "html": "<p>Otherwise, return \"none\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "Define a new algorithm called <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"http-no-service-worker-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-no-service-worker fetch</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> based on the existing steps in <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-http-fetch\" id=\"ref-for-concept-http-fetch①\">HTTP fetch</a> that are run if <var>response</var> is still null after handling the fetch via service workers, and amend\n  those slightly as follows:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>preflightMode</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#determine-the-preflight-mode\" id=\"ref-for-determine-the-preflight-mode\">determine the\n  preflight mode</a> given <var>request</var> and <var>makeCORSPreflight</var>.</p>"
+            },
+            {
+              "html": "Replace the entire condition \"If <var>makeCORSPreflight</var> is true and ..., Then:\" with:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>preflightMode</var> is not \"none\", then:</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Replace \"running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-preflight-fetch-0\" id=\"ref-for-cors-preflight-fetch-0①\">CORS-preflight fetch</a> given <var>request</var>\" with\n  \"running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-preflight-fetch-0\" id=\"ref-for-cors-preflight-fetch-0②\">CORS-preflight fetch</a> given <var>request</var> and <var>preflightMode</var>\"</p>"
+            },
+            {
+              "html": "Immediately after running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-preflight-fetch-0\" id=\"ref-for-cors-preflight-fetch-0③\">CORS-preflight fetch</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>preflightResponse</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error④\">network error</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>preflightResponse</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space③\">IP address space</a> is\n  null, return <var>preflightResponse</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space⑦\">target IP address space</a> to <var>preflightResponse</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space④\">IP address space</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#http-no-service-worker-fetch\" id=\"ref-for-http-no-service-worker-fetch\">HTTP-no-service-worker fetch</a> given <var>fetchParams</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Immediately after running <a data-link-type=\"abstract-op\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch\" id=\"ref-for-concept-http-network-or-cache-fetch\">HTTP-network-or-cache fetch</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑤\">network error</a> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space⑤\">IP address space</a> is non-null, then:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space⑧\">target IP address space</a> to <var>preflightResponse</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space⑥\">IP address space</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#http-no-service-worker-fetch\" id=\"ref-for-http-no-service-worker-fetch①\">HTTP-no-service-worker fetch</a> given <var>fetchParams</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-preflight-fetch-0\" id=\"ref-for-cors-preflight-fetch-0④\">CORS-preflight fetch</a> algorithm is adjusted to take a new parameter <var>preflightMode</var> (default \"cors\"), and handle the new headers as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>Only append `<code>Accept</code>` and\n  `<a data-link-type=\"http-header\" href=\"https://fetch.spec.whatwg.org/#http-access-control-request-headers\" id=\"ref-for-http-access-control-request-headers\"><code>Access-Control-Request-Headers</code></a>` to <var>preflight</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a> if <var>preflightMode</var> is true.</p>"
+            },
+            {
+              "html": "Immediately before running <a data-link-type=\"abstract-op\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch\" id=\"ref-for-concept-http-network-or-cache-fetch①\">HTTP-network-or-cache fetch</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①⓪\">target IP address space</a> is not null,\n  then:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set\" id=\"ref-for-concept-header-list-set\">Set</a> \"<a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-access-control-request-private-network\" id=\"ref-for-http-headerdef-access-control-request-private-network②\"><code>Access-Control-Request-Private-Network</code></a>\"\n  to \"<code>true</code>\" in <var>preflight</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Immediately after the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-cors-check\" id=\"ref-for-concept-cors-check\">CORS check</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>preflightMode</var> is \"pna\" or \"cors+pna\",",
+                  "rationale": "assert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①①\">target IP address space</a> is\n  not null.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>allow</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given\n  \"<a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-access-control-allow-private-network\" id=\"ref-for-http-headerdef-access-control-allow-private-network④\"><code>Access-Control-Allow-Private-Network</code></a>\"\n  and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>allow</var> is not \"<code>true</code>\", return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑥\">network error</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>requestWithoutTargetIpAddressSpace</var> be a copy of <var>request</var> but set its <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①②\">target IP address space</a> to be null.</p>"
+                    },
+                    {
+                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-mixed-content/#should-block-fetch\" id=\"ref-for-should-block-fetch①\"> should fetching <var>requestWithoutTargetIpAddressSpace</var> be\n    blocked as mixed content </a> returns <strong>allowed</strong>, return null.</p>"
+                    },
+                    {
+                      "html": "<p>If <a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-id\" id=\"ref-for-http-headerdef-private-network-access-id②\"><code>Private-Network-Access-ID</code></a> or <a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-name\" id=\"ref-for-http-headerdef-private-network-access-name②\"><code>Private-Network-Access-Name</code></a> is null or\n  empty, let <var>targetId</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①③\">target IP\n  address space</a>. Store the permission as an ephemeral\n  permission, then return null.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>targetId</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values①\">extracting header list\n  values</a> given\n  \"<a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-id\" id=\"ref-for-http-headerdef-private-network-access-id③\"><code>Private-Network-Access-ID</code></a>\" and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+                    },
+                    {
+                      "html": "<p>if <var>targetId</var> is not a string of 6 hexadecimal bytes\n  separated by colons, return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑦\">network error</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>targetName</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values②\">extracting header list\n  values</a> given\n  \"<a data-link-type=\"http-header\" href=\"https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-name\" id=\"ref-for-http-headerdef-private-network-access-name③\"><code>Private-Network-Access-Name</code></a>\" and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+                    },
+                    {
+                      "html": "<p>if <var>targetName</var> does not match the [ECMAScript] regexp\n  /^[a-z0-9_-.]+$/ or has more than 248 UTF-8 code units,\n  return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑧\">network error</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">requesting permission to use</a> the following descriptor:</p>\n<pre class=\"highlight\"><c- p=\"\">{</c->\n  name<c- o=\"\">:</c-> <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://wicg.github.io/private-network-access/#permissiondef-private-network-access\" id=\"ref-for-permissiondef-private-network-access①\"><code class=\"highlight\"><c- u=\"\"><c- u=\"\">\"private-network-access\"</c-></c-></code></a><c- p=\"\">,</c->\n  id<c- o=\"\">:</c-> <var>targetId</var><c- p=\"\">,</c->\n<c- p=\"\">}</c->\n</pre>"
+                    },
+                    {
+                      "html": "<p>If <var>state</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">\"denied\"</a></code>, return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑨\">network\n  error</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return null.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Finally, to mitigate the impact of DNS rebinding attacks (see <a href=\"https://wicg.github.io/private-network-access/#dns-rebinding\">§ 5.3 DNS Rebinding</a>), the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-cache\" id=\"ref-for-concept-cache\">CORS-preflight cache</a> is adjusted to take <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space\" id=\"ref-for-ip-address-space①②\">IP address space</a> information into account:</p>",
+          "ignored": [
+            "A new IP address space property (null or an IP address space) is added to each cache entry. This new property is initialized by the create a new cache entry algorithm from request’s target IP address space. This new property is checked by the cache entry match algorithm: entry’s IP address space is equal to request’s target IP address space."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a class=\"idl-code\" data-link-type=\"constructor\" href=\"https://fetch.spec.whatwg.org/#dom-request\" id=\"ref-for-dom-request\"><code>new\nRequest(<var>input</var>, <var>init</var>)</code></a> is\nappended with the following step right before setting <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request⑦\">request</a> to <var>request</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/private-network-access/#dom-requestinit-targetaddressspace\" id=\"ref-for-dom-requestinit-targetaddressspace\">targetAddressSpace</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then\n  switch on <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/private-network-access/#dom-requestinit-targetaddressspace\" id=\"ref-for-dom-requestinit-targetaddressspace①\">targetAddressSpace</a></code>\"]:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "public",
+                  "html": "Do nothing."
+                },
+                {
+                  "case": "private",
+                  "html": "Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①⑥\">target IP address space</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-private\" id=\"ref-for-ip-address-space-private①⑧\">private</a>."
+                },
+                {
+                  "case": "local",
+                  "html": "Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①⑦\">target IP address space</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space-local\" id=\"ref-for-ip-address-space-local⑦\">local</a>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To support the checks in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/private-network-access/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a>, user agents must remember the source <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#ip-address-space\" id=\"ref-for-ip-address-space①④\">IP address space</a> of contexts in which network requests are made. To this\n  effect, the <a data-link-type=\"biblio\" href=\"https://wicg.github.io/private-network-access/#biblio-html\" title=\"HTML Standard\">[HTML]</a> specification is patched as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>A new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy container\" data-dfn-type=\"dfn\" data-export=\"\" id=\"policy-container-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP address space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> property\n  is added to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container\">policy container</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct\">struct</a>.</p>",
+          "ignored": [
+            "It is initially public."
+          ]
+        },
+        {
+          "html": "An additional step is added to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#clone-a-policy-container\" id=\"ref-for-clone-a-policy-container\">clone a policy container</a> algorithm:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>clone</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space③\">IP address space</a> to <var>policyContainer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space④\">IP address space</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "An additional step is added to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response\">create a policy container from a\n  fetch response</a> algorithm:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑤\">IP address space</a> to <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#response-ip-address-space\" id=\"ref-for-response-ip-address-space⑦\">IP address space</a>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

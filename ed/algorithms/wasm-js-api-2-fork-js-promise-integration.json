@@ -1,0 +1,1990 @@
+{
+  "spec": {
+    "title": "WebAssembly JavaScript Interface",
+    "url": "https://webassembly.github.io/js-promise-integration/js-api/"
+  },
+  "algorithms": [
+    {
+      "name": "compile a WebAssembly module",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#compile-a-webassembly-module",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a WebAssembly module</dfn> from source bytes <var>bytes</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>module</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-decode\" id=\"ref-for-embed-module-decode\">module_decode</a>(<var>bytes</var>). If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error\">error</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①\">error</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-validate\" id=\"ref-for-embed-module-validate\">module_validate</a>(<var>module</var>) is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error②\">error</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error③\">error</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>module</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "WebAssembly/validate(bytes)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-validate",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webassembly-validate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>validate(<var>bytes</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stableBytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">copy of the bytes held by the buffer</a> <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#compile-a-webassembly-module\" id=\"ref-for-compile-a-webassembly-module\">Compile</a> <var>stableBytes</var> as a WebAssembly module and store the results as <var>module</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error④\">error</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "construct a WebAssembly module object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#construct-a-webassembly-module-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-webassembly-module-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a WebAssembly module object</dfn> from a module <var>module</var> and source bytes <var>bytes</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>moduleObject</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#module\" id=\"ref-for-module⑤\">Module</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>moduleObject</var>.[[Module]] to <var>module</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>moduleObject</var>.[[Bytes]] to <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>moduleObject</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "asynchronously compile a WebAssembly module",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-compile-a-webassembly-module",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-compile-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously compile a WebAssembly module</dfn> from source bytes <var>bytes</var>, using optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> <var>taskSource</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-compile-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously compile a WebAssembly module</dfn> from source bytes <var>bytes</var>, using optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> <var>taskSource</var>, perform the following steps:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#compile-a-webassembly-module\" id=\"ref-for-compile-a-webassembly-module①\">Compile the WebAssembly module</a> <var>bytes</var> and store the result as <var>module</var>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-compile-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously compile a WebAssembly module</dfn> from source bytes <var>bytes</var>, using optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> <var>taskSource</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception.</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-compile-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously compile a WebAssembly module</dfn> from source bytes <var>bytes</var>, using optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> <var>taskSource</var>, perform the following steps:",
+                  "rationale": "resolve",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#construct-a-webassembly-module-object\" id=\"ref-for-construct-a-webassembly-module-object\">Construct a WebAssembly module object</a> from <var>module</var> and <var>bytes</var>, and let <var>moduleObject</var> be the result.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with <var>moduleObject</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "WebAssembly/compile(bytes)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-compile",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webassembly-compile\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>compile(<var>bytes</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stableBytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">copy of the bytes held by the buffer</a> <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-compile-a-webassembly-module\" id=\"ref-for-asynchronously-compile-a-webassembly-module\">Asynchronously compile a WebAssembly module</a> from <var>stableBytes</var> and return the result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "read-the-imports",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#read-the-imports",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>module</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/modules.html#syntax-module\" id=\"ref-for-syntax-module①\">imports</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>, and <var>importObject</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>imports</var> be « ».</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>o</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>importObject</var>, <var>moduleName</var>).</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>o</var>) is not Object, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> exception.</p>"
+            },
+            {
+              "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>o</var>, <var>componentName</var>).</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable\">IsCallable</a>(<var>v</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror\">LinkError</a></code> exception.</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                  "rationale": "create",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>. This value <var>index</var> is known as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-of-the-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index of the host function</dfn> <var>funcaddr</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                      "rationale": "throw",
+                      "steps": [
+                        {
+                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①\">LinkError</a></code> exception.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                      "rationale": "throw",
+                      "steps": [
+                        {
+                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror②\">LinkError</a></code> exception.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                      "rationale": "throw",
+                      "steps": [
+                        {
+                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror③\">LinkError</a></code> exception.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue\">ToWebAssemblyValue</a>(<var>v</var>, <var>valtype</var>).</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store\">associated store</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc\">global_alloc</a>(<var>store</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut\">const</a> <var>valtype</var>, <var>value</var>).</p>"
+                    },
+                    {
+                      "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①\">associated store</a> to <var>store</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>globaladdr</var> be <var>v</var>.[[Global]].</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+                  "rationale": "throw",
+                  "steps": [
+                    {
+                      "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror④\">LinkError</a></code> exception.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#memory\" id=\"ref-for-memory②\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑤\">LinkError</a></code> exception.</p>"
+                },
+                {
+                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the imports</dfn> from a WebAssembly module <var>module</var> from imports object <var>importObject</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#table\" id=\"ref-for-table①\">Table</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑥\">LinkError</a></code> exception.</p>"
+                },
+                {
+                  "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
+                },
+                {
+                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>imports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create an exports object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-an-exports-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate\">OrdinaryObjectCreate</a>(null).</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>externval</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-instance-export\" id=\"ref-for-embed-instance-export\">instance_export</a>(<var>instance</var>, <var>name</var>).</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>externval</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑥\">error</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑦\">func</a> <var>funcaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑧\">func</a> <var>funcaddr</var> be <var>externval</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>func</var> be the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>func</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑨\">global</a> <var>globaladdr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⓪\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-global-object\" id=\"ref-for-create-a-global-object\">a new Global object</a> created from <var>globaladdr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>global</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①①\">mem</a> <var>memaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①②\">mem</a> <var>memaddr</var> be <var>externval</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>memory</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-object\" id=\"ref-for-create-a-memory-object\">a new Memory object</a> created from <var>memaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>memory</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exports-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an exports object</dfn> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①③\">table</a> <var>tableaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①④\">table</a> <var>tableaddr</var> be <var>externval</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>table</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-table-object\" id=\"ref-for-create-a-table-object\">a new Table object</a> created from <var>tableaddr</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>table</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>status</var> is true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel\" id=\"ref-for-sec-setintegritylevel\">SetIntegrityLevel</a>(<var>exportsObject</var>, <code>\"frozen\"</code>).</p>"
+        },
+        {
+          "html": "<p>Return <var>exportsObject</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize an instance object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-instance-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-an-instance-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize an instance object</dfn> <var>instanceObject</var> from a WebAssembly module <var>module</var> and instance <var>instance</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-an-exports-object\" id=\"ref-for-create-an-exports-object\">Create an exports object</a> from <var>module</var> and <var>instance</var> and let <var>exportsObject</var> be the result.</p>"
+        },
+        {
+          "html": "<p>Set <var>instanceObject</var>.[[Instance]] to <var>instance</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>instanceObject</var>.[[Exports]] to <var>exportsObject</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "instantiate the core of a WebAssembly module",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#instantiate-the-core-of-a-webassembly-module",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-the-core-of-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate the core of a WebAssembly module</dfn> from a module <var>module</var> and imports <var>imports</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-instantiate\" id=\"ref-for-embed-module-instantiate\">module_instantiate</a>(<var>store</var>, <var>module</var>, <var>imports</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑦\">error</a>, throw an appropriate exception type:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑦\">LinkError</a></code> exception for most cases which occur during linking.</p>\n       </li><li data-md=\"\">\n        <p>If the error came when running the start function, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror\">RuntimeError</a></code> for most errors which occur from WebAssembly, or the error object propagated from inner ECMAScript code.</p>\n       </li><li data-md=\"\">\n        <p>Another error type if appropriate, for example an out-of-memory exception, as documented in <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>instance</var>) be <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>instance</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "asynchronously instantiate a WebAssembly module",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-instantiate-a-webassembly-module",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-instantiate-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously instantiate a WebAssembly module</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#module\" id=\"ref-for-module⑥\">Module</a></code> <var>moduleObject</var> and imports <var>importObject</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>module</var> be <var>moduleObject</var>.[[Module]].</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#read-the-imports\" id=\"ref-for-read-the-imports\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, and let <var>imports</var> be the result.\nIf this operation throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with the exception, and return <var>promise</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-instantiate-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously instantiate a WebAssembly module</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#module\" id=\"ref-for-module⑥\">Module</a></code> <var>moduleObject</var> and imports <var>importObject</var>, perform the following steps:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"asynchronously-instantiate-a-webassembly-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">asynchronously instantiate a WebAssembly module</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#module\" id=\"ref-for-module⑥\">Module</a></code> <var>moduleObject</var> and imports <var>importObject</var>, perform the following steps:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module①\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>instanceObject</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#instance\" id=\"ref-for-instance②\">Instance</a></code>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object\">Initialize</a> <var>instanceObject</var> from <var>module</var> and <var>instance</var>.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>instanceObject</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "instantiate a promise of a module",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#instantiate-a-promise-of-a-module",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-a-promise-of-a-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a promise of a module</dfn> <var>promiseOfModule</var> with imports <var>importObject</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-a-promise-of-a-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a promise of a module</dfn> <var>promiseOfModule</var> with imports <var>importObject</var>, perform the following steps:",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-instantiate-a-webassembly-module\" id=\"ref-for-asynchronously-instantiate-a-webassembly-module\">Instantiate the WebAssembly module</a> <var>module</var> importing <var>importObject</var>, and let <var>innerPromise</var> be the result.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-a-promise-of-a-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a promise of a module</dfn> <var>promiseOfModule</var> with imports <var>importObject</var>, perform the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>result</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dictdef-webassemblyinstantiatedsource\" id=\"ref-for-dictdef-webassemblyinstantiatedsource①\">WebAssemblyInstantiatedSource</a></code> value «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-webassemblyinstantiatedsource-module\" id=\"ref-for-dom-webassemblyinstantiatedsource-module\">module</a></code>\" → <var>module</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-webassemblyinstantiatedsource-instance\" id=\"ref-for-dom-webassemblyinstantiatedsource-instance\">instance</a></code>\" → <var>instance</var> ]».</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <var>result</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-a-promise-of-a-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a promise of a module</dfn> <var>promiseOfModule</var> with imports <var>importObject</var>, perform the following steps:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-a-promise-of-a-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a promise of a module</dfn> <var>promiseOfModule</var> with imports <var>importObject</var>, perform the following steps:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "WebAssembly/instantiate(bytes, importObject)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-instantiate",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"instantiate(bytes, importObject)|instantiate(bytes)\" id=\"dom-webassembly-instantiate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>instantiate(<var>bytes</var>, <var>importObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stableBytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy②\">copy of the bytes held by the buffer</a> <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-compile-a-webassembly-module\" id=\"ref-for-asynchronously-compile-a-webassembly-module①\">Asynchronously compile a WebAssembly module</a> from <var>stableBytes</var> and let <var>promiseOfModule</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#instantiate-a-promise-of-a-module\" id=\"ref-for-instantiate-a-promise-of-a-module\">Instantiate</a> <var>promiseOfModule</var> with imports <var>importObject</var> and return the result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "WebAssembly/instantiate(moduleObject, importObject)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-instantiate-moduleobject-importobject",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"instantiate(moduleObject, importObject)|instantiate(moduleObject)\" id=\"dom-webassembly-instantiate-moduleobject-importobject\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>instantiate(<var>moduleObject</var>, <var>importObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#asynchronously-instantiate-a-webassembly-module\" id=\"ref-for-asynchronously-instantiate-a-webassembly-module①\">Asynchronously instantiate the WebAssembly module</a> <var>moduleObject</var> importing <var>importObject</var>, and return the result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Module/exports(moduleObject)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-module-exports",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-exports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>exports(<var>moduleObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>module</var> be <var>moduleObject</var>.[[Module]].</p>"
+        },
+        {
+          "html": "<p>Let <var>exports</var> be « ».</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-exports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>exports(<var>moduleObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>kind</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#string-value-of-the-extern-type\" id=\"ref-for-string-value-of-the-extern-type\">string value of the extern type</a> <var>type</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>obj</var> be «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-moduleexportdescriptor-name\" id=\"ref-for-dom-moduleexportdescriptor-name\">name</a></code>\" → <var>name</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-moduleexportdescriptor-kind\" id=\"ref-for-dom-moduleexportdescriptor-kind\">kind</a></code>\" → <var>kind</var> ]».</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>obj</var> to <var>exports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>exports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Module/imports(moduleObject)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-module-imports",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>imports(<var>moduleObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>module</var> be <var>moduleObject</var>.[[Module]].</p>"
+        },
+        {
+          "html": "<p>Let <var>imports</var> be « ».</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>imports(<var>moduleObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>kind</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#string-value-of-the-extern-type\" id=\"ref-for-string-value-of-the-extern-type①\">string value of the extern type</a> <var>type</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>obj</var> be «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-moduleimportdescriptor-module\" id=\"ref-for-dom-moduleimportdescriptor-module\">module</a></code>\" → <var>moduleName</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-moduleimportdescriptor-name\" id=\"ref-for-dom-moduleimportdescriptor-name\">name</a></code>\" → <var>name</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#dom-moduleimportdescriptor-kind\" id=\"ref-for-dom-moduleimportdescriptor-kind\">kind</a></code>\" → <var>kind</var> ]».</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> <var>obj</var> to <var>imports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>imports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Module/customSections(moduleObject, sectionName)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-module-customsections",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-customsections\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>customSections(<var>moduleObject</var>, <var>sectionName</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>bytes</var> be <var>moduleObject</var>.[[Bytes]].</p>"
+        },
+        {
+          "html": "<p>Let <var>customSections</var> be « ».</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-customsections\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>customSections(<var>moduleObject</var>, <var>sectionName</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>name</var> be the <code>name</code> of <var>customSection</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail\" id=\"ref-for-utf-8-decode-without-bom-or-fail\">decoded as UTF-8</a>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>name</var> is not failure (<var>moduleObject</var>.[[Module]] is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/modules.html#valid-module\" id=\"ref-for-valid-module①\">valid</a>).</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-module-customsections\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>customSections(<var>moduleObject</var>, <var>sectionName</var>)</code></dfn> method, when invoked, performs the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects①\">ArrayBuffer</a></code> containing a copy of the bytes in <var>bytes</var> for the range matched by this <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/binary/modules.html#binary-customsec\" id=\"ref-for-binary-customsec\">customsec</a> production to <var>customSections</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>customSections</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Module/Module(bytes)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-module-module",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Module\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Module(bytes)|constructor(bytes)\" id=\"dom-module-module\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Module(<var>bytes</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stableBytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy③\">copy of the bytes held by the buffer</a> <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#compile-a-webassembly-module\" id=\"ref-for-compile-a-webassembly-module②\">Compile the WebAssembly module</a> <var>stableBytes</var> and store the result as <var>module</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑧\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set <strong>this</strong>.[[Module]] to <var>module</var>.</p>"
+        },
+        {
+          "html": "<p>Set <strong>this</strong>.[[Bytes]] to <var>stableBytes</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Instance/Instance(module, importObject)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-instance-instance",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Instance\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Instance(module, importObject)|constructor(module, importObject)|Instance(module)|constructor(module)\" id=\"dom-instance-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Instance(<var>module</var>, <var>importObject</var>)</code></dfn> constructor, when invoked, runs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>module</var> be <var>module</var>.[[Module]].</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#read-the-imports\" id=\"ref-for-read-the-imports①\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, and let <var>imports</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module②\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object①\">Initialize</a> <strong>this</strong> from <var>module</var> and <var>instance</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a memory buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-buffer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-memory-buffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a memory buffer</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr②\">memory address</a> <var>memaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>block</var> be a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-data-blocks\" id=\"ref-for-sec-data-blocks②\">Data Block</a> which is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#identified-with\" id=\"ref-for-identified-with①\">identified with</a> the underlying memory of <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>buffer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects④\">ArrayBuffer</a></code> whose [[ArrayBufferData]] is <var>block</var> and [[ArrayBufferByteLength]] is set to the length of <var>block</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>buffer</var>.[[ArrayBufferDetachKey]] to \"WebAssembly.Memory\".</p>"
+        },
+        {
+          "html": "<p>Return <var>buffer</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize a memory object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-memory-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-memory-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a memory object</dfn> <var>memory</var> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr③\">memory address</a> <var>memaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#memory-object-cache\" id=\"ref-for-memory-object-cache\">Memory object cache</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>memaddr</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>buffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-buffer\" id=\"ref-for-create-a-memory-buffer\">creating a memory buffer</a> from <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>memory</var>.[[Memory]] to <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>memory</var>.[[BufferObject]] to <var>buffer</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>map</var>[<var>memaddr</var>] to <var>memory</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a memory object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-memory-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a memory object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr④\">memory address</a> <var>memaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#memory-object-cache\" id=\"ref-for-memory-object-cache①\">Memory object cache</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-memory-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a memory object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr④\">memory address</a> <var>memaddr</var>, perform the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>map</var>[<var>memaddr</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>memory</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#memory\" id=\"ref-for-memory⑤\">Memory</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-memory-object\" id=\"ref-for-initialize-a-memory-object\">Initialize</a> <var>memory</var> from <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>memory</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Memory/Memory(descriptor)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-memory-memory",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Memory\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Memory(descriptor)|constructor(descriptor)\" id=\"dom-memory-memory\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Memory(<var>descriptor</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>initial</var> be <var>descriptor</var>[\"initial\"].</p>"
+        },
+        {
+          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, let <var>maximum</var> be <var>descriptor</var>[\"maximum\"]; otherwise, let <var>maximum</var> be empty.</p>"
+        },
+        {
+          "html": "<p>If <var>maximum</var> is not empty and <var>maximum</var> &lt; <var>initial</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>memtype</var> be { min <var>initial</var>, max <var>maximum</var> }.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>memaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-alloc\" id=\"ref-for-embed-mem-alloc\">mem_alloc</a>(<var>store</var>, <var>memtype</var>). If allocation fails, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror①\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑤\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-memory-object\" id=\"ref-for-initialize-a-memory-object①\">Initialize</a> <strong>this</strong> from <var>memaddr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "reset the Memory buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#reset-the-memory-buffer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"reset-the-memory-buffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reset the Memory buffer</dfn> of <var>memaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#memory-object-cache\" id=\"ref-for-memory-object-cache②\">Memory object cache</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>memaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>memory</var> be <var>map</var>[<var>memaddr</var>].</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer\">DetachArrayBuffer</a>(<var>memory</var>.[[BufferObject]], \"WebAssembly.Memory\").</p>"
+        },
+        {
+          "html": "<p>Let <var>buffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-buffer\" id=\"ref-for-create-a-memory-buffer①\">creating a memory buffer</a> from <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>memory</var>.[[BufferObject]] to <var>buffer</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "dom-Memory-grow",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-memory-grow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Memory\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-memory-grow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>grow(<var>delta</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑥\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>memaddr</var> be <strong>this</strong>.[[Memory]].</p>"
+        },
+        {
+          "html": "<p>Let <var>ret</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-size\" id=\"ref-for-embed-mem-size\">mem_size</a>(<var>store</var>, <var>memaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-grow\" id=\"ref-for-embed-mem-grow\">mem_grow</a>(<var>store</var>, <var>memaddr</var>, <var>delta</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑨\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror②\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑦\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#reset-the-memory-buffer\" id=\"ref-for-reset-the-memory-buffer\">Reset the memory buffer</a> of <var>memaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>ret</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "memory.grow",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the top of the stack is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values\">i32.const</a> (−1),",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>frame</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/conventions.html#exec-notation-textual\" id=\"ref-for-exec-notation-textual\">current frame</a>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[0] exists.</p>"
+            },
+            {
+              "html": "<p>Let <var>memaddr</var> be the memory address <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[0].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#reset-the-memory-buffer\" id=\"ref-for-reset-the-memory-buffer①\">Reset the memory buffer</a> of <var>memaddr</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initialize a table object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-table-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-table-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a table object</dfn> <var>table</var> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-tableaddr\" id=\"ref-for-syntax-tableaddr②\">table address</a> <var>tableaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①①\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#table-object-cache\" id=\"ref-for-table-object-cache\">Table object cache</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>tableaddr</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exist</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>table</var>.[[Table]] to <var>tableaddr</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>map</var>[<var>tableaddr</var>] to <var>table</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a table object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-table-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-table-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a table object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-tableaddr\" id=\"ref-for-syntax-tableaddr③\">table address</a> <var>tableaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①②\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#table-object-cache\" id=\"ref-for-table-object-cache①\">Table object cache</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-table-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a table object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-tableaddr\" id=\"ref-for-syntax-tableaddr③\">table address</a> <var>tableaddr</var>, perform the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>map</var>[<var>tableaddr</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>table</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#table\" id=\"ref-for-table④\">Table</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-table-object\" id=\"ref-for-initialize-a-table-object\">Initialize</a> <var>table</var> from <var>tableaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>table</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Table/Table(descriptor, value)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-table-table",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Table(descriptor, value)|constructor(descriptor, value)|Table(descriptor)|constructor(descriptor)\" id=\"dom-table-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Table(<var>descriptor</var>, <var>value</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>elementType</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tovaluetype\" id=\"ref-for-tovaluetype\">ToValueType</a>(<var>descriptor</var>[\"element\"]).</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Table(descriptor, value)|constructor(descriptor, value)|Table(descriptor)|constructor(descriptor)\" id=\"dom-table-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Table(<var>descriptor</var>, <var>value</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> exception.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>initial</var> be <var>descriptor</var>[\"initial\"].</p>"
+        },
+        {
+          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, let <var>maximum</var> be <var>descriptor</var>[\"maximum\"]; otherwise, let <var>maximum</var> be empty.</p>"
+        },
+        {
+          "html": "<p>If <var>maximum</var> is not empty and <var>maximum</var> &lt; <var>initial</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror③\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Table(descriptor, value)|constructor(descriptor, value)|Table(descriptor)|constructor(descriptor)\" id=\"dom-table-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Table(<var>descriptor</var>, <var>value</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#defaultvalue\" id=\"ref-for-defaultvalue\">DefaultValue</a>(<var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Table(descriptor, value)|constructor(descriptor, value)|Table(descriptor)|constructor(descriptor)\" id=\"dom-table-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Table(<var>descriptor</var>, <var>value</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype\">table type</a> {<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype①\">min</a> <var>initial</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype②\">max</a> <var>maximum</var>} <var>elementType</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑧\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>tableaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-alloc\" id=\"ref-for-embed-table-alloc\">table_alloc</a>(<var>store</var>, <var>type</var>, <var>ref</var>). </p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑨\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-table-object\" id=\"ref-for-initialize-a-table-object①\">Initialize</a> <strong>this</strong> from <var>tableaddr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "dom-Table-grow",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-table-grow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"grow(delta, value)|grow(delta)\" id=\"dom-table-grow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>grow(<var>delta</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>tableaddr</var> be <strong>this</strong>.[[Table]].</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑤\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⓪\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>initialSize</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-size\" id=\"ref-for-embed-table-size\">table_size</a>(<var>store</var>, <var>tableaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let (<var>limits</var>, <var>elementType</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-type\" id=\"ref-for-embed-table-type\">table_type</a>(<var>tableaddr</var>).</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"grow(delta, value)|grow(delta)\" id=\"dom-table-grow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>grow(<var>delta</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#defaultvalue\" id=\"ref-for-defaultvalue①\">DefaultValue</a>(<var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"grow(delta, value)|grow(delta)\" id=\"dom-table-grow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>grow(<var>delta</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue②\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-grow\" id=\"ref-for-embed-table-grow\">table_grow</a>(<var>store</var>, <var>tableaddr</var>, <var>delta</var>, <var>ref</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⓪\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror④\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①①\">associated store</a> to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>initialSize</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Table/length",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-table-length",
+      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-table-length\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>length</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#table\" id=\"ref-for-table⑤\">Table</a></code>, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>tableaddr</var> be <strong>this</strong>.[[Table]].</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①②\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-size\" id=\"ref-for-embed-table-size①\">table_size</a>(<var>store</var>, <var>tableaddr</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "Table/get(index)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-table-get",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-table-get\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>get(<var>index</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>tableaddr</var> be <strong>this</strong>.[[Table]].</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑧\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①③\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-read\" id=\"ref-for-embed-table-read\">table_read</a>(<var>store</var>, <var>tableaddr</var>, <var>index</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①①\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑤\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue\">ToJSValue</a>(<var>result</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "Table/set(index, value)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-table-set",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"set(index, value)|set(index)\" id=\"dom-table-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>index</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>tableaddr</var> be <strong>this</strong>.[[Table]].</p>"
+        },
+        {
+          "html": "<p>Let (<var>limits</var>, <var>elementType</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-type\" id=\"ref-for-embed-table-type①\">table_type</a>(<var>tableaddr</var>).</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"set(index, value)|set(index)\" id=\"dom-table-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>index</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#defaultvalue\" id=\"ref-for-defaultvalue②\">DefaultValue</a>(<var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Table\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"set(index, value)|set(index)\" id=\"dom-table-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>index</var>, <var>value</var>)</code></dfn> method, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue③\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementType</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①④\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-write\" id=\"ref-for-embed-table-write\">table_write</a>(<var>store</var>, <var>tableaddr</var>, <var>index</var>, <var>ref</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①②\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑥\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⑤\">associated store</a> to <var>store</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize a global object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-global-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-global-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a global object</dfn> <var>global</var> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-globaladdr\" id=\"ref-for-syntax-globaladdr②\">global address</a> <var>globaladdr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②①\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global-object-cache\" id=\"ref-for-global-object-cache\">Global object cache</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>globaladdr</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exist</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>global</var>.[[Global]] to <var>globaladdr</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>map</var>[<var>globaladdr</var>] to <var>global</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a global object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-global-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-global-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a global object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-globaladdr\" id=\"ref-for-syntax-globaladdr③\">global address</a> <var>globaladdr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②②\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global-object-cache\" id=\"ref-for-global-object-cache①\">Global object cache</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-global-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a global object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-globaladdr\" id=\"ref-for-syntax-globaladdr③\">global address</a> <var>globaladdr</var>, perform the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>map</var>[<var>globaladdr</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>global</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global④\">Global</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-global-object\" id=\"ref-for-initialize-a-global-object\">Initialize</a> <var>global</var> from <var>globaladdr</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>global</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ToValueType",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tovaluetype",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tovaluetype\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToValueType</dfn>(<var>s</var>) performs the following steps: \n    \n    <blockquote>\n     <blockquote>\n      <blockquote>\n       <blockquote>\n        <blockquote>\n         <blockquote>\n          <blockquote>\n           <p>upstream/master</p>\n          </blockquote>\n         </blockquote>\n        </blockquote>\n       </blockquote>\n      </blockquote>\n     </blockquote>\n    </blockquote>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>s</var> equals \"i32\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②\">i32</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"i64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype③\">i64</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"f32\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype④\">f32</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"f64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑤\">f64</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"v128\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①\">v128</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"anyfunc\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①\">funcref</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>s</var> equals \"externref\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②\">externref</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: This step is not reached.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DefaultValue",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#defaultvalue",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"defaultvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">DefaultValue</dfn>(<var>valuetype</var>) performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑥\">i32</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①\">i32.const</a> 0.</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑦\">i64</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②\">i64.const</a> 0.</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑧\">f32</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③\">f32.const</a> 0.</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑨\">f64</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values④\">f64.const</a> 0.</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype③\">funcref</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑤\">ref.null</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype④\">funcref</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑤\">externref</a>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue④\">ToWebAssemblyValue</a>(undefined, <var>valuetype</var>).</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: This step is not reached.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Global/Global(descriptor, v)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-global-global",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Global(descriptor, v)|constructor(descriptor, v)|Global(descriptor)|constructor(descriptor)\" id=\"dom-global-global\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Global(<var>descriptor</var>, <var>v</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>mutable</var> be <var>descriptor</var>[\"mutable\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tovaluetype\" id=\"ref-for-tovaluetype①\">ToValueType</a>(<var>descriptor</var>[\"value\"]).</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Global(descriptor, v)|constructor(descriptor, v)|Global(descriptor)|constructor(descriptor)\" id=\"dom-global-global\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Global(<var>descriptor</var>, <var>v</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> exception.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Global(descriptor, v)|constructor(descriptor, v)|Global(descriptor)|constructor(descriptor)\" id=\"dom-global-global\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Global(<var>descriptor</var>, <var>v</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#defaultvalue\" id=\"ref-for-defaultvalue③\">DefaultValue</a>(<var>valuetype</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Global(descriptor, v)|constructor(descriptor, v)|Global(descriptor)|constructor(descriptor)\" id=\"dom-global-global\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Global(<var>descriptor</var>, <var>v</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑤\">ToWebAssemblyValue</a>(<var>v</var>, <var>valuetype</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>mutable</var> is true, let <var>globaltype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut①\">var</a> <var>valuetype</var>; otherwise, let <var>globaltype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut②\">const</a> <var>valuetype</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⑥\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc①\">global_alloc</a>(<var>store</var>, <var>globaltype</var>, <var>value</var>). </p>"
+        },
+        {
+          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⑦\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-global-object\" id=\"ref-for-initialize-a-global-object①\">Initialize</a> <strong>this</strong> from <var>globaladdr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "GetGlobalValue",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#getglobalvalue",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"getglobalvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">GetGlobalValue</dfn>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global⑤\">Global</a></code> <var>global</var>) performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⑧\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>globaladdr</var> be <var>global</var>.[[Global]].</p>"
+        },
+        {
+          "html": "<p>Let <var>globaltype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-type\" id=\"ref-for-embed-global-type\">global_type</a>(<var>store</var>, <var>globaladdr</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>globaltype</var> is of the form <var>mut</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types③\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read\">global_read</a>(<var>store</var>, <var>globaladdr</var>).</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①\">ToJSValue</a>(<var>value</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "Global/value",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-global-value",
+      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps: \n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#getglobalvalue\" id=\"ref-for-getglobalvalue\">GetGlobalValue</a>(<strong>this</strong>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "Global/value",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-global-value",
+      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps: \n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store①⑨\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>globaladdr</var> be <strong>this</strong>.[[Global]].</p>"
+        },
+        {
+          "html": "<p>Let <var>mut</var> <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-type\" id=\"ref-for-embed-global-type①\">global_type</a>(<var>store</var>, <var>globaladdr</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>valuetype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types④\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑤\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut③\">const</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑥\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑥\">ToWebAssemblyValue</a>(<strong>the given value</strong>, <var>valuetype</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-write\" id=\"ref-for-embed-global-write\">global_write</a>(<var>store</var>, <var>globaladdr</var>, <var>value</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①③\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑦\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⓪\">associated store</a> to <var>store</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Global/valueOf()",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-global-valueof",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-global-valueof\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>valueOf()</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#getglobalvalue\" id=\"ref-for-getglobalvalue①\">GetGlobalValue</a>(<strong>this</strong>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "name of the WebAssembly function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#name-of-the-webassembly-function",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"name-of-the-webassembly-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">name of the WebAssembly function</dfn> <var>funcaddr</var> is found by performing the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②②\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>funcinst</var> be <var>store</var>.funcs[<var>funcaddr</var>].</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"name-of-the-webassembly-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">name of the WebAssembly function</dfn> <var>funcaddr</var> is found by performing the following steps:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <var>hostfunc</var> is a JavaScript object and <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>hostfunc</var>) is true.</p>"
+            },
+            {
+              "html": "<p>Let <var>index</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#index-of-the-host-function\" id=\"ref-for-index-of-the-host-function\">index of the host function</a> <var>funcaddr</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"name-of-the-webassembly-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">name of the WebAssembly function</dfn> <var>funcaddr</var> is found by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>moduleinst</var> be <var>funcinst</var>.module.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>funcaddr</var> is contained in <var>moduleinst</var>.funcaddrs.</p>"
+            },
+            {
+              "html": "<p>Let <var>index</var> be the index of <var>moduleinst</var>.funcaddrs where <var>funcaddr</var> is found.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>index</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "a new Exported Function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-function",
+      "html": "To create <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"a-new-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">a new Exported Function</dfn> from a WebAssembly <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr②\">function address</a> <var>funcaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑤\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-function-cache\" id=\"ref-for-exported-function-cache\">Exported Function cache</a>.</p>"
+        },
+        {
+          "html": "To create <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"a-new-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">a new Exported Function</dfn> from a WebAssembly <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr②\">function address</a> <var>funcaddr</var>, perform the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>map</var>[<var>funcaddr</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>steps</var> be \"<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function\" id=\"ref-for-call-an-exported-function\">call the Exported Function</a> <var>funcaddr</var> with arguments.\"</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#current-realm\" id=\"ref-for-current-realm\">current Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②③\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>functype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-type\" id=\"ref-for-embed-func-type\">func_type</a>(<var>store</var>, <var>funcaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let [<var>paramTypes</var>] → [<var>resultTypes</var>] be <var>functype</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>arity</var> be <var>paramTypes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>name</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#name-of-the-webassembly-function\" id=\"ref-for-name-of-the-webassembly-function\">name of the WebAssembly function</a> <var>funcaddr</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>function</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>steps</var>, <var>arity</var>, <var>name</var>, « [[FunctionAddress]] », <var>realm</var>).</p>"
+        },
+        {
+          "html": "<p>Set <var>function</var>.[[FunctionAddress]] to <var>funcaddr</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <var>map</var>[<var>funcaddr</var>] to <var>function</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>function</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "call an Exported Function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②④\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>functype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-type\" id=\"ref-for-embed-func-type①\">func_type</a>(<var>store</var>, <var>funcaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑤\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑦\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>args</var> be « ».</p>"
+        },
+        {
+          "html": "<p>Let <var>i</var> be 0.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>argValues</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> &gt; <var>i</var>, let <var>arg</var> be <var>argValues</var>[<var>i</var>].</p>"
+            },
+            {
+              "html": "<p>Otherwise, let <var>arg</var> be undefined.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑦\">ToWebAssemblyValue</a>(<var>arg</var>, <var>t</var>) to <var>args</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>ret</var>) be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-invoke\" id=\"ref-for-embed-func-invoke\">func_invoke</a>(<var>store</var>, <var>funcaddr</var>, <var>args</var>).</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑧\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑤\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①④\">error</a>, throw an exception. This exception should be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>outArity</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> of <var>ret</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>outArity</var> is 0, return undefined.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>outArity</var> is 1, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue②\">ToJSValue</a>(<var>ret</var>[0]).</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>values</var> be « ».</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue③\">ToJSValue</a>(<var>r</var>) to <var>values</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createarrayfromlist\" id=\"ref-for-sec-createarrayfromlist\">CreateArrayFromList</a>(<var>values</var>).</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "run a host function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#run-a-host-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a host function</dfn> from the JavaScript object <var>func</var>, type <var>functype</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">WebAssembly values</a> <var>arguments</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑥\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑧\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>jsArguments</var> be « ».</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a host function</dfn> from the JavaScript object <var>func</var>, type <var>functype</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">WebAssembly values</a> <var>arguments</var>, perform the following steps:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①①\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue④\">ToJSValue</a>(<var>arg</var>) to <var>jsArguments</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>resultsSize</var> be <var>results</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>resultsSize</var> is 0, return « ».</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>resultsSize</var> is 1, return « <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑧\">ToWebAssemblyValue</a>(<var>ret</var>, <var>results</var>[0]) ».</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a host function</dfn> from the JavaScript object <var>func</var>, type <var>functype</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">WebAssembly values</a> <var>arguments</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">@@iterator</a></code>).</p>"
+            },
+            {
+              "html": "<p>If <var>method</var> is undefined, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror⑨\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
+            },
+            {
+              "html": "<p>Let <var>wasmValues</var> be a new, empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>values</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> is not <var>resultsSize</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⓪\">TypeError</a></code> exception.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a host function</dfn> from the JavaScript object <var>func</var>, type <var>functype</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">WebAssembly values</a> <var>arguments</var>, perform the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑨\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmValues</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <var>wasmValues</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create a host function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a host function</dfn> from the JavaScript object <var>func</var> and type <var>functype</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable②\">IsCallable</a>(<var>func</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>stored settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\" id=\"ref-for-incumbent-settings-object\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a host function</dfn> from the JavaScript object <var>func</var> and type <var>functype</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>realm</var> be <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm\">associated Realm</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>relevant settings</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings object</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-script\" id=\"ref-for-prepare-to-run-script\">Prepare to run script</a> with <var>relevant settings</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-a-callback\" id=\"ref-for-prepare-to-run-a-callback\">Prepare to run a callback</a> with <var>stored settings</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#run-a-host-function\" id=\"ref-for-run-a-host-function\">running a host function</a> from <var>func</var>, <var>functype</var>, and <var>arguments</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback\" id=\"ref-for-clean-up-after-running-a-callback\">Clean up after running a callback</a> with <var>stored settings</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-script\" id=\"ref-for-clean-up-after-running-script\">Clean up after running script</a> with <var>relevant settings</var>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>result</var>.[[Type]] is <emu-const>throw</emu-const> or <emu-const>normal</emu-const>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var>.[[Type]] is <emu-const>throw</emu-const>, then trigger a WebAssembly trap, and propagate <var>result</var>.[[Value]] to the enclosing JavaScript.</p>"
+            },
+            {
+              "html": "<p>Otherwise, return <var>result</var>.[[Value]].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑥\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc\">func_alloc</a>(<var>store</var>, <var>functype</var>, <var>hostfunc</var>).</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑦\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>funcaddr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ToJSValue",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>w</var> is not of  the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑧\">v128.const</a> <var>v128</var>.</p>"
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed\">signed_64</a>(<var>i64</var>).</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#ℤ\" id=\"ref-for-ℤ\">ℤ</a>(<var>v</var> interpreted as a mathematical value).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⓪\">i32.const</a> <var>i32</var>, return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#𝔽\" id=\"ref-for-𝔽\">𝔽</a>(<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed①\">signed_32</a>(<var>i32</var> interpreted as a mathematical value)).</p>"
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>f32</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float\">+∞</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float①\">−∞</a>, return <strong>+∞</strong><sub>𝔽</sub> or <strong>-∞</strong><sub>𝔽</sub>, respectively.</p>"
+            },
+            {
+              "html": "<p>If <var>f32</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float②\">nan</a>, return <strong>NaN</strong>.</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#𝔽\" id=\"ref-for-𝔽①\">𝔽</a>(<var>f32</var> interpreted as a mathematical value).</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>f64</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float③\">+∞</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float④\">−∞</a>, return <strong>+∞</strong><sub>𝔽</sub> or <strong>-∞</strong><sub>𝔽</sub>, respectively.</p>"
+            },
+            {
+              "html": "<p>If <var>f64</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑤\">nan</a>, return <strong>NaN</strong>.</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#𝔽\" id=\"ref-for-𝔽②\">𝔽</a>(<var>f64</var> interpreted as a mathematical value).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①③\">ref.null</a> <var>t</var>, return null.</p>"
+        },
+        {
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①④\">ref.func</a> <var>funcaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function①\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑤\">ref.extern</a> <var>externaddr</var>, return the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#retrieving-an-extern-value\" id=\"ref-for-retrieving-an-extern-value\">retrieving an extern value</a> from <var>externaddr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "retrieving an extern value",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#retrieving-an-extern-value",
+      "html": "For <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"retrieving-an-extern-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">retrieving an extern value</dfn> from an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externaddr\" id=\"ref-for-syntax-externaddr①\">extern address</a> <var>externaddr</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③①\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#extern-value-cache\" id=\"ref-for-extern-value-cache\">extern value cache</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>externaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>map</var>[<var>externaddr</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "ToWebAssemblyValue",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑦\">v128</a>.</p>"
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>i64</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64\" id=\"ref-for-sec-tobigint64\">ToBigInt64</a>(<var>v</var>).</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑦\">i64.const</a> <var>i64</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>i32</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32\">ToInt32</a>(<var>v</var>).</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑧\">i32.const</a> <var>i32</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber\">ToNumber</a>(<var>v</var>).</p>"
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>n</var> be an implementation-defined integer such that <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑥\">canon</a><sub>32</sub> ≤ <var>n</var> &lt; 2<sup><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑦\">signif</a>(32)</sup>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>f32</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑧\">nan</a>(n).</p>"
+                }
+              ]
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>f32</var> be <var>number</var> rounded to the nearest representable value using IEEE 754-2008 round to nearest, ties to even mode. <a data-link-type=\"biblio\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#biblio-ieee-754\" title=\"IEEE Standard for Floating-Point Arithmetic\">[IEEE-754]</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑨\">f32.const</a> <var>f32</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber①\">ToNumber</a>(<var>v</var>).</p>"
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>n</var> be an implementation-defined integer such that <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑨\">canon</a><sub>64</sub> ≤ <var>n</var> &lt; 2<sup><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float①⓪\">signif</a>(64)</sup>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>f64</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float①①\">nan</a>(n).</p>"
+                }
+              ]
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>f64</var> be <var>number</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⓪\">f64.const</a> <var>f64</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②①\">ref.null</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑦\">funcref</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
+                },
+                {
+                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②②\">ref.func</a> <var>funcaddr</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①①\">TypeError</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②③\">ref.null</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑨\">externref</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③②\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#extern-value-cache\" id=\"ref-for-extern-value-cache①\">extern value cache</a>.</p>"
+            },
+            {
+              "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">WebAssembly value</a> by performing the following steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②④\">ref.extern</a> <var>externaddr</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externaddr\" id=\"ref-for-syntax-externaddr③\">extern address</a> <var>externaddr</var> be the smallest address such that <var>map</var>[<var>externaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a> is false.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <var>map</var>[<var>externaddr</var>] to <var>v</var>.</p>"
+            },
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑤\">ref.extern</a> <var>externaddr</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: This step is not reached.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create the WebAssembly namespace object",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#namespacedef-webassembly\" id=\"ref-for-namespacedef-webassembly⑤\">WebAssembly</a></code> namespace is <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#create-a-namespace-object\" id=\"ref-for-create-a-namespace-object\">created</a>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>namespaceObject</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object①\">namespace object</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>constructor</var> be a new object, implementing the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-nativeerror-object-structure\" id=\"ref-for-sec-nativeerror-object-structure\">NativeError Object Structure</a>, with <var>NativeError</var> set to <var>error</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">!</a> <a data-link-type=\"abstract-op\">CreateMethodProperty</a>(<var>namespaceObject</var>, <var>error</var>, <var>constructor</var>).</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

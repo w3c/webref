@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "WOFF File Format 1.0",
+    "url": "https://w3c.github.io/woff/woff1/spec/Overview.html"
+  },
+  "algorithms": [
+    {
+      "html": "<span class=\"conform ua\" id=\"conform-langselect\">The user agent SHOULD choose which of the available <tt>text</tt>\nelements to display as follows</span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a <tt>text</tt> element is available that matches the user's\npreferred language, as determined via\nan explicit preference or implied by the current locale, use this language."
+        },
+        {
+          "html": "If the user agent has a concept of a list of \"acceptable\" languages or\ndefaults, try each of these in turn and use the first one for which a match found."
+        },
+        {
+          "html": "If there is a <tt>text</tt> element with no <tt>xml:lang</tt>\nattribute, use this; in the event that more than one exists, use the first of them."
+        },
+        {
+          "html": "If no match is found yet, use the first <tt>text</tt> element.\n(Thus, the metadata creator can determine the \"localization of last resort\"\nsimply by choosing which language to put first in each group of\n<tt>text</tt> elements.)"
+        }
+      ]
+    }
+  ]
+}

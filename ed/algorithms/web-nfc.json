@@ -1,0 +1,1631 @@
+{
+  "spec": {
+    "title": "Web NFC",
+    "url": "https://w3c.github.io/web-nfc/"
+  },
+  "algorithms": [
+    {
+      "name": "convert NDEFRecord.data bytes",
+      "href": "https://w3c.github.io/web-nfc/#dfn-convert-ndefrecord-data-bytes",
+      "html": "To <dfn id=\"dfn-convert-ndefrecord-data-bytes\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">convert NDEFRecord.data bytes</dfn>\n      given a <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"byte sequence\">bytes</var> be the value of record's <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-2\"><code>data</code></a> attribute."
+        },
+        {
+          "html": "Let <var data-type=\"record type\">recordType</var> be the value of <var data-type=\"NDEFRecord\">record</var>'s\n        <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-2\"><code>recordType</code></a> attribute."
+        },
+        {
+          "html": "If the <var data-type=\"record type\">recordType</var> value is \"<code>smart-poster</code>\", then return the result of\n        running <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-records-from-bytes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-records-from-bytes-1\">parse records from bytes</a> given <var data-type=\"byte sequence\">bytes</var> and\n        <code>\"smart-poster\"</code>."
+        },
+        {
+          "html": "If running <a href=\"https://w3c.github.io/web-nfc/#dfn-validate-external-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-validate-external-type-1\">validate external type</a> on <var data-type=\"record type\">recordType</var> returns true,\n        then return the result of running <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-records-from-bytes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-records-from-bytes-2\">parse records from bytes</a> given\n        <var data-type=\"byte sequence\">bytes</var> and <code>\"external\"</code>."
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"."
+        }
+      ]
+    },
+    {
+      "name": "obtain permission",
+      "href": "https://w3c.github.io/web-nfc/#dfn-obtain-permission",
+      "html": "To <dfn id=\"dfn-obtain-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">obtain permission</dfn>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"PermissionState\">state</var> be the result of\n          <a data-link-type=\"dfn|abstract-op\" data-cite=\"permissions\" data-cite-path=\"/\" data-cite-frag=\"dfn-getting-the-current-permission-state\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-getting-the-current-permission-state\">getting the current permission state</a> with \"<code>nfc</code>\"."
+        },
+        {
+          "html": "If <var data-type=\"PermissionState\">state</var> is \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"PermissionState\" data-xref-for=\"PermissionState\" data-cite=\"permissions\" data-cite-path=\"/\" data-cite-frag=\"dom-permissionstate-granted\" data-type=\"enum-value\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\"><code>granted</code></a>\" (i.e. permission has been\n          granted to the <a data-cite=\"html\" data-cite-path=\"/browsers.html\" data-cite-frag=\"concept-origin\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> and <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"global-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> using the\n          <cite><a data-cite=\"PERMISSIONS\" data-matched-text=\"[[[PERMISSIONS]]]\" href=\"https://www.w3.org/TR/permissions/\">Permissions</a></cite> API), return true."
+        },
+        {
+          "html": "Otherwise, if <var data-type=\"PermissionState\">state</var> is \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"PermissionState\" data-xref-for=\"PermissionState\" data-cite=\"permissions\" data-cite-path=\"/\" data-cite-frag=\"dom-permissionstate-prompt\" data-type=\"enum-value\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-prompt\"><code>prompt</code></a>\", then optionally\n          <a data-cite=\"permissions\" data-cite-path=\"/\" data-cite-frag=\"dfn-request-permission-to-use\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\">request permission to use</a> \"<code>nfc</code>\" from the user. If\n          that is granted, return true."
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"page-visibility-change-steps\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#page-visibility-change-steps\">page visibility change steps</a> for this specification, given the string <var>visibilityState</var> and the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a> <var>document</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>visibilityState</var> is <code>\"visible\"</code>,\n        <a href=\"https://w3c.github.io/web-nfc/#resume-nfc\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-resume-nfc-1\">resume NFC</a> and abort these steps."
+        },
+        {
+          "html": "Otherwise, perform these steps:",
+          "rationale": "suspend",
+          "steps": [
+            {
+              "html": "<a href=\"https://w3c.github.io/web-nfc/#suspend-nfc\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-suspend-nfc-1\">Suspend NFC</a>."
+            },
+            {
+              "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-write-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-write-operation-1\">abort a pending write operation</a>."
+            },
+            {
+              "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-make-read-only-operation-1\">abort a pending make read-only operation</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "abort a pending write operation",
+      "href": "https://w3c.github.io/web-nfc/#dfn-abort-a-pending-write-operation",
+      "html": "To attempt to <dfn id=\"dfn-abort-a-pending-write-operation\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">abort a pending write operation</dfn>,\n    run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is no <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-1\">pending write tuple</a> <var>tuple</var>, abort these steps."
+        },
+        {
+          "html": "If <var>tuple</var>'s writer has already initiated an ongoing NFC data transfer,\n        abort these steps."
+        },
+        {
+          "html": "Reject <var>tuple</var>'s promise with an \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"aborterror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" and abort these steps."
+        }
+      ]
+    },
+    {
+      "name": "abort a pending make read-only operation",
+      "href": "https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation",
+      "html": "To attempt to <dfn id=\"dfn-abort-a-pending-make-read-only-operation\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">abort a pending make read-only operation</dfn>,\n    run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is no <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-makereadonly-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-makereadonly-tuple-1\">pending makeReadOnly tuple</a> <var>tuple</var>, abort these steps."
+        },
+        {
+          "html": "If <var>tuple</var>'s writer has already made an NFC tag permanently read-only,\n        abort these steps."
+        },
+        {
+          "html": "Reject <var>tuple</var>'s promise with an \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"aborterror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n        and abort these steps."
+        }
+      ]
+    },
+    {
+      "name": "release NFC",
+      "href": "https://w3c.github.io/web-nfc/#dfn-release-nfc",
+      "html": "To <dfn id=\"dfn-release-nfc\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">release NFC</dfn> on an <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"environment-settings-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings object</a>,\n    perform the following steps:",
+      "rationale": "suspend",
+      "steps": [
+        {
+          "html": "<a href=\"https://w3c.github.io/web-nfc/#suspend-nfc\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-suspend-nfc-2\">Suspend NFC</a>."
+        },
+        {
+          "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-write-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-write-operation-2\">abort a pending write operation</a>."
+        },
+        {
+          "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-make-read-only-operation-2\">abort a pending make read-only operation</a>."
+        },
+        {
+          "html": "Clear the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-1\">activated reader objects</a>."
+        },
+        {
+          "html": "Release the NFC resources on the underlying platform."
+        }
+      ]
+    },
+    {
+      "name": "NDEFReader/write()",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-write",
+      "html": "The\n        <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-write\" data-idl=\"operation\" data-title=\"NDEFReader.write\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"write()|write(message)|write(message, options)\" data-local-lt=\"NDEFReader.write|NDEFReader.write()|write\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.write</code></dfn> method, when invoked, <em class=\"rfc2119\">MUST</em> run the\n        <dfn id=\"dfn-write-a-message\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">write a message</dfn> algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a> object."
+        },
+        {
+          "html": "If not currently executing in the currently active <a data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level\n            browsing context</a>, then reject <var data-type=\"Promise\">p</var> with and\n            \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFMessageSource\">message</var> be the first argument."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFWriteOptions\">options</var> be the second argument."
+        },
+        {
+          "html": "Let <var data-type=\"AbortSignal\">signal</var> be the <var data-type=\"NDEFWriteOptions\">options</var>’ dictionary member\n            of the same name if present, or null otherwise."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-aborted\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, then reject <var data-type=\"Promise\">p</var>\n            with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-abort-reason\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is not null, then\n            <a data-cite=\"dom#abortsignal-abort-algorithms\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\">\n            add the following abort steps</a> to <var data-type=\"AbortSignal\">signal</var>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Run the <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-write-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-write-operation-3\">abort a pending write operation</a> on the\n                  <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"environment-settings-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings object</a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"promise\" data-xref-for=\"promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-perform-steps-once-promise-is-settled\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\">React</a> to <var data-type=\"Promise\">p</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Promise\">p</var> was settled (fulfilled or rejected), then clear the\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-3\">pending write tuple</a> if it exists."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">p</var> and run the following steps <a data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-obtain-permission\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-obtain-permission-1\">obtain permission</a> steps return false, then\n                reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notallowederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" and\n                abort these steps."
+            },
+            {
+              "html": "If there is no underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-6\">NFC Adapter</a>, or if a connection\n                cannot be established, then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" and abort these steps."
+            },
+            {
+              "html": "If the UA is not allowed to access the underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-7\">NFC Adapter</a>\n                (e.g. a user preference), then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notreadableerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\"><code>NotReadableError</code></a>\" and abort these steps."
+            },
+            {
+              "html": "If pushing data is not supported by the underlying\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-8\">NFC Adapter</a>, then reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "An implementation <em class=\"rfc2119\">MAY</em> reject <var data-type=\"Promise\">p</var> with\n                a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" and abort these steps."
+            },
+            {
+              "html": "Let <var>output</var> be the notation for the <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-message-28\">NDEF message</a>\n                to be created by UA, as the result of invoking\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-create-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-ndef-message-1\">create NDEF message</a> with <var data-type=\"NDEFMessageSource\">message</var>, <code>\"\"</code>, and <code>0</code>.\n                If this throws an exception, reject <var data-type=\"Promise\">p</var> with that\n                exception and abort these steps."
+            },
+            {
+              "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-write-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-write-operation-4\">abort a pending write operation</a>."
+            },
+            {
+              "html": "Set <code>this</code>.<a href=\"https://w3c.github.io/web-nfc/#dfn-writeoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-writeoptions-1\">[[WriteOptions]]</a> to <var data-type=\"NDEFWriteOptions\">options</var>."
+            },
+            {
+              "html": "Set <code>this</code>.<a href=\"https://w3c.github.io/web-nfc/#dfn-writemessage\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-writemessage-1\">[[WriteMessage]]</a> to <var>output</var>."
+            },
+            {
+              "html": "Set <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-4\">pending write tuple</a> to (<code>this</code>, <var data-type=\"Promise\">p</var>)."
+            },
+            {
+              "html": "Run the <a href=\"https://w3c.github.io/web-nfc/#dfn-start-the-nfc-write\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-start-the-nfc-write-1\">start the NFC write</a> steps whenever an\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-25\">NFC tag</a> <var>device</var> comes within communication range."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "start the NFC write",
+      "href": "https://w3c.github.io/web-nfc/#dfn-start-the-nfc-write",
+      "html": "To <dfn id=\"dfn-start-the-nfc-write\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start the NFC write</dfn>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be the <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-5\">pending write tuple</a>'s promise."
+        },
+        {
+          "html": "Let <var>writer</var> be the <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-6\">pending write tuple</a>'s writer."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFWriteOptions\">options</var> be <var>writer</var>.<a href=\"https://w3c.github.io/web-nfc/#dfn-writeoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-writeoptions-2\">[[WriteOptions]]</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-27\">NFC tag</a> in proximity range does not expose\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-6\">NDEF</a> technology for formatting or writing, then\n            reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" and\n            return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "Verify that <a href=\"https://w3c.github.io/web-nfc/#nfc-is-suspended\" id=\"ref-for-nfc-is-suspended-2\">NFC is not suspended</a>."
+        },
+        {
+          "html": "In case of success, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>device</var> is an <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-28\">NFC tag</a> and if <var data-type=\"NDEFWriteOptions\">options</var>'s overwrite is\n                false, read the tag to check whether there are <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-7\">NDEF</a>\n                records on the tag. If yes, then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notallowederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" and return <var data-type=\"Promise\">p</var>."
+            },
+            {
+              "html": "Let <var data-type=\"NDEFMessage\">output</var> be <var>writer</var>.<a href=\"https://w3c.github.io/web-nfc/#dfn-writemessage\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-writemessage-2\">[[WriteMessage]]</a>."
+            },
+            {
+              "html": "Initiate data transfer to <var>device</var> using\n                <var data-type=\"NDEFMessage\">output</var> as buffer, using the <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-9\">NFC adapter</a>\n                in communication range with <var>device</var>."
+            },
+            {
+              "html": "If the transfer fails, reject <var data-type=\"Promise\">p</var> with\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"networkerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\" and abort these steps."
+            },
+            {
+              "html": "When the transfer has completed, resolve <var data-type=\"Promise\">p</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create NDEF message",
+      "href": "https://w3c.github.io/web-nfc/#dfn-create-ndef-message",
+      "html": "To <dfn id=\"dfn-create-ndef-message\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create NDEF message</dfn> given <var data-type=\"NDEFMessageSource\">source</var>,\n      <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var>,\n      run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Switch on <var data-type=\"NDEFMessageSource\">source</var>'s type:\n          <dl>\n            <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a></dt>\n            <ul>\n              <li>\n                Let <var>textRecord</var> be an <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-9\"><code>NDEFRecord</code></a> initialized with its\n                <var>recordType</var> set to \"<code>text</code>\" and <var>data</var> set to <var data-type=\"NDEFMessageSource\">source</var>.\n              </li>\n              <li>\n                Let <var>records</var> be the list « <var>textRecord</var> ».\n              </li>\n              <li>\n                Set <var data-type=\"NDEFMessageSource\">source</var>'s records to <var>records</var>.\n              </li>\n            </ul>\n            <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a></dt>\n            <ul>\n                <li>\n                  Let <var>mimeRecord</var> be an <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-10\"><code>NDEFRecord</code></a> initialized with its\n                  <var>recordType</var> set to \"<code>mime</code>\", <var>data</var> set to <var data-type=\"NDEFMessageSource\">source</var>, and\n                  <var>mediaType</var> set to \"<code>application/octet-stream</code>\".\n                </li>\n                <li>\n                  Let <var>records</var> be the list « <var>mimeRecord</var> ».\n                </li>\n                <li>\n                  Set <var data-type=\"NDEFMessageSource\">source</var>'s records to <var>records</var>.\n                </li>\n            </ul>\n            <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-9\"><code>NDEFMessageInit</code></a></dt>\n            <ul>\n              <li>\n                If <var data-type=\"NDEFMessageSource\">source</var>'s records <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-is-empty\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\">is empty</a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a>\n                a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>.\n              </li>\n              <li>\n                Increment <var data-type=\"unsigned short\">recordsDepth</var> by one.\n              </li>\n              <li>\n                If <var data-type=\"unsigned short\">recordsDepth</var> &gt; <code>32</code>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>.\n                \n              </li>\n            </ul>\n            <dt>unmatched type</dt>\n            <ul>\n              <li>\n                <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>.\n              </li>\n            </ul>\n          </dl>"
+        },
+        {
+          "html": "Let <var>output</var> be the notation for the <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-message-29\">NDEF message</a>\n          to be created by the UA as a result of these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"NDEFRecordInit\">record</var> in the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>\n          <var data-type=\"NDEFMessageSource\">source</var>'s records, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>ndef</var> be the result of running <a href=\"https://w3c.github.io/web-nfc/#dfn-create-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-ndef-record-1\">create NDEF record</a>\n              given <var data-type=\"NDEFRecordInit\">record</var>, <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var> or\n              make sure the underlying platform provides equivalent values to\n              <var>ndef</var>. If the algorithm throws an exception <var>e</var>, reject\n              <var>promise</var> with <var>e</var> and abort these steps."
+            },
+            {
+              "html": "Add <var>ndef</var> to <var>output</var>."
+            }
+          ]
+        },
+        {
+          "html": "If running <a href=\"https://w3c.github.io/web-nfc/#dfn-check-created-records\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-check-created-records-1\">check created records</a> given <var>output</var> and <var data-type=\"string\">context</var>\n          throw an <var data-type=\"Error\">error</var>, reject <var>promise</var> with <var data-type=\"Error\">error</var> and abort these\n          steps."
+        },
+        {
+          "html": "Return <var>output</var>."
+        }
+      ]
+    },
+    {
+      "name": "check created records",
+      "href": "https://w3c.github.io/web-nfc/#dfn-check-created-records",
+      "html": "To <dfn id=\"dfn-check-created-records\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">check created records</dfn> given <var data-type=\"NDEFRecord sequence\">records</var>\n        and <var data-type=\"string\">context</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code> and <var data-type=\"NDEFRecord sequence\">records</var> does not contain\n            exactly one <a href=\"https://w3c.github.io/web-nfc/#dfn-uri-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-uri-record-6\">URI record</a>, or if it contains more than one\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-record-1\">type record</a>, <a href=\"https://w3c.github.io/web-nfc/#dfn-size-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-size-record-1\">size record</a> or <a href=\"https://w3c.github.io/web-nfc/#dfn-action-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-action-record-2\">action record</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code>, move the <a href=\"https://w3c.github.io/web-nfc/#dfn-uri-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-uri-record-7\">URI record</a> to\n            the beginning of <var data-type=\"NDEFRecord sequence\">records</var>."
+        }
+      ]
+    },
+    {
+      "name": "create NDEF record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-create-ndef-record",
+      "html": "To <dfn id=\"dfn-create-ndef-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create NDEF record</dfn> given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>ndef</var> be the representation of an <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-16\">NDEF record</a> to be\n            created by the UA."
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-id\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-id-2\"><code>id</code></a> is not undefined:\n            <ul>\n              <li>\n                Let <var>identifier</var> be <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-id\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-id-3\"><code>id</code></a>.\n              </li>\n              <li>\n                Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-il-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-il-field-3\">IL field</a> to <code>1</code>.\n              </li>\n              <li>\n                Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-id-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-id-length-field-3\">ID LENGTH field</a> to the length of\n                <var>identifier</var>.\n              </li>\n              <li>\n                Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-id-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-id-field-7\">ID field</a> to <var>identifier</var>.\n              </li>\n            </ul>"
+        },
+        {
+          "html": "Switching on <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-3\"><code>recordType</code></a>, invoke the algorithm\n            specified below with <var data-type=\"NDEFRecordInit\">record</var>, <var>ndef</var>, <var data-type=\"string\">context</var> and <var data-type=\"unsigned short\">recordsDepth</var>\n            and return the result. If an exception <var>e</var> is thrown, reject <var>promise</var>\n            with <var>e</var> and abort these steps.\n            <dl>\n              <dt>\"<code>empty</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-empty-record-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-empty-record-to-ndef-1\">map empty record to NDEF</a>.\n                </li>\n              </ul>\n              <dt>\"<code>text</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-text-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-text-to-ndef-1\">map text to NDEF</a>.\n                </li>\n              </ul>\n              <dt>\"<code>url</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-a-url-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-a-url-to-ndef-1\">map a URL to NDEF</a>.\n                </li>\n              </ul>\n              <dt>\"<code>mime</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-binary-data-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-binary-data-to-ndef-1\">map binary data to NDEF</a>.\n                </li>\n              </ul>\n              <dt>\"<code>smart-poster</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-smart-poster-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-smart-poster-to-ndef-1\">map smart poster to NDEF</a>.\n                </li>\n              </ul>\n              <dt>\"<code>absolute-url</code>\"</dt>\n              <ul>\n                <li>\n                  <a href=\"https://w3c.github.io/web-nfc/#dfn-map-absolute-url-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-absolute-url-to-ndef-1\">map absolute-URL to NDEF</a>.\n                </li>\n              </ul>\n            </dl>"
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-4\"><code>recordType</code></a> starts with a colon <code>U+003A</code> (<code>:</code>):\n            <ul>\n              <li>\n                If <var data-type=\"string\">context</var> is <code>\"\"</code> (i.e. <var data-type=\"NDEFRecordInit\">record</var> is not a payload to another\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-17\">NDEF record</a>), reject <var>promise</var> with a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and\n                abort these steps.\n              </li>\n              <li>\n                If running the <a href=\"https://w3c.github.io/web-nfc/#dfn-validate-local-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-validate-local-type-1\">validate local type</a> steps on <var data-type=\"NDEFRecordInit\">record</var>'s\n                <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-5\"><code>recordType</code></a> returns false, reject <var>promise</var> with a\n                <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and abort these steps.\n              </li>\n              <li>\n                Return the result of running\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-map-local-type-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-local-type-to-ndef-1\">map local type to NDEF</a> given <var data-type=\"NDEFRecordInit\">record</var>, <var>ndef</var>,\n                <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var>. If that throws an exception <var>e</var>,\n                reject <var>promise</var> with <var>e</var> and abort these steps.\n              </li>\n            </ul>"
+        },
+        {
+          "html": "If running <a href=\"https://w3c.github.io/web-nfc/#dfn-validate-external-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-validate-external-type-2\">validate external type</a> on <var data-type=\"NDEFRecordInit\">record</var>'s\n            <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-6\"><code>recordType</code></a> returns true,\n            return <a href=\"https://w3c.github.io/web-nfc/#dfn-map-external-data-to-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-map-external-data-to-ndef-1\">map external data to NDEF</a> given <var data-type=\"NDEFRecordInit\">record</var>, <var>ndef</var>,\n            <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var>. If that throws an exception <var>e</var>,\n            reject <var>promise</var> with <var>e</var> and abort these steps."
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and abort\n            these steps."
+        }
+      ]
+    },
+    {
+      "name": "split external type",
+      "href": "https://w3c.github.io/web-nfc/#dfn-split-external-type",
+      "html": "To <dfn id=\"dfn-split-external-type\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">split external type</dfn> given <var data-type=\"USVString\">input</var>, run\n        these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <code>U+003A</code> (<code>:</code>) is not found in <var data-type=\"USVString\">input</var>, return failure."
+        },
+        {
+          "html": "Let <var>domain</var> be the <var data-type=\"USVString\">input</var> from the start of <var data-type=\"USVString\">input</var> up to\n          but excluding the first occurrence of <code>U+003A</code> (<code>:</code>)."
+        },
+        {
+          "html": "Let <var>type</var> be the <var data-type=\"USVString\">input</var> after the first occurrence, if any, of\n          <code>U+003A</code> (<code>:</code>) up to the end of <var data-type=\"USVString\">input</var>."
+        },
+        {
+          "html": "Return the <var>domain</var> and <var>type</var> pair."
+        }
+      ]
+    },
+    {
+      "name": "validate external type",
+      "href": "https://w3c.github.io/web-nfc/#dfn-validate-external-type",
+      "html": "To <dfn id=\"dfn-validate-external-type\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate external type</dfn> given <var data-type=\"USVString\">input</var>, run\n        these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>domain</var> and <var>type</var> be the result of running <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-split-external-type\" class=\"internalDFN\" id=\"ref-for-dfn-split-external-type-1\">split external type</a>, or\n          return false if failure."
+        },
+        {
+          "html": "If <var>domain</var> is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"valid-domain-string\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain-string\">valid domain string</a>, return false."
+        },
+        {
+          "html": "If <var>type</var> contains <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"code-point\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\">code points</a> that are not\n          <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-alphanumeric\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-alphanumeric\">ASCII alphanumeric</a>, or <code>U+0024</code> (<code>$</code>), <code>U+0027</code> (<code>'</code>),\n          <code>U+0028</code> <code>LEFT PARENTHESIS</code> (<code>(</code>), <code>U+0029</code> <code>RIGHT PARENTHESIS</code> (<code>)</code>),\n          <code>U+002A</code> (<code>*</code>), <code>U+002B</code> (<code>+</code>), <code>U+002C</code> (<code>,</code>), <code>U+002D</code> (<code>-</code>),\n          <code>U+002E</code> (<code>.</code>), <code>U+003B</code> (<code>;</code>), <code>U+003D</code> (<code>=</code>), <code>U+0040</code> (<code>@</code>),\n          <code>U+005F</code> (<code>_</code>), return false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "validate local type",
+      "href": "https://w3c.github.io/web-nfc/#dfn-validate-local-type",
+      "html": "To <dfn id=\"dfn-validate-local-type\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate local type</dfn> given an <var data-type=\"USVString\">input</var> run\n        these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>localTypeName</var> be the <var data-type=\"USVString\">input</var> after the first occurrence of\n          <code>U+003A</code> (<code>:</code>) up to the end of <var data-type=\"USVString\">input</var>."
+        },
+        {
+          "html": "If <var>localTypeName</var> is not a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"USVString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-USVString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a> or its length exceeds 255\n          bytes, return false."
+        },
+        {
+          "html": "If <var>localTypeName</var> does not start with a lowercase character or a\n          number, return false."
+        },
+        {
+          "html": "If <var data-type=\"USVString\">input</var> is equal to the <a href=\"https://w3c.github.io/web-nfc/#dfn-record-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-record-type-3\">record type</a> of any <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-19\">NDEF record</a>\n          defined in its containing <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-message-32\">NDEF message</a>, return false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "map empty record to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-empty-record-to-ndef",
+      "html": "To <dfn id=\"dfn-map-empty-record-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map empty record to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var>ndef</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-3\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-id\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-id-4\"><code>id</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Set the\n            <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-8\">TNF field</a> to <code>0</code> (<a href=\"https://w3c.github.io/web-nfc/#dfn-empty-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-empty-record-5\">empty record</a>)."
+        },
+        {
+          "html": "Set the\n            <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-il-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-il-field-4\">IL field</a> to <code>0</code>."
+        },
+        {
+          "html": "Set\n            <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-length-field-4\">TYPE LENGTH field</a>,\n            and <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-4\">PAYLOAD LENGTH field</a> to <code>0</code>,\n            and omit <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-13\">TYPE field</a> and <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-11\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map text to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-text-to-ndef",
+      "html": "To <dfn id=\"dfn-map-text-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map text to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var> and <var>ndef</var>,\n        run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-4\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If the type of <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-3\"><code>data</code></a> is not <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a> or\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and abort\n            these steps."
+        },
+        {
+          "html": "Let <var data-type=\"string\">documentLanguage</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"document-element\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\">document element</a>'s\n            <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-lang\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-lang-2\"><code>lang</code></a> attribute."
+        },
+        {
+          "html": "If <var data-type=\"string\">documentLanguage</var> is the empty string, set it to \"<code>en</code>\"."
+        },
+        {
+          "html": "Let <var data-type=\"string\">language</var> be <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-lang\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-lang-3\"><code>lang</code></a> if it <a data-link-type=\"dfn|abstract-op\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"map-exists\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>,\n            or else to <var data-type=\"string\">documentLanguage</var>."
+        },
+        {
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-encoding\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-encoding-2\"><code>encoding</code></a> is neither undefined nor\n                  \"<code>utf-8</code>\", <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and abort\n                  these steps."
+            },
+            {
+              "html": "Let <var data-type=\"string\">encoding label</var> be \"<code>utf-8</code>\"."
+            }
+          ],
+          "html": "Switch on the type of <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-4\"><code>data</code></a>:\n            <dl>\n              <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a></dt>\n              \n              <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a></dt>\n              \n            </dl>",
+          "additional": [
+            {
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"string\">encoding label</var> be <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-encoding\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-encoding-3\"><code>encoding</code></a> if\n                  it <a data-link-type=\"dfn|abstract-op\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"map-exists\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, or else \"<code>utf-8</code>\"."
+                },
+                {
+                  "html": "If <var data-type=\"string\">encoding label</var> is not equal to \"<code>utf-8</code>\", \"<code>utf-16</code>\",\n                  \"<code>utf-16le</code>\" or \"<code>utf-16be</code>\" <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Let <var>encoding name</var> be the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"encoding\" data-xref-for=\"encoding\" data-lt=\"name\" data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"name\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#name\">name</a>\n            <a data-cite=\"encoding#concept-encoding-get\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\">obtained</a>\n            from <var data-type=\"string\">encoding label</var>."
+        },
+        {
+          "html": "Let <var data-type=\"byte\">header</var> be a <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> constructed the following way:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>encoding name</var> is equal to UTF-8, set bit <code>7</code> to the value\n                <code>0</code>, or else set the value to <code>1</code>."
+            },
+            {
+              "html": "Set bit <code>6</code> to the value <code>0</code> (reserved)."
+            },
+            {
+              "html": "Let <var data-type=\"octet\">languageLength</var> be the length of the\n                <var data-type=\"string\">language</var> <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"string\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>."
+            },
+            {
+              "html": "If <var data-type=\"octet\">languageLength</var> cannot be stored in 6 bit\n                (<var data-type=\"octet\">languageLength</var> &gt; 63), <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"SyntaxError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"syntaxerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
+            },
+            {
+              "html": "Set bit <code>5</code> to bit <code>0</code> to <var data-type=\"octet\">languageLength</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">data</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the first <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> (position 0) of <var data-type=\"byte sequence\">data</var> to <var data-type=\"byte\">header</var>."
+            },
+            {
+              "html": "Set position 1 (second <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a>) to position <var data-type=\"octet\">languageLength</var>\n                of <var data-type=\"byte sequence\">data</var> to <var data-type=\"string\">language</var>."
+            },
+            {
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"byte stream\">stream</var> be the resulting\n                      <a data-cite=\"encoding#concept-stream\" href=\"https://encoding.spec.whatwg.org/#concept-stream\">byte stream</a> of\n                      running <a data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8-encode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\">UTF-8 encode</a> on <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-6\"><code>data</code></a>."
+                },
+                {
+                  "html": "<a data-cite=\"encoding#concept-stream-read\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\">Read</a> bytes\n                      from <var data-type=\"byte stream\">stream</var> into <var data-type=\"byte sequence\">data</var> (from position <var data-type=\"octet\">languageLength</var> + 1)\n                      until <a data-cite=\"encoding#concept-stream-read\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\">read</a>\n                      returns <a data-cite=\"encoding#end-of-stream\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\">end-of-stream</a>."
+                }
+              ],
+              "html": "Switch on the type of <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-5\"><code>data</code></a>:\n                <dl>\n                  <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a></dt>\n                  \n                  <dt><a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a></dt>\n                  \n                </dl>",
+              "additional": [
+                {
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set bytes from <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-7\"><code>data</code></a> into <var data-type=\"byte sequence\">data</var>\n                      (from position <var data-type=\"octet\">languageLength</var> + 1) ."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set <var data-type=\"unsigned long\">length</var> to the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"byte sequence\" data-xref-for=\"byte sequence\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence-length\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a>\n            of <var data-type=\"byte sequence\">data</var>."
+        },
+        {
+          "html": "",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-9\">TNF field</a> to <code>1</code> (\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-well-known-type-record\" class=\"internalDFN\" id=\"ref-for-dfn-well-known-type-record-14\">well-known type record</a>)."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-14\">TYPE field</a> to \"<code>T</code>\" (<code>0x54</code>)."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-5\">PAYLOAD LENGTH field</a> to <var data-type=\"unsigned long\">length</var>."
+            },
+            {
+              "html": "If <var data-type=\"unsigned long\">length</var> &gt; <code>0</code>, set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-12\">PAYLOAD field</a>\n                to <var data-type=\"byte sequence\">data</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map a URL to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-a-url-to-ndef",
+      "html": "To <dfn id=\"dfn-map-a-url-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map a URL to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var> and <var>ndef</var>,\n        run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-5\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-8\"><code>data</code></a> is not a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">url</var> be the result of\n            <a data-lt=\"url parser\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-9\"><code>data</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"URL\">url</var> is failure, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"SyntaxError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"syntaxerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"string\">serializedURL</var> be\n            <a data-cite=\"url#concept-url-serializer\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\">serialization</a> of <var data-type=\"URL\">url</var>."
+        },
+        {
+          "html": "Match the URI prefixes as defined in <cite><a data-cite=\"NFC-STANDARDS\" data-matched-text=\"[[[NFC-STANDARDS]]]\" href=\"http://members.nfc-forum.org/specs/spec_list/\">NFC Forum Technical Specifications</a></cite>,\n            URI Record Type Definition specification, Section 3.2.2, against\n            the <var data-type=\"string\">serializedURL</var>."
+        },
+        {
+          "html": "Let <var data-type=\"string\">prefixString</var> be the matched prefix or else the\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-empty\" id=\"ref-for-dfn-empty-1\">empty</a> <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"string\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>."
+        },
+        {
+          "html": "Let <var data-type=\"byte\">prefixByte</var> be the corresponding prefix number,\n            or else <code>0</code>."
+        },
+        {
+          "html": "Let <var data-type=\"string\">shortenedURL</var> be <var data-type=\"string\">serializedURL</var> with\n            <var data-type=\"string\">prefixString</var> removed from the start of the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"string\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">data</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the first <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> of <var data-type=\"byte sequence\">data</var> to <var data-type=\"byte\">prefixByte</var>."
+            },
+            {
+              "html": "Let <var data-type=\"byte stream\">stream</var> be the resulting\n                <a data-cite=\"encoding#concept-stream\" href=\"https://encoding.spec.whatwg.org/#concept-stream\">byte stream</a> of\n                running <a data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8-encode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\">UTF-8 encode</a> on <var data-type=\"string\">shortenedURL</var>."
+            },
+            {
+              "html": "<a data-cite=\"encoding#concept-stream-read\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\">Read</a> bytes from\n                <var data-type=\"byte stream\">stream</var> into <var data-type=\"byte sequence\">data</var> (from position 1) until\n                <a data-cite=\"encoding#concept-stream-read\" href=\"https://encoding.spec.whatwg.org/#concept-stream-read\">read</a>\n                returns <a data-cite=\"encoding#end-of-stream\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\">end-of-stream</a>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var data-type=\"unsigned long\">length</var> to the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"byte sequence\" data-xref-for=\"byte sequence\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence-length\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a>\n            of <var data-type=\"byte sequence\">data</var>."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-10\">TNF field</a> to <code>1</code>\n            (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-well-known-type-record\" class=\"internalDFN\" id=\"ref-for-dfn-well-known-type-record-15\">well-known type record</a>)."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-15\">TYPE field</a> to \"<code>U</code>\" (<code>0x55</code>)."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-6\">PAYLOAD LENGTH field</a> to <var data-type=\"unsigned long\">length</var>."
+        },
+        {
+          "html": "If <var data-type=\"unsigned long\">length</var> &gt; <code>0</code>, set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-13\">PAYLOAD field</a>\n            to <var data-type=\"byte sequence\">data</var>."
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map binary data to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-binary-data-to-ndef",
+      "html": "To <dfn id=\"dfn-map-binary-data-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map binary data to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var> and\n        <var>ndef</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-3\"><code>data</code></a> is not\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var>mimeType</var> be the <a data-cite=\"mimesniff\" data-cite-path=\"/\" data-cite-frag=\"mime-type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\">MIME type</a>\n            returned by running <a data-cite=\"mimesniff\" data-cite-path=\"/\" data-cite-frag=\"parse-a-mime-type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\">parse a MIME type</a> on\n            <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-3\"><code>mediaType</code></a>."
+        },
+        {
+          "html": "If <var>mimeType</var> is failure, let <var>mimeTypeRecord</var> be a new\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-mime-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mime-type-record-6\">MIME type record</a> whose type is \"<code>application</code>\", and\n            subtype is \"<code>octet-stream</code>\"."
+        },
+        {
+          "html": "Set <var>arrayBuffer</var> to <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-4\"><code>data</code></a>."
+        },
+        {
+          "html": "Set <var data-type=\"unsigned long\">length</var> to <var>arrayBuffer</var>.[[ArrayBufferByteLength]]."
+        },
+        {
+          "html": "Set <var data-type=\"byte sequence\">data</var> to <var>arrayBuffer</var>.[[ArrayBufferData]]."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-11\">TNF field</a> to <code>2</code> (<a data-cite=\"mimesniff\" data-cite-path=\"/\" data-cite-frag=\"mime-type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\">MIME type</a>)."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-16\">TYPE field</a> to the result of\n            <a data-cite=\"mimesniff\" data-cite-path=\"/\" data-cite-frag=\"serialize-a-mime-type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\">serialize a MIME type</a> with <var>mimeType</var> as\n            the input."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-7\">PAYLOAD LENGTH field</a> to <var data-type=\"unsigned long\">length</var>."
+        },
+        {
+          "html": "If <var data-type=\"unsigned long\">length</var> &gt; <code>0</code>, set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-14\">PAYLOAD field</a>\n            to <var data-type=\"byte sequence\">data</var>."
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map external data to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-external-data-to-ndef",
+      "html": "To <dfn id=\"dfn-map-external-data-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map external data to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var>ndef</var>, and <var data-type=\"unsigned short\">recordsDepth</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-6\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var>domain</var> and <var>type</var> be the result of running <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-split-external-type\" class=\"internalDFN\" id=\"ref-for-dfn-split-external-type-2\">split external type</a> with\n            <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-7\"><code>recordType</code></a>."
+        },
+        {
+          "html": "Let <var>domain</var> be the result of running <a href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\">\n            domain to ASCII</a> with <var>domain</var> and true."
+        },
+        {
+          "html": "Let <var>customTypeName</var> be <var>domain</var>, \"<code>:</code>\" and <var>type</var> concatenated."
+        },
+        {
+          "html": "If <var>customTypeName</var> is not a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"USVString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-USVString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\"><code>USVString</code></a> or its length exceeds 255 bytes, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-17\">TYPE field</a> to <var>customTypeName</var>."
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-10\"><code>data</code></a> is not\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> or <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-10\"><code>NDEFMessageInit</code></a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-12\">TNF field</a> to <code>4</code>\n            (<a href=\"https://w3c.github.io/web-nfc/#dfn-external-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-external-type-record-6\">external type record</a>)."
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-11\"><code>data</code></a> is <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>,",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>arrayBuffer</var> to <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-12\"><code>data</code></a>."
+            },
+            {
+              "html": "Set <var data-type=\"unsigned long\">length</var> to <var>arrayBuffer</var>.[[ArrayBufferByteLength]]."
+            },
+            {
+              "html": "Set <var data-type=\"byte sequence\">data</var> to <var>arrayBuffer</var>.[[ArrayBufferData]]."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-8\">PAYLOAD LENGTH field</a> to <var data-type=\"unsigned long\">length</var>."
+            },
+            {
+              "html": "If <var data-type=\"unsigned long\">length</var> &gt; <code>0</code>, set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-15\">PAYLOAD field</a>\n                to <var data-type=\"byte sequence\">data</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-13\"><code>data</code></a> is <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-11\"><code>NDEFMessageInit</code></a>,",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-16\">PAYLOAD field</a> to the result of running\n                the <a href=\"https://w3c.github.io/web-nfc/#dfn-create-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-ndef-message-2\">create NDEF message</a> given <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-14\"><code>data</code></a>\n                <code>\"external\"</code>, and <var data-type=\"unsigned short\">recordsDepth</var>."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-9\">PAYLOAD LENGTH field</a> to the length of\n                <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-17\">PAYLOAD field</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map local type to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-local-type-to-ndef",
+      "html": "To <dfn id=\"dfn-map-local-type-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map local type to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var>ndef</var>, <var data-type=\"string\">context</var>, and <var data-type=\"unsigned short\">recordsDepth</var>,\n        run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-7\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-15\"><code>data</code></a> is not\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> or <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-12\"><code>NDEFMessageInit</code></a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-13\">TNF field</a> to <code>1</code>\n            (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-well-known-type-record\" class=\"internalDFN\" id=\"ref-for-dfn-well-known-type-record-16\">well-known type record</a>)."
+        },
+        {
+          "html": "Let <var>localTypeName</var> be the <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-9\"><code>recordType</code></a> after the\n            first occurrence of <code>U+003A</code> (<code>:</code>) up to the end of <var data-type=\"NDEFRecordInit\">record</var>'s\n            <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-recordtype-10\"><code>recordType</code></a>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-18\">TYPE field</a> to <var>localTypeName</var>, representing the\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-local-type-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-type-name-9\">local type name</a>."
+        },
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code>, <var>localTypeName</var> is\n            <strong>\"<code>s</code>\" (<code>0x73</code>)</strong> and if the type of\n            <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-16\"><code>data</code></a> is not <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> or its byte length\n            is bigger than 4, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code>, <var>localTypeName</var> is\n            <strong>\"<code>act</code>\" (<code>0x61</code> <code>0x63</code> <code>0x74</code>) </strong> and if the type of\n            <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-17\"><code>data</code></a> is not <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a> or its byte length\n            is not exactly one, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and abort\n            these steps."
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-18\"><code>data</code></a> is <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"BufferSource\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"BufferSource\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>,",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>arrayBuffer</var> to <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-19\"><code>data</code></a>."
+            },
+            {
+              "html": "Set <var data-type=\"unsigned long\">length</var> to <var>arrayBuffer</var>.[[ArrayBufferByteLength]]."
+            },
+            {
+              "html": "Set <var data-type=\"byte sequence\">data</var> to <var>arrayBuffer</var>.[[ArrayBufferData]]."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-10\">PAYLOAD LENGTH field</a> to <var data-type=\"unsigned long\">length</var>."
+            },
+            {
+              "html": "If <var data-type=\"unsigned long\">length</var> &gt; <code>0</code>, set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-18\">PAYLOAD field</a>\n                to <var data-type=\"byte sequence\">data</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-20\"><code>data</code></a> is <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-13\"><code>NDEFMessageInit</code></a>,",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-19\">PAYLOAD field</a> to the result of running\n                the <a href=\"https://w3c.github.io/web-nfc/#dfn-create-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-ndef-message-3\">create NDEF message</a> given <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-21\"><code>data</code></a>\n                <code>\"local\"</code>, and <var data-type=\"unsigned short\">recordsDepth</var>."
+            },
+            {
+              "html": "Set the <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-11\">PAYLOAD LENGTH field</a> to the length of\n                <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-20\">PAYLOAD field</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map smart poster to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-smart-poster-to-ndef",
+      "html": "To <dfn id=\"dfn-map-smart-poster-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map smart poster to NDEF</dfn>, given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var>ndef</var>, and <var data-type=\"unsigned short\">recordsDepth</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-mediatype-8\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If the type of a <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-22\"><code>data</code></a> is not\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFMessageInit\" href=\"https://w3c.github.io/web-nfc/#dom-ndefmessageinit\" class=\"internalDFN\" id=\"ref-for-dom-ndefmessageinit-14\"><code>NDEFMessageInit</code></a>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-14\">TNF field</a> to <code>1</code>\n            (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-well-known-type-record\" class=\"internalDFN\" id=\"ref-for-dfn-well-known-type-record-17\">well-known type record</a>)."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-19\">TYPE field</a> to \"<code>Sp</code>\" (<code>0x53</code> <code>0x70</code>)."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-21\">PAYLOAD field</a> to the result of running the\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-create-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-ndef-message-4\">create NDEF message</a> given <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecordinit-data-23\"><code>data</code></a>,\n            <code>\"smart-poster\"</code>, and <var data-type=\"unsigned short\">recordsDepth</var>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-12\">PAYLOAD LENGTH field</a> to the length of\n            <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-22\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "map absolute-URL to NDEF",
+      "href": "https://w3c.github.io/web-nfc/#dfn-map-absolute-url-to-ndef",
+      "html": "To <dfn id=\"dfn-map-absolute-url-to-ndef\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map absolute-URL to NDEF</dfn> given <var data-type=\"NDEFRecordInit\">record</var>,\n        <var>ndef</var>, and <var data-type=\"string\">context</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-4\"><code>mediaType</code></a> is not undefined,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-5\"><code>data</code></a> is not a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If the result of <a data-lt=\"url parser\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"NDEFRecordInit\">record</var>'s\n            <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-6\"><code>data</code></a> is failure, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"SyntaxError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"syntaxerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
+        },
+        {
+          "html": "Set <var>arrayBuffer</var> to <var data-type=\"NDEFRecordInit\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-7\"><code>data</code></a>."
+        },
+        {
+          "html": "Set <var data-type=\"byte sequence\">data</var> to <var>arrayBuffer</var>.[[ArrayBufferData]]."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-15\">TNF field</a> to <code>3</code> (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-absolute-url-record\" class=\"internalDFN\" id=\"ref-for-dfn-absolute-url-record-5\">absolute-URL record</a>)."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-20\">TYPE field</a> to <var data-type=\"byte sequence\">data</var>."
+        },
+        {
+          "html": "Set <var>ndef</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-13\">PAYLOAD LENGTH field</a> to <code>0</code> and omit <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-23\">PAYLOAD\n            field</a>."
+        },
+        {
+          "html": "Return <var>ndef</var>."
+        }
+      ]
+    },
+    {
+      "name": "NDEFReader/makeReadOnly()",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-makereadonly",
+      "html": "The\n        <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-makereadonly\" data-idl=\"operation\" data-title=\"NDEFReader.makeReadOnly\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"makeReadOnly()|makeReadOnly(options)\" data-local-lt=\"NDEFReader.makeReadOnly|NDEFReader.makeReadOnly()|makeReadOnly\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.makeReadOnly</code></dfn> method, when invoked, <em class=\"rfc2119\">MUST</em> run the\n        <dfn id=\"dfn-make-an-nfc-tag-permanently-read-only\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">make an NFC tag permanently read-only</dfn> algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a> object."
+        },
+        {
+          "html": "If not currently executing in the currently active <a data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level\n            browsing context</a>, then reject <var data-type=\"Promise\">p</var> with and\n            \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFMakeReadOnlyOptions\">options</var> be the second argument."
+        },
+        {
+          "html": "Let <var data-type=\"AbortSignal\">signal</var> be the <var data-type=\"NDEFMakeReadOnlyOptions\">options</var>’ dictionary member\n            of the same name if present, or null otherwise."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-aborted\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, then reject <var data-type=\"Promise\">p</var>\n            with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-abort-reason\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is not null, then\n            <a data-cite=\"dom#abortsignal-abort-algorithms\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\">\n            add the following abort steps</a> to <var data-type=\"AbortSignal\">signal</var>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Run the <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-make-read-only-operation-3\">abort a pending make read-only operation</a> on the\n                  <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"environment-settings-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings object</a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"promise\" data-xref-for=\"promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-perform-steps-once-promise-is-settled\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\">React</a> to <var data-type=\"Promise\">p</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Promise\">p</var> was settled (fulfilled or rejected), then clear the\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-write-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-write-tuple-7\">pending write tuple</a> if it exists."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">p</var> and run the following steps <a data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-obtain-permission\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-obtain-permission-2\">obtain permission</a> steps return false, then\n                reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notallowederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" and\n                abort these steps."
+            },
+            {
+              "html": "If there is no underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-12\">NFC Adapter</a>, or if a connection\n                cannot be established, then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "If the UA is not allowed to access the underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-13\">NFC Adapter</a>\n                (e.g. a user preference), then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notreadableerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\"><code>NotReadableError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "An implementation <em class=\"rfc2119\">MAY</em> reject <var data-type=\"Promise\">p</var> with\n                a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "Attempt to <a href=\"https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-a-pending-make-read-only-operation-4\">abort a pending make read-only operation</a>."
+            },
+            {
+              "html": "Set <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-makereadonly-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-makereadonly-tuple-3\">pending makeReadOnly tuple</a> to (<code>this</code>, <var data-type=\"Promise\">p</var>)."
+            },
+            {
+              "html": "Run the <a href=\"https://w3c.github.io/web-nfc/#dfn-start-the-nfc-make-read-only\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-start-the-nfc-make-read-only-1\">start the NFC make read-only</a> steps whenever an\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-32\">NFC tag</a> <var>device</var> comes within communication range."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "start the NFC make read-only",
+      "href": "https://w3c.github.io/web-nfc/#dfn-start-the-nfc-make-read-only",
+      "html": "To <dfn id=\"dfn-start-the-nfc-make-read-only\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start the NFC make read-only</dfn>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be the <a href=\"https://w3c.github.io/web-nfc/#dfn-pending-makereadonly-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-makereadonly-tuple-4\">pending makeReadOnly tuple</a>'s promise."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-34\">NFC tag</a> in proximity range does not expose\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-9\">NDEF</a> technology for formatting, then\n            reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" and\n            return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "Verify that <a href=\"https://w3c.github.io/web-nfc/#nfc-is-suspended\" id=\"ref-for-nfc-is-suspended-4\">NFC is not suspended</a>."
+        },
+        {
+          "html": "In case of success, run the following steps:",
+          "rationale": "make",
+          "steps": [
+            {
+              "html": "Make <var>device</var> permanently read-only, using the\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-14\">NFC adapter</a> in communication range with <var>device</var>."
+            },
+            {
+              "html": "When the operation has completed, resolve <var data-type=\"Promise\">p</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clean up the pending scan",
+      "href": "https://w3c.github.io/web-nfc/#dfn-clean-up-the-pending-scan",
+      "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-scan\" data-idl=\"operation\" data-title=\"NDEFReader.scan\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"scan()|scan(options)\" data-local-lt=\"NDEFReader.scan|NDEFReader.scan()|scan\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.scan</code></dfn> method is invoked, the UA\n        <em class=\"rfc2119\">MUST</em> run the following\n        <dfn id=\"steps-listen\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">NFC listen algorithm</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a> object."
+        },
+        {
+          "html": "If not currently executing in the currently active <a data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level\n            browsing context</a>, then reject <var data-type=\"Promise\">p</var> with an\n            \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFReader\">reader</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFReader\" href=\"https://w3c.github.io/web-nfc/#dom-ndefreader\" class=\"internalDFN\" id=\"ref-for-dom-ndefreader-12\"><code>NDEFReader</code></a> instance."
+        },
+        {
+          "html": "Let <var>options</var> be first argument."
+        },
+        {
+          "html": "Let <var data-type=\"AbortSignal\">signal</var> be the <var>options</var>’ dictionary member\n            of the same name if present, or null otherwise."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-aborted\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, then reject <var data-type=\"Promise\">p</var>\n            with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-abort-reason\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return <var data-type=\"Promise\">p</var>."
+        },
+        {
+          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-scan\" data-idl=\"operation\" data-title=\"NDEFReader.scan\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"scan()|scan(options)\" data-local-lt=\"NDEFReader.scan|NDEFReader.scan()|scan\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.scan</code></dfn> method is invoked, the UA\n        <em class=\"rfc2119\">MUST</em> run the following\n        <dfn id=\"steps-listen\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">NFC listen algorithm</dfn>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "Remove <var data-type=\"NDEFReader\">reader</var> from the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-3\">activated reader objects</a>."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-4\">activated reader objects</a> <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-is-empty\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\">is empty</a>,\n                then make a request to stop listening to <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-message-34\">NDEF message</a>s\n                on all <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-15\">NFC adapter</a>s."
+            }
+          ]
+        },
+        {
+          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-scan\" data-idl=\"operation\" data-title=\"NDEFReader.scan\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"scan()|scan(options)\" data-local-lt=\"NDEFReader.scan|NDEFReader.scan()|scan\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.scan</code></dfn> method is invoked, the UA\n        <em class=\"rfc2119\">MUST</em> run the following\n        <dfn id=\"steps-listen\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">NFC listen algorithm</dfn>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-obtain-permission\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-obtain-permission-3\">obtain permission</a> steps return false, then\n                reject <var data-type=\"Promise\">p</var> with a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notallowederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" and\n                abort these steps."
+            },
+            {
+              "html": "If there is no underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-16\">NFC Adapter</a>, or if a connection\n                cannot be established, then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "If the UA is not allowed to access the underlying <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-adapter\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-adapter-17\">NFC Adapter</a>\n                (e.g. a user preference), then reject <var data-type=\"Promise\">p</var> with a\n                \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notreadableerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\"><code>NotReadableError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "If <var data-type=\"NDEFReader\">reader</var> is already in the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-5\">activated reader objects</a>,\n                then reject <var data-type=\"Promise\">p</var> with an \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n                and abort these steps."
+            },
+            {
+              "html": "Add <var data-type=\"NDEFReader\">reader</var> to the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-6\">activated reader objects</a>."
+            },
+            {
+              "html": "Resolve <var data-type=\"Promise\">p</var>."
+            },
+            {
+              "html": "Whenever the <a href=\"https://w3c.github.io/web-nfc/#dfn-ua\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ua-2\">UA</a> detects NFC technology, run the\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-reading-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-reading-algorithm-1\">NFC reading algorithm</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a href=\"https://w3c.github.io/web-nfc/#nfc-is-suspended\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-nfc-is-suspended-5\">NFC is suspended</a>, abort these steps."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-35\">NFC tag</a> in proximity range does not expose <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-11\">NDEF</a>\n        technology for reading or formatting, run the following sub-steps:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a>\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFReader\" href=\"https://w3c.github.io/web-nfc/#dom-ndefreader\" class=\"internalDFN\" id=\"ref-for-dom-ndefreader-13\"><code>NDEFReader</code></a> instance <var data-type=\"NDEFReader\">reader</var> in the\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-7\">activated reader objects</a>, run the following sub-steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"<code>readingerror</code>\" at <var data-type=\"NDEFReader\">reader</var>."
+                }
+              ]
+            },
+            {
+              "html": "Abort these steps."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"serialNumber\">serialNumber</var> be the device identifier as a series of\n        numbers, or null if unavailable."
+        },
+        {
+          "html": "If <var data-type=\"serialNumber\">serialNumber</var> is not null, set it to the\n        <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"string\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a> of U+003A (<code>:</code>) concatenating each number represented as\n        <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-hex-digit\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\">ASCII hex digit</a>, in the same order."
+        },
+        {
+          "html": "Let <var data-type=\"NDEFMessage\">message</var> be a new <a href=\"https://w3c.github.io/web-nfc/#dom-ndefmessage\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefmessage-9\"><code>NDEFMessage</code></a> object, with\n        <var data-type=\"NDEFMessage\">message</var>'s records set to the empty <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/web-nfc/#dfn-nfc-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nfc-tag-36\">NFC tag</a> in proximity range is unformatted and is\n        NDEF-formattable, let <var>input</var> be null.\n        Otherwise, let <var>input</var> be the notation for the <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-message\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-message-35\">NDEF message</a>\n        which has been received."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-21\">NDEF record</a> which is part of <var>input</var>, run the\n        following sub-steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>ndef</var> be the notation for the current <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-22\">NDEF record</a> with\n            <var data-type=\"number\">typeNameField</var> corresponding to the <a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-16\">TNF field</a> and\n            <var data-type=\"byte sequence\">payload</var> corresponding to the <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-24\">PAYLOAD field</a>\n            data."
+            },
+            {
+              "html": "Let <var data-type=\"NDEFRecord\">record</var> be the result of <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-record-1\">parse an NDEF record</a>\n            given <var>ndef</var> and <code>\"\"</code>."
+            },
+            {
+              "html": "If <var data-type=\"NDEFRecord\">record</var> is not null, <a data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-node-append\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-append\">append</a> <var data-type=\"NDEFRecord\">record</var> to <var data-type=\"NDEFMessage\">message</var>'s\n             records."
+            }
+          ]
+        },
+        {
+          "html": "Run the <a href=\"https://w3c.github.io/web-nfc/#dfn-dispatch-nfc-content\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dispatch-nfc-content-1\">dispatch NFC content</a> steps with given <var data-type=\"serialNumber\">serialNumber</var>\n        and <var data-type=\"NDEFMessage\">message</var>."
+        }
+      ]
+    },
+    {
+      "name": "dispatch NFC content",
+      "href": "https://w3c.github.io/web-nfc/#dfn-dispatch-nfc-content",
+      "html": "To <dfn id=\"dfn-dispatch-nfc-content\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dispatch NFC content</dfn> given a <var data-type=\"serialNumber\">serialNumber</var>\n      of type <a href=\"https://w3c.github.io/web-nfc/#dom-ndefreadingevent-serialnumber\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefreadingevent-serialnumber-2\"><code>serialNumber</code></a> and a <var data-type=\"NDEFMessage\">message</var>\n      of type <a href=\"https://w3c.github.io/web-nfc/#dom-ndefmessage\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefmessage-10\"><code>NDEFMessage</code></a>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NDEFReader\" href=\"https://w3c.github.io/web-nfc/#dom-ndefreader\" class=\"internalDFN\" id=\"ref-for-dom-ndefreader-14\"><code>NDEFReader</code></a> instance <var data-type=\"NDEFReader\">reader</var> in\n        the <a href=\"https://w3c.github.io/web-nfc/#dfn-activated-reader-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-activated-reader-objects-8\">activated reader objects</a>,",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<a data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named \"<code>reading</code>\" at <var data-type=\"NDEFReader\">reader</var> using\n            <a href=\"https://w3c.github.io/web-nfc/#dom-ndefreadingevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefreadingevent-2\"><code>NDEFReadingEvent</code></a> with its <a href=\"https://w3c.github.io/web-nfc/#dom-ndefreadingevent-serialnumber\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefreadingevent-serialnumber-3\"><code>serialNumber</code></a> attribute\n            initialized to <var data-type=\"serialNumber\">serialNumber</var> and its <a href=\"https://w3c.github.io/web-nfc/#dom-ndefreadingevent-message\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefreadingevent-message-2\"><code>message</code></a> attribute\n            initialized to <var data-type=\"NDEFMessage\">message</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the length of <var data-type=\"byte sequence\">bytes</var> is <code>0</code>, return null."
+        },
+        {
+          "html": "Let <var>records</var> be the empty list."
+        },
+        {
+          "html": "As long as there are unread bytes of <var data-type=\"byte sequence\">bytes</var>, run the following\n        sub-steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the remaining length of <var data-type=\"byte sequence\">bytes</var> is less than <code>3</code>, return null."
+            },
+            {
+              "html": "If any of the following steps requires reading bytes beyond the\n            remaining length of <var data-type=\"byte sequence\">bytes</var>, return null."
+            },
+            {
+              "html": "Let <var>ndef</var> be the notation for the current <a href=\"https://w3c.github.io/web-nfc/#dfn-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ndef-record-23\">NDEF record</a>."
+            },
+            {
+              "html": "Let <var data-type=\"byte\">header</var> be the next byte of <var data-type=\"byte sequence\">bytes</var>.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"boolean\">messageBegin</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-mb-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mb-field-1\">MB field</a>) be the left most\n                bit (bit 7) of <var data-type=\"byte\">header</var>."
+                },
+                {
+                  "html": "If this is the first iteration of these sub-steps and\n                <var data-type=\"boolean\">messageBegin</var> is false, return null."
+                },
+                {
+                  "html": "Let <var data-type=\"boolean\">messageEnd</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-me-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-me-field-2\">ME field</a>) be bit 6 of <var data-type=\"byte\">header</var>."
+                },
+                {
+                  "html": "Let <var data-type=\"boolean\">shortRecord</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-sr-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sr-field-2\">SR field</a>) be bit 4 of <var data-type=\"byte\">header</var>."
+                },
+                {
+                  "html": "Let <var data-type=\"boolean\">hasIdLength</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-il-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-il-field-5\">IL field</a>) be bit 3 of <var data-type=\"byte\">header</var>."
+                },
+                {
+                  "html": "Let <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-17\">TNF field</a>) be the\n                integer value of bit 2-0 of <var data-type=\"byte\">header</var>."
+                }
+              ]
+            },
+            {
+              "html": "Let <var data-type=\"number\">typeLength</var> be the integer value of next byte\n            (<a href=\"https://w3c.github.io/web-nfc/#dfn-type-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-length-field-5\">TYPE LENGTH field</a>) of <var data-type=\"byte sequence\">bytes</var>."
+            },
+            {
+              "html": "If <var data-type=\"boolean\">shortRecord</var> is true, let <var data-type=\"number\">payloadLength</var>\n            be the integer value of next byte (<a href=\"https://w3c.github.io/web-nfc/#dfn-payload-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-length-field-14\">PAYLOAD LENGTH field</a>) of\n            <var data-type=\"byte sequence\">bytes</var>."
+            },
+            {
+              "html": "Otherwise, let <var data-type=\"number\">payloadLength</var> be the integer value of the next 4\n            bytes of <var data-type=\"byte sequence\">bytes</var>."
+            },
+            {
+              "html": "If <var data-type=\"boolean\">hasIdLength</var> is true, let <var data-type=\"number\">idLength</var> be\n            the integer value of next byte (<a href=\"https://w3c.github.io/web-nfc/#dfn-id-length-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-id-length-field-4\">ID LENGTH field</a>) of <var data-type=\"byte sequence\">bytes</var>,\n            otherwise let it be <code>0</code>."
+            },
+            {
+              "html": "If <var data-type=\"number\">typeLength</var> &gt; 0, let <var>ndef</var>'s <var data-type=\"string\">type</var> be result of\n            running <a data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8-decode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\">UTF-8 decode</a> on the next <var data-type=\"number\">typeLength</var>\n            (<a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-21\">TYPE field</a>) bytes, or else let <var data-type=\"string\">type</var> be the empty string."
+            },
+            {
+              "html": "If <var data-type=\"number\">idLength</var> &gt; 0, let <var>ndef</var>'s <var data-type=\"string\">id</var> be result of\n            running <a data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8-decode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\">UTF-8 decode</a> on the next <var data-type=\"number\">idLength</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-id-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-id-field-8\">ID field</a>)\n            bytes, or else let <var>ndef</var>'s <var data-type=\"string\">id</var> be the empty string."
+            },
+            {
+              "html": "Let <var>ndef</var>'s <var>payload</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of the last\n            <var data-type=\"number\">payloadLength</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-25\">PAYLOAD field</a>) bytes, which may be <code>0</code> bytes."
+            },
+            {
+              "html": "Let <var data-type=\"NDEFRecord\">record</var> be the result of <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-record-2\">parse an NDEF record</a>\n            given <var>ndef</var> and <var data-type=\"string\">context</var>."
+            },
+            {
+              "html": "If <var data-type=\"NDEFRecord\">record</var> is not null, <a data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-node-append\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-append\">append</a> <var data-type=\"NDEFRecord\">record</var> to <var>records</var>."
+            },
+            {
+              "html": "If <var data-type=\"boolean\">messageEnd</var> is true,",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <a href=\"https://w3c.github.io/web-nfc/#dfn-check-parsed-records\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-check-parsed-records-1\">check parsed records</a> given <var>records</var> and <var data-type=\"string\">context</var>\n                throws an <var>error</var>, reject <var>promise</var> with <var>error</var> and abort these\n                steps."
+                },
+                {
+                  "html": "Otherwise abort these sub-steps (terminate the loop)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>records</var>."
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"string\">context</var> is <code>\"smart-poster\"</code> and <var data-type=\"NDEFRecord sequence\">records</var> does not contain\n        exactly one <a href=\"https://w3c.github.io/web-nfc/#dfn-uri-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-uri-record-9\">URI record</a>, or if it contains more than one\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-record-2\">type record</a>, <a href=\"https://w3c.github.io/web-nfc/#dfn-size-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-size-record-2\">size record</a> or <a href=\"https://w3c.github.io/web-nfc/#dfn-action-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-action-record-3\">action record</a>,\n        <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Otherwise return true."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF record</dfn> given <var>ndef</var> and <var data-type=\"string\">context</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-id\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-id-2\"><code>id</code></a> to <var>ndef</var>'s <var data-type=\"string\">id</var>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-lang\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-lang-2\"><code>lang</code></a> to null."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-encoding\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-encoding-2\"><code>encoding</code></a> to null."
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> (<a href=\"https://w3c.github.io/web-nfc/#dfn-tnf-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tnf-field-18\">TNF field</a>) is <code>0</code>\n        (<a href=\"https://w3c.github.io/web-nfc/#dfn-empty-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-empty-record-6\">empty record</a>):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-id\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-id-3\"><code>id</code></a> to null."
+            },
+            {
+              "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-4\"><code>recordType</code></a> to \"<code>empty</code>\"."
+            },
+            {
+              "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-5\"><code>mediaType</code></a> to null."
+            },
+            {
+              "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-8\"><code>data</code></a> to null."
+            }
+          ]
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> is <code>1</code> (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-well-known-type-record\" class=\"internalDFN\" id=\"ref-for-dfn-well-known-type-record-18\">well-known type record</a>), then",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>T</code>\" (<code>0x54</code>)</strong>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-text-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-text-record-1\">parse an NDEF text record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>U</code>\" (<code>0x55</code>)</strong>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-url-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-url-record-1\">parse an NDEF URL record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>Sp</code>\" (<code>0x53</code> <code>0x70</code>)</strong>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-smart-poster-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-smart-poster-record-1\">parse an NDEF smart-poster record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>s</code>\" (<code>0x73</code>)</strong>\n            and if <var data-type=\"string\">context</var> is equal to <code>\"smart-poster\"</code>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-size-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-a-smart-poster-size-record-1\">parse a smart-poster size record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>t</code>\" (<code>0x74</code>)</strong>\n            and if <var data-type=\"string\">context</var> is equal to <code>\"smart-poster\"</code>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-a-smart-poster-type-record-1\">parse a smart-poster type record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If <var>ndef</var>'s <var data-type=\"string\">type</var> is <strong>\"<code>act</code>\" (<code>0x61</code> <code>0x63</code> <code>0x74</code>)\n            </strong> and if <var data-type=\"string\">context</var> is equal to <code>\"smart-poster\"</code>,\n            set <var data-type=\"NDEFRecord\">record</var> to the result of running\n            <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-action-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-a-smart-poster-action-record-1\">parse a smart-poster action record</a> on <var>ndef</var>."
+            },
+            {
+              "html": "If running the <a href=\"https://w3c.github.io/web-nfc/#dfn-validate-local-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-validate-local-type-2\">validate local type</a> steps on\n            <var>ndef</var>'s <var data-type=\"string\">type</var> returns true,",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"string\">context</var> is not <code>\"external\"</code> or <code>\"smart-poster\"</code>,\n                <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"NDEFRecord\">record</var> to the result of running\n                <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-a-local-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-a-local-type-record-1\">parse a local type record</a> on <var>ndef</var>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> is <code>2</code> (<a href=\"https://w3c.github.io/web-nfc/#dfn-mime-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mime-type-record-7\">MIME type record</a>), then\n        set <var data-type=\"NDEFRecord\">record</var> to the result of running\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-mime-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-mime-type-record-1\">parse an NDEF MIME type record</a> on <var>ndef</var>, or make sure that\n        the underlying platform provides equivalent values to the <var data-type=\"NDEFRecord\">record</var>\n        object's properties."
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> is <code>3</code> (<a href=\"https://w3c.github.io/web-nfc/#dfn-absolute-url-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-absolute-url-record-6\">absolute-URL record</a>),\n        then set <var data-type=\"NDEFRecord\">record</var> to the result of running\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-absolute-url-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-absolute-url-record-1\">parse an NDEF absolute-URL record</a> on <var>ndef</var>."
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> is <code>4</code> (<a href=\"https://w3c.github.io/web-nfc/#dfn-external-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-external-type-record-7\">external type record</a>),\n        then set <var data-type=\"NDEFRecord\">record</var> to the result of running\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-external-type-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-external-type-record-1\">parse an NDEF external type record</a> on <var>ndef</var>, or make sure that\n        the underlying platform provides equivalent values to the <var data-type=\"NDEFRecord\">record</var>\n        object's properties."
+        },
+        {
+          "html": "If <var>ndef</var>'s <var data-type=\"number\">typeNameField</var> is <code>5</code> (<a href=\"https://w3c.github.io/web-nfc/#dfn-unknown-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unknown-record-5\">unknown record</a>)\n        then set <var data-type=\"NDEFRecord\">record</var> to the result of running\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-unknown-record\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-an-ndef-unknown-record-1\">parse an NDEF unknown record</a> on <var>ndef</var>, or make sure that the\n        underlying platform provides equivalent values to the <var data-type=\"NDEFRecord\">record</var> object's\n        properties."
+        },
+        {
+          "html": "Otherwise <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF text record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-text-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-text-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF text record</dfn> given an <var>ndefRecord</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-5\"><code>recordType</code></a> to \"<code>text</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-6\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "If <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-26\">PAYLOAD field</a> is not present, set\n        <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-9\"><code>data</code></a> to null and return <var data-type=\"NDEFRecord\">record</var>."
+        },
+        {
+          "html": "Let <var data-type=\"byte\">header</var> be the first <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> of <var>ndefRecord</var>'s\n        <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-27\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Let <var data-type=\"octet\">languageLength</var> be the value given by bit <code>5</code>\n        to bit <code>0</code> of the <var data-type=\"byte\">header</var>."
+        },
+        {
+          "html": "Let <var data-type=\"string\">language</var> be the result of running <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-decode\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-decode\">ASCII decode</a>\n        on second <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> to the <var data-type=\"octet\">languageLength</var> + <code>1</code> byte, inclusive."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of the rest of the\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-28\">PAYLOAD field</a> (excluding <var data-type=\"byte\">header</var> and <var data-type=\"octet\">languageLength</var> number of bytes)."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-lang\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-lang-3\"><code>lang</code></a> to <var data-type=\"string\">language</var>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-encoding\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-encoding-3\"><code>encoding</code></a> be \"<code>utf-8</code>\" if bit <code>7</code> (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-mb-field\" class=\"internalDFN\" id=\"ref-for-dfn-mb-field-2\">MB field</a>) of\n        <var data-type=\"byte\">header</var> is equal to the value <code>0</code>, or else \"<code>utf-16be</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-10\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF URL record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-url-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-url-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF URL record</dfn> given an <var>ndefRecord</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-6\"><code>recordType</code></a> to \"<code>url</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-7\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "If <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-29\">PAYLOAD field</a> is not present,\n        set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-11\"><code>data</code></a> to null and return <var data-type=\"NDEFRecord\">record</var>."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-30\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Let <var data-type=\"byte\">prefixByte</var> be the value of the first <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\">byte</a> of\n        <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "If the value of <var data-type=\"byte\">prefixByte</var> matches the URL expansion codes in the\n        <cite><a data-cite=\"NFC-STANDARDS\" data-matched-text=\"[[[NFC-STANDARDS]]]\" href=\"http://members.nfc-forum.org/specs/spec_list/\">NFC Forum Technical Specifications</a></cite> URI Record Type Definition specification,\n        Section 3.2.2, Table 3, then",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"string\">prefixString</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> value\n            corresponding to the value of <var data-type=\"byte\">prefixByte</var>."
+            },
+            {
+              "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-12\"><code>data</code></a> to <var data-type=\"string\">prefixString</var> appended to <var data-type=\"byte sequence\">buffer</var>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if there is no match for <var data-type=\"byte\">prefixByte</var>, set\n        <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-13\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF smart-poster record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-smart-poster-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-smart-poster-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF smart-poster record</dfn> given an <var>ndefRecord</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-7\"><code>recordType</code></a> to \"<code>smart-poster</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-8\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "If <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-31\">PAYLOAD field</a> is not present, set\n        <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-14\"><code>data</code></a> to null and return <var data-type=\"NDEFRecord\">record</var>."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-32\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-15\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a smart-poster size record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-size-record",
+      "html": "To <dfn id=\"dfn-parse-a-smart-poster-size-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse a smart-poster size record</dfn> given an <var>ndefRecord</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-8\"><code>recordType</code></a> to \"<code>:s</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-9\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "If <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-33\">PAYLOAD field</a> has not exactly 4 bytes,\n        <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-34\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-17\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a smart-poster type record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-type-record",
+      "html": "To <dfn id=\"dfn-parse-a-smart-poster-type-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse a smart-poster type record</dfn> given an <var>ndefRecord</var> into a\n    <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-9\"><code>recordType</code></a> to \"<code>:t</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-10\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-35\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-18\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a smart-poster action record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-a-smart-poster-action-record",
+      "html": "To <dfn id=\"dfn-parse-a-smart-poster-action-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse a smart-poster action record</dfn> given an <var>ndefRecord</var> into\n    a <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-10\"><code>recordType</code></a> to \"<code>:act</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-11\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "If <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-36\">PAYLOAD field</a> has not exactly 1 byte,\n        <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-37\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-19\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a local type record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-a-local-type-record",
+      "html": "To <dfn id=\"dfn-parse-a-local-type-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse a local type record</dfn> given <var>ndef</var> into\n    a <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-11\"><code>recordType</code></a> to \"<code>:</code>\" (<code>U+003A</code>) concatenated with\n        <var>ndef</var>'s <var data-type=\"string\">type</var>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-12\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n        <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-38\">PAYLOAD field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-20\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF MIME type record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-mime-type-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-mime-type-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF MIME type record</dfn> given an <var>ndefRecord</var> into a\n      <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-12\"><code>recordType</code></a> to \"<code>mime</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-13\"><code>mediaType</code></a> to the\n          result of <a data-cite=\"mimesniff\" data-cite-path=\"/\" data-cite-frag=\"serialize-a-mime-type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\">serialize a MIME type</a> with <var>mimeType</var> as\n          the input."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n          <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-39\">PAYLOAD field</a> if that exists, or otherwise\n          null."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-21\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF absolute-URL record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-absolute-url-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-absolute-url-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF absolute-URL record</dfn> given an <var>ndefRecord</var> into\n      a <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-13\"><code>recordType</code></a> to \"<code>absolute-url</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-14\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n          <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-22\">TYPE field</a>."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-22\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF external type record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-external-type-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-external-type-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF external type record</dfn> given an <var>ndefRecord</var> into\n      a <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If running <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-validate-external-type\" class=\"internalDFN\" id=\"ref-for-dfn-validate-external-type-3\">validate external type</a> on record's <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-23\">TYPE field</a> returns false, return null."
+        },
+        {
+          "html": "Let <var>domain</var> and <var>type</var> be the result of running <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-nfc/#dfn-split-external-type\" class=\"internalDFN\" id=\"ref-for-dfn-split-external-type-3\">split external type</a> with the value of <var>ndefRecord</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-type-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-field-24\">TYPE field</a>."
+        },
+        {
+          "html": "Let <var>domain</var> be the result of running <a href=\"https://www.unicode.org/reports/tr46/#ToUnicode\">Unicode ToUnicode</a>\n          with <var>domain_name</var> set to <var>domain</var>, <var>CheckHyphens</var> set to false, <var>CheckBidi</var> set to true, <var>CheckJoiners</var> set to true,\n          <var>UseSTD3ASCIIRules</var> set to true, and <var>Transitional_Processing</var> set to false. If result contains any errors, return null."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-14\"><code>recordType</code></a> to <var>domain</var>, \"<code>:</code>\" and <var>type</var> concatenated."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-15\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n          <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-40\">PAYLOAD field</a> if that exists, or otherwise\n          null."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-23\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an NDEF unknown record",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parse-an-ndef-unknown-record",
+      "html": "To <dfn id=\"dfn-parse-an-ndef-unknown-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse an NDEF unknown record</dfn> given an <var>ndefRecord</var> into a\n      <var data-type=\"NDEFRecord\">record</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-recordtype-15\"><code>recordType</code></a> to \"<code>unknown</code>\"."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-mediatype-16\"><code>mediaType</code></a> to null."
+        },
+        {
+          "html": "Let <var data-type=\"byte sequence\">buffer</var> be the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"byte-sequence\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> of\n          <var>ndefRecords</var>'s <a href=\"https://w3c.github.io/web-nfc/#dfn-payload-field\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payload-field-41\">PAYLOAD field</a> if that exists, or otherwise\n          null."
+        },
+        {
+          "html": "Set <var data-type=\"NDEFRecord\">record</var>'s <a href=\"https://w3c.github.io/web-nfc/#dom-ndefrecord-data\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-ndefrecord-data-24\"><code>data</code></a> to <var data-type=\"byte sequence\">buffer</var>."
+        },
+        {
+          "html": "Return <var data-type=\"NDEFRecord\">record</var>."
+        }
+      ]
+    },
+    {
+      "name": "parsing the blocklist",
+      "href": "https://w3c.github.io/web-nfc/#dfn-parsing-the-blocklist",
+      "html": "The result of <dfn id=\"dfn-parsing-the-blocklist\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parsing the blocklist</dfn> at a <var data-type=\"URL\">url</var> is a list of\n    historical bytes hexadecimal values, produced by the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Fetch <var data-type=\"URL\">url</var>, and let <var data-type=\"string\">contents</var> be its body, decoded as UTF-8."
+        },
+        {
+          "html": "Let <var data-type=\"array\">lines</var> be <var data-type=\"string\">contents</var> split on <code>\"\\n\"</code>."
+        },
+        {
+          "html": "Let <var data-type=\"list\">result</var> be an empty <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"string\">line</var> in <var data-type=\"array\">lines</var>, run the following sub-steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"string\">line</var> is empty, continue to the next line."
+            },
+            {
+              "html": "If <var data-type=\"string\">line</var> starts with <code>\"#\"</code>, continue to the next line."
+            },
+            {
+              "html": "If <var data-type=\"string\">line</var> contains invalid hexadecimal values, continue to the next line."
+            },
+            {
+              "html": "<a data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-node-append\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-append\">Append</a> <var data-type=\"string\">line</var> to <var data-type=\"list\">result</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"list\">result</var>."
+        }
+      ]
+    }
+  ]
+}

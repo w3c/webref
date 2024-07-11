@@ -1,0 +1,83 @@
+{
+  "spec": {
+    "title": "Selectors Level 4",
+    "url": "https://drafts.csswg.org/selectors-4/"
+  },
+  "algorithms": [
+    {
+      "name": "parse as a forgiving selector list",
+      "href": "https://drafts.csswg.org/selectors-4/#parse-as-a-forgiving-selector-list",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-as-a-forgiving-selector-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse as a forgiving selector list</dfn> given an input <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar\" id=\"ref-for-css-parse-a-comma-separated-list-according-to-a-css-grammar\">Parse a list</a> of <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector\" id=\"ref-for-typedef-complex-real-selector②\">&lt;complex-real-selector&gt;</a>s from <var>input</var>,\nand let <var>selector list</var> be the result.</p>"
+        },
+        {
+          "html": "<p>Remove all failure items from <var>selector list</var>,\nand all items that are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector④\">invalid selectors</a>,\nthen return a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list\">&lt;selector-list&gt;</a> representing the remaining items in <var>selector list</var>.\n(This might be empty.)</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a selector",
+      "href": "https://drafts.csswg.org/selectors-4/#parse-a-selector",
+      "html": "This section defines how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-selector\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a selector</dfn> from a string <var>source</var>.\n\tIt returns either a complex selector list,\n\tor failure.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①\">parsing</a> <var>source</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list①\">&lt;selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑥\">invalid selector</a>;\n\t\t\treturn failure."
+        },
+        {
+          "html": "If <var>selector</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑦\">invalid selector</a> for any other reason\n\t\t\t(such as, for example, containing an undeclared namespace prefix),\n\t\t\treturn failure."
+        },
+        {
+          "html": "Otherwise,\n\t\t\treturn <var>selector</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a relative selector",
+      "href": "https://drafts.csswg.org/selectors-4/#parse-a-relative-selector",
+      "html": "This section defines how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-relative-selector\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a relative selector</dfn> from a string <var>source</var>.\n\tIt returns either a complex selector list,\n\tor failure.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar②\">parsing</a> <var>source</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-relative-selector-list\" id=\"ref-for-typedef-relative-selector-list③\">&lt;relative-selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑧\">invalid selector</a>;\n\t\t\treturn failure."
+        },
+        {
+          "html": "If <var>selector</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑨\">invalid selector</a> for any other reason\n\t\t\t(such as, for example, containing an undeclared namespace prefix),\n\t\t\treturn failure."
+        },
+        {
+          "html": "Otherwise,\n\t\t\treturn <var>selector</var>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm returns a (possibly empty) list of elements.",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "Start with a list of <var>candidate elements</var>,\n\t\t\twhich are the <var>root elements</var> and all of their descendant elements,\n\t\t\tsorted in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>,\n\t\t\tunless otherwise specified."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#scoping-root\" id=\"ref-for-scoping-root①①\">scoping root</a> were provided,\n\t\t\tthen remove from the <var>candidate elements</var> any elements that are not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"ref-for-concept-tree-descendant\">descendants</a> of at least one <span id=\"ref-for-scoping-root①②\">scoping root</span>."
+        },
+        {
+          "html": "Initialize the <var>selector match list</var> to empty."
+        },
+        {
+          "html": "For each <var>element</var> in the set of <var>candidate elements</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#match-a-selector-against-an-element\" id=\"ref-for-match-a-selector-against-an-element①\">match a selector against an element</a> for <var>element</var> and <var>selector</var> is success,\n\t\t\t\tadd <var>element</var> to the <var>selector match list</var>."
+            },
+            {
+              "html": "For each possible pseudo-element associated with <var>element</var> that is one of the pseudo-elements allowed to show up in the match list,\n\t\t\t\tif the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#match-a-selector-against-a-pseudo-element\" id=\"ref-for-match-a-selector-against-a-pseudo-element\">match a selector against a pseudo-element</a> for the pseudo-element and <var>selector</var> is success,\n\t\t\t\tadd the pseudo-element to the <var>selector match list</var>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,989 @@
+{
+  "spec": {
+    "title": "XMLHttpRequest Standard",
+    "url": "https://xhr.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "name": "XMLHttpRequest/XMLHttpRequest()",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XMLHttpRequest()|constructor()\" id=\"dom-xmlhttprequest\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new XMLHttpRequest()</code></dfn> constructor steps are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object\">upload object</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code>XMLHttpRequestUpload</code> object. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/open(method, url)",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xmlhttprequest-open\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>open(<var>method</var>, <var>url</var>)</code></dfn> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"open(method, url, async, username, password)|open(method, url, async, username)|open(method, url, async)\" id=\"dom-xmlhttprequest-open-method-url-async-username-password\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>open(<var>method</var>, <var>url</var>, <var>async</var>, <var>username</var>, <var>password</var>)</code></dfn> method steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> object and its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated <code>Document</code></a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <var>method</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-method\" id=\"ref-for-concept-method①\">method</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <var>method</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#forbidden-method\" id=\"ref-for-forbidden-method\">forbidden method</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-method-normalize\" id=\"ref-for-concept-method-normalize\">Normalize</a> <var>method</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>parsedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\" id=\"ref-for-encoding-parsing-a-url\">encoding-parsing a URL</a> <var>url</var>, relative to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>parsedURL</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If the <var>async</var> argument is omitted, set <var>async</var> to true, and set <var>username</var> and <var>password</var> to null. </p>"
+        },
+        {
+          "html": "If <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host\">host</a> is non-null, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <var>username</var> argument is not null, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-username\" id=\"ref-for-set-the-username\">set the username</a> given <var>parsedURL</var> and <var>username</var>. </p>"
+            },
+            {
+              "html": "<p>If the <var>password</var> argument is not null, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-password\" id=\"ref-for-set-the-password\">set the password</a> given <var>parsedURL</var> and <var>password</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>async</var> is false, the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object②\">current global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code> object, and\n either <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout\">timeout</a> is not 0 or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type\">response type</a> is not\n the empty string, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-invalidaccesserror②\">InvalidAccessError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-terminate\" id=\"ref-for-fetch-controller-terminate①\">Terminate</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller①\">fetch controller</a>. </p>"
+        },
+        {
+          "html": "<p>Set variables associated with the object as follows: </p>\n     <ul>\n      <li>\n       <p>Unset <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag①\"><code>send()</code> flag</a>. </p>\n      </li><li>\n       <p>Unset <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag①\">upload listener flag</a>. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-method\" id=\"ref-for-request-method①\">request method</a> to <var>method</var>. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-url\" id=\"ref-for-request-url①\">request URL</a> to <var>parsedURL</var>. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag①\">synchronous flag</a> if <var>async</var> is false; otherwise unset <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag②\">synchronous flag</a>. </p>\n      </li><li>\n       <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers\">author request headers</a>. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response\">response</a> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①\">network error</a>. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes\">received bytes</a> to the empty byte sequence. </p>\n      </li><li>\n       <p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object\">response object</a> to null. </p>\n     </li></ul>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state③\">state</a> is not <i>opened</i>, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state④\">state</a> to <i>opened</i>. </p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-readystatechange\" id=\"ref-for-event-xhr-readystatechange②\"><code>readystatechange</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>. </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/setRequestHeader(name, value)",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xmlhttprequest-setrequestheader\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setRequestHeader(<var>name</var>, <var>value</var>)</code></dfn> method must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state⑥\">state</a> is not <i>opened</i>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag③\"><code>send()</code> flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value-normalize\" id=\"ref-for-concept-header-value-normalize\">Normalize</a> <var>value</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-name\" id=\"ref-for-header-name\">header name</a> or <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror④\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If (<var>name</var>, <var>value</var>) is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#forbidden-request-header\" id=\"ref-for-forbidden-request-header\">forbidden request-header</a>, then return. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-combine\" id=\"ref-for-concept-header-list-combine\">Combine</a> (<var>name</var>, <var>value</var>) in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers①\">author request headers</a>. </p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://xhr.spec.whatwg.org/#dom-xmlhttprequest-timeout\" id=\"ref-for-dom-xmlhttprequest-timeout③\">timeout</a></code> setter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object④\">current global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑤\">Window</a></code> object and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag⑤\">synchronous flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-invalidaccesserror④\">InvalidAccessError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout②\">timeout</a> to the given value. </p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-xmlhttprequest-withcredentials\" id=\"ref-for-dom-xmlhttprequest-withcredentials②\">withCredentials</a></code> setter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state⑧\">state</a> is not <i>unsent</i> or <i>opened</i>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag⑤\"><code>send()</code> flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑨\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#cross-origin-credentials\" id=\"ref-for-cross-origin-credentials①\">cross-origin credentials</a> to the given value. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/send(body)",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-send",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"send(body)|send()\" id=\"dom-xmlhttprequest-send\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>send(<var>body</var>)</code></dfn> method steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①⓪\">state</a> is not <i>opened</i>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②①\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag⑦\"><code>send()</code> flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①④\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②②\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-method\" id=\"ref-for-request-method③\">request method</a> is `<code>GET</code>` or `<code>HEAD</code>`, then\n set <var>body</var> to null. </p>"
+        },
+        {
+          "html": "If <var>body</var> is not null, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>extractedContentType</var> be null. </p>"
+            },
+            {
+              "html": "<p>If <var>body</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-body\" id=\"ref-for-request-body①\">request body</a> to <var>body</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm\" id=\"ref-for-dfn-fragment-serializing-algorithm\">serialized</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">converted</a>, and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoded</a>. </p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>bodyWithType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#bodyinit-safely-extract\" id=\"ref-for-bodyinit-safely-extract\">safely extracting</a> <var>body</var>. </p>"
+                },
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-body\" id=\"ref-for-request-body②\">request body</a> to <var>bodyWithType</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-with-type-body\" id=\"ref-for-body-with-type-body\">body</a>. </p>"
+                },
+                {
+                  "html": "<p>Set <var>extractedContentType</var> to <var>bodyWithType</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-with-type-type\" id=\"ref-for-body-with-type-type\">type</a>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>originalAuthorContentType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> `<code>Content-Type</code>` from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers②\">author request headers</a>. </p>"
+            },
+            {
+              "html": "If <var>originalAuthorContentType</var> is non-null, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>body</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString⑥\">USVString</a></code>, then:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>contentTypeRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type-from-bytes\" id=\"ref-for-parse-a-mime-type-from-bytes\">parsing</a> <var>originalAuthorContentType</var>. </p>"
+                    },
+                    {
+                      "html": "If <var>contentTypeRecord</var> is not failure, <var>contentTypeRecord</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters\">parameters</a>[\"<code>charset</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, and <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters①\">parameters</a>[\"<code>charset</code>\"] is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match for \"<code>UTF-8</code>\", then:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>contentTypeRecord</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters②\">parameters</a>[\"<code>charset</code>\"] to \"<code>UTF-8</code>\". </p>"
+                        },
+                        {
+                          "html": "<p>Let <var>newContentTypeSerialized</var> be the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type-to-bytes\" id=\"ref-for-serialize-a-mime-type-to-bytes\">serializing</a> <var>contentTypeRecord</var>. </p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set\" id=\"ref-for-concept-header-list-set\">Set</a> (`<code>Content-Type</code>`, <var>newContentTypeSerialized</var>) in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers③\">author request headers</a>. </p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>body</var> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document\">HTML document</a>, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set\" id=\"ref-for-concept-header-list-set①\">set</a> (`<code>Content-Type</code>`, `<code>text/html;charset=UTF-8</code>`) in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers④\">author request headers</a>. </p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>body</var> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#xml-document\" id=\"ref-for-xml-document\">XML document</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set\" id=\"ref-for-concept-header-list-set②\">set</a> (`<code>Content-Type</code>`, `<code>application/xml;charset=UTF-8</code>`) in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers⑤\">author request headers</a>. </p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>extractedContentType</var> is not null, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set\" id=\"ref-for-concept-header-list-set③\">set</a> (`<code>Content-Type</code>`, <var>extractedContentType</var>) in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers⑥\">author request headers</a>. </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If one or more event listeners are registered on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object②\">upload object</a>, then\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag②\">upload listener flag</a>. </p>"
+        },
+        {
+          "html": "<p>Let <var>req</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a>, initialized as\n  follows: </p>\n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a> \n      </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">This</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-method\" id=\"ref-for-request-method④\">request method</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> \n      </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">This</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-url\" id=\"ref-for-request-url②\">request URL</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a> \n      </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">This</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#author-request-headers\" id=\"ref-for-author-request-headers⑦\">author request headers</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#unsafe-request-flag\" id=\"ref-for-unsafe-request-flag\">unsafe-request flag</a> \n      </dt><dd>Set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a> \n      </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">This</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-body\" id=\"ref-for-request-body③\">request body</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> \n      </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">This</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> \n      </dt><dd>\"<code>cors</code>\". \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#use-cors-preflight-flag\" id=\"ref-for-use-cors-preflight-flag①\">use-CORS-preflight flag</a> \n      </dt><dd>Set if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag③\">upload listener flag</a> is set. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> \n      </dt><dd>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#cross-origin-credentials\" id=\"ref-for-cross-origin-credentials②\">cross-origin credentials</a> is true, then \"<code>include</code>\";\n   otherwise \"<code>same-origin</code>\". \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-URL-credentials flag</a> \n      </dt><dd>Set if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-url\" id=\"ref-for-request-url③\">request URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials\">includes credentials</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type\">initiator type</a> \n      </dt><dd>\"<code>xmlhttprequest</code>\". \n     </dd></dl>"
+        },
+        {
+          "html": "<p>Unset <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag\">upload complete flag</a>. </p>"
+        },
+        {
+          "html": "<p>Unset <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timed-out-flag\" id=\"ref-for-timed-out-flag\">timed out flag</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body①\">body</a> is null, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag①\">upload complete flag</a>. </p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag⑧\"><code>send()</code> flag</a>. </p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag⑥\">synchronous flag</a> is unset, then:",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadstart\" id=\"ref-for-event-xhr-loadstart①\"><code>loadstart</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a> with 0 and 0. </p>"
+            },
+            {
+              "html": "<p>Let <var>requestBodyTransmitted</var> be 0. </p>"
+            },
+            {
+              "html": "<p>Let <var>requestBodyLength</var> be <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body②\">body</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-total-bytes\" id=\"ref-for-concept-body-total-bytes\">length</a>, if <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body③\">body</a> is non-null; otherwise 0. </p>"
+            },
+            {
+              "html": "<p>Assert: <var>requestBodyLength</var> is an integer. </p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag②\">upload complete flag</a> is unset and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag④\">upload listener flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress①\">fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadstart\" id=\"ref-for-event-xhr-loadstart②\"><code>loadstart</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object③\">upload object</a> with <var>requestBodyTransmitted</var> and <var>requestBodyLength</var>. </p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①①\">state</a> is not <i>opened</i> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag⑨\"><code>send()</code> flag</a> is unset, then return. </p>"
+            },
+            {
+              "html": "Let <var>processRequestBodyChunkLength</var>, given a <var>bytesLength</var>, be these steps:",
+              "rationale": "increase",
+              "steps": [
+                {
+                  "html": "<p>Increase <var>requestBodyTransmitted</var> by <var>bytesLength</var>. </p>"
+                },
+                {
+                  "html": "<p>If not roughly 50ms have passed since these steps were last invoked, then return. </p>"
+                },
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag⑤\">upload listener flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress②\">fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-progress\" id=\"ref-for-event-xhr-progress②\"><code>progress</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object④\">upload object</a> with <var>requestBodyTransmitted</var> and <var>requestBodyLength</var>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "Let <var>processRequestEndOfBody</var> be these steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag③\">upload complete flag</a>. </p>"
+                },
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag⑥\">upload listener flag</a> is unset, then return. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress③\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-progress\" id=\"ref-for-event-xhr-progress③\"><code>progress</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object⑤\">upload object</a> with <var>requestBodyTransmitted</var> and <var>requestBodyLength</var>. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress④\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-load\" id=\"ref-for-event-xhr-load②\"><code>load</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object⑥\">upload object</a> with <var>requestBodyTransmitted</var> and <var>requestBodyLength</var>. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress⑤\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadend\" id=\"ref-for-event-xhr-loadend②\"><code>loadend</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object⑦\">upload object</a> with <var>requestBodyTransmitted</var> and <var>requestBodyLength</var>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "Let <var>processResponse</var>, given a <var>response</var>, be these steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①\">response</a> to <var>response</var>. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-errors\" id=\"ref-for-handle-errors\">Handle errors</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦①\">this</a>. </p>"
+                },
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②\">response</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error②\">network error</a>, then\n     return. </p>"
+                },
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①②\">state</a> to <i>headers received</i>. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-readystatechange\" id=\"ref-for-event-xhr-readystatechange③\"><code>readystatechange</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦④\">this</a>. </p>"
+                },
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①③\">state</a> is not <i>headers received</i>, then return. </p>"
+                },
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response③\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body\">body</a> is null,\n     then run <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-response-end-of-body\" id=\"ref-for-handle-response-end-of-body\">handle response end-of-body</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑦\">this</a> and return. </p>"
+                },
+                {
+                  "html": "<p>Let <var>length</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-extract-a-length\" id=\"ref-for-header-list-extract-a-length\">extracting a length</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response④\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>. </p>"
+                },
+                {
+                  "html": "<p>If <var>length</var> is not an integer, then set it to 0. </p>"
+                },
+                {
+                  "html": "Let <var>processBodyChunk</var> given <var>bytes</var> be these steps:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p>Append <var>bytes</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes①\">received bytes</a>. </p>"
+                    },
+                    {
+                      "html": "<p>If not roughly 50ms have passed since these steps were last invoked, then return. </p>"
+                    },
+                    {
+                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①④\">state</a> is <i>headers received</i>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①⑤\">state</a> to <i>loading</i>. </p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-readystatechange\" id=\"ref-for-event-xhr-readystatechange④\"><code>readystatechange</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧②\">this</a>. </p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress⑥\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-progress\" id=\"ref-for-event-xhr-progress④\"><code>progress</code></a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧④\">this</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes②\">received bytes</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length\">length</a> and <var>length</var>. </p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>processEndOfBody</var> be this step: run <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-response-end-of-body\" id=\"ref-for-handle-response-end-of-body①\">handle response end-of-body</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⑥\">this</a>. </p>"
+                },
+                {
+                  "html": "Let <var>processBodyError</var> be these steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response⑤\">response</a> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error③\">network error</a>. </p>"
+                    },
+                    {
+                      "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-errors\" id=\"ref-for-handle-errors①\">handle errors</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⑧\">this</a>. </p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-incrementally-read\" id=\"ref-for-body-incrementally-read\">Incrementally read</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response⑥\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①\">body</a>, given <var>processBodyChunk</var>, <var>processEndOfBody</var>, <var>processBodyError</var>, and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller②\">fetch controller</a> to the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch⑤\">fetching</a> <var>req</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-request-body\" id=\"ref-for-process-request-body\"><i>processRequestBodyChunkLength</i></a> set to <var>processRequestBodyChunkLength</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-request-end-of-body\" id=\"ref-for-process-request-end-of-body\"><i>processRequestEndOfBody</i></a> set to <var>processRequestEndOfBody</var>, and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\"><i>processResponse</i></a> set to <var>processResponse</var>. </p>"
+            },
+            {
+              "html": "<p>Let <var>now</var> be the present time. </p>"
+            },
+            {
+              "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+              "rationale": "wait",
+              "steps": [
+                {
+                  "html": "<p>Wait until either <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#done-flag\" id=\"ref-for-done-flag\">done flag</a> is set or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout③\">timeout</a> is not 0 and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout④\">timeout</a> milliseconds have passed since <var>now</var>. </p>"
+                },
+                {
+                  "html": "<p>If <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#done-flag\" id=\"ref-for-done-flag①\">done flag</a> is unset, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timed-out-flag\" id=\"ref-for-timed-out-flag①\">timed out flag</a> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-terminate\" id=\"ref-for-fetch-controller-terminate②\">terminate</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller③\">fetch controller</a>. </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag⑦\">synchronous flag</a> is set:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>processedResponse</var> be false. </p>"
+            },
+            {
+              "html": "Let <var>processResponseConsumeBody</var>, given a <var>response</var> and <var>nullOrFailureOrBytes</var>, be these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>nullOrFailureOrBytes</var> is not failure, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response⑦\">response</a> to <var>response</var>. </p>"
+                },
+                {
+                  "html": "<p>If <var>nullOrFailureOrBytes</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>, then append <var>nullOrFailureOrBytes</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes③\">received bytes</a>. </p>"
+                },
+                {
+                  "html": "<p>Set <var>processedResponse</var> to true. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller④\">fetch controller</a> to the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch⑥\">fetching</a> <var>req</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body\"><i>processResponseConsumeBody</i></a> set to <var>processResponseConsumeBody</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue\"><i>useParallelQueue</i></a> set to true. </p>"
+            },
+            {
+              "html": "<p>Let <var>now</var> be the present time. </p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#pause\" id=\"ref-for-pause\">Pause</a> until either <var>processedResponse</var> is true or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout⑤\">timeout</a> is not 0 and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timeout\" id=\"ref-for-timeout⑥\">timeout</a> milliseconds have passed since <var>now</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>processedResponse</var> is false, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timed-out-flag\" id=\"ref-for-timed-out-flag②\">timed out flag</a> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-terminate\" id=\"ref-for-fetch-controller-terminate③\">terminate</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller⑤\">fetch controller</a>. </p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#finalize-and-report-timing\" id=\"ref-for-finalize-and-report-timing\">Report timing</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller⑥\">fetch controller</a> given the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object⑤\">current global object</a>. </p>"
+            },
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-response-end-of-body\" id=\"ref-for-handle-response-end-of-body②\">handle response end-of-body</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑤\">this</a>. </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handle response end-of-body",
+      "href": "https://xhr.spec.whatwg.org/#handle-response-end-of-body",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle response end-of-body</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①③\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "handle",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#handle-errors\" id=\"ref-for-handle-errors②\">Handle errors</a> for <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response⑧\">response</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error④\">network error</a>, then\n return. </p>"
+        },
+        {
+          "html": "<p>Let <var>transmitted</var> be <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes④\">received bytes</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length①\">length</a>. </p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-extract-a-length\" id=\"ref-for-header-list-extract-a-length①\">extracting a length</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response⑨\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>length</var> is not an integer, then set it to 0. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag⑧\">synchronous flag</a> is unset, then <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress⑦\">fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-progress\" id=\"ref-for-event-xhr-progress⑤\"><code>progress</code></a> at <var>xhr</var> with <var>transmitted</var> and <var>length</var>. </p>"
+        },
+        {
+          "html": "<p>Set <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①⑦\">state</a> to <i>done</i>. </p>"
+        },
+        {
+          "html": "<p>Unset <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag①⓪\"><code>send()</code> flag</a>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-readystatechange\" id=\"ref-for-event-xhr-readystatechange⑥\"><code>readystatechange</code></a> at <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress⑧\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-load\" id=\"ref-for-event-xhr-load③\"><code>load</code></a> at <var>xhr</var> with <var>transmitted</var> and <var>length</var>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress⑨\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadend\" id=\"ref-for-event-xhr-loadend③\"><code>loadend</code></a> at <var>xhr</var> with <var>transmitted</var> and <var>length</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "handle errors",
+      "href": "https://xhr.spec.whatwg.org/#handle-errors",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-errors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle errors</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①④\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag①①\"><code>send()</code> flag</a> is unset, then return. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#timed-out-flag\" id=\"ref-for-timed-out-flag③\">timed out flag</a> is set, then run the <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-error-steps\" id=\"ref-for-request-error-steps\">request error steps</a> for <var>xhr</var>, <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-timeout\" id=\"ref-for-event-xhr-timeout③\"><code>timeout</code></a>, and \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#timeouterror\" id=\"ref-for-timeouterror①\">TimeoutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②③\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①⓪\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-aborted\" id=\"ref-for-concept-response-aborted\">aborted flag</a> is set, run the <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-error-steps\" id=\"ref-for-request-error-steps①\">request error steps</a> for <var>xhr</var>, <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-abort\" id=\"ref-for-event-xhr-abort②\"><code>abort</code></a>, and \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②④\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①①\">response</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑤\">network error</a>, then run the <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-error-steps\" id=\"ref-for-request-error-steps②\">request error steps</a> for <var>xhr</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#event-xhr-error\" id=\"ref-for-event-xhr-error②\">error</a></code>, and \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑤\">DOMException</a></code>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "request error steps",
+      "href": "https://xhr.spec.whatwg.org/#request-error-steps",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-error-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request error steps</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①⑤\">XMLHttpRequest</a></code> object <var>xhr</var>, <var>event</var>, and optionally <var>exception</var> are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①⑧\">state</a> to <i>done</i>. </p>"
+        },
+        {
+          "html": "<p>Unset <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag①②\"><code>send()</code> flag</a>. </p>"
+        },
+        {
+          "html": "<p>Set <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①②\">response</a> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑥\">network error</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag⑨\">synchronous flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑤\">throw</a> <var>exception</var>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-readystatechange\" id=\"ref-for-event-xhr-readystatechange⑦\"><code>readystatechange</code></a> at <var>xhr</var>. </p>"
+        },
+        {
+          "html": "If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag④\">upload complete flag</a> is unset, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-complete-flag\" id=\"ref-for-upload-complete-flag⑤\">upload complete flag</a>. </p>"
+            },
+            {
+              "html": "If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-listener-flag\" id=\"ref-for-upload-listener-flag⑦\">upload listener flag</a> is set, then:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress①⓪\">Fire a progress event</a> named <var>event</var> at <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object⑧\">upload object</a> with 0 and 0. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress①①\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadend\" id=\"ref-for-event-xhr-loadend④\"><code>loadend</code></a> at <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#upload-object\" id=\"ref-for-upload-object⑨\">upload object</a> with 0 and 0. </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress①②\">Fire a progress event</a> named <var>event</var> at <var>xhr</var> with 0 and 0. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-event-fire-progress\" id=\"ref-for-concept-event-fire-progress①③\">Fire a progress event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-loadend\" id=\"ref-for-event-xhr-loadend⑤\"><code>loadend</code></a> at <var>xhr</var> with 0 and 0. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/abort()",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-abort",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xmlhttprequest-abort\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>abort()</code></dfn> method steps are:",
+      "rationale": "abort",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort\">Abort</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest-fetch-controller\" id=\"ref-for-xmlhttprequest-fetch-controller⑦\">fetch controller</a>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state①⑨\">state</a> is <i>opened</i> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag①③\"><code>send()</code> flag</a> set, <i>headers received</i>, or <i>loading</i>, then run the <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#request-error-steps\" id=\"ref-for-request-error-steps③\">request error steps</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①⓪\">this</a> and <a class=\"idl-code\" data-link-type=\"event\" href=\"https://xhr.spec.whatwg.org/#event-xhr-abort\" id=\"ref-for-event-xhr-abort③\"><code>abort</code></a>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⓪\">state</a> is <i>done</i>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②①\">state</a> to <i>unsent</i> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①③\">response</a> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑦\">network error</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "legacy-uppercased-byte less than",
+      "href": "https://xhr.spec.whatwg.org/#legacy-uppercased-byte-less-than",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> <var>a</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"legacy-uppercased-byte-less-than\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">legacy-uppercased-byte less than</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> <var>b</var> if the following steps return true:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>A</var> be <var>a</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-uppercase\" id=\"ref-for-byte-uppercase\">byte-uppercased</a>. </p>"
+        },
+        {
+          "html": "<p>Let <var>B</var> be <var>b</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-uppercase\" id=\"ref-for-byte-uppercase①\">byte-uppercased</a>. </p>"
+        },
+        {
+          "html": "<p>Return <var>A</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-less-than\" id=\"ref-for-byte-less-than\">byte less than</a> <var>B</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/getAllResponseHeaders()",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getallresponseheaders",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xmlhttprequest-getallresponseheaders\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getAllResponseHeaders()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>output</var> be an empty byte sequence. </p>"
+        },
+        {
+          "html": "<p>Let <var>initialHeaders</var> be the result of running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-sort-and-combine\" id=\"ref-for-concept-header-list-sort-and-combine\">sort and combine</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response①⑨\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>. </p>"
+        },
+        {
+          "html": "<p>Let <var>headers</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting</a> <var>initialHeaders</var> in\n  ascending order, with <var>a</var> being less than <var>b</var> if <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name\">name</a> is <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#legacy-uppercased-byte-less-than\" id=\"ref-for-legacy-uppercased-byte-less-than\">legacy-uppercased-byte less than</a> <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name①\">name</a>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>header</var> in <var>headers</var>, append <var>header</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name②\">name</a>, followed by a 0x3A 0x20 byte pair, followed by <var>header</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value\">value</a>, followed by a 0x0D 0x0A byte pair, to <var>output</var>. </p>"
+        },
+        {
+          "html": "<p>Return <var>output</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "get a response MIME type",
+      "href": "https://xhr.spec.whatwg.org/#response-mime-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"response-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a response MIME type</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①⑥\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mimeType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-extract-mime-type\" id=\"ref-for-concept-header-extract-mime-type\">extracting a MIME type</a> from <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②①\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list⑥\">header list</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>mimeType</var> is failure, then set <var>mimeType</var> to <code>text/xml</code>. </p>"
+        },
+        {
+          "html": "<p>Return <var>mimeType</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "get a final MIME type",
+      "href": "https://xhr.spec.whatwg.org/#final-mime-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"final-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a final MIME type</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①⑦\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type①\">override MIME type</a> is null, return the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-mime-type\" id=\"ref-for-response-mime-type\">get a response MIME type</a> for <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p>Return <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type②\">override MIME type</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "get a final encoding",
+      "href": "https://xhr.spec.whatwg.org/#final-charset",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"final-charset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a final encoding</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①⑧\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>label</var> be null. </p>"
+        },
+        {
+          "html": "<p>Let <var>responseMIME</var> be the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-mime-type\" id=\"ref-for-response-mime-type①\">get a response MIME type</a> for <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>responseMIME</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters③\">parameters</a>[\"<code>charset</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, then set <var>label</var> to it. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type③\">override MIME type</a>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters④\">parameters</a>[\"<code>charset</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, then set <var>label</var> to it. </p>"
+        },
+        {
+          "html": "<p>If <var>label</var> is null, then return null. </p>"
+        },
+        {
+          "html": "<p>Let <var>encoding</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get\">getting an encoding</a> from <var>label</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>encoding</var> is failure, then return null. </p>"
+        },
+        {
+          "html": "<p>Return <var>encoding</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "set a document response",
+      "href": "https://xhr.spec.whatwg.org/#document-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set a document response</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest①⑨\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②②\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body②\">body</a> is null,\n then return. </p>"
+        },
+        {
+          "html": "<p>Let <var>finalMIME</var> be the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#final-mime-type\" id=\"ref-for-final-mime-type①\">get a final MIME type</a> for <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>finalMIME</var> is not an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#html-mime-type\" id=\"ref-for-html-mime-type\">HTML MIME type</a> or an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type\">XML MIME type</a>, then\n return. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①\">response type</a> is the empty string and <var>finalMIME</var> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#html-mime-type\" id=\"ref-for-html-mime-type①\">HTML MIME type</a>, then return. </p>"
+        },
+        {
+          "html": "If <var>finalMIME</var> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#html-mime-type\" id=\"ref-for-html-mime-type②\">HTML MIME type</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>charset</var> be the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#final-charset\" id=\"ref-for-final-charset\">get a final encoding</a> for <var>xhr</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>charset</var> is null, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#prescan-a-byte-stream-to-determine-its-encoding\" id=\"ref-for-prescan-a-byte-stream-to-determine-its-encoding\">prescan</a> the first 1024 bytes of <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes⑤\">received bytes</a> and if\n   that does not terminate unsuccessfully then let <var>charset</var> be\n   the return value. </p>"
+            },
+            {
+              "html": "<p>If <var>charset</var> is null, then set <var>charset</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8\">UTF-8</a>. </p>"
+            },
+            {
+              "html": "<p>Let <var>document</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> that\n   represents the result parsing <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes⑥\">received bytes</a> following the rules set\n   forth in the HTML Standard for an HTML parser with scripting disabled and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#a-known-definite-encoding\" id=\"ref-for-a-known-definite-encoding\">a known definite encoding</a> <var>charset</var>. <a data-link-type=\"biblio\" href=\"https://xhr.spec.whatwg.org/#biblio-html\" title=\"HTML Standard\">[HTML]</a> </p>"
+            },
+            {
+              "html": "<p>Flag <var>document</var> as an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①\">HTML document</a>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, let <var>document</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a> that represents the result of running\n  the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/xhtml.html#xml-parser\" id=\"ref-for-xml-parser\">XML parser</a> with <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/xhtml.html#xml-scripting-support-disabled\" id=\"ref-for-xml-scripting-support-disabled\">XML scripting support disabled</a> on <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes⑦\">received bytes</a>. If that fails (unsupported character encoding,\n  namespace well-formedness error, etc.), then return null. <a data-link-type=\"biblio\" href=\"https://xhr.spec.whatwg.org/#biblio-html\" title=\"HTML Standard\">[HTML]</a> </p>"
+        },
+        {
+          "html": "<p>If <var>charset</var> is null, then set <var>charset</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①\">UTF-8</a>. </p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-encoding\" id=\"ref-for-concept-document-encoding\">encoding</a> to <var>charset</var>. </p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"ref-for-concept-document-content-type\">content type</a> to <var>finalMIME</var>. </p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"ref-for-concept-document-url\">URL</a> to <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②③\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>. </p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> to <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>. </p>"
+        },
+        {
+          "html": "<p>Set <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object①\">response object</a> to <var>document</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "getting a text response",
+      "href": "https://xhr.spec.whatwg.org/#text-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"getting a text response\" data-noexport=\"\" id=\"text-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a text response</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#xmlhttprequest\" id=\"ref-for-xmlhttprequest②⓪\">XMLHttpRequest</a></code> object <var>xhr</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②④\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body③\">body</a> is null,\n then return the empty string. </p>"
+        },
+        {
+          "html": "<p>Let <var>charset</var> be the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#final-charset\" id=\"ref-for-final-charset①\">get a final encoding</a> for <var>xhr</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type③\">response type</a> is the empty string, <var>charset</var> is null, and\n  the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#final-mime-type\" id=\"ref-for-final-mime-type②\">get a final MIME type</a> for <var>xhr</var> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type①\">XML MIME type</a>, then use\n  the rules set forth in the XML specifications to determine the encoding. Let <var>charset</var> be\n  the determined encoding. <a data-link-type=\"biblio\" href=\"https://xhr.spec.whatwg.org/#biblio-xml\" title=\"Extensible Markup Language (XML) 1.0 (Fifth Edition)\">[XML]</a> <a data-link-type=\"biblio\" href=\"https://xhr.spec.whatwg.org/#biblio-xml-names\" title=\"Namespaces in XML 1.0 (Third Edition)\">[XML-NAMES]</a> </p>"
+        },
+        {
+          "html": "<p>If <var>charset</var> is null, then set <var>charset</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②\">UTF-8</a>. </p>"
+        },
+        {
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decode\" id=\"ref-for-decode\">decode</a> on <var>xhr</var>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes⑧\">received bytes</a> using\n fallback encoding <var>charset</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/overrideMimeType(mime)",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-overridemimetype",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xmlhttprequest-overridemimetype\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>overrideMimeType(<var>mime</var>)</code></dfn> method\nsteps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②③\">state</a> is <i>loading</i> or <i>done</i>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑥\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑦\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type④\">override MIME type</a> to the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\" id=\"ref-for-parse-a-mime-type\">parsing</a> <var>mime</var>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type⑤\">override MIME type</a> is failure, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#override-mime-type\" id=\"ref-for-override-mime-type⑥\">override MIME type</a> to <code>application/octet-stream</code>. </p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetype\" id=\"ref-for-dom-xmlhttprequest-responsetype③\">responseType</a></code> setter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object⑧\">current global object</a> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑧\">Window</a></code> object and the given value is\n \"<code>document</code>\", then return. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⑤\">state</a> is <i>loading</i> or <i>done</i>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑦\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object⑨\">current global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑨\">Window</a></code> object and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#synchronous-flag\" id=\"ref-for-synchronous-flag①②\">synchronous flag</a> is set, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑧\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-invalidaccesserror⑥\">InvalidAccessError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③①\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type⑦\">response type</a> to the given value. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/response",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-response",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-xmlhttprequest-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>response</code></dfn> getter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type⑧\">response type</a> is the empty string or \"<code>text</code>\", then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⑥\">state</a> is not <i>loading</i> or <i>done</i>, then return\n   the empty string. </p>"
+            },
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#text-response\" id=\"ref-for-text-response\">getting a text response</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③①\">this</a>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⑦\">state</a> is not <i>done</i>, then return null. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object②\">response object</a> is failure, then return null. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object③\">response object</a> is non-null, then return it. </p>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://xhr.spec.whatwg.org/#arraybuffer-response\"></a> \n     <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type⑨\">response type</a> is \"<code>arraybuffer</code>\", then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object④\">response object</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer\">ArrayBuffer</a></code> object representing <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes⑨\">received bytes</a>. If this throws an exception, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object⑤\">response object</a> to failure and return null. </p>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://xhr.spec.whatwg.org/#blob-response\"></a>\n     <p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①⓪\">response type</a> is \"<code>blob</code>\",\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object⑥\">response object</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob\">Blob</a></code> object representing <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes①⓪\">received bytes</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code> set to the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#final-mime-type\" id=\"ref-for-final-mime-type③\">get a final MIME type</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④②\">this</a>. </p>"
+        },
+        {
+          "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①①\">response type</a> is \"<code>document</code>\", <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#document-response\" id=\"ref-for-document-response\">set a document response</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④④\">this</a>. </p>"
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<a class=\"self-link\" href=\"https://xhr.spec.whatwg.org/#json-response\"></a>\n       <p>Assert: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①②\">response type</a> is \"<code>json</code>\". </p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response\" id=\"ref-for-response②⑤\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body④\">body</a> is null,\n   then return null. </p>"
+            },
+            {
+              "html": "<p>Let <var>jsonObject</var> be the result of running <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value\" id=\"ref-for-parse-json-bytes-to-a-javascript-value\">parse JSON from bytes</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#received-bytes\" id=\"ref-for-received-bytes①①\">received bytes</a>. If that threw an exception, then return null. </p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object⑦\">response object</a> to <var>jsonObject</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object⑧\">response object</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/responseText",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetext",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-xmlhttprequest-responsetext\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>responseText</code></dfn> getter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①③\">response type</a> is not the empty string or \"<code>text</code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⑨\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③③\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⑧\">state</a> is not <i>loading</i> or <i>done</i>, then return\n the empty string. </p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#text-response\" id=\"ref-for-text-response①\">getting a text response</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤②\">this</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/responseXML",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsexml",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-xmlhttprequest-responsexml\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>responseXML</code></dfn> getter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-type\" id=\"ref-for-response-type①④\">response type</a> is not the empty string or \"<code>document</code>\",\n then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⓪\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑦\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑤\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state②⑨\">state</a> is not <i>done</i>, then return null. </p>"
+        },
+        {
+          "html": "<p>Assert: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object⑨\">response object</a> is not failure. </p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object①⓪\">response object</a> is non-null, then return it. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#document-response\" id=\"ref-for-document-response①\">Set a document response</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⑦\">this</a>. </p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#response-object\" id=\"ref-for-response-object①①\">response object</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "FormData/FormData(form, submitter)",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"FormData(form, submitter)|constructor(form, submitter)|FormData(form)|constructor(form)|FormData()|constructor()\" id=\"dom-formdata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new FormData(<var>form</var>, <var>submitter</var>)</code></dfn> constructor steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>form</var> is given, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>submitter</var> is non-null, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>submitter</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button\" id=\"ref-for-concept-submit-button\">submit button</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>. </p>"
+                },
+                {
+                  "html": "<p>If <var>submitter</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"ref-for-form-owner\">form owner</a> is not <var>form</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②②\">throw</a> a\n     \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑥\">DOMException</a></code>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>list</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-the-form-data-set\" id=\"ref-for-constructing-the-form-data-set\">constructing the entry list</a> for <var>form</var> and <var>submitter</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>list</var> is null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②③\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑧\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑦\">DOMException</a></code>. </p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list\">entry list</a> to <var>list</var>. </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FormData/append(name, value)",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-formdata-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>append(<var>name</var>, <var>value</var>)</code></dfn> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"append(name, blobValue, filename)|append(name, blobValue)\" id=\"dom-formdata-append-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>append(<var>name</var>, <var>blobValue</var>, <var>filename</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>value</var> be <var>value</var> if given; otherwise <var>blobValue</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#create-an-entry\" id=\"ref-for-create-an-entry\">creating an entry</a> with <var>name</var>, <var>value</var>, and <var>filename</var> if given. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>entry</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list①\">entry list</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "FormData/get(name)",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-get",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-formdata-get\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>get(<var>name</var>)</code></dfn> method\nsteps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry①\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-name\" id=\"ref-for-form-entry-name①\">name</a> is <var>name</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list③\">entry list</a>, then return null. </p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-value\" id=\"ref-for-form-entry-value\">value</a> of the first <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry②\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-name\" id=\"ref-for-form-entry-name②\">name</a> is <var>name</var> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list④\">entry list</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "FormData/getAll(name)",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-getall",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-formdata-getall\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getAll(<var>name</var>)</code></dfn> method steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry③\">entry</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-name\" id=\"ref-for-form-entry-name③\">name</a> is <var>name</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list⑤\">entry list</a>, then return the empty list. </p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-value\" id=\"ref-for-form-entry-value①\">values</a> of all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry④\">entries</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-name\" id=\"ref-for-form-entry-name④\">name</a> is <var>name</var>, in order, from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list⑥\">entry list</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "FormData/set(name, value)",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-formdata-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>name</var>, <var>value</var>)</code></dfn> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FormData\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"set(name, blobValue, filename)|set(name, blobValue)\" id=\"dom-formdata-set-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>name</var>, <var>blobValue</var>, <var>filename</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>value</var> be <var>value</var> if given; otherwise <var>blobValue</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#create-an-entry\" id=\"ref-for-create-an-entry①\">creating an entry</a> with <var>name</var>, <var>value</var>, and <var>filename</var> if given. </p>"
+        },
+        {
+          "html": "<p>If there are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry⑥\">entries</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list⑧\">entry list</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry-name\" id=\"ref-for-form-entry-name⑥\">name</a> is <var>name</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-replace\" id=\"ref-for-list-replace\">replace</a> the first\n such <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-entry\" id=\"ref-for-form-entry⑦\">entry</a> with <var>entry</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a> the others. </p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> <var>entry</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-formdata-entry-list\" id=\"ref-for-concept-formdata-entry-list⑨\">entry list</a>. </p>"
+        }
+      ]
+    }
+  ]
+}

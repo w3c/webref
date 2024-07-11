@@ -1,0 +1,823 @@
+{
+  "spec": {
+    "title": "Gamepad",
+    "url": "https://w3c.github.io/gamepad/"
+  },
+  "algorithms": [
+    {
+      "name": "Gamepad/connected",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-connected",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-connected\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-connected-3\"><code>connected</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[connected]]\" href=\"https://w3c.github.io/gamepad/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-1\"><code>[[connected]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "Gamepad/timestamp",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-timestamp",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-timestamp\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-timestamp-5\"><code>timestamp</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[timestamp]]\" href=\"https://w3c.github.io/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-1\"><code>[[timestamp]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "selecting a mapping",
+      "href": "https://w3c.github.io/gamepad/#dfn-selecting-a-mapping",
+      "html": "To <dfn data-lt=\"selecting a mapping|select a mapping\" id=\"dfn-selecting-a-mapping\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">select a mapping</dfn> for a\n            gamepad device, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the button and axis layout of the gamepad device corresponds\n            with the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-standard-gamepad\" class=\"internalDFN\" id=\"ref-for-dfn-standard-gamepad-1\">Standard Gamepad</a> layout, then return\n            \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadMappingType\" data-xref-for=\"GamepadMappingType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadmappingtype-standard\" class=\"internalDFN\" id=\"ref-for-dom-gamepadmappingtype-standard-1\"><code>standard</code></a>\"."
+        },
+        {
+          "html": "Return \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadMappingType\" data-xref-for=\"GamepadMappingType\" data-lt=\"the-empty-string\" href=\"https://w3c.github.io/gamepad/#dom-gamepadmappingtype-the-empty-string\" class=\"internalDFN\" id=\"ref-for-dom-gamepadmappingtype-the-empty-string-1\"><code></code></a>\"."
+        }
+      ]
+    },
+    {
+      "name": "Gamepad/axes",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-axes",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-axes\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-axes-4\"><code>axes</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axes]]\" href=\"https://w3c.github.io/gamepad/#dfn-axes\" class=\"internalDFN\" id=\"ref-for-dfn-axes-1\"><code>[[axes]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "Gamepad/buttons",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-buttons",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-buttons\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-buttons-4\"><code>buttons</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttons]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-buttons-1\"><code>[[buttons]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "Gamepad/vibrationActuator",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-vibrationactuator\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-vibrationactuator-2\"><code>vibrationActuator</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[vibrationActuator]]\" href=\"https://w3c.github.io/gamepad/#dfn-vibrationactuator\" class=\"internalDFN\" id=\"ref-for-dfn-vibrationactuator-1\"><code>[[vibrationActuator]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "receives new button or axis input values",
+      "href": "https://w3c.github.io/gamepad/#dfn-receives-new-button-or-axis-input-values",
+      "html": "When the system <dfn id=\"dfn-receives-new-button-or-axis-input-values\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">receives new button or axis input values</dfn>,\n          run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-6\"><code>Gamepad</code></a> object representing the\n          device that received new button or axis input values."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-1\">gamepad task source</a> to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-update-gamepad-state\" class=\"internalDFN\" id=\"ref-for-dfn-update-gamepad-state-1\">update gamepad state</a> for <var data-type=\"Gamepad\">gamepad</var>."
+        }
+      ]
+    },
+    {
+      "name": "update gamepad state",
+      "href": "https://w3c.github.io/gamepad/#dfn-update-gamepad-state",
+      "html": "To <dfn id=\"dfn-update-gamepad-state\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">update gamepad state</dfn> for <var data-type=\"Gamepad\">gamepad</var>, run the\n          following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"DOMHighResTimeStamp\">now</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a>."
+        },
+        {
+          "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[timestamp]]\" href=\"https://w3c.github.io/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-2\"><code>[[timestamp]]</code></a> to <var data-type=\"DOMHighResTimeStamp\">now</var>."
+        },
+        {
+          "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-map-and-normalize-axes\" class=\"internalDFN\" id=\"ref-for-dfn-map-and-normalize-axes-1\">map and normalize axes</a> for <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-map-and-normalize-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-map-and-normalize-buttons-1\">map and normalize buttons</a> for <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Let <var data-type=\"Navigator\">navigator</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object."
+        },
+        {
+          "html": "If <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[hasGamepadGesture]]\" href=\"https://w3c.github.io/gamepad/#dfn-hasgamepadgesture\" class=\"internalDFN\" id=\"ref-for-dfn-hasgamepadgesture-1\"><code>[[hasGamepadGesture]]</code></a> is <code>false</code> and\n          <var data-type=\"Gamepad\">gamepad</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-user-gesture\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-user-gesture-1\">contains a gamepad user gesture</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[hasGamepadGesture]]\" href=\"https://w3c.github.io/gamepad/#dfn-hasgamepadgesture\" class=\"internalDFN\" id=\"ref-for-dfn-hasgamepadgesture-2\"><code>[[hasGamepadGesture]]</code></a> to\n              <code>true</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Gamepad?\">connectedGamepad</var> of\n              <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-1\"><code>[[gamepads]]</code></a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"Gamepad?\">connectedGamepad</var> is not equal to <code>null</code>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var data-type=\"Gamepad?\">connectedGamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[exposed]]\" href=\"https://w3c.github.io/gamepad/#dfn-exposed\" class=\"internalDFN\" id=\"ref-for-dfn-exposed-1\"><code>[[exposed]]</code></a> to\n                      <code>true</code>."
+                    },
+                    {
+                      "html": "Set <var data-type=\"Gamepad?\">connectedGamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[timestamp]]\" href=\"https://w3c.github.io/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-3\"><code>[[timestamp]]</code></a> to\n                      <var data-type=\"DOMHighResTimeStamp\">now</var>."
+                    },
+                    {
+                      "html": "Let <var data-type=\"Document?\">document</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>; otherwise\n                      <code>null</code>."
+                    },
+                    {
+                      "html": "If <var data-type=\"Document?\">document</var> is not <code>null</code> and is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, then <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-2\">gamepad task source</a> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"gamepadconnected\" href=\"https://w3c.github.io/gamepad/#dfn-gamepadconnected\" class=\"internalDFN\" id=\"ref-for-dfn-gamepadconnected-1\"><code>gamepadconnected</code></a>\n                      at <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> using\n                      <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-1\"><code>GamepadEvent</code></a> with its <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadEvent\" data-xref-for=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-gamepad-1\"><code>gamepad</code></a>\n                      attribute initialized to <var data-type=\"Gamepad?\">connectedGamepad</var>."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "map and normalize axes",
+      "href": "https://w3c.github.io/gamepad/#dfn-map-and-normalize-axes",
+      "html": "To <dfn id=\"dfn-map-and-normalize-axes\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map and normalize axes</dfn> for <var data-type=\"Gamepad\">gamepad</var>, run the\n          following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">axisValues</var> be a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values\n          representing the most recent logical axis input values for each axis\n          input of the device represented by <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Let <var data-type=\"long\">maxRawAxisIndex</var> be the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> of <var data-type=\"list\">axisValues</var> −\n          1."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawAxisIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">maxRawAxisIndex</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"long\">mappedIndex</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-axismapping\" class=\"internalDFN\" id=\"ref-for-dfn-axismapping-1\"><code>[[axisMapping]]</code></a>[<var data-type=\"long\">rawAxisIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalValue</var> be\n              <var data-type=\"list\">axisValues</var>[<var data-type=\"long\">rawAxisIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalMinimum</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMinimums]]\" href=\"https://w3c.github.io/gamepad/#dfn-axisminimums\" class=\"internalDFN\" id=\"ref-for-dfn-axisminimums-1\"><code>[[axisMinimums]]</code></a>[<var data-type=\"long\">rawAxisIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalMaximum</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMaximums]]\" href=\"https://w3c.github.io/gamepad/#dfn-axismaximums\" class=\"internalDFN\" id=\"ref-for-dfn-axismaximums-1\"><code>[[axisMaximums]]</code></a>[<var data-type=\"long\">rawAxisIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"double\">normalizedValue</var> be 2 (<var data-type=\"unsigned long\">logicalValue</var> −\n              <var data-type=\"unsigned long\">logicalMinimum</var>) / (<var data-type=\"unsigned long\">logicalMaximum</var> − <var data-type=\"unsigned long\">logicalMinimum</var>) − 1."
+            },
+            {
+              "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axes]]\" href=\"https://w3c.github.io/gamepad/#dfn-axes\" class=\"internalDFN\" id=\"ref-for-dfn-axes-2\"><code>[[axes]]</code></a>[<var>axisIndex</var>] to be\n              <var data-type=\"double\">normalizedValue</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "map and normalize buttons",
+      "href": "https://w3c.github.io/gamepad/#dfn-map-and-normalize-buttons",
+      "html": "To <dfn id=\"dfn-map-and-normalize-buttons\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">map and normalize buttons</dfn> for <var data-type=\"Gamepad\">gamepad</var>, run\n          the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">buttonValues</var> be a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values\n          representing the most recent logical button input values for each\n          button input of the device represented by <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Let <var data-type=\"long\">maxRawButtonIndex</var> be the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> of\n          <var data-type=\"list\">buttonValues</var> − 1."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawButtonIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0\n          to <var data-type=\"long\">maxRawButtonIndex</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"long\">mappedIndex</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonmapping\" class=\"internalDFN\" id=\"ref-for-dfn-buttonmapping-1\"><code>[[buttonMapping]]</code></a>[<var data-type=\"long\">rawButtonIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalValue</var> be\n              <var data-type=\"list\">buttonValues</var>[<var data-type=\"long\">rawButtonIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalMinimum</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMinimums]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonminimums\" class=\"internalDFN\" id=\"ref-for-dfn-buttonminimums-1\"><code>[[buttonMinimums]]</code></a>[<var data-type=\"long\">rawButtonIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"unsigned long\">logicalMaximum</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMaximums]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonmaximums\" class=\"internalDFN\" id=\"ref-for-dfn-buttonmaximums-1\"><code>[[buttonMaximums]]</code></a>[<var data-type=\"long\">rawButtonIndex</var>]."
+            },
+            {
+              "html": "Let <var data-type=\"double\">normalizedValue</var> be (<var data-type=\"unsigned long\">logicalValue</var> −\n              <var data-type=\"unsigned long\">logicalMinimum</var>) / (<var data-type=\"unsigned long\">logicalMaximum</var> − <var data-type=\"unsigned long\">logicalMinimum</var>)."
+            },
+            {
+              "html": "Let <var data-type=\"GamepadButton\">button</var> be\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttons]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-buttons-2\"><code>[[buttons]]</code></a>[<var data-type=\"long\">mappedIndex</var>]."
+            },
+            {
+              "html": "Set <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[value]]\" href=\"https://w3c.github.io/gamepad/#dfn-value\" class=\"internalDFN\" id=\"ref-for-dfn-value-1\"><code>[[value]]</code></a> to\n              <var data-type=\"double\">normalizedValue</var>."
+            },
+            {
+              "html": "<p>\n                  If the button has a digital switch to indicate a pure pressed\n                  or released state, set <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[pressed]]\" href=\"https://w3c.github.io/gamepad/#dfn-pressed\" class=\"internalDFN\" id=\"ref-for-dfn-pressed-1\"><code>[[pressed]]</code></a>\n                  to <code>true</code> if the button is pressed or <code>false</code> if it is not\n                  pressed.\n                </p>\n                <p>\n                  Otherwise, set <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[pressed]]\" href=\"https://w3c.github.io/gamepad/#dfn-pressed\" class=\"internalDFN\" id=\"ref-for-dfn-pressed-2\"><code>[[pressed]]</code></a> to\n                  <code>true</code> if the value is above the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-button-press-threshold\" class=\"internalDFN\" id=\"ref-for-dfn-button-press-threshold-1\">button press threshold</a>\n                  or <code>false</code> if it is not above the threshold.\n                </p>"
+            },
+            {
+              "html": "<p>\n                  If the button is capable of detecting touch, set\n                  <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[touched]]\" href=\"https://w3c.github.io/gamepad/#dfn-touched\" class=\"internalDFN\" id=\"ref-for-dfn-touched-1\"><code>[[touched]]</code></a> to <code>true</code> if the\n                  button is currently being touched.\n                </p>\n                <p>\n                  Otherwise, set <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[touched]]\" href=\"https://w3c.github.io/gamepad/#dfn-touched\" class=\"internalDFN\" id=\"ref-for-dfn-touched-2\"><code>[[touched]]</code></a> to\n                  <var data-type=\"GamepadButton\">button</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[pressed]]\" href=\"https://w3c.github.io/gamepad/#dfn-pressed\" class=\"internalDFN\" id=\"ref-for-dfn-pressed-3\"><code>[[pressed]]</code></a>.\n                </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A new Gamepad",
+      "href": "https://w3c.github.io/gamepad/#dfn-a-new-gamepad",
+      "html": "<dfn id=\"dfn-a-new-gamepad\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">A new <code>Gamepad</code></dfn> representing a connected gamepad device is\n          constructed by performing the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be a newly created <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-7\"><code>Gamepad</code></a> instance:",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-id\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-id-4\"><code>id</code></a> attribute to an\n              identification string for the gamepad."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-index\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-index-2\"><code>index</code></a> attribute to the\n              result of <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-selecting-an-unused-gamepad-index\" class=\"internalDFN\" id=\"ref-for-dfn-selecting-an-unused-gamepad-index-1\">selecting an unused gamepad index</a> for <var data-type=\"Gamepad\">gamepad</var>."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-mapping\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-mapping-3\"><code>mapping</code></a> attribute to the\n              result of <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-selecting-a-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-selecting-a-mapping-1\">selecting a mapping</a> for the gamepad device."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[connected]]\" href=\"https://w3c.github.io/gamepad/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-2\"><code>[[connected]]</code></a> to <code>true</code>."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[timestamp]]\" href=\"https://w3c.github.io/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-4\"><code>[[timestamp]]</code></a> to the\n              <a data-link-type=\"dfn|abstract-op\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a>."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axes]]\" href=\"https://w3c.github.io/gamepad/#dfn-axes\" class=\"internalDFN\" id=\"ref-for-dfn-axes-3\"><code>[[axes]]</code></a> to the result of\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-initializing-axes\" class=\"internalDFN\" id=\"ref-for-dfn-initializing-axes-1\">initializing axes</a> for <var data-type=\"Gamepad\">gamepad</var>."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttons]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-buttons-3\"><code>[[buttons]]</code></a> to the result of\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-initializing-buttons\" class=\"internalDFN\" id=\"ref-for-dfn-initializing-buttons-1\">initializing buttons</a> for <var data-type=\"Gamepad\">gamepad</var>."
+            },
+            {
+              "html": "Initialize <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[vibrationActuator]]\" href=\"https://w3c.github.io/gamepad/#dfn-vibrationactuator\" class=\"internalDFN\" id=\"ref-for-dfn-vibrationactuator-2\"><code>[[vibrationActuator]]</code></a>\n              following the steps of <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-constructing-a-gamepadhapticactuator\" class=\"internalDFN\" id=\"ref-for-dfn-constructing-a-gamepadhapticactuator-1\">constructing a GamepadHapticActuator</a>\n              for <var data-type=\"Gamepad\">gamepad</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Gamepad\">gamepad</var>."
+        }
+      ]
+    },
+    {
+      "name": "selecting an unused gamepad index",
+      "href": "https://w3c.github.io/gamepad/#dfn-selecting-an-unused-gamepad-index",
+      "html": "To <dfn data-lt=\"selecting an unused gamepad index|select an unused gamepad index\" id=\"dfn-selecting-an-unused-gamepad-index\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">select an unused\n          gamepad index</dfn> for <var data-type=\"Gamepad\">gamepad</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Navigator\">navigator</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object."
+        },
+        {
+          "html": "Let <var data-type=\"long\">maxGamepadIndex</var> be the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> of\n          <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-2\"><code>[[gamepads]]</code></a> − 1."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">gamepadIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">maxGamepadIndex</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-3\"><code>[[gamepads]]</code></a>[<var data-type=\"long\">gamepadIndex</var>] is\n              <code>null</code>, then return <var data-type=\"long\">gamepadIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <code>null</code> to <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-4\"><code>[[gamepads]]</code></a>."
+        },
+        {
+          "html": "Return the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> of\n          <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-5\"><code>[[gamepads]]</code></a> − 1."
+        }
+      ]
+    },
+    {
+      "name": "initializing axes",
+      "href": "https://w3c.github.io/gamepad/#dfn-initializing-axes",
+      "html": "To <dfn data-lt=\"initializing axes|initialize axes\" id=\"dfn-initializing-axes\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">initialize axes</dfn> for\n          <var data-type=\"Gamepad\">gamepad</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"long\">inputCount</var> be the number of axis inputs exposed by the\n          device represented by <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMinimums]]\" href=\"https://w3c.github.io/gamepad/#dfn-axisminimums\" class=\"internalDFN\" id=\"ref-for-dfn-axisminimums-2\"><code>[[axisMinimums]]</code></a> to a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n          <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values with <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> equal to <var data-type=\"long\">inputCount</var>\n          containing minimum logical values for each of the axis inputs."
+        },
+        {
+          "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMaximums]]\" href=\"https://w3c.github.io/gamepad/#dfn-axismaximums\" class=\"internalDFN\" id=\"ref-for-dfn-axismaximums-2\"><code>[[axisMaximums]]</code></a> to a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n          <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values with <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> equal to <var data-type=\"long\">inputCount</var>\n          containing maximum logical values for each of the axis inputs."
+        },
+        {
+          "html": "Initialize <var>unmappedInputList</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var>mappedIndexList</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var data-type=\"long\">axesSize</var> to be 0."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawInputIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">inputCount</var> − 1:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the the gamepad axis at index <var data-type=\"long\">rawInputIndex</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-represents-a-standard-gamepad-axis\" class=\"internalDFN\" id=\"ref-for-dfn-represents-a-standard-gamepad-axis-1\">represents a Standard Gamepad axis</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"long\">canonicalIndex</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-canonical-indices\" class=\"internalDFN\" id=\"ref-for-dfn-canonical-indices-1\">canonical index</a> for\n                  the axis."
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set\n                      <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-axismapping\" class=\"internalDFN\" id=\"ref-for-dfn-axismapping-2\"><code>[[axisMapping]]</code></a>[<var data-type=\"long\">rawInputIndex</var>] to\n                      <var data-type=\"long\">canonicalIndex</var>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"long\">canonicalIndex</var> to\n                      <var>mappedIndexList</var>."
+                    },
+                    {
+                      "html": "If <var data-type=\"long\">canonicalIndex</var> + 1 is greater than <var data-type=\"long\">axesSize</var>,\n                      then set <var data-type=\"long\">axesSize</var> to <var data-type=\"long\">canonicalIndex</var> + 1."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var data-type=\"long\">axisIndex</var> to be 0."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawInputIndex</var> of <var>unmappedInputList</var>:",
+          "rationale": "while",
+          "steps": [
+            {
+              "html": "While <var>mappedIndexList</var> <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-contain\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a>s <var data-type=\"long\">axisIndex</var>:",
+              "rationale": "increment",
+              "steps": [
+                {
+                  "html": "Increment <var data-type=\"long\">axisIndex</var>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[axisMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-axismapping\" class=\"internalDFN\" id=\"ref-for-dfn-axismapping-3\"><code>[[axisMapping]]</code></a>[<var data-type=\"long\">rawInputIndex</var>] to\n              <var data-type=\"long\">axisIndex</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"long\">axisIndex</var> to <var>mappedIndexList</var>."
+            },
+            {
+              "html": "If <var data-type=\"long\">axisIndex</var> + 1 is greater than <var data-type=\"long\">axesSize</var>, then set\n              <var data-type=\"long\">axesSize</var> to <var data-type=\"long\">axisIndex</var> + 1."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>axes</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">axisIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">axesSize</var> − 1, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> 0 to <var>axes</var>."
+        },
+        {
+          "html": "Return <var>axes</var>."
+        }
+      ]
+    },
+    {
+      "name": "initializing buttons",
+      "href": "https://w3c.github.io/gamepad/#dfn-initializing-buttons",
+      "html": "To <dfn data-lt=\"initializing buttons|initialize buttons\" id=\"dfn-initializing-buttons\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">initialize buttons</dfn> for a\n          gamepad, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"long\">inputCount</var> be the number of button inputs exposed by\n          the device represented by <var data-type=\"Gamepad\">gamepad</var>."
+        },
+        {
+          "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMinimums]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonminimums\" class=\"internalDFN\" id=\"ref-for-dfn-buttonminimums-2\"><code>[[buttonMinimums]]</code></a> to be a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n          <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values with <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> equal to <var data-type=\"long\">inputCount</var>\n          containing minimum logical values for each of the button inputs."
+        },
+        {
+          "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMaximums]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonmaximums\" class=\"internalDFN\" id=\"ref-for-dfn-buttonmaximums-2\"><code>[[buttonMaximums]]</code></a> to be a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n          <a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"interface\" data-lt=\"unsigned long\" data-cite-path=\"/\" data-cite-frag=\"idl-unsigned-long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\"><code>unsigned long</code></a> values with <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-size\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> equal to <var data-type=\"long\">inputCount</var>\n          containing maximum logical values for each of the button inputs."
+        },
+        {
+          "html": "Initialize <var>unmappedInputList</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var>mappedIndexList</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var data-type=\"long\">buttonsSize</var> to be 0."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawInputIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">inputCount</var> − 1:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the the gamepad button at index <var data-type=\"long\">rawInputIndex</var>\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-represents-a-standard-gamepad-button\" class=\"internalDFN\" id=\"ref-for-dfn-represents-a-standard-gamepad-button-1\">represents a Standard Gamepad button</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"long\">canonicalIndex</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-canonical-indices\" class=\"internalDFN\" id=\"ref-for-dfn-canonical-indices-2\">canonical index</a> for\n                  the button."
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set\n                      <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonmapping\" class=\"internalDFN\" id=\"ref-for-dfn-buttonmapping-2\"><code>[[buttonMapping]]</code></a>[<var data-type=\"long\">rawInputIndex</var>]\n                      to <var data-type=\"long\">canonicalIndex</var>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"long\">canonicalIndex</var> to\n                      <var>mappedIndexList</var>."
+                    },
+                    {
+                      "html": "If <var data-type=\"long\">canonicalIndex</var> + 1 is greater than\n                      <var data-type=\"long\">buttonsSize</var>, then set <var data-type=\"long\">buttonsSize</var> to <var data-type=\"long\">canonicalIndex</var>\n                      + 1."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Increment <var data-type=\"long\">rawInputIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var data-type=\"long\">buttonIndex</var> to be 0."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">rawInputIndex</var> of <var>unmappedInputList</var>:",
+          "rationale": "while",
+          "steps": [
+            {
+              "html": "While <var>mappedIndexList</var> <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-contain\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a>s <var data-type=\"long\">buttonIndex</var>:",
+              "rationale": "increment",
+              "steps": [
+                {
+                  "html": "Increment <var data-type=\"long\">buttonIndex</var>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[buttonMapping]]\" href=\"https://w3c.github.io/gamepad/#dfn-buttonmapping\" class=\"internalDFN\" id=\"ref-for-dfn-buttonmapping-3\"><code>[[buttonMapping]]</code></a>[<var data-type=\"long\">rawInputIndex</var>]\n              to <var data-type=\"long\">buttonIndex</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"long\">buttonIndex</var> to <var>mappedIndexList</var>."
+            },
+            {
+              "html": "If <var data-type=\"long\">buttonIndex</var> + 1 is greater than <var data-type=\"long\">buttonsSize</var>, then set\n              <var data-type=\"long\">buttonsSize</var> to <var data-type=\"long\">buttonIndex</var> + 1."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>buttons</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"long\">buttonIndex</var> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"the-range\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from 0 to\n          <var data-type=\"long\">buttonsSize</var> − 1, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> a <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"new\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadButton\" href=\"https://w3c.github.io/gamepad/#dom-gamepadbutton\" class=\"internalDFN\" id=\"ref-for-dom-gamepadbutton-3\"><code>GamepadButton</code></a> to\n          <var>buttons</var>."
+        },
+        {
+          "html": "Return <var>buttons</var>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadButton/pressed",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-pressed",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" href=\"https://w3c.github.io/gamepad/#dom-gamepadbutton-pressed\" class=\"internalDFN\" id=\"ref-for-dom-gamepadbutton-pressed-2\"><code>pressed</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[pressed]]\" href=\"https://w3c.github.io/gamepad/#dfn-pressed\" class=\"internalDFN\" id=\"ref-for-dfn-pressed-4\"><code>[[pressed]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadButton/touched",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-touched",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" href=\"https://w3c.github.io/gamepad/#dom-gamepadbutton-touched\" class=\"internalDFN\" id=\"ref-for-dom-gamepadbutton-touched-2\"><code>touched</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[touched]]\" href=\"https://w3c.github.io/gamepad/#dfn-touched\" class=\"internalDFN\" id=\"ref-for-dfn-touched-3\"><code>[[touched]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadButton/value",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadbutton-value",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" href=\"https://w3c.github.io/gamepad/#dom-gamepadbutton-value\" class=\"internalDFN\" id=\"ref-for-dom-gamepadbutton-value-2\"><code>value</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadButton\" data-xref-for=\"GamepadButton\" data-lt=\"[[value]]\" href=\"https://w3c.github.io/gamepad/#dfn-value\" class=\"internalDFN\" id=\"ref-for-dfn-value-2\"><code>[[value]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadHapticActuator/effects",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-effects",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-effects\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticactuator-effects-2\"><code>effects</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[effects]]\" href=\"https://w3c.github.io/gamepad/#dfn-effects\" class=\"internalDFN\" id=\"ref-for-dfn-effects-1\"><code>[[effects]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadHapticActuator/playEffect()",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-playeffect",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"playEffect()\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-playeffect\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticactuator-playeffect-2\"><code>playEffect</code></a><code>()</code> method steps, called\n            with <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-6\"><code>GamepadHapticEffectType</code></a> <var data-type=\"GamepadHapticEffectType\">type</var> and\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadEffectParameters\" href=\"https://w3c.github.io/gamepad/#dom-gamepadeffectparameters\" class=\"internalDFN\" id=\"ref-for-dom-gamepadeffectparameters-2\"><code>GamepadEffectParameters</code></a> <var data-type=\"GamepadEffectParameters\">params</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"GamepadEffectParameters\">params</var> does not describe a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-valid-effect\" class=\"internalDFN\" id=\"ref-for-dfn-valid-effect-1\">valid effect</a> of type <var data-type=\"GamepadHapticEffectType\">type</var>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-promise-rejected-with\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"exceptiondef-typeerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"Document?\">document</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"current-settings-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s\n            <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document?\">document</var> is <code>null</code> or <var data-type=\"Document?\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a> or <var data-type=\"Document?\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"visibility-state\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\">visibility state</a> is\n            <code>\"hidden\"</code>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-promise-rejected-with\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> an\n            \"<a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-1\"><code>[[playingEffectPromise]]</code></a>\n            is not <code>null</code>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>effectPromise</var> be\n                <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-2\"><code>[[playingEffectPromise]]</code></a>."
+            },
+            {
+              "html": "Set\n                <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-3\"><code>[[playingEffectPromise]]</code></a> to\n                <code>null</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                of <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-3\">gamepad task source</a> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n                <var>effectPromise</var> with \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticsResult\" data-xref-for=\"GamepadHapticsResult\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-preempted\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticsresult-preempted-1\"><code>preempted</code></a>\"."
+            }
+          ]
+        },
+        {
+          "html": "If <var>this</var>'s gamepad's actuator cannot <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-play-effects-with-type\" class=\"internalDFN\" id=\"ref-for-dfn-play-effects-with-type-1\">play effects with type</a> <var data-type=\"GamepadHapticEffectType\">type</var>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-promise-rejected-with\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> reason\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>."
+        },
+        {
+          "html": "Let <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-4\"><code>[[playingEffectPromise]]</code></a> be <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-new-promise\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "Let <var data-type=\"DOMHighResTimestamp\">playEffectTimestamp</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a> given the <var data-type=\"Document?\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+        },
+        {
+          "html": "Do the following steps <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "issue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-issue-a-haptic-effect\" class=\"internalDFN\" id=\"ref-for-dfn-issue-a-haptic-effect-1\">Issue a haptic effect</a> to the actuator with <var data-type=\"GamepadHapticEffectType\">type</var>,\n                <var data-type=\"GamepadEffectParameters\">params</var>, and the <var data-type=\"DOMHighResTimestamp\">playEffectTimestamp</var>."
+            },
+            {
+              "html": "When the effect completes, if\n                <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-5\"><code>[[playingEffectPromise]]</code></a> is\n                not <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-4\">gamepad task source</a> to run\n                the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-6\"><code>[[playingEffectPromise]]</code></a>\n                    is <code>null</code>, abort these steps."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a>\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-7\"><code>[[playingEffectPromise]]</code></a>\n                    with \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticsResult\" data-xref-for=\"GamepadHapticsResult\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-complete\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticsresult-complete-1\"><code>complete</code></a>\"."
+                },
+                {
+                  "html": "Set\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-8\"><code>[[playingEffectPromise]]</code></a>\n                    to <code>null</code>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-9\"><code>[[playingEffectPromise]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "GamepadHapticActuator/reset()",
+      "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-reset",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"reset()\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticactuator-reset\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticactuator-reset-2\"><code>reset</code></a><code>()</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Document?\">document</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"current-settings-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s\n            <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document?\">document</var> is <code>null</code> or <var data-type=\"Document?\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a> or <var data-type=\"Document?\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"visibility-state\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\">visibility state</a> is\n            <code>\"hidden\"</code>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-promise-rejected-with\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> an\n            \"<a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">resetResultPromise</var> be <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-new-promise\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-10\"><code>[[playingEffectPromise]]</code></a>\n            is not <code>null</code>, do the following steps <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>effectPromise</var> be\n                <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-11\"><code>[[playingEffectPromise]]</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-stop-haptic-effects\" class=\"internalDFN\" id=\"ref-for-dfn-stop-haptic-effects-1\">Stop haptic effects</a> on <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s gamepad's actuator."
+            },
+            {
+              "html": "If the effect has been successfully stopped, do:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>effectPromise</var> and\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-12\"><code>[[playingEffectPromise]]</code></a>\n                    are still the same, set\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-13\"><code>[[playingEffectPromise]]</code></a>\n                    to <code>null</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-5\">gamepad task source</a> to\n                    <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>effectPromise</var> with\n                    \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticsResult\" data-xref-for=\"GamepadHapticsResult\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-preempted\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticsresult-preempted-2\"><code>preempted</code></a>\"."
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">resetResultPromise</var> with\n                \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticsResult\" data-xref-for=\"GamepadHapticsResult\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-complete\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticsresult-complete-2\"><code>complete</code></a>\""
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">resetResultPromise</var>."
+        }
+      ]
+    },
+    {
+      "name": "valid effect",
+      "href": "https://w3c.github.io/gamepad/#dfn-valid-effect",
+      "html": "To check if an effect with <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-7\"><code>GamepadHapticEffectType</code></a>\n        <var data-type=\"GamepadHapticEffectType\">type</var> and <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadEffectParameters\" href=\"https://w3c.github.io/gamepad/#dom-gamepadeffectparameters\" class=\"internalDFN\" id=\"ref-for-dom-gamepadeffectparameters-3\"><code>GamepadEffectParameters</code></a>\n        <var data-type=\"GamepadEffectParameters\">params</var> describes a <dfn id=\"dfn-valid-effect\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">valid effect</dfn>,\n        run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Given the value of <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-8\"><code>GamepadHapticEffectType</code></a>\n        <var data-type=\"GamepadHapticEffectType\">type</var>, switch on:\n          <dl>\n            <dt>\n              \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticEffectType\" data-xref-for=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype-dual-rumble\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-dual-rumble-1\"><code>dual-rumble</code></a>\"\n            </dt>\n            <dd>\n              If <var data-type=\"GamepadEffectParameters\">params</var> does not describe a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-valid-dual-rumble-effect\" class=\"internalDFN\" id=\"ref-for-dfn-valid-dual-rumble-effect-1\">valid dual-rumble effect</a>,\n              return <code>false</code>.\n            </dd>\n            <dt>\n              \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticEffectType\" data-xref-for=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype-trigger-rumble\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-trigger-rumble-1\"><code>trigger-rumble</code></a>\"\n            </dt>\n            <dd>\n              If <var data-type=\"GamepadEffectParameters\">params</var> does not describe a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-valid-trigger-rumble-effect\" class=\"internalDFN\" id=\"ref-for-dfn-valid-trigger-rumble-effect-1\">valid trigger-rumble effect</a>,\n              return <code>false</code>.\n            </dd>\n          </dl>"
+        },
+        {
+          "html": "Return <code>true</code>"
+        }
+      ]
+    },
+    {
+      "html": "When the <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"visibility-state\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\">visibility state</a> becomes\n          <code>\"hidden\"</code>, run these steps for each <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticActuator\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticactuator\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticactuator-8\"><code>GamepadHapticActuator</code></a>\n          <var data-type=\"GamepadHapticActuator\">actuator</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"GamepadHapticActuator\">actuator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-14\"><code>[[playingEffectPromise]]</code></a>\n          is <code>null</code>, abort these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n          <var data-type=\"GamepadHapticActuator\">actuator</var> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-6\">gamepad task source</a> to run the following\n          steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If\n              <var data-type=\"GamepadHapticActuator\">actuator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-15\"><code>[[playingEffectPromise]]</code></a> is\n              <code>null</code>, abort these steps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a>\n              <var data-type=\"GamepadHapticActuator\">actuator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-16\"><code>[[playingEffectPromise]]</code></a>\n              with \"<a data-link-type=\"idl\" data-xref-type=\"enum-value\" data-link-for=\"GamepadHapticsResult\" data-xref-for=\"GamepadHapticsResult\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticsresult-preempted\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticsresult-preempted-3\"><code>preempted</code></a>\"."
+            },
+            {
+              "html": "Set\n              <var data-type=\"GamepadHapticActuator\">actuator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[playingEffectPromise]]\" href=\"https://w3c.github.io/gamepad/#dfn-playingeffectpromise\" class=\"internalDFN\" id=\"ref-for-dfn-playingeffectpromise-17\"><code>[[playingEffectPromise]]</code></a> to\n              <code>null</code>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-stop-haptic-effects\" class=\"internalDFN\" id=\"ref-for-dfn-stop-haptic-effects-2\">Stop haptic effects</a> on <var data-type=\"GamepadHapticActuator\">actuator</var>."
+        }
+      ]
+    },
+    {
+      "name": "constructing a GamepadHapticActuator",
+      "href": "https://w3c.github.io/gamepad/#dfn-constructing-a-gamepadhapticactuator",
+      "html": "<dfn data-lt=\"constructing a GamepadHapticActuator|A new gamepadHapticActuator\" id=\"dfn-constructing-a-gamepadhapticactuator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">A new\n          <var data-type=\"GamepadHapticActuator\">gamepadHapticActuator</var></dfn> representing a\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-8\"><code>Gamepad</code></a>'s primary vibration actuator is constructed by performing\n          the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"GamepadHapticActuator\">gamepadHapticActuator</var> be a newly\n          created <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticActuator\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticactuator\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticactuator-9\"><code>GamepadHapticActuator</code></a> instance."
+        },
+        {
+          "html": "Let <code>supportedEffectsList</code> be an empty list."
+        },
+        {
+          "html": "For each enum value <var data-type=\"GamepadHapticEffectType\">type</var> of\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadHapticEffectType\" href=\"https://w3c.github.io/gamepad/#dom-gamepadhapticeffecttype\" class=\"internalDFN\" id=\"ref-for-dom-gamepadhapticeffecttype-9\"><code>GamepadHapticEffectType</code></a>, if the <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"user-agent\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> can send a command\n          to initiate effects of that type on that actuator, append <var data-type=\"GamepadHapticEffectType\">type</var> to\n          <code>supportedEffectsList</code>."
+        },
+        {
+          "html": "Set <var data-type=\"GamepadHapticActuator\">gamepadHapticActuator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"GamepadHapticActuator\" data-xref-for=\"GamepadHapticActuator\" data-lt=\"[[effects]]\" href=\"https://w3c.github.io/gamepad/#dfn-effects\" class=\"internalDFN\" id=\"ref-for-dfn-effects-3\"><code>[[effects]]</code></a>\n          to <code>supportedEffectsList</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"getGamepads()\" href=\"https://w3c.github.io/gamepad/#dom-navigator-getgamepads\" class=\"internalDFN\" id=\"ref-for-dom-navigator-getgamepads-6\"><code>getGamepads</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>doc</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"current-global-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "If <var>doc</var> is <code>null</code> or <var>doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>,\n          then return an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "If <var>doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/iframe-embed-object.html\" data-cite-frag=\"allowed-to-use\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <code>\"gamepad\"</code> permission,\n          then <a data-link-type=\"dfn|abstract-op\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"securityerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n          abort these steps."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[hasGamepadGesture]]\" href=\"https://w3c.github.io/gamepad/#dfn-hasgamepadgesture\" class=\"internalDFN\" id=\"ref-for-dfn-hasgamepadgesture-3\"><code>[[hasGamepadGesture]]</code></a> is <code>false</code>, then\n          return an empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Let <var data-type=\"DOMHighResTimeStamp\">now</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Gamepad\">gamepad</var> of\n          <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-6\"><code>[[gamepads]]</code></a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Gamepad\">gamepad</var> is not <code>null</code> and\n              <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[exposed]]\" href=\"https://w3c.github.io/gamepad/#dfn-exposed\" class=\"internalDFN\" id=\"ref-for-dfn-exposed-2\"><code>[[exposed]]</code></a> is <code>false</code>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[exposed]]\" href=\"https://w3c.github.io/gamepad/#dfn-exposed\" class=\"internalDFN\" id=\"ref-for-dfn-exposed-3\"><code>[[exposed]]</code></a> to <code>true</code>."
+                },
+                {
+                  "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[timestamp]]\" href=\"https://w3c.github.io/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-5\"><code>[[timestamp]]</code></a> to <var data-type=\"DOMHighResTimeStamp\">now</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>gamepads</var>."
+        }
+      ]
+    },
+    {
+      "html": "When a gamepad becomes available on the system, run the following\n        steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Document?\">document</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"current-global-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>'s\n        <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>; otherwise <code>null</code>."
+        },
+        {
+          "html": "If <var data-type=\"Document?\">document</var> is not <code>null</code> and is not <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/iframe-embed-object.html\" data-cite-frag=\"allowed-to-use\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the\n        <code>\"gamepad\"</code> permission, then abort these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-7\">gamepad task source</a> to perform the\n        following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"Gamepad\">gamepad</var> be <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-a-new-gamepad\" class=\"internalDFN\" id=\"ref-for-dfn-a-new-gamepad-1\">a new <code>Gamepad</code></a> representing the\n            gamepad."
+            },
+            {
+              "html": "Let <var data-type=\"Navigator\">navigator</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object."
+            },
+            {
+              "html": "Set\n            <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-7\"><code>[[gamepads]]</code></a>[<var data-type=\"Gamepad\">gamepad</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-index\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-index-4\"><code>index</code></a>]\n            to <var data-type=\"Gamepad\">gamepad</var>."
+            },
+            {
+              "html": "If <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[hasGamepadGesture]]\" href=\"https://w3c.github.io/gamepad/#dfn-hasgamepadgesture\" class=\"internalDFN\" id=\"ref-for-dfn-hasgamepadgesture-4\"><code>[[hasGamepadGesture]]</code></a> is <code>true</code>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[exposed]]\" href=\"https://w3c.github.io/gamepad/#dfn-exposed\" class=\"internalDFN\" id=\"ref-for-dfn-exposed-4\"><code>[[exposed]]</code></a> to <code>true</code>."
+                },
+                {
+                  "html": "If <var data-type=\"Document?\">document</var> is not <code>null</code> and is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, then <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"gamepadconnected\" href=\"https://w3c.github.io/gamepad/#dfn-gamepadconnected\" class=\"internalDFN\" id=\"ref-for-dfn-gamepadconnected-3\"><code>gamepadconnected</code></a> at\n                <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-3\"><code>GamepadEvent</code></a>\n                with its <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadEvent\" data-xref-for=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-gamepad-4\"><code>gamepad</code></a> attribute initialized to\n                <var data-type=\"Gamepad\">gamepad</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When a gamepad becomes unavailable on the system, run the following\n        steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-17\"><code>Gamepad</code></a> representing the\n        unavailable device."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/gamepad/#dfn-gamepad-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-gamepad-task-source-8\">gamepad task source</a> to perform the\n        following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[connected]]\" href=\"https://w3c.github.io/gamepad/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-3\"><code>[[connected]]</code></a> to <code>false</code>."
+            },
+            {
+              "html": "Let <var data-type=\"Document?\">document</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>; otherwise <code>null</code>."
+            },
+            {
+              "html": "If <var data-type=\"Gamepad\">gamepad</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[exposed]]\" href=\"https://w3c.github.io/gamepad/#dfn-exposed\" class=\"internalDFN\" id=\"ref-for-dfn-exposed-5\"><code>[[exposed]]</code></a> is <code>true</code> and <var data-type=\"Document?\">document</var>\n            is not <code>null</code> and is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, then <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"gamepaddisconnected\" href=\"https://w3c.github.io/gamepad/#dfn-gamepaddisconnected\" class=\"internalDFN\" id=\"ref-for-dfn-gamepaddisconnected-2\"><code>gamepaddisconnected</code></a> at <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-5\"><code>GamepadEvent</code></a> with its\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"GamepadEvent\" data-xref-for=\"GamepadEvent\" href=\"https://w3c.github.io/gamepad/#dom-gamepadevent-gamepad\" class=\"internalDFN\" id=\"ref-for-dom-gamepadevent-gamepad-5\"><code>gamepad</code></a> attribute initialized to <var data-type=\"Gamepad\">gamepad</var>."
+            },
+            {
+              "html": "Let <var data-type=\"Navigator\">navigator</var> be <var data-type=\"Gamepad\">gamepad</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object."
+            },
+            {
+              "html": "Set\n            <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-8\"><code>[[gamepads]]</code></a>[<var data-type=\"Gamepad\">gamepad</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/#dom-gamepad-index\" class=\"internalDFN\" id=\"ref-for-dom-gamepad-index-5\"><code>index</code></a>]\n            to <code>null</code>."
+            },
+            {
+              "html": "While <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-9\"><code>[[gamepads]]</code></a> <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-is-empty\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\">is not empty</a> and the last <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-item\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of\n            <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-10\"><code>[[gamepads]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-remove\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\">remove</a>\n            the last <a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-item\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of <var data-type=\"Navigator\">navigator</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"[[gamepads]]\" href=\"https://w3c.github.io/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-11\"><code>[[gamepads]]</code></a>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

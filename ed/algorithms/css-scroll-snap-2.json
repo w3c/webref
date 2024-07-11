@@ -1,0 +1,247 @@
+{
+  "spec": {
+    "title": "CSS Scroll Snap Module Level 2",
+    "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+  },
+  "algorithms": [
+    {
+      "name": "determine the initial scroll position from an initial scroll target",
+      "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#initial-scroll-target\" id=\"ref-for-initial-scroll-target②\">initial scroll target</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container②\">scroll container</a> is not null,\n\t\tit  should be used to determine the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#initial-scroll-position\" id=\"ref-for-initial-scroll-position\">initial scroll position</a> of <var>scrollcontainer</var> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#initial-scroll-target\" id=\"ref-for-initial-scroll-target③\">initial scroll target</a> for <var>scrollcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>position</var> be the result of running the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var> with <var>behavior</var> set to \"auto\", <var>block</var> set to \"start\", <var>inline</var> set to \"nearest\",\nand <var>scrolling box</var> set to <var>scrollcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>scrollcontainer</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#initial-scroll-position\" id=\"ref-for-initial-scroll-position①\">initial scroll position</a> to <var>position</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange②\">scrollsnapchange</a></code> indicates that the snap area to which a snap container is snapped along either axis has changed. <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange③\">scrollsnapchange</a></code> is dispatched:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "when a scrolling operation is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-completed\" id=\"ref-for-scroll-completed\">completed</a> if, for either the block or inline axis, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target③\">snap target</a> which the snap container is snapped to is different from the <span id=\"ref-for-snap-target④\">snap target</span> it most recently snapped to in that axis. For snap containers with <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-proximity\" id=\"ref-for-valdef-scroll-snap-type-proximity\">proximity</a> strictness, the scroll may result in the snap\n\t\tcontainer no longer being snapped to any <span id=\"ref-for-snap-target⑤\">snap target</span>. <a href=\"https://drafts.csswg.org/css-scroll-snap-1/#choosing\"><cite>CSS Scroll Snap 1</cite> § 6.2 Choosing Snap Positions</a> describes the method a UA follows when choosing\tbetween elements or pseudo-elements which are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-area\" id=\"ref-for-scroll-snap-area\">snap areas</a>."
+        },
+        {
+          "html": "if there is a change to a snap container’s style such that it goes from\n\t\thaving a non-<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-none\" id=\"ref-for-valdef-scroll-snap-type-none\">none</a> value for <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-snap-type\" id=\"ref-for-propdef-scroll-snap-type\">scroll-snap-type</a> to having a <span class=\"css\" id=\"ref-for-valdef-scroll-snap-type-none①\">none</span> value or vice versa."
+        },
+        {
+          "html": "if, after a <a href=\"https://drafts.csswg.org/css-scroll-snap-1/#re-snap\">layout change</a>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target⑥\">snap target</a> to\n\t\twhich a snap container is snapped to changes, regardless of whether there is\n\t\ta change in scroll position after the layout change."
+        }
+      ]
+    },
+    {
+      "name": "Document/update scrollsnapchange targets",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchange-targets",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-update-scrollsnapchange-targets\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update scrollsnapchange targets</dfn> for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container②\">snap container</a>, <var>snapcontainer</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be <var>snapcontainer</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blockTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock\">scrollsnapchangeTargetBlock</a> associated\nwith <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inlineTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline\">scrollsnapchangeTargetInline</a> associated\nwith <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blockScrollSnapchangingTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target\" id=\"ref-for-scrollsnapchanging-block-axis-target\">scrollsnapchanging block-axis target</a> associated with <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inlineScrollSnapchangingTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target\" id=\"ref-for-scrollsnapchanging-inline-axis-target\">scrollsnapchanging inline-axis target</a> associated with <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>snap targets changed</var> be a boolean flag that is initially false.</p>"
+        },
+        {
+          "html": "If <var>blockTarget</var> is not the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target⑧\">snap target</a> as <var>blockScrollSnapchangingTarget</var> or",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock①\">scrollsnapchangeTargetBlock</a> associated with <var>snapcontainer</var> to <var>blockScrollSnapchangingTarget</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>snap targets changed</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>inlineTarget</var> is not the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target⑨\">snap target</a> as <var>inlineScrollSnapchangingTarget</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline①\">scrollsnapchangeTargetInline</a> associated with <var>snapcontainer</var> to <var>inlineScrollSnapchangingTarget</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>snap targets changed</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>snap targets changed</var> is true:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>snapcontainer</var> is not already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchange-event-targets\" id=\"ref-for-document-pending-scrollsnapchange-event-targets\">pending scrollsnapchange event targets</a>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>snapcontainer</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchange-event-targets\" id=\"ref-for-document-pending-scrollsnapchange-event-targets①\">pending scrollsnapchange event targets</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Document/dispatch pending scrollsnapchange events",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchange-events",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-dispatch-pending-scrollsnapchange-events\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch pending scrollsnapchange events</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code>, <var>doc</var>, run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each item <var>target</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchange-event-targets\" id=\"ref-for-document-pending-scrollsnapchange-event-targets②\">pending scrollsnapchange event targets</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock②\">scrollsnapchangeTargetBlock</a> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetblock③\">scrollsnapchangeTargetBlock</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>blockTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock④\">scrollsnapchangeTargetBlock</a>.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline②\">scrollsnapchangeTargetInline</a> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetinline③\">scrollsnapchangeTargetInline</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, Set <var>inlineTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline④\">scrollsnapchangeTargetInline</a>.</p>"
+            },
+            {
+              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent②\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange⑦\">scrollsnapchange</a></code> at <var>target</var> and let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock\">snapTargetBlock</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var> respectively.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchange-event-targets\" id=\"ref-for-document-pending-scrollsnapchange-event-targets③\">pending scrollsnapchange event targets</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/update scrollsnapchanging targets",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchanging-targets",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-update-scrollsnapchanging-targets\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update scrollsnapchanging targets</dfn> for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container⑤\">snap container</a>, <var>snapcontainer</var>, given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target①④\">snap target</a> newBlockTarget and an <span id=\"ref-for-snap-target①⑤\">snap target</span> newInlineTarget, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be <var>snapcontainer</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blockTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target\" id=\"ref-for-scrollsnapchanging-block-axis-target②\">scrollsnapchanging block-axis target</a> that is\nassociated with <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inlineTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target\" id=\"ref-for-scrollsnapchanging-inline-axis-target②\">scrollsnapchanging inline-axis target</a> that is\nassociated with <var>snapcontainer</var>.</p>"
+        },
+        {
+          "html": "If <var>newBlockTarget</var> is not the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target①⑥\">snap target</a> as <var>blockTarget</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target\" id=\"ref-for-scrollsnapchanging-block-axis-target③\">scrollsnapchanging block-axis target</a> associated with <var>snapcontainer</var> to <var>newBlockTarget</var>.</p>"
+            },
+            {
+              "html": "If <var>snapcontainer</var> is not already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets\">pending scrollsnapchanging event targets</a>,",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>snapcontainer</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets①\">pending scrollsnapchanging event targets</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>newInlineTarget</var> is not the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target①⑦\">snap target</a> as <var>inlineTarget</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target\" id=\"ref-for-scrollsnapchanging-inline-axis-target③\">scrollsnapchanging inline-axis target</a> associated with <var>snapcontainer</var> to <var>newInlineTarget</var>.</p>"
+            },
+            {
+              "html": "If <var>snapcontainer</var> is not already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets②\">pending scrollsnapchanging event targets</a>,",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>snapcontainer</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets③\">pending scrollsnapchanging event targets</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Document/dispatch pending scrollsnapchanging events",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchanging-events",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-dispatch-pending-scrollsnapchanging-events\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch pending scrollsnapchanging events</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code>, <var>doc</var>, run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each item <var>target</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets④\">pending scrollsnapchanging event targets</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target\" id=\"ref-for-scrollsnapchanging-block-axis-target④\">scrollsnapchanging block-axis target</a> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchanging-block-axis-target⑤\">scrollsnapchanging block-axis target</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>blockTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-block-axis-target\" id=\"ref-for-scrollsnapchanging-block-axis-target⑥\">scrollsnapchanging block-axis target</a>.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target\" id=\"ref-for-scrollsnapchanging-inline-axis-target④\">scrollsnapchanging inline-axis target</a> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchanging-inline-axis-target⑤\">scrollsnapchanging inline-axis target</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>inlineTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging-inline-axis-target\" id=\"ref-for-scrollsnapchanging-inline-axis-target⑥\">scrollsnapchanging inline-axis target</a>.</p>"
+            },
+            {
+              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent③\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchanging\" id=\"ref-for-eventdef-snapevent-scrollsnapchanging⑥\">scrollsnapchanging</a></code> at <var>target</var> and let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock①\">snapTargetBlock</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline①\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var>, respectively.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-pending-scrollsnapchanging-event-targets\" id=\"ref-for-document-pending-scrollsnapchanging-event-targets⑤\">pending scrollsnapchanging event targets</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/dispatch pending scrollsnapchanging events",
+      "href": "https://drafts.csswg.org/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchanging-events",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-dispatch-pending-scrollsnapchanging-events\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch pending scrollsnapchanging events</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code>, <var>doc</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>newBlockTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target①⑧\">snap target</a> that <var>snapcontainer</var> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap\" id=\"ref-for-scroll-snap④\">snapped</a> to\n in the block axis or null if it did not snap to any element.</p>"
+        },
+        {
+          "html": "<p>Let <var>newInlineTarget</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snap-target\" id=\"ref-for-snap-target①⑨\">snap target</a> that <var>snapcontainer</var> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap\" id=\"ref-for-scroll-snap⑤\">snapped</a> to\n in the inline axis or null if it did not snap to any element or pseudo-element.</p>"
+        },
+        {
+          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchanging-targets\" id=\"ref-for-document-update-scrollsnapchanging-targets\">update scrollsnapchanging targets</a> with <var>newBlockTarget</var> as newBlockTarget and <var>newInlineTarget</var> as newInlineTarget.</p>"
+        },
+        {
+          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchange-targets\" id=\"ref-for-document-update-scrollsnapchange-targets①\">update scrollsnapchange targets</a> for <var>snapcontainer</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "spec": {
+    "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+    "url": "https://drafts.csswg.org/css-variables-1/"
+  },
+  "algorithms": [
+    {
+      "name": "substitute a var()",
+      "href": "https://drafts.csswg.org/css-variables-1/#substitute-a-var",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"substitute\" data-lt=\"substitute a var()|var() substitution\" id=\"substitute-a-var\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute a var()</dfn> in a property’s value:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#custom-property\" id=\"ref-for-custom-property②④\">custom property</a> named by the first argument to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var②⑦\">var()</a> function is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#animation-tainted\" id=\"ref-for-animation-tainted③\">animation-tainted</a>,\n\t\t\tand the <span class=\"css\" id=\"ref-for-funcdef-var②⑧\">var()</span> function is being used in a property that is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#not-animatable\" id=\"ref-for-not-animatable\">not animatable</a>,\n\t\t\ttreat the <span id=\"ref-for-custom-property②⑤\">custom property</span> as having its initial value for the rest of this algorithm."
+        },
+        {
+          "html": "If the value of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#custom-property\" id=\"ref-for-custom-property②⑥\">custom property</a> named by the first argument to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var②⑨\">var()</a> function\n\t\t\tis anything but the initial value,\n\t\t\treplace the <span class=\"css\" id=\"ref-for-funcdef-var③⓪\">var()</span> function by the value of the corresponding <span id=\"ref-for-custom-property②⑦\">custom property</span>."
+        },
+        {
+          "html": "Otherwise, if the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var③①\">var()</a> function has a fallback value as its second argument,\n\t\t\treplace the <span class=\"css\" id=\"ref-for-funcdef-var③②\">var()</span> function by the fallback value.\n\t\t\tIf there are any <span class=\"css\" id=\"ref-for-funcdef-var③③\">var()</span> references in the fallback, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#substitute-a-var\" id=\"ref-for-substitute-a-var②\">substitute</a> them as well."
+        },
+        {
+          "html": "Otherwise,\n\t\t\tthe property containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var③④\">var()</a> function is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#invalid-at-computed-value-time\" id=\"ref-for-invalid-at-computed-value-time④\">invalid at computed-value time</a>."
+        }
+      ]
+    },
+    {
+      "name": "invalid at computed-value time",
+      "href": "https://drafts.csswg.org/css-variables-1/#invalid-at-computed-value-time",
+      "html": "A declaration can be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invalid-at-computed-value-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invalid at computed-value time</dfn> if it contains a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var④①\">var()</a> that references a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#custom-property\" id=\"ref-for-custom-property③⓪\">custom property</a> with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑧\">guaranteed-invalid value</a>,\n\tas explained above,\n\tor if it uses a valid <span id=\"ref-for-custom-property③①\">custom property</span>,\n\tbut the property value,\n\tafter substituting its <span class=\"css\" id=\"ref-for-funcdef-var④②\">var()</span> functions,\n\tis invalid.\n\tWhen this happens,\n\tthe computed value is one of the following\n\tdepending on the property’s type:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "The property is a non-registered custom property",
+              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑨\">guaranteed-invalid value</a>.</p>"
+            },
+            {
+              "case": "The property is a registered custom property with universal syntax",
+              "html": "<p>The computed value is the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value⑨\">guaranteed-invalid value</a>.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "<p>Either the property’s inherited value\nor its initial value\ndepending on whether the property is inherited or not, respectively,\nas if the property’s value had been specified as the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-cascade-5/#valdef-all-unset\" id=\"ref-for-valdef-all-unset\">unset</a> keyword.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

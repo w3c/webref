@@ -1,0 +1,92 @@
+{
+  "spec": {
+    "title": "HTMLVideoElement.requestVideoFrameCallback()",
+    "url": "https://wicg.github.io/video-rvfc/"
+  },
+  "algorithms": [
+    {
+      "name": "HTMLVideoElement/requestVideoFrameCallback(callback)",
+      "href": "https://wicg.github.io/video-rvfc/#dom-htmlvideoelement-requestvideoframecallback",
+      "html": "When <code>requestVideoFrameCallback</code> is called, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>video</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement③\">HTMLVideoElement</a></code> on which <code>requestVideoFrameCallback</code> is\n  invoked.</p>"
+        },
+        {
+          "html": "<p>Increment <var>video</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-node-ownerdocument\" id=\"ref-for-dom-node-ownerdocument\">ownerDocument</a></code>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#video-frame-request-callback-identifier\" id=\"ref-for-video-frame-request-callback-identifier\">video frame request callback identifier</a> by one.</p>"
+        },
+        {
+          "html": "<p>Let <var>callbackId</var> be <var>video</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-node-ownerdocument\" id=\"ref-for-dom-node-ownerdocument①\">ownerDocument</a></code>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#video-frame-request-callback-identifier\" id=\"ref-for-video-frame-request-callback-identifier①\">video frame request callback identifier</a></p>"
+        },
+        {
+          "html": "<p>Append <var>callback</var> to <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks\">list of video frame request callbacks</a>, associated with <var>callbackId</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>callbackId</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLVideoElement/cancelVideoFrameCallback(handle)",
+      "href": "https://wicg.github.io/video-rvfc/#dom-htmlvideoelement-cancelvideoframecallback",
+      "html": "When <code>cancelVideoFrameCallback</code> is called, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>video</var> be the target <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement④\">HTMLVideoElement</a></code> object on which <code>cancelVideoFrameCallback</code> is invoked.</p>"
+        },
+        {
+          "html": "<p>Find the entry in <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks①\">list of video frame request callbacks</a> that is associated with the value <var>handle</var>.</p>"
+        },
+        {
+          "html": "<p>If there is such an entry, set its <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#canceled\" id=\"ref-for-canceled\">canceled</a> boolean to <code>true</code> and remove it from <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks②\">list of video frame request callbacks</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "run the video frame request callbacks",
+      "href": "https://wicg.github.io/video-rvfc/#run-the-video-frame-request-callbacks",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-video-frame-request-callbacks\">run the video frame request callbacks</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement⑥\">HTMLVideoElement</a></code> <var>video</var> with a timestamp <var>now</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks③\">list of video frame request callbacks</a> is empty, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>metadata</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/video-rvfc/#dictdef-videoframecallbackmetadata\" id=\"ref-for-dictdef-videoframecallbackmetadata②\">VideoFrameCallbackMetadata</a></code> dictionary built from <var>video</var>’s latest presented frame.</p>"
+        },
+        {
+          "html": "<p>Let <var>presentedFrames</var> be the value of <var>metadata</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/video-rvfc/#dom-videoframecallbackmetadata-presentedframes\" id=\"ref-for-dom-videoframecallbackmetadata-presentedframes②\">presentedFrames</a></code> field.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#last-presented-frame-indentifier\" id=\"ref-for-last-presented-frame-indentifier\">last presented frame indentifier</a> is equal to <var>presentedFrames</var>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#last-presented-frame-indentifier\" id=\"ref-for-last-presented-frame-indentifier①\">last presented frame indentifier</a> to <var>presentedFrames</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>callbacks</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks④\">list of video frame request callbacks</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks⑤\">list of video frame request callbacks</a> to be empty.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-video-frame-request-callbacks\">run the video frame request callbacks</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement⑥\">HTMLVideoElement</a></code> <var>video</var> with a timestamp <var>now</var>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the entry’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#canceled\" id=\"ref-for-canceled①\">canceled</a> boolean is <code>true</code>, continue to the next entry.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> the callback, passing <var>now</var> and <var>metadata</var> as arguments</p>"
+            },
+            {
+              "html": "<p>If an exception is thrown, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception\">report the exception</a>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

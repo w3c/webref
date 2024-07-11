@@ -1,0 +1,104 @@
+{
+  "spec": {
+    "title": "Vibration API (Second Edition)",
+    "url": "https://w3c.github.io/vibration/"
+  },
+  "algorithms": [
+    {
+      "name": "processing vibration patterns",
+      "href": "https://w3c.github.io/vibration/#dfn-processing-vibration-patterns",
+      "html": "The rules for <dfn id=\"dfn-processing-vibration-patterns\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">processing vibration patterns</dfn> are as given in\n        the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>pattern</var> be the first method argument of the\n        <code><a href=\"https://w3c.github.io/vibration/#dom-navigator-vibrate\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-navigator-vibrate-2\"><code>vibrate</code></a>()</code> method."
+        },
+        {
+          "html": "Let <var>valid pattern</var> be the result of passing\n        <var>pattern</var> to <a href=\"https://w3c.github.io/vibration/#dfn-validate-and-normalize\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-validate-and-normalize-1\">validate and normalize</a>."
+        },
+        {
+          "html": "If the result of running the steps to <a href=\"https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state\">\n          determine the visibility state</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vibration/#bib-page-visibility-2\" title=\"Page Visibility Level 2\">PAGE-VISIBILITY-2</a></cite>] is not\n          <code>visible</code>, then return false and terminate these steps."
+        },
+        {
+          "html": "<a href=\"https://w3c.github.io/vibration/#dfn-perform-vibration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-perform-vibration-1\">Perform vibration</a> with <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object\n          </a> and <var>valid pattern</var>."
+        }
+      ]
+    },
+    {
+      "name": "validate and normalize",
+      "href": "https://w3c.github.io/vibration/#dfn-validate-and-normalize",
+      "html": "To <dfn id=\"dfn-validate-and-normalize\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate and normalize</dfn> a <a href=\"https://w3c.github.io/vibration/#dfn-vibration-pattern\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-vibration-pattern-1\">vibration pattern</a> given\n        <var>pattern</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>pattern</var> is a list, proceed to the next step.\n        Otherwise run the following substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>list</var> be an initially empty list, and add\n            <var>pattern</var> to <var>list</var>."
+            },
+            {
+              "html": "Set <var>pattern</var> to <var>list</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>max length</var> be an implementation-dependent maximum\n        length of <var>pattern</var>."
+        },
+        {
+          "html": "If the length of <var>pattern</var> is greater than <var>max\n        length</var>, truncate <var>pattern</var>, leaving only the first <var>\n          max length</var> entries."
+        },
+        {
+          "html": "Let <var>max duration</var> be an implementation-dependent maximum\n        duration for a single vibration entry in a <var>pattern</var>."
+        },
+        {
+          "html": "For each entry in <var>pattern</var> whose value is greater than\n        <var>max duration</var>, set the entry's value to <var>max\n        duration</var>."
+        },
+        {
+          "html": "Return <var>pattern</var>."
+        }
+      ]
+    },
+    {
+      "name": "perform vibration",
+      "href": "https://w3c.github.io/vibration/#dfn-perform-vibration",
+      "html": "To <dfn id=\"dfn-perform-vibration\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">perform vibration</dfn> using a <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"global-object\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a>\n        <var>global</var> and a <a href=\"https://w3c.github.io/vibration/#dfn-vibration-pattern\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-vibration-pattern-2\">vibration pattern</a> <var>pattern</var>,\n        run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>global</var> does not have <a data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"sticky-activation\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#sticky-activation\">sticky activation</a>,\n          return false and terminate these steps."
+        },
+        {
+          "html": "An implementation <em class=\"rfc2119\">MAY</em> return false and terminate these steps."
+        },
+        {
+          "html": "If another instance of the <a href=\"https://w3c.github.io/vibration/#dfn-perform-vibration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-perform-vibration-2\">perform vibration</a> algorithm is\n        already running, run the following substeps:",
+          "rationale": "abort",
+          "steps": [
+            {
+              "html": "Abort that other instance of the <a href=\"https://w3c.github.io/vibration/#dfn-perform-vibration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-perform-vibration-3\">perform vibration</a>\n            algorithm, if any."
+            },
+            {
+              "html": "If <var>pattern</var> is an empty list, contains a single entry\n            with a value of 0, or if the device is unable to vibrate, then\n            return true and terminate these steps."
+            }
+          ]
+        },
+        {
+          "html": "Return true, and then continue running these steps asynchronously."
+        },
+        {
+          "html": "For each <var>time</var> in <var>pattern</var>, run the following\n        substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the index of <var>time</var> is even (the first entry has\n            index 0), vibrate the device for <var>time</var> milliseconds."
+            },
+            {
+              "html": "Otherwise wait for <var>time</var> milliseconds."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

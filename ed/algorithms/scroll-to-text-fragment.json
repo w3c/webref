@@ -1,0 +1,1561 @@
+{
+  "spec": {
+    "title": "URL Fragment Text Directives",
+    "url": "https://wicg.github.io/scroll-to-text-fragment/"
+  },
+  "algorithms": [
+    {
+      "name": "remove the fragment directive",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#remove-the-fragment-directive",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"remove-the-fragment-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove the fragment directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>url</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>raw fragment</var> be equal to <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①\">fragment</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fragment directive</var> be null.</p>"
+        },
+        {
+          "html": "If <var>raw fragment</var> is non-null and contains the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#fragment-directive-delimiter\" id=\"ref-for-fragment-directive-delimiter②\">fragment directive delimiter</a> as a\n  substring:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>position</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> pointing to the first code\n  point of the first instance, if one exists, of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#fragment-directive-delimiter\" id=\"ref-for-fragment-directive-delimiter③\">fragment directive delimiter</a> in <var>raw fragment</var>, or past the end of <var>raw fragment</var> otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>new fragment</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-substring-by-positions\" id=\"ref-for-code-point-substring-by-positions\">code point substring by positions</a> of <var>raw fragment</var> from\n  the start of <var>raw fragment</var> to <var>position</var>.</p>"
+            },
+            {
+              "html": "<p>Advance <var>position</var> by the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length\">code point length</a> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#fragment-directive-delimiter\" id=\"ref-for-fragment-directive-delimiter④\">fragment directive\n  delimiter</a>.</p>"
+            },
+            {
+              "html": "If <var>position</var> does not point past the end of <var>raw fragment</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>fragment directive</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-substring-to-the-end-of-the-string\" id=\"ref-for-code-point-substring-to-the-end-of-the-string\">code point substring to the end of the string</a> <var>raw fragment</var> starting from <var>position</var></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment②\">fragment</a> to <var>new fragment</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>fragment directive</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To navigate a navigable navigable to a URL <var>url</var>...:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Set navigable’s ongoing navigation to navigationId."
+        },
+        {
+          "html": "<p>If url’s scheme is \"javascript\", then...</p>"
+        },
+        {
+          "html": "In parallel, run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "If url is about:blank, then set documentState’s origin to documentState’s initiator origin."
+            },
+            {
+              "html": "<p>Otherwise, if url is about:srcdoc, then set documentState’s origin to navigable’s parent’s active document’s origin.</p>"
+            },
+            {
+              "html": "<strike>Let historyEntry be a new session history entry, with its URL set to url and\nits document state set to documentState.</strike>"
+            },
+            {
+              "html": "<span class=\"diff\">Let <var>fragment directive</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#remove-the-fragment-directive\" id=\"ref-for-remove-the-fragment-directive\">remove the\nfragment directive</a> on <var>url</var>.</span>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Let <var>directive state</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state\" id=\"ref-for-directive-state⑤\">directive\nstate</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value\">value</a> set to <var>fragment directive</var>.</span></p>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Let historyEntry be a new session history entry, with its URL\nset to <var>url</var>, its document state set to documentState, and its <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state\">directive state</a> set to <var>directive state</var>.</span></p>"
+            },
+            {
+              "html": "<p>Let navigationParams be null.</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To navigate to a fragment given navigable <var>navigable</var>, ...:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p><span class=\"diff\">Let <var>directive state</var> be navigable’s active session history\nentry’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state①\">directive state</a>.</span></p>"
+        },
+        {
+          "html": "<p><span class=\"diff\">Let <var>fragment directive</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#remove-the-fragment-directive\" id=\"ref-for-remove-the-fragment-directive①\">remove the fragment directive</a> on <var>url</var>.</span></p>"
+        },
+        {
+          "html": "<span class=\"diff\">If <var>fragment directive</var> is not null:</span>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p><span class=\"diff\">Let <var>directive state</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state\" id=\"ref-for-directive-state⑥\">directive state</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value①\">value</a> set to <var>fragment directive</var>.</span></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let historyEntry be a new session history entry, with</p>\n       <ul>\n        <li data-md=\"\">\n         <p>URL url</p>\n        </li><li data-md=\"\">\n         <p>document state navigable’s active session history entry’s document state</p>\n        </li><li data-md=\"\">\n         <p>scroll restoration mode navigable’s active session history entry’s scroll restoration\nmode</p>\n        </li><li data-md=\"\">\n         <p><span class=\"diff\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state②\">directive state</a> <var>directive state</var></span></p>\n       </li></ul>"
+        },
+        {
+          "html": "<p>Let entryToReplace be navigable’s active session history entry if historyHandling is\n\"replace\", otherwise null.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        }
+      ]
+    },
+    {
+      "html": "The URL and history update steps, given a Document <var>document</var>, ...:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be <var>document</var>’s node navigable.</p>"
+        },
+        {
+          "html": "<p>Let <var>activeEntry</var> be <var>navigable</var>’s active session history entry.</p>"
+        },
+        {
+          "html": "<p><span class=\"diff\">Let <var>fragment directive</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#remove-the-fragment-directive\" id=\"ref-for-remove-the-fragment-directive②\">remove the\nfragment directive</a> on <var>newUrl</var>.</span></p>"
+        },
+        {
+          "html": "<p>Let <var>historyEntry</var> be a new session history entry, with</p>\n       <ul>\n        <li data-md=\"\">\n         <p>URL <var>newUrl</var></p>\n        </li><li data-md=\"\">\n         <p>...</p>\n        </li><li data-md=\"\">\n         <p><span class=\"diff\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state③\">directive state</a> <var>activeEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state④\">directive\nstate</a></span></p>\n       </li></ul>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s is initial about:blank is true, then set historyHandling to \"replace\".</p>"
+        },
+        {
+          "html": "If historyHandling is \"push\", then:",
+          "rationale": "increment",
+          "steps": [
+            {
+              "html": "<p>Increment document’s history object’s index.</p>"
+            },
+            {
+              "html": "<p>Set document’s history object’s length to its index + 1.</p>"
+            },
+            {
+              "html": "<span class=\"diff\">If <var>newUrl</var> does not equal <var>activeEntry</var>’s URL with exclude\nfragments set to true OR <var>fragment directive</var> is not null, then:</span>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p><span class=\"diff\">Let <var>historyEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state⑤\">directive state</a> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state\" id=\"ref-for-directive-state⑦\">directive state</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value②\">value</a> set to <var>fragment\ndirective</var>.</span></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><span class=\"diff\">Otherwise, if <var>fragment directive</var> is not null, set <var>historyEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state⑥\">directive state</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value③\">value</a> to <var>fragment\ndirective</var>.</span></p>"
+        },
+        {
+          "html": "<p>If serializedData is not null, then restore the history object state given document and\nnewEntry.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To create navigation params by fetching given a session history entry <var>entry</var>, ...:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: this is running in parallel.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Let currentURL be request’s current URL."
+        },
+        {
+          "html": "<p>Let commitEarlyHints be null.</p>"
+        },
+        {
+          "html": "While true:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If request’s reserved client is not null and currentURL’s origin is not the same as request’s reserved client’s creation URL’s origin, then:</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "Set currentURL to <var>locationURL</var>."
+            },
+            {
+              "html": "<p><span class=\"diff\">Let <var>fragment directive</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#remove-the-fragment-directive\" id=\"ref-for-remove-the-fragment-directive③\">remove the fragment directive</a> on <var>locationURL</var>.</span></p>"
+            },
+            {
+              "html": "<strike class=\"diff\">Set <var>entry</var>’s URL to currentURL.</strike>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Set <var>entry</var>’s URL to <var>locationURL</var>.</span></p>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state⑦\">directive state</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value④\">value</a> to <var>fragment directive</var>.</span></p>"
+            },
+            {
+              "html": "<p>If <var>locationURL</var> is a URL whose scheme is not a fetch scheme, then return a new non-fetch\nscheme navigation params, with initiator origin request’s current URL’s origin</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To update document for history step application given a Document <var>document</var>, a session history entry <var>entry</var>,...",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Set <var>document</var>’s history object’s length to scriptHistoryLength"
+        },
+        {
+          "html": "If <var>documentsEntryChanged</var> is true, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>oldURL</var> be <var>document</var>’s latest entry’s URL.</p>"
+            },
+            {
+              "html": "If <var>document</var>’s latest entry’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state⑨\">directive state</a> is not <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state①⓪\">directive state</a> then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>fragment directive</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#she-directive-state\" id=\"ref-for-she-directive-state①①\">directive state</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#directive-state-value\" id=\"ref-for-directive-state-value⑤\">value</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives\">pending text directives</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#parse-the-fragment-directive\" id=\"ref-for-parse-the-fragment-directive\">parsing</a> <var>fragment directive</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>document</var>’s latest entry to <var>entry</var></p>"
+        },
+        {
+          "html": "<p>...</p>"
+        }
+      ]
+    },
+    {
+      "name": "percent-decode a text directive term",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"percent-decode-a-text-directive-term\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">percent-decode a text directive term</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an input <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>term</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>term</var> is null, return null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>term</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①\">ASCII string</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>decoded bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-decode\" id=\"ref-for-string-percent-decode\">percent-decoding</a> <var>term</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom\">UTF-8 decode without BOM</a> on <var>decoded\nbytes</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a text directive",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#parse-a-text-directive",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>text\n  directive value</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>prefix</var>, <var>suffix</var>, <var>start</var>, <var>end</var>, each be null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>text directive value</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string②\">ASCII string</a> with no code points in the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-percent-encode-set\" id=\"ref-for-fragment-percent-encode-set\">fragment percent-encode set</a> and no instances of\nU+0026 (&amp;).</p>"
+        },
+        {
+          "html": "<p>Let <var>tokens</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">strings</a> that result from <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split\">strictly splitting</a> <var>text directive value</var> on U+002C (,).</p>"
+        },
+        {
+          "html": "<p>If <var>tokens</var> has <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> less than 1 or greater than 4, return null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>text\n  directive value</var>, run these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>prefix</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-substring\" id=\"ref-for-code-point-substring\">substring</a> of <var>tokens</var>[0]\nfrom 0 with length <var>tokens</var>[0]'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length①\">length</a> - 1.</p>"
+            },
+            {
+              "html": "<p>Remove the first item of <var>tokens</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>prefix</var> is the empty string or contains any instances of U+002D (-), return null.</p>"
+            },
+            {
+              "html": "<p>If <var>tokens</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, return null.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>text\n  directive value</var>, run these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>suffix</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-substring-to-the-end-of-the-string\" id=\"ref-for-code-point-substring-to-the-end-of-the-string①\">substring</a> of the last item of <var>tokens</var> from 1 to the end of the string.</p>"
+            },
+            {
+              "html": "<p>Remove the last item of <var>tokens</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>suffix</var> is the empty string or contains any instances of U+002D (-), return null.</p>"
+            },
+            {
+              "html": "<p>If <var>tokens</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>, return null.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>tokens</var> has <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> greater than 2, return null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>tokens</var> has <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> 1 or 2.</p>"
+        },
+        {
+          "html": "<p>Set <var>start</var> to the first item in <var>tokens</var>.</p>"
+        },
+        {
+          "html": "<p>Remove the first item in <var>tokens</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>start</var> is the empty string or contains any instances of U+002D (-), return null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>text\n  directive value</var>, run these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>end</var> to the first item in <var>tokens</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>end</var> is the empty string or contains any instances of U+002D (-), return null.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive③\">text directive</a>, with</p>\n      <dl class=\"props\">\n       <dt><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-prefix\" id=\"ref-for-text-directive-prefix\">prefix</a>\n       </dt><dd>The <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term\" id=\"ref-for-percent-decode-a-text-directive-term\">percent-decoding</a> of <var>prefix</var>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-start\" id=\"ref-for-text-directive-start①\">start</a>\n       </dt><dd>The <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term\" id=\"ref-for-percent-decode-a-text-directive-term①\">percent-decoding</a> of <var>start</var>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end\">end</a>\n       </dt><dd>The <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term\" id=\"ref-for-percent-decode-a-text-directive-term②\">percent-decoding</a> of <var>end</var>\n       </dd><dt><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix\">suffix</a>\n       </dt><dd>The <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term\" id=\"ref-for-percent-decode-a-text-directive-term③\">percent-decoding</a> of <var>suffix</var>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "parse the fragment directive",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#parse-the-fragment-directive",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-the-fragment-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse the fragment directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, an an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> <var>fragment\ndirective</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>directives</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split①\">strictly\n  splitting</a> <var>fragment directive</var> on U+0026 (&amp;).</p>"
+        },
+        {
+          "html": "<p>Let <var>output</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive⑤\">text directives</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-the-fragment-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse the fragment directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, an an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> <var>fragment\ndirective</var>, run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>directive</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-starts-with\" id=\"ref-for-string-starts-with①\">start with</a> \"<code>text=</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>text directive value</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-substring-to-the-end-of-the-string\" id=\"ref-for-code-point-substring-to-the-end-of-the-string②\">code point substring</a> from 5 to the end of <var>directive</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>parsed text directive</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#parse-a-text-directive\" id=\"ref-for-parse-a-text-directive\">parsing</a> <var>text\n  directive value</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>parsed text directive</var> is non-null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> it to <var>output</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>output</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For an HTML document <var>document</var>, the following processing model must be followed to determine\n  its indicated part:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p><span class=\"diff\">Let <var>text directives</var> be the document’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives④\">pending text directives</a>. </span></p>"
+        },
+        {
+          "html": "<span class=\"diff\">If <var>text directives</var> is non-null then:</span>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p><span class=\"diff\">Let <var>ranges</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> that is the result of running\n  the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#invoke-text-directives\" id=\"ref-for-invoke-text-directives\">invoke text directives</a> steps with <var>text directives</var> and the document.</span></p>"
+            },
+            {
+              "html": "<span class=\"diff\">If <var>ranges</var> is non-empty, then:</span>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p><span class=\"diff\">Let <var>firstRange</var> be the first item of <var>ranges</var>.</span></p>"
+                },
+                {
+                  "html": "<p><span class=\"diff\">Visually indicate each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range③\">range</a> in <var>ranges</var> in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> way. The indication must not be observable from author\n  script. See <a href=\"https://wicg.github.io/scroll-to-text-fragment/#indicating-the-text-match\">§ 3.7 Indicating The Text Match</a>.</span></p>"
+                },
+                {
+                  "html": "<p><span class=\"diff\">Set <var>firstRange</var> as <var>document</var>’s indicated part, return.</span></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let fragment be document’s URL’s fragment.</p>"
+        },
+        {
+          "html": "<p>If fragment is the empty string, then return the special value top of the document.</p>"
+        },
+        {
+          "html": "<p>Let potentialIndicatedElement be the result of finding a potential indicated element given\n  document and fragment.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If document’s indicated part is null, then set document’s target element to null.</p>"
+        },
+        {
+          "html": "Otherwise, if document’s indicated part is top of the document, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set document’s target element to null.</p>"
+            },
+            {
+              "html": "<p>Scroll to the beginning of the document for document.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: document’s indicated part is an element <span class=\"diff\">or it is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range⑥\">range</a>.</span></p>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Let <var>scrollTarget</var> be <var>document</var>’s indicated part.</span></p>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Let <var>target</var> be <var>scrollTarget</var>.</span></p>"
+            },
+            {
+              "html": "<span class=\"diff\">If <var>target</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range⑦\">range</a>, then:</span>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p><span class=\"diff\">Set <var>target</var> to be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#first-common-ancestor\" id=\"ref-for-first-common-ancestor\">first common ancestor</a> of <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node\">start node</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node\">end node</a>.</span></p>"
+                },
+                {
+                  "html": "<p><span class=\"diff\">While <var>target</var> is non-null and is not an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a>, set <var>target</var> to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent\">parent</a>.</span></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><span class=\"diff\">Assert: <var>target</var> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①\">element</a>.</span></p>"
+            },
+            {
+              "html": "<p>Set <var>document</var>’s target element to <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Run the ancestor details revealing algorithm on <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Run the ancestor hidden-until-found revealing algorithm on <var>target</var>.</p>"
+            },
+            {
+              "html": "<p><span class=\"diff\">Let <var>blockPosition</var> be \"center\" if <var>scrollTarget</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range⑧\">range</a>,\n  \"start\" otherwise.</span></p>"
+            },
+            {
+              "html": "<strike class=\"diff\">Scroll <var>target</var> into view, with behavior set to \"auto\", block set to\n  \"start\", and inline set to \"nearest\".</strike>"
+            },
+            {
+              "html": "<span class=\"diff\"><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">scroll a target into view</a>,\n  with <em>target</em> set to <var>scrollTarget</var>, <em>behavior</em> set to \"auto\", <em>block</em> set to <var>blockPosition</var>, and <em>inline</em> set to \"nearest\".</span> \n         <p><span class=\"diff\">Implementations MAY avoid scrolling to the target if it is\n  produced from a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive⑥\">text directive</a>.</span></p>\n        <p></p>"
+            },
+            {
+              "html": "<p>Run the focusing steps for target, with the Document’s viewport as the fallback target.</p>"
+            },
+            {
+              "html": "<p>Move the sequential focus navigation starting point to target.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To try to scroll to the fragment for a Document <var>document</var>, perform the following steps in\n  parallel:",
+      "rationale": "wait",
+      "steps": [
+        {
+          "html": "<p>Wait for an implementation-defined amount of time. (This is intended to allow the user agent\n  to optimize the user experience in the face of performance concerns.)</p>"
+        },
+        {
+          "html": "Queue a global task on the navigation and traversal task source given document’s relevant\n  global object to run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<strike class=\"diff\">If document has no parser, or its parser has stopped parsing, or the user agent\n  has reason to believe the user is no longer interested in scrolling to the fragment, then\n  abort these steps.</strike>"
+            },
+            {
+              "html": "If the user agent has reason to believe the user is no longer interested in scrolling to\n  the fragment, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p><span class=\"diff\">Set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives⑥\">pending text directives</a> to null.</span></p>"
+                },
+                {
+                  "html": "<p><span class=\"diff\">Abort these steps.</span></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><span class=\"diff\">If the document has no parser, or its parser has stopped parsing,\n  then:</span></p>\n        <p></p>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<span class=\"diff\">If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives⑦\">pending text directives</a> is not null, then:</span>",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p><span class=\"diff\">Set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives⑧\">pending text directives</a> to null.</span></p>"
+                    },
+                    {
+                      "html": "<p><span class=\"diff\"><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment-identifier\" id=\"ref-for-scroll-to-the-fragment-identifier①\">Scroll to the fragment</a> given <var>document</var>.</span></p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><span class=\"diff\">Abort these steps.</span></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Scroll to the fragment given document.</p>"
+            },
+            {
+              "html": "<p>If document’s indicated part is still null, then try to scroll to the fragment for\n  document. <span class=\"diff\">Otherwise, set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives⑨\">pending text directives</a> to\n  null.</span></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To navigate to a fragment given navigable <var>navigable</var>, ...:",
+      "rationale": "update",
+      "steps": [
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Update document for history step application given navigable’s active\ndocument, historyEntry, true, scriptHistoryIndex, and scriptHistoryLength."
+        },
+        {
+          "html": "<p>Scroll to the fragment given navigable’s active document.</p>"
+        },
+        {
+          "html": "Set <var>navigable</var>’s active document’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives①⓪\">pending text directives</a> to\nnull."
+        },
+        {
+          "html": "<p>Let traversable be navigable’s traversable navigable.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: this is running in parallel.</p>"
+        },
+        {
+          "html": "<p>Let documentResource be entry’s document state’s resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new request, with</p>\n       <dl class=\"props\">\n        <dt>url\n        </dt><dd><var>entry</var>’s URL\n        </dd><dt>...\n        </dt><dd>...\n        </dd><dt>referrer policy\n        </dt><dd><var>entry</var>’s document state’s request referrer policy\n        </dd><dt><span class=\"diff\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#request-text-directive-user-activation\" id=\"ref-for-request-text-directive-user-activation③\">text directive user activation</a></span>\n        </dt><dd><span class=\"diff\"><var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-text-directive-user-activation\" id=\"ref-for-document-text-directive-user-activation⑦\">text directive user activation</a></span>\n       </dd></dl>"
+        },
+        {
+          "html": "<p><span class=\"diff\">Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-text-directive-user-activation\" id=\"ref-for-document-text-directive-user-activation⑧\">text directive\n  user activation</a> to false.</span></p>"
+        },
+        {
+          "html": "<p>If documentResource is a POST resource, then:</p>",
+          "ignored": [
+            "..."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To create navigation params by fetching given a session history entry entry, a navigable\n  navigable, a source snapshot params sourceSnapshotParams, a target snapshot params\n  targetSnapshotParams, a string cspNavigationType, a navigation ID-or-null navigationId, a\n  NavigationTimingType navTimingType, <span class=\"diff\">and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#user-navigation-involvement\" id=\"ref-for-user-navigation-involvement①\">user navigation\n  involvement</a> <var>user involvement</var></span>, perform the following steps. They return a navigation params,\n  a non-fetch scheme navigation params, or null.",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: this is running in parallel.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Let resultPolicyContainer be the result of determining navigation params policy container given\n  response’s URL, entry’s document state’s history policy container, sourceSnapshotParams’s source\n  policy container, null, and responsePolicyContainer."
+        },
+        {
+          "html": "<p>If navigable’s container is an iframe, and response’s timing allow passed flag is set, then\n  set container’s pending resource-timing start time to null.</p>"
+        },
+        {
+          "html": "<p>Return a new navigation params, with</p>\n       <dl>\n        <dt>id\n        </dt><dd>navigationId\n        </dd><dt>...\n        </dt><dd>...\n        </dd><dt>about base URL\n        </dt><dd>entry’s document state’s about base URL\n        </dd><dt class=\"diff\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#navigation-params-user-involvement\" id=\"ref-for-navigation-params-user-involvement①\">user involvement</a>\n        </dt><dd class=\"diff\"><var>user involvement</var>\n       </dd></dl>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "<p>Process link headers given document, navigationParams’s response, and \"pre-media\".</p>"
+        },
+        {
+          "html": "<div class=\"diff\">\n        Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-text-directive-user-activation\" id=\"ref-for-document-text-directive-user-activation①⓪\">text directive user activation</a> to true if any of the following\nconditions hold, false otherwise: \n        <ul>\n         <li data-md=\"\">\n          <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#navigation-params-user-involvement\" id=\"ref-for-navigation-params-user-involvement②\">user involvement</a> is \"<code>activation</code>\";</p>\n         </li><li data-md=\"\">\n          <p><var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#navigation-params-user-involvement\" id=\"ref-for-navigation-params-user-involvement③\">user involvement</a> is \"<code>browser UI</code>\"; or</p>\n         </li><li data-md=\"\">\n          <p><var>navigationParams</var>’s <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-request\">request</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#request-text-directive-user-activation\" id=\"ref-for-request-text-directive-user-activation④\">text directive user activation</a> is true.</p>\n          \n        </li></ul>\n       </div>"
+        },
+        {
+          "html": "<p>Return <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "check if a text directive can be scrolled",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#check-if-a-text-directive-can-be-scrolled",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-if-a-text-directive-can-be-scrolled\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check if a text directive can be scrolled</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>; given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑦\">Document</a> <var>document</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a>-or-null <var>initiator origin</var>, and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#user-navigation-involvement\" id=\"ref-for-user-navigation-involvement②\">user navigation involvement</a>-or-null <var>user involvement</var>, follow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives\" id=\"ref-for-document-pending-text-directives①①\">pending text directives</a> field is null or empty, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>is user involved</var> be true if: <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-text-directive-user-activation\" id=\"ref-for-document-text-directive-user-activation①②\">text directive user activation</a> is\ntrue, or <var>user involvement</var> is one of \"<code>activation</code>\" or \"<code>browser\nUI</code>\"; false otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#document-text-directive-user-activation\" id=\"ref-for-document-text-directive-user-activation①③\">text directive user activation</a> to false.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"ref-for-concept-document-content-type\">content type</a> is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-allowing-mime-type\" id=\"ref-for-text-directive-allowing-mime-type\">text directive allowing MIME type</a>,\nreturn false.</p>"
+        },
+        {
+          "html": "<p>If <var>user involvement</var> is \"<code>browser UI</code>\", return true.</p>"
+        },
+        {
+          "html": "<p>If <var>is user involved</var> is false, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a> has a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-parent\" id=\"ref-for-nav-parent\">parent</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>initiator origin</var> is non-null and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>initiator origin</var>, return true.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#tlbc-group\" id=\"ref-for-tlbc-group\">group</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context-set\" id=\"ref-for-browsing-context-set\">browsing context set</a> has length 1, return true.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To scroll to the fragment given a Document <var>document</var> <span class=\"diff\">and boolean <var>allow text\n  directive scroll</var></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If document’s indicated part is null, then set document’s target element to null.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: document’s indicated part is an element or it is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range⑨\">range</a>.</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "If <var>target</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range①⓪\">range</a>, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p><span class=\"diff\">If <var>allow text directive scroll</var> is false, return.</span></p>"
+                },
+                {
+                  "html": "<p>Set <var>target</var> to be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#first-common-ancestor\" id=\"ref-for-first-common-ancestor①\">first common ancestor</a> of <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node①\">start node</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node①\">end node</a>.</p>"
+                },
+                {
+                  "html": "<p>...</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To try to scroll to the fragment for a Document <var>document</var>, <span class=\"diff\">with boolean <var>allow text directive scroll</var></span>, perform the following steps in parallel:",
+      "rationale": "wait",
+      "steps": [
+        {
+          "html": "<p>Wait for an implementation-defined amount of time. (This is intended to allow the user agent\n  to optimize the user experience in the face of performance concerns.)</p>"
+        },
+        {
+          "html": "Queue a global task on the navigation and traversal task source given document’s relevant\n  global object to run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If document has no parser, or its parser has stopped parsing, or the user\n  agent has reason to believe the user is no longer interested in scrolling to\n  the fragment, then abort these steps.</p>"
+            },
+            {
+              "html": "<p>Scroll to the fragment given <var>document</var> <span class=\"diff\">and <var>allow text directive\n  scroll</var>.</span></p>"
+            },
+            {
+              "html": "<p>If document’s indicated part is still null, then try to scroll to the fragment for <var>document</var><span class=\"diff\"> and <var>allow text directive scroll</var></span>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To update document for history step application given a Document document, a session history\n  entry entry, a boolean doNotReactivate, integers scriptHistoryLength and scriptHistoryIndex,\n  an optional list of session history entries entriesForNavigationAPI, <span class=\"diff\">and a\n  boolean <var>allow text directive scroll</var></span>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let documentIsNew be true if <var>document</var>’s latest entry is null; otherwise false.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "If documentsEntryChanged is true, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let oldURL be document’s latest entry’s URL.</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            }
+          ]
+        },
+        {
+          "html": "If documentIsNew is true, then:",
+          "rationale": "try",
+          "steps": [
+            {
+              "html": "<p>Try to scroll to the fragment with <var>document</var> <span class=\"diff\">and <var>allow text\n  directive scroll</var>.</span></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To apply the history step given a non-negative integer step to a traversable navigable\ntraversable, with boolean checkForCancelation, source snapshot params-or-null\nsourceSnapshotParams, navigable-or-null initiatorToCheck, user navigation involvement-or-null\nuserInvolvementForNavigateEvents, <span class=\"diff\">and boolean <var>allow text directive scroll</var> (default false)</span> perform the following steps. They\nreturn \"initiator-disallowed\", \"canceled-by-beforeunload\", \"canceled-by-navigate\", or \"applied\".",
+      "rationale": "while",
+      "steps": [
+        {
+          "html": "While completedChangeJobs does not equal totalChangeJobs:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "Queue a global task on the navigation and traversal task source given\nnavigable’s active window to run the steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If changingNavigableContinuation’s update-only is false, then:",
+                  "rationale": "activate",
+                  "steps": [
+                    {
+                      "html": "<p>...</p>"
+                    },
+                    {
+                      "html": "<p>Activate history entry <var>targetEntry</var> for navigable.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let updateDocument be an algorithm step which performs update document for history\nstep application given <var>targetEntry</var>’s document, <var>targetEntry</var>,\nchangingNavigableContinuation’s update-only, scriptHistoryLength,\nscriptHistoryIndex, entriesForNavigationAPI, <span class=\"diff\">and <var>allow text\ndirective scroll</var></span></p>"
+                },
+                {
+                  "html": "<p>If <var>targetEntry</var>’s document is equal to displayedDocument, then perform\nupdateDocument.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let totalNonchangingJobs be the size of nonchangingNavigablesThatStillNeedUpdates.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To finalize a cross-document navigation given a navigable navigable, history handling behavior\nhistoryHandling, session history entry historyEntry, <span class=\"diff\"> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#user-navigation-involvement\" id=\"ref-for-user-navigation-involvement③\">user\nnavigation involvement</a> <var>user involvement</var> (default \"none\")</span>:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: this is running on navigable’s traversable navigable’s session history traversal queue.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "<span class=\"diff\">Let <var>allow text directive scroll</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#check-if-a-text-directive-can-be-scrolled\" id=\"ref-for-check-if-a-text-directive-can-be-scrolled\">checking if a text directive can be scrolled</a>, given <var>historyEntry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document\" id=\"ref-for-she-document\">document</a>, <var>historyEntry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#she-document-state\" id=\"ref-for-she-document-state\">document state</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#document-state-initiator-origin\" id=\"ref-for-document-state-initiator-origin\">initiator origin</a>, and <var>user involvement</var></span>"
+        },
+        {
+          "html": "<p>Apply the push/replace history step targetStep to traversable, <span class=\"diff\">with <var>allow\ntext directive scroll</var>.</span></p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "in parallel",
+      "steps": [
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": ". In parallel, run these steps:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": ". Attempt to populate the history entry’s document for historyEntry, given\nnavigable, \"navigate\", sourceSnapshotParams, targetSnapshotParams, navigationId,\nnavigationParams, cspNavigationType, with allowPOST set to true and completionSteps set to\nthe following step:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append session history traversal steps to navigable’s traversable to finalize a\ncross-document navigation given navigable, historyHandling, historyEntry, <span class=\"diff\">and <var>userInvolvement</var></span>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To navigate to a fragment given a navigable navigable, a URL url, a history handling behavior\nhistoryHandling, a user navigation involvement <var>userInvolvement</var>, a serialized state-or-null\nnavigationAPIState, navigation ID navigationId, <span class=\"diff\">an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>initiator\norigin</var></span>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let navigation be <var>navigable</var>’s active window’s navigation API.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Update document for history step application given navigable’s active document, historyEntry, true, scriptHistoryIndex, and scriptHistoryLength."
+        },
+        {
+          "html": "<p>Update the navigation API entries for a same-document navigation given navigation, historyEntry, and historyHandling.</p>"
+        },
+        {
+          "html": "<p><span class=\"diff\">Let <var>allow text directive scroll</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#check-if-a-text-directive-can-be-scrolled\" id=\"ref-for-check-if-a-text-directive-can-be-scrolled①\">checking if a text directive can be scrolled</a>, given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document④\">active document</a>, <var>initiator origin</var>, and <var>userInvolvement</var></span></p>"
+        },
+        {
+          "html": "<p>Scroll to the fragment given <var>navigable</var>’s active document<span class=\"diff\">, and <var>allow text\ndirective scroll</var>.</span></p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the navigation must be a replace given url and navigable’s active document, then set historyHandling to \"replace\".</p>"
+        },
+        {
+          "html": "then:",
+          "rationale": "navigate",
+          "steps": [
+            {
+              "html": "<p>Navigate to a fragment given navigable, url, historyHandling, userInvolvement,\nnavigationAPIState, navigationId, <span class=\"diff\">and <var> initiatorOriginSnapshot</var></span></p>"
+            },
+            {
+              "html": "<p>Let navigation be <var>navigable</var>’s active window’s navigation API.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To restore persisted state from a session history entry <var>entry</var> <span class=\"diff\">, and boolean <var>suppressScrolling</var></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If entry’s scroll restoration mode is \"auto\", <span class=\"diff\"><var>suppressScrolling</var> is false,</span> and entry’s document’s relevant global object’s navigation API’s suppress\nnormal scroll restoration during ongoing navigation is false, then restore scroll position\ndata given entry.</p>"
+        },
+        {
+          "html": "<p>...</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>...</p>"
+        },
+        {
+          "html": "Set document’s history object’s length to scriptHistoryLength."
+        },
+        {
+          "html": "<p><span class=\"diff\">Let <var>scrollingBlockedInNewDocument</var> be the result of <a href=\"https://wicg.github.io/document-policy#algo-get-policy-value\">getting the policy\n  value</a> for <code>force-load-at-top</code> for <var>document</var>.</span></p>"
+        },
+        {
+          "html": "If documentsEntryChanged is true, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let oldURL be document’s latest entry’s URL.</p>"
+            },
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "If documentIsNew is false, then:",
+              "rationale": "update",
+              "steps": [
+                {
+                  "html": "<p>Update the navigation API entries for a same-document navigation given navigation,\n  entry, and \"traverse\".</p>"
+                },
+                {
+                  "html": "<p>Fire an event named popstate...</p>"
+                },
+                {
+                  "html": "<p>Restore persisted state given entry <span class=\"diff\">and <var>suppressScrolling</var> set to false.</span></p>"
+                },
+                {
+                  "html": "<p>If oldURL’s fragment is not equal to...</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise,",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: entriesForNavigationAPI is given.</p>"
+                },
+                {
+                  "html": "<p>Restore persisted state given entry <span class=\"diff\">and <var>scrollingBlockedInNewDocument</var>.</span></p>"
+                },
+                {
+                  "html": "<p>Initialize the navigation API entries for a new document given navigation,\n  entriesForNavigationAPI, and entry.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If documentIsNew is true, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p><span class=\"diff\">If <var>scrollingBlockedInNewDocument</var> is false,</span> try to scroll to\n  the fragment for document.</p>"
+            },
+            {
+              "html": "<p>At this point scripts may run for the newly-created document document.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, if documentsEntryChanged is false and doNotReactivate is false, then:</p>",
+          "ignored": [
+            "..."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "first common ancestor",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#first-common-ancestor",
+      "html": "To find the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"first-common-ancestor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">first common ancestor</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of two nodes <var>nodeA</var> and <var>nodeB</var>,\nfollow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>commonAncestor</var> be <var>nodeA</var>.</p>"
+        },
+        {
+          "html": "<p>While <var>commonAncestor</var> is non-null and is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor\" id=\"ref-for-concept-shadow-including-inclusive-ancestor\">shadow-including inclusive\nancestor</a> of <var>nodeB</var>, let <var>commonAncestor</var> be <var>commonAncestor</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#shadow-including-parent\" id=\"ref-for-shadow-including-parent\">shadow-including parent</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>commonAncestor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "shadow-including parent",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#shadow-including-parent",
+      "html": "To find the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"shadow-including-parent\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">shadow-including parent</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of <var>node</var> follow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>node</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root\">shadow root</a>, return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"ref-for-concept-documentfragment-host\">host</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent①\">parent</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "invoke text directives",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#invoke-text-directives",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-text-directives\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke text directives</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given as input a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①①\">text\n  directives</a> <var>text directives</var> and a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> <var>document</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>ranges</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range①⑥\">ranges</a>, initially empty.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-text-directives\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke text directives</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given as input a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①①\">text\n  directives</a> <var>text directives</var> and a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> <var>document</var>, run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-range-from-a-text-directive\" id=\"ref-for-find-a-range-from-a-text-directive①\">find a range from a text directive</a> given <var>directive</var> and <var>document</var> is non-null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> it to <var>ranges</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>ranges</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "find a range from a text directive",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#find-a-range-from-a-text-directive",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>searchRange</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⓪\">range</a> with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start\">start</a> (<var>document</var>, 0) and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end\">end</a> (<var>document</var>, <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\" id=\"ref-for-concept-node-length\">length</a>)</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>potentialMatch</var> be null.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>prefixMatch</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range\" id=\"ref-for-find-a-string-in-range\">find a string\nin range</a> steps with <var>query</var> <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-prefix\" id=\"ref-for-text-directive-prefix⑤\">prefix</a>, <var>searchRange</var> <var>searchRange</var>, <var>wordStartBounded</var> true and <var>wordEndBounded</var> false.</p>"
+                },
+                {
+                  "html": "<p>If <var>prefixMatch</var> is null, return null.</p>"
+                },
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①\">start</a> to the first <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp\">boundary point</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-after\" id=\"ref-for-concept-range-bp-after\">after</a> <var>prefixMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start②\">start</a></p>"
+                },
+                {
+                  "html": "<p>Let <var>matchRange</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②①\">range</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start③\">start</a> is <var>prefixMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①\">end</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end②\">end</a> is <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end③\">end</a>.</p>"
+                },
+                {
+                  "html": "<p>Advance <var>matchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start④\">start</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#next-non-whitespace-position\" id=\"ref-for-next-non-whitespace-position\">next non-whitespace position</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>matchRange</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#range-collapsed\" id=\"ref-for-range-collapsed①\">collapsed</a> return null.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>matchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node②\">start node</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> node.</p>"
+                },
+                {
+                  "html": "<p>Let <var>mustEndAtWordBoundary</var> be true if <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end⑥\">end</a> is non-null or <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix③\">suffix</a> is null, false\notherwise.</p>"
+                },
+                {
+                  "html": "<p>Set <var>potentialMatch</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range\" id=\"ref-for-find-a-string-in-range①\">find a string in\nrange</a> steps with <var>query</var> <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-start\" id=\"ref-for-text-directive-start⑥\">start</a>, <var>searchRange</var> <var>matchRange</var>, <var>wordStartBounded</var> false, and <var>wordEndBounded</var> <var>mustEndAtWordBoundary</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>potentialMatch</var> is null, return null.</p>"
+                },
+                {
+                  "html": "<p>If <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start⑥\">start</a> is not <var>matchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start⑦\">start</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>mustEndAtWordBoundary</var> be true if <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end⑦\">end</a> is non-null or <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix④\">suffix</a> is null, false\notherwise.</p>"
+                },
+                {
+                  "html": "<p>Set <var>potentialMatch</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range\" id=\"ref-for-find-a-string-in-range②\">find a string in\nrange</a> steps with <var>query</var> <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-start\" id=\"ref-for-text-directive-start⑦\">start</a>, <var>searchRange</var> <var>searchRange</var>, <var>wordStartBounded</var> true, and <var>wordEndBounded</var> <var>mustEndAtWordBoundary</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>potentialMatch</var> is null, return null.</p>"
+                },
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start⑧\">start</a> to the first <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①\">boundary point</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-after\" id=\"ref-for-concept-range-bp-after①\">after</a> <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start⑨\">start</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>rangeEndSearchRange</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②②\">range</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⓪\">start</a> is <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end⑤\">end</a> and whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end⑥\">end</a> is <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end⑦\">end</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>mustEndAtWordBoundary</var> be true if <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix⑤\">suffix</a> is null, false otherwise.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>endMatch</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range\" id=\"ref-for-find-a-string-in-range③\">find a string\nin range</a> steps with <var>query</var> <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end⑨\">end</a>, <var>searchRange</var> <var>rangeEndSearchRange</var>, <var>wordStartBounded</var> true, and <var>wordEndBounded</var> <var>mustEndAtWordBoundary</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>endMatch</var> is null then return null.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end⑧\">end</a> to <var>endMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end⑨\">end</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>potentialMatch</var> is non-null, not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#range-collapsed\" id=\"ref-for-range-collapsed③\">collapsed</a> and\nrepresents a range exactly containing an instance of matching text.</p>"
+                },
+                {
+                  "html": "<p>If <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix⑥\">suffix</a> is null, return <var>potentialMatch</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>suffixRange</var> be a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②③\">range</a> with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①①\">start</a> equal to <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⓪\">end</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①①\">end</a> equal to <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①②\">end</a>.</p>"
+                },
+                {
+                  "html": "<p>Advance <var>suffixRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①②\">start</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#next-non-whitespace-position\" id=\"ref-for-next-non-whitespace-position①\">next non-whitespace\nposition</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>suffixMatch</var> be result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range\" id=\"ref-for-find-a-string-in-range④\">find a string in range</a> steps with <var>query</var> <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-suffix\" id=\"ref-for-text-directive-suffix⑦\">suffix</a>, <var>searchRange</var> <var>suffixRange</var>, <var>wordStartBounded</var> false, and <var>wordEndBounded</var> true.</p>"
+                },
+                {
+                  "html": "<p>If <var>suffixMatch</var> is null then return null.</p>"
+                },
+                {
+                  "html": "<p>If <var>suffixMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①③\">start</a> is <var>suffixRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①④\">start</a>,\nreturn <var>potentialMatch</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end①⓪\">end</a> item is null\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>;</p>"
+                },
+                {
+                  "html": "<p>Set <var>rangeEndSearchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑤\">start</a> to <var>potentialMatch</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①③\">end</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-text-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a text directive</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive\" id=\"ref-for-text-directive①③\">text directive</a> <var>parsedValues</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">Document</a> <var>document</var>, run the\nfollowing steps:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>parsedValues</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#text-directive-end\" id=\"ref-for-text-directive-end①①\">end</a> item is non-null</p>"
+                },
+                {
+                  "html": "<p>Return null</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null</p>"
+        }
+      ]
+    },
+    {
+      "name": "advance range start to next non-whitespace position",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#next-non-whitespace-position",
+      "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>node</var> be <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node③\">start node</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>offset</var> be <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset\">start offset</a>.</p>"
+            },
+            {
+              "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node④\">start node</a> to the next node, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset①\">start offset</a> to 0.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">Continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>Add 6 to <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②\">start offset</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>Add 5 to <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset③\">start offset</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To advance a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②④\">range</a> <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑥\">start</a> to the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next non-whitespace position\" data-noexport=\"\" id=\"next-non-whitespace-position\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next\nnon-whitespace position</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> follow the steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>cp</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point\">code point</a> at the <var>offset</var> index in <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data\">data</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>cp</var> does not have the <a href=\"http://www.unicode.org/reports/tr44/#White_Space\">White_Space</a> property set, return.</p>"
+                },
+                {
+                  "html": "<p>Add 1 to <var>range</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset④\">start offset</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "find a string in a range",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#find-a-string-in-range",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>curNode</var> be <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑤\">start node</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑥\">start node</a> to the next node, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order①\">shadow-including tree order</a>, that isn’t a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant\">shadow-including\ndescendant</a> of <var>curNode</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset⑤\">start offset</a> to 0.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">Continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑦\">start node</a> to the next node, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order②\">shadow-including tree order</a>, that is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype\" id=\"ref-for-concept-doctype\">doctype</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset⑥\">start offset</a> to 0.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">Continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>blockAncestor</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#nearest-block-ancestor\" id=\"ref-for-nearest-block-ancestor\">nearest block ancestor</a> of <var>curNode</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>textNodeList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text①\">Text</a></code> nodes,\ninitially empty.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>curNode</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#has-block-level-display\" id=\"ref-for-has-block-level-display\">has block-level display</a> then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break②\">break</a>.</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-string-in-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a string in range</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>query</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑤\">range</a> <var>searchRange</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>,\nrun these steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>curNode</var> to the next node, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order③\">shadow-including tree\norder</a>, that isn’t a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant②\">shadow-including descendant</a> of <var>curNode</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">Continue</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>If <var>curNode</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#visible-text-node\" id=\"ref-for-visible-text-node②\">visible text node</a> then append it to <var>textNodeList</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>curNode</var> to the next node in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order④\">shadow-including tree order</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#find-a-range-from-a-node-list\" id=\"ref-for-find-a-range-from-a-node-list\">find a range from a node list</a> steps given <var>query</var>, <var>searchRange</var>, <var>textNodeList</var>, <var>wordStartBounded</var> and <var>wordEndBounded</var> as input. If the resulting <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑧\">range</a> is not null, then return it.</p>"
+            },
+            {
+              "html": "<p>If <var>curNode</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">break</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>curNode</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-following\" id=\"ref-for-concept-tree-following\">follows</a> <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑧\">start node</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑦\">start</a> to the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp③\">boundary point</a> (<var>curNode</var>,\n0).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "search invisible",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#search-invisible",
+      "html": "A node is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"search-invisible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">search invisible</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> if it is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element③\">element</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace\">HTML\nnamespace</a> and meets any of the following conditions:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of its <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-display-4/#propdef-display\" id=\"ref-for-propdef-display\">display</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-none\" id=\"ref-for-valdef-display-none\">none</a>.</p>"
+        },
+        {
+          "html": "<p>If the node <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#serializes-as-void\" id=\"ref-for-serializes-as-void\">serializes as void</a>.</p>"
+        },
+        {
+          "html": "<p>Is any of the following types: <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement\" id=\"ref-for-htmliframeelement\">HTMLIFrameElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement\" id=\"ref-for-htmlimageelement\">HTMLImageElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/form-elements.html#htmlmeterelement\" id=\"ref-for-htmlmeterelement\">HTMLMeterElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement\" id=\"ref-for-htmlobjectelement\">HTMLObjectElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/form-elements.html#htmlprogresselement\" id=\"ref-for-htmlprogresselement\">HTMLProgressElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#htmlstyleelement\" id=\"ref-for-htmlstyleelement\">HTMLStyleElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement\">HTMLScriptElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement\">HTMLVideoElement</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlaudioelement\" id=\"ref-for-htmlaudioelement\">HTMLAudioElement</a></code></p>"
+        },
+        {
+          "html": "<p>Is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\" id=\"ref-for-the-select-element\">select</a></code> element whose <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\" id=\"ref-for-attr-select-multiple\">multiple</a></code> content attribute is absent.</p>"
+        }
+      ]
+    },
+    {
+      "name": "nearest block ancestor",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#nearest-block-ancestor",
+      "html": "To find the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"nearest-block-ancestor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">nearest block ancestor</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a <var>node</var> follow the steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>curNode</var> be <var>node</var>.</p>"
+        },
+        {
+          "html": "To find the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"nearest-block-ancestor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">nearest block ancestor</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a <var>node</var> follow the steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>curNode</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text③\">Text</a></code> node and it <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#has-block-level-display\" id=\"ref-for-has-block-level-display①\">has block-level display</a> then\nreturn <var>curNode</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>curNode</var> to <var>curNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent②\">parent</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element\">document element</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "range from node list",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#find-a-range-from-a-node-list",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-node-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a node list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a search string <var>queryString</var>,\na <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑨\">range</a> <var>searchRange</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④\">Text</a></code> nodes <var>nodes</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>, follow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>When requiring a word boundary at the beginning, it will not match in “color orange”.</p>"
+        },
+        {
+          "html": "<p>When requiring a word boundary at the end, it will not match in “forest ranger”.</p>"
+        }
+      ]
+    },
+    {
+      "name": "range from node list",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#find-a-range-from-a-node-list",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-node-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a node list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a search string <var>queryString</var>,\na <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑨\">range</a> <var>searchRange</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④\">Text</a></code> nodes <var>nodes</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>, follow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>searchBuffer</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenation</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①\">data</a> of each item in <var>nodes</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>searchStart</var> be 0.</p>"
+        },
+        {
+          "html": "<p>If the first item in <var>nodes</var> is <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑨\">start node</a> then\nset <var>searchStart</var> to <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset⑦\">start offset</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>start</var> and <var>end</var> be <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp④\">boundary points</a>, initially null.</p>"
+        },
+        {
+          "html": "<p>Let <var>matchIndex</var> be null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-node-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a node list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a search string <var>queryString</var>,\na <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑨\">range</a> <var>searchRange</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④\">Text</a></code> nodes <var>nodes</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>, follow these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>matchIndex</var> to the index of the first instance of <var>queryString</var> in <var>searchBuffer</var>, starting at <var>searchStart</var>. The string search must be\nperformed using a base character comparison, or the <a href=\"http://www.unicode.org/reports/tr10/#Multi_Level_Comparison\">primary\nlevel</a>, as defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/scroll-to-text-fragment/#biblio-uts10\" title=\"Unicode Collation Algorithm\">[UTS10]</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>matchIndex</var> is null, return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>endIx</var> be <var>matchIndex</var> + <var>queryString</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>start</var> to the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp⑤\">boundary point</a> result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#get-boundary-point-at-index\" id=\"ref-for-get-boundary-point-at-index\">get boundary point at\nindex</a> <var>matchIndex</var> run over <var>nodes</var> with <var>isEnd</var> false.</p>"
+            },
+            {
+              "html": "<p>Set <var>end</var> to the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp⑥\">boundary point</a> result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scroll-to-text-fragment/#get-boundary-point-at-index\" id=\"ref-for-get-boundary-point-at-index①\">get boundary point at\nindex</a> <var>endIx</var> run over <var>nodes</var> with <var>isEnd</var> true.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-range-from-a-node-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a range from a node list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a search string <var>queryString</var>,\na <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range②⑨\">range</a> <var>searchRange</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④\">Text</a></code> nodes <var>nodes</var>, and booleans <var>wordStartBounded</var> and <var>wordEndBounded</var>, follow these steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>searchStart</var> to <var>matchIndex</var> + 1.</p>"
+                },
+                {
+                  "html": "<p>Set <var>matchIndex</var> to null.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>endInset</var> be 0.</p>"
+        },
+        {
+          "html": "<p>If the last item in <var>nodes</var> is <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node②\">end node</a> then set <var>endInset</var> to (<var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node③\">end node</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\" id=\"ref-for-concept-node-length②\">length</a> − <var>searchRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset\">end offset</a>)</p>"
+        },
+        {
+          "html": "<p>If <var>matchIndex</var> + <var>queryString</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> is greater than <var>searchBuffer</var>’s length − <var>endInset</var> return null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>start</var> and <var>end</var> are non-null, valid <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp⑦\">boundary points</a> in <var>searchRange</var>.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range\" id=\"ref-for-concept-range③⓪\">range</a> with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑧\">start</a> <var>start</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑤\">end</a> <var>end</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "boundary point at index",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#get-boundary-point-at-index",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-boundary-point-at-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get boundary point at index</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an integer <var>index</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤\">Text</a></code> nodes <var>nodes</var>, and a boolean <var>isEnd</var>, follow these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>counted</var> be 0.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-boundary-point-at-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get boundary point at index</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an integer <var>index</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤\">Text</a></code> nodes <var>nodes</var>, and a boolean <var>isEnd</var>, follow these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>nodeEnd</var> be <var>counted</var> + <var>curNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\" id=\"ref-for-concept-node-length③\">length</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>isEnd</var> is true, add 1 to <var>nodeEnd</var>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-boundary-point-at-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get boundary point at index</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an integer <var>index</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤\">Text</a></code> nodes <var>nodes</var>, and a boolean <var>isEnd</var>, follow these steps:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp⑧\">boundary point</a> (<var>curNode</var>, <var>index</var> − <var>counted</var>).</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Increment <var>counted</var> by <var>curNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\" id=\"ref-for-concept-node-length④\">length</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    }
+  ]
+}

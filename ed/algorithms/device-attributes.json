@@ -1,0 +1,153 @@
+{
+  "spec": {
+    "title": "Device Attributes API",
+    "url": "https://wicg.github.io/WebApiDevice/device_attributes/"
+  },
+  "algorithms": [
+    {
+      "name": "NavigatorManagedData/getAnnotatedAssetId()",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#dom-navigatormanageddata-getannotatedassetid",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"NavigatorManagedData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatormanageddata-getannotatedassetid\"><code>getAnnotatedAssetId()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If this API is not called by a managed web application with permission to access device attributes, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>annotatedAssetId</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#annotated-asset-id\" id=\"ref-for-annotated-asset-id\">annotated asset id</a> set by the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#device-administrator\" id=\"ref-for-device-administrator⑧\">device administrator</a>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-undefined\" id=\"ref-for-idl-undefined\">undefined</a></code> if one has not been set.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this①\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source①\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <var>annotatedAssetId</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorManagedData/getAnnotatedLocation()",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#dom-navigatormanageddata-getannotatedlocation",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"NavigatorManagedData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatormanageddata-getannotatedlocation\"><code>getAnnotatedLocation()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If this API is not called by a managed web application with permission to access device attributes, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this②\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source②\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>annotatedLocation</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#annotated-location\" id=\"ref-for-annotated-location\">annotated location</a> set by the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#device-administrator\" id=\"ref-for-device-administrator⑨\">device administrator</a>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-undefined\" id=\"ref-for-idl-undefined①\">undefined</a></code> if one has not been set.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this③\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source③\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with <var>annotatedLocation</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorManagedData/getDirectoryId()",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#dom-navigatormanageddata-getdirectoryid",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"NavigatorManagedData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatormanageddata-getdirectoryid\"><code>getDirectoryId()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If this API is not called by a managed web application with permission to access device attributes, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this④\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source④\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>directoryId</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#directory-id\" id=\"ref-for-directory-id\">directory id</a>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-undefined\" id=\"ref-for-idl-undefined②\">undefined</a></code> if one is not provided by the management infrastructure.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this⑤\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source⑤\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with <var>directoryId</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorManagedData/getHostname()",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#dom-navigatormanageddata-gethostname",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"NavigatorManagedData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatormanageddata-gethostname\"><code>getHostname()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If this API is not called by a managed web application with permission to access device attributes, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this⑥\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source⑥\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror③\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>hostname</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#hostname\" id=\"ref-for-hostname\">hostname</a> set by the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#device-administrator\" id=\"ref-for-device-administrator①⓪\">device administrator</a>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-undefined\" id=\"ref-for-idl-undefined③\">undefined</a></code> if one has not been set.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this⑦\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source⑦\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with <var>hostname</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorManagedData/getSerialNumber()",
+      "href": "https://wicg.github.io/WebApiDevice/device_attributes/#dom-navigatormanageddata-getserialnumber",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"NavigatorManagedData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatormanageddata-getserialnumber\"><code>getSerialNumber()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If this API is not called by a managed web application with permission to access device attributes, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this⑧\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source⑧\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror④\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>serialNumber</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#serial-number\" id=\"ref-for-serial-number\">serial number</a>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-undefined\" id=\"ref-for-idl-undefined④\">undefined</a></code> if it is not available.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#this\" id=\"ref-for-this⑨\">this</a> using the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/WebApiDevice/device_attributes/#managed-data-task-source\" id=\"ref-for-managed-data-task-source⑨\">managed data task source</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>promise</var> with <var>serialNumber</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "spec": {
+    "title": "No-Vary-Search",
+    "url": "https://wicg.github.io/nav-speculation/no-vary-search.html"
+  },
+  "algorithms": [
+    {
+      "name": "parse a URL search variance",
+      "href": "https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-url-search-variance",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>value</var> is null, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance\">default URL search variance</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys\">keys</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> anything other than \"<code>key-order</code>\", \"<code>params</code>\", or \"<code>except</code>\", then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance①\">default URL search variance</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance\" id=\"ref-for-url-search-variance②\">URL search variance</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-on-key-order\" id=\"ref-for-url-search-variance-vary-on-key-order①\">vary on key order</a> to true.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>value</var>[\"<code>key-order</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a>, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance②\">default URL search variance</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-on-key-order\" id=\"ref-for-url-search-variance-vary-on-key-order②\">vary on key order</a> to the boolean negation of <var>value</var>[\"<code>key-order</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params③\">no-vary params</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params-wildcard\" id=\"ref-for-url-search-variance-no-vary-params-wildcard①\">wildcard</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params③\">vary params</a> to the empty list.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params④\">no-vary params</a> to the empty list.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params④\">vary params</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params-wildcard\" id=\"ref-for-url-search-variance-no-vary-params-wildcard②\">wildcard</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> in <var>value</var>[\"<code>params</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a>, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance③\">default URL search variance</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params⑤\">no-vary params</a> to the result of applying <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-key\" id=\"ref-for-parse-a-key\">parse a key</a> to each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> in <var>value</var>[\"<code>params</code>\"].</p>"
+                },
+                {
+                  "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params⑤\">vary params</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params-wildcard\" id=\"ref-for-url-search-variance-no-vary-params-wildcard③\">wildcard</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance④\">default URL search variance</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> <var>value</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>value</var>[\"<code>params</code>\"] is not true, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance⑤\">default URL search variance</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var>[\"<code>except</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance⑥\">default URL search variance</a>.</p>"
+            },
+            {
+              "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">item</a> in <var>value</var>[\"<code>except</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a>, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance⑦\">default URL search variance</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params⑥\">vary params</a> to the result of applying <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-key\" id=\"ref-for-parse-a-key①\">parse a key</a> to each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item③\">item</a> in <var>value</var>[\"<code>except</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain a URL search variance",
+      "href": "https://wicg.github.io/nav-speculation/no-vary-search.html#obtain-a-url-search-variance",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-url-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a URL search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>fieldValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> given <span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#http-headerdef-no-vary-search\" id=\"ref-for-http-headerdef-no-vary-search\">No-Vary-Search</a></code>`</span> and \"<code>dictionary</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-url-search-variance\" id=\"ref-for-parse-a-url-search-variance\">parsing a URL search variance</a> given <var>fieldValue</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain a URL search variance hint",
+      "href": "https://wicg.github.io/nav-speculation/no-vary-search.html#obtain-a-url-search-variance-hint",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-url-search-variance-hint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a URL search variance hint</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a> <var>hintValue</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>fieldValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc8941.html#text-parse\" id=\"ref-for-text-parse\">parsing structured fields</a> given <var>hintValue</var> and \"<code>dictionary</code>\".</p>"
+        },
+        {
+          "html": "<p>If parsing failed, then return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance①①\">default URL search variance</a>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-url-search-variance\" id=\"ref-for-parse-a-url-search-variance①\">parsing a URL search variance</a> given <var>fieldValue</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a key",
+      "href": "https://wicg.github.io/nav-speculation/no-vary-search.html#parse-a-key",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a key</dfn> given an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string\">ASCII string</a> <var>keyString</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>keyBytes</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">isomorphic encoding</a> of <var>keyString</var>.</p>"
+        },
+        {
+          "html": "<p>Replace any 0x2B (+) in <var>keyBytes</var> with 0x20 (SP).</p>"
+        },
+        {
+          "html": "<p>Let <var>keyBytesDecoded</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#percent-decode\" id=\"ref-for-percent-decode\">percent-decoding</a> of <var>keyBytes</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>keyStringDecoded</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom\">UTF-8 decoding without BOM</a> of <var>keyBytesDecoded</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>keyStringDecoded</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "equivalent modulo search variance",
+      "href": "https://wicg.github.io/nav-speculation/no-vary-search.html#equivalent-modulo-search-variance",
+      "html": "Two <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URLs</a> <var>urlA</var> and <var>urlB</var> are <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"equivalent-modulo-search-variance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">equivalent modulo search variance</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance\" id=\"ref-for-url-search-variance④\">URL search variance</a> <var>searchVariance</var> if the following algorithm returns true:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username\">username</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password\">password</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host\">host</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port\">port</a>, or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a> of <var>urlA</var> and <var>urlB</var> differ, then return false.</p>"
+        },
+        {
+          "html": "If <var>searchVariance</var> is equivalent to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance①②\">default URL search variance</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>urlA</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query\">query</a> equals <var>urlB</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query①\">query</a>, then return true.</p>"
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>searchParamsA</var> and <var>searchParamsB</var> be empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">lists</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>urlA</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query③\">query</a> is not null, then set <var>searchParamsA</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\" id=\"ref-for-concept-urlencoded-parser②\">application/x-www-form-urlencoded parser</a> given the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode①\">isomorphic encoding</a> of <var>urlA</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query④\">query</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>urlB</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query⑤\">query</a> is not null, then set <var>searchParamsB</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-parser\" id=\"ref-for-concept-urlencoded-parser③\">application/x-www-form-urlencoded parser</a> given the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode②\">isomorphic encoding</a> of <var>urlB</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query⑥\">query</a>.</p>"
+        },
+        {
+          "html": "If <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params①⓪\">no-vary params</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>searchParamsA</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a> containing those <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">items</a> <var>pair</var> in <var>searchParamsA</var> where <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params①①\">no-vary params</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contain</a> <var>pair</var>[0].</p>"
+            },
+            {
+              "html": "<p>Set <var>searchParamsB</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> containing those <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">items</a> <var>pair</var> in <var>searchParamsB</var> where <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-no-vary-params\" id=\"ref-for-url-search-variance-no-vary-params①②\">no-vary params</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contain</a> <var>pair</var>[0].</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params①②\">vary params</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>searchParamsA</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> containing those <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">items</a> <var>pair</var> in <var>searchParamsA</var> where <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params①③\">vary params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> <var>pair</var>[0].</p>"
+            },
+            {
+              "html": "<p>Set <var>searchParamsB</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a> containing those <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑦\">items</a> <var>pair</var> in <var>searchParamsB</var> where <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-params\" id=\"ref-for-url-search-variance-vary-params①④\">vary params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> <var>pair</var>[0].</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>searchVariance</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance-vary-on-key-order\" id=\"ref-for-url-search-variance-vary-on-key-order③\">vary on key order</a> is false, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>keyLessThan</var> be an algorithm taking as inputs two pairs (<var>keyA</var>, <var>valueA</var>) and (<var>keyB</var>, <var>valueB</var>), which returns whether <var>keyA</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than\">code unit less than</a> <var>keyB</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>searchParamsA</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting in ascending order</a> <var>searchParamsA</var>, with <var>keyLessThan</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>searchParamsB</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order①\">sorting in ascending order</a> <var>searchParamsB</var>, with <var>keyLessThan</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>searchParamsA</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is not equal to <var>searchParamsB</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>, then return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>i</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>i</var> &lt; <var>searchParamsA</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>searchParamsA</var>[<var>i</var>][0] does not equal <var>searchParamsB</var>[<var>i</var>][0], then return false.</p>"
+            },
+            {
+              "html": "<p>If <var>searchParamsA</var>[<var>i</var>][1] does not equal <var>searchParamsB</var>[<var>i</var>][1], then return false.</p>"
+            },
+            {
+              "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    }
+  ]
+}

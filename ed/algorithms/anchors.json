@@ -1,0 +1,298 @@
+{
+  "spec": {
+    "title": "WebXR Anchors Module",
+    "url": "https://immersive-web.github.io/anchors/"
+  },
+  "algorithms": [
+    {
+      "name": "create-anchor-object",
+      "href": "https://immersive-web.github.io/anchors/#create-new-anchor-object",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-new-anchor-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create new anchor object</dfn><span style=\"position: relative; height: 0px;\"></span> from <var>native origin</var> and <var>session</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>anchor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor④\">XRAnchor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin\">native origin</a> to <var>native origin</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-session\" id=\"ref-for-xranchor-session\">session</a> to <var>session</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-deleted\" id=\"ref-for-xranchor-deleted①\">deleted</a> to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-anchorspace\" id=\"ref-for-dom-xranchor-anchorspace①\">anchorSpace</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrspace\" id=\"ref-for-xrspace②\">XRSpace</a></code> object created with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-session\" id=\"ref-for-xrspace-session\">session</a> set to <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-session\" id=\"ref-for-xranchor-session①\">session</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin\">native origin</a> set to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin①\">native origin</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>anchor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "restore-anchor-from-frame",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-requestpersistenthandle\" id=\"ref-for-dom-xranchor-requestpersistenthandle\">requestPersistentHandle()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor⑤\">XRAnchor</a></code> <var>anchor</var>, MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsystem\" id=\"ref-for-xrsystem\">XRSystem</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-deleted\" id=\"ref-for-xranchor-deleted②\">deleted</a> is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-session\" id=\"ref-for-xranchor-session②\">session</a>.</p>"
+        },
+        {
+          "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors\">map of persistent anchors</a> contains the value <var>anchor</var>, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>uuid</var> be the key of the mapping of the <var>anchor</var> value on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors①\">map of persistent anchors</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with <var>uuid</var>.</p>"
+            },
+            {
+              "html": "<p>Return <var>promise</var>.</p>"
+            },
+            {
+              "html": "<p>Abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>uuid</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://immersive-web.github.io/anchors/#biblio-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">[RFC4122]</a> as a string and append it to <var>uuid</var>.</p>"
+        },
+        {
+          "html": "<p>Add <var>uuid</var> and <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors②\">map of persistent anchors</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>uuid</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-anchor-from-frame",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrframe-createanchor\" id=\"ref-for-dom-xrframe-createanchor①\">createAnchor(pose, space)</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe②\">XRFrame</a></code> <var>frame</var> with <var>pose</var> and <var>space</var>, MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new Promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Add <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#update-anchors\" id=\"ref-for-update-anchors\">update anchors</a> algorithm to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates\" id=\"ref-for-xrsession-list-of-frame-updates\">list of frame updates</a> if it is not already present there.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>effective origin</var> be <var>space</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-effective-origin\" id=\"ref-for-xrspace-effective-origin\">effective origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>anchor native origin</var> be a new native origin returned from the <var>device</var>’s call to create a new anchor using <var>pose</var>, interpreted as if expressed relative to <var>effective origin</var> at the <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#create-new-anchor-object\" id=\"ref-for-create-new-anchor-object\">Create new anchor object</a> <var>anchor</var> using <var>anchor native origin</var> and <var>session</var>.</p>"
+        },
+        {
+          "html": "<p>Add <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors\">set of tracked anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors\">map of new anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "restore-persistent-anchor-from-frame",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-restorepersistentanchor\" id=\"ref-for-dom-xrsession-restorepersistentanchor\">restorePersistentAnchor(uuid)</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsystem\" id=\"ref-for-xrsystem②\">XRSystem</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors④\">map of persistent anchors</a> does not contain a mapping from <var>uuid</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①②\">XRAnchor</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-main/#track-ended\" id=\"ref-for-track-ended\">ended</a> value is `true`, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>anchor</var> be the value of mapping from <var>uuid</var> on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑤\">map of persistent anchors</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors①\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> the <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Add <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors①\">set of tracked anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors②\">map of new anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "delete-peristence-from-anchor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-deletepersistentanchor\" id=\"ref-for-dom-xrsession-deletepersistentanchor\">deletePersistentAnchor()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑤\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsystem\" id=\"ref-for-xrsystem③\">XRSystem</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑥\">map of persistent anchors</a> does not contain a mapping to <var>anchor</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>anchor</var> be the value of mapping from <var>uuid</var> on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑦\">map of persistent anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Remove the mapping from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑧\">map of persistent anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Invoke {{XRAnchor/delete()} on <var>anchor</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-anchor-from-hit-test-result",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrhittestresult-createanchor\" id=\"ref-for-dom-xrhittestresult-createanchor①\">createAnchor()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/hit-test/#xrhittestresult\" id=\"ref-for-xrhittestresult③\">XRHitTestResult</a></code> <var>hitTestResult</var>, MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new Promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be <var>hitTestResult</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/hit-test/#xrhittestresult-frame\" id=\"ref-for-xrhittestresult-frame\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Add <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#update-anchors\" id=\"ref-for-update-anchors①\">update anchors</a> algorithm to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates\" id=\"ref-for-xrsession-list-of-frame-updates①\">list of frame updates</a> if it is not already present there.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>nativeEntity</var> be the <var>hitTestResult</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrhittestresult-native-entity\" id=\"ref-for-xrhittestresult-native-entity①\">native entity</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>anchor native origin</var> be a new native origin returned from the <var>device</var>’s call to create a new anchor located at <var>hitTestResult</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin\" id=\"ref-for-xrhittestresult-native-origin\">native origin</a> and <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#attached\" id=\"ref-for-attached\">attached</a> to <var>nativeEntity</var>, at the <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#create-new-anchor-object\" id=\"ref-for-create-new-anchor-object①\">Create new anchor object</a> <var>anchor</var> using <var>anchor native origin</var> and <var>session</var>.</p>"
+        },
+        {
+          "html": "<p>Add <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors②\">set of tracked anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors③\">map of new anchors</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update-anchors",
+      "href": "https://immersive-web.github.io/anchors/#update-anchors",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be a <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+          "rationale": "query",
+          "steps": [
+            {
+              "html": "<p>Query the <var>device</var>’s tracking system for the <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin②\">native origin</a> information.</p>"
+            },
+            {
+              "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p>Remove <var>anchor</var> from the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors④\">set of tracked anchors</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors④\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> the <var>promise</var> and remove the mapping.</p>"
+                },
+                {
+                  "html": "<p>Continue to the next entry in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors⑤\">set of tracked anchors</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Add <var>anchor</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrframe-trackedanchors\" id=\"ref-for-dom-xrframe-trackedanchors①\">trackedAnchors</a></code> set.</p>"
+            },
+            {
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors⑤\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> the <var>promise</var> with <var>anchor</var> and remove the mapping.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "detach-anchor",
+      "href": "https://immersive-web.github.io/anchors/#delete-an-anchor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-delete\" id=\"ref-for-dom-xranchor-delete①\">delete()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①④\">XRAnchor</a></code> <var>anchor</var>, MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-an-anchor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">delete an anchor</dfn><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-deleted\" id=\"ref-for-xranchor-deleted③\">deleted</a> is <code>true</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xranchor-anchorspace\" id=\"ref-for-dom-xranchor-anchorspace②\">anchorSpace</a></code> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-deleted\" id=\"ref-for-xranchor-deleted④\">deleted</a> to <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be an <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>native origin</var> be an <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin③\">native origin</a>.</p>"
+        },
+        {
+          "html": "<p>Inform the <var>device</var>’s tracking system that the <var>native origin</var> is no longer to be tracked.</p>"
+        },
+        {
+          "html": "<p>Remove <var>anchor</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors⑥\">set of tracked anchors</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

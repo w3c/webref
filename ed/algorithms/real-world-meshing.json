@@ -1,0 +1,95 @@
+{
+  "spec": {
+    "title": "WebXR Mesh Detection Module",
+    "url": "https://immersive-web.github.io/real-world-meshing/"
+  },
+  "algorithms": [
+    {
+      "name": "update-meshes",
+      "href": "https://immersive-web.github.io/real-world-meshing/#update-meshes",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-meshes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update meshes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be a <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>trackedMeshs</var> be a result of calling into <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#native-mesh-detection\" id=\"ref-for-native-mesh-detection①\">native mesh detection</a> capability to obtain tracked meshes at <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-meshes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update meshes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If desired, treat the <var>native mesh</var> as if it were not present in <var>trackedMeshs</var> and continue to the next entry. See <a href=\"https://immersive-web.github.io/real-world-meshing/#privacy-security\">§ 6 Privacy &amp; Security Considerations</a> for criteria that could be used to determine whether an entry should be ignored in this way.</p>"
+            },
+            {
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrsession-set-of-tracked-meshes\" id=\"ref-for-xrsession-set-of-tracked-meshes\">set of tracked meshes</a> contains an object <var>mesh</var> that <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#correspond-to\" id=\"ref-for-correspond-to\">corresponds to</a> <var>native mesh</var>, invoke <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#update-mesh-object\" id=\"ref-for-update-mesh-object\">update mesh object</a> algorithm with <var>mesh</var>, <var>native mesh</var>, and <var>frame</var>, and continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>Let <var>mesh</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#create-mesh-object\" id=\"ref-for-create-mesh-object\">create mesh object</a> algorithm with <var>native mesh</var> and <var>frame</var>.</p>"
+            },
+            {
+              "html": "<p>Add <var>mesh</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrsession-set-of-tracked-meshes\" id=\"ref-for-xrsession-set-of-tracked-meshes①\">set of tracked meshes</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Remove each object in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrsession-set-of-tracked-meshes\" id=\"ref-for-xrsession-set-of-tracked-meshes②\">set of tracked meshes</a> that was neither created nor updated during the invocation of this algorithm.</p>"
+        },
+        {
+          "html": "<p>Set <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrframe-detectedmeshes\" id=\"ref-for-dom-xrframe-detectedmeshes①\">detectedMeshes</a></code> to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrsession-set-of-tracked-meshes\" id=\"ref-for-xrsession-set-of-tracked-meshes③\">set of tracked meshes</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-mesh-object",
+      "href": "https://immersive-web.github.io/real-world-meshing/#create-mesh-object",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-mesh-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create mesh object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#native-mesh-objects\" id=\"ref-for-native-mesh-objects\">native mesh object</a> <var>native mesh</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe③\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps: \n    \n    <p>A mesh object, <var>result</var>, created in such way is said to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"correspond-to\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">correspond to</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> the passed in native mesh object <var>native mesh</var>.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#xrmesh\" id=\"ref-for-xrmesh⑥\">XRMesh</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrmesh-native-entity\" id=\"ref-for-xrmesh-native-entity\">native entity</a> to <var>native mesh</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-meshspace\" id=\"ref-for-dom-xrmesh-meshspace⑤\">meshSpace</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrspace\" id=\"ref-for-xrspace③\">XRSpace</a></code> object created with <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrspace-session\" id=\"ref-for-xrspace-session\">session</a> set to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code> and <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin①\">native origin</a> set to track <var>native mesh</var>’s native origin.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#update-mesh-object\" id=\"ref-for-update-mesh-object①\">update mesh object</a> algorithm with <var>result</var>, <var>native mesh</var>, and <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update-mesh-object",
+      "href": "https://immersive-web.github.io/real-world-meshing/#update-mesh-object",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-mesh-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update mesh object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>mesh</var> from a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#native-mesh-objects\" id=\"ref-for-native-mesh-objects①\">native mesh object</a> <var>native mesh</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe④\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>mesh</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#xrmesh-frame\" id=\"ref-for-xrmesh-frame\">frame</a> to <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>mesh</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-vertices\" id=\"ref-for-dom-xrmesh-vertices①\">vertices</a></code> to the new array of vertices representing <var>native mesh</var>’s vertices, performing all necessary conversions to account for differences in native mesh representation.</p>"
+        },
+        {
+          "html": "<p>Set <var>mesh</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-indices\" id=\"ref-for-dom-xrmesh-indices①\">indices</a></code> to the new array of indices representing <var>native mesh</var>’s vertices, performing all necessary conversions to account for differences in native mesh representation.</p>"
+        },
+        {
+          "html": "<p>If desired, reduce the level of detail of the <var>mesh</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-vertices\" id=\"ref-for-dom-xrmesh-vertices②\">vertices</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-indices\" id=\"ref-for-dom-xrmesh-indices②\">indices</a></code> as described in <a href=\"https://immersive-web.github.io/real-world-meshing/#privacy-security\">§ 6 Privacy &amp; Security Considerations</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>mesh</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-meshing/#dom-xrmesh-lastchangedtime\" id=\"ref-for-dom-xrmesh-lastchangedtime②\">lastChangedTime</a></code> to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

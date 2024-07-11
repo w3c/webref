@@ -1,0 +1,129 @@
+{
+  "spec": {
+    "title": "Device Posture API",
+    "url": "https://w3c.github.io/device-posture/"
+  },
+  "algorithms": [
+    {
+      "name": "calculate the device posture information",
+      "href": "https://w3c.github.io/device-posture/#dfn-calculate-the-device-posture-information",
+      "html": "The steps to <dfn id=\"dfn-calculate-the-device-posture-information\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">calculate the device posture information</dfn> of a\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>topLevelTraversable</var> be <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"navigable\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\">navigable</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>."
+        },
+        {
+          "html": "If <var>topLevelTraversable</var>. <a data-link-for=\"top-level traversable\" href=\"https://w3c.github.io/device-posture/#dfn-postureoverride\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-postureoverride-1\">[[PostureOverride]]</a> is non-null, return\n          it."
+        },
+        {
+          "html": "Return a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DevicePostureType\" href=\"https://w3c.github.io/device-posture/#dom-deviceposturetype\" class=\"internalDFN\" id=\"ref-for-dom-deviceposturetype-3\"><code>DevicePostureType</code></a> value determined in an\n          <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"implementation-defined\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation-defined</a> way based on the current hinge angle\n          value, current <a data-cite=\"SCREEN-ORIENTATION#dfn-screen-orientations\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientations\">screen orientation</a>,\n          as well as potential implementation-specific signals, according to\n          the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-posture-values-table\" class=\"internalDFN\" id=\"ref-for-dfn-posture-values-table-1\">posture values table</a>."
+        }
+      ]
+    },
+    {
+      "name": "device posture change steps",
+      "href": "https://w3c.github.io/device-posture/#dfn-device-posture-change-steps",
+      "html": "The <dfn id=\"dfn-device-posture-change-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">device posture change steps</dfn> for a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a>\n          <dfn data-dfn-for=\"device posture change steps\" data-plurals=\"documents\" id=\"dfn-document\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">document</dfn> and an\n          optional boolean <dfn data-dfn-for=\"device posture change steps\" id=\"dfn-disallowrecursion\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">disallowRecursion</dfn> (default false)\n          are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"visibility-state\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\">visibility state</a> is\n          \"hidden\", then abort these steps."
+        },
+        {
+          "html": "Let <var>posture</var> be the result of invoking <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-calculate-the-device-posture-information\" class=\"internalDFN\" id=\"ref-for-dfn-calculate-the-device-posture-information-1\">calculate the device posture information</a> with <var data-type=\"Document\">document</var>."
+        },
+        {
+          "html": "If <var>posture</var> is equal to\n          <var data-type=\"Document\">document</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Document\" data-xref-for=\"Document\" data-lt=\"[[CurrentPosture]]\" href=\"https://w3c.github.io/device-posture/#dfn-currentposture\" class=\"internalDFN\" id=\"ref-for-dfn-currentposture-3\"><code>[[CurrentPosture]]</code></a>, abort these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"user-interaction-task-source\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>\n          with <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> to perform the following\n          steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>documet</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"Document\" data-xref-for=\"Document\" data-lt=\"[[CurrentPosture]]\" href=\"https://w3c.github.io/device-posture/#dfn-currentposture\" class=\"internalDFN\" id=\"ref-for-dfn-currentposture-4\"><code>[[CurrentPosture]]</code></a> to <var>posture</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DevicePosture\" data-xref-for=\"DevicePosture\" href=\"https://w3c.github.io/device-posture/#dfn-change\" class=\"internalDFN\" id=\"ref-for-dfn-change-1\"><code>change</code></a>\" at the\n              <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DevicePosture\" href=\"https://w3c.github.io/device-posture/#dom-deviceposture\" class=\"internalDFN\" id=\"ref-for-dom-deviceposture-3\"><code>DevicePosture</code></a> object associated with <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s associated <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Navigator\" data-cite=\"html\" data-cite-path=\"/system-state.html\" data-cite-frag=\"navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>disallowRecursion</var> is true, abort these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>descendantNavigable</var> of <var data-type=\"Document\">document</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"descendant-navigables\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\">descendant navigables</a>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-device-posture-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-device-posture-change-steps-3\">device posture change steps</a> with <a data-link-type=\"dfn|abstract-op\" data-link-for=\"device posture change steps\" data-xref-for=\"device posture change steps\" href=\"https://w3c.github.io/device-posture/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-2\">document</a> set to <var>descendantNavigable</var>'s\n              <a data-link-type=\"dfn|abstract-op\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\">active document</a> and <a data-link-type=\"dfn|abstract-op\" data-link-for=\"device posture change steps\" data-xref-for=\"device posture change steps\" href=\"https://w3c.github.io/device-posture/#dfn-disallowrecursion\" class=\"internalDFN\" id=\"ref-for-dfn-disallowrecursion-2\">disallowRecursion</a> set to true."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This specification defines the following <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"page-visibility-change-steps\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#page-visibility-change-steps\">page visibility change steps</a> given <var>visibility state</var> and <var data-type=\"Document\">document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-device-posture-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-device-posture-change-steps-4\">device posture change steps</a> on <var data-type=\"Document\">document</var> and\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"device posture change steps\" data-xref-for=\"device posture change steps\" href=\"https://w3c.github.io/device-posture/#dfn-disallowrecursion\" class=\"internalDFN\" id=\"ref-for-dfn-disallowrecursion-3\">disallowRecursion</a> set to false to\n          initialize it."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>posture</var> be the result of invoking <a data-cite=\"!WEBDRIVER2#dfn-getting-properties\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\">get a property</a> \"posture\" from\n        <var>parameters</var>."
+        },
+        {
+          "html": "If <var>posture</var> is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"string\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">error</a> with <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error-code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>."
+        },
+        {
+          "html": "If <var>posture</var> is neither \"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DevicePostureType\" data-xref-for=\"DevicePostureType\" href=\"https://w3c.github.io/device-posture/#dom-deviceposturetype-continuous\" class=\"internalDFN\" id=\"ref-for-dom-deviceposturetype-continuous-7\"><code>continuous</code></a>\" nor\n        \"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DevicePostureType\" data-xref-for=\"DevicePostureType\" href=\"https://w3c.github.io/device-posture/#dom-deviceposturetype-folded\" class=\"internalDFN\" id=\"ref-for-dom-deviceposturetype-folded-5\"><code>folded</code></a>\", return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">error</a> with <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error-code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing\n        context</a>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"browsing context\" data-xref-for=\"browsing context\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"bc-traversable\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\">top-level traversable</a>."
+        },
+        {
+          "html": "Set <var>topLevelTraversable</var>. <a data-link-for=\"top-level traversable\" href=\"https://w3c.github.io/device-posture/#dfn-postureoverride\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-postureoverride-2\">[[PostureOverride]]</a> to <var>posture</var>."
+        },
+        {
+          "html": "Let <var>document</var> be <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\">active document</a>."
+        },
+        {
+          "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-device-posture-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-device-posture-change-steps-6\">device posture change steps</a> with <var>document</var>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing\n        context</a>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"browsing context\" data-xref-for=\"browsing context\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"bc-traversable\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\">top-level traversable</a>."
+        },
+        {
+          "html": "If <var>topLevelTraversable</var>. <a data-link-for=\"top-level traversable\" href=\"https://w3c.github.io/device-posture/#dfn-postureoverride\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-postureoverride-3\">\n          [[PostureOverride]]</a> is <code>null</code>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a>\n          with data <code>null</code>."
+        },
+        {
+          "html": "Set <var>topLevelTraversable</var>. <a data-link-for=\"top-level traversable\" href=\"https://w3c.github.io/device-posture/#dfn-postureoverride\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dfn-postureoverride-4\">[[PostureOverride]]</a> to <code>null</code>."
+        },
+        {
+          "html": "Let <var>document</var> be <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\">active document</a>."
+        },
+        {
+          "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/device-posture/#dfn-device-posture-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-device-posture-change-steps-7\">device posture change steps</a> with <var>document</var>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>."
+        }
+      ]
+    }
+  ]
+}

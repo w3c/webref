@@ -1,0 +1,1160 @@
+{
+  "spec": {
+    "title": "WebHID API",
+    "url": "https://wicg.github.io/webhid/"
+  },
+  "algorithms": [
+    {
+      "html": "When a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-2\">HID interface</a> becomes available on the system, run the\n        following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"HIDDevice\">device</var> be a <a data-link-type=\"idl\" data-lt=\"HIDDevice\" href=\"https://wicg.github.io/webhid/#dom-hiddevice\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-4\"><code>HIDDevice</code></a>."
+        },
+        {
+          "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[vendorId]]\" href=\"https://wicg.github.io/webhid/#dfn-vendorid\" class=\"internalDFN\" id=\"ref-for-dfn-vendorid-1\"><code>[[vendorId]]</code></a> to the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-vendor-id\" class=\"internalDFN\" id=\"ref-for-dfn-vendor-id-3\">vendor ID</a> of the\n        device that exposes the interface."
+        },
+        {
+          "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[productId]]\" href=\"https://wicg.github.io/webhid/#dfn-productid\" class=\"internalDFN\" id=\"ref-for-dfn-productid-1\"><code>[[productId]]</code></a> to the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-product-id\" class=\"internalDFN\" id=\"ref-for-dfn-product-id-3\">product ID</a> of\n        the device that exposes the interface."
+        },
+        {
+          "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[productName]]\" href=\"https://wicg.github.io/webhid/#dfn-productname\" class=\"internalDFN\" id=\"ref-for-dfn-productname-1\"><code>[[productName]]</code></a> to the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-product-name\" class=\"internalDFN\" id=\"ref-for-dfn-product-name-1\">product name</a>\n        of the device that exposes the interface."
+        },
+        {
+          "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[collections]]\" href=\"https://wicg.github.io/webhid/#dfn-collections\" class=\"internalDFN\" id=\"ref-for-dfn-collections-1\"><code>[[collections]]</code></a> to the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-parsing-the-report-descriptor\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-report-descriptor-1\">parsing the Report descriptor</a>."
+        },
+        {
+          "html": "Let <var data-type=\"HID\">hid</var> be the result of calling <var data-type=\"HIDDevice\">device</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"idl\" data-lt=\"Navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object's <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-navigator-hid\" class=\"internalDFN\" id=\"ref-for-dom-navigator-hid-3\"><code>hid</code></a> getter if <var data-type=\"HIDDevice\">device</var>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object, otherwise be the\n        result of calling <var data-type=\"HIDDevice\">device</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"idl\" data-lt=\"WorkerNavigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workernavigator\"><code>WorkerNavigator</code></a>\n        object's <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-workernavigator-hid\" class=\"internalDFN\" id=\"ref-for-dom-workernavigator-hid-3\"><code>hid</code></a> getter."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"HIDDevice\">device</var> to <var data-type=\"HID\">hid</var>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-1\"><code>[[devices]]</code></a>."
+        },
+        {
+          "html": "If the user has allowed the site to access <var data-type=\"HIDDevice\">device</var> as the result\n        of a previous call to <a data-link-type=\"idl\" data-lt=\"requestDevice()\" href=\"https://wicg.github.io/webhid/#dom-hid-requestdevice\" class=\"internalDFN\" id=\"ref-for-dom-hid-requestdevice-2\"><code>requestDevice</code></a><code>()</code>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <var data-type=\"HID\">hid</var> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-1\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" data-lt=\"connect\" href=\"https://wicg.github.io/webhid/#dfn-connect\" class=\"internalDFN\" id=\"ref-for-dfn-connect-1\"><code>connect</code></a> at <var data-type=\"HID\">hid</var>\n        using <a data-link-type=\"idl\" data-lt=\"HIDConnectionEvent\" href=\"https://wicg.github.io/webhid/#dom-hidconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-hidconnectionevent-1\"><code>HIDConnectionEvent</code></a> with its <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidconnectionevent-device\" class=\"internalDFN\" id=\"ref-for-dom-hidconnectionevent-device-1\"><code>device</code></a>\n        attribute initialized to <var data-type=\"HIDDevice\">device</var>."
+        }
+      ]
+    },
+    {
+      "name": "parsing the report descriptor",
+      "href": "https://wicg.github.io/webhid/#dfn-parsing-the-report-descriptor",
+      "html": "To <dfn data-lt=\"parsing the report descriptor|parse the report descriptor\" id=\"dfn-parsing-the-report-descriptor\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">parse the report\n        descriptor</dfn>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>items</var> be the result of converting the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-report-descriptor\" class=\"internalDFN\" id=\"ref-for-dfn-report-descriptor-9\">report descriptor</a>\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> into a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-main-items\" class=\"internalDFN\" id=\"ref-for-dfn-main-items-3\">Main items</a>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-global-items\" class=\"internalDFN\" id=\"ref-for-dfn-global-items-2\">Global items</a>,\n        and <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-local-items\" class=\"internalDFN\" id=\"ref-for-dfn-local-items-2\">Local items</a>."
+        },
+        {
+          "html": "Initialize <var data-type=\"sequence<HIDCollectionInfo>\">collections</var> to be an\n        empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDCollectionInfo\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-1\"><code>HIDCollectionInfo</code></a>."
+        },
+        {
+          "html": "Initialize <var>ancestors</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var>localState</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+        },
+        {
+          "html": "Initialize <var>usages</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <code>unsigned long</code>."
+        },
+        {
+          "html": "Initialize <var>stringIndices</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Initialize <var>globalStack</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\">stack</a>."
+        },
+        {
+          "html": "Initialize <var>initialGlobalState</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+        },
+        {
+          "html": "Initialize <var>reportId</var> to 0."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-1\"><code>unitSystem</code></a>\"] to\n        \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-none\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-none-1\"><code>none</code></a>\"."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitexponent-1\"><code>unitExponent</code></a>\"] to 0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorlengthexponent-1\"><code>unitFactorLengthExponent</code></a>\"] to\n        0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactormassexponent-1\"><code>unitFactorMassExponent</code></a>\"] to 0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortimeexponent-1\"><code>unitFactorTimeExponent</code></a>\"] to 0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortemperatureexponent-1\"><code>unitFactorTemperatureExponent</code></a>\"]\n        to 0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorcurrentexponent-1\"><code>unitFactorCurrentExponent</code></a>\"] to\n        0."
+        },
+        {
+          "html": "Set\n        <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorluminousintensityexponent-1\"><code>unitFactorLuminousIntensityExponent</code></a>\"]\n        to 0."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalminimum-1\"><code>logicalMinimum</code></a>\"] to 0."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalmaximum-1\"><code>logicalMaximum</code></a>\"] to 0."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalminimum-1\"><code>physicalMinimum</code></a>\"] to 0."
+        },
+        {
+          "html": "Set <var>initialGlobalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalmaximum-1\"><code>physicalMaximum</code></a>\"] to 0."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\">Push</a> <var>initialGlobalState</var> onto <var>globalStack</var>."
+        },
+        {
+          "html": "If <var>item</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-main-items\" class=\"internalDFN\" id=\"ref-for-dfn-main-items-7\">Main item</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-input-tag\" class=\"internalDFN\" id=\"ref-for-dfn-input-tag-2\">Input tag</a>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-output-tag\" class=\"internalDFN\" id=\"ref-for-dfn-output-tag-2\">Output tag</a>, or\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-feature-tag\" class=\"internalDFN\" id=\"ref-for-dfn-feature-tag-2\">Feature tag</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>globalState</var> be the last <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of\n                    <var>globalStack</var>."
+                },
+                {
+                  "html": "Let <var data-type=\"octet\">reportId</var> be\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo-reportid\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-reportid-1\"><code>reportId</code></a>\"]."
+                },
+                {
+                  "html": "Let <var data-type=\"HIDReportItem\">reportItem</var> be the result of\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-creating-a-hid-report-item\" class=\"internalDFN\" id=\"ref-for-dfn-creating-a-hid-report-item-1\">creating a HID report item</a> with <var>item</var>, <var>localState</var>,\n                    <var>globalState</var>, <var>usages</var>, and <var>strings</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDCollectionInfo\">collection</var> of\n                    <var>ancestors</var>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var data-type=\"sequence<HIDCollectionInfo>\">reports</var> be:\n                          <ul>\n                            <li>\n                            <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-inputreports-1\"><code>inputReports</code></a>\"]\n                            if <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-input-tag\" class=\"internalDFN\" id=\"ref-for-dfn-input-tag-3\">Input tag</a>,\n                            </li>\n                            <li>\n                            <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-outputreports-1\"><code>outputReports</code></a>\"]\n                            if <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-output-tag\" class=\"internalDFN\" id=\"ref-for-dfn-output-tag-3\">Output tag</a>, or\n                            </li>\n                            <li>\n                            <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-featurereports-1\"><code>featureReports</code></a>\"]\n                            if <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-feature-tag\" class=\"internalDFN\" id=\"ref-for-dfn-feature-tag-3\">Feature tag</a>.\n                            </li>\n                          </ul>"
+                    },
+                    {
+                      "html": "Otherwise:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var data-type=\"HIDReportInfo\">report</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n                            <a data-link-type=\"idl\" data-lt=\"HIDReportInfo\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-1\"><code>HIDReportInfo</code></a> dictionary."
+                        },
+                        {
+                          "html": "Set <var data-type=\"HIDReportInfo\">report</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo-reportid\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-reportid-3\"><code>reportId</code></a>\"] to\n                            <var data-type=\"octet\">reportId</var>."
+                        },
+                        {
+                          "html": "Set <var data-type=\"HIDReportInfo\">report</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo-items\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-items-1\"><code>items</code></a>\"] to an\n                            empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDReportItem\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-1\"><code>HIDReportItem</code></a>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"HIDReportInfo\">report</var> to <var data-type=\"sequence<HIDCollectionInfo>\">reports</var>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>item</var> to\n                        <var data-type=\"HIDReportInfo\">report</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo-items\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-items-2\"><code>items</code></a>\"]."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-collection-tag\" class=\"internalDFN\" id=\"ref-for-dfn-collection-tag-2\">Collection tag</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"HIDCollectionInfo\">collection</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n                    <a data-link-type=\"idl\" data-lt=\"HIDCollectionInfo\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-2\"><code>HIDCollectionInfo</code></a> dictionary."
+                },
+                {
+                  "html": "Let <var>usage</var> be the first <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of <var>usages</var>."
+                },
+                {
+                  "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> of <var>usages</var> is greater than 1,\n                    remove the first <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of <var>usages</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-1\"><code>usagePage</code></a>\"] to\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-2\"><code>usagePage</code></a>\"]."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usage-1\"><code>usage</code></a>\"] to\n                    <var>usage</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-type\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-type-1\"><code>type</code></a>\"] to the\n                    value representing the collection's type."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-children\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-children-1\"><code>children</code></a>\"] to\n                    an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDCollectionInfo\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-3\"><code>HIDCollectionInfo</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-inputreports-2\"><code>inputReports</code></a>\"]\n                    to an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDReportInfo\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-2\"><code>HIDReportInfo</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-outputreports-2\"><code>outputReports</code></a>\"]\n                    to an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDReportInfo\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-3\"><code>HIDReportInfo</code></a>."
+                },
+                {
+                  "html": "Set\n                    <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-featurereports-2\"><code>featureReports</code></a>\"] to an\n                    empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDReportInfo\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-4\"><code>HIDReportInfo</code></a>."
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var data-type=\"HIDCollectionInfo\">parent</var> be the last\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of <var>ancestors</var>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"HIDCollectionInfo\">collection</var> to\n                        <var data-type=\"HIDCollectionInfo\">parent</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-children\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-children-2\"><code>children</code></a>\"]."
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"HIDCollectionInfo\">collection</var> to <var>ancestors</var>."
+                }
+              ]
+            },
+            {
+              "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-end-collection-tag\" class=\"internalDFN\" id=\"ref-for-dfn-end-collection-tag-1\">End Collection tag</a>, then\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\">remove</a> the last <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of <var>ancestors</var>."
+            },
+            {
+              "html": "Set <var>localState</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+            },
+            {
+              "html": "Set <var>usages</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <code>unsigned\n                long</code>."
+            },
+            {
+              "html": "If <var>item</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-global-items\" class=\"internalDFN\" id=\"ref-for-dfn-global-items-4\">Global item</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>globalState</var> be the last <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of\n                    <var>globalStack</var>."
+                },
+                {
+                  "html": "Let <var data-type=\"unsigned long\">value</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-item-data-field\" class=\"internalDFN\" id=\"ref-for-dfn-item-data-field-4\">item data field</a>\n                    interpreted as an <code>unsigned long</code>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-usage-page-tag\" class=\"internalDFN\" id=\"ref-for-dfn-usage-page-tag-1\">Usage Page tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-3\"><code>usagePage</code></a>\"] to\n                    <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-logical-minimum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-logical-minimum-tag-1\">Logical Minimum tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalminimum-2\"><code>logicalMinimum</code></a>\"] to\n                    <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-logical-maximum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-logical-maximum-tag-1\">Logical Maximum tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalmaximum-2\"><code>logicalMaximum</code></a>\"] to\n                    <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-physical-minimum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-physical-minimum-tag-1\">Physical Minimum tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalminimum-2\"><code>physicalMinimum</code></a>\"] to\n                    <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-physical-maximum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-physical-maximum-tag-1\">Physical Maximum tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalmaximum-2\"><code>physicalMaximum</code></a>\"] to\n                    <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-report-size-tag\" class=\"internalDFN\" id=\"ref-for-dfn-report-size-tag-1\">Report Size tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportsize\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportsize-1\"><code>reportSize</code></a>\"] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-report-id-tag\" class=\"internalDFN\" id=\"ref-for-dfn-report-id-tag-1\">Report ID tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportinfo-reportid\" class=\"internalDFN\" id=\"ref-for-dom-hidreportinfo-reportid-4\"><code>reportId</code></a>\"] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-report-count-tag\" class=\"internalDFN\" id=\"ref-for-dfn-report-count-tag-1\">Report Count tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportcount\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportcount-1\"><code>reportCount</code></a>\"] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-unit-tag\" class=\"internalDFN\" id=\"ref-for-dfn-unit-tag-1\">Unit tag</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>nibbles</var> be the result of interpreting <var data-type=\"unsigned long\">value</var>\n                        as a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of eight 4-bit signed two's\n                        complement integers starting from the low-order bits."
+                    },
+                    {
+                      "html": "If <var>nibbles</var>[0] is:\n                          <ul>\n                            <li>0, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-2\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-none\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-none-2\"><code>none</code></a>\"\n                            </li>\n                            <li>1, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-3\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-si-linear\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-si-linear-1\"><code>si-linear</code></a>\"\n                            </li>\n                            <li>2, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-4\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-si-rotation\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-si-rotation-1\"><code>si-rotation</code></a>\"\n                            </li>\n                            <li>3, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-5\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-english-linear\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-english-linear-1\"><code>english-linear</code></a>\"\n                            </li>\n                            <li>4, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-6\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-english-rotation\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-english-rotation-1\"><code>english-rotation</code></a>\"\n                            </li>\n                            <li>-1, then set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-7\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-vendor-defined\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-vendor-defined-1\"><code>vendor-defined</code></a>\"\n                            </li>\n                            <li>Otherwise, set\n                            <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-8\"><code>unitSystem</code></a>\"] to\n                            \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidunitsystem-reserved\" class=\"internalDFN\" id=\"ref-for-dom-hidunitsystem-reserved-1\"><code>reserved</code></a>\"\n                            </li>\n                          </ul>"
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorlengthexponent-2\"><code>unitFactorLengthExponent</code></a>\"]\n                        to <var>nibbles</var>[1]."
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactormassexponent-2\"><code>unitFactorMassExponent</code></a>\"]\n                        to <var>nibbles</var>[2]."
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortimeexponent-2\"><code>unitFactorTimeExponent</code></a>\"]\n                        to <var>nibbles</var>[3]."
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortemperatureexponent-2\"><code>unitFactorTemperatureExponent</code></a>\"]\n                        to <var>nibbles</var>[4]."
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorcurrentexponent-2\"><code>unitFactorCurrentExponent</code></a>\"]\n                        to <var>nibbles</var>[5]."
+                    },
+                    {
+                      "html": "Set\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorluminousintensityexponent-2\"><code>unitFactorLuminousIntensityExponent</code></a>\"]\n                        to <var>nibbles</var>[6]."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-unit-exponent-tag\" class=\"internalDFN\" id=\"ref-for-dfn-unit-exponent-tag-1\">Unit Exponent tag</a>, then set\n                    <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitexponent-2\"><code>unitExponent</code></a>\"] to the\n                    result of interpreting the lowest 4 bits of the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-item-data-field\" class=\"internalDFN\" id=\"ref-for-dfn-item-data-field-5\">item data field</a> as a signed two's complement integer."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-push-tag\" class=\"internalDFN\" id=\"ref-for-dfn-push-tag-1\">Push tag</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\">push</a> a\n                    copy of <var>globalState</var> onto <var>globalStack</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-pop-tag\" class=\"internalDFN\" id=\"ref-for-dfn-pop-tag-1\">Pop tag</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-pop\">pop</a> from\n                    <var>globalStack</var>."
+                }
+              ]
+            }
+          ],
+          "additional": [
+            {
+              "html": "If <var>item</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-local-items\" class=\"internalDFN\" id=\"ref-for-dfn-local-items-4\">Local item</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"unsigned long\">value</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-item-data-field\" class=\"internalDFN\" id=\"ref-for-dfn-item-data-field-6\">item data field</a>\n                interpreted as an <code>unsigned long</code>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-usage-tag\" class=\"internalDFN\" id=\"ref-for-dfn-usage-tag-1\">Usage tag</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>item</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-bsize-field\" class=\"internalDFN\" id=\"ref-for-dfn-bsize-field-1\">bSize field</a> is 1 or 2:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var data-type=\"unsigned short\">usageId</var> be an <code>unsigned short</code>\n                        containing the lower 16 bits of <var data-type=\"unsigned long\">value</var>."
+                        },
+                        {
+                          "html": "Let <var>globalState</var> be the last <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> of\n                        <var>globalStack</var>."
+                        },
+                        {
+                          "html": "Set <var data-type=\"unsigned long\">value</var> to a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-usages\" class=\"internalDFN\" id=\"ref-for-dfn-hid-usages-3\">HID usage</a> composed of\n                        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-4\"><code>usagePage</code></a>\"] in the\n                        high order bits and <var data-type=\"unsigned short\">usageId</var> in the low order bits."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"unsigned long\">value</var> to <var>usages</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-usage-minimum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-usage-minimum-tag-1\">Usage Minimum tag</a>, then set\n                <var>localState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usageminimum-1\"><code>usageMinimum</code></a>\"] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-usage-maximum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-usage-maximum-tag-1\">Usage Maximum tag</a>, then set\n                <var>localState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usagemaximum-1\"><code>usageMaximum</code></a>\"] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-string-index-tag\" class=\"internalDFN\" id=\"ref-for-dfn-string-index-tag-1\">String Index tag</a>, then\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var data-type=\"unsigned long\">value</var> to <var>stringIndices</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-string-minimum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-string-minimum-tag-1\">String Minimum tag</a>, then set\n                <var>localState</var>[<code>\"stringMinimum\"</code>] to <var data-type=\"unsigned long\">value</var>."
+                },
+                {
+                  "html": "If <var>item</var> has the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-string-maximum-tag\" class=\"internalDFN\" id=\"ref-for-dfn-string-maximum-tag-1\">String Maximum tag</a>, then set\n                <var>localState</var>[<code>\"stringMaximum\"</code>] to <var data-type=\"unsigned long\">value</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "creating a HID report item",
+      "href": "https://wicg.github.io/webhid/#dfn-creating-a-hid-report-item",
+      "html": "To <dfn data-lt=\"creating a HID report item|create a HID report item\" id=\"dfn-creating-a-hid-report-item\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a HID report\n        item</dfn> with <var>item</var>, <var>localState</var>, <var>globalState</var>, <var>usages</var>, and\n        <var>stringIndices</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"HIDReportItem\">reportItem</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> <a data-link-type=\"idl\" data-lt=\"HIDReportItem\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-2\"><code>HIDReportItem</code></a>\n        dictionary."
+        },
+        {
+          "html": "Let <var data-type=\"unsigned long\">value</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-item-data-field\" class=\"internalDFN\" id=\"ref-for-dfn-item-data-field-7\">item data field</a> interpreted as\n        an <code>unsigned long</code>."
+        },
+        {
+          "html": "Let <var>bitfield</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of <code>boolean</code> values representing each\n        of the bits of <var data-type=\"unsigned long\">value</var>, starting from the low-order bits."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isconstant\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isconstant-1\"><code>isConstant</code></a>\"] to <var>bitfield</var>[0]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isarray\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isarray-1\"><code>isArray</code></a>\"] to !<var>bitfield</var>[1]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isabsolute-1\"><code>isAbsolute</code></a>\"] to !<var>bitfield</var>[2]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-wrap\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-wrap-1\"><code>wrap</code></a>\"] to <var>bitfield</var>[3]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-islinear\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-islinear-1\"><code>isLinear</code></a>\"] to !<var>bitfield</var>[4]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-haspreferredstate-1\"><code>hasPreferredState</code></a>\"] to\n        <var>bitfield</var>[5]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-hasnull\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-hasnull-1\"><code>hasNull</code></a>\"] to <var>bitfield</var>[6]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isvolatile-1\"><code>isVolatile</code></a>\"] to <var>bitfield</var>[7]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isbufferedbytes-1\"><code>isBufferedBytes</code></a>\"] to\n        <var>bitfield</var>[8]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usages\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usages-1\"><code>usages</code></a>\"] to <var>usages</var>."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportsize\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportsize-2\"><code>reportSize</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportsize\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportsize-3\"><code>reportSize</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportcount\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportcount-2\"><code>reportCount</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-reportcount\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-reportcount-3\"><code>reportCount</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitexponent-3\"><code>unitExponent</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitexponent-4\"><code>unitExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-9\"><code>unitSystem</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitsystem-10\"><code>unitSystem</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorlengthexponent-3\"><code>unitFactorLengthExponent</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorlengthexponent-4\"><code>unitFactorLengthExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactormassexponent-3\"><code>unitFactorMassExponent</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactormassexponent-4\"><code>unitFactorMassExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortimeexponent-3\"><code>unitFactorTimeExponent</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortimeexponent-4\"><code>unitFactorTimeExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortemperatureexponent-3\"><code>unitFactorTemperatureExponent</code></a>\"]\n        to <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactortemperatureexponent-4\"><code>unitFactorTemperatureExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorcurrentexponent-3\"><code>unitFactorCurrentExponent</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorcurrentexponent-4\"><code>unitFactorCurrentExponent</code></a>\"]."
+        },
+        {
+          "html": "Set\n        <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorluminousintensityexponent-3\"><code>unitFactorLuminousIntensityExponent</code></a>\"]\n        to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-unitfactorluminousintensityexponent-4\"><code>unitFactorLuminousIntensityExponent</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalminimum-3\"><code>logicalMinimum</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalminimum-4\"><code>logicalMinimum</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalmaximum-3\"><code>logicalMaximum</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-logicalmaximum-4\"><code>logicalMaximum</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalminimum-3\"><code>physicalMinimum</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalminimum-4\"><code>physicalMinimum</code></a>\"]."
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalmaximum-3\"><code>physicalMaximum</code></a>\"] to\n        <var>globalState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-physicalmaximum-4\"><code>physicalMaximum</code></a>\"]."
+        },
+        {
+          "html": "<p>\n            If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usageminimum-2\"><code>usageMinimum</code></a>\" is in <var>localState</var>, then set\n            <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usageminimum-3\"><code>usageMinimum</code></a>\"] to\n            <var>localState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usageminimum-4\"><code>usageMinimum</code></a>\"].\n          </p>"
+        },
+        {
+          "html": "<p>\n            If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usagemaximum-2\"><code>usageMaximum</code></a>\" is in <var>localState</var>, then set\n            <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usagemaximum-3\"><code>usageMaximum</code></a>\"] to\n            <var>localState</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usagemaximum-4\"><code>usageMaximum</code></a>\"].\n          </p>"
+        },
+        {
+          "html": "Set <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-isrange\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-isrange-1\"><code>isRange</code></a>\"] to <code>true</code> if\n        <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usageminimum-5\"><code>usageMinimum</code></a>\"] is less than\n        <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-usagemaximum-5\"><code>usageMaximum</code></a>\"], or <code>false</code> otherwise."
+        },
+        {
+          "html": "If <code>\"stringMinimum\"</code> is in <var>localState</var> and <code>\"stringMaximum\"</code> is in\n        <var>localState</var>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a>s of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\">the range</a> from\n            <var>localState</var>[<code>\"stringMinimum\"</code>] to <var>localState</var>[<code>\"stringMaximum\"</code>]\n            to <var>stringIndices</var>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>stringIndex</var> of <var>stringIndices</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>string</var> be the result of reading the string descriptor at\n            index <var>stringIndex</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>string</var> to\n            <var data-type=\"HIDReportItem\">reportItem</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidreportitem-strings\" class=\"internalDFN\" id=\"ref-for-dom-hidreportitem-strings-1\"><code>strings</code></a>\"]."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"HIDReportItem\">reportItem</var>."
+        }
+      ]
+    },
+    {
+      "html": "When a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-8\">HID interface</a> becomes unavailable on the system, run the\n        following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"HIDDevice\">device</var> be the <a data-link-type=\"idl\" data-lt=\"HIDDevice\" href=\"https://wicg.github.io/webhid/#dom-hiddevice\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-5\"><code>HIDDevice</code></a> in\n        <var data-type=\"HID\">hid</var>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-2\"><code>[[devices]]</code></a> representing the interface."
+        },
+        {
+          "html": "Let <var data-type=\"HID\">hid</var> be the result of calling <var data-type=\"HIDDevice\">device</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"idl\" data-lt=\"Navigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\"><code>Navigator</code></a> object's <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-navigator-hid\" class=\"internalDFN\" id=\"ref-for-dom-navigator-hid-4\"><code>hid</code></a> getter if <var data-type=\"HIDDevice\">device</var>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object, otherwise be the\n        result of calling <var data-type=\"HIDDevice\">device</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"idl\" data-lt=\"WorkerNavigator\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workernavigator\"><code>WorkerNavigator</code></a>\n        object's <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-workernavigator-hid\" class=\"internalDFN\" id=\"ref-for-dom-workernavigator-hid-4\"><code>hid</code></a> getter."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\">Remove</a> <var data-type=\"HIDDevice\">device</var> from <var data-type=\"HID\">hid</var>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-3\"><code>[[devices]]</code></a>."
+        },
+        {
+          "html": "If the user has allowed the site to access <var data-type=\"HIDDevice\">device</var> as the result\n        of a previous call to <a data-link-type=\"idl\" data-lt=\"requestDevice()\" href=\"https://wicg.github.io/webhid/#dom-hid-requestdevice\" class=\"internalDFN\" id=\"ref-for-dom-hid-requestdevice-3\"><code>requestDevice</code></a><code>()</code>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <var data-type=\"HID\">hid</var> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-2\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" data-lt=\"disconnect\" href=\"https://wicg.github.io/webhid/#dfn-disconnect\" class=\"internalDFN\" id=\"ref-for-dfn-disconnect-1\"><code>disconnect</code></a> at <var data-type=\"HID\">hid</var>\n        using <a data-link-type=\"idl\" data-lt=\"HIDConnectionEvent\" href=\"https://wicg.github.io/webhid/#dom-hidconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-hidconnectionevent-2\"><code>HIDConnectionEvent</code></a> with its <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidconnectionevent-device\" class=\"internalDFN\" id=\"ref-for-dom-hidconnectionevent-device-2\"><code>device</code></a>\n        attribute initialized to <var data-type=\"HIDDevice\">device</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"getDevices()\" href=\"https://wicg.github.io/webhid/#dom-hid-getdevices\" class=\"internalDFN\" id=\"ref-for-dom-hid-getdevices-2\"><code>getDevices</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "Let <var data-type=\"Document\">document</var> be <code>null</code>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window\"><code>window</code></a> object,\n          set <var data-type=\"Document\">document</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-lt=\"ServiceWorkerGlobalScope\" data-type=\"interface\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope\"><code>ServiceWorkerGlobalScope</code></a>\n          object and the associated <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\">service worker client</a> is\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-window-client\">window client</a>, set <var data-type=\"Document\">document</var> to the\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a> of the associated <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\">service worker client</a>'s\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> is <code>null</code> or <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a>\n          the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named <code>\"hid\"</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n          <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"sequence<HIDDevice>\">devices</var> be an empty\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDDevice\" href=\"https://wicg.github.io/webhid/#dom-hiddevice\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-6\"><code>HIDDevice</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDevice\">device</var> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-4\"><code>[[devices]]</code></a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the user has allowed the site to access <var data-type=\"HIDDevice\">device</var> as\n                  the result of a previous call to <a data-link-type=\"idl\" data-lt=\"requestDevice()\" href=\"https://wicg.github.io/webhid/#dom-hid-requestdevice\" class=\"internalDFN\" id=\"ref-for-dom-hid-requestdevice-4\"><code>requestDevice</code></a><code>()</code> and\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\"><code>[[state]]</code></a> is not <code>\"forgotten\"</code>, then\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var data-type=\"HIDDevice\">device</var> to <var data-type=\"sequence<HIDDevice>\">devices</var>."
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-3\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence<HIDDevice>\">devices</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"requestDevice()\" href=\"https://wicg.github.io/webhid/#dom-hid-requestdevice\" class=\"internalDFN\" id=\"ref-for-dom-hid-requestdevice-6\"><code>requestDevice</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named <code>\"hid\"</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n          \"<a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> is not <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window\"><code>window</code></a>,\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> does not have\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n            \"<a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-filters-1\"><code>filters</code></a>\"] is present,\n          then run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">for each</a>\n          <var data-type=\"HIDDeviceFilter\">filter</var> of\n          <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-filters-2\"><code>filters</code></a>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"HIDDeviceFilter\">filter</var> is not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-a-valid-filter\" class=\"internalDFN\" id=\"ref-for-dfn-a-valid-filter-1\">a valid filter</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n              <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-exclusionfilters-1\"><code>exclusionFilters</code></a>\"] is\n          present, then run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-exclusionfilters-2\"><code>exclusionFilters</code></a>\"]\n              is empty, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and\n              return <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDeviceFilter\">exclusionFilter</var> of\n              <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-exclusionfilters-3\"><code>exclusionFilters</code></a>\"]:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"HIDDeviceFilter\">exclusionFilter</var> is not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-a-valid-filter\" class=\"internalDFN\" id=\"ref-for-dfn-a-valid-filter-2\">a valid filter</a>, then\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return\n                  <var data-type=\"Promise\">promise</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "Initialize <var>availableDevices</var> to be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDevice\">device</var> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-5\"><code>[[devices]]</code></a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"HIDDevice\">device</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-match-any-filter\" class=\"internalDFN\" id=\"ref-for-dfn-match-any-filter-1\">matches any filter</a> in\n                  <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-filters-3\"><code>filters</code></a>\"] and <var data-type=\"HIDDevice\">device</var>\n                  does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-match-any-filter\" class=\"internalDFN\" id=\"ref-for-dfn-match-any-filter-2\">match any filter</a> in\n                  <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicerequestoptions-exclusionfilters-4\"><code>exclusionFilters</code></a>\"],\n                  then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var data-type=\"HIDDevice\">device</var> to <var>availableDevices</var>."
+                }
+              ]
+            },
+            {
+              "html": "Prompt the user to grant the site access to a HID device by\n              presenting them with the list of devices in <var>availableDevices</var>."
+            },
+            {
+              "html": "Let <var data-type=\"sequence<HIDDevice>\">devices</var> be an empty\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a> of <a data-link-type=\"idl\" data-lt=\"HIDDevice\" href=\"https://wicg.github.io/webhid/#dom-hiddevice\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-7\"><code>HIDDevice</code></a>."
+            },
+            {
+              "html": "If the user does not choose a device, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a>\n              on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-4\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence<HIDDevice>\">devices</var> and\n              abort these steps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDevice\">device</var> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-6\"><code>[[devices]]</code></a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"HIDDevice\">device</var> represents a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-13\">HID interface</a> exposed by the\n                  chosen device, then set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\"><code>[[state]]</code></a> to\n                  <code>\"closed\"</code> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var data-type=\"HIDDevice\">device</var> to <var data-type=\"sequence<HIDDevice>\">devices</var>."
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <var data-type=\"HIDDevice\">device</var> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-5\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence<HIDDevice>\">devices</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "a valid filter",
+      "href": "https://wicg.github.io/webhid/#dfn-a-valid-filter",
+      "html": "A <a data-link-type=\"idl\" data-lt=\"HIDDeviceFilter\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-7\"><code>HIDDeviceFilter</code></a> <var data-type=\"HIDDeviceFilter\">filter</var> is <dfn id=\"dfn-a-valid-filter\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">a valid\n            filter</dfn> if these steps return <code>true</code>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"HIDDeviceFilter\">filter</var> is empty, then return <code>false</code>."
+        },
+        {
+          "html": "If <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-productid-5\"><code>productId</code></a>\"] is present and\n            <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-vendorid-5\"><code>vendorId</code></a>\"] is not present, then\n            return <code>false</code>."
+        },
+        {
+          "html": "If <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-usage\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-usage-5\"><code>usage</code></a>\"] is present and\n            <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-usagepage-5\"><code>usagePage</code></a>\"] is not present, then\n            return <code>false</code>."
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "name": "match any filter",
+      "href": "https://wicg.github.io/webhid/#dfn-match-any-filter",
+      "html": "A <a data-link-type=\"idl\" data-lt=\"HIDDevice\" href=\"https://wicg.github.io/webhid/#dom-hiddevice\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-8\"><code>HIDDevice</code></a> <var data-type=\"HIDDevice\">device</var> <dfn data-lt=\"match any filter|matches any filter\" id=\"dfn-match-any-filter\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches any filter</dfn> in a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\">sequence</a>\n            <var data-type=\"sequence<HIDDeviceFilter>\">filters</var> of <a data-link-type=\"idl\" data-lt=\"HIDDeviceFilter\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-8\"><code>HIDDeviceFilter</code></a> if\n            these steps return <code>true</code>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"sequence<HIDDeviceFilter>\">filters</var> is empty, then return <code>true</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDeviceFilter\">filter</var> of <var data-type=\"sequence<HIDDeviceFilter>\">filters</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"HIDDeviceFilter\">filter</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-matches-the-device-ids\" class=\"internalDFN\" id=\"ref-for-dfn-matches-the-device-ids-1\">matches the device IDs</a> of <var data-type=\"HIDDevice\">device</var> and\n                <var data-type=\"HIDDeviceFilter\">filter</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-matches-any-collection\" class=\"internalDFN\" id=\"ref-for-dfn-matches-any-collection-1\">matches any collection</a> of <var data-type=\"HIDDevice\">device</var>, then return\n                <code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "matches the device IDs",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-the-device-ids",
+      "html": "A <a data-link-type=\"idl\" data-lt=\"HIDDeviceFilter\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-9\"><code>HIDDeviceFilter</code></a> <var data-type=\"HIDDeviceFilter\">filter</var> <dfn id=\"dfn-matches-the-device-ids\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches the\n            device IDs</dfn> of <var data-type=\"HIDDevice\">device</var> if these steps return\n            <code>true</code>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-vendorid-6\"><code>vendorId</code></a>\" is in <var data-type=\"HIDDeviceFilter\">filter</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-vendorid-7\"><code>vendorId</code></a>\"] is not equal to\n                <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-vendorid-1\"><code>vendorId</code></a>, then return <code>false</code>."
+            },
+            {
+              "html": "If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-productid-6\"><code>productId</code></a>\" is in <var data-type=\"HIDDeviceFilter\">filter</var> and\n                <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-productid-7\"><code>productId</code></a>\"] is not equal to\n                <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-productid-1\"><code>productId</code></a>, then return <code>false</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "name": "matches any collection",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-any-collection",
+      "html": "A <a data-link-type=\"idl\" data-lt=\"HIDDeviceFilter\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-10\"><code>HIDDeviceFilter</code></a> <var data-type=\"HIDDeviceFilter\">filter</var> <dfn id=\"dfn-matches-any-collection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches any\n            collection</dfn> of <var data-type=\"HIDDevice\">device</var> if these steps return\n            <code>true</code>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDCollectionInfo\">collection</var> of\n            <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-collections\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-collections-1\"><code>collections</code></a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"HIDDeviceFilter\">filter</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-matches-the-collection\" class=\"internalDFN\" id=\"ref-for-dfn-matches-the-collection-1\">matches the collection</a> <var data-type=\"HIDCollectionInfo\">collection</var> then\n                return <code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "matches the collection",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-the-collection",
+      "html": "A <a data-link-type=\"idl\" data-lt=\"HIDDeviceFilter\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-11\"><code>HIDDeviceFilter</code></a> <var data-type=\"HIDDeviceFilter\">filter</var> <dfn id=\"dfn-matches-the-collection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches the\n            collection</dfn> <var data-type=\"HIDCollectionInfo\">collection</var> if these steps\n            return <code>true</code>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-usagepage-6\"><code>usagePage</code></a>\" is in <var data-type=\"HIDDeviceFilter\">filter</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-usagepage-7\"><code>usagePage</code></a>\"] is not equal\n                to <var data-type=\"HIDCollectionInfo\">collection</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-5\"><code>usagePage</code></a>, then return\n                <code>false</code>."
+            },
+            {
+              "html": "If \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usage-2\"><code>usage</code></a>\" is in <var data-type=\"HIDDeviceFilter\">filter</var> and\n                <var data-type=\"HIDDeviceFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevicefilter-usage\" class=\"internalDFN\" id=\"ref-for-dom-hiddevicefilter-usage-6\"><code>usage</code></a>\"] is not equal to\n                <var data-type=\"HIDCollectionInfo\">collection</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usage-3\"><code>usage</code></a>, then return <code>false</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "name": "HIDDevice/opened",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened",
+      "html": "The <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-opened\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-opened-2\"><code>opened</code></a> getter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-3\"><code>[[state]]</code></a> is <code>opened</code>, then return\n            <code>true</code>."
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "HIDDevice/vendorId",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid",
+      "html": "The <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-vendorid-4\"><code>vendorId</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[vendorId]]\" href=\"https://wicg.github.io/webhid/#dfn-vendorid\" class=\"internalDFN\" id=\"ref-for-dfn-vendorid-2\"><code>[[vendorId]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HIDDevice/productId",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid",
+      "html": "The <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-productid-4\"><code>productId</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[productId]]\" href=\"https://wicg.github.io/webhid/#dfn-productid\" class=\"internalDFN\" id=\"ref-for-dfn-productid-2\"><code>[[productId]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HIDDevice/productName",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname",
+      "html": "The <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-productname\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-productname-3\"><code>productName</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[productName]]\" href=\"https://wicg.github.io/webhid/#dfn-productname\" class=\"internalDFN\" id=\"ref-for-dfn-productname-2\"><code>[[productName]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HIDDevice/collections",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections",
+      "html": "The <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-collections\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-collections-3\"><code>collections</code></a> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[collections]]\" href=\"https://wicg.github.io/webhid/#dfn-collections\" class=\"internalDFN\" id=\"ref-for-dfn-collections-2\"><code>[[collections]]</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "When an input report is received from a <var data-type=\"HIDDevice\">device</var>, run the\n        following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the input report is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-blocked-report\" class=\"internalDFN\" id=\"ref-for-dfn-blocked-report-1\">blocked report</a>, abort these steps."
+        },
+        {
+          "html": "Let <var data-type=\"octet\">reportId</var> be the report ID for this report, or 0 if the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-14\">HID interface</a> does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-1\">use report IDs</a>."
+        },
+        {
+          "html": "Let <var data-type=\"DataView\">data</var> be a <a data-link-type=\"idl\" data-lt=\"DataView\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DataView\"><code>DataView</code></a> created over the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> representing the input report. If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-15\">HID interface</a>\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-2\">uses report IDs</a>, the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> <em class=\"rfc2119\">MUST NOT</em> include the report\n        ID byte."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-6\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a>\n        named <a data-link-type=\"idl\" data-lt=\"inputreport\" href=\"https://wicg.github.io/webhid/#dfn-inputreport\" class=\"internalDFN\" id=\"ref-for-dfn-inputreport-1\"><code>inputreport</code></a> at <var data-type=\"HIDDevice\">device</var> using <a data-link-type=\"idl\" data-lt=\"HIDInputReportEvent\" href=\"https://wicg.github.io/webhid/#dom-hidinputreportevent\" class=\"internalDFN\" id=\"ref-for-dom-hidinputreportevent-1\"><code>HIDInputReportEvent</code></a> with\n        its <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidinputreportevent-device\" class=\"internalDFN\" id=\"ref-for-dom-hidinputreportevent-device-1\"><code>device</code></a> attribute initialized to <var data-type=\"HIDDevice\">device</var>,\n        its <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidinputreportevent-reportid\" class=\"internalDFN\" id=\"ref-for-dom-hidinputreportevent-reportid-1\"><code>reportId</code></a> attribute initialized to\n        <var data-type=\"octet\">reportId</var>, and its <a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidinputreportevent-data\" class=\"internalDFN\" id=\"ref-for-dom-hidinputreportevent-data-1\"><code>data</code></a> attribute initialized\n        to <var data-type=\"DataView\">data</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"open()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-open\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-open-2\"><code>open</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-4\"><code>[[state]]</code></a> is not <code>\"closed\"</code>, then\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n          and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-5\"><code>[[state]]</code></a> to <code>\"opening\"</code>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "Invoke the operating system to open the HID device."
+            },
+            {
+              "html": "If this fails for any reason, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-7\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"NetworkError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-6\"><code>[[state]]</code></a> to <code>\"opened\"</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-8\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"close()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-close\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-close-2\"><code>close</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-7\"><code>[[state]]</code></a> is either <code>\"forgotten\"</code> or\n          <code>\"forgetting\"</code>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n          \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-8\"><code>[[state]]</code></a> to <code>\"closing\"</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendreportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendreportpromises-1\"><code>[[pendingSendReportPromises]]</code></a>:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendreportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendreportpromises-2\"><code>[[pendingSendReportPromises]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendfeaturereportpromises-1\"><code>[[pendingSendFeatureReportPromises]]</code></a>:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendfeaturereportpromises-2\"><code>[[pendingSendFeatureReportPromises]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingReceiveFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingreceivefeaturereportpromises-1\"><code>[[pendingReceiveFeatureReportPromises]]</code></a>:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingReceiveFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingreceivefeaturereportpromises-2\"><code>[[pendingReceiveFeatureReportPromises]]</code></a>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "Invoke the operating system to close the HID device and\n              release any associated resources."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-9\"><code>[[state]]</code></a> to <code>\"closed\"</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-9\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"forget()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-forget\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-forget-2\"><code>forget</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"HIDDevice\">device</var> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[devices]]\" href=\"https://wicg.github.io/webhid/#dfn-devices\" class=\"internalDFN\" id=\"ref-for-dfn-devices-7\"><code>[[devices]]</code></a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"HIDDevice\">device</var> does not share device access permissions with\n                  the HIDDevice, then continue to the next device."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-10\"><code>[[state]]</code></a> to <code>\"forgetting\"</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendreportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendreportpromises-3\"><code>[[pendingSendReportPromises]]</code></a>:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n                      <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendreportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendreportpromises-4\"><code>[[pendingSendReportPromises]]</code></a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendfeaturereportpromises-3\"><code>[[pendingSendFeatureReportPromises]]</code></a>:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n                      <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendfeaturereportpromises-4\"><code>[[pendingSendFeatureReportPromises]]</code></a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Promise\">pendingPromise</var> of\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingReceiveFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingreceivefeaturereportpromises-3\"><code>[[pendingReceiveFeatureReportPromises]]</code></a>:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">pendingPromise</var> with an \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\"\n                      <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\">Empty</a>\n                  <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[pendingReceiveFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingreceivefeaturereportpromises-4\"><code>[[pendingReceiveFeatureReportPromises]]</code></a>."
+                },
+                {
+                  "html": "Invoke the user agent to revoke access to all the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-16\">HID interfaces</a> exposed by <var data-type=\"HIDDevice\">device</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"HIDDevice\">device</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-11\"><code>[[state]]</code></a> to <code>\"forgotten\"</code>."
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-10\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"sendReport()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-sendreport\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-sendreport-4\"><code>sendReport</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-12\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, then\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n          and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <var data-type=\"octet\">reportId</var> is 0 and the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-19\">HID interface</a> represented by\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-5\">uses report IDs</a>, or if <var data-type=\"octet\">reportId</var> is not 0 and the\n          interface does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-6\">use report IDs</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with\n          a \"<a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"Promise\">promise</var> to\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendreportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendreportpromises-5\"><code>[[pendingSendReportPromises]]</code></a>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If this report is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-blocked-report\" class=\"internalDFN\" id=\"ref-for-dfn-blocked-report-2\">blocked report</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-11\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "Invoke the operating system to send an output report with the\n              specified <var data-type=\"octet\">reportId</var> and <var data-type=\"BufferSource\">data</var>."
+            },
+            {
+              "html": "If this fails for any reason, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-12\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"NetworkError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-13\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"sendFeatureReport()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-sendfeaturereport-4\"><code>sendFeatureReport</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-13\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, then\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n          and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <var data-type=\"octet\">reportId</var> is 0 and the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-22\">HID interface</a> represented by\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-9\">uses report IDs</a>, or if <var data-type=\"octet\">reportId</var> is not 0 and the\n          interface does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-10\">use report IDs</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with\n          a \"<a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"Promise\">promise</var> to\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingSendFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingsendfeaturereportpromises-5\"><code>[[pendingSendFeatureReportPromises]]</code></a>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If this report is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-blocked-report\" class=\"internalDFN\" id=\"ref-for-dfn-blocked-report-3\">blocked report</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-14\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "Invoke the operating system to send a feature report with the\n              specified <var data-type=\"octet\">reportId</var> and <var data-type=\"BufferSource\">data</var>."
+            },
+            {
+              "html": "If this fails for any reason, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-15\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"NetworkError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-16\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"receiveFeatureReport()\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-receivefeaturereport-4\"><code>receiveFeatureReport</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://wicg.github.io/webhid/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-14\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, then\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n          and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <var data-type=\"octet\">reportId</var> is 0 and the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-25\">HID interface</a> represented by\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-13\">uses report IDs</a>, or if <var data-type=\"octet\">reportId</var> is not 0 and the\n          interface does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-14\">use report IDs</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with\n          a \"<a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"Promise\">promise</var> to\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingReceiveFeatureReportPromises]]\" href=\"https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingreceivefeaturereportpromises-5\"><code>[[pendingReceiveFeatureReportPromises]]</code></a>."
+        },
+        {
+          "html": "Perform the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If this report is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-blocked-report\" class=\"internalDFN\" id=\"ref-for-dfn-blocked-report-4\">blocked report</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-17\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "Let <var data-type=\"DataView\">data</var> be a <a data-link-type=\"idl\" data-lt=\"DataView\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DataView\"><code>DataView</code></a> created over the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> representing the result of invoking the operating\n              system to read a feature report with the specified\n              <var data-type=\"octet\">reportId</var>."
+            },
+            {
+              "html": "If reading the feature report fails for any reason, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using\n              the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-18\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"idl\" data-lt=\"NetworkError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-device-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-hid-device-task-source-19\">HID device task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var data-type=\"DataView\">data</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "blocked report",
+      "href": "https://wicg.github.io/webhid/#dfn-blocked-report",
+      "html": "A report is a <dfn id=\"dfn-blocked-report\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">blocked report</dfn> if the following steps return\n        <code>true</code>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>rule</var> of the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-hid-blocklist-1\">HID blocklist</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the report is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-blocked-by-a-blocklist-rule\" class=\"internalDFN\" id=\"ref-for-dfn-blocked-by-a-blocklist-rule-1\">blocked by a blocklist rule</a> <var>rule</var> then\n            return <code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "blocked by a blocklist rule",
+      "href": "https://wicg.github.io/webhid/#dfn-blocked-by-a-blocklist-rule",
+      "html": "A report is <dfn id=\"dfn-blocked-by-a-blocklist-rule\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">blocked by a blocklist rule</dfn> <var>rule</var> if the\n        following steps return <code>true</code>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"octet\">reportId</var> be the report ID of the report, or 0 if the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-hid-interface\" class=\"internalDFN\" id=\"ref-for-dfn-hid-interface-31\">HID interface</a> does not <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-use-report-ids\" class=\"internalDFN\" id=\"ref-for-dfn-use-report-ids-19\">use report IDs</a>."
+        },
+        {
+          "html": "Let <var>reportType</var> be <code>\"input\"</code> if the report is an input report,\n        <code>\"output\"</code> if the report is an output report, or <code>\"feature\"</code> if the\n        report is a feature report."
+        },
+        {
+          "html": "Let <var data-type=\"HIDCollectionInfo\">collection</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/webhid/#dfn-top-level-collections\" class=\"internalDFN\" id=\"ref-for-dfn-top-level-collections-13\">top-level collection</a>\n        that contains the report."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"vendor\"</code> and <var>rule</var>[<code>\"vendor\"</code>] is not\n        <var>device</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-vendorid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-vendorid-5\"><code>vendorId</code></a>, return <code>false</code>."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"product\"</code> and <var>rule</var>[<code>\"product\"</code>] is not\n        <var>device</var>.<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hiddevice-productid\" class=\"internalDFN\" id=\"ref-for-dom-hiddevice-productid-5\"><code>productId</code></a>, return <code>false</code>."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"reportId\"</code> and <var>rule</var>[<code>\"reportId\"</code>] is not\n        <var data-type=\"octet\">reportId</var>, return <code>false</code>."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"reportType\"</code> and <var>rule</var>[<code>\"reportType\"</code>] is not\n        <var>reportType</var>, return <code>false</code>."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"usagePage\"</code> and <var>rule</var>[<code>\"usagePage\"</code>] is not\n        <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usagepage-7\"><code>usagePage</code></a>\"], return <code>false</code>."
+        },
+        {
+          "html": "If <var>rule</var> contains <code>\"usage\"</code> and <var>rule</var>.[<code>\"usage\"</code>] is not\n        <var data-type=\"HIDCollectionInfo\">collection</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage\" class=\"internalDFN\" id=\"ref-for-dom-hidcollectioninfo-usage-5\"><code>usage</code></a>\"], return <code>false</code>."
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    }
+  ]
+}

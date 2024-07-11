@@ -1,0 +1,103 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 5",
+    "url": "https://drafts.csswg.org/css-values-5/"
+  },
+  "algorithms": [
+    {
+      "name": "<request-url-modifier>/<crossorigin-modifier>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#url-request-modifier-steps\" id=\"ref-for-url-request-modifier-steps①\">URL request modifier steps</a> for this modifier given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>req</var> are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> to \"cors\".</p>"
+        },
+        {
+          "html": "<p>If the given value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-request-url-modifier-use-credentials\" id=\"ref-for-valdef-request-url-modifier-use-credentials\">use-credentials</a>,\nset <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> to \"include\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "substitute an attr()",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-an-attr",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"substitute-an-attr\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①③\">attr()</a></dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①④\">attr()</a> function has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#attr-substitution-value\" id=\"ref-for-attr-substitution-value①④\">substitution value</a>,\nreplace the <span class=\"css\" id=\"ref-for-funcdef-attr①⑤\">attr()</span> function by the <span id=\"ref-for-attr-substitution-value①⑤\">substitution value</span>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①⑥\">attr()</a> function has a fallback value as its last argument,\nreplace the <span class=\"css\" id=\"ref-for-funcdef-attr①⑦\">attr()</span> function by the fallback value.\nIf there are any <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-variables-2/#funcdef-var\" id=\"ref-for-funcdef-var②\">var()</a> or <span class=\"css\" id=\"ref-for-funcdef-attr①⑧\">attr()</span> references in the fallback, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-an-attr\" id=\"ref-for-substitute-an-attr②\">substitute</a> them as well.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the property containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-attr\" id=\"ref-for-funcdef-attr①⑨\">attr()</a> function\nis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#invalid-at-computed-value-time\" id=\"ref-for-invalid-at-computed-value-time②\">invalid at computed-value time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-random\" id=\"ref-for-funcdef-random①⑨\">random()</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#random-caching-key\" id=\"ref-for-random-caching-key①\">random-caching key</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> of:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value③\">used value</a> of the minimum <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation⑨\">calculation</a>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value④\">used value</a> of the maximum <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation①⓪\">calculation</a>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑤\">used value</a> of the step <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation①①\">calculation</a>, if present,\nor null otherwise.</p>"
+        },
+        {
+          "html": "<p>The <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-dashed-ident\" id=\"ref-for-typedef-dashed-ident③\">&lt;dashed-ident&gt;</a> part of the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-random-caching-options\" id=\"ref-for-typedef-random-caching-options⑨\">&lt;random-caching-options&gt;</a>, if present,\nor null otherwise.</p>"
+        },
+        {
+          "html": "<p>If <span class=\"css\">per-element</span> is specified in the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-random-caching-options\" id=\"ref-for-typedef-random-caching-options①⓪\">&lt;random-caching-options&gt;</a>,\na unique value per element or pseudo-element the function appears in.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-random-item\" id=\"ref-for-funcdef-random-item①⑤\">random-item()</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#random-caching-key\" id=\"ref-for-random-caching-key②\">random-caching key</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The number of arguments to the function.</p>"
+        },
+        {
+          "html": "<p>The <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-dashed-ident\" id=\"ref-for-typedef-dashed-ident④\">&lt;dashed-ident&gt;</a> part of the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-random-caching-options\" id=\"ref-for-typedef-random-caching-options①①\">&lt;random-caching-options&gt;</a>, if present,\nor null otherwise.</p>"
+        },
+        {
+          "html": "<p>If <span class=\"css\">per-element</span> is specified in the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-random-caching-options\" id=\"ref-for-typedef-random-caching-options①②\">&lt;random-caching-options&gt;</a>,\na unique value per element or pseudo-element the function appears in.</p>"
+        }
+      ]
+    },
+    {
+      "name": "de-percentify a calc-size calculation",
+      "href": "https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"de-percentify-a-calc-size-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">de-percentify a calc-size calculation</dfn> <var>calc</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Replace every instance of a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token\" id=\"ref-for-typedef-percentage-token②\">&lt;percentage-token&gt;</a> in <var>calc</var> with <span class=\"css\">(size * N)</span>,\nwhere N is the percentage’s value divided by 100.\nReturn <var>calc</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "substitute into a calc-size calculation",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"substitute-into-a-calc-size-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute into a calc-size calculation</dfn> <var>calc</var> a value <var>insertion value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>calc</var> doesn’t have the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size①\">size</a> keyword in it,\ndo nothing.</p>"
+        },
+        {
+          "html": "<p>Otherwise, replace every instance of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size②\">size</a> keyword\nin <var>calc</var> with <var>insertion value</var>,\nwrapped in parentheses.</p>"
+        },
+        {
+          "html": "<p>If this substitution would produce a value\nlarger than an UA-defined limit,\nthe property the subsitution is happening in\nbecomes <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#invalid-at-computed-value-time\" id=\"ref-for-invalid-at-computed-value-time③\">invalid at computed-value time</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "spec": {
+    "title": "Digital Goods API",
+    "url": "https://wicg.github.io/digital-goods/"
+  },
+  "algorithms": [
+    {
+      "name": "Window/getDigitalGoodsService(serviceProvider)",
+      "href": "https://wicg.github.io/digital-goods/#dom-window-getdigitalgoodsservice",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-getdigitalgoodsservice\"><code>getDigitalGoodsService(<var>serviceProvider</var>)</code></dfn> method is called, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated <code>Document</code></a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin\">top-level origin</a> return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#payment\" id=\"ref-for-payment\">payment</a>\" permission return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>serviceProvider</var> is undefined or null or the empty string return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of performing the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#can-make-digital-goods-service-algorithm\" id=\"ref-for-can-make-digital-goods-service-algorithm\">can make digital goods service algorithm</a> given <var>serviceProvider</var> and <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is false return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/digital-goods/#digitalgoodsservice\" id=\"ref-for-digitalgoodsservice②\">DigitalGoodsService</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "can make digital goods service algorithm",
+      "href": "https://wicg.github.io/digital-goods/#can-make-digital-goods-service-algorithm",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"can-make-digital-goods-service-algorithm\">can make digital goods service algorithm</dfn> checks whether the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a> supports a given <var>serviceProvider</var> and <var>document</var> context.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①\">user agent</a> MAY return true or return false based on the <var>serviceProvider</var> or <var>document</var> or external factors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/getDetails(itemIds)",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-getdetails",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-getdetails\"><code>getDetails(<var>itemIds</var>)</code></dfn> method is called, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>itemIds</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of requesting information about the given <var>itemIds</var> from the digital goods service.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/getDetails(itemIds)",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-getdetails",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-getdetails\"><code>getDetails(<var>itemIds</var>)</code></dfn> method is called, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>result</var> is an error, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror①\">OperationError</a></code>.</p>"
+        },
+        {
+          "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-getdetails\"><code>getDetails(<var>itemIds</var>)</code></dfn> method is called, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p><var>itemDetails</var>.itemId SHOULD NOT be the empty string.</p>"
+            },
+            {
+              "html": "<p><var>itemIds</var> SHOULD <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>itemDetails</var>.itemId.</p>"
+            },
+            {
+              "html": "<p><var>itemDetails</var>.title SHOULD NOT be the empty string.</p>"
+            },
+            {
+              "html": "<p><var>itemDetails</var>.price MUST be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#canonical-paymentcurrencyamount\" id=\"ref-for-canonical-paymentcurrencyamount\">canonical PaymentCurrencyAmount</a>.</p>"
+            },
+            {
+              "html": "<p>If present, <var>itemDetails</var>.subscriptionPeriod MUST be be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#iso-8601\" id=\"ref-for-iso-8601\">iso-8601</a> duration.</p>"
+            },
+            {
+              "html": "<p>If present, <var>itemDetails</var>.freeTrialPeriod MUST be be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#iso-8601\" id=\"ref-for-iso-8601①\">iso-8601</a> duration.</p>"
+            },
+            {
+              "html": "<p>If present, <var>itemDetails</var>.introductoryPrice MUST be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#canonical-paymentcurrencyamount\" id=\"ref-for-canonical-paymentcurrencyamount①\">canonical PaymentCurrencyAmount</a>.</p>"
+            },
+            {
+              "html": "<p>If present, <var>itemDetails</var>.introductoryPricePeriod MUST be be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/digital-goods/#iso-8601\" id=\"ref-for-iso-8601②\">iso-8601</a> duration.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with①\">a promise resolved with</a> <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/listPurchases()",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-listpurchases",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-listpurchases\"><code>listPurchases()</code></dfn> method is\n  called, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the result of requesting information about the user’s purchases from the digital goods service.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/listPurchases()",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-listpurchases",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-listpurchases\"><code>listPurchases()</code></dfn> method is\n  called, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>result</var> is an error, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror②\">OperationError</a></code>.</p>"
+        },
+        {
+          "html": "<p>For each <var>itemDetails</var> in <var>result</var>:</p>",
+          "ignored": [
+            "itemDetails.itemId SHOULD NOT be the empty string. itemDetails.purchaseToken SHOULD NOT be the empty string."
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/listPurchaseHistory()",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-listpurchasehistory",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-listpurchasehistory\"><code>listPurchaseHistory()</code></dfn> method is\n  called, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the result of requesting information about the latest purchases for each item type ever purchased by the user.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is an error, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror③\">OperationError</a></code>.</p>"
+        },
+        {
+          "html": "<p>For each <var>itemDetails</var> in <var>result</var>:</p>",
+          "ignored": [
+            "itemDetails.itemId SHOULD NOT be the empty string. itemDetails.purchaseToken SHOULD NOT be the empty string."
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with③\">a promise resolved with</a> <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/consume(purchaseToken)",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-consume",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-consume\"><code>consume(<var>purchaseToken</var>)</code></dfn> method is called, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>purchaseToken</var> is the empty string, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of requesting the digital goods service to record <var>purchaseToken</var> as consumed.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DigitalGoodsService/consume(purchaseToken)",
+      "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-consume",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DigitalGoodsService\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-digitalgoodsservice-consume\"><code>consume(<var>purchaseToken</var>)</code></dfn> method is called, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>result</var> is an error, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①⓪\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror④\">OperationError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with④\">a promise resolved with</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①\">undefined</a></code>.</p>"
+        }
+      ]
+    }
+  ]
+}

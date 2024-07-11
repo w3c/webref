@@ -46,6 +46,7 @@
       "https://httpwg.org/specs/rfc8941.html": {},
       "https://infra.spec.whatwg.org/": {},
       "https://mimesniff.spec.whatwg.org/": {},
+      "https://streams.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/hr-time/": {},
@@ -111,6 +112,7 @@
           "concept-header-extract-mime-type",
           "concept-header-list-get",
           "http-tab-or-space-byte",
+          "concept-header-list",
           "concept-request-url",
           "concept-request-header-list",
           "concept-request-client",
@@ -120,6 +122,10 @@
           "concept-request-redirect-mode",
           "concept-fetch",
           "fetch-useparallelqueue",
+          "process-response",
+          "fetch-controller-abort",
+          "concept-response-body",
+          "concept-body-stream",
           "process-response-end-of-body",
           "concept-request-origin",
           "requestinit",
@@ -127,7 +133,6 @@
           "concept-request-request",
           "concept-http-network-or-cache-fetch",
           "concept-header-list-set-structured-header",
-          "concept-header-list",
           "concept-http-fetch",
           "concept-status",
           "redirect-status",
@@ -156,8 +161,8 @@
           "site",
           "concept-origin",
           "same-origin",
-          "concept-origin-host",
           "ascii-serialisation-of-an-origin",
+          "concept-origin-host",
           "policy-container-csp-list",
           "active-sandboxing-flag-set",
           "sandboxing-flag-set",
@@ -252,6 +257,8 @@
         "anchors": [
           "top",
           "boolean",
+          "list",
+          "string",
           "integer"
         ]
       },
@@ -341,6 +348,12 @@
           "private-aggregation"
         ]
       },
+      "https://streams.spec.whatwg.org/": {
+        "anchors": [
+          "readablestream-get-a-reader",
+          "readablestreamdefaultreader-read-all-bytes"
+        ]
+      },
       "https://tc39.es/ecma262/multipage/abstract-operations.html": {
         "anchors": [
           "sec-get-o-p",
@@ -388,16 +401,16 @@
         "anchors": [
           "concept-url-parser",
           "concept-url-origin",
-          "include-credentials",
-          "concept-url-fragment",
-          "concept-url-query",
           "concept-url-scheme",
+          "include-credentials",
           "concept-host-serializer",
           "concept-url-serializer",
           "concept-url",
           "string-utf-8-percent-encode",
           "component-percent-encode-set",
+          "concept-url-query",
           "concept-urlencoded-serializer",
+          "concept-url-fragment",
           "concept-url-host",
           "concept-url-port",
           "concept-url-path"
@@ -471,6 +484,7 @@
           "idl-unsigned-short",
           "upon-fulfillment",
           "idl-unsigned-long",
+          "dfn-exception",
           "dfn-convert-idl-to-javascript-value",
           "invoke-a-callback-function",
           "dfn-convert-ecmascript-to-idl-value",

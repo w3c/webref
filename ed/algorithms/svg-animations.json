@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "SVG Animations",
+    "url": "https://svgwg.org/specs/animations/"
+  },
+  "algorithms": [
+    {
+      "html": "The attribute is parsed as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>attribute</var> be the value of the <span class=\"attr-name\">‘<a href=\"https://svgwg.org/specs/animations/#ValuesAttribute\"><span>values</span></a>’</span>\n      attribute."
+        },
+        {
+          "html": "Let <var>values</var> be a list of strings formed by splitting\n      <var>attribute</var> at each U+003B SEMICOLON character."
+        },
+        {
+          "html": "Strip any leading and trailing <a href=\"https://svgwg.org/svg2-draft/text.html#TermWhiteSpaceCharacter\">white space characters</a>\n      from each value of <var>values</var>."
+        },
+        {
+          "html": "Remove the final value in <var>values</var> if it is the empty string."
+        },
+        {
+          "html": "Parse each value in <var>values</var> using the rules for parsing\n      the attribute identified by the <span class=\"attr-name\">‘<a href=\"https://svgwg.org/specs/animations/#HrefAttribute\"><span>href</span></a>’</span>, and\n      <span class=\"attr-name\">‘<a href=\"https://svgwg.org/specs/animations/#AttributeNameAttribute\"><span>attributeName</span></a>’</span> attributes."
+        }
+      ]
+    },
+    {
+      "html": "When pauseAnimations() is called, the following steps are run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the current <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element is not the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement\">outermost svg element</a>,\n  then return."
+        },
+        {
+          "html": "Pause the timeline that controls SVG animations for the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermSVGDocumentFragment\">SVG document fragment</a> that\n  the <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element is in."
+        }
+      ]
+    },
+    {
+      "html": "When unpauseAnimations() is called, the following steps are run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the current <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element is not the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement\">outermost svg element</a>,\n  then return."
+        },
+        {
+          "html": "Unpause the timeline that controls SVG animations for the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermSVGDocumentFragment\">SVG document fragment</a> that\n  the <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element is in."
+        }
+      ]
+    },
+    {
+      "html": "The <b id=\"__svg__SVGSVGElement__getCurrentTime\">getCurrentTime</b> and\n<b id=\"__svg__SVGSVGElement__setCurrentTime\">setCurrentTime</b> methods\nare used to get and set the current time of the timeline that controls\nSVG animations.  When getCurrentTime() is called, the following steps are run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the timeline for the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment\">current SVG document fragment</a> has not yet begun,\n  then return 0."
+        },
+        {
+          "html": "Otherwise, the timeline for the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment\">current SVG document fragment</a> has begun.\n  Return the current time in seconds relative to the start time of the timeline."
+        }
+      ]
+    },
+    {
+      "html": "When setCurrentTime(<var>seconds</var>) is called, the following steps are run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the current <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element is not the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement\">outermost svg element</a>,\n  then return."
+        },
+        {
+          "html": "If the timeline for the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment\">current SVG document fragment</a> has begun, then\n  the timeline's current time (in seconds, relative to the start time of the\n  timeline) is set to <var>seconds</var>."
+        },
+        {
+          "html": "Otherwise, the timeline has not begun.  <var>seconds</var> is recorded on\n  the <a href=\"https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment\">current SVG document fragment</a> as the time to be seeked to\n  once the timeline has begun.  If multiple calls to\n  <a href=\"https://svgwg.org/specs/animations/#__svg__SVGSVGElement__setCurrentTime\">setCurrentTime</a> are made\n  before the timeline has begun, the most recent call's time will be used to\n  seek the timeline once it begins."
+        }
+      ]
+    }
+  ]
+}

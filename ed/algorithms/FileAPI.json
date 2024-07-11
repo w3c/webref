@@ -1,0 +1,902 @@
+{
+  "spec": {
+    "title": "File API",
+    "url": "https://w3c.github.io/FileAPI/"
+  },
+  "algorithms": [
+    {
+      "name": "slice blob",
+      "href": "https://w3c.github.io/FileAPI/#slice-blob",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"slice-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">slice blob</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> <var>blob</var>, <var>start</var>, <var>end</var>, and <var>contentType</var> is used to refer to the following\nsteps and returns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code> containing the bytes ranging from the <var>start</var> parameter\nup to but not including the <var>end</var> parameter. It must act as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>originalSize</var> be <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size\">size</a></code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"slice-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">slice blob</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> <var>blob</var>, <var>start</var>, <var>end</var>, and <var>contentType</var> is used to refer to the following\nsteps and returns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code> containing the bytes ranging from the <var>start</var> parameter\nup to but not including the <var>end</var> parameter. It must act as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>start</var> is null, let <var>relativeStart</var> be 0."
+            },
+            {
+              "html": "If <var>start</var> is negative, let <var>relativeStart</var> be <code>max((<var>originalSize</var> + <var>start</var>), 0)</code>."
+            },
+            {
+              "html": "Otherwise, let <var>relativeStart</var> be <code>min(<var>start</var>, <var>originalSize</var>)</code>."
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"slice-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">slice blob</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> <var>blob</var>, <var>start</var>, <var>end</var>, and <var>contentType</var> is used to refer to the following\nsteps and returns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code> containing the bytes ranging from the <var>start</var> parameter\nup to but not including the <var>end</var> parameter. It must act as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>end</var> is null, let <var>relativeEnd</var> be <var>originalSize</var>."
+            },
+            {
+              "html": "If <var>end</var> is negative, let <var>relativeEnd</var> be <code>max((<var>originalSize</var> + <var>end</var>), 0)</code>."
+            },
+            {
+              "html": "Otherwise, let <var>relativeEnd</var> be <code>min(<var>end</var>, <var>originalSize</var>)</code>."
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"slice-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">slice blob</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> <var>blob</var>, <var>start</var>, <var>end</var>, and <var>contentType</var> is used to refer to the following\nsteps and returns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code> containing the bytes ranging from the <var>start</var> parameter\nup to but not including the <var>end</var> parameter. It must act as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>contentType</var> is null, let <var>relativeContentType</var> be set to the empty\n  string."
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"slice-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">slice blob</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> <var>blob</var>, <var>start</var>, <var>end</var>, and <var>contentType</var> is used to refer to the following\nsteps and returns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code> containing the bytes ranging from the <var>start</var> parameter\nup to but not including the <var>end</var> parameter. It must act as follows:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>relativeContentType</var> contains any characters outside the range of U+0020 to\nU+007E, then set <var>relativeContentType</var> to the empty string and return from these\nsubsteps.</p>"
+                },
+                {
+                  "html": "<p>Convert every character in <var>relativeContentType</var> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ASCII lowercase</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>span</var> be <code>max((<var>relativeEnd</var> - <var>relativeStart</var>), 0)</code>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①①\">Blob</a></code> object <var>S</var> with the following characteristics:</p>",
+          "ignored": [
+            "S refers to span consecutive bytes from blob’s associated byte sequence, beginning with the byte at byte-order position relativeStart. S.size = span. S.type = relativeContentType."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑥\">Blob</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects\">serializable objects</a>. Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>,\ngiven <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[SnapshotState]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#snapshot-state\" id=\"ref-for-snapshot-state①\">snapshot state</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[ByteSequence]] to <var>value</var>’s underlying byte sequence.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps\">deserialization step</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#snapshot-state\" id=\"ref-for-snapshot-state②\">snapshot state</a> to <var>serialized</var>.[[SnapshotState]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s underlying byte sequence to <var>serialized</var>.[[ByteSequence]].</p>"
+        }
+      ]
+    },
+    {
+      "name": "get stream",
+      "href": "https://w3c.github.io/FileAPI/#blob-get-stream",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑦\">Blob</a></code> <var>blob</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-export=\"\" id=\"blob-get-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get stream</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich runs these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> created in <var>blob</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support\" id=\"ref-for-readablestream-set-up-with-byte-reading-support\">Set up</a> <var>stream</var> with byte reading support.</p>"
+        },
+        {
+          "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑦\">Blob</a></code> <var>blob</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-export=\"\" id=\"blob-get-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get stream</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich runs these steps:",
+          "rationale": "while",
+          "steps": [
+            {
+              "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑦\">Blob</a></code> <var>blob</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-export=\"\" id=\"blob-get-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get stream</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich runs these steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>bytes</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> that results from reading a <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#chunk\" id=\"ref-for-chunk\">chunk</a> from <var>blob</var>, or\n failure if a chunk cannot be read.</p>"
+                },
+                {
+                  "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑦\">Blob</a></code> <var>blob</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-export=\"\" id=\"blob-get-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get stream</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich runs these steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>bytes</var> is failure, then <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>stream</var> with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#failureReason\" id=\"ref-for-failureReason\">failure reason</a> and\n abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array①\">Uint8Array</a></code> wrapping an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer①\">ArrayBuffer</a></code> containing <var>bytes</var>. If\n creating the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer②\">ArrayBuffer</a></code> throws an exception, then <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error①\">error</a> <var>stream</var> with that exception and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>chunk</var> in <var>stream</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>stream</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "blob-constructor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blob-blob\" id=\"ref-for-dom-blob-blob\">Blob()</a></code> constructor can be invoked with zero or more parameters.\nWhen the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blob-blob\" id=\"ref-for-dom-blob-blob①\">Blob()</a></code> constructor is invoked,\nuser agents must run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If invoked with zero parameters,\nreturn a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑧\">Blob</a></code> object consisting of 0 bytes,\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size④\">size</a></code> set to 0,\nand with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type③\">type</a></code> set to the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#process-blob-parts\" id=\"ref-for-process-blob-parts\">processing blob parts</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-blobParts\" id=\"ref-for-dfn-blobParts①\">blobParts</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blob-blob-blobparts-options-options\" id=\"ref-for-dom-blob-blob-blobparts-options-options\">options</a></code>.</p>"
+        },
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BPtype\" id=\"ref-for-dfn-BPtype①\">type</a></code> member of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blob-blob-blobparts-options-options\" id=\"ref-for-dom-blob-blob-blobparts-options-options①\">options</a></code> argument is not the empty string,\nrun the following sub-steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>t</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BPtype\" id=\"ref-for-dfn-BPtype②\">type</a></code> dictionary member.\nIf <var>t</var> contains any characters outside the range U+0020 to U+007E,\nthen set <var>t</var> to the empty string and return from these substeps.</p>"
+            },
+            {
+              "html": "<p>Convert every character in <var>t</var> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase①\">ASCII lowercase</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑨\">Blob</a></code> object referring to <var>bytes</var> as its associated <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤\">byte</a> sequence,\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size⑤\">size</a></code> set to the length of <var>bytes</var>,\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type④\">type</a></code> set to the value of <var>t</var> from the substeps above.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process-blob-parts",
+      "href": "https://w3c.github.io/FileAPI/#process-blob-parts",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"process blob parts|processing blob parts\" data-noexport=\"\" id=\"process-blob-parts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process blob parts</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a sequence of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#typedefdef-blobpart\" id=\"ref-for-typedefdef-blobpart①\">BlobPart</a></code>'s <var>parts</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag\" id=\"ref-for-dfn-BlobPropertyBag②\">BlobPropertyBag</a></code> <var>options</var>,\nrun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>bytes</var> be an empty sequence of bytes.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"process blob parts|processing blob parts\" data-noexport=\"\" id=\"process-blob-parts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process blob parts</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a sequence of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#typedefdef-blobpart\" id=\"ref-for-typedefdef-blobpart①\">BlobPart</a></code>'s <var>parts</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag\" id=\"ref-for-dfn-BlobPropertyBag②\">BlobPropertyBag</a></code> <var>options</var>,\nrun the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"process blob parts|processing blob parts\" data-noexport=\"\" id=\"process-blob-parts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process blob parts</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a sequence of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#typedefdef-blobpart\" id=\"ref-for-typedefdef-blobpart①\">BlobPart</a></code>'s <var>parts</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag\" id=\"ref-for-dfn-BlobPropertyBag②\">BlobPropertyBag</a></code> <var>options</var>,\nrun the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>s</var> be <var>element</var>.</p>"
+                },
+                {
+                  "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blobpropertybag-endings\" id=\"ref-for-dom-blobpropertybag-endings①\">endings</a></code> member of <var>options</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-endingtype-native\" id=\"ref-for-dom-endingtype-native②\">\"native\"</a></code>,\nset <var>s</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#convert-line-endings-to-native\" id=\"ref-for-convert-line-endings-to-native①\">converting line endings to native</a> of <var>element</var>.</p>"
+                },
+                {
+                  "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> <var>s</var> to <var>bytes</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>element</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource②\">BufferSource</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">get\na copy of the bytes held by the buffer source</a>, and append those bytes to <var>bytes</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>element</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob②③\">Blob</a></code>,\nappend the bytes it represents to <var>bytes</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>bytes</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "convert-line-endings-to-native",
+      "href": "https://w3c.github.io/FileAPI/#convert-line-endings-to-native",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"convert line endings to native|converting line endings to native\" data-noexport=\"\" id=\"convert-line-endings-to-native\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> convert line endings to native</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>s</var>,\nrun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>native line ending</var> be be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point\">code point</a> U+000A LF.</p>"
+        },
+        {
+          "html": "<p>If the underlying platform’s conventions are\nto represent newlines as a carriage return and line feed sequence,\nset <var>native line ending</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point①\">code point</a> U+000D CR\nfollowed by the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point②\">code point</a> U+000A LF.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>position</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> for <var>s</var>,\ninitially pointing at the start of <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>token</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">collecting a sequence of code points</a> that are not equal to U+000A LF or U+000D CR\nfrom <var>s</var> given <var>position</var>.</p>"
+        },
+        {
+          "html": "<p>Append <var>token</var> to <var>result</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"convert line endings to native|converting line endings to native\" data-noexport=\"\" id=\"convert-line-endings-to-native\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> convert line endings to native</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>s</var>,\nrun the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"convert line endings to native|converting line endings to native\" data-noexport=\"\" id=\"convert-line-endings-to-native\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> convert line endings to native</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>s</var>,\nrun the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>native line ending</var> to <var>result</var>.</p>"
+                },
+                {
+                  "html": "<p>Advance <var>position</var> by 1.</p>"
+                },
+                {
+                  "html": "<p>If <var>position</var> is not past the end of <var>s</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code point</a> at <var>position</var> within <var>s</var> equals U+000A LF\nadvance <var>position</var> by 1.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise if the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑤\">code point</a> at <var>position</var> within <var>s</var> equals U+000A LF,\nadvance <var>position</var> by 1 and append <var>native line ending</var> to <var>result</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>token</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">collecting a sequence of code points</a> that are not equal to U+000A LF or U+000D CR\nfrom <var>s</var> given <var>position</var>.</p>"
+            },
+            {
+              "html": "<p>Append <var>token</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Blob/slice(start, end, contentType), slice(start, end), slice(start), slice()",
+      "href": "https://w3c.github.io/FileAPI/#dfn-slice",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"slice(start, end, contentType)|slice(start, end)|slice(start)|slice()|slice(start, end, contentType), slice(start, end), slice(start), slice()\" id=\"dfn-slice\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>slice()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method\nreturns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob③①\">Blob</a></code> object with bytes ranging from the optional <var>start</var> parameter\nup to but not including the optional <var>end</var> parameter, and with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⓪\">type</a></code> attribute\nthat is the value of the optional <var>contentType</var> parameter. It must act as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>sliceStart</var>, <var>sliceEnd</var>, and <var>sliceContentType</var> be null.</p>"
+        },
+        {
+          "html": "<p>If <var>start</var> is given, set <var>sliceStart</var> to <var>start</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>end</var> is given, set <var>sliceEnd</var> to <var>end</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>contentType</var> is given, set <var>sliceContentType</var> to <var>contentType</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#slice-blob\" id=\"ref-for-slice-blob②\">slice blob</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>, <var>sliceStart</var>, <var>sliceEnd</var>, and <var>sliceContentType</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Blob/text()",
+      "href": "https://w3c.github.io/FileAPI/#dom-blob-text",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-blob-text\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>text()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream①\">get stream</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader\">getting a reader</a> from <var>stream</var>.\n If that threw an exception, return a new promise rejected with that exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of transforming <var>promise</var> by a fulfillment handler that returns the result of\n running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"ref-for-utf-8-decode\">UTF-8 decode</a> on its first argument.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Blob/arrayBuffer()",
+      "href": "https://w3c.github.io/FileAPI/#dom-blob-arraybuffer",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-blob-arraybuffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>arrayBuffer()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream②\">get stream</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader①\">getting a reader</a> from <var>stream</var>.\n If that threw an exception, return a new promise rejected with that exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes①\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of transforming <var>promise</var> by a fulfillment handler that returns\n a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer③\">ArrayBuffer</a></code> whose contents are its first argument.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Blob/bytes()",
+      "href": "https://w3c.github.io/FileAPI/#dom-blob-bytes",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-blob-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>bytes()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream③\">get stream</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader②\">getting a reader</a> from <var>stream</var>.\n If that threw an exception, return a new promise rejected with that exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes②\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of transforming <var>promise</var> by a fulfillment handler that returns\n a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array②\">Uint8Array</a></code> wrapping an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer④\">ArrayBuffer</a></code> containing its first argument.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-file\" id=\"ref-for-dfn-file①⑤\">File</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects①\">serializable objects</a>. Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>,\ngiven <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[SnapshotState]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#snapshot-state\" id=\"ref-for-snapshot-state⑦\">snapshot state</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[ByteSequence]] to <var>value</var>’s underlying byte sequence.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Name]] to the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-name\" id=\"ref-for-dfn-name②\">name</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[LastModified]] to the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-lastModified\" id=\"ref-for-dfn-lastModified①\">lastModified</a></code> attribute.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps①\">deserialization steps</a>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#snapshot-state\" id=\"ref-for-snapshot-state⑧\">snapshot state</a> to <var>serialized</var>.[[SnapshotState]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s underlying byte sequence to <var>serialized</var>.[[ByteSequence]].</p>"
+        },
+        {
+          "html": "<p>Initialize the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-name\" id=\"ref-for-dfn-name③\">name</a></code> attribute to <var>serialized</var>.[[Name]].</p>"
+        },
+        {
+          "html": "<p>Initialize the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-lastModified\" id=\"ref-for-dfn-lastModified②\">lastModified</a></code> attribute to <var>serialized</var>.[[LastModified]].</p>"
+        }
+      ]
+    },
+    {
+      "name": "file-constructor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-file\" id=\"ref-for-dfn-file①⑥\">File</a></code> constructor is invoked with two or three parameters,\ndepending on whether the optional dictionary parameter is used.\nWhen the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-file-file\" id=\"ref-for-dom-file-file\">File()</a></code> constructor is invoked,\nuser agents must run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#process-blob-parts\" id=\"ref-for-process-blob-parts①\">processing blob parts</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-fileBits\" id=\"ref-for-dfn-fileBits①\">fileBits</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-file-file-filebits-filename-options-options\" id=\"ref-for-dom-file-file-filebits-filename-options-options\">options</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>n</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-fileName\" id=\"ref-for-dfn-fileName①\">fileName</a></code> argument to the constructor.</p>"
+        },
+        {
+          "html": "Process <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-FilePropertyBag\" id=\"ref-for-dfn-FilePropertyBag①\">FilePropertyBag</a></code> dictionary argument by running the following substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BPtype\" id=\"ref-for-dfn-BPtype③\">type</a></code> member is provided and is not the empty string,\nlet <var>t</var> be set to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-BPtype\" id=\"ref-for-dfn-BPtype④\">type</a></code> dictionary member.\nIf <var>t</var> contains any characters outside the range U+0020 to U+007E,\nthen set <var>t</var> to the empty string and return from these substeps.</p>"
+            },
+            {
+              "html": "<p>Convert every character in <var>t</var> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase②\">ASCII lowercase</a>.</p>"
+            },
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-FPdate\" id=\"ref-for-dfn-FPdate①\">lastModified</a></code> member is provided,\nlet <var>d</var> be set to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-FPdate\" id=\"ref-for-dfn-FPdate②\">lastModified</a></code> dictionary member.\nIf it is not provided,\nset <var>d</var> to the current date and time\nrepresented as the number of milliseconds since the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#UnixEpoch\" id=\"ref-for-UnixEpoch\">Unix Epoch</a> (which is the equivalent of <code>Date.now()</code> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-ecma-262\" title=\"ECMAScript Language Specification\">[ECMA-262]</a>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-file\" id=\"ref-for-dfn-file①⑦\">File</a></code> object <var>F</var> such that:</p>",
+          "ignored": [
+            "F refers to the bytes byte sequence. F.size is set to the number of total bytes in bytes. F.name is set to n. F.type is set to t. F.lastModified is set to d."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filelist\" id=\"ref-for-dfn-filelist④\">FileList</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects②\">serializable objects</a>. Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps②\">serialization steps</a>,\ngiven <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[Files]] to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+        },
+        {
+          "html": "<p>For each <var>file</var> in <var>value</var>, append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization\">sub-serialization</a> of <var>file</var> to <var>serialized</var>.[[Files]].</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps②\">deserialization step</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>file</var> of <var>serialized</var>.[[Files]], add the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization\">sub-deserialization</a> of <var>file</var> to <var>value</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "read operation",
+      "href": "https://w3c.github.io/FileAPI/#readOperation",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①\">state</a> is <code>\"loading\"</code>,\n throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state②\">state</a> to <code>\"loading\"</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-result\" id=\"ref-for-filereader-result①\">result</a> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-error\" id=\"ref-for-filereader-error①\">error</a> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream④\">get stream</a> on <var>blob</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader③\">getting a reader</a> from <var>stream</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bytes</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>chunkPromise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-a-chunk\" id=\"ref-for-readablestreamdefaultreader-read-a-chunk\">reading a chunk</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>isFirstChunk</var> be true.</p>"
+        },
+        {
+          "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for <var>chunkPromise</var> to be fulfilled or rejected.</p>"
+            },
+            {
+              "html": "<p>If <var>chunkPromise</var> is fulfilled, and <var>isFirstChunk</var> is true, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-loadstart-event\" id=\"ref-for-dfn-loadstart-event\">loadstart</a></code> at <var>fr</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>isFirstChunk</var> to false.</p>"
+            },
+            {
+              "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>bs</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> represented by the <code>Uint8Array</code> object.</p>"
+                },
+                {
+                  "html": "<p>Append <var>bs</var> to <var>bytes</var>.</p>"
+                },
+                {
+                  "html": "<p>If roughly 50ms have passed since these steps were last invoked, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event①\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-progress-event\" id=\"ref-for-dfn-progress-event\">progress</a></code> at <var>fr</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>chunkPromise</var> to the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-a-chunk\" id=\"ref-for-readablestreamdefaultreader-read-a-chunk①\">reading a chunk</a> from <var>stream</var> with <var>reader</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state③\">state</a> to <code>\"done\"</code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data①\">package data</a> given <var>bytes</var>, <var>type</var>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①④\">type</a></code>, and <var>encodingName</var>.</p>"
+                },
+                {
+                  "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-error\" id=\"ref-for-filereader-error②\">error</a> to <var>error</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event②\">Fire a progress event</a> called <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\">error</a></code> at <var>fr</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-result\" id=\"ref-for-filereader-result②\">result</a> to <var>result</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event③\">Fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-load-event\" id=\"ref-for-dfn-load-event\">load</a></code> at the <var>fr</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>If <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state④\">state</a> is not <code>\"loading\"</code>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event④\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-loadend-event\" id=\"ref-for-dfn-loadend-event\">loadend</a></code> at the <var>fr</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-filereader\" id=\"ref-for-dfn-filereader⑨\">FileReader</a></code> <var>fr</var> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"readOperation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read operation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\nwhich given <var>blob</var>, a <var>type</var> and an optional <var>encodingName</var>,\nruns the following steps: \n    \n    <p>Use the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource①\">file reading task source</a> for all these tasks.</p>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑤\">state</a> to <code>\"done\"</code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-error\" id=\"ref-for-filereader-error③\">error</a> to <var>error</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑤\">Fire a progress event</a> called <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\">error</a></code> at <var>fr</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑥\">state</a> is not <code>\"loading\"</code>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑥\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-loadend-event\" id=\"ref-for-dfn-loadend-event②\">loadend</a></code> at <var>fr</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FileReader/abort()",
+      "href": "https://w3c.github.io/FileAPI/#dfn-abort",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileReader\" data-dfn-type=\"method\" data-export=\"\" id=\"dfn-abort\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>abort()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called,\nthe user agent must run the steps below:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑦\">state</a> is <code>\"empty\"</code> or if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑧\">state</a> is <code>\"done\"</code> set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-result\" id=\"ref-for-filereader-result③\">result</a> to <code>null</code> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#terminate-an-algorithm\" id=\"ref-for-terminate-an-algorithm\">terminate this algorithm</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑨\">state</a> is <code>\"loading\"</code> set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①⓪\">state</a> to <code>\"done\"</code> and set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-result\" id=\"ref-for-filereader-result④\">result</a> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>If there are any <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">tasks</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource②\">file reading task source</a> in an affiliated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">task queue</a>,\n then remove those <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">tasks</a> from that task queue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#terminate-an-algorithm\" id=\"ref-for-terminate-an-algorithm①\">Terminate the algorithm</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#read-method\" id=\"ref-for-read-method⑤\">read method</a> being processed.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑦\">Fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\">abort</a></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①①\">state</a> is not <code>\"loading\"</code>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑧\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-loadend-event\" id=\"ref-for-dfn-loadend-event⑤\">loadend</a></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "package data",
+      "href": "https://w3c.github.io/FileAPI/#blob-package-data",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob④⑤\">Blob</a></code> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"blob-package-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">package data</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\ngiven <var>bytes</var>, a <var>type</var>, a optional <var>mimeType</var>, and a optional <var>encodingName</var>,\nwhich switches on <var>type</var> and runs the associated steps: \n    <dl>\n     <dt data-md=\"\">DataURL\n     </dt><dd data-md=\"\">\n      <p>Return <var>bytes</var> as a DataURL <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a> subject to the considerations below:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Use <var>mimeType</var> as part of the Data URL if it is available\nin keeping with the Data URL specification <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>.</p>\n       </li><li data-md=\"\">\n        <p>If <var>mimeType</var> is not available return a Data URL without a media-type. <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>.</p>\n      </li></ul>\n      \n     </dd><dt data-md=\"\">Text\n     </dt><dd data-md=\"\">\n      \n     </dd><dt data-md=\"\">ArrayBuffer\n     </dt><dd data-md=\"\">\n      <p>Return a new <code>ArrayBuffer</code> whose contents are <var>bytes</var>.</p>\n     </dd><dt data-md=\"\">BinaryString\n     </dt><dd data-md=\"\">\n      <p>Return <var>bytes</var> as a binary string,\n in which every byte is represented by a code unit of equal value [0..255].</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>encoding</var> be failure.</p>"
+        },
+        {
+          "html": "<p>If the <var>encodingName</var> is present, set <var>encoding</var> to the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get\">getting an encoding</a> from <var>encodingName</var>.</p>"
+        },
+        {
+          "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob④⑤\">Blob</a></code> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"blob-package-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">package data</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm,\ngiven <var>bytes</var>, a <var>type</var>, a optional <var>mimeType</var>, and a optional <var>encodingName</var>,\nwhich switches on <var>type</var> and runs the associated steps: \n    <dl>\n     <dt data-md=\"\">DataURL\n     </dt><dd data-md=\"\">\n      <p>Return <var>bytes</var> as a DataURL <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a> subject to the considerations below:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Use <var>mimeType</var> as part of the Data URL if it is available\nin keeping with the Data URL specification <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>.</p>\n       </li><li data-md=\"\">\n        <p>If <var>mimeType</var> is not available return a Data URL without a media-type. <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>.</p>\n      </li></ul>\n      \n     </dd><dt data-md=\"\">Text\n     </dt><dd data-md=\"\">\n      \n     </dd><dt data-md=\"\">ArrayBuffer\n     </dt><dd data-md=\"\">\n      <p>Return a new <code>ArrayBuffer</code> whose contents are <var>bytes</var>.</p>\n     </dd><dt data-md=\"\">BinaryString\n     </dt><dd data-md=\"\">\n      <p>Return <var>bytes</var> as a binary string,\n in which every byte is represented by a code unit of equal value [0..255].</p>\n    </dd></dl>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\" id=\"ref-for-parse-a-mime-type①\">parse a MIME type</a> given <var>mimeType</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> is not failure,\n  set <var>encoding</var> to the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get①\">getting an encoding</a> from <var>type</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters\">parameters</a>[<code>\"charset\"</code>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>encoding</var> is failure, then set <var>encoding</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8\">UTF-8</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decode\" id=\"ref-for-decode\">Decode</a> <var>bytes</var> using fallback encoding <var>encoding</var>, and return the result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileReaderSync/readAsText(blob, encoding)",
+      "href": "https://w3c.github.io/FileAPI/#dfn-readAsTextSync",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileReaderSync\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"readAsText(blob, encoding)|readAsText(blob)\" id=\"dfn-readAsTextSync\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>readAsText(<var>blob</var>, <var>encoding</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\nwhen invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑤\">get stream</a> on <var>blob</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader④\">getting a reader</a> from <var>stream</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes③\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Wait for <var>promise</var> to be fulfilled or rejected.</p>"
+        },
+        {
+          "html": "If <var>promise</var> fulfilled with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> <var>bytes</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data③\">package data</a> given <var>bytes</var>, <em>Text</em>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑥\">type</a></code>, and <var>encoding</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Throw <var>promise</var>’s rejection reason.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileReaderSync/readAsDataURL(blob)",
+      "href": "https://w3c.github.io/FileAPI/#dfn-readAsDataURLSync",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileReaderSync\" data-dfn-type=\"method\" data-export=\"\" id=\"dfn-readAsDataURLSync\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>readAsDataURL(<var>blob</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\nwhen invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑥\">get stream</a> on <var>blob</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑤\">getting a reader</a> from <var>stream</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes④\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Wait for <var>promise</var> to be fulfilled or rejected.</p>"
+        },
+        {
+          "html": "If <var>promise</var> fulfilled with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> <var>bytes</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data④\">package data</a> given <var>bytes</var>, <em>DataURL</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑦\">type</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Throw <var>promise</var>’s rejection reason.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileReaderSync/readAsArrayBuffer(blob)",
+      "href": "https://w3c.github.io/FileAPI/#dfn-readAsArrayBufferSync",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileReaderSync\" data-dfn-type=\"method\" data-export=\"\" id=\"dfn-readAsArrayBufferSync\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>readAsArrayBuffer(<var>blob</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\nwhen invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑦\">get stream</a> on <var>blob</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑥\">getting a reader</a> from <var>stream</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes⑤\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Wait for <var>promise</var> to be fulfilled or rejected.</p>"
+        },
+        {
+          "html": "If <var>promise</var> fulfilled with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> <var>bytes</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑤\">package data</a> given <var>bytes</var>, <em>ArrayBuffer</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑧\">type</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Throw <var>promise</var>’s rejection reason.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileReaderSync/readAsBinaryString(blob)",
+      "href": "https://w3c.github.io/FileAPI/#dfn-readAsBinaryStringSync",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileReaderSync\" data-dfn-type=\"method\" data-export=\"\" id=\"dfn-readAsBinaryStringSync\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>readAsBinaryString(<var>blob</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\nwhen invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑧\">get stream</a> on <var>blob</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑦\">getting a reader</a> from <var>stream</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes\" id=\"ref-for-readablestreamdefaultreader-read-all-bytes⑥\">reading all bytes</a> from <var>stream</var> with <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p>Wait for <var>promise</var> to be fulfilled or rejected.</p>"
+        },
+        {
+          "html": "If <var>promise</var> fulfilled with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> <var>bytes</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑥\">package data</a> given <var>bytes</var>, <em>BinaryString</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑨\">type</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Throw <var>promise</var>’s rejection reason.</p>"
+        }
+      ]
+    },
+    {
+      "name": "createBlobURL",
+      "href": "https://w3c.github.io/FileAPI/#unicodeBlobURL",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"generate a new blob URL|generating a new blob URL\" data-noexport=\"\" id=\"unicodeBlobURL\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> generate a new blob URL</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p>Append the string \"<code>blob:</code>\" to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a></p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serialized</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">ASCII serialization</a> of <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>serialized</var> is \"<code>null</code>\", set it to an implementation-defined value.</p>"
+        },
+        {
+          "html": "<p>Append <var>serialized</var> to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Append U+0024 SOLIDUS (<code>/</code>) to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://w3c.github.io/FileAPI/#biblio-rfc4122\" title=\"Universally Unique IDentifiers (UUIDs)\">[RFC4122]</a> as a string and append it to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "addBlobURL",
+      "href": "https://w3c.github.io/FileAPI/#add-an-entry",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"blob url store\" data-dfn-type=\"dfn\" data-lt=\"add an entry|add the entry|add an entry to the blob URL store|add the entry to the blob URL store|adding an entry to the blob URL store\" data-noexport=\"\" id=\"add-an-entry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> add an entry to the blob URL store</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>object</var>,\nrun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the user agent’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#BlobURLStore\" id=\"ref-for-BlobURLStore②\">blob URL store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>url</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#unicodeBlobURL\" id=\"ref-for-unicodeBlobURL\">generating a new blob URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-url-entry\" id=\"ref-for-blob-url-entry①\">blob URL entry</a> consisting of <var>object</var> and the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object①\">current settings object</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>store</var>[<var>url</var>] to <var>entry</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>url</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "removeBlobURL",
+      "href": "https://w3c.github.io/FileAPI/#removeTheEntry",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"blob url store\" data-dfn-type=\"dfn\" data-lt=\"remove an entry|remove the entry|remove an entry from the blob URL store|remove the entry from the blob URL store\" data-noexport=\"\" id=\"removeTheEntry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"> remove an entry from the blob URL store</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>url</var>,\nrun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the user agent’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#BlobURLStore\" id=\"ref-for-BlobURLStore③\">blob URL store</a>;</p>"
+        },
+        {
+          "html": "<p>Let <var>url string</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">serializing</a> <var>url</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>store</var>[<var>url string</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "resolveURL",
+      "href": "https://w3c.github.io/FileAPI/#blob-url-resolve",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"blob-url-resolve\">resolve a blob URL<a class=\"self-link\" href=\"https://w3c.github.io/FileAPI/#blob-url-resolve\"></a></dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>url</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is \"<code>blob</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the user agent’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#BlobURLStore\" id=\"ref-for-BlobURLStore④\">blob URL store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>url string</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">serializing</a> <var>url</var> with the <em>exclude fragment flag</em> set.</p>"
+        },
+        {
+          "html": "<p>If <var>store</var>[<var>url string</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, return <var>store</var>[<var>url string</var>]; otherwise return failure.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This specification extends the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#unloading-document-cleanup-steps\" id=\"ref-for-unloading-document-cleanup-steps\">unloading document cleanup steps</a> with the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>environment</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>store</var> be the user agent’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#BlobURLStore\" id=\"ref-for-BlobURLStore⑥\">blob URL store</a>;</p>"
+        },
+        {
+          "html": "<p>Remove from <var>store</var> any entries for which the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-url-entry-environment\" id=\"ref-for-blob-url-entry-environment\">environment</a> is equal to <var>environment</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "revokeObjectURL",
+      "href": "https://w3c.github.io/FileAPI/#dfn-revokeObjectURL",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"URL\" data-dfn-type=\"method\" data-export=\"\" id=\"dfn-revokeObjectURL\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>revokeObjectURL(<var>url</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> static method must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>url record</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">parsing</a> <var>url</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>url record</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> is not \"<code>blob</code>\", return.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> of <var>url record</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object②\">current settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#removeTheEntry\" id=\"ref-for-removeTheEntry\">Remove an entry from the Blob URL Store</a> for <var>url</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

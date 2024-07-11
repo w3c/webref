@@ -1,0 +1,314 @@
+{
+  "spec": {
+    "title": "Web Periodic Background Synchronization",
+    "url": "https://wicg.github.io/periodic-background-sync/"
+  },
+  "algorithms": [
+    {
+      "name": "Process periodic sync registrations",
+      "href": "https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations",
+      "html": "<h3 class=\"heading settled\" data-level=\"7.1\" id=\"process-periodic-sync-registrations-algorithm\"><span class=\"secno\">7.1. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-periodic-sync-registrations\">Process periodic sync registrations</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm\"></a></h3>\n     When the user agent starts, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<h3 class=\"heading settled\" data-level=\"7.1\" id=\"process-periodic-sync-registrations-algorithm\"><span class=\"secno\">7.1. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-periodic-sync-registrations\">Process periodic sync registrations</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm\"></a></h3>\n     When the user agent starts, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#minimum-periodic-sync-interval-across-origins\" id=\"ref-for-minimum-periodic-sync-interval-across-origins②\">minimum periodic sync interval across origins</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>firedPeriodicSync</var> be false.</p>"
+            },
+            {
+              "html": "<h3 class=\"heading settled\" data-level=\"7.1\" id=\"process-periodic-sync-registrations-algorithm\"><span class=\"secno\">7.1. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-periodic-sync-registrations\">Process periodic sync registrations</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm\"></a></h3>\n     When the user agent starts, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+              "rationale": "wait",
+              "steps": [
+                {
+                  "html": "<p>Wait for some user agent defined amount of time.</p>"
+                },
+                {
+                  "html": "<p>Wait until <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-sync/spec/#online\" id=\"ref-for-online\">online</a>.</p>"
+                },
+                {
+                  "html": "<h3 class=\"heading settled\" data-level=\"7.1\" id=\"process-periodic-sync-registrations-algorithm\"><span class=\"secno\">7.1. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-periodic-sync-registrations\">Process periodic sync registrations</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm\"></a></h3>\n     When the user agent starts, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-client-origin\" id=\"ref-for-service-worker-client-origin⑧\">origin</a> associated with <var>periodicSyncRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-service-worker-registration\" id=\"ref-for-periodic-sync-registration-service-worker-registration②\">service worker registration</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-time-of-last-fire\" id=\"ref-for-periodic-sync-scheduler-time-of-last-fire\">time of last fire</a>[<var>origin</var>] + the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#effective-minimum-sync-interval-for-origin\" id=\"ref-for-effective-minimum-sync-interval-for-origin①\">effective minimum sync interval for origin</a> <var>origin</var> is greater than now, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+                    },
+                    {
+                      "html": "<h3 class=\"heading settled\" data-level=\"7.1\" id=\"process-periodic-sync-registrations-algorithm\"><span class=\"secno\">7.1. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-periodic-sync-registrations\">Process periodic sync registrations</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm\"></a></h3>\n     When the user agent starts, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If <var>periodicSyncRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state\">state</a> is not \"<code>pending</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>periodicSyncRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-anchor-time\" id=\"ref-for-periodic-sync-registration-anchor-time\">anchor time</a> + <var>periodicSyncRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-minimum-interval\" id=\"ref-for-periodic-sync-registration-minimum-interval①\">minimum interval</a> is greater than now, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>firedPeriodicSync</var> to true.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#fire-a-periodicsync-event\" id=\"ref-for-fire-a-periodicsync-event\">Fire a periodicsync event</a> for <var>periodicSyncRegistration</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Respond to permission revocation",
+      "href": "https://wicg.github.io/periodic-background-sync/#respond-to-permission-revocation",
+      "html": "<h3 class=\"heading settled\" data-level=\"7.2\" id=\"responding-to-permission-revocation-algorithm\"><span class=\"secno\">7.2. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"respond-to-permission-revocation\">Respond to permission revocation</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#responding-to-permission-revocation-algorithm\"></a></h3>\n     To <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#respond-to-permission-revocation\" id=\"ref-for-respond-to-permission-revocation\">respond to revocation</a> of the permission with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name①\">name</a></code> <code>\"periodic-background-sync\"</code> for <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-client-origin\" id=\"ref-for-service-worker-client-origin⑨\">origin</a> <var>origin</var>, the user agent MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue①\">periodic sync processing queue</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<h3 class=\"heading settled\" data-level=\"7.2\" id=\"responding-to-permission-revocation-algorithm\"><span class=\"secno\">7.2. </span><span class=\"content\"><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"respond-to-permission-revocation\">Respond to permission revocation</dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/periodic-background-sync/#responding-to-permission-revocation-algorithm\"></a></h3>\n     To <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#respond-to-permission-revocation\" id=\"ref-for-respond-to-permission-revocation\">respond to revocation</a> of the permission with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name①\">name</a></code> <code>\"periodic-background-sync\"</code> for <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-client-origin\" id=\"ref-for-service-worker-client-origin⑨\">origin</a> <var>origin</var>, the user agent MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue①\">periodic sync processing queue</a>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>Remove <var>registration</var> from <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations④\">active periodic sync registrations</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PeriodicSyncManager/register(tag, options)",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register",
+      "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"register(tag, options)|register(tag)\" id=\"dom-periodicsyncmanager-register\" title=\"register(tag, options)\"><code>register(<var>tag</var>, <var>options</var>)</code></dfn></code> method, when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue②\">periodic sync processing queue</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>serviceWorkerRegistration</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-service-worker-registration\" id=\"ref-for-periodicsyncmanager-service-worker-registration①\">service worker registration</a> associated with the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object②\">context object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncmanager\" id=\"ref-for-periodicsyncmanager⑤\">PeriodicSyncManager</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker\">active worker</a> is null, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#enumdef-permissionstate\" id=\"ref-for-enumdef-permissionstate①\">PermissionState</a></code> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dictdef-permissiondescriptor\" id=\"ref-for-dictdef-permissiondescriptor①\">PermissionDescriptor</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name②\">name</a></code> <code>\"periodic-background-sync\"</code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted①\">granted</a></code>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>isBackground</var>, a boolean, be true.</p>"
+        },
+        {
+          "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"register(tag, options)|register(tag)\" id=\"dom-periodicsyncmanager-register\" title=\"register(tag, options)\"><code>register(<var>tag</var>, <var>options</var>)</code></dfn></code> method, when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue②\">periodic sync processing queue</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type\" id=\"ref-for-dfn-service-worker-client-frame-type①\">frame type</a> is \"<code>top-level</code>\" or \"<code>auxiliary</code>\", set <var>isBackground</var> to false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>isBackground</var> is true, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#invalidaccesserror\" id=\"ref-for-invalidaccesserror\">InvalidAccessError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentRegistration</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①⓪\">periodic sync registration</a> in <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations⑤\">active periodic sync registrations</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag\" id=\"ref-for-periodic-sync-registration-tag\">tag</a> equals <var>tag</var> if it exists, else null.</p>"
+        },
+        {
+          "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"register(tag, options)|register(tag)\" id=\"dom-periodicsyncmanager-register\" title=\"register(tag, options)\"><code>register(<var>tag</var>, <var>options</var>)</code></dfn></code> method, when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue②\">periodic sync processing queue</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>newRegistration</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①①\">periodic sync registration</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag\" id=\"ref-for-periodic-sync-registration-tag①\">tag</a> to <var>tag</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-minimum-interval\" id=\"ref-for-periodic-sync-registration-minimum-interval②\">minimum interval</a> to <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/periodic-background-sync/#dom-backgroundsyncoptions-mininterval\" id=\"ref-for-dom-backgroundsyncoptions-mininterval\">minInterval</a></code> member.</p>"
+            },
+            {
+              "html": "<p>Set <var>newRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state①\">state</a> to \"<code>pending</code>\".</p>"
+            },
+            {
+              "html": "<p>Set <var>newRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-service-worker-registration\" id=\"ref-for-periodic-sync-registration-service-worker-registration④\">service worker registration</a> to <var>serviceWorkerRegistration</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-anchor-time\" id=\"ref-for-periodic-sync-registration-anchor-time①\">anchor time</a> to a timestamp representing now.</p>"
+            },
+            {
+              "html": "<p>Add <var>newRegistration</var> to <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations⑥\">active periodic sync registrations</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"register(tag, options)|register(tag)\" id=\"dom-periodicsyncmanager-register\" title=\"register(tag, options)\"><code>register(<var>tag</var>, <var>options</var>)</code></dfn></code> method, when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue②\">periodic sync processing queue</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"register(tag, options)|register(tag)\" id=\"dom-periodicsyncmanager-register\" title=\"register(tag, options)\"><code>register(<var>tag</var>, <var>options</var>)</code></dfn></code> method, when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue②\">periodic sync processing queue</a>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>currentRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-minimum-interval\" id=\"ref-for-periodic-sync-registration-minimum-interval④\">minimum interval</a> to <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/periodic-background-sync/#dom-backgroundsyncoptions-mininterval\" id=\"ref-for-dom-backgroundsyncoptions-mininterval②\">minInterval</a></code> member.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Else, if <var>currentRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state②\">state</a> is \"<code>firing</code>\", set <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state③\">state</a> to \"<code>reregistered-while-firing</code>\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PeriodicSyncManager/getTags()",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-gettags",
+      "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-periodicsyncmanager-gettags\" title=\"getTags()\"><code>getTags()</code></dfn></code> method when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps③\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue③\">periodic sync processing queue</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>serviceWorkerRegistration</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-service-worker-registration\" id=\"ref-for-periodicsyncmanager-service-worker-registration②\">service worker registration</a> associated with the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object③\">context object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncmanager\" id=\"ref-for-periodicsyncmanager⑥\">PeriodicSyncManager</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentTags</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+        },
+        {
+          "html": "<p>For each <var>registration</var> of <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations⑦\">active periodic sync registrations</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag\" id=\"ref-for-periodic-sync-registration-tag②\">tag</a> to <var>currentTags</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <var>currentTags</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PeriodicSyncManager/unregister(tag)",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-unregister",
+      "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-periodicsyncmanager-unregister\" title=\"unregister(tag)\"><code>unregister(<var>tag</var>)</code></dfn></code> method when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps④\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue④\">periodic sync processing queue</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "The <code><dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicSyncManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-periodicsyncmanager-unregister\" title=\"unregister(tag)\"><code>unregister(<var>tag</var>)</code></dfn></code> method when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps④\">enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue\" id=\"ref-for-periodic-sync-processing-queue④\">periodic sync processing queue</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>currentRegistration</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①②\">periodic sync registration</a> in <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations⑧\">active periodic sync registrations</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag\" id=\"ref-for-periodic-sync-registration-tag③\">tag</a> equals <var>tag</var> if it exists, else null.</p>"
+            },
+            {
+              "html": "<p>If <var>currentRegistration</var> is not null, remove <var>currentRegistration</var> from <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations⑨\">active periodic sync registrations</a>.</p>"
+            },
+            {
+              "html": "<p>Resolve <var>promise</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fire a periodicsync event",
+      "href": "https://wicg.github.io/periodic-background-sync/#fire-a-periodicsync-event",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>serviceWorkerRegistration</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-service-worker-registration\" id=\"ref-for-periodic-sync-registration-service-worker-registration⑤\">service worker registration</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>registration</var> is no longer part of <var>serviceWorkerRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations\" id=\"ref-for-active-periodic-sync-registrations①⓪\">active periodic sync registrations</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state④\">state</a> is \"<code>pending</code>\".</p>"
+        },
+        {
+          "html": "<p>Let retryCount be 0.</p>"
+        },
+        {
+          "html": "<p>Set <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state⑤\">state</a> to \"<code>firing</code>\".</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>continue</var> be false.</p>"
+            },
+            {
+              "html": "<p>Let <var>success</var> be false.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#fire-functional-event\" id=\"ref-for-fire-functional-event\">Fire functional event</a> \"<code>periodicsync</code>\" using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncevent\" id=\"ref-for-periodicsyncevent③\">PeriodicSyncEvent</a></code> on <var>serviceWorkerRegistration</var> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsyncevent-tag\" id=\"ref-for-periodicsyncevent-tag\">tag</a> set to <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag\" id=\"ref-for-periodic-sync-registration-tag⑤\">tag</a>. Let <var>dispatchedEvent</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#extendableevent\" id=\"ref-for-extendableevent②\">ExtendableEvent</a></code>, represent the dispatched <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodicsync-event\" id=\"ref-for-periodicsync-event②⓪\">periodicsync event</a> and run the following steps with <var>dispatchedEvent</var>:</p>"
+            },
+            {
+              "html": "<p>Let <var>waitUntilPromise</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#wait-for-all\" id=\"ref-for-wait-for-all\">waiting for all</a> of <var>dispatchedEvent</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#extendableevent-extend-lifetime-promises\" id=\"ref-for-extendableevent-extend-lifetime-promises\">extend lifetime promises</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>success</var> to true.</p>"
+                },
+                {
+                  "html": "<p>Set <var>continue</var> to true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>continue</var> to true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+              "rationale": "wait",
+              "steps": [
+                {
+                  "html": "<p>Wait for <var>continue</var> to be true.</p>"
+                },
+                {
+                  "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-client-origin\" id=\"ref-for-service-worker-client-origin①②\">origin</a> associated with <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-service-worker-registration\" id=\"ref-for-periodic-sync-registration-service-worker-registration⑥\">service worker registration</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>success</var> is true, set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-time-of-last-fire\" id=\"ref-for-periodic-sync-scheduler-time-of-last-fire①\">time of last fire</a> for key <var>origin</var> to the current time.</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-a-periodicsync-event\">fire a periodicsync event</dfn> for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration\" id=\"ref-for-periodic-sync-registration①③\">periodic sync registration</a> <var>registration</var>, the user agent MUST run the following steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state\" id=\"ref-for-periodic-sync-registration-state⑥\">state</a> to \"<code>pending</code>\".</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-anchor-time\" id=\"ref-for-periodic-sync-registration-anchor-time②\">anchor time</a> to a timestamp representing now.</p>"
+                    },
+                    {
+                      "html": "<p>Abort these steps.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Increment <var>retryCount</var>.</p>"
+            },
+            {
+              "html": "<p>Wait for a small back-off time based on <var>retryCount</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "spec": {
+    "title": "CSS Table Module Level 3",
+    "url": "https://drafts.csswg.org/css-tables-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The following steps are performed in three stages:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<b>Remove irrelevant boxes:</b><br> The following boxes are discarded as if they were <code>display:none</code>:",
+          "ignored": [
+            "Children of a table-column. Children of a table-column-group which are not a table-column. Anonymous inline boxes which contain only white space and are between two immediate siblings each of which is a table-non-root box. Anonymous inline boxes which meet all of the following criteria: they contain only white space they are the first and/or last child of a tabular container whose immediate sibling, if any, is a table-non-root box"
+          ]
+        },
+        {
+          "html": "<b>Generate missing child wrappers:</b>",
+          "ignored": [
+            "An anonymous table-row box must be generated around each sequence of consecutive children of a table-root box which are not proper table child boxes. !!Testcase An anonymous table-row box must be generated around each sequence of consecutive children of a table-row-group box which are not table-row boxes. !Testcase An anonymous table-cell box must be generated around each sequence of consecutive children of a table-row box which are not table-cell boxes. !Testcase"
+          ]
+        },
+        {
+          "html": "<b>Generate missing parents:</b>",
+          "ignored": [
+            "An anonymous table-row box must be generated around each sequence of consecutive table-cell boxes whose parent is not a table-row. Testcase An anonymous table or inline-table box must be generated around each sequence of consecutive proper table child boxes which are misparented. If the box’s parent is an inline, run-in, or ruby box (or any box that would perform inlinification of its children), then an inline-table box must be generated; otherwise it must be a table box. A table-row is misparented if its parent is neither a table-row-group nor a table-root box. A table-column box is misparented if its parent is neither a table-column-group box nor a table-root box. A table-row-group, table-column-group, or table-caption box is misparented if its parent is not a table-root box. Testcase Testcase !Testcase An anonymous table-wrapper box must be generated around each table-root. Its display type is inline-block for inline-table boxes and block for table boxes. The table wrapper box establishes a block formatting context. The table-root box (not the table-wrapper box) is used when doing baseline vertical alignment for an inline-table. The width of the table-wrapper box is the border-edge width of the table grid box inside it. Percentages which would depend on the width and height on the table-wrapper box’s size are relative to the table-wrapper box’s containing block instead, not the table-wrapper box itself."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To layout a table, user agents must apply the following actions:",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "<b>Determine the number of rows/columns the table requires.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#dimensioning-the-row-column-grid\">§ 3.3 Dimensioning the row/column grid</a>."
+        },
+        {
+          "html": "<b>[A] If the row/column grid has at least one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot①\">slot</a>:</b>",
+          "rationale": "ensure",
+          "steps": [
+            {
+              "html": "<b>Ensure each cell <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot②\">slot</a> is occupied by at least one cell.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#missing-cells-fixup\">§ 3.4 Missing cells fixup</a>."
+            },
+            {
+              "html": "<b>Compute the minimum width of each column.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#content-measure\">§ 3.8 Computing table measures</a>."
+            },
+            {
+              "html": "<b>Compute the width of the table.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#computing-the-table-width\">§ 3.9.1 Computing the table width</a>."
+            },
+            {
+              "html": "<b>Distribute the width of the table among columns.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#width-distribution-algorithm\">§ 3.9.3 Distribution algorithm</a>."
+            },
+            {
+              "html": "<b>Compute the height of the table.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#computing-the-table-height\">§ 3.10.1 Computing the table height</a>."
+            },
+            {
+              "html": "<b>Distribute the height of the table among rows.</b><br> This is done by executing the steps described in <a href=\"https://drafts.csswg.org/css-tables-3/#height-distribution-algorithm\">§ 3.10.5 Distribution algorithm</a>."
+            }
+          ],
+          "additional": [
+            {
+              "html": "<b>[B] Else, an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"empty-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">empty table</dfn> is laid out:</b>",
+              "rationale": "compute",
+              "steps": [
+                {
+                  "html": "<b>Compute the width of the table.</b><br> This is done by returning the largest value of <a href=\"https://drafts.csswg.org/css-tables-3/#capmin\" id=\"ref-for-capmin\">CAPMIN</a> and the computed width of the table grid box (including borders and paddings)\n\t\t\t\t\t\t\t\tif it is definite (use zero otherwise)."
+                },
+                {
+                  "html": "<b>Compute the height of the table.</b><br> This is done by returning the sum of all table-caption heights\n\t\t\t\t\t\t\t\t(their width being set to the table width,\n\t\t\t\t\t\t\t\twith margins taken into consideration appropriately)\n\t\t\t\t\t\t\tand the computed height of the table grid box (including borders and paddings)\n\t\t\t\t\t\t\t\tif it is definite (use zero otherwise)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<b>Assign to each table-caption and table-cell their position and size.</b><br> This is done by running the steps of <a href=\"https://drafts.csswg.org/css-tables-3/#bounding-box-assignment\">§ 3.11 Positioning of cells, captions and other internal table boxes</a>."
+        }
+      ]
+    },
+    {
+      "html": "Resolve conflicts with border-right:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let S be an ordered set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#table-cell\" id=\"ref-for-table-cell①⑤\">table-cell</a> border styles, sorted by cell in RowStart/ColumnStart order;\n\t\t\t\t\tinitially, let S contain only C°’s border-right style"
+        },
+        {
+          "html": "Add to the set S the border-left style of all cells\n\t\t\t\t\tsharing a section of their left border with C°’s right border"
+        },
+        {
+          "html": "Repeat the following two instructions, until no new border style is added to S: \n       <ul>\n        <li>For all newly-added left borders from cell C<sub>i</sub> having a <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot⑤\">rowspan</a> greater than one,\n\t\t\t\t\t\tadd to the set S the border-right style of all cells\n\t\t\t\t\t\tsharing a section of their border-right with C<sub>i</sub>’s border-left \n        </li><li>For all newly-added right borders from cell C<sub>i</sub> having a <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot⑥\">rowspan</a> greater than one,\n\t\t\t\t\t\tadd to the set S the border-left style of all cells\n\t\t\t\t\t\tsharing a section of their border-left with C<sub>i</sub>’s border-right \n       </li></ul>"
+        },
+        {
+          "html": "Harmonize the conflicting borders of S"
+        }
+      ]
+    },
+    {
+      "html": "Resolve conflicts with border-bottom:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let S be an ordered set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#table-cell\" id=\"ref-for-table-cell①⑥\">table-cell</a> border styles, sorted by cell in RowStart/ColumnStart order;\n\t\t\t\t\tinitially, let S contain only C°’s border-bottom style"
+        },
+        {
+          "html": "Add to the set S the border-top style of all cells\n\t\t\t\t\tsharing a section of their top border with C°’s bottom border"
+        },
+        {
+          "html": "Repeat the following two instructions, until no new border style is added to S: \n       <ul>\n        <li>For all newly-added top borders from cell C<sub>i</sub> having a <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot⑦\">rowspan</a> greater than one,\n\t\t\t\t\t\tadd to the set S the border-bottom style of all cells\n\t\t\t\t\t\tsharing a section of their bottom border with C<sub>i</sub>’s top border \n        </li><li>For all newly-added bottom borders from cell C<sub>i</sub> having a <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot⑧\">rowspan</a> greater than one,\n\t\t\t\t\t\tadd to the set S the border-top style of all cells\n\t\t\t\t\t\tsharing a section of their top border with C<sub>i</sub>’s bottom border \n       </li></ul>"
+        },
+        {
+          "html": "Harmonize the conflicting borders of S"
+        }
+      ]
+    },
+    {
+      "name": "min-content width of a column based on cells of span up to N (N > 1)",
+      "href": "https://drafts.csswg.org/css-tables-3/#min-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "html": "the largest of the min-content width of the column based on cells of span up to N-1 and the contributions\n\t\t\t\t\t\tof the cells in the column whose <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot①②\">colSpan</a> is N,\n\t\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "rationale": "define",
+      "steps": [
+        {
+          "html": "Define the baseline min-content width\n\t\t\t\t\t\t\tas the sum of the max-content widths based on cells of span up to N-1 \n\t\t\t\t\t\t\tof all columns that the cell spans."
+        },
+        {
+          "html": "Define the baseline border spacing as the sum of the horizontal\n\t\t\t\t\t\t\tborder-spacing for any columns spanned by the cell,\n\t\t\t\t\t\t\tother than the one in which the cell originates."
+        },
+        {
+          "html": "The contribution of the cell is the sum of: \n         <ul>\n          <li>the min-content width of the column based on cells of span up to N-1 \n          </li><li>\n           the product of: \n           <ul>\n            <li>\n             the ratio of: \n             <ul>\n              <li>the max-content width of the column based on cells of span up to N-1 of the column\n\t\t\t\t\t\t\t\t\t\t\t\t\tminus the min-content width of the column based on cells of span up to N-1 of the column, to \n              </li><li>the baseline max-content width minus the baseline min-content width \n             </li></ul>\n              or zero if this ratio is undefined, and \n            </li><li>the outer min-content width of the cell\n\t\t\t\t\t\t\t\t\t\t\tminus the baseline min-content width and the baseline border spacing,\n\t\t\t\t\t\t\t\t\t\t\tclamped to be at least 0 and at most the difference\n\t\t\t\t\t\t\t\t\t\t\tbetween the baseline max-content width and the baseline min-content width \n           </li></ul>\n          </li><li>\n           the product of: \n           <ul>\n            <li>the ratio of the max-content width\n\t\t\t\t\t\t\t\t\t\t\tbased on cells of span up to N-1 of the column to the baseline max-content width \n            </li><li>the outer min-content width of the cell\n\t\t\t\t\t\t\t\t\t\t\tminus the baseline max-content width and baseline border spacing,\n\t\t\t\t\t\t\t\t\t\t\tor 0 if this is negative \n           </li></ul>\n         </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "max-content width of a column based on cells of span up to N (N > 1)",
+      "href": "https://drafts.csswg.org/css-tables-3/#max-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "html": "The largest of the max-content width\n\t\t\t\t\tbased on cells of span up to N-1 and the contributions of the cells in the column whose <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot①③\">colSpan</a> is N,\n\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "rationale": "define",
+      "steps": [
+        {
+          "html": "Define the baseline max-content width as\n\t\t\t\t\t\t\tthe sum of the max-content widths based on cells of span up to N-1\n\t\t\t\t\t\t\tof all columns that the cell spans."
+        },
+        {
+          "html": "Define the baseline border spacing as\n\t\t\t\t\t\t\tthe sum of the horizontal border-spacing\n\t\t\t\t\t\t\tfor any columns spanned by the cell,\n\t\t\t\t\t\t\tother than the one in which the cell originates."
+        },
+        {
+          "html": "The contribution of the cell is the sum of: \n         <ul>\n          <li>the max-content width of the column based on cells of span up to N-1 \n          </li><li>\n           the product of: \n           <ul>\n            <li>the ratio of the max-content width\n\t\t\t\t\t\t\t\t\t\t\tbased on cells of span up to N-1 of the column to the baseline max-content width \n            </li><li>the outer max-content width of the cell\n\t\t\t\t\t\t\t\t\t\t\tminus the baseline max-content width and the baseline border spacing,\n\t\t\t\t\t\t\t\t\t\t\tor 0 if this is negative \n           </li></ul>\n         </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "intrinsic percentage width of a column based on cells of span up to N (N > 1)",
+      "href": "https://drafts.csswg.org/css-tables-3/#intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "html": "If the intrinsic percentage width of a column based on cells of span up to N-1 is greater than 0%,\n\t\t\t\t\tthen the intrinsic percentage width of the column based on cells of span up to N is\n\t\t\t\t\tthe same as the intrinsic percentage width of the column based on cells of span up to N-1.<br> <br> Otherwise, it is the largest of the contributions of the cells in the column\n\t\t\t\t\twhose <a href=\"https://drafts.csswg.org/css-tables-3/#slot\" id=\"ref-for-slot①④\">colSpan</a> is N,\n\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "Start with the percentage contribution of the cell."
+        },
+        {
+          "html": "Subtract the intrinsic percentage width of the column based on cells of span up to N-1 of all columns that the cell spans.\n\t\t\t\t\t\t\tIf this gives a negative result, change it to 0%."
+        },
+        {
+          "html": "Multiply by the ratio of \n         <ul>\n          <li>the column’s non-spanning max-content width to \n          </li><li>the sum of the non-spanning max-content widths of all columns spanned by the cell\n\t\t\t\t\t\t\t\t\tthat have an intrinsic percentage width of the column based on cells of span up to N-1 equal to 0%. \n         </li></ul>\n          However, if this ratio is undefined because the denominator is zero,\n\t\t\t\t\t\t\tinstead use the 1 divided by the number of columns spanned by the cell\n\t\t\t\t\t\t\tthat have an intrinsic percentage width of the column based on cells of span up to N-1 equal to zero."
+        }
+      ]
+    },
+    {
+      "name": "distributed width",
+      "href": "https://drafts.csswg.org/css-tables-3/#distributed-width",
+      "html": "The remainder of this section uses the term <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"distributed-width\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">distributed width</dfn> to refer to the one of these widths that is being distributed,\n\t\tand the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"excess-width\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">excess width</dfn> is used to refer to the amount by which the width being distributed\n\t\texceeds the sum of the distributed widths of the columns it is being distributed to.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#constrainedness\" id=\"ref-for-constrainedness③\">non-constrained columns</a> that have originating cells\n\t\t\t\t\twith intrinsic percentage width of 0% and\n\t\t\t\t\twith nonzero max-content width <i class=\"hint\">(aka the columns allowed to grow by this rule)</i>,\n\t\t\t\tthe distributed widths of the columns allowed to grow by this rule\n\t\t\t\t\tare increased in proportion to max-content width\n\t\t\t\t\tso the total increase adds to the excess width."
+        },
+        {
+          "html": "Otherwise, if there are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#constrainedness\" id=\"ref-for-constrainedness④\">non-constrained columns</a> that have originating cells\n\t\t\t\t\twith intrinsic percentage width of 0% <i class=\"hint\">(aka the columns allowed to grow by this rule,\n\t\t\t\t\twhich thanks to the previous rule must have zero max-content width)</i>,\n\t\t\t\tthe distributed widths of the columns allowed to grow by this rule\n\t\t\t\t\tare increased by equal amounts\n\t\t\t\t\tso the total increase adds to the excess width."
+        },
+        {
+          "html": "Otherwise, if there are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#constrainedness\" id=\"ref-for-constrainedness⑤\">constrained columns</a> with intrinsic percentage width of 0% and\n\t\t\t\t\twith nonzero max-content width <i class=\"hint\">(aka the columns allowed to grow by this rule, which, due to other rules, must have originating cells)</i>,\n\t\t\t\tthe distributed widths of the columns allowed to grow by this rule\n\t\t\t\t\tare increased in proportion to max-content width\n\t\t\t\t\tso the total increase adds to the excess width."
+        },
+        {
+          "html": "Otherwise, if there are columns\n\t\t\t\t\twith intrinsic percentage width greater than 0% <i class=\"hint\">(aka the columns allowed to grow by this rule, which, due to other rules, must have originating cells)</i>,\n\t\t\t\tthe distributed widths of the columns allowed to grow by this rule\n\t\t\t\t\tare increased in proportion to intrinsic percentage width\n\t\t\t\t\tso the total increase adds to the excess width."
+        },
+        {
+          "html": "Otherwise, if there is any such column,\n\t\t\t\t\tthe distributed widths of all columns that have originating cells\n\t\t\t\t\tare increased by equal amounts\n\t\t\t\t\tso the total increase adds to the excess width."
+        },
+        {
+          "html": "Otherwise,\n\t\t\t\t\tthe distributed widths of all columns\n\t\t\t\t\tare increased by equal amounts\n\t\t\t\t\tso the total increase adds to the excess width."
+        }
+      ]
+    }
+  ]
+}

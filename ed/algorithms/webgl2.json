@@ -1,0 +1,71 @@
+{
+  "spec": {
+    "title": "WebGL 2.0 Specification",
+    "url": "https://registry.khronos.org/webgl/specs/latest/2.0/"
+  },
+  "algorithms": [
+    {
+      "html": "When the <code>getContext()</code> method of a <code>canvas</code> element is to return a\n        new object for\n        the <em>contextId</em> <code>webgl2</code> <a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#refsCANVASCONTEXTS\">[CANVASCONTEXTS]</a>,\n        the user agent must perform the following steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "Create a new <code>WebGL2RenderingContext</code> object, <em>context</em>."
+        },
+        {
+          "html": "Let <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#context-canvas\">canvas</a> be the canvas or offscreen\n             canvas the <code>getContext()</code> method is associated with."
+        },
+        {
+          "html": "Create a new <code>WebGLContextAttributes</code> object, <em>contextAttributes</em>."
+        },
+        {
+          "html": "If <code>getContext()</code> was invoked with a second argument, <em>options</em>, set\n             the attributes of <em>contextAttributes</em> from those specified in <em>options</em>."
+        },
+        {
+          "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#create-a-drawing-buffer\">Create a <em>drawing buffer</em></a> using the settings\n             specified in <em>contextAttributes</em>, and associate the <em>drawing buffer</em>\n             with <em>context</em>."
+        },
+        {
+          "html": "If drawing buffer creation failed, perform the following steps:",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#fire-a-webgl-context-creation-error\">Fire a WebGL context creation\n          error</a> at <em>canvas</em>."
+            },
+            {
+              "html": "Return null and terminate these steps."
+            }
+          ]
+        },
+        {
+          "html": "Create a new <code>WebGLContextAttributes</code> object, <em>actualAttributes</em>."
+        },
+        {
+          "html": "Set the attributes of <em>actualAttributes</em> based on the properties of the newly\n             created drawing buffer."
+        },
+        {
+          "html": "Set <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#context-creation-parameters\">context creation\n        parameters</a> to <em>contextAttributes</em>."
+        },
+        {
+          "html": "Set <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/2.0/#actual-context-parameters\">actual context\n        parameters</a> to <em>actualAttributes</em>."
+        },
+        {
+          "html": "Return <em>context</em>."
+        }
+      ]
+    },
+    {
+      "html": "Consider the following sequence of actions:",
+      "rationale": "attach",
+      "steps": [
+        {
+          "html": "attach renderbuffer 1 to <code>DEPTH_ATTACHMENT</code>;"
+        },
+        {
+          "html": "attach renderbuffer 2 to <code>DEPTH_STENCIL_ATTACHMENT</code>;"
+        },
+        {
+          "html": "attach <em>null</em> to <code>DEPTH_STENCIL_ATTACHMENT</code>."
+        }
+      ]
+    }
+  ]
+}

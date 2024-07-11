@@ -1,0 +1,446 @@
+{
+  "spec": {
+    "title": "Console Standard",
+    "url": "https://console.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>condition</var> is true, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>message</var> be a string without any formatting specifiers indicating generically an assertion\n failure (such as \"Assertion failed\").</p>"
+        },
+        {
+          "html": "<p>If <var>data</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">empty</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>message</var> to <var>data</var>.</p>"
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>first</var> be <var>data</var>[0].</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>first</var>) is not String, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend\">prepend</a> <var>message</var> to <var>data</var>.</p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>concat</var> be the concatenation of <var>message</var>, U+003A (:), U+0020 SPACE, and <var>first</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>data</var>[0] to <var>concat</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger\">Logger</a>(\"assert\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "empty",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> the appropriate <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack\">group stack</a>.</p>"
+        },
+        {
+          "html": "<p>If possible for the environment, clear the console. (Otherwise, do nothing.)</p>"
+        }
+      ]
+    },
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger①\">Logger</a>(\"debug\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger②\">Logger</a>(\"error\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger③\">Logger</a>(\"info\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "For historical web-compatibility reasons, the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console③\">console</a></code> must have as\nits [[Prototype]] an empty object, created as if by <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-objectcreate\" id=\"ref-for-sec-objectcreate\">ObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object\">%ObjectPrototype%</a></code>), instead of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object①\">%ObjectPrototype%</a></code>.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger④\">Logger</a>(\"log\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "TODO: This will need a good algorithm.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>trace</var> be some implementation-specific, potentially-interactive representation of the\n callstack from where this function was called.</p>"
+        },
+        {
+          "html": "<p>Optionally, let <var>formattedData</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter\">Formatter</a>(<var>data</var>), and\n incorporate <var>formattedData</var> as a label for <var>trace</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer\">Printer</a>(\"trace\", « <var>trace</var> »).</p>"
+        }
+      ]
+    },
+    {
+      "html": "TODO: This will need a good algorithm.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger⑤\">Logger</a>(\"warn\", <var>data</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "TODO: This will need a good algorithm.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>object</var> be <var>item</var> with <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#generic-javascript-object-formatting\" id=\"ref-for-generic-javascript-object-formatting\">generic JavaScript object formatting</a> applied.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer①\">Printer</a>(\"dir\", « <var>object</var> », <var>options</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "TODO: This will need a good algorithm.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>finalList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>, initially empty.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>item</var> of <var>data</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>converted</var> be a DOM tree representation of <var>item</var> if possible; otherwise let <var>converted</var> be <var>item</var> with <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#optimally-useful-formatting\" id=\"ref-for-optimally-useful-formatting\">optimally useful formatting</a> applied.</p>"
+            },
+            {
+              "html": "<p>Append <var>converted</var> to <var>finalList</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger⑥\">Logger</a>(\"dirxml\", <var>finalList</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "count map",
+      "href": "https://console.spec.whatwg.org/#count-map",
+      "html": "Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console④\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"count-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">count map</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">strings</a> to numbers, initially empty.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#count-map\" id=\"ref-for-count-map\">count map</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>map</var>[<var>label</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> <var>map</var>[<var>label</var>] to <var>map</var>[<var>label</var>] + 1.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <var>map</var>[<var>label</var>] to 1.</p>"
+        },
+        {
+          "html": "<p>Let <var>concat</var> be the concatenation of <var>label</var>, U+003A (:), U+0020 SPACE, and <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>map</var>[<var>label</var>]).</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger⑦\">Logger</a>(\"count\", « <var>concat</var> »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "count map",
+      "href": "https://console.spec.whatwg.org/#count-map",
+      "html": "Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console④\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"count-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">count map</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">strings</a> to numbers, initially empty.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>map</var> be the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#count-map\" id=\"ref-for-count-map①\">count map</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>map</var>[<var>label</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <var>map</var>[<var>label</var>] to 0.</p>"
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>message</var> be a string without any formatting specifiers indicating generically that the\ngiven label does not have an associated count.</p>"
+            },
+            {
+              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#logger\" id=\"ref-for-logger⑧\">Logger</a>(\"countReset\", « <var>message</var> »);</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "group",
+      "href": "https://console.spec.whatwg.org/#concept-group",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>group</var> be a new <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group①\">group</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>data</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">empty</a>, let <var>groupLabel</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter①\">Formatter</a>(<var>data</var>). Otherwise, let <var>groupLabel</var> be an implementation-chosen\n label representing a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group②\">group</a>.</p>"
+        },
+        {
+          "html": "<p>Incorporate <var>groupLabel</var> as a label for <var>group</var>.</p>"
+        },
+        {
+          "html": "<p>Optionally, if the environment supports interactive groups, <var>group</var> should be expanded by\n default.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer④\">Printer</a>(\"group\", « <var>group</var> »).</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\" id=\"ref-for-stack-push\">Push</a> <var>group</var> onto the appropriate <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack②\">group stack</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "group",
+      "href": "https://console.spec.whatwg.org/#concept-group",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>group</var> be a new <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group③\">group</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>data</var> is not empty, let <var>groupLabel</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter②\">Formatter</a>(<var>data</var>). Otherwise, let <var>groupLabel</var> be an implementation-chosen\n label representing a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group④\">group</a>.</p>"
+        },
+        {
+          "html": "<p>Incorporate <var>groupLabel</var> as a label for <var>group</var>.</p>"
+        },
+        {
+          "html": "<p>Optionally, if the environment supports interactive groups, <var>group</var> should be collapsed by\n default.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer⑤\">Printer</a>(\"groupCollapsed\", « <var>group</var> »).</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\" id=\"ref-for-stack-push①\">Push</a> <var>group</var> onto the appropriate <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack③\">group stack</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "group",
+      "href": "https://console.spec.whatwg.org/#concept-group",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "rationale": "pop",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-pop\" id=\"ref-for-stack-pop\">Pop</a> the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group⑤\">group</a> from the <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack④\">group stack</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "timer table",
+      "href": "https://console.spec.whatwg.org/#timer-table",
+      "html": "Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑥\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"timer-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">timer table</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">strings</a> to times, initially empty.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#timer-table\" id=\"ref-for-timer-table\">timer table</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contains</a> an entry with key <var>label</var>, return,\n optionally reporting a warning to the console indicating that a timer with label <var>label</var> has\n already been started.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">set</a> the value of the entry with key <var>label</var> in the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#timer-table\" id=\"ref-for-timer-table①\">timer table</a> to the current time.</p>"
+        }
+      ]
+    },
+    {
+      "name": "timer table",
+      "href": "https://console.spec.whatwg.org/#timer-table",
+      "html": "Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑥\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"timer-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">timer table</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">strings</a> to times, initially empty.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>timerTable</var> be the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#timer-table\" id=\"ref-for-timer-table②\">timer table</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>startTime</var> be <var>timerTable</var>[<var>label</var>].</p>"
+        },
+        {
+          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an implementation-defined format.</p>"
+        },
+        {
+          "html": "<p>Let <var>concat</var> be the concatenation of <var>label</var>, U+003A (:), U+0020 SPACE, and <var>duration</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend①\">Prepend</a> <var>concat</var> to <var>data</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer⑥\">Printer</a>(\"timeLog\", data).</p>"
+        }
+      ]
+    },
+    {
+      "name": "timer table",
+      "href": "https://console.spec.whatwg.org/#timer-table",
+      "html": "Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑥\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"timer-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">timer table</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">strings</a> to times, initially empty.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>timerTable</var> be the associated <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#timer-table\" id=\"ref-for-timer-table③\">timer table</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>startTime</var> be <var>timerTable</var>[<var>label</var>].</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>timerTable</var>[<var>label</var>].</p>"
+        },
+        {
+          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an implementation-defined format.</p>"
+        },
+        {
+          "html": "<p>Let <var>concat</var> be the concatenation of <var>label</var>, U+003A (:), U+0020 SPACE, and <var>duration</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer⑦\">Printer</a>(\"timeEnd\", « <var>concat</var> »).</p>"
+        }
+      ]
+    },
+    {
+      "html": "The logger operation accepts a log level and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of other arguments. Its main output is the\nimplementation-defined side effect of printing the result to the console. This specification\ndescribes how it processes format specifiers while doing so.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>args</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">empty</a>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>first</var> be <var>args</var>[0].</p>"
+        },
+        {
+          "html": "<p>Let <var>rest</var> be all elements following <var>first</var> in <var>args</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>rest</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">empty</a>, perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer⑧\">Printer</a>(<var>logLevel</var>, « <var>first</var> ») and return.</p>"
+        },
+        {
+          "html": "<p>Otherwise, perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer⑨\">Printer</a>(<var>logLevel</var>, <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter③\">Formatter</a>(<var>args</var>)).</p>"
+        },
+        {
+          "html": "<p>Return <em>undefined</em>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The formatter operation tries to format the first argument provided, using the other arguments. It\nwill try to format the input until no formatting specifiers are left in the first argument, or no\nmore arguments are left. It returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of objects suitable for printing.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>args</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is 1, return <var>args</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the first element of <var>args</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>current</var> be the second element of <var>args</var>.</p>"
+        },
+        {
+          "html": "<p>Find the first possible format specifier <var>specifier</var>, from the left to the right in <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>If no format specifier was found, return <var>args</var>.</p>"
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>specifier</var> is <code>%s</code>, let <var>converted</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-call\" id=\"ref-for-sec-call\">Call</a>(<a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-string-constructor\" id=\"ref-for-sec-string-constructor\">%String%</a>, <strong>undefined</strong>, « <var>current</var> »).</p>"
+            },
+            {
+              "html": "If <var>specifier</var> is <code>%d</code> or <code>%i</code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values①\">Type</a>(<var>current</var>) is Symbol, let <var>converted</var> be <code>NaN</code></p>"
+                },
+                {
+                  "html": "<p>Otherwise, let <var>converted</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-parseint-string-radix\" id=\"ref-for-sec-parseint-string-radix\">%parseInt%</a>, <strong>undefined</strong>, « <var>current</var>, 10 »).</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>specifier</var> is <code>%f</code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values②\">Type</a>(<var>current</var>) is Symbol, let <var>converted</var> be <code>NaN</code></p>"
+                },
+                {
+                  "html": "<p>Otherwise, let <var>converted</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-parsefloat-string\" id=\"ref-for-sec-parsefloat-string\">%parseFloat%</a>, <strong>undefined</strong>, « <var>current</var> »).</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>specifier</var> is <code>%o</code>, optionally let <var>converted</var> be <var>current</var> with <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#optimally-useful-formatting\" id=\"ref-for-optimally-useful-formatting①\">optimally useful formatting</a> applied.</p>"
+            },
+            {
+              "html": "<p>If <var>specifier</var> is <code>%O</code>, optionally let <var>converted</var> be <var>current</var> with <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#generic-javascript-object-formatting\" id=\"ref-for-generic-javascript-object-formatting①\">generic JavaScript object formatting</a> applied.</p>"
+            },
+            {
+              "html": "<p class=\"XXX\">TODO: process %c</p>"
+            },
+            {
+              "html": "<p>If any of the previous steps set <var>converted</var>, replace <var>specifier</var> in <var>target</var> with <var>converted</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> containing <var>target</var> together with the elements of <var>args</var> starting\n from the third onward.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter④\">Formatter</a>(<var>result</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "report a warning to the console",
+      "href": "https://console.spec.whatwg.org/#report-a-warning-to-the-console",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-a-warning-to-the-console\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report a warning to the console</dfn> given a generic description of a warning <var>description</var>, implementations must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>warning</var> be an implementation-defined string derived from <var>description</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer①②\">Printer</a>(\"reportWarning\", « <var>warning</var> »).</p>"
+        }
+      ]
+    }
+  ]
+}

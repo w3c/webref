@@ -1,0 +1,25 @@
+{
+  "spec": {
+    "title": "CSS Pseudo-Elements Module Level 4",
+    "url": "https://drafts.csswg.org/css-pseudo-4/"
+  },
+  "algorithms": [
+    {
+      "name": "Element/pseudo(CSSOMString type)",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#dom-element-pseudo",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"pseudo(type)\" id=\"dom-element-pseudo\" title=\"pseudo(type)\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"highlight\"><c- nf=\"\">pseudo</c-><c- p=\"\">(</c->CSSOMString type<c- p=\"\">)</c-></code></dfn> method\n    is used to retrieve the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-pseudo-4/#csspseudoelement\" id=\"ref-for-csspseudoelement⑦\">CSSPseudoElement</a></code> instance\n    of the type matching <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://drafts.csswg.org/css-pseudo-4/#dom-element-pseudo-type-type\" id=\"ref-for-dom-element-pseudo-type-type\">type</a></code> associated with the element.\n    When it is called,\n    execute the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">Parse</a> the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://drafts.csswg.org/css-pseudo-4/#dom-element-pseudo-type-type\" id=\"ref-for-dom-element-pseudo-type-type①\">type</a></code> argument as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-pseudo-element-selector\" id=\"ref-for-typedef-pseudo-element-selector\">&lt;pseudo-element-selector&gt;</a>,\nand let <var>type</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is failure,\nreturn null.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-pseudo-4/#csspseudoelement\" id=\"ref-for-csspseudoelement⑧\">CSSPseudoElement</a></code> object\nrepresenting the pseudo-element\nthat would match the selector <var>type</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#originating-element\" id=\"ref-for-originating-element②⓪\">originating element</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

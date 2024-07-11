@@ -1,0 +1,231 @@
+{
+  "spec": {
+    "title": "Content Index",
+    "url": "https://wicg.github.io/content-index/spec/"
+  },
+  "algorithms": [
+    {
+      "name": "delete a content index entry",
+      "href": "https://wicg.github.io/content-index/spec/#delete-a-content-index-entry",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-a-content-index-entry\">delete a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry④\">content index entry</a>), run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>id</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-description\" id=\"ref-for-content-index-entry-description③\">description</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-id\" id=\"ref-for-dom-contentdescription-id\">id</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>contentIndexEntries</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-service-worker-registration\" id=\"ref-for-content-index-entry-service-worker-registration①\">service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries①\">content index entries</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-a-content-index-entry\">delete a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry④\">content index entry</a>), run these steps:",
+          "rationale": "undisplay",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#undisplay\" id=\"ref-for-undisplay①\">Undisplay</a> <var>entry</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>contentIndexEntries</var>[<var>id</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#fire-a-content-delete-event\" id=\"ref-for-fire-a-content-delete-event\">Fire a content delete event</a> for <var>entry</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "activate a content index entry",
+      "href": "https://wicg.github.io/content-index/spec/#activate-a-content-index-entry",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-a-content-index-entry\">activate a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑤\">content index entry</a>), run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>activeWorker</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-service-worker-registration\" id=\"ref-for-content-index-entry-service-worker-registration③\">service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker\">active worker</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>activeWorker</var> is null, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>newContext</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-a-content-index-entry\">activate a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑤\">content index entry</a>), run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p><i>HandleNavigate</i>: <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate\">Navigate</a> <var>newContext</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-launch-url\" id=\"ref-for-content-index-entry-launch-url\">launch url</a> with <a data-link-type=\"dfn\">exceptions enabled</a> and <a data-link-type=\"dfn\">replacement enabled</a>.</p>"
+            },
+            {
+              "html": "<p>If the algorithm steps invoked in the step labeled <i>HandleNavigate</i> <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw\">throws</a> an exception, abort\nthese steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>frameType</var> be \"`top-level`\".</p>"
+            },
+            {
+              "html": "<p>Let <var>visibilityState</var> be <var>newContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document\">active document</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate\" id=\"ref-for-dom-document-visibilitystate\">visibilityState</a></code> attribute value.</p>"
+            },
+            {
+              "html": "<p>Let <var>focusState</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#has-focus-steps\" id=\"ref-for-has-focus-steps\">has focus steps</a> with <var>newContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document①\">active document</a> as\nthe argument.</p>"
+            },
+            {
+              "html": "<p>Let <var>ancestorOriginsList</var> be <var>newContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document②\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#location\" id=\"ref-for-location\">Location</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-location-ancestor-origins-list\" id=\"ref-for-concept-location-ancestor-origins-list\">ancestor origins list</a>'s associated list.</p>"
+            },
+            {
+              "html": "<p>Let <var>serviceWorkerEventLoop</var> be <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object\" id=\"ref-for-dfn-service-worker-global-object\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-a-content-index-entry\">activate a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑤\">content index entry</a>), run these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>newContext</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\" id=\"ref-for-window①\">Window</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url\">creation URL</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#same-origin\" id=\"ref-for-same-origin\">same</a> as the <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>, abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#create-windowclient-algorithm\" id=\"ref-for-create-windowclient-algorithm\">Create Window Client</a> with <var>newContext</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\" id=\"ref-for-window②\">Window</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a>, <var>frameType</var>, <var>visibilityState</var>, <var>focusState</var>, and <var>ancestorOriginsList</var> as the arguments.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add(description)",
+      "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-add",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-add\"><code>add(<var>description</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run\n    these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object②\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#contentindex-service-worker-registration\" id=\"ref-for-contentindex-service-worker-registration①\">service worker registration</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker①\">active worker</a> is null, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If any of <var>description</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-id\" id=\"ref-for-dom-contentdescription-id②\">id</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-title\" id=\"ref-for-dom-contentdescription-title①\">title</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-description\" id=\"ref-for-dom-contentdescription-description①\">description</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-url\" id=\"ref-for-dom-contentdescription-url\">url</a></code> is the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>launchURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a> <var>description</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-url\" id=\"ref-for-dom-contentdescription-url①\">url</a></code> with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object③\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url\">API base URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>matchedRegistration</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#match-service-worker-registration\" id=\"ref-for-match-service-worker-registration\">Match Service Worker Registration</a> algorithm with <var>launchURL</var> as its argument.</p>"
+        },
+        {
+          "html": "<p>If <var>matchedRegistration</var> is not equal to <var>registration</var>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> and abort\nthese steps.</p>"
+        },
+        {
+          "html": "<p>If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker②\">active worker</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-set-of-extended-events\" id=\"ref-for-dfn-set-of-extended-events\">set of extended events</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#fetchevent\" id=\"ref-for-fetchevent\">FetchEvent</a></code>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>icons</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-add\"><code>add(<var>description</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run\n    these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>response</var> be the result of awaiting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">fetch</a> using a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> with the following\nproperties:</p>\n         <dl>\n          <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n          </dt><dd data-md=\"\">\n           <p><var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/image-resource/#dfn-src\" id=\"ref-for-dfn-src\">src</a>.</p>\n          </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">Client</a>\n          </dt><dd data-md=\"\">\n           <p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object④\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>\n          </dd><dt data-md=\"\"><a data-link-type=\"dfn\">Keepalive flag</a>\n          </dt><dd data-md=\"\">\n           <p>Set.</p>\n          </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">Destination</a>\n          </dt><dd data-md=\"\">\n           <p>\"`image`\".</p>\n          </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">Mode</a>\n          </dt><dd data-md=\"\">\n           <p>\"`no-cors`\".</p>\n          </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">Credentials mode</a>\n          </dt><dd data-md=\"\">\n           <p>\"`include`\".</p>\n         </dd></dl>"
+            },
+            {
+              "html": "<p>If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>response</var> cannot be decoded as an image, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and abort these\nsteps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>response</var> to <var>icons</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>entry</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑦\">content index entry</a> with:</p>\n       <dl>\n        <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-description\" id=\"ref-for-content-index-entry-description⑤\">description</a>\n        </dt><dd data-md=\"\">\n         <p><var>description</var>.</p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-launch-url\" id=\"ref-for-content-index-entry-launch-url①\">launch url</a>\n        </dt><dd data-md=\"\">\n         <p><var>launchURL</var></p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-service-worker-registration\" id=\"ref-for-content-index-entry-service-worker-registration⑤\">service worker registration</a>\n        </dt><dd data-md=\"\">\n         <p><var>registration</var>.</p>\n        </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-icons\" id=\"ref-for-content-index-entry-icons①\">icons</a>\n        </dt><dd data-md=\"\">\n         <p><var>icons</var></p>\n       </dd></dl>"
+        },
+        {
+          "html": "<p>Let <var>id</var> be <var>description</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-id\" id=\"ref-for-dom-contentdescription-id③\">id</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>contentIndexEntries</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries②\">content index entries</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-add\"><code>add(<var>description</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run\n    these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>contentIndexEntries</var>[<var>id</var>] to <var>entry</var>.</p>"
+            },
+            {
+              "html": "<p>Optionally, the user agent MAY <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#display\" id=\"ref-for-display⑤\">display</a> <var>entry</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\">Resolve</a> <var>promise</var> with undefined.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delete(id)",
+      "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-delete",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-delete\"><code>delete(<var>id</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object⑤\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#contentindex-service-worker-registration\" id=\"ref-for-contentindex-service-worker-registration②\">service worker registration</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>contentIndexEntries</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries③\">content index entries</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-delete\"><code>delete(<var>id</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "undisplay",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#undisplay\" id=\"ref-for-undisplay②\">Undisplay</a> <var>contentIndexEntries</var>[<var>id</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <var>contentIndexEntries</var>[<var>id</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\">Resolve</a> <var>promise</var> with undefined.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAll()",
+      "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-getall",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-getall\"><code>getAll()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object⑥\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#contentindex-service-worker-registration\" id=\"ref-for-contentindex-service-worker-registration③\">service worker registration</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>contentIndexEntries</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries④\">content index entries</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptions</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-getall\"><code>getAll()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-getall\"><code>getAll()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-description\" id=\"ref-for-content-index-entry-description⑥\">description</a> to <var>descriptions</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\">Resolve</a> <var>promise</var> with <var>descriptions</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "spec": {
+    "title": "WebXR Gamepads Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+  },
+  "algorithms": [
+    {
+      "name": "XRFrame/apply gamepad frame updates",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#xrframe-apply-gamepad-frame-updates",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrframe-apply-gamepad-frame-updates\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply gamepad frame updates</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑤\">XRInputSource</a></code> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-gamepads-module/#dom-xrinputsource-gamepad\" id=\"ref-for-dom-xrinputsource-gamepad②\">gamepad</a></code> <var>gamepad</var> associated with <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a></code>, perform the following steps:",
+          "rationale": "update",
+          "steps": [
+            {
+              "html": "<p>Update <var>gamepad</var> to reflect the gamepad data at <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

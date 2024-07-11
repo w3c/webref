@@ -1,0 +1,443 @@
+{
+  "spec": {
+    "title": "Resize Observer",
+    "url": "https://drafts.csswg.org/resize-observer-1/"
+  },
+  "algorithms": [
+    {
+      "name": "ResizeObserver/ResizeObserver(callback)",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-resizeobserver",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>this</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobserver\" id=\"ref-for-resizeobserver\">ResizeObserver</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-callback-slot\" id=\"ref-for-dom-resizeobserver-callback-slot\">[[callback]]</a></code> internal slot to <var>callback</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot\">[[observationTargets]]</a></code> internal slot to an empty list.</p>"
+        },
+        {
+          "html": "<p>Add <var>this</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-document-resizeobservers-slot\" id=\"ref-for-dom-document-resizeobservers-slot\">[[resizeObservers]]</a></code> slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ResizeObserver/observe(target, options)",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observe",
+      "html": "Adds target to the list of observed elements.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>target</var> is in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot①\">[[observationTargets]]</a></code> slot, call <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-unobserve\" id=\"ref-for-dom-resizeobserver-unobserve①\">unobserve()</a></code> with argument <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>observedBox</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserveroptions-box\" id=\"ref-for-dom-resizeobserveroptions-box\">box</a></code> dictionary member of <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>resizeObservation</var> be new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobservation\" id=\"ref-for-resizeobservation\">ResizeObservation</a></code>(<var>target</var>, <var>observedBox</var>).</p>"
+        },
+        {
+          "html": "<p>Add the <var>resizeObservation</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot②\">[[observationTargets]]</a></code> slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ResizeObserver/unobserve(target)",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-unobserve",
+      "html": "Removes <var>target</var> from the list of observed elements.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>observation</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobservation\" id=\"ref-for-resizeobservation①\">ResizeObservation</a></code> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot③\">[[observationTargets]]</a></code> whose target slot is <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>observation</var> is not found, return.</p>"
+        },
+        {
+          "html": "<p>Remove <var>observation</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot④\">[[observationTargets]]</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ResizeObserver/disconnect()",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-disconnect",
+      "html": "",
+      "rationale": "clear",
+      "steps": [
+        {
+          "html": "<p>Clear the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot⑤\">[[observationTargets]]</a></code> list.</p>"
+        },
+        {
+          "html": "<p>Clear the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot\">[[activeTargets]]</a></code> list.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ResizeObservation/ResizeObservation(target, options)",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-resizeobservation-target-options",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>this</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobservation\" id=\"ref-for-resizeobservation②\">ResizeObservation</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-target\" id=\"ref-for-dom-resizeobservation-target①\">target</a></code> slot to <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-observedbox\" id=\"ref-for-dom-resizeobservation-observedbox①\">observedBox</a></code> slot to <var>observedBox</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-lastreportedsizes\" id=\"ref-for-dom-resizeobservation-lastreportedsizes①\">lastReportedSizes</a></code> slot to [(0,0)].</p>"
+        }
+      ]
+    },
+    {
+      "name": "ResizeObservation/isActive()",
+      "href": "https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-isactive",
+      "html": "",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>currentSize</var> by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-box-size\" id=\"ref-for-calculate-box-size\">calculate box size</a> given <var>target</var> and <var>observedBox</var>.</p>"
+        },
+        {
+          "html": "<p>Return true if <var>currentSize</var> is not equal to the first entry in this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-lastreportedsizes\" id=\"ref-for-dom-resizeobservation-lastreportedsizes②\">lastReportedSizes</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "gather active resize observations at depth",
+      "href": "https://drafts.csswg.org/resize-observer-1/#gather-active-resize-observations-at-depth",
+      "html": "It computes all active resize observations for a <var>document</var>. To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"gather-active-resize-observations-at-depth\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">gather active resize observations at depth</dfn>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>depth</var> be the depth passed in.</p>"
+        },
+        {
+          "html": "For each <var>observer</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-document-resizeobservers-slot\" id=\"ref-for-dom-document-resizeobservers-slot①\">[[resizeObservers]]</a></code> run these steps:",
+          "rationale": "clear",
+          "steps": [
+            {
+              "html": "<p>Clear <var>observer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot①\">[[activeTargets]]</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-skippedtargets-slot\" id=\"ref-for-dom-resizeobserver-skippedtargets-slot\">[[skippedTargets]]</a></code>.</p>"
+            },
+            {
+              "html": "For each <var>observation</var> in <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-observationtargets-slot\" id=\"ref-for-dom-resizeobserver-observationtargets-slot⑥\">[[observationTargets]]</a></code> run this step:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>observation</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-isactive\" id=\"ref-for-dom-resizeobservation-isactive\">isActive()</a></code> is true",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>targetDepth</var> be result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-depth-for-node\" id=\"ref-for-calculate-depth-for-node\">calculate depth for node</a> for <var>observation</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-target\" id=\"ref-for-dom-resizeobservation-target②\">target</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>targetDepth</var> is greater than <var>depth</var> then add <var>observation</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot②\">[[activeTargets]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Else add <var>observation</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-skippedtargets-slot\" id=\"ref-for-dom-resizeobserver-skippedtargets-slot①\">[[skippedTargets]]</a></code>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "has active resize observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#has-active-resize-observations",
+      "html": "To determine if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"has-active-resize-observations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">has active resize observations</dfn> run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>observer</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-document-resizeobservers-slot\" id=\"ref-for-dom-document-resizeobservers-slot②\">[[resizeObservers]]</a></code> run this step:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot③\">[[activeTargets]]</a></code> is not empty, return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "has skipped resize observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#has-skipped-resize-observations",
+      "html": "To determine if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"has-skipped-resize-observations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">has skipped resize observations</dfn> run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>observer</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-document-resizeobservers-slot\" id=\"ref-for-dom-document-resizeobservers-slot③\">[[resizeObservers]]</a></code> run this step:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-skippedtargets-slot\" id=\"ref-for-dom-resizeobserver-skippedtargets-slot②\">[[skippedTargets]]</a></code> is not empty, return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "has skipped resize observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#has-skipped-resize-observations",
+      "html": "To determine if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"has-skipped-resize-observations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">has skipped resize observations</dfn> run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>this</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobserverentry\" id=\"ref-for-resizeobserverentry①\">ResizeObserverEntry</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-target\" id=\"ref-for-dom-resizeobserverentry-target①\">target</a></code> slot to <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-borderboxsize\" id=\"ref-for-dom-resizeobserverentry-borderboxsize①\">borderBoxSize</a></code> slot to result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-box-size\" id=\"ref-for-calculate-box-size①\">calculating box size</a> given <var>target</var> and observedBox of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-border-box\" id=\"ref-for-dom-resizeobserverboxoptions-border-box①\">\"border-box\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-contentboxsize\" id=\"ref-for-dom-resizeobserverentry-contentboxsize①\">contentBoxSize</a></code> slot to result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-box-size\" id=\"ref-for-calculate-box-size②\">calculating box size</a> given <var>target</var> and observedBox of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-content-box\" id=\"ref-for-dom-resizeobserverboxoptions-content-box③\">\"content-box\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-devicepixelcontentboxsize\" id=\"ref-for-dom-resizeobserverentry-devicepixelcontentboxsize①\">devicePixelContentBoxSize</a></code> slot to result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-box-size\" id=\"ref-for-calculate-box-size③\">calculating box size</a> given <var>target</var> and observedBox of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverboxoptions-device-pixel-content-box\" id=\"ref-for-dom-resizeobserverboxoptions-device-pixel-content-box②\">\"device-pixel-content-box\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-contentrect\" id=\"ref-for-dom-resizeobserverentry-contentrect①\">contentRect</a></code> to logical <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserverentry-contentboxsize\" id=\"ref-for-dom-resizeobserverentry-contentboxsize②\">contentBoxSize</a></code> given <var>target</var> and observedBox of \"content-box\".</p>"
+        },
+        {
+          "html": "If <var>target</var> is not an SVG element or <var>target</var> is an SVG element with an associated CSS layout box do these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>this</var>.<var>contentRect</var>.top to <var>target</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#padding-physical\" id=\"ref-for-padding-physical②\">padding top</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>this</var>.<var>contentRect</var>.left to <var>target</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#padding-physical\" id=\"ref-for-padding-physical③\">padding left</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>target</var> is an SVG element without an associated CSS layout box do these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>this</var>.<var>contentRect</var>.top and <var>this</var>.contentRect.left to 0.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "To broadcast active resize observations for a <var>document</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>shallowestTargetDepth</var> be ∞</p>"
+        },
+        {
+          "html": "For each <var>observer</var> in <var>document</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-document-resizeobservers-slot\" id=\"ref-for-dom-document-resizeobservers-slot④\">[[resizeObservers]]</a></code> run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot④\">[[activeTargets]]</a></code> slot is empty, continue.</p>"
+            },
+            {
+              "html": "<p>Let <var>entries</var> be an empty list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobserverentry\" id=\"ref-for-resizeobserverentry②\">ResizeObserverEntry</a></code>ies.</p>"
+            },
+            {
+              "html": "For each <var>observation</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot⑤\">[[activeTargets]]</a></code> perform these steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>entry</var> be the result of running <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#create-and-populate-a-resizeobserverentry\" id=\"ref-for-create-and-populate-a-resizeobserverentry\">create and populate a ResizeObserverEntry</a> given <var>observation</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-target\" id=\"ref-for-dom-resizeobservation-target③\">target</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Add <var>entry</var> to <var>entries</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>observation</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-lastreportedsizes\" id=\"ref-for-dom-resizeobservation-lastreportedsizes③\">lastReportedSizes</a></code> to matching <var>entry</var> sizes.</p>",
+                  "ignored": [
+                    "Matching sizes are entry.borderBoxSize if observation.observedBox is \"border-box\" Matching sizes are entry.contentBoxSize if observation.observedBox is \"content-box\" Matching sizes are entry.devicePixelContentBoxSize if observation.observedBox is \"device-pixel-content-box\""
+                  ]
+                },
+                {
+                  "html": "<p>Set <var>targetDepth</var> to the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/resize-observer-1/#calculate-depth-for-node\" id=\"ref-for-calculate-depth-for-node①\">calculate depth for node</a> for <var>observation</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-target\" id=\"ref-for-dom-resizeobservation-target④\">target</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>shallowestTargetDepth</var> to <var>targetDepth</var> if <var>targetDepth</var> &lt; <var>shallowestTargetDepth</var></p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Invoke <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-callback-slot\" id=\"ref-for-dom-resizeobserver-callback-slot①\">[[callback]]</a></code> with <var>entries</var>.</p>"
+            },
+            {
+              "html": "<p>Clear <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot⑥\">[[activeTargets]]</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>shallowestTargetDepth</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "deliver resize loop error notification",
+      "href": "https://drafts.csswg.org/resize-observer-1/#deliver-resize-loop-error-notification",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deliver-resize-loop-error-notification\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deliver resize loop error notification</dfn> run these steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#errorevent\" id=\"ref-for-errorevent\">ErrorEvent</a></code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>event</var>’s message slot to \"ResizeObserver loop completed with undelivered notifications.\".</p>"
+        },
+        {
+          "html": "<p>Report the exception <var>event</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "calculate depth for node",
+      "href": "https://drafts.csswg.org/resize-observer-1/#calculate-depth-for-node",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-depth-for-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate depth for node</dfn>, given a <var>node</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be the parent-traversal path from <var>node</var> to a root Element of this element’s flattened DOM tree.</p>"
+        },
+        {
+          "html": "<p>Return number of nodes in <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "calculate box size",
+      "href": "https://drafts.csswg.org/resize-observer-1/#calculate-box-size",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-box-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate box size</dfn>, given <var>target</var> and <var>observedBox</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>computedSize</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#resizeobserversize\" id=\"ref-for-resizeobserversize⑧\">ResizeObserverSize</a></code> object.</p>"
+        },
+        {
+          "html": "If <var>target</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement\" id=\"ref-for-InterfaceSVGGraphicsElement①\">SVGGraphicsElement</a></code> that does not have an associated CSS layout box:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If observedBox is \"border-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes③\">bounding box</a> inline length.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes④\">bounding box</a> block length.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If observedBox is \"content-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes③\">bounding box</a> inline length.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes④\">bounding box</a> block length.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If observedBox is \"device-pixel-content-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize①\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes⑤\">bounding box</a> inline length, in integral device pixels.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize①\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/coords.html#BoundingBoxes\" id=\"ref-for-BoundingBoxes⑥\">bounding box</a> block length, in integral device pixels.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If observedBox is \"border-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize②\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-area\" id=\"ref-for-border-area\">border area</a> inline length.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize②\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-area\" id=\"ref-for-border-area①\">border area</a> block length.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If observedBox is \"content-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize③\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#content-area\" id=\"ref-for-content-area②\">content area</a> inline length.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize③\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#content-area\" id=\"ref-for-content-area③\">content area</a> block length.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If observedBox is \"device-pixel-content-box\"",
+                  "html": "",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-inlinesize\" id=\"ref-for-dom-resizeobserversize-inlinesize④\">inlineSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#content-area\" id=\"ref-for-content-area④\">content area</a> inline length, in integral device pixels.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>computedSize</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserversize-blocksize\" id=\"ref-for-dom-resizeobserversize-blocksize④\">blockSize</a></code> attribute to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-3/#content-area\" id=\"ref-for-content-area⑤\">content area</a> block length, in integral device pixels.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>computedSize</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

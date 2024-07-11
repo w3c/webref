@@ -1,0 +1,98 @@
+{
+  "spec": {
+    "title": "WebXR Plane Detection Module",
+    "url": "https://immersive-web.github.io/real-world-geometry/plane-detection.html"
+  },
+  "algorithms": [
+    {
+      "name": "update-planes",
+      "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#update-planes",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-planes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update planes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be a <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>trackedPlanes</var> be a result of calling into <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#native-plane-detection\" id=\"ref-for-native-plane-detection①\">native plane detection</a> capability to obtain tracked planes at <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-planes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update planes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If desired, treat the <var>native plane</var> as if it were not present in <var>trackedPlanes</var> and continue to the next entry. See <a href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#privacy-security\">§ 6 Privacy &amp; Security Considerations</a> for criteria that could be used to determine whether an entry should be ignored in this way.</p>"
+            },
+            {
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrsession-set-of-tracked-planes\" id=\"ref-for-xrsession-set-of-tracked-planes①\">set of tracked planes</a> contains an object <var>plane</var> that <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#correspond-to\" id=\"ref-for-correspond-to\">corresponds to</a> <var>native plane</var>, invoke <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#update-plane-object\" id=\"ref-for-update-plane-object\">update plane object</a> algorithm with <var>plane</var>, <var>native plane</var>, and <var>frame</var>, and continue to the next entry.</p>"
+            },
+            {
+              "html": "<p>Let <var>plane</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#create-plane-object\" id=\"ref-for-create-plane-object\">create plane object</a> algorithm with <var>native plane</var> and <var>frame</var>.</p>"
+            },
+            {
+              "html": "<p>Add <var>plane</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrsession-set-of-tracked-planes\" id=\"ref-for-xrsession-set-of-tracked-planes②\">set of tracked planes</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Remove each object in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrsession-set-of-tracked-planes\" id=\"ref-for-xrsession-set-of-tracked-planes③\">set of tracked planes</a> that was neither created nor updated during the invocation of this algorithm.</p>"
+        },
+        {
+          "html": "<p>Set <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrframe-detectedplanes\" id=\"ref-for-dom-xrframe-detectedplanes①\">detectedPlanes</a></code> to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrsession-set-of-tracked-planes\" id=\"ref-for-xrsession-set-of-tracked-planes④\">set of tracked planes</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-plane-object",
+      "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#create-plane-object",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-plane-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create plane object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#native-plane-objects\" id=\"ref-for-native-plane-objects\">native plane object</a> <var>native plane</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe③\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps: \n    \n    <p>A plane object, <var>result</var>, created in such way is said to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"correspond-to\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">correspond to</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> the passed in native plane object <var>native plane</var>.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrplane\" id=\"ref-for-xrplane⑦\">XRPlane</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrplane-native-entity\" id=\"ref-for-xrplane-native-entity\">native entity</a> to <var>native plane</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-planespace\" id=\"ref-for-dom-xrplane-planespace⑤\">planeSpace</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrspace\" id=\"ref-for-xrspace③\">XRSpace</a></code> object created with <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrspace-session\" id=\"ref-for-xrspace-session\">session</a> set to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code> and <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin①\">native origin</a> set to track <var>native plane</var>’s native origin.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#update-plane-object\" id=\"ref-for-update-plane-object①\">update plane object</a> algorithm with <var>result</var>, <var>native plane</var>, and <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update-plane-object",
+      "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html#update-plane-object",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-plane-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update plane object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>plane</var> from a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#native-plane-objects\" id=\"ref-for-native-plane-objects①\">native plane object</a> <var>native plane</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe④\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>plane</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#xrplane-frame\" id=\"ref-for-xrplane-frame\">frame</a> to <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>native plane</var> is classified by the underlying system as vertical, set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-orientation\" id=\"ref-for-dom-xrplane-orientation①\">orientation</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplaneorientation-vertical\" id=\"ref-for-dom-xrplaneorientation-vertical②\">\"vertical\"</a></code>. Otherwise, if <var>native plane</var> is classified by the underlying system as horizontal, set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-orientation\" id=\"ref-for-dom-xrplane-orientation②\">orientation</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplaneorientation-horizontal\" id=\"ref-for-dom-xrplaneorientation-horizontal②\">\"horizontal\"</a></code>. Otherwise, set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-orientation\" id=\"ref-for-dom-xrplane-orientation③\">orientation</a></code> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-polygon\" id=\"ref-for-dom-xrplane-polygon①\">polygon</a></code> to the new array of vertices representing <var>native plane</var>’s polygon, performing all necessary conversions to account for differences in native plane polygon representation.</p>"
+        },
+        {
+          "html": "<div class=\"unstable\">Set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-semanticlabel\" id=\"ref-for-dom-xrplane-semanticlabel①\">semanticLabel</a></code> to a new string with the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#semantic-label\" id=\"ref-for-semantic-label②\">semantic labels</a>.</div>"
+        },
+        {
+          "html": "<p>If desired, reduce the level of detail of the <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-polygon\" id=\"ref-for-dom-xrplane-polygon②\">polygon</a></code> as described in <a href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#privacy-security\">§ 6 Privacy &amp; Security Considerations</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>plane</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/real-world-geometry/plane-detection.html#dom-xrplane-lastchangedtime\" id=\"ref-for-dom-xrplane-lastchangedtime②\">lastChangedTime</a></code> to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

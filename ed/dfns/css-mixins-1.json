@@ -1,0 +1,542 @@
+{
+  "spec": {
+    "title": "CSS Functions and Mixins Module",
+    "url": "https://drafts.csswg.org/css-mixins-1/"
+  },
+  "dfns": [
+    {
+      "id": "custom-function",
+      "href": "https://drafts.csswg.org/css-mixins-1/#custom-function",
+      "linkingText": [
+        "custom function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "return-type",
+      "href": "https://drafts.csswg.org/css-mixins-1/#return-type",
+      "linkingText": [
+        "return type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-parameter",
+      "href": "https://drafts.csswg.org/css-mixins-1/#function-parameter",
+      "linkingText": [
+        "function parameter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parameter-type",
+      "href": "https://drafts.csswg.org/css-mixins-1/#parameter-type",
+      "linkingText": [
+        "parameter type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-value",
+      "href": "https://drafts.csswg.org/css-mixins-1/#default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-dependency",
+      "href": "https://drafts.csswg.org/css-mixins-1/#function-dependency",
+      "linkingText": [
+        "function dependency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "defining-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+        "title": "Defining Custom Functions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "at-ruledef-function",
+      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-function",
+      "linkingText": [
+        "@function"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "typedef-function-name",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-name",
+      "linkingText": [
+        "<function-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-parameter-list",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-parameter-list",
+      "linkingText": [
+        "<parameter-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-dependency-list",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-dependency-list",
+      "linkingText": [
+        "<dependency-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-type",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-type",
+      "linkingText": [
+        "<type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-parameter",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-parameter",
+      "linkingText": [
+        "<parameter>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "function-rule",
+        "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+        "title": "The @function Rule",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "descdef-function-result",
+      "href": "https://drafts.csswg.org/css-mixins-1/#descdef-function-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@function"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-result-descriptor",
+        "href": "https://drafts.csswg.org/css-mixins-1/#the-result-descriptor",
+        "title": "The result Descriptor",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-dashed-function",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-dashed-function",
+      "linkingText": [
+        "<dashed-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "using-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#using-custom-functions",
+        "title": "Using Custom Functions",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "substitute-a-dashed-function",
+      "href": "https://drafts.csswg.org/css-mixins-1/#substitute-a-dashed-function",
+      "linkingText": [
+        "substitute a dashed function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "using-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#using-custom-functions",
+        "title": "Using Custom Functions",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "evaluate-a-custom-function",
+      "href": "https://drafts.csswg.org/css-mixins-1/#evaluate-a-custom-function",
+      "linkingText": [
+        "evaluate a custom function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "evaluating-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#evaluating-custom-functions",
+        "title": "Evaluating Custom Functions",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolve-an-argument",
+      "href": "https://drafts.csswg.org/css-mixins-1/#resolve-an-argument",
+      "linkingText": [
+        "resolve an argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "evaluating-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#evaluating-custom-functions",
+        "title": "Evaluating Custom Functions",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolve-a-typed-value",
+      "href": "https://drafts.csswg.org/css-mixins-1/#resolve-a-typed-value",
+      "linkingText": [
+        "resolve a typed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "evaluating-custom-functions",
+        "href": "https://drafts.csswg.org/css-mixins-1/#evaluating-custom-functions",
+        "title": "Evaluating Custom Functions",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-variable",
+      "href": "https://drafts.csswg.org/css-mixins-1/#local-variable",
+      "linkingText": [
+        "local variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parameters",
+        "href": "https://drafts.csswg.org/css-mixins-1/#parameters",
+        "title": "Parameters and Locals",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locally-substitute-a-var",
+      "href": "https://drafts.csswg.org/css-mixins-1/#locally-substitute-a-var",
+      "linkingText": [
+        "locally substitute a var()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parameters",
+        "href": "https://drafts.csswg.org/css-mixins-1/#parameters",
+        "title": "Parameters and Locals",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolved-local-value",
+      "href": "https://drafts.csswg.org/css-mixins-1/#resolved-local-value",
+      "linkingText": [
+        "resolved local value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parameters",
+        "href": "https://drafts.csswg.org/css-mixins-1/#parameters",
+        "title": "Parameters and Locals",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cssfunctionrule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctionrule",
+      "linkingText": [
+        "CSSFunctionRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cssom",
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssom",
+        "title": "CSSOM",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-type-name",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-type-name",
+      "linkingText": [
+        "<type-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-combinator",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-combinator",
+      "linkingText": [
+        "<combinator>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-multiplier",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-multiplier",
+      "linkingText": [
+        "<multiplier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-syntax-component-name",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component-name",
+      "linkingText": [
+        "<syntax-component-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-syntax-component",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component",
+      "linkingText": [
+        "<syntax-component>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-syntax",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax",
+      "linkingText": [
+        "<syntax>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+        "title": "Appendix: The <syntax> Production",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    }
+  ]
+}

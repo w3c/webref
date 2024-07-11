@@ -1,0 +1,107 @@
+{
+  "spec": {
+    "title": "WebXR Raw Camera Access Module",
+    "url": "https://immersive-web.github.io/raw-camera-access/"
+  },
+  "algorithms": [
+    {
+      "name": "obtain-camera",
+      "href": "https://immersive-web.github.io/raw-camera-access/#obtain-camera",
+      "html": "In order to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-camera\">obtain camera</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview-interface\" id=\"ref-for-xrview-interface④\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-session\" id=\"ref-for-xrview-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#camera-access\" id=\"ref-for-camera-access\">camera-access</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#set-of-granted-features\" id=\"ref-for-set-of-granted-features\">set of granted features</a>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe\">animationFrame</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>camera image</var> contain a camera image buffer of size <var>width</var> by <var>height</var> texels that was returned from <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#native-camera\" id=\"ref-for-native-camera①\">native camera</a> that is valid for <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>camera image</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Ensure that <var>camera image</var> contains data that is <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#aligned\" id=\"ref-for-aligned\">aligned</a> with the <var>view</var>, including adjusting <var>width</var> and <var>height</var> as appropriate. If that is not possible, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#create-camera-instance\" id=\"ref-for-create-camera-instance\">create camera instance</a> algorithm with <var>view</var>, <var>camera image</var>, <var>width</var> and <var>height</var> and return its result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-camera",
+      "href": "https://immersive-web.github.io/raw-camera-access/#create-camera-instance",
+      "html": "In order to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create camera instance\" data-noexport=\"\" id=\"create-camera-instance\"> create camera instance</dfn> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview-interface\" id=\"ref-for-xrview-interface⑥\">XRView</a></code> <var>view</var>, <var>camera image</var>, <var>width</var> and <var>height</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera\" id=\"ref-for-xrcamera⑨\">XRCamera</a></code> interface.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera-view\" id=\"ref-for-xrcamera-view\">view</a> to <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera-camera-image\" id=\"ref-for-xrcamera-camera-image②\">camera image</a> to <var>camera image</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/raw-camera-access/#dom-xrcamera-width\" id=\"ref-for-dom-xrcamera-width①\">width</a></code> to <var>width</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/raw-camera-access/#dom-xrcamera-height\" id=\"ref-for-dom-xrcamera-height①\">height</a></code> to <var>height</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-camera-image",
+      "href": "https://immersive-web.github.io/raw-camera-access/#obtain-camera-image",
+      "html": "In order to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-camera-image\">obtain camera image</dfn> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#XRWebGLBindingtype\" id=\"ref-for-XRWebGLBindingtype③\">XRWebGLBinding</a></code> <var>binding</var>, for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera\" id=\"ref-for-xrcamera①①\">XRCamera</a></code> <var>camera</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding-session\" id=\"ref-for-xrwebglbinding-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>view</var> be <var>camera</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera-view\" id=\"ref-for-xrcamera-view①\">view</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-session\" id=\"ref-for-xrview-session①\">session</a> does not match <var>session</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame①\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe①\">animationFrame</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be the <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding-context\" id=\"ref-for-xrwebglbinding-context\">context</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>camera image</var> be the <var>camera</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/raw-camera-access/#xrcamera-camera-image\" id=\"ref-for-xrcamera-camera-image③\">camera image</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.9\" id=\"ref-for-5.9②\">WebGLTexture</a></code> that was created on <var>context</var>, containing <var>camera image</var>’s data. <var>result</var> is an <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#opaque-texture\" id=\"ref-for-opaque-texture①\">opaque texture</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

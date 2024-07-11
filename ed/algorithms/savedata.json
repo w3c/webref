@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "title": "Save Data API",
+    "url": "https://wicg.github.io/savedata/"
+  },
+  "algorithms": [
+    {
+      "name": "steps to update the user preference",
+      "href": "https://wicg.github.io/savedata/#dfn-steps-to-update-the-user-preference",
+      "html": "When the user's <a href=\"https://wicg.github.io/savedata/#dfn-savedata\" class=\"internalDFN\" data-link-type=\"dfn\">saveData</a> preference changes, the user agent <em class=\"rfc2119\" title=\"MUST\">MUST</em> run the <dfn data-dfn-type=\"dfn\" id=\"dfn-steps-to-update-the-user-preference\">steps to update the user preference</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>new-saveData</var> be the current <a href=\"https://wicg.github.io/savedata/#dfn-savedata\" class=\"internalDFN\" data-link-type=\"dfn\">saveData</a> preference."
+        },
+        {
+          "html": "If <var>new-saveData</var> is not equal to the value of <code>connection.saveData</code>:",
+          "rationale": "fire an event",
+          "steps": [
+            {
+              "html": "Using the <a data-cite=\"HTML#networking-task-source\" href=\"https://html.spec.whatwg.org/multipage/#networking-task-source\">networking task source</a>, <a data-cite=\"HTML#queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/#queue-a-task\">queue a task</a> to perform the following:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <code>connection.saveData</code> to <var>new-saveData</var>."
+                },
+                {
+                  "html": "<a data-cite=\"DOM#concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <code>change</code> at the <code>NetworkInformation</code> object."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

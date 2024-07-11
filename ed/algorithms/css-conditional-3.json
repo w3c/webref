@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "title": "CSS Conditional Rules Module Level 3",
+    "url": "https://drafts.csswg.org/css-conditional-3/"
+  },
+  "algorithms": [
+    {
+      "name": "supports(property, value)",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-3/#dom-css-supports\" id=\"ref-for-dom-css-supports\">supports(property, value)</a></code> method is invoked\n\t\twith two arguments <var>property</var> and <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>property</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match\nfor any defined CSS property that the UA supports,\nand <var>value</var> successfully <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parses</a> according to that property’s grammar,\nreturn <code class=\"highlight\">true</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string\" id=\"ref-for-custom-property-name-string\">custom property name string</a>,\nreturn <code class=\"highlight\">true</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <code class=\"highlight\">false</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "supports(conditionText)",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext\" id=\"ref-for-dom-css-supports-conditiontext\">supports(conditionText)</a></code> method is invoked\n    with a single <var>conditionText</var> argument:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>conditionText</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①\">parsed</a> and evaluated as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-3/#typedef-supports-condition\" id=\"ref-for-typedef-supports-condition⑥\">&lt;supports-condition&gt;</a>,\nwould return true,\nreturn <code class=\"highlight\">true</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise,\nIf <var>conditionText</var>,\nwrapped in parentheses\nand then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar②\">parsed</a> and evaluated as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-3/#typedef-supports-condition\" id=\"ref-for-typedef-supports-condition⑦\">&lt;supports-condition&gt;</a>,\nwould return true,\nreturn <code class=\"highlight\">true</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <code class=\"highlight\">false</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

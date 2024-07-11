@@ -1,0 +1,167 @@
+{
+  "spec": {
+    "title": "Accessible Name and Description Computation 1.2",
+    "url": "https://w3c.github.io/accname/"
+  },
+  "algorithms": [
+    {
+      "html": "The text alternative for a given element is computed as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<span id=\"step1\"></span><em>Initialization:</em> Set the <code>root node</code> to the given element, the <code>current node</code> to the\n              <code>root node</code>, and the <code>total accumulated text</code> to the empty string (\"\"). If the <code>root node</code>'s role prohibits naming, return the empty string (\"\")."
+        },
+        {
+          "html": "<span id=\"step2\"></span><em>Computation:</em> Compute the text alternative for the <code>current node</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<span id=\"step2A\"></span><em>Hidden Not Referenced:</em> If the <code>current node</code> is\n                   <strong>and is</strong>:\n                  \n                  Return the empty string.",
+              "ignored": [
+                "Not part of an aria-labelledby or aria-describedby traversal, where the node directly referenced by that relation was hidden. Nor part of a native host language text alternative (e.g. label in HTML) or traversal, where the root of that traversal was hidden."
+              ]
+            },
+            {
+              "html": "<span id=\"step2B\"></span><em>LabelledBy:</em> Otherwise, if the <code>current node</code> has an\n                  <code>aria-labelledby</code> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\">attribute</a> that contains at least one valid IDREF, and the <code>current node</code> is not already part of an ongoing <code>aria-labelledby</code> or\n                  <code>aria-describedby</code> traversal, process its IDREFs in the order they occur:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<span id=\"step2B.i\"></span> Set the <code>accumulated text</code> to the empty string."
+                },
+                {
+                  "html": "<span id=\"step2B.ii\"></span>For each IDREF:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<span id=\"step2B.ii.a\"></span>Set the <code>current node</code> to the node referenced by the IDREF."
+                    },
+                    {
+                      "html": "<span id=\"step2B.ii.b\"></span><em>LabelledBy Recursion:</em> Compute the text alternative of the\n                          <code>current node</code> beginning with the overall <a href=\"https://w3c.github.io/accname/#comp_computation\">Computation</a> step. Set the <code>result</code> to that text alternative."
+                    },
+                    {
+                      "html": "<span id=\"step2B.ii.c\"></span>Append a space character and the <code>result</code> to the <code>accumulated text</code>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<span id=\"step2B.iii\"></span>Return the <code>accumulated text</code> if it is not the empty string (\"\")."
+                }
+              ]
+            },
+            {
+              "html": "<span id=\"step2C\"></span><em>Embedded Control:</em> Otherwise, if the <code>current node</code> is a control embedded within the label\n                  (e.g. any element directly referenced by <code>aria-labelledby</code>) for another , where the user can adjust the embedded control's value, then return\n                  the embedded control as part of the text alternative in the following manner:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<em>Textbox:</em> If the embedded control has role <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#textbox\">textbox</a>, return its value."
+                },
+                {
+                  "html": "<em>Combobox/Listbox:</em> If the embedded control has role <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#combobox\">combobox</a> or <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#listbox\">listbox</a>,\n                      return the text alternative of the chosen <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#option\">option</a>."
+                },
+                {
+                  "html": "<em>Range:</em> If the embedded control has role <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#range\">range</a> (e.g., a <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#spinbutton\">spinbutton</a> or\n                      <a class=\"role-reference\" href=\"https://w3c.github.io/aria/#slider\">slider</a>):",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If the <code>aria-valuetext</code> property is present, return its value,"
+                    },
+                    {
+                      "html": "Otherwise, if the <code>aria-valuenow</code> property is present, return its value,"
+                    },
+                    {
+                      "html": "Otherwise, use the value as specified by a host language attribute."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<span id=\"step2D\"></span><em>AriaLabel:</em> Otherwise, if the <code>current node</code> has an <code>aria-label</code> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\">attribute</a>\n                  whose value is not undefined, not the empty string, nor, when trimmed of <a data-link-type=\"dfn|abstract-op\" data-lt=\"ascii whitespace\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\">whitespace</a>, is not the empty string:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If traversal of the <code>current node</code> is due to recursion <strong>and</strong> the <code>current node</code> is an embedded control, ignore <code>aria-label</code> and\n                      skip to rule <a href=\"https://w3c.github.io/accname/#comp_embedded_control\">Embedded Control</a>."
+                },
+                {
+                  "html": "Otherwise, return the value of <code>aria-label</code>."
+                }
+              ]
+            },
+            {
+              "html": "<span id=\"step2E\"></span><em>Host Language Label:</em> Otherwise, if the <code>current node</code>'s native markup provides an\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\">attribute</a> (e.g. <code>alt</code>) or <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\">element</a> (e.g. <abbr title=\"Hypertext Markup Language\">HTML</abbr> <code>label</code> or <abbr title=\"Scalable Vector Graphics\">SVG</abbr> <code>title</code>) that defines a text alternative, return that alternative in the form of\n                  a <code>flat string</code> as defined by the host language, unless the element is marked as presentational (<code>role=\"presentation\"</code> or <code>role=\"none\"</code>)."
+            },
+            {
+              "html": "<span id=\"step2F\"></span><em>Name From Content:</em> Otherwise, if the <code>current node's</code>  allows\n                  <a class=\"specref\" href=\"https://w3c.github.io/aria/#namefromcontent\">name from content</a>, or if the <code>current node</code> is referenced by <code>aria-labelledby</code>, <code>aria-describedby</code>, or\n                  is a native host language text alternative <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\">element</a> (e.g. <code>label</code> in <abbr title=\"Hypertext Markup Language\">HTML</abbr>), or is a descendant of a native host language text alternative <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\">element</a>:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "<span id=\"step2F.i\"></span><em>Name From Content Reset:</em> Set the <code>accumulated text</code> to the empty string."
+                },
+                {
+                  "html": "<span id=\"step2F.ii\"></span><em>Name From Generated Content:</em> Check for\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> generated textual content associated with the <code>current node</code> and include it in the <code>accumulated text</code>. The\n                      <abbr title=\"Cascading Style Sheets\">CSS</abbr> <a href=\"https://www.w3.org/TR/CSS2/generate.html#before-after-content\"><code>::before</code> and <code>::after</code></a> pseudo\n                      elements [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/accname/#bib-css2\" title=\"Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification\">CSS2</a></cite>] can provide textual content for <a data-link-type=\"dfn|abstract-op\" data-lt=\"element\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\">elements</a> that have a content model.",
+                  "rationale": "for",
+                  "steps": [
+                    {
+                      "html": "For <code>::before</code> pseudo elements,  <em class=\"rfc2119\">MUST</em> prepend <abbr title=\"Cascading Style Sheets\">CSS</abbr> textual content, without a space,\n                          to the textual content of the <code>current node</code>."
+                    },
+                    {
+                      "html": "For <code>::after</code> pseudo elements,  <em class=\"rfc2119\">MUST</em> append <abbr title=\"Cascading Style Sheets\">CSS</abbr> textual content, without a space, to\n                          the textual content of the <code>current node</code>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<em>Determine Child Nodes:</em> Determine the <code>rendered child nodes</code> of the <code>current node</code>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If the <code>current node</code> has an attached <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\">shadow root</a>, set the <code>rendered child nodes</code> to be the child nodes of the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\">shadow root</a>."
+                    },
+                    {
+                      "html": "Otherwise, if the <code>current node</code> is a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slot\">slot</a> with <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#slot-assigned-nodes\">assigned nodes</a>, set the <code>rendered child nodes</code> to be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#slot-assigned-nodes\">assigned nodes</a> of the\n                          <code>current node</code>."
+                    },
+                    {
+                      "html": "Otherwise, set the <code>rendered child nodes</code> to be the child nodes of the <code>current node</code>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<span id=\"step2F.iii\"></span><em>Name From Each Child:</em> For each <code>rendered child node</code> of the\n                      <code>current node</code>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<span id=\"step2F.iii.a\"></span>Set the <code>current node</code> to the <code>rendered child node</code>."
+                    },
+                    {
+                      "html": "<span id=\"step2F.iii.b\"></span>Compute the text alternative of the <code>current node</code> beginning with the overall\n                          <a href=\"https://w3c.github.io/accname/#comp_computation\">Computation</a> step. Set the <code>result</code> to that text alternative."
+                    },
+                    {
+                      "html": "<span id=\"step2F.iii.c\"></span>Append the <code>result</code> to the <code>accumulated text</code>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<span id=\"step2F.iv\"></span>Return the <code>accumulated text</code> if it is not the empty string (\"\")."
+                }
+              ]
+            },
+            {
+              "html": "<span id=\"step2G\"></span><em>Text Node:</em> Otherwise, if the <code>current node</code> is a Text <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\">Node</a>, return its textual\n                  contents."
+            },
+            {
+              "html": "<span id=\"step2H\"></span><em>Recursive Name From Content:</em> Otherwise, if the <code>current node</code> is a descendant of an\n                  element whose  or  is being computed, and contains descendants, proceed to\n                  <a href=\"https://w3c.github.io/accname/#comp_name_from_content_reset\">Name From Content Reset</a>."
+            },
+            {
+              "html": "<span id=\"step2I\"></span><em>Tooltip:</em> Otherwise, if the <code>current node</code> has a ,\n                  return its value."
+            },
+            {
+              "html": "Append a space character and the <code>result</code> of each step above to the <code>total accumulated text</code>."
+            }
+          ]
+        },
+        {
+          "html": "After all steps are completed, the <code>total accumulated text</code> is used as the  or  of the\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\">element</a> that initiated the computation."
+        }
+      ]
+    }
+  ]
+}

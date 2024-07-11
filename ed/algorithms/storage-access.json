@@ -1,0 +1,491 @@
+{
+  "spec": {
+    "title": "The Storage Access API",
+    "url": "https://privacycg.github.io/storage-access/"
+  },
+  "algorithms": [
+    {
+      "name": "determine whether the user agent explicitly allows unpartitioned cookie access",
+      "href": "https://privacycg.github.io/storage-access/#determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine whether the user agent explicitly allows unpartitioned cookie access</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> <var>tuple</var> consisting of two <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①\">sites</a>, run the following steps. This algorithm returns \"<code>none</code>\", \"<code>allow</code>\" or \"<code>disallow</code>\".",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the user agent does not have explicit settings for unpartitioned cookie access for <var>tuple</var>, return \"<code>none</code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent’s settings explicitly allow unpartitioned cookie access for <var>tuple</var>, return \"<code>allow</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: the user agent’s settings explicitly disallow unpartitioned cookie access for <var>tuple</var>.</p>"
+        },
+        {
+          "html": "<p>Return \"<code>disallow</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify the definition of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#environment\" id=\"ref-for-environment\">environment</a> in the following manner:",
+      "rationale": "add",
+      "steps": [
+        {
+          "html": "<p>Add a new member called <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"environment\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"environment-has-storage-access\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">has storage access</dfn> of type <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean\">boolean</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify the definition of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params\" id=\"ref-for-source-snapshot-params\">source snapshot params</a> in the following manner:",
+      "rationale": "add",
+      "steps": [
+        {
+          "html": "<p>Add a new member called <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"source snapshot params\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"source-snapshot-params-has-storage-access\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">has storage access</dfn> of type <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a>.</p>"
+        },
+        {
+          "html": "<p>Add a new member called <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"source snapshot params\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"source-snapshot-params-environment-id\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">environment id</dfn> of type opaque <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/hasStorageAccess()",
+      "href": "https://privacycg.github.io/storage-access/#dom-document-hasstorageaccess",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> <var>doc</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-hasstorageaccess\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>hasStorageAccess()</code></dfn> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var> with false and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context\">secure context</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>p</var> with false and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a> of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>p</var> with false and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>browsingContext</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing context</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a> of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site①\">obtaining a site</a> from <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>explicitSetting</var> be the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\" id=\"ref-for-determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\">determining whether the user agent explicitly allows unpartitioned cookie access</a> with (<var>topLevelSite</var>, <var>embeddedSite</var>).</p>"
+            },
+            {
+              "html": "<p>Let <var>permissionState</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state\">getting the current permission state</a> given \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access\"><code>storage-access</code></a>\" and <var>global</var>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">networking task source</a> given <var>global</var> to:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>explicitSetting</var> is \"<code>disallow</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>p</var> with false.</p>"
+                },
+                {
+                  "html": "<p>If <var>explicitSetting</var> is \"<code>allow</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>p</var> with true.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>explicitSetting</var> is \"<code>none</code>\".</p>"
+                },
+                {
+                  "html": "<p>If <var>browsingContext</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>p</var> with true.</p>"
+                },
+                {
+                  "html": "<p>If <var>browsingContext</var> is same authority with <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑥\">resolve</a> <var>p</var> with true.</p>"
+                },
+                {
+                  "html": "<p>If <var>permissionState</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted\">granted</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">resolve</a> <var>p</var> with <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access\">has storage access</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑧\">Resolve</a> <var>p</var> with false.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/requestStorageAccess()",
+      "href": "https://privacycg.github.io/storage-access/#dom-document-requeststorageaccess",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code> <var>doc</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccess\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccess()</code></dfn> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context①\">secure context</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> \"<code>storage-access</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque②\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin③\">top-level origin</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque③\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\" id=\"ref-for-active-sandboxing-flag-set\">active sandboxing flag set</a> has its <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#sandbox-storage-access-by-user-activation-flag\" id=\"ref-for-sandbox-storage-access-by-user-activation-flag\">sandbox storage access by user activation flag</a> set, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>browsingContext</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc①\">browsing context</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a> of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site③\">obtaining a site</a> from <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>has transient activation</var> be whether <var>doc</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> object has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>process permission state</var> be an algorithm that, given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state\">permission state</a> <var>state</var>, runs the following steps:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source①\">networking task source</a> given <var>global</var> to:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>state</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted①\">granted</a>:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access②\">has storage access</a> to true.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑨\">Resolve</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①\">undefined</a></code>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Else:",
+                      "rationale": "consume",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">Consume user activation</a> given <var>global</var>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">Reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑤\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>explicitSetting</var> be the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\" id=\"ref-for-determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access①\">determining whether the user agent explicitly allows unpartitioned cookie access</a> with (<var>topLevelSite</var>, <var>embeddedSite</var>).</p>"
+            },
+            {
+              "html": "If <var>explicitSetting</var> is \"<code>disallow</code>\":",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">denied</a>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>explicitSetting</var> is \"<code>allow</code>\":",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted②\">granted</a>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>explicitSetting</var> is \"<code>none</code>\".</p>"
+            },
+            {
+              "html": "If <var>browsingContext</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context③\">top-level browsing context</a>:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted③\">granted</a>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>embeddedSite</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site③\">same site</a> with <var>topLevelSite</var>:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted④\">granted</a>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>previous permission state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state①\">getting the current permission state</a> given \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access①\"><code>storage-access</code></a>\" and <var>global</var>.</p>"
+            },
+            {
+              "html": "If <var>previous permission state</var> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-prompt\" id=\"ref-for-dfn-prompt\">prompt</a>:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <var>previous permission state</var>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>has transient activation</var> is false:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run <var>process permission state</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied①\">denied</a>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>permissionState</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">requesting permission to use</a> \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access②\"><code>storage-access</code></a>\".</p>"
+            },
+            {
+              "html": "<p>Run <var>process permission state</var> with <var>permissionState</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#snapshotting-source-snapshot-params\" id=\"ref-for-snapshotting-source-snapshot-params\">snapshotting source snapshot params</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#source-snapshot-params-has-storage-access\" id=\"ref-for-source-snapshot-params-has-storage-access\">has storage access</a> to <var>sourceDocument</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#source-snapshot-params-has-storage-access\" id=\"ref-for-source-snapshot-params-has-storage-access①\">has storage access</a>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#source-snapshot-params-environment-id\" id=\"ref-for-source-snapshot-params-environment-id\">environment id</a> to <var>sourceDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑤\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-id\" id=\"ref-for-concept-environment-id\">id</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching\">create navigation params by fetching</a> algorithm, insert the following step as step 3:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>originalURL</var> be <var>entry</var>’s URL.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When creating <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reserved-client\" id=\"ref-for-concept-request-reserved-client\">reserved client</a> in <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching①\">create navigation params by fetching</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reserved-client\" id=\"ref-for-concept-request-reserved-client①\">reserved client</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access③\">has storage access</a> to <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#source-snapshot-params-has-storage-access\" id=\"ref-for-source-snapshot-params-has-storage-access②\">has storage access</a> if all of the following hold:</p>",
+          "ignored": [
+            "sourceSnapshotParams’s environment id equals navigable’s active document's relevant settings object's id. originalURL’s origin is same origin with currentURL’s origin. response is null or response’s has-cross-origin-redirects is false."
+          ]
+        },
+        {
+          "html": "<p>Otherwise, set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reserved-client\" id=\"ref-for-concept-request-reserved-client②\">reserved client</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access④\">has storage access</a> to false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#set-up-a-window-environment-settings-object\" id=\"ref-for-set-up-a-window-environment-settings-object\">setting up a window environment settings object</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access⑤\">has storage access</a> to <var>reserved environment</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access⑥\">has storage access</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To query the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access③\"><code>storage-access</code></a>\" permission, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor\">PermissionDescriptor</a></code> <var>permissionDesc</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus\" id=\"ref-for-dom-permissionstatus\">PermissionStatus</a></code> <var>status</var>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>status</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state\">state</a></code> to <var>permissionDesc</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state①\">permission state</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>status</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state①\">state</a></code> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied②\">denied</a>, set <var>status</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state②\">state</a></code> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-prompt\" id=\"ref-for-dfn-prompt①\">prompt</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To generate a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key②\">permission key</a> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access⑥\"><code>storage-access</code></a>\" feature, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site④\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin⑤\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑤\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Return (<var>topLevelSite</var>, <var>embeddedSite</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "To compare the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key③\">permission keys</a> <var>key1</var> and <var>key2</var> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access⑦\"><code>storage-access</code></a>\" feature, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>key1</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#permission-key-top-level\" id=\"ref-for-permission-key-top-level①\">top-level</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site⑤\">same site</a> with <var>key2</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#permission-key-top-level\" id=\"ref-for-permission-key-top-level②\">top-level</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>key1</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#permission-key-requester\" id=\"ref-for-permission-key-requester①\">requester</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site⑥\">same site</a> with <var>key2</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#permission-key-requester\" id=\"ref-for-permission-key-requester②\">requester</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>blocked</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> from <var>parameters</var> named <code>blocked</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>blocked</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②\">boolean</a> return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>embedded origin</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties①\">getting a property</a> from <var>parameters</var> named <code>origin</code>.</p>"
+        },
+        {
+          "html": "If <var>embedded origin</var> is not a single U+002A ASTERISK character (*), then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>parsedURL</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>embedded origin</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>parsedURL</var> is failure, then return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>embedded origin</var> to <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context①\">current browsing context</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context⑤\">top-level browsing context</a> return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error②\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation\">unsupported operation</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑤\">active document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑦\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>top-level site</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtaining a site</a> from <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a>.</p>"
+        },
+        {
+          "html": "If <var>embedded origin</var> is a single U+002A ASTERISK character (*), then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>blocked</var> is <code>true</code>, then:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> set of steps to ensure that no site has access to its <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#unpartitioned-data\" id=\"ref-for-unpartitioned-data⑥\">unpartitioned data</a> when loaded in a <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#third-party-context\" id=\"ref-for-third-party-context③\">third party context</a> on <var>top-level site</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>blocked</var> is <code>false</code>, then:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> set of steps to ensure that any site has access to its <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#unpartitioned-data\" id=\"ref-for-unpartitioned-data⑦\">unpartitioned data</a> when loaded in a <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#third-party-context\" id=\"ref-for-third-party-context④\">third party context</a> on <var>top-level site</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>embedded origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site⑧\">same site</a> with <var>top-level site</var> return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error③\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①\">unsupported operation</a>.</p>"
+            },
+            {
+              "html": "If <var>blocked</var> is <code>true</code>, then:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> set of steps to ensure that <var>embedded origin</var> does not have access to its <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#unpartitioned-data\" id=\"ref-for-unpartitioned-data⑧\">unpartitioned data</a> when loaded in a <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#third-party-context\" id=\"ref-for-third-party-context⑤\">third party context</a> on <var>top-level site</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>blocked</var> is <code>false</code>, then:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> set of steps to ensure that <var>embedded origin</var> has access to its <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#unpartitioned-data\" id=\"ref-for-unpartitioned-data⑨\">unpartitioned data</a> when loaded in a <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#third-party-context\" id=\"ref-for-third-party-context⑥\">third party context</a> on <var>top-level site</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If the above <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> step of steps resulted in failure, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error④\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-unknown-error\" id=\"ref-for-dfn-unknown-error\">unknown error</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

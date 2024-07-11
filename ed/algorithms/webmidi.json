@@ -1,0 +1,175 @@
+{
+  "spec": {
+    "title": "Web MIDI API",
+    "url": "https://webaudio.github.io/web-midi-api/"
+  },
+  "algorithms": [
+    {
+      "name": "algorithm to request MIDI Access",
+      "href": "https://webaudio.github.io/web-midi-api/#dfn-algorithm-to-request-midi-access",
+      "html": "When the <a data-link-type=\"idl\" data-xref-type=\"method\" data-lt=\"requestMIDIAccess()\" href=\"https://webaudio.github.io/web-midi-api/#dom-navigator-requestmidiaccess\" class=\"internalDFN\" id=\"ref-for-dom-navigator-requestmidiaccess-2\"><code>requestMIDIAccess</code></a><code>()</code> method is called, the user agent\n              <em class=\"rfc2119\">MUST</em> run the <dfn id=\"dfn-algorithm-to-request-midi-access\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;algorithm to request MIDI Access&quot;, but nothing links to it. This is usually a spec bug!\">algorithm to request MIDI Access</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                  Let <var>promise</var> be a new Promise object and\n                  <var>resolver</var> be its associated resolver.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Return <var>promise</var> and run the following steps\n                  asynchronously.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>document</var> be the calling context's\n                  <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-document\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\">Document</a>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If <var>document</var> is not <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/iframe-embed-object.html\" data-cite-frag=\"allowed-to-use\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the\n                  <a data-link-type=\"dfn|abstract-op\" data-cite=\"permissions-policy\" data-cite-path=\"/\" data-cite-frag=\"policy-controlled-feature\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named <a href=\"https://webaudio.github.io/web-midi-api/#dfn-midi\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-midi-1\">midi</a>, jump to\n                  the step labeled <em>failure</em> below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Optionally, e.g. based on a previously-established user\n                  preference, for security reasons, or due to platform\n                  limitations, jump to the step labeled <em>failure</em> below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Optionally, e.g. based on a previously-established user\n                  preference, jump to the step labeled <em>success</em> below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Prompt the user in a user-agent-specific manner for permission\n                  to provide the entry script's origin with a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-2\"><code>MIDIAccess</code></a>\n                  object representing control over user's <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-midi-device\" class=\"internalDFN\" id=\"ref-for-dfn-midi-device-5\">MIDI devices</a>. This\n                  prompt may be contingent upon whether <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-system-exclusive\" class=\"internalDFN\" id=\"ref-for-dfn-system-exclusive-4\">System Exclusive</a>\n                  support was requested, and may allow the user to enable or\n                  disable that access.\n                </p>\n                <p>\n                  If permission is denied, jump to the step labeled\n                  <em>failure</em> below. If the user never responds, this\n                  algorithm will never progress beyond this step. If permission\n                  is granted, continue the following steps.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  <em><b>success</b></em>: Let <var>access</var> be a new\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-3\"><code>MIDIAccess</code></a> object. (It is possible to call\n                  requestMIDIAccess() multiple times; this may prompt the user\n                  multiple times, so it may not be best practice, and the same\n                  instance of MIDIAccess will not be returned each time.)\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Call <var>resolver</var>'s <code>accept(value)</code> method\n                  with <var>access</var> as value argument.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Terminate these steps.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  <em><b>failure</b></em>: Let <var>error</var> be a new\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>. This exception's .name should be\n                  \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"securityerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" if the user or their security settings\n                  denied the application from creating a MIDIAccess instance\n                  with the requested options, or if the error is the result of\n                  <var>document</var> not being <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/iframe-embed-object.html\" data-cite-frag=\"allowed-to-use\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the feature,\n                  \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"aborterror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" if the page is going to be closed for a user\n                  navigation, \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" if the underlying systems\n                  raise any errors, or otherwise it should be\n                  \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"notsupportederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\".\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Call <var>resolver</var>'s <code>reject(value)</code> method\n                  with <var>error</var> as value argument.\n                </p>"
+        }
+      ]
+    },
+    {
+      "name": "MIDIAccess/onstatechange",
+      "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange",
+      "html": "Whenever a previously unavailable MIDI port becomes available for\n              use, or an existing port changes the state attribute, the user\n              agent <em class=\"rfc2119\">SHOULD</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"MIDIPort\">port</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-1\"><code>MIDIPort</code></a> corresponding to the\n              newly-available, or the existing port."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"statechange\" at the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-10\"><code>MIDIAccess</code></a>,\n                using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-2\"><code>MIDIConnectionEvent</code></a> with <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MIDIConnectionEvent\" data-xref-for=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-port\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-port-1\"><code>port</code></a> set to <var data-type=\"MIDIPort\">port</var>."
+        }
+      ]
+    },
+    {
+      "name": "open the port",
+      "href": "https://webaudio.github.io/web-midi-api/#dfn-open-the-port",
+      "html": "When this method is called, the user agent <em class=\"rfc2119\">MUST</em> run the\n              <dfn data-lt=\"open the port|algorithm to open a MIDIPort\" id=\"dfn-open-the-port\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">algorithm to open a MIDIPort</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                  Let <var>promise</var> be a new Promise object and\n                  <var>resolver</var> be its associated resolver.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Return <var>promise</var> and run the following steps\n                  asynchronously.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>port</var> be the given <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-9\"><code>MIDIPort</code></a> object.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If the device's connection is already <a data-lt=\"MIDIPortConnectionState.open\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-open\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportconnectionstate-open-1\">\"open\"</a> (e.g. open() has\n                  already been called on this <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-10\"><code>MIDIPort</code></a>, or the port has been\n                  implicitly opened), jump to the step labeled <em>success</em>\n                  below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If the device's connection is <a data-lt=\"MIDIPortConnectionState.pending\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-pending\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportconnectionstate-pending-2\">\"pending\"</a> (i.e. the\n                  connection had been opened and the device was subsequently\n                  disconnected), jump to the step labeled <em>success</em>\n                  below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If the device's state is <a data-lt=\"MIDIPortDeviceState.disconnected\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportdevicestate-disconnected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportdevicestate-disconnected-2\">\"disconnected\"</a>, change\n                  the <a data-link-for=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-connection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-connection-3\"><code>connection</code></a> attribute of\n                  the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-11\"><code>MIDIPort</code></a> to <a data-lt=\"MIDIPortConnectionState.pending\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-pending\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportconnectionstate-pending-3\">\"pending\"</a>, and enqueue\n                  a new <a data-lt=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiconnectionevent-3\"><code>MIDIConnectionEvent</code></a> to the\n                  <a data-lt=\"MIDIAccess.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiaccess-onstatechange-3\">statechange</a> handler\n                  of the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-11\"><code>MIDIAccess</code></a> and to the <a data-lt=\"MIDIPort.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-onstatechange-3\">statechange</a> handler of the\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-12\"><code>MIDIPort</code></a> and jump to the step labeled <em>success</em>\n                  below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Attempt to obtain access to the given <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-midi-device\" class=\"internalDFN\" id=\"ref-for-dfn-midi-device-8\">MIDI device</a> in the\n                  system. If the device is unavailable (e.g. is already in use\n                  by another process and cannot be opened, or is disconnected),\n                  jump to the step labeled <em>failure</em> below. If the device\n                  is available and access is obtained, continue the following\n                  steps.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Change the <code>connection</code> attribute of the MIDIPort\n                  to <code>\"open\"</code>, and enqueue a new\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-4\"><code>MIDIConnectionEvent</code></a> to the <a data-lt=\"MIDIAccess.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiaccess-onstatechange-4\">statechange</a> handler of the\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-12\"><code>MIDIAccess</code></a> and to the <a data-lt=\"MIDIPort.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-onstatechange-4\">statechange</a> handler of the\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-13\"><code>MIDIPort</code></a>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If this port is an output port and has any pending data that\n                  is waiting to be sent, asynchronously begin sending that\n                  data.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  <em><b>success</b></em>: Call <var>resolver</var>'s\n                  <code>accept(value)</code> method with <var>port</var> as\n                  value argument.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Terminate these steps.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  <em><b>failure</b></em>: Let <var>error</var> be a new\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>. This exception's .name should be\n                  <code>\"InvalidAccessError\"</code> if the port is unavailable.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Call <var>resolver</var>'s <code>reject(value)</code> method\n                  with <var>error</var> as value argument.\n                </p>"
+        }
+      ]
+    },
+    {
+      "name": "algorithm to close a MIDIPort",
+      "href": "https://webaudio.github.io/web-midi-api/#dfn-algorithm-to-close-a-midiport",
+      "html": "When the <code>close()</code> method is called, the user agent\n              <em class=\"rfc2119\">MUST</em> run the <dfn id=\"dfn-algorithm-to-close-a-midiport\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;algorithm to close a MIDIPort&quot;, but nothing links to it. This is usually a spec bug!\">algorithm to close a MIDIPort</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                  Let <var>promise</var> be a new Promise object and\n                  <var>resolver</var> be its associated resolver.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Return <var>promise</var> and run the following steps\n                  asynchronously.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>port</var> be the given <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-15\"><code>MIDIPort</code></a> object.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If the port is already closed (its <a data-lt=\"MIDIPort.connection\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-connection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-connection-4\">.connection</a> is <a data-lt=\"MIDIPortConnectionState.closed\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportconnectionstate-closed-1\">\"closed\"</a> - e.g. the port\n                  has not yet been implicitly or explicitly opened, or\n                  <a data-lt=\"MIDIPort.close\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-close\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-close-2\"><code>close()</code></a> has already been\n                  called on this <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-16\"><code>MIDIPort</code></a>), jump to the step labeled\n                  <em><b>closed</b></em> below.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If the port is an input port, skip to the next step. If the\n                  output port's <a data-lt=\"MIDIPort.state\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-state-2\">.state</a> is not\n                  <a data-lt=\"MIDIPortDeviceState.connected\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiportdevicestate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiportdevicestate-connected-3\">\"connected\"</a>,\n                  clear all pending send data and skip to the next step. Clear\n                  any pending send data in the system with timestamps in the\n                  future, then finish sending any send messages with no\n                  timestamp or with a timestamp in the past or present, prior\n                  to proceeding to the next step.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Close access to the port in the underlying system if open,\n                  and release any blocking resources in the underlying system.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Change the <code>connection</code> attribute of the MIDIPort\n                  to <code>\"closed\"</code>, and enqueue a new\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-5\"><code>MIDIConnectionEvent</code></a> to the <a data-lt=\"MIDIAccess.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiaccess-onstatechange-5\">statechange</a> handler of the\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-13\"><code>MIDIAccess</code></a> and to the <a data-lt=\"MIDIPort.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-onstatechange-5\">statechange</a> handler of the\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-17\"><code>MIDIPort</code></a>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  <em><b>closed</b></em>: Call <var>resolver</var>'s\n                  <code>accept(value)</code> method with <var>port</var> as\n                  value argument.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Terminate these steps.\n                </p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the MIDI port corresponding to the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-18\"><code>MIDIPort</code></a> changes the\n          state attribute, the user agent <em class=\"rfc2119\">SHOULD</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n              Let <var data-type=\"MIDIPort\">port</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-19\"><code>MIDIPort</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-lt=\"MIDIPort.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiport-onstatechange-6\">statechange</a> at the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIPort\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiport\" class=\"internalDFN\" id=\"ref-for-dom-midiport-20\"><code>MIDIPort</code></a>, and\n              <a data-lt=\"MIDIAccess.onstatechange\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-midiaccess-onstatechange-6\">statechange</a> at the\n              <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-14\"><code>MIDIAccess</code></a>, using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-6\"><code>MIDIConnectionEvent</code></a>  with the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MIDIConnectionEvent\" data-xref-for=\"MIDIConnectionEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-port\" class=\"internalDFN\" id=\"ref-for-dom-midiconnectionevent-port-2\"><code>port</code></a> attribute set\n              to <var data-type=\"MIDIPort\">port</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the MIDI port corresponding to the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIInput\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiinput\" class=\"internalDFN\" id=\"ref-for-dom-midiinput-8\"><code>MIDIInput</code></a> finishes\n            receiving one or more <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-midi-message\" class=\"internalDFN\" id=\"ref-for-dfn-midi-message-6\">MIDI messages</a>, the user agent <em class=\"rfc2119\">MUST</em> run the\n            following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                Let <var data-type=\"MIDIInput\">port</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIInput\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiinput\" class=\"internalDFN\" id=\"ref-for-dom-midiinput-9\"><code>MIDIInput</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIAccess\" href=\"https://webaudio.github.io/web-midi-api/#dom-midiaccess\" class=\"internalDFN\" id=\"ref-for-dom-midiaccess-16\"><code>MIDIAccess</code></a> did not enable <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-system-exclusive\" class=\"internalDFN\" id=\"ref-for-dfn-system-exclusive-10\">System Exclusive</a>\n                access, and the message is a <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-system-exclusive\" class=\"internalDFN\" id=\"ref-for-dfn-system-exclusive-11\">System Exclusive</a> message, abort\n                this process.\n              </p>"
+        },
+        {
+          "html": "<p>\n                <a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"midimessage\" at <var data-type=\"MIDIInput\">port</var>, using\n                <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MIDIMessageEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midimessageevent\" class=\"internalDFN\" id=\"ref-for-dom-midimessageevent-1\"><code>MIDIMessageEvent</code></a> with the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"dom-event-timestamp\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-timestamp\"><code>timeStamp</code></a> attribute set\n                to the time the message was received by the system, and with the\n                <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MIDIMessageEvent\" data-xref-for=\"MIDIMessageEvent\" href=\"https://webaudio.github.io/web-midi-api/#dom-midimessageevent-data\" class=\"internalDFN\" id=\"ref-for-dom-midimessageevent-data-1\"><code>data</code></a> attribute set to a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Uint8Array\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-Uint8Array\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\"><code>Uint8Array</code></a> of\n                MIDI data bytes representing a single <a data-link-type=\"dfn|abstract-op\" href=\"https://webaudio.github.io/web-midi-api/#dfn-midi-message\" class=\"internalDFN\" id=\"ref-for-dfn-midi-message-7\">MIDI message</a>.\n              </p>"
+        }
+      ]
+    }
+  ]
+}

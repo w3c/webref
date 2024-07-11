@@ -1,0 +1,574 @@
+{
+  "spec": {
+    "title": "Long Animation Frames API",
+    "url": "https://w3c.github.io/long-animation-frames/"
+  },
+  "algorithms": [
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-blockingduration\" id=\"ref-for-dom-performancelonganimationframetiming-blockingduration\">blockingDuration</a></code> attribute’s getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>sortedTaskDurations</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming-timing-info\" id=\"ref-for-performancelonganimationframetiming-timing-info⑤\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-task-durations\" id=\"ref-for-frame-timing-info-task-durations\">task durations</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-descending-order\" id=\"ref-for-list-sort-in-descending-order\">sorted in descending order</a>.</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming-timing-info\" id=\"ref-for-performancelonganimationframetiming-timing-info⑥\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-update-the-rendering-start-time\" id=\"ref-for-frame-timing-info-update-the-rendering-start-time①\">update the rendering  start time</a> is not zero, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>renderDuration</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration①\">duration</a> between <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-renderstart\" id=\"ref-for-dom-performancelonganimationframetiming-renderstart②\">renderStart</a></code> and\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time\" id=\"ref-for-dfn-relative-high-resolution-time⑤\">relative high resolution time</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming-timing-info\" id=\"ref-for-performancelonganimationframetiming-timing-info⑦\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-end-time\" id=\"ref-for-frame-timing-info-end-time①\">end time</a>.</p>"
+            },
+            {
+              "html": "<p>Increment <var>sortedTaskDurations</var>[0] by <var>renderDuration</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>totalBlockingDuration</var> be 0.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>duration</var> in <var>sortedTaskDurations</var>, if <var>duration</var> is greater than 50 then increment <var>totalBlockingDuration</var> by <var>duration</var> - 50.</p>"
+        },
+        {
+          "html": "<p>Return <var>totalBlockingDuration</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-scripts\" id=\"ref-for-dom-performancelonganimationframetiming-scripts\">scripts</a></code> attribute’s getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>scripts</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> « ».</p>"
+        },
+        {
+          "html": "<p>Let <var>entryWindow</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>scriptInfo</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info①\">frame timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-scripts\" id=\"ref-for-frame-timing-info-scripts\">scripts</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>scriptWindow</var> be <var>scriptInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-window\" id=\"ref-for-script-timing-info-window\">window</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>scriptEntry</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming\" id=\"ref-for-performancescripttiming①\">PerformanceScriptTiming</a></code> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>,\nwhose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info\">timing info</a> is <var>scriptInfo</var> and whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-window-attribution\" id=\"ref-for-performancescripttiming-window-attribution\">window attribution</a> is the value corresponding to the first matching statement:</p>\n       <dl>\n        <dt data-md=\"\"><var>scriptWindow</var> is undefined\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-other\" id=\"ref-for-dom-scriptwindowattribution-other\">other</a></code></p>\n        </dd><dt data-md=\"\"><var>scriptWindow</var> is <var>entryWindow</var>\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-self\" id=\"ref-for-dom-scriptwindowattribution-self\">self</a></code></p>\n        </dd><dt data-md=\"\"><var>entryWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#ancestor-navigables\" id=\"ref-for-ancestor-navigables\">ancestor navigables</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>scriptWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a>\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-ancestor\" id=\"ref-for-dom-scriptwindowattribution-ancestor\">ancestor</a></code></p>\n        </dd><dt data-md=\"\"><var>scriptWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#ancestor-navigables\" id=\"ref-for-ancestor-navigables①\">ancestor navigables</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>entryWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-descendant\" id=\"ref-for-dom-scriptwindowattribution-descendant\">descendant</a></code></p>\n        </dd><dt data-md=\"\"><var>entryWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable④\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a> is <var>scriptWindow</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑤\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-same-page\" id=\"ref-for-dom-scriptwindowattribution-same-page\">same-page</a></code></p>\n        </dd><dt data-md=\"\">Otherwise\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-scriptwindowattribution-other\" id=\"ref-for-dom-scriptwindowattribution-other①\">other</a></code>.</p>\n       </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>scriptEntry</var> to <var>scripts</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>scripts</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invoker\" id=\"ref-for-dom-performancescripttiming-invoker\">invoker</a></code> attribute’s getter steps are:",
+      "rationale": "switch",
+      "steps": [
+        {
+          "html": "<p>Switch on <var>this</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invokertype\" id=\"ref-for-dom-performancescripttiming-invokertype①\">invokerType</a></code>:</p>\n     <dl>\n      <dt data-md=\"\">\"`classic-script`\"\n      </dt><dt data-md=\"\">\"`module-script`\"\n      </dt><dd data-md=\"\">\n       <p>Return <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info②\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url\">source url</a>.</p>\n      </dd><dt data-md=\"\">\"`event-listener`\"\n      </dt><dd data-md=\"\">\n       \n       \n      </dd><dt data-md=\"\">\"`user-callback`\"\n      </dt><dd data-md=\"\">\n       <p>Return <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info⑨\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name①\">invoker name</a>.</p>\n      </dd><dt data-md=\"\">\"`resolve-promise`\"\n      </dt><dt data-md=\"\">\"`reject-promise`\"\n      </dt><dd data-md=\"\">\n       \n     </dd></dl>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>targetName</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info③\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name\">invoker name</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info④\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-id\" id=\"ref-for-script-timing-info-event-target-element-id\">event target element id</a> is not the empty string, then:\nSet <var>targetName</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenation</a> of « <var>targetName</var>, \"#\", <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info⑤\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-id\" id=\"ref-for-script-timing-info-event-target-element-id①\">event target element id</a> ».</p>"
+            },
+            {
+              "html": "<p>Otherwise, If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info⑥\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-src-attribute\" id=\"ref-for-script-timing-info-event-target-element-src-attribute\">event target element src attribute</a> is not the empty string, then:\nSet <var>targetName</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenation</a> of « <var>targetName</var>, '[src=', <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info⑦\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-src-attribute\" id=\"ref-for-script-timing-info-event-target-element-src-attribute①\">event target element src attribute</a>, ']' ».</p>"
+            },
+            {
+              "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate②\">concatenation</a> of « <var>targetName</var>, \".on\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info⑧\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-type\" id=\"ref-for-script-timing-info-event-type\">event type</a> ».</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info①⓪\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name②\">invoker name</a> is the empty string,\nthen:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>this</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invokertype\" id=\"ref-for-dom-performancescripttiming-invokertype②\">invokerType</a></code> is \"`resolve-promise`\", then return \"`Promise.resolve`\".</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, return \"`Promise.reject`\".</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>thenOrCatch</var> be \"`then`\" if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invokertype\" id=\"ref-for-dom-performancescripttiming-invokertype③\">invokerType</a></code> is \"`resolve-promise`\"; otherwise \"`reject-promise`\".</p>"
+                },
+                {
+                  "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate③\">concatenation</a> of « <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name③\">invoker name</a>, \".\", <var>thenOrCatch</var> ».</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-window\" id=\"ref-for-dom-performancescripttiming-window\">window</a></code> attribute’s getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>window</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/managing-memory.html#sec-weakrefderef\" id=\"ref-for-sec-weakrefderef\">deref</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info②⓪\">timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-window\" id=\"ref-for-script-timing-info-window①\">window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is undefined, then return null; Otherwise return <var>window</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Accessing the frame timing info",
+      "href": "https://w3c.github.io/long-animation-frames/#nearest-same-origin-root",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"nearest-same-origin-root\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">nearest same-origin root</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code> <var>document</var>: \n    \n    <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"relevant-frame-timing-info\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">relevant frame timing info</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> <var>document</var> is its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#nearest-same-origin-root\" id=\"ref-for-nearest-same-origin-root\">nearest same-origin root</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info\">current frame timing info</a>.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>ancestors</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#ancestor-navigables\" id=\"ref-for-ancestor-navigables②\">ancestor navigables</a> of <var>document</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>ancestorNavigable</var> in <var>ancestors</var>:\nIf <var>ancestorNavigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a>,\n    and <var>ancestorNavigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent\">relevant agent</a> is <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent①\">relevant agent</a>,\n    then return <var>ancestorNavigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Record task start time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-task-start-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-task-start-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record task start time</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp①⑤\">DOMHighResTimeStamp</a></code> <var>unsafeTaskStartTime</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>root</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#nearest-same-origin-root\" id=\"ref-for-nearest-same-origin-root①\">nearest same-origin root</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info①\">current frame timing info</a> is null,\nthen set <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info②\">current frame timing info</a> to a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info③\">frame timing info</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-start-time\" id=\"ref-for-frame-timing-info-start-time①\">start time</a> is <var>unsafeTaskStartTime</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info③\">current frame timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-current-task-start-time\" id=\"ref-for-frame-timing-info-current-task-start-time\">current task start time</a> to <var>unsafeTaskStartTime</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info④\">current frame timing info</a>'s 's <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-start-time\" id=\"ref-for-frame-timing-info-start-time②\">start time</a> is 0, then set <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info⑤\">current frame timing info</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-start-time\" id=\"ref-for-frame-timing-info-start-time③\">start time</a> to <var>unsafeTaskStartTime</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report task end time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-task-end-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-task-end-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record task end time</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp①⑥\">DOMHighResTimeStamp</a></code> <var>unsafeTaskEndTime</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>timingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>timingInfo</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>safeTaskEndTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time\" id=\"ref-for-dfn-relative-high-resolution-time⑨\">relative high resolution time</a> given <var>unsafeTaskEndTime</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>safeTaskStartTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time\" id=\"ref-for-dfn-relative-high-resolution-time①⓪\">relative high resolution time</a> given <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-current-task-start-time\" id=\"ref-for-frame-timing-info-current-task-start-time①\">current task start time</a> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration③\">duration</a> between <var>safeTaskStartTime</var> and <var>safeTaskEndTime</var> to <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-task-durations\" id=\"ref-for-frame-timing-info-task-durations①\">task durations</a>.</p>"
+        },
+        {
+          "html": "<p>If the user agent believes that updating the rendering of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a> would have no visible effect, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#report-frame-timing\" id=\"ref-for-report-frame-timing\">report frame timing</a> given <var>document</var> and return.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report rendering time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-rendering-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-rendering-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record rendering time</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>document</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp①⑦\">DOMHighResTimeStamp</a></code> <var>unsafeStyleAndLayoutStart</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>timingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info①\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>timingInfo</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-update-the-rendering-start-time\" id=\"ref-for-frame-timing-info-update-the-rendering-start-time②\">update the rendering start time</a> to <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-current-task-start-time\" id=\"ref-for-frame-timing-info-current-task-start-time②\">current task start time</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-style-and-layout-start-time\" id=\"ref-for-frame-timing-info-style-and-layout-start-time①\">style and layout start time</a> to <var>unsafeStyleAndLayoutStart</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#report-frame-timing\" id=\"ref-for-report-frame-timing①\">report frame timing</a> given <var>document</var> and the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time\">unsafe shared current time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Queue frame timing",
+      "href": "https://w3c.github.io/long-animation-frames/#report-frame-timing",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-frame-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report frame timing</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>document</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp①⑧\">DOMHighResTimeStamp</a></code> <var>unsafeEndTime</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>timingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info②\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>timingInfo</var> is not null.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frameDuration</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration④\">duration</a> between the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time\" id=\"ref-for-dfn-relative-high-resolution-time①①\">relative high resolution time</a> given <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-start-time\" id=\"ref-for-frame-timing-info-start-time④\">start time</a> and <var>global</var>,\nand the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time\" id=\"ref-for-dfn-relative-high-resolution-time①②\">relative high resolution time</a> given <var>unsafeEndTime</var> and <var>global</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>frameDuration</var> is greater than 50 milliseconds, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming\" id=\"ref-for-performancelonganimationframetiming②\">PerformanceLongAnimationFrameTiming</a></code> in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>,\nwhose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming-timing-info\" id=\"ref-for-performancelonganimationframetiming-timing-info⑧\">timing info</a> is <var>timingInfo</var>.</p>"
+        },
+        {
+          "html": "<p>set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#nearest-same-origin-root\" id=\"ref-for-nearest-same-origin-root②\">nearest same-origin root</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#current-frame-timing-info\" id=\"ref-for-current-frame-timing-info⑥\">current frame timing info</a> to null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report pending user callback",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-user-callback",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-user-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for user callback</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function\">callback function</a> <var>callback</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point\">Create script entry point</a> given <var>settings</var>, \"`user-callback`\", and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info③\">script timing info</a> <var>scriptTimingInfo</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name④\">invoker name</a> to <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier\">identifier</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#apply-source-location\" id=\"ref-for-apply-source-location\">Apply source location</a> for <var>scriptTimingInfo</var> given <var>callback</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report pending timer",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-timer-handler",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-timer-handler\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for timer handler</dfn> given a string or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Function\" id=\"ref-for-Function\">Function</a></code> <var>handler</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>settings</var>, and a boolean <var>repeat</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point①\">Create script entry point</a> given <var>settings</var>, \"`user-callback`\",\n            and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info④\">script timing info</a> <var>scriptTimingInfo</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>setTimeoutOrInterval</var> be \"setInterval\" if <var>repeat</var> is true, \"setTimeout\" otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name⑤\">invoker name</a> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate④\">concatenation</a> of\n« TimerHandler:\", <var>setTimeoutOrInterval</var> ».</p>"
+        },
+        {
+          "html": "<p>If <var>handler</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Function\" id=\"ref-for-Function①\">Function</a></code>, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#apply-source-location\" id=\"ref-for-apply-source-location①\">apply source location</a> for <var>scriptTimingInfo</var> given <var>handler</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report event listener",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-event-listener",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for event listener</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> <var>listener</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point②\">Create script entry point</a> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, \"`event-listener`\",\n        and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑤\">script timing info</a> <var>scriptTimingInfo</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info④\">frame timing info</a> <var>frameTimingInfo</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-type\" id=\"ref-for-script-timing-info-event-type①\">event type</a> to <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type\">type</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget\">currentTarget</a></code>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for event listener</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> <var>listener</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point②\">Create script entry point</a> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, \"`event-listener`\",\n        and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑤\">script timing info</a> <var>scriptTimingInfo</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info④\">frame timing info</a> <var>frameTimingInfo</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name⑥\">invoker name</a> to <var>target</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-node-nodename\" id=\"ref-for-dom-node-nodename\">nodeName</a></code>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for event listener</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> <var>listener</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point②\">Create script entry point</a> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, \"`event-listener`\",\n        and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑤\">script timing info</a> <var>scriptTimingInfo</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info④\">frame timing info</a> <var>frameTimingInfo</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-id\" id=\"ref-for-script-timing-info-event-target-element-id②\">event target element id</a> to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"ref-for-concept-id\">id</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-event-target-element-src-attribute\" id=\"ref-for-script-timing-info-event-target-element-src-attribute②\">event target element src attribute</a> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attributes-get-by-name\" id=\"ref-for-concept-element-attributes-get-by-name\">getting an attribute value by name</a> \"`src`\" and <var>target</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Else, set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name⑦\">invoker name</a> to <var>target</var>’s interface name.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#apply-source-location\" id=\"ref-for-apply-source-location②\">Apply source location</a> for <var>scriptTimingInfo</var> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback\">callback</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#uievent\" id=\"ref-for-uievent\">UIEvent</a></code>, and <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-first-ui-event-timestamp\" id=\"ref-for-frame-timing-info-first-ui-event-timestamp①\">first ui event timestamp</a> is 0,\nthen set <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-first-ui-event-timestamp\" id=\"ref-for-frame-timing-info-first-ui-event-timestamp②\">first ui event timestamp</a> to <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-timestamp\" id=\"ref-for-dom-event-timestamp\">timeStamp</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report promise resolver",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-promise-resolver",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-promise-resolver\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for promise resolver</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise\">Promise</a></code> <var>promise</var> and a \"`resolve-promise`\" or \"`reject-promise`\" <var>type</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-promise-resolver\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for promise resolver</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise\">Promise</a></code> <var>promise</var> and a \"`resolve-promise`\" or \"`reject-promise`\" <var>type</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name⑧\">invoker name</a> to <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#promise-invoker-name-when-created\" id=\"ref-for-promise-invoker-name-when-created\">invoker name when created</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url②\">source url</a> to <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#promise-script-url-when-created\" id=\"ref-for-promise-script-url-when-created\">script url when created</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Set source URL for script block",
+      "href": "https://w3c.github.io/long-animation-frames/#set-source-url-for-script-block",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-source-url-for-script-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set source url for script block</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑦\">script timing info</a> <var>scriptTimingInfo</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script\" id=\"ref-for-concept-script\">script</a> <var>script</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>-or-null <var>url</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>url</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is \"`http`\" or \"`https`\", then set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url③\">source url</a> to <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url\" id=\"ref-for-concept-script-base-url\">base URL</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is \"`blob`\" or \"`data`\" then set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url④\">source url</a> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate⑤\">concatenation</a> of  « <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a>, \":\"\" ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report classic script execution",
+      "href": "https://w3c.github.io/long-animation-frames/#record-classic-script-creation-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-classic-script-creation-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record classic script creation time</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script\" id=\"ref-for-concept-script①\">script</a> <var>script</var> and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a>-or-null <var>originalSourceURL</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point④\">Create script entry point</a> with <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object\">settings object</a>, \"`classic-script`\",\nand the following step given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑧\">script timing info</a> <var>scriptTimingInfo</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#set-source-url-for-script-block\" id=\"ref-for-set-source-url-for-script-block\">Set source url for script block</a> given <var>scriptTimingInfo</var>, <var>script</var>, and <var>originalSourceURL</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report classic script execution start",
+      "href": "https://w3c.github.io/long-animation-frames/#record-classic-script-execution-start-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-classic-script-execution-start-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record classic script execution start time</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#classic-script\" id=\"ref-for-classic-script\">classic script</a> <var>script</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object①\">settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#muted-errors\" id=\"ref-for-muted-errors\">muted errors</a> is true, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>settings</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>settings</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2\">document</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frameTimingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info③\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frameTimingInfo</var> is null or if <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script\">pending script</a> is not null, then return.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script①\">pending script</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-type\" id=\"ref-for-script-timing-info-invoker-type①\">invoker type</a> is \"`classic-script`\".</p>"
+        },
+        {
+          "html": "<p>Set <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script②\">pending script</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-execution-start-time\" id=\"ref-for-script-timing-info-execution-start-time②\">execution start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time①\">unsafe shared current time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report module script execution start",
+      "href": "https://w3c.github.io/long-animation-frames/#record-module-script-execution-start-time",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-module-script-execution-start-time\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record module script execution start time</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#module-script\" id=\"ref-for-module-script\">module script</a> <var>script</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point⑤\">Create script entry point</a> with <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object②\">settings object</a>, \"`module-script`\",\n            and the following step given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑨\">script timing info</a> <var>scriptTimingInfo</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-execution-start-time\" id=\"ref-for-script-timing-info-execution-start-time③\">execution start time</a> to <var>script</var>’s <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-start-time\" id=\"ref-for-script-timing-info-start-time①\">start time</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#set-source-url-for-script-block\" id=\"ref-for-set-source-url-for-script-block①\">Set source url for script block</a> given <var>scriptTimingInfo</var>, <var>script</var>, and <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url\" id=\"ref-for-concept-script-base-url①\">base URL</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Create script entry point",
+      "href": "https://w3c.github.io/long-animation-frames/#create-script-entry-point",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-script-entry-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create script entry point</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a> <var>settings</var>,\n        a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/long-animation-frames/#enumdef-scriptinvokertype\" id=\"ref-for-enumdef-scriptinvokertype②\">ScriptInvokerType</a></code> <var>invokerType</var>, and <var>steps</var>,\n        which is an algorithm that takes a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info①⓪\">script timing info</a> and an optional <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info⑤\">frame timing info</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>settings</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window④\">Window</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>settings</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2①\">document</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hidden\" id=\"ref-for-dom-document-hidden\">hidden</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>frameTimingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info④\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frameTimingInfo</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script③\">pending script</a> is not null, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>scriptTimingInfo</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info①①\">script timing info</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-start-time\" id=\"ref-for-script-timing-info-start-time②\">start time</a> is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time②\">unsafe shared current time</a>,\nand whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-type\" id=\"ref-for-script-timing-info-invoker-type②\">invoker type</a> is <var>invokerType</var>.</p>"
+        },
+        {
+          "html": "<p>Run <var>steps</var> given <var>scriptTimingInfo</var> and <var>frameTimingInfo</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-window\" id=\"ref-for-script-timing-info-window②\">window</a> to <var>settings</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script④\">pending script</a> to <var>scriptTimingInfo</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Record timing info for microtask checkpoint",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-microtask-checkpoint",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-microtask-checkpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for microtask checkpoint</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>script</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#running-script\" id=\"ref-for-running-script\">running script</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object③\">settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>settings</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2②\">document</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hidden\" id=\"ref-for-dom-document-hidden①\">hidden</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>frameTimingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info⑤\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scriptTimingInfo</var> be <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script⑤\">pending script</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script⑥\">pending script</a> to null.</p>"
+        },
+        {
+          "html": "<p>If <var>scriptTimingInfo</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-end-time\" id=\"ref-for-script-timing-info-end-time①\">end time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time③\">unsafe shared current time</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-microtask-checkpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for microtask checkpoint</dfn>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url⑤\">source url</a> to the empty string.</p>"
+            },
+            {
+              "html": "<p>set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-character-position\" id=\"ref-for-script-timing-info-source-character-position①\">source character position</a> to -1.</p>"
+            },
+            {
+              "html": "<p>set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-function-name\" id=\"ref-for-script-timing-info-source-function-name①\">source function name</a> to the empty string.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration⑤\">duration</a> between <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-start-time\" id=\"ref-for-script-timing-info-start-time③\">start time</a> and <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-end-time\" id=\"ref-for-script-timing-info-end-time②\">end time</a> is greater than 5 milliseconds, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> <var>scriptTimingInfo</var> to <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-scripts\" id=\"ref-for-frame-timing-info-scripts①\">scripts</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Applying source location",
+      "href": "https://w3c.github.io/long-animation-frames/#apply-source-location",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-source-location\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply source location</dfn> to a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info①②\">script timing info</a> <var>scriptTimingInfo</var> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function①\">callback function</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Function\" id=\"ref-for-Function②\">Function</a></code> <var>callback</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-url\" id=\"ref-for-script-timing-info-source-url⑥\">source url</a> to the source URL of the script where <var>callback</var> was defined.</p>"
+        },
+        {
+          "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-function-name\" id=\"ref-for-script-timing-info-source-function-name②\">source function name</a> to the function name of <var>callback</var>.</p>"
+        },
+        {
+          "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-character-position\" id=\"ref-for-script-timing-info-source-character-position②\">source character position</a> to the character position where <var>callback</var> was defined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report pause duration",
+      "href": "https://w3c.github.io/long-animation-frames/#record-pause-duration",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"record-pause-duration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record pause duration</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration⑥\">duration</a> <var>duration</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>script</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#running-script\" id=\"ref-for-running-script①\">running script</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#settings-object\" id=\"ref-for-settings-object④\">settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>settings</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑤\">Window</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>settings</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2③\">document</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hidden\" id=\"ref-for-dom-document-hidden②\">hidden</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>frameTimingInfo</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#relevant-frame-timing-info\" id=\"ref-for-relevant-frame-timing-info⑥\">relevant frame timing info</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frameTimingInfo</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script⑦\">pending script</a> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Increment <var>frameTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info-pending-script\" id=\"ref-for-frame-timing-info-pending-script⑧\">pending script</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-pause-duration\" id=\"ref-for-script-timing-info-pause-duration①\">pause duration</a> by the milliseconds value of <var>duration</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Monkey patches to promise handling",
+      "href": "https://w3c.github.io/long-animation-frames/#promise-invoker-name-when-created",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①\">Promise</a></code> interface has an associated string <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Promise\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"promise-invoker-name-when-created\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoker name when created</dfn>, initially \"`Promise`\".\nThe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②\">Promise</a></code> interface has an associated string <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Promise\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"promise-script-url-when-created\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">script url when created</dfn>, initially the empty string. \n    <p>Append the following steps to <a href=\"https://webidl.spec.whatwg.org/#a-new-promise\">creating a new promise</a>, before returning the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③\">Promise</a></code>:</p>\n    \n    <p>Prepend the following step to <a href=\"https://webidl.spec.whatwg.org/#resolve\">resolve a promise</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑥\">Promise</a></code> <var>p</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#record-timing-info-for-promise-resolver\" id=\"ref-for-record-timing-info-for-promise-resolver\">Record timing info for promise resolver</a> given <var>p</var> and \"`resolve-promise`\".</p>\n    <p>Prepend the following step to <a href=\"https://webidl.spec.whatwg.org/#reject\">reject a promise</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑦\">Promise</a></code> <var>p</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#record-timing-info-for-promise-resolver\" id=\"ref-for-record-timing-info-for-promise-resolver①\">Record timing info for promise resolver</a> given <var>p</var> and \"`reject-promise`\".</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>interfaceName</var> be a string representing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface\">interface</a> responsible for creating this promise.</p>"
+        },
+        {
+          "html": "<p>Let <var>attributeName</var> be a string representing the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute\">attribute</a> in the interface responsible for creating this promise.</p>"
+        },
+        {
+          "html": "<p>Set the created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise④\">Promise</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#promise-script-url-when-created\" id=\"ref-for-promise-script-url-when-created①\">script url when created</a> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#running-script\" id=\"ref-for-running-script②\">running script</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url\" id=\"ref-for-concept-script-base-url②\">base URL</a>.</p>"
+        },
+        {
+          "html": "<p>The user-agent may set the created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑤\">Promise</a></code>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#promise-invoker-name-when-created\" id=\"ref-for-promise-invoker-name-when-created①\">invoker name when created</a> to the last known <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate⑥\">concatenation</a> of\n« <var>interfaceName</var>, \".\", <var>attributeName</var> »</p>"
+        }
+      ]
+    }
+  ]
+}

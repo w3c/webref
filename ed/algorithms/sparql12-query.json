@@ -1,0 +1,44 @@
+{
+  "spec": {
+    "title": "SPARQL 1.2 Query Language",
+    "url": "https://w3c.github.io/sparql-query/spec/"
+  },
+  "algorithms": [
+    {
+      "html": "with Dedup(M(Ψ)) being an order-preserving, duplicate-free version of the sequence M(Ψ); that is, Dedup(M(Ψ)) is a sequence of lists that has the following four properties\n              (where each such list in this sequence may contain RDF terms and\n              errors, as it is produced by the <a href=\"https://w3c.github.io/sparql-query/spec/#defn_ListEval\">ListEval</a> function).",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For every list&nbsp;<var>L</var> in M(Ψ) there exists a\n                list&nbsp;<var>L'</var> in Dedup(M(Ψ)) such that <var>L</var>\n                and <var>L'</var> are the same,\n                where two lists <var>L</var> and <var>L'</var> from M(Ψ) are\n                considered the same as specified in the definition of the\n                <a href=\"https://w3c.github.io/sparql-query/spec/#defn_algGroup\">Group operator</a>."
+        },
+        {
+          "html": "For every list&nbsp;<var>L</var> in Dedup(M(Ψ)) there exists\n                a list&nbsp;<var>L'</var> in M(Ψ) such that <var>L</var> and\n                <var>L'</var> are the same."
+        },
+        {
+          "html": "Dedup(M(Ψ)) is free of duplicates. That is, the list at the <var>i</var>-th position in Dedup(M(Ψ)) is not the same list as the list at the <var>j</var>-th position in Dedup(M(Ψ)) for every two natural numbers <var>i</var> and <var>j</var> such that <var>i</var> ≠ <var>j</var>."
+        },
+        {
+          "html": "For any two lists <var>L<sub>1</sub></var> and <var>L<sub>2</sub></var> in Dedup(M(Ψ)), the relative order of their first occurrences in M(Ψ) is preserved in Dedup(M(Ψ)). That is, if <var>i<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>i<sub>2</sub></var>, then <var>j<sub>1</sub></var>&nbsp;&lt;&nbsp;<var>j<sub>2</sub></var>, where\n                <ul>\n                  <li><var>i<sub>1</sub></var> is the smallest natural number such that <var>L<sub>1</sub></var> is at the <var>i<sub>1</sub></var>-th position in M(Ψ),</li>\n                  <li><var>i<sub>2</sub></var> is the smallest natural number such that <var>L<sub>2</sub></var> is at the <var>i<sub>2</sub></var>-th position in M(Ψ),</li>\n                  <li><var>j<sub>1</sub></var> is the position of <var>L<sub>1</sub></var> in Dedup(M(Ψ)), and</li>\n                  <li><var>j<sub>2</sub></var> is the position of <var>L<sub>2</sub></var> in Dedup(M(Ψ)).</li>\n                </ul>"
+        }
+      ]
+    },
+    {
+      "html": "An entailment regime E must provide conditions on basic graph pattern evaluation such\n            that for any basic graph pattern BGP, any RDF graph G, and any evaluation that satisfies\n            the conditions, the resulting multiset of solutions is uniquely determined up to RDF graph\n            equivalence. We denote the multiset of solutions from evaluating BGP over G using E with\n            Eval-E(G, BGP).<br>\n            An entailment regime must further satisfy the following conditions:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For any E-consistent active graph AG, the entailment regime E uniquely specifies a\n              <a href=\"https://w3c.github.io/sparql-query/spec/#BGPsparqlBNodes\">scoping graph</a> SG that is E-equivalent to AG."
+        },
+        {
+          "html": "A set of well-formed graphs for E is specified such that, for any basic graph pattern\n              BGP, scoping graph SG, and solution mapping μ in Eval-E(SG, BGP), the graph μ(BGP) is\n              well-formed for E."
+        },
+        {
+          "html": "For any basic graph pattern BGP and scoping graph SG, if μ<sub>1</sub>, ...,\n              μ<sub>n</sub> in Eval-E(SG, BGP) and BGP<sub>1</sub>, ..., BGP<sub>n</sub> are basic\n              graph patterns all equivalent to BGP but not sharing any blank nodes with each other or\n              with SG, then\n              <blockquote>\n                <p>SG E-entails (SG union μ<sub>1</sub>(BGP<sub>1</sub>) union ... union\n                  μ<sub>n</sub>(BGP<sub>n</sub>))</p>\n              </blockquote>\n              <p>These conditions do not fully determine the set of possible answers, since RDF\n                allows unlimited amounts of redundancy. In addition, therefore, the following must\n                hold.</p>"
+        },
+        {
+          "html": "Entailment regimes should provide conditions to prevent trivial infinite solution\n              multisets as appropriate to the regime."
+        }
+      ]
+    }
+  ]
+}

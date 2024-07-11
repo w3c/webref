@@ -1,0 +1,47 @@
+{
+  "spec": {
+    "title": "The OpenGL ES® Shading Language, Version 3.20.8",
+    "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If a feature is marked as optional.</p>"
+        },
+        {
+          "html": "<p>Where a maximum value is stated (e.g. the maximum number of vertex\noutputs), the implementation may support a higher value than that\nspecified.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p><em>Yes</em> means the qualifiers must match.</p>"
+        },
+        {
+          "html": "<p><em>No</em> means the qualifiers do not need to match.</p>"
+        },
+        {
+          "html": "<p><em>Consistent</em> means qualifiers may be missing from a subset of\ndeclarations but they cannot conflict</p>"
+        },
+        {
+          "html": "<p>If there are conflicting qualifiers, only the last of these is\nsignificant.</p>"
+        },
+        {
+          "html": "<p>Matching is based only on the resulting qualification, not on the\npresence or otherwise of qualifiers.</p>"
+        },
+        {
+          "html": "<p>The rules apply to all declared variables, irrespective of whether they\nare statically used, with the exception of inputs and outputs when\nshaders are linked (see\n“<a href=\"https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html#input-output-matching-by-name-in-linked-programs\">Input Output\nMatching by Name in Linked Programs</a>”).</p>"
+        },
+        {
+          "html": "<p>Errors are generated for any conflicts.</p>"
+        }
+      ]
+    }
+  ]
+}

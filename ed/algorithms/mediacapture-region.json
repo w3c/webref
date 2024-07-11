@@ -1,0 +1,75 @@
+{
+  "spec": {
+    "title": "Region Capture",
+    "url": "https://w3c.github.io/mediacapture-region/"
+  },
+  "algorithms": [
+    {
+      "name": "create a CropTarget",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-create-a-croptarget",
+      "html": "To <dfn data-export=\"\" id=\"dfn-create-a-croptarget\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a CropTarget</dfn> with <var>element</var> as input, run the\n          following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>cropTarget</var> be a new object of type <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"CropTarget\" href=\"https://w3c.github.io/mediacapture-region/#dom-croptarget\" class=\"internalDFN\" id=\"ref-for-dom-croptarget-13\"><code>CropTarget</code></a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>weakRef</var> be a weak reference to <var>element</var>.</p>\n            <p>\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"Create a CropTarget\" href=\"https://w3c.github.io/mediacapture-region/#dfn-create-a-croptarget\" class=\"internalDFN\" id=\"ref-for-dfn-create-a-croptarget-2\">Create</a>\n              <var>cropTarget</var>.<dfn data-dfn-for=\"CropTarget\" class=\"export\" data-idl=\"\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dfn-element\" tabindex=\"0\" aria-haspopup=\"dialog\">[[Element]]</dfn>\n              initialized to <var>weakRef</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "html": "<a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"CropTarget\" href=\"https://w3c.github.io/mediacapture-region/#dom-croptarget\" class=\"internalDFN\" id=\"ref-for-dom-croptarget-14\"><code>CropTarget</code></a> objects are serializable. The <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/structured-data.html\" data-cite-frag=\"serialization-steps\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\">serialization steps</a>, given\n          <var>value</var>, <var>serialized</var>, and a boolean <var>forStorage</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n              If <var>forStorage</var> is <code>true</code>, throw with new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> object\n              whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMException\" data-xref-for=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dom-domexception-name\" data-type=\"attribute\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\"><code>name</code></a> attribute has the value \"<a data-link-type=\"idl\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"/\" data-cite-frag=\"datacloneerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\"><code>DataCloneError</code></a>\".\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set <var>serialized</var>.[[CropTargetElement]] to\n              <var>value</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"CropTarget\" data-xref-for=\"CropTarget\" data-lt=\"[[Element]]\" href=\"https://w3c.github.io/mediacapture-region/#dfn-element\" class=\"internalDFN\" id=\"ref-for-dfn-element-1\"><code>[[Element]]</code></a>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/structured-data.html\" data-cite-frag=\"deserialization-steps\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\">deserialization steps</a>, given <var>serialized</var> and <var>value</var> are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>\n              Set <var>value</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"CropTarget\" data-xref-for=\"CropTarget\" data-lt=\"[[Element]]\" href=\"https://w3c.github.io/mediacapture-region/#dfn-element\" class=\"internalDFN\" id=\"ref-for-dfn-element-2\"><code>[[Element]]</code></a> to\n              <var>serialized</var>.[[CropTargetElement]].\n            </p>"
+        }
+      ]
+    },
+    {
+      "name": "BrowserCaptureMediaStreamTrack/cropTo()",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-cropto",
+      "html": "Calls to this method instruct the user agent to start/stop cropping a video track to\n              the\n              <a href=\"https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect\">\n                bounding client rectangle</a>\n              of <var>cropTarget</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"CropTarget\" data-xref-for=\"CropTarget\" data-lt=\"[[Element]]\" href=\"https://w3c.github.io/mediacapture-region/#dfn-element\" class=\"internalDFN\" id=\"ref-for-dfn-element-3\"><code>[[Element]]</code></a>. Since the track is restricted to\n              the visible viewport of the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-display-surface\" class=\"internalDFN\" id=\"ref-for-dfn-display-surface-3\">display-surface</a>, the captured area will be the\n              intersection of the visible viewport and the element bounding client rectangle.\n              Whenever <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"BrowserCaptureMediaStreamTrack\" data-xref-for=\"BrowserCaptureMediaStreamTrack\" href=\"https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-cropto\" class=\"internalDFN\" id=\"ref-for-dom-browsercapturemediastreamtrack-cropto-8\"><code>cropTo</code></a> is invoked, the user agent <em class=\"rfc2119\">MUST</em>\n              execute the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n                  If <var>cropTarget</var> is neither a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-valid-croptarget\" class=\"internalDFN\" id=\"ref-for-dfn-valid-croptarget-1\">valid CropTarget</a> nor <code>null</code>,\n                  the user agent <em class=\"rfc2119\">MUST</em> return a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a> <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">rejected</a> with an <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"UnknownError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"unknownerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#unknownerror\"><code>UnknownError</code></a>.\n                </p>"
+        },
+        {
+          "html": "Let <var>p</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>cropTarget</var> is neither <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"undefined\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a> nor a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-valid-croptarget\" class=\"internalDFN\" id=\"ref-for-dfn-valid-croptarget-2\">valid CropTarget</a>,\n                    reject <var>p</var> with a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"notallowederror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a> and abort these steps."
+            },
+            {
+              "html": "<p>\n                      If <var>cropTarget</var> is either <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"undefined\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a> or a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-valid-croptarget\" class=\"internalDFN\" id=\"ref-for-dfn-valid-croptarget-3\">valid CropTarget</a>,\n                      the user agent <em class=\"rfc2119\">MUST</em> update <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> video track's <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-crop-states\" class=\"internalDFN\" id=\"ref-for-dfn-crop-states-1\">crop-state</a> according to\n                      <var>cropTarget</var>:\n                    </p>\n                    <ul>\n                      <li>\n                        If <var>cropTarget</var> is set to <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"undefined\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>, the user agent <em class=\"rfc2119\">MUST</em> stop\n                        cropping. <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">This</a> video track reverts to the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-uncropped\" class=\"internalDFN\" id=\"ref-for-dfn-uncropped-4\">uncropped</a> state.\n                      </li>\n                      <li>\n                        If <var>cropTarget</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-region/#dfn-valid-croptarget\" class=\"internalDFN\" id=\"ref-for-dfn-valid-croptarget-4\">valid CropTarget</a>, the user agent <em class=\"rfc2119\">MUST</em>\n                        start cropping <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> video track to the contours of the element\n                        referenced by this <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"CropTarget\" href=\"https://w3c.github.io/mediacapture-region/#dom-croptarget\" class=\"internalDFN\" id=\"ref-for-dom-croptarget-16\"><code>CropTarget</code></a>. This means that for each new frame\n                        produced on the track, the user agent calculates the bounding box of the\n                        pixels belonging to the element, and crops the frame to the coordinates of\n                        this bounding box.\n                      </li>\n                    </ul>"
+            },
+            {
+              "html": "<p>\n                      Call the track's state before this method invocation <var>PRE-STATE</var>, and\n                      after this method invocation <var>POST-STATE</var>. The user agent <em class=\"rfc2119\">MUST</em>\n                      resolve <var>p</var> when it is guaranteed that no more frames cropped (or\n                      uncropped) according to <var>PRE-STATE</var> will be delivered to the\n                      application, and that any additional frames delivered to the application will\n                      therefore be cropped (or uncropped) according to either\n                      <var>POST-STATE</var> or a later state.\n                    </p>"
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    }
+  ]
+}

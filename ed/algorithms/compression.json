@@ -1,0 +1,149 @@
+{
+  "spec": {
+    "title": "Compression Standard",
+    "url": "https://compression.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "name": "CompressionStream/CompressionStream(format)",
+      "href": "https://compression.spec.whatwg.org/#dom-compressionstream-compressionstream",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CompressionStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"CompressionStream(format)|constructor(format)\" id=\"dom-compressionstream-compressionstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new CompressionStream(<var>format</var>)</code></dfn> steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>format</em> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream②\">CompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-format\" id=\"ref-for-compressionstream-format\">format</a> to <em>format</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>transformAlgorithm</em> be an algorithm which takes a <em>chunk</em> argument and runs the <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compress-and-enqueue-a-chunk\" id=\"ref-for-compress-and-enqueue-a-chunk\">compress and enqueue a chunk</a> algorithm with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> and <em>chunk</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>flushAlgorithm</em> be an algorithm which takes no argument and runs the <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compress-flush-and-enqueue\" id=\"ref-for-compress-flush-and-enqueue\">compress flush and enqueue</a> algorithm with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform\">transform</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#transformstream\" id=\"ref-for-transformstream\">TransformStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up\" id=\"ref-for-transformstream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform①\">transform</a> with <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm\" id=\"ref-for-transformstream-set-up-transformalgorithm\">transformAlgorithm</a></i> set to <em>transformAlgorithm</em> and <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm\" id=\"ref-for-transformstream-set-up-flushalgorithm\">flushAlgorithm</a></i> set to <em>flushAlgorithm</em>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compress and enqueue a chunk",
+      "href": "https://compression.spec.whatwg.org/#compress-and-enqueue-a-chunk",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream③\">CompressionStream</a></code> object <em>cs</em> and a <em>chunk</em>, runs these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>chunk</em> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource①\">BufferSource</a></code> type, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <em>buffer</em> be the result of compressing <em>chunk</em> with <em>cs</em>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-format\" id=\"ref-for-compressionstream-format①\">format</a> and <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-context\" id=\"ref-for-compressionstream-context\">context</a>.</p>"
+        },
+        {
+          "html": "<p>If <em>buffer</em> is empty, return.</p>"
+        },
+        {
+          "html": "<p>Split <em>buffer</em> into one or more non-empty pieces and convert them into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array\">Uint8Array</a></code>s.</p>"
+        },
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array①\">Uint8Array</a></code> <em>array</em>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-enqueue\" id=\"ref-for-transformstream-enqueue\">enqueue</a> <em>array</em> in <em>cs</em>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform②\">transform</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compress flush and enqueue",
+      "href": "https://compression.spec.whatwg.org/#compress-flush-and-enqueue",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream④\">CompressionStream</a></code> object <em>cs</em>, runs these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>buffer</em> be the result of compressing an empty input with <em>cs</em>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-format\" id=\"ref-for-compressionstream-format②\">format</a> and <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-context\" id=\"ref-for-compressionstream-context①\">context</a>, with the finish flag.</p>"
+        },
+        {
+          "html": "<p>If <em>buffer</em> is empty, return.</p>"
+        },
+        {
+          "html": "<p>Split <em>buffer</em> into one or more non-empty pieces and convert them into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array②\">Uint8Array</a></code>s.</p>"
+        },
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array③\">Uint8Array</a></code> <em>array</em>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-enqueue\" id=\"ref-for-transformstream-enqueue①\">enqueue</a> <em>array</em> in <em>cs</em>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform③\">transform</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DecompressionStream/DecompressionStream(format)",
+      "href": "https://compression.spec.whatwg.org/#dom-decompressionstream-decompressionstream",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DecompressionStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DecompressionStream(format)|constructor(format)\" id=\"dom-decompressionstream-decompressionstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new DecompressionStream(<var>format</var>)</code></dfn> steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>format</em> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream②\">DecompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-format\" id=\"ref-for-decompressionstream-format\">format</a> to <em>format</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>transformAlgorithm</em> be an algorithm which takes a <em>chunk</em> argument and runs the <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompress-and-enqueue-a-chunk\" id=\"ref-for-decompress-and-enqueue-a-chunk\">decompress and enqueue a chunk</a> algorithm with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a> and <em>chunk</em>.</p>"
+        },
+        {
+          "html": "<p>Let <em>flushAlgorithm</em> be an algorithm which takes no argument and runs the <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompress-flush-and-enqueue\" id=\"ref-for-decompress-flush-and-enqueue\">decompress flush and enqueue</a> algorithm with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform④\">transform</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#transformstream\" id=\"ref-for-transformstream①\">TransformStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up\" id=\"ref-for-transformstream-set-up①\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform⑤\">transform</a> with <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm\" id=\"ref-for-transformstream-set-up-transformalgorithm①\">transformAlgorithm</a></i> set to <em>transformAlgorithm</em> and <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm\" id=\"ref-for-transformstream-set-up-flushalgorithm①\">flushAlgorithm</a></i> set to <em>flushAlgorithm</em>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "decompress and enqueue a chunk",
+      "href": "https://compression.spec.whatwg.org/#decompress-and-enqueue-a-chunk",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream③\">DecompressionStream</a></code> object <em>ds</em> and a <em>chunk</em>, runs these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <em>chunk</em> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource②\">BufferSource</a></code> type, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <em>buffer</em> be the result of decompressing <em>chunk</em> with <em>ds</em>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-format\" id=\"ref-for-decompressionstream-format①\">format</a> and <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-context\" id=\"ref-for-decompressionstream-context\">context</a>. If this results in an error, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <em>buffer</em> is empty, return.</p>"
+        },
+        {
+          "html": "<p>Split <em>buffer</em> into one or more non-empty pieces and convert them into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array④\">Uint8Array</a></code>s.</p>"
+        },
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array⑤\">Uint8Array</a></code> <em>array</em>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-enqueue\" id=\"ref-for-transformstream-enqueue②\">enqueue</a> <em>array</em> in <em>ds</em>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform⑥\">transform</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "decompress flush and enqueue",
+      "href": "https://compression.spec.whatwg.org/#decompress-flush-and-enqueue",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream②\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream④\">DecompressionStream</a></code> object <em>ds</em>, runs these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <em>buffer</em> be the result of decompressing an empty input with <em>ds</em>'s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-format\" id=\"ref-for-decompressionstream-format②\">format</a> and <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-context\" id=\"ref-for-decompressionstream-context①\">context</a>, with the finish flag.</p>"
+        },
+        {
+          "html": "<p>If the end of the compressed input has not been reached, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <em>buffer</em> is empty, return.</p>"
+        },
+        {
+          "html": "<p>Split <em>buffer</em> into one or more non-empty pieces and convert them into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array⑥\">Uint8Array</a></code>s.</p>"
+        },
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array⑦\">Uint8Array</a></code> <em>array</em>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-enqueue\" id=\"ref-for-transformstream-enqueue③\">enqueue</a> <em>array</em> in <em>ds</em>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform⑦\">transform</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "spec": {
+    "title": "Local Font Access API",
+    "url": "https://wicg.github.io/local-font-access/"
+  },
+  "algorithms": [
+    {
+      "name": "get all system font representations",
+      "href": "https://wicg.github.io/local-font-access/#get-all-system-font-representations",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-all-system-font-representations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get all system font representations</dfn>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>fonts</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#system-font\" id=\"ref-for-system-font①\">system fonts</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-all-system-font-representations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get all system font representations</dfn>, run these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>representation</var> be <var>font</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#read-as-a-font-representation\" id=\"ref-for-read-as-a-font-representation\">read as a font representation</a>. On failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If the user agent determines that the user should never expose the font to the web, then it may <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Append <var>representation</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/queryLocalFonts(options)",
+      "href": "https://wicg.github.io/local-font-access/#dom-window-querylocalfonts",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"queryLocalFonts(options)|queryLocalFonts()\" id=\"dom-window-querylocalfonts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>queryLocalFonts(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor\">PermissionDescriptor</a></code> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name\">name</a></code> set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#permissiondef-local-fonts\" id=\"ref-for-permissiondef-local-fonts\">\"local-fonts\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>, and return <var>promise</var>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#dom-permissionpolicy-local-fonts\" id=\"ref-for-dom-permissionpolicy-local-fonts\">\"local-fonts\"</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>, and return <var>promise</var>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror②\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>, and return <var>promise</var>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"queryLocalFonts(options)|queryLocalFonts()\" id=\"dom-window-querylocalfonts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>queryLocalFonts(<var>options</var>)</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>system fonts</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#get-all-system-font-representations\" id=\"ref-for-get-all-system-font-representations\">getting all system font representations</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>selectable fonts</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"queryLocalFonts(options)|queryLocalFonts()\" id=\"dom-window-querylocalfonts\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>queryLocalFonts(<var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>postscriptName</var> be <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-representation-postscript-name\" id=\"ref-for-font-representation-postscript-name③\">PostScript name</a>.</p>"
+                },
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>postscriptName</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#valid-postscript-name\" id=\"ref-for-valid-postscript-name\">valid PostScript name</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>options</var>[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#dom-queryoptions-postscriptnames\" id=\"ref-for-dom-queryoptions-postscriptnames②\">\"postscriptNames\"</a></code>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> and <var>options</var>[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#dom-queryoptions-postscriptnames\" id=\"ref-for-dom-queryoptions-postscriptnames③\">\"postscriptNames\"</a></code>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>postscriptName</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#fontdata\" id=\"ref-for-fontdata②\">FontData</a></code> instance associated with <var>representation</var> to <var>selectable fonts</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-prompt-the-user-to-choose\" id=\"ref-for-dfn-prompt-the-user-to-choose\">Prompt the user to choose</a> one or more items from <var>selectable fonts</var>, with <var>descriptor</var> and <var>allowMultiple</var> set to true, and let <var>result</var> be the result.\nUser agents may present a yes/no choice instead of a list of choices, and in that case they should set <var>result</var> to <var>selectable fonts</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">\"denied\"</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>, and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Sort <var>result</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">ascending order</a> by using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/local-font-access/#dom-fontdata-postscriptname\" id=\"ref-for-dom-fontdata-postscriptname\">postscriptName</a></code> as the sort key and store the result as <var>result</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-task-source\" id=\"ref-for-font-task-source\">font task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "postscriptName",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontdata-postscriptname",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontData\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-fontdata-postscriptname\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>postscriptName</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>postscriptName</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-representation-postscript-name\" id=\"ref-for-font-representation-postscript-name④\">PostScript name</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>postscriptName</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#valid-postscript-name\" id=\"ref-for-valid-postscript-name①\">valid PostScript name</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>postscriptName</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FontData/blob()",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontdata-blob",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fontdata-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>blob()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontData\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fontdata-blob\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>blob()</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>bytes</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s associated <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-representation\" id=\"ref-for-font-representation①⓪\">font representation</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-representation-data-bytes\" id=\"ref-for-font-representation-data-bytes④\">data bytes</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>type</var> be `<code>application/octet-stream</code>`.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-font-access/#font-task-source\" id=\"ref-for-font-task-source①\">font task source</a> to:</p>"
+            },
+            {
+              "html": "<p>Let <var>blob</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①\">Blob</a></code> in <var>realm</var> whose contents are <var>bytes</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code> attribute is <var>type</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>blob</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

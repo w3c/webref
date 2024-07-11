@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "title": "Media Playback Quality",
+    "url": "https://w3c.github.io/media-playback-quality/"
+  },
+  "algorithms": [
+    {
+      "name": "HTMLVideoElement/getVideoPlaybackQuality()",
+      "href": "https://w3c.github.io/media-playback-quality/#dom-htmlvideoelement-getvideoplaybackquality",
+      "html": "When <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-htmlvideoelement-getvideoplaybackquality\" data-idl=\"operation\" data-title=\"getVideoPlaybackQuality()\" data-dfn-for=\"HTMLVideoElement\" data-type=\"VideoPlaybackQuality\" data-lt=\"getVideoPlaybackQuality()\" data-local-lt=\"HTMLVideoElement.getVideoPlaybackQuality|HTMLVideoElement.getVideoPlaybackQuality()|getVideoPlaybackQuality\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>getVideoPlaybackQuality()</code></dfn> method is\n        called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>\n          be a new instance of <a href=\"https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-videoplaybackquality-2\"><code>VideoPlaybackQuality</code></a>."
+        },
+        {
+          "html": "Set <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>.<a href=\"https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-creationtime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-videoplaybackquality-creationtime-1\"><code>creationTime</code></a>\n          to the <a data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a>."
+        },
+        {
+          "html": "Set <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>.<a href=\"https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-totalvideoframes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-videoplaybackquality-totalvideoframes-1\"><code>totalVideoFrames</code></a>\n          to the current value of the <a href=\"https://w3c.github.io/media-playback-quality/#dfn-total-video-frame-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-total-video-frame-count-2\">total video frame count</a>."
+        },
+        {
+          "html": "Set <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>.<a href=\"https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-droppedvideoframes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-videoplaybackquality-droppedvideoframes-1\"><code>droppedVideoFrames</code></a>\n          to the current value of the <a href=\"https://w3c.github.io/media-playback-quality/#dfn-dropped-video-frame-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dropped-video-frame-count-3\">dropped video frame count</a>."
+        },
+        {
+          "html": "<b>[DEPRECATED]</b> Set\n          <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>.<a href=\"https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-corruptedvideoframes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-videoplaybackquality-corruptedvideoframes-1\"><code>corruptedVideoFrames</code></a>\n          to the current value of the <a href=\"https://w3c.github.io/media-playback-quality/#dfn-corrupted-video-frame-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-corrupted-video-frame-count-2\">corrupted video frame count</a>."
+        },
+        {
+          "html": "Return <var data-type=\"VideoPlaybackQuality\">playbackQuality</var>."
+        }
+      ]
+    }
+  ]
+}

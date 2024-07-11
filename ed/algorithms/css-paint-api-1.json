@@ -1,0 +1,270 @@
+{
+  "spec": {
+    "title": "CSS Painting API Level 1",
+    "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+  },
+  "algorithms": [
+    {
+      "name": "PaintWorkletGlobalScope/registerPaint(name, paintCtor)",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#dom-paintworkletglobalscope-registerpaint",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PaintWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-paintworkletglobalscope-registerpaint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerPaint(<var>name</var>, <var>paintCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled, the user agent <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <var>name</var> is an empty string, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>paintDefinitionMap</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope\" id=\"ref-for-paintworkletglobalscope⑥\">PaintWorkletGlobalScope</a></code>'s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definitions\" id=\"ref-for-paint-definitions\">paint definitions</a> map.</p>"
+        },
+        {
+          "html": "<p>If <var>paintDefinitionMap</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputProperties</var> be an empty <code>sequence&lt;DOMString&gt;</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputPropertiesIterable</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>paintCtor</var>, \"inputProperties\").</p>"
+        },
+        {
+          "html": "<p>If <var>inputPropertiesIterable</var> is not undefined, then set <var>inputProperties</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list-converting\" id=\"ref-for-web-idl-arguments-list-converting\">converting</a> <var>inputPropertiesIterable</var> to a <code>sequence&lt;DOMString&gt;</code>. If an\nexception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">thrown</a>, rethrow the exception and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Filter <var>inputProperties</var> so that it only contains <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property\">supported CSS properties</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#custom-property\" id=\"ref-for-custom-property\">custom properties</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PaintWorkletGlobalScope/registerPaint(name, paintCtor)",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#dom-paintworkletglobalscope-registerpaint",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PaintWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-paintworkletglobalscope-registerpaint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerPaint(<var>name</var>, <var>paintCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled, the user agent <em>must</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>inputArguments</var> be an empty <code>sequence&lt;DOMString&gt;</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputArgumentsIterable</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>paintCtor</var>, \"inputArguments\").</p>"
+        },
+        {
+          "html": "<p>If <var>inputArgumentsIterable</var> is not undefined, then set <var>inputArguments</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list-converting\" id=\"ref-for-web-idl-arguments-list-converting①\">converting</a> <var>inputArgumentsIterable</var> to a <code>sequence&lt;DOMString&gt;</code>. If an\nexception is thrown, rethrow the exception and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputArgumentSyntaxes</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+        },
+        {
+          "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PaintWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-paintworkletglobalscope-registerpaint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerPaint(<var>name</var>, <var>paintCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled, the user agent <em>must</em> run the following steps:",
+          "rationale": "attempt",
+          "steps": [
+            {
+              "html": "<p>Attempt to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#consume-a-syntax-definition\" id=\"ref-for-consume-a-syntax-definition\">consume a syntax definition</a> from <var>item</var>.\nIf failure was returned, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a> and abort all these steps.\nOtherwise, let <var>parsedSyntax</var> be the returned <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-definition\" id=\"ref-for-syntax-definition①\">syntax definition</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>parsedSyntax</var> to <var>inputArgumentSyntaxes</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>contextOptionsValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>paintCtor</var>, \"contextOptions\").</p>"
+        },
+        {
+          "html": "<p>Let <var>paintRenderingContext2DSettings</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list-converting\" id=\"ref-for-web-idl-arguments-list-converting②\">converting</a> <var>contextOptionsValue</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#dictdef-paintrenderingcontext2dsettings\" id=\"ref-for-dictdef-paintrenderingcontext2dsettings②\">PaintRenderingContext2DSettings</a></code>.\nIf an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">thrown</a>, rethrow the exception and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-isconstructor\" id=\"ref-for-sec-isconstructor\">IsConstructor</a>(<var>paintCtor</var>) is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>prototype</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p③\">Get</a>(<var>paintCtor</var>, \"prototype\").</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>prototype</var>) is not Object, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a> and\nabort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>paintValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p④\">Get</a>(<var>prototype</var>, \"paint\").</p>"
+        },
+        {
+          "html": "<p>Let <var>paint</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list-converting\" id=\"ref-for-web-idl-arguments-list-converting③\">converting</a> <var>paintValue</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#function\" id=\"ref-for-function①\">Function</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function①\">callback function</a> type. Rethrow any exceptions from the conversion.</p>"
+        },
+        {
+          "html": "<p>Let <var>definition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition\" id=\"ref-for-paint-definition\">paint definition</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-class-constructor\" id=\"ref-for-paint-definition-class-constructor\">class constructor</a> being <var>paintCtor</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-paint-function\" id=\"ref-for-paint-definition-paint-function\">paint function</a> being <var>paint</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-constructor-valid-flag\" id=\"ref-for-paint-definition-constructor-valid-flag\">constructor valid flag</a> being <b>true</b>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-input-properties\" id=\"ref-for-paint-definition-input-properties\">input properties</a> being <var>inputProperties</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-paintrenderingcontext2dsettings-object\" id=\"ref-for-paint-definition-paintrenderingcontext2dsettings-object\">PaintRenderingContext2DSettings object</a> being <var>paintRenderingContext2DSettings</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>paintDefinitionMap</var>[<var>name</var>] to <var>definition</var>.</p>"
+        },
+        {
+          "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PaintWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-paintworkletglobalscope-registerpaint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerPaint(<var>name</var>, <var>paintCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled, the user agent <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>documentPaintDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definitions\" id=\"ref-for-document-paint-definitions\">document paint\ndefinitions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>documentDefinition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition\" id=\"ref-for-document-paint-definition\">document paint definition</a> with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-input-properties\" id=\"ref-for-document-paint-definition-input-properties\">input properties</a> being <var>inputProperties</var>.</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-input-argument-syntaxes\" id=\"ref-for-document-paint-definition-input-argument-syntaxes\">input argument syntaxes</a> being <var>inputArgumentSyntaxes</var>.</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-paintrenderingcontext2dsettings-object\" id=\"ref-for-document-paint-definition-paintrenderingcontext2dsettings-object\">PaintRenderingContext2DSettings object</a> being <var>paintRenderingContext2DSettings</var>.</p>\n        </li></ul>"
+            },
+            {
+              "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PaintWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-paintworkletglobalscope-registerpaint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerPaint(<var>name</var>, <var>paintCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled, the user agent <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>existingDocumentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">get</a> <var>documentPaintDefinitionMap</var>[<var>name</var>].</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> is <code>\"invalid\"</code>, abort all these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> and <var>documentDefinition</var> are not equivalent, (that is <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-input-properties\" id=\"ref-for-document-paint-definition-input-properties①\">input properties</a>, <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-input-argument-syntaxes\" id=\"ref-for-document-paint-definition-input-argument-syntaxes①\">input argument syntaxes</a>, and <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-paintrenderingcontext2dsettings-object\" id=\"ref-for-document-paint-definition-paintrenderingcontext2dsettings-object①\">PaintRenderingContext2DSettings object</a> are different), then:</p>\n          <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>documentPaintDefinitionMap</var>[<var>name</var>] to <code>\"invalid\"</code>.</p>\n          <p>Log an error to the debugging console stating that the same class was registered\nwith different <code>inputProperties</code>, <code>inputArguments</code>, or <code>paintRenderingContext2DSettings</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <var>documentPaintDefinitionMap</var>[<var>name</var>] to <var>documentDefinition</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create a PaintRenderingContext2D object",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#create-a-paintrenderingcontext2d-object",
+      "html": "When the user agent is to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-paintrenderingcontext2d-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a PaintRenderingContext2D object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>width</var>, <var>height</var>, and <var>paintRenderingContext2DSettings</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintrenderingcontext2d\" id=\"ref-for-paintrenderingcontext2d①⑥\">PaintRenderingContext2D</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-set-bitmap-dimensions\" id=\"ref-for-concept-canvas-set-bitmap-dimensions\">Set bitmap dimensions</a> for the context’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintrenderingcontext2d-output-bitmap\" id=\"ref-for-paintrenderingcontext2d-output-bitmap④\">output bitmap</a> to the rounded values of <var>width</var> and <var>height</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintrenderingcontext2d\" id=\"ref-for-paintrenderingcontext2d①⑦\">PaintRenderingContext2D</a></code>'s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintrenderingcontext2d-alpha\" id=\"ref-for-paintrenderingcontext2d-alpha\">alpha</a> flag to <var>paintRenderingContext2DSettings</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#dom-paintrenderingcontext2dsettings-alpha\" id=\"ref-for-dom-paintrenderingcontext2dsettings-alpha\">alpha</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintrenderingcontext2d\" id=\"ref-for-paintrenderingcontext2d①⑧\">PaintRenderingContext2D</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "draw a paint image",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#draw-a-paint-image",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"draw-a-paint-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">draw a paint image</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a <a class=\"production css\" data-link-type=\"function\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#funcdef-paint\" id=\"ref-for-funcdef-paint⑨\">&lt;paint()&gt;</a> function for a <var>box</var> into its appropriate stacking level (as defined by the property the CSS property its associated\nwith), given <var>snappedConcreteObjectSize</var> it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>paintFunction</var> be the <a class=\"production css\" data-link-type=\"function\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#funcdef-paint\" id=\"ref-for-funcdef-paint①⓪\">&lt;paint()&gt;</a> function on the <var>box</var> which the user agent wants to\ndraw.</p>"
+        },
+        {
+          "html": "<p>Let <var>name</var> be the first argument of the <var>paintFunction</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>documentPaintDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definitions\" id=\"ref-for-document-paint-definitions①\">document paint\ndefinitions</a> map.</p>"
+        },
+        {
+          "html": "<p>If <var>documentPaintDefinitionMap</var>[<var>name</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exist</a>, let the image output\nbe an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image②\">invalid image</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>documentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">get</a> <var>documentPaintDefinitionMap</var>[<var>name</var>].</p>"
+        },
+        {
+          "html": "<p>If <var>documentDefinition</var> is <code>\"invalid\"</code>, let the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image③\">invalid\nimage</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputArgumentSyntaxes</var> be <var>documentDefinition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definition-input-argument-syntaxes\" id=\"ref-for-document-paint-definition-input-argument-syntaxes②\">input argument syntaxes</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputArguments</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of all the <var>paintFunction</var> arguments <em>after</em> the \"paint name\" argument.</p>"
+        },
+        {
+          "html": "<p>If <var>inputArguments</var> do not match the registered grammar given by <var>inputArgumentSyntaxes</var>, let\nthe image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image④\">invalid image</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope\" id=\"ref-for-paintworkletglobalscope⑦\">PaintWorkletGlobalScope</a></code> from the the paint <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet③\">Worklet</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes\">global scopes</a>, following the rules defined in <a href=\"https://drafts.css-houdini.org/css-paint-api-1/#global-scope-selection\">§ 7.1 Global Scope Selection</a>.</p>\n      <p>The user agent <em>may</em> also <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#create-a-worklet-global-scope\" id=\"ref-for-create-a-worklet-global-scope\">create a worklet global scope</a> at this time, given the\npaint <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet④\">Worklet</a></code>.</p>"
+        },
+        {
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#invoke-a-paint-callback\" id=\"ref-for-invoke-a-paint-callback\">invoke a paint callback</a> given <var>name</var>, <var>inputArguments</var>, <var>snappedConcreteObjectSize</var>, <var>workletGlobalScope</var> optionally <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "invoke a paint callback",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#invoke-a-paint-callback",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-paint-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a paint callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>inputArguments</var>, <var>snappedConcreteObjectSize</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>paintDefinitionMap</var> be <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definitions\" id=\"ref-for-paint-definitions①\">paint definitions</a> map.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-paint-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a paint callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>inputArguments</var>, <var>snappedConcreteObjectSize</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-paint-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a paint callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>inputArguments</var>, <var>snappedConcreteObjectSize</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>documentPaintDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#document-paint-definitions\" id=\"ref-for-document-paint-definitions②\">document\npaint definitions</a> map.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <var>documentPaintDefinitionMap</var>[<var>name</var>] to <code>\"invalid\"</code>.</p>"
+                },
+                {
+                  "html": "<p>The user agent <em>should</em> log an error to the debugging console stating that a\nclass wasn’t registered in all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope\" id=\"ref-for-paintworkletglobalscope⑧\">PaintWorkletGlobalScope</a></code>s.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image⑦\">invalid image</a> and abort all these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>definition</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p⑤\">get</a> <var>paintDefinitionMap</var>[<var>name</var>].</p>"
+        },
+        {
+          "html": "<p>Let <var>paintClassInstanceMap</var> be <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-class-instances\" id=\"ref-for-paint-class-instances①\">paint class instances</a> map.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-paint-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a paint callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>inputArguments</var>, <var>snappedConcreteObjectSize</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-constructor-valid-flag\" id=\"ref-for-paint-definition-constructor-valid-flag①\">constructor valid flag</a> on <var>definition</var> is false, let the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image⑧\">invalid image</a> and abort all these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>paintCtor</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-class-constructor\" id=\"ref-for-paint-definition-class-constructor①\">class constructor</a> on <var>definition</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>paintInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-construct\" id=\"ref-for-sec-construct\">Construct</a>(<var>paintCtor</var>).</p>\n        <p>If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-construct\" id=\"ref-for-sec-construct①\">construct</a> throws an exception,\nset the <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-constructor-valid-flag\" id=\"ref-for-paint-definition-constructor-valid-flag②\">constructor valid flag</a> to false,\nlet the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image⑨\">invalid image</a> and abort all these\nsteps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <var>paintClassInstanceMap</var>[<var>name</var>] to <var>paintInstance</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>inputProperties</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-input-properties\" id=\"ref-for-paint-definition-input-properties①\">input properties</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>styleMap</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly\">StylePropertyMapReadOnly</a></code> populated with <em>only</em> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a>'s for properties listed in <var>inputProperties</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>renderingContext</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#create-a-paintrenderingcontext2d-object\" id=\"ref-for-create-a-paintrenderingcontext2d-object\">create a PaintRenderingContext2D object</a> given:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>\"width\" - The width given by <var>snappedConcreteObjectSize</var>.</p>\n       </li><li data-md=\"\">\n        <p>\"height\" - The height given by <var>snappedConcreteObjectSize</var>.</p>\n       </li><li data-md=\"\">\n        <p>\"paintRenderingContext2DSettings\" - The <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-paintrenderingcontext2dsettings-object\" id=\"ref-for-paint-definition-paintrenderingcontext2dsettings-object①\">PaintRenderingContext2DSettings object</a> given by <var>definition</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let <var>paintSize</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintsize\" id=\"ref-for-paintsize②\">PaintSize</a></code> initialized to the width and height defined by <var>snappedConcreteObjectSize</var>.</p>"
+        },
+        {
+          "html": "<p>At this stage the user agent may re-use an image from a previous invocation if <var>paintSize</var>, <var>styleMap</var>, <var>inputArguments</var> are equivalent to that previous invocation. If so let the image\noutput be that cached image and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>paintFunctionCallback</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paint-definition-paint-function\" id=\"ref-for-paint-definition-paint-function①\">paint function</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>paintFunctionCallback</var> with arguments «<var>renderingContext</var>, <var>paintSize</var>, <var>styleMap</var>, <var>inputArguments</var>», and with <var>paintInstance</var> as the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value\">callback this value</a>.</p>\n      <p>If <var>paintFunctionCallback</var> does not complete within an acceptable time (as determined by the\nuser agent, i.e. it is a \"long running script\") the user agent <em>may</em> terminate the\nscript, let the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image①⓪\">invalid image</a>, and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>The image output is to be produced from the <var>renderingContext</var> given to the method.</p>\n      <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">thrown</a> the let the image output be an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image①①\">invalid image</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

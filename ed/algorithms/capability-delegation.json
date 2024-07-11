@@ -1,0 +1,202 @@
+{
+  "spec": {
+    "title": "Capability Delegation",
+    "url": "https://wicg.github.io/capability-delegation/spec.html"
+  },
+  "algorithms": [
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transfer</var> be <var>options</var>[\"transfer\"].</p>"
+        }
+      ]
+    },
+    {
+      "html": "will be followed by two additional steps as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>delegate</var> be <var>options</var>[\"delegate\"].</p>"
+        },
+        {
+          "html": "If <var>delegate</var> is not null, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the user agent does not support delegating the feature indicated by <var>delegate</var>,\nthen throw a \"NotSupportedError\" DOMException.</p>"
+            },
+            {
+              "html": "<p>If <var>targetWindow</var>’s <a href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\">associated\nDocument</a> is not <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed-to-use</a> the feature indicated by <var>delegate</var>, then throw a a\n\"NotAllowedError\" DOMException.</p>"
+            },
+            {
+              "html": "<p>If <var>targetOrigin</var> is a single U+002A ASTERISK character (*), then throw a\na \"NotAllowedError\" DOMException.</p>"
+            },
+            {
+              "html": "<p>Let <var>source</var> be <var>incumbentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>source</var> does not have <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-5b762d09d78e8674458b84982b3cb3c9\">transient\nactivation</a>,\nthen throw a \"NotAllowedError\" DOMException.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user\nactivation</a> in <var>source</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "queue",
+      "steps": [
+        {
+          "html": "Queue a global task ...",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let origin be the serialization of incumbentSettings’s origin.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "as follows:",
+      "rationale": "queue",
+      "steps": [
+        {
+          "html": "Queue a global task ... <em>(unchanged)</em>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>delegate</var> be <var>options</var>[\"delegate\"].</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "queue",
+      "steps": [
+        {
+          "html": "Queue a global task ...",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let newPorts be a new frozen array consisting of ...</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "as follows:",
+      "rationale": "queue",
+      "steps": [
+        {
+          "html": "Queue a global task ... <em>(unchanged)</em>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let newPorts be a new frozen array consisting of ... <em>(unchanged except\nfor numbering)</em></p>"
+            },
+            {
+              "html": "<p>If <var>delegate</var> is not null, AND the user agent supports\ndelegating <var>delegate</var>, then set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps②\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[<var>delegate</var>] to <a href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\">current\nhigh resolution\ntime</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the relevant global object of request does not have transient activation:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return a promise rejected with a \"SecurityError\" DOMException.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Consume user activation of the relevant global object.</p>"
+        }
+      ]
+    },
+    {
+      "html": "will be replaced by the following three steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the relevant global object of request does not have <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-5b762d09d78e8674458b84982b3cb3c9①\">transient\nactivation</a>,\nAND the timestamp <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps④\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[\"payment\"] in the\nrelevant global object is either undefined or <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-expiry\">expired</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return a promise rejected with a \"SecurityError\" DOMException.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the relevant global object of request does not have transient activation,\nthen clear the map entry <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps⑤\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[\"payment\"].</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">consume user\nactivation</a> of the relevant global object.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If any of the following conditions are false, then set error to true: ...</p>\n      <ul>\n       <li data-md=\"\">\n        <p>This’s relevant global object has transient activation or\nthe algorithm is triggered by a user generated orientation change.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "will be replaced by:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If any of the following conditions are false, then set error to true: ... <em>(unchanged)</em></p>\n     <ul>\n      <li data-md=\"\">\n       <p>This’s relevant global object has transient activation, or\nthe timestamp <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps⑥\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[\"fullscreen\"] in this’s\nrelevant global object is neither undefined nor <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-expiry\">expired</a>, or\nthe algorithm is triggered by a user generated orientation change.</p>\n     </li></ul>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let fullscreenElements be an ordered set initially consisting of this.</p>"
+        }
+      ]
+    },
+    {
+      "html": "the following new step will be inserted:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this’s relevant global object does not have transient activation, then clear the map entry <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps⑦\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[\"fullscreen\"] in this’s relevant global object.</p>"
+        },
+        {
+          "html": "<p>Let fullscreenElements be an ordered set initially consisting of this. <em>(unchanged except\n for numbering)</em></p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the relevant global object of this does not have transient activation, return a promise\nrejected with a DOMException object whose name attribute has the value InvalidStateError.</p>"
+        }
+      ]
+    },
+    {
+      "html": "will be replaced by:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of this does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a> AND the\ntimestamp <a data-link-type=\"dfn\" href=\"https://wicg.github.io/capability-delegation/spec.html#delegated_capability_timestamps\" id=\"ref-for-delegated_capability_timestamps⑧\">DELEGATED_CAPABILITY_TIMESTAMPS</a>[\"display-capture\"] in this’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> is either undefined or <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-expiry\">expired</a>,\nreturn a promise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">rejected</a> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMException\" id=\"ref-for-dfn-DOMException\">DOMException</a> object whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name\">name</a></code> attribute has the value <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>.</p>"
+        }
+      ]
+    }
+  ]
+}

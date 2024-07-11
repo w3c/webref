@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Touch Events - Level 2",
+    "url": "https://w3c.github.io/touch-events/"
+  },
+  "algorithms": [
+    {
+      "html": "<code>TouchEvent</code>'s <a href=\"https://dom.spec.whatwg.org/#retarget\">retargeting steps</a>, given a <var>touchEvent</var>, must run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <a href=\"https://w3c.github.io/touch-events/#dom-touch\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-touch-15\"><code>Touch</code></a> <var>touch</var> in <var>touchEvent</var>'s <code>touches</code>, <code>targetTouches</code>, and <code>changedTouches</code> members:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>touch</var>'s <a href=\"https://w3c.github.io/touch-events/#dfn-unadjustedtarget\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unadjustedtarget-1\"><code>unadjustedTarget</code></a> to <var>touch</var>'s <code>target</code> if <var>touch</var>'s <a href=\"https://w3c.github.io/touch-events/#dfn-unadjustedtarget\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unadjustedtarget-2\"><code>unadjustedTarget</code></a> is null."
+            },
+            {
+              "html": "Set <var>touch</var>'s <code>target</code> to the result of invoking <a href=\"https://dom.spec.whatwg.org/#retarget\">retargeting</a> <var>touch</var>'s <a href=\"https://w3c.github.io/touch-events/#dfn-unadjustedtarget\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unadjustedtarget-3\"><code>unadjustedTarget</code></a> against <var>touchEvent</var>'s <code>target</code>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

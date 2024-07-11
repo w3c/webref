@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "title": "Media Source Extensions Byte Stream Format Registry",
+    "url": "https://w3c.github.io/mse-byte-stream-format-registry/"
+  },
+  "algorithms": [
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Each entry <em class=\"rfc2119\">MUST</em> include a unique MIME-type/subtype pair. If the byte stream format is derived-from an existing file format, then it <em class=\"rfc2119\">SHOULD</em> use the\n          MIME-type/subtype pairs typically used for the file format."
+        },
+        {
+          "html": "Each entry <em class=\"rfc2119\">MUST</em> include a <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"SourceBuffer\" data-xref-for=\"SourceBuffer\" data-lt=\"[[generate timestamps flag]]\" data-cite=\"media-source\" data-cite-path=\"/\" data-cite-frag=\"dfn-generate-timestamps-flag\" data-type=\"attribute\" href=\"https://www.w3.org/TR/media-source-2/#dfn-generate-timestamps-flag\"><code>[[generate timestamps flag]]</code></a> value that <em class=\"rfc2119\">MUST</em> be used by\n            <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"SourceBuffer\" data-cite=\"media-source\" data-cite-path=\"/\" data-cite-frag=\"dom-sourcebuffer\" data-type=\"interface\" href=\"https://www.w3.org/TR/media-source-2/#dom-sourcebuffer\"><code>SourceBuffer</code></a> when handling the byte stream format."
+        },
+        {
+          "html": "Each entry <em class=\"rfc2119\">MUST</em> include a link that references a publically available specification. It is recommended that such a specification be made available\n          without cost (other than reasonable shipping and handling if not available by online means)."
+        },
+        {
+          "html": "The referenced specification for each entry <em class=\"rfc2119\">MUST</em> comply with all requirements outlined in the <a data-cite=\"media-source#byte-stream-formats\" href=\"https://www.w3.org/TR/media-source-2/#byte-stream-formats\">Byte Stream Formats section</a> of the <cite><a data-cite=\"MEDIA-SOURCE\" data-matched-text=\"[[[MEDIA-SOURCE]]]\" href=\"https://www.w3.org/TR/media-source-2/\">Media Source Extensions™</a></cite> specification [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/mse-byte-stream-format-registry/#bib-media-source\" title=\"Media Source Extensions™\">MEDIA-SOURCE</a></cite>]."
+        },
+        {
+          "html": "Candidate entries <em class=\"rfc2119\">MUST</em> be announced on <a href=\"mailto:public-html-media@w3.org\">public-html-media@w3.org</a> (<a href=\"mailto:public-html-media-request@w3.org\">subscribe</a>,\n          <a href=\"http://lists.w3.org/Archives/Public/public-html-media/\">archives</a>) so they can be discussed and evaluated for compliance before being added to the\n          registry. The Media Working Group may seek expertise from outside the Working Group as part of its evaluation, e.g., from the codec specification editors or relevant standards group. If the Media Working Group reaches consensus to accept the candidate, a pull request should be drafted (either by editors or by the party requesting the candidate registration) to register the candidate. The registry editors will review and merge the pull request."
+        },
+        {
+          "html": "If a registration fails to satisfy a mandatory requirement specified above, then it <em class=\"rfc2119\">MAY</em> be removed from the registry (without prejudice). Existing entries cannot be deleted or deprecated otherwise."
+        },
+        {
+          "html": "Existing entries <em class=\"rfc2119\">MAY</em> be changed after being published through the same process as candidate entries. Possible changes include modification of the link to the publically available specification."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "spec": {
+    "title": "Event Timing API",
+    "url": "https://w3c.github.io/event-timing/"
+  },
+  "algorithms": [
+    {
+      "name": "considered for Event Timing",
+      "href": "https://w3c.github.io/event-timing/#considered-for-event-timing",
+      "html": "Given an <var>event</var>, to determine if it should be <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"considered-for-event-timing\">considered for Event Timing</dfn>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted\">isTrusted</a></code> attribute value is set to false, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type\">type</a></code> is one of the following: <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-auxclick\" id=\"ref-for-event-type-auxclick\">auxclick</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click\">click</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-contextmenu\" id=\"ref-for-event-type-contextmenu\">contextmenu</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-dblclick\" id=\"ref-for-event-type-dblclick\">dblclick</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mousedown\" id=\"ref-for-event-type-mousedown\">mousedown</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mouseenter\" id=\"ref-for-event-type-mouseenter\">mouseenter</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mouseleave\" id=\"ref-for-event-type-mouseleave\">mouseleave</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mouseout\" id=\"ref-for-event-type-mouseout\">mouseout</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mouseover\" id=\"ref-for-event-type-mouseover\">mouseover</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-mouseup\" id=\"ref-for-event-type-mouseup\">mouseup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerover-event\" id=\"ref-for-the-pointerover-event\">pointerover</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerenter-event\" id=\"ref-for-the-pointerenter-event\">pointerenter</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerdown-event\" id=\"ref-for-the-pointerdown-event\">pointerdown</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event\">pointerup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerout-event\" id=\"ref-for-the-pointerout-event\">pointerout</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerleave-event\" id=\"ref-for-the-pointerleave-event\">pointerleave</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-gotpointercapture-event\" id=\"ref-for-the-gotpointercapture-event\">gotpointercapture</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-lostpointercapture-event\" id=\"ref-for-the-lostpointercapture-event\">lostpointercapture</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/touch-events/#the-touchstart-event\" id=\"ref-for-the-touchstart-event\">touchstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/touch-events/#the-touchend-event\" id=\"ref-for-the-touchend-event\">touchend</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/touch-events/#the-touchcancel-event\" id=\"ref-for-the-touchcancel-event\">touchcancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keydown\" id=\"ref-for-event-type-keydown\">keydown</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keypress\" id=\"ref-for-event-type-keypress\">keypress</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-beforeinput\" id=\"ref-for-event-type-beforeinput\">beforeinput</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionupdate\" id=\"ref-for-event-type-compositionupdate\">compositionupdate</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionend\" id=\"ref-for-event-type-compositionend\">compositionend</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-dragstart\" id=\"ref-for-event-dnd-dragstart\">dragstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-dragend\" id=\"ref-for-event-dnd-dragend\">dragend</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-dragenter\" id=\"ref-for-event-dnd-dragenter\">dragenter</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-dragleave\" id=\"ref-for-event-dnd-dragleave\">dragleave</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-dragover\" id=\"ref-for-event-dnd-dragover\">dragover</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/#event-dnd-drop\" id=\"ref-for-event-dnd-drop\">drop</a></code>,\nreturn true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additions to event dispatch",
+      "html": "Right after step 1, we add the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>interactionId</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#compute-interactionid\" id=\"ref-for-compute-interactionid\">computing interactionId</a> given <var>event</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>timingEntry</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#initialize-event-timing\" id=\"ref-for-initialize-event-timing\">initializing event timing</a> given <var>event</var>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a>, and <var>interactionId</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additions to event dispatch",
+      "html": "Right before the returning step of that algorithm, add the following step:",
+      "rationale": "finalize",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#finalize-event-timing\" id=\"ref-for-finalize-event-timing\">Finalize event timing</a> passing <var>timingEntry</var>, <var>event</var>, <em>target</em>, and the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> as inputs.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additions to update rendering",
+      "html": "In the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering①\">update the rendering</a> step of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model\" id=\"ref-for-event-loop-processing-model\">event loop processing model</a>, add a step right after the step that calls <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#mark-paint-timing\" id=\"ref-for-mark-paint-timing\">mark paint timing</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> in <em>docs</em>, invoke the algorithm to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#dispatch-pending-event-timing-entries\" id=\"ref-for-dispatch-pending-event-timing-entries\">dispatch pending Event Timing entries</a> for that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "should add PerformanceEventTiming",
+      "href": "https://w3c.github.io/event-timing/#should-add-performanceeventtiming",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①④\">PerformanceEventTiming</a></code> <var>entry</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary\" id=\"ref-for-performanceobserverinit-dictionary②\">PerformanceObserverInit</a></code> <var>options</var>, to\n    determine if we <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"should-add-performanceeventtiming\">should add PerformanceEventTiming<a class=\"self-link\" href=\"https://w3c.github.io/event-timing/#should-add-performanceeventtiming\"></a></dfn>,  with <var>entry</var> and\n    optionally <var>options</var> as inputs, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype②\">entryType</a></code> attribute value equals to \"<code class=\"highlight\">first<c- o=\"\">-</c->input</code>\", return true.</p>"
+        },
+        {
+          "html": "<p>Assert that <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype③\">entryType</a></code> attribute value equals \"<code class=\"highlight\">event</code>\".</p>"
+        },
+        {
+          "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①④\">PerformanceEventTiming</a></code> <var>entry</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary\" id=\"ref-for-performanceobserverinit-dictionary②\">PerformanceObserverInit</a></code> <var>options</var>, to\n    determine if we <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"should-add-performanceeventtiming\">should add PerformanceEventTiming<a class=\"self-link\" href=\"https://w3c.github.io/event-timing/#should-add-performanceeventtiming\"></a></dfn>,  with <var>entry</var> and\n    optionally <var>options</var> as inputs, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>options</var> is not present or if <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceobserverinit-durationthreshold\" id=\"ref-for-dom-performanceobserverinit-durationthreshold\">durationThreshold</a></code> is not present, let <var>minDuration</var> be 104.</p>"
+            },
+            {
+              "html": "<p>Otherwise, let <var>minDuration</var> be the maximum between 16 and <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceobserverinit-durationthreshold\" id=\"ref-for-dom-performanceobserverinit-durationthreshold①\">durationThreshold</a></code> value.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration④\">duration</a></code> attribute value is greater than or equal to <var>minDuration</var>, return true.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "increase interaction count",
+      "href": "https://w3c.github.io/event-timing/#increase-interaction-count",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"increase-interaction-count\">increase interaction count</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window④\">Window</a></code> <var>window</var> object, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Increase <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①\">user interaction value</a> value by a small number chosen by the user agent.</p>"
+        },
+        {
+          "html": "<p>Let <var>interactionCount</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#window-interactioncount\" id=\"ref-for-window-interactioncount①\">interactionCount</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>interactionCount</var> to <var>interactionCount</var> + 1.</p>"
+        }
+      ]
+    },
+    {
+      "name": "computing interactionId",
+      "href": "https://w3c.github.io/event-timing/#compute-interactionid",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted②\">isTrusted</a></code> attribute value is false, return 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>type</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑦\">type</a></code> attribute value.</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is not one among <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keyup\" id=\"ref-for-event-type-keyup②\">keyup</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-compositionstart\" id=\"ref-for-event-type-compositionstart①\">compositionstart</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input①\">input</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event①\">pointercancel</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointermove-event\" id=\"ref-for-the-pointermove-event①\">pointermove</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event③\">pointerup</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-click\" id=\"ref-for-event-type-click③\">click</a></code>, return 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pendingKeyDowns</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-key-downs\" id=\"ref-for-pending-key-downs\">pending key downs</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pointerMap</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pointer-interaction-value-map\" id=\"ref-for-pointer-interaction-value-map\">pointer interaction value map</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pointerIsDragSet</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pointer-is-drag-set\" id=\"ref-for-pointer-is-drag-set\">pointer is drag set</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pendingPointerDowns</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-pointer-downs\" id=\"ref-for-pending-pointer-downs\">pending pointer downs</a>.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#dom-keyboardevent-iscomposing\" id=\"ref-for-dom-keyboardevent-iscomposing\">isComposing</a></code> attribute value is true, return 0.</p>"
+            },
+            {
+              "html": "<p>Let <var>code</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#dom-keyboardevent-keycode\" id=\"ref-for-dom-keyboardevent-keycode\">keyCode</a></code> attribute value.</p>"
+            },
+            {
+              "html": "<p>If <var>pendingKeyDowns</var>[<var>code</var>] does not exist, return 0.</p>"
+            },
+            {
+              "html": "<p>Let <var>entry</var> be <var>pendingKeyDowns</var>[<var>code</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#increase-interaction-count\" id=\"ref-for-increase-interaction-count\">Increase interaction count</a> on <var>window</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>interactionId</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value②\">user interaction value</a> value.</p>"
+            },
+            {
+              "html": "<p>Set <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid③\">interactionId</a></code> to <var>interactionId</var>.</p>"
+            },
+            {
+              "html": "<p>Add <var>entry</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued\">entries to be queued</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>pendingKeyDowns</var>[<var>code</var>].</p>"
+            },
+            {
+              "html": "<p>Return <var>interactionId</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>entry</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued①\">entries to be queued</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear\">Clear</a> <var>pendingKeyDowns</var>.</p>"
+            },
+            {
+              "html": "<p>Return 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>event</var> is not an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#inputevent\" id=\"ref-for-inputevent\">InputEvent</a></code>, return 0.\nNote: this check is done to exclude <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event⑧\">Events</a></code> for which the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑧\">type</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input③\">input</a></code> but that are not about modified text content.</p>"
+            },
+            {
+              "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#dom-inputevent-iscomposing\" id=\"ref-for-dom-inputevent-iscomposing\">isComposing</a></code> attribute value is false, return 0.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#increase-interaction-count\" id=\"ref-for-increase-interaction-count①\">Increase interaction count</a> on <var>window</var>.</p>"
+            },
+            {
+              "html": "<p>Return <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value③\">user interaction value</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>pointerId</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid\" id=\"ref-for-dom-pointerevent-pointerid\">pointerId</a></code> attribute value.</p>"
+            },
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>pointerMap</var>[<var>pointerId</var>] does not exist, return 0.</p>"
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>pointerMap</var>[<var>pointerId</var>].</p>"
+                },
+                {
+                  "html": "<p>Remove <var>pointerMap</var>[<var>pointerId</var>].</p>"
+                },
+                {
+                  "html": "<p>Remove [<var>pointerId</var>] from <var>pointerIsDragSet</var>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>value</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>Add <var>pointerId</var> to <var>pointerIsDragSet</var>.</p>"
+                },
+                {
+                  "html": "<p>Return 0.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Assert that <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerup-event\" id=\"ref-for-the-pointerup-event⑤\">pointerup</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event③\">pointercancel</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>pendingPointerDowns</var>[<var>pointerId</var>] does not exist, return 0.</p>"
+            },
+            {
+              "html": "<p>Let <var>pointerDownEntry</var> be <var>pendingPointerDowns</var>[<var>pointerId</var>].</p>"
+            },
+            {
+              "html": "<p>Assert that <var>pointerDownEntry</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑤\">PerformanceEventTiming</a></code> entry.</p>"
+            },
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-interactionid\">compute interactionId</dfn> with <var>event</var> as input, run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>interactionType</var> be <code class=\"highlight\"><c- u=\"\">\"tap\"</c-></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>pointerIsDragSet</var> contains [<var>pointerId</var>] exists, set <var>interactionType</var> to <code class=\"highlight\"><c- u=\"\">\"drag\"</c-></code>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#increase-interaction-count\" id=\"ref-for-increase-interaction-count②\">Increase interaction count</a> on <var>window</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>pointerMap</var>[<var>pointerId</var>] to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value④\">user interaction value</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>pointerDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid④\">interactionId</a></code> to <var>pointerMap</var>[<var>pointerId</var>].</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append <var>pointerDownEntry</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued②\">entries to be queued</a>.</p>"
+            },
+            {
+              "html": "<p>Remove <var>pendingPointerDowns</var>[<var>pointerId</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointercancel-event\" id=\"ref-for-the-pointercancel-event④\">pointercancel</a></code>, return 0.</p>"
+            },
+            {
+              "html": "<p>Return <var>pointerMap</var>[<var>pointerId</var>].</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initialize event timing",
+      "href": "https://w3c.github.io/event-timing/#initialize-event-timing",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"initialize-event-timing\">initialize event timing</dfn>, with <var>event</var>, <var>processingStart</var>, and <var>interactionId</var> as inputs, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the algorithm to determine if <var>event</var> should be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#considered-for-event-timing\" id=\"ref-for-considered-for-event-timing\">considered for Event Timing</a> returns false, then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>timingEntry</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑥\">PerformanceEventTiming</a></code> object with <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name②\">name</a></code> to <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑨\">type</a></code> attribute value.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype④\">entryType</a></code> to \"<code class=\"highlight\">event</code>\".</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime⑤\">startTime</a></code> to <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-timestamp\" id=\"ref-for-dom-event-timestamp④\">timeStamp</a></code> attribute value.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-processingstart\" id=\"ref-for-dom-performanceeventtiming-processingstart⑦\">processingStart</a></code> to <var>processingStart</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-cancelable\" id=\"ref-for-dom-performanceeventtiming-cancelable②\">cancelable</a></code> to <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\" id=\"ref-for-dom-event-cancelable①\">cancelable</a></code> attribute value.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid⑦\">interactionId</a></code> to <var>interactionId</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>timingEntry</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "finalize event timing",
+      "href": "https://w3c.github.io/event-timing/#finalize-event-timing",
+      "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>timingEntry</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>relevantGlobal</var> be <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>relevantGlobal</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code>, return.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-processingend\" id=\"ref-for-dom-performanceeventtiming-processingend⑤\">processingEnd</a></code> to <var>processingEnd</var>.</p>"
+        },
+        {
+          "html": "<p>Assert that <var>target</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node②\">Node</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming-eventtarget\" id=\"ref-for-performanceeventtiming-eventtarget①\">eventTarget</a> to the result of calling the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#get-an-element\" id=\"ref-for-get-an-element①\">get an element</a> algorithm with <var>target</var> and <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a> as inputs.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type①⓪\">type</a></code> attribute value is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-keydown\" id=\"ref-for-event-type-keydown⑥\">keydown</a></code> nor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/pointerevents/#the-pointerdown-event\" id=\"ref-for-the-pointerdown-event①⓪\">pointerdown</a></code>, append <var>timingEntry</var> to <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued③\">entries to be queued</a>.</p>"
+        },
+        {
+          "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>pendingPointerDowns</var> be <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-pointer-downs\" id=\"ref-for-pending-pointer-downs①\">pending pointer downs</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>pointerId</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid\" id=\"ref-for-dom-pointerevent-pointerid①\">pointerId</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>pendingPointerDowns</var>[<var>pointerId</var>] exists, append <var>pendingPointerDowns</var>[<var>pointerId</var>] to <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued④\">entries to be queued</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>pendingPointerDowns</var>[<var>pointerId</var>] to <var>timingEntry</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>timingEntry</var> to <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑤\">entries to be queued</a>.</p>"
+                },
+                {
+                  "html": "<p>Return.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>pendingKeyDowns</var> be <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-key-downs\" id=\"ref-for-pending-key-downs①\">pending key downs</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>code</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#dom-keyboardevent-keycode\" id=\"ref-for-dom-keyboardevent-keycode①\">keyCode</a></code> attribute value.</p>"
+            },
+            {
+              "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>entry</var> be <var>pendingKeyDowns</var>[<var>code</var>].</p>"
+                },
+                {
+                  "html": "When asked to to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"finalize-event-timing\">finalize event timing</dfn>, with <var>timingEntry</var>, <var>event</var>, <var>target</var>, and <var>processingEnd</var> as inputs, run the following steps:",
+                  "rationale": "increase",
+                  "steps": [
+                    {
+                      "html": "<p>Increase <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑦\">user interaction value</a> value by a small number chosen by the user agent.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid⑧\">interactionId</a></code> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value⑧\">user interaction value</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Add <var>entry</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑥\">entries to be queued</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <var>pendingKeyDowns</var>[<var>code</var>].</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>pendingKeyDowns</var>[<var>code</var>] to <var>timingEntry</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dispatch pending Event Timing entries",
+      "href": "https://w3c.github.io/event-timing/#dispatch-pending-event-timing-entries",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dispatch-pending-event-timing-entries\">dispatch pending Event Timing entries</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>doc</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>window</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>renderingTimestamp</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time②\">current high resolution time</a>.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dispatch-pending-event-timing-entries\">dispatch pending Event Timing entries</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>doc</var>, run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#set-event-timing-entry-duration\" id=\"ref-for-set-event-timing-entry-duration\">Set event timing entry duration</a> passing <var>timingEntry</var>, <var>window</var>, and <var>renderingTimestamp</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration⑤\">duration</a></code> attribute value is greater than or equal to 16, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">queue</a> <var>timingEntry</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Clear <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑧\">entries to be queued</a>.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dispatch-pending-event-timing-entries\">dispatch pending Event Timing entries</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>doc</var>, run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#set-event-timing-entry-duration\" id=\"ref-for-set-event-timing-entry-duration①\">Set event timing entry duration</a> passing <var>pendingDown</var>, <var>window</var>, and <var>renderingTimestamp</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set event timing entry duration",
+      "href": "https://w3c.github.io/event-timing/#set-event-timing-entry-duration",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration⑥\">duration</a></code> attribute value is nonzero, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>start</var> be <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime⑥\">startTime</a></code> attribute value.</p>"
+        },
+        {
+          "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration⑦\">duration</a></code> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp④\">DOMHighResTimeStamp</a></code> resulting from <code class=\"highlight\"><var>renderingTimestamp</var> <c- o=\"\">-</c-> <var>start</var></code>, with granularity of 8ms or less.</p>"
+        },
+        {
+          "html": "<p>Let <var>name</var> be <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name③\">name</a></code> attribute value.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>eventCounts</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#window-eventcounts\" id=\"ref-for-window-eventcounts②\">eventCounts</a>.</p>"
+            },
+            {
+              "html": "<p>Assert that <var>eventCounts</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contains</a> <var>name</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>eventCounts</var>[<var>name</var>] to <var>eventCounts</var>[<var>name</var>] + 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-first-pointer-down\" id=\"ref-for-pending-first-pointer-down\">pending first pointer down</a> to a copy of <var>timingEntry</var>.</p>"
+                },
+                {
+                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype⑤\">entryType</a></code> of <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-first-pointer-down\" id=\"ref-for-pending-first-pointer-down①\">pending first pointer down</a> to \"<code class=\"highlight\">first<c- o=\"\">-</c->input</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event①\">has dispatched input event</a> to true.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry①\">Queue</a> <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#pending-first-pointer-down\" id=\"ref-for-pending-first-pointer-down③\">pending first pointer down</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-event-timing-entry-duration\">set event timing entry duration</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①⑦\">PerformanceEventTiming</a></code> <var>timingEntry</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> <var>window</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp\" id=\"ref-for-idl-def-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>renderingTimestamp</var>, perform the following steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event②\">has dispatched input event</a> to true.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>newFirstInputDelayEntry</var> be a copy of <var>timingEntry</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>newFirstInputDelayEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype⑥\">entryType</a></code> to \"<code class=\"highlight\">first<c- o=\"\">-</c->input</code>\".</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry②\">Queue the entry</a> <var>newFirstInputDelayEntry</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

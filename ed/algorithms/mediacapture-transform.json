@@ -1,0 +1,277 @@
+{
+  "spec": {
+    "title": "MediaStreamTrack Insertable Media Processing using Streams",
+    "url": "https://w3c.github.io/mediacapture-transform/"
+  },
+  "algorithms": [
+    {
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor\" id=\"ref-for-mediastreamtrackprocessor⑦\">MediaStreamTrackProcessor</a></code> makes frames available to its\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream③\">ReadableStream</a></code> only when a read request has been issued on\nthe stream. The idea is to avoid the stream’s internal buffering, which\ndoes not give the UA enough flexibility to choose the buffering policy.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track\">track</a></code> is not a valid <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑦\">MediaStreamTrack</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>maxBufferSize</var> be 1.</p>"
+        },
+        {
+          "html": "If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-maxbuffersize\" id=\"ref-for-dom-mediastreamtrackprocessorinit-maxbuffersize\">maxBufferSize</a></code> has an integer value greater than 1, run the following substeps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>maxBufferSize</var> to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-maxbuffersize\" id=\"ref-for-dom-mediastreamtrackprocessorinit-maxbuffersize①\">maxBufferSize</a></code>.</p>"
+            },
+            {
+              "html": "<p>The user agent MAY decide to clamp <var>maxBufferSize</var> to a lower value, but no lower than 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>processor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor\" id=\"ref-for-mediastreamtrackprocessor①①\">MediaStreamTrackProcessor</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[track]]</code> to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track①\">track</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[maxBufferSize]]</code> to <var>maxBufferSize</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[queue]]</code> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue\" id=\"ref-for-queue①\">queue</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[numPendingReads]]</code> to 0.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[isClosed]]</code> to false.</p>"
+        },
+        {
+          "html": "<p>Return <var>processor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MediaStreamTrackProcessor/readable",
+      "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable",
+      "html": "Allows reading the frames delivered by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑧\">MediaStreamTrack</a></code> stored\nin the <code>[[track]]</code> internal slot. This attribute is created the first time it is invoked\naccording to the following steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable\" id=\"ref-for-dom-mediastreamtrackprocessor-readable①\">readable</a></code> to be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑥\">ReadableStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable\" id=\"ref-for-dom-mediastreamtrackprocessor-readable②\">readable</a></code> with its <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-pullalgorithm\" id=\"ref-for-readablestream-set-up-pullalgorithm\">pullAlgorithm</a> set to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#processorpull\" id=\"ref-for-processorpull\">processorPull</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> as parameter, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-cancelalgorithm\" id=\"ref-for-readablestream-set-up-cancelalgorithm\">cancelAlgorithm</a> set to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#processorcancel\" id=\"ref-for-processorcancel\">processorCancel</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a> as parameter, and <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-highwatermark\" id=\"ref-for-readablestream-set-up-highwatermark\">highWatermark</a> set to 0.</p>"
+        }
+      ]
+    },
+    {
+      "name": "processorPull",
+      "href": "https://w3c.github.io/mediacapture-transform/#processorpull",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processorpull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processorPull</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>processor</var> as input. It is defined by the following steps:",
+      "rationale": "increment",
+      "steps": [
+        {
+          "html": "<p>Increment the value of the <var>processor</var>.<code>[[numPendingReads]]</code> by 1.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#maybereadframe\" id=\"ref-for-maybereadframe\">maybeReadFrame</a> algorithm with <var>processor</var> as parameter.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "maybeReadFrame",
+      "href": "https://w3c.github.io/mediacapture-transform/#maybereadframe",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"maybereadframe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maybeReadFrame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>processor</var> as input. It is defined by the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>processor</var>.<code>[[queue]]</code> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>processor</var>.<code>[[numPendingReads]]</code> equals zero, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-dequeue\" id=\"ref-for-queue-dequeue\">dequeueing</a> a frame media data from <var>processor</var>.<code>[[queue]]</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>frame</var> in <var>processor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable\" id=\"ref-for-dom-mediastreamtrackprocessor-readable③\">readable</a></code>.</p>"
+        },
+        {
+          "html": "<p>Decrement <var>processor</var>.<code>[[numPendingReads]]</code> by 1.</p>"
+        },
+        {
+          "html": "<p>Go to step 1.</p>"
+        }
+      ]
+    },
+    {
+      "name": "processorCancel",
+      "href": "https://w3c.github.io/mediacapture-transform/#processorcancel",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processorcancel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processorCancel</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>processor</var> as input.\nIt is defined by running the following steps:",
+      "rationale": "run",
+      "steps": [
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#processorclose\" id=\"ref-for-processorclose\">processorClose</a> algorithm with <var>processor</var> as parameter.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with①\">a promise resolved with</a> undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "processorClose",
+      "href": "https://w3c.github.io/mediacapture-transform/#processorclose",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"processorclose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">processorClose</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>processor</var> as input.\nIt is defined by running the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>processor</var>.<code>[[isClosed]]</code> is true, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Disconnect <var>processor</var> from <var>processor</var>.<code>[[track]]</code>. The mechanism to do this is UA specific and the result is that <var>processor</var> is no longer a sink of <var>processor</var>.<code>[[track]]</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-default-controller-close\" id=\"ref-for-readable-stream-default-controller-close\">Close</a> <var>processor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable\" id=\"ref-for-dom-mediastreamtrackprocessor-readable④\">readable</a></code>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-controller\" id=\"ref-for-readablestream-controller\">[[controller]]</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">Empty</a> <var>processor</var>.<code>[[queue]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[isClosed]]</code> to true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handleNewFrame",
+      "href": "https://w3c.github.io/mediacapture-transform/#handlenewframe",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handlenewframe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handleNewFrame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>processor</var> as input.\nIt is defined by running the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>processor</var>.<code>[[queue]]</code> has <var>processor</var>.<code>[[maxBufferSize]]</code> elements, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>droppedFrame</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-dequeue\" id=\"ref-for-queue-dequeue①\">dequeueing</a> <var>processor</var>.<code>[[queue]]</code>.</p>"
+            },
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe\">Close VideoFrame</a> algorithm with <var>droppedFrame</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-enqueue\" id=\"ref-for-queue-enqueue\">Enqueue</a> the new frame media data in <var>processor</var>.<code>[[queue]]</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#maybereadframe\" id=\"ref-for-maybereadframe①\">maybeReadFrame</a> algorithm with <var>processor</var> as parameter.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#writablestream\" id=\"ref-for-writablestream①\">WritableStream</a></code> accepts <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②\">VideoFrame</a></code> objects.\nWhen a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe③\">VideoFrame</a></code> is written to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable\" id=\"ref-for-dom-videotrackgenerator-writable②\">writable</a></code>,\nthe frame’s <code>close()</code> method is automatically invoked, so that its internal\nresources are no longer accessible from JavaScript.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>generator</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator③\">VideoTrackGenerator</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>track</var> be a newly <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#dfn-create-a-mediastreamtrack\" id=\"ref-for-dfn-create-a-mediastreamtrack\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①④\">MediaStreamTrack</a></code> with <var>source</var> set to <var>generator</var> and <var>tieSourceToContext</var> set to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>generator</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-track\" id=\"ref-for-dom-videotrackgenerator-track④\">track</a></code> to <var>track</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>generator</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "VideoTrackGenerator/writable",
+      "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable",
+      "html": "Allows writing video frames to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator④\">VideoTrackGenerator</a></code>. When this attribute\nis accessed for the first time, it MUST be initialized with the following steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable\" id=\"ref-for-dom-videotrackgenerator-writable④\">writable</a></code> to be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#writablestream\" id=\"ref-for-writablestream④\">WritableStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up\" id=\"ref-for-writablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable\" id=\"ref-for-dom-videotrackgenerator-writable⑤\">writable</a></code>, with its <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm\" id=\"ref-for-writablestream-set-up-writealgorithm\">writeAlgorithm</a> set to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#writeframe\" id=\"ref-for-writeframe\">writeFrame</a> with <var>this</var> as parameter, with <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm\" id=\"ref-for-writablestream-set-up-closealgorithm\">closeAlgorithm</a> set to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#closewritable\" id=\"ref-for-closewritable\">closeWritable</a> with <var>this</var> as parameter and <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm\" id=\"ref-for-writablestream-set-up-abortalgorithm\">abortAlgorithm</a> set to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#closewritable\" id=\"ref-for-closewritable①\">closeWritable</a> with <var>this</var> as parameter.</p>"
+        }
+      ]
+    },
+    {
+      "name": "writeFrame",
+      "href": "https://w3c.github.io/mediacapture-transform/#writeframe",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"writeframe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">writeFrame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>generator</var> and a <var>frame</var> as input. It is defined by running the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>frame</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④\">VideoFrame</a></code> object, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the value of <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached\">[[Detached]]</a></code> internal slot is true, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "If <var>generator</var>.<code>[[isMuted]]</code> is false, for each live track sourced from <var>generator</var>, named <var>track</var>, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clone</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#clone-videoframe\" id=\"ref-for-clone-videoframe\">Clone videoFrame</a> algorithm with <var>frame</var>.</p>"
+            },
+            {
+              "html": "<p>Send <var>clone</var> to <var>track</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe①\">Close VideoFrame</a> algorithm with <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "closeWritable",
+      "href": "https://w3c.github.io/mediacapture-transform/#closewritable",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"closewritable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">closeWritable</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm is given a <var>generator</var> as input.\nIt is defined by running the following steps.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each track <code>t</code> sourced from <var>generator</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-text-4/#tracking\" id=\"ref-for-tracking①\">end</a> <code>t</code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with③\">a promise resolved with</a> undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "VideoTrackGenerator/muted",
+      "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-muted",
+      "html": "Mutes the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator⑤\">VideoTrackGenerator</a></code>. The getter steps are to return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[isMuted]]</code>. The setter steps, given a value <var>newValue</var>, are as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>newValue</var> is equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.<code>[[isMuted]]</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.<code>[[isMuted]]</code> to <var>newValue</var>.</p>"
+        },
+        {
+          "html": "Unless one has been queued already this run of the event loop, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">queue a task</a> to run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>settledValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.<code>[[isMuted]]</code>.</p>"
+            },
+            {
+              "html": "<p>For each live track sourced by <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#set-track-muted\" id=\"ref-for-set-track-muted\">set a track’s muted state</a> to <var>settledValue</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

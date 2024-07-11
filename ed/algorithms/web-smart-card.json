@@ -1,0 +1,1334 @@
+{
+  "spec": {
+    "title": "Web Smart Card API",
+    "url": "https://wicg.github.io/web-smart-card/"
+  },
+  "algorithms": [
+    {
+      "html": "Requests a PC/SC context from the platform's PC/SC stack.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a> is\n            not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named\n            \"<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-1\">smart-card</a>\", <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n            \"<a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"RESOURCEMANAGER\">resourceManager</var> be a new instance of the\n              platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>RESOURCEMANAGER</code> class."
+            },
+            {
+              "html": "Invoke the <code>EstablishContext</code> method of <var data-type=\"RESOURCEMANAGER\">resourceManager</var> with\n              a \"system\" <code>Scope</code> parameter."
+            },
+            {
+              "html": "If the returned <code>RESPONSECODE</code> is not <code>SCARD_S_SUCCESS</code>, perform\n              the following steps:",
+              "rationale": "destroy",
+              "steps": [
+                {
+                  "html": "Destroy <var data-type=\"RESOURCEMANAGER\">resourceManager</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-1\">smart card task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                  <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-1\"><code>corresponding</code></a>\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, perform the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"SmartCardContext\">context</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n                  <a data-link-type=\"idl\" data-lt=\"SmartCardContext\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardcontext\" class=\"internalDFN\" id=\"ref-for-dom-smartcardcontext-2\"><code>SmartCardContext</code></a> whose\n                  <a data-link-type=\"attribute\" data-lt=\"[[resourceManager]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-resourcemanager\" class=\"internalDFN\" id=\"ref-for-dfn-resourcemanager-1\"><code>[[resourceManager]]</code></a> internal slot is set\n                to <var data-type=\"RESOURCEMANAGER\">resourceManager</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-2\">smart card task source</a> to\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"SmartCardContext\">context</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"listReaders()\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardcontext-listreaders\" class=\"internalDFN\" id=\"ref-for-dom-smartcardcontext-listreaders-2\"><code>listReaders</code></a><code>()</code> method steps\n        are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-1\"><code>[[operationInProgress]]</code></a> is\n            <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-2\"><code>[[operationInProgress]]</code></a> to\n            <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"RESOURCEQUERY\">resourceQuery</var> be a new instance of the\n                platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>RESOURCEQUERY</code> class, with\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[resourceManager]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-resourcemanager\" class=\"internalDFN\" id=\"ref-for-dfn-resourcemanager-2\"><code>[[resourceManager]]</code></a> as its\n                constructor input parameter."
+            },
+            {
+              "html": "Let <var data-type=\"array of STR\">groups</var> be the platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>STR[]</code>\n                containing the list of group names that is equivalent to \"all\n                readers in the system\" in that platform."
+            },
+            {
+              "html": "Let <var data-type=\"array of STR\">pcscReaders</var> be an empty <code>STR[]</code>."
+            },
+            {
+              "html": "Invoke the <code>ListReaders</code> method of <var data-type=\"RESOURCEQUERY\">resourceQuery</var> with\n                <var data-type=\"array of STR\">groups</var> as input and <var data-type=\"array of STR\">pcscReaders</var> as output parameters."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "Destroy <var data-type=\"RESOURCEQUERY\">resourceQuery</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-3\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-1\">Clear the operationInProgress</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is <code>SCARD_E_NO_READERS_AVAILABLE</code>,\n                      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with an empty <code>sequence</code> of\n                      <a data-link-type=\"idl\" data-lt=\"DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>."
+                    },
+                    {
+                      "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with an\n                      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-2\"><code>corresponding</code></a> to\n                      <var data-type=\"RESPONSECODE\">responseCode</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with a <code>sequence</code> of\n                    <a data-link-type=\"idl\" data-lt=\"DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a> equivalent to <var data-type=\"array of STR\">pcscReaders</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"getStatusChange(readerStates, options)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardcontext-getstatuschange\" class=\"internalDFN\" id=\"ref-for-dom-smartcardcontext-getstatuschange-3\"><code>getStatusChange</code></a><code>(<var>readerStates</var>, <var>options</var>)</code> method steps\n        are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-3\"><code>[[operationInProgress]]</code></a> is\n            <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If\n            <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-signal-1\"><code>signal</code></a>\"]\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"AbortSignal\">signal</var> be\n                <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-signal-2\"><code>signal</code></a>\"]."
+            },
+            {
+              "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var>\n                with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return\n                <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-1\"><code>[[signal]]</code></a> to <var data-type=\"AbortSignal\">signal</var>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\">Add</a> the <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-cancel-the-outstanding-getstatuschange\" class=\"internalDFN\" id=\"ref-for-dfn-cancel-the-outstanding-getstatuschange-1\"><code>Cancel the outstanding GetStatusChange</code></a> algorithm to <var data-type=\"AbortSignal\">signal</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">pcscTimeout</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> set to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>INFINITE</code>."
+        },
+        {
+          "html": "If\n            <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-timeout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-timeout-1\"><code>timeout</code></a>\"]\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, set <var data-type=\"DWORD\">pcscTimeout</var> to\n            <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-timeout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-timeout-2\"><code>timeout</code></a>\"]."
+        },
+        {
+          "html": "Let <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_READERSTATE[]</code> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1\">corresponding</a> to\n            <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-4\"><code>[[operationInProgress]]</code></a> to\n            <code>true</code>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[tracker]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-tracker\" class=\"internalDFN\" id=\"ref-for-dfn-tracker-1\"><code>[[tracker]]</code></a> to a new instance of the\n            platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARDTRACK</code> class, with\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[resourceManager]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-resourcemanager\" class=\"internalDFN\" id=\"ref-for-dfn-resourcemanager-3\"><code>[[resourceManager]]</code></a> as its\n            constructor input parameter."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[tracker]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-tracker\" class=\"internalDFN\" id=\"ref-for-dfn-tracker-2\"><code>[[tracker]]</code></a>.<code>GetStatusChange()</code>\n                with <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> and <var data-type=\"DWORD\">pcscTimeout</var> as input parameters."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-4\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[tracker]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-tracker\" class=\"internalDFN\" id=\"ref-for-dfn-tracker-3\"><code>[[tracker]]</code></a> to <code>null</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-2\">Clear the operationInProgress</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                },
+                {
+                  "html": "Let <var>abortReason</var> be <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>."
+                },
+                {
+                  "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-2\"><code>[[signal]]</code></a> is not <code>null</code>,\n                    run the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-3\"><code>[[signal]]</code></a> is\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a> then set <var>abortReason</var> to\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-4\"><code>[[signal]]</code></a>'s\n                      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\">Remove</a> the <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-cancel-the-outstanding-getstatuschange\" class=\"internalDFN\" id=\"ref-for-dfn-cancel-the-outstanding-getstatuschange-2\"><code>cancel the outstanding GetStatusChange</code></a> algorithm from\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-5\"><code>[[signal]]</code></a>."
+                    },
+                    {
+                      "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[signal]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-signal\" class=\"internalDFN\" id=\"ref-for-dfn-signal-6\"><code>[[signal]]</code></a> to\n                        <code>null</code>."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, run the\n                    following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is <code>SCARD_E_CANCELLED</code> and\n                        <var>abortReason</var> is not <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a> then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                        <var data-type=\"Promise\">promise</var> with <var>abortReason</var>."
+                    },
+                    {
+                      "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                        <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-3\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var>."
+                    },
+                    {
+                      "html": "Return."
+                    }
+                  ]
+                },
+                {
+                  "html": "Let\n                    <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var> be\n                    a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-2\"><code>SmartCardReaderStateOut</code></a>\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-1\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1-1\">corresponding</a> to\n                    <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardReaderStateIn/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding",
+      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateIn\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-3\"><code>SmartCardReaderStateIn</code></a> named\n          <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>, a\n          <dfn data-dfn-for=\"SmartCardReaderStateIn\" id=\"dfn-corresponding\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_READERSTATE[]</code> is created with the following\n          steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> be an empty\n              <code>SCARD_READERSTATE[]</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardReaderStateIn\">stateIn</var> in <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"SCARD_READERSTATE\">pcscState</var> be a <code>SCARD_READERSTATE</code>."
+            },
+            {
+              "html": "Set <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>Reader</code> to\n                  <var data-type=\"SmartCardReaderStateIn\">stateIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-readername\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-readername-2\"><code>readerName</code></a>\"]."
+            },
+            {
+              "html": "Set <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>CurrentState</code> to the <code>DWORD</code>\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-0\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-0-1\">corresponding</a>\n                to <var data-type=\"SmartCardReaderStateIn\">stateIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-currentstate\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-currentstate-2\"><code>currentState</code></a>\"]."
+            },
+            {
+              "html": "If <var data-type=\"SmartCardReaderStateIn\">stateIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-currentcount\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-currentcount-2\"><code>currentCount</code></a>\"]\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-set-the-high-word\" class=\"internalDFN\" id=\"ref-for-dfn-set-the-high-word-1\">set the high word</a> of\n                  <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>CurrentState</code> to\n                  <var data-type=\"SmartCardReaderStateIn\">stateIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-currentcount\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-currentcount-3\"><code>currentCount</code></a>\"]."
+            },
+            {
+              "html": "Set <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>EventState</code> to zero."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SCARD_READERSTATE\">pcscState</var> to <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardReaderStateFlagsIn/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-0",
+      "html": "The [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code>\n              <dfn data-dfn-for=\"SmartCardReaderStateFlagsIn\" id=\"dfn-corresponding-0\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n              to a given <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateFlagsIn\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-3\"><code>SmartCardReaderStateFlagsIn</code></a> is created with the\n              following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var> be the given\n                <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateFlagsIn\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-4\"><code>SmartCardReaderStateFlagsIn</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">pcscFlags</var> be a <code>DWORD</code> set to zero."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unaware\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-unaware-2\"><code>unaware</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-1\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_UNAWARE</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-ignore\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-ignore-2\"><code>ignore</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-2\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_IGNORE</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unavailable\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-unavailable-2\"><code>unavailable</code></a>\"]\n                is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-3\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_UNAVAILABLE</code> to <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-empty\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-empty-2\"><code>empty</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-4\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_EMPTY</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-present\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-present-2\"><code>present</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-5\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_PRESENT</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-exclusive\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-exclusive-2\"><code>exclusive</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-6\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_EXCLUSIVE</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-inuse\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-inuse-2\"><code>inuse</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-7\">add</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_STATE_INUSE</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-mute\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-mute-2\"><code>mute</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-8\">add</a> <code>SCARD_STATE_MUTE</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardReaderStateFlagsIn\">flagsIn</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unpowered\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsin-unpowered-2\"><code>unpowered</code></a>\"] is\n                <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-9\">add</a> <code>SCARD_STATE_UNPOWERED</code> to\n                <var data-type=\"DWORD\">pcscFlags</var>."
+        },
+        {
+          "html": "Return <var data-type=\"DWORD\">pcscFlags</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardReaderStateOut/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-1",
+      "html": "Given a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_READERSTATE[]</code> named\n          <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>, a <dfn data-dfn-for=\"SmartCardReaderStateOut\" id=\"dfn-corresponding-1\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn> sequence of\n          <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-4\"><code>SmartCardReaderStateOut</code></a> is created with the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var> be\n              an empty sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-5\"><code>SmartCardReaderStateOut</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SCARD_READERSTATE\">pcscState</var> in\n              <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"SmartCardReaderStateOut\">stateOut</var> be a\n                  <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-6\"><code>SmartCardReaderStateOut</code></a>."
+            },
+            {
+              "html": "Set <var data-type=\"SmartCardReaderStateOut\">stateOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-readername\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-readername-2\"><code>readerName</code></a>\"] to\n                  <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>Reader</code>."
+            },
+            {
+              "html": "Set <var data-type=\"SmartCardReaderStateOut\">stateOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-eventstate\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-eventstate-2\"><code>eventState</code></a>\"] to\n                  the <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateFlagsOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-2\"><code>SmartCardReaderStateFlagsOut</code></a> dictionary\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-2\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-2-1\">corresponding</a>\n                  to <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>EventState</code>."
+            },
+            {
+              "html": "Set <var data-type=\"SmartCardReaderStateOut\">stateOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-eventcount\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-eventcount-2\"><code>eventCount</code></a>\"] to\n                  the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-high-word\" class=\"internalDFN\" id=\"ref-for-dfn-high-word-1\">high word</a> of <var data-type=\"SCARD_READERSTATE\">pcscState</var>.<code>EventState</code>."
+            },
+            {
+              "html": "If the platform's <code>SCARD_READERSTATE</code> structure has a member\n                  containing the card's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-iso7186-3\" title=\"Identification cards - Integrated circuit cards; Part 3: Cards with contacts - Electrical interface and transmission protocols\">ISO7186-3</a></cite>] Answer To Reset, set\n                  <var data-type=\"SmartCardReaderStateOut\">stateOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-answertoreset\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-answertoreset-2\"><code>answerToReset</code></a>\"] to\n                  that value."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SmartCardReaderStateOut\">stateOut</var> to <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardReaderStateFlagsOut/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-2",
+      "html": "Given a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> named <var data-type=\"DWORD\">pcscFlags</var>, a <dfn data-dfn-for=\"SmartCardReaderStateFlagsOut\" id=\"dfn-corresponding-2\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n              <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateFlagsOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-4\"><code>SmartCardReaderStateFlagsOut</code></a> dictionary is created with the\n              following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var> be a\n                <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateFlagsOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-5\"><code>SmartCardReaderStateFlagsOut</code></a> dictionary with <a data-link-type=\"dfn|abstract-op\" data-lt=\"default value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary-member-default-value\">default members</a>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-1\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_IGNORE</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-ignore\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-ignore-2\"><code>ignore</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-2\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_CHANGED</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-changed\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-changed-2\"><code>changed</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-3\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_UNAVAILABLE</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unavailable\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-unavailable-2\"><code>unavailable</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-4\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_UNKNOWN</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unknown\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-unknown-2\"><code>unknown</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-5\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_EMPTY</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-empty\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-empty-2\"><code>empty</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-6\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_PRESENT</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-present\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-present-2\"><code>present</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-7\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_EXCLUSIVE</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-exclusive\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-exclusive-2\"><code>exclusive</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-8\">has</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>SCARD_STATE_INUSE</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-inuse\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-inuse-2\"><code>inuse</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-9\">has</a> <code>SCARD_STATE_MUTE</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-mute\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-mute-2\"><code>mute</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscFlags</var> <a data-link-type=\"dfn|abstract-op\" data-lt=\"has a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-has-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-has-a-flag-10\">has</a> <code>SCARD_STATE_UNPOWERED</code>, set\n                <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unpowered\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateflagsout-unpowered-2\"><code>unpowered</code></a>\"] to\n                <code>true</code>."
+        },
+        {
+          "html": "Return <var data-type=\"SmartCardReaderStateFlagsOut\">flagsOut</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"connect(readerName, accessMode, options)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardcontext-connect\" class=\"internalDFN\" id=\"ref-for-dom-smartcardcontext-connect-2\"><code>connect</code></a><code>(<var>readerName</var>, <var>accessMode</var>, <var>options</var>)</code>\n        method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-5\"><code>[[operationInProgress]]</code></a> is\n            <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-6\"><code>[[operationInProgress]]</code></a> to\n            <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"DWORD\">accessFlags</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code>\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-3\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-3-1\">corresponding</a> to\n              <var data-type=\"SmartCardAccessMode\">accessMode</var>."
+            },
+            {
+              "html": "Let <var data-type=\"DWORD\">protocolFlags</var> be a <code>DWORD</code> set to <code>0</code>."
+            },
+            {
+              "html": "If\n              <var data-type=\"SmartCardConnectOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectoptions-preferredprotocols\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectoptions-preferredprotocols-1\"><code>preferredProtocols</code></a>\"]\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, set <var data-type=\"DWORD\">protocolFlags</var> to its\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-flags\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-flags-1\">corresponding flags</a>."
+            },
+            {
+              "html": "Let <var data-type=\"DWORD\">activeProtocol</var> be a <code>DWORD</code> set to <code>0</code>."
+            },
+            {
+              "html": "Let <var data-type=\"SCARDCOMM\">comm</var> be a new instance of the platform's\n              [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARDCOMM</code> class, with\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[resourceManager]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-resourcemanager\" class=\"internalDFN\" id=\"ref-for-dfn-resourcemanager-4\"><code>[[resourceManager]]</code></a> as its\n              constructor parameter."
+            },
+            {
+              "html": "Call <var data-type=\"SCARDCOMM\">comm</var>.<code>Connect()</code> with <var>readerName</var>, <var data-type=\"DWORD\">accessFlags</var>\n              and <var data-type=\"DWORD\">protocolFlags</var> as input and <var data-type=\"DWORD\">activeProtocol</var> as output parameters."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-5\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-3\">Clear the operationInProgress</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>:",
+                  "rationale": "destroy",
+                  "steps": [
+                    {
+                      "html": "Destroy <var data-type=\"SCARDCOMM\">comm</var>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                      <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-4\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort these steps."
+                    }
+                  ]
+                },
+                {
+                  "html": "Let <var data-type=\"SmartCardConnectResult\">result</var> be an empty\n                  <a data-link-type=\"idl\" data-lt=\"SmartCardConnectResult\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectresult-2\"><code>SmartCardConnectResult</code></a> dictionary."
+                },
+                {
+                  "html": "Let <var data-type=\"SmartCardConnection\">connection</var> be a new\n                  <a data-link-type=\"idl\" data-lt=\"SmartCardConnection\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-2\"><code>SmartCardConnection</code></a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\">Append</a> <var data-type=\"SmartCardConnection\">connection</var> to\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[connections]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-connections\" class=\"internalDFN\" id=\"ref-for-dfn-connections-1\"><code>[[connections]]</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-1\"><code>[[comm]]</code></a> to <var data-type=\"SCARDCOMM\">comm</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-1\"><code>[[context]]</code></a> to\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[activeProtocol]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-activeprotocol\" class=\"internalDFN\" id=\"ref-for-dfn-activeprotocol-1\"><code>[[activeProtocol]]</code></a> to\n                    <var data-type=\"DWORD\">activeProtocol</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnectResult\">result</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult-connection\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectresult-connection-1\"><code>connection</code></a>\"] to\n                  <var data-type=\"SmartCardConnection\">connection</var>."
+                },
+                {
+                  "html": "If <var data-type=\"DWORD\">activeProtocol</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-valid-protocol-value\" class=\"internalDFN\" id=\"ref-for-dfn-valid-protocol-value-1\">valid protocol value</a>, set\n                  <var data-type=\"SmartCardConnectResult\">result</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult-activeprotocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectresult-activeprotocol-1\"><code>activeProtocol</code></a>\"] to the\n                  corresponding <a data-link-type=\"idl\" data-lt=\"SmartCardProtocol\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardprotocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardprotocol-1\"><code>SmartCardProtocol</code></a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"SmartCardConnectResult\">result</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardProtocol/corresponding flags",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-flags",
+      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardProtocol\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardprotocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardprotocol-3\"><code>SmartCardProtocol</code></a> named\n          <var data-type=\"sequence<SmartCardProtocol>\">protocols</var>, a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code>\n          with the <dfn data-dfn-for=\"SmartCardProtocol\" id=\"dfn-corresponding-flags\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding\n          flags</dfn> is created with the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"DWORD\">flags</var> be a <code>DWORD</code> set to <code>0</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardProtocol\">protocol</var> in <var data-type=\"sequence<SmartCardProtocol>\">protocols</var>,\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-10\">add</a> the corresponding <code>DWORD</code> of <var data-type=\"SmartCardProtocol\">protocol</var> to <var data-type=\"DWORD\">flags</var>."
+        },
+        {
+          "html": "Return <var data-type=\"DWORD\">flags</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardAccessMode/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-3",
+      "html": "Given a <a data-link-type=\"idl\" data-lt=\"SmartCardAccessMode\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode\" class=\"internalDFN\" id=\"ref-for-dom-smartcardaccessmode-3\"><code>SmartCardAccessMode</code></a> enum named\n          <var data-type=\"SmartCardAccessMode\">accessMode</var>, a <dfn data-dfn-for=\"SmartCardAccessMode\" id=\"dfn-corresponding-3\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n          <code>DWORD</code> is created with the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"DWORD\">dword</var> be a <code>DWORD</code> set to <code>0</code>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardAccessMode\">accessMode</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-shared\" class=\"internalDFN\" id=\"ref-for-dom-smartcardaccessmode-shared-2\"><code>shared</code></a>\", set <var data-type=\"DWORD\">dword</var> to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_SHARE_SHARED</code>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardAccessMode\">accessMode</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-exclusive\" class=\"internalDFN\" id=\"ref-for-dom-smartcardaccessmode-exclusive-2\"><code>exclusive</code></a>\", set <var data-type=\"DWORD\">dword</var> to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_SHARE_EXCLUSIVE</code>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardAccessMode\">accessMode</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-direct\" class=\"internalDFN\" id=\"ref-for-dom-smartcardaccessmode-direct-2\"><code>direct</code></a>\", set <var data-type=\"DWORD\">dword</var> to [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_SHARE_DIRECT</code>."
+        },
+        {
+          "html": "Return <var data-type=\"DWORD\">dword</var>."
+        }
+      ]
+    },
+    {
+      "name": "clear the operationInProgress",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress",
+      "html": "To <dfn id=\"dfn-clear-the-operationinprogress\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">clear the operationInProgress</dfn> of a\n        <a data-link-type=\"idl\" data-lt=\"SmartCardContext\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardcontext\" class=\"internalDFN\" id=\"ref-for-dom-smartcardcontext-5\"><code>SmartCardContext</code></a> <var data-type=\"SmartCardContext\">context</var>, perform the following steps:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"SmartCardContext\">context</var>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-7\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>."
+        },
+        {
+          "html": "Set <var data-type=\"SmartCardContext\">context</var>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-8\"><code>[[operationInProgress]]</code></a> to\n            <code>false</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardConnection\">connection</var> of\n            <var data-type=\"SmartCardContext\">context</var>.<a data-link-type=\"attribute\" data-lt=\"[[connections]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-connections\" class=\"internalDFN\" id=\"ref-for-dfn-connections-2\"><code>[[connections]]</code></a>:",
+          "rationale": "end",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-end-any-settled-transaction\" class=\"internalDFN\" id=\"ref-for-dfn-end-any-settled-transaction-1\">End any settled transaction</a> of\n                <var data-type=\"SmartCardConnection\">connection</var>."
+            },
+            {
+              "html": "If <var data-type=\"SmartCardContext\">context</var>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-9\"><code>[[operationInProgress]]</code></a> is\n                <code>true</code>, abort there steps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cancel the outstanding GetStatusChange",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-cancel-the-outstanding-getstatuschange",
+      "html": "The <dfn id=\"dfn-cancel-the-outstanding-getstatuschange\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">cancel the outstanding GetStatusChange</dfn>\n        algorithm steps are:",
+      "rationale": "call",
+      "steps": [
+        {
+          "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[tracker]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-tracker\" class=\"internalDFN\" id=\"ref-for-dfn-tracker-4\"><code>[[tracker]]</code></a>.<code>Cancel()</code>."
+        }
+      ]
+    },
+    {
+      "name": "set the high word",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-set-the-high-word",
+      "html": "To <dfn id=\"dfn-set-the-high-word\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set the high word</dfn> of a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> named\n        <var data-type=\"DWORD\">dword</var> to a given number <var>n</var>, perform the following steps.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"DWORD\">dword</var> to <var data-type=\"DWORD\">dword</var> bitwise AND <code>0xFFFF</code>."
+        },
+        {
+          "html": "Let <var>shiftedN</var> be the result of a left shift of 16 bits on <var>n</var>."
+        },
+        {
+          "html": "Set <var data-type=\"DWORD\">dword</var> to <var data-type=\"DWORD\">dword</var> bitwise OR <var>shiftedN</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"disconnect(disposition)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-disconnect\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-disconnect-2\"><code>disconnect</code></a><code>(<var>disposition</var>)</code> method steps\n        are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-2\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-10\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-2\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-3\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-11\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-3\"><code>[[comm]]</code></a>.<code>Disconnect()</code>\n                with a <code>DWORD</code> corresponding to\n                <var data-type=\"SmartCardDisposition\">disposition</var> as input parameter."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-6\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-4\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-4\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-5\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "Destroy <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-4\"><code>[[comm]]</code></a>."
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-5\"><code>[[comm]]</code></a> to <code>null</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"transmit(sendBuffer, options)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-transmit\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-transmit-2\"><code>transmit</code></a><code>(<var>sendBuffer</var>, <var>options</var>)</code> method steps\n        are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-5\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-12\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-6\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">protocol</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> set to\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[activeProtocol]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-activeprotocol\" class=\"internalDFN\" id=\"ref-for-dfn-activeprotocol-2\"><code>[[activeProtocol]]</code></a>."
+        },
+        {
+          "html": "If\n            <var data-type=\"SmartCardTransmitOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransmitoptions-protocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransmitoptions-protocol-1\"><code>protocol</code></a>\"]\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, set <var data-type=\"DWORD\">protocol</var> to the <code>DWORD</code> corresponding to\n            <var data-type=\"SmartCardTransmitOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransmitoptions-protocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransmitoptions-protocol-2\"><code>protocol</code></a>\"]."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">protocol</var> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-valid-protocol-value\" class=\"internalDFN\" id=\"ref-for-dfn-valid-protocol-value-2\">valid protocol value</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n            and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-6\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-13\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Let <var data-type=\"SCARD_IO_HEADER\">sendPci</var> be the platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_IO_HEADER</code> corresponding to\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[activeProtocol]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-activeprotocol\" class=\"internalDFN\" id=\"ref-for-dfn-activeprotocol-3\"><code>[[activeProtocol]]</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"array of BYTE\">pcscSendBuffer</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>BYTE[]</code>\n            containing <var data-type=\"BufferSource\">sendBuffer</var>."
+        },
+        {
+          "html": "Let <var data-type=\"SCARD_IO_HEADER\">recvPci</var> be the platform's <code>SCARD_IO_HEADER</code>\n            equivalent of empty or null."
+        },
+        {
+          "html": "Let <var data-type=\"array of BYTE\">recvBuffer</var> be a <code>BYTE[]</code> big enough to hold\n            the largest [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-iso7186-3\" title=\"Identification cards - Integrated circuit cards; Part 3: Cards with contacts - Electrical interface and transmission protocols\">ISO7186-3</a></cite>] extended response APDU (65538 bytes)."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">recvLength</var> be a <code>DWORD</code> set to <code>0</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-7\"><code>[[comm]]</code></a>.<code>Transmit()</code>\n                with <var data-type=\"SCARD_IO_HEADER\">sendPci</var>, <var data-type=\"array of BYTE\">pcscSendBuffer</var>, <var data-type=\"SCARD_IO_HEADER\">recvPci</var>, <var data-type=\"array of BYTE\">recvBuffer</var> and\n                <var data-type=\"DWORD\">recvLength</var> as arguments."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-7\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-5\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-7\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-6\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing\n                    the first <var data-type=\"DWORD\">recvLength</var> bytes of <var data-type=\"array of BYTE\">recvBuffer</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"startTransaction(transaction, options)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-starttransaction\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-starttransaction-4\"><code>startTransaction</code></a><code>(<var>transaction</var>, <var>options</var>)</code>\n        method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-8\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-14\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-8\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-1\"><code>[[transactionState]]</code></a> is not\n            <code>null</code>,  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Let <var>signal</var> be an <a data-link-type=\"idl\" data-lt=\"AbortSignal\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#abortsignal\"><code>AbortSignal</code></a> set to <code>null</code>."
+        },
+        {
+          "html": "If\n            <var data-type=\"SmartCardTransactionOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransactionoptions-signal-1\"><code>signal</code></a>\"]\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If\n                <var data-type=\"SmartCardTransactionOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransactionoptions-signal-2\"><code>signal</code></a>\"]\n                is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with\n                <var data-type=\"SmartCardTransactionOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransactionoptions-signal-3\"><code>signal</code></a>\"]'s\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "Set <var>signal</var> to\n                <var data-type=\"SmartCardTransactionOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions-signal\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransactionoptions-signal-4\"><code>signal</code></a>\"]."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\">Add</a> the <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-cancel\" class=\"internalDFN\" id=\"ref-for-dfn-cancel-1\"><code>cancel</code></a>\n                algorithm to <var>signal</var>."
+            }
+          ]
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-9\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-15\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-9\"><code>[[comm]]</code></a>.<code>BeginTransaction()</code>."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-8\">smart card task source</a> to\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-process-the-result-of-a-begintransaction\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-result-of-a-begintransaction-1\">process the result of a BeginTransaction</a> with <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>,\n                <var data-type=\"RESPONSECODE\">responseCode</var>, <var>signal</var>, <var>transaction</var> and <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the result of a BeginTransaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-process-the-result-of-a-begintransaction",
+      "html": "To <dfn id=\"dfn-process-the-result-of-a-begintransaction\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the result of a BeginTransaction</dfn> given a\n          <a data-link-type=\"idl\" data-lt=\"SmartCardConnection\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-6\"><code>SmartCardConnection</code></a> <var data-type=\"SmartCardConnection\">connection</var>, a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n          <code>RESPONSECODE</code> <var data-type=\"RESPONSECODE\">responseCode</var>, an <a data-link-type=\"idl\" data-lt=\"AbortSignal\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#abortsignal\"><code>AbortSignal</code></a>\n          <var data-type=\"AbortSignal\">signal</var>, a <a data-link-type=\"idl\" data-lt=\"SmartCardTransactionCallback\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardtransactioncallback\" class=\"internalDFN\" id=\"ref-for-dom-smartcardtransactioncallback-3\"><code>SmartCardTransactionCallback</code></a>\n          <var data-type=\"SmartCardTransactionCallback\">transaction</var> and a <a data-link-type=\"idl\" data-lt=\"Promise\" href=\"https://wicg.github.io/web-smart-card/#dfn-promise\" class=\"internalDFN\" id=\"ref-for-dfn-promise-4\"><code>Promise</code></a>\n          <var data-type=\"Promise\">promise</var>, perform the following steps:",
+      "rationale": "clear",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-6\">Clear the operationInProgress</a> of\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-10\"><code>[[context]]</code></a>."
+        },
+        {
+          "html": "Let <var>abortReason</var> be <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is not <code>null</code>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\">Remove</a> the\n                  <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-cancel\" class=\"internalDFN\" id=\"ref-for-dfn-cancel-2\"><code>cancel</code></a> algorithm from\n                  <var data-type=\"AbortSignal\">signal</var>."
+            },
+            {
+              "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a> then set\n                  <var>abortReason</var> to <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is <code>SCARD_E_CANCELLED</code> and\n                  <var>abortReason</var> is not <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a> then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                  <var data-type=\"Promise\">promise</var> with <var>abortReason</var>."
+            },
+            {
+              "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with an\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-7\"><code>corresponding</code></a> to\n                  <var data-type=\"RESPONSECODE\">responseCode</var>."
+            },
+            {
+              "html": "Return."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"transaction state\">transactionState</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-transaction-state\" class=\"internalDFN\" id=\"ref-for-dfn-transaction-state-2\">transaction state</a> with its <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-promise\" class=\"internalDFN\" id=\"ref-for-dfn-promise-5\">promise</a> item set to\n              <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-2\"><code>[[transactionState]]</code></a>\n              to <var data-type=\"transaction state\">transactionState</var>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">callbackPromise</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\">invoking</a>\n              <var data-type=\"SmartCardTransactionCallback\">transaction</var>."
+        },
+        {
+          "html": "If <var data-type=\"Promise\">callbackPromise</var> was fulfilled with value <var>v</var>\n                  then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"SmartCardDisposition\">disposition</var> be\n                      \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-reset\" class=\"internalDFN\" id=\"ref-for-dom-smartcarddisposition-reset-2\"><code>reset</code></a>\"."
+            },
+            {
+              "html": "If <var>v</var> is not <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>, set <var data-type=\"SmartCardDisposition\">disposition</var> to\n                      <var>v</var>."
+            },
+            {
+              "html": "If\n                      <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-11\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-16\"><code>[[operationInProgress]]</code></a>\n                      is <code>true</code>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"transaction state\">transactionState</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingexception\" class=\"internalDFN\" id=\"ref-for-dfn-pendingexception-1\">pendingException</a> to a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n                          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                },
+                {
+                  "html": "Set\n                          <var data-type=\"transaction state\">transactionState</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingdisposition\" class=\"internalDFN\" id=\"ref-for-dfn-pendingdisposition-1\">pendingDisposition</a>\n                          to <var data-type=\"SmartCardDisposition\">disposition</var>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-end-the-transaction\" class=\"internalDFN\" id=\"ref-for-dfn-end-the-transaction-1\">end the transaction</a> of <var data-type=\"SmartCardConnection\">connection</var> with\n                      <var data-type=\"SmartCardDisposition\">disposition</var>."
+            }
+          ],
+          "additional": [
+            {
+              "html": "If <var data-type=\"Promise\">callbackPromise</var> was rejected with reason <var>r</var>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"transaction state\">transactionState</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingexception\" class=\"internalDFN\" id=\"ref-for-dfn-pendingexception-2\">pendingException</a> to <var>r</var>."
+                },
+                {
+                  "html": "If\n                      <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-12\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-17\"><code>[[operationInProgress]]</code></a>\n                      is <code>true</code>, set\n                      <var data-type=\"transaction state\">transactionState</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingdisposition\" class=\"internalDFN\" id=\"ref-for-dfn-pendingdisposition-2\">pendingDisposition</a> to\n                      \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-reset\" class=\"internalDFN\" id=\"ref-for-dom-smartcarddisposition-reset-3\"><code>reset</code></a>\"."
+                },
+                {
+                  "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-end-the-transaction\" class=\"internalDFN\" id=\"ref-for-dfn-end-the-transaction-2\">end the transaction</a> of <var data-type=\"SmartCardConnection\">connection</var> with\n                      \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-reset\" class=\"internalDFN\" id=\"ref-for-dom-smartcarddisposition-reset-4\"><code>reset</code></a>\"."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "end the transaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-end-the-transaction",
+      "html": "To <dfn id=\"dfn-end-the-transaction\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">end the transaction</dfn> of a <a data-link-type=\"idl\" data-lt=\"SmartCardConnection\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-7\"><code>SmartCardConnection</code></a>\n          <var data-type=\"SmartCardConnection\">connection</var> with a <a data-link-type=\"idl\" data-lt=\"SmartCardDisposition\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarddisposition\" class=\"internalDFN\" id=\"ref-for-dom-smartcarddisposition-5\"><code>SmartCardDisposition</code></a>\n          <var data-type=\"SmartCardDisposition\">disposition</var>, perform the following steps:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>:\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-13\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-18\"><code>[[operationInProgress]]</code></a>\n              is <code>false</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>:\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-3\"><code>[[transactionState]]</code></a> is not\n              <code>null</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-4\"><code>[[transactionState]]</code></a>'s\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingdisposition\" class=\"internalDFN\" id=\"ref-for-dfn-pendingdisposition-3\">pendingDisposition</a> is <code>null</code>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">transactionPromise</var> be\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-5\"><code>[[transactionState]]</code></a>'s\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-promise\" class=\"internalDFN\" id=\"ref-for-dfn-promise-6\">promise</a>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-10\"><code>[[comm]]</code></a> is <code>null</code>:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">transactionPromise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n                  <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            },
+            {
+              "html": "Set\n                  <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-6\"><code>[[transactionState]]</code></a> to\n                  <code>null</code>."
+            },
+            {
+              "html": "Return."
+            }
+          ]
+        },
+        {
+          "html": "Set\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-14\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-19\"><code>[[operationInProgress]]</code></a>\n              to <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-11\"><code>[[comm]]</code></a>.<code>EndTransaction()</code> with\n                  a <code>DWORD</code> corresponding to <var data-type=\"SmartCardDisposition\">disposition</var> as input parameter."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n                  <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                  <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-9\">smart card task source</a> which performs\n                  the following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-7\">Clear the operationInProgress</a> of\n                      <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-15\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "Let <var>exception</var> be\n                      <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-7\"><code>[[transactionState]]</code></a>'s\n                      <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingexception\" class=\"internalDFN\" id=\"ref-for-dfn-pendingexception-3\">pendingException</a>."
+                },
+                {
+                  "html": "If <var>exception</var> is <code>null</code>, perform the following steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is <code>SCARD_S_SUCCESS</code>,\n                          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">transactionPromise</var>."
+                    },
+                    {
+                      "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">transactionPromise</var> with an\n                          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-8\"><code>corresponding</code></a> to\n                          <var data-type=\"RESPONSECODE\">responseCode</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">transactionPromise</var> with\n                      <var>exception</var>."
+                },
+                {
+                  "html": "Set\n                      <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-8\"><code>[[transactionState]]</code></a>\n                      to <code>null</code>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "end any settled transaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-end-any-settled-transaction",
+      "html": "To <dfn id=\"dfn-end-any-settled-transaction\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">end any settled transaction</dfn> of a\n          <a data-link-type=\"idl\" data-lt=\"SmartCardConnection\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-8\"><code>SmartCardConnection</code></a> <var data-type=\"SmartCardConnection\">connection</var>, perform the\n          following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-9\"><code>[[transactionState]]</code></a> is\n            <code>null</code>, abort these steps."
+        },
+        {
+          "html": "Let <var data-type=\"SmartCardDisposition\">disposition</var> be\n              <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-10\"><code>[[transactionState]]</code></a>'s\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingdisposition\" class=\"internalDFN\" id=\"ref-for-dfn-pendingdisposition-4\">pendingDisposition</a>."
+        },
+        {
+          "html": "If <var data-type=\"SmartCardDisposition\">disposition</var> is <code>null</code>, abort these steps."
+        },
+        {
+          "html": "Set <var data-type=\"SmartCardConnection\">connection</var>.<a data-link-type=\"attribute\" data-lt=\"[[transactionState]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-transactionstate\" class=\"internalDFN\" id=\"ref-for-dfn-transactionstate-11\"><code>[[transactionState]]</code></a>'s\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-pendingdisposition\" class=\"internalDFN\" id=\"ref-for-dfn-pendingdisposition-5\">pendingDisposition</a> to <code>null</code>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-end-the-transaction\" class=\"internalDFN\" id=\"ref-for-dfn-end-the-transaction-3\">End the transaction</a> of <var data-type=\"SmartCardConnection\">connection</var> with <var data-type=\"SmartCardDisposition\">disposition</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"status()\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-status\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-status-2\"><code>status</code></a><code>()</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-16\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-20\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-13\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-17\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-21\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"array of STR\">pcscReader</var> be an empty <code>STR[]</code>."
+            },
+            {
+              "html": "Let <var data-type=\"DWORD\">pcscState</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> set to <code>0</code>."
+            },
+            {
+              "html": "Let <var data-type=\"DWORD\">activeProtocol</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> set to <code>0</code>."
+            },
+            {
+              "html": "Let <var data-type=\"array of BYTE\">pcscAtr</var> be a <code>BYTE[]</code> big enough to hold\n                any [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-iso7186-3\" title=\"Identification cards - Integrated circuit cards; Part 3: Cards with contacts - Electrical interface and transmission protocols\">ISO7186-3</a></cite>] Answer To Reset (ATR)."
+            },
+            {
+              "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-14\"><code>[[comm]]</code></a>.<code>Status()</code>\n                with <var data-type=\"array of STR\">pcscReader</var>, <var data-type=\"DWORD\">pcscState</var>, <var data-type=\"DWORD\">activeProtocol</var> and <var data-type=\"array of BYTE\">pcscAtr</var> as\n                output parameters."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-10\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-8\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-18\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-9\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "Let <var data-type=\"SmartCardConnectionState\">state</var> be a\n                    <a data-link-type=\"idl\" data-lt=\"SmartCardConnectionState\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-1\"><code>SmartCardConnectionState</code></a>\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-4\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-4-1\">corresponding</a> to <var data-type=\"DWORD\">pcscState</var>\n                    and <var data-type=\"DWORD\">activeProtocol</var>."
+                },
+                {
+                  "html": "If <var data-type=\"SmartCardConnectionState\">state</var> is <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with an\n                    \"<a data-link-type=\"idl\" data-lt=\"UnknownError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#unknownerror\"><code>UnknownError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+                },
+                {
+                  "html": "Let <var data-type=\"SmartCardConnectionStatus\">status</var> be a new\n                    <a data-link-type=\"idl\" data-lt=\"SmartCardConnectionStatus\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstatus-2\"><code>SmartCardConnectionStatus</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnectionStatus\">status</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-readername\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstatus-readername-1\"><code>readerName</code></a>\"]\n                    to <var data-type=\"array of STR\">pcscReader</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"SmartCardConnectionStatus\">status</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-state\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstatus-state-1\"><code>state</code></a>\"]\n                    to <var data-type=\"SmartCardConnectionState\">state</var>."
+                },
+                {
+                  "html": "Set\n                    <var data-type=\"SmartCardConnectionStatus\">status</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-answertoreset\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstatus-answertoreset-1\"><code>answerToReset</code></a>\"] to\n                    an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> with the bytes that were written to\n                    <var data-type=\"array of BYTE\">pcscAtr</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"SmartCardConnectionStatus\">status</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardConnectionState/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-4",
+      "html": "Given a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> <var data-type=\"DWORD\">pcscState</var> and a <code>DWORD</code>\n            <var data-type=\"DWORD\">activeProtocol</var>, a\n            <dfn data-dfn-for=\"SmartCardConnectionState\" id=\"dfn-corresponding-4\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n            <a data-link-type=\"idl\" data-lt=\"SmartCardConnectionState\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-4\"><code>SmartCardConnectionState</code></a> is created with the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_ABSENT</code>, return\n                \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-absent\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-absent-2\"><code>absent</code></a>\"."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_PRESENT</code>, return\n                \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-present\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-present-2\"><code>present</code></a>\"."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_SWALLOWED</code>, return\n                \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-swallowed\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-swallowed-2\"><code>swallowed</code></a>\"."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_POWERED</code>, return\n                \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-powered\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-powered-2\"><code>powered</code></a>\"."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_NEGOTIABLE</code>, return\n                \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-negotiable\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-negotiable-2\"><code>negotiable</code></a>\"."
+        },
+        {
+          "html": "If <var data-type=\"DWORD\">pcscState</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_SPECIFIC</code>, perform the\n                following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"DWORD\">activeProtocol</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_PROTOCOL_T0</code>,\n                    return \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-t0\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-t0-2\"><code>t0</code></a>\"."
+            },
+            {
+              "html": "If <var data-type=\"DWORD\">activeProtocol</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_PROTOCOL_T1</code>,\n                    return \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-t1\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-t1-2\"><code>t1</code></a>\"."
+            },
+            {
+              "html": "If <var data-type=\"DWORD\">activeProtocol</var> is [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_PROTOCOL_RAW</code>,\n                    return \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-raw\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnectionstate-raw-2\"><code>raw</code></a>\"."
+            }
+          ]
+        },
+        {
+          "html": "Return <a data-link-type=\"idl\" data-lt=\"undefined\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\"><code>undefined</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"control(controlCode, data)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-control\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-control-2\"><code>control</code></a><code>(<var>controlCode</var>, <var>data</var>)</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-19\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-22\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-15\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-20\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-23\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">pcscControlCode</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> containing\n            <var>controlCode</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">Get a copy of the buffer source</a> <var data-type=\"BufferSource\">data</var> and save\n            the result in a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>BYTE[]</code> <var data-type=\"array of BYTE\">inBuffer</var>."
+        },
+        {
+          "html": "Let <var data-type=\"array of BYTE\">outBuffer</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>BYTE[]</code> large enough\n          to hold any control command response."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">outBufferLength</var> be a <code>DWORD</code> set to <code>0</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-16\"><code>[[comm]]</code></a>.<code>Control()</code>\n                with <var data-type=\"DWORD\">pcscControlCode</var>, <var data-type=\"array of BYTE\">inBuffer</var>, <var data-type=\"array of BYTE\">outBuffer</var> and\n                <var data-type=\"DWORD\">outBufferLength</var> as arguments."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-11\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-9\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-21\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-10\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "Let <var data-type=\"byte sequence\">resultBytes</var> be the first\n                    <var data-type=\"DWORD\">outBufferLength</var> bytes of <var data-type=\"array of BYTE\">outBuffer</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with the result of\n                    <a data-link-type=\"dfn|abstract-op\" data-lt=\"Create\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a> an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> from\n                    <var data-type=\"byte sequence\">resultBytes</var> in <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant Realm</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"getAttribute(tag)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-getattribute\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-getattribute-2\"><code>getAttribute</code></a><code>(<var>tag</var>)</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-22\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-24\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-17\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-23\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-25\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"DWORD\">pcscTag</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> containing <var>tag</var>."
+            },
+            {
+              "html": "Let <var data-type=\"array of BYTE\">buffer</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>BYTE[]</code> large\n                enough to hold this reader attribute, as determined by the\n                platform's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] implementation."
+            },
+            {
+              "html": "Call <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-18\"><code>[[comm]]</code></a>.<code>GetReaderCapabilities()</code>\n                with <var data-type=\"DWORD\">pcscTag</var> and <var data-type=\"array of BYTE\">buffer</var> as arguments."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-12\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-10\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-24\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-11\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "Let <var data-type=\"byte sequence\">resultBytes</var> be the bytes of <var data-type=\"array of BYTE\">buffer</var>\n                    containing the attribute read."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with the result of\n                    <a data-link-type=\"dfn|abstract-op\" data-lt=\"Create\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a> an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> from\n                    <var data-type=\"byte sequence\">resultBytes</var> in <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant Realm</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"setAttribute(tag, value)\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardconnection-setattribute\" class=\"internalDFN\" id=\"ref-for-dom-smartcardconnection-setattribute-2\"><code>setAttribute</code></a><code>(<var>tag</var>, <var>value</var>)</code> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "If\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-25\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-26\"><code>[[operationInProgress]]</code></a>\n            is <code>true</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-19\"><code>[[comm]]</code></a> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n            <var data-type=\"Promise\">promise</var>."
+        },
+        {
+          "html": "Set\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-26\"><code>[[context]]</code></a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-27\"><code>[[operationInProgress]]</code></a>\n            to <code>true</code>."
+        },
+        {
+          "html": "Let <var data-type=\"DWORD\">pcscTag</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code> containing\n            <var>tag</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">Get a copy of the buffer source</a> <var data-type=\"BufferSource\">value</var> and save\n            the result in a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>BYTE[]</code> <var data-type=\"array of BYTE\">buffer</var>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "Call\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[comm]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-comm\" class=\"internalDFN\" id=\"ref-for-dfn-comm-20\"><code>[[comm]]</code></a>.<code>SetReaderCapabilities()</code>\n                with <var data-type=\"DWORD\">pcscTag</var> and <var data-type=\"array of BYTE\">buffer</var> as arguments."
+            },
+            {
+              "html": "Let <var data-type=\"RESPONSECODE\">responseCode</var> be the returned\n                <code>RESPONSECODE</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-smart-card-task-source-13\">smart card task source</a> which performs the\n                following steps:",
+              "rationale": "clear",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-clear-the-operationinprogress-11\">Clear the operationInProgress</a> of\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[context]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-context\" class=\"internalDFN\" id=\"ref-for-dfn-context-27\"><code>[[context]]</code></a>."
+                },
+                {
+                  "html": "If <var data-type=\"RESPONSECODE\">responseCode</var> is not <code>SCARD_S_SUCCESS</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a>\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-5\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-5-12\"><code>corresponding</code></a> to <var data-type=\"RESPONSECODE\">responseCode</var> and abort\n                    these steps."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "SmartCardError/corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-5",
+      "html": "Given a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>RESPONSECODE</code> different from <code>SCARD_S_SUCCESS</code>, a\n      <dfn data-dfn-for=\"SmartCardError\" id=\"dfn-corresponding-5\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> is\n      created with the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"RESPONSECODE\">pcscCode</var> be that <code>RESPONSECODE</code>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_NO_SERVICE</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-no-service\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-no-service-1\"><code>no-service</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-2\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_NO_SMARTCARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-no-smartcard\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-no-smartcard-1\"><code>no-smartcard</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-5\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_NOT_READY</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-not-ready\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-not-ready-1\"><code>not-ready</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-6\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_NOT_TRANSACTED</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-not-transacted\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-not-transacted-1\"><code>not-transacted</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-7\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_PROTO_MISMATCH</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-proto-mismatch\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-proto-mismatch-1\"><code>proto-mismatch</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-8\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_READER_UNAVAILABLE</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-reader-unavailable\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-reader-unavailable-1\"><code>reader-unavailable</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-9\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_W_REMOVED_CARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-removed-card\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-removed-card-1\"><code>removed-card</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-10\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_W_RESET_CARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-reset-card\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-reset-card-1\"><code>reset-card</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-11\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_SERVER_TOO_BUSY</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-server-too-busy\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-server-too-busy-1\"><code>server-too-busy</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-12\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_SHARING_VIOLATION</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-sharing-violation\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-sharing-violation-1\"><code>sharing-violation</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-13\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_SYSTEM_CANCELLED</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-system-cancelled\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-system-cancelled-1\"><code>system-cancelled</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-14\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_UNKNOWN_READER</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unknown-reader\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-unknown-reader-1\"><code>unknown-reader</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-15\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_W_UNPOWERED_CARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unpowered-card\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-unpowered-card-1\"><code>unpowered-card</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-16\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_W_UNRESPONSIVE_CARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unresponsive-card\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-unresponsive-card-1\"><code>unresponsive-card</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-17\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_W_UNSUPPORTED_CARD</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unsupported-card\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-unsupported-card-1\"><code>unsupported-card</code></a>\" <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-18\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_UNSUPPORTED_FEATURE</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unsupported-feature\" class=\"internalDFN\" id=\"ref-for-dom-smartcardresponsecode-unsupported-feature-1\"><code>unsupported-feature</code></a>\"\n          <a data-link-type=\"idl\" data-lt=\"SmartCardError\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcarderror\" class=\"internalDFN\" id=\"ref-for-dom-smartcarderror-19\"><code>SmartCardError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_INVALID_PARAMETER</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_INVALID_HANDLE</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_E_SERVICE_STOPPED</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"RESPONSECODE\">pcscCode</var> is <code>SCARD_P_SHUTDOWN</code>, return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a>\n          \"<a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Otherwise return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> \"<a data-link-type=\"idl\" data-lt=\"UnknownError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#unknownerror\"><code>UnknownError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "spec": {
+    "title": "Cookies: HTTP State Management Mechanism",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html"
+  },
+  "algorithms": [
+    {
+      "html": "The user agent MUST use an algorithm equivalent to the following algorithm to\nparse a cookie-date. Note that the various boolean flags defined as a part\nof the algorithm (i.e., found-time, found-day-of-month, found-month,\nfound-year) are initially \"not set\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.1.1-2.1.1\">Using the grammar below, divide the cookie-date into date-tokens.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.1.1\" class=\"pilcrow\">¶</a></p>\n<div class=\"lang-abnf sourcecode\" id=\"section-5.1.1-2.1.2\">\n<pre>cookie-date     = *delimiter date-token-list *delimiter\ndate-token-list = date-token *( 1*delimiter date-token )\ndate-token      = 1*non-delimiter\n\ndelimiter       = %x09 / %x20-2F / %x3B-40 / %x5B-60 / %x7B-7E\nnon-delimiter   = %x00-08 / %x0A-1F / DIGIT / \":\" / ALPHA\n                  / %x7F-FF\nnon-digit       = %x00-2F / %x3A-FF\n\nday-of-month    = 1*2DIGIT [ non-digit *OCTET ]\nmonth           = ( \"jan\" / \"feb\" / \"mar\" / \"apr\" /\n                    \"may\" / \"jun\" / \"jul\" / \"aug\" /\n                    \"sep\" / \"oct\" / \"nov\" / \"dec\" ) *OCTET\nyear            = 2*4DIGIT [ non-digit *OCTET ]\ntime            = hms-time [ non-digit *OCTET ]\nhms-time        = time-field \":\" time-field \":\" time-field\ntime-field      = 1*2DIGIT\n</pre><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.1.2\" class=\"pilcrow\">¶</a>\n</div>"
+        },
+        {
+          "html": "Process each date-token sequentially in the order the date-tokens\nappear in the cookie-date:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.2.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.1.1-2.2.2.1.1\">If the found-time flag is not set and the token matches the\n time production, set the found-time flag and set the hour-value,\n minute-value, and second-value to the numbers denoted by the digits\n in the date-token, respectively. Skip the remaining sub-steps and\n continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.1.1-2.2.2.2.1\">If the found-day-of-month flag is not set and the date-token matches\n the day-of-month production, set the found-day-of-month flag and set\n the day-of-month-value to the number denoted by the date-token. Skip\n the remaining sub-steps and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.1.1-2.2.2.3.1\">If the found-month flag is not set and the date-token matches the\n month production, set the found-month flag and set the month-value\n to the month denoted by the date-token. Skip the remaining sub-steps\n and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.1.1-2.2.2.4.1\">If the found-year flag is not set and the date-token matches the\n year production, set the found-year flag and set the year-value to\n the number denoted by the date-token. Skip the remaining sub-steps\n and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.2.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.1.1-2.3.1\">If the year-value is greater than or equal to 70 and less than or equal to\n99, increment the year-value by 1900.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.1-2.4.1\">If the year-value is greater than or equal to 0 and less than or equal to\n69, increment the year-value by 2000.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.4.1\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "NOTE: Some existing user agents interpret two-digit years differently.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.1.1-2.5.1\">Abort these steps and fail to parse the cookie-date if:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.1.1-2.5.2.1\">\n                  <p id=\"section-5.1.1-2.5.2.1.1\">at least one of the found-day-of-month, found-month, found-year, or\nfound-time flags is not set,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.1.1-2.5.2.2\">\n                  <p id=\"section-5.1.1-2.5.2.2.1\">the day-of-month-value is less than 1 or greater than 31,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.1.1-2.5.2.3\">\n                  <p id=\"section-5.1.1-2.5.2.3.1\">the year-value is less than 1601,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.1.1-2.5.2.4\">\n                  <p id=\"section-5.1.1-2.5.2.4.1\">the hour-value is greater than 23,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.1.1-2.5.2.5\">\n                  <p id=\"section-5.1.1-2.5.2.5.1\">the minute-value is greater than 59, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.5.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.1.1-2.5.2.6\">\n                  <p id=\"section-5.1.1-2.5.2.6.1\">the second-value is greater than 59.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.2.6.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>\n<p id=\"section-5.1.1-2.5.3\">\n(Note that leap seconds cannot be represented in this syntax.)<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.5.3\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.1-2.6.1\">Let the parsed-cookie-date be the date whose day-of-month, month,\nyear, hour, minute, and second (in UTC) are the\nday-of-month-value, the month-value, the year-value, the hour-value,\nthe minute-value, and the second-value, respectively. If no such date\nexists, abort these steps and fail to parse the cookie-date.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.1-2.7.1\">Return the parsed-cookie-date as the result of this algorithm.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1-2.7.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "A canonicalized host name is the string generated by the following algorithm:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.2-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.1.2-2.1.1\">Convert the host name to a sequence of individual domain name labels.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.2-2.2.1\">Convert each label that is not a Non-Reserved LDH (NR-LDH) label, to an\nA-label (see Section 2.3.2.1 of <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#RFC5890\" class=\"cite xref\">RFC5890</a>]</span> for the former and latter), or\nto a \"punycode label\" (a label resulting from the \"ToASCII\" conversion in\nSection 4 of <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#RFC3490\" class=\"cite xref\">RFC3490</a>]</span>), as appropriate (see <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#idna-migration\" class=\"auto internal xref\">Section 6.3</a> of this\nspecification).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.2-2.3.1\">Concatenate the resulting labels, separated by a %x2E (\".\") character.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.2-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "The user agent MUST use an algorithm equivalent to the following algorithm to\ncompute the default-path of a cookie:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.1.4-2.1.1\">Let uri-path be the path portion of the request-uri if such a portion\nexists (and empty otherwise).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.4-2.2.1\">If the uri-path is empty or if the first character of the uri-path is\nnot a %x2F (\"/\") character, output %x2F (\"/\") and skip the remaining steps.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.4-2.3.1\">If the uri-path contains no more than one %x2F (\"/\") character, output\n%x2F (\"/\") and skip the remaining step.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.1.4-2.4.1\">Output the characters of the uri-path from the first character up to, but\nnot including, the right-most %x2F (\"/\").<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a Document (<code>document</code>), the following algorithm returns its \"site for\ncookies\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-4\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.2.1-5.1.1\">Let <code>top-document</code> be the active document in <code>document</code>'s navigable's\ntop-level traversable.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.1-5.2.1\">Let <code>top-origin</code> be the origin of <code>top-document</code>'s URI if <code>top-document</code>'s\nsandboxed origin browsing context flag is set, and <code>top-document</code>'s origin\notherwise.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.1-5.3.1\">Let <code>documents</code> be a list consisting of the active documents of\n<code>document</code>'s inclusive ancestor navigables.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "For each <code>item</code> in <code>documents</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.4.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.2.1-5.4.2.1.1\">Let <code>origin</code> be the origin of <code>item</code>'s URI if <code>item</code>'s sandboxed origin\nbrowsing context flag is set, and <code>item</code>'s origin otherwise.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.4.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.2.1-5.4.2.2.1\">If <code>origin</code> is not same-site with <code>top-origin</code>, return an origin set to\nan opaque origin.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.4.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.2.1-5.5.1\">Return <code>top-origin</code>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1-5.5.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a WorkerGlobalScope (<code>worker</code>), the following algorithm returns its \"site\nfor cookies\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-3\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.2.2.1-4.1.1\">Let <code>site</code> be <code>worker</code>'s origin.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-4.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "For each <code>document</code> in <code>worker</code>'s Documents:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-4.2.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.2.2.1-4.2.2.1.1\">Let <code>document-site</code> be <code>document</code>'s \"site for cookies\" (as defined\nin <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#document-requests\" class=\"auto internal xref\">Section 5.2.1</a>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-4.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.2.2.1-4.2.2.2.1\">If <code>document-site</code> is not same-site with <code>site</code>, return an origin\nset to an opaque origin.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-4.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.2.2.1-4.3.1\">Return <code>site</code>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1-4.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "A user agent MUST use an algorithm equivalent to the following algorithm to\nparse a set-cookie-string:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-6\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6-7.1.1\">If the set-cookie-string contains a %x00-08 / %x0A-1F / %x7F character\n(CTL characters excluding HTAB):\nAbort these steps and ignore the set-cookie-string entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-7.2.1\">If the set-cookie-string contains a %x3B (\";\") character:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.2.1\" class=\"pilcrow\">¶</a></p>\n\n<p id=\"section-5.6-7.2.3\">\nOtherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.2.3\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "The name-value-pair string consists of the characters up to, but not including, the first %x3B (\";\"), and the unparsed-attributes consist of the remainder of the set-cookie-string (including the %x3B (\";\") in question).¶",
+            "The name-value-pair string consists of all the characters contained in the set-cookie-string, and the unparsed-attributes is the empty string.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.6-7.3.1\">If the name-value-pair string lacks a %x3D (\"=\") character, then the name\nstring is empty, and the value string is the value of name-value-pair.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.3.1\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.6-7.3.2\">\nOtherwise, the name string consists of the characters up to, but not\nincluding, the first %x3D (\"=\") character, and the (possibly empty) value\nstring consists of the characters after the first %x3D (\"=\") character.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.3.2\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-7.4.1\">Remove any leading or trailing WSP characters from the name string and the\nvalue string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-7.5.1\">If the sum of the lengths of the name string and the value string is more\nthan 4096 octets, abort these steps and ignore the set-cookie-string entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-7.6.1\">The cookie-name is the name string, and the cookie-value is the value string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-7.6.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "The user agent MUST use an algorithm equivalent to the following algorithm to\nparse the unparsed-attributes:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-8\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6-9.1.1\">If the unparsed-attributes string is empty, skip the rest of these steps.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-9.2.1\">Discard the first character of the unparsed-attributes (which will be a\n%x3B (\";\") character).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If the remaining unparsed-attributes contains a %x3B (\";\") character:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.3.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "consume",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.6-9.3.2.1.1\">Consume the characters of the unparsed-attributes up to, but not\nincluding, the first %x3B (\";\") character.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.3.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.3.3\" class=\"pilcrow\">¶</a>",
+              "rationale": "consume",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.6-9.3.4.1.1\">Consume the remainder of the unparsed-attributes.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.3.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.6-9.4.1\">If the cookie-av string contains a %x3D (\"=\") character:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.4.1\" class=\"pilcrow\">¶</a></p>\n\n<p id=\"section-5.6-9.4.3\">\nOtherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.4.3\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "The (possibly empty) attribute-name string consists of the characters up to, but not including, the first %x3D (\"=\") character, and the (possibly empty) attribute-value string consists of the characters after the first %x3D (\"=\") character.¶",
+            "The attribute-name string consists of the entire cookie-av string, and the attribute-value string is empty.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.6-9.5.1\">Remove any leading or trailing WSP characters from the attribute-name\nstring and the attribute-value string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-9.6.1\">If the attribute-value is longer than 1024 octets, ignore the cookie-av\nstring and return to Step 1 of this algorithm.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-9.7.1\">Process the attribute-name and attribute-value according to the\nrequirements in the following subsections. (Notice that attributes with\nunrecognized attribute-names are ignored.)<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.7.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6-9.8.1\">Return to Step 1 of this algorithm.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6-9.8.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the attribute-name case-insensitively matches the string \"Expires\", the\nuser agent MUST process the cookie-av as follows.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6.1-2.1.1\">Let the expiry-time be the result of parsing the attribute-value as\ncookie-date (see <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#cookie-date\" class=\"auto internal xref\">Section 5.1.1</a>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.1-2.2.1\">If the attribute-value failed to parse as a cookie date, ignore the\ncookie-av.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.1-2.3.1\">Let cookie-age-limit be the maximum age of the cookie (which SHOULD be 400 days\nin the future or sooner, see <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#cookie-lifetime-limits\" class=\"auto internal xref\">Section 5.5</a>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.1-2.4.1\">If the expiry-time is more than cookie-age-limit, the user agent MUST set the\nexpiry time to cookie-age-limit in seconds.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.1-2.5.1\">If the expiry-time is earlier than the earliest date the user agent can\nrepresent, the user agent MAY replace the expiry-time with the earliest\nrepresentable date.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.1-2.6.1\">Append an attribute to the cookie-attribute-list with an attribute-name\nof Expires and an attribute-value of expiry-time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1-2.6.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the attribute-name case-insensitively matches the string \"Max-Age\", the\nuser agent MUST process the cookie-av as follows.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6.2-2.1.1\">If the attribute-value is empty, ignore the cookie-av.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.2.1\">If the first character of the attribute-value is neither a DIGIT, nor a \"-\"\ncharacter followed by a DIGIT, ignore the cookie-av.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.3.1\">If the remainder of attribute-value contains a non-DIGIT character, ignore\nthe cookie-av.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.4.1\">Let delta-seconds be the attribute-value converted to a base 10 integer.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.5.1\">Let cookie-age-limit be the maximum age of the cookie (which SHOULD be 400 days\nor less, see <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#cookie-lifetime-limits\" class=\"auto internal xref\">Section 5.5</a>).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.6.1\">Set delta-seconds to the smaller of its present value and cookie-age-limit.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.7.1\">If delta-seconds is less than or equal to zero (0), let expiry-time be\nthe earliest representable date and time. Otherwise, let the expiry-time\nbe the current date and time plus delta-seconds seconds.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.7.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.2-2.8.1\">Append an attribute to the cookie-attribute-list with an attribute-name\nof Max-Age and an attribute-value of expiry-time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2-2.8.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the attribute-name case-insensitively matches the string \"Domain\", the user\nagent MUST process the cookie-av as follows.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6.3-2.1.1\">Let cookie-domain be the attribute-value.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.3-2.2.1\">If cookie-domain starts with %x2E (\".\"), let cookie-domain be cookie-domain\nwithout its leading %x2E (\".\").<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.3-2.3.1\">Convert the cookie-domain to lower case.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.3-2.4.1\">Append an attribute to the cookie-attribute-list with an attribute-name\nof Domain and an attribute-value of cookie-domain.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the attribute-name case-insensitively matches the string \"Path\", the user\nagent MUST process the cookie-av as follows.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the attribute-value is empty or if the first character of the\nattribute-value is not %x2F (\"/\"):<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-2.1.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.6.4-2.1.2.1.1\">Let cookie-path be the default-path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-2.1.3\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.6.4-2.1.4.1.1\">Let cookie-path be the attribute-value.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-2.1.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.6.4-2.2.1\">Append an attribute to the cookie-attribute-list with an attribute-name\nof Path and an attribute-value of cookie-path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.4-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the attribute-name case-insensitively matches the string \"SameSite\", the\nuser agent MUST process the cookie-av as follows:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.6.7-2.1.1\">Let <code>enforcement</code> be \"Default\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.7-2.2.1\">If cookie-av's attribute-value is a case-insensitive match for \"None\",\nset <code>enforcement</code> to \"None\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.7-2.3.1\">If cookie-av's attribute-value is a case-insensitive match for \"Strict\",\nset <code>enforcement</code> to \"Strict\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.7-2.4.1\">If cookie-av's attribute-value is a case-insensitive match for \"Lax\", set\n<code>enforcement</code> to \"Lax\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.6.7-2.5.1\">Append an attribute to the cookie-attribute-list with an attribute-name\nof \"SameSite\" and an attribute-value of <code>enforcement</code>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.7-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "When the user agent \"receives a cookie\" from a request-uri with name\ncookie-name, value cookie-value, and attributes cookie-attribute-list, the\nuser agent MUST process the cookie as follows:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-2\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.7-3.1.1\">A user agent MAY ignore a received cookie in its entirety. See\n<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#ignoring-cookies\" class=\"auto internal xref\">Section 5.3</a>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.2.1\">If cookie-name is empty and cookie-value is empty, abort these steps and\nignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.3.1\">If the cookie-name or the cookie-value contains a\n%x00-08 / %x0A-1F / %x7F character (CTL characters excluding HTAB),\nabort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.4.1\">If the sum of the lengths of cookie-name and cookie-value is more than\n4096 octets, abort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.5.1\">Create a new cookie with name cookie-name, value cookie-value. Set the\ncreation-time and the last-access-time to the current date and time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name\nof \"Max-Age\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.7-3.6.2.1.1\">Set the cookie's persistent-flag to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.6.2.2.1\">Set the cookie's expiry-time to attribute-value of the last\nattribute in the cookie-attribute-list with an attribute-name of\n\"Max-Age\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise, if the cookie-attribute-list contains an attribute with an\nattribute-name of \"Expires\" (and does not contain an attribute with an\nattribute-name of \"Max-Age\"):<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.3\" class=\"pilcrow\">¶</a>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.6.4.1.1\">Set the cookie's persistent-flag to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.7-3.6.4.2.1\">Set the cookie's expiry-time to attribute-value of the last\nattribute in the cookie-attribute-list with an attribute-name of\n\"Expires\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.4.2.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.5\" class=\"pilcrow\">¶</a>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.6.6.1.1\">Set the cookie's persistent-flag to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.6.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.7-3.6.6.2.1\">Set the cookie's expiry-time to the latest representable date.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.6.6.2.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an\nattribute-name of \"Domain\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.7.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.7-3.7.2.1.1\">Let the domain-attribute be the attribute-value of the last\nattribute in the cookie-attribute-list with both an\nattribute-name of \"Domain\" and an attribute-value whose\nlength is no more than 1024 octets. (Note that a leading %x2E\n(\".\"), if present, is ignored even though that character is not\npermitted.)<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.7.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.7.3\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.7.4.1.1\">Let the domain-attribute be the empty string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.7.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.8.1\">If the domain-attribute contains a character that is not in the range of <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#USASCII\" class=\"cite xref\">USASCII</a>]</span>\ncharacters, abort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.8.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If the user agent is configured to reject \"public suffixes\" and the\ndomain-attribute is a public suffix:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.9.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the domain-attribute is identical to the canonicalized\nrequest-host:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.9.2.1.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.9.2.1.2.1.1\">Let the domain-attribute be the empty string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.9.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.9.2.1.3\" class=\"pilcrow\">¶</a>",
+                  "rationale": "abort",
+                  "steps": [
+                    {
+                      "html": "<p id=\"section-5.7-3.9.2.1.4.1.1\">Abort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.9.2.1.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If the domain-attribute is non-empty:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the canonicalized request-host does not domain-match the\ndomain-attribute:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.2.1.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "abort",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.10.2.1.2.1.1\">Abort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.2.1.3\" class=\"pilcrow\">¶</a>",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p id=\"section-5.7-3.10.2.1.4.1.1\">Set the cookie's host-only-flag to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.2.1.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                    },
+                    {
+                      "html": "<p id=\"section-5.7-3.10.2.1.4.2.1\">Set the cookie's domain to the domain-attribute.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.2.1.4.2.1\" class=\"pilcrow\">¶</a></p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.3\" class=\"pilcrow\">¶</a>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.7-3.10.4.1.1\">Set the cookie's host-only-flag to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.4.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.7-3.10.4.2.1\">Set the cookie's domain to the canonicalized request-host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.10.4.2.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.11.1\">If the cookie-attribute-list contains an attribute with an\nattribute-name of \"Path\", set the cookie's path to attribute-value of\nthe last attribute in the cookie-attribute-list with both an\nattribute-name of \"Path\" and an attribute-value whose length is no\nmore than 1024 octets. Otherwise, set the cookie's path to the\ndefault-path of the request-uri.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.11.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.12.1\">If the cookie-attribute-list contains an attribute with an\nattribute-name of \"Secure\", set the cookie's secure-only-flag to true.\nOtherwise, set the cookie's secure-only-flag to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.12.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.13.1\">If the request-uri does not denote a \"secure\" connection (as defined by the\nuser agent), and the cookie's secure-only-flag is true, then abort these\nsteps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.13.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.14.1\">If the cookie-attribute-list contains an attribute with an\nattribute-name of \"HttpOnly\", set the cookie's http-only-flag to true.\nOtherwise, set the cookie's http-only-flag to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.14.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.15.1\">If the cookie was received from a \"non-HTTP\" API and the cookie's\nhttp-only-flag is true, abort these steps and ignore the cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.15.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.16.1\">If the cookie's secure-only-flag is false, and the request-uri does not\ndenote a \"secure\" connection, then abort these steps and ignore the cookie\nentirely if the cookie store contains one or more cookies that meet all of\nthe following criteria:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.16.1\" class=\"pilcrow\">¶</a></p>\n\n<p id=\"section-5.7-3.16.3\">\nNote: The path comparison is not symmetric, ensuring only that a\nnewly-created, non-secure cookie does not overlay an existing secure\ncookie, providing some mitigation against cookie-fixing attacks. That is,\ngiven an existing secure cookie named 'a' with a path of '/login', a\nnon-secure cookie named 'a' could be set for a path of '/' or '/foo', but\nnot for a path of '/login' or '/login/en'.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.16.3\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "Their name matches the name of the newly-created cookie.¶ Their secure-only-flag is true.¶ Their domain domain-matches the domain of the newly-created cookie, or vice-versa.¶ The path of the newly-created cookie path-matches the path of the existing cookie.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.17.1\">If the cookie-attribute-list contains an attribute with an\nattribute-name of \"SameSite\", and an attribute-value of \"Strict\", \"Lax\", or\n\"None\", set the cookie's same-site-flag to the attribute-value of the last\nattribute in the cookie-attribute-list with an attribute-name of \"SameSite\".\nOtherwise, set the cookie's same-site-flag to \"Default\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.17.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If the cookie's <code>same-site-flag</code> is not \"None\":<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.7-3.18.2.1.1\">If the cookie was received from a \"non-HTTP\" API, and the API was called\nfrom a navigable's active document whose \"site for cookies\" is\nnot same-site with the top-level origin, then abort these steps and\nignore the newly created cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.18.2.2.1\">If the cookie was received from a \"same-site\" request (as defined in\n<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#same-site-requests\" class=\"auto internal xref\">Section 5.2</a>), skip the remaining substeps and continue\nprocessing the cookie.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.18.2.3.1\">If the cookie was received from a request which is navigating a\ntop-level traversable <span>[<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#HTML\" class=\"cite xref\">HTML</a>]</span> (e.g. if the request's \"reserved\nclient\" is either <code>null</code> or an environment whose \"target browsing\ncontext\"'s navigable is a top-level traversable), skip the remaining\nsubsteps and continue processing the cookie.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.2.3.1\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.7-3.18.2.3.2\">\nNote: Top-level navigations can create a cookie with any <code>SameSite</code>\nvalue, even if the new cookie wouldn't have been sent along with\nthe request had it already existed prior to the navigation.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.2.3.2\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.18.2.4.1\">Abort these steps and ignore the newly created cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.18.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.19.1\">If the cookie's \"same-site-flag\" is \"None\", abort these steps and ignore the\ncookie entirely unless the cookie's secure-only-flag is true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.19.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.20.1\">If the cookie-name begins with a case-insensitive match for the string\n\"__Secure-\", abort these steps and ignore the cookie entirely unless the\ncookie's secure-only-flag is true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.20.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.7-3.21.1\">If the cookie-name begins with a case-insensitive match for the string\n\"__Host-\", abort these steps and ignore the cookie entirely unless the\ncookie meets all the following criteria:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.21.1\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "The cookie's secure-only-flag is true.¶ The cookie's host-only-flag is true.¶ The cookie-attribute-list contains an attribute with an attribute-name of \"Path\", and the cookie's path is /.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.22.1\">If the cookie-name is empty and either of the following conditions are\ntrue, abort these steps and ignore the cookie:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.22.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.7-3.22.2.1\">\n                <p id=\"section-5.7-3.22.2.1.1\">the cookie-value begins with a case-insensitive match for the string\n\"__Secure-\"<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.22.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              <li class=\"normal\" id=\"section-5.7-3.22.2.2\">\n                <p id=\"section-5.7-3.22.2.2.1\">the cookie-value begins with a case-insensitive match for the string\n\"__Host-\"<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.22.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n            </ul>"
+        },
+        {
+          "html": "If the cookie store contains a cookie with the same name, domain,\nhost-only-flag, and path as the newly-created cookie:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.23.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.7-3.23.2.1.1\">Let old-cookie be the existing cookie with the same name, domain,\nhost-only-flag, and path as the newly-created cookie. (Notice that this\nalgorithm maintains the invariant that there is at most one such\ncookie.)<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.23.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.23.2.2.1\">If the newly-created cookie was received from a \"non-HTTP\" API and the\nold-cookie's http-only-flag is true, abort these steps and ignore the\nnewly created cookie entirely.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.23.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.23.2.3.1\">Update the creation-time of the newly-created cookie to match the\ncreation-time of the old-cookie.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.23.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.7-3.23.2.4.1\">Remove the old-cookie from the cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.23.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.7-3.24.1\">Insert the newly-created cookie into the cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.7-3.24.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a cookie store and a retrieval, the following algorithm returns a\ncookie-string from a given cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.8.3-2.1.1\">Let cookie-list be the set of cookies from the cookie store that meets all\nof the following requirements:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.8.3-2.1.2.1\">\n                  <p id=\"section-5.8.3-2.1.2.1.1\">Either:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.1.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.8.3-2.1.2.1.2.1\">\n                      <p id=\"section-5.8.3-2.1.2.1.2.1.1\">The cookie's host-only-flag is true and the canonicalized\nhost of the retrieval's URI is identical to the cookie's domain.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n<p id=\"section-5.8.3-2.1.2.1.3\">\nOr:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.1.3\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.8.3-2.1.2.1.4.1\">\n                      <p id=\"section-5.8.3-2.1.2.1.4.1.1\">The cookie's host-only-flag is false and the canonicalized\nhost of the retrieval's URI domain-matches the cookie's domain.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.1.4.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n<p id=\"section-5.8.3-2.1.2.1.5\">\nNOTE: (For user agents configured to reject \"public suffixes\") It's\npossible that the public suffix list was changed since a cookie was\ncreated. If this change results in a cookie's domain becoming a public\nsuffix then that cookie is considered invalid as it would have been\nrejected during creation (See <a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#storage-model\" class=\"auto internal xref\">Section 5.7</a> step 9). User agents\nshould be careful to avoid retrieving these invalid cookies even if they\ndomain-match the host of the retrieval's URI.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.1.5\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.8.3-2.1.2.2\">\n                  <p id=\"section-5.8.3-2.1.2.2.1\">The retrieval's URI's path path-matches the cookie's path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.8.3-2.1.2.3\">\n                  <p id=\"section-5.8.3-2.1.2.3.1\">If the cookie's secure-only-flag is true, then the retrieval's URI must\ndenote a \"secure\" connection (as defined by the user agent).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.3.1\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.8.3-2.1.2.3.2\">\nNOTE: The notion of a \"secure\" connection is not defined by this document.\nTypically, user agents consider a connection secure if the connection makes\nuse of transport-layer security, such as SSL or TLS, or if host is trusted.\nFor example, most user agents consider \"https\" to be a scheme that denotes\na secure protocol and \"localhost\" to be trusted host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.3.2\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.8.3-2.1.2.4\">\n                  <p id=\"section-5.8.3-2.1.2.4.1\">If the cookie's http-only-flag is true, then exclude the cookie if the\nretrieval's type is \"non-HTTP\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.8.3-2.1.2.5\">\n                  <p id=\"section-5.8.3-2.1.2.5.1\">If the cookie's same-site-flag is not \"None\" and the retrieval's same-site\nstatus is \"cross-site\", then exclude the cookie unless all of the\nfollowing conditions are met:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.5.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.8.3-2.1.2.5.2.1\">\n                      <p id=\"section-5.8.3-2.1.2.5.2.1.1\">The retrieval's type is \"HTTP\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.5.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.8.3-2.1.2.5.2.2\">\n                      <p id=\"section-5.8.3-2.1.2.5.2.2.1\">The same-site-flag is \"Lax\" or \"Default\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.5.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.8.3-2.1.2.5.2.3\">\n                      <p id=\"section-5.8.3-2.1.2.5.2.3.1\">The HTTP request associated with the retrieval uses a \"safe\" method.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.5.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.8.3-2.1.2.5.2.4\">\n                      <p id=\"section-5.8.3-2.1.2.5.2.4.1\">The target browsing context of the HTTP request associated with the\nretrieval is the active browsing context or a top-level traversable.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.1.2.5.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n</li>\n              </ul>"
+        },
+        {
+          "html": "<p id=\"section-5.8.3-2.2.1\">The user agent SHOULD sort the cookie-list in the following order:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.2.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.8.3-2.2.2.1\">\n                  <p id=\"section-5.8.3-2.2.2.1.1\">Cookies with longer paths are listed before cookies with shorter\npaths.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.8.3-2.2.2.2\">\n                  <p id=\"section-5.8.3-2.2.2.2.1\">Among cookies that have equal-length path fields, cookies with earlier\ncreation-times are listed before cookies with later creation-times.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>\n<p id=\"section-5.8.3-2.2.3\">\nNOTE: Not all user agents sort the cookie-list in this order, but this order\nreflects common practice when this document was written, and, historically,\nthere have been servers that (erroneously) depended on this order.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.2.3\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.8.3-2.3.1\">Update the last-access-time of each cookie in the cookie-list to the\ncurrent date and time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "Serialize the cookie-list into a cookie-string by processing each cookie\nin the cookie-list in order:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.4.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.8.3-2.4.2.1.1\">If the cookies' name is not empty, output the cookie's name followed by\nthe %x3D (\"=\") character.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.4.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.8.3-2.4.2.2.1\">If the cookies' value is not empty, output the cookie's value.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.4.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.8.3-2.4.2.3.1\">If there is an unprocessed cookie in the cookie-list, output the\ncharacters %x3B and %x20 (\"; \").<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.8.3-2.4.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

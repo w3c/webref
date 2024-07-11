@@ -1,0 +1,1097 @@
+{
+  "spec": {
+    "title": "Speculation Rules",
+    "url": "https://wicg.github.io/nav-speculation/speculation-rules.html"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: Never reached.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If type is \"<code>speculationrules</code>\", then return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "script element removing steps",
+      "html": "The following steps are added as the <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script③\">script</a></code> element’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\" id=\"ref-for-html-element-removing-steps\">HTML element removing steps</a>, given <var>removedNode</var> and <var>oldParent</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#concept-script-result\" id=\"ref-for-concept-script-result①\">result</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set①\">speculation rule set</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>document</var> be <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> it from <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-speculation-rule-sets\" id=\"ref-for-document-list-of-speculation-rule-sets\">list of speculation rule sets</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#already-started\" id=\"ref-for-already-started\">already started</a> flag to false.</p>"
+            },
+            {
+              "html": "<p>Set <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#concept-script-result\" id=\"ref-for-concept-script-result②\">result</a> to null.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#consider-speculation\" id=\"ref-for-consider-speculation\">Consider speculation</a> for <var>document</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "script element children changed steps",
+      "html": "The following steps are added as the <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script④\">script</a></code> element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-children-changed-ext\" id=\"ref-for-concept-node-children-changed-ext\">children changed steps</a> for an element <var>scriptElement</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>scriptElement</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#concept-script-result\" id=\"ref-for-concept-script-result③\">result</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set②\">speculation rule set</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>document</var> be <var>scriptElement</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>ruleSet</var> be <var>scriptElement</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#concept-script-result\" id=\"ref-for-concept-script-result④\">result</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>newResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-speculation-rules\" id=\"ref-for-parse-speculation-rules\">parsing speculation rules</a> given <var>scriptElement</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content\">child text content</a>, <var>document</var>, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\" id=\"ref-for-document-base-url\">document base URL</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>scriptElement</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#concept-script-result\" id=\"ref-for-concept-script-result⑤\">result</a> to <var>newResult</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-replace\" id=\"ref-for-list-replace\">Replace</a> <var>ruleSet</var> with <var>newResult</var> in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-speculation-rule-sets\" id=\"ref-for-document-list-of-speculation-rule-sets①\">list of speculation rule sets</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#consider-speculation\" id=\"ref-for-consider-speculation①\">Consider speculation</a> for <var>document</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a></p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-speculation-rules\" id=\"ref-for-parse-speculation-rules①\">parsing speculation rules</a> given source text, <var>document</var> and base URL.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-speculation-rule-sets\" id=\"ref-for-document-list-of-speculation-rule-sets②\">list of speculation rule sets</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#mark-as-ready\" id=\"ref-for-mark-as-ready\">Mark as ready</a> <var>el</var> given <var>result</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#consider-speculation\" id=\"ref-for-consider-speculation②\">Consider speculation</a> for <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>cspType</var> be \"script\".</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is \"<code>speculationrules</code>\", then set <var>cspType</var> to \"<code>script speculationrules</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "process the Speculation-Rules header",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#process-the-speculation-rules-header",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-the-speculation-rules-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process the Speculation-Rules header</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> <var>document</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Optionally, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedList</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> given <span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#http-headerdef-speculation-rules\" id=\"ref-for-http-headerdef-speculation-rules①\">Speculation-Rules</a></code>`</span> and \"<code>list</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedList</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>baseUrl</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\" id=\"ref-for-document-base-url①\">document base URL</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-the-speculation-rules-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process the Speculation-Rules header</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> <var>document</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>item</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>parsedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser\">parsing</a> <var>item</var> with <var>baseUrl</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>parsedURL</var> is failure, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>pendingResource</var> be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource\" id=\"ref-for-pending-external-speculation-rule-resource\">pending external speculation rule resource</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-url\" id=\"ref-for-pending-external-speculation-rule-resource-url\">URL</a> <var>parsedURL</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-controller\" id=\"ref-for-pending-external-speculation-rule-resource-controller\">controller</a> null.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>pendingResource</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-pending-external-speculation-rule-resources\" id=\"ref-for-document-list-of-pending-external-speculation-rule-resources\">list of pending external speculation rule resources</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#process-pending-external-speculation-rule-resources\" id=\"ref-for-process-pending-external-speculation-rule-resources\">Process pending external speculation rule resources</a> given <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#process-the-speculation-rules-header\" id=\"ref-for-process-the-speculation-rules-header\">Process the Speculation-Rules header</a> given <var>document</var> and <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process pending external speculation rule resources",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#process-pending-external-speculation-rule-resources",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-pending-external-speculation-rule-resources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process pending external speculation rule resources</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>pendingResources</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-pending-external-speculation-rule-resources\" id=\"ref-for-document-list-of-pending-external-speculation-rule-resources①\">list of pending external speculation rule resources</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-pending-external-speculation-rule-resources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process pending external speculation rule resources</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a> <var>document</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>Optionally, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-cancel-and-discard\" id=\"ref-for-pending-external-speculation-rule-resource-cancel-and-discard\">cancel and discard</a> <var>pendingResource</var> given <var>document</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>pendingResource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-controller\" id=\"ref-for-pending-external-speculation-rule-resource-controller①\">controller</a> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-fetch\" id=\"ref-for-pending-external-speculation-rule-resource-fetch\">fetch</a> <var>pendingResource</var> given <var>document</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pending external speculation rule resource/fetch",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-fetch",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"pending external speculation rule resource\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-external-speculation-rule-resource-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource\" id=\"ref-for-pending-external-speculation-rule-resource①\">pending external speculation rule resource</a> <var>pendingResource</var> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document</a> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>pendingResources</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-pending-external-speculation-rule-resources\" id=\"ref-for-document-list-of-pending-external-speculation-rule-resources②\">list of pending external speculation rule resources</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>pendingResources</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>pendingResource</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>pendingResource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-controller\" id=\"ref-for-pending-external-speculation-rule-resource-controller②\">controller</a> is null.</p>"
+        },
+        {
+          "html": "<p>Let <var>settingsObject</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>requestURL</var> be <var>pendingResource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-url\" id=\"ref-for-pending-external-speculation-rule-resource-url①\">URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>requestURL</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>settingsObject</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is \"<code>cors</code>\", and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is \"<code>speculationrules</code>\".</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"pending external speculation rule resource\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-external-speculation-rule-resource-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource\" id=\"ref-for-pending-external-speculation-rule-resource①\">pending external speculation rule resource</a> <var>pendingResource</var> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document</a> <var>document</var>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> <var>pendingResource</var> from <var>pendingResources</var>.</p>"
+            },
+            {
+              "html": "<p>If any of the following conditions are true, abort these steps:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>body</var> is null.</p>\n         </li><li data-md=\"\">\n          <p><var>body</var> is failure.</p>\n         </li><li data-md=\"\">\n          <p><var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">ok status</a>.</p>\n         </li><li data-md=\"\">\n          <p>The result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-extract-mime-type\" id=\"ref-for-concept-header-extract-mime-type\">extracting a MIME type</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a> does not have an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence\">essence</a> of \"<code>application/speculationrules+json</code>\".</p>\n        </li></ul>"
+            },
+            {
+              "html": "<p>Otherwise, let <var>text</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"ref-for-utf-8-decode\">UTF-8 decoding</a> <var>body</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>ruleSet</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-speculation-rules\" id=\"ref-for-parse-speculation-rules②\">parsing speculation rules</a> given <var>text</var>, <var>document</var> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">URL</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>ruleSet</var> is null, abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>ruleSet</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-speculation-rule-sets\" id=\"ref-for-document-list-of-speculation-rule-sets③\">list of speculation rule sets</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>pendingResource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-controller\" id=\"ref-for-pending-external-speculation-rule-resource-controller③\">controller</a> to <var>controller</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "pending external speculation rule resource/cancel and discard",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-cancel-and-discard",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"pending external speculation rule resource\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-external-speculation-rule-resource-cancel-and-discard\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel and discard</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource\" id=\"ref-for-pending-external-speculation-rule-resource②\">pending external speculation rule resource</a> <var>pendingResource</var> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>pendingResources</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-list-of-pending-external-speculation-rule-resources\" id=\"ref-for-document-list-of-pending-external-speculation-rule-resources③\">list of pending external speculation rule resources</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>pendingResources</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>pendingResource</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>controller</var> be <var>pendingResource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#pending-external-speculation-rule-resource-controller\" id=\"ref-for-pending-external-speculation-rule-resource-controller④\">controller</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>controller</var> is not null, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort\">abort</a> <var>controller</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> <var>pendingResource</var> from <var>pendingResources</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse speculation rules",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#parse-speculation-rules",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-speculation-rules\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse speculation rules</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set③\">speculation rule set</a> or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-a-json-string-to-an-infra-value\" id=\"ref-for-parse-a-json-string-to-an-infra-value\">parsing a JSON string to an Infra value</a> given <var>input</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsed</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>, then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set④\">speculation rule set</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-speculation-rules\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse speculation rules</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set③\">speculation rule set</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>prefetchRule</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>rule</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-speculation-rule\" id=\"ref-for-parse-a-speculation-rule\">parsing a speculation rule</a> given <var>prefetchRule</var>, <var>document</var> and <var>baseURL</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>rule</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint\">target navigable name hint</a> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>rule</var> to <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set-prefetch-rules\" id=\"ref-for-speculation-rule-set-prefetch-rules\">prefetch rules</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-speculation-rules\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse speculation rules</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set\" id=\"ref-for-speculation-rule-set③\">speculation rule set</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>prerenderRule</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>rule</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-speculation-rule\" id=\"ref-for-parse-a-speculation-rule①\">parsing a speculation rule</a> given <var>prerenderRule</var>, <var>document</var>, and <var>baseURL</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>rule</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>rule</var> to <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-set-prerender-rules\" id=\"ref-for-speculation-rule-set-prerender-rules\">prerender rules</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a speculation rule",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-speculation-rule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>input</var> has any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> other than \"<code>source</code>\", \"<code>urls</code>\", \"<code>where</code>\", \"<code>requires</code>\", \"<code>target_hint</code>\",\"<code>referrer_policy</code>\", \"<code>relative_to</code>\", \"<code>eagerness</code>\", and \"<code>expects_no_vary_search</code>\" then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>source</var> to <var>input</var>[\"<code>source</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>source</var> to \"<code>list</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>source</var> to \"<code>document</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>source</var> is neither the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> \"<code>list</code>\" nor the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦\">string</a> \"<code>document</code>\", then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>urls</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>predicate</var> be null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>where</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>If <var>input</var>[\"<code>urls</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exist</a>, is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>, or has any element which is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑧\">string</a>, then return null.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>relativeTo</var> be <var>input</var>[\"<code>relative_to</code>\"].</p>"
+                },
+                {
+                  "html": "<p>If <var>relativeTo</var> is neither the string \"<code>ruleset</code>\" nor the string \"<code>document</code>\", then return null.</p>"
+                },
+                {
+                  "html": "<p>If <var>relativeTo</var> is \"<code>document</code>\", then set <var>baseURL</var> to the <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\" id=\"ref-for-document-base-url②\">document base URL</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>parsedURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①\">parsing</a> <var>urlString</var> with <var>baseURL</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>parsedURL</var> is failure, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme\">HTTP(S) scheme</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> <var>parsedURL</var> to <var>urls</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>urls</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>If <var>input</var>[\"<code>relative_to</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>If <var>input</var>[\"<code>where</code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exist</a>, then set <var>predicate</var> to a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-conjunction\" id=\"ref-for-document-rule-conjunction①\">document rule conjunction</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-conjunction-clauses\" id=\"ref-for-document-rule-conjunction-clauses\">clauses</a> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>predicate</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-document-rule-predicate\" id=\"ref-for-parse-a-document-rule-predicate\">parsing a document rule predicate</a> given <var>input</var>[\"<code>where</code>\"], <var>document</var> and <var>baseURL</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>predicate</var> is null, then return null.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>requirements</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">ordered set</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>input</var>[\"<code>requires</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, but is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>, then return null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>requirement</var> is not the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑨\">string</a> \"<code>anonymous-client-ip-when-cross-origin</code>\", then return null.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>requirement</var> to <var>requirements</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>targetHint</var> be null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>target_hint</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword\" id=\"ref-for-valid-navigable-target-name-or-keyword\">valid navigable target name or keyword</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>Set <var>targetHint</var> to <var>input</var>[\"<code>target_hint</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>referrerPolicy</var> be the empty string.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>referrer_policy</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy①\">referrer policy</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>Set <var>referrerPolicy</var> to <var>input</var>[\"<code>referrer_policy</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>eagerness</var> be \"<code>immediate</code>\" if <var>source</var> is \"<code>list</code>\", and \"<code>conservative</code>\" otherwise.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>eagerness</code>\"] is not one of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#valid-eagerness-strings\" id=\"ref-for-valid-eagerness-strings①\">valid eagerness strings</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>Set <var>eagerness</var> to <var>input</var>[\"<code>eagerness</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>noVarySearchHint</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#default-url-search-variance\" id=\"ref-for-default-url-search-variance\">default URL search variance</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-speculation-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a speculation rule</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document</a> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>baseURL</var>, perform the following steps. They return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule②\">speculation rule</a> or null.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var>[\"<code>expects_no_vary_search</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①⓪\">string</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>Set <var>noVarySearchHint</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#obtain-a-url-search-variance-hint\" id=\"ref-for-obtain-a-url-search-variance-hint\">obtaining a URL search variance hint</a> given <var>input</var>[\"<code>expects_no_vary_search</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule③\">speculation rule</a> with</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-urls\" id=\"ref-for-speculation-rule-urls\">URLs</a>\n       </dt><dd data-md=\"\">\n        <p><var>urls</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-predicate\" id=\"ref-for-speculation-rule-predicate\">predicate</a>\n       </dt><dd data-md=\"\">\n        <p><var>predicate</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-requirements\" id=\"ref-for-speculation-rule-requirements①\">requirements</a>\n       </dt><dd data-md=\"\">\n        <p><var>requirements</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint①\">target navigable name hint</a>\n       </dt><dd data-md=\"\">\n        <p><var>targetHint</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-referrer-policy\" id=\"ref-for-speculation-rule-referrer-policy\">referrer policy</a>\n       </dt><dd data-md=\"\">\n        <p><var>referrerPolicy</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-eagerness\" id=\"ref-for-speculation-rule-eagerness\">eagerness</a>\n       </dt><dd data-md=\"\">\n        <p><var>eagerness</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-no-vary-search-hint\" id=\"ref-for-speculation-rule-no-vary-search-hint\">No-Vary-Search hint</a>\n       </dt><dd data-md=\"\">\n        <p><var>noVarySearchHint</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "parse a document rule predicate",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-document-rule-predicate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>input</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a>, then return null.</p>"
+        },
+        {
+          "html": "<p>If <var>input</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">contain</a> exactly one of \"<code>and</code>\", \"<code>or</code>\", \"<code>not</code>\", \"<code>href_matches</code>\" and \"<code>selector_matches</code>\", then return null. Otherwise, let <var>predicateType</var> be that key.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var> has any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key①\">key</a> other than <var>predicateType</var>, then return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>rawClauses</var> be the <var>input</var>[<var>predicateType</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>rawClauses</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>, then return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>clauses</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>clause</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-document-rule-predicate\" id=\"ref-for-parse-a-document-rule-predicate①\">parsing a document rule predicate</a> given <var>rawClause</var>, <var>document</var> and <var>baseURL</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>clause</var> is null, then return null.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>clause</var> to <var>clauses</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>predicateType</var> is \"<code>and</code>\", then return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-conjunction\" id=\"ref-for-document-rule-conjunction②\">document rule conjunction</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-conjunction-clauses\" id=\"ref-for-document-rule-conjunction-clauses①\">clauses</a> is <var>clauses</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>predicateType</var> is \"<code>or</code>\", then return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-disjunction\" id=\"ref-for-document-rule-disjunction①\">document rule disjunction</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-disjunction-clauses\" id=\"ref-for-document-rule-disjunction-clauses\">clauses</a> is <var>clauses</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var> has any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key②\">key</a> other than \"<code>not</code>\", then return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>rawClause</var> be the <var>input</var>[<var>predicateType</var>].</p>"
+            },
+            {
+              "html": "<p>Let <var>clause</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#parse-a-document-rule-predicate\" id=\"ref-for-parse-a-document-rule-predicate②\">parsing a document rule predicate</a> given <var>rawClause</var>, <var>document</var> and <var>baseURL</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>clause</var> is null, then return null.</p>"
+            },
+            {
+              "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-negation\" id=\"ref-for-document-rule-negation①\">document rule negation</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-negation-clause\" id=\"ref-for-document-rule-negation-clause\">clause</a> is <var>clause</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var> has any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key③\">key</a> other than \"<code>href_matches</code>\" and \"<code>relative_to</code>\", then return null.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>relativeTo</var> be <var>input</var>[\"<code>relative_to</code>\"].</p>"
+                },
+                {
+                  "html": "<p>If <var>relativeTo</var> is neither the string \"<code>ruleset</code>\" nor the string \"<code>document</code>\", then return null.</p>"
+                },
+                {
+                  "html": "<p>If <var>relativeTo</var> is \"<code>document</code>\", set <var>baseURL</var> to the <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\" id=\"ref-for-document-base-url③\">document base URL</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>rawPatterns</var> be <var>input</var>[\"<code>href_matches</code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>rawPatterns</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>, then set <var>rawPatterns</var> to « <var>rawPatterns</var> ».</p>"
+            },
+            {
+              "html": "<p>Let <var>patterns</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>pattern</var> be the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#build-a-url-pattern-from-an-infra-value\" id=\"ref-for-build-a-url-pattern-from-an-infra-value\">building a URL pattern from an Infra value</a> <var>rawPattern</var> given <var>baseURL</var>. If this step throws, catch the exception and return null.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>pattern</var> to <var>patterns</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-url-pattern-predicate\" id=\"ref-for-document-rule-url-pattern-predicate①\">document rule URL pattern predicate</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-url-pattern-predicate-patterns\" id=\"ref-for-document-rule-url-pattern-predicate-patterns\">patterns</a> is <var>patterns</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>input</var> has any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key④\">key</a> other than \"<code>selector_matches</code>\", then return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>rawSelectors</var> be <var>input</var>[\"<code>selector_matches</code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>rawSelectors</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>, then set <var>rawSelectors</var> to « <var>rawSelectors</var> ».</p>"
+            },
+            {
+              "html": "<p>Let <var>selectors</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-document-rule-predicate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a document rule predicate</dfn> given a value <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">document</a> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>baseURL</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>rawSelector</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①①\">string</a>, then return null.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#parse-a-selector\" id=\"ref-for-parse-a-selector\">Parse a selector</a> from <var>rawSelector</var>. If the result is failure, then return null. Otherwise, let <var>selector</var> be the result.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <var>selector</var> to <var>selectors</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-css-selector-predicate\" id=\"ref-for-document-rule-css-selector-predicate①\">document rule CSS selector predicate</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-css-selector-predicate-selectors\" id=\"ref-for-document-rule-css-selector-predicate-selectors\">selectors</a> is <var>selectors</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "find matching links",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#find-matching-links",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-matching-links\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find matching links</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate④\">document rule predicate</a> <var>predicate</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>links</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-matching-links\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find matching links</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <var>document</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate④\">document rule predicate</a> <var>predicate</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>descendant</var> is not an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element\" id=\"ref-for-the-a-element\">a</a></code> with an <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href\" id=\"ref-for-attr-hyperlink-href\">href</a></code> attribute or <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element\" id=\"ref-for-the-area-element\">area</a></code> element with an <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href\" id=\"ref-for-attr-hyperlink-href①\">href</a></code> attribute, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>descendant</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered\">being rendered</a> or is part of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents\">skipped contents</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>url</var> be <var>descendant</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\" id=\"ref-for-concept-hyperlink-url\">url</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>url</var> is null, or its <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme①\">HTTP(S) scheme</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>predicate</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate-matches\" id=\"ref-for-document-rule-predicate-matches\">matches</a> <var>descendant</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">append</a> <var>descendant</var> to <var>links</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>links</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compute a speculative action referrer policy",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#compute-a-speculative-action-referrer-policy",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-a-speculative-action-referrer-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute a speculative action referrer policy</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule\" id=\"ref-for-speculation-rule④\">speculation rule</a> <var>rule</var> and an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element\" id=\"ref-for-the-a-element①\">a</a></code> element, an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element\" id=\"ref-for-the-area-element①\">area</a></code> element, or null <var>link</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-referrer-policy\" id=\"ref-for-speculation-rule-referrer-policy①\">referrer policy</a> is not the empty string, then return <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-referrer-policy\" id=\"ref-for-speculation-rule-referrer-policy②\">referrer policy</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>link</var> is null, then return the empty string.</p>"
+        },
+        {
+          "html": "<p>If <var>link</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel\" id=\"ref-for-attr-hyperlink-rel\">rel</a></code> attribute includes the <code><a data-link-type=\"attr-value\" href=\"https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer\" id=\"ref-for-link-type-noreferrer\">noreferrer</a></code> keyword, then return \"<code>no-referrer</code>\".</p>"
+        },
+        {
+          "html": "<p>Otherwise, return the current state of <var>link</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy\" id=\"ref-for-attr-hyperlink-referrerpolicy\">referrerpolicy</a></code> content attribute.</p>"
+        }
+      ]
+    },
+    {
+      "name": "consider speculation",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#consider-speculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#await-a-stable-state\" id=\"ref-for-await-a-stable-state\">Await a stable state</a>. Steps in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\" id=\"ref-for-synchronous-section\">synchronous section</a> are marked with ⌛.</p>"
+        },
+        {
+          "html": "<p>⌛ If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return.</p>"
+        },
+        {
+          "html": "<p>⌛ Let <var>prefetchCandidates</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a>.</p>"
+        },
+        {
+          "html": "<p>⌛ Let <var>prerenderCandidates</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+          "rationale": "/^⌛/",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+              "rationale": "/^⌛/",
+              "steps": [
+                {
+                  "html": "<p>⌛ Let <var>anonymizationPolicy</var> be null.</p>"
+                },
+                {
+                  "html": "<p>⌛ If <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-requirements\" id=\"ref-for-speculation-rule-requirements②\">requirements</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> \"<code>anonymous-client-ip-when-cross-origin</code>\", set <var>anonymizationPolicy</var> to a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#cross-origin-prefetch-ip-anonymization-policy\" id=\"ref-for-cross-origin-prefetch-ip-anonymization-policy\">cross-origin prefetch IP anonymization policy</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#cross-origin-prefetch-ip-anonymization-policy-origin\" id=\"ref-for-cross-origin-prefetch-ip-anonymization-policy-origin\">origin</a> is <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a>.</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                  "rationale": "/^⌛/",
+                  "steps": [
+                    {
+                      "html": "<p>⌛ Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#compute-a-speculative-action-referrer-policy\" id=\"ref-for-compute-a-speculative-action-referrer-policy\">computing a speculative action referrer policy</a> given <var>rule</var> and null.</p>"
+                    },
+                    {
+                      "html": "<p>⌛ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate\" id=\"ref-for-prefetch-candidate①\">prefetch candidate</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-url\" id=\"ref-for-prefetch-candidate-url①\">URL</a> <var>url</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-anonymization-policy\" id=\"ref-for-prefetch-candidate-anonymization-policy①\">anonymization policy</a> <var>anonymizationPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-referrer-policy\" id=\"ref-for-prefetch-candidate-referrer-policy\">referrer policy</a> <var>referrerPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness\">eagerness</a> <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-eagerness\" id=\"ref-for-speculation-rule-eagerness①\">eagerness</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-no-vary-search-hint\" id=\"ref-for-prefetch-candidate-no-vary-search-hint\">No-Vary-Search hint</a> <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-no-vary-search-hint\" id=\"ref-for-speculation-rule-no-vary-search-hint①\">No-Vary-Search hint</a> to <var>prefetchCandidates</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                  "rationale": "/^⌛/",
+                  "steps": [
+                    {
+                      "html": "<p>⌛ Let <var>links</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#find-matching-links\" id=\"ref-for-find-matching-links\">finding matching links</a> given <var>document</var> and <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-predicate\" id=\"ref-for-speculation-rule-predicate②\">predicate</a>.</p>"
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                      "rationale": "/^⌛/",
+                      "steps": [
+                        {
+                          "html": "<p>⌛ Let <var>url</var> be <var>link</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\" id=\"ref-for-concept-hyperlink-url①\">url</a>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#compute-a-speculative-action-referrer-policy\" id=\"ref-for-compute-a-speculative-action-referrer-policy①\">computing a speculative action referrer policy</a> given <var>rule</var> and <var>link</var>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate\" id=\"ref-for-prefetch-candidate②\">prefetch candidate</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-url\" id=\"ref-for-prefetch-candidate-url②\">URL</a> <var>url</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-anonymization-policy\" id=\"ref-for-prefetch-candidate-anonymization-policy②\">anonymization policy</a> <var>anonymizationPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-referrer-policy\" id=\"ref-for-prefetch-candidate-referrer-policy①\">referrer policy</a> <var>referrerPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness①\">eagerness</a> <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-eagerness\" id=\"ref-for-speculation-rule-eagerness②\">eagerness</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-no-vary-search-hint\" id=\"ref-for-prefetch-candidate-no-vary-search-hint①\">No-Vary-Search hint</a> <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-no-vary-search-hint\" id=\"ref-for-speculation-rule-no-vary-search-hint②\">No-Vary-Search hint</a> to <var>prefetchCandidates</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+              "rationale": "/^⌛/",
+              "steps": [
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                  "rationale": "/^⌛/",
+                  "steps": [
+                    {
+                      "html": "<p>⌛ Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#compute-a-speculative-action-referrer-policy\" id=\"ref-for-compute-a-speculative-action-referrer-policy②\">computing a speculative action referrer policy</a> given <var>rule</var> and null.</p>"
+                    },
+                    {
+                      "html": "<p>⌛ Let <var>prerenderCandidate</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate\" id=\"ref-for-prerender-candidate\">prerender candidate</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-url\" id=\"ref-for-prerender-candidate-url\">URL</a> is <var>url</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint\">target navigable name hint</a> is <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint②\">target navigable name hint</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-referrer-policy\" id=\"ref-for-prerender-candidate-referrer-policy\">referrer policy</a> is <var>referrerPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-eagerness\" id=\"ref-for-prerender-candidate-eagerness\">eagerness</a> is <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-eagerness\" id=\"ref-for-speculation-rule-eagerness③\">eagerness</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-no-vary-search-hint\" id=\"ref-for-prerender-candidate-no-vary-search-hint\">No-Vary-Search hint</a> is <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-no-vary-search-hint\" id=\"ref-for-speculation-rule-no-vary-search-hint③\">No-Vary-Search hint</a>.</p>"
+                    },
+                    {
+                      "html": "<p>⌛ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <var>prerenderCandidate</var> to <var>prerenderCandidates</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                  "rationale": "/^⌛/",
+                  "steps": [
+                    {
+                      "html": "<p>⌛ Let <var>links</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#find-matching-links\" id=\"ref-for-find-matching-links①\">finding matching links</a> given <var>document</var> and <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-predicate\" id=\"ref-for-speculation-rule-predicate④\">predicate</a>.</p>"
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+                      "rationale": "/^⌛/",
+                      "steps": [
+                        {
+                          "html": "<p>⌛ Let <var>url</var> be the <var>link</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\" id=\"ref-for-concept-hyperlink-url②\">url</a>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ Let <var>target</var> be <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint③\">target navigable name hint</a>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ If <var>target</var> is null, set it to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#get-an-element's-target\" id=\"ref-for-get-an-element's-target\">getting an element’s target</a> given <var>link</var>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#compute-a-speculative-action-referrer-policy\" id=\"ref-for-compute-a-speculative-action-referrer-policy③\">computing a speculative action referrer policy</a> given <var>rule</var> and <var>link</var>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ Let <var>prerenderCandidate</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate\" id=\"ref-for-prerender-candidate①\">prerender candidate</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-url\" id=\"ref-for-prerender-candidate-url①\">URL</a> is <var>url</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint①\">target navigable name hint</a> is <var>target</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-referrer-policy\" id=\"ref-for-prerender-candidate-referrer-policy①\">referrer policy</a> is <var>referrerPolicy</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-eagerness\" id=\"ref-for-prerender-candidate-eagerness①\">eagerness</a> is <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-eagerness\" id=\"ref-for-speculation-rule-eagerness④\">eagerness</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate-no-vary-search-hint\" id=\"ref-for-prerender-candidate-no-vary-search-hint①\">No-Vary-Search hint</a> is <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#speculation-rule-no-vary-search-hint\" id=\"ref-for-speculation-rule-no-vary-search-hint④\">No-Vary-Search hint</a>.</p>"
+                        },
+                        {
+                          "html": "<p>⌛ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <var>prerenderCandidate</var> to <var>prerenderCandidates</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+          "rationale": "/^⌛/",
+          "steps": [
+            {
+              "html": "<p>⌛ If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-label\" id=\"ref-for-prefetch-record-label①\">label</a> is not \"<code>speculation-rules</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>⌛ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state①\">state</a> is not \"<code>canceled</code>\".</p>"
+            },
+            {
+              "html": "<p>⌛ If no element of <var>prefetchCandidates</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-continues\" id=\"ref-for-prefetch-candidate-continues\">continues</a> <var>prefetchRecord</var>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard\">cancel and discard</a> <var>prefetchRecord</var> given <var>document</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>End the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\" id=\"ref-for-synchronous-section①\">synchronous section</a>, continuing the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+          "rationale": "run the following steps",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consider-speculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consider speculation</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①⓪\">document</a> <var>document</var>: \n    \n    <p>When selecting among <var>prefetchCandidates</var> and <var>prerenderCandidates</var>, user agents should consider their <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-eagerness\" id=\"ref-for-prefetch-candidate-eagerness②\">eagerness</a>, in accordance with the following:</p>\n    <dl>\n     <dt data-md=\"\">\"<code>immediate</code>\"\n     </dt><dd data-md=\"\">\n      <p>The author believes this is very likely to be worthwhile, and might also expect it to require significant lead time to complete. User agents should usually enact the candidate as soon as practical, subject only to considerations such as user preferences, device conditions, and resource limits.</p>\n     </dd><dt data-md=\"\">\"<code>eager</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate on even a slight suggestion that the user may navigate to this URL in the future. For instance, the user might have moved the cursor toward a link or hovered it, even momentarily, or paused scrolling when the link is one of the more prominent ones in the viewport. The author is seeking to capture as many navigations as possible, as early as possible.</p>\n     </dd><dt data-md=\"\">\"<code>moderate</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate if user behavior suggests the user may navigate to this URL in the near future. For instance, the user might have scrolled a link into the viewport and moved the cursor over it for some time. The author is seeking a balance between \"<code>eager</code>\" and \"<code>conservative</code>\".</p>\n     </dd><dt data-md=\"\">\"<code>conservative</code>\"\n     </dt><dd data-md=\"\">\n      <p>User agents should enact the candidate only when the user is very likely to navigate to this URL at any moment. For instance, the user might have begun to interact with a link. The author is seeking to capture some of the benefits of speculative loading with a fairly small tradeoff of resources.</p>\n    </dd></dl>\n    \n    <p>Notwithstanding the above, user agents should prioritize user preferences (express and implied, such as a low-data-usage mode) over eagerness expressed by the author.</p>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>prefetchRecord</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record①\">prefetch record</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url\">URL</a> is <var>prefetchCandidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-url\" id=\"ref-for-prefetch-candidate-url③\">URL</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy①\">anonymization policy</a> is <var>prefetchCandidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-anonymization-policy\" id=\"ref-for-prefetch-candidate-anonymization-policy③\">anonymization policy</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy\">referrer policy</a> is <var>prefetchCandidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-referrer-policy\" id=\"ref-for-prefetch-candidate-referrer-policy②\">referrer policy</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint\">No-Vary-Search hint</a> is <var>prefetchCandidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#prefetch-candidate-no-vary-search-hint\" id=\"ref-for-prefetch-candidate-no-vary-search-hint②\">No-Vary-Search hint</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-label\" id=\"ref-for-prefetch-record-label②\">label</a> is \"<code>speculation-rules</code>\".</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch\" id=\"ref-for-prefetch\">Prefetch</a> given <var>document</var> and <var>prefetchRecord</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>prerenderCandidate</var> of <var>prerenderCandidates</var>:</p>",
+          "ignored": [
+            "The user agent may start referrer-initiated prerendering given prerenderCandidate’s URL, document, prerenderCandidate’s referrer policy, and prerenderCandidate’s No-Vary-Search hint. The user agent can use prerenderCandidate’s target navigable name hint as a hint to their implementation of the start referrer-initiated prerendering algorithm. This hint indicates that the web developer expects the eventual activation of the created prerendering traversable to be in place of a particular predecessor traversable: the one that would be chosen by the invoking the rules for choosing a navigable given prerenderCandidate’s target navigable name hint and document’s node navigable."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "document rule predicate/matches",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate-matches",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>clause</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate-matches\" id=\"ref-for-document-rule-predicate-matches①\">match</a> <var>el</var>, return false.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>clause</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate-matches\" id=\"ref-for-document-rule-predicate-matches②\">matches</a> <var>el</var>, return true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>predicate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-negation-clause\" id=\"ref-for-document-rule-negation-clause①\">clause</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate-matches\" id=\"ref-for-document-rule-predicate-matches③\">matches</a> <var>el</var>, return false.</p>"
+            },
+            {
+              "html": "<p>Return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>href</var> be the result of running <var>el</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-href\" id=\"ref-for-dom-hyperlink-href\">href</a></code> getter steps.</p>"
+            },
+            {
+              "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+              "rationale": "perform",
+              "steps": [
+                {
+                  "html": "<p>Perform a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match\">match</a> given <var>pattern</var> and <var>href</var>. If the result is not null, return true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#document-rule-predicate\" id=\"ref-for-document-rule-predicate⑤\">document rule predicate</a> <var>predicate</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"document rule predicate\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-rule-predicate-matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var> implementing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils\" id=\"ref-for-htmlhyperlinkelementutils\">HTMLHyperlinkElementUtils</a></code> mixin if the following steps return true:",
+              "rationale": "match",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#match-a-selector-against-an-element\" id=\"ref-for-match-a-selector-against-an-element\">Match</a> <var>selector</var> against <var>el</var> with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#scoping-root\" id=\"ref-for-scoping-root\">scoping root</a> set to <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a>. If the result is true, return true.</p>\n          <p>During this step, user agents must apply the same privacy restrictions to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/selectors-4/#visited-pseudo\" id=\"ref-for-visited-pseudo\">:visited</a> pseudo-class as they would to other selector matching logic that could be observed by authors (e.g., <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-parentnode-queryselector\" id=\"ref-for-dom-parentnode-queryselector\">querySelector(selectors)</a></code>).</p>\n          <div class=\"advisement\"> This is important to prevent this from opening an avenue for attackers to gather information about a user’s browsing history, e.g., by using a selector such as <code>:root:has(.sensitive-site:visited) .report-sensitive-site</code>. See the <a href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#privacy-visited-links\">Privacy Considerations</a> section. </div>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: This step is not reached.</p>"
+        }
+      ]
+    },
+    {
+      "name": "prerender candidate",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerender-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prerender candidate</dfn> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct④\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item⑨\">items</a>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>expression</var> of list:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source①\"><code>nonce-source</code></a> or <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source①\"><code>hash-source</code></a> grammar, return \"<code>Does Not Allow</code>\".</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#type\" id=\"ref-for-type②\"><code>type</code></a> is \"<code>script</code>\", \"<code>script attribute</code>\" or \"<code>navigation</code>\"\n  and <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source\">keyword-source</a> \"<a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic\"><code>'strict-dynamic'</code></a>\", return \"<code>Does Not Allow</code>\".</p>"
+            },
+            {
+              "html": "<ins>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#type\" id=\"ref-for-type③\"><code>type</code></a> is \"<code>script speculationrules</code>\" and <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source①\">keyword-source</a> \"<a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-inline-speculation-rules\" id=\"ref-for-grammardef-inline-speculation-rules\"><code>'inline-speculation-rules'</code></a>\",\n  set <code>allow all inline</code> to <code>true</code>.</ins>"
+            },
+            {
+              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source②\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline\"><code>'unsafe-inline'</code></a>\",\n  set <code>allow all inline</code> to <code>true</code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prerender candidate",
+      "href": "https://wicg.github.io/nav-speculation/speculation-rules.html#prerender-candidate",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerender-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prerender candidate</dfn> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct④\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item⑨\">items</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#type\" id=\"ref-for-type④\"><code>type</code></a> is \"<code>script</code>\",\n      <ins> \"<code>script speculationrules</code>\",</ins>\n       or \"<code>style</code>\", and <a href=\"https://w3c.github.io/webappsec-csp/#is-element-nonceable\"><cite>Content Security Policy 3</cite> § 6.7.3.1 Is element nonceable?</a> returns \"<code>Nonceable</code>\" when executed upon <var>element</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>expression</var> of <var>list</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source②\"><code>nonce-source</code></a> grammar,\n  and <var>element</var> has a <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce\" id=\"ref-for-attr-nonce\">nonce</a></code> attribute whose value <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-base64-value\" id=\"ref-for-grammardef-base64-value\"><code>base64-value</code></a> part,\n  return \"<code>Matches</code>\".</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>unsafe-hashes flag</var> be <code>false</code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>expression</var> of <var>list</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expression</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive③\">ASCII case-insensitive</a> match for the <a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source③\"><code>keyword-source</code></a> \"<a data-link-type=\"grammar\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#grammardef-unsafe-hashes\" id=\"ref-for-grammardef-unsafe-hashes\"><code>'unsafe-hashes'</code></a>\",\n  set <var>unsafe-hashes flag</var> to <code>true</code>. Break out of the loop.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n      If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/speculation-rules.html#type\" id=\"ref-for-type⑤\"><code>type</code></a> is \"<code>script</code>\",\n      <ins> \"<code>script speculationrules</code>\",</ins>\n       \"<code>style</code>\",\n  or <var>unsafe-hashes flag</var> is <code>true</code>:\n     </p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <code>script-src</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

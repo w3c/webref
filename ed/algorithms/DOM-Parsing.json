@@ -1,0 +1,644 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://w3c.github.io/DOM-Parsing/"
+  },
+  "algorithms": [
+    {
+      "name": "XML serialization",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization",
+      "html": "To produce an <dfn id=\"dfn-xml-serialization\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">XML serialization</dfn> of a <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-11\">Node</a></code> <var>node</var> given\n  a flag <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-2\"><dfn id=\"dfn-require-well-formed\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">require well-formed</dfn></a>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-1\"><var>namespace</var></a> be a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-context-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-context-namespace-1\">context namespace</a> with value <code>null</code>.\n    The <dfn id=\"dfn-context-namespace\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">context namespace</dfn> tracks the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-4\">XML serialization</a> algorithm's current default\n    namespace. The <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-context-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-context-namespace-2\">context namespace</a> is changed when either an <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-5\">Element</a> <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-12\">Node</a> has\n    a default namespace declaration, or the algorithm generates a default namespace declaration for\n    the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-6\">Element</a> <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-13\">Node</a> to match its own namespace. The algorithm assumes no namespace\n    (<code>null</code>) to start."
+        },
+        {
+          "html": "Let <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-map-1\"><var>prefix map</var></a> be a new <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-1\">namespace prefix map</a>."
+        },
+        {
+          "html": "<a href=\"https://w3c.github.io/DOM-Parsing/#dfn-add\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-add-1\">Add</a> the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-namespace-1\">XML namespace</a> with prefix value \"<code>xml</code>\" to\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-map-2\"><var>prefix map</var></a>."
+        },
+        {
+          "html": "Let <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-1\"><var>prefix index</var></a> be a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generated-namespace-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generated-namespace-prefix-index-1\">generated namespace prefix index</a> with value\n    <code>1</code>. The <dfn id=\"dfn-generated-namespace-prefix-index\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">generated namespace prefix index</dfn> is used to generate a new unique\n    prefix value when no suitable existing namespace prefix is available to serialize a\n    <var>node</var>'s <code>namespaceURI</code> (or the <code>namespaceURI</code> of one of\n    <var>node</var>'s attributes)."
+        },
+        {
+          "html": "Return the result of running the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-algorithm-2\">XML serialization algorithm</a> on <var>node</var>\n    passing the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-context-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-context-namespace-3\">context namespace</a> <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-2\"><var>namespace</var></a>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-2\">namespace prefix map</a>\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-map-3\"><var>prefix map</var></a>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generated-namespace-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generated-namespace-prefix-index-2\">generated namespace prefix index</a> reference to\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-2\"><var>prefix index</var></a>, and the flag <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-3\"><var>require well-formed</var></a>. If an\n    <dfn data-lt=\"throw an exception|exception\" id=\"dfn-throw-an-exception\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">exception</dfn> occurs during the execution of the algorithm,\n    then catch that exception and throw an \"<code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-invalidstateerror\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalidstateerror-1\">InvalidStateError</a></code>\"\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-domexception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-domexception-1\">DOMException</a></code>."
+        }
+      ]
+    },
+    {
+      "name": "XML serialization algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm",
+      "html": "The <dfn id=\"dfn-xml-serialization-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">XML serialization algorithm</dfn>\n  <a data-lt=\"producing an XML serialization of a DOM node\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-producing-an-xml-serialization-of-a-dom-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-producing-an-xml-serialization-of-a-dom-node-1\">produces an XML serialization of an arbitrary DOM node</a>\n  <var>node</var> based on the <var>node</var>'s interface type. Each referenced algorithm is\n  to be passed the arguments as they were recieved by the caller and return their result to the\n  caller. Re-throw any exceptions. If <var>node</var>'s interface is:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "Element",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-an-element-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-an-element-node-1\">XML serializing an Element node</a> <var>node</var>."
+            },
+            {
+              "case": "Document",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-document-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-document-node-1\">XML serializing a Document node</a> <var>node</var>."
+            },
+            {
+              "case": "Comment",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-comment-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-comment-node-1\">XML serializing a Comment node</a> <var>node</var>."
+            },
+            {
+              "case": "Text",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-text-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-text-node-1\">XML serializing a Text node</a> <var>node</var>."
+            },
+            {
+              "case": "DocumentFragment",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-documentfragment-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-documentfragment-node-1\">XML serializing a DocumentFragment node</a> <var>node</var>."
+            },
+            {
+              "case": "DocumentType",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-documenttype-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-documenttype-node-1\">XML serializing a DocumentType node</a> <var>node</var>."
+            },
+            {
+              "case": "ProcessingInstruction",
+              "html": "Run the algorithm for <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-processinginstruction-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-processinginstruction-node-1\">XML serializing a ProcessingInstruction node</a> <var>node</var>."
+            },
+            {
+              "case": "An Attr object",
+              "html": "Return an empty string."
+            },
+            {
+              "case": "Anything else",
+              "html": "Throw a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-typeerror\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-typeerror-2\">TypeError</a>. Only <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-14\">Node</a>s and <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attribute-6\">Attr</a> objects can be serialized by\n    this algorithm."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-5\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>),\n    and this <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-1\">localName</a></code> attribute contains the character\n    \"<code>:</code>\" (U+003A COLON) or does not match the XML <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-name-1\">Name</a> production, then\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-1\">throw an exception</a>; the serialization of this <var>node</var> would not be a well-formed\n    element."
+        },
+        {
+          "html": "Let <var>markup</var> be the string \"<code>&lt;</code>\" (U+003C LESS-THAN SIGN)."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-qualified-name\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>qualified name</var></dfn> be an empty string."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-skip-end-tag\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>skip end tag</var></dfn> be a boolean flag with value <code>false</code>."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-ignore-namespace-definition-attribute\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>ignore namespace definition attribute</var></dfn> be a boolean flag with value\n    <code>false</code>."
+        },
+        {
+          "html": "Given <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-map-4\"><var>prefix map</var></a>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-copy-a-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-copy-a-namespace-prefix-map-1\">copy a namespace prefix map</a> and let\n    <var>map</var> be the result."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-local-prefixes-map\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>local prefixes map</var></dfn> be an empty map. The map has unique <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-15\">Node</a>\n    <code>prefix</code> strings as its keys, with corresponding <code>namespaceURI</code>\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-16\">Node</a> values as the map's key values (in this map, the <code>null</code> namespace is\n    represented by the empty string)."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-local-default-namespace\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>local default namespace</var></dfn> be the result of\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-recording-the-namespace-information\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-recording-the-namespace-information-1\">recording the namespace information</a> for <var>node</var> given <var>map</var> and\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-1\"><var>local prefixes map</var></a>."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-inherited-ns\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><var>inherited ns</var></dfn> be a copy of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-3\"><var>namespace</var></a>."
+        },
+        {
+          "html": "Let <var>ns</var> be the value of <var>node</var>'s\n    <code><a data-lt=\"element namespaceURI\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-1\">namespaceURI</a></code> attribute."
+        },
+        {
+          "html": "If <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-1\"><var>inherited ns</var></a> is equal to <var>ns</var>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-2\"><var>local default namespace</var></a> is not <code>null</code>, then set\n      <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ignore-namespace-definition-attribute-1\"><var>ignore namespace definition attribute</var></a> to <code>true</code>."
+            },
+            {
+              "html": "If <var>ns</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-namespace-2\">XML namespace</a>, then append to\n      <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-1\"><var>qualified name</var></a> the concatenation of the string \"<code>xml:</code>\" and the\n      value of <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-2\">localName</a></code>."
+            },
+            {
+              "html": "Otherwise, append to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-2\"><var>qualified name</var></a> the value of <var>node</var>'s\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-3\">localName</a></code>."
+            },
+            {
+              "html": "Append the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-3\"><var>qualified name</var></a> to <var>markup</var>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-2\"><var>inherited ns</var></a> is not equal to <var>ns</var> (the <var>node</var>'s\n    own namespace is different from the context namespace of its parent). Run these sub-steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>prefix</var> be the value of <var>node</var>'s\n      <code><a data-lt=\"element prefix\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-2\">prefix</a></code> attribute."
+            },
+            {
+              "html": "Let <var>candidate prefix</var> be the result of\n      <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-retrieving-a-preferred-prefix-string-1\">retrieving a preferred prefix string</a> <var>prefix</var> from <var>map</var> given\n      namespace <var>ns</var>."
+            },
+            {
+              "html": "If the value of <var>prefix</var> matches \"<code>xmlns</code>\", then run the following\n      steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-6\"><var>require well-formed</var></a> flag is set, then throw an error. An\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-10\">Element</a> with <code><a data-lt=\"element prefix\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-3\">prefix</a></code> \"<code>xmlns</code>\"\n        will not legally round-trip in a conforming <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-parser\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-parser-1\">XML parser</a>."
+                },
+                {
+                  "html": "Let <var>candidate prefix</var> be the value of <var>prefix</var>."
+                }
+              ]
+            },
+            {
+              "html": "<dfn id=\"dfn-found-a-suitable-namespace-prefix\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Found a suitable namespace prefix</dfn>: if <var>candidate prefix</var> is not\n      <code>null</code> (a namespace prefix is defined which maps to <var>ns</var>), then:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "Append to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-4\"><var>qualified name</var></a> the concatenation of\n        <var>candidate prefix</var>, \"<code>:</code>\" (U+003A COLON), and <var>node</var>'s <code>\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-4\">localName</a></code>."
+                },
+                {
+                  "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-3\"><var>local default namespace</var></a> is not <code>null</code> (there exists\n        a locally-defined default namespace declaration attribute) and its value is not the\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-namespace-3\">XML namespace</a>, then let <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-3\"><var>inherited ns</var></a> get the value of\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-4\"><var>local default namespace</var></a> unless the\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-5\"><var>local default namespace</var></a> is the empty string in which case let it get\n        <code>null</code> (the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-context-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-context-namespace-5\">context namespace</a> is changed to the declared default, rather\n        than this <var>node</var>'s own namespace)."
+                },
+                {
+                  "html": "Append the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-5\"><var>qualified name</var></a> to <var>markup</var>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>prefix</var> is not <code>null</code>, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-3\"><var>local prefixes map</var></a> contains a key matching <var>prefix</var>,\n        then let <var>prefix</var> be the result of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generating-a-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generating-a-prefix-3\">generating a prefix</a> providing as input\n        <var>map</var>, <var>ns</var>, and <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-3\">prefix index</a>."
+                },
+                {
+                  "html": "<a href=\"https://w3c.github.io/DOM-Parsing/#dfn-add\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-add-2\">Add</a> <var>prefix</var> to <var>map</var> given namespace <var>ns</var>."
+                },
+                {
+                  "html": "Append to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-6\"><var>qualified name</var></a> the concatenation of <var>prefix</var>,\n        \"<code>:</code>\" (U+003A COLON), and <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-5\">localName</a></code>."
+                },
+                {
+                  "html": "Append the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-7\"><var>qualified name</var></a> to <var>markup</var>."
+                },
+                {
+                  "html": "Append the following to <var>markup</var>, in the order listed:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "\"<code> </code>\" (U+0020 SPACE);"
+                    },
+                    {
+                      "html": "The string \"<code>xmlns:</code>\";"
+                    },
+                    {
+                      "html": "The value of <var>prefix</var>;"
+                    },
+                    {
+                      "html": "\"<code>=\"</code>\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK);"
+                    },
+                    {
+                      "html": "The result of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-serializing-an-attribute-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-serializing-an-attribute-value-1\">serializing an attribute value</a> given <var>ns</var> and the\n          <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-7\"><var>require well-formed</var></a> flag as input;"
+                    },
+                    {
+                      "html": "\"<code>\"</code>\" (U+0022 QUOTATION MARK)."
+                    },
+                    {
+                      "html": "If <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-6\"><var>local default namespace</var></a> is not <code>null</code> (there exists a\n          locally-defined default namespace declaration attribute), then let\n          <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-4\"><var>inherited ns</var></a> get the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-7\"><var>local default namespace</var></a>\n          unless the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-8\"><var>local default namespace</var></a> is the empty string in which case let\n          it get <code>null</code>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-9\"><var>local default namespace</var></a> is <code>null</code>, or\n      <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-10\"><var>local default namespace</var></a> is not <code>null</code> and its value is not equal\n      to <var>ns</var>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ignore-namespace-definition-attribute-2\"><var>ignore namespace definition attribute</var></a> flag to\n        <code>true</code>."
+                },
+                {
+                  "html": "Append to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-8\"><var>qualified name</var></a> the value of <var>node</var>'s\n        <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-6\">localName</a></code>."
+                },
+                {
+                  "html": "Let the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-5\"><var>inherited ns</var></a> be <var>ns</var>."
+                },
+                {
+                  "html": "Append the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-9\"><var>qualified name</var></a> to <var>markup</var>."
+                },
+                {
+                  "html": "Append the following to <var>markup</var>, in the order listed:",
+                  "ignored": [
+                    "\" \" (U+0020 SPACE); The string \"xmlns\"; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given ns and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, the <var>node</var> has a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-default-namespace-11\"><var>local default namespace</var></a> that matches\n      <var>ns</var>. Append to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-10\"><var>qualified name</var></a> the value of <var>node</var>'s\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-7\">localName</a></code>, let the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-6\"><var>inherited ns</var></a> be <var>ns</var>,\n      and append the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-qualified-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-qualified-name-11\"><var>qualified name</var></a> to <var>markup</var>."
+            }
+          ]
+        },
+        {
+          "html": "Append to <var>markup</var> the result of the\n    <a data-lt=\"XML serialization of the attributes\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-of-the-attributes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-of-the-attributes-2\">XML serialization of <var>node</var>'s attributes</a>\n    given <var>map</var>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-4\"><var>prefix index</var></a>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-4\"><var>local prefixes map</var></a>,\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ignore-namespace-definition-attribute-3\"><var>ignore namespace definition attribute</var></a> flag, and\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-9\"><var>require well-formed</var></a> flag."
+        },
+        {
+          "html": "If <var>ns</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-html-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-html-namespace-3\">HTML namespace</a>, and the <var>node</var>'s list of\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-child\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-child-4\">children</a> is empty, and the <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-8\">localName</a></code> matches any\n    one of the following <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-void-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-void-elements-1\">void elements</a>:\n    \"<code>area</code>\",\n    \"<code>base</code>\",\n    \"<code>basefont</code>\",\n    \"<code>bgsound</code>\",\n    \"<code>br</code>\",\n    \"<code>col</code>\",\n    \"<code>embed</code>\",\n    \"<code>frame</code>\",\n    \"<code>hr</code>\",\n    \"<code>img</code>\",\n    \"<code>input</code>\",\n    \"<code>keygen</code>\",\n    \"<code>link</code>\",\n    \"<code>menuitem</code>\",\n    \"<code>meta</code>\",\n    \"<code>param</code>\",\n    \"<code>source</code>\",\n    \"<code>track</code>\",\n    \"<code>wbr</code>\";\n    then append the following to <var>markup</var>, in the order listed:\n    \n    and set the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-skip-end-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-skip-end-tag-1\"><var>skip end tag</var></a> flag to <code>true</code>.",
+          "ignored": [
+            "\" \" (U+0020 SPACE); \"/\" (U+002F SOLIDUS)."
+          ]
+        },
+        {
+          "html": "If <var>ns</var> is not the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-html-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-html-namespace-4\">HTML namespace</a>, and the <var>node</var>'s list of\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-child\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-child-5\">children</a> is empty, then append \"<code>/</code>\" (U+002F SOLIDUS) to <var>markup</var>\n    and set the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-skip-end-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-skip-end-tag-2\"><var>skip end tag</var></a> flag to <code>true</code>."
+        },
+        {
+          "html": "Append \"<code>&gt;</code>\" (U+003E GREATER-THAN SIGN) to <var>markup</var>."
+        },
+        {
+          "html": "If the value of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-skip-end-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-skip-end-tag-3\"><var>skip end tag</var></a> is <code>true</code>, then return the value of\n    <var>markup</var> and skip the remaining steps. The <var>node</var> is a leaf-node."
+        },
+        {
+          "html": "If <var>ns</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-html-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-html-namespace-5\">HTML namespace</a>, and the <var>node</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-9\">localName</a></code> matches the string \"<code>template</code>\", then this is a\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-template\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-template-1\">template</a></code> element. Append to <var>markup</var> the result of\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-documentfragment-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serializing-a-documentfragment-node-2\">XML serializing a DocumentFragment node</a> given the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-template\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-template-2\">template</a> element's\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-template-content\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-template-content-1\">template contents</a> (a <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-documentfragment\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-documentfragment-2\">DocumentFragment</a></code>), providing\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-8\"><var>inherited ns</var></a>, <var>map</var>, <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-5\"><var>prefix index</var></a>, and the\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-10\"><var>require well-formed</var></a> flag."
+        },
+        {
+          "html": "Otherwise, append to <var>markup</var> the result of running the\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-algorithm-3\">XML serialization algorithm</a> on each of <var>node</var>'s <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-child\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-child-6\">children</a>, in\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-tree-order\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tree-order-1\">tree order</a>, providing <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inherited-ns-9\"><var>inherited ns</var></a>, <var>map</var>,\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-6\"><var>prefix index</var></a>, and the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-11\"><var>require well-formed</var></a> flag."
+        },
+        {
+          "html": "Append the following to <var>markup</var>, in the order listed:",
+          "ignored": [
+            "\"</\" (U+003C LESS-THAN SIGN, U+002F SOLIDUS); The value of qualified name; \">\" (U+003E GREATER-THAN SIGN)."
+          ]
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    },
+    {
+      "name": "recording the namespace information",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-recording-the-namespace-information",
+      "html": "When <dfn id=\"dfn-recording-the-namespace-information\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">recording the namespace information</dfn> for an <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-12\">Element</a></code>\n  <var>element</var>, given a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-6\">namespace prefix map</a> <var>map</var> and a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-6\"><var>local prefixes map</var></a> (initially empty), the user agent must run the following\n  steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>default namespace attr value</var> be <code>null</code>."
+        },
+        {
+          "html": "<dfn id=\"dfn-main\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Main</dfn>: For each <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attribute-7\">attribute</a> <var>attr</var> in <var>element</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attributes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attributes-2\">attributes</a></code>, in the order they are specified in the <var>element</var>'s\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attributes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attributes-3\">attribute list</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>attribute namespace</var> be the value of <var>attr</var>'s\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-3\">namespaceURI</a></code> value."
+            },
+            {
+              "html": "Let <var>attribute prefix</var> be the value of <var>attr</var>'s\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-6\">prefix</a></code>."
+            },
+            {
+              "html": "If the <var>attribute namespace</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xmlns-namespace-2\">XMLNS namespace</a>, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>attribute prefix</var> is <code>null</code>, then <var>attr</var> is a default\n        namespace declaration. Set the <var>default namespace attr value</var> to <var>attr</var>'s\n        <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-1\">value</a></code> and stop running these steps, returning to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-main\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-main-1\">Main</a> to visit\n        the next attribute."
+                },
+                {
+                  "html": "Otherwise, the <var>attribute prefix</var> is not <code>null</code> and <var>attr</var>\n        is a namespace prefix definition. Run the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>prefix definition</var> be the value of <var>attr</var>'s\n          <code><a data-lt=\"attr localName\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-attr-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attr-localname-1\">localName</a></code>."
+                    },
+                    {
+                      "html": "Let <var>namespace definition</var> be the value of <var>attr</var>'s\n          <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-2\">value</a></code>."
+                    },
+                    {
+                      "html": "If <var>namespace definition</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-namespace-5\">XML namespace</a>, then stop running\n          these steps, and return to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-main\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-main-2\">Main</a> to visit the next attribute."
+                    },
+                    {
+                      "html": "If <var>namespace definition</var> is the empty string (the declarative form of\n          having no namespace), then let <var>namespace definition</var> be <code>null</code>\n          instead."
+                    },
+                    {
+                      "html": "If <var>prefix definition</var> is <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-found\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-found-1\">found</a> in <var>map</var> given the namespace\n          <var>namespace definition</var>, then stop running these steps, and return to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-main\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-main-3\">Main</a>\n          to visit the next attribute."
+                    },
+                    {
+                      "html": "<a href=\"https://w3c.github.io/DOM-Parsing/#dfn-add\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-add-3\">Add</a> the prefix <var>prefix definition</var> to <var>map</var> given namespace\n          <var>namespace definition</var>."
+                    },
+                    {
+                      "html": "Add the value of <var>prefix definition</var> as a new key to the\n          <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-7\"><var>local prefixes map</var></a>, with the <var>namespace definition</var> as the\n          key's value replacing the value of <code>null</code> with the empty string if applicable."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return the value of <var>default namespace attr value</var>."
+        }
+      ]
+    },
+    {
+      "name": "retrieving a preferred prefix string",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string",
+      "html": "To <dfn data-lt=\"retrieving a preferred prefix string|retrieve a preferred prefix string\" id=\"dfn-retrieving-a-preferred-prefix-string\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">retrieve a preferred prefix string</dfn>\n  <var>preferred prefix</var> from the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-9\">namespace prefix map</a> <var>map</var> given a namespace\n  <var>ns</var>, the user agent should:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>candidates list</var> be the result of retrieving a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-4\">list</a> from <var>map</var>\n    where there exists a key in <var>map</var> that matches the value of <var>ns</var> or if there\n    is no such key, then stop running these steps, and return the <code>null</code> value."
+        },
+        {
+          "html": "Otherwise, for each prefix value <var>prefix</var> in <var>candidates list</var>, iterating\n    from beginning to end:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>prefix</var> matches <var>preferred prefix</var>, then stop running these steps\n      and return <var>prefix</var>."
+            },
+            {
+              "html": "If <var>prefix</var> is the last item in the <var>candidates list</var>, then stop running\n      these steps and return <var>prefix</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "found",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-found",
+      "html": "To check if a prefix string <var>prefix</var> is <dfn id=\"dfn-found\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">found</dfn> in a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-10\">namespace prefix map</a> <var>map</var> given a namespace <var>ns</var>, the user agent should:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>candidates list</var> be the result of retrieving a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-5\">list</a> from <var>map</var>\n    where there exists a key in <var>map</var> that matches the value of <var>ns</var> or if there\n    is no such key, then stop running these steps, and return <code>false</code>."
+        },
+        {
+          "html": "If the value of <var>prefix</var> occurs at least once in <var>candidates list</var>, return\n    <code>true</code>, otherwise return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "name": "add",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-add",
+      "html": "To <dfn id=\"dfn-add\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">add</dfn> a prefix string <var>prefix</var> to the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-11\">namespace prefix map</a>\n  <var>map</var> given a namespace <var>ns</var>, the user agent should:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>candidates list</var> be the result of retrieving a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-6\">list</a> from <var>map</var>\n    where there exists a key in <var>map</var> that matches the value of <var>ns</var> or if there\n    is no such key, then let <var>candidates list</var> be <code>null</code>."
+        },
+        {
+          "html": "If <var>candidates list</var> is <code>null</code>, then create a new <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-7\">list</a> with\n    <var>prefix</var> as the only item in the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-8\">list</a>, and associate that <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-9\">list</a> with a new\n    key <var>ns</var> in <var>map</var>."
+        },
+        {
+          "html": "Otherwise, append <var>prefix</var> to the end of <var>candidates list</var>."
+        }
+      ]
+    },
+    {
+      "name": "XML serialization of the attributes",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-of-the-attributes",
+      "html": "The <dfn id=\"dfn-xml-serialization-of-the-attributes\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">XML serialization of the attributes</dfn> of an <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-13\">Element</a></code>\n  <var>element</var> together with a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-12\">namespace prefix map</a> <var>map</var>, a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generated-namespace-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generated-namespace-prefix-index-4\">generated namespace prefix index</a> <var>prefix index</var> reference, a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-8\">local prefixes map</a>, a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ignore-namespace-definition-attribute-4\"><var>ignore namespace definition attribute</var></a> flag, and a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-12\"><var>require well-formed</var></a> flag, is the result of the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be the empty string."
+        },
+        {
+          "html": "Let <var>localname set</var> be a new empty <var>namespace localname set</var>. This\n    <var>localname set</var> will contain tuples of unique attribute\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-4\">namespaceURI</a></code> and <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-10\">localName</a></code> pairs, and is populated as\n    each <var>attr</var> is processed."
+        },
+        {
+          "html": "<dfn id=\"dfn-loop\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Loop</dfn>: For each <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attribute-8\">attribute</a> <var>attr</var> in <var>element</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attributes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attributes-4\">attributes</a></code>, in the order they are specified in the <var>element</var>'s\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-attributes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attributes-5\">attribute list</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-13\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and the\n      <var>localname set</var> contains a tuple whose values match those of a new tuple consisting\n      of <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-6\">namespaceURI</a></code> attribute and\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-12\">localName</a></code> attribute, then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-2\">throw an exception</a>; the serialization of\n      this <var>attr</var> would fail to produce a well-formed element serialization."
+            },
+            {
+              "html": "Create a new tuple consisting of <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-7\">namespaceURI</a></code>\n      attribute and <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-13\">localName</a></code> attribute, and add it to the\n      <var>localname set</var>."
+            },
+            {
+              "html": "Let <var>attribute namespace</var> be the value of <var>attr</var>'s\n      <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespaceuri-8\">namespaceURI</a></code> value."
+            },
+            {
+              "html": "Let <var>candidate prefix</var> be <code>null</code>."
+            },
+            {
+              "html": "If <var>attribute namespace</var> is not <code>null</code>, then run these sub-steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>candidate prefix</var> be the result of\n        <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-retrieving-a-preferred-prefix-string-5\">retrieving a preferred prefix string</a> from <var>map</var> given namespace\n        <var>attribute namespace</var> with preferred prefix being <var>attr</var>'s\n        <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-7\">prefix</a></code> value."
+                },
+                {
+                  "html": "If the value of <var>attribute namespace</var> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xmlns-namespace-3\">XMLNS namespace</a>, then run\n        these steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If any of the following are true, then stop running these steps and goto <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-loop\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-loop-1\">Loop</a>\n          to visit the next attribute:\n          <ul>\n            <li>the <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-3\">value</a></code> is the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-namespace-8\">XML namespace</a>;\n\n            \n\n            </li><li>the <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-8\">prefix</a></code> is <code>null</code> and the\n            <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ignore-namespace-definition-attribute-5\"><var>ignore namespace definition attribute</var></a> flag is <code>true</code> (the\n            <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-14\">Element</a>'s default namespace attribute should be skipped);\n\n            </li><li>the <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-9\">prefix</a></code> is not <code>null</code> and either\n            <ul>\n              <li>the <var>attr</var>'s <code><a data-lt=\"attr localName\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-attr-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attr-localname-2\">localName</a></code> is\n              not a key contained in the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-9\">local prefixes map</a>, or\n\n              </li><li>the <var>attr</var>'s <code><a data-lt=\"attr localName\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-attr-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attr-localname-3\">localName</a></code> is\n               present in the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-prefixes-map-10\">local prefixes map</a> but the value of the key does not match\n               <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-4\">value</a></code>\n            </li></ul>\n            and furthermore that the <var>attr</var>'s\n            <code><a data-lt=\"attr localName\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-attr-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attr-localname-4\">localName</a></code> (as the <var>prefix</var> to\n            find) is <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-found\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-found-2\">found</a> in the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-13\">namespace prefix map</a> given the namespace consisting\n            of the <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-5\">value</a></code> (the current namespace prefix\n            definition was exactly defined previously--on an ancestor element not the current\n            element whose attributes are being processed).\n          </li></ul>"
+                    },
+                    {
+                      "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-14\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n          the value of <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-6\">value</a></code> attribute matches the\n          <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xmlns-namespace-4\">XMLNS namespace</a>, then throw an exception; the serialization of this attribute would\n          produce invalid XML because the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xmlns-namespace-5\">XMLNS namespace</a> is reserved and cannot be applied\n          as an element's namespace via XML parsing."
+                    },
+                    {
+                      "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-15\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n          the value of <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-7\">value</a></code> attribute is the empty string,\n          then throw an exception; namespace prefix declarations cannot be used to undeclare a\n          namespace (use a default namespace declaration instead)."
+                    },
+                    {
+                      "html": "the <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-10\">prefix</a></code> matches the string\n          \"<code>xmlns</code>\", then let <var>candidate prefix</var> be the string\n          \"<code>xmlns</code>\"."
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise, the <var>attribute namespace</var> in not the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xmlns-namespace-7\">XMLNS namespace</a>. Run\n        these steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>candidate prefix</var> be the result of <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generating-a-prefix\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generating-a-prefix-4\">generating a prefix</a> providing\n          <var>map</var>, <var>attribute namespace</var>, and <var>prefix index</var> as input."
+                    },
+                    {
+                      "html": "Append the following to <var>result</var>, in the order listed:",
+                      "ignored": [
+                        "\" \" (U+0020 SPACE); The string \"xmlns:\"; The value of candidate prefix; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given attribute namespace and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Append a \"<code> </code>\" (U+0020 SPACE) to <var>result</var>."
+            },
+            {
+              "html": "If <var>candidate prefix</var> is not <code>null</code>, then append to <var>result</var>\n      the concatenation of <var>candidate prefix</var> with \"<code>:</code>\" (U+003A COLON)."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-17\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and this\n      <var>attr</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-localname\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-localname-14\">localName</a></code> attribute contains the character\n      \"<code>:</code>\" (U+003A COLON) or does not match the XML <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-name-2\">Name</a> production or equals\n      \"<code>xmlns</code>\" and <var>attribute namespace</var> is <code>null</code>, then\n      <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-3\">throw an exception</a>; the serialization of this <var>attr</var> would not be a\n      well-formed attribute."
+            },
+            {
+              "html": "Append the following strings to <var>result</var>, in the order listed:",
+              "ignored": [
+                "The value of attr's localName; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given attr's value attribute and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return the value of <var>result</var>."
+        }
+      ]
+    },
+    {
+      "name": "serializing an attribute value",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-serializing-an-attribute-value",
+      "html": "When <dfn id=\"dfn-serializing-an-attribute-value\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">serializing an attribute value</dfn> given an <var>attribute value</var> and\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-19\"><var>require well-formed</var></a> flag, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-20\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n    <var>attribute value</var> contains characters that are not matched by the XML <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-char\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-char-1\">Char</a>\n    production, then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-4\">throw an exception</a>; the serialization of this <var>attribute value</var>\n    would fail to produce a well-formed element serialization."
+        },
+        {
+          "html": "If <var>attribute value</var> is <code>null</code>, then return the empty string."
+        },
+        {
+          "html": "Otherwise, <var>attribute value</var> is a string. Return the value of\n    <var>attribute value</var>, first replacing any occurrences of the following:",
+          "ignored": [
+            "\"&\" with \"&amp;\" \"\"\" with \"&quot;\" \"<\" with \"&lt;\" \">\" with \"&gt;\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "generating a prefix",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-generating-a-prefix",
+      "html": "To <dfn data-lt=\"generating a prefix|generate a prefix\" id=\"dfn-generating-a-prefix\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">generate a prefix</dfn> given a\n  <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-prefix-map-14\">namespace prefix map</a> <var>map</var>, a string <var>new namespace</var>, and a reference to\n  a <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-generated-namespace-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generated-namespace-prefix-index-5\">generated namespace prefix index</a> <var>prefix index</var>, the user agent must run the\n  following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>generated prefix</var> be the concatenation of the string \"<code>ns</code>\" and the\n    current numerical value of <var>prefix index</var>."
+        },
+        {
+          "html": "Let the value of <var>prefix index</var> be incremented by one."
+        },
+        {
+          "html": "<a href=\"https://w3c.github.io/DOM-Parsing/#dfn-add\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-add-4\">Add</a> to <var>map</var> the <var>generated prefix</var> given the\n    <var>new namespace</var> namespace."
+        },
+        {
+          "html": "Return the value of <var>generated prefix</var>."
+        }
+      ]
+    },
+    {
+      "html": "Otherwise, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>serialized document</var> be an empty string."
+        },
+        {
+          "html": "For each <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-child\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-child-7\">child</a> <var>child</var> of <var>node</var>, in <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-tree-order\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tree-order-2\">tree order</a>, run the\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-algorithm-4\">XML serialization algorithm</a> on the <var>child</var> passing along the provided arguments,\n    and append the result to <var>serialized document</var>."
+        },
+        {
+          "html": "Return the value of <var>serialized document</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-23\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-4\">data</a></code> contains characters that are not matched by the XML\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-char\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-char-3\">Char</a> production, then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-7\">throw an exception</a>; the serialization of this\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-5\">data</a></code> would not be well-formed."
+        },
+        {
+          "html": "Let <var>markup</var> be the value of <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-6\">data</a></code>."
+        },
+        {
+          "html": "Replace any occurrences of \"<code>&amp;</code>\" in <var>markup</var> by\n    \"<code>&amp;amp;</code>\"."
+        },
+        {
+          "html": "Replace any occurrences of \"<code>&lt;</code>\" in <var>markup</var> by\n    \"<code>&amp;lt;</code>\"."
+        },
+        {
+          "html": "Replace any occurrences of \"<code>&gt;</code>\" in <var>markup</var> by\n    \"<code>&amp;gt;</code>\"."
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>markup</var> the empty string."
+        },
+        {
+          "html": "For each <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-child\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-child-8\">child</a> <var>child</var> of <var>node</var>, in <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-tree-order\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tree-order-3\">tree order</a>, run the\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-xml-serialization-algorithm-5\">XML serialization algorithm</a> on the <var>child</var> given <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-namespace\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-namespace-4\"><var>namespace</var></a>,\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-map-5\"><var>prefix map</var></a>, a reference to <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-prefix-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prefix-index-7\"><var>prefix index</var></a>, and flag\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-24\"><var>require well-formed</var></a>. Concatenate the result to <var>markup</var>."
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-25\"><var>require well-formed</var></a> flag is <code>true</code> and the <var>node</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-publicid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-publicid-1\">publicId</a></code> attribute contains characters that are not matched by the XML\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-pubidchar\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pubidchar-1\">PubidChar</a> production, then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-8\">throw an exception</a>; the serialization of this\n    <var>node</var> would not be a well-formed document type declaration."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-26\"><var>require well-formed</var></a> flag is <code>true</code> and the <var>node</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-systemid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-systemid-1\">systemId</a></code> attribute contains characters that are not matched by the XML\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-char\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-char-4\">Char</a> production or that contains both a \"<code>\"</code>\" (U+0022 QUOTATION MARK) and a\n    \"<code>'</code>\" (U+0027 APOSTROPHE), then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-9\">throw an exception</a>; the serialization of this\n    <var>node</var> would not be a well-formed document type declaration."
+        },
+        {
+          "html": "Let <var>markup</var> be an empty string."
+        },
+        {
+          "html": "Append the string \"<code>&lt;!DOCTYPE</code>\" to <var>markup</var>."
+        },
+        {
+          "html": "Append \"<code> </code>\" (U+0020 SPACE) to <var>markup</var>."
+        },
+        {
+          "html": "Append the value of the <var>node</var>'s <code><a data-lt=\"doctype name\" href=\"https://w3c.github.io/DOM-Parsing/#dfn-doctype-name\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-doctype-name-1\">name</a></code>\n    attribute to <var>markup</var>. For a <var>node</var> belonging to an <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-html-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-html-document-1\">HTML document</a>, the\n    value will be all lowercase."
+        },
+        {
+          "html": "If the <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-publicid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-publicid-2\">publicId</a></code> is not the empty string then append\n    the following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); The string \"PUBLIC\"; \" \" (U+0020 SPACE); \"\"\" (U+0022 QUOTATION MARK); The value of the node's publicId attribute; \"\"\" (U+0022 QUOTATION MARK)."
+          ]
+        },
+        {
+          "html": "If the <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-systemid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-systemid-2\">systemId</a></code> is not the empty string and the\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-publicid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-publicid-4\">publicId</a></code> is set to the empty string, then append the\n    following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); The string \"SYSTEM\"."
+          ]
+        },
+        {
+          "html": "If the <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-systemid\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-systemid-3\">systemId</a></code> is not the empty string then append\n    the following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); \"\"\" (U+0022 QUOTATION MARK); The value of the node's systemId attribute; \"\"\" (U+0022 QUOTATION MARK)."
+          ]
+        },
+        {
+          "html": "Append \"<code>&gt;</code>\" (U+003E GREATER-THAN SIGN) to <var>markup</var>."
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-27\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-target-1\">target</a></code> contains a \"<code>:</code>\" (U+003A COLON)\n    character or is an <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-ascii-case-insensitive\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ascii-case-insensitive-1\">ASCII case-insensitive</a> match for the string \"<code>xml</code>\", then\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-10\">throw an exception</a>; the serialization of this <var>node</var>'s\n    <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-target-2\">target</a></code> would not be well-formed."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-require-well-formed-28\"><var>require well-formed</var></a> flag is set (its value is <code>true</code>), and\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-7\">data</a></code> contains characters that are not matched by the XML\n    <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-char\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-char-5\">Char</a> production or contains the string \"<code>?&gt;</code>\" (U+003F QUESTION MARK,\n    U+003E GREATER-THAN SIGN), then <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-throw-an-exception-11\">throw an exception</a>; the serialization of this\n    <var>node</var>'s <code><a href=\"https://w3c.github.io/DOM-Parsing/#dfn-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-8\">data</a></code> would not be well-formed."
+        },
+        {
+          "html": "Let <var>markup</var> be the concatenation of the following, in the order listed:",
+          "ignored": [
+            "\"<?\" (U+003C LESS-THAN SIGN, U+003F QUESTION MARK); The value of node's target; \" \" (U+0020 SPACE); The value of node's data; \"?>\" (U+003F QUESTION MARK, U+003E GREATER-THAN SIGN)."
+          ]
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    }
+  ]
+}

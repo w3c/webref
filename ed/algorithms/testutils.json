@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "Test Utils Standard",
+    "url": "https://testutils.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://testutils.spec.whatwg.org/#dom-testutils-gc\" id=\"ref-for-dom-testutils-gc\">gc()</a></code> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Run the following <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:</p>\n     <p>2.1 Run <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> steps to perform a garbage collection\n    covering at least the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-entry-realm\" id=\"ref-for-concept-entry-realm\">entry Realm</a>.</p>\n     <p>2.2 Resolve <var>p</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

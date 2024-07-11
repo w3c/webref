@@ -1,0 +1,62 @@
+{
+  "spec": {
+    "title": "RFC 7231 - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content",
+    "url": "https://httpwg.org/specs/rfc7231.html"
+  },
+  "algorithms": [
+    {
+      "html": "For a response message, the following rules are applied in order until a match is found:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the request method is GET or HEAD and the response status code is <a href=\"https://httpwg.org/specs/rfc7231.html#status.200\" class=\"smpl\">200 (OK)</a>, <a href=\"https://httpwg.org/specs/rfc7231.html#status.204\" class=\"smpl\">204 (No Content)</a>, <a href=\"https://httpwg.org/specs/rfc7233.html#status.206\" class=\"smpl\">206 (Partial Content)</a>, or <a href=\"https://httpwg.org/specs/rfc7232.html#status.304\" class=\"smpl\">304 (Not Modified)</a>, the payload is a representation of the resource identified by the effective request URI (<a href=\"https://httpwg.org/specs/rfc7230.html#effective.request.uri\" title=\"Effective Request URI\">Section 5.5</a> of <a href=\"https://httpwg.org/specs/rfc7231.html#RFC7230\" id=\"rfc.xref.RFC7230.11\"><cite title=\"Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing\">[RFC7230]</cite></a>)."
+        },
+        {
+          "html": "If the request method is GET or HEAD and the response status code is <a href=\"https://httpwg.org/specs/rfc7231.html#status.203\" class=\"smpl\">203 (Non-Authoritative Information)</a>, the payload is a potentially modified or enhanced representation of the <a href=\"https://httpwg.org/specs/rfc7231.html#resources\" class=\"smpl\">target resource</a> as provided by an intermediary."
+        },
+        {
+          "html": "If the response has a <a href=\"https://httpwg.org/specs/rfc7231.html#header.content-location\" class=\"smpl\">Content-Location</a> header field and its field-value is a reference to the same URI as the effective request URI, the payload is a representation of the resource identified by the effective request URI."
+        },
+        {
+          "html": "If the response has a <a href=\"https://httpwg.org/specs/rfc7231.html#header.content-location\" class=\"smpl\">Content-Location</a> header field and its field-value is a reference to a URI different from the effective request URI, then the sender asserts that the payload is a representation of the resource identified by the Content-Location field-value. However, such an assertion cannot be trusted unless it can be verified by other means (not defined by this specification)."
+        },
+        {
+          "html": "Otherwise, the payload is unidentified."
+        }
+      ]
+    },
+    {
+      "html": "For example, if the target resource is configured to always have a <a href=\"https://httpwg.org/specs/rfc7231.html#header.content-type\" class=\"smpl\">Content-Type</a> of \"text/html\" and the representation being PUT has a Content-Type of \"image/jpeg\", the origin server ought to do one of:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "reconfigure the target resource to reflect the new media type;"
+        },
+        {
+          "html": "transform the PUT representation to a format consistent with that of the resource before saving it as the new resource state; or,"
+        },
+        {
+          "html": "reject the request with a <a href=\"https://httpwg.org/specs/rfc7231.html#status.415\" class=\"smpl\">415 (Unsupported Media Type)</a> response indicating that the target resource is limited to \"text/html\", perhaps including a link to a different resource that would be a suitable target for the new representation."
+        }
+      ]
+    },
+    {
+      "html": "A server tests whether a content-coding for a given representation is acceptable using these rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If no Accept-Encoding field is in the request, any content-coding is considered acceptable by the user agent."
+        },
+        {
+          "html": "If the representation has no content-coding, then it is acceptable by default unless specifically excluded by the Accept-Encoding field stating either \"identity;q=0\" or \"*;q=0\" without a more specific entry for \"identity\"."
+        },
+        {
+          "html": "If the representation's content-coding is one of the content-codings listed in the Accept-Encoding field, then it is acceptable unless it is accompanied by a qvalue of 0. (As defined in <a href=\"https://httpwg.org/specs/rfc7231.html#quality.values\" title=\"Quality Values\">Section 5.3.1</a>, a qvalue of 0 means \"not acceptable\".)"
+        },
+        {
+          "html": "If multiple content-codings are acceptable, then the acceptable content-coding with the highest non-zero qvalue is preferred."
+        }
+      ]
+    }
+  ]
+}

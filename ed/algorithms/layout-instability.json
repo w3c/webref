@@ -1,0 +1,125 @@
+{
+  "spec": {
+    "title": "Layout Instability API",
+    "url": "https://wicg.github.io/layout-instability/"
+  },
+  "algorithms": [
+    {
+      "html": "Within the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering\" id=\"ref-for-update-the-rendering\">update the rendering</a> step of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model\" id=\"ref-for-event-loop-processing-model\">event loop processing\nmodel</a>, a user agent implementing the Layout Instability API MUST perform the\nfollowing step after the step that invokes the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#mark-paint-timing\" id=\"ref-for-mark-paint-timing\">mark paint timing</a> algorithm:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each fully active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> in <em>docs</em>, invoke the algorithm to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#report-the-layout-shift\" id=\"ref-for-report-the-layout-shift②\">report the layout shift</a> for that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "report the layout shift",
+      "href": "https://wicg.github.io/layout-instability/#report-the-layout-shift",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-the-layout-shift\">report the layout shift</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> <var>D</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-the-layout-shift\">report the layout shift</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> <var>D</var>, run the following steps:",
+          "rationale": "create",
+          "steps": [
+            {
+              "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/layout-instability/#layoutshift\" id=\"ref-for-layoutshift①\">LayoutShift</a></code> object <var>newEntry</var> with <var>D</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name\">name</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"layout-shift\"</c-></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype\">entryType</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"layout-shift\"</c-></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime\">startTime</a></code> attribute to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current\nhigh resolution time</a> given <var>D</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration\">duration</a></code> attribute to 0.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShift\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshift-value\"><code class=\"highlight\">value</code></dfn> attribute to\nthe current <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#layout-shift-value\" id=\"ref-for-layout-shift-value⑥\">layout shift value</a> of <var>D</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShift\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshift-lastinputtime\"><code class=\"highlight\">lastInputTime</code></dfn> attribute to the time of the most recent <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#excluding-input\" id=\"ref-for-excluding-input\">excluding input</a>, or 0 if\nno excluding input has occurred during the browsing session.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShift\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshift-hadrecentinput\"><code class=\"highlight\">hadRecentInput</code></dfn> attribute to <code class=\"highlight\"><c- kc=\"\">true</c-></code> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/layout-instability/#dom-layoutshift-lastinputtime\" id=\"ref-for-dom-layoutshift-lastinputtime①\">lastInputTime</a></code> is less\nthan 500 milliseconds in the past, and <code class=\"highlight\"><c- kc=\"\">false</c-></code> otherwise.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShift\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshift-sources\"><code class=\"highlight\">sources</code></dfn> attribute\nto the result of invoking the algorithm to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#report-the-layout-shift-sources\" id=\"ref-for-report-the-layout-shift-sources\">report the layout shift\nsources</a> for <var>D</var>.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\">Queue the PerformanceEntry</a> <var>newEntry</var> object.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "report the layout shift sources",
+      "href": "https://wicg.github.io/layout-instability/#report-the-layout-shift-sources",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-the-layout-shift-sources\">report the layout shift sources</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>D</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>C</var> be an empty <a href=\"https://infra.spec.whatwg.org/#list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node①⑧\">Node</a></code> objects.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-the-layout-shift-sources\">report the layout shift sources</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>D</var>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If there exists any member <var>existingNode</var> of <var>C</var> such that the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region①\">node impact region</a> of <var>N</var> is a subset of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region②\">node impact region</a> of <var>existingNode</var>, then continue.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if there exists any member <var>existingNode</var> of <var>C</var> such\nthat the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region③\">node impact region</a> of <var>existingNode</var> is a subset\nof the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region④\">node impact region</a> of <var>N</var>, then <a href=\"https://infra.spec.whatwg.org/#list-replace\">replace</a> the first such member <var>existingNode</var> with <var>N</var> in <var>C</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if there are fewer than 5 members of <var>C</var>, then <a href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>N</var> to <var>C</var>.</p>"
+            },
+            {
+              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-the-layout-shift-sources\">report the layout shift sources</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>D</var>, run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>smallest</var> be the first member of <var>C</var> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region⑤\">node impact region</a> is not greater in area than\nthe <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region⑥\">node impact region</a> of any other member of <var>C</var>.</p>"
+                },
+                {
+                  "html": "<p>If the area of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region⑦\">node impact region</a> of <var>N</var> is\ngreater than the area of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#node-impact-region\" id=\"ref-for-node-impact-region⑧\">node impact region</a> of <var>smallest</var>, then <a href=\"https://infra.spec.whatwg.org/#list-replace\">replace</a> <var>smallest</var> with <var>N</var> in <var>C</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-frozen-array\" id=\"ref-for-idl-frozen-array①\">FrozenArray</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/layout-instability/#layoutshiftattribution\" id=\"ref-for-layoutshiftattribution④\">LayoutShiftAttribution</a></code> objects created\nby running the algorithm to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#create-the-attribution\" id=\"ref-for-create-the-attribution①\">create the attribution</a> once\nfor each member of <var>C</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create the attribution",
+      "href": "https://wicg.github.io/layout-instability/#create-the-attribution",
+      "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-the-attribution\">create the attribution</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node①⑨\">Node</a></code> <var>N</var>,\nrun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/layout-instability/#layoutshiftattribution\" id=\"ref-for-layoutshiftattribution⑤\">LayoutShiftAttribution</a></code> object <var>A</var> with <var>N</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#associated-node\" id=\"ref-for-associated-node②\">associated node</a> of <var>A</var> to <var>N</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShiftAttribution\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshiftattribution-previousrect\"><code class=\"highlight\">previousRect</code></dfn> attribute\nof <var>A</var> to the smallest <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle\" id=\"ref-for-rectangle\">Rectangle</a> containing the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#previous-frame-visual-representation\" id=\"ref-for-previous-frame-visual-representation②\">previous frame visual\nrepresentation</a> of <var>N</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LayoutShiftAttribution\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutshiftattribution-currentrect\"><code class=\"highlight\">currentRect</code></dfn> attribute\nof <var>A</var> to the smallest <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle\" id=\"ref-for-rectangle①\">Rectangle</a> containing the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#visual-representation\" id=\"ref-for-visual-representation③\">visual\nrepresentation</a> of <var>N</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>A</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

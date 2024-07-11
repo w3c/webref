@@ -1,0 +1,260 @@
+{
+  "spec": {
+    "title": "RFC 8288 - Web Linking",
+    "url": "https://httpwg.org/specs/rfc8288.html"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let field_values be a list containing the members of header_set whose field_name is a case-insensitive match for “link”."
+        },
+        {
+          "html": "Let links be an empty list."
+        },
+        {
+          "html": "For each field_value in field_values:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let value_links be the result of Parsing A Link Field Value (<a href=\"https://httpwg.org/specs/rfc8288.html#parse-fv\" title=\"Parsing a Link Field Value\">Appendix B.2</a>) from field_value."
+            },
+            {
+              "html": "Append each member of value_links to links."
+            }
+          ]
+        },
+        {
+          "html": "Return links."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let links be an empty list."
+        },
+        {
+          "html": "While field_value has content:",
+          "rationale": "consume",
+          "steps": [
+            {
+              "html": "Consume any leading OWS."
+            },
+            {
+              "html": "If the first character is not “&lt;”, return links."
+            },
+            {
+              "html": "Discard the first character (“&lt;”)."
+            },
+            {
+              "html": "Consume up to but not including the first “&gt;” character or end of field_value and let the result be target_string."
+            },
+            {
+              "html": "If the next character is not “&gt;”, return links."
+            },
+            {
+              "html": "Discard the leading “&gt;” character."
+            },
+            {
+              "html": "Let link_parameters be the result of Parsing Parameters (<a href=\"https://httpwg.org/specs/rfc8288.html#parse-param\" title=\"Parsing Parameters\">Appendix B.3</a>) from field_value (consuming zero or more characters of it)."
+            },
+            {
+              "html": "Let target_uri be the result of relatively resolving (as per <a href=\"https://httpwg.org/specs/rfc8288.html#RFC3986\"><cite title=\"Uniform Resource Identifier (URI): Generic Syntax\">[RFC3986]</cite></a>, Section 5.2) target_string. Note that any base URI carried in the payload body is NOT used."
+            },
+            {
+              "html": "Let relations_string be the second item of the first tuple of link_parameters whose first item matches the string “rel” or the empty string (“”) if it is not present."
+            },
+            {
+              "html": "Split relations_string on RWS (removing it in the process) into a list of string relation_types."
+            },
+            {
+              "html": "Let context_string be the second item of the first tuple of link_parameters whose first item matches the string “anchor”. If it is not present, context_string is the URL of the representation carrying the Link header <a href=\"https://httpwg.org/specs/rfc8288.html#RFC7231\"><cite title=\"Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content\">[RFC7231]</cite></a>, Section 3.1.4.1, serialised as a URI. Where the URL is anonymous, context_string is null."
+            },
+            {
+              "html": "Let context_uri be the result of relatively resolving (as per <a href=\"https://httpwg.org/specs/rfc8288.html#RFC3986\"><cite title=\"Uniform Resource Identifier (URI): Generic Syntax\">[RFC3986]</cite></a>, Section 5.2) context_string, unless context_string is null, in which case context is null. Note that any base URI carried in the payload body is NOT used."
+            },
+            {
+              "html": "Let target_attributes be an empty list."
+            },
+            {
+              "html": "For each tuple (param_name, param_value) of link_parameters:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If param_name matches “rel” or “anchor”, skip this tuple."
+                },
+                {
+                  "html": "If param_name matches “media”, “title”, “title*” or “type” and target_attributes already contains a tuple whose first element matches the value of param_name, skip this tuple."
+                },
+                {
+                  "html": "Append (param_name, param_value) to target_attributes."
+                }
+              ]
+            },
+            {
+              "html": "Let star_param_names be the set of param_names in the (param_name, param_value) tuples of link_parameters where the last character of param_name is an asterisk (“*”)."
+            },
+            {
+              "html": "For each star_param_name in star_param_names:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let base_param_name be star_param_name with the last character removed."
+                },
+                {
+                  "html": "If the implementation does not choose to support an internationalised form of a parameter named base_param_name for any reason (including, but not limited to, it being prohibited by the parameter’s specification), remove all tuples from link_parameters whose first member is star_param_name, and skip to the next star_param_name."
+                },
+                {
+                  "html": "Remove all tuples from link_parameters whose first member is base_param_name."
+                },
+                {
+                  "html": "Change the first member of all tuples in link_parameters whose first member is star_param_name to base_param_name."
+                }
+              ]
+            },
+            {
+              "html": "For each relation_type in relation_types:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "Case-normalise relation_type to lowercase."
+                },
+                {
+                  "html": "Append a link object to links with the target target_uri, relation type of relation_type, context of context_uri, and target attributes target_attributes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return links."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let parameters be an empty list."
+        },
+        {
+          "html": "While input has content:",
+          "rationale": "consume",
+          "steps": [
+            {
+              "html": "Consume any leading OWS."
+            },
+            {
+              "html": "If the first character is not “;”, return parameters."
+            },
+            {
+              "html": "Discard the leading “;” character."
+            },
+            {
+              "html": "Consume any leading OWS."
+            },
+            {
+              "html": "Consume up to but not including the first BWS, “=”, “;”, “,” character or end of input and let the result be parameter_name."
+            },
+            {
+              "html": "Consume any leading BWS."
+            },
+            {
+              "html": "If the next character is “=”:",
+              "rationale": "discard",
+              "steps": [
+                {
+                  "html": "Discard the leading “=” character."
+                },
+                {
+                  "html": "Consume any leading BWS."
+                },
+                {
+                  "html": "If the next character is DQUOTE, let parameter_value be the result of Parsing a Quoted String (<a href=\"https://httpwg.org/specs/rfc8288.html#parse-qs\" title=\"Parsing a Quoted String\">Appendix B.4</a>) from input (consuming zero or more characters of it)."
+                },
+                {
+                  "html": "Else, consume the contents up to but not including the first “;” or “,” character, or up to the end of input, and let the results be parameter_value."
+                },
+                {
+                  "html": "If the last character of parameter_name is an asterisk (“*”), decode parameter_value according to <a href=\"https://httpwg.org/specs/rfc8288.html#RFC8187\"><cite title=\"Indicating Character Encoding and Language for HTTP Header Field Parameters\">[RFC8187]</cite></a>. Continue processing input if an unrecoverable error is encountered."
+                }
+              ]
+            },
+            {
+              "html": "Else:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let parameter_value be an empty string."
+                }
+              ]
+            },
+            {
+              "html": "Case-normalise parameter_name to lowercase."
+            },
+            {
+              "html": "Append (parameter_name, parameter_value) to parameters."
+            },
+            {
+              "html": "Consume any leading OWS."
+            },
+            {
+              "html": "If the next character is “,” or the end of input, stop processing input and return parameters."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let output be an empty string."
+        },
+        {
+          "html": "If the first character of input is not DQUOTE, return output."
+        },
+        {
+          "html": "Discard the first character."
+        },
+        {
+          "html": "While input has content:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the first character is a backslash (“\\”):",
+              "rationale": "discard",
+              "steps": [
+                {
+                  "html": "Discard the first character."
+                },
+                {
+                  "html": "If there is no more input, return output."
+                },
+                {
+                  "html": "Else, consume the first character and append it to output."
+                }
+              ]
+            },
+            {
+              "html": "Else, if the first character is DQUOTE, discard it and return output."
+            },
+            {
+              "html": "Else, consume the first character and append it to output."
+            }
+          ]
+        },
+        {
+          "html": "Return output."
+        }
+      ]
+    }
+  ]
+}

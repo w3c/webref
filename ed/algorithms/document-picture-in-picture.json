@@ -1,0 +1,295 @@
+{
+  "spec": {
+    "title": "Document Picture-in-Picture Specification",
+    "url": "https://wicg.github.io/document-picture-in-picture/"
+  },
+  "algorithms": [
+    {
+      "name": "Window/documentPictureInPicture",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-window-documentpictureinpicture",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-window-documentpictureinpicture\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>documentPictureInPicture</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api\" id=\"ref-for-window-documentpictureinpicture-api\">documentPictureInPicture API</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DocumentPictureInPicture/window",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-window",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-documentpictureinpicture-window\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>window</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>win</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window\">last-opened window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>win</var> is not <code>null</code> and <var>win</var>’s <a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-closed\" id=\"ref-for-dom-window-closed\">closed</a> attribute is <code>false</code>, return <var>win</var>.</p>"
+        },
+        {
+          "html": "<p>Return <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DocumentPictureInPicture/requestWindow(options)",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#document-picture-in-picture-support\" id=\"ref-for-document-picture-in-picture-support\">Document Picture-in-Picture support</a> is <code>false</code>, throw a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, throw a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-width\" id=\"ref-for-dom-documentpictureinpictureoptions-width\">width</a></code>\"] exists and is greater than zero, but <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-height\" id=\"ref-for-dom-documentpictureinpictureoptions-height\">height</a></code>\"] does not exist or is zero, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-height\" id=\"ref-for-dom-documentpictureinpictureoptions-height①\">height</a></code>\"] exists and is greater than zero, but <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-width\" id=\"ref-for-dom-documentpictureinpictureoptions-width①\">width</a></code>\"] does not exist or is zero, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">Consume user activation</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>win</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window①\">last-opened window</a>. If <var>win</var> is not <code>null</code> and <var>win</var>’s <a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-closed\" id=\"ref-for-dom-window-closed①\">closed</a> attribute is <code>false</code>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#close-a-top-level-traversable\">close</a> <var>win</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable②\">navigable</a>.</p>"
+        },
+        {
+          "html": "<p>Optionally, the user agent can <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#close-any-existing-picture-in-picture-windows\" id=\"ref-for-close-any-existing-picture-in-picture-windows\">close any existing picture-in-picture windows</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>pip traversable</var> to be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#creating-a-new-top-level-traversable\">creating a new top-level traversable</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc\">active browsing context</a> and \"<code>_blank</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "DocumentPictureInPicture/requestWindow(options)",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>pip traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture①\">Is Document Picture-in-Picture</a> boolean to <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-width\" id=\"ref-for-dom-documentpictureinpictureoptions-width②\">width</a></code>\"] exists and is\ngreater than zero:</p>",
+          "ignored": [
+            "Optionally, clamp or ignore options[\"width\"] if it is too large or too small in order to fit a user-friendly window size. Optionally, size pip traversable’s active browsing context’s window such that the distance between the left and right edges of the viewport are options[\"width\"] pixels."
+          ]
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-height\" id=\"ref-for-dom-documentpictureinpictureoptions-height②\">height</a></code>\"] exists and is\ngreater than zero:</p>",
+          "ignored": [
+            "Optionally, clamp or ignore options[\"height\"] if it is too large or too small in order to fit a user-friendly window size. Optionally, size pip traversable’s active browsing context’s window such that the distance between the top and bottom edges of the viewport are options[\"height\"] pixels."
+          ]
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-disallowreturntoopener\" id=\"ref-for-dom-documentpictureinpictureoptions-disallowreturntoopener\">disallowReturnToOpener</a></code>\"] exists\nand is <code>true</code>, the user agent should not display UI affordances\non the picture-in-picture window that allow the user to return to the\nopener window.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DocumentPictureInPicture/requestWindow(options)",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Configure <var>pip traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc③\">active browsing context</a>’s window to\nfloat on top of other windows.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window②\">last-opened window</a> to <var>pip traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#eventdef-documentpictureinpicture-enter\" id=\"ref-for-eventdef-documentpictureinpicture-enter\">enter</a></code> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpictureevent\" id=\"ref-for-documentpictureinpictureevent\">DocumentPictureInPictureEvent</a></code> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-window\" id=\"ref-for-dom-documentpictureinpictureevent-window\">window</a></code> attribute\ninitialized to <var>pip traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>pip traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify step 2 of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#close-a-top-level-traversable\">close</a>,\n\"If the result of checking if unloading is user-canceled for toUnload is true,\nthen return.\" to be:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture②\">Is Document Picture-in-Picture</a> boolean is\ntrue, then skip this step. Otherwise, if the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#checking-if-unloading-is-user-canceled\">checking if unloading is user-canceled</a> for toUnload is true, then return.</p>"
+        }
+      ]
+    },
+    {
+      "name": "close any existing picture-in-picture windows",
+      "href": "https://wicg.github.io/document-picture-in-picture/#close-any-existing-picture-in-picture-windows",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"close-any-existing-picture-in-picture-windows\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close any existing picture-in-picture windows</dfn>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>top-level traversable</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#top-level-traversable-set\">top-level traversable set</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture③\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#close-a-top-level-traversable\">close</a> <var>top-level traversable</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s <a data-link-type=\"idl\" href=\"https://w3c.github.io/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\">pictureInPictureElement</a> is not <code>null</code>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/picture-in-picture/#exit-picture-in-picture-algorithm\">exit Picture-in-Picture algorithm</a> with <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>.</p>"
+            },
+            {
+              "html": "For each <var>navigable</var> of <var>top-level traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-descendant-navigables\">descendant navigables</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a>’s <a data-link-type=\"idl\" href=\"https://w3c.github.io/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\">pictureInPictureElement</a> is not <code>null</code>, run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/picture-in-picture/#exit-picture-in-picture-algorithm\">exit Picture-in-Picture algorithm</a> with <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document④\">active document</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "close any associated Document Picture-in-Picture windows",
+      "href": "https://wicg.github.io/document-picture-in-picture/#close-any-associated-document-picture-in-picture-windows",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"close-any-associated-document-picture-in-picture-windows\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close any associated Document Picture-in-Picture windows</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>document</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑦\">top-level traversable</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture⑤\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#close-a-top-level-traversable\">close</a> <var>navigable</var> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>win</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window④\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api\" id=\"ref-for-window-documentpictureinpicture-api②\">documentPictureInPicture API</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window⑤\">last-opened window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>win</var> is not <code>null</code> and <var>win</var>’s <a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-closed\" id=\"ref-for-dom-window-closed②\">closed</a> attribute is <code>false</code>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#close-a-top-level-traversable\">close</a> <var>win</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add a step 10 to the end of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#destroying-documents\">destroy</a>:",
+      "rationale": "close",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#close-any-associated-document-picture-in-picture-windows\" id=\"ref-for-close-any-associated-document-picture-in-picture-windows\">Close any associated Document Picture-in-Picture windows</a> given <var>document</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Modify step 16.3 of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigate\">navigate</a>,\n\"Queue a global task on the navigation and traversal task source given navigable’s active window to abort navigable’s active document.\",\nand also insert a step 16.4 immediately after it:",
+      "rationale": "queue",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigation-and-traversal-task-source\">navigation and traversal task source</a> given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window⑤\">active window</a> to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#abort-a-document\">abort</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑥\">active document</a> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#close-any-associated-document-picture-in-picture-windows\" id=\"ref-for-close-any-associated-document-picture-in-picture-windows①\">close any associated Document Picture-in-Picture windows</a> given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑧\">top-level traversable</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture⑥\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then\nabort these steps.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add a new step to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-resizeto\" id=\"ref-for-dom-window-resizeto①\">resizeTo()</a></code> after step 3, \"If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context\">auxiliary browsing context</a> that was created by a script (as opposed to by an\naction of the user), then return.\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top⑨\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture⑦\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation①\">Consume user activation</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Add a new step to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-resizeby\" id=\"ref-for-dom-window-resizeby①\">resizeBy()</a></code> after step 3, \"If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context①\">auxiliary browsing context</a> that was created by a script (as opposed to by an\naction of the user), then return.\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⓪\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture⑧\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation②\">transient activation</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation②\">Consume user activation</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Add a new step to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-window-focus\" id=\"ref-for-dom-window-focus②\">focus()</a></code> after step 3, \"Run the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusing-steps\" id=\"ref-for-focusing-steps\">focusing steps</a> with <var>current</var>.\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>current</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①①\">top-level traversable</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>pipWindow</var> be <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window⑥\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api\" id=\"ref-for-window-documentpictureinpicture-api③\">documentPictureInPicture API</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window⑥\">last-opened window</a>.</p>"
+            },
+            {
+              "html": "If <var>pipWindow</var> is not <code>null</code> and <var>pipWindow</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation③\">transient activation</a>, then:",
+              "rationale": "consume",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation③\">Consume user activation</a> given <var>pipWindow</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a>.</p>"
+                },
+                {
+                  "html": "<p>Give <var>current</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#system-focus\" id=\"ref-for-system-focus\">system focus</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Add three new steps to <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#activation-notification\">activation notification</a> after step 4, \"<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>windows</var> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window⑦\">active window</a> of each of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-descendant-navigables①\">descendant navigables</a>, filtered to include only those <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigables</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑧\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a>\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①②\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture⑨\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">extend</a> <var>windows</var> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①③\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc④\">active browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#opener-browsing-context\" id=\"ref-for-opener-browsing-context\">opener browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window⑧\">active window</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document picture-in-picture window</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①④\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window⑨\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api\" id=\"ref-for-window-documentpictureinpicture-api④\">documentPictureInPicture API</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window⑦\">last-opened window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document picture-in-picture window</var> is not <code>null</code> then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend②\">extend</a> <var>windows</var> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①⓪\">active window</a> of each of <var>document picture-in-picture window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-descendant-navigables②\">descendant navigables</a>, filtered to include only those <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑥\">navigables</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑨\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①\">same origin</a> with <var>document picture-in-picture window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add three new steps to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation⑥\">consume user activation</a> after step 3, \"Let <var>navigables</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables\">inclusive descendant navigables</a> of <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⓪\">active document</a>.\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#is-document-picture-in-picture\" id=\"ref-for-is-document-picture-in-picture①⓪\">Is Document Picture-in-Picture</a> boolean is <code>true</code>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend③\">extend</a> <var>navigables</var> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables①\">inclusive descendant navigables</a> of <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-bc\" id=\"ref-for-nav-bc⑤\">active browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#opener-browsing-context\" id=\"ref-for-opener-browsing-context①\">opener browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①①\">active document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document picture-in-picture window</var> be <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①①\">active window</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api\" id=\"ref-for-window-documentpictureinpicture-api⑤\">documentPictureInPicture API</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture-last-opened-window\" id=\"ref-for-documentpictureinpicture-last-opened-window⑧\">last-opened window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document picture-in-picture window</var> is not <code>null</code> then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend④\">extend</a> <var>navigables</var> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables②\">inclusive descendant navigables</a> of <var>document picture-in-picture window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated document</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

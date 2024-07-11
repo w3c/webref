@@ -1,0 +1,174 @@
+{
+  "spec": {
+    "title": "Contact Picker API",
+    "url": "https://w3c.github.io/contact-picker/"
+  },
+  "algorithms": [
+    {
+      "name": "getProperties()",
+      "href": "https://w3c.github.io/contact-picker/#dom-contactsmanager-getproperties",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contactsmanager-getproperties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getProperties()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contactsmanager-getproperties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getProperties()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "<p>Resolve <var>promise</var> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contacts-source\" id=\"ref-for-contacts-source②\">contacts source</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contacts-source-supported-properties\" id=\"ref-for-contacts-source-supported-properties\">supported properties</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "select(properties, options)",
+      "href": "https://w3c.github.io/contact-picker/#dom-contactsmanager-select",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top②\">top-level traversable</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">consume user activation</a> of the <var>global</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contact-picker-is-showing-flag\" id=\"ref-for-contact-picker-is-showing-flag\">contact picker is showing flag</a> is set then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>properties</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contacts-source\" id=\"ref-for-contacts-source③\">contacts source</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contacts-source-supported-properties\" id=\"ref-for-contacts-source-supported-properties①\">supported properties</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>property</var>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contact-picker-is-showing-flag\" id=\"ref-for-contact-picker-is-showing-flag①\">contact picker is showing flag</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>promise</var> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Unset <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contact-picker-is-showing-flag\" id=\"ref-for-contact-picker-is-showing-flag②\">contact picker is showing flag</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Abort these steps.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Unset <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contact-picker-is-showing-flag\" id=\"ref-for-contact-picker-is-showing-flag③\">contact picker is showing flag</a>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>contacts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>contact</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dictdef-contactinfo\" id=\"ref-for-dictdef-contactinfo①\">ContactInfo</a></code> with:</p>\n             <dl>\n              <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dom-contactinfo-address\" id=\"ref-for-dom-contactinfo-address\">address</a></code>\n              </dt><dd data-md=\"\">\n               <p><var>selectedContact</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#user-contact-addresses\" id=\"ref-for-user-contact-addresses①\">addresses</a> if <var>properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> \"<code>address</code>\", otherwise undefined.</p>\n              </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dom-contactinfo-email\" id=\"ref-for-dom-contactinfo-email\">email</a></code>\n              </dt><dd data-md=\"\">\n               <p><var>selectedContact</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#user-contact-emails\" id=\"ref-for-user-contact-emails①\">emails</a> if <var>properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> \"<code>email</code>\", otherwise undefined.</p>\n              </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dom-contactinfo-icon\" id=\"ref-for-dom-contactinfo-icon\">icon</a></code>\n              </dt><dd data-md=\"\">\n               <p><var>selectedContact</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#user-contact-icons\" id=\"ref-for-user-contact-icons①\">icons</a> if <var>properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> \"<code>icon</code>\", otherwise undefined.</p>\n              </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dom-contactinfo-name\" id=\"ref-for-dom-contactinfo-name\">name</a></code>\n              </dt><dd data-md=\"\">\n               <p><var>selectedContact</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#user-contact-names\" id=\"ref-for-user-contact-names①\">names</a> if <var>properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> \"<code>name</code>\", otherwise undefined.</p>\n              </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#dom-contactinfo-tel\" id=\"ref-for-dom-contactinfo-tel\">tel</a></code>\n              </dt><dd data-md=\"\">\n               <p><var>selectedContact</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#user-contact-numbers\" id=\"ref-for-user-contact-numbers①\">numbers</a> if <var>properties</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a> \"<code>tel</code>\", otherwise undefined.</p>\n             </dd></dl>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>contact</var> to <var>contacts</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var> with <var>contacts</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>details</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> «\n  \"addressLine\" → empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>,\n  \"country\" → \"\",\n  \"phone\" → \"\",\n  \"city\" → \"\",\n  \"dependentLocality\" → \"\",\n  \"organization\" → \"\",\n  \"postalCode\" → \"\",\n  \"recipient\" → \"\",\n  \"region\" → \"\",\n  \"sortingCode\" → \"\"\n ».</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> \"addressLine\",\n set <var>details</var>[\"addressLine\"] to the result of splitting the user-provided address line into a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> \"country\",\n set <var>details</var>[\"country\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-country\" id=\"ref-for-physical-address-country①\">country</a> as an upper case <a data-link-type=\"biblio\" href=\"https://w3c.github.io/contact-picker/#biblio-iso3166-1\" title=\"Codes for the representation of names of countries and their subdivisions — Part 1: Country code\">[ISO3166-1]</a> alpha-2 code.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contain</a> \"phone\",\n set <var>details</var>[\"phone\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-phone-number\" id=\"ref-for-physical-address-phone-number①\">phone number</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">contain</a> \"city\",\n set <var>details</var>[\"city\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-city\" id=\"ref-for-physical-address-city①\">city</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⓪\">contain</a> \"dependentLocality\",\n set <var>details</var>[\"dependentLocality\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-dependent-locality\" id=\"ref-for-physical-address-dependent-locality①\">dependent locality</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①①\">contain</a> \"organization\",\n set <var>details</var>[\"organization\"] to the user-provided recipient <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-organization\" id=\"ref-for-physical-address-organization①\">organization</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contain</a> \"postalCode\",\n set <var>details</var>[\"postalCode\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-postal-code\" id=\"ref-for-physical-address-postal-code①\">postal code</a>.\n Optionally, redact part of <var>details</var>[\"postalCode\"].</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①③\">contain</a> \"recipient\",\n set <var>details</var>[\"recipient\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-recipient\" id=\"ref-for-physical-address-recipient①\">recipient</a> of the contact information.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">contain</a> \"region\",\n set <var>details</var>[\"region\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-region\" id=\"ref-for-physical-address-region①\">region</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>redactList</var> doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⑤\">contain</a> \"sortingCode\",\n set <var>details</var>[\"sortingCode\"] to the user-provided <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#physical-address-sorting-code\" id=\"ref-for-physical-address-sorting-code①\">sorting code</a>.</p>"
+        },
+        {
+          "html": "<p>Return a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/contact-picker/#contactaddress\" id=\"ref-for-contactaddress⑦\">ContactAddress</a></code> whose attribute’s value’s match those in <var>details</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

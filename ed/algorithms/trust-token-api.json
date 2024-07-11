@@ -1,0 +1,1026 @@
+{
+  "spec": {
+    "title": "Private State Token API",
+    "url": "https://wicg.github.io/trust-token-api/"
+  },
+  "algorithms": [
+    {
+      "name": "determine whether associating an issuer would exceed the top-level limit",
+      "href": "https://wicg.github.io/trust-token-api/#determine-whether-associating-an-issuer-would-exceed-the-top-level-limit",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-whether-associating-an-issuer-would-exceed-the-top-level-limit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine whether associating an issuer would exceed the top-level limit</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>issuer</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations\">issuerAssociations</a>[<var>topLevel</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations①\">issuerAssociations</a>[<var>topLevel</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>issuer</var>, return false.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations②\">issuerAssociations</a>[<var>topLevel</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is less than 2, return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "associate the issuer",
+      "href": "https://wicg.github.io/trust-token-api/#associate-the-issuer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"associate-the-issuer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">associate the issuer</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>issuer</var> (an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>) with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations③\">issuerAssociations</a>[<var>topLevel</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exist</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations④\">issuerAssociations</a>[<var>topLevel</var>] to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>issuer</var> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations⑤\">issuerAssociations</a>[<var>topLevel</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "is associated with",
+      "href": "https://wicg.github.io/trust-token-api/#is-associated-with",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>issuer</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"is-associated-with\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is associated with</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations⑥\">issuerAssociations</a>[<var>topLevel</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exist</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerassociations\" id=\"ref-for-issuerassociations⑦\">issuerAssociations</a>[<var>topLevel</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>issuer</var>, return true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "record redemption timestamp",
+      "href": "https://wicg.github.io/trust-token-api/#record-redemption-timestamp",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"record-redemption-timestamp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record redemption timestamp</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑧\">origin</a> <var>issuer</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>currentTime</var> be the current date and time.</p>"
+        },
+        {
+          "html": "<p>Let <var>previousRedemption</var> be the earliest representable date and time.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptiontimes\" id=\"ref-for-redemptiontimes\">redemptionTimes</a>[(<var>issuer</var>,<var>topLevel</var>)] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, let <var>previousRedemption</var> be the <var>lastRedemption</var> field of the tuple <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptiontimes\" id=\"ref-for-redemptiontimes①\">redemptionTimes</a>[(<var>issuer</var>,<var>topLevel</var>)].</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptiontimes\" id=\"ref-for-redemptiontimes②\">redemptionTimes</a>[(<var>issuer</var>,<var>topLevel</var>)] to the tuple (<var>currentTime</var>, <var>previousRedemption</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "look up penultimate redemption",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-penultimate-redemption",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"look-up-penultimate-redemption\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">look up penultimate redemption</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⓪\">origin</a> <var>issuer</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①①\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>penultimateRedemption</var> be the earliest representable date and time.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptiontimes\" id=\"ref-for-redemptiontimes③\">redemptionTimes</a>[(<var>issuer</var>,<var>topLevel</var>)] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, let <var>penultimateRedemption</var> be the <var>penultimateRedemption</var> field of the tuple <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptiontimes\" id=\"ref-for-redemptiontimes④\">redemptionTimes</a>[(<var>issuer</var>,<var>topLevel</var>)].</p>"
+        },
+        {
+          "html": "<p>Return <var>penultimateRedemption</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "record a redemption record",
+      "href": "https://wicg.github.io/trust-token-api/#record-a-redemption-record",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"record-a-redemption-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record a redemption record</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①②\">origin</a> <var>issuer</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①③\">origin</a> <var>topLevel</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>header</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration\">duration</a> <var>lifetime</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>lifetime</var> is zero, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentTime</var> be the current date and time in milliseconds since 01 January, 1970 UTC.</p>"
+        },
+        {
+          "html": "<p>Let <var>expiration</var> be the sum of <var>currentTime</var> and <var>lifetime</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signingKeys</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-latest-keys\" id=\"ref-for-look-up-the-latest-keys\">looking up of the latest keys</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptionrecords\" id=\"ref-for-redemptionrecords\">redemptionRecords</a>[(<var>issuer</var>, <var>topLevel</var>))] to the tuple (<var>header</var>, <var>expiration</var>, <var>signingKeys</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "retrieve a redemption record",
+      "href": "https://wicg.github.io/trust-token-api/#retrieve-a-redemption-record",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"retrieve-a-redemption-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">retrieve a redemption record</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①④\">origin</a> <var>issuer</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⑤\">origin</a> <var>topLevel</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>currentTime</var> be the current date and time in milliseconds since 01 January, 1970 UTC.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptionrecords\" id=\"ref-for-redemptionrecords①\">redemptionRecords</a>[(<var>issuer</var>,<var>topLevel</var>)] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">does not exist</a>, return null.</p>"
+        },
+        {
+          "html": "<p>Let (<var>record</var>, <var>expiration</var>, <var>signingKeys</var>) be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemptionrecords\" id=\"ref-for-redemptionrecords②\">redemptionRecords</a>[(<var>issuer</var>,<var>topLevel</var>)].</p>"
+        },
+        {
+          "html": "<p>If <var>expiration</var> is less than <var>currentTime</var>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentSigningKeys</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-latest-keys\" id=\"ref-for-look-up-the-latest-keys①\">looking up of the latest keys</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>currentSigningKeys</var> does not equal <var>signingKeys</var>, return null.</p>"
+        },
+        {
+          "html": "<p>Return <var>record</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "look up the key commitments",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-the-key-commitments",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"look-up-the-key-commitments\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">look up the key commitments</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⑦\">origin</a> <var>issuer</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#pstkeycommitments\" id=\"ref-for-pstkeycommitments\">pstKeyCommitments</a>[<var>issuer</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exist</a>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuerKeys</var> be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#pstkeycommitments\" id=\"ref-for-pstkeycommitments①\">pstKeyCommitments</a>[<var>issuer</var>].</p>"
+        },
+        {
+          "html": "For each <var>cryptoProtocolVersion</var> that the user agent supports for this API in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> order, run the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>issuerKeys</var>[<var>cryptoProtocolVersion</var>], if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "look up the latest keys",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-the-latest-keys",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"look-up-the-latest-keys\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">look up the latest keys</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⑧\">origin</a> <var>issuer</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>commitment</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments\">looking up the key commitments</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>commitment</var> is null, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>chosenKey</var> be null.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentTime</var> be the current date and time.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>key</var> of <var>commitment</var>[\"keys\"], run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>key</var>[\"expiry\"] is less than <var>currentTime</var>, continue.</p>"
+            },
+            {
+              "html": "<p>If <var>chosenKey</var> is null, set <var>chosenKey</var> to <var>key</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>key</var>[\"expiry\"] is less than <var>chosenKey</var>[\"expiry\"], set <var>chosenKey</var> to <var>key</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>chosenKey</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "insert a token",
+      "href": "https://wicg.github.io/trust-token-api/#insert-a-token",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"insert-a-token\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insert a token</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⓪\">origin</a> <var>issuer</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> <var>token</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> <var>signingKey</var>, run the following steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Create a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑤\">tuple</a> <var>storedToken</var> consisting of (<var>token</var>, <var>signingKey</var>).</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore\">tokenStore</a>[<var>issuer</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exist</a>, set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore①\">tokenStore</a>[<var>issuer</var>] to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>storedToken</var> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore②\">tokenStore</a>[<var>issuer</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "retrieve a token",
+      "href": "https://wicg.github.io/trust-token-api/#retrieve-a-token",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"retrieve-a-token\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">retrieve a token</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②①\">origin</a> <var>issuer</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore③\">tokenStore</a>[<var>issuer</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a>, return null.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore④\">tokenStore</a>[<var>issuer</var>] is zero, return null.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> a random element of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore⑤\">tokenStore</a>[<var>issuer</var>] and return the removed element.</p>"
+        }
+      ]
+    },
+    {
+      "name": "discard tokens",
+      "href": "https://wicg.github.io/trust-token-api/#discard-tokens",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"discard-tokens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">discard tokens</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②②\">origin</a> <var>issuer</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> <var>signingKey</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore⑥\">tokenStore</a>[<var>issuer</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exist</a>, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> all elements of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore⑦\">tokenStore</a>[<var>issuer</var>] whose second element is not equal to <var>signingKey</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "number of tokens",
+      "href": "https://wicg.github.io/trust-token-api/#number-of-tokens",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"number-of-tokens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">number of tokens</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②③\">origin</a> <var>issuer</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore⑧\">tokenStore</a>[<var>issuer</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exist</a>, return 0.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#tokenstore\" id=\"ref-for-tokenstore⑨\">tokenStore</a>[<var>issuer</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "max batch size",
+      "href": "https://wicg.github.io/trust-token-api/#max-batch-size",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"max-batch-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">max batch size</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②④\">origin</a> <var>issuer</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>issuerKey</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments①\">look up the key commitments</a> on <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>issuerKey</var> is null, return 0.</p>"
+        },
+        {
+          "html": "<p>Return <var>issuerKey</var>[\"batchsize\"].</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate masked tokens",
+      "href": "https://wicg.github.io/trust-token-api/#generate-masked-tokens",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-masked-tokens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate masked tokens</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#key-commitment\" id=\"ref-for-key-commitment①\">key commitments</a> <var>issuerKeys</var> and number <var>numTokens</var>, run the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑥\">tuple</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑦\">byte sequence</a>).",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>issueRequest</var> be an empty <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issuerequest\" id=\"ref-for-issuerequest\">IssueRequest</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>issueRequest</var>[\"count\"] to <var>numTokens</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blinds</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑧\">byte sequence</a>.</p>"
+        },
+        {
+          "html": "Repeat the following steps, <var>numTokens</var> times:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>input</var> be a random <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a>.</p>"
+            },
+            {
+              "html": "<p>Let (<var>blind</var>, <var>blindedElement</var>) (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑦\">tuple</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⓪\">byte sequence</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①①\">byte sequence</a>)) be the result of running the <a data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-irtf-cfrg-voprf-21.html#section-3.3.1-2\" id=\"ref-for-section-3.3.1-2\">Blind</a> function of the <a data-link-type=\"biblio\" href=\"https://wicg.github.io/trust-token-api/#biblio-voprf\" title=\"Oblivious Pseudorandom Functions (OPRFs) using Prime-Order Groups\">[VOPRF]</a> protocol on <var>input</var>, where <var>blindedElement</var> is encoded as a X9.62 uncompressed point.</p>"
+            },
+            {
+              "html": "<p>Append <var>blind</var> to <var>blinds</var>.</p>"
+            },
+            {
+              "html": "<p>Append <var>blindedElement</var> to <var>issueRequest</var>[\"nonces\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>issueHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#serialize-protocol-messages\" id=\"ref-for-serialize-protocol-messages\">serializing protocol message</a> <var>issueRequest</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑧\">tuple</a> (<var>issueHeader</var>, <var>blinds</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "unmask tokens",
+      "href": "https://wicg.github.io/trust-token-api/#unmask-tokens",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"unmask-tokens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">unmask tokens</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#key-commitment\" id=\"ref-for-key-commitment②\">key commitments</a> <var>issuerKeys</var>, byte string <var>blinds</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①②\">byte sequence</a> <var>response</var>, run the following steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①③\">byte sequence</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①④\">byte sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>evaluatedElements</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>blindedElements</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>issueResponse</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#deserialize-protocol-messages\" id=\"ref-for-deserialize-protocol-messages\">deserializing protocol message</a> <var>response</var> as an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#issueresponse\" id=\"ref-for-issueresponse\">IssueResponse</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>nonce</var> of <var>issueResponse</var>[\"signed\"]:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>nonce</var>[\"blinded\"] to <var>blindedElements</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>nonce</var>[\"evaluated\"] to <var>evaluatedElements</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>pkS</var> be <var>issuerKeys</var>[\"keys\"][<var>issueResponse</var>[\"key_id\"]][\"Y\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>proof</var> be <var>issueResponse</var>[\"proof\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>blindsList</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length\">length</a> of <var>blinds</var> is greater than 0:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>blind</var> be the first N elements of <var>blinds</var> and <var>blinds</var> be the remainder, where N is the length of a X9.62 uncompressed point.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>blind</var> to <var>blindsList</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a> of byte strings) be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#pstfinalize\" id=\"ref-for-pstfinalize\">PSTFinalize</a> on <var>input</var>, <var>blindsList</var>, <var>evaluatedElements</var>, <var>blindedElements</var>, <var>pkS</var>, and <var>proof</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set private token properties for request from private token",
+      "href": "https://wicg.github.io/trust-token-api/#set-private-token-properties-for-request-from-private-token",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-private-token-properties-for-request-from-private-token\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set private token properties for request from private token</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dictdef-privatetoken\" id=\"ref-for-dictdef-privatetoken\">PrivateToken</a></code> <var>privateToken</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> <var>request</var>, run the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-operation\" id=\"ref-for-request-private-token-operation\">private token operation</a> to <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-operation\" id=\"ref-for-dom-privatetoken-operation\">operation</a></code>\"].</p>"
+        },
+        {
+          "html": "If <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-operation\" id=\"ref-for-dom-privatetoken-operation①\">operation</a></code>\"] is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-operationtype-token-request\" id=\"ref-for-dom-operationtype-token-request\">\"token-request\"</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#should-request-be-allowed-to-use-feature\" id=\"ref-for-should-request-be-allowed-to-use-feature\">Should request be allowed to use feature?</a> on \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#policy-controlled-feature-private-state-token-issuance\" id=\"ref-for-policy-controlled-feature-private-state-token-issuance\">private-state-token-issuance</a></code>\" and <var>request</var> returns <code>false</code>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p>Abort the remaining steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-operation\" id=\"ref-for-dom-privatetoken-operation②\">operation</a></code>\"] is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-operationtype-token-redemption\" id=\"ref-for-dom-operationtype-token-redemption\">\"token-redemption\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-operationtype-send-redemption-record\" id=\"ref-for-dom-operationtype-send-redemption-record\">\"send-redemption-record\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#should-request-be-allowed-to-use-feature\" id=\"ref-for-should-request-be-allowed-to-use-feature①\">Should request be allowed to use feature?</a> on \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#policy-controlled-feature-private-state-token-redemption\" id=\"ref-for-policy-controlled-feature-private-state-token-redemption\">private-state-token-redemption</a></code>\" and <var>request</var> returns <code>false</code>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "If <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-operation\" id=\"ref-for-dom-privatetoken-operation③\">operation</a></code>\"] is <code>\"token-redemption\"</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-refresh-policy\" id=\"ref-for-request-private-token-refresh-policy\">private token refresh policy</a> to <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-refreshpolicy\" id=\"ref-for-dom-privatetoken-refreshpolicy\">refreshPolicy</a></code>\"].</p>"
+            },
+            {
+              "html": "<p>Abort the remaining steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-issuers\" id=\"ref-for-dom-privatetoken-issuers\">issuers</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exist</a>, then throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-issuers\" id=\"ref-for-dom-privatetoken-issuers①\">issuers</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>issuer</var> of <var>privateToken</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-privatetoken-issuers\" id=\"ref-for-dom-privatetoken-issuers②\">issuers</a></code>\"]:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>issuerURL</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerURL</var> is failure, then throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme\">HTTP(S) scheme</a>, then throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>issuerOrigin</var> be <var>issuerURL</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑤\">origin</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerOrigin</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin\">potentially trustworthy origin</a>, then throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> <var>issuerURL</var> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-issuers\" id=\"ref-for-request-private-token-issuers\">private token issuers</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#requestinit\" id=\"ref-for-requestinit②\">RequestInit</a></code> <var>init</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request\">Request</a></code> <var>request</var> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-requestinit-privatetoken\" id=\"ref-for-dom-requestinit-privatetoken\">privateToken</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>privateToken</var> be <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/trust-token-api/#dom-requestinit-privatetoken\" id=\"ref-for-dom-requestinit-privatetoken①\">privateToken</a></code>\"].</p>"
+            },
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#set-private-token-properties-for-request-from-private-token\" id=\"ref-for-set-private-token-properties-for-request-from-private-token\">set private token properties for request from private token</a> on <var>privateToken</var> and <var>request</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This specification adds the following steps to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch\" id=\"ref-for-concept-http-network-or-cache-fetch\">http-network-or-cache fetch</a> algorithm, before modifying the header list:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-operation\" id=\"ref-for-request-private-token-operation④\">private token operation</a> is null, abort remaining steps.</p>"
+        },
+        {
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-operation\" id=\"ref-for-request-private-token-operation⑤\">private token operation</a> is <code>\"token-request\"</code>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#append-private-state-token-issue-request-headers\" id=\"ref-for-append-private-state-token-issue-request-headers\">Append private state token issue request headers</a> on <var>httpRequest</var>.</p>"
+            },
+            {
+              "html": "<p>Abort the remaining steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-operation\" id=\"ref-for-request-private-token-operation⑥\">private token operation</a> is <code>\"token-redemption\"</code>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#append-private-state-token-redemption-request-headers\" id=\"ref-for-append-private-state-token-redemption-request-headers\">Append private state token redemption request headers</a> on <var>httpRequest</var>.</p>"
+            },
+            {
+              "html": "<p>Abort the remaining steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-operation\" id=\"ref-for-request-private-token-operation⑦\">private token operation</a> is <code>\"send-redemption-record\"</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#append-private-state-token-redemption-record-headers\" id=\"ref-for-append-private-state-token-redemption-record-headers\">Append private state token redemption record headers</a> on <var>httpRequest</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The specification adds the following steps to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-http-fetch\" id=\"ref-for-concept-http-fetch\">HTTP fetch</a> algorithm, before checking the redirect status (i.e. \"7. If <var>actualResponse</var>’s status is a redirect status, ...\"):",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>issue response result</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#handle-an-issue-response\" id=\"ref-for-handle-an-issue-response\">handling an issue response</a>, given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>actualResponse</var> as input.</p>"
+        },
+        {
+          "html": "<p>If <var>issue response result</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>, return <var>issue response result</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>redeem response result</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#handle-a-redeem-response\" id=\"ref-for-handle-a-redeem-response\">handling a redeem response</a>, given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>actualResponse</var> as input.</p>"
+        },
+        {
+          "html": "<p>If <var>redeem response result</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①\">network error</a>, return <var>issue response result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following step is added to the <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\">create navigation params by fetching</a>, before step \"25. Return a new <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\">navigation params</a>, with ...\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"ref-for-nav-container\">container</a> is an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element①\">iframe</a></code> element, and if it has a <code><a data-link-type=\"element-sub\" href=\"https://wicg.github.io/trust-token-api/#element-attrdef-iframe-privatetoken\" id=\"ref-for-element-attrdef-iframe-privatetoken①\">privateToken</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-element-attributes\" id=\"ref-for-concept-element-attributes②\">content attribute</a>, then run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#set-private-token-properties-for-request-from-private-token\" id=\"ref-for-set-private-token-properties-for-request-from-private-token①\">set private token properties for request from private token</a> on <var>navigable</var>’s <var>privateToken</var> and <var>request</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "XMLHttpRequest/setPrivateToken(privateToken)",
+      "href": "https://wicg.github.io/trust-token-api/#dom-xmlhttprequest-setprivatetoken",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XMLHttpRequest\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setPrivateToken(privateToken)\" id=\"dom-xmlhttprequest-setprivatetoken\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setPrivateToken(PrivateToken privateToken)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state\" id=\"ref-for-concept-xmlhttprequest-state\">state</a> is not \"opened\", then throw an\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>. </p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://xhr.spec.whatwg.org/#send-flag\" id=\"ref-for-send-flag\"><code>send()</code> flag</a> is set,\n    then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#xmlhttprequest-private-state-token\" id=\"ref-for-xmlhttprequest-private-state-token\">private state token</a> to <var>privateToken</var>."
+        }
+      ]
+    },
+    {
+      "html": "Add the step:",
+      "rationale": "run",
+      "steps": [
+        {
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#set-private-token-properties-for-request-from-private-token\" id=\"ref-for-set-private-token-properties-for-request-from-private-token②\">set private token properties for request from private token</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#xmlhttprequest-private-state-token\" id=\"ref-for-xmlhttprequest-private-state-token①\">private state token</a> and <var>req</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "append private state token issue request headers",
+      "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-issue-request-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-private-state-token-issue-request-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append private state token issue request headers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑧\">request</a> <var>request</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context\">secure context</a>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>If associating <var>issuer</var> with <var>topLevel</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#determine-whether-associating-an-issuer-would-exceed-the-top-level-limit\" id=\"ref-for-determine-whether-associating-an-issuer-would-exceed-the-top-level-limit\">would exceed the top level’s number-of-issuers limit</a>, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#associate-the-issuer\" id=\"ref-for-associate-the-issuer\">Associate the issuer</a> <var>issuer</var> with <var>topLevel</var>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#number-of-tokens\" id=\"ref-for-number-of-tokens\">number of tokens</a> for <var>issuer</var> is at least 500, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuerKeys</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments②\">looking up the key commitments</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>issuerKeys</var> is null,  return.</p>"
+        },
+        {
+          "html": "<p>Let <var>signingKey</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-latest-keys\" id=\"ref-for-look-up-the-latest-keys②\">looking up of the latest keys</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#discard-tokens\" id=\"ref-for-discard-tokens\">discard tokens</a> with <var>issuer</var> and <var>signingKey</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>numTokens</var> be <var>issuer</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#max-batch-size\" id=\"ref-for-max-batch-size\">max batch size</a> or an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> limit on the number of tokens (which is recommended to be 100), whichever is smaller.</p>"
+        },
+        {
+          "html": "<p>Let (<var>issueHeader</var>, <var>pretokens</var>) be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#generate-masked-tokens\" id=\"ref-for-generate-masked-tokens\">generating masked tokens</a> with <var>issuerKeys</var> and <var>numTokens</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a> to <code>\"no-store\"</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-pstpretokens\" id=\"ref-for-request-pstpretokens\">pstPretokens</a> to <var>pretokens</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>base64EncodedTokens</var> be the base64-encoded <a data-link-type=\"biblio\" href=\"https://wicg.github.io/trust-token-api/#biblio-rfc4648\">[RFC4648]</a> version of <var>issueHeader</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cryptoProtocolVersion</var> be the version of the cryptographic protocol used.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token\"><code>Sec-Private-State-Token</code></a>, <var>base64EncodedTokens</var>)\n            in <var>request</var>’s header list.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-crypto-version\" id=\"ref-for-http-headerdef-sec-private-state-token-crypto-version\"><code>Sec-Private-State-Token-Crypto-Version</code></a>, <var>cryptoProtocolVersion</var>)\n            in <var>request</var>’s header list.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handle an issue response",
+      "href": "https://wicg.github.io/trust-token-api/#handle-an-issue-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-an-issue-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle an issue response</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑨\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <var>response</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains\">does not contain</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token③\">Sec-Private-State-Token</a>, return null.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①\">does not contain</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token④\">Sec-Private-State-Token</a>, return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error②\">network error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token⑤\">Sec-Private-State-Token</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>header</var> is empty, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-delete\" id=\"ref-for-concept-header-list-delete\">Delete</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token⑥\">Sec-Private-State-Token</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuerKeys</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments③\">looking up the key commitments</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>issuerKeys</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>pretokens</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-pstpretokens\" id=\"ref-for-request-pstpretokens①\">pstPretokens</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>pretokens</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>rawResponse</var> be the base64-decoded <a data-link-type=\"biblio\" href=\"https://wicg.github.io/trust-token-api/#biblio-rfc4648\">[RFC4648]</a> version of <var>header</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unmasked tokens</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#unmask-tokens\" id=\"ref-for-unmask-tokens\">unmasking response tokens</a> given <var>issuerKeys</var>, <var>pretokens</var>, and <var>rawResponse</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>unmasked tokens</var> is null, return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error③\">network error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signingKey</var> be the result <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-latest-keys\" id=\"ref-for-look-up-the-latest-keys③\">looking up the latest keys</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "For each <var>token</var> in <var>unmasked tokens</var>, run the following steps:",
+          "rationale": "insert",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#insert-a-token\" id=\"ref-for-insert-a-token\">Insert a token</a> for <var>issuer</var>, <var>token</var>, and <var>signingKey</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set redemption headers",
+      "href": "https://wicg.github.io/trust-token-api/#set-redemption-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-redemption-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set redemption headers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redeemrequest\" id=\"ref-for-redeemrequest\">RedeemRequest</a> <var>record</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>redemptionRequest</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#serialize-protocol-messages\" id=\"ref-for-serialize-protocol-messages①\">serializing protocol message</a> <var>record</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cryptoProtocolVersion</var> be the version of the cryptographic protocol used.</p>"
+        },
+        {
+          "html": "<p>Let <var>token-lifetime</var> be the expiration time of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemption-record\" id=\"ref-for-redemption-record①\">redemption record</a> in seconds.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header②\">Set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token⑦\"><code>Sec-Private-State-Token</code></a>, <var>redemptionRequest</var>)\n            in <var>request</var>’s header list.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header③\">Set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-crypto-version\" id=\"ref-for-http-headerdef-sec-private-state-token-crypto-version②\"><code>Sec-Private-State-Token-Crypto-Version</code></a>, <var>cryptoProtocolVersion</var>)\n            in <var>request</var>’s header list.</p>"
+        },
+        {
+          "html": "<p>Optionally, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header④\">set a structured field value</a> given (<a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-lifetime\" id=\"ref-for-http-headerdef-sec-private-state-token-lifetime\"><code>Sec-Private-State-Token-Lifetime</code></a>, <var>token-lifetime</var>)\n            in <var>request</var>’s header list.</p>"
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode①\">cache mode</a> to <code>\"no-store\"</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "append private state token redemption request headers",
+      "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-redemption-request-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-private-state-token-redemption-request-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append private state token redemption request headers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①①\">request</a> <var>request</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>issuer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context①\">secure context</a>, return.</p>"
+        },
+        {
+          "html": "<p>If associating <var>issuer</var> with <var>topLevel</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#determine-whether-associating-an-issuer-would-exceed-the-top-level-limit\" id=\"ref-for-determine-whether-associating-an-issuer-would-exceed-the-top-level-limit①\">would exceed the top level’s number-of-issuers limit</a>, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#associate-the-issuer\" id=\"ref-for-associate-the-issuer①\">Associate the issuer</a> <var>issuer</var> with <var>topLevel</var>.</p>"
+        },
+        {
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-refresh-policy\" id=\"ref-for-request-private-token-refresh-policy②\">private token refresh policy</a> is <code>\"none\"</code>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>record</var> be the result of performing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#retrieve-a-redemption-record\" id=\"ref-for-retrieve-a-redemption-record\">retrieve a redemption record</a> with <var>issuer</var> and <var>topLevel</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>record</var> is not null, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#set-redemption-headers\" id=\"ref-for-set-redemption-headers\">set redemption headers</a> with <var>request</var> and <var>record</var> and return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>penultimateRedemption</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-penultimate-redemption\" id=\"ref-for-look-up-penultimate-redemption\">look up penultimate redemption </a> with <var>issuer</var> and <var>topLevel</var></p>"
+        },
+        {
+          "html": "<p>If <var>penultimateRedemption</var> is less than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> time period (which is recommended to be 48 hours), return error.</p>"
+        },
+        {
+          "html": "<p>Let <var>commitments</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments④\">looking up the key commitments</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>commitments</var> is null, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#discard-tokens\" id=\"ref-for-discard-tokens①\">Discard tokens</a> from <var>issuer</var> that are signed with keys other than those from\n        the issuer’s most recent commitments.</p>"
+        },
+        {
+          "html": "<p>Let <var>token</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#retrieve-a-token\" id=\"ref-for-retrieve-a-token\">retrieving a token</a> for <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>token</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>redeemRequest</var> be an empty <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redeemrequest\" id=\"ref-for-redeemrequest①\">RedeemRequest</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>redeemRequest</var>[\"token\"] to <var>token</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#set-redemption-headers\" id=\"ref-for-set-redemption-headers①\">Set redemption headers</a> with <var>request</var> and <var>record</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handle a redeem response",
+      "href": "https://wicg.github.io/trust-token-api/#handle-a-redeem-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-a-redeem-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle a redeem response</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①②\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response③\">response</a> <var>response</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains②\">does not contain</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token⑧\">Sec-Private-State-Token</a>, return null.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list③\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains③\">does not contain</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token⑨\">Sec-Private-State-Token</a>, return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error④\">network error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>rawHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get①\">getting</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token①⓪\">Sec-Private-State-Token</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>rawHeader</var> is empty, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>rawResponse</var> be the base64-decoded <a data-link-type=\"biblio\" href=\"https://wicg.github.io/trust-token-api/#biblio-rfc4648\">[RFC4648]</a> version of <var>rawHeader</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#deserialize-protocol-messages\" id=\"ref-for-deserialize-protocol-messages①\">deserializing protocol message</a> <var>rawHeader</var> as a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redeemresponse\" id=\"ref-for-redeemresponse\">RedeemResponse</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-delete\" id=\"ref-for-concept-header-list-delete①\">Delete</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token\" id=\"ref-for-http-headerdef-sec-private-state-token①①\">Sec-Private-State-Token</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list⑤\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>lifetime</var> to be the largest representable duration.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list⑥\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains④\">contains</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-lifetime\" id=\"ref-for-http-headerdef-sec-private-state-token-lifetime①\">Sec-Private-State-Token-Lifetime</a> response header, set <var>lifetime</var> to that value.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-delete\" id=\"ref-for-concept-header-list-delete②\">Delete</a> <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-lifetime\" id=\"ref-for-http-headerdef-sec-private-state-token-lifetime②\">Sec-Private-State-Token-Lifetime</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list⑦\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>issuer</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin③\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client④\">client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#record-redemption-timestamp\" id=\"ref-for-record-redemption-timestamp\">record redemption timestamp</a> with <var>issuer</var> and <var>topLevel</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#record-a-redemption-record\" id=\"ref-for-record-a-redemption-record\">record a redemption record</a> with <var>issuer</var>, <var>topLevel</var>, <var>header</var>, and <var>lifetime</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "append private state token redemption record headers",
+      "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-redemption-record-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-private-state-token-redemption-record-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append private state token redemption record headers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①③\">request</a> <var>request</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑤\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context②\">secure context</a>, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin③\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>issuer</var> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-issuers\" id=\"ref-for-request-private-token-issuers③\">private token issuers</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>issuerURL</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerURL</var> is failure, then abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme①\">HTTP(S) scheme</a>, then abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>issuerOrigin</var> be <var>issuerURL</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑥\">origin</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuerOrigin</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin①\">potentially trustworthy origin</a>, then abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>records_per_issuer</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> where keys are USVString and values are <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemption-record\" id=\"ref-for-redemption-record⑦\">redemption records</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>issuer</var> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#request-private-token-issuers\" id=\"ref-for-request-private-token-issuers④\">private token issuers</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>record</var> be the result of performing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#retrieve-a-redemption-record\" id=\"ref-for-retrieve-a-redemption-record①\">retrieve a redemption record</a> with <var>issuer</var> and <var>topLevel</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>record</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>records_per_issuer</var>[<var>issuer</var>] to <var>record</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>records_per_issuer</var> is empty, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>headerItems</var> be a structured headers list <a data-link-type=\"biblio\" href=\"https://wicg.github.io/trust-token-api/#biblio-rfc8941\" title=\"Structured Field Values for HTTP\">[RFC8941]</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>issuer</var> -&gt; <var>record</var> of <var>records_per_issuer</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>serializedIssuer</var> be result of serializing <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>serializedRecord</var> be result of serializing <var>record</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>serializedIssuer</var> and <var>serializedRecord</var> pairs to <var>headerItems</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>serializedHeaderItems</var> be result of serializing <var>headerItems</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>serializedHeaderItems</var> is null, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"http-header\" href=\"https://wicg.github.io/trust-token-api/#http-headerdef-sec-redemption-record\" id=\"ref-for-http-headerdef-sec-redemption-record\"><code>Sec-Redemption-Record</code></a> to <var>serializedHeaderItems</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/hasPrivateToken(issuer)",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetoken",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString③\">USVString</a></code> <var>issuer</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-hasprivatetoken\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>hasPrivateToken(issuer)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context③\">secure context</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedURL</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedURL</var> is failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑦\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a> of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If associating <var>issuer</var> with <var>topLevel</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#determine-whether-associating-an-issuer-would-exceed-the-top-level-limit\" id=\"ref-for-determine-whether-associating-an-issuer-would-exceed-the-top-level-limit②\">would exceed the top level’s number-of-issuers limit</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">networking task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and return.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#associate-the-issuer\" id=\"ref-for-associate-the-issuer②\">Associate the issuer</a> <var>origin</var> with <var>topLevel</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments⑤\">Look up the key commitments</a> for <var>origin</var>. If there are key commitments, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#discard-tokens\" id=\"ref-for-discard-tokens②\">discard tokens</a> from <var>origin</var> that are signed with keys other than those\n     from the issuer’s most recent commitments.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source①\">networking task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var> with true if there are tokens stored for the given issuer, with false otherwise.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/hasRedemptionRecord(issuer)",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord",
+      "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString④\">USVString</a></code> <var>issuer</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-hasredemptionrecord\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>hasRedemptionRecord(issuer)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context④\">secure context</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedURL</var> be the the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser③\">URL parser</a> on <var>issuer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedURL</var> is failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> and return <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑧\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevel</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin⑤\">top-level origin</a> of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>origin</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#is-associated-with\" id=\"ref-for-is-associated-with\">is not associated with</a> <var>topLevel</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source②\">networking task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>p</var> with false and return.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#look-up-the-key-commitments\" id=\"ref-for-look-up-the-key-commitments⑥\">Look up the key commitments</a> for <var>origin</var>. If there are key commitments, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#discard-tokens\" id=\"ref-for-discard-tokens③\">discard tokens</a> from <var>origin</var> that are signed with keys other than those\n     from the issuer’s most recent commitments.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source③\">networking task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>p</var> with true if there is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/trust-token-api/#redemption-record\" id=\"ref-for-redemption-record⑧\">redemption record</a> for the issuer and top level pair, with false otherwise.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

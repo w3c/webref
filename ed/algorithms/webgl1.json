@@ -1,0 +1,167 @@
+{
+  "spec": {
+    "title": "WebGL Specification",
+    "url": "https://registry.khronos.org/webgl/specs/latest/1.0/"
+  },
+  "algorithms": [
+    {
+      "html": "When the <code>getContext()</code> method of a <code>canvas</code> element\n        or <code>offscreen canvas</code> object is to return a new object for\n        the <em>contextId</em> <code>webgl</code> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#refsCANVASCONTEXTS\">[CANVASCONTEXTS]</a>,\n        the user agent must perform the following steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "Create a new <code>WebGLRenderingContext</code> object, <em>context</em>."
+        },
+        {
+          "html": "Let <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#context-canvas\">canvas</a> be the canvas or offscreen\n             canvas the <code>getContext()</code> method is associated with."
+        },
+        {
+          "html": "Create a new <code>WebGLContextAttributes</code> object, <em>contextAttributes</em>."
+        },
+        {
+          "html": "If <code>getContext()</code> was invoked with a second argument, <em>options</em>, set\n             the attributes of <em>contextAttributes</em> from those specified in <em>options</em>."
+        },
+        {
+          "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#create-a-drawing-buffer\">Create a <em>drawing buffer</em></a> using the settings\n             specified in <em>contextAttributes</em>, and associate the <em>drawing buffer</em>\n             with <em>context</em>."
+        },
+        {
+          "html": "If drawing buffer creation failed, perform the following steps:",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#fire-a-webgl-context-creation-error\">Fire a WebGL context creation\n          error</a> at <em>canvas</em>."
+            },
+            {
+              "html": "Return null and terminate these steps."
+            }
+          ]
+        },
+        {
+          "html": "Create a new <code>WebGLContextAttributes</code> object, <em>actualAttributes</em>."
+        },
+        {
+          "html": "Set the attributes of <em>actualAttributes</em> based on the properties of the newly\n             created drawing buffer."
+        },
+        {
+          "html": "Set <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#context-creation-parameters\">context creation\n        parameters</a> to <em>contextAttributes</em>."
+        },
+        {
+          "html": "Set <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#actual-context-parameters\">actual context\n        parameters</a> to <em>actualAttributes</em>."
+        },
+        {
+          "html": "Return <em>context</em>."
+        }
+      ]
+    },
+    {
+      "html": "Before performing the implementation of any method of the <code>WebGLRenderingContext</code>\n        interface or any method of an interface returned by the <code>getExtension</code> method,\n        the following steps must be performed:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>[WebGLHandlesContextLoss]</code> extended attribute appears on the called\n        method, perform the implementation of the called method, return its result and terminate\n        these steps."
+        },
+        {
+          "html": "Let <em>use default return value</em> be false."
+        },
+        {
+          "html": "If the <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-context-lost-flag\">webgl context lost flag</a> is set,\n        let <em>use default return value</em> be true.",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "Otherwise, if any argument to the method is a <code>WebGLObject</code> with\n            its <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-object-invalidated-flag\">invalidated flag</a> set, generate\n            an <code>INVALID_OPERATION</code> error and let <em>use default return value</em> be\n            true."
+            }
+          ]
+        },
+        {
+          "html": "If <em>use default return value</em> is true, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the return type of the called method is <code>any</code> or any nullable type,\n            return null."
+            },
+            {
+              "html": "Terminate this algorithm without calling the method implementation."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, perform the implementation of the called method and return its result."
+        }
+      ]
+    },
+    {
+      "html": "When the user agent detects that the <em>drawing buffer</em> associated with\n        a <code>WebGLRenderingContext</code> <em>context</em> has been lost, it must run the\n        following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <em>canvas</em> be the <em>context's</em>\n        <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#context-canvas\">canvas</a>."
+        },
+        {
+          "html": "If context's <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-context-lost-flag\">webgl context lost</a> flag\n        is set, abort these steps."
+        },
+        {
+          "html": "Set <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-context-lost-flag\">webgl context lost</a>\n        flag."
+        },
+        {
+          "html": "Set the <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-object-invalidated-flag\">invalidated flag</a> of\n        each <code>WebGLObject</code> instance created by this context."
+        },
+        {
+          "html": "Disable all extensions except \"WEBGL_lose_context\"."
+        },
+        {
+          "html": "<a href=\"http://dev.w3.org/html5/spec/webappapis.html#queue-a-task\">Queue a task</a> to\n        perform the following steps:",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#fire-a-webgl-context-event\">Fire a WebGL context event</a> named\n            \"webglcontextlost\" at <em>canvas</em>, with its <code>statusMessage</code> attribute set\n            to \"\"."
+            },
+            {
+              "html": "If the\n            event's <a href=\"http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#canceled-flag\">canceled\n            flag</a> is not set, abort these steps."
+            },
+            {
+              "html": "Perform the following steps asynchronously."
+            },
+            {
+              "html": "Await a restorable <em>drawing buffer</em>."
+            },
+            {
+              "html": "Queue a task to <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#restore-the-drawing-buffer\">restore the drawing\n            buffer</a> for <em>context</em>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When the user agent is to <b><a name=\"restore-the-drawing-buffer\">restore the drawing\n        buffer</a></b> for a <code>WebGLRenderingContext</code> <em>context</em>, it must run the\n        following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <em>canvas</em> be the canvas object associated with <em>context</em>."
+        },
+        {
+          "html": "If <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-context-lost-flag\">webgl context lost flag</a> is\n        not set, abort these steps."
+        },
+        {
+          "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#create-a-drawing-buffer\">Create a <em>drawing buffer</em></a> using the\n        settings specified in <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#context-creation-parameters\">context\n        creation parameters</a>, and associate the <em>drawing buffer</em> with <em>context</em>,\n        discarding any previous <em>drawing buffer</em>."
+        },
+        {
+          "html": "Clear <em>context's</em> <a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#webgl-context-lost-flag\">webgl context lost\n        flag</a>."
+        },
+        {
+          "html": "Reset <em>context's</em> OpenGL error state."
+        },
+        {
+          "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#fire-a-webgl-context-event\">Fire a WebGL context event</a> named\n        \"webglcontextrestored\" at <em>canvas</em>, with its <code>statusMessage</code> attribute set\n        to \"\"."
+        }
+      ]
+    },
+    {
+      "html": "When the user agent is to <b><a name=\"fire-a-webgl-context-creation-error\">fire a WebGL\n        context creation error</a></b> at a <em>canvas</em>, it must perform the following steps:",
+      "rationale": "fire",
+      "steps": [
+        {
+          "html": "<a href=\"https://registry.khronos.org/webgl/specs/latest/1.0/#fire-a-webgl-context-event\">Fire a WebGL context event</a> named\n        \"webglcontextcreationerror\" at <em>canvas</em>, optionally with its <code>statusMessage</code>\n        attribute set to a platform dependent string about the nature of the failure."
+        }
+      ]
+    }
+  ]
+}

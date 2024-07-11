@@ -1,0 +1,317 @@
+{
+  "spec": {
+    "title": "Media Capture Automation",
+    "url": "https://w3c.github.io/mediacapture-automation/"
+  },
+  "algorithms": [
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>configuration</var> be the command <var>parameters</var> argument,\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MockCapturePromptResultConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturepromptresultconfiguration\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturepromptresultconfiguration-2\"><code>MockCapturePromptResultConfiguration</code></a>.\n              If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n              with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n              <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n              <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n              with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n              and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>configuration</var>.<code>getUserMedia</code> is set,\n            set <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#getUserMedia-prompt-result\" class=\"internalDFN\" id=\"ref-for-getUserMedia-prompt-result-5\">getUserMedia prompt result</a> \n            to <var>configuration</var>.<code>getUserMedia</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>configuration</var>.<code>getDisplayMedia</code> is set,\n            set <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#getDisplayMedia-prompt-result\" class=\"internalDFN\" id=\"ref-for-getDisplayMedia-prompt-result-6\">getDisplayMedia prompt result</a> \n            to <var>configuration</var>.<code>getDisplayMedia</code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n              <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n              with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n              and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be a <code>MockCapturePromptResultConfiguration</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>.<code>getUserMedia</code> to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#getUserMedia-prompt-result\" class=\"internalDFN\" id=\"ref-for-getUserMedia-prompt-result-7\">getUserMedia prompt result</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>.<code>getDisplayMedia</code> to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#getDisplayMedia-prompt-result\" class=\"internalDFN\" id=\"ref-for-getDisplayMedia-prompt-result-8\">getDisplayMedia prompt result</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>configuration</var> be the command <var>parameters</var> argument,\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type <code>MockCameraConfiguration</code>.\n            If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n            <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mockCamera</var> be the mock camera in the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-cameras\" class=\"internalDFN\" id=\"ref-for-mock-cameras-4\">list of mock cameras</a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MockCaptureDeviceConfiguration\" data-xref-for=\"MockCaptureDeviceConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturedeviceconfiguration-deviceid-2\"><code>deviceId</code></a> is equal to the <a data-cite=\"webdriver2/#dfn-url-variables\" href=\"https://www.w3.org/TR/webdriver2/#dfn-url-variables\">url variable</a> <var>deviceId</var> parameter, or <code>undefined</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>mockCamera</var> is not <code>undefined</code>, set <var>mockCamera</var>’s configuration to <var>configuration</var>.</p>"
+        },
+        {
+          "html": "Otherwise, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>mockCamera</var> be a new <a href=\"https://w3c.github.io/mediacapture-automation/#mock-camera\">mock camera</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>mockCamera</var>’s configuration to <var>configuration</var>.</p>"
+            },
+            {
+              "html": "<p>Add <var>mockCamera</var> to the list of <a href=\"https://w3c.github.io/mediacapture-automation/#mock-cameras\" id=\"ref-for-mock-cameras-5\">mock cameras</a>.</p>"
+            },
+            {
+              "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>deviceId</var> be the result of <a data-cite=\"webdriver2/#dfn-getting-properties\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\">getting the property</a> <code>deviceId</code> from the <var>parameters</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>.</p>\n            <p>If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n            <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mockCamera</var> be the mock camera in the <a href=\"https://w3c.github.io/mediacapture-automation/#mock-cameras\" id=\"ref-for-mock-cameras-7\">list of mock cameras</a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MockCaptureDeviceConfiguration\" data-xref-for=\"MockCaptureDeviceConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturedeviceconfiguration-deviceid-3\"><code>deviceId</code></a> is equal to the <a data-cite=\"webdriver2/#dfn-url-variables\" href=\"https://www.w3.org/TR/webdriver2/#dfn-url-variables\">url variable</a> deviceId parameter, or <code>undefined</code> otherwise.</p>"
+        },
+        {
+          "html": "If <var>mockCamera</var> is not <code>undefined</code>, run the following steps:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>Remove <var>mockCamera</var> from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-cameras\" class=\"internalDFN\" id=\"ref-for-mock-cameras-8\">list of mock cameras</a>.</p>"
+            },
+            {
+              "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>configuration</var> be the result of <a data-cite=\"webdriver2/#dfn-getting-properties\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\">getting the property</a> <code>configuration</code> from the <var>parameters</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MockMicrophoneConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration\" class=\"internalDFN\" id=\"ref-for-dom-mockmicrophoneconfiguration-3\"><code>MockMicrophoneConfiguration</code></a>.</p>\n            <p>If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n            <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mockMicrophone</var> be the mock microphone in the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-microphones\" class=\"internalDFN\" id=\"ref-for-mock-microphones-4\">list of mock microphones</a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MockCaptureDeviceConfiguration\" data-xref-for=\"MockCaptureDeviceConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturedeviceconfiguration-deviceid-4\"><code>deviceId</code></a> is equal to the <a data-cite=\"webdriver2/#dfn-url-variables\" href=\"https://www.w3.org/TR/webdriver2/#dfn-url-variables\">url variable</a> <var>deviceId</var> parameter, or <code>undefined</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>mockMicrophone</var> is not <code>undefined</code>, set <var>mockMicrophone</var>’s configuration to <var>configuration</var>.</p>"
+        },
+        {
+          "html": "Otherwise, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>mockMicrophone</var> be a new <a href=\"https://w3c.github.io/mediacapture-automation/#mock-microphone\">mock microphone</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>mockMicrophone</var>’s configuration to <var>configuration</var>.</p>"
+            },
+            {
+              "html": "<p>Add <var>mockMicrophone</var> to the list of mock devices.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#default-microphone\" class=\"internalDFN\" id=\"ref-for-default-microphone-2\">default microphone</a> is <code>undefined</code>, set\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#default-microphone\" class=\"internalDFN\" id=\"ref-for-default-microphone-3\">default microphone</a> to <var>mockMicrophone</var>.</p>"
+            },
+            {
+              "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>deviceId</var> be the result of <a data-cite=\"webdriver2/#dfn-getting-properties\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\">getting the property</a> <code>deviceId</code> from the <var>parameters</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>.</p>\n            <p>If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n            <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mockMicrophone</var> be the mock microphone in the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-microphones\" class=\"internalDFN\" id=\"ref-for-mock-microphones-5\">list of mock microphones</a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MockCaptureDeviceConfiguration\" data-xref-for=\"MockCaptureDeviceConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturedeviceconfiguration-deviceid-5\"><code>deviceId</code></a> is equal to the <a data-cite=\"webdriver2/#dfn-url-variables\" href=\"https://www.w3.org/TR/webdriver2/#dfn-url-variables\">url variable</a> <var>deviceId</var> parameter, or <code>undefined</code> otherwise.</p>"
+        },
+        {
+          "html": "If <var>mockMicrophone</var> is not <code>undefined</code>, run the following steps:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>Remove <var>mockMicrophone</var> from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-microphones\" class=\"internalDFN\" id=\"ref-for-mock-microphones-6\">list of mock microphones</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>mockMicrophone</var> is the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#default-microphone\" class=\"internalDFN\" id=\"ref-for-default-microphone-4\">default microphone</a>,\n                set the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#default-microphone\" class=\"internalDFN\" id=\"ref-for-default-microphone-5\">default microphone</a> to the first microphone in the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-microphones\" class=\"internalDFN\" id=\"ref-for-mock-microphones-7\">list of mock microphones</a>\n                if not empty and to <code>undefined</code> otherwise.</p>"
+            },
+            {
+              "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>deviceId</var> be the result of <a data-cite=\"webdriver2/#dfn-getting-properties\" href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\">getting the property</a> <code>deviceId</code> from the <var>parameters</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-lt=\"converted to idl values\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-convert-ecmascript-to-idl-value\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMString\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\"><code>DOMString</code></a>.</p>\n            <p>If this throws an exception, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a>\n            <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-invalid-argument\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mockMicrophone</var> be the mock microphone in the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-microphones\" class=\"internalDFN\" id=\"ref-for-mock-microphones-8\">list of mock microphones</a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MockCaptureDeviceConfiguration\" data-xref-for=\"MockCaptureDeviceConfiguration\" href=\"https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid\" class=\"internalDFN\" id=\"ref-for-dom-mockcapturedeviceconfiguration-deviceid-6\"><code>deviceId</code></a> is equal to <var>deviceId</var> or <code>undefined</code> otherwise.</p>"
+        },
+        {
+          "html": "If <var>mockMicrophone</var> is not <code>undefined</code>, run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a href=\"\" src=\"https://w3c.github.io/mediacapture-automation/null\">default mock microphone</a> to <var>mockMicrophone</var>.</p>"
+            },
+            {
+              "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Set the the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-capture-device-set\" class=\"internalDFN\" id=\"ref-for-mock-capture-device-set-2\">mock capture device set</a> to the default mock capture device set.</p>"
+        },
+        {
+          "html": "Run the following step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "execute",
+          "steps": [
+            {
+              "html": "<p>Execute the <a data-cite=\"mediacapture-streams/#dfn-device-change-notification-steps\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-device-change-notification-steps\">'media input device changed'</a> steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-remote-end-steps\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-cite=\"webdriver2/#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\">current browsing context</a> is\n            <a data-cite=\"webdriver2/#dfn-no-longer-open\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-longer-open\">no longer open</a>, return a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>\n            with <a data-cite=\"webdriver2/#dfn-error-code\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\">WebDriver error code</a> <a data-cite=\"webdriver2/#dfn-no-such-window\" href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-window\">no such window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webdriver2/#dfn-handle-any-user-prompts\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts\">Handle any user prompts</a>,\n            and return its value if it is a <a data-link-type=\"dfn|abstract-op\" data-lt=\"error\" data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-error\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\">WebDriver error</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-cite=\"webdriver2\" data-cite-path=\"/\" data-cite-frag=\"dfn-success\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\">success</a> with data as the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mediacapture-automation/#mock-capture-device-set\" class=\"internalDFN\" id=\"ref-for-mock-capture-device-set-3\">mock capture device set</a>, serialized as JSON.</p>"
+        }
+      ]
+    }
+  ]
+}
