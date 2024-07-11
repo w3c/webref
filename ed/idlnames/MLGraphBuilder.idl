@@ -312,5 +312,5 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand where(MLOperand condition, MLOperand input, MLOperand other);
+  MLOperand where(MLOperand condition, MLOperand trueValue, MLOperand falseValue);
 };

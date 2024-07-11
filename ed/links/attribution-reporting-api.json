@@ -126,11 +126,10 @@
           "process-response",
           "header-value",
           "concept-response-url",
-          "concept-response-header-list",
           "concept-header-list-get",
+          "concept-response-header-list",
           "header-name",
           "concept-header",
-          "concept-header-list-append",
           "concept-request-body",
           "concept-body",
           "concept-body-source",
@@ -278,12 +277,7 @@
           "specify",
           "introduction",
           "text-parse",
-          "param",
-          "list",
-          "string",
-          "ser-string",
-          "parse-list",
-          "parse-string"
+          "param"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -312,8 +306,6 @@
           "map-getting-the-keys",
           "map-getting-the-values",
           "tuple",
-          "forgiving-base64-encode",
-          "byte-sequence",
           "map-size",
           "string-length",
           "list-item",
@@ -332,6 +324,7 @@
           "split-on-ascii-whitespace",
           "implementation-defined",
           "the-exclusive-range",
+          "byte-sequence",
           "parse-json-bytes-to-an-infra-value",
           "list-sort-in-descending-order",
           "set-intersection",
@@ -339,9 +332,8 @@
           "iteration-break",
           "serialize-an-infra-value-to-a-json-string",
           "iteration-while",
-          "serialize-an-infra-value-to-json-bytes",
-          "forgiving-base64-decode",
-          "list-get-the-indices"
+          "forgiving-base64-encode",
+          "serialize-an-infra-value-to-json-bytes"
         ]
       },
       "https://storage.spec.whatwg.org/": {
@@ -418,14 +410,6 @@
         "anchors": [
           "navigable-top-level-traversable",
           "fenced-navigable-container-fenced-navigable"
-        ]
-      },
-      "https://wicg.github.io/trust-token-api/": {
-        "anchors": [
-          "look-up-the-key-commitments",
-          "generate-masked-tokens",
-          "sec-private-state-token-crypto-version",
-          "unmask-tokens"
         ]
       },
       "https://wicg.github.io/uuid/": {

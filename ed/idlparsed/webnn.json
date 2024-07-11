@@ -8339,7 +8339,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand where(MLOperand condition, MLOperand input, MLOperand other);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand where(MLOperand condition, MLOperand trueValue, MLOperand falseValue);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8374,7 +8374,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "input",
+                  "name": "trueValue",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -8390,7 +8390,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "other",
+                  "name": "falseValue",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
