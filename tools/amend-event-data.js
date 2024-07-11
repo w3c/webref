@@ -440,7 +440,7 @@ const patches = {
       // https://github.com/WebAudio/web-audio-api/issues/2590
       pattern: { type: 'error' },
       matched: 1,
-      change: { interface: 'Event' }
+      change: { interface: 'ErrorEvent' }
     }
   ],
   'webcodecs': [
