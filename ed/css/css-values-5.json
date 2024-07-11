@@ -3,7 +3,40 @@
     "title": "CSS Values and Units Module Level 5",
     "url": "https://drafts.csswg.org/css-values-5/"
   },
-  "properties": [],
+  "properties": [
+    {
+      "name": "interpolate-size",
+      "href": "https://drafts.csswg.org/css-values-5/#propdef-interpolate-size",
+      "value": "numeric-only | allow-keywords",
+      "initial": "numeric-only",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "numeric-only",
+          "prose": "An <intrinsic-size-keyword> cannot be interpolated.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-numeric-only",
+          "type": "value",
+          "value": "numeric-only"
+        },
+        {
+          "name": "allow-keywords",
+          "prose": "Two values can be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 9.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-allow-keywords",
+          "type": "value",
+          "value": "allow-keywords"
+        }
+      ],
+      "styleDeclaration": [
+        "interpolate-size",
+        "interpolateSize"
+      ]
+    }
+  ],
   "atrules": [],
   "selectors": [],
   "values": [
