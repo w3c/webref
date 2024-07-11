@@ -4,7 +4,7 @@
  * or need other web platform information to match our package goals
  *
  * node tools/amend-event-data.js [folder]
- * 
+ *
  * ... where:
  * - [folder] is the name of the folder that contains the data to parse
  * and update (default is "curated")
@@ -434,6 +434,11 @@ const patches = {
       pattern: { type: 'audioprocess' },
       matched: 1,
       change: { interface: 'AudioProcessingEvent' }
+    },
+    {
+      pattern: { type: 'error' },
+      matched: 1,
+      change: { interface: 'ErrorEvent' }
     }
   ],
   'webcodecs': [
