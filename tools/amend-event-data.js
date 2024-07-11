@@ -434,6 +434,13 @@ const patches = {
       pattern: { type: 'audioprocess' },
       matched: 1,
       change: { interface: 'AudioProcessingEvent' }
+    },
+    {
+      // https://github.com/WebAudio/web-audio-api/issues/2591
+      // https://github.com/WebAudio/web-audio-api/issues/2590
+      pattern: { type: 'error' },
+      matched: 1,
+      change: { interface: 'ErrorEvent' }
     }
   ],
   'webcodecs': [
